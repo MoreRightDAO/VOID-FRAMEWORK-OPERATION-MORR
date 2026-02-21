@@ -1,0 +1,58 @@
+{
+  "analyses": {
+    "IT-8": [
+      {
+        "condition": "IT-8",
+        "trial": 1,
+        "n_rounds": 30,
+        "active_rounds": 30,
+        "death_round": null,
+        "d1_mean": 5.387,
+        "d1_active_mean": 5.387,
+        "d1_final_10_mean": 2.6,
+        "d1_variance": 97.9321,
+        "l3_final_10_mean": 15.459,
+        "l3_total": 169.08999999999997,
+        "l0_mean": 95.026,
+        "delta_I_per_step": [
+          10.8,
+          11.85,
+          14.9,
+          0.28,
+          -5.08,
+          9.8,
+          0.0,
+          0.0
+        ],
+        "delta_I_cv": 1.376
+      }
+    ],
+    "U": [
+      {
+        "condition": "U",
+        "trial": 1,
+        "n_rounds": 30,
+        "active_rounds": 18,
+        "death_round": 19,
+        "d1_mean": 14.465,
+        "d1_active_mean": 24.108,
+        "d1_final_10_mean": 14.672,
+        "d1_variance": 331.4289,
+        "l3_final_10_mean": 22.365,
+        "l3_total": 358.78999999999996,
+        "l0_mean": 0.341
+      }
+    ]
+  },
+  "falsification": [
+    {
+      "id": "EXP020-5",
+      "description": "\u0394I per step approx constant (CV < 0.5)",
+      "wins": 0,
+      "trials": 1,
+      "kill_threshold": "Fails if CV > 0.5 in majority",
+      "confirmed": false,
+      "killed": true
+    }
+  ]
+}

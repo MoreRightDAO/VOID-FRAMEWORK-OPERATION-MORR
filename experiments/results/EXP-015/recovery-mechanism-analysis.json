@@ -1,0 +1,70 @@
+{
+  "experiment": "EXP-015-deep-dive",
+  "description": "Recovery mechanism analysis and two-force model",
+  "models": {
+    "vi_only": {
+      "r_squared": 0.2451,
+      "rho": 0.357
+    },
+    "rms_only": {
+      "r_squared": 0.7046,
+      "rho": -0.964
+    },
+    "two_force": {
+      "r_squared": 0.7265,
+      "intercept": -1.087,
+      "beta_vi": 0.268,
+      "beta_rms": -0.447
+    },
+    "net_pressure": {
+      "r_squared": 0.7197,
+      "rho": 0.964,
+      "intercept": -3.267,
+      "slope": 0.412
+    }
+  },
+  "domains": {
+    "ai_ungrounded": {
+      "vi": 15,
+      "rms": 0,
+      "crooks": 386.0,
+      "sigma_net": 5.9558
+    },
+    "ai_grounded": {
+      "vi": 15,
+      "rms": 5,
+      "crooks": 1.0,
+      "sigma_net": 0.0
+    },
+    "opioids": {
+      "vi": 14,
+      "rms": 4,
+      "crooks": 1.4375,
+      "sigma_net": 0.3629
+    },
+    "nicotine": {
+      "vi": 11,
+      "rms": 8,
+      "crooks": 0.2857,
+      "sigma_net": -1.2528
+    },
+    "gambling": {
+      "vi": 15,
+      "rms": 14,
+      "crooks": 0.0538,
+      "sigma_net": -2.9225
+    },
+    "alcohol": {
+      "vi": 11,
+      "rms": 11,
+      "crooks": 0.0341,
+      "sigma_net": -3.3785
+    },
+    "milgram": {
+      "vi": 15,
+      "rms": 0,
+      "crooks": 1.86,
+      "sigma_net": 0.6206
+    }
+  }
+}

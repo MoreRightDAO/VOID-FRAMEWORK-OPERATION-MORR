@@ -1,0 +1,150 @@
+{
+  "experiment": "EXP-015",
+  "description": "Crooks ratio from addiction recovery trajectories",
+  "analysis_timestamp": "2026-02-10T06:57:29.914002+00:00",
+  "data_note": "Transition matrices approximate from published tables",
+  "substances": {
+    "gambling": {
+      "name": "Gambling (PGSI categories)",
+      "source": "Williams et al. (2015) QLDS; Abbott et al. (2014)",
+      "void_index": 15,
+      "crooks_trajectory": 0.05376,
+      "sigma_trajectory": -2.9232,
+      "sigma_rate": 0.00442,
+      "stationary_dist": [
+        0.737001,
+        0.127764,
+        0.076965,
+        0.058271
+      ],
+      "interface_crooks": [
+        {
+          "label": "Non-problem \u2192 Low-risk",
+          "crooks": 0.1556,
+          "p_forward": 0.07,
+          "p_backward": 0.45
+        },
+        {
+          "label": "Low-risk \u2192 Moderate-risk",
+          "crooks": 0.48,
+          "p_forward": 0.12,
+          "p_backward": 0.25
+        },
+        {
+          "label": "Moderate-risk \u2192 Problem",
+          "crooks": 0.72,
+          "p_forward": 0.18,
+          "p_backward": 0.25
+        }
+      ]
+    },
+    "alcohol": {
+      "name": "Alcohol (DSM-IV, among drinkers)",
+      "source": "Dawson et al. (2005) NESARC Wave 1\u21922",
+      "void_index": 11,
+      "crooks_trajectory": 0.034091,
+      "sigma_trajectory": -3.3787,
+      "sigma_rate": 0.004066,
+      "stationary_dist": [
+        0.844097,
+        0.092114,
+        0.039545,
+        0.024244
+      ],
+      "interface_crooks": [
+        {
+          "label": "Low-risk \u2192 At-risk",
+          "crooks": 0.125,
+          "p_forward": 0.05,
+          "p_backward": 0.4
+        },
+        {
+          "label": "At-risk \u2192 Abuse",
+          "crooks": 0.5455,
+          "p_forward": 0.12,
+          "p_backward": 0.22
+        },
+        {
+          "label": "Abuse \u2192 Dependence",
+          "crooks": 0.5,
+          "p_forward": 0.06,
+          "p_backward": 0.12
+        }
+      ]
+    },
+    "nicotine": {
+      "name": "Nicotine (smoking intensity)",
+      "source": "Hughes et al. (2008); Piasecki (2006)",
+      "void_index": 11,
+      "crooks_trajectory": 0.285714,
+      "sigma_trajectory": -1.2528,
+      "sigma_rate": 0.000311,
+      "stationary_dist": [
+        0.59727,
+        0.067528,
+        0.182838,
+        0.152365
+      ],
+      "interface_crooks": [
+        {
+          "label": "Non-smoker \u2192 Occasional",
+          "crooks": 0.12,
+          "p_forward": 0.03,
+          "p_backward": 0.25
+        },
+        {
+          "label": "Occasional \u2192 Daily",
+          "crooks": 2.8571,
+          "p_forward": 0.2,
+          "p_backward": 0.07
+        },
+        {
+          "label": "Daily \u2192 Heavy (20+/day)",
+          "crooks": 0.8333,
+          "p_forward": 0.1,
+          "p_backward": 0.12
+        }
+      ]
+    },
+    "opioids": {
+      "name": "Opioids (use severity)",
+      "source": "Hser et al. (2015) 33-year follow-up",
+      "void_index": 14,
+      "crooks_trajectory": 1.4375,
+      "sigma_trajectory": 0.3629,
+      "sigma_rate": 0.005872,
+      "stationary_dist": [
+        0.446575,
+        0.043337,
+        0.145299,
+        0.364789
+      ],
+      "interface_crooks": [
+        {
+          "label": "Non-use \u2192 Occasional",
+          "crooks": 0.1,
+          "p_forward": 0.02,
+          "p_backward": 0.2
+        },
+        {
+          "label": "Occasional \u2192 Regular",
+          "crooks": 5.0,
+          "p_forward": 0.25,
+          "p_backward": 0.05
+        },
+        {
+          "label": "Regular \u2192 Dependent",
+          "crooks": 2.875,
+          "p_forward": 0.23,
+          "p_backward": 0.08
+        }
+      ]
+    }
+  },
+  "cross_domain": {
+    "test7_ai_crooks": 386.0,
+    "milgram_crooks": 1.86,
+    "prediction_confirmed": false,
+    "finding": "Crooks varies by orders of magnitude across substrates. Recovery mechanisms modulate irreversibility."
+  }
+}

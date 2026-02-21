@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="d1Fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#c1121f;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="d2Fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e76f51;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#d45d3c;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="mFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#1b7a6e;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="hyFill" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <filter id="bsh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="560" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Three-Channel Information Budget</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">I(D1;Y) + I(D2;Y) + I(M;Y) &lt;= H(Y). Each SC class creates coherent channel budget differently.</text>
+
+  <!-- Equation box -->
+  <rect x="250" y="68" width="400" height="36" rx="6" fill="white" stroke="#1a1a2e" stroke-width="2" filter="bsh"/>
+  <text x="450" y="92" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">I(D<tspan font-size="10" dy="3">1</tspan><tspan dy="-3">;Y) + I(D</tspan><tspan font-size="10" dy="3">2</tspan><tspan dy="-3">;Y) + I(M;Y) = H(Y)</tspan></text>
+
+  <!-- Legend -->
+  <rect x="160" y="112" width="580" height="28" rx="4" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="185" y="120" width="14" height="14" rx="2" fill="url(#d1Fill)"/>
+  <text x="205" y="131" font-size="10" fill="#495057">D1: e-e scattering</text>
+  <rect x="345" y="120" width="14" height="14" rx="2" fill="url(#d2Fill)"/>
+  <text x="365" y="131" font-size="10" fill="#495057">D2: e-lattice scattering</text>
+  <rect x="535" y="120" width="14" height="14" rx="2" fill="url(#mFill)"/>
+  <text x="555" y="131" font-size="10" fill="#495057">M: Coherent transport</text>
+
+  <!-- === NORMAL STATE (leftmost) === -->
+  <text x="130" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#495057">Normal Metal</text>
+  <text x="130" y="185" text-anchor="middle" font-size="10" fill="#6c757d">(T >> Tc)</text>
+
+  <!-- Full H(Y) bar = 300px height, from y=195 to y=495 -->
+  <rect x="85" y="195" width="90" height="300" rx="4" fill="url(#hyFill)" stroke="#dee2e6" stroke-width="1"/>
+  <!-- D1 block -->
+  <rect x="87" y="197" width="86" height="140" rx="3" fill="url(#d1Fill)"/>
+  <text x="130" y="270" text-anchor="middle" font-size="12" font-weight="700" fill="white">D1</text>
+  <text x="130" y="286" text-anchor="middle" font-size="9" fill="white" opacity="0.9">e-e scatter</text>
+  <!-- D2 block -->
+  <rect x="87" y="339" width="86" height="140" rx="3" fill="url(#d2Fill)"/>
+  <text x="130" y="412" text-anchor="middle" font-size="12" font-weight="700" fill="white">D2</text>
+  <text x="130" y="428" text-anchor="middle" font-size="9" fill="white" opacity="0.9">e-lattice</text>
+  <!-- M block (tiny) -->
+  <rect x="87" y="481" width="86" height="12" rx="2" fill="url(#mFill)" opacity="0.4"/>
+  <text x="130" y="508" text-anchor="middle" font-size="9" fill="#2a9d8f">M ~ 0</text>
+  <!-- Resistance label -->
+  <text x="130" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">Full resistance</text>
+
+  <!-- H(Y) bracket -->
+  <line x1="180" y1="197" x2="185" y2="197" stroke="#495057" stroke-width="1"/>
+  <line x1="182" y1="197" x2="182" y2="493" stroke="#495057" stroke-width="1"/>
+  <line x1="180" y1="493" x2="185" y2="493" stroke="#495057" stroke-width="1"/>
+  <text x="194" y="350" font-size="10" font-weight="600" fill="#495057" transform="rotate(90,194,350)">H(Y)</text>
+
+  <!-- === BCS (CONVENTIONAL) === -->
+  <text x="310" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#264653">BCS</text>
+  <text x="310" y="185" text-anchor="middle" font-size="10" fill="#6c757d">Pb, Nb (Tc &lt; 30K)</text>
+
+  <rect x="265" y="195" width="90" height="300" rx="4" fill="url(#hyFill)" stroke="#dee2e6" stroke-width="1"/>
+  <!-- D1 (weak, unchanged) -->
+  <rect x="267" y="197" width="86" height="80" rx="3" fill="url(#d1Fill)"/>
+  <text x="310" y="240" text-anchor="middle" font-size="11" font-weight="700" fill="white">D1</text>
+  <text x="310" y="254" text-anchor="middle" font-size="8" fill="white" opacity="0.8">weak (uncorrel.)</text>
+  <!-- D2 (suppressed by cooling) -->
+  <rect x="267" y="279" width="86" height="60" rx="3" fill="url(#d2Fill)" opacity="0.5"/>
+  <text x="310" y="314" text-anchor="middle" font-size="11" font-weight="700" fill="white">D2</text>
+  <text x="310" y="326" text-anchor="middle" font-size="8" fill="white" opacity="0.8">suppressed (cool)</text>
+  <!-- M (opens up) -->
+  <rect x="267" y="341" width="86" height="152" rx="3" fill="url(#mFill)"/>
+  <text x="310" y="415" text-anchor="middle" font-size="14" font-weight="800" fill="white">M</text>
+  <text x="310" y="435" text-anchor="middle" font-size="9" fill="white" opacity="0.9">coherent channel</text>
+  <!-- Strategy -->
+  <text x="310" y="525" text-anchor="middle" font-size="9" font-weight="600" fill="#264653">Strategy: Suppress D2</text>
+  <text x="310" y="538" text-anchor="middle" font-size="9" fill="#6c757d">(brute force cooling)</text>
+
+  <!-- === CUPRATE (HIGH-Tc) === -->
+  <text x="490" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#264653">Cuprate</text>
+  <text x="490" y="185" text-anchor="middle" font-size="10" fill="#6c757d">YBCO (Tc ~ 92K)</text>
+
+  <rect x="445" y="195" width="90" height="300" rx="4" fill="url(#hyFill)" stroke="#dee2e6" stroke-width="1"/>
+  <!-- D1 converted INTO M (small remnant) -->
+  <rect x="447" y="197" width="86" height="30" rx="3" fill="url(#d1Fill)" opacity="0.5"/>
+  <text x="490" y="216" text-anchor="middle" font-size="9" font-weight="600" fill="white">D1 remnant</text>
+  <!-- D2 geometrically suppressed -->
+  <rect x="447" y="229" width="86" height="40" rx="3" fill="url(#d2Fill)" opacity="0.4"/>
+  <text x="490" y="254" text-anchor="middle" font-size="9" font-weight="600" fill="white">D2 (2D geom.)</text>
+  <!-- M (huge — D1 converted) -->
+  <rect x="447" y="271" width="86" height="222" rx="3" fill="url(#mFill)"/>
+  <text x="490" y="370" text-anchor="middle" font-size="16" font-weight="800" fill="white">M</text>
+  <text x="490" y="395" text-anchor="middle" font-size="9" fill="white" opacity="0.9">D1 converted</text>
+  <text x="490" y="410" text-anchor="middle" font-size="9" fill="white" opacity="0.9">into pairing</text>
+  <!-- Arrow showing conversion -->
+  <path d="M 447,212 C 435,212 430,260 435,290" stroke="#e63946" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <text x="425" y="252" font-size="8" fill="#e63946" transform="rotate(-90,425,252)">convert</text>
+  <!-- Strategy -->
+  <text x="490" y="525" text-anchor="middle" font-size="9" font-weight="600" fill="#264653">Strategy: Convert D1 to M</text>
+  <text x="490" y="538" text-anchor="middle" font-size="9" fill="#6c757d">(spin fluctuation pairing)</text>
+
+  <!-- === HYDRIDE (ULTRA-HIGH-Tc) === -->
+  <text x="670" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#264653">Hydride</text>
+  <text x="670" y="185" text-anchor="middle" font-size="10" fill="#6c757d">H3S (Tc ~ 203K @ 200GPa)</text>
+
+  <rect x="625" y="195" width="90" height="300" rx="4" fill="url(#hyFill)" stroke="#dee2e6" stroke-width="1"/>
+  <!-- D1 moderate -->
+  <rect x="627" y="197" width="86" height="50" rx="3" fill="url(#d1Fill)" opacity="0.6"/>
+  <text x="670" y="226" text-anchor="middle" font-size="9" font-weight="600" fill="white">D1 (moderate)</text>
+  <!-- D2 compressed by pressure -->
+  <rect x="627" y="249" width="86" height="30" rx="3" fill="url(#d2Fill)" opacity="0.35"/>
+  <text x="670" y="268" text-anchor="middle" font-size="9" font-weight="600" fill="white">D2 (compressed)</text>
+  <!-- M (huge — budget freed by pressure) -->
+  <rect x="627" y="281" width="86" height="212" rx="3" fill="url(#mFill)"/>
+  <text x="670" y="375" text-anchor="middle" font-size="16" font-weight="800" fill="white">M</text>
+  <text x="670" y="400" text-anchor="middle" font-size="9" fill="white" opacity="0.9">budget freed</text>
+  <text x="670" y="415" text-anchor="middle" font-size="9" fill="white" opacity="0.9">by pressure</text>
+  <!-- H(Y) is larger (higher T) -->
+  <rect x="625" y="195" width="90" height="300" rx="4" fill="none" stroke="#264653" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Strategy -->
+  <text x="670" y="525" text-anchor="middle" font-size="9" font-weight="600" fill="#264653">Strategy: Suppress D2</text>
+  <text x="670" y="538" text-anchor="middle" font-size="9" fill="#6c757d">(brute force pressure)</text>
+
+  <!-- === DESIGN PRINCIPLE BOX === -->
+  <rect x="760" y="195" width="130" height="300" rx="6" fill="white" stroke="#1a1a2e" stroke-width="2" filter="bsh"/>
+  <text x="825" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Room-Tc</text>
+  <text x="825" y="238" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Design</text>
+  <text x="825" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Principle</text>
+  <line x1="775" y1="264" x2="875" y2="264" stroke="#dee2e6" stroke-width="1"/>
+
+  <text x="825" y="285" text-anchor="middle" font-size="9" fill="#495057">Convert ONE</text>
+  <text x="825" y="298" text-anchor="middle" font-size="9" fill="#495057">dissipative channel</text>
+  <text x="825" y="311" text-anchor="middle" font-size="9" fill="#495057">into coherent</text>
+  <text x="825" y="324" text-anchor="middle" font-size="9" fill="#495057">pairing.</text>
+  <line x1="785" y1="335" x2="865" y2="335" stroke="#dee2e6" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="825" y="355" text-anchor="middle" font-size="9" fill="#495057">Geometrically</text>
+  <text x="825" y="368" text-anchor="middle" font-size="9" fill="#495057">suppress the</text>
+  <text x="825" y="381" text-anchor="middle" font-size="9" fill="#495057">OTHER channel.</text>
+  <line x1="785" y1="392" x2="865" y2="392" stroke="#dee2e6" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="825" y="412" text-anchor="middle" font-size="9" fill="#495057">Ensure this</text>
+  <text x="825" y="425" text-anchor="middle" font-size="9" fill="#495057">holds at</text>
+  <text x="825" y="438" text-anchor="middle" font-size="9" font-weight="700" fill="#e63946">H(Y) @ 300K</text>
+  <line x1="785" y1="450" x2="865" y2="450" stroke="#dee2e6" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="825" y="470" text-anchor="middle" font-size="9" fill="#264653" font-weight="600">Requires:</text>
+  <text x="825" y="483" text-anchor="middle" font-size="8" fill="#495057">Anisotropy</text>
+  <text x="825" y="495" text-anchor="middle" font-size="8" fill="#495057">2D confinement</text>
+
+  <!-- Paper attribution -->
+  <text x="870" y="555" text-anchor="end" font-size="10" fill="#adb5bd">Paper 9 — SC Design Principle</text>
+</svg>

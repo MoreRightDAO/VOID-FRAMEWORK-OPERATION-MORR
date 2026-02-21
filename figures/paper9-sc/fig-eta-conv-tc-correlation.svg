@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="esh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="eArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <linearGradient id="fitLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#264653;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#264653;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="430" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Channel Conversion Efficiency vs Critical Temperature</text>
+  <text x="430" y="56" text-anchor="middle" font-size="13" fill="#6c757d">eta_conv x H(Y) predicts Tc across SC families. Three orders of magnitude. Different pairing mechanisms.</text>
+
+  <!-- Chart area: x=130..750, y=90..440 -->
+
+  <!-- Grid lines (faint) -->
+  <line x1="130" y1="440" x2="750" y2="440" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="130" y1="353" x2="750" y2="353" stroke="#f1f3f5" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="130" y1="265" x2="750" y2="265" stroke="#f1f3f5" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="130" y1="178" x2="750" y2="178" stroke="#f1f3f5" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="130" y1="90" x2="750" y2="90" stroke="#f1f3f5" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- Axes -->
+  <line x1="130" y1="440" x2="770" y2="440" stroke="#495057" stroke-width="2" marker-end="url(#eArrow)"/>
+  <line x1="130" y1="440" x2="130" y2="75" stroke="#495057" stroke-width="2" marker-end="url(#eArrow)"/>
+
+  <!-- X axis: eta_conv x H(Y) — log scale conceptually, but mapped to linear for visual clarity -->
+  <!-- Range: 0 to 1500 K, mapped to x=130..750 (1 K = 0.413 px) -->
+  <text x="440" y="478" text-anchor="middle" font-size="13" font-weight="600" fill="#495057">eta_conv x H(Y) (K)</text>
+  <text x="130" y="458" text-anchor="middle" font-size="10" fill="#6c757d">0</text>
+  <text x="285" y="458" text-anchor="middle" font-size="10" fill="#6c757d">250</text>
+  <text x="440" y="458" text-anchor="middle" font-size="10" fill="#6c757d">500</text>
+  <text x="595" y="458" text-anchor="middle" font-size="10" fill="#6c757d">750</text>
+  <text x="750" y="458" text-anchor="middle" font-size="10" fill="#6c757d">1000+</text>
+
+  <!-- Y axis: Tc (K) -->
+  <!-- Range: 0 to 100 K, mapped to y=440..90 (1 K = 3.5 px) -->
+  <text x="70" y="265" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(-90,70,265)">Tc (K)</text>
+  <text x="118" y="443" text-anchor="end" font-size="10" fill="#6c757d">0</text>
+  <text x="118" y="353" text-anchor="end" font-size="10" fill="#6c757d">25</text>
+  <text x="118" y="265" text-anchor="end" font-size="10" fill="#6c757d">50</text>
+  <text x="118" y="178" text-anchor="end" font-size="10" fill="#6c757d">75</text>
+  <text x="118" y="90" text-anchor="end" font-size="10" fill="#6c757d">100</text>
+
+  <!-- Tick marks -->
+  <line x1="126" y1="353" x2="134" y2="353" stroke="#495057" stroke-width="1"/>
+  <line x1="126" y1="265" x2="134" y2="265" stroke="#495057" stroke-width="1"/>
+  <line x1="126" y1="178" x2="134" y2="178" stroke="#495057" stroke-width="1"/>
+  <line x1="126" y1="90" x2="134" y2="90" stroke="#495057" stroke-width="1"/>
+  <line x1="285" y1="436" x2="285" y2="444" stroke="#495057" stroke-width="1"/>
+  <line x1="440" y1="436" x2="440" y2="444" stroke="#495057" stroke-width="1"/>
+  <line x1="595" y1="436" x2="595" y2="444" stroke="#495057" stroke-width="1"/>
+
+  <!-- === BEST FIT LINE (r=0.996) === -->
+  <!-- Pb: (96.5, 7.2), Nb: (218, 9.25), MgB2: (690, 39), YBCO: (1397, 92) -->
+  <!-- x = 130 + val * 620/1400 = 130 + val * 0.443 -->
+  <!-- y = 440 - Tc * 350/100 = 440 - Tc * 3.5 -->
+  <!-- Pb: x=172.7, y=414.8 | Nb: x=226.5, y=407.6 | MgB2: x=435.7, y=303.5 | YBCO: x=749, y=118 -->
+
+  <!-- Fit line -->
+  <line x1="140" y1="433" x2="749" y2="118" stroke="#264653" stroke-width="2.5" opacity="0.3"/>
+
+  <!-- Confidence band (approximate) -->
+  <polygon points="140,428 749,100 749,136 140,438" fill="#264653" opacity="0.06"/>
+
+  <!-- === DATA POINTS === -->
+
+  <!-- Pb (conventional BCS) -->
+  <circle cx="173" cy="415" r="11" fill="#e63946" stroke="white" stroke-width="2.5" filter="esh"/>
+  <text x="173" y="419" text-anchor="middle" font-size="8" font-weight="800" fill="white">Pb</text>
+  <text x="195" y="408" font-size="10" font-weight="600" fill="#e63946">Pb</text>
+  <text x="195" y="420" font-size="9" fill="#6c757d">eta=0.919, Tc=7.2K</text>
+
+  <!-- Nb (conventional BCS) -->
+  <circle cx="227" cy="408" r="11" fill="#e63946" stroke="white" stroke-width="2.5" filter="esh"/>
+  <text x="227" y="412" text-anchor="middle" font-size="8" font-weight="800" fill="white">Nb</text>
+  <text x="249" y="398" font-size="10" font-weight="600" fill="#e63946">Nb</text>
+  <text x="249" y="410" font-size="9" fill="#6c757d">eta=0.794, Tc=9.25K</text>
+
+  <!-- MgB2 (two-gap phonon) -->
+  <circle cx="436" cy="304" r="13" fill="#f4a261" stroke="white" stroke-width="2.5" filter="esh"/>
+  <text x="436" y="308" text-anchor="middle" font-size="7" font-weight="800" fill="white">MgB2</text>
+  <text x="462" y="296" font-size="10" font-weight="600" fill="#f4a261">MgB2</text>
+  <text x="462" y="308" font-size="9" fill="#6c757d">eta=0.862, Tc=39K</text>
+  <text x="462" y="320" font-size="8" fill="#f4a261">Two-gap phonon</text>
+
+  <!-- YBCO (spin fluctuation) -->
+  <circle cx="749" cy="118" r="14" fill="#2a9d8f" stroke="white" stroke-width="2.5" filter="esh"/>
+  <text x="749" y="122" text-anchor="middle" font-size="7" font-weight="800" fill="white">YBCO</text>
+  <text x="720" y="105" text-anchor="end" font-size="10" font-weight="600" fill="#2a9d8f">YBCO</text>
+  <text x="720" y="117" text-anchor="end" font-size="9" fill="#6c757d">eta=0.926, Tc=92K</text>
+  <text x="720" y="129" text-anchor="end" font-size="8" fill="#2a9d8f">Spin fluctuation</text>
+
+  <!-- === STATISTICS BOX === -->
+  <rect x="530" y="340" width="210" height="88" rx="6" fill="white" stroke="#264653" stroke-width="2" filter="esh"/>
+  <text x="635" y="363" text-anchor="middle" font-size="14" font-weight="700" fill="#264653">Cross-Family Fit</text>
+  <line x1="545" y1="370" x2="725" y2="370" stroke="#dee2e6" stroke-width="1"/>
+  <text x="555" y="390" font-size="12" fill="#495057">Pearson r =</text>
+  <text x="660" y="390" font-size="14" font-weight="800" fill="#264653">0.996</text>
+  <text x="555" y="410" font-size="12" fill="#495057">p ~</text>
+  <text x="660" y="410" font-size="14" font-weight="800" fill="#e63946">0.004</text>
+  <text x="555" y="425" font-size="10" fill="#6c757d">n = 4 families (3 mechanisms)</text>
+
+  <!-- Mechanism legend (bottom-left) -->
+  <rect x="130" y="488" width="350" height="42" rx="6" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <text x="145" y="505" font-size="10" font-weight="600" fill="#495057">Pairing mechanisms:</text>
+  <circle cx="155" cy="520" r="5" fill="#e63946"/>
+  <text x="167" y="524" font-size="9" fill="#495057">Phonon (BCS)</text>
+  <circle cx="270" cy="520" r="5" fill="#f4a261"/>
+  <text x="282" y="524" font-size="9" fill="#495057">Two-gap phonon</text>
+  <circle cx="400" cy="520" r="5" fill="#2a9d8f"/>
+  <text x="412" y="524" font-size="9" fill="#495057">Spin fluctuation</text>
+
+  <!-- Insight box -->
+  <rect x="505" y="488" width="345" height="42" rx="6" fill="white" stroke="#e63946" stroke-width="1.5"/>
+  <text x="677" y="505" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">Key: Same budget formula, different mechanisms</text>
+  <text x="677" y="521" text-anchor="middle" font-size="9" fill="#495057">The framework predicts Tc from HOW the budget is allocated,</text>
+  <text x="677" y="531" text-anchor="middle" font-size="9" fill="#495057">not from interaction strength alone.</text>
+
+  <!-- Paper attribution -->
+  <text x="830" y="538" text-anchor="end" font-size="10" fill="#adb5bd">Paper 9 — Prediction SC-1</text>
+</svg>

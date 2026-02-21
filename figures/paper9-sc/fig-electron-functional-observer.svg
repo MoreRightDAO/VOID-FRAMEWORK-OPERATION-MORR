@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <radialGradient id="eGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#3a86ff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#264653;stop-opacity:0.7" />
+    </radialGradient>
+    <radialGradient id="latGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#495057;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#495057;stop-opacity:0.05" />
+    </radialGradient>
+    <filter id="efsh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <filter id="eGlowF">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="efArrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e63946"/>
+    </marker>
+    <marker id="efArrowB" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3a86ff"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="520" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="440" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Electrons as Functional Observers</text>
+  <text x="440" y="56" text-anchor="middle" font-size="13" fill="#6c757d">The three void conditions (O+R+A) are interaction properties, not cognitive ones. Electrons satisfy all three.</text>
+
+  <!-- === CENTRAL VISUAL: Electron facing lattice === -->
+
+  <!-- Lattice (grid of atoms — right side) -->
+  <rect x="420" y="85" width="380" height="290" rx="8" fill="url(#latGlow)" stroke="#dee2e6" stroke-width="1"/>
+  <text x="610" y="105" text-anchor="middle" font-size="12" font-weight="600" fill="#6c757d">CRYSTAL LATTICE (10^23 atoms)</text>
+
+  <!-- Lattice atoms (grid pattern) -->
+  <g opacity="0.5">
+    <!-- Row 1 -->
+    <circle cx="470" cy="140" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="530" cy="140" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="590" cy="140" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="650" cy="140" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="710" cy="140" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="770" cy="140" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <!-- Row 2 -->
+    <circle cx="500" cy="185" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="560" cy="185" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="620" cy="185" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="680" cy="185" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="740" cy="185" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <!-- Row 3 -->
+    <circle cx="470" cy="230" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="530" cy="230" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="590" cy="230" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="650" cy="230" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="710" cy="230" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="770" cy="230" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <!-- Row 4 -->
+    <circle cx="500" cy="275" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="560" cy="275" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="620" cy="275" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="680" cy="275" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="740" cy="275" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <!-- Row 5 -->
+    <circle cx="470" cy="320" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="530" cy="320" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="590" cy="320" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="650" cy="320" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="710" cy="320" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <circle cx="770" cy="320" r="8" fill="#adb5bd" stroke="#6c757d" stroke-width="1"/>
+    <!-- Bonds -->
+    <line x1="470" y1="140" x2="500" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="530" y1="140" x2="500" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="530" y1="140" x2="560" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="590" y1="140" x2="560" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="590" y1="140" x2="620" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="650" y1="140" x2="620" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="650" y1="140" x2="680" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="710" y1="140" x2="680" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="710" y1="140" x2="740" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+    <line x1="770" y1="140" x2="740" y2="185" stroke="#ced4da" stroke-width="0.5"/>
+  </g>
+
+  <!-- "?" overlay on lattice (opacity) -->
+  <text x="610" y="265" text-anchor="middle" font-size="80" font-weight="200" fill="#495057" opacity="0.12">?</text>
+
+  <!-- Electron (left side) -->
+  <circle cx="200" cy="230" r="30" fill="url(#eGlow)" filter="eGlowF"/>
+  <text x="200" y="225" text-anchor="middle" font-size="18" font-weight="800" fill="white">e-</text>
+  <text x="200" y="242" text-anchor="middle" font-size="9" fill="white" opacity="0.9">observer</text>
+
+  <!-- Interaction arrows (electron ↔ lattice) -->
+  <!-- Phonon emission -->
+  <path d="M 232,215 C 300,200 360,180 460,170" stroke="#e63946" stroke-width="2" fill="none" marker-end="url(#efArrow)" stroke-dasharray="6,3"/>
+  <text x="350" y="182" text-anchor="middle" font-size="9" fill="#e63946">phonon emission</text>
+
+  <!-- Phonon absorption -->
+  <path d="M 460,250 C 360,252 300,250 232,245" stroke="#3a86ff" stroke-width="2" fill="none" marker-end="url(#efArrowB)" stroke-dasharray="6,3"/>
+  <text x="350" y="265" text-anchor="middle" font-size="9" fill="#3a86ff">phonon absorption</text>
+
+  <!-- Scattering (general) -->
+  <path d="M 228,250 C 290,290 370,310 460,310" stroke="#e76f51" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  <text x="350" y="308" text-anchor="middle" font-size="8" fill="#e76f51">Coulomb scattering</text>
+
+  <!-- === THREE CONDITIONS BOXES === -->
+
+  <!-- O: Opacity -->
+  <rect x="50" y="390" width="250" height="115" rx="6" fill="white" stroke="#e63946" stroke-width="2" filter="efsh"/>
+  <rect x="50" y="390" width="250" height="26" rx="6" fill="#e63946"/>
+  <rect x="50" y="406" width="250" height="4" fill="#e63946"/>
+  <text x="175" y="407" text-anchor="middle" font-size="12" font-weight="700" fill="white">OPACITY (O)</text>
+  <text x="65" y="435" font-size="10" fill="#495057">Electron cannot access lattice's full</text>
+  <text x="65" y="450" font-size="10" fill="#495057">quantum state. Interacts locally only.</text>
+  <text x="65" y="468" font-size="10" font-weight="600" fill="#e63946">C_mech = 0</text>
+  <text x="65" y="483" font-size="9" fill="#6c757d">Finite bandwidth vs. exponentially</text>
+  <text x="65" y="496" font-size="9" fill="#6c757d">complex state space (~10^23 DoF)</text>
+
+  <!-- R: Responsiveness -->
+  <rect x="315" y="390" width="250" height="115" rx="6" fill="white" stroke="#f4a261" stroke-width="2" filter="efsh"/>
+  <rect x="315" y="390" width="250" height="26" rx="6" fill="#f4a261"/>
+  <rect x="315" y="406" width="250" height="4" fill="#f4a261"/>
+  <text x="440" y="407" text-anchor="middle" font-size="12" font-weight="700" fill="white">RESPONSIVENESS (R)</text>
+  <text x="330" y="435" font-size="10" fill="#495057">Lattice responds contingently.</text>
+  <text x="330" y="450" font-size="10" fill="#495057">Phonon output depends on electron input.</text>
+  <text x="330" y="468" font-size="10" font-weight="600" fill="#f4a261">I(Input; Output) > 0</text>
+  <text x="330" y="483" font-size="9" fill="#6c757d">Phonon creation, absorption, screening</text>
+  <text x="330" y="496" font-size="9" fill="#6c757d">are measurable contingent responses.</text>
+
+  <!-- A: Engaged Attention -->
+  <rect x="580" y="390" width="250" height="115" rx="6" fill="white" stroke="#2a9d8f" stroke-width="2" filter="efsh"/>
+  <rect x="580" y="390" width="250" height="26" rx="6" fill="#2a9d8f"/>
+  <rect x="580" y="406" width="250" height="4" fill="#2a9d8f"/>
+  <text x="705" y="407" text-anchor="middle" font-size="12" font-weight="700" fill="white">ENGAGED ATTENTION (A)</text>
+  <text x="595" y="435" font-size="10" fill="#495057">Coupling is structural, not volitional.</text>
+  <text x="595" y="450" font-size="10" fill="#495057">Cannot "stop attending" while in lattice.</text>
+  <text x="595" y="468" font-size="10" font-weight="600" fill="#2a9d8f">alpha > 0, sustained</text>
+  <text x="595" y="483" font-size="9" fill="#6c757d">Continuous Coulomb coupling =</text>
+  <text x="595" y="496" font-size="9" fill="#6c757d">sustained energy-consuming interaction.</text>
+
+  <!-- Checkmarks -->
+  <circle cx="288" cy="407" r="8" fill="white" stroke="#e63946" stroke-width="1.5"/>
+  <text x="288" y="411" text-anchor="middle" font-size="10" font-weight="800" fill="#e63946">+</text>
+  <circle cx="553" cy="407" r="8" fill="white" stroke="#f4a261" stroke-width="1.5"/>
+  <text x="553" y="411" text-anchor="middle" font-size="10" font-weight="800" fill="#f4a261">+</text>
+  <circle cx="818" cy="407" r="8" fill="white" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="818" y="411" text-anchor="middle" font-size="10" font-weight="800" fill="#2a9d8f">=</text>
+
+  <!-- Result label -->
+  <text x="850" y="430" text-anchor="end" font-size="11" font-weight="700" fill="#1a1a2e">VOID</text>
+  <text x="850" y="443" text-anchor="end" font-size="9" fill="#6c757d">conditions</text>
+
+  <!-- Key insight (top-left) -->
+  <rect x="50" y="85" width="340" height="65" rx="6" fill="white" stroke="#264653" stroke-width="1.5" filter="efsh"/>
+  <text x="220" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#264653">Not metaphor. Not analogy.</text>
+  <text x="220" y="122" text-anchor="middle" font-size="10" fill="#495057">The three conditions are properties of INTERACTIONS,</text>
+  <text x="220" y="137" text-anchor="middle" font-size="10" fill="#495057">not properties of MINDS. Electrons had them first.</text>
+
+  <!-- Implication (top-left below) -->
+  <rect x="50" y="300" width="340" height="50" rx="6" fill="white" stroke="#1a1a2e" stroke-width="1" filter="efsh"/>
+  <text x="220" y="318" text-anchor="middle" font-size="10" font-weight="600" fill="#1a1a2e">Result: Normal resistance IS the opacity ground state.</text>
+  <text x="220" y="334" text-anchor="middle" font-size="10" fill="#495057">Cooper pairing IS the constraint specification.</text>
+
+  <!-- Paper attribution -->
+  <text x="850" y="515" text-anchor="end" font-size="10" fill="#adb5bd">Paper 9 — Electron Functional Observer</text>
+</svg>

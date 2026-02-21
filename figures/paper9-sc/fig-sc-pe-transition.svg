@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="scGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.15" />
+      <stop offset="50%" style="stop-color:#f4a261;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.15" />
+    </linearGradient>
+    <linearGradient id="scPhase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:0.2" />
+    </linearGradient>
+    <linearGradient id="norPhase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.2" />
+    </linearGradient>
+    <filter id="psh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="pArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="520" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="440" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Superconducting Transition as Pe Phase Change</text>
+  <text x="440" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Below Tc: coherent channel dominates (Pe ~ 0). Above Tc: dissipation dominates (Pe > 1). Tc IS the critical Pe.</text>
+
+  <!-- === MAIN CHART === -->
+  <!-- Chart area: x=120..780, y=90..400 -->
+
+  <!-- Background gradient -->
+  <rect x="120" y="90" width="660" height="310" rx="4" fill="url(#scGrad)"/>
+
+  <!-- SC region highlight -->
+  <rect x="120" y="90" width="280" height="310" rx="4" fill="url(#scPhase)" opacity="0.3"/>
+  <text x="260" y="115" text-anchor="middle" font-size="14" font-weight="700" fill="#2a9d8f">SUPERCONDUCTING</text>
+  <text x="260" y="130" text-anchor="middle" font-size="10" fill="#2a9d8f">I(M;Y) >> 0</text>
+
+  <!-- Normal region highlight -->
+  <rect x="500" y="90" width="280" height="310" rx="4" fill="url(#norPhase)" opacity="0.2"/>
+  <text x="640" y="115" text-anchor="middle" font-size="14" font-weight="700" fill="#e63946">NORMAL STATE</text>
+  <text x="640" y="130" text-anchor="middle" font-size="10" fill="#e63946">I(M;Y) ~ 0</text>
+
+  <!-- Tc vertical line -->
+  <line x1="400" y1="85" x2="400" y2="405" stroke="#1a1a2e" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <text x="400" y="80" text-anchor="middle" font-size="14" font-weight="800" fill="#1a1a2e">Tc</text>
+
+  <!-- Axes -->
+  <line x1="120" y1="400" x2="795" y2="400" stroke="#495057" stroke-width="2" marker-end="url(#pArrow)"/>
+  <line x1="120" y1="400" x2="120" y2="78" stroke="#495057" stroke-width="2" marker-end="url(#pArrow)"/>
+  <text x="450" y="440" text-anchor="middle" font-size="13" font-weight="600" fill="#495057">Temperature (T)</text>
+  <text x="65" y="245" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(-90,65,245)">Channel Capacity / Pe</text>
+
+  <!-- === Pe curve: flat near 0 below Tc, jumps above Tc === -->
+  <path d="M 130,390 L 350,388 Q 380,385 395,350 Q 400,280 405,230 Q 420,200 500,185 Q 600,175 780,170"
+        stroke="#e63946" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="680" y="162" font-size="12" font-weight="700" fill="#e63946">Pe (dissipation)</text>
+
+  <!-- === I(M;Y) curve: high below Tc, drops to 0 at Tc === -->
+  <path d="M 130,150 L 300,155 Q 360,160 385,200 Q 395,280 400,350 Q 405,388 410,392 L 780,395"
+        stroke="#2a9d8f" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="200" y="142" font-size="12" font-weight="700" fill="#2a9d8f">I(M;Y) (coherence)</text>
+
+  <!-- Pe = 1 threshold line -->
+  <line x1="120" y1="280" x2="780" y2="280" stroke="#495057" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <text x="125" y="275" font-size="10" fill="#495057">Pe = 1</text>
+
+  <!-- Crossover point annotation -->
+  <circle cx="400" cy="280" r="8" fill="white" stroke="#1a1a2e" stroke-width="2"/>
+  <text x="400" y="284" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1a2e">x</text>
+
+  <!-- === CHANNEL BUDGET DIAGRAMS (small, below chart) === -->
+
+  <!-- Below Tc budget -->
+  <rect x="130" y="452" width="250" height="55" rx="6" fill="white" stroke="#2a9d8f" stroke-width="1.5" filter="psh"/>
+  <text x="255" y="470" text-anchor="middle" font-size="11" font-weight="700" fill="#2a9d8f">T &lt; Tc: Budget Allocation</text>
+
+  <!-- Mini stacked bar -->
+  <rect x="145" y="480" width="35" height="16" rx="2" fill="#e63946" opacity="0.4"/>
+  <text x="162" y="492" text-anchor="middle" font-size="7" fill="white" font-weight="600">D1</text>
+  <rect x="182" y="480" width="20" height="16" rx="2" fill="#e76f51" opacity="0.4"/>
+  <text x="192" y="492" text-anchor="middle" font-size="7" fill="white" font-weight="600">D2</text>
+  <rect x="204" y="480" width="160" height="16" rx="2" fill="#2a9d8f"/>
+  <text x="284" y="492" text-anchor="middle" font-size="8" fill="white" font-weight="700">M (coherent channel dominant)</text>
+
+  <!-- Above Tc budget -->
+  <rect x="500" y="452" width="250" height="55" rx="6" fill="white" stroke="#e63946" stroke-width="1.5" filter="psh"/>
+  <text x="625" y="470" text-anchor="middle" font-size="11" font-weight="700" fill="#e63946">T &gt; Tc: Budget Allocation</text>
+
+  <!-- Mini stacked bar -->
+  <rect x="515" y="480" width="100" height="16" rx="2" fill="#e63946"/>
+  <text x="565" y="492" text-anchor="middle" font-size="8" fill="white" font-weight="700">D1 (e-e scatter)</text>
+  <rect x="617" y="480" width="100" height="16" rx="2" fill="#e76f51"/>
+  <text x="667" y="492" text-anchor="middle" font-size="8" fill="white" font-weight="700">D2 (e-lattice)</text>
+  <rect x="719" y="480" width="15" height="16" rx="2" fill="#2a9d8f" opacity="0.3"/>
+
+  <!-- Prediction box -->
+  <rect x="780" y="90" width="2" height="310" rx="0" fill="none"/>
+
+  <!-- Cross-substrate insight -->
+  <rect x="780" y="250" width="90" height="150" rx="6" fill="white" stroke="#264653" stroke-width="1.5" filter="psh"/>
+  <text x="825" y="270" text-anchor="middle" font-size="9" font-weight="700" fill="#264653">SC-3</text>
+  <line x1="790" y1="276" x2="860" y2="276" stroke="#dee2e6" stroke-width="1"/>
+  <text x="825" y="293" text-anchor="middle" font-size="8" fill="#495057">Pe > 1 at Tc</text>
+  <text x="825" y="306" text-anchor="middle" font-size="8" fill="#495057">predicted</text>
+  <text x="825" y="319" text-anchor="middle" font-size="8" fill="#495057">from budget</text>
+  <line x1="790" y1="328" x2="860" y2="328" stroke="#dee2e6" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="825" y="345" text-anchor="middle" font-size="8" fill="#495057">If confirmed:</text>
+  <text x="825" y="360" text-anchor="middle" font-size="8" font-weight="600" fill="#264653">Cross-</text>
+  <text x="825" y="373" text-anchor="middle" font-size="8" font-weight="600" fill="#264653">substrate</text>
+  <text x="825" y="386" text-anchor="middle" font-size="8" font-weight="600" fill="#264653">Pe = validated</text>
+
+  <!-- Paper attribution -->
+  <text x="850" y="518" text-anchor="end" font-size="10" fill="#adb5bd">Paper 9 — SC-3 Prediction</text>
+</svg>

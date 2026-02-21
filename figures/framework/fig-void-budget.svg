@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="betaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4845f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gammaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#52b788;stop-opacity:1" />
+    </linearGradient>
+    <filter id="budgSh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="480" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="410" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">The Void Budget</text>
+  <text x="410" y="60" text-anchor="middle" font-size="13" fill="#6c757d">Engagement and constraint maintenance are conjugate: they compete for the same capacity.</text>
+
+  <!-- Conjugacy equation -->
+  <rect x="250" y="78" width="320" height="36" rx="6" fill="white" stroke="#dee2e6" stroke-width="1.5" filter="budgSh"/>
+  <text x="410" y="101" text-anchor="middle" font-size="15" font-weight="600" fill="#1a1a2e">I(D;Y) + I(M;Y) &lt;= H(Y)</text>
+
+  <!-- Main seesaw diagram -->
+  <!-- Fulcrum -->
+  <polygon points="410,320 390,360 430,360" fill="#495057"/>
+  <text x="410" y="380" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">H(Y)</text>
+  <text x="410" y="395" text-anchor="middle" font-size="10" fill="#6c757d">Total channel capacity</text>
+
+  <!-- ===== SCENARIO 1: Balanced ===== -->
+  <!-- Beam (level) -->
+  <line x1="180" y1="310" x2="640" y2="310" stroke="#495057" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Beta side (left) -->
+  <rect x="195" y="260" width="180" height="50" rx="6" fill="url(#betaGrad)" opacity="0.85"/>
+  <text x="285" y="282" text-anchor="middle" font-size="14" font-weight="700" fill="white">beta (engagement)</text>
+  <text x="285" y="298" text-anchor="middle" font-size="10" fill="white" opacity="0.9">I(D;Y) — void engagement</text>
+
+  <!-- Gamma side (right) -->
+  <rect x="445" y="260" width="180" height="50" rx="6" fill="url(#gammaGrad)" opacity="0.85"/>
+  <text x="535" y="282" text-anchor="middle" font-size="14" font-weight="700" fill="white">gamma (constraint)</text>
+  <text x="535" y="298" text-anchor="middle" font-size="10" fill="white" opacity="0.9">I(M;Y) — transparency</text>
+
+  <!-- Three scenarios below -->
+  <!-- Scenario A: beta dominates -->
+  <rect x="40" y="415" width="230" height="50" rx="6" fill="white" stroke="#e63946" stroke-width="1.5" filter="budgSh"/>
+  <rect x="55" y="428" width="140" height="10" rx="3" fill="url(#betaGrad)"/>
+  <rect x="195" y="428" width="60" height="10" rx="3" fill="url(#gammaGrad)"/>
+  <text x="155" y="455" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">High engagement, low constraint</text>
+
+  <!-- Scenario B: balanced -->
+  <rect x="295" y="415" width="230" height="50" rx="6" fill="white" stroke="#495057" stroke-width="1.5" filter="budgSh"/>
+  <rect x="310" y="428" width="100" height="10" rx="3" fill="url(#betaGrad)"/>
+  <rect x="410" y="428" width="100" height="10" rx="3" fill="url(#gammaGrad)"/>
+  <text x="410" y="455" text-anchor="middle" font-size="11" font-weight="600" fill="#495057">Balanced allocation</text>
+
+  <!-- Scenario C: gamma dominates -->
+  <rect x="550" y="415" width="230" height="50" rx="6" fill="white" stroke="#2a9d8f" stroke-width="1.5" filter="budgSh"/>
+  <rect x="565" y="428" width="50" height="10" rx="3" fill="url(#betaGrad)"/>
+  <rect x="615" y="428" width="150" height="10" rx="3" fill="url(#gammaGrad)"/>
+  <text x="665" y="455" text-anchor="middle" font-size="11" font-weight="600" fill="#2a9d8f">High constraint, low engagement</text>
+
+  <!-- Annotations for each scenario -->
+  <!-- Left annotation -->
+  <rect x="40" y="138" width="200" height="100" rx="6" fill="white" stroke="#e63946" stroke-width="1.5" filter="budgSh"/>
+  <text x="140" y="158" text-anchor="middle" font-size="12" font-weight="700" fill="#e63946">beta dominant</text>
+  <text x="140" y="176" text-anchor="middle" font-size="10" fill="#495057">Attention consumed by void.</text>
+  <text x="140" y="191" text-anchor="middle" font-size="10" fill="#495057">No capacity for constraint.</text>
+  <text x="140" y="206" text-anchor="middle" font-size="10" fill="#495057">Drift cascade proceeds.</text>
+  <text x="140" y="225" text-anchor="middle" font-size="10" fill="#6c757d" font-style="italic">Gambling, doomscrolling, cults</text>
+
+  <!-- Right annotation -->
+  <rect x="580" y="138" width="210" height="100" rx="6" fill="white" stroke="#2a9d8f" stroke-width="1.5" filter="budgSh"/>
+  <text x="685" y="158" text-anchor="middle" font-size="12" font-weight="700" fill="#2a9d8f">gamma dominant</text>
+  <text x="685" y="176" text-anchor="middle" font-size="10" fill="#495057">Constraint reference maintained.</text>
+  <text x="685" y="191" text-anchor="middle" font-size="10" fill="#495057">Void engagement limited.</text>
+  <text x="685" y="206" text-anchor="middle" font-size="10" fill="#495057">Drift suppressed (Pe &lt; 1).</text>
+  <text x="685" y="225" text-anchor="middle" font-size="10" fill="#6c757d" font-style="italic">Grounded agents, MRI, peer review</text>
+
+  <!-- Center annotation -->
+  <rect x="310" y="138" width="200" height="100" rx="6" fill="white" stroke="#f4a261" stroke-width="1.5" filter="budgSh"/>
+  <text x="410" y="158" text-anchor="middle" font-size="12" font-weight="700" fill="#f4a261">Transition zone</text>
+  <text x="410" y="176" text-anchor="middle" font-size="10" fill="#495057">Pe near 1. Outcome depends</text>
+  <text x="410" y="191" text-anchor="middle" font-size="10" fill="#495057">on which allocation wins.</text>
+  <text x="410" y="206" text-anchor="middle" font-size="10" fill="#495057">Small changes tip the balance.</text>
+  <text x="410" y="225" text-anchor="middle" font-size="10" fill="#6c757d" font-style="italic">Therapy, supervised AI, education</text>
+
+  <!-- Paper attribution -->
+  <text x="790" y="475" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Papers 1, 3</text>
+</svg>

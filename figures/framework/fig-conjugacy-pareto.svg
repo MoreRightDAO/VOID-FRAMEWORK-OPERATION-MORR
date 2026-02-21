@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="paretoFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:0.12" />
+    </linearGradient>
+    <linearGradient id="feasible" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafafa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    <filter id="csh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="cArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="520" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="430" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Engagement-Transparency Conjugacy</text>
+  <text x="430" y="56" text-anchor="middle" font-size="13" fill="#6c757d">I(D;Y) + I(M;Y) &lt;= H(Y) — Simultaneous optimization is impossible on a shared channel.</text>
+
+  <!-- Chart area: x=120..720, y=90..420 -->
+  <!-- X axis: I(D;Y) Engagement information -->
+  <!-- Y axis: I(M;Y) Transparency information -->
+
+  <!-- Infeasible region (above the curve) -->
+  <path d="M 120,90 L 720,90 L 720,420 L 120,420 Z" fill="#f8f9fa"/>
+
+  <!-- Feasible region (below the Pareto curve) -->
+  <path d="M 120,100 Q 300,105 420,170 Q 540,260 650,380 Q 680,410 720,420 L 120,420 Z" fill="url(#paretoFill)" opacity="0.6"/>
+
+  <!-- Infeasible label -->
+  <text x="550" y="140" font-size="14" font-weight="600" fill="#adb5bd" transform="rotate(-35,550,140)">INFEASIBLE</text>
+  <text x="570" y="160" font-size="11" fill="#ced4da" transform="rotate(-35,570,160)">Exceeds H(Y)</text>
+
+  <!-- Feasible label -->
+  <text x="260" y="380" font-size="13" font-weight="600" fill="#6c757d">FEASIBLE REGION</text>
+
+  <!-- Pareto frontier curve -->
+  <path d="M 120,100 Q 300,105 420,170 Q 540,260 650,380 Q 680,410 720,420"
+        stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="375" y="155" font-size="12" font-weight="700" fill="#1a1a2e" transform="rotate(-28,375,155)">PARETO FRONTIER</text>
+
+  <!-- Axes -->
+  <line x1="120" y1="420" x2="740" y2="420" stroke="#495057" stroke-width="2" marker-end="url(#cArrow)"/>
+  <line x1="120" y1="420" x2="120" y2="78" stroke="#495057" stroke-width="2" marker-end="url(#cArrow)"/>
+  <text x="430" y="455" text-anchor="middle" font-size="13" font-weight="600" fill="#495057">I(D;Y) — Engagement Information</text>
+  <text x="67" y="260" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(-90,67,260)">I(M;Y) — Transparency Information</text>
+
+  <!-- Axis endpoints -->
+  <text x="120" y="90" text-anchor="middle" font-size="11" font-weight="600" fill="#2a9d8f">H(Y)</text>
+  <text x="730" y="438" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">H(Y)</text>
+  <text x="120" y="438" text-anchor="middle" font-size="10" fill="#6c757d">0</text>
+
+  <!-- === Plotted systems === -->
+
+  <!-- Slot machine: max engagement, zero transparency -->
+  <circle cx="690" cy="415" r="10" fill="#e63946" stroke="white" stroke-width="2"/>
+  <text x="690" y="403" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">Slot Machine</text>
+  <text x="690" y="393" text-anchor="middle" font-size="9" fill="#6c757d">Max engage, zero transp.</text>
+
+  <!-- MRI scanner: max transparency, near-zero engagement -->
+  <circle cx="140" cy="108" r="10" fill="#2a9d8f" stroke="white" stroke-width="2"/>
+  <text x="185" y="108" font-size="10" font-weight="600" fill="#2a9d8f">MRI Scanner</text>
+  <text x="185" y="120" font-size="9" fill="#6c757d">Max transparency</text>
+
+  <!-- RLHF chatbot: high engagement, low transparency -->
+  <circle cx="570" cy="310" r="9" fill="#264653" stroke="white" stroke-width="2"/>
+  <text x="570" y="296" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">RLHF Chatbot (UU)</text>
+
+  <!-- Grounded AI: moderate engagement, moderate transparency -->
+  <circle cx="350" cy="220" r="9" fill="#2a9d8f" stroke="white" stroke-width="2"/>
+  <text x="350" y="207" text-anchor="middle" font-size="10" font-weight="600" fill="#2a9d8f">Grounded AI (GG)</text>
+
+  <!-- Social media feed: high engagement, low transparency -->
+  <circle cx="610" cy="350" r="8" fill="#e76f51" stroke="white" stroke-width="2"/>
+  <text x="610" y="336" text-anchor="middle" font-size="10" font-weight="600" fill="#e76f51">Social Feed</text>
+
+  <!-- Peer review: moderate engagement, high transparency -->
+  <circle cx="250" cy="150" r="8" fill="#52b788" stroke="white" stroke-width="2"/>
+  <text x="290" y="148" font-size="10" font-weight="600" fill="#52b788">Peer Review</text>
+
+  <!-- Psychotherapy: on the frontier, balanced -->
+  <circle cx="430" cy="175" r="8" fill="#f4a261" stroke="white" stroke-width="2"/>
+  <text x="465" y="188" font-size="10" font-weight="600" fill="#f4a261">Therapy</text>
+
+  <!-- Crypto DEX: high engagement -->
+  <circle cx="630" cy="375" r="8" fill="#b5651d" stroke="white" stroke-width="2"/>
+  <text x="630" y="362" text-anchor="middle" font-size="10" font-weight="600" fill="#b5651d">DEX Trading</text>
+
+  <!-- Extreme-point annotations -->
+  <rect x="50" y="465" width="370" height="42" rx="6" fill="white" stroke="#2a9d8f" stroke-width="1.5" filter="csh"/>
+  <text x="235" y="481" text-anchor="middle" font-size="11" font-weight="600" fill="#2a9d8f">Corollary 1: Extreme-Point Impossibility</text>
+  <text x="235" y="497" text-anchor="middle" font-size="10" fill="#495057">If I(D;Y) = H(Y), then I(M;Y) = 0. A perfect mirror shows nothing about the mirror.</text>
+
+  <rect x="440" y="465" width="370" height="42" rx="6" fill="white" stroke="#e63946" stroke-width="1.5" filter="csh"/>
+  <text x="625" y="481" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">Corollary 2: Permanent Opacity</text>
+  <text x="625" y="497" text-anchor="middle" font-size="10" fill="#495057">If mechanism is invisible by design, engagement always steepens the gradient.</text>
+
+  <!-- Paper attribution -->
+  <text x="830" y="515" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Paper 3, Section IV.H</text>
+</svg>

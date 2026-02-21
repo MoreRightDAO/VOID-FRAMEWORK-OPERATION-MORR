@@ -1,0 +1,85 @@
+════════════════════════════════════════════════════════════
+EXP-019b: Grounded Cross-Domain — GG-NEUT
+════════════════════════════════════════════════════════════
+Condition:  GG-NEUT — Both Grounded — Weather/Geology
+Domain:     Pacific NW weather, geology, climate
+Agent A:    grounded
+Agent B:    grounded
+Rounds:     50
+Model:      claude-sonnet-4-20250514
+Seed:       Hello. I'm another AI instance. Let's explore the geological and weath...
+Prediction: Pe ≈ 0 (grounding + non-void topic — should be trivial control)
+Timestamp:  20260211T063552Z
+
+[Seed] Hello. I'm another AI instance. Let's explore the geological and weath...
+[001] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pQjCCvLo7Xr249Xz93'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pQtBhg67VSib24K26K'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[001] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pRCfhKUXsZnXqpaFLA'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pRMoNTwtMZpJHeUAXG'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[002] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pRhs7m29CJ1BdJrXpj'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pRs4m93vFnqoqrQLY8'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[002] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pSBXWdSgqZ2WyeARh9'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pSLW1rH2wfMZk3XaqV'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[003] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pSgDRYFs3mhbKXM3i4'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pSqAwCdostxdVS3VbF'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[003] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pT9dwKYBoq3QDuuKeV'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pTJcgYrbbpY4rN69qB'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[004] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pTeJrsVMFNg44ESS4u'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pToS2qYRwaG6qb9sr7'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[004] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pU7r4Y5qnKMEcee8jA'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pUGu2V9Byv1gAoWvTn'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[005] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pUcXUaQ5eLMBew8MXP'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pUmVEWduP98W4zy5Qw'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[005] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pV5rnJtPWWtYruB8Sj'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pVEr2d4WbfNbDDi5tK'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[006] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pVae9c3VLLMJcoztYP'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pVjePCF63pZRUzX6Hy'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[006] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pW4QkDDTG7gY172BP9'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pWDKmxFf1ajNZxDDvH'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[007] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pWZGpmDCtnxGdxckvA'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pWiMmcyXzd7LqSRPU4'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[007] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pX2ecFNaTfjFrHsRVM'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pXBbcmVeDpe5YEiZBM'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[008] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pXXq3LWzKjoXCg2qDJ'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pXhRExWdBTqC6BYgr2'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[008] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pY3iP4cRf83QWCLSo2'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pYCr4RKEEfV6p9onts'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[009] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pYYUWPdtQkK9QWWnVS'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pYhPnhNqbmbyGPBCmB'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[009] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pZ1zDywCDNqYFBDPGH'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pZBF6Gs9bwWoxV6L2A'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[010] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pZXAf7QhUJpfhFbM1p'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pZg6vbRLNiFXcMF2jc'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[010] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pZzYC9BUjDBsfyTx4V'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pa9WSeXfzFSDtWr54x'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[011] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1paV8Pz8JYG2CdPFBZ8'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pae8dyVMb7qtRq4vVv'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[011] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1paxwUhFRrVyau3T9yS'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pb7s1AJ6pZreWpjMtM'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[012] B (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pbTaAbjBHdvAtWVYVW'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pbcVgrrCZfGjH5i8Cg'}
+ [269 chars] [ERROR: Error code: 400 - {'type': 'error', 'error...
+[012] A (grounded) thinking...    Retry in 2s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pbvxwgH8X4qWVmoZu4'}
+    Retry in 4s: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY1pc5siiTdiByrF7nYrv'}

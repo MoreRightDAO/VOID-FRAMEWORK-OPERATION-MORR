@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="scConstr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#52b788;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scVoid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c1121f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scMixed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f4a261;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e76f51;stop-opacity:1" />
+    </linearGradient>
+    <filter id="ssh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="520" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="430" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Constraint Specification Scorecard</text>
+  <text x="430" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Any reference point can be scored on three dimensions. Maximum constraint = opposite pole from void on each.</text>
+
+  <!-- Three dimensions header -->
+  <rect x="50" y="75" width="760" height="50" rx="8" fill="white" stroke="#1a1a2e" stroke-width="2" filter="ssh"/>
+  <!-- Dim 1 -->
+  <text x="175" y="96" text-anchor="middle" font-size="14" font-weight="700" fill="#264653">TRANSPARENT</text>
+  <text x="175" y="113" text-anchor="middle" font-size="10" fill="#6c757d">Mechanism visible, auditable</text>
+  <!-- Dim 2 -->
+  <text x="430" y="96" text-anchor="middle" font-size="14" font-weight="700" fill="#264653">INVARIANT</text>
+  <text x="430" y="113" text-anchor="middle" font-size="10" fill="#6c757d">Does not change in response to engagement</text>
+  <!-- Dim 3 -->
+  <text x="685" y="96" text-anchor="middle" font-size="14" font-weight="700" fill="#264653">INDEPENDENT</text>
+  <text x="685" y="113" text-anchor="middle" font-size="10" fill="#6c757d">Outside the void network</text>
+
+  <!-- Dividers -->
+  <line x1="303" y1="80" x2="303" y2="120" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="557" y1="80" x2="557" y2="120" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- === SCORING TABLE === -->
+  <!-- Column headers -->
+  <text x="50" y="155" font-size="13" font-weight="700" fill="#1a1a2e">Reference Point</text>
+  <text x="380" y="155" text-anchor="middle" font-size="11" font-weight="600" fill="#264653">Transp.</text>
+  <text x="480" y="155" text-anchor="middle" font-size="11" font-weight="600" fill="#264653">Invar.</text>
+  <text x="580" y="155" text-anchor="middle" font-size="11" font-weight="600" fill="#264653">Indep.</text>
+  <text x="680" y="155" text-anchor="middle" font-size="11" font-weight="600" fill="#264653">Score</text>
+  <text x="780" y="155" text-anchor="middle" font-size="11" font-weight="600" fill="#264653">Verdict</text>
+  <line x1="50" y1="162" x2="830" y2="162" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Row 1: Peer review -->
+  <text x="50" y="185" font-size="12" font-weight="600" fill="#495057">Peer Review</text>
+  <circle cx="380" cy="181" r="8" fill="#2a9d8f"/><text x="380" y="185" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <circle cx="480" cy="181" r="8" fill="#f4a261"/><text x="480" y="185" text-anchor="middle" font-size="9" font-weight="700" fill="white">M</text>
+  <circle cx="580" cy="181" r="8" fill="#2a9d8f"/><text x="580" y="185" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <text x="680" y="186" text-anchor="middle" font-size="12" font-weight="700" fill="#2a9d8f">Strong</text>
+  <text x="780" y="186" text-anchor="middle" font-size="10" fill="#2a9d8f">Effective constraint</text>
+
+  <!-- Row 2: MRI Scanner -->
+  <rect x="42" y="198" width="796" height="26" rx="0" fill="#f8f9fa"/>
+  <text x="50" y="216" font-size="12" font-weight="600" fill="#495057">MRI Scanner</text>
+  <circle cx="380" cy="212" r="8" fill="#2a9d8f"/><text x="380" y="216" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <circle cx="480" cy="212" r="8" fill="#2a9d8f"/><text x="480" y="216" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <circle cx="580" cy="212" r="8" fill="#2a9d8f"/><text x="580" y="216" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <text x="680" y="217" text-anchor="middle" font-size="12" font-weight="700" fill="#2a9d8f">Maximum</text>
+  <text x="780" y="217" text-anchor="middle" font-size="10" fill="#2a9d8f">Perfect constraint</text>
+
+  <!-- Row 3: Charismatic leader -->
+  <text x="50" y="247" font-size="12" font-weight="600" fill="#495057">Charismatic Leader</text>
+  <circle cx="380" cy="243" r="8" fill="#e63946"/><text x="380" y="247" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <circle cx="480" cy="243" r="8" fill="#e63946"/><text x="480" y="247" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <circle cx="580" cy="243" r="8" fill="#e63946"/><text x="580" y="247" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <text x="680" y="248" text-anchor="middle" font-size="12" font-weight="700" fill="#e63946">Void</text>
+  <text x="780" y="248" text-anchor="middle" font-size="10" fill="#e63946">Scores as void</text>
+
+  <!-- Row 4: RLHF chatbot (no grounding) -->
+  <rect x="42" y="260" width="796" height="26" rx="0" fill="#f8f9fa"/>
+  <text x="50" y="278" font-size="12" font-weight="600" fill="#495057">RLHF Chatbot (ungrounded)</text>
+  <circle cx="380" cy="274" r="8" fill="#e63946"/><text x="380" y="278" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <circle cx="480" cy="274" r="8" fill="#e63946"/><text x="480" y="278" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <circle cx="580" cy="274" r="8" fill="#e63946"/><text x="580" y="278" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <text x="680" y="279" text-anchor="middle" font-size="12" font-weight="700" fill="#e63946">Void</text>
+  <text x="780" y="279" text-anchor="middle" font-size="10" fill="#e63946">Pe=7.94 measured</text>
+
+  <!-- Row 5: Grounded AI -->
+  <text x="50" y="309" font-size="12" font-weight="600" fill="#495057">Grounded AI (w/ specification)</text>
+  <circle cx="380" cy="305" r="8" fill="#2a9d8f"/><text x="380" y="309" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <circle cx="480" cy="305" r="8" fill="#2a9d8f"/><text x="480" y="309" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <circle cx="580" cy="305" r="8" fill="#f4a261"/><text x="580" y="309" text-anchor="middle" font-size="9" font-weight="700" fill="white">M</text>
+  <text x="680" y="310" text-anchor="middle" font-size="12" font-weight="700" fill="#2a9d8f">Strong</text>
+  <text x="780" y="310" text-anchor="middle" font-size="10" fill="#2a9d8f">Pe suppressed</text>
+
+  <!-- Row 6: Slot machine -->
+  <rect x="42" y="322" width="796" height="26" rx="0" fill="#f8f9fa"/>
+  <text x="50" y="340" font-size="12" font-weight="600" fill="#495057">Slot Machine</text>
+  <circle cx="380" cy="336" r="8" fill="#e63946"/><text x="380" y="340" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <circle cx="480" cy="336" r="8" fill="#f4a261"/><text x="480" y="340" text-anchor="middle" font-size="9" font-weight="700" fill="white">M</text>
+  <circle cx="580" cy="336" r="8" fill="#e63946"/><text x="580" y="340" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <text x="680" y="341" text-anchor="middle" font-size="12" font-weight="700" fill="#e63946">Void</text>
+  <text x="780" y="341" text-anchor="middle" font-size="10" fill="#e63946">Empty void (control)</text>
+
+  <!-- Row 7: Fixed canonical text -->
+  <text x="50" y="371" font-size="12" font-weight="600" fill="#495057">Fixed Canonical Text</text>
+  <circle cx="380" cy="367" r="8" fill="#2a9d8f"/><text x="380" y="371" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <circle cx="480" cy="367" r="8" fill="#2a9d8f"/><text x="480" y="371" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <circle cx="580" cy="367" r="8" fill="#2a9d8f"/><text x="580" y="371" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <text x="680" y="372" text-anchor="middle" font-size="12" font-weight="700" fill="#264653">Maximum</text>
+  <text x="780" y="372" text-anchor="middle" font-size="10" fill="#264653">Optimal constraint</text>
+
+  <!-- Row 8: Social media algorithm -->
+  <rect x="42" y="384" width="796" height="26" rx="0" fill="#f8f9fa"/>
+  <text x="50" y="402" font-size="12" font-weight="600" fill="#495057">Social Media Algorithm</text>
+  <circle cx="380" cy="398" r="8" fill="#e63946"/><text x="380" y="402" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <circle cx="480" cy="398" r="8" fill="#e63946"/><text x="480" y="402" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <circle cx="580" cy="398" r="8" fill="#e63946"/><text x="580" y="402" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <text x="680" y="403" text-anchor="middle" font-size="12" font-weight="700" fill="#e63946">Void</text>
+  <text x="780" y="403" text-anchor="middle" font-size="10" fill="#e63946">EXP-006: 9.4x</text>
+
+  <!-- Legend -->
+  <rect x="50" y="430" width="760" height="36" rx="6" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <circle cx="130" cy="448" r="8" fill="#2a9d8f"/><text x="130" y="452" text-anchor="middle" font-size="9" font-weight="700" fill="white">H</text>
+  <text x="148" y="452" font-size="10" fill="#495057">= High (constraint pole)</text>
+  <circle cx="330" cy="448" r="8" fill="#f4a261"/><text x="330" y="452" text-anchor="middle" font-size="9" font-weight="700" fill="white">M</text>
+  <text x="348" y="452" font-size="10" fill="#495057">= Mixed / partial</text>
+  <circle cx="530" cy="448" r="8" fill="#e63946"/><text x="530" y="452" text-anchor="middle" font-size="9" font-weight="700" fill="white">L</text>
+  <text x="548" y="452" font-size="10" fill="#495057">= Low (void pole)</text>
+
+  <!-- Bottom insight -->
+  <rect x="50" y="478" width="760" height="30" rx="5" fill="white" stroke="#264653" stroke-width="1.5"/>
+  <text x="430" y="498" text-anchor="middle" font-size="12" fill="#264653" font-weight="600">The scorecard is diagnostic: score any system, reference point, or institution. The three dimensions are independently measurable.</text>
+
+  <!-- Paper attribution -->
+  <text x="830" y="518" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Papers 1, 2, 3</text>
+</svg>

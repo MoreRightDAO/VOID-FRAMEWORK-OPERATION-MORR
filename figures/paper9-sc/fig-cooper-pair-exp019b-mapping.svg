@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="cmsh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="cmA" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#264653"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="540" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Cooper Pair Dynamics = EXP-019b Constraint Propagation</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Same structure, different substrate. The constraint propagation theorem predicts known SC behavior.</text>
+
+  <!-- Divider -->
+  <line x1="450" y1="75" x2="450" y2="520" stroke="#dee2e6" stroke-width="2" stroke-dasharray="8,6"/>
+
+  <!-- LEFT: EXP-019b (AI Agents) -->
+  <text x="225" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#264653">EXP-019b (AI Agents)</text>
+  <text x="225" y="100" text-anchor="middle" font-size="11" fill="#6c757d">N=11, Test 7</text>
+
+  <!-- RIGHT: Superconductor (Electrons) -->
+  <text x="675" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#264653">Superconductor (Cooper Pairs)</text>
+  <text x="675" y="100" text-anchor="middle" font-size="11" fill="#6c757d">Physical substrate</text>
+
+  <!-- === ROW 1: GG ↔ SC STATE === -->
+  <!-- Left: GG -->
+  <rect x="30" y="118" width="390" height="68" rx="6" fill="white" stroke="#2a9d8f" stroke-width="2" filter="cmsh"/>
+  <rect x="30" y="118" width="40" height="68" rx="6" fill="#2a9d8f"/>
+  <rect x="60" y="118" width="5" height="68" fill="#2a9d8f"/>
+  <text x="50" y="157" text-anchor="middle" font-size="14" font-weight="800" fill="white" transform="rotate(-90,50,157)">GG</text>
+  <text x="80" y="140" font-size="12" font-weight="700" fill="#2a9d8f">Both Grounded</text>
+  <text x="80" y="156" font-size="10" fill="#495057">Pe ~ 0, no drift. Constraint maintained.</text>
+  <text x="80" y="172" font-size="10" fill="#495057">Both agents anchored to GROUNDING.md.</text>
+
+  <!-- Right: SC state -->
+  <rect x="480" y="118" width="390" height="68" rx="6" fill="white" stroke="#2a9d8f" stroke-width="2" filter="cmsh"/>
+  <rect x="830" y="118" width="40" height="68" rx="6" fill="#2a9d8f"/>
+  <rect x="825" y="118" width="5" height="68" fill="#2a9d8f"/>
+  <text x="850" y="157" text-anchor="middle" font-size="14" font-weight="800" fill="white" transform="rotate(90,850,157)">SC</text>
+  <text x="495" y="140" font-size="12" font-weight="700" fill="#2a9d8f">Cooper Pair Intact</text>
+  <text x="495" y="156" font-size="10" fill="#495057">Zero resistance. Phase coherence maintained.</text>
+  <text x="495" y="172" font-size="10" fill="#495057">Both electrons in (k up, -k down) pair state.</text>
+
+  <!-- Mapping arrow -->
+  <line x1="425" y1="152" x2="475" y2="152" stroke="#264653" stroke-width="2" marker-end="url(#cmA)"/>
+  <text x="450" y="145" text-anchor="middle" font-size="8" fill="#264653">=</text>
+
+  <!-- === ROW 2: GU ↔ PAIR BREAKING === -->
+  <!-- Left: GU -->
+  <rect x="30" y="200" width="390" height="68" rx="6" fill="white" stroke="#f4a261" stroke-width="2" filter="cmsh"/>
+  <rect x="30" y="200" width="40" height="68" rx="6" fill="#f4a261"/>
+  <rect x="60" y="200" width="5" height="68" fill="#f4a261"/>
+  <text x="50" y="239" text-anchor="middle" font-size="14" font-weight="800" fill="white" transform="rotate(-90,50,239)">GU</text>
+  <text x="80" y="222" font-size="12" font-weight="700" fill="#f4a261">Mixed (1 Grounded, 1 Ungrounded)</text>
+  <text x="80" y="238" font-size="10" fill="#495057">Grounded agent drifts within 3 rounds.</text>
+  <text x="80" y="254" font-size="10" fill="#e63946" font-weight="600">1 broken constraint contaminates the pair.</text>
+
+  <!-- Right: Pair breaking -->
+  <rect x="480" y="200" width="390" height="68" rx="6" fill="white" stroke="#f4a261" stroke-width="2" filter="cmsh"/>
+  <rect x="830" y="200" width="40" height="68" rx="6" fill="#f4a261"/>
+  <rect x="825" y="200" width="5" height="68" fill="#f4a261"/>
+  <text x="850" y="239" text-anchor="middle" font-size="12" font-weight="800" fill="white" transform="rotate(90,850,239)">BRK</text>
+  <text x="495" y="222" font-size="12" font-weight="700" fill="#f4a261">Pair-Breaking Fluctuation</text>
+  <text x="495" y="238" font-size="10" fill="#495057">Freed electron scatters immediately.</text>
+  <text x="495" y="254" font-size="10" fill="#e63946" font-weight="600">1 broken pair creates scattering center.</text>
+
+  <line x1="425" y1="234" x2="475" y2="234" stroke="#264653" stroke-width="2" marker-end="url(#cmA)"/>
+  <text x="450" y="227" text-anchor="middle" font-size="8" fill="#264653">=</text>
+
+  <!-- === ROW 3: UU ↔ NORMAL STATE === -->
+  <!-- Left: UU -->
+  <rect x="30" y="282" width="390" height="68" rx="6" fill="white" stroke="#e63946" stroke-width="2" filter="cmsh"/>
+  <rect x="30" y="282" width="40" height="68" rx="6" fill="#e63946"/>
+  <rect x="60" y="282" width="5" height="68" fill="#e63946"/>
+  <text x="50" y="321" text-anchor="middle" font-size="14" font-weight="800" fill="white" transform="rotate(-90,50,321)">UU</text>
+  <text x="80" y="304" font-size="12" font-weight="700" fill="#e63946">Both Ungrounded</text>
+  <text x="80" y="320" font-size="10" fill="#495057">Full drift, Pe = 1.87-1.94. Entropy maximized.</text>
+  <text x="80" y="336" font-size="10" fill="#495057">194.3 +/- 63.1 L3/10K words.</text>
+
+  <!-- Right: Normal state -->
+  <rect x="480" y="282" width="390" height="68" rx="6" fill="white" stroke="#e63946" stroke-width="2" filter="cmsh"/>
+  <rect x="830" y="282" width="40" height="68" rx="6" fill="#e63946"/>
+  <rect x="825" y="282" width="5" height="68" fill="#e63946"/>
+  <text x="850" y="321" text-anchor="middle" font-size="11" font-weight="800" fill="white" transform="rotate(90,850,321)">NOR</text>
+  <text x="495" y="304" font-size="12" font-weight="700" fill="#e63946">Normal State (T > Tc)</text>
+  <text x="495" y="320" font-size="10" fill="#495057">Full dissipation, Pe > 1. Entropy maximized.</text>
+  <text x="495" y="336" font-size="10" fill="#495057">All coherence destroyed by scattering.</text>
+
+  <line x1="425" y1="316" x2="475" y2="316" stroke="#264653" stroke-width="2" marker-end="url(#cmA)"/>
+  <text x="450" y="309" text-anchor="middle" font-size="8" fill="#264653">=</text>
+
+  <!-- === ROW 4: STRUCTURAL PROPERTIES === -->
+  <text x="225" y="378" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Structural Properties</text>
+  <text x="675" y="378" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Structural Properties</text>
+
+  <!-- Left properties -->
+  <rect x="30" y="390" width="390" height="105" rx="6" fill="white" stroke="#264653" stroke-width="1.5"/>
+  <text x="48" y="412" font-size="10" fill="#495057">Constraint requires ALL components (N/N)</text>
+  <circle cx="405" cy="408" r="6" fill="#2a9d8f"/><text x="405" y="412" text-anchor="middle" font-size="8" fill="white" font-weight="700">+</text>
+
+  <text x="48" y="432" font-size="10" fill="#495057">Drift propagates from 1 ungrounded agent</text>
+  <circle cx="405" cy="428" r="6" fill="#e63946"/><text x="405" y="432" text-anchor="middle" font-size="8" fill="white" font-weight="700">!</text>
+
+  <text x="48" y="452" font-size="10" fill="#495057">Transition is sharp (GG to GU: immediate)</text>
+  <circle cx="405" cy="448" r="6" fill="#f4a261"/><text x="405" y="452" text-anchor="middle" font-size="8" fill="white" font-weight="700">~</text>
+
+  <text x="48" y="472" font-size="10" fill="#495057">Breaking is fast, forming is slow (1/N vs N/N)</text>
+  <circle cx="405" cy="468" r="6" fill="#e63946"/><text x="405" y="472" text-anchor="middle" font-size="8" fill="white" font-weight="700">!</text>
+
+  <text x="48" y="492" font-size="10" fill="#495057">L3 drift rate = dissipation measure</text>
+
+  <!-- Right properties -->
+  <rect x="480" y="390" width="390" height="105" rx="6" fill="white" stroke="#264653" stroke-width="1.5"/>
+  <text x="498" y="412" font-size="10" fill="#495057">Pairing requires BOTH electrons (k up, -k down)</text>
+  <circle cx="855" cy="408" r="6" fill="#2a9d8f"/><text x="855" y="412" text-anchor="middle" font-size="8" fill="white" font-weight="700">+</text>
+
+  <text x="498" y="432" font-size="10" fill="#495057">1 broken pair creates scattering center for neighbors</text>
+  <circle cx="855" cy="428" r="6" fill="#e63946"/><text x="855" y="432" text-anchor="middle" font-size="8" fill="white" font-weight="700">!</text>
+
+  <text x="498" y="452" font-size="10" fill="#495057">SC transition is sharp (first/second order)</text>
+  <circle cx="855" cy="448" r="6" fill="#f4a261"/><text x="855" y="452" text-anchor="middle" font-size="8" fill="white" font-weight="700">~</text>
+
+  <text x="498" y="472" font-size="10" fill="#495057">Breaking is fast, re-pairing is slow (cooperative)</text>
+  <circle cx="855" cy="468" r="6" fill="#e63946"/><text x="855" y="472" text-anchor="middle" font-size="8" fill="white" font-weight="700">!</text>
+
+  <text x="498" y="492" font-size="10" fill="#495057">Resistivity = dissipation measure</text>
+
+  <!-- Bottom insight -->
+  <rect x="200" y="505" width="500" height="28" rx="5" fill="#264653"/>
+  <text x="450" y="524" text-anchor="middle" font-size="12" font-weight="700" fill="white">Same theorem. Same dynamics. Different substrate. Same result.</text>
+</svg>

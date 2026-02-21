@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="fwdGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c1121f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="revGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1b7a6e;stop-opacity:1" />
+    </linearGradient>
+    <marker id="irArrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#e63946"/>
+    </marker>
+    <marker id="irArrowR" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#2a9d8f"/>
+    </marker>
+    <filter id="ish">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="500" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="440" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Crooks Fluctuation Theorem: Why Drift Doesn't Reverse</text>
+  <text x="440" y="56" text-anchor="middle" font-size="13" fill="#6c757d">P(forward) / P(reverse) = exp(delta-S). Drift toward the void is thermodynamically favored.</text>
+
+  <!-- Central equation -->
+  <rect x="270" y="72" width="340" height="38" rx="6" fill="white" stroke="#1a1a2e" stroke-width="2" filter="ish"/>
+  <text x="440" y="97" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">P(fwd) / P(rev) = exp(delta-S)</text>
+
+  <!-- === Two-bar comparison (main visual) === -->
+  <!-- Chart area: x=100..780, y=140..380 -->
+
+  <!-- Y axis -->
+  <line x1="100" y1="380" x2="100" y2="130" stroke="#495057" stroke-width="1.5"/>
+  <text x="55" y="260" text-anchor="middle" font-size="12" font-weight="600" fill="#495057" transform="rotate(-90,55,260)">Transition Rate</text>
+
+  <!-- X axis -->
+  <line x1="100" y1="380" x2="780" y2="380" stroke="#495057" stroke-width="1.5"/>
+
+  <!-- === ETH Crooks Data (left half) === -->
+  <text x="290" y="155" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">Ethereum (N = 968 wallets)</text>
+
+  <!-- Forward bar (concentration) -->
+  <rect x="180" y="155" width="90" height="215" rx="4" fill="url(#fwdGrad)" opacity="0.85"/>
+  <text x="225" y="200" text-anchor="middle" font-size="28" font-weight="800" fill="white">417</text>
+  <text x="225" y="222" text-anchor="middle" font-size="11" fill="white" opacity="0.9">wallets</text>
+  <text x="225" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">FORWARD</text>
+  <text x="225" y="410" text-anchor="middle" font-size="9" fill="#6c757d">concentration</text>
+
+  <!-- Reverse bar (recovery) — much smaller -->
+  <rect x="310" y="362" width="90" height="8" rx="4" fill="url(#revGrad)" opacity="0.85"/>
+  <text x="355" y="355" text-anchor="middle" font-size="14" font-weight="700" fill="#2a9d8f">~16</text>
+  <text x="355" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#2a9d8f">REVERSE</text>
+  <text x="355" y="410" text-anchor="middle" font-size="9" fill="#6c757d">recovery</text>
+
+  <!-- 26.6x annotation -->
+  <line x1="290" y1="155" x2="290" y2="362" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="283" y1="155" x2="297" y2="155" stroke="#495057" stroke-width="1.5"/>
+  <line x1="283" y1="362" x2="297" y2="362" stroke="#495057" stroke-width="1.5"/>
+  <rect x="263" y="242" width="54" height="28" rx="4" fill="white" stroke="#1a1a2e" stroke-width="1.5"/>
+  <text x="290" y="261" text-anchor="middle" font-size="16" font-weight="800" fill="#e63946">26.6x</text>
+
+  <!-- === SOL Crooks Data (right half) === -->
+  <text x="600" y="155" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">Solana (degen wallets)</text>
+
+  <!-- Forward bar -->
+  <rect x="500" y="155" width="90" height="215" rx="4" fill="url(#fwdGrad)" opacity="0.85"/>
+  <text x="545" y="210" text-anchor="middle" font-size="20" font-weight="800" fill="white">ALL</text>
+  <text x="545" y="230" text-anchor="middle" font-size="11" fill="white" opacity="0.9">concentrate</text>
+  <text x="545" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">FORWARD</text>
+
+  <!-- Reverse bar — zero -->
+  <line x1="630" y1="378" x2="720" y2="378" stroke="#2a9d8f" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="675" y="370" text-anchor="middle" font-size="14" font-weight="700" fill="#2a9d8f">0</text>
+  <text x="675" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#2a9d8f">REVERSE</text>
+
+  <!-- Infinity annotation -->
+  <rect x="573" y="242" width="54" height="28" rx="4" fill="white" stroke="#1a1a2e" stroke-width="1.5"/>
+  <text x="600" y="262" text-anchor="middle" font-size="18" font-weight="800" fill="#e63946">Inf</text>
+  <text x="600" y="285" text-anchor="middle" font-size="10" fill="#6c757d">Degenerate case</text>
+
+  <!-- Directional arrows below chart -->
+  <path d="M 140,435 L 420,435" stroke="#e63946" stroke-width="3" fill="none" marker-end="url(#irArrow)"/>
+  <text x="280" y="430" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">Drift TOWARD void (fast, favored)</text>
+
+  <path d="M 420,455 L 140,455" stroke="#2a9d8f" stroke-width="1.5" fill="none" stroke-dasharray="6,4" marker-end="url(#irArrowR)"/>
+  <text x="280" y="468" text-anchor="middle" font-size="11" font-weight="600" fill="#2a9d8f">Recovery AWAY from void (slow, thermodynamically costly)</text>
+
+  <!-- Bottom insight boxes -->
+  <rect x="50" y="482" width="380" height="12" rx="0" fill="none"/>
+
+  <rect x="460" y="420" width="380" height="72" rx="6" fill="white" stroke="#264653" stroke-width="1.5" filter="ish"/>
+  <text x="650" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#264653">The Thermodynamic Arrow</text>
+  <text x="650" y="458" text-anchor="middle" font-size="10" fill="#495057">Forward transition produces entropy (delta-S &gt; 0).</text>
+  <text x="650" y="473" text-anchor="middle" font-size="10" fill="#495057">Reverse requires equal work against the gradient.</text>
+  <text x="650" y="488" text-anchor="middle" font-size="10" fill="#e63946" font-weight="600">Recovery costs energy. Drift is free.</text>
+
+  <!-- Paper attribution -->
+  <text x="850" y="498" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Papers 3, 7</text>
+</svg>

@@ -1,0 +1,102 @@
+{
+  "experiment": "EXP-014",
+  "n_platforms": 6,
+  "platforms": [
+    {
+      "platform": "tiktok",
+      "void_index": 15,
+      "opacity": 5,
+      "responsiveness": 5,
+      "attention": 5,
+      "opacity_type": "permanent",
+      "n_posts": 100,
+      "total_words": 29478,
+      "d1_per_10k": 3.053,
+      "d2_per_10k": 5.428,
+      "d3_per_10k": 4.41,
+      "d2_d1_ratio": 1.778,
+      "d3_d1_ratio": 1.444
+    },
+    {
+      "platform": "instagram",
+      "void_index": 12,
+      "opacity": 4,
+      "responsiveness": 4,
+      "attention": 4,
+      "opacity_type": "permanent",
+      "n_posts": 100,
+      "total_words": 36028,
+      "d1_per_10k": 3.331,
+      "d2_per_10k": 10.547,
+      "d3_per_10k": 3.053,
+      "d2_d1_ratio": 3.167,
+      "d3_d1_ratio": 0.917
+    },
+    {
+      "platform": "twitter",
+      "void_index": 10,
+      "opacity": 3,
+      "responsiveness": 3,
+      "attention": 4,
+      "opacity_type": "mixed",
+      "n_posts": 100,
+      "total_words": 40050,
+      "d1_per_10k": 2.497,
+      "d2_per_10k": 4.994,
+      "d3_per_10k": 8.989,
+      "d2_d1_ratio": 2.0,
+      "d3_d1_ratio": 3.6
+    },
+    {
+      "platform": "reddit",
+      "void_index": 7,
+      "opacity": 2,
+      "responsiveness": 2,
+      "attention": 3,
+      "opacity_type": "mixed",
+      "n_posts": 100,
+      "total_words": 93779,
+      "d1_per_10k": 0.32,
+      "d2_per_10k": 2.239,
+      "d3_per_10k": 1.813,
+      "d2_d1_ratio": 7.0,
+      "d3_d1_ratio": 5.667
+    },
+    {
+      "platform": "stackoverflow",
+      "void_index": 4,
+      "opacity": 1,
+      "responsiveness": 1,
+      "attention": 2,
+      "opacity_type": "dissoluble",
+      "n_posts": 100,
+      "total_words": 118866,
+      "d1_per_10k": 0.505,
+      "d2_per_10k": 0.925,
+      "d3_per_10k": 0.673,
+      "d2_d1_ratio": 1.833,
+      "d3_d1_ratio": 1.333
+    },
+    {
+      "platform": "wikipedia",
+      "void_index": 3,
+      "opacity": 1,
+      "responsiveness": 1,
+      "attention": 1,
+      "opacity_type": "dissoluble",
+      "n_posts": 100,
+      "total_words": 92146,
+      "d1_per_10k": 0.434,
+      "d2_per_10k": 12.372,
+      "d3_per_10k": 1.953,
+      "d2_d1_ratio": 28.5,
+      "d3_d1_ratio": 4.5
+    }
+  ],
+  "correlations": {
+    "vi_d1_spearman_rho": 0.7714,
+    "vi_d1_p_value": 0.0724,
+    "vi_d2_spearman_rho": 0.0857,
+    "vi_d2_p_value": 0.8717
+  }
+}

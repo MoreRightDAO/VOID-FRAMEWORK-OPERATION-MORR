@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="voidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="constraintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b4d8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowGray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Three-Condition Geometry</text>
+  <text x="450" y="65" text-anchor="middle" font-size="13" fill="#6c757d">Every system lives somewhere in this space. Void and Constraint are opposite poles.</text>
+
+  <!-- 3D Cube - isometric projection -->
+  <!-- Cube vertices (isometric) -->
+  <!-- Back-bottom-left (Void pole): 200, 480 -->
+  <!-- Back-bottom-right: 500, 580 -->
+  <!-- Back-top-left: 200, 200 -->
+  <!-- Back-top-right: 500, 300 -->
+  <!-- Front-bottom-left: 400, 400 -->
+  <!-- Front-bottom-right: 700, 500 -->
+  <!-- Front-top-left: 400, 120 -->
+  <!-- Front-top-right (Constraint pole): 700, 220 -->
+
+  <!-- Back face (faded) -->
+  <polygon points="200,480 500,580 500,300 200,200" fill="#e9ecef" stroke="#adb5bd" stroke-width="1" opacity="0.4"/>
+
+  <!-- Bottom face -->
+  <polygon points="200,480 500,580 700,500 400,400" fill="#e9ecef" stroke="#adb5bd" stroke-width="1" opacity="0.5"/>
+
+  <!-- Left face -->
+  <polygon points="200,480 200,200 400,120 400,400" fill="#dee2e6" stroke="#adb5bd" stroke-width="1" opacity="0.5"/>
+
+  <!-- Top face -->
+  <polygon points="200,200 500,300 700,220 400,120" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Right face -->
+  <polygon points="500,580 700,500 700,220 500,300" fill="#f1f3f5" stroke="#adb5bd" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Front face -->
+  <polygon points="400,400 700,500 700,220 400,120" fill="#ffffff" stroke="#adb5bd" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Edges - visible -->
+  <line x1="400" y1="400" x2="700" y2="500" stroke="#6c757d" stroke-width="2"/>
+  <line x1="400" y1="400" x2="400" y2="120" stroke="#6c757d" stroke-width="2"/>
+  <line x1="700" y1="500" x2="700" y2="220" stroke="#6c757d" stroke-width="2"/>
+  <line x1="400" y1="120" x2="700" y2="220" stroke="#6c757d" stroke-width="2"/>
+  <line x1="500" y1="580" x2="700" y2="500" stroke="#6c757d" stroke-width="2"/>
+  <line x1="500" y1="300" x2="700" y2="220" stroke="#6c757d" stroke-width="2"/>
+  <line x1="500" y1="580" x2="500" y2="300" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="200" y1="200" x2="500" y2="300" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="200" y1="200" x2="400" y2="120" stroke="#6c757d" stroke-width="2"/>
+  <line x1="200" y1="480" x2="400" y2="400" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="200" y1="480" x2="500" y2="580" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="200" y1="480" x2="200" y2="200" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Axis labels with arrows -->
+  <!-- Visibility axis (left edge, vertical) -->
+  <line x1="170" y1="460" x2="170" y2="220" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="100" y="340" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(-70, 100, 340)">VISIBILITY</text>
+  <text x="155" y="475" text-anchor="end" font-size="11" fill="#e63946">Opaque</text>
+  <text x="155" y="215" text-anchor="end" font-size="11" fill="#2a9d8f">Transparent</text>
+
+  <!-- Reactivity axis (bottom edge, going right) -->
+  <line x1="420" y1="420" x2="680" y2="510" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="560" y="495" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(17, 560, 495)">REACTIVITY</text>
+  <text x="400" y="435" text-anchor="middle" font-size="11" fill="#e63946">Responsive</text>
+  <text x="720" y="520" text-anchor="start" font-size="11" fill="#2a9d8f">Invariant</text>
+
+  <!-- Coupling axis (top-right edge, depth) -->
+  <line x1="215" y1="190" x2="385" y2="130" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="290" y="140" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(-18, 290, 140)">COUPLING</text>
+  <text x="195" y="185" text-anchor="end" font-size="11" fill="#e63946">Engaged</text>
+  <text x="420" y="110" text-anchor="start" font-size="11" fill="#2a9d8f">Independent</text>
+
+  <!-- VOID pole (back-bottom-left) -->
+  <circle cx="200" cy="480" r="16" fill="url(#voidGrad)" filter="glow" opacity="0.95"/>
+  <circle cx="200" cy="480" r="10" fill="#e63946" opacity="0.8"/>
+  <text x="200" y="520" text-anchor="middle" font-size="15" font-weight="700" fill="#e63946">VOID</text>
+  <text x="200" y="537" text-anchor="middle" font-size="10" fill="#6c757d">Opaque + Responsive + Engaged</text>
+
+  <!-- CONSTRAINT pole (front-top-right) -->
+  <circle cx="700" cy="220" r="16" fill="url(#constraintGrad)" filter="glow" opacity="0.95"/>
+  <circle cx="700" cy="220" r="10" fill="#2a9d8f" opacity="0.8"/>
+  <text x="758" y="210" text-anchor="start" font-size="15" font-weight="700" fill="#2a9d8f">CONSTRAINT</text>
+  <text x="758" y="227" text-anchor="start" font-size="10" fill="#6c757d">Transparent + Invariant + Independent</text>
+
+  <!-- Diagonal arrow from void to constraint -->
+  <line x1="218" y1="468" x2="682" y2="234" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="8,5" opacity="0.5"/>
+
+  <!-- Example systems plotted -->
+  <!-- Slot machine (near void pole) -->
+  <circle cx="260" cy="445" r="7" fill="#e63946" opacity="0.8"/>
+  <text x="270" y="440" font-size="10" fill="#495057" font-weight="500">Slot Machine</text>
+
+  <!-- Social media (mid-void) -->
+  <circle cx="340" cy="390" r="7" fill="#f4845f" opacity="0.8"/>
+  <text x="350" y="385" font-size="10" fill="#495057" font-weight="500">Social Feed</text>
+
+  <!-- AI chatbot unconstrained -->
+  <circle cx="310" cy="350" r="7" fill="#f4845f" opacity="0.8"/>
+  <text x="320" y="345" font-size="10" fill="#495057" font-weight="500">AI (unconstrained)</text>
+
+  <!-- MRI scanner (mid-constraint) -->
+  <circle cx="560" cy="310" r="7" fill="#5fa8d3" opacity="0.8"/>
+  <text x="570" y="305" font-size="10" fill="#495057" font-weight="500">MRI Scanner</text>
+
+  <!-- Peer-reviewed paper (near constraint) -->
+  <circle cx="640" cy="260" r="7" fill="#2a9d8f" opacity="0.8"/>
+  <text x="580" y="255" font-size="10" fill="#495057" font-weight="500" text-anchor="end">Peer Review</text>
+
+  <!-- Fixed canonical text (at constraint) -->
+  <circle cx="680" cy="238" r="5" fill="#2a9d8f" opacity="0.7"/>
+  <text x="620" y="245" font-size="10" fill="#495057" font-weight="500" text-anchor="end">Fixed Text</text>
+
+  <!-- Legend box -->
+  <rect x="30" y="590" width="280" height="95" rx="6" fill="white" stroke="#dee2e6" stroke-width="1" filter="shadow"/>
+  <text x="45" y="612" font-size="12" font-weight="600" fill="#1a1a2e">Reading the diagram</text>
+  <circle cx="50" cy="630" r="5" fill="#e63946" opacity="0.8"/>
+  <text x="62" y="634" font-size="11" fill="#495057">Void-proximate systems (drift-generating)</text>
+  <circle cx="50" cy="652" r="5" fill="#5fa8d3" opacity="0.8"/>
+  <text x="62" y="656" font-size="11" fill="#495057">Mixed systems (context-dependent)</text>
+  <circle cx="50" cy="674" r="5" fill="#2a9d8f" opacity="0.8"/>
+  <text x="62" y="678" font-size="11" fill="#495057">Constraint-proximate systems (drift-resistant)</text>
+
+  <!-- Paper attribution -->
+  <text x="870" y="690" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Paper 1</text>
+</svg>

@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="driftRegion" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.20" />
+    </linearGradient>
+    <linearGradient id="diffRegion" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:0.15" />
+    </linearGradient>
+    <filter id="psh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="500" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="440" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Peclet Number Regime Diagram</text>
+  <text x="440" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Pe = drift / diffusion. The critical boundary Pe = 1 separates two qualitatively different regimes.</text>
+
+  <!-- Main horizontal number line -->
+  <!-- From Pe=0.01 (left) to Pe=100 (right), log scale -->
+  <!-- x range: 80 to 800 -->
+  <!-- log10(0.01)=-2, log10(100)=2, range=4 -->
+  <!-- x = 80 + (log10(Pe)+2) * 180 -->
+
+  <!-- Drift region (upper half, Pe > 1) -->
+  <rect x="80" y="85" width="720" height="110" rx="0" fill="none"/>
+  <!-- Color zones -->
+  <!-- Pe < 1 zone -->
+  <rect x="80" y="85" width="360" height="110" fill="url(#diffRegion)"/>
+  <!-- Pe > 1 zone -->
+  <rect x="440" y="85" width="360" height="110" fill="url(#driftRegion)"/>
+
+  <!-- Main axis -->
+  <line x1="80" y1="195" x2="800" y2="195" stroke="#495057" stroke-width="2.5"/>
+
+  <!-- Pe = 1 critical line (vertical) -->
+  <line x1="440" y1="80" x2="440" y2="390" stroke="#495057" stroke-width="2.5" stroke-dasharray="10,5"/>
+  <text x="440" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#495057">Pe = 1</text>
+  <text x="440" y="406" text-anchor="middle" font-size="11" fill="#495057" font-weight="600">CRITICAL BOUNDARY</text>
+
+  <!-- Tick marks and labels on axis -->
+  <!-- Pe = 0.01 -->
+  <line x1="80" y1="188" x2="80" y2="202" stroke="#495057" stroke-width="1.5"/>
+  <text x="80" y="218" text-anchor="middle" font-size="11" fill="#6c757d">0.01</text>
+
+  <!-- Pe = 0.1 -->
+  <line x1="260" y1="188" x2="260" y2="202" stroke="#495057" stroke-width="1.5"/>
+  <text x="260" y="218" text-anchor="middle" font-size="11" fill="#6c757d">0.1</text>
+
+  <!-- Pe = 1 -->
+  <line x1="440" y1="188" x2="440" y2="202" stroke="#495057" stroke-width="2"/>
+  <text x="440" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#495057">1</text>
+
+  <!-- Pe = 10 -->
+  <line x1="620" y1="188" x2="620" y2="202" stroke="#495057" stroke-width="1.5"/>
+  <text x="620" y="218" text-anchor="middle" font-size="11" fill="#6c757d">10</text>
+
+  <!-- Pe = 100 -->
+  <line x1="800" y1="188" x2="800" y2="202" stroke="#495057" stroke-width="1.5"/>
+  <text x="800" y="218" text-anchor="middle" font-size="11" fill="#6c757d">100</text>
+
+  <!-- Axis label -->
+  <text x="440" y="240" text-anchor="middle" font-size="13" font-weight="600" fill="#495057">Peclet Number (log scale)</text>
+
+  <!-- Zone labels -->
+  <text x="260" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#2a9d8f">DIFFUSION-DOMINATED</text>
+  <text x="260" y="123" text-anchor="middle" font-size="11" fill="#495057">Constraint holds. Random walk.</text>
+  <text x="260" y="138" text-anchor="middle" font-size="11" fill="#495057">Drift signal lost in noise.</text>
+  <text x="260" y="153" text-anchor="middle" font-size="11" fill="#6c757d" font-style="italic">System returns to equilibrium.</text>
+
+  <text x="620" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#e63946">DRIFT-DOMINATED</text>
+  <text x="620" y="123" text-anchor="middle" font-size="11" fill="#495057">Gradient wins. Directional flow.</text>
+  <text x="620" y="138" text-anchor="middle" font-size="11" fill="#495057">Observer pulled toward void pole.</text>
+  <text x="620" y="153" text-anchor="middle" font-size="11" fill="#6c757d" font-style="italic">Cascade D1 -> D2 -> D3 proceeds.</text>
+
+  <!-- Placed systems on the number line -->
+  <!-- GG constrained: Pe=0.05 → x=80+(log10(0.05)+2)*180=80+(-1.301+2)*180=80+0.699*180=206 -->
+  <circle cx="206" cy="195" r="8" fill="#2a9d8f" stroke="white" stroke-width="2"/>
+  <text x="206" y="175" text-anchor="middle" font-size="9" font-weight="600" fill="#2a9d8f">AI (GG)</text>
+  <text x="206" y="165" text-anchor="middle" font-size="8" fill="#6c757d">Pe=0.05</text>
+
+  <!-- SC2: Pe=0.013 → x=80+(-1.886+2)*180=80+0.114*180=100 -->
+  <circle cx="100" cy="195" r="6" fill="#7209b7" stroke="white" stroke-width="2"/>
+  <text x="100" y="175" text-anchor="middle" font-size="9" font-weight="600" fill="#7209b7">SC2</text>
+  <text x="100" y="165" text-anchor="middle" font-size="8" fill="#6c757d">0.013</text>
+
+  <!-- Dota: Pe=0.47 → x=80+(log10(0.47)+2)*180=80+(-0.328+2)*180=80+1.672*180=381 -->
+  <circle cx="381" cy="195" r="7" fill="#7209b7" stroke="white" stroke-width="2"/>
+  <text x="381" y="175" text-anchor="middle" font-size="9" font-weight="600" fill="#7209b7">Dota 2</text>
+  <text x="381" y="165" text-anchor="middle" font-size="8" fill="#6c757d">0.47</text>
+
+  <!-- GRCS: Pe=2.21 → x=80+(log10(2.21)+2)*180=80+(0.344+2)*180=80+2.344*180=502 -->
+  <circle cx="502" cy="195" r="8" fill="#e76f51" stroke="white" stroke-width="2"/>
+  <text x="502" y="175" text-anchor="middle" font-size="9" font-weight="600" fill="#e76f51">Gambling</text>
+  <text x="502" y="165" text-anchor="middle" font-size="8" fill="#6c757d">2.21</text>
+
+  <!-- CS2 clean: Pe=2.81 → x=80+(0.449+2)*180=80+2.449*180=521 -->
+  <circle cx="521" cy="195" r="7" fill="#7209b7" stroke="white" stroke-width="2"/>
+  <text x="530" y="182" font-size="9" font-weight="600" fill="#7209b7">CS2</text>
+  <text x="530" y="170" font-size="8" fill="#6c757d">2.81</text>
+
+  <!-- ETH: Pe=3.74 → x=80+(0.573+2)*180=80+2.573*180=543 -->
+  <circle cx="543" cy="195" r="8" fill="#b5651d" stroke="white" stroke-width="2"/>
+  <text x="543" y="260" text-anchor="middle" font-size="9" font-weight="600" fill="#b5651d">ETH</text>
+  <text x="543" y="272" text-anchor="middle" font-size="8" fill="#6c757d">3.74</text>
+
+  <!-- AI UU: Pe=7.94 → x=80+(0.9+2)*180=80+2.9*180=602 -->
+  <circle cx="602" cy="195" r="9" fill="#264653" stroke="white" stroke-width="2"/>
+  <text x="602" y="260" text-anchor="middle" font-size="9" font-weight="600" fill="#264653">AI (UU)</text>
+  <text x="602" y="272" text-anchor="middle" font-size="8" fill="#6c757d">7.94</text>
+
+  <!-- Base: Pe=15.52 → x=80+(1.191+2)*180=80+3.191*180=654 -->
+  <circle cx="654" cy="195" r="8" fill="#b5651d" stroke="white" stroke-width="2"/>
+  <text x="654" y="260" text-anchor="middle" font-size="9" font-weight="600" fill="#b5651d">Base</text>
+  <text x="654" y="272" text-anchor="middle" font-size="8" fill="#6c757d">15.52</text>
+
+  <!-- SOL: Pe=16.17 → x=80+(1.209+2)*180=80+3.209*180=658 (overlap with Base, nudge) -->
+  <circle cx="672" cy="195" r="8" fill="#b5651d" stroke="white" stroke-width="2"/>
+  <text x="685" y="260" font-size="9" font-weight="600" fill="#b5651d">SOL</text>
+  <text x="685" y="272" font-size="8" fill="#6c757d">16.17</text>
+
+  <!-- SOL degen: Pe=25.5 → x=80+(1.407+2)*180=80+3.407*180=693 -->
+  <circle cx="693" cy="195" r="7" fill="#b5651d" stroke="white" stroke-width="2" opacity="0.7"/>
+  <text x="710" y="175" font-size="9" font-weight="600" fill="#b5651d">Degen</text>
+  <text x="710" y="165" font-size="8" fill="#6c757d">25.5</text>
+
+  <!-- Legend -->
+  <rect x="80" y="300" width="350" height="80" rx="6" fill="white" stroke="#dee2e6" stroke-width="1" filter="psh"/>
+  <circle cx="100" cy="318" r="5" fill="#264653"/>
+  <text x="112" y="322" font-size="10" fill="#495057">AI (computational agents)</text>
+  <circle cx="100" cy="338" r="5" fill="#e76f51"/>
+  <text x="112" y="342" font-size="10" fill="#495057">Gambling (GRCS human data)</text>
+  <circle cx="100" cy="358" r="5" fill="#b5651d"/>
+  <text x="112" y="362" font-size="10" fill="#495057">Crypto (on-chain DEX)</text>
+  <circle cx="250" cy="318" r="5" fill="#7209b7"/>
+  <text x="262" y="322" font-size="10" fill="#495057">Gaming (multiplayer)</text>
+  <circle cx="250" cy="338" r="5" fill="#2a9d8f"/>
+  <text x="262" y="342" font-size="10" fill="#495057">Constrained condition</text>
+
+  <!-- Key insight -->
+  <rect x="460" y="300" width="370" height="80" rx="6" fill="white" stroke="#264653" stroke-width="1.5" filter="psh"/>
+  <text x="645" y="322" text-anchor="middle" font-size="12" font-weight="700" fill="#264653">Universal Finding</text>
+  <text x="645" y="342" text-anchor="middle" font-size="11" fill="#495057">All unconstrained systems: Pe &gt; 1 (drift wins)</text>
+  <text x="645" y="358" text-anchor="middle" font-size="11" fill="#495057">All constrained systems: Pe &lt; 1 (diffusion wins)</text>
+  <text x="645" y="374" text-anchor="middle" font-size="11" fill="#6c757d" font-style="italic">Different substrates, same phase boundary</text>
+
+  <!-- Paper attribution -->
+  <text x="850" y="493" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Papers 3, 4</text>
+</svg>

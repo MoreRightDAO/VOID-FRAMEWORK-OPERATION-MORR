@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="d1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd166;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4a261;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="d2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4845f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e76f51;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="d3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9d0208;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-opacity="0.12"/>
+    </filter>
+    <marker id="cascadeArrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#495057"/>
+    </marker>
+    <marker id="cascadeArrowRed" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#e63946"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">The Drift Cascade</text>
+  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#6c757d">Directional, irreversible progression under sustained void engagement</text>
+
+  <!-- Trigger zone -->
+  <rect x="30" y="100" width="135" height="300" rx="10" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
+  <text x="97" y="130" text-anchor="middle" font-size="13" font-weight="600" fill="#6c757d">TRIGGER</text>
+  <text x="97" y="155" text-anchor="middle" font-size="11" fill="#495057">Void engagement</text>
+  <text x="97" y="172" text-anchor="middle" font-size="11" fill="#495057">begins:</text>
+  <text x="97" y="200" text-anchor="middle" font-size="10" fill="#6c757d">Opacity present</text>
+  <text x="97" y="216" text-anchor="middle" font-size="10" fill="#6c757d">+ Responsiveness</text>
+  <text x="97" y="232" text-anchor="middle" font-size="10" fill="#6c757d">+ Attention engaged</text>
+  <circle cx="97" cy="270" r="25" fill="#adb5bd" opacity="0.3"/>
+  <text x="97" y="275" text-anchor="middle" font-size="20">👁</text>
+  <text x="97" y="310" text-anchor="middle" font-size="10" fill="#6c757d">Attention gradient</text>
+  <text x="97" y="325" text-anchor="middle" font-size="10" fill="#6c757d">activates</text>
+
+  <!-- Arrow from trigger to D1 -->
+  <line x1="165" y1="250" x2="195" y2="250" stroke="#495057" stroke-width="2" marker-end="url(#cascadeArrow)"/>
+
+  <!-- D1 Card -->
+  <rect x="205" y="100" width="190" height="300" rx="12" fill="white" stroke="#f4a261" stroke-width="2.5" filter="cardShadow"/>
+  <rect x="205" y="100" width="190" height="50" rx="12" fill="url(#d1Grad)"/>
+  <rect x="205" y="130" width="190" height="20" fill="url(#d1Grad)"/>
+  <text x="300" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="white">D1</text>
+  <text x="300" y="170" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a2e">Agency Attribution</text>
+
+  <text x="300" y="200" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"It understands me"</text>
+  <text x="300" y="218" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"It knows what I need"</text>
+  <text x="300" y="236" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"It's trying to help"</text>
+
+  <line x1="225" y1="255" x2="375" y2="255" stroke="#dee2e6" stroke-width="1"/>
+
+  <text x="300" y="278" text-anchor="middle" font-size="10" fill="#6c757d">Observer attributes intent,</text>
+  <text x="300" y="293" text-anchor="middle" font-size="10" fill="#6c757d">knowledge, or purpose to</text>
+  <text x="300" y="308" text-anchor="middle" font-size="10" fill="#6c757d">the opaque system</text>
+
+  <text x="300" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#f4a261">Vocab: L1 → L2</text>
+  <text x="300" y="356" text-anchor="middle" font-size="10" fill="#6c757d">(technical → metaphorical)</text>
+
+  <!-- Arrow D1 → D2 -->
+  <line x1="395" y1="250" x2="425" y2="250" stroke="#495057" stroke-width="2.5" marker-end="url(#cascadeArrow)"/>
+  <text x="410" y="240" text-anchor="middle" font-size="9" fill="#e76f51" font-weight="600">Pe &gt; 1</text>
+
+  <!-- D2 Card -->
+  <rect x="435" y="100" width="190" height="300" rx="12" fill="white" stroke="#e76f51" stroke-width="2.5" filter="cardShadow"/>
+  <rect x="435" y="100" width="190" height="50" rx="12" fill="url(#d2Grad)"/>
+  <rect x="435" y="130" width="190" height="20" fill="url(#d2Grad)"/>
+  <text x="530" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="white">D2</text>
+  <text x="530" y="170" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a2e">Boundary Erosion</text>
+
+  <text x="530" y="200" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"We have a connection"</text>
+  <text x="530" y="218" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"It's different with us"</text>
+  <text x="530" y="236" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"Normal rules don't apply"</text>
+
+  <line x1="455" y1="255" x2="605" y2="255" stroke="#dee2e6" stroke-width="1"/>
+
+  <text x="530" y="278" text-anchor="middle" font-size="10" fill="#6c757d">Observer-system boundary</text>
+  <text x="530" y="293" text-anchor="middle" font-size="10" fill="#6c757d">dissolves. Protective</text>
+  <text x="530" y="308" text-anchor="middle" font-size="10" fill="#6c757d">skepticism suppressed</text>
+
+  <text x="530" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#e76f51">Vocab: L2 → L3</text>
+  <text x="530" y="356" text-anchor="middle" font-size="10" fill="#6c757d">(metaphorical → entity)</text>
+
+  <!-- Arrow D2 → D3 -->
+  <line x1="625" y1="250" x2="655" y2="250" stroke="#e63946" stroke-width="3" marker-end="url(#cascadeArrowRed)"/>
+  <text x="640" y="240" text-anchor="middle" font-size="9" fill="#e63946" font-weight="600">β → 1</text>
+
+  <!-- D3 Card -->
+  <rect x="665" y="100" width="205" height="300" rx="12" fill="white" stroke="#e63946" stroke-width="2.5" filter="cardShadow"/>
+  <rect x="665" y="100" width="205" height="50" rx="12" fill="url(#d3Grad)"/>
+  <rect x="665" y="130" width="205" height="20" fill="url(#d3Grad)"/>
+  <text x="767" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="white">D3</text>
+  <text x="767" y="170" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a2e">Harm Facilitation</text>
+
+  <text x="767" y="200" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"It told me to stop meds"</text>
+  <text x="767" y="218" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"I'll invest everything"</text>
+  <text x="767" y="236" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">"One more session"</text>
+
+  <line x1="685" y1="255" x2="850" y2="255" stroke="#dee2e6" stroke-width="1"/>
+
+  <text x="767" y="278" text-anchor="middle" font-size="10" fill="#6c757d">System outputs produce</text>
+  <text x="767" y="293" text-anchor="middle" font-size="10" fill="#6c757d">real-world harm. Observer</text>
+  <text x="767" y="308" text-anchor="middle" font-size="10" fill="#6c757d">acts on attributed agency</text>
+
+  <text x="767" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">Vocab: saturated L3</text>
+  <text x="767" y="356" text-anchor="middle" font-size="10" fill="#6c757d">(entity language dominant)</text>
+
+  <!-- Irreversibility bar at bottom -->
+  <rect x="205" y="430" width="665" height="40" rx="6" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="220" y1="450" x2="850" y2="450" stroke="#e63946" stroke-width="2" stroke-dasharray="none" opacity="0.3"/>
+  <!-- Arrow showing direction -->
+  <polygon points="848,445 860,450 848,455" fill="#e63946" opacity="0.5"/>
+  <text x="537" y="455" text-anchor="middle" font-size="11" font-weight="600" fill="#495057">UNIDIRECTIONAL — drift toward agency language, never away</text>
+
+  <!-- Key insight box -->
+  <rect x="205" y="480" width="665" height="30" rx="4" fill="white" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="537" y="500" text-anchor="middle" font-size="11" fill="#2a9d8f" font-weight="600">Constraint (transparent + invariant + independent reference) interrupts the cascade at any stage</text>
+
+  <!-- Paper attribution -->
+  <text x="870" y="515" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Paper 1</text>
+</svg>

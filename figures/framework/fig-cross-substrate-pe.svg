@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="driftZone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.03" />
+    </linearGradient>
+    <linearGradient id="diffZone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:0.03" />
+    </linearGradient>
+    <filter id="dotGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="620" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#1a1a2e">Cross-Substrate Peclet Number Measurements</text>
+  <text x="480" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Same physics across nine substrates: Pe &gt; 1 in all unconstrained conditions</text>
+
+  <!-- Chart area -->
+  <!-- Y-axis: log scale Pe from 0.01 to 100 -->
+  <!-- Chart bounds: x=160..900, y=90..530 -->
+  <!-- Log scale: 0.01=530, 0.1=420, 1=310, 10=200, 100=90 -->
+
+  <!-- Drift zone (Pe > 1) -->
+  <rect x="160" y="90" width="740" height="220" fill="url(#driftZone)"/>
+  <text x="170" y="108" font-size="11" font-weight="600" fill="#e63946" opacity="0.7">DRIFT-DOMINATED (Pe &gt; 1)</text>
+
+  <!-- Diffusion zone (Pe < 1) -->
+  <rect x="160" y="310" width="740" height="220" fill="url(#diffZone)"/>
+  <text x="170" y="525" font-size="11" font-weight="600" fill="#2a9d8f" opacity="0.7">DIFFUSION-DOMINATED (Pe &lt; 1)</text>
+
+  <!-- Pe = 1 critical line -->
+  <line x1="160" y1="310" x2="900" y2="310" stroke="#495057" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="910" y="314" font-size="12" font-weight="700" fill="#495057">Pe = 1</text>
+
+  <!-- Y-axis -->
+  <line x1="160" y1="90" x2="160" y2="530" stroke="#495057" stroke-width="1.5"/>
+  <!-- Y gridlines and labels -->
+  <line x1="160" y1="90" x2="900" y2="90" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="150" y="94" text-anchor="end" font-size="11" fill="#6c757d">100</text>
+  <line x1="160" y1="200" x2="900" y2="200" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="150" y="204" text-anchor="end" font-size="11" fill="#6c757d">10</text>
+  <line x1="160" y1="310" x2="900" y2="310" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="150" y="314" text-anchor="end" font-size="11" fill="#6c757d">1</text>
+  <line x1="160" y1="420" x2="900" y2="420" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="150" y="424" text-anchor="end" font-size="11" fill="#6c757d">0.1</text>
+  <line x1="160" y1="530" x2="900" y2="530" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="150" y="534" text-anchor="end" font-size="11" fill="#6c757d">0.01</text>
+
+  <!-- Y-axis label -->
+  <text x="30" y="310" text-anchor="middle" font-size="14" font-weight="600" fill="#495057" transform="rotate(-90,30,310)">Peclet Number (log scale)</text>
+
+  <!-- X-axis: substrates grouped by domain -->
+  <line x1="160" y1="530" x2="900" y2="530" stroke="#495057" stroke-width="1.5"/>
+
+  <!-- Helper: log Pe to y. Pe=0.01→530, Pe=0.1→420, Pe=1→310, Pe=10→200, Pe=100→90 -->
+  <!-- y = 310 - 110 * log10(Pe) -->
+
+  <!-- ===== AI DOMAIN (blue) ===== -->
+  <!-- Group label -->
+  <rect x="175" y="542" width="180" height="20" rx="3" fill="#264653" opacity="0.1"/>
+  <text x="265" y="557" text-anchor="middle" font-size="11" font-weight="600" fill="#264653">AI (Computational Agents)</text>
+
+  <!-- AI Unconstrained: Pe=7.94 [3.52, 17.89] → y=310-110*log10(7.94)=310-110*0.8998=211 -->
+  <line x1="210" y1="250" x2="210" y2="172" stroke="#264653" stroke-width="2" opacity="0.5"/>
+  <circle cx="210" cy="211" r="7" fill="#264653" filter="dotGlow"/>
+  <text x="210" y="165" text-anchor="middle" font-size="9" fill="#264653" font-weight="600">7.94</text>
+  <text x="210" y="580" text-anchor="middle" font-size="9" fill="#495057">UU</text>
+  <text x="210" y="592" text-anchor="middle" font-size="8" fill="#6c757d">N=11</text>
+
+  <!-- AI 5-domain avg: Pe≈3.5 (midpoint 1.87-6.50) → y=310-110*0.544=250 -->
+  <line x1="265" y1="280" x2="265" y2="220" stroke="#264653" stroke-width="2" opacity="0.5"/>
+  <circle cx="265" cy="250" r="6" fill="#264653" opacity="0.8"/>
+  <text x="265" y="213" text-anchor="middle" font-size="9" fill="#264653">1.9–6.5</text>
+  <text x="265" y="580" text-anchor="middle" font-size="9" fill="#495057">5 domains</text>
+
+  <!-- AI Constrained: Pe=0.05 → y=310-110*log10(0.05)=310-110*(-1.301)=453 -->
+  <circle cx="325" cy="453" r="6" fill="#2a9d8f" opacity="0.8"/>
+  <text x="325" y="446" text-anchor="middle" font-size="9" fill="#2a9d8f" font-weight="600">0.05</text>
+  <text x="325" y="580" text-anchor="middle" font-size="9" fill="#495057">GG</text>
+
+  <!-- ===== GAMBLING (orange) ===== -->
+  <rect x="380" y="542" width="90" height="20" rx="3" fill="#e76f51" opacity="0.1"/>
+  <text x="425" y="557" text-anchor="middle" font-size="11" font-weight="600" fill="#e76f51">Gambling</text>
+
+  <!-- GRCS: Pe=2.21 [1.44, 2.97] → y=310-110*log10(2.21)=310-110*0.3444=272 -->
+  <line x1="425" y1="292" x2="425" y2="258" stroke="#e76f51" stroke-width="2" opacity="0.5"/>
+  <circle cx="425" cy="272" r="7" fill="#e76f51" filter="dotGlow"/>
+  <text x="425" y="250" text-anchor="middle" font-size="9" fill="#e76f51" font-weight="600">2.21</text>
+  <text x="425" y="580" text-anchor="middle" font-size="9" fill="#495057">GRCS</text>
+  <text x="425" y="592" text-anchor="middle" font-size="8" fill="#6c757d">N=1,117</text>
+
+  <!-- ===== CRYPTO (gold/amber) ===== -->
+  <rect x="490" y="542" width="180" height="20" rx="3" fill="#b5651d" opacity="0.1"/>
+  <text x="580" y="557" text-anchor="middle" font-size="11" font-weight="600" fill="#b5651d">Crypto (On-Chain)</text>
+
+  <!-- ETH: Pe=3.74 [3.04, 4.59] → y=310-110*log10(3.74)=310-110*0.573=247 -->
+  <line x1="520" y1="257" x2="520" y2="237" stroke="#b5651d" stroke-width="2" opacity="0.5"/>
+  <circle cx="520" cy="247" r="7" fill="#b5651d" filter="dotGlow"/>
+  <text x="520" y="230" text-anchor="middle" font-size="9" fill="#b5651d" font-weight="600">3.74</text>
+  <text x="520" y="580" text-anchor="middle" font-size="9" fill="#495057">ETH</text>
+  <text x="520" y="592" text-anchor="middle" font-size="8" fill="#6c757d">N=1K</text>
+
+  <!-- Base: Pe=15.52 → y=310-110*log10(15.52)=310-110*1.191=179 -->
+  <circle cx="575" cy="179" r="7" fill="#b5651d" filter="dotGlow"/>
+  <text x="575" y="172" text-anchor="middle" font-size="9" fill="#b5651d" font-weight="600">15.52</text>
+  <text x="575" y="580" text-anchor="middle" font-size="9" fill="#495057">Base</text>
+  <text x="575" y="592" text-anchor="middle" font-size="8" fill="#6c757d">N=1K</text>
+
+  <!-- SOL: Pe=16.17 → y=310-110*log10(16.17)=310-110*1.209=177 -->
+  <circle cx="630" cy="177" r="7" fill="#b5651d" filter="dotGlow"/>
+  <text x="630" y="170" text-anchor="middle" font-size="9" fill="#b5651d" font-weight="600">16.17</text>
+  <text x="630" y="580" text-anchor="middle" font-size="9" fill="#495057">SOL</text>
+  <text x="630" y="592" text-anchor="middle" font-size="8" fill="#6c757d">N=1K</text>
+
+  <!-- SOL degens: Pe=25.5 → y=310-110*log10(25.5)=310-110*1.407=155 -->
+  <line x1="680" y1="130" x2="680" y2="179" stroke="#b5651d" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="680" cy="155" r="6" fill="#b5651d" opacity="0.7"/>
+  <text x="680" y="130" text-anchor="middle" font-size="9" fill="#b5651d">25.5</text>
+  <text x="680" y="580" text-anchor="middle" font-size="9" fill="#495057">SOL degen</text>
+  <text x="680" y="592" text-anchor="middle" font-size="8" fill="#6c757d">N=28</text>
+
+  <!-- ===== GAMING (purple) ===== -->
+  <rect x="720" y="542" width="165" height="20" rx="3" fill="#7209b7" opacity="0.1"/>
+  <text x="802" y="557" text-anchor="middle" font-size="11" font-weight="600" fill="#7209b7">Gaming (Multiplayer)</text>
+
+  <!-- CS2 clean: Pe=2.81 → y=310-110*log10(2.81)=310-110*0.449=261 -->
+  <circle cx="752" cy="261" r="6" fill="#7209b7" opacity="0.8"/>
+  <text x="752" y="253" text-anchor="middle" font-size="9" fill="#7209b7" font-weight="600">2.81</text>
+  <text x="752" y="580" text-anchor="middle" font-size="9" fill="#495057">CS2</text>
+  <text x="752" y="592" text-anchor="middle" font-size="8" fill="#6c757d">clean</text>
+
+  <!-- CS2 contested: Pe=0.64 → y=310-110*log10(0.64)=310-110*(-0.194)=331 -->
+  <circle cx="795" cy="331" r="5" fill="#2a9d8f" opacity="0.7"/>
+  <text x="795" y="347" text-anchor="middle" font-size="9" fill="#2a9d8f">0.64</text>
+  <text x="795" y="580" text-anchor="middle" font-size="9" fill="#495057">CS2</text>
+  <text x="795" y="592" text-anchor="middle" font-size="8" fill="#6c757d">contest</text>
+
+  <!-- Dota 2: Pe=0.47 → y=310-110*log10(0.47)=310-110*(-0.328)=346 -->
+  <circle cx="840" cy="346" r="6" fill="#2a9d8f" opacity="0.7"/>
+  <text x="840" y="362" text-anchor="middle" font-size="9" fill="#2a9d8f">0.47</text>
+  <text x="840" y="580" text-anchor="middle" font-size="9" fill="#495057">Dota 2</text>
+  <text x="840" y="592" text-anchor="middle" font-size="8" fill="#6c757d">N=3.7K</text>
+
+  <!-- SC2: Pe=0.013/0.026 → y for 0.026=310-110*log10(0.026)=310-110*(-1.585)=484 -->
+  <circle cx="880" cy="497" r="4" fill="#7209b7" opacity="0.6"/>
+  <circle cx="880" cy="484" r="4" fill="#7209b7" opacity="0.6"/>
+  <text x="892" y="488" font-size="8" fill="#7209b7">.013/.026</text>
+  <text x="880" y="580" text-anchor="middle" font-size="9" fill="#495057">SC2</text>
+  <text x="880" y="592" text-anchor="middle" font-size="8" fill="#6c757d">N=474</text>
+
+  <!-- Legend -->
+  <rect x="640" y="92" width="250" height="60" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" opacity="0.95"/>
+  <circle cx="657" cy="107" r="5" fill="#264653"/>
+  <text x="668" y="111" font-size="10" fill="#495057">AI (computational)</text>
+  <circle cx="770" cy="107" r="5" fill="#e76f51"/>
+  <text x="781" y="111" font-size="10" fill="#495057">Gambling (human)</text>
+  <circle cx="657" cy="127" r="5" fill="#b5651d"/>
+  <text x="668" y="131" font-size="10" fill="#495057">Crypto (on-chain)</text>
+  <circle cx="770" cy="127" r="5" fill="#7209b7"/>
+  <text x="781" y="131" font-size="10" fill="#495057">Gaming (multiplayer)</text>
+  <circle cx="657" cy="143" r="5" fill="#2a9d8f"/>
+  <text x="668" y="147" font-size="10" fill="#495057">Constrained / constraint-dominated</text>
+
+  <!-- Paper attribution -->
+  <text x="930" y="612" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Papers 3, 4, 6, 7</text>
+</svg>

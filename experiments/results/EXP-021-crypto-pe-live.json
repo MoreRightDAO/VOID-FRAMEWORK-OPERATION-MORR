@@ -1,0 +1,79 @@
+{
+  "experiment": "EXP-021",
+  "mode": "live",
+  "date": "2026-02-16T05:22:42.213992",
+  "params": {
+    "days": 90,
+    "interval_days": 7,
+    "n_wallets_input": 5
+  },
+  "population": {
+    "n_wallets": 5,
+    "pe_geometric_mean": 19.04732228121821,
+    "pe_log_ci_lower": 0.0,
+    "pe_log_ci_upper": 0.0,
+    "pe_arithmetic_mean": -45.438847824998675,
+    "pe_std": 110.3682578125711,
+    "fraction_pe_gt_1": 0.2,
+    "median_wci": 0.5651751278487495,
+    "condition": "all"
+  },
+  "per_wallet": [
+    {
+      "wallet": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+      "pe": -242.21696036617573,
+      "drift_velocity": -0.00018235158258479448,
+      "diffusion_coeff": 6.850880297618316e-05,
+      "mean_wci": 0.5047664903466834,
+      "peak_wci": 0.5106636752359363,
+      "n_snapshots": 13,
+      "observation_days": 90,
+      "regime": "drift-dominated"
+    },
+    {
+      "wallet": "0x47ac0Fb4F2D84898e4D9E7b4DaB3C24507a6D503",
+      "pe": 19.04732228121821,
+      "drift_velocity": 0.0023214075300861947,
+      "diffusion_coeff": 0.011090697270668165,
+      "mean_wci": 0.5651751278487495,
+      "peak_wci": 0.700175090214401,
+      "n_snapshots": 13,
+      "observation_days": 90,
+      "regime": "drift-dominated"
+    },
+    {
+      "wallet": "0x3DdfA8eC3052539b6C9549F12cEA2C295cfF5296",
+      "pe": -4.024601040035854,
+      "drift_velocity": -3.5308768934945905e-06,
+      "diffusion_coeff": 7.98364344966589e-05,
+      "mean_wci": 0.999047281159253,
+      "peak_wci": 1.0,
+      "n_snapshots": 13,
+      "observation_days": 90,
+      "regime": "drift-dominated"
+    },
+    {
+      "wallet": "0x0716a17FBAeE714f1E6aB0f9d59edbC5f09815C0",
+      "pe": 0.0,
+      "drift_velocity": 0.0,
+      "diffusion_coeff": 0.0,
+      "mean_wci": 1.0,
+      "peak_wci": 1.0,
+      "n_snapshots": 13,
+      "observation_days": 90,
+      "regime": "diffusion-dominated"
+    },
+    {
+      "wallet": "0x56Eddb7aa87536c09CCc2793473599fD21A8b17F",
+      "pe": 0.0,
+      "drift_velocity": 0.0,
+      "diffusion_coeff": 0.0,
+      "mean_wci": 0.5238870386323767,
+      "peak_wci": 0.5238870386323767,
+      "n_snapshots": 13,
+      "observation_days": 90,
+      "regime": "diffusion-dominated"
+    }
+  ],
+  "skipped": 0
+}

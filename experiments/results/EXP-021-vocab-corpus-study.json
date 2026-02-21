@@ -1,0 +1,107 @@
+{
+  "experiment": "EXP-021-vocab-corpus",
+  "title": "Crypto Vocabulary Corpus Study \u2014 Bull vs Bear",
+  "date": "2026-02-17T23:00:22.984755",
+  "codebook_size": 68,
+  "bull": {
+    "label": "BULL",
+    "window": {
+      "start": "2024-09-01",
+      "end": "2024-11-30"
+    },
+    "subreddits": [
+      "cryptocurrency",
+      "solana",
+      "defi",
+      "ethtrader",
+      "CryptoMarkets",
+      "SatoshiStreetBets"
+    ],
+    "n_comments": 10195,
+    "word_count": 288312,
+    "total_matches": 1471,
+    "by_level": {
+      "L1": 943,
+      "L2": 474,
+      "L3": 54
+    },
+    "by_stage": {
+      "D1": 709,
+      "D2": 162,
+      "D3": 169,
+      "CONSTRAINT": 431
+    },
+    "per_10k": {
+      "L1": 32.71,
+      "L2": 16.44,
+      "L3": 1.87,
+      "drift": 18.31,
+      "constraint": 14.95
+    },
+    "drift_ratio": 0.56,
+    "raw_matches": {
+      "L1_D1": 430,
+      "L2_D1": 278,
+      "L3_D1": 1,
+      "L1_D2": 82,
+      "L2_D2": 54,
+      "L3_D2": 26,
+      "L2_D3": 142,
+      "L3_D3": 27,
+      "L1_CONSTRAINT": 431
+    }
+  },
+  "bear": {
+    "label": "BEAR",
+    "window": {
+      "start": "2025-01-19",
+      "end": "2025-04-13"
+    },
+    "subreddits": [
+      "cryptocurrency",
+      "solana",
+      "defi",
+      "ethtrader",
+      "CryptoMarkets",
+      "SatoshiStreetBets"
+    ],
+    "n_comments": 9205,
+    "word_count": 263637,
+    "total_matches": 1335,
+    "by_level": {
+      "L1": 945,
+      "L2": 367,
+      "L3": 23
+    },
+    "by_stage": {
+      "D1": 507,
+      "D2": 105,
+      "D3": 112,
+      "CONSTRAINT": 611
+    },
+    "per_10k": {
+      "L1": 35.84,
+      "L2": 13.92,
+      "L3": 0.87,
+      "drift": 14.79,
+      "constraint": 23.18
+    },
+    "drift_ratio": 0.41,
+    "raw_matches": {
+      "L1_D1": 291,
+      "L2_D1": 214,
+      "L3_D1": 2,
+      "L1_D2": 43,
+      "L2_D2": 54,
+      "L3_D2": 8,
+      "L2_D3": 99,
+      "L3_D3": 13,
+      "L1_CONSTRAINT": 611
+    }
+  },
+  "predictions": {
+    "P1_drift_higher_bull": true,
+    "P2_L3_higher_bull": true,
+    "P3_constraint_stable_bear": true
+  }
+}

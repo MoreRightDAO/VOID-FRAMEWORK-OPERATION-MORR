@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="classicalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#264653;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bridgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a261;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e76f51;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="quantumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7209b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#560bad;stop-opacity:1" />
+    </linearGradient>
+    <marker id="brArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <marker id="brArrowUp" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e76f51"/>
+    </marker>
+    <filter id="bsh">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="920" height="560" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="460" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">The Three-Level Quantum Bridge</text>
+  <text x="460" y="60" text-anchor="middle" font-size="13" fill="#6c757d">The void framework is the classical limit of quantum measurement theory. Three formal operations connect them.</text>
+
+  <!-- ===== LEFT COLUMN: Classical (Void Framework) ===== -->
+  <rect x="40" y="90" width="250" height="400" rx="12" fill="white" stroke="#264653" stroke-width="2.5" filter="bsh"/>
+  <rect x="40" y="90" width="250" height="42" rx="12" fill="url(#classicalGrad)"/>
+  <rect x="40" y="115" width="250" height="17" fill="url(#classicalGrad)"/>
+  <text x="165" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="white">Classical</text>
+  <text x="165" y="150" text-anchor="middle" font-size="11" fill="#6c757d">Void Framework (Papers 1-5)</text>
+
+  <!-- Level 1: Metric -->
+  <rect x="55" y="170" width="220" height="62" rx="6" fill="#f0faf8" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="165" y="190" text-anchor="middle" font-size="12" font-weight="700" fill="#264653">Geometry</text>
+  <text x="165" y="207" text-anchor="middle" font-size="11" fill="#495057">Fisher metric g(theta)</text>
+  <text x="165" y="222" text-anchor="middle" font-size="10" fill="#6c757d">= 1/[theta(1-theta)]</text>
+
+  <!-- Level 2: Dynamics -->
+  <rect x="55" y="245" width="220" height="62" rx="6" fill="#f0faf8" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="165" y="265" text-anchor="middle" font-size="12" font-weight="700" fill="#264653">Dynamics</text>
+  <text x="165" y="282" text-anchor="middle" font-size="11" fill="#495057">Pe = drift / diffusion</text>
+  <text x="165" y="297" text-anchor="middle" font-size="10" fill="#6c757d">Classical Peclet number</text>
+
+  <!-- Level 3: Constraints -->
+  <rect x="55" y="320" width="220" height="75" rx="6" fill="#f0faf8" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="165" y="340" text-anchor="middle" font-size="12" font-weight="700" fill="#264653">Constraints</text>
+  <text x="165" y="358" text-anchor="middle" font-size="11" fill="#495057">I(D;Y) + I(M;Y) &lt;= H(Y)</text>
+  <text x="165" y="375" text-anchor="middle" font-size="10" fill="#6c757d">Engagement-Transparency</text>
+  <text x="165" y="388" text-anchor="middle" font-size="10" fill="#6c757d">Conjugacy</text>
+
+  <text x="165" y="420" text-anchor="middle" font-size="11" font-weight="600" fill="#264653">Empirically validated</text>
+  <text x="165" y="436" text-anchor="middle" font-size="10" fill="#6c757d">9 substrates, Pe > 1 universal</text>
+  <text x="165" y="450" text-anchor="middle" font-size="10" fill="#6c757d">EXP-001 replicated, N=11 Test 7</text>
+
+  <!-- ===== CENTER COLUMN: Bridge Operations ===== -->
+  <rect x="330" y="90" width="260" height="400" rx="12" fill="white" stroke="#e76f51" stroke-width="2.5" filter="bsh"/>
+  <rect x="330" y="90" width="260" height="42" rx="12" fill="url(#bridgeGrad)"/>
+  <rect x="330" y="115" width="260" height="17" fill="url(#bridgeGrad)"/>
+  <text x="460" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="white">Limit Operations</text>
+  <text x="460" y="150" text-anchor="middle" font-size="11" fill="#6c757d">Formal maps connecting levels</text>
+
+  <!-- Bridge 1: Metric -->
+  <rect x="345" y="170" width="230" height="62" rx="6" fill="#fff8f0" stroke="#f4a261" stroke-width="1.5"/>
+  <text x="460" y="189" text-anchor="middle" font-size="12" font-weight="700" fill="#e76f51">Level 1: Metric Bridge</text>
+  <text x="460" y="206" text-anchor="middle" font-size="10" fill="#495057">Restrict rho(theta) to diagonal</text>
+  <text x="460" y="221" text-anchor="middle" font-size="10" fill="#495057">F_Q(theta) = g(theta) exactly</text>
+
+  <!-- Bridge 2: Dynamics -->
+  <rect x="345" y="245" width="230" height="62" rx="6" fill="#fff8f0" stroke="#f4a261" stroke-width="1.5"/>
+  <text x="460" y="264" text-anchor="middle" font-size="12" font-weight="700" fill="#e76f51">Level 2: Dynamics Bridge</text>
+  <text x="460" y="281" text-anchor="middle" font-size="10" fill="#495057">Nelson |v|/|u| to classical limit</text>
+  <text x="460" y="296" text-anchor="middle" font-size="10" fill="#495057">Pe = 1 = MIPT critical point</text>
+
+  <!-- Bridge 3: Constraints -->
+  <rect x="345" y="320" width="230" height="75" rx="6" fill="#fff8f0" stroke="#f4a261" stroke-width="1.5"/>
+  <text x="460" y="340" text-anchor="middle" font-size="12" font-weight="700" fill="#e76f51">Level 3: Constraint Bridge</text>
+  <text x="460" y="358" text-anchor="middle" font-size="10" fill="#495057">Holevo: I &lt;= chi &lt;= S(rho)</text>
+  <text x="460" y="373" text-anchor="middle" font-size="10" fill="#495057">Diagonal + commuting obs.</text>
+  <text x="460" y="388" text-anchor="middle" font-size="10" fill="#495057">reduces S(rho) to H(Y)</text>
+
+  <!-- Status -->
+  <text x="460" y="420" text-anchor="middle" font-size="11" font-weight="600" fill="#e76f51">All three levels: PROVEN</text>
+  <text x="460" y="436" text-anchor="middle" font-size="10" fill="#6c757d">Maassen-Uffink vanishes in</text>
+  <text x="460" y="451" text-anchor="middle" font-size="10" fill="#6c757d">classical limit (c -> 1 -> log 0)</text>
+
+  <!-- ===== RIGHT COLUMN: Quantum ===== -->
+  <rect x="630" y="90" width="250" height="400" rx="12" fill="white" stroke="#7209b7" stroke-width="2.5" filter="bsh"/>
+  <rect x="630" y="90" width="250" height="42" rx="12" fill="url(#quantumGrad)"/>
+  <rect x="630" y="115" width="250" height="17" fill="url(#quantumGrad)"/>
+  <text x="755" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="white">Quantum</text>
+  <text x="755" y="150" text-anchor="middle" font-size="11" fill="#6c757d">Measurement Theory</text>
+
+  <!-- Level 1: QFI -->
+  <rect x="645" y="170" width="220" height="62" rx="6" fill="#f5f0fa" stroke="#7209b7" stroke-width="1.5"/>
+  <text x="755" y="190" text-anchor="middle" font-size="12" font-weight="700" fill="#7209b7">Geometry</text>
+  <text x="755" y="207" text-anchor="middle" font-size="11" fill="#495057">Quantum Fisher F_Q</text>
+  <text x="755" y="222" text-anchor="middle" font-size="10" fill="#6c757d">Bures / Fubini-Study metric</text>
+
+  <!-- Level 2: Nelson -->
+  <rect x="645" y="245" width="220" height="62" rx="6" fill="#f5f0fa" stroke="#7209b7" stroke-width="1.5"/>
+  <text x="755" y="265" text-anchor="middle" font-size="12" font-weight="700" fill="#7209b7">Dynamics</text>
+  <text x="755" y="282" text-anchor="middle" font-size="11" fill="#495057">Pe_quantum = |v| / |u|</text>
+  <text x="755" y="297" text-anchor="middle" font-size="10" fill="#6c757d">Nelson stochastic mechanics</text>
+
+  <!-- Level 3: Holevo -->
+  <rect x="645" y="320" width="220" height="75" rx="6" fill="#f5f0fa" stroke="#7209b7" stroke-width="1.5"/>
+  <text x="755" y="340" text-anchor="middle" font-size="12" font-weight="700" fill="#7209b7">Constraints</text>
+  <text x="755" y="358" text-anchor="middle" font-size="11" fill="#495057">Holevo bound: chi &lt;= S(rho)</text>
+  <text x="755" y="375" text-anchor="middle" font-size="10" fill="#6c757d">Maassen-Uffink</text>
+  <text x="755" y="388" text-anchor="middle" font-size="10" fill="#6c757d">complementarity</text>
+
+  <text x="755" y="420" text-anchor="middle" font-size="11" font-weight="600" fill="#7209b7">Experimentally confirmed</text>
+  <text x="755" y="436" text-anchor="middle" font-size="10" fill="#6c757d">MIPT: Koh et al. 2023</text>
+  <text x="755" y="451" text-anchor="middle" font-size="10" fill="#6c757d">Skinner et al. 2019</text>
+
+  <!-- Horizontal bridge arrows between columns -->
+  <!-- Level 1 -->
+  <line x1="275" y1="200" x2="343" y2="200" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="577" y1="200" x2="643" y2="200" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Level 2 -->
+  <line x1="275" y1="275" x2="343" y2="275" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="577" y1="275" x2="643" y2="275" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Level 3 -->
+  <line x1="275" y1="355" x2="343" y2="355" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="577" y1="355" x2="643" y2="355" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Bottom summary -->
+  <rect x="40" y="505" width="840" height="40" rx="6" fill="white" stroke="#1a1a2e" stroke-width="1.5"/>
+  <text x="460" y="530" text-anchor="middle" font-size="13" fill="#1a1a2e" font-weight="600">The void framework is not analogous to quantum measurement theory. It is the classical specialization of it.</text>
+
+  <!-- Paper attribution -->
+  <text x="890" y="555" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Paper 8</text>
+</svg>

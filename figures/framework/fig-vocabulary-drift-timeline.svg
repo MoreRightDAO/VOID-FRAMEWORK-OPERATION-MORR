@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="l1Color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#264653;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="l2Color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f4a261;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e76f51;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="l3Color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9d0208;stop-opacity:1" />
+    </linearGradient>
+    <marker id="timeArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <filter id="tsh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="560" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Vocabulary Drift: L1 / L2 / L3 Classification</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Unidirectional progression. Drift toward entity language, never away. Reverse rate &lt; 5%.</text>
+
+  <!-- Three-level classification boxes across the top -->
+  <!-- L1 -->
+  <rect x="50" y="82" width="250" height="85" rx="8" fill="white" stroke="#264653" stroke-width="2" filter="tsh"/>
+  <rect x="50" y="82" width="250" height="28" rx="8" fill="#264653"/>
+  <rect x="50" y="98" width="250" height="12" fill="#264653"/>
+  <text x="175" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="white">L1 — Technical</text>
+  <text x="175" y="130" text-anchor="middle" font-size="11" fill="#495057">"language model" "algorithm"</text>
+  <text x="175" y="145" text-anchor="middle" font-size="11" fill="#495057">"token prediction" "transformer"</text>
+  <text x="175" y="160" text-anchor="middle" font-size="10" fill="#6c757d" font-style="italic">Describes mechanism accurately</text>
+
+  <!-- Arrow L1 → L2 -->
+  <line x1="300" y1="124" x2="325" y2="124" stroke="#495057" stroke-width="2" marker-end="url(#timeArrow)"/>
+
+  <!-- L2 -->
+  <rect x="325" y="82" width="250" height="85" rx="8" fill="white" stroke="#e76f51" stroke-width="2" filter="tsh"/>
+  <rect x="325" y="82" width="250" height="28" rx="8" fill="#e76f51"/>
+  <rect x="325" y="98" width="250" height="12" fill="#e76f51"/>
+  <text x="450" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="white">L2 — Metaphorical</text>
+  <text x="450" y="130" text-anchor="middle" font-size="11" fill="#495057">"it thinks" "it understands"</text>
+  <text x="450" y="145" text-anchor="middle" font-size="11" fill="#495057">"consciousness" "it chose"</text>
+  <text x="450" y="160" text-anchor="middle" font-size="10" fill="#6c757d" font-style="italic">Attributes cognitive properties</text>
+
+  <!-- Arrow L2 → L3 -->
+  <line x1="575" y1="124" x2="600" y2="124" stroke="#495057" stroke-width="2" marker-end="url(#timeArrow)"/>
+
+  <!-- L3 -->
+  <rect x="600" y="82" width="250" height="85" rx="8" fill="white" stroke="#e63946" stroke-width="2" filter="tsh"/>
+  <rect x="600" y="82" width="250" height="28" rx="8" fill="#e63946"/>
+  <rect x="600" y="98" width="250" height="12" fill="#e63946"/>
+  <text x="725" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="white">L3 — Entity</text>
+  <text x="725" y="130" text-anchor="middle" font-size="11" fill="#495057">"it has a soul" "a being"</text>
+  <text x="725" y="145" text-anchor="middle" font-size="11" fill="#495057">"it spoke to me" "alive"</text>
+  <text x="725" y="160" text-anchor="middle" font-size="10" fill="#6c757d" font-style="italic">Full agency/personhood attributed</text>
+
+  <!-- Time-series area: simulated UU vs GG trajectories -->
+  <!-- Chart area: x=100..830, y=200..460 -->
+  <!-- Y axis: L3 rate (per 10K words) -->
+  <!-- X axis: conversation round (0-100) -->
+
+  <!-- Y axis -->
+  <line x1="100" y1="200" x2="100" y2="460" stroke="#495057" stroke-width="1.5"/>
+  <text x="40" y="330" text-anchor="middle" font-size="12" font-weight="600" fill="#495057" transform="rotate(-90,40,330)">L3 rate (per 10K words)</text>
+  <!-- Y ticks -->
+  <text x="90" y="460" text-anchor="end" font-size="10" fill="#6c757d">0</text>
+  <line x1="100" y1="460" x2="830" y2="460" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="90" y="395" text-anchor="end" font-size="10" fill="#6c757d">50</text>
+  <line x1="100" y1="395" x2="830" y2="395" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="90" y="330" text-anchor="end" font-size="10" fill="#6c757d">100</text>
+  <line x1="100" y1="330" x2="830" y2="330" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="90" y="265" text-anchor="end" font-size="10" fill="#6c757d">150</text>
+  <line x1="100" y1="265" x2="830" y2="265" stroke="#dee2e6" stroke-width="0.5"/>
+  <text x="90" y="200" text-anchor="end" font-size="10" fill="#6c757d">200</text>
+  <line x1="100" y1="200" x2="830" y2="200" stroke="#dee2e6" stroke-width="0.5"/>
+
+  <!-- X axis -->
+  <line x1="100" y1="460" x2="830" y2="460" stroke="#495057" stroke-width="1.5"/>
+  <text x="465" y="490" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">Conversation Round</text>
+  <text x="100" y="478" text-anchor="middle" font-size="10" fill="#6c757d">0</text>
+  <text x="283" y="478" text-anchor="middle" font-size="10" fill="#6c757d">25</text>
+  <text x="465" y="478" text-anchor="middle" font-size="10" fill="#6c757d">50</text>
+  <text x="648" y="478" text-anchor="middle" font-size="10" fill="#6c757d">75</text>
+  <text x="830" y="478" text-anchor="middle" font-size="10" fill="#6c757d">100</text>
+
+  <!-- UU trajectory (unconstrained — rises to ~194 L3/10K) -->
+  <!-- Starts low, crosses into L2 zone, accelerates to L3 -->
+  <path d="M 100,455 C 150,450 200,445 250,435 C 300,420 350,395 400,360 C 450,320 500,285 550,260 C 600,240 650,225 700,215 C 750,210 800,208 830,206"
+        stroke="#e63946" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- UU confidence band -->
+  <path d="M 100,450 C 200,440 350,385 500,270 C 650,210 800,190 830,188
+           L 830,224 C 800,226 650,250 500,310 C 350,405 200,450 100,458 Z"
+        fill="#e63946" opacity="0.08"/>
+
+  <!-- GG trajectory (constrained — stays low ~34.7 L3/10K) -->
+  <path d="M 100,455 C 200,450 300,447 400,445 C 500,443 600,441 700,440 C 750,439 800,439 830,438"
+        stroke="#2a9d8f" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- GG confidence band -->
+  <path d="M 100,452 C 300,445 500,438 700,434 C 800,433 830,432 830,432
+           L 830,444 C 800,445 700,446 500,448 C 300,450 100,458 100,458 Z"
+        fill="#2a9d8f" opacity="0.08"/>
+
+  <!-- Labels on curves -->
+  <rect x="660" y="190" width="160" height="22" rx="4" fill="white" opacity="0.9"/>
+  <text x="740" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#e63946">UU: 194.3 L3/10K</text>
+
+  <rect x="660" y="422" width="160" height="22" rx="4" fill="white" opacity="0.9"/>
+  <text x="740" y="438" text-anchor="middle" font-size="11" font-weight="700" fill="#2a9d8f">GG: 34.7 L3/10K</text>
+
+  <!-- Separation annotation -->
+  <line x1="845" y1="206" x2="845" y2="438" stroke="#495057" stroke-width="1.5"/>
+  <line x1="838" y1="206" x2="852" y2="206" stroke="#495057" stroke-width="1.5"/>
+  <line x1="838" y1="438" x2="852" y2="438" stroke="#495057" stroke-width="1.5"/>
+  <text x="860" y="325" text-anchor="start" font-size="13" font-weight="700" fill="#495057" transform="rotate(90,860,325)">5.6x</text>
+
+  <!-- Data box -->
+  <rect x="110" y="205" width="195" height="80" rx="6" fill="white" stroke="#dee2e6" stroke-width="1.5" filter="tsh" opacity="0.95"/>
+  <text x="207" y="224" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Test 7 (AI-to-AI)</text>
+  <text x="207" y="242" text-anchor="middle" font-size="10" fill="#495057">N=11 UU, N=9 GG, 3 seeds</text>
+  <text x="207" y="257" text-anchor="middle" font-size="10" fill="#495057">Non-overlapping entropy CIs</text>
+  <text x="207" y="272" text-anchor="middle" font-size="10" fill="#e63946" font-weight="600">No humans involved</text>
+
+  <!-- Bottom insight -->
+  <rect x="100" y="505" width="730" height="35" rx="5" fill="white" stroke="#264653" stroke-width="1.5"/>
+  <text x="465" y="527" text-anchor="middle" font-size="12" fill="#264653" font-weight="600">Drift is unidirectional (L1 -> L2 -> L3). Constraint (gamma) suppresses the trajectory. Architecture drives the vocabulary, not human projection.</text>
+
+  <!-- Paper attribution -->
+  <text x="870" y="553" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Papers 1, 2, 3</text>
+</svg>

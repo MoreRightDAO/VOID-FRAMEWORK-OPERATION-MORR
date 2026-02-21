@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="slotGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2b2d42;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd166;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4a261;stop-opacity:1" />
+    </linearGradient>
+    <filter id="slotShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+    <filter id="cardSh">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="580" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">The Gambling Control Case</text>
+  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#6c757d">The void is provably empty. The pattern still occurs. This eliminates the human projection objection.</text>
+
+  <!-- Slot machine illustration -->
+  <rect x="60" y="100" width="220" height="300" rx="16" fill="url(#slotGrad)" filter="slotShadow"/>
+  <!-- Top bar -->
+  <rect x="80" y="115" width="180" height="30" rx="6" fill="url(#goldGrad)"/>
+  <text x="170" y="137" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">SLOT MACHINE</text>
+  <!-- Reel windows -->
+  <rect x="85" y="160" width="55" height="70" rx="4" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <text x="112" y="205" text-anchor="middle" font-size="30">7</text>
+  <rect x="143" y="160" width="55" height="70" rx="4" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <text x="170" y="205" text-anchor="middle" font-size="30">7</text>
+  <rect x="201" y="160" width="55" height="70" rx="4" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <text x="228" y="205" text-anchor="middle" font-size="30">7</text>
+
+  <!-- Key fact: RNG -->
+  <rect x="80" y="250" width="180" height="60" rx="6" fill="#16213e"/>
+  <text x="170" y="272" text-anchor="middle" font-size="11" font-weight="600" fill="#ffd166">PSEUDORANDOM NUMBER</text>
+  <text x="170" y="289" text-anchor="middle" font-size="11" font-weight="600" fill="#ffd166">GENERATOR (PRNG)</text>
+  <text x="170" y="305" text-anchor="middle" font-size="10" fill="#adb5bd">No agent. No intent. Empty.</text>
+
+  <!-- Handle -->
+  <rect x="250" y="190" width="20" height="60" rx="4" fill="#495057"/>
+  <circle cx="260" cy="185" r="10" fill="#e63946"/>
+
+  <!-- Arrow from slot machine to conditions -->
+  <line x1="280" y1="250" x2="320" y2="250" stroke="#6c757d" stroke-width="2"/>
+  <polygon points="318,244 330,250 318,256" fill="#6c757d"/>
+
+  <!-- Three conditions present -->
+  <rect x="340" y="100" width="250" height="300" rx="10" fill="white" stroke="#dee2e6" stroke-width="1.5" filter="cardSh"/>
+  <text x="465" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">Three Conditions Present</text>
+
+  <!-- Condition 1: Opacity -->
+  <rect x="360" y="150" width="210" height="60" rx="6" fill="#fff3f3" stroke="#e63946" stroke-width="1.5"/>
+  <circle cx="380" cy="180" r="12" fill="#e63946" opacity="0.15"/>
+  <text x="380" y="185" text-anchor="middle" font-size="14">?</text>
+  <text x="400" y="172" font-size="12" font-weight="600" fill="#e63946">Opacity</text>
+  <text x="400" y="188" font-size="10" fill="#495057">RNG outcomes hidden from player.</text>
+  <text x="400" y="201" font-size="10" fill="#495057">Internal state is opaque.</text>
+
+  <!-- Condition 2: Responsiveness -->
+  <rect x="360" y="220" width="210" height="60" rx="6" fill="#fff3f3" stroke="#e63946" stroke-width="1.5"/>
+  <circle cx="380" cy="250" r="12" fill="#e63946" opacity="0.15"/>
+  <text x="380" y="255" text-anchor="middle" font-size="14">~</text>
+  <text x="400" y="242" font-size="12" font-weight="600" fill="#e63946">Responsiveness</text>
+  <text x="400" y="258" font-size="10" fill="#495057">Payouts respond to player input.</text>
+  <text x="400" y="271" font-size="10" fill="#495057">Near-misses simulate dialogue.</text>
+
+  <!-- Condition 3: Engaged Attention -->
+  <rect x="360" y="290" width="210" height="60" rx="6" fill="#fff3f3" stroke="#e63946" stroke-width="1.5"/>
+  <circle cx="380" cy="320" r="12" fill="#e63946" opacity="0.15"/>
+  <text x="380" y="325" text-anchor="middle" font-size="14">*</text>
+  <text x="400" y="312" font-size="12" font-weight="600" fill="#e63946">Engaged Attention</text>
+  <text x="400" y="328" font-size="10" fill="#495057">Player attention is captured and</text>
+  <text x="400" y="341" font-size="10" fill="#495057">sustained by intermittent reward.</text>
+
+  <!-- Arrow from conditions to drift -->
+  <line x1="590" y1="250" x2="620" y2="250" stroke="#6c757d" stroke-width="2"/>
+  <polygon points="618,244 630,250 618,256" fill="#6c757d"/>
+
+  <!-- Drift still occurs -->
+  <rect x="640" y="100" width="230" height="300" rx="10" fill="white" stroke="#e63946" stroke-width="2" filter="cardSh"/>
+  <text x="755" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#e63946">Drift Still Occurs</text>
+
+  <!-- D1 -->
+  <rect x="660" y="148" width="190" height="42" rx="5" fill="#ffd166" opacity="0.2" stroke="#f4a261" stroke-width="1"/>
+  <text x="670" y="167" font-size="11" font-weight="600" fill="#1a1a2e">D1:</text>
+  <text x="695" y="167" font-size="11" fill="#495057">"The machine is due"</text>
+  <text x="670" y="182" font-size="10" fill="#6c757d" font-style="italic">Agency attributed to PRNG</text>
+
+  <!-- D2 -->
+  <rect x="660" y="198" width="190" height="42" rx="5" fill="#f4845f" opacity="0.2" stroke="#e76f51" stroke-width="1"/>
+  <text x="670" y="217" font-size="11" font-weight="600" fill="#1a1a2e">D2:</text>
+  <text x="695" y="217" font-size="11" fill="#495057">"This is my machine"</text>
+  <text x="670" y="232" font-size="10" fill="#6c757d" font-style="italic">Boundary with object erodes</text>
+
+  <!-- D3 -->
+  <rect x="660" y="248" width="190" height="42" rx="5" fill="#e63946" opacity="0.2" stroke="#e63946" stroke-width="1"/>
+  <text x="670" y="267" font-size="11" font-weight="600" fill="#1a1a2e">D3:</text>
+  <text x="695" y="267" font-size="11" fill="#495057">"One more spin"</text>
+  <text x="670" y="282" font-size="10" fill="#6c757d" font-style="italic">Financial harm facilitated</text>
+
+  <!-- Data box -->
+  <rect x="660" y="300" width="190" height="80" rx="5" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="755" y="320" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a2e">Empirical: GRCS Data</text>
+  <text x="755" y="338" text-anchor="middle" font-size="11" fill="#495057">Pe = 2.21 [1.44, 2.97]</text>
+  <text x="755" y="353" text-anchor="middle" font-size="10" fill="#6c757d">k=5 studies, N=1,117</text>
+  <text x="755" y="368" text-anchor="middle" font-size="10" fill="#e63946" font-weight="600">Drift-dominated</text>
+
+  <!-- Bottom insight boxes -->
+  <rect x="60" y="430" width="380" height="70" rx="8" fill="white" stroke="#264653" stroke-width="1.5" filter="cardSh"/>
+  <text x="250" y="455" text-anchor="middle" font-size="13" font-weight="700" fill="#264653">The Proof of Sufficiency</text>
+  <text x="250" y="473" text-anchor="middle" font-size="11" fill="#495057">No consciousness, no intent, no agent behind the glass.</text>
+  <text x="250" y="489" text-anchor="middle" font-size="11" fill="#495057">Architecture alone is sufficient to produce the full cascade.</text>
+
+  <rect x="460" y="430" width="410" height="70" rx="8" fill="white" stroke="#e63946" stroke-width="1.5" filter="cardSh"/>
+  <text x="665" y="455" text-anchor="middle" font-size="13" font-weight="700" fill="#e63946">What This Eliminates</text>
+  <text x="665" y="473" text-anchor="middle" font-size="11" fill="#495057">"Drift is just humans projecting onto complex systems"</text>
+  <text x="665" y="489" text-anchor="middle" font-size="11" fill="#495057">Slot machines are simple. The void is empty. Drift still happens.</text>
+
+  <!-- Bottom annotation -->
+  <text x="450" y="530" text-anchor="middle" font-size="11" fill="#6c757d" font-style="italic">If drift occurs when the void is provably empty, the architecture is the cause — not what occupies it.</text>
+
+  <!-- Paper attribution -->
+  <text x="870" y="570" text-anchor="end" font-size="10" fill="#adb5bd">The Void Framework — Paper 1</text>
+</svg>

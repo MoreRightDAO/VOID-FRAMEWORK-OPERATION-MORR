@@ -1,0 +1,29 @@
+{
+  "source": "ops/lab/results/EXP-021-crypto-pe-solana.json",
+  "date": "2026-02-16T08:12:17.157816",
+  "validation_checks": {
+    "status": "analyzed",
+    "n": 28,
+    "C1_peak_wci_vs_abs_pe": {
+      "description": "Peak WCI correlation with |Pe| (higher peak \u2192 higher drift?)",
+      "spearman_r": 0.4171342587304598,
+      "spearman_p": 0.02721561941353482,
+      "prediction": "positive correlation (more concentrated \u2192 more drift-dominated)",
+      "confirmed": "True"
+    },
+    "C5_mean_wci_vs_abs_pe": {
+      "description": "Mean WCI correlation with |Pe| (larger positions \u2192 higher drift?)",
+      "spearman_r": 0.6349206349206349,
+      "spearman_p": 0.0002840483746086944,
+      "prediction": "positive correlation (bigger positions \u2192 more drift-dominated)",
+      "confirmed": "True"
+    },
+    "regime_distribution": {
+      "drift-dominated": 27,
+      "transient": 1
+    }
+  },
+  "c4_stablecoin_constraint": {
+    "status": "no_stablecoin_data"
+  }
+}
