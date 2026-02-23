@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 500" width="560" height="500">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    </style>
+    <linearGradient id="hg48s" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e0a0a"/>
+      <stop offset="100%" stop-color="#0d0f1a"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="500" fill="#ffffff" rx="8"/>
+
+  <!-- Header -->
+  <rect width="560" height="58" fill="url(#hg48s)" rx="8"/>
+  <rect y="50" width="560" height="8" fill="#0d0f1a"/>
+  <rect width="560" height="3" fill="#c0392b" rx="8"/>
+
+  <!-- MoreRight logo -->
+  <circle cx="22" cy="21" r="9" fill="none" stroke="#4a9eff" stroke-width="1.6"/>
+  <circle cx="22" cy="21" r="2.9" fill="#4a9eff"/>
+  <text y="25" font-size="13" letter-spacing="-0.02em">
+    <tspan x="36" font-weight="300" fill="#8b98b0">More</tspan><tspan font-weight="800" fill="#ffffff">Right</tspan>
+  </text>
+
+  <text x="16" y="45" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="-0.015em">The Pharmaceutical Opacity Stack</text>
+  <text x="544" y="30" font-size="8" fill="#8b98b0" text-anchor="end" letter-spacing="0.12em" font-weight="600" class="mono">PAPER 48 · OPACITY</text>
+  <text x="544" y="47" font-size="9" fill="#ef4444" text-anchor="end" class="mono">O = 3/3</text>
+
+  <!-- "EVIDENCE / REALITY" top block -->
+  <rect x="16" y="68" width="528" height="34" fill="#eff6ff" rx="5" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="280" y="82" font-size="11" font-weight="700" fill="#1d4ed8" text-anchor="middle" letter-spacing="0.08em">EVIDENCE / REALITY</text>
+  <text x="280" y="95" font-size="9.5" fill="#3b82f6" text-anchor="middle">Molecules, clinical trial results, true prices, unbiased prescriber information</text>
+
+  <!-- Signal flow arrow (left side, running through all layers) -->
+  <rect x="18" y="102" width="12" height="310" fill="url(#signal)" rx="6"/>
+  <polygon points="18,412 30,412 24,424" fill="#64748b" opacity="0.3"/>
+
+  <!-- ── Layer 1: Pharmacological Opacity ── -->
+  <rect x="36" y="104" width="508" height="56" fill="#fff5f5" rx="4" stroke="#fca5a5" stroke-width="1"/>
+  <rect x="36" y="104" width="5" height="56" fill="#fca5a5" rx="2"/>
+  <text x="49" y="121" font-size="9.5" fill="#7f1d1d" font-weight="700" letter-spacing="0.08em">①  PHARMACOLOGICAL OPACITY</text>
+  <text x="49" y="135" font-size="10" fill="#374151">Biochemical mechanisms are inherently unobservable at the patient level.</text>
+  <text x="49" y="148" font-size="9.5" fill="#6b7280">HMG-CoA reductase inhibition · dopamine D2 occupancy · drug vs placebo indistinguishable in-vivo</text>
+  <!-- O bar -->
+  <rect x="480" y="110" width="54" height="14" fill="#fef2f2" rx="3" stroke="#fca5a5" stroke-width="1"/>
+  <rect x="480" y="110" width="18" height="14" fill="#fca5a5" rx="2"/>
+  <text x="507" y="121" font-size="8" fill="#991b1b" text-anchor="middle" class="mono">O +1</text>
+
+  <!-- ── Layer 2: Clinical Evidence Opacity ── -->
+  <rect x="36" y="164" width="508" height="58" fill="#fff0f0" rx="4" stroke="#f87171" stroke-width="1"/>
+  <rect x="36" y="164" width="5" height="58" fill="#f87171" rx="2"/>
+  <text x="49" y="181" font-size="9.5" fill="#7f1d1d" font-weight="700" letter-spacing="0.08em">②  CLINICAL EVIDENCE OPACITY</text>
+  <text x="49" y="195" font-size="10" fill="#374151">Manufacturer controls trial design, registration, and publication of the evidence base.</text>
+  <text x="49" y="208" font-size="9.5" fill="#6b7280">94% published positive · 51% registered positive · 43% gap (Turner et al., NEJM 2008)</text>
+  <!-- Filter indicator -->
+  <rect x="444" y="169" width="90" height="14" fill="#fef2f2" rx="3" stroke="#f87171" stroke-width="1"/>
+  <rect x="444" y="169" width="45" height="14" fill="#f87171" rx="2"/>
+  <text x="489" y="180" font-size="8" fill="#991b1b" text-anchor="middle" class="mono">−43% signal</text>
+
+  <!-- ── Layer 3: Pricing Opacity ── -->
+  <rect x="36" y="226" width="508" height="58" fill="#fee8e8" rx="4" stroke="#f87171" stroke-width="1.2"/>
+  <rect x="36" y="226" width="5" height="58" fill="#ef4444" rx="2"/>
+  <text x="49" y="243" font-size="9.5" fill="#7f1d1d" font-weight="700" letter-spacing="0.08em">③  PRICING OPACITY</text>
+  <text x="49" y="257" font-size="10" fill="#374151">Four different prices describe the same transaction. None visible to prescriber or patient.</text>
+  <text x="49" y="270" font-size="9.5" fill="#6b7280">List → net → rebate → patient cost-share · $175B/yr invisible (FTC 2024) · PBM contracts proprietary</text>
+  <rect x="444" y="232" width="90" height="14" fill="#fef2f2" rx="3" stroke="#ef4444" stroke-width="1"/>
+  <rect x="444" y="232" width="65" height="14" fill="#ef4444" rx="2"/>
+  <text x="489" y="243" font-size="8" fill="#fff" text-anchor="middle" class="mono">$175B hidden</text>
+
+  <!-- ── Layer 4: Prescriber Influence Opacity ── -->
+  <rect x="36" y="288" width="508" height="58" fill="#fdd8d8" rx="4" stroke="#dc2626" stroke-width="1.2"/>
+  <rect x="36" y="288" width="5" height="58" fill="#dc2626" rx="2"/>
+  <text x="49" y="305" font-size="9.5" fill="#7f1d1d" font-weight="700" letter-spacing="0.08em">④  PRESCRIBER INFLUENCE OPACITY</text>
+  <text x="49" y="319" font-size="10" fill="#374151">Promotional information environment shapes prescribing without prescriber awareness.</text>
+  <text x="49" y="332" font-size="9.5" fill="#6b7280">$12.1B in payments 2013–2022 · 87% industry positive vs 65% independent (Lexchin, BMJ 2003)</text>
+  <rect x="444" y="294" width="90" height="14" fill="#fee2e2" rx="3" stroke="#dc2626" stroke-width="1"/>
+  <rect x="444" y="294" width="78" height="14" fill="#dc2626" rx="2"/>
+  <text x="489" y="305" font-size="8" fill="#fff" text-anchor="middle" class="mono">+22pt bias</text>
+
+  <!-- ── Layer 5: Formulary & Substitution Opacity ── -->
+  <rect x="36" y="350" width="508" height="58" fill="#fbbfbf" rx="4" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="36" y="350" width="5" height="58" fill="#b91c1c" rx="2"/>
+  <text x="49" y="367" font-size="9.5" fill="#7f1d1d" font-weight="700" letter-spacing="0.08em">⑤  FORMULARY &amp; SUBSTITUTION OPACITY</text>
+  <text x="49" y="381" font-size="10" fill="#374151">PBM formulary logic optimizes rebates, not patient outcomes. Invisible to prescribers.</text>
+  <text x="49" y="394" font-size="9.5" fill="#6b7280">Insulin list prices ↑1100% (1996–2019) · 1-in-4 patients rationing · no substitution signal</text>
+  <rect x="444" y="356" width="90" height="14" fill="#fee2e2" rx="3" stroke="#b91c1c" stroke-width="1"/>
+  <rect x="444" y="356" width="90" height="14" fill="#b91c1c" rx="2"/>
+  <text x="489" y="367" font-size="8" fill="#fff" text-anchor="middle" class="mono">FULLY OPAQUE</text>
+
+  <!-- "PATIENT DECISION" bottom block -->
+  <rect x="16" y="418" width="528" height="34" fill="#fff7ed" rx="5" stroke="#f97316" stroke-width="1.5"/>
+  <text x="280" y="432" font-size="11" font-weight="700" fill="#c2410c" text-anchor="middle" letter-spacing="0.06em">PATIENT / PRESCRIBER DECISION POINT</text>
+  <text x="280" y="445" font-size="9.5" fill="#ea580c" text-anchor="middle">Incomplete evidence · unknown true price · influenced prescriber · opaque formulary</text>
+
+  <!-- Cumulative opacity bar at right -->
+  <line x1="544" y1="68" x2="544" y2="412" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="537" y="104" width="14" height="56" fill="#fca5a5" opacity="0.5" rx="2"/>
+  <rect x="537" y="164" width="14" height="58" fill="#f87171" opacity="0.6" rx="2"/>
+  <rect x="537" y="226" width="14" height="58" fill="#ef4444" opacity="0.7" rx="2"/>
+  <rect x="537" y="288" width="14" height="58" fill="#dc2626" opacity="0.8" rx="2"/>
+  <rect x="537" y="350" width="14" height="58" fill="#b91c1c" opacity="0.95" rx="2"/>
+  <text x="544" y="100" font-size="8" fill="#64748b" text-anchor="middle">opacity</text>
+
+  <!-- Footer -->
+  <line x1="0" y1="487" x2="560" y2="487" stroke="#eef0f4" stroke-width="1"/>
+  <circle cx="16" cy="494" r="4" fill="none" stroke="#4a9eff" stroke-width="1"/>
+  <circle cx="16" cy="494" r="1.3" fill="#4a9eff"/>
+  <text x="26" y="497" font-size="9" fill="#94a3b8">moreright.xyz</text>
+  <text x="280" y="497" font-size="9" fill="#94a3b8" text-anchor="middle">Void Framework · Paper 48 · MoreRight License v1.0</text>
+  <text x="554" y="497" font-size="9" fill="#94a3b8" text-anchor="end">O = 3/3 · Composite 10/12</text>
+</svg>

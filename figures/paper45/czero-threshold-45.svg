@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 440" width="580" height="440">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    </style>
+    <linearGradient id="hg45c" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#161b2e"/>
+      <stop offset="100%" stop-color="#0d1a0e"/>
+    </linearGradient>
+    <!-- Clipping to plot area -->
+    <clipPath id="plotClip">
+      <rect x="80" y="68" width="472" height="314"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="580" height="440" fill="#ffffff" rx="8"/>
+
+  <!-- Header -->
+  <rect width="580" height="60" fill="url(#hg45c)" rx="8"/>
+  <rect y="52" width="580" height="8" fill="#0d1a0e"/>
+  <rect width="580" height="3" fill="#27ae60" rx="8"/>
+
+  <!-- MoreRight logo -->
+  <circle cx="22" cy="21" r="9" fill="none" stroke="#4a9eff" stroke-width="1.6"/>
+  <circle cx="22" cy="21" r="2.9" fill="#4a9eff"/>
+  <text y="25" font-size="13" letter-spacing="-0.02em">
+    <tspan x="36" font-weight="300" fill="#8b98b0">More</tspan><tspan font-weight="800" fill="#ffffff">Right</tspan>
+  </text>
+
+  <!-- Title -->
+  <text x="16" y="44" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="-0.015em">C_ZERO Threshold: Revelation as Thermodynamic Operation</text>
+  <text x="564" y="30" font-size="8" fill="#8b98b0" text-anchor="end" letter-spacing="0.12em" font-weight="600" class="mono">PAPER 45 · nb41</text>
+  <text x="564" y="48" font-size="9" fill="#4ade80" text-anchor="end" class="mono">N=12 · ρ=0.9625</text>
+
+  <!-- Plot background -->
+  <rect x="80" y="68" width="472" height="314" fill="#fafbfc" rx="3"/>
+
+  <!-- Shaded regions -->
+  <!-- Transparency region (left of V_crit=5.52, Pe<0 zone) -->
+  <rect x="80" y="225" width="289" height="157" fill="#f0fdf4" opacity="0.7" clip-path="url(#plotClip)"/>
+  <!-- Void attractor region (right of V_crit=5.52, Pe>0 zone) -->
+  <rect x="369" y="68" width="183" height="157" fill="#fff5f5" opacity="0.7" clip-path="url(#plotClip)"/>
+
+  <!-- Grid lines (horizontal, Pe = -4, -2, 0, 2, 4) -->
+  <line x1="80" y1="381" x2="552" y2="381" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="80" y1="329" x2="552" y2="329" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="80" y1="225" x2="552" y2="225" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.6"/>
+  <line x1="80" y1="173" x2="552" y2="173" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="80" y1="121" x2="552" y2="121" stroke="#e8ecef" stroke-width="1"/>
+
+  <!-- Grid lines (vertical, V = 2, 4, 6, 8) -->
+  <line x1="184" y1="68" x2="184" y2="382" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="288" y1="68" x2="288" y2="382" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="392" y1="68" x2="392" y2="382" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="496" y1="68" x2="496" y2="382" stroke="#e8ecef" stroke-width="1"/>
+
+  <!-- Pe=0 line (C_ZERO) — strong red dashed -->
+  <line x1="80" y1="225" x2="552" y2="225" stroke="#c0392b" stroke-width="1.8" stroke-dasharray="6,4"/>
+
+  <!-- V_crit = 5.52 vertical line -->
+  <line x1="369" y1="68" x2="369" y2="382" stroke="#f39c12" stroke-width="1.8" stroke-dasharray="6,4"/>
+
+  <!-- Axes -->
+  <line x1="80" y1="382" x2="552" y2="382" stroke="#c8cdd5" stroke-width="1.5"/>
+  <line x1="80" y1="68" x2="80" y2="382" stroke="#c8cdd5" stroke-width="1.5"/>
+
+  <!-- THRML fitted curve (polyline through theoretical predictions) -->
+  <polyline
+    points="80,374 132,347 184,312 237,277 288,243 341,239 369,225 392,208 445,173 498,138 552,104"
+    fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="7,3" opacity="0.65"/>
+
+  <!-- ── Transparency events (Pe<0, V≤5, green circles) ── -->
+  <!-- (1.8, Pe=-4.2) -->
+  <circle cx="174" cy="333" r="6" fill="#16a34a" opacity="0.85"/>
+  <!-- (3.0, Pe=-4.7) — Levitical scapegoat -->
+  <circle cx="237" cy="346" r="7" fill="#15803d" opacity="0.95" stroke="#ffffff" stroke-width="1.5"/>
+  <!-- (4.0, Pe=-2.4) -->
+  <circle cx="289" cy="287" r="6" fill="#16a34a" opacity="0.85"/>
+  <!-- (5.1, Pe=-0.8) -->
+  <circle cx="346" cy="246" r="6" fill="#16a34a" opacity="0.85"/>
+
+  <!-- ── Void attractor events (Pe>0, V>5.5, red circles) ── -->
+  <!-- (5.8, 0.8) -->
+  <circle cx="383" cy="204" r="6" fill="#dc2626" opacity="0.8"/>
+  <!-- (6.2, 1.5) -->
+  <circle cx="403" cy="186" r="6" fill="#dc2626" opacity="0.8"/>
+  <!-- (6.8, 1.9) -->
+  <circle cx="435" cy="176" r="6" fill="#dc2626" opacity="0.8"/>
+  <!-- (7.0, 2.3) -->
+  <circle cx="445" cy="165" r="6" fill="#dc2626" opacity="0.8"/>
+  <!-- (7.5, 2.8) -->
+  <circle cx="472" cy="153" r="6" fill="#dc2626" opacity="0.8"/>
+  <!-- (8.2, 3.6) -->
+  <circle cx="508" cy="132" r="6" fill="#dc2626" opacity="0.8"/>
+  <!-- (8.8, 4.2) -->
+  <circle cx="539" cy="116" r="6" fill="#c0392b" opacity="0.85"/>
+  <!-- (9.0, 4.7) — mob violence paradigm -->
+  <circle cx="552" cy="104" r="7" fill="#c0392b" opacity="0.95" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- Y axis labels (Pe values) -->
+  <text x="73" y="386" font-size="10" fill="#64748b" text-anchor="end" class="mono">−6</text>
+  <text x="73" y="333" font-size="10" fill="#64748b" text-anchor="end" class="mono">−4</text>
+  <text x="73" y="278" font-size="10" fill="#64748b" text-anchor="end" class="mono">−2</text>
+  <text x="73" y="229" font-size="10" fill="#c0392b" text-anchor="end" font-weight="700" class="mono">0</text>
+  <text x="73" y="177" font-size="10" fill="#64748b" text-anchor="end" class="mono">+2</text>
+  <text x="73" y="125" font-size="10" fill="#64748b" text-anchor="end" class="mono">+4</text>
+  <text x="73" y="73" font-size="10" fill="#64748b" text-anchor="end" class="mono">+6</text>
+
+  <!-- Y axis title -->
+  <text x="16" y="240" font-size="11" fill="#475569" font-weight="600" text-anchor="middle" transform="rotate(-90, 16, 240)">Péclet Number (Pe)</text>
+
+  <!-- X axis labels -->
+  <text x="80" y="396" font-size="10" fill="#64748b" text-anchor="middle" class="mono">0</text>
+  <text x="184" y="396" font-size="10" fill="#64748b" text-anchor="middle" class="mono">2</text>
+  <text x="288" y="396" font-size="10" fill="#64748b" text-anchor="middle" class="mono">4</text>
+  <text x="369" y="396" font-size="10" fill="#f39c12" text-anchor="middle" font-weight="700" class="mono">5.52</text>
+  <text x="392" y="396" font-size="10" fill="#64748b" text-anchor="middle" class="mono">6</text>
+  <text x="496" y="396" font-size="10" fill="#64748b" text-anchor="middle" class="mono">8</text>
+  <text x="552" y="396" font-size="10" fill="#64748b" text-anchor="middle" class="mono">9</text>
+
+  <!-- X axis title -->
+  <text x="316" y="415" font-size="11" fill="#475569" font-weight="600" text-anchor="middle">V_mech (mechanism void score)</text>
+
+  <!-- C_ZERO label -->
+  <text x="85" y="220" font-size="9.5" fill="#c0392b" font-weight="700" class="mono">C_ZERO  Pe = 0</text>
+
+  <!-- V_crit label -->
+  <text x="371" y="80" font-size="9" fill="#f39c12" font-weight="700" class="mono">V_crit = 5.52</text>
+
+  <!-- Region label: Transparency -->
+  <text x="90" y="88" font-size="9.5" fill="#15803d" font-weight="700" letter-spacing="0.05em">TRANSPARENCY OPERATION</text>
+  <text x="90" y="100" font-size="9" fill="#15803d">Pe &lt; 0  ·  endothermic  ·  78 yr mean rebound</text>
+
+  <!-- Region label: Void Attractor -->
+  <text x="374" y="88" font-size="9.5" fill="#c0392b" font-weight="700" letter-spacing="0.05em">VOID ATTRACTOR</text>
+  <text x="374" y="100" font-size="9" fill="#c0392b">Pe &gt; 0  ·  4.9 yr mean rebound</text>
+
+  <!-- Annotation: 16x differential -->
+  <line x1="237" y1="340" x2="550" y2="100" stroke="#64748b" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.4"/>
+  <rect x="292" y="157" width="170" height="28" fill="#fffbeb" rx="4" stroke="#f59e0b" stroke-width="1"/>
+  <text x="377" y="169" font-size="9" fill="#92400e" text-anchor="middle" font-weight="600">16× slower rebound below V_crit</text>
+  <text x="377" y="180" font-size="8.5" fill="#92400e" text-anchor="middle">78 yr vs 4.9 yr (p&lt;0.001)</text>
+
+  <!-- Levitical scapegoat annotation -->
+  <line x1="237" y1="346" x2="155" y2="320" stroke="#15803d" stroke-width="1" opacity="0.7"/>
+  <text x="148" y="315" font-size="8.5" fill="#15803d" text-anchor="end" font-weight="600">Levitical scapegoat</text>
+  <text x="148" y="326" font-size="8" fill="#15803d" text-anchor="end">(Lev. 16) — lowest Pe</text>
+
+  <!-- Mob violence annotation -->
+  <line x1="552" y1="104" x2="545" y2="76" stroke="#c0392b" stroke-width="1" opacity="0.7"/>
+  <text x="548" y="73" font-size="8.5" fill="#c0392b" text-anchor="middle" font-weight="600">Mob violence</text>
+  <text x="548" y="82" font-size="8" fill="#c0392b" text-anchor="middle">Pe=4.7</text>
+
+  <!-- Legend -->
+  <circle cx="92" cy="427" r="5" fill="#15803d"/>
+  <text x="101" y="431" font-size="9.5" fill="#374151">Transparency event (V≤5.52, Pe&lt;0, N=4)</text>
+  <circle cx="300" cy="427" r="5" fill="#c0392b"/>
+  <text x="309" y="431" font-size="9.5" fill="#374151">Void attractor event (V&gt;5.52, Pe&gt;0, N=8)</text>
+  <line x1="470" y1="427" x2="490" y2="427" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,3"/>
+  <text x="494" y="431" font-size="9.5" fill="#374151">THRML fit</text>
+
+  <!-- Footer -->
+  <line x1="0" y1="435" x2="580" y2="435" stroke="#eef0f4" stroke-width="1"/>
+  <circle cx="16" cy="438" r="4" fill="none" stroke="#4a9eff" stroke-width="1"/>
+  <circle cx="16" cy="438" r="1.3" fill="#4a9eff"/>
+  <text x="26" y="441" font-size="9" fill="#94a3b8">moreright.xyz</text>
+  <text x="290" y="441" font-size="9" fill="#94a3b8" text-anchor="middle">Void Framework · Paper 45 · CC-BY 4.0</text>
+  <text x="574" y="441" font-size="9" fill="#94a3b8" text-anchor="end">nb41 · Girard Scapegoat Dataset</text>
+</svg>
