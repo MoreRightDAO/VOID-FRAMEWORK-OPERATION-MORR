@@ -251,6 +251,8 @@ KC-1 is the primary falsifier. KC-2 would directly refute the D3 completion crit
 
 **K = group size identification.** The mapping K = social group size is conceptually motivated and produces the correct first-order behavior. A formal treatment linking K (THRML spin count) to effective social group size through information-theoretic arguments — how many conspecifics must be simultaneously modeled to maintain competitive parity — would strengthen the theoretical foundation.
 
+**Dunbar's number is contested.** Lindenfors et al. (2021, *Nature Human Behaviour*) reanalyzed the neocortex-group size relationship using updated phylogenetic comparative methods and found confidence intervals substantially wider than originally reported, questioning whether K = 150 is as precisely determined as Dunbar's original papers suggest. This affects the K = 150 identification but not the core Spearman validation: the ρ = 0.9448 result uses species-level neocortex ratio and group size data from Aiello & Dunbar (1993) directly, not the human-specific K = 150 number. The void framework prediction is that any social system crossing V* generates escalatory cognitive dynamics — the specific value of the human equilibrium group size is supporting context, not the primary empirical claim.
+
 ---
 
 ## VIII. Discussion
@@ -306,6 +308,8 @@ Eckert, A. (2026c). The Void Space: Topological Foundations of the Eckert Manifo
 Eckert, A. (2026d). The Fitness Void: Three Independent Derivations of the Void Péclet Number. *Paper 41, MoreRight DAO*. DOI: 10.5281/zenodo.18736621.
 
 Emery, N. J., & Clayton, N. S. (2004). The mentality of crows: Convergent evolution of intelligence in corvids and apes. *Science*, 306(5703), 1903–1907. https://doi.org/10.1126/science.1098410
+
+Lindenfors, P., Wartel, A., & Lind, J. (2021). 'Dunbar's number' deconstructed. *Biology Letters*, 17(3), 20210158. https://doi.org/10.1098/rsbl.2021.0158
 
 Reader, S. M., & Laland, K. N. (2002). Social intelligence, innovation, and enhanced brain size in primates. *Proceedings of the National Academy of Sciences*, 99(7), 4436–4441. https://doi.org/10.1073/pnas.062041299
 

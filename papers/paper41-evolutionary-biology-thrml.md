@@ -362,6 +362,8 @@ The convergence is not surprising if Pe describes a structural property of adapt
 
 This is not a metaphor. The equations are the same. The mapping K = N_e, b_net = 2s is not chosen for aesthetic reasons — it follows from the structural identification of what plays the role of spin count and bias field in each domain.
 
+A natural objection is that the mapping was chosen post-hoc to make the expressions match. The reply is direct: the mapping is not fitted to data — it is a structural identification that can be evaluated independently. K in THRML is the effective number of independently competing adaptive units. In population genetics, the quantity playing this role is N_e — effective population size, the number of independently evolving lineages competing for fixation. The identification K = N_e is not a free parameter; it is the claim that these two theories describe the same structural quantity in different notation. The fact that Pe_THRML = 4N_e·s at first order is then a confirmation of the identification rather than its motivation. If the mapping were wrong — if the relevant biological quantity were something other than N_e — the expressions would not match. They match exactly at first order.
+
 ### VIII.B What the Framework Does Not Claim
 
 The convergence evidence does not imply exact quantitative interchangeability across domains without domain-specific calibration. The absolute Pe magnitudes differ because K scales differently (N_e for biology may be 10³ to 10⁶, versus K=16 canonical for behavioral platforms). The Spearman analysis addresses rank ordering, which is K-invariant; absolute magnitudes require explicit K = N_e calibration.
