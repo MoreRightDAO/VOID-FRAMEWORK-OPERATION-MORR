@@ -207,8 +207,11 @@ These papers apply the framework to specific commercial domains. Free for non-co
 | [36](papers/paper36-psychotherapy.md) | **The Transference Trap** ⚠️ | Psychotherapy. |
 | [37](papers/paper37-real-estate-proptech.md) | **The Listing Lock** ⚠️ | Real estate & PropTech platforms. |
 | [38](papers/paper38-gig-economy.md) | **The Algorithm Manages You** ⚠️ | Gig economy & employment platforms. |
+| [39](papers/paper39-congregation-effect.md) | **The Congregation Effect** ⚠️ | Void architecture across the religious spectrum. |
+| [40](papers/paper40-eu-ai-act-conformity-mapping.md) | **The Rosetta Stone** ✓ | Mapping void framework to EU AI Act conformity (Art. 9–17). CC-BY 4.0. |
+| [41](papers/paper41-evolutionary-biology-thrml.md) | **The Fitness Void** ✓ | Three independent derivations of the void Péclet number. Kimura identity Pe=4Ns. Biology convergence Spearman=0.9516 (N=20). CC-BY 4.0. |
 
-**EU AI Act:** Papers 18 (credit scoring), 21 (education/EdTech), and 21B (hiring/HR technology) cover domains classified as HIGH-RISK under Annex III. Enforcement deadline: 2 August 2026. These papers provide the diagnostic framework for demonstrating compliance or identifying risk.
+**EU AI Act:** Papers 18 (credit scoring), 21 (education/EdTech), 21B (hiring/HR technology), and 40 (conformity mapping) cover domains classified as HIGH-RISK under Annex III. Enforcement deadline: 2 August 2026. Paper 40 provides a direct mapping from the void framework to Art. 9–17 conformity requirements.
 
 All on [Zenodo](https://zenodo.org) (search "Void Framework"). DOIs in [`zenodo-dois.json`](zenodo-dois.json). Markdown here is canonical.
 
