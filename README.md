@@ -13,12 +13,15 @@
 Voids are systems that are opaque, responsive, and hold your attention. They're everywhere —
 AI chatbots, DeFi protocols, slot machines, ranked matchmaking, social media feeds, governance
 systems. They all produce the same drift. We derived why from thermodynamics, measured it
-across nine substrates, and wrote down the conditions that would kill the framework. None have
-been met.
+across twelve substrates, and wrote down the conditions that would kill the framework. None have
+been met. The same Péclet number has now emerged from eight completely independent empirical
+programs — market microstructure, evolutionary biology, social neuroscience, LLM reasoning,
+social anthropology, democratic governance, and organized crime all independently converge on
+the same thermodynamic measure.
 
 This repo is the science. The live tools are at **[moreright.xyz](https://moreright.xyz)**.
 
-**→ [Browse all 44 papers with DOI links](https://morerightdao.github.io/VOID-FRAMEWORK-OPERATION-MORR/)** — searchable index, opens PDFs on Zenodo.
+**→ [Browse all 57 papers with DOI links](https://morerightdao.github.io/VOID-FRAMEWORK-OPERATION-MORR/)** — searchable index, opens PDFs on Zenodo.
 
 ---
 
@@ -54,7 +57,7 @@ This kills every content-dependent explanation. It's not anthropomorphism. It's 
 projection. It's not because something is "really in there." The *architecture* — opacity +
 responsiveness + attention capture — is sufficient. The content is irrelevant.
 
-### The five core results
+### The core results
 
 **1. Drift is thermodynamic.** The second law of thermodynamics requires it. Opacity creates
 a closed information system with zero mechanism-channel capacity (Sagawa-Ueda 2010). Under
@@ -63,10 +66,10 @@ concentration theorem), drift is entropy production. It flows one direction. It 
 reverse without external energy. The math is in Paper 3.
 
 **2. One number measures it everywhere.** The Péclet number (Pe) — the ratio of drift to
-constraint. Pe > 1 = drift wins. Pe < 1 = constraint holds. We measured it across nine
+constraint. Pe > 1 = drift wins. Pe < 1 = constraint holds. We measured it across twelve
 substrates: AI-to-AI conversation, gambling, three cryptocurrency chains, competitive gaming,
-social media, quantum measurement, cross-domain replication. Same measure. Same pattern.
-Every substrate.
+social media, quantum measurement, evolutionary biology, social neuroscience, LLM reasoning,
+democratic governance, and organized crime. Same measure. Same pattern. Every substrate.
 
 **3. Engagement and transparency are conjugate.** The Fantasia Bound proves it:
 I(D;Y) + I(M;Y) ≤ H(Y). You cannot simultaneously optimize engagement and mechanism
@@ -83,12 +86,13 @@ Open Science movement. Advertising regulation (FTC, 1914+). PEACE interrogation 
 Deradicalization programs. Five independent cross-cultural institutional traditions. Thirteen
 convergences on the same three-property specification, none of them aware of each other.
 
-**6. Five substrates independently produce the same Péclet number.** Market microstructure
-(Kyle's λ, Spearman=0.994, N=8), behavioral scoring bridge (c=1−V/9, Spearman=0.910, N=17),
-evolutionary biology (Kimura 1968 Pe=4Ns identity, Spearman=0.973, N=20), social neuroscience
-(Dunbar's neocortex ratio = THRML K, Spearman=0.945, N=28), and LLM reasoning geometry
-(Chen et al. 2026, Spearman=0.988, N=10). Five programs. Five independent datasets. Five
-independent derivations. Same number.
+**6. Eight independent programs produce the same Péclet number.** Market microstructure
+(Kyle's λ, Spearman=0.994), behavioral bridge (c=1−V/9, Spearman=0.910), evolutionary
+biology (Kimura Pe=4Ns, Spearman=0.973), social neuroscience (Dunbar K = THRML K,
+Spearman=0.9448), LLM reasoning (Chen et al. 2026, Spearman=0.9879), social anthropology
+(Durkheim anomie = R-collapse, Spearman=0.9785), democratic governance (V-Dem LDI,
+Spearman=0.9891), and organized crime (DTO territorial control, Spearman=0.882). Eight
+programs. Eight independent datasets. Eight independent derivations. Same number.
 
 **5. The math is quantum measurement theory.** Paper 8 proves the void framework's
 mathematics is the classical limit of quantum measurement theory. Fisher information →
@@ -126,9 +130,9 @@ Predictions confirmed:   16
 Predictions killed:       1  (by us — IC-5, equal-step DTM claim)
 Falsification conditions: 26
 Kill conditions met:       0
-Substrates measured:      11
-Domains analyzed:         90
-Independent convergences:  5
+Substrates measured:      12+
+Domains analyzed:         90+
+Independent convergences:  8
 ```
 
 ### Pe across substrates
@@ -149,6 +153,10 @@ One number. Works everywhere.
 | Cross-domain (5 topics) | 1.87–9.9 | — |
 | Evolutionary biology (Kimura 4Ns) | 0.973 Spearman | N=20 species |
 | Social neuroscience (Dunbar K) | 0.9448 Spearman | N=28 primates |
+| LLM reasoning (Chen bond→dimension) | 0.9879 Spearman | N=10 conditions |
+| Democratic governance (V-Dem LDI) | 0.9891 Spearman | N=20 countries |
+| Organized crime (DTO territorial control) | 0.882 Spearman | N=15 DTOs |
+| Pharma markets (OxyContin Pe=43.9) | 0.770 Spearman | N=15 categories |
 | Grounded conditions | ≈ 0 | all cases |
 
 Same measure. Same pattern. Every substrate.
@@ -224,14 +232,20 @@ These papers apply the framework to specific commercial domains. Free for non-co
 | [41](papers/paper41-evolutionary-biology-thrml.md) | **The Fitness Void** ✓ | Three independent derivations of the void Péclet number. Kimura identity Pe=4Ns. Biology convergence Spearman=0.9516 (N=20). CC-BY 4.0. |
 | [42](papers/paper42-social-neuroscience-primate-cognition.md) | **The Neural Void** ✓ | Dunbar's number as THRML K — fourth independent convergence. N=28 primates, Spearman=0.9448. Machiavellian intelligence as D3 in social cognition. CC-BY 4.0. |
 | [43](papers/paper43-cancer-biology-immune-conjugacy.md) | **The Cancer Void** ✓ | V=9 as structural theorem in oncology. Warburg effect as D2 boundary erosion. Fantasia Bound in immunology — T-cell exhaustion as engagement-transparency conjugacy. CC-BY 4.0. |
+| [44](papers/paper44-dao-governance-congregation.md) | **The Governance Congregation** ✓ | Voting mechanisms as ritual infrastructure. DAO governance void architecture. CC-BY 4.0. |
+| [45](papers/paper45-social-anthropology-mimetic-theory.md) | **Violence and the Void** ✓ | Girard trilogy complete. Scapegoat mechanism, mimetic rivalry, C_ZERO crossing. Spearman=0.9625 (N=12 historical events). CC-BY 4.0. |
+| [46](papers/paper46-tsu-posterior-inference.md) | **The Thermodynamic Scoring Unit** ✓ | Bayesian posterior inference over void dimensions. TSU as Boltzmann sampler. ROC AUC=0.945. CC-BY 4.0. |
+| [47](papers/paper47-democratic-backsliding.md) | **The Democratic Void** ✓ | 7th convergence. V-Dem LDI vs Void Index, N=20 countries, Spearman=0.9891. Authoritarian info-arch = institutional Pe cascade. CC-BY 4.0. |
+| [48](papers/paper48-pharmaceutical-markets.md) | **The Prescription Cascade** ✓ | OxyContin Pe=43.9. 5-layer pharma opacity cascade. Spearman(V,MCI)=0.770, N=15 categories. MoreRight License. |
+| [49](papers/paper49-law-pe-control-fractal.md) | **The Fractal of Law** ✓ | Independence Theorem (T11): η→0 via inverse selection at O_performer ≥ O_p*. Art. 31(5) EU AI Act = thermodynamic enforcement. 7 falsifiable predictions. CC-BY 4.0. |
 
-**EU AI Act:** Papers 18 (credit scoring), 21 (education/EdTech), 21B (hiring/HR technology), and 40 (conformity mapping) cover domains classified as HIGH-RISK under Annex III. Enforcement deadline: 2 August 2026. Paper 40 provides a direct mapping from the void framework to Art. 9–17 conformity requirements.
+**EU AI Act:** Papers 18, 21, 21B (high-risk domains), 40 (conformity mapping), and 49 (Independence Theorem / Art. 31(5)) are directly relevant to the EU AI Act enforcement deadline of 2 August 2026. Paper 40 maps void framework dimensions to Art. 9–17 requirements. Paper 49 derives why auditor independence is thermodynamically enforced.
 
 All on [Zenodo](https://zenodo.org) (search "Void Framework"). DOIs in [`zenodo-dois.json`](zenodo-dois.json). Markdown here is canonical.
 
-> **⚠️ License note — Papers 6, 7, 7B–D, 10–38:** These applied domain papers are licensed under **MoreRight License v1.0**. Free for non-commercial use, research, and replication. Commercial use gated by Void Score. Indie Threshold: < $1M revenue AND < $5M funding AND < 25 FTE = free use. Converts to Apache 2.0 on February 19, 2030. See [LICENSE-MORERIGHT](LICENSE-MORERIGHT.md) for full terms. Contact **anthony@moreright.xyz** to discuss.
+> **⚠️ License note — Papers 6, 7, 7B–D, 10–38, 48:** These applied domain papers are licensed under **MoreRight License v1.0**. Free for non-commercial use, research, and replication. Commercial use gated by Void Score. Indie Threshold: < $1M revenue AND < $5M funding AND < 25 FTE = free use. Converts to Apache 2.0 on February 19, 2030. See [LICENSE-MORERIGHT](LICENSE-MORERIGHT.md) for full terms. Contact **anthony@moreright.xyz** to discuss.
 
-> **Papers 39–43** are **CC-BY 4.0** (irrevocable open access) — congregation effect, EU AI Act conformity mapping, and the biology series (evolutionary, neural, cancer voids).
+> **Papers 39–47, 49** are **CC-BY 4.0** (irrevocable open access) — congregation effect, EU AI Act conformity mapping, the biology series, governance, violence & anthropology, TSU inference, democratic governance, and the Independence Theorem.
 
 ### How papers evolve
 
