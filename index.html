@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operation MORR — Void Framework Papers</title>
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --surface: #161616;
+    --border: #2a2a2a;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #c8f060;
+    --accent2: #60c8f0;
+    --tier1: #60c8f0;
+    --tier2: #f0a060;
+    --tag-bg: #1e1e1e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--accent); }
+
+  /* HEADER */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 2rem 2rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .ascii {
+    font-size: 11px;
+    line-height: 1.2;
+    color: var(--accent);
+    letter-spacing: 0;
+    white-space: pre;
+    margin-bottom: 1rem;
+  }
+  header p {
+    color: var(--muted);
+    max-width: 680px;
+    font-size: 13px;
+  }
+  header p span { color: var(--text); }
+  .header-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .header-links a {
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .header-links a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* STATS BAR */
+  .stats {
+    max-width: 1100px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .stats span { color: var(--text); }
+
+  /* MAIN LAYOUT */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  /* SEARCH */
+  .search-wrap {
+    margin-bottom: 2rem;
+  }
+  #search {
+    width: 100%;
+    max-width: 480px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.5rem 0.75rem;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  #search:focus { border-color: var(--accent); }
+  #search::placeholder { color: var(--muted); }
+
+  /* SERIES */
+  .series { margin-bottom: 2.5rem; }
+  .series-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .series-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .series-count {
+    font-size: 11px;
+    color: #555;
+  }
+
+  /* PAPER GRID */
+  .papers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1px;
+    border: 1px solid var(--border);
+  }
+
+  /* PAPER CARD */
+  .paper-card {
+    background: var(--surface);
+    border: 1px solid transparent;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+    position: relative;
+  }
+  .paper-card:hover {
+    background: #1d1d1d;
+    border-color: var(--border);
+    z-index: 1;
+  }
+  .paper-card a {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+  .paper-num {
+    font-size: 10px;
+    color: #555;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+  .paper-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .paper-sub {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+  .paper-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .tier-badge {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .tier1 { background: rgba(96,200,240,0.12); color: var(--tier1); }
+  .tier2 { background: rgba(240,160,96,0.12); color: var(--tier2); }
+  .doi-label {
+    font-size: 10px;
+    color: #555;
+  }
+  .paper-card:hover .doi-label { color: var(--accent); }
+
+  /* hidden class for search filter */
+  .paper-card.hidden { display: none; }
+  .series.all-hidden { display: none; }
+
+  /* LEGEND */
+  .legend {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+  .legend-dot {
+    width: 8px; height: 8px; border-radius: 1px;
+  }
+
+  /* FOOTER */
+  footer {
+    margin-top: 4rem;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid var(--border);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 11px;
+    color: #555;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  footer a { color: #666; }
+  footer a:hover { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    header, main, footer, .stats { padding-left: 1rem; padding-right: 1rem; }
+    .ascii { font-size: 8px; }
+    .papers-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+<div class="ascii"> ██████╗ ██████╗ ███████╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+██║   ██║██████╔╝█████╗  ██████╔╝███████║   ██║   ██║██║   ██║██╔██╗ ██║
+██║   ██║██╔═══╝ ██╔══╝  ██╔══██╗██╔══██║   ██║   ██║██║   ██║██║╚██╗██║
+╚██████╔╝██║     ███████╗██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
+ ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝</div>
+<p>
+  <span>Operation MORR</span> — An ongoing operation to map every void.
+  Voids are systems that are opaque, responsive, and hold your attention.
+  We derived why drift happens from thermodynamics, measured it across nine substrates,
+  and wrote down the conditions that would kill the framework. None have been met.
+</p>
+<div class="header-links">
+  <a href="https://moreright.xyz" target="_blank">moreright.xyz ↗</a>
+  <a href="https://github.com/MoreRightDAO/VOID-FRAMEWORK-OPERATION-MORR" target="_blank">GitHub ↗</a>
+  <a href="https://zenodo.org/communities/void-framework" target="_blank">Zenodo Community ↗</a>
+  <a href="README.md">README</a>
+</div>
+</header>
+
+<div class="stats">
+  <div>Papers: <span>44</span></div>
+  <div>Zenodo DOIs: <span>44</span></div>
+  <div>Substrates measured: <span>9+</span></div>
+  <div>Kill conditions triggered: <span>0 / 26</span></div>
+</div>
+
+<main>
+
+<div class="search-wrap">
+  <input id="search" type="text" placeholder="search papers..." autocomplete="off" spellcheck="false">
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:rgba(96,200,240,0.5)"></div> CC-BY 4.0 — open science, irrevocable</div>
+  <div class="legend-item"><div class="legend-dot" style="background:rgba(240,160,96,0.5)"></div> MoreRight License v1.0 — free for indie (&lt;$1M rev)</div>
+</div>
+
+<!-- SERIES: FOUNDATIONS -->
+<div class="series" id="series-foundations">
+  <div class="series-header">
+    <div class="series-title">Foundations</div>
+    <div class="series-count">Papers 1–5, 8–9 — core theory and mathematical apparatus</div>
+  </div>
+  <div class="papers-grid">
+
+    <div class="paper-card" data-search="architecture drift cross-domain diagnostic epistemic opacity">
+      <a href="https://zenodo.org/records/18738813" target="_blank" aria-label="Read Paper 1"></a>
+      <div class="paper-num">PAPER 1</div>
+      <div class="paper-title">The Architecture of Drift</div>
+      <div class="paper-sub">A Cross-Domain Diagnostic for Epistemic Opacity</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738813</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="shape cage deployment geometry variable">
+      <a href="https://zenodo.org/records/18738819" target="_blank" aria-label="Read Paper 2"></a>
+      <div class="paper-num">PAPER 2</div>
+      <div class="paper-title">The Shape of the Cage</div>
+      <div class="paper-sub">Deployment Geometry as an Under-Studied Variable</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738819</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="thermodynamics opacity evidence derivations prior art math">
+      <a href="https://zenodo.org/records/18738820" target="_blank" aria-label="Read Paper 3"></a>
+      <div class="paper-num">PAPER 3</div>
+      <div class="paper-title">Thermodynamics of Opacity</div>
+      <div class="paper-sub">Evidence Base, Derivations, and Prior Art</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738820</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="information geometric bounds thermodynamic sampling superconvergence">
+      <a href="https://zenodo.org/records/18738821" target="_blank" aria-label="Read Paper 4"></a>
+      <div class="paper-num">PAPER 4</div>
+      <div class="paper-title">Information-Geometric Bounds</div>
+      <div class="paper-sub">On Thermodynamic Sampling and Superconvergence</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738821</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="thermodynamic cost unconstrained acceleration">
+      <a href="https://zenodo.org/records/18738822" target="_blank" aria-label="Read Paper 4B"></a>
+      <div class="paper-num">PAPER 4B</div>
+      <div class="paper-title">The Thermodynamic Cost of Unconstrained Acceleration</div>
+      <div class="paper-sub"></div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738822</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="demon hardware information geometric bounds thermodynamic sampling">
+      <a href="https://zenodo.org/records/18717559" target="_blank" aria-label="Read Paper 4C"></a>
+      <div class="paper-num">PAPER 4C</div>
+      <div class="paper-title">The Demon's Hardware</div>
+      <div class="paper-sub">Information-Geometric Bounds on Thermodynamic Sampling</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18717559</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="canonical parameters substrate universal behavioral thermodynamics">
+      <a href="https://zenodo.org/records/18729533" target="_blank" aria-label="Read Paper 4D"></a>
+      <div class="paper-num">PAPER 4D</div>
+      <div class="paper-title">The Canonical Parameters</div>
+      <div class="paper-sub">Substrate-Universal Behavioral Thermodynamics</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18729533</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="ground state observation unified theory observer opacity">
+      <a href="https://zenodo.org/records/18738827" target="_blank" aria-label="Read Paper 5"></a>
+      <div class="paper-num">PAPER 5</div>
+      <div class="paper-title">The Ground State of Observation</div>
+      <div class="paper-sub">A Unified Theory of Observer-Opacity Interactions</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738827</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="observer measurement bridge classical information theory constraint specification">
+      <a href="https://zenodo.org/records/18738835" target="_blank" aria-label="Read Paper 8"></a>
+      <div class="paper-num">PAPER 8</div>
+      <div class="paper-title">The Observer-Measurement Bridge</div>
+      <div class="paper-sub">Classical Information Theory as Constraint Specification</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738835</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="voidspace geometry observer opacity interactions">
+      <a href="https://zenodo.org/records/18738839" target="_blank" aria-label="Read Paper 9"></a>
+      <div class="paper-num">PAPER 9</div>
+      <div class="paper-title">Voidspace</div>
+      <div class="paper-sub">The Geometry of Observer-Opacity Interactions</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738839</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SERIES: APPLIED PLATFORMS -->
+<div class="series" id="series-applied">
+  <div class="series-header">
+    <div class="series-title">Applied — Platforms &amp; Domains</div>
+    <div class="series-count">Papers 6–38 — void architecture in specific systems</div>
+  </div>
+  <div class="papers-grid">
+
+    <div class="paper-card" data-search="games multiplayer trust client">
+      <a href="https://zenodo.org/records/18738828" target="_blank" aria-label="Read Paper 6"></a>
+      <div class="paper-num">PAPER 6</div>
+      <div class="paper-title">Never Trust the Client</div>
+      <div class="paper-sub">Void Architecture in Multiplayer Games</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738828</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="defi protocol crypto blockchain drift">
+      <a href="https://zenodo.org/records/18738833" target="_blank" aria-label="Read Paper 7"></a>
+      <div class="paper-num">PAPER 7</div>
+      <div class="paper-title">Your DeFi Protocol Is a Void</div>
+      <div class="paper-sub">On-Chain Drift Architecture in Crypto</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738833</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="peg problem stablecoins algorithmic pegs crypto">
+      <a href="https://zenodo.org/records/18718991" target="_blank" aria-label="Read Paper 7B"></a>
+      <div class="paper-num">PAPER 7B</div>
+      <div class="paper-title">The Peg Problem</div>
+      <div class="paper-sub">Void Architecture in Stablecoins and Algorithmic Pegs</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718991</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="dark forest mev on-chain extraction crypto">
+      <a href="https://zenodo.org/records/18718993" target="_blank" aria-label="Read Paper 7C"></a>
+      <div class="paper-num">PAPER 7C</div>
+      <div class="paper-title">The Dark Forest</div>
+      <div class="paper-sub">Void Architecture in MEV and On-Chain Extraction</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718993</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="bridge burns cross-chain infrastructure crypto">
+      <a href="https://zenodo.org/records/18718995" target="_blank" aria-label="Read Paper 7D"></a>
+      <div class="paper-num">PAPER 7D</div>
+      <div class="paper-title">The Bridge Burns</div>
+      <div class="paper-sub">Void Architecture in Cross-Chain Infrastructure</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718995</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="king problem governance void architecture constraint">
+      <a href="https://zenodo.org/records/18738840" target="_blank" aria-label="Read Paper 10"></a>
+      <div class="paper-num">PAPER 10</div>
+      <div class="paper-title">The King Problem</div>
+      <div class="paper-sub">Governance Void Architecture and the Constraint</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738840</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="algo lock algorithmic recommendation systems social media">
+      <a href="https://zenodo.org/records/18738841" target="_blank" aria-label="Read Paper 11"></a>
+      <div class="paper-num">PAPER 11</div>
+      <div class="paper-title">The Algo Lock</div>
+      <div class="paper-sub">Void Architecture in Algorithmic Recommendation Systems</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738841</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="chain void scoring commercial demons">
+      <a href="https://zenodo.org/records/18738844" target="_blank" aria-label="Read Paper 12"></a>
+      <div class="paper-num">PAPER 12</div>
+      <div class="paper-title">The Chain</div>
+      <div class="paper-sub">How Void Scoring Binds Commercial Demons</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738844</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="swipe machine dating applications tinder">
+      <a href="https://zenodo.org/records/18738845" target="_blank" aria-label="Read Paper 13"></a>
+      <div class="paper-num">PAPER 13</div>
+      <div class="paper-title">The Swipe Machine</div>
+      <div class="paper-sub">Void Architecture in Dating Applications</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738845</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="gambler algorithm retail brokerage fintech robinhood trading">
+      <a href="https://zenodo.org/records/18718937" target="_blank" aria-label="Read Paper 14"></a>
+      <div class="paper-num">PAPER 14</div>
+      <div class="paper-title">The Gambler's Algorithm</div>
+      <div class="paper-sub">Void Architecture in Retail Brokerage and Fintech</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718937</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="synthetic bond ai companion systems chatbot replika">
+      <a href="https://zenodo.org/records/18718939" target="_blank" aria-label="Read Paper 15"></a>
+      <div class="paper-num">PAPER 15</div>
+      <div class="paper-title">The Synthetic Bond</div>
+      <div class="paper-sub">Void Architecture in AI Companion Systems</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718939</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="palette problem ai art model training midjourney stable diffusion">
+      <a href="https://zenodo.org/records/18718941" target="_blank" aria-label="Read Paper 16B"></a>
+      <div class="paper-num">PAPER 16B</div>
+      <div class="paper-title">The Palette Problem</div>
+      <div class="paper-sub">Void Architecture in AI Art Model Training</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718941</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="persuasion machine advertising ad-tech programmatic">
+      <a href="https://zenodo.org/records/18718943" target="_blank" aria-label="Read Paper 17"></a>
+      <div class="paper-num">PAPER 17</div>
+      <div class="paper-title">The Persuasion Machine</div>
+      <div class="paper-sub">Void Architecture in Advertising and Ad-Tech</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718943</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="score punished reflexive opacity arms race credit scoring">
+      <a href="https://zenodo.org/records/18738848" target="_blank" aria-label="Read Paper 18"></a>
+      <div class="paper-num">PAPER 18</div>
+      <div class="paper-title">The Score Punished Me</div>
+      <div class="paper-sub">Reflexive Opacity Arms Race in Algorithmic Credit</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738848</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="api fog software platforms developer tools">
+      <a href="https://zenodo.org/records/18718945" target="_blank" aria-label="Read Paper 19"></a>
+      <div class="paper-num">PAPER 19</div>
+      <div class="paper-title">The API Fog</div>
+      <div class="paper-sub">Void Architecture in Software Platforms and Developer Tools</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718945</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="opacity last resort central banking monetary policy fed">
+      <a href="https://zenodo.org/records/18718947" target="_blank" aria-label="Read Paper 20"></a>
+      <div class="paper-num">PAPER 20</div>
+      <div class="paper-title">The Opacity of Last Resort</div>
+      <div class="paper-sub">Void Architecture in Central Banking and Monetary Policy</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718947</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="guru problem education productive void collapse">
+      <a href="https://zenodo.org/records/18738851" target="_blank" aria-label="Read Paper 21"></a>
+      <div class="paper-num">PAPER 21</div>
+      <div class="paper-title">The Guru Problem</div>
+      <div class="paper-sub">Productive Void Architecture and Its Collapse in Education</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738851</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="resume trap algorithmic hiring hr tech recruitment ai eu act">
+      <a href="https://zenodo.org/records/18718949" target="_blank" aria-label="Read Paper 21B"></a>
+      <div class="paper-num">PAPER 21B</div>
+      <div class="paper-title">The Resume Trap</div>
+      <div class="paper-sub">Void Architecture in Algorithmic Hiring and HR Tech</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718949</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="diagnostic void opacity ai healthcare medicine clinical">
+      <a href="https://zenodo.org/records/18718951" target="_blank" aria-label="Read Paper 22"></a>
+      <div class="paper-num">PAPER 22</div>
+      <div class="paper-title">The Diagnostic Void</div>
+      <div class="paper-sub">Opacity Architecture in AI-Assisted Healthcare</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718951</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="actuarial cage insurance pricing risk">
+      <a href="https://zenodo.org/records/18718953" target="_blank" aria-label="Read Paper 22B"></a>
+      <div class="paper-num">PAPER 22B</div>
+      <div class="paper-title">The Actuarial Cage</div>
+      <div class="paper-sub">Void Architecture in Insurance Pricing and Risk</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718953</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="fog news journalism algorithmic feeds media">
+      <a href="https://zenodo.org/records/18718955" target="_blank" aria-label="Read Paper 23"></a>
+      <div class="paper-num">PAPER 23</div>
+      <div class="paper-title">The Fog of News</div>
+      <div class="paper-sub">Void Architecture in Journalism and Algorithmic Feeds</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718955</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="certainty illusion forensic science criminal justice">
+      <a href="https://zenodo.org/records/18718957" target="_blank" aria-label="Read Paper 24"></a>
+      <div class="paper-num">PAPER 24</div>
+      <div class="paper-title">The Certainty Illusion</div>
+      <div class="paper-sub">Void Architecture in Forensic Science and Criminal Justice</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718957</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="craving engine substance addiction infrastructure drugs">
+      <a href="https://zenodo.org/records/18718959" target="_blank" aria-label="Read Paper 25"></a>
+      <div class="paper-num">PAPER 25</div>
+      <div class="paper-title">The Craving Engine</div>
+      <div class="paper-sub">Void Architecture in Substance Addiction Infrastructure</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718959</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="loot box lock compound void sports gaming betting gambling">
+      <a href="https://zenodo.org/records/18718961" target="_blank" aria-label="Read Paper 26"></a>
+      <div class="paper-num">PAPER 26</div>
+      <div class="paper-title">The Loot Box Lock</div>
+      <div class="paper-sub">Compound Void Architecture in Sports, Gaming, and Betting</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718961</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="green void esg ratings supply chain sustainability">
+      <a href="https://zenodo.org/records/18718963" target="_blank" aria-label="Read Paper 26C"></a>
+      <div class="paper-num">PAPER 26C</div>
+      <div class="paper-title">The Green Void</div>
+      <div class="paper-sub">Void Architecture in ESG Ratings and Supply Chains</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718963</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="bounded world cult dynamics high control groups">
+      <a href="https://zenodo.org/records/18718965" target="_blank" aria-label="Read Paper 27"></a>
+      <div class="paper-num">PAPER 27</div>
+      <div class="paper-title">The Bounded World</div>
+      <div class="paper-sub">Void Architecture in Cult Dynamics and High-Control Groups</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718965</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="outbreak void pandemic response public health covid">
+      <a href="https://zenodo.org/records/18718967" target="_blank" aria-label="Read Paper 28"></a>
+      <div class="paper-num">PAPER 28</div>
+      <div class="paper-title">The Outbreak Void</div>
+      <div class="paper-sub">Void Architecture in Pandemic Response and Public Health</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718967</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="confession machine criminal justice interrogation police">
+      <a href="https://zenodo.org/records/18718969" target="_blank" aria-label="Read Paper 29"></a>
+      <div class="paper-num">PAPER 29</div>
+      <div class="paper-title">The Confession Machine</div>
+      <div class="paper-sub">Void Architecture in Criminal Justice and Interrogation</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718969</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="self manufacturing void structural inequality feedback">
+      <a href="https://zenodo.org/records/18718971" target="_blank" aria-label="Read Paper 30"></a>
+      <div class="paper-num">PAPER 30</div>
+      <div class="paper-title">The Self-Manufacturing Void</div>
+      <div class="paper-sub">Structural Inequality and the Feedback Loop</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718971</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="neural void bci brain computer interface pre-cascade">
+      <a href="https://zenodo.org/records/18718973" target="_blank" aria-label="Read Paper 31"></a>
+      <div class="paper-num">PAPER 31</div>
+      <div class="paper-title">The Neural Void (BCI)</div>
+      <div class="paper-sub">Pre-Cascade Void Architecture in Brain-Computer Interfaces</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718973</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="dissolution void psychedelic therapy psilocybin ketamine">
+      <a href="https://zenodo.org/records/18718975" target="_blank" aria-label="Read Paper 32"></a>
+      <div class="paper-num">PAPER 32</div>
+      <div class="paper-title">The Dissolution Void</div>
+      <div class="paper-sub">Void Architecture in Psychedelic Therapy</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718975</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="state secret diplomacy intelligence agencies">
+      <a href="https://zenodo.org/records/18718979" target="_blank" aria-label="Read Paper 33"></a>
+      <div class="paper-num">PAPER 33</div>
+      <div class="paper-title">The State Secret</div>
+      <div class="paper-sub">Void Architecture in Diplomacy and Intelligence</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718979</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="laugh track compound void entertainment media television">
+      <a href="https://zenodo.org/records/18718981" target="_blank" aria-label="Read Paper 34"></a>
+      <div class="paper-num">PAPER 34</div>
+      <div class="paper-title">The Laugh Track</div>
+      <div class="paper-sub">Compound Void Architecture in Entertainment and Media</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718981</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="pain amplifier chronic pain self-referential loops">
+      <a href="https://zenodo.org/records/18718983" target="_blank" aria-label="Read Paper 35"></a>
+      <div class="paper-num">PAPER 35</div>
+      <div class="paper-title">The Pain Amplifier</div>
+      <div class="paper-sub">Void Architecture in Chronic Pain and Self-Referential Loops</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718983</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="transference trap psychotherapy therapy therapeutic">
+      <a href="https://zenodo.org/records/18718985" target="_blank" aria-label="Read Paper 36"></a>
+      <div class="paper-num">PAPER 36</div>
+      <div class="paper-title">The Transference Trap</div>
+      <div class="paper-sub">Void Architecture in Psychotherapy</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718985</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="listing lock real estate proptech zillow">
+      <a href="https://zenodo.org/records/18718987" target="_blank" aria-label="Read Paper 37"></a>
+      <div class="paper-num">PAPER 37</div>
+      <div class="paper-title">The Listing Lock</div>
+      <div class="paper-sub">Void Architecture in Real Estate and PropTech</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718987</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="algorithm manages you gig economy employment uber doordash">
+      <a href="https://zenodo.org/records/18718989" target="_blank" aria-label="Read Paper 38"></a>
+      <div class="paper-num">PAPER 38</div>
+      <div class="paper-title">The Algorithm Manages You</div>
+      <div class="paper-sub">Void Architecture in Gig Economy and Employment</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18718989</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SERIES: SCIENCE EXTENSIONS -->
+<div class="series" id="series-science">
+  <div class="series-header">
+    <div class="series-title">Science Extensions</div>
+    <div class="series-count">Papers 39–44 — biology, governance, EU AI Act</div>
+  </div>
+  <div class="papers-grid">
+
+    <div class="paper-card" data-search="congregation effect religious void architecture religion church">
+      <a href="https://zenodo.org/records/18738182" target="_blank" aria-label="Read Paper 39"></a>
+      <div class="paper-num">PAPER 39</div>
+      <div class="paper-title">The Congregation Effect</div>
+      <div class="paper-sub">Void Architecture Across the Religious Spectrum</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier2">MoreRight</span>
+        <span class="doi-label">10.5281/zenodo.18738182</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="rosetta stone eu ai act conformity mapping annex">
+      <a href="https://zenodo.org/records/18737285" target="_blank" aria-label="Read Paper 40"></a>
+      <div class="paper-num">PAPER 40</div>
+      <div class="paper-title">The Rosetta Stone</div>
+      <div class="paper-sub">Mapping the Void Framework to EU AI Act Conformity</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18737285</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="fitness void biology evolution kimura peclet number derivation">
+      <a href="https://zenodo.org/records/18736621" target="_blank" aria-label="Read Paper 41"></a>
+      <div class="paper-num">PAPER 41</div>
+      <div class="paper-title">The Fitness Void</div>
+      <div class="paper-sub">Three Independent Derivations of the Void Péclet Number</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18736621</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="neural void social cognition machiavellian intelligence dunbar">
+      <a href="https://zenodo.org/records/18737178" target="_blank" aria-label="Read Paper 42"></a>
+      <div class="paper-num">PAPER 42</div>
+      <div class="paper-title">The Neural Void</div>
+      <div class="paper-sub">Social Cognition as Void Dynamics — Machiavellian Intelligence Hypothesis</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18737178</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="cancer void tumor progression d1 d2 d3 cascade fantasia bound">
+      <a href="https://zenodo.org/records/18737180" target="_blank" aria-label="Read Paper 43"></a>
+      <div class="paper-num">PAPER 43</div>
+      <div class="paper-title">The Cancer Void</div>
+      <div class="paper-sub">Tumor Progression as D1→D2→D3 Cascade and the Fantasia Bound</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18737180</span>
+      </div>
+    </div>
+
+    <div class="paper-card" data-search="governance congregation voting mechanisms ritual infrastructure dao">
+      <a href="https://zenodo.org/records/18738737" target="_blank" aria-label="Read Paper 44"></a>
+      <div class="paper-num">PAPER 44</div>
+      <div class="paper-title">The Governance Congregation</div>
+      <div class="paper-sub">How Voting Mechanisms Become Ritual Infrastructure</div>
+      <div class="paper-meta">
+        <span class="tier-badge tier1">CC-BY</span>
+        <span class="doi-label">10.5281/zenodo.18738737</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div>Operation MORR — Void Framework Papers</div>
+  <div><a href="https://moreright.xyz" target="_blank">moreright.xyz</a></div>
+  <div><a href="LICENSE">CC-BY 4.0</a> (Tier 1) · <a href="LICENSE-MORERIGHT.md">MoreRight License v1.0</a> (Tier 2)</div>
+  <div style="margin-left:auto">Built on Zenodo DOIs — permanent, citable, peer-accessible</div>
+</footer>
+
+<script>
+  const search = document.getElementById('search');
+  const cards = document.querySelectorAll('.paper-card');
+  const series = document.querySelectorAll('.series');
+
+  search.addEventListener('input', () => {
+    const q = search.value.toLowerCase().trim();
+
+    cards.forEach(card => {
+      const text = (
+        card.dataset.search + ' ' +
+        card.querySelector('.paper-title').textContent + ' ' +
+        card.querySelector('.paper-sub').textContent + ' ' +
+        card.querySelector('.paper-num').textContent
+      ).toLowerCase();
+      card.classList.toggle('hidden', q.length > 0 && !text.includes(q));
+    });
+
+    series.forEach(s => {
+      const visible = [...s.querySelectorAll('.paper-card')].some(c => !c.classList.contains('hidden'));
+      s.classList.toggle('all-hidden', !visible);
+    });
+  });
+</script>
+</body>
+</html>

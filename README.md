@@ -18,6 +18,8 @@ been met.
 
 This repo is the science. The live tools are at **[moreright.xyz](https://moreright.xyz)**.
 
+**→ [Browse all 44 papers with DOI links](https://morerightdao.github.io/VOID-FRAMEWORK-OPERATION-MORR/)** — searchable index, opens PDFs on Zenodo.
+
 ---
 
 ## WHAT WE FOUND
