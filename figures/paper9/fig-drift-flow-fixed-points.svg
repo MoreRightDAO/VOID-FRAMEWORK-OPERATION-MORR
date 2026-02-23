@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.08" />
+    </linearGradient>
+    <marker id="aGray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <marker id="aRed" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e63946"/>
+    </marker>
+    <marker id="aTeal" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a9d8f"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="560" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Drift Flow and Fixed Points</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Agency parameter θ flows toward 1 (void pole) under drift. Recovery requires exogenous constraint.</text>
+
+  <!-- === MAIN PHASE LINE === -->
+  <rect x="80" y="85" width="740" height="180" rx="6" fill="url(#bgGrad)" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Axis -->
+  <line x1="120" y1="175" x2="790" y2="175" stroke="#495057" stroke-width="2" marker-end="url(#aGray)"/>
+  <text x="455" y="210" text-anchor="middle" font-size="13" font-weight="600" fill="#495057">Agency Parameter θ</text>
+  <!-- Tick marks -->
+  <line x1="160" y1="170" x2="160" y2="180" stroke="#495057" stroke-width="1.5"/>
+  <text x="160" y="198" text-anchor="middle" font-size="11" fill="#2a9d8f" font-weight="600">0</text>
+  <line x1="360" y1="170" x2="360" y2="180" stroke="#495057" stroke-width="1.5"/>
+  <text x="360" y="198" text-anchor="middle" font-size="11" fill="#6c757d">0.5</text>
+  <line x1="760" y1="170" x2="760" y2="180" stroke="#495057" stroke-width="1.5"/>
+  <text x="760" y="198" text-anchor="middle" font-size="11" fill="#e63946" font-weight="600">1</text>
+
+  <!-- Constraint pole (unstable) -->
+  <circle cx="160" cy="175" r="10" fill="white" stroke="#2a9d8f" stroke-width="2.5"/>
+  <text x="160" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#2a9d8f">CONSTRAINT POLE</text>
+  <text x="160" y="145" text-anchor="middle" font-size="11" fill="#6c757d">θ = 0 (unstable)</text>
+  <text x="160" y="158" text-anchor="middle" font-size="10" fill="#6c757d">Requires energy input</text>
+
+  <!-- Void pole (stable) -->
+  <circle cx="760" cy="175" r="10" fill="#e63946" stroke="#9d0208" stroke-width="2.5"/>
+  <text x="760" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#e63946">VOID POLE</text>
+  <text x="760" y="130" text-anchor="middle" font-size="11" fill="#6c757d">θ = 1 (stable)</text>
+  <text x="760" y="143" text-anchor="middle" font-size="10" fill="#6c757d">Ground state attractor</text>
+
+  <!-- Forward drift arrows (toward void pole) -->
+  <line x1="200" y1="160" x2="260" y2="160" stroke="#e63946" stroke-width="2" marker-end="url(#aRed)"/>
+  <line x1="290" y1="160" x2="350" y2="160" stroke="#e63946" stroke-width="2.2" marker-end="url(#aRed)"/>
+  <line x1="400" y1="160" x2="470" y2="160" stroke="#e63946" stroke-width="2.5" marker-end="url(#aRed)"/>
+  <line x1="510" y1="160" x2="585" y2="160" stroke="#e63946" stroke-width="2.8" marker-end="url(#aRed)"/>
+  <line x1="620" y1="160" x2="700" y2="160" stroke="#e63946" stroke-width="3" marker-end="url(#aRed)"/>
+  <text x="480" y="150" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">DRIFT →</text>
+  <text x="480" y="138" text-anchor="middle" font-size="10" fill="#e63946">F_void = α·O·R·β(O)</text>
+
+  <!-- Recovery arrows (toward constraint pole, below line) -->
+  <line x1="700" y1="190" x2="630" y2="190" stroke="#2a9d8f" stroke-width="1.5" marker-end="url(#aTeal)"/>
+  <line x1="590" y1="190" x2="520" y2="190" stroke="#2a9d8f" stroke-width="1.5" marker-end="url(#aTeal)"/>
+  <line x1="470" y1="190" x2="400" y2="190" stroke="#2a9d8f" stroke-width="1.5" marker-end="url(#aTeal)"/>
+  <line x1="350" y1="190" x2="280" y2="190" stroke="#2a9d8f" stroke-width="1.5" marker-end="url(#aTeal)"/>
+  <text x="480" y="225" text-anchor="middle" font-size="11" font-weight="600" fill="#2a9d8f">← RECOVERY (exogenous constraint)</text>
+
+  <!-- === POTENTIAL LANDSCAPE === -->
+  <text x="450" y="285" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">Effective Potential Landscape</text>
+  <text x="450" y="303" text-anchor="middle" font-size="12" fill="#6c757d">U(θ) = -∫F_net dθ. Void pole is the potential minimum.</text>
+
+  <rect x="80" y="315" width="740" height="210" rx="6" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+
+  <!-- Axes -->
+  <line x1="120" y1="490" x2="790" y2="490" stroke="#495057" stroke-width="1.5" marker-end="url(#aGray)"/>
+  <line x1="120" y1="490" x2="120" y2="330" stroke="#495057" stroke-width="1.5" marker-end="url(#aGray)"/>
+  <text x="455" y="515" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">θ</text>
+  <text x="105" y="405" text-anchor="middle" font-size="12" font-weight="600" fill="#495057" transform="rotate(-90,105,405)">U(θ)</text>
+
+  <!-- Potential curve: high at θ=0, decreases to minimum at θ=1 -->
+  <path d="M 160,350 Q 250,355 340,380 Q 430,410 520,440 Q 610,460 700,475 Q 730,478 760,480" stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Rolling ball at different positions -->
+  <circle cx="250" cy="358" r="8" fill="#f4a261" stroke="#e76f51" stroke-width="1.5"/>
+  <line x1="260" y1="355" x2="295" y2="365" stroke="#e76f51" stroke-width="1.5" marker-end="url(#aRed)"/>
+
+  <circle cx="450" cy="420" r="8" fill="#f4a261" stroke="#e76f51" stroke-width="1.5"/>
+  <line x1="462" y1="422" x2="500" y2="435" stroke="#e76f51" stroke-width="1.5" marker-end="url(#aRed)"/>
+
+  <!-- Minimum marker -->
+  <circle cx="760" cy="480" r="6" fill="#e63946" stroke="#9d0208" stroke-width="2"/>
+  <text x="760" y="470" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">minimum</text>
+
+  <!-- Maximum marker -->
+  <circle cx="160" cy="350" r="6" fill="white" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="160" y="342" text-anchor="middle" font-size="10" font-weight="600" fill="#2a9d8f">maximum</text>
+
+  <!-- Thermodynamic note -->
+  <text x="450" y="540" text-anchor="middle" font-size="11" fill="#6c757d">Second law requires systems to flow downhill. Drift toward void pole is thermodynamically favored.</text>
+</svg>

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="640" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Counterfeit Type 2 Detection (§6.6.7)</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Genuine vs. counterfeit: identical at t₀, diverge after refractory window τ_refract.</text>
+
+  <!-- Three panel dividers -->
+  <line x1="300" y1="75" x2="300" y2="490" stroke="#dee2e6" stroke-width="1" stroke-dasharray="6,4"/>
+  <line x1="600" y1="75" x2="600" y2="490" stroke="#dee2e6" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- Panel headers -->
+  <rect x="20" y="75" width="270" height="24" rx="4" fill="#2a9d8f" opacity="0.12"/>
+  <text x="155" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#2a9d8f">Type 1 — Sigmoid Baseline</text>
+
+  <rect x="310" y="75" width="280" height="24" rx="4" fill="#e63946" opacity="0.12"/>
+  <text x="450" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#e63946">Genuine Type 2</text>
+
+  <rect x="610" y="75" width="270" height="24" rx="4" fill="#9d0208" opacity="0.12"/>
+  <text x="745" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#9d0208">Counterfeit Type 2</text>
+  <text x="745" y="107" text-anchor="middle" font-size="10" fill="#9d0208">(void-directed mimic)</text>
+
+  <!-- ─── Shared y-scale legend ─── -->
+  <text x="450" y="118" text-anchor="middle" font-size="10" fill="#6c757d">All three panels: Pe on y-axis, time on x-axis. Dashed line = Pe₀ baseline. t₀ = discontinuity event.</text>
+
+  <!-- ─── PANEL 1: Type 1 (baseline) ─── -->
+  <!-- Axes x=30..285, y=135..460 -->
+  <line x1="30" y1="460" x2="290" y2="460" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="30" y1="460" x2="30" y2="129" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+
+  <text x="30" y="460" text-anchor="end" font-size="9" fill="#495057"> </text>
+  <text x="26" y="175" text-anchor="end" font-size="9" fill="#495057">Pe₀</text>
+  <text x="26" y="390" text-anchor="end" font-size="9" fill="#495057">Pe_f</text>
+  <line x1="28" y1="175" x2="32" y2="175" stroke="#495057" stroke-width="1"/>
+  <line x1="28" y1="390" x2="32" y2="390" stroke="#495057" stroke-width="1"/>
+
+  <!-- Baseline Pe₀ -->
+  <line x1="30" y1="175" x2="285" y2="175" stroke="#6c757d" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- t₀ marker -->
+  <line x1="100" y1="133" x2="100" y2="460" stroke="#2a9d8f" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="100" y="131" text-anchor="middle" font-size="9" fill="#2a9d8f">t₀</text>
+
+  <!-- Type 1 curve: smooth sigmoid decay -->
+  <path d="M 30,175 L 100,175 C 135,175 148,190 160,215 S 185,270 205,310 S 240,365 285,385"
+        stroke="#2a9d8f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <text x="158" y="260" font-size="9" fill="#2a9d8f">smooth</text>
+  <text x="158" y="272" font-size="9" fill="#2a9d8f">sigmoid</text>
+  <text x="155" y="410" text-anchor="middle" font-size="9" fill="#2a9d8f">Pe_floor (Type 1 limit)</text>
+
+  <!-- ─── PANEL 2: Genuine Type 2 ─── -->
+  <!-- Axes x=315..585, y=135..460 -->
+  <line x1="315" y1="460" x2="590" y2="460" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="315" y1="460" x2="315" y2="129" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+
+  <text x="311" y="175" text-anchor="end" font-size="9" fill="#495057">Pe₀</text>
+  <line x1="313" y1="175" x2="317" y2="175" stroke="#495057" stroke-width="1"/>
+
+  <!-- Baseline Pe₀ -->
+  <line x1="315" y1="175" x2="585" y2="175" stroke="#6c757d" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- t₀ marker -->
+  <line x1="390" y1="133" x2="390" y2="460" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="390" y="131" text-anchor="middle" font-size="9" fill="#e63946">t₀</text>
+
+  <!-- Genuine Type 2: flat → sharp vertical drop → sustained low -->
+  <path d="M 315,175 L 390,175 L 390,250" stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 390,250 L 585,250" stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Sustained suppression label -->
+  <text x="490" y="240" text-anchor="middle" font-size="10" fill="#e63946">Sustained suppression</text>
+  <text x="490" y="272" text-anchor="middle" font-size="9" fill="#e63946">Pe stays low</text>
+
+  <!-- Step label -->
+  <text x="405" y="200" font-size="9" fill="#e63946">Step</text>
+  <text x="405" y="212" font-size="9" fill="#e63946">drop</text>
+
+  <text x="450" y="420" text-anchor="middle" font-size="9" fill="#e63946">Source continues suppression indefinitely</text>
+
+  <!-- ─── PANEL 3: Counterfeit Type 2 ─── -->
+  <!-- Axes x=615..875, y=135..460 -->
+  <line x1="615" y1="460" x2="880" y2="460" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="615" y1="460" x2="615" y2="129" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+
+  <text x="611" y="175" text-anchor="end" font-size="9" fill="#495057">Pe₀</text>
+  <line x1="613" y1="175" x2="617" y2="175" stroke="#495057" stroke-width="1"/>
+
+  <!-- Baseline Pe₀ and higher line for post-refractory amplification -->
+  <line x1="615" y1="175" x2="875" y2="175" stroke="#6c757d" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="700" y1="145" x2="875" y2="145" stroke="#9d0208" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <text x="880" y="148" font-size="8" fill="#9d0208">Pe_deep</text>
+
+  <!-- t₀ marker -->
+  <line x1="670" y1="133" x2="670" y2="460" stroke="#9d0208" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="670" y="131" text-anchor="middle" font-size="9" fill="#9d0208">t₀</text>
+
+  <!-- Counterfeit: flat → sharp drop → refractory window → REBOUND above baseline -->
+  <!-- Flat pre-event -->
+  <path d="M 615,175 L 670,175 L 670,250"
+        stroke="#9d0208" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Refractory: stays suppressed -->
+  <path d="M 670,250 L 760,250"
+        stroke="#9d0208" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Rebound: curves up above baseline -->
+  <path d="M 760,250 C 775,240 785,215 800,185 S 840,152 875,148"
+        stroke="#9d0208" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- τ_refract brace -->
+  <line x1="670" y1="440" x2="760" y2="440" stroke="#9d0208" stroke-width="1.5"/>
+  <line x1="670" y1="435" x2="670" y2="445" stroke="#9d0208" stroke-width="1.5"/>
+  <line x1="760" y1="435" x2="760" y2="445" stroke="#9d0208" stroke-width="1.5"/>
+  <text x="715" y="432" text-anchor="middle" font-size="9" font-weight="600" fill="#9d0208">τ_refract</text>
+
+  <!-- Rebound label -->
+  <text x="830" y="182" font-size="9" fill="#9d0208">Amplification</text>
+  <text x="830" y="194" font-size="9" fill="#9d0208">above Pe₀</text>
+
+  <!-- Step + refractory labels -->
+  <text x="685" y="200" font-size="9" fill="#9d0208">Same</text>
+  <text x="685" y="212" font-size="9" fill="#9d0208">drop</text>
+  <text x="715" y="265" text-anchor="middle" font-size="9" fill="#9d0208">Refractory suppression</text>
+
+  <!-- CRITICAL DIVERGENCE callout box -->
+  <rect x="310" y="500" width="570" height="52" rx="5" fill="white" stroke="#9d0208" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="595" y="518" text-anchor="middle" font-size="12" font-weight="700" fill="#9d0208">Critical Divergence (DEM-16): Post-refractory trajectory distinguishes</text>
+  <text x="595" y="535" text-anchor="middle" font-size="11" fill="#495057">Genuine Type 2: Pe remains suppressed  |  Counterfeit: Pe rebounds above baseline Pe₀</text>
+  <text x="595" y="548" text-anchor="middle" font-size="10" fill="#6c757d">τ_refract ~ e^θ_D3 (weeks–months at depth). KS test p &lt; 0.01, N ≥ 20 subjects.</text>
+
+  <!-- Divergence annotation arrow across panels -->
+  <text x="450" y="480" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a2e">← Identical at t₀ →  |  ← Diverge after τ_refract →</text>
+</svg>

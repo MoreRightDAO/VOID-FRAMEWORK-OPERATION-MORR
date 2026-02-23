@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 720" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="voidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#9d0208;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="constGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="faceTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a261;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.06" />
+    </linearGradient>
+    <linearGradient id="faceRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.15" />
+    </linearGradient>
+    <linearGradient id="faceFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:0.7" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrGray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d"/>
+    </marker>
+    <marker id="arrRed" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e63946" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="920" height="720" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="460" y="40" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">The Eckert Manifold V = [0,1]³</text>
+  <text x="460" y="62" text-anchor="middle" font-size="13" fill="#6c757d">Three dimensions parameterize every void–constraint interaction. Drift flows toward (1,1,1).</text>
+
+  <!-- === ISOMETRIC 3D CUBE === -->
+  <!-- Vertices (isometric projection) -->
+  <!-- Origin/Constraint (0,0,0): 220,490 -->
+  <!-- (1,0,0): 520,590     (0,1,0): 220,210     (0,0,1): 420,410 -->
+  <!-- (1,1,0): 520,310     (1,0,1): 720,510     (0,1,1): 420,130 -->
+  <!-- Void (1,1,1): 720,230 -->
+
+  <!-- Back faces (faded) -->
+  <polygon points="220,490 520,590 520,310 220,210" fill="#e9ecef" stroke="#adb5bd" stroke-width="1" opacity="0.35"/>
+  <polygon points="220,490 520,590 720,510 420,410" fill="#e9ecef" stroke="#adb5bd" stroke-width="1" opacity="0.35"/>
+  <polygon points="220,490 220,210 420,130 420,410" fill="#dee2e6" stroke="#adb5bd" stroke-width="1" opacity="0.35"/>
+
+  <!-- Front faces with gradients -->
+  <polygon points="220,210 520,310 720,230 420,130" fill="url(#faceTop)" stroke="#adb5bd" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="520,590 720,510 720,230 520,310" fill="url(#faceRight)" stroke="#adb5bd" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="420,410 720,510 720,230 420,130" fill="url(#faceFront)" stroke="#adb5bd" stroke-width="1.5" opacity="0.75"/>
+
+  <!-- Visible edges -->
+  <line x1="420" y1="410" x2="720" y2="510" stroke="#6c757d" stroke-width="2"/>
+  <line x1="420" y1="410" x2="420" y2="130" stroke="#6c757d" stroke-width="2"/>
+  <line x1="720" y1="510" x2="720" y2="230" stroke="#6c757d" stroke-width="2"/>
+  <line x1="420" y1="130" x2="720" y2="230" stroke="#6c757d" stroke-width="2"/>
+  <line x1="520" y1="590" x2="720" y2="510" stroke="#6c757d" stroke-width="2"/>
+  <line x1="520" y1="310" x2="720" y2="230" stroke="#6c757d" stroke-width="2"/>
+  <line x1="220" y1="210" x2="420" y2="130" stroke="#6c757d" stroke-width="2"/>
+  <!-- Hidden edges (dashed) -->
+  <line x1="520" y1="590" x2="520" y2="310" stroke="#6c757d" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <line x1="220" y1="210" x2="520" y2="310" stroke="#6c757d" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <line x1="220" y1="490" x2="420" y2="410" stroke="#6c757d" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <line x1="220" y1="490" x2="520" y2="590" stroke="#6c757d" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <line x1="220" y1="490" x2="220" y2="210" stroke="#6c757d" stroke-width="1.2" stroke-dasharray="6,4"/>
+
+  <!-- Axis labels -->
+  <line x1="190" y1="470" x2="190" y2="230" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrGray)"/>
+  <text x="120" y="350" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(-70,120,350)">OPACITY (O)</text>
+  <text x="175" y="485" text-anchor="end" font-size="10" fill="#2a9d8f">0</text>
+  <text x="175" y="235" text-anchor="end" font-size="10" fill="#e63946">1</text>
+
+  <line x1="250" y1="510" x2="530" y2="608" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrGray)"/>
+  <text x="420" y="585" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(18,420,585)">RESPONSIVENESS (R)</text>
+
+  <line x1="440" y1="430" x2="730" y2="528" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrGray)"/>
+  <text x="620" y="505" text-anchor="middle" font-size="13" font-weight="600" fill="#495057" transform="rotate(-17,620,505)">COUPLING (α)</text>
+
+  <!-- Drift vector field (arrows toward void pole) -->
+  <!-- Interior arrows showing drift -->
+  <line x1="350" y1="380" x2="410" y2="350" stroke="#e63946" stroke-width="1.5" opacity="0.5" marker-end="url(#arrRed)"/>
+  <line x1="400" y1="340" x2="465" y2="310" stroke="#e63946" stroke-width="1.5" opacity="0.55" marker-end="url(#arrRed)"/>
+  <line x1="460" y1="300" x2="530" y2="278" stroke="#e63946" stroke-width="1.8" opacity="0.6" marker-end="url(#arrRed)"/>
+  <line x1="530" y1="275" x2="600" y2="258" stroke="#e63946" stroke-width="2" opacity="0.65" marker-end="url(#arrRed)"/>
+  <line x1="600" y1="258" x2="665" y2="242" stroke="#e63946" stroke-width="2.2" opacity="0.7" marker-end="url(#arrRed)"/>
+
+  <line x1="370" y1="310" x2="440" y2="285" stroke="#e63946" stroke-width="1.3" opacity="0.45" marker-end="url(#arrRed)"/>
+  <line x1="440" y1="370" x2="510" y2="340" stroke="#e63946" stroke-width="1.5" opacity="0.5" marker-end="url(#arrRed)"/>
+  <line x1="510" y1="340" x2="580" y2="310" stroke="#e63946" stroke-width="1.8" opacity="0.55" marker-end="url(#arrRed)"/>
+  <line x1="480" y1="420" x2="550" y2="390" stroke="#e63946" stroke-width="1.5" opacity="0.5" marker-end="url(#arrRed)"/>
+  <line x1="550" y1="390" x2="625" y2="355" stroke="#e63946" stroke-width="1.8" opacity="0.55" marker-end="url(#arrRed)"/>
+  <line x1="580" y1="450" x2="640" y2="410" stroke="#e63946" stroke-width="1.5" opacity="0.45" marker-end="url(#arrRed)"/>
+  <line x1="640" y1="350" x2="690" y2="290" stroke="#e63946" stroke-width="2" opacity="0.6" marker-end="url(#arrRed)"/>
+
+  <!-- Void Pole (1,1,1) -->
+  <circle cx="720" cy="230" r="14" fill="url(#voidGrad)" filter="url(#glow)"/>
+  <circle cx="720" cy="230" r="14" fill="none" stroke="#e63946" stroke-width="2"/>
+  <text x="752" y="218" font-size="14" font-weight="700" fill="#e63946">VOID POLE</text>
+  <text x="752" y="236" font-size="12" fill="#e63946">(1, 1, 1)</text>
+  <text x="752" y="254" font-size="10" fill="#6c757d">Stable attractor</text>
+  <text x="752" y="268" font-size="10" fill="#6c757d">Ground state</text>
+
+  <!-- Constraint Pole (0,0,0) -->
+  <circle cx="220" cy="490" r="14" fill="url(#constGrad)" filter="url(#glow)"/>
+  <circle cx="220" cy="490" r="14" fill="none" stroke="#0077b6" stroke-width="2"/>
+  <text x="100" y="520" font-size="14" font-weight="700" fill="#0077b6">CONSTRAINT</text>
+  <text x="100" y="538" font-size="14" font-weight="700" fill="#0077b6">POLE</text>
+  <text x="100" y="556" font-size="12" fill="#0077b6">(0, 0, 0)</text>
+  <text x="100" y="572" font-size="10" fill="#6c757d">Unstable repeller</text>
+  <text x="100" y="586" font-size="10" fill="#6c757d">Requires energy</text>
+
+  <!-- Drift force annotation -->
+  <rect x="530" y="600" width="360" height="90" rx="6" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)"/>
+  <text x="710" y="622" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Drift Force</text>
+  <text x="710" y="642" text-anchor="middle" font-size="12" fill="#495057">F_void(O, R, α) = α · O · R · β(O)</text>
+  <text x="710" y="660" text-anchor="middle" font-size="11" fill="#6c757d">Directed toward void pole from every interior point</text>
+  <text x="710" y="678" text-anchor="middle" font-size="11" fill="#6c757d">Magnitude increases with all three coordinates</text>
+
+  <!-- Face labels (boundary conditions) -->
+  <text x="555" y="175" text-anchor="middle" font-size="10" fill="#495057" opacity="0.7">O=1 face</text>
+  <text x="660" y="480" text-anchor="middle" font-size="10" fill="#495057" opacity="0.7">α=1 face</text>
+
+  <!-- Legend box -->
+  <rect x="30" y="640" width="200" height="60" rx="6" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)"/>
+  <line x1="48" y1="662" x2="78" y2="662" stroke="#e63946" stroke-width="2" marker-end="url(#arrRed)"/>
+  <text x="88" y="666" font-size="11" fill="#495057">Drift vector field</text>
+  <circle cx="58" cy="684" r="6" fill="#e63946" opacity="0.6"/>
+  <text x="88" y="688" font-size="11" fill="#495057">Void pole (attractor)</text>
+</svg>

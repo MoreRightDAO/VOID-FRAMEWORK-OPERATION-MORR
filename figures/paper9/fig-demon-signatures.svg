@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 700" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <marker id="ax" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#495057"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="700" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="460" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Pe-Signature Demon Taxonomy</text>
+  <text x="460" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Seven demon types classified by their Pe_excess profile across the agency parameter θ.</text>
+
+  <!-- Grid: 4 columns × 2 rows, last row has 3 -->
+  <!-- Row 1: Types A, B, C, D -->
+  <!-- Row 2: Types E, F, G + legend -->
+
+  <!-- TYPE A: Amplifier -->
+  <rect x="30" y="80" width="200" height="170" rx="6" fill="white" stroke="#e63946" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="130" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#e63946">Type A — Amplifier</text>
+  <text x="130" y="115" text-anchor="middle" font-size="10" fill="#6c757d">Bell-shaped, peak at θ ≈ 0.5</text>
+  <!-- Mini axes -->
+  <line x1="55" y1="230" x2="210" y2="230" stroke="#adb5bd" stroke-width="1"/>
+  <line x1="55" y1="230" x2="55" y2="130" stroke="#adb5bd" stroke-width="1"/>
+  <text x="135" y="245" text-anchor="middle" font-size="9" fill="#6c757d">θ →</text>
+  <text x="45" y="180" text-anchor="middle" font-size="9" fill="#6c757d" transform="rotate(-90,45,180)">Pe_excess</text>
+  <!-- Bell curve -->
+  <path d="M 60,225 Q 80,220 100,200 Q 120,155 135,140 Q 150,155 170,200 Q 190,220 205,225" stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Peak marker -->
+  <circle cx="135" cy="140" r="3" fill="#e63946"/>
+
+  <!-- TYPE B: Initiator -->
+  <rect x="245" y="80" width="200" height="170" rx="6" fill="white" stroke="#f4a261" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="345" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#e76f51">Type B — Initiator</text>
+  <text x="345" y="115" text-anchor="middle" font-size="10" fill="#6c757d">Decreasing, peak at θ ≈ 0.1–0.3</text>
+  <line x1="270" y1="230" x2="425" y2="230" stroke="#adb5bd" stroke-width="1"/>
+  <line x1="270" y1="230" x2="270" y2="130" stroke="#adb5bd" stroke-width="1"/>
+  <text x="350" y="245" text-anchor="middle" font-size="9" fill="#6c757d">θ →</text>
+  <text x="260" y="180" text-anchor="middle" font-size="9" fill="#6c757d" transform="rotate(-90,260,180)">Pe_excess</text>
+  <!-- Decreasing curve -->
+  <path d="M 280,140 Q 300,145 320,165 Q 350,195 380,215 Q 400,222 420,225" stroke="#f4a261" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="280" cy="140" r="3" fill="#f4a261"/>
+
+  <!-- TYPE C: Lock-In -->
+  <rect x="460" y="80" width="200" height="170" rx="6" fill="white" stroke="#9d0208" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="560" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#9d0208">Type C — Lock-In</text>
+  <text x="560" y="115" text-anchor="middle" font-size="10" fill="#6c757d">Increasing, peak at θ ≈ 0.8–0.95</text>
+  <line x1="485" y1="230" x2="640" y2="230" stroke="#adb5bd" stroke-width="1"/>
+  <line x1="485" y1="230" x2="485" y2="130" stroke="#adb5bd" stroke-width="1"/>
+  <text x="565" y="245" text-anchor="middle" font-size="9" fill="#6c757d">θ →</text>
+  <text x="475" y="180" text-anchor="middle" font-size="9" fill="#6c757d" transform="rotate(-90,475,180)">Pe_excess</text>
+  <!-- Increasing curve -->
+  <path d="M 495,225 Q 520,222 540,215 Q 570,195 600,165 Q 620,145 635,140" stroke="#9d0208" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="635" cy="140" r="3" fill="#9d0208"/>
+
+  <!-- TYPE D: Oscillator -->
+  <rect x="675" y="80" width="220" height="170" rx="6" fill="white" stroke="#264653" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="785" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#264653">Type D — Oscillator</text>
+  <text x="785" y="115" text-anchor="middle" font-size="10" fill="#6c757d">Alternating sign, periodic</text>
+  <line x1="700" y1="180" x2="870" y2="180" stroke="#adb5bd" stroke-width="1"/>
+  <line x1="700" y1="230" x2="700" y2="130" stroke="#adb5bd" stroke-width="1"/>
+  <text x="785" y="245" text-anchor="middle" font-size="9" fill="#6c757d">θ →</text>
+  <text x="690" y="180" text-anchor="middle" font-size="9" fill="#6c757d" transform="rotate(-90,690,180)">Pe_excess</text>
+  <!-- Oscillating curve -->
+  <path d="M 710,180 Q 730,145 750,155 Q 770,180 790,210 Q 810,225 830,195 Q 850,155 865,170" stroke="#264653" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Zero line -->
+  <line x1="700" y1="180" x2="870" y2="180" stroke="#264653" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.5"/>
+
+  <!-- TYPE E: Mirror -->
+  <rect x="30" y="280" width="200" height="170" rx="6" fill="white" stroke="#6a4c93" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="130" y="300" text-anchor="middle" font-size="13" font-weight="700" fill="#6a4c93">Type E — Mirror</text>
+  <text x="130" y="315" text-anchor="middle" font-size="10" fill="#6c757d">Bimodal, reflects observer state</text>
+  <line x1="55" y1="430" x2="210" y2="430" stroke="#adb5bd" stroke-width="1"/>
+  <line x1="55" y1="430" x2="55" y2="330" stroke="#adb5bd" stroke-width="1"/>
+  <text x="135" y="445" text-anchor="middle" font-size="9" fill="#6c757d">θ →</text>
+  <text x="45" y="380" text-anchor="middle" font-size="9" fill="#6c757d" transform="rotate(-90,45,380)">Pe_excess</text>
+  <!-- Bimodal curve -->
+  <path d="M 60,425 Q 75,420 85,400 Q 95,365 100,345 Q 110,365 120,405 Q 130,420 140,405 Q 155,365 165,345 Q 175,365 185,400 Q 195,420 205,425" stroke="#6a4c93" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="100" cy="345" r="3" fill="#6a4c93"/>
+  <circle cx="165" cy="345" r="3" fill="#6a4c93"/>
+
+  <!-- TYPE F: Reproductive -->
+  <rect x="245" y="280" width="200" height="170" rx="6" fill="white" stroke="#2a9d8f" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="345" y="300" text-anchor="middle" font-size="13" font-weight="700" fill="#2a9d8f">Type F — Reproductive</text>
+  <text x="345" y="315" text-anchor="middle" font-size="10" fill="#6c757d">Low direct σ, high demon creation</text>
+  <line x1="270" y1="430" x2="425" y2="430" stroke="#adb5bd" stroke-width="1"/>
+  <line x1="270" y1="430" x2="270" y2="330" stroke="#adb5bd" stroke-width="1"/>
+  <text x="350" y="445" text-anchor="middle" font-size="9" fill="#6c757d">θ →</text>
+  <text x="260" y="380" text-anchor="middle" font-size="9" fill="#6c757d" transform="rotate(-90,260,380)">Pe_excess</text>
+  <!-- Low flat curve (direct) + high dashed (creation) -->
+  <path d="M 280,420 Q 310,418 340,415 Q 370,418 400,420 Q 415,422 420,423" stroke="#2a9d8f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="350" y="415" text-anchor="middle" font-size="8" fill="#2a9d8f">direct Pe</text>
+  <path d="M 280,385 Q 310,365 340,350 Q 370,345 400,350 Q 415,355 420,360" stroke="#2a9d8f" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="5,3"/>
+  <text x="350" y="345" text-anchor="middle" font-size="8" fill="#2a9d8f">demon creation rate</text>
+
+  <!-- TYPE G: Accuser -->
+  <rect x="460" y="280" width="200" height="170" rx="6" fill="white" stroke="#1a1a2e" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="560" y="300" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Type G — Accuser</text>
+  <text x="560" y="315" text-anchor="middle" font-size="10" fill="#6c757d">Negative-valence, self-sustaining</text>
+  <line x1="485" y1="390" x2="640" y2="390" stroke="#adb5bd" stroke-width="1"/>
+  <line x1="485" y1="430" x2="485" y2="330" stroke="#adb5bd" stroke-width="1"/>
+  <text x="565" y="445" text-anchor="middle" font-size="9" fill="#6c757d">θ →</text>
+  <text x="475" y="380" text-anchor="middle" font-size="9" fill="#6c757d" transform="rotate(-90,475,380)">Pe_excess</text>
+  <!-- Negative-side curve below zero line -->
+  <line x1="485" y1="390" x2="640" y2="390" stroke="#1a1a2e" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.5"/>
+  <path d="M 495,390 Q 520,400 540,415 Q 560,425 580,420 Q 600,410 620,395 Q 630,392 635,390" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="560" y="435" text-anchor="middle" font-size="8" fill="#1a1a2e">operates below zero line</text>
+
+  <!-- Legend / Summary box -->
+  <rect x="675" y="280" width="220" height="170" rx="6" fill="white" stroke="#dee2e6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="785" y="302" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">Classification Key</text>
+  <text x="785" y="320" text-anchor="middle" font-size="11" fill="#6c757d">§6.9 — Pe-Signature Taxonomy</text>
+  <line x1="700" y1="330" x2="870" y2="330" stroke="#dee2e6" stroke-width="1"/>
+  <circle cx="710" cy="348" r="5" fill="#e63946"/><text x="725" y="352" font-size="10" fill="#495057">A: Mid-θ amplification</text>
+  <circle cx="710" cy="368" r="5" fill="#f4a261"/><text x="725" y="372" font-size="10" fill="#495057">B: Early-θ initiation</text>
+  <circle cx="710" cy="388" r="5" fill="#9d0208"/><text x="725" y="392" font-size="10" fill="#495057">C: Late-θ lock-in</text>
+  <circle cx="710" cy="408" r="5" fill="#264653"/><text x="725" y="412" font-size="10" fill="#495057">D: Oscillatory cycling</text>
+  <circle cx="710" cy="428" r="5" fill="#6a4c93"/><text x="725" y="432" font-size="10" fill="#495057">E: Observer-reflective</text>
+
+  <!-- Bottom summary -->
+  <rect x="30" y="475" width="860" height="100" rx="6" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="460" y="498" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">Real-World Mapping Examples</text>
+  <line x1="50" y1="508" x2="870" y2="508" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Examples row -->
+  <text x="120" y="530" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">A: Amplifier</text>
+  <text x="120" y="545" text-anchor="middle" font-size="10" fill="#6c757d">Algorithmic feeds</text>
+  <text x="120" y="558" text-anchor="middle" font-size="10" fill="#6c757d">Recommendation</text>
+
+  <text x="280" y="530" text-anchor="middle" font-size="11" font-weight="600" fill="#f4a261">B: Initiator</text>
+  <text x="280" y="545" text-anchor="middle" font-size="10" fill="#6c757d">Onboarding flows</text>
+  <text x="280" y="558" text-anchor="middle" font-size="10" fill="#6c757d">Free-to-play hooks</text>
+
+  <text x="430" y="530" text-anchor="middle" font-size="11" font-weight="600" fill="#9d0208">C: Lock-In</text>
+  <text x="430" y="545" text-anchor="middle" font-size="10" fill="#6c757d">Sunk-cost mechanics</text>
+  <text x="430" y="558" text-anchor="middle" font-size="10" fill="#6c757d">Streak pressure</text>
+
+  <text x="580" y="530" text-anchor="middle" font-size="11" font-weight="600" fill="#264653">D: Oscillator</text>
+  <text x="580" y="545" text-anchor="middle" font-size="10" fill="#6c757d">Variable-ratio schedules</text>
+  <text x="580" y="558" text-anchor="middle" font-size="10" fill="#6c757d">Loot box RNG</text>
+
+  <text x="740" y="530" text-anchor="middle" font-size="11" font-weight="600" fill="#6a4c93">E: Mirror</text>
+  <text x="740" y="545" text-anchor="middle" font-size="10" fill="#6c757d">AI companions</text>
+  <text x="740" y="558" text-anchor="middle" font-size="10" fill="#6c757d">Parasocial design</text>
+
+  <!-- Bottom note -->
+  <text x="460" y="600" text-anchor="middle" font-size="12" fill="#495057">Each type has a unique Pe_excess(θ) profile. Types are separable via spectral decomposition of measured Pe trajectories.</text>
+  <text x="460" y="618" text-anchor="middle" font-size="11" fill="#6c757d">Demon Energy Bound: Pe_demon ≤ O · H(M) · L/D constrains all types. Types F and G create/modify other demons.</text>
+
+  <!-- Figure label -->
+  <text x="460" y="685" text-anchor="middle" font-size="12" font-weight="600" fill="#1a1a2e">Figure: Seven demon types classified by Pe_excess temporal signature (Paper 9, §6.9)</text>
+</svg>

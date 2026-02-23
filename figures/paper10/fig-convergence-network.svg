@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="conv" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#495057" opacity="0.6"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Nine-Paper Convergence on Governance Result</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Each companion paper independently converges on the scored monarchy conclusion. The result is overdetermined.</text>
+
+  <!-- Central node: Governance Conclusion -->
+  <circle cx="450" cy="320" r="55" fill="#1a1a2e" filter="url(#glow)"/>
+  <circle cx="450" cy="320" r="55" fill="none" stroke="#0077b6" stroke-width="2"/>
+  <text x="450" y="312" text-anchor="middle" font-size="12" font-weight="700" fill="white">GOVERNANCE</text>
+  <text x="450" y="328" text-anchor="middle" font-size="12" font-weight="700" fill="white">CONCLUSION</text>
+  <text x="450" y="344" text-anchor="middle" font-size="10" fill="#00b4d8">V(G) = 2/12</text>
+
+  <!-- Nine paper nodes arranged in arc -->
+  <!-- Paper 1: top-left -->
+  <circle cx="150" cy="130" r="35" fill="white" stroke="#0077b6" stroke-width="2" filter="url(#sh)"/>
+  <text x="150" y="124" text-anchor="middle" font-size="11" font-weight="700" fill="#0077b6">Paper 1</text>
+  <text x="150" y="140" text-anchor="middle" font-size="8" fill="#495057">Architecture</text>
+  <text x="150" y="152" text-anchor="middle" font-size="8" fill="#495057">of Drift</text>
+  <line x1="180" y1="155" x2="405" y2="285" stroke="#0077b6" stroke-width="2.5" marker-end="url(#conv)" opacity="0.7"/>
+  <text x="115" y="175" font-size="9" font-weight="600" fill="#2a9d8f">DIRECT</text>
+
+  <!-- Paper 2: top -->
+  <circle cx="320" cy="95" r="35" fill="white" stroke="#0077b6" stroke-width="2" filter="url(#sh)"/>
+  <text x="320" y="89" text-anchor="middle" font-size="11" font-weight="700" fill="#0077b6">Paper 2</text>
+  <text x="320" y="105" text-anchor="middle" font-size="8" fill="#495057">AI Safety</text>
+  <line x1="340" y1="127" x2="425" y2="275" stroke="#0077b6" stroke-width="2.5" marker-end="url(#conv)" opacity="0.7"/>
+  <text x="300" y="135" font-size="9" font-weight="600" fill="#2a9d8f">DIRECT</text>
+
+  <!-- Paper 3: top-right -->
+  <circle cx="580" cy="95" r="35" fill="white" stroke="#0077b6" stroke-width="2" filter="url(#sh)"/>
+  <text x="580" y="89" text-anchor="middle" font-size="11" font-weight="700" fill="#0077b6">Paper 3</text>
+  <text x="580" y="105" text-anchor="middle" font-size="8" fill="#495057">Thermo</text>
+  <line x1="560" y1="127" x2="475" y2="275" stroke="#0077b6" stroke-width="2.5" marker-end="url(#conv)" opacity="0.7"/>
+  <text x="558" y="135" font-size="9" font-weight="600" fill="#2a9d8f">DIRECT</text>
+
+  <!-- Paper 4: right-top -->
+  <circle cx="750" cy="130" r="35" fill="white" stroke="#0077b6" stroke-width="2" filter="url(#sh)"/>
+  <text x="750" y="124" text-anchor="middle" font-size="11" font-weight="700" fill="#0077b6">Paper 4</text>
+  <text x="750" y="140" text-anchor="middle" font-size="8" fill="#495057">Bounds on</text>
+  <text x="750" y="152" text-anchor="middle" font-size="8" fill="#495057">Sampling</text>
+  <line x1="720" y1="155" x2="495" y2="285" stroke="#0077b6" stroke-width="1.8" marker-end="url(#conv)" opacity="0.5"/>
+  <text x="755" y="175" font-size="9" font-weight="600" fill="#f4a261">MODERATE</text>
+
+  <!-- Paper 5: right -->
+  <circle cx="800" cy="310" r="35" fill="white" stroke="#0077b6" stroke-width="2" filter="url(#sh)"/>
+  <text x="800" y="304" text-anchor="middle" font-size="11" font-weight="700" fill="#0077b6">Paper 5</text>
+  <text x="800" y="320" text-anchor="middle" font-size="8" fill="#495057">TOE Ground</text>
+  <text x="800" y="332" text-anchor="middle" font-size="8" fill="#495057">State</text>
+  <line x1="765" y1="315" x2="505" y2="318" stroke="#0077b6" stroke-width="2.5" marker-end="url(#conv)" opacity="0.7"/>
+  <text x="810" y="350" font-size="9" font-weight="600" fill="#2a9d8f">DIRECT</text>
+
+  <!-- Paper 6: right-bottom -->
+  <circle cx="750" cy="500" r="35" fill="white" stroke="#e76f51" stroke-width="2" filter="url(#sh)"/>
+  <text x="750" y="494" text-anchor="middle" font-size="11" font-weight="700" fill="#e76f51">Paper 6</text>
+  <text x="750" y="510" text-anchor="middle" font-size="8" fill="#495057">Multiplayer</text>
+  <text x="750" y="522" text-anchor="middle" font-size="8" fill="#495057">Architecture</text>
+  <line x1="720" y1="478" x2="490" y2="348" stroke="#e76f51" stroke-width="2.5" marker-end="url(#conv)" opacity="0.7"/>
+  <text x="755" y="465" font-size="9" font-weight="600" fill="#2a9d8f">DIRECT</text>
+
+  <!-- Paper 7: bottom -->
+  <circle cx="580" cy="545" r="35" fill="white" stroke="#e76f51" stroke-width="2" filter="url(#sh)"/>
+  <text x="580" y="539" text-anchor="middle" font-size="11" font-weight="700" fill="#e76f51">Paper 7</text>
+  <text x="580" y="555" text-anchor="middle" font-size="8" fill="#495057">Crypto Void</text>
+  <line x1="560" y1="515" x2="470" y2="365" stroke="#e76f51" stroke-width="2.5" marker-end="url(#conv)" opacity="0.7"/>
+  <text x="558" y="510" font-size="9" font-weight="600" fill="#2a9d8f">DIRECT</text>
+
+  <!-- Paper 8: bottom-left -->
+  <circle cx="320" cy="545" r="35" fill="white" stroke="#0077b6" stroke-width="2" filter="url(#sh)"/>
+  <text x="320" y="539" text-anchor="middle" font-size="11" font-weight="700" fill="#0077b6">Paper 8</text>
+  <text x="320" y="555" text-anchor="middle" font-size="8" fill="#495057">Observer</text>
+  <text x="320" y="567" text-anchor="middle" font-size="8" fill="#495057">Bridge</text>
+  <line x1="345" y1="515" x2="430" y2="365" stroke="#0077b6" stroke-width="1.8" marker-end="url(#conv)" opacity="0.5"/>
+  <text x="300" y="510" font-size="9" font-weight="600" fill="#f4a261">MODERATE</text>
+
+  <!-- Paper 9: left -->
+  <circle cx="100" cy="310" r="35" fill="white" stroke="#e63946" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="100" y="304" text-anchor="middle" font-size="11" font-weight="700" fill="#e63946">Paper 9</text>
+  <text x="100" y="320" text-anchor="middle" font-size="8" fill="#495057">Voidspace</text>
+  <text x="100" y="332" text-anchor="middle" font-size="8" fill="#495057">(Keystone)</text>
+  <line x1="135" y1="315" x2="395" y2="318" stroke="#e63946" stroke-width="3" marker-end="url(#conv)" opacity="0.8"/>
+  <text x="65" y="350" font-size="9" font-weight="600" fill="#2a9d8f">DIRECT</text>
+
+  <!-- Legend -->
+  <rect x="60" y="590" width="290" height="22" rx="3" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="75" y1="601" x2="110" y2="601" stroke="#0077b6" stroke-width="2.5"/>
+  <text x="118" y="605" font-size="10" fill="#495057">Direct convergence (6 papers)</text>
+  <line x1="230" y1="601" x2="265" y2="601" stroke="#0077b6" stroke-width="1.5" stroke-dasharray="0"/>
+  <text x="273" y="605" font-size="10" fill="#495057">Moderate (2)</text>
+
+  <!-- Tier legend -->
+  <rect x="370" y="590" width="225" height="22" rx="3" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <circle cx="385" cy="601" r="6" fill="white" stroke="#0077b6" stroke-width="1.5"/>
+  <text x="398" y="605" font-size="10" fill="#495057">Tier 1 (CC-BY)</text>
+  <circle cx="475" cy="601" r="6" fill="white" stroke="#e76f51" stroke-width="1.5"/>
+  <text x="488" y="605" font-size="10" fill="#495057">Tier 2 (MoreRight)</text>
+  <circle cx="573" cy="601" r="6" fill="white" stroke="#e63946" stroke-width="2"/>
+  <text x="586" y="605" font-size="10" fill="#495057">Keystone</text>
+</svg>

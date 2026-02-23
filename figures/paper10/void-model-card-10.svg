@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" width="520" height="360">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    </style>
+    <linearGradient id="hg10" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161b2e"/>
+      <stop offset="100%" stop-color="#0d0f1a"/>
+    </linearGradient>
+  </defs>
+  <title>Void Model Card — Governance Architecture</title>
+
+  <!-- Card base -->
+  <rect width="520" height="360" fill="#ffffff" rx="10"/>
+
+  <!-- Dark header -->
+  <rect width="520" height="90" fill="url(#hg10)" rx="10"/>
+  <rect y="80" width="520" height="10" fill="#0d0f1a"/>
+
+  <!-- Severity stripe along top edge -->
+  <rect width="520" height="4" fill="#e67e22" rx="10"/>
+  <rect y="4" width="520" height="2" fill="#e67e22" opacity="0.3"/>
+
+  <!-- MoreRight logo (mark + wordmark) -->
+  <circle cx="22" cy="21" r="10"  fill="none" stroke="#4a9eff" stroke-width="1.8"/>
+  <circle cx="22" cy="21" r="3.2" fill="#4a9eff"/>
+  <text y="26" font-size="14" letter-spacing="-0.02em">
+    <tspan x="38" font-weight="300" fill="#8b98b0">More</tspan><tspan font-weight="800" fill="#ffffff">Right</tspan>
+  </text>
+
+  <!-- Paper title -->
+  <text x="16" y="55" font-size="17" font-weight="700" fill="#ffffff" letter-spacing="-0.015em">The King Problem</text>
+  <!-- Domain -->
+  <text x="16" y="73" font-size="11" fill="#8b98b0">Governance Architecture</text>
+
+  <!-- Score (top-right) -->
+  <text x="504" y="17" font-size="8" fill="#8b98b0" text-anchor="end" letter-spacing="0.12em" font-weight="600" class="mono">VOID MODEL CARD</text>
+  <text x="504" y="57" font-size="38" font-weight="800" fill="#e67e22" text-anchor="end" letter-spacing="-0.02em">7/12</text>
+  <text x="504" y="75" font-size="9.5" fill="#e67e22" text-anchor="end" class="mono">HIGH (MEDIAN) / 2/12 (SCORED MONARCHY)  ·  II–III</text>
+
+  <!-- THREE CONDITIONS section -->
+  <text x="16" y="107" font-size="8.5" fill="#8b98b0" letter-spacing="0.14em" font-weight="700" class="mono">THREE CONDITIONS</text>
+  <line x1="16" y1="113" x2="504" y2="113" stroke="#eef0f4" stroke-width="1"/>
+
+  <!-- Opacity -->
+  <text x="16" y="130" font-size="12" font-weight="600" fill="#1e293b">Opacity</text>
+  <text x="504" y="130" font-size="11" fill="#e67e22" font-weight="700" text-anchor="end" class="mono">2/3</text>
+  <rect x="148" y="135" width="100" height="11" rx="5" fill="#e67e22"/>
+  <rect x="253" y="135" width="100" height="11" rx="5" fill="#e67e22"/>
+  <rect x="358" y="135" width="100" height="11" rx="5" fill="#e8edf2"/>
+
+  <!-- Responsiveness -->
+  <text x="16" y="170" font-size="12" font-weight="600" fill="#1e293b">Responsiveness</text>
+  <text x="504" y="170" font-size="11" fill="#e67e22" font-weight="700" text-anchor="end" class="mono">2/3</text>
+  <rect x="148" y="175" width="100" height="11" rx="5" fill="#e67e22"/>
+  <rect x="253" y="175" width="100" height="11" rx="5" fill="#e67e22"/>
+  <rect x="358" y="175" width="100" height="11" rx="5" fill="#e8edf2"/>
+
+  <!-- Coupling -->
+  <text x="16" y="210" font-size="12" font-weight="600" fill="#1e293b">Coupling</text>
+  <text x="504" y="210" font-size="11" fill="#e67e22" font-weight="700" text-anchor="end" class="mono">2/3</text>
+  <rect x="148" y="215" width="100" height="11" rx="5" fill="#e67e22"/>
+  <rect x="253" y="215" width="100" height="11" rx="5" fill="#e67e22"/>
+  <rect x="358" y="215" width="100" height="11" rx="5" fill="#e8edf2"/>
+
+  <!-- Modifiers -->
+  <text x="16" y="247" font-size="11" fill="#64748b">Modifiers</text>
+  <text x="504" y="247" font-size="11" fill="#e67e22" font-weight="700" text-anchor="end" class="mono">+1</text>
+
+  <!-- Separator -->
+  <line x1="16" y1="262" x2="504" y2="262" stroke="#eef0f4" stroke-width="1.5"/>
+
+  <!-- Verdict -->
+  <text x="16" y="282" font-size="13" font-weight="700" fill="#1e293b">Void Index: <tspan fill="#e67e22">7/12 — High (median) / 2/12 (Scored Monarchy)</tspan></text>
+
+  <!-- Péclet -->
+  <text x="16" y="304" font-size="11" fill="#64748b">Péclet Number: <tspan fill="#e67e22" font-weight="700" class="mono"> Pe ≈ 4.0</tspan><tspan fill="#94a3b8">  (self-sustaining above 4)</tspan></text>
+
+  <!-- Footer -->
+  <line x1="0" y1="322" x2="520" y2="322" stroke="#eef0f4" stroke-width="1"/>
+  <circle cx="22" cy="341" r="5" fill="none" stroke="#4a9eff" stroke-width="1.1"/>
+  <circle cx="22" cy="341" r="1.6" fill="#4a9eff"/>
+  <text x="33" y="345" font-size="10" fill="#64748b" font-weight="500">moreright.xyz</text>
+  <text x="260" y="345" font-size="10" fill="#94a3b8" text-anchor="middle">Void Framework · Paper 10</text>
+  <text x="504" y="345" font-size="10" fill="#94a3b8" text-anchor="end">MoreRight License v1.0 (Tier 2)</text>
+</svg>

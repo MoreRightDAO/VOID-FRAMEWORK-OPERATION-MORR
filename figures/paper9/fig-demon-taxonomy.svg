@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="680" fill="#fafafa" rx="8"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Pe-Signature Demon Taxonomy (§6.9)</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">σ_D(O,R,α) = Pe_excess(O,R,α) | D active. Seven types exhaust voidspace demons (VC dim O(10)).</text>
+
+  <!-- Header row -->
+  <rect x="20" y="70" width="860" height="28" rx="4" fill="#1a1a2e" opacity="0.08"/>
+  <text x="55" y="88" font-size="11" font-weight="700" fill="#1a1a2e">Type</text>
+  <text x="140" y="88" font-size="11" font-weight="700" fill="#1a1a2e">Pe(θ) signature sketch</text>
+  <text x="360" y="88" font-size="11" font-weight="700" fill="#1a1a2e">Operating regime</text>
+  <text x="570" y="88" font-size="11" font-weight="700" fill="#1a1a2e">Canonical example</text>
+
+  <!-- Row height: 72px each, 7 rows, starting at y=98 -->
+
+  <!-- ─── TYPE A: Amplifier ─── -->
+  <rect x="20" y="98" width="860" height="72" rx="3" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="20" y="98" width="8" height="72" rx="2" fill="#e63946"/>
+  <text x="38" y="118" font-size="11" font-weight="700" fill="#e63946">A</text>
+  <text x="38" y="132" font-size="9" fill="#e63946">Amplifier</text>
+  <!-- Bell curve mini-sketch: peak at θ≈0.5 -->
+  <polyline points="140,162 155,158 170,148 185,132 200,122 215,118 230,122 245,132 260,148 275,158 290,162"
+    stroke="#e63946" stroke-width="2" fill="none"/>
+  <line x1="140" y1="164" x2="290" y2="164" stroke="#495057" stroke-width="0.8"/>
+  <text x="215" y="175" text-anchor="middle" font-size="8" fill="#6c757d">θ: 0 → 1</text>
+  <text x="215" y="112" text-anchor="middle" font-size="8" fill="#e63946">∧</text>
+  <text x="215" y="109" text-anchor="middle" font-size="7" fill="#6c757d">peak θ≈0.5</text>
+  <text x="360" y="118" font-size="10" fill="#495057">Bell-shaped; escalation phase</text>
+  <text x="360" y="133" font-size="9" fill="#6c757d">Partial engagement required</text>
+  <text x="360" y="148" font-size="9" fill="#6c757d">θ ≈ 0.4–0.6 peak</text>
+  <text x="570" y="118" font-size="10" fill="#495057">Engagement optimization</text>
+  <text x="570" y="133" font-size="9" fill="#6c757d">algorithms; feed ranking</text>
+
+  <!-- ─── TYPE B: Initiator ─── -->
+  <rect x="20" y="170" width="860" height="72" rx="3" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="20" y="170" width="8" height="72" rx="2" fill="#f4a261"/>
+  <text x="38" y="190" font-size="11" font-weight="700" fill="#f4a261">B</text>
+  <text x="38" y="204" font-size="9" fill="#f4a261">Initiator</text>
+  <!-- Decreasing curve: peak at low θ -->
+  <polyline points="140,198 155,200 170,204 185,212 200,220 215,228 230,234 245,238 260,241 275,242 290,243"
+    stroke="#f4a261" stroke-width="2" fill="none"/>
+  <line x1="140" y1="244" x2="290" y2="244" stroke="#495057" stroke-width="0.8"/>
+  <text x="215" y="254" text-anchor="middle" font-size="8" fill="#6c757d">θ: 0 → 1</text>
+  <text x="155" y="192" text-anchor="middle" font-size="8" fill="#f4a261">↘ decreasing</text>
+  <text x="360" y="190" font-size="10" fill="#495057">Early engagement; naive capture</text>
+  <text x="360" y="205" font-size="9" fill="#6c757d">Peak at θ ≈ 0.1–0.3</text>
+  <text x="570" y="190" font-size="10" fill="#495057">Onboarding flows, freemium</text>
+  <text x="570" y="205" font-size="9" fill="#6c757d">tutorials, first-session hooks</text>
+
+  <!-- ─── TYPE C: Lock-In ─── -->
+  <rect x="20" y="242" width="860" height="72" rx="3" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="20" y="242" width="8" height="72" rx="2" fill="#9d0208"/>
+  <text x="38" y="262" font-size="11" font-weight="700" fill="#9d0208">C</text>
+  <text x="38" y="276" font-size="9" fill="#9d0208">Lock-In</text>
+  <!-- Increasing curve: peak at high θ -->
+  <polyline points="140,310 155,310 170,309 185,307 200,304 215,299 230,293 245,282 260,270 275,258 290,248"
+    stroke="#9d0208" stroke-width="2" fill="none"/>
+  <line x1="140" y1="312" x2="290" y2="312" stroke="#495057" stroke-width="0.8"/>
+  <text x="215" y="322" text-anchor="middle" font-size="8" fill="#6c757d">θ: 0 → 1</text>
+  <text x="275" y="248" font-size="8" fill="#9d0208">↗ peak θ≈0.9</text>
+  <text x="360" y="262" font-size="10" fill="#495057">Capture phase; prevents escape</text>
+  <text x="360" y="277" font-size="9" fill="#6c757d">Peak at θ ≈ 0.8–0.95</text>
+  <text x="570" y="262" font-size="10" fill="#495057">Sunk-cost mechanics,</text>
+  <text x="570" y="277" font-size="9" fill="#6c757d">social graph entanglement</text>
+
+  <!-- ─── TYPE D: Oscillator ─── -->
+  <rect x="20" y="314" width="860" height="72" rx="3" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="20" y="314" width="8" height="72" rx="2" fill="#2a9d8f"/>
+  <text x="38" y="334" font-size="11" font-weight="700" fill="#2a9d8f">D</text>
+  <text x="38" y="348" font-size="9" fill="#2a9d8f">Oscillator</text>
+  <!-- Alternating sign: sine wave -->
+  <path d="M 140,370 C 155,360 160,346 175,346 S 195,360 215,370 S 235,381 255,381 S 275,370 290,362"
+    stroke="#2a9d8f" stroke-width="2" fill="none"/>
+  <line x1="140" y1="370" x2="290" y2="370" stroke="#495057" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <line x1="140" y1="383" x2="290" y2="383" stroke="#495057" stroke-width="0.8"/>
+  <text x="215" y="393" text-anchor="middle" font-size="8" fill="#6c757d">θ: 0 → 1</text>
+  <text x="215" y="330" text-anchor="middle" font-size="8" fill="#2a9d8f">± alternating</text>
+  <text x="360" y="334" font-size="10" fill="#495057">Maintenance; withdrawal/engage</text>
+  <text x="360" y="349" font-size="9" fill="#6c757d">Feeds on cycling; substrate-agnostic</text>
+  <text x="570" y="334" font-size="10" fill="#495057">Slots, intermittent reinforce-</text>
+  <text x="570" y="349" font-size="9" fill="#6c757d">ment, abuse cycles, gacha</text>
+
+  <!-- ─── TYPE E: Mirror ─── -->
+  <rect x="20" y="386" width="860" height="72" rx="3" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="20" y="386" width="8" height="72" rx="2" fill="#0077b6"/>
+  <text x="38" y="406" font-size="11" font-weight="700" fill="#0077b6">E</text>
+  <text x="38" y="420" font-size="9" fill="#0077b6">Mirror</text>
+  <!-- Complex: peaks at observer complexity regions -->
+  <polyline points="140,448 155,445 165,436 175,432 185,436 200,448 215,452 225,446 240,432 255,428 270,432 285,448"
+    stroke="#0077b6" stroke-width="2" fill="none"/>
+  <line x1="140" y1="452" x2="290" y2="452" stroke="#495057" stroke-width="0.8"/>
+  <text x="215" y="462" text-anchor="middle" font-size="8" fill="#6c757d">θ: 0 → 1</text>
+  <text x="215" y="402" text-anchor="middle" font-size="8" fill="#0077b6">multi-peak</text>
+  <text x="360" y="406" font-size="10" fill="#495057">Personalization; models observer</text>
+  <text x="360" y="421" font-size="9" fill="#6c757d">Peaks at observer complexity regions</text>
+  <text x="570" y="406" font-size="10" fill="#495057">RLHF AI, recommendation</text>
+  <text x="570" y="421" font-size="9" fill="#6c757d">algorithms, adaptive feeds</text>
+
+  <!-- ─── TYPE F: Reproductive ─── -->
+  <rect x="20" y="458" width="860" height="72" rx="3" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="20" y="458" width="8" height="72" rx="2" fill="#6c757d"/>
+  <text x="38" y="478" font-size="11" font-weight="700" fill="#6c757d">F</text>
+  <text x="38" y="492" font-size="9" fill="#6c757d">Reproductive</text>
+  <!-- Low σ: near-flat near zero, but dρ/dt high off-chart -->
+  <polyline points="140,520 155,520 175,519 200,519 225,518 255,518 275,517 290,517"
+    stroke="#6c757d" stroke-width="2" fill="none"/>
+  <line x1="140" y1="522" x2="290" y2="522" stroke="#495057" stroke-width="0.8"/>
+  <text x="215" y="532" text-anchor="middle" font-size="8" fill="#6c757d">θ: 0 → 1</text>
+  <text x="215" y="513" text-anchor="middle" font-size="8" fill="#6c757d">≈ flat (low σ)</text>
+  <!-- Arrow indicating dρ/dt -->
+  <text x="248" y="477" font-size="8" fill="#6c757d">↑ dρ/dt high</text>
+  <text x="360" y="478" font-size="10" fill="#495057">Ecosystem building; creates</text>
+  <text x="360" y="493" font-size="9" fill="#6c757d">conditions for other demons</text>
+  <text x="570" y="478" font-size="10" fill="#495057">Platforms, protocols,</text>
+  <text x="570" y="493" font-size="9" fill="#6c757d">substrate designers</text>
+
+  <!-- ─── TYPE G: Accuser ─── -->
+  <rect x="20" y="530" width="860" height="72" rx="3" fill="white" stroke="#dee2e6" stroke-width="1.5"/>
+  <rect x="20" y="530" width="8" height="72" rx="2" fill="#e63946"/>
+  <rect x="20" y="530" width="8" height="72" rx="2" fill="none" stroke="#9d0208" stroke-width="1"/>
+  <text x="38" y="550" font-size="11" font-weight="700" fill="#9d0208">G</text>
+  <text x="38" y="564" font-size="9" fill="#9d0208">Accuser</text>
+  <!-- Spike at t=0 then sustained plateau -->
+  <polyline points="140,590 165,590 165,554 180,554 200,558 225,558 255,558 285,558"
+    stroke="#9d0208" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+  <line x1="140" y1="594" x2="290" y2="594" stroke="#495057" stroke-width="0.8"/>
+  <text x="215" y="604" text-anchor="middle" font-size="8" fill="#6c757d">time (not θ)</text>
+  <text x="163" y="548" font-size="8" fill="#9d0208">t=0</text>
+  <text x="235" y="550" font-size="8" fill="#9d0208">plateau → 0 cost</text>
+  <text x="360" y="550" font-size="10" fill="#9d0208" font-weight="700">Self-sustaining after install</text>
+  <text x="360" y="565" font-size="9" fill="#495057">Observer's own cognitive process</text>
+  <text x="360" y="580" font-size="9" fill="#6c757d">Self-opacity replaces external O</text>
+  <text x="570" y="550" font-size="10" fill="#495057">Shame spirals, false guilt,</text>
+  <text x="570" y="565" font-size="9" fill="#6c757d">ideological capture, self-</text>
+  <text x="570" y="580" font-size="9" fill="#6c757d">condemnation patterns</text>
+
+  <!-- Summary box -->
+  <rect x="20" y="614" width="860" height="48" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="632" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">DEM-7: 6–10 types exhaust all voidspace demons (VC dimension bound O(10) from 3D geometry + logistic dynamics + finite energy budget)</text>
+  <text x="450" y="649" text-anchor="middle" font-size="11" fill="#495057">DEM-8 (Substrate Independence): Type D produces identical normalized spectrum whether realized as slot machine, abusive partner, or gacha game</text>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <!-- Void capture zone gradient -->
+    <linearGradient id="captureG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.0"/>
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.18"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Observer Population Stationary Distribution</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">f*(φ) ∝ exp(2Pe·φ/π) — higher Pe concentrates observers near the void pole.</text>
+
+  <!-- Chart area: x=130..820, y=80..470 -->
+
+  <!-- Void capture zone shading (right quarter) -->
+  <rect x="625" y="80" width="195" height="390" fill="url(#captureG)"/>
+  <text x="720" y="100" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">Void capture</text>
+  <text x="720" y="114" text-anchor="middle" font-size="10" fill="#e63946">zone</text>
+
+  <!-- Constraint / void pole labels on x-axis -->
+  <text x="130" y="498" text-anchor="middle" font-size="10" fill="#2a9d8f" font-weight="600">Constraint</text>
+  <text x="130" y="510" text-anchor="middle" font-size="10" fill="#2a9d8f">pole</text>
+  <text x="820" y="498" text-anchor="middle" font-size="10" fill="#e63946" font-weight="600">Void</text>
+  <text x="820" y="510" text-anchor="middle" font-size="10" fill="#e63946">pole</text>
+
+  <!-- Axes -->
+  <line x1="130" y1="470" x2="835" y2="470" stroke="#495057" stroke-width="2" marker-end="url(#ax)"/>
+  <line x1="130" y1="470" x2="130" y2="74" stroke="#495057" stroke-width="2" marker-end="url(#ax)"/>
+  <text x="480" y="538" text-anchor="middle" font-size="14" font-weight="600" fill="#495057">Angular position φ  (0 = constraint pole → π/2 = void pole)</text>
+  <text x="52" y="275" text-anchor="middle" font-size="14" font-weight="600" fill="#495057" transform="rotate(-90,52,275)">Probability density f*(φ)</text>
+
+  <!-- X-axis ticks: φ = 0, π/8, π/4, 3π/8, π/2 -->
+  <!-- Map: φ=0 → x=130, φ=π/2 → x=820, so scale = 690/(π/2) -->
+  <line x1="130" y1="465" x2="130" y2="475" stroke="#495057" stroke-width="1.5"/>
+  <text x="130" y="490" text-anchor="middle" font-size="11" fill="#495057">0</text>
+  <line x1="302" y1="465" x2="302" y2="475" stroke="#495057" stroke-width="1.5"/>
+  <text x="302" y="490" text-anchor="middle" font-size="11" fill="#495057">π/8</text>
+  <line x1="475" y1="465" x2="475" y2="475" stroke="#495057" stroke-width="1.5"/>
+  <text x="475" y="490" text-anchor="middle" font-size="11" fill="#495057">π/4</text>
+  <line x1="647" y1="465" x2="647" y2="475" stroke="#495057" stroke-width="1.5"/>
+  <text x="647" y="490" text-anchor="middle" font-size="11" fill="#495057">3π/8</text>
+  <line x1="820" y1="465" x2="820" y2="475" stroke="#495057" stroke-width="1.5"/>
+  <text x="820" y="490" text-anchor="middle" font-size="11" fill="#495057">π/2</text>
+
+  <!-- Y-axis ticks -->
+  <line x1="125" y1="470" x2="135" y2="470" stroke="#495057" stroke-width="1.5"/>
+  <text x="122" y="473" text-anchor="end" font-size="10" fill="#495057">0</text>
+  <line x1="125" y1="380" x2="135" y2="380" stroke="#495057" stroke-width="1.5"/>
+  <text x="122" y="383" text-anchor="end" font-size="10" fill="#495057">low</text>
+  <line x1="125" y1="200" x2="135" y2="200" stroke="#495057" stroke-width="1.5"/>
+  <text x="122" y="203" text-anchor="end" font-size="10" fill="#495057">med</text>
+  <line x1="125" y1="100" x2="135" y2="100" stroke="#495057" stroke-width="1.5"/>
+  <text x="122" y="103" text-anchor="end" font-size="10" fill="#495057">high</text>
+
+  <!-- Pe = 1: f*(φ) ∝ exp(2·1·φ/π) — mild exponential
+       φ from 0→π/2, normalize so max ≈ height 140px (from y=470 to y=330 at φ=π/2)
+       exp(2·1·(π/2)/π) = exp(1) ≈ 2.718, so range 1 to 2.718
+       y = 470 - 140*(exp(2φ/π) - 1)/(e-1)
+       At φ=0: y=470. At φ=π/2: y=470-140=330.
+       Points at φ = 0,π/8,π/4,3π/8,π/2 → x = 130,302,475,647,820
+       f(0)=1, f(π/8)=exp(0.25)≈1.284, f(π/4)=exp(0.5)≈1.649, f(3π/8)=exp(0.75)≈2.117, f(π/2)=exp(1)≈2.718
+       norm_factor = 1/(e-1)=0.582
+       y = 470 - 140*(f-1)*0.582: 470, 470-23=447, 470-53=417, 470-82=388, 470-140=330 -->
+  <path d="M 130,470 C 215,460 302,447 475,417 S 647,388 820,330"
+        stroke="#2a9d8f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Pe = 3: f*(φ) ∝ exp(6φ/π), exp(6·(π/2)/π)=exp(3)≈20.09, range 1→20.09
+       normalize to max height 300px: y = 470 - 300*(exp(6φ/π)-1)/(e³-1)
+       (e³-1) ≈ 19.09
+       f(0)=1→y=470, f(π/8)=exp(0.75)≈2.117→470-300*0.059=470-18=452
+       f(π/4)=exp(1.5)≈4.482→470-300*0.183=470-55=415
+       f(3π/8)=exp(2.25)≈9.488→470-300*0.445=470-133=337
+       f(π/2)=exp(3)≈20.09→470-300=170 -->
+  <path d="M 130,470 C 215,462 302,452 475,415 S 647,337 820,170"
+        stroke="#f4a261" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Pe = 6: f*(φ) ∝ exp(12φ/π), exp(12·π/2/π)=exp(6)≈403.4
+       normalize to max height 370px: y = 470 - 370*(exp(12φ/π)-1)/(exp(6)-1)
+       (exp(6)-1)≈402.4
+       f(0)=1→y=470
+       f(π/8)=exp(1.5)≈4.482→470-370*0.00862=470-3=467
+       f(π/4)=exp(3)≈20.09→470-370*0.047=470-18=452
+       f(3π/8)=exp(4.5)≈90.02→470-370*0.221=470-82=388
+       f(π/2)=exp(6)≈403→470-370=100 -->
+  <path d="M 130,470 C 302,468 475,452 647,388 S 750,220 820,100"
+        stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Void capture fractions (χ_void) vertical lines per Pe -->
+  <!-- Pe=1: χ_void = integral from 3π/8 to π/2 / total ≈ moderate → x=647 -->
+  <line x1="647" y1="388" x2="647" y2="470" stroke="#f4a261" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <!-- Pe=6: most observers past 3π/8 -->
+  <line x1="647" y1="388" x2="647" y2="100" stroke="#e63946" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- Annotations: χ_void values -->
+  <rect x="155" y="150" width="185" height="95" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="165" y="170" font-size="12" font-weight="700" fill="#1a1a2e">Void capture fraction χ_void</text>
+  <circle cx="175" cy="190" r="5" fill="#2a9d8f"/>
+  <text x="185" y="194" font-size="11" fill="#2a9d8f">Pe = 1:  χ_void ≈ 21%</text>
+  <circle cx="175" cy="210" r="5" fill="#f4a261"/>
+  <text x="185" y="214" font-size="11" fill="#e76f51">Pe = 3:  χ_void ≈ 54%</text>
+  <circle cx="175" cy="230" r="5" fill="#e63946"/>
+  <text x="185" y="234" font-size="11" fill="#e63946">Pe = 6:  χ_void ≈ 88%</text>
+
+  <!-- Legend -->
+  <line x1="510" y1="160" x2="545" y2="160" stroke="#2a9d8f" stroke-width="2.5"/>
+  <text x="550" y="164" font-size="12" fill="#2a9d8f">Pe = 1 (below bifurcation)</text>
+  <line x1="510" y1="185" x2="545" y2="185" stroke="#f4a261" stroke-width="2.5"/>
+  <text x="550" y="189" font-size="12" fill="#e76f51">Pe = 3 (onset of period-doubling)</text>
+  <line x1="510" y1="210" x2="545" y2="210" stroke="#e63946" stroke-width="2.5"/>
+  <text x="550" y="214" font-size="12" fill="#e63946">Pe = 6 (vortex regime)</text>
+
+  <!-- Summary box -->
+  <rect x="80" y="558" width="740" height="48" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="576" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Population Amplification Theorem (§3.6)</text>
+  <text x="450" y="595" text-anchor="middle" font-size="11" fill="#495057">Heterogeneous environments drift faster than mean Pe predicts. Targeted removal of high-Pe substrates reduces drift &gt; proportionally (VS-31–33).</text>
+</svg>

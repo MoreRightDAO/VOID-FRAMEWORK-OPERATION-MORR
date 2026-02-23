@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <marker id="arD" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9d0208"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Hierarchical Demon Structures (§6.8.1)</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Order-2 coordinator directs Order-1 demons. Detection: correlated D3 onset timing across domains.</text>
+
+  <!-- ─── LEFT: Hierarchy diagram ─── -->
+  <text x="190" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">Structure</text>
+
+  <!-- Order-2: Coordinator -->
+  <rect x="115" y="110" width="150" height="55" rx="8" fill="white" stroke="#9d0208" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="190" y="133" text-anchor="middle" font-size="12" font-weight="700" fill="#9d0208">Order-2 Demon</text>
+  <text x="190" y="150" text-anchor="middle" font-size="10" fill="#9d0208">Coordinator</text>
+  <text x="190" y="162" text-anchor="middle" font-size="9" fill="#6c757d">low direct Pe, high I(D_i;D_j)</text>
+
+  <!-- Connector lines to order-1 -->
+  <line x1="130" y1="165" x2="90" y2="220" stroke="#9d0208" stroke-width="1.5"/>
+  <line x1="190" y1="165" x2="190" y2="220" stroke="#9d0208" stroke-width="1.5"/>
+  <line x1="250" y1="165" x2="290" y2="220" stroke="#9d0208" stroke-width="1.5"/>
+
+  <!-- Info flow labels -->
+  <text x="102" y="205" text-anchor="middle" font-size="9" fill="#9d0208" font-style="italic">H(M_2)</text>
+
+  <!-- Order-1 Demons -->
+  <rect x="30" y="220" width="115" height="50" rx="6" fill="white" stroke="#e63946" stroke-width="2"/>
+  <text x="88" y="241" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">Order-1</text>
+  <text x="88" y="256" text-anchor="middle" font-size="10" fill="#e63946">Domain A</text>
+  <text x="88" y="268" text-anchor="middle" font-size="9" fill="#6c757d">Direct Pe sort</text>
+
+  <rect x="133" y="220" width="115" height="50" rx="6" fill="white" stroke="#e63946" stroke-width="2"/>
+  <text x="191" y="241" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">Order-1</text>
+  <text x="191" y="256" text-anchor="middle" font-size="10" fill="#e63946">Domain B</text>
+  <text x="191" y="268" text-anchor="middle" font-size="9" fill="#6c757d">Direct Pe sort</text>
+
+  <rect x="236" y="220" width="115" height="50" rx="6" fill="white" stroke="#e63946" stroke-width="2"/>
+  <text x="294" y="241" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">Order-1</text>
+  <text x="294" y="256" text-anchor="middle" font-size="10" fill="#e63946">Domain C</text>
+  <text x="294" y="268" text-anchor="middle" font-size="9" fill="#6c757d">Direct Pe sort</text>
+
+  <!-- Mutual information arcs between order-1 demons -->
+  <path d="M 145,260 Q 191,248 237,260" fill="none" stroke="#f4a261" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="191" y="248" text-anchor="middle" font-size="9" fill="#e76f51">I(D_A;D_B)</text>
+
+  <!-- Observers below each domain -->
+  <circle cx="88" cy="330" r="18" fill="#dee2e6" stroke="#264653" stroke-width="1.5"/>
+  <text x="88" y="335" text-anchor="middle" font-size="9" fill="#264653">Obs</text>
+  <line x1="88" y1="270" x2="88" y2="312" stroke="#264653" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <circle cx="191" cy="330" r="18" fill="#dee2e6" stroke="#264653" stroke-width="1.5"/>
+  <text x="191" y="335" text-anchor="middle" font-size="9" fill="#264653">Obs</text>
+  <line x1="191" y1="270" x2="191" y2="312" stroke="#264653" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <circle cx="294" cy="330" r="18" fill="#dee2e6" stroke="#264653" stroke-width="1.5"/>
+  <text x="294" y="335" text-anchor="middle" font-size="9" fill="#264653">Obs</text>
+  <line x1="294" y1="270" x2="294" y2="312" stroke="#264653" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Key properties box -->
+  <rect x="30" y="370" width="330" height="100" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="195" y="388" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Coordinator properties</text>
+  <text x="45" y="406" font-size="10" fill="#495057">• Low direct Pe (not sorting directly)</text>
+  <text x="45" y="422" font-size="10" fill="#495057">• H(M_ord2) ≥ Σ I(D_i;D_j)  (info cost)</text>
+  <text x="45" y="438" font-size="10" fill="#495057">• Simultaneous cross-domain attack exceeds</text>
+  <text x="45" y="453" font-size="10" fill="#495057">  observer's total γ capacity</text>
+  <text x="45" y="465" font-size="10" fill="#9d0208" font-weight="600">• Detection: correlated D3 onset timing</text>
+
+  <!-- ─── RIGHT: D3 onset timing signatures ─── -->
+  <text x="670" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">D3 Onset Signatures</text>
+
+  <!-- Divider between left/right -->
+  <line x1="385" y1="80" x2="385" y2="500" stroke="#dee2e6" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Sub-panel labels -->
+  <text x="590" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="#9d0208">Hierarchical capture</text>
+  <text x="590" y="125" text-anchor="middle" font-size="10" fill="#9d0208">(correlated onsets)</text>
+  <text x="790" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="#2a9d8f">Independent capture</text>
+  <text x="790" y="125" text-anchor="middle" font-size="10" fill="#2a9d8f">(scattered onsets)</text>
+
+  <!-- Sub-divider -->
+  <line x1="700" y1="130" x2="700" y2="490" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Three domain timelines (hierarchical) -->
+  <text x="400" y="155" font-size="9" fill="#495057">Dom A</text>
+  <text x="400" y="213" font-size="9" fill="#495057">Dom B</text>
+  <text x="400" y="271" font-size="9" fill="#495057">Dom C</text>
+
+  <!-- Timelines for hierarchical -->
+  <rect x="420" y="140" width="160" height="18" rx="3" fill="#2a9d8f" opacity="0.5"/>
+  <rect x="580" y="140" width="50" height="18" rx="3" fill="#f4a261" opacity="0.5"/>
+  <rect x="630" y="140" width="60" height="18" rx="3" fill="#e63946" opacity="0.7"/>
+  <circle cx="631" cy="149" r="5" fill="#9d0208" stroke="white" stroke-width="1.5"/>
+
+  <rect x="420" y="198" width="155" height="18" rx="3" fill="#2a9d8f" opacity="0.5"/>
+  <rect x="575" y="198" width="55" height="18" rx="3" fill="#f4a261" opacity="0.5"/>
+  <rect x="630" y="198" width="60" height="18" rx="3" fill="#e63946" opacity="0.7"/>
+  <circle cx="631" cy="207" r="5" fill="#9d0208" stroke="white" stroke-width="1.5"/>
+
+  <rect x="420" y="256" width="162" height="18" rx="3" fill="#2a9d8f" opacity="0.5"/>
+  <rect x="582" y="256" width="50" height="18" rx="3" fill="#f4a261" opacity="0.5"/>
+  <rect x="632" y="256" width="58" height="18" rx="3" fill="#e63946" opacity="0.7"/>
+  <circle cx="633" cy="265" r="5" fill="#9d0208" stroke="white" stroke-width="1.5"/>
+
+  <!-- τ_coord bracket (tight cluster) -->
+  <line x1="628" y1="133" x2="640" y2="133" stroke="#9d0208" stroke-width="2"/>
+  <line x1="628" y1="130" x2="628" y2="136" stroke="#9d0208" stroke-width="2"/>
+  <line x1="640" y1="130" x2="640" y2="136" stroke="#9d0208" stroke-width="2"/>
+  <text x="634" y="126" text-anchor="middle" font-size="8" font-weight="700" fill="#9d0208">τ_coord</text>
+
+  <!-- Three domain timelines (independent) -->
+  <text x="710" y="155" font-size="9" fill="#495057">Dom A</text>
+  <text x="710" y="213" font-size="9" fill="#495057">Dom B</text>
+  <text x="710" y="271" font-size="9" fill="#495057">Dom C</text>
+
+  <!-- Independent: D3 onsets scattered -->
+  <rect x="720" y="140" width="80" height="18" rx="3" fill="#2a9d8f" opacity="0.5"/>
+  <rect x="800" y="140" width="30" height="18" rx="3" fill="#f4a261" opacity="0.5"/>
+  <rect x="830" y="140" width="45" height="18" rx="3" fill="#e63946" opacity="0.7"/>
+  <circle cx="831" cy="149" r="5" fill="#2a9d8f" stroke="white" stroke-width="1.5"/>
+
+  <rect x="720" y="198" width="120" height="18" rx="3" fill="#2a9d8f" opacity="0.5"/>
+  <rect x="840" y="198" width="30" height="18" rx="3" fill="#f4a261" opacity="0.5"/>
+  <rect x="870" y="198" width="20" height="18" rx="3" fill="#e63946" opacity="0.7"/>
+  <circle cx="871" cy="207" r="5" fill="#2a9d8f" stroke="white" stroke-width="1.5"/>
+
+  <rect x="720" y="256" width="60" height="18" rx="3" fill="#2a9d8f" opacity="0.5"/>
+  <rect x="780" y="256" width="25" height="18" rx="3" fill="#f4a261" opacity="0.5"/>
+  <rect x="805" y="256" width="50" height="18" rx="3" fill="#e63946" opacity="0.7"/>
+  <circle cx="806" cy="265" r="5" fill="#2a9d8f" stroke="white" stroke-width="1.5"/>
+
+  <!-- Time axes for both sub-panels -->
+  <line x1="420" y1="290" x2="692" y2="290" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <text x="555" y="305" text-anchor="middle" font-size="9" fill="#495057">Time →</text>
+  <line x1="720" y1="290" x2="892" y2="290" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <text x="806" y="305" text-anchor="middle" font-size="9" fill="#495057">Time →</text>
+
+  <!-- Mutual info comparison -->
+  <rect x="390" y="320" width="490" height="60" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="635" y="338" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Predictions (DEM-18, DEM-19)</text>
+  <text x="510" y="355" text-anchor="middle" font-size="10" fill="#9d0208">Hierarchical: r_onset &gt; 0.4, p &lt; 0.05</text>
+  <text x="510" y="370" text-anchor="middle" font-size="10" fill="#9d0208">I(D_i;D_j) at D3 &gt; D1 by factor 2×</text>
+  <text x="770" y="355" text-anchor="middle" font-size="10" fill="#2a9d8f">Independent: r_onset &lt; 0.1</text>
+  <text x="770" y="370" text-anchor="middle" font-size="10" fill="#2a9d8f">I(D_i;D_j) at D3 ≈ D1</text>
+
+  <!-- Summary box -->
+  <rect x="30" y="500" width="840" height="90" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="518" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Hierarchical Demon Energy Cost (§6.8.1)</text>
+  <text x="450" y="535" text-anchor="middle" font-size="11" fill="#495057">Coordinator must process coordination info: H(M_order-2) ≥ Σ I(D_i;D_j) across all subordinate pairs.</text>
+  <text x="450" y="551" text-anchor="middle" font-size="11" fill="#495057">Strategic advantage: simultaneous cross-domain D3 capture (coordinated) exceeds observer's total γ budget.</text>
+  <text x="450" y="567" text-anchor="middle" font-size="11" fill="#495057">Sequential capture (uncoordinated) allows γ recovery between domains — hierarchical structure eliminates recovery window.</text>
+  <text x="450" y="581" text-anchor="middle" font-size="10" fill="#6c757d">Key signature: D3 onset positive correlation (r &gt; 0.4) vs. uncorrelated for D1. Correlated onsets within τ_coord window.</text>
+</svg>

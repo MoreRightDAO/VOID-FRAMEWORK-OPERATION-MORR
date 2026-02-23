@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <marker id="axS" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e63946"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Constraint Recovery Signatures: Type 1 vs. Type 2</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Type 1 (interior): sigmoid suppression. Type 2 (external injection): step-function collapse. (§6.6.6)</text>
+
+  <!-- Panel divider -->
+  <line x1="450" y1="75" x2="450" y2="490" stroke="#dee2e6" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ─── LEFT: Type 1 — Interior Constraint ─── -->
+  <rect x="70" y="75" width="360" height="24" rx="4" fill="#0077b6" opacity="0.12"/>
+  <text x="250" y="91" text-anchor="middle" font-size="14" font-weight="700" fill="#0077b6">Type 1 — Interior Constraint</text>
+
+  <!-- Left axes: x=85..430, y=110..450 -->
+  <line x1="85" y1="450" x2="440" y2="450" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="85" y1="450" x2="85" y2="104" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="263" y="472" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">Time →</text>
+  <text x="42" y="280" text-anchor="middle" font-size="12" font-weight="600" fill="#495057" transform="rotate(-90,42,280)">Péclet number (Pe)</text>
+
+  <!-- Y ticks left -->
+  <text x="80" y="454" text-anchor="end" font-size="10" fill="#495057">0</text>
+  <text x="80" y="354" text-anchor="end" font-size="10" fill="#495057">Pe₀/2</text>
+  <text x="80" y="160" text-anchor="end" font-size="10" fill="#495057">Pe₀</text>
+  <line x1="83" y1="160" x2="87" y2="160" stroke="#495057" stroke-width="1"/>
+  <line x1="83" y1="354" x2="87" y2="354" stroke="#495057" stroke-width="1"/>
+
+  <!-- Baseline Pe₀ dashed -->
+  <line x1="85" y1="160" x2="435" y2="160" stroke="#6c757d" stroke-width="1" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <!-- Intervention point -->
+  <line x1="175" y1="110" x2="175" y2="450" stroke="#0077b6" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="175" y="108" text-anchor="middle" font-size="10" font-weight="600" fill="#0077b6">Intervention</text>
+
+  <!-- Type 1: flat at Pe₀, then smooth sigmoid decrease, leveling at Pe_floor -->
+  <!-- Pe₀ at y=160. Before intervention: flat at 160. After: sigmoid down to y=310 (Pe_floor) -->
+  <path d="M 85,160 L 175,160 C 210,160 225,180 240,220 S 275,290 310,310 S 380,315 435,318"
+        stroke="#0077b6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Pe_floor level -->
+  <line x1="175" y1="318" x2="435" y2="318" stroke="#0077b6" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+  <text x="440" y="320" font-size="9" fill="#0077b6">Pe_floor</text>
+
+  <!-- T_reversal brace for Type 1 -->
+  <line x1="175" y1="440" x2="350" y2="440" stroke="#0077b6" stroke-width="1.5"/>
+  <line x1="175" y1="435" x2="175" y2="445" stroke="#0077b6" stroke-width="1.5"/>
+  <line x1="350" y1="435" x2="350" y2="445" stroke="#0077b6" stroke-width="1.5"/>
+  <text x="263" y="430" text-anchor="middle" font-size="10" font-weight="600" fill="#0077b6">T_reversal (long, proportional to depth)</text>
+
+  <!-- Annotation -->
+  <text x="320" y="200" font-size="10" fill="#0077b6">Smooth sigmoid</text>
+  <text x="320" y="213" font-size="10" fill="#0077b6">suppression</text>
+  <text x="320" y="244" font-size="10" fill="#6c757d">Identifies source</text>
+  <text x="320" y="257" font-size="10" fill="#6c757d">Decreases with depth</text>
+
+  <!-- ─── RIGHT: Type 2 — External Injection ─── -->
+  <rect x="460" y="75" width="360" height="24" rx="4" fill="#e63946" opacity="0.12"/>
+  <text x="640" y="91" text-anchor="middle" font-size="14" font-weight="700" fill="#e63946">Type 2 — External Injection</text>
+
+  <!-- Right axes: x=475..820, y=110..450 -->
+  <line x1="475" y1="450" x2="830" y2="450" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="475" y1="450" x2="475" y2="104" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="653" y="472" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">Time →</text>
+  <text x="832" y="290" text-anchor="end" font-size="12" font-weight="600" fill="#495057">Pe</text>
+
+  <!-- Y ticks right -->
+  <text x="470" y="454" text-anchor="end" font-size="10" fill="#495057">0</text>
+  <text x="470" y="160" text-anchor="end" font-size="10" fill="#495057">Pe₀</text>
+  <line x1="473" y1="160" x2="477" y2="160" stroke="#495057" stroke-width="1"/>
+
+  <!-- Baseline Pe₀ dashed -->
+  <line x1="475" y1="160" x2="825" y2="160" stroke="#6c757d" stroke-width="1" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <!-- Injection point -->
+  <line x1="565" y1="110" x2="565" y2="450" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="565" y="108" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">Injection t₀</text>
+
+  <!-- Type 2: flat at Pe₀ then VERTICAL DROP to near zero -->
+  <path d="M 475,160 L 565,160 L 565,245"
+        stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Step: immediate drop then sustained low -->
+  <path d="M 565,245 L 825,245"
+        stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Pe_suppressed level label -->
+  <text x="830" y="247" font-size="9" fill="#e63946">Pe_supp</text>
+
+  <!-- T_reversal → 0 annotation -->
+  <line x1="565" y1="440" x2="575" y2="440" stroke="#e63946" stroke-width="1.5"/>
+  <line x1="565" y1="435" x2="565" y2="445" stroke="#e63946" stroke-width="1.5"/>
+  <line x1="575" y1="435" x2="575" y2="445" stroke="#e63946" stroke-width="1.5"/>
+  <text x="590" y="442" font-size="10" font-weight="600" fill="#e63946">T_reversal → 0</text>
+
+  <!-- Vertical drop label -->
+  <text x="580" y="175" font-size="10" fill="#e63946">Step-function</text>
+  <text x="580" y="188" font-size="10" fill="#e63946">discontinuity</text>
+
+  <!-- Source opacity label -->
+  <text x="640" y="290" text-anchor="middle" font-size="10" fill="#6c757d">Source opaque</text>
+  <text x="640" y="303" text-anchor="middle" font-size="10" fill="#6c757d">Depth-independent</text>
+  <text x="640" y="316" text-anchor="middle" font-size="10" fill="#6c757d">T_reversal → 0</text>
+
+  <!-- Distinguishing table -->
+  <rect x="60" y="502" width="780" height="100" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="520" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Key Distinguishers</text>
+  <!-- Table headers -->
+  <text x="200" y="538" text-anchor="middle" font-size="11" font-weight="600" fill="#495057">Property</text>
+  <text x="430" y="538" text-anchor="middle" font-size="11" font-weight="600" fill="#0077b6">Type 1 (Interior)</text>
+  <text x="660" y="538" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">Type 2 (External)</text>
+  <line x1="75" y1="542" x2="833" y2="542" stroke="#dee2e6" stroke-width="1"/>
+  <!-- Row 1 -->
+  <text x="200" y="557" text-anchor="middle" font-size="10" fill="#495057">Pe suppression shape</text>
+  <text x="430" y="557" text-anchor="middle" font-size="10" fill="#0077b6">Sigmoid (smooth decay)</text>
+  <text x="660" y="557" text-anchor="middle" font-size="10" fill="#e63946">Step-function (discontinuous)</text>
+  <!-- Row 2 -->
+  <text x="200" y="572" text-anchor="middle" font-size="10" fill="#495057">Source identifiable?</text>
+  <text x="430" y="572" text-anchor="middle" font-size="10" fill="#0077b6">Yes — continuous suppressor</text>
+  <text x="660" y="572" text-anchor="middle" font-size="10" fill="#e63946">No — source opaque</text>
+  <!-- Row 3 -->
+  <text x="200" y="587" text-anchor="middle" font-size="10" fill="#495057">Effective at depth D3?</text>
+  <text x="430" y="587" text-anchor="middle" font-size="10" fill="#0077b6">Decreasing effectiveness</text>
+  <text x="660" y="587" text-anchor="middle" font-size="10" fill="#e63946">Depth-independent (VS-29)</text>
+</svg>

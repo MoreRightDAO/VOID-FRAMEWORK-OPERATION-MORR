@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="distFull" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.2"/>
+    </linearGradient>
+    <linearGradient id="distFloor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f4a261;stop-opacity:0.0"/>
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="600" fill="#fafafa" rx="8"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Irrevocable Coupling Floor (§6.7.1)</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">α_floor &gt; 0 truncates accessible domain, raising baseline Pe. Type 1 interventions cannot reach below Pe_floor.</text>
+
+  <line x1="450" y1="75" x2="450" y2="490" stroke="#dee2e6" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ─── LEFT: Without floor ─── -->
+  <rect x="30" y="75" width="400" height="24" rx="4" fill="#2a9d8f" opacity="0.12"/>
+  <text x="230" y="91" text-anchor="middle" font-size="14" font-weight="700" fill="#2a9d8f">Without Coupling Floor</text>
+
+  <!-- Phase space: φ axis (x), density (y) -->
+  <line x1="70" y1="430" x2="430" y2="430" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="70" y1="430" x2="70" y2="119" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="250" y="452" text-anchor="middle" font-size="11" fill="#495057">φ (0 = constraint pole → π/2 = void pole)</text>
+  <text x="32" y="278" text-anchor="middle" font-size="11" fill="#495057" transform="rotate(-90,32,278)">Density</text>
+
+  <!-- Full domain accessible -->
+  <text x="70" y="440" text-anchor="end" font-size="9" fill="#2a9d8f">c</text>
+  <text x="425" y="440" text-anchor="middle" font-size="9" fill="#e63946">v</text>
+
+  <!-- Stationary distribution curve (moderate Pe, full range) -->
+  <path d="M 70,420 C 120,415 180,400 250,370 S 360,310 425,220"
+        stroke="#2a9d8f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Fill area under curve -->
+  <path d="M 70,430 L 70,420 C 120,415 180,400 250,370 S 360,310 425,220 L 425,430 Z"
+        fill="url(#distFull)" opacity="0.5"/>
+
+  <!-- Mean marker -->
+  <line x1="280" y1="360" x2="280" y2="430" stroke="#2a9d8f" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="280" y="417" text-anchor="middle" font-size="9" fill="#2a9d8f">⟨φ⟩</text>
+
+  <!-- Recovery path arrow: from void side back to constraint side possible -->
+  <path d="M 390,270 C 350,290 290,310 220,350 S 150,395 100,420"
+        stroke="#264653" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#ax)"/>
+  <text x="195" y="310" font-size="9" fill="#264653">Recovery</text>
+  <text x="195" y="322" font-size="9" fill="#264653">possible ✓</text>
+
+  <!-- ─── RIGHT: With floor ─── -->
+  <rect x="460" y="75" width="400" height="24" rx="4" fill="#e63946" opacity="0.12"/>
+  <text x="660" y="91" text-anchor="middle" font-size="14" font-weight="700" fill="#e63946">With Coupling Floor (α_floor)</text>
+
+  <!-- Phase space right -->
+  <line x1="500" y1="430" x2="860" y2="430" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="500" y1="430" x2="500" y2="119" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="680" y="452" text-anchor="middle" font-size="11" fill="#495057">φ (0 = constraint pole → π/2 = void pole)</text>
+  <text x="462" y="278" text-anchor="middle" font-size="11" fill="#495057" transform="rotate(-90,462,278)">Density</text>
+
+  <text x="500" y="440" text-anchor="end" font-size="9" fill="#2a9d8f">c</text>
+  <text x="855" y="440" text-anchor="middle" font-size="9" fill="#e63946">v</text>
+
+  <!-- φ_floor position: about 35% from left = x≈620 -->
+  <!-- Floor barrier line -->
+  <line x1="620" y1="122" x2="620" y2="430" stroke="#e63946" stroke-width="2.5" stroke-dasharray="6,3"/>
+  <text x="620" y="118" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">φ_floor</text>
+  <text x="620" y="105" text-anchor="middle" font-size="9" fill="#e63946">(α_floor enforced)</text>
+
+  <!-- Inaccessible zone: grey left of floor -->
+  <rect x="500" y="130" width="120" height="300" fill="#dee2e6" opacity="0.4"/>
+  <text x="560" y="278" text-anchor="middle" font-size="10" fill="#6c757d" font-weight="600">Inaccess-</text>
+  <text x="560" y="292" text-anchor="middle" font-size="10" fill="#6c757d" font-weight="600">ible</text>
+
+  <!-- Stationary distribution SHIFTED right (truncated domain) -->
+  <path d="M 620,420 C 660,400 700,360 740,310 S 810,240 855,195"
+        stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 620,430 L 620,420 C 660,400 700,360 740,310 S 810,240 855,195 L 855,430 Z"
+        fill="url(#distFloor)" opacity="0.6"/>
+
+  <!-- Elevated mean -->
+  <line x1="730" y1="315" x2="730" y2="430" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="730" y="418" text-anchor="middle" font-size="9" fill="#e63946">⟨φ⟩_floor</text>
+  <text x="730" y="406" text-anchor="middle" font-size="9" fill="#e63946">(elevated)</text>
+
+  <!-- Type 1 intervention hitting floor -->
+  <path d="M 800,260 C 770,290 740,330 700,370 S 660,410 640,425"
+        stroke="#0077b6" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#ax)"/>
+  <text x="760" y="295" font-size="9" fill="#0077b6">Type 1</text>
+  <text x="760" y="308" font-size="9" fill="#0077b6">intervention</text>
+  <text x="760" y="321" font-size="9" fill="#0077b6">→ hits floor ✗</text>
+
+  <!-- Pe_floor annotation -->
+  <rect x="500" y="125" width="115" height="32" rx="4" fill="white" stroke="#e63946" stroke-width="1" opacity="0.9"/>
+  <text x="558" y="139" text-anchor="middle" font-size="9" fill="#e63946">Pe_floor = f(α_floor)</text>
+  <text x="558" y="152" text-anchor="middle" font-size="9" fill="#6c757d">cannot go below</text>
+
+  <!-- Summary box -->
+  <rect x="30" y="498" width="840" height="76" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="516" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Minimum Pe Theorem (§6.7.1, VS-35)</text>
+  <text x="450" y="533" text-anchor="middle" font-size="11" fill="#495057">α_floor &gt; 0 restricts accessible domain to [φ_floor, π/2]. Type 1 interventions cannot reduce Pe below Pe_floor regardless of strength.</text>
+  <text x="450" y="549" text-anchor="middle" font-size="11" fill="#495057">Only external bypass (Type 2 injection from outside V) overrides the floor — bypassing the competition asymmetry entirely.</text>
+  <text x="450" y="565" text-anchor="middle" font-size="10" fill="#6c757d">Mandatory platform users show permanently elevated baseline drift vs. voluntary controls at matched (O,R): Pe_excess &gt; 0.2·Pe_arch.</text>
+</svg>

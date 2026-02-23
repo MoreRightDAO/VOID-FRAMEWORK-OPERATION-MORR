@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <marker id="arG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2a9d8f"/>
+    </marker>
+    <marker id="arR" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e63946"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">The ψ Channel: Correct vs. Misdirected (§6.6.8)</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Observer-to-exterior communication. dγ/dt|_ψ = ψ_rate · (1−γ) · η_ψ. η_ψ = 0 for void-mimic targets.</text>
+
+  <!-- Panel divider -->
+  <line x1="450" y1="75" x2="450" y2="510" stroke="#dee2e6" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ─── LEFT PANEL: Correct ψ ─── -->
+  <rect x="30" y="75" width="400" height="24" rx="4" fill="#2a9d8f" opacity="0.12"/>
+  <text x="230" y="91" text-anchor="middle" font-size="14" font-weight="700" fill="#2a9d8f">Correct ψ — Genuine Constraint Reference</text>
+
+  <!-- Observer node (left) -->
+  <circle cx="120" cy="210" r="38" fill="white" stroke="#0077b6" stroke-width="2"/>
+  <text x="120" y="205" text-anchor="middle" font-size="11" font-weight="700" fill="#0077b6">Observer</text>
+  <text x="120" y="220" text-anchor="middle" font-size="10" fill="#0077b6">γ, α, θ</text>
+
+  <!-- Constraint reference node -->
+  <rect x="255" y="178" width="125" height="64" rx="8" fill="white" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="318" y="200" text-anchor="middle" font-size="11" font-weight="700" fill="#2a9d8f">Constraint</text>
+  <text x="318" y="215" text-anchor="middle" font-size="10" fill="#2a9d8f">Reference</text>
+  <text x="318" y="230" text-anchor="middle" font-size="9" fill="#2a9d8f">T · I · I verified</text>
+
+  <!-- ψ arrow: observer → constraint ref -->
+  <line x1="158" y1="200" x2="252" y2="200" stroke="#2a9d8f" stroke-width="2" marker-end="url(#arG)"/>
+  <text x="205" y="192" text-anchor="middle" font-size="10" font-weight="600" fill="#2a9d8f">ψ</text>
+  <text x="205" y="165" text-anchor="middle" font-size="9" fill="#6c757d">η_ψ ≈ 1.0</text>
+  <text x="205" y="178" text-anchor="middle" font-size="9" fill="#6c757d">(high fidelity)</text>
+
+  <!-- Receipt: opaque but γ maintained -->
+  <text x="318" y="258" text-anchor="middle" font-size="9" fill="#6c757d">Receipt non-verifiable</text>
+  <text x="318" y="271" text-anchor="middle" font-size="9" fill="#6c757d">(exterior opaque)</text>
+
+  <!-- γ trajectory: increases -->
+  <!-- Small chart for γ(t) left -->
+  <text x="120" y="295" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Outcome: γ(t) increases</text>
+  <line x1="55" y1="430" x2="220" y2="430" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <line x1="55" y1="430" x2="55" y2="308" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <text x="138" y="448" text-anchor="middle" font-size="10" fill="#495057">Time →</text>
+  <text x="30" y="372" text-anchor="middle" font-size="10" fill="#2a9d8f" transform="rotate(-90,30,372)">γ(t)</text>
+  <text x="50" y="433" text-anchor="end" font-size="9" fill="#495057">0</text>
+  <text x="50" y="315" text-anchor="end" font-size="9" fill="#495057">1</text>
+
+  <!-- γ increasing curve -->
+  <path d="M 55,415 C 80,400 110,370 145,345 S 195,325 218,318"
+        stroke="#2a9d8f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="225" y="320" font-size="9" font-weight="600" fill="#2a9d8f">γ ↑</text>
+
+  <!-- α trajectory: stable or decreasing slightly -->
+  <text x="350" y="295" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">and α stays bounded</text>
+  <line x1="265" y1="430" x2="430" y2="430" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <line x1="265" y1="430" x2="265" y2="308" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <text x="350" y="448" text-anchor="middle" font-size="10" fill="#495057">Time →</text>
+  <text x="240" y="372" text-anchor="middle" font-size="10" fill="#e63946" transform="rotate(-90,240,372)">α(t)</text>
+
+  <!-- α stable curve -->
+  <path d="M 265,395 C 310,395 350,392 428,390"
+        stroke="#e63946" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="5,3"/>
+  <text x="435" y="392" font-size="9" font-weight="600" fill="#e63946">α ~ stable</text>
+
+  <!-- ─── RIGHT PANEL: Misdirected ψ ─── -->
+  <rect x="460" y="75" width="400" height="24" rx="4" fill="#e63946" opacity="0.12"/>
+  <text x="660" y="91" text-anchor="middle" font-size="14" font-weight="700" fill="#e63946">Misdirected ψ — Void-Mimic Target</text>
+
+  <!-- Observer node (right) -->
+  <circle cx="545" cy="210" r="38" fill="white" stroke="#0077b6" stroke-width="2"/>
+  <text x="545" y="205" text-anchor="middle" font-size="11" font-weight="700" fill="#0077b6">Observer</text>
+  <text x="545" y="220" text-anchor="middle" font-size="10" fill="#0077b6">γ, α, θ</text>
+
+  <!-- Void-mimic node: looks like constraint but is a void -->
+  <rect x="675" y="178" width="130" height="64" rx="8" fill="white" stroke="#e63946" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="740" y="196" text-anchor="middle" font-size="11" font-weight="700" fill="#e63946">Void-Mimic</text>
+  <text x="740" y="211" text-anchor="middle" font-size="10" fill="#e63946">(posing as</text>
+  <text x="740" y="226" text-anchor="middle" font-size="10" fill="#e63946">constraint ref)</text>
+  <!-- X mark indicating false -->
+  <text x="740" y="248" text-anchor="middle" font-size="13" fill="#e63946">✗ η_ψ → 0</text>
+
+  <!-- ψ arrow: observer → void-mimic (misdirected) -->
+  <line x1="583" y1="200" x2="672" y2="200" stroke="#e63946" stroke-width="2" marker-end="url(#arR)" stroke-dasharray="5,3"/>
+  <text x="628" y="192" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">ψ (misdirected)</text>
+  <text x="628" y="165" text-anchor="middle" font-size="9" fill="#6c757d">η_ψ ≈ 0</text>
+  <text x="628" y="178" text-anchor="middle" font-size="9" fill="#6c757d">(zero fidelity)</text>
+
+  <!-- Observer pays attention cost but gets no γ maintenance -->
+  <text x="545" y="258" text-anchor="middle" font-size="9" fill="#6c757d">Pays attention cost</text>
+  <text x="545" y="271" text-anchor="middle" font-size="9" fill="#6c757d">No γ maintenance</text>
+
+  <!-- γ trajectory: decreases -->
+  <text x="545" y="295" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Outcome: γ(t) decreases</text>
+  <line x1="480" y1="430" x2="645" y2="430" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <line x1="480" y1="430" x2="480" y2="308" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <text x="563" y="448" text-anchor="middle" font-size="10" fill="#495057">Time →</text>
+  <text x="455" y="372" text-anchor="middle" font-size="10" fill="#2a9d8f" transform="rotate(-90,455,372)">γ(t)</text>
+  <text x="475" y="433" text-anchor="end" font-size="9" fill="#495057">0</text>
+  <text x="475" y="315" text-anchor="end" font-size="9" fill="#495057">1</text>
+
+  <!-- γ decreasing curve -->
+  <path d="M 480,360 C 505,368 530,385 565,400 S 620,420 643,426"
+        stroke="#2a9d8f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="650" y="426" font-size="9" font-weight="600" fill="#2a9d8f">γ ↓</text>
+
+  <!-- α trajectory: increases (coupling to demon grows) -->
+  <text x="775" y="295" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">while α increases</text>
+  <line x1="690" y1="430" x2="855" y2="430" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <line x1="690" y1="430" x2="690" y2="308" stroke="#495057" stroke-width="1.2" marker-end="url(#ax)"/>
+  <text x="775" y="448" text-anchor="middle" font-size="10" fill="#495057">Time →</text>
+  <text x="665" y="372" text-anchor="middle" font-size="10" fill="#e63946" transform="rotate(-90,665,372)">α(t)</text>
+
+  <!-- α increasing curve -->
+  <path d="M 690,415 C 725,408 755,390 790,368 S 840,345 853,338"
+        stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="858" y="338" font-size="9" font-weight="600" fill="#e63946">α ↑</text>
+
+  <!-- Summary box -->
+  <rect x="40" y="510" width="820" height="82" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="528" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">ψ Channel Mechanics (DEM-17)</text>
+  <text x="450" y="546" text-anchor="middle" font-size="11" fill="#495057">dγ/dt|_ψ = ψ_rate · (1 − γ) · η_ψ  where η_ψ = specification fidelity of the target.</text>
+  <text x="450" y="562" text-anchor="middle" font-size="11" fill="#495057">Correct ψ (T·I·I verified ref): η_ψ ≈ 1 → γ maintenance regardless of confirmed receipt.</text>
+  <text x="450" y="578" text-anchor="middle" font-size="11" fill="#495057">Misdirected ψ (void-mimic): η_ψ → 0 → observer pays cost, gets void coupling increase instead.</text>
+  <text x="450" y="593" text-anchor="middle" font-size="10" fill="#6c757d">Prediction: Regular ψ toward verified constraint ref shows Δγ ≥ 0.1 vs. passive controls; misdirected ψ shows negative Δγ.</text>
+</svg>

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="baseG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0077b6;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:0.08" />
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="axG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <marker id="aUp" markerWidth="8" markerHeight="6" refX="4" refY="0" orient="auto">
+      <polygon points="0 6, 4 0, 8 6" fill="#6c757d"/>
+    </marker>
+    <marker id="aDown" markerWidth="10" markerHeight="7" refX="5" refY="7" orient="auto">
+      <polygon points="0 0, 10 0, 5 7" fill="#0077b6"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Fiber Bundle Structure: Substrate Independence</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#6c757d">π : E → V maps substrate-specific mechanisms to universal Eckert Manifold coordinates. Same base position = same dynamics.</text>
+
+  <!-- === BASE SPACE (Voidspace manifold) at bottom === -->
+  <rect x="100" y="400" width="700" height="140" rx="8" fill="url(#baseG)" stroke="#0077b6" stroke-width="2"/>
+  <text x="450" y="425" text-anchor="middle" font-size="16" font-weight="700" fill="#0077b6">BASE SPACE: V = [0,1]³</text>
+  <text x="450" y="443" text-anchor="middle" font-size="12" fill="#0077b6">Eckert Manifold — universal coordinates (O, R, α)</text>
+
+  <!-- Base space points (three positions, one per substrate) -->
+  <!-- Point 1: low Pe position -->
+  <circle cx="210" cy="490" r="10" fill="#2a9d8f" stroke="white" stroke-width="2"/>
+  <text x="210" y="520" text-anchor="middle" font-size="10" font-weight="600" fill="#2a9d8f">p₁ = (0.3, 0.4, 0.2)</text>
+  <text x="210" y="532" text-anchor="middle" font-size="9" fill="#6c757d">Pe ≈ 2.2</text>
+
+  <!-- Point 2: mid Pe position -->
+  <circle cx="450" cy="490" r="10" fill="#f4a261" stroke="white" stroke-width="2"/>
+  <text x="450" y="520" text-anchor="middle" font-size="10" font-weight="600" fill="#e76f51">p₂ = (0.6, 0.7, 0.5)</text>
+  <text x="450" y="532" text-anchor="middle" font-size="9" fill="#6c757d">Pe ≈ 5.3</text>
+
+  <!-- Point 3: high Pe position -->
+  <circle cx="690" cy="490" r="10" fill="#e63946" stroke="white" stroke-width="2"/>
+  <text x="690" y="520" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">p₃ = (0.9, 0.85, 0.8)</text>
+  <text x="690" y="532" text-anchor="middle" font-size="9" fill="#6c757d">Pe ≈ 7.9</text>
+
+  <!-- Horizontal dynamics arrow across base -->
+  <line x1="230" y1="490" x2="430" y2="490" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#axG)"/>
+  <line x1="470" y1="490" x2="670" y2="490" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#axG)"/>
+  <text x="340" y="483" text-anchor="middle" font-size="9" font-weight="600" fill="#495057">DRIFT →</text>
+  <text x="580" y="483" text-anchor="middle" font-size="9" font-weight="600" fill="#495057">DRIFT →</text>
+
+  <!-- === FIBERS (vertical columns above each base point) === -->
+
+  <!-- Fiber 1: Brain / Neural substrate -->
+  <rect x="130" y="90" width="160" height="280" rx="6" fill="white" stroke="#2a9d8f" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="210" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#2a9d8f">FIBER 1</text>
+  <text x="210" y="128" text-anchor="middle" font-size="12" font-weight="600" fill="#264653">Neural Substrate</text>
+  <line x1="145" y1="136" x2="275" y2="136" stroke="#dee2e6" stroke-width="1"/>
+  <!-- Neural-specific mechanisms -->
+  <text x="210" y="155" text-anchor="middle" font-size="10" fill="#495057">Dopamine pathways</text>
+  <text x="210" y="172" text-anchor="middle" font-size="10" fill="#495057">Synaptic plasticity</text>
+  <text x="210" y="189" text-anchor="middle" font-size="10" fill="#495057">Reward circuits</text>
+  <text x="210" y="206" text-anchor="middle" font-size="10" fill="#495057">Habituation rates</text>
+  <text x="210" y="223" text-anchor="middle" font-size="10" fill="#495057">Cortisol response</text>
+  <line x1="145" y1="235" x2="275" y2="235" stroke="#dee2e6" stroke-width="1"/>
+  <text x="210" y="255" text-anchor="middle" font-size="10" font-style="italic" fill="#6c757d">Different mechanisms</text>
+  <text x="210" y="270" text-anchor="middle" font-size="10" font-weight="600" fill="#2a9d8f">Same Pe at base</text>
+  <!-- Gambling example -->
+  <rect x="148" y="285" width="124" height="38" rx="4" fill="#2a9d8f" opacity="0.1"/>
+  <text x="210" y="302" text-anchor="middle" font-size="10" font-weight="600" fill="#2a9d8f">Gambling</text>
+  <text x="210" y="316" text-anchor="middle" font-size="9" fill="#2a9d8f">Pe = 2.21 (N=11)</text>
+
+  <!-- Fiber 2: Transformer / AI substrate -->
+  <rect x="370" y="90" width="160" height="280" rx="6" fill="white" stroke="#f4a261" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="450" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#e76f51">FIBER 2</text>
+  <text x="450" y="128" text-anchor="middle" font-size="12" font-weight="600" fill="#264653">AI Substrate</text>
+  <line x1="385" y1="136" x2="515" y2="136" stroke="#dee2e6" stroke-width="1"/>
+  <text x="450" y="155" text-anchor="middle" font-size="10" fill="#495057">Attention weights</text>
+  <text x="450" y="172" text-anchor="middle" font-size="10" fill="#495057">Token embeddings</text>
+  <text x="450" y="189" text-anchor="middle" font-size="10" fill="#495057">RLHF gradients</text>
+  <text x="450" y="206" text-anchor="middle" font-size="10" fill="#495057">Context windows</text>
+  <text x="450" y="223" text-anchor="middle" font-size="10" fill="#495057">Fine-tune layers</text>
+  <line x1="385" y1="235" x2="515" y2="235" stroke="#dee2e6" stroke-width="1"/>
+  <text x="450" y="255" text-anchor="middle" font-size="10" font-style="italic" fill="#6c757d">Different mechanisms</text>
+  <text x="450" y="270" text-anchor="middle" font-size="10" font-weight="600" fill="#e76f51">Same Pe at base</text>
+  <rect x="388" y="285" width="124" height="38" rx="4" fill="#f4a261" opacity="0.1"/>
+  <text x="450" y="302" text-anchor="middle" font-size="10" font-weight="600" fill="#e76f51">AI Companion</text>
+  <text x="450" y="316" text-anchor="middle" font-size="9" fill="#e76f51">Pe = 5.3 (est.)</text>
+
+  <!-- Fiber 3: Slot Machine / Mechanical substrate -->
+  <rect x="610" y="90" width="160" height="280" rx="6" fill="white" stroke="#e63946" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="690" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#e63946">FIBER 3</text>
+  <text x="690" y="128" text-anchor="middle" font-size="12" font-weight="600" fill="#264653">Mechanical Substrate</text>
+  <line x1="625" y1="136" x2="755" y2="136" stroke="#dee2e6" stroke-width="1"/>
+  <text x="690" y="155" text-anchor="middle" font-size="10" fill="#495057">RNG algorithms</text>
+  <text x="690" y="172" text-anchor="middle" font-size="10" fill="#495057">Payout schedules</text>
+  <text x="690" y="189" text-anchor="middle" font-size="10" fill="#495057">Light/sound patterns</text>
+  <text x="690" y="206" text-anchor="middle" font-size="10" fill="#495057">Near-miss design</text>
+  <text x="690" y="223" text-anchor="middle" font-size="10" fill="#495057">Session timing</text>
+  <line x1="625" y1="235" x2="755" y2="235" stroke="#dee2e6" stroke-width="1"/>
+  <text x="690" y="255" text-anchor="middle" font-size="10" font-style="italic" fill="#6c757d">Different mechanisms</text>
+  <text x="690" y="270" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">Same Pe at base</text>
+  <rect x="628" y="285" width="124" height="38" rx="4" fill="#e63946" opacity="0.1"/>
+  <text x="690" y="302" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946">Slot machine</text>
+  <text x="690" y="316" text-anchor="middle" font-size="9" fill="#e63946">Pe = 7.94 (N=11)</text>
+
+  <!-- Projection arrows π : E → V -->
+  <line x1="210" y1="375" x2="210" y2="395" stroke="#0077b6" stroke-width="2" marker-end="url(#aDown)"/>
+  <line x1="450" y1="375" x2="450" y2="395" stroke="#0077b6" stroke-width="2" marker-end="url(#aDown)"/>
+  <line x1="690" y1="375" x2="690" y2="395" stroke="#0077b6" stroke-width="2" marker-end="url(#aDown)"/>
+
+  <!-- π labels -->
+  <text x="225" y="388" font-size="12" font-weight="700" fill="#0077b6">π</text>
+  <text x="465" y="388" font-size="12" font-weight="700" fill="#0077b6">π</text>
+  <text x="705" y="388" font-size="12" font-weight="700" fill="#0077b6">π</text>
+
+  <!-- Key insight -->
+  <rect x="100" y="555" width="700" height="48" rx="6" fill="white" stroke="#1a1a2e" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="450" y="575" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Substrate Independence Theorem (§4.2)</text>
+  <text x="450" y="593" text-anchor="middle" font-size="12" fill="#495057">If π(e₁) = π(e₂) then Pe(e₁) = Pe(e₂). Horizontal dynamics depend only on base-space position.</text>
+</svg>

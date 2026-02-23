@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="decayBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.08" />
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="axM" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="580" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">The S(C) Decay Function</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Custodian constraint score decays exponentially. All human custodians trend toward S(C) → 0.</text>
+
+  <!-- === MAIN CHART === -->
+  <rect x="100" y="80" width="680" height="340" rx="6" fill="url(#decayBg)"/>
+
+  <!-- Axes -->
+  <line x1="130" y1="390" x2="760" y2="390" stroke="#495057" stroke-width="2" marker-end="url(#axM)"/>
+  <line x1="130" y1="390" x2="130" y2="88" stroke="#495057" stroke-width="2" marker-end="url(#axM)"/>
+  <text x="445" y="420" text-anchor="middle" font-size="14" font-weight="600" fill="#495057">Time (t) — generations</text>
+  <text x="75" y="240" text-anchor="middle" font-size="14" font-weight="600" fill="#495057" transform="rotate(-90,75,240)">S(C, t)</text>
+
+  <!-- Y ticks -->
+  <text x="120" y="394" text-anchor="end" font-size="10" fill="#495057">0</text>
+  <text x="120" y="294" text-anchor="end" font-size="10" fill="#495057">0.5</text>
+  <text x="120" y="104" text-anchor="end" font-size="10" fill="#495057">1.0</text>
+  <line x1="125" y1="290" x2="135" y2="290" stroke="#495057" stroke-width="1"/>
+  <line x1="125" y1="100" x2="135" y2="100" stroke="#495057" stroke-width="1"/>
+
+  <!-- X tick markers for time periods -->
+  <text x="200" y="408" text-anchor="middle" font-size="9" fill="#6c757d">Installation</text>
+  <text x="350" y="408" text-anchor="middle" font-size="9" fill="#6c757d">1 generation</text>
+  <text x="500" y="408" text-anchor="middle" font-size="9" fill="#6c757d">2–3 gen.</text>
+  <text x="650" y="408" text-anchor="middle" font-size="9" fill="#6c757d">4+ gen.</text>
+
+  <!-- S(C) formula -->
+  <rect x="550" y="95" width="210" height="40" rx="4" fill="white" stroke="#1a1a2e" stroke-width="1" filter="url(#sh)"/>
+  <text x="655" y="113" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">S(C, t) = S₀ · e^(-λt)</text>
+  <text x="655" y="128" text-anchor="middle" font-size="10" fill="#6c757d">λ > 0 for all human custodians</text>
+
+  <!-- Main decay curve -->
+  <path d="M 140,105 Q 200,110 260,145 Q 340,210 400,270 Q 460,320 520,350 Q 580,370 640,380 Q 700,385 750,388" stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Historical examples on curve -->
+  <!-- Moses: high S(C) at installation -->
+  <circle cx="160" cy="108" r="7" fill="#2a9d8f" stroke="white" stroke-width="1.5"/>
+  <text x="173" y="103" font-size="10" font-weight="600" fill="#2a9d8f">Moses</text>
+  <text x="173" y="116" font-size="9" fill="#6c757d">S(C) ≈ 0.95</text>
+
+  <!-- Washington -->
+  <circle cx="250" cy="140" r="7" fill="#0077b6" stroke="white" stroke-width="1.5"/>
+  <text x="235" y="155" font-size="10" font-weight="600" fill="#0077b6">Washington</text>
+  <text x="235" y="168" font-size="9" fill="#6c757d">S(C) ≈ 0.85</text>
+
+  <!-- Satoshi (pseudo-anonymous, then departed) -->
+  <circle cx="200" cy="115" r="7" fill="#f4a261" stroke="white" stroke-width="1.5"/>
+  <text x="215" y="132" font-size="10" font-weight="600" fill="#e76f51">Satoshi</text>
+  <text x="215" y="145" font-size="9" fill="#6c757d">departed (preserved S)</text>
+
+  <!-- Early Papacy -->
+  <circle cx="360" cy="225" r="7" fill="#6a4c93" stroke="white" stroke-width="1.5"/>
+  <text x="375" y="220" font-size="10" font-weight="600" fill="#6a4c93">Early Papacy</text>
+  <text x="375" y="233" font-size="9" fill="#6c757d">S(C) ≈ 0.55</text>
+
+  <!-- Medieval Papacy -->
+  <circle cx="500" cy="340" r="7" fill="#6a4c93" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <text x="515" y="335" font-size="10" font-weight="600" fill="#6a4c93">Medieval Papacy</text>
+  <text x="515" y="348" font-size="9" fill="#6c757d">S(C) ≈ 0.15</text>
+
+  <!-- Modern institutions -->
+  <circle cx="660" cy="382" r="7" fill="#e63946" stroke="white" stroke-width="1.5"/>
+  <text x="660" y="372" font-size="10" font-weight="600" fill="#e63946">Modern institutions</text>
+  <text x="660" y="360" font-size="9" fill="#6c757d">S(C) → 0</text>
+
+  <!-- Compensation trap annotation -->
+  <line x1="420" y1="285" x2="420" y2="240" stroke="#e63946" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="425" y="238" font-size="9" fill="#e63946">Compensation trap starts:</text>
+  <text x="425" y="250" font-size="9" fill="#e63946">add governance layers</text>
+
+  <!-- === BOTTOM: FOUR-STEP CYCLE === -->
+  <rect x="60" y="435" width="780" height="120" rx="6" fill="white" stroke="#1a1a2e" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="450" y="458" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">The Compensation Trap — Universal Historical Cycle</text>
+
+  <!-- Four steps as connected boxes -->
+  <rect x="85" y="470" width="150" height="40" rx="4" fill="#2a9d8f" opacity="0.15" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="160" y="487" text-anchor="middle" font-size="11" font-weight="600" fill="#2a9d8f">1. Installation</text>
+  <text x="160" y="502" text-anchor="middle" font-size="10" fill="#2a9d8f">High S(C)</text>
+
+  <text x="247" y="492" font-size="14" fill="#495057">→</text>
+
+  <rect x="262" y="470" width="150" height="40" rx="4" fill="#f4a261" opacity="0.15" stroke="#f4a261" stroke-width="1.5"/>
+  <text x="337" y="487" text-anchor="middle" font-size="11" font-weight="600" fill="#e76f51">2. Decay</text>
+  <text x="337" y="502" text-anchor="middle" font-size="10" fill="#e76f51">S(C) degrades</text>
+
+  <text x="424" y="492" font-size="14" fill="#495057">→</text>
+
+  <rect x="439" y="470" width="150" height="40" rx="4" fill="#e63946" opacity="0.15" stroke="#e63946" stroke-width="1.5"/>
+  <text x="514" y="487" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">3. Compensation</text>
+  <text x="514" y="502" text-anchor="middle" font-size="10" fill="#e63946">Add governance layers</text>
+
+  <text x="601" y="492" font-size="14" fill="#495057">→</text>
+
+  <rect x="616" y="470" width="195" height="40" rx="4" fill="#9d0208" opacity="0.15" stroke="#9d0208" stroke-width="1.5"/>
+  <text x="713" y="487" text-anchor="middle" font-size="11" font-weight="600" fill="#9d0208">4. Convergence</text>
+  <text x="713" y="502" text-anchor="middle" font-size="10" fill="#9d0208">V(G) ≥ 5 (always)</text>
+
+  <text x="450" y="540" text-anchor="middle" font-size="11" fill="#6c757d">λ determined by: mortality, institutional accretion, power coupling, environmental pressure. Monotonic decrease for all human custodians.</text>
+</svg>

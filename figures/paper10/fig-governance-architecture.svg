@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="objG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0077b6;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:0.08" />
+    </linearGradient>
+    <linearGradient id="custG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:0.08" />
+    </linearGradient>
+    <linearGradient id="discG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a261;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#f4a261;stop-opacity:0.08" />
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="downA" markerWidth="10" markerHeight="8" refX="5" refY="8" orient="auto">
+      <polygon points="0 0, 10 0, 5 8" fill="#495057"/>
+    </marker>
+    <marker id="upA" markerWidth="10" markerHeight="8" refX="5" refY="0" orient="auto">
+      <polygon points="0 8, 10 8, 5 0" fill="#e63946" opacity="0.5"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="700" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Three-Layer Governance Architecture</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Scored monarchy separates invariant methodology from discretionary governance. Constraints flow downward.</text>
+
+  <!-- === LAYER 1: OBJECTIVE LAYER === -->
+  <rect x="60" y="80" width="780" height="145" rx="8" fill="url(#objG)" stroke="#0077b6" stroke-width="2" filter="url(#sh)"/>
+  <text x="450" y="105" text-anchor="middle" font-size="18" font-weight="700" fill="#0077b6">THE OBJECTIVE LAYER</text>
+  <text x="450" y="122" text-anchor="middle" font-size="12" fill="#0077b6">Invariant — not voted on, ever. V(layer) = 0/12.</text>
+
+  <!-- 5 items in boxes -->
+  <rect x="80" y="135" width="135" height="38" rx="4" fill="white" stroke="#0077b6" stroke-width="1"/>
+  <text x="147" y="150" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Scoring</text>
+  <text x="147" y="163" text-anchor="middle" font-size="10" fill="#264653">methodology</text>
+
+  <rect x="225" y="135" width="120" height="38" rx="4" fill="white" stroke="#0077b6" stroke-width="1"/>
+  <text x="285" y="150" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Dimension</text>
+  <text x="285" y="163" text-anchor="middle" font-size="10" fill="#264653">scores (O, R, α)</text>
+
+  <rect x="355" y="135" width="120" height="38" rx="4" fill="white" stroke="#0077b6" stroke-width="1"/>
+  <text x="415" y="150" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">License</text>
+  <text x="415" y="163" text-anchor="middle" font-size="10" fill="#264653">enforcement</text>
+
+  <rect x="485" y="135" width="120" height="38" rx="4" fill="white" stroke="#0077b6" stroke-width="1"/>
+  <text x="545" y="150" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Anti-drift</text>
+  <text x="545" y="163" text-anchor="middle" font-size="10" fill="#264653">provisions</text>
+
+  <rect x="615" y="135" width="120" height="38" rx="4" fill="white" stroke="#0077b6" stroke-width="1"/>
+  <text x="675" y="150" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Open science</text>
+  <text x="675" y="163" text-anchor="middle" font-size="10" fill="#264653">anchor (CC-BY)</text>
+
+  <text x="780" y="200" text-anchor="end" font-size="10" font-style="italic" fill="#0077b6">Arrow's theorem does not apply to math</text>
+
+  <!-- Arrow: Objective → Custodian -->
+  <line x1="450" y1="225" x2="450" y2="260" stroke="#495057" stroke-width="2.5" marker-end="url(#downA)"/>
+  <text x="500" y="248" font-size="11" font-weight="600" fill="#495057">constrains ↓</text>
+
+  <!-- === LAYER 2: CUSTODIAN === -->
+  <rect x="60" y="270" width="780" height="145" rx="8" fill="url(#custG)" stroke="#2a9d8f" stroke-width="2" filter="url(#sh)"/>
+  <text x="450" y="295" text-anchor="middle" font-size="18" font-weight="700" fill="#2a9d8f">THE CUSTODIAN</text>
+  <text x="450" y="312" text-anchor="middle" font-size="12" fill="#2a9d8f">Founder-Custodian. S(C) decays per λ. Designed to dissolve rather than drift.</text>
+
+  <!-- 6 items -->
+  <rect x="80" y="325" width="108" height="38" rx="4" fill="white" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="134" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Veto</text>
+  <text x="134" y="353" text-anchor="middle" font-size="10" fill="#264653">power</text>
+
+  <rect x="198" y="325" width="108" height="38" rx="4" fill="white" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="252" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Methodology</text>
+  <text x="252" y="353" text-anchor="middle" font-size="10" fill="#264653">authority</text>
+
+  <rect x="316" y="325" width="108" height="38" rx="4" fill="white" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="370" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Treasury</text>
+  <text x="370" y="353" text-anchor="middle" font-size="10" fill="#264653">custody</text>
+
+  <rect x="434" y="325" width="108" height="38" rx="4" fill="white" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="488" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Framework</text>
+  <text x="488" y="353" text-anchor="middle" font-size="10" fill="#264653">interpretation</text>
+
+  <rect x="552" y="325" width="108" height="38" rx="4" fill="white" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="606" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Exit</text>
+  <text x="606" y="353" text-anchor="middle" font-size="10" fill="#264653">conditions</text>
+
+  <rect x="670" y="325" width="108" height="38" rx="4" fill="white" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="724" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Public</text>
+  <text x="724" y="353" text-anchor="middle" font-size="10" fill="#264653">accountability</text>
+
+  <text x="780" y="393" text-anchor="end" font-size="10" font-style="italic" fill="#2a9d8f">S(C, t) = S(C, 0) · e^(-λt). Human. Mortal.</text>
+
+  <!-- Arrow: Custodian → Discretionary -->
+  <line x1="450" y1="415" x2="450" y2="450" stroke="#495057" stroke-width="2.5" marker-end="url(#downA)"/>
+  <text x="500" y="438" font-size="11" font-weight="600" fill="#495057">sets agenda ↓</text>
+
+  <!-- === LAYER 3: DISCRETIONARY LAYER === -->
+  <rect x="60" y="460" width="780" height="145" rx="8" fill="url(#discG)" stroke="#f4a261" stroke-width="2" filter="url(#sh)"/>
+  <text x="450" y="485" text-anchor="middle" font-size="18" font-weight="700" fill="#e76f51">THE DISCRETIONARY LAYER</text>
+  <text x="450" y="502" text-anchor="middle" font-size="12" fill="#e76f51">$MORR token holders — voted governance of adjustable parameters only.</text>
+
+  <!-- 6 items -->
+  <rect x="80" y="515" width="108" height="38" rx="4" fill="white" stroke="#f4a261" stroke-width="1"/>
+  <text x="134" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Hard-decline</text>
+  <text x="134" y="543" text-anchor="middle" font-size="10" fill="#264653">appeals</text>
+
+  <rect x="198" y="515" width="108" height="38" rx="4" fill="white" stroke="#f4a261" stroke-width="1"/>
+  <text x="252" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Remediation</text>
+  <text x="252" y="543" text-anchor="middle" font-size="10" fill="#264653">acceptance</text>
+
+  <rect x="316" y="515" width="108" height="38" rx="4" fill="white" stroke="#f4a261" stroke-width="1"/>
+  <text x="370" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Score</text>
+  <text x="370" y="543" text-anchor="middle" font-size="10" fill="#264653">disputes</text>
+
+  <rect x="434" y="515" width="108" height="38" rx="4" fill="white" stroke="#f4a261" stroke-width="1"/>
+  <text x="488" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Priority</text>
+  <text x="488" y="543" text-anchor="middle" font-size="10" fill="#264653">queue</text>
+
+  <rect x="552" y="515" width="108" height="38" rx="4" fill="white" stroke="#f4a261" stroke-width="1"/>
+  <text x="606" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Revenue</text>
+  <text x="606" y="543" text-anchor="middle" font-size="10" fill="#264653">allocation</text>
+
+  <rect x="670" y="515" width="108" height="38" rx="4" fill="white" stroke="#f4a261" stroke-width="1"/>
+  <text x="724" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">Enterprise</text>
+  <text x="724" y="543" text-anchor="middle" font-size="10" fill="#264653">on-ramp</text>
+
+  <text x="780" y="583" text-anchor="end" font-size="10" font-style="italic" fill="#e76f51">Token is NOT equity. Governance of adjustable layer only.</text>
+
+  <!-- Block arrow on left: "Cannot vote on" -->
+  <line x1="40" y1="460" x2="40" y2="225" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5" marker-end="url(#upA)"/>
+  <text x="30" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#e63946" transform="rotate(-90,30,340)">Cannot vote on methodology</text>
+
+  <!-- Bottom: CCT and V(G) scores -->
+  <rect x="60" y="625" width="780" height="58" rx="6" fill="white" stroke="#1a1a2e" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="200" y="648" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Governance V(G) = 2/12</text>
+  <text x="200" y="668" text-anchor="middle" font-size="11" fill="#6c757d">Scored monarchy (Paper 10)</text>
+  <line x1="370" y1="633" x2="370" y2="675" stroke="#dee2e6" stroke-width="1"/>
+  <text x="530" y="648" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Standard DAO: V(G) = 10/12</text>
+  <text x="530" y="668" text-anchor="middle" font-size="11" fill="#6c757d">All three layers voted on</text>
+  <line x1="690" y1="633" x2="690" y2="675" stroke="#dee2e6" stroke-width="1"/>
+  <text x="780" y="648" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">CCT: drift ≤ V(G)/S(C)</text>
+  <text x="780" y="668" text-anchor="middle" font-size="11" fill="#6c757d">Lower V(G) = less drift</text>
+</svg>

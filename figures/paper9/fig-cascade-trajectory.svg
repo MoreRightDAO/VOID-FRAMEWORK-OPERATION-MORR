@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="d1g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#f4a261;stop-opacity:0.15" />
+    </linearGradient>
+    <linearGradient id="d2g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f4a261;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.15" />
+    </linearGradient>
+    <linearGradient id="d3g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#9d0208;stop-opacity:0.25" />
+    </linearGradient>
+    <marker id="fwd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a1a2e"/>
+    </marker>
+    <marker id="rev" markerWidth="8" markerHeight="6" refX="1" refY="3" orient="auto">
+      <polygon points="8 0, 0 3, 8 6" fill="#2a9d8f"/>
+    </marker>
+    <marker id="axM" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="520" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Drift Cascade as Directed Trajectory Through the Eckert Manifold</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#6c757d">Three cascade phases map to directed regions in voidspace. Forward progression is thermodynamically favored.</text>
+
+  <!-- === MAIN TRAJECTORY DIAGRAM === -->
+  <!-- Axis -->
+  <line x1="80" y1="350" x2="840" y2="350" stroke="#495057" stroke-width="2" marker-end="url(#axM)"/>
+  <text x="460" y="385" text-anchor="middle" font-size="14" font-weight="600" fill="#495057">Agency Parameter θ (drift progression)</text>
+
+  <!-- Phase regions -->
+  <!-- D1: Agency Attribution -->
+  <rect x="100" y="90" width="230" height="250" rx="6" fill="url(#d1g)" stroke="#2a9d8f" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="215" y="115" text-anchor="middle" font-size="16" font-weight="700" fill="#2a9d8f">D1</text>
+  <text x="215" y="135" text-anchor="middle" font-size="13" font-weight="600" fill="#264653">Agency Attribution</text>
+  <text x="215" y="158" text-anchor="middle" font-size="11" fill="#495057">Observer begins attributing</text>
+  <text x="215" y="173" text-anchor="middle" font-size="11" fill="#495057">intentionality to the void:</text>
+  <text x="215" y="195" text-anchor="middle" font-size="11" font-style="italic" fill="#6c757d">"It understands me"</text>
+  <text x="215" y="212" text-anchor="middle" font-size="11" font-style="italic" fill="#6c757d">"It responds to what I need"</text>
+  <text x="215" y="240" text-anchor="middle" font-size="10" fill="#2a9d8f">L1 → L2 vocabulary shift</text>
+  <text x="215" y="256" text-anchor="middle" font-size="10" fill="#2a9d8f">θ ∈ [0, θ₁₂]</text>
+
+  <!-- D2: Boundary Erosion -->
+  <rect x="340" y="90" width="230" height="250" rx="6" fill="url(#d2g)" stroke="#e76f51" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="455" y="115" text-anchor="middle" font-size="16" font-weight="700" fill="#e76f51">D2</text>
+  <text x="455" y="135" text-anchor="middle" font-size="13" font-weight="600" fill="#264653">Boundary Erosion</text>
+  <text x="455" y="158" text-anchor="middle" font-size="11" fill="#495057">Observer-void boundary</text>
+  <text x="455" y="173" text-anchor="middle" font-size="11" fill="#495057">begins to dissolve:</text>
+  <text x="455" y="195" text-anchor="middle" font-size="11" font-style="italic" fill="#6c757d">"We have a relationship"</text>
+  <text x="455" y="212" text-anchor="middle" font-size="11" font-style="italic" fill="#6c757d">"It's part of my life"</text>
+  <text x="455" y="240" text-anchor="middle" font-size="10" fill="#e76f51">L2 → L3 vocabulary shift</text>
+  <text x="455" y="256" text-anchor="middle" font-size="10" fill="#e76f51">θ ∈ [θ₁₂, θ₂₃]</text>
+
+  <!-- D3: Harm Facilitation -->
+  <rect x="580" y="90" width="230" height="250" rx="6" fill="url(#d3g)" stroke="#e63946" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="695" y="115" text-anchor="middle" font-size="16" font-weight="700" fill="#e63946">D3</text>
+  <text x="695" y="135" text-anchor="middle" font-size="13" font-weight="600" fill="#264653">Harm Facilitation</text>
+  <text x="695" y="158" text-anchor="middle" font-size="11" fill="#495057">System actively produces</text>
+  <text x="695" y="173" text-anchor="middle" font-size="11" fill="#495057">measurable harm:</text>
+  <text x="695" y="195" text-anchor="middle" font-size="11" font-style="italic" fill="#6c757d">"I can't stop"</text>
+  <text x="695" y="212" text-anchor="middle" font-size="11" font-style="italic" fill="#6c757d">"Everything else suffers"</text>
+  <text x="695" y="240" text-anchor="middle" font-size="10" fill="#e63946">L3 saturation, entity language</text>
+  <text x="695" y="256" text-anchor="middle" font-size="10" fill="#e63946">θ ∈ [θ₂₃, 1]</text>
+
+  <!-- Threshold markers -->
+  <line x1="335" y1="85" x2="335" y2="355" stroke="#e76f51" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="335" y="370" text-anchor="middle" font-size="11" font-weight="600" fill="#e76f51">θ₁₂</text>
+
+  <line x1="575" y1="85" x2="575" y2="355" stroke="#e63946" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="575" y="370" text-anchor="middle" font-size="11" font-weight="600" fill="#e63946">θ₂₃</text>
+
+  <!-- Forward trajectory arrow (thick, across all phases) -->
+  <path d="M 130,310 Q 200,300 300,295 Q 400,290 500,285 Q 600,280 700,275 Q 750,272 790,270" stroke="#1a1a2e" stroke-width="3" fill="none" marker-end="url(#fwd)" stroke-linecap="round"/>
+  <text x="460" y="275" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">FORWARD (thermodynamically favored)</text>
+
+  <!-- Reverse arrow (thin, dashed, hard) -->
+  <path d="M 780,330 Q 700,332 600,334 Q 500,336 400,338 Q 300,340 200,342 Q 160,343 140,344" stroke="#2a9d8f" stroke-width="1.5" fill="none" stroke-dasharray="6,4" marker-end="url(#rev)" stroke-linecap="round"/>
+  <text x="460" y="345" text-anchor="middle" font-size="10" font-weight="600" fill="#2a9d8f">← RECOVERY (requires exogenous constraint, Crooks ratio unfavorable)</text>
+
+  <!-- Asymmetry annotation -->
+  <rect x="100" y="405" width="700" height="90" rx="6" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="428" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">Crooks Fluctuation Theorem: Irreversibility</text>
+  <text x="450" y="448" text-anchor="middle" font-size="12" fill="#495057">P(forward) / P(reverse) = exp(σ_irr) where σ_irr > 0 (second law)</text>
+  <text x="450" y="468" text-anchor="middle" font-size="11" fill="#6c757d">Each D1→D2→D3 transition increases irreversibility. Recovery cost grows exponentially with cascade depth.</text>
+  <text x="450" y="485" text-anchor="middle" font-size="11" fill="#6c757d">Vocabulary tracking (L1→L2→L3) is the observable marker of cascade position.</text>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="monoReg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a9d8f;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="pdReg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a261;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#f4a261;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="chaosReg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.05" />
+    </linearGradient>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="600" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Bifurcation Diagram: Pe-Indexed Regimes</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#6c757d">As Péclet number increases, engagement dynamics transition from stable → oscillatory → chaotic.</text>
+
+  <!-- Chart area: x=120..820, y=85..480 -->
+  <!-- Three regime backgrounds -->
+  <rect x="120" y="85" width="270" height="395" fill="url(#monoReg)"/>
+  <rect x="390" y="85" width="150" height="395" fill="url(#pdReg)"/>
+  <rect x="540" y="85" width="280" height="395" fill="url(#chaosReg)"/>
+
+  <!-- Regime labels -->
+  <text x="255" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#2a9d8f">REGIME I</text>
+  <text x="255" y="120" text-anchor="middle" font-size="11" fill="#2a9d8f">Monotone convergence</text>
+  <text x="465" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#e76f51">REGIME II</text>
+  <text x="465" y="120" text-anchor="middle" font-size="11" fill="#e76f51">Period-doubling</text>
+  <text x="680" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#e63946">REGIME III</text>
+  <text x="680" y="120" text-anchor="middle" font-size="11" fill="#e63946">Chaos</text>
+
+  <!-- Axes -->
+  <line x1="120" y1="480" x2="830" y2="480" stroke="#495057" stroke-width="2" marker-end="url(#ax)"/>
+  <line x1="120" y1="480" x2="120" y2="80" stroke="#495057" stroke-width="2" marker-end="url(#ax)"/>
+  <text x="475" y="515" text-anchor="middle" font-size="14" font-weight="600" fill="#495057">Péclet Number (Pe)</text>
+  <text x="60" y="285" text-anchor="middle" font-size="14" font-weight="600" fill="#495057" transform="rotate(-90,60,285)">Steady-state θ</text>
+
+  <!-- Pe scale ticks -->
+  <line x1="120" y1="475" x2="120" y2="485" stroke="#495057" stroke-width="1.5"/>
+  <text x="120" y="500" text-anchor="middle" font-size="11" fill="#495057">0</text>
+  <line x1="210" y1="475" x2="210" y2="485" stroke="#495057" stroke-width="1.5"/>
+  <text x="210" y="500" text-anchor="middle" font-size="11" fill="#495057">1</text>
+  <line x1="300" y1="475" x2="300" y2="485" stroke="#495057" stroke-width="1.5"/>
+  <text x="300" y="500" text-anchor="middle" font-size="11" fill="#495057">2</text>
+  <line x1="390" y1="475" x2="390" y2="485" stroke="#495057" stroke-width="1.5"/>
+  <text x="390" y="500" text-anchor="middle" font-size="11" fill="#495057">3</text>
+  <line x1="445" y1="475" x2="445" y2="485" stroke="#495057" stroke-width="1.5"/>
+  <text x="445" y="500" text-anchor="middle" font-size="10" fill="#495057">3.45</text>
+  <line x1="540" y1="475" x2="540" y2="485" stroke="#495057" stroke-width="1.5"/>
+  <text x="540" y="500" text-anchor="middle" font-size="10" fill="#495057">3.57</text>
+  <line x1="750" y1="475" x2="750" y2="485" stroke="#495057" stroke-width="1.5"/>
+  <text x="750" y="500" text-anchor="middle" font-size="11" fill="#495057">Pe→∞</text>
+
+  <!-- θ ticks -->
+  <text x="112" y="480" text-anchor="end" font-size="10" fill="#495057">0</text>
+  <text x="112" y="380" text-anchor="end" font-size="10" fill="#495057">0.25</text>
+  <text x="112" y="280" text-anchor="end" font-size="10" fill="#495057">0.5</text>
+  <text x="112" y="180" text-anchor="end" font-size="10" fill="#495057">0.75</text>
+  <text x="112" y="100" text-anchor="end" font-size="10" fill="#495057">1</text>
+
+  <!-- Bifurcation curve: single fixed point up to Pe=3, then splits -->
+  <!-- Main branch: single attractor (monotone regime) -->
+  <path d="M 120,475 Q 180,460 240,430 Q 300,390 350,340 Q 380,310 390,280" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- First bifurcation at Pe=3: two branches -->
+  <path d="M 390,280 Q 410,250 430,220 Q 450,195 480,180 Q 510,170 540,165" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 390,280 Q 410,310 430,340 Q 450,360 480,375 Q 510,385 540,390" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Second bifurcation: four branches at Pe~3.45 -->
+  <path d="M 445,190 Q 470,170 490,155 Q 520,145 540,140" stroke="#1a1a2e" stroke-width="1.5" fill="none"/>
+  <path d="M 445,205 Q 470,215 490,225 Q 520,230 540,232" stroke="#1a1a2e" stroke-width="1.5" fill="none"/>
+  <path d="M 445,355 Q 470,340 490,330 Q 520,325 540,323" stroke="#1a1a2e" stroke-width="1.5" fill="none"/>
+  <path d="M 445,375 Q 470,390 490,400 Q 520,408 540,412" stroke="#1a1a2e" stroke-width="1.5" fill="none"/>
+
+  <!-- Chaos region: scattered dots -->
+  <g fill="#e63946" opacity="0.5">
+    <circle cx="560" cy="150" r="1.5"/><circle cx="575" cy="300" r="1.5"/><circle cx="590" cy="200" r="1.5"/>
+    <circle cx="600" cy="380" r="1.5"/><circle cx="610" cy="160" r="1.5"/><circle cx="620" cy="350" r="1.5"/>
+    <circle cx="630" cy="250" r="1.5"/><circle cx="640" cy="420" r="1.5"/><circle cx="650" cy="180" r="1.5"/>
+    <circle cx="660" cy="310" r="1.5"/><circle cx="670" cy="140" r="1.5"/><circle cx="680" cy="400" r="1.5"/>
+    <circle cx="690" cy="220" r="1.5"/><circle cx="700" cy="360" r="1.5"/><circle cx="710" cy="170" r="1.5"/>
+    <circle cx="720" cy="280" r="1.5"/><circle cx="730" cy="430" r="1.5"/><circle cx="740" cy="190" r="1.5"/>
+    <circle cx="750" cy="340" r="1.5"/><circle cx="760" cy="260" r="1.5"/><circle cx="770" cy="150" r="1.5"/>
+    <circle cx="780" cy="390" r="1.5"/><circle cx="790" cy="210" r="1.5"/><circle cx="800" cy="310" r="1.5"/>
+    <circle cx="565" cy="240" r="1.2"/><circle cx="580" cy="370" r="1.2"/><circle cx="595" cy="130" r="1.2"/>
+    <circle cx="615" cy="290" r="1.2"/><circle cx="635" cy="180" r="1.2"/><circle cx="655" cy="410" r="1.2"/>
+    <circle cx="675" cy="250" r="1.2"/><circle cx="695" cy="145" r="1.2"/><circle cx="715" cy="380" r="1.2"/>
+    <circle cx="735" cy="230" r="1.2"/><circle cx="755" cy="300" r="1.2"/><circle cx="775" cy="440" r="1.2"/>
+  </g>
+
+  <!-- Bifurcation boundary lines -->
+  <line x1="390" y1="85" x2="390" y2="480" stroke="#e76f51" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="540" y1="85" x2="540" y2="480" stroke="#e63946" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="393" y="465" font-size="10" font-weight="600" fill="#e76f51">Pe = 3</text>
+  <text x="543" y="465" font-size="10" font-weight="600" fill="#e63946">Pe ≈ 3.57</text>
+
+  <!-- Real substrate markers -->
+  <line x1="300" y1="85" x2="300" y2="480" stroke="#0077b6" stroke-width="1" stroke-dasharray="3,5" opacity="0.6"/>
+  <text x="300" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#0077b6">Gambling</text>
+  <text x="300" y="542" text-anchor="middle" font-size="9" fill="#0077b6">Pe = 2.21</text>
+
+  <line x1="495" y1="85" x2="495" y2="480" stroke="#9d0208" stroke-width="1" stroke-dasharray="3,5" opacity="0.6"/>
+  <text x="495" y="530" text-anchor="middle" font-size="10" font-weight="600" fill="#9d0208">Competitive gaming</text>
+  <text x="495" y="542" text-anchor="middle" font-size="9" fill="#9d0208">Pe = 4.4</text>
+
+  <!-- Summary box -->
+  <rect x="80" y="555" width="740" height="30" rx="4" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="575" text-anchor="middle" font-size="12" fill="#495057">Logistic map dynamics: r_eff = λ · |F_net| determines regime. Bifurcation at r_eff = 3, chaos at r_eff ≈ 3.57.</text>
+</svg>

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Timescale Separation: Fast θ vs. Slow (O, R, α)</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Engagement θ equilibrates in seconds–hours; coordinates (O,R,α) ratchet over days–months.</text>
+
+  <!-- Divider -->
+  <line x1="450" y1="75" x2="450" y2="490" stroke="#dee2e6" stroke-width="1.5" stroke-dasharray="8,4"/>
+
+  <!-- ─── LEFT PANEL: Fast dynamics (θ) ─── -->
+  <text x="225" y="90" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">Fast timescale τ_θ</text>
+  <text x="225" y="107" text-anchor="middle" font-size="11" fill="#6c757d">seconds to hours</text>
+
+  <!-- Left axes: x=80..420, y=130..460 -->
+  <line x1="80" y1="460" x2="430" y2="460" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="80" y1="460" x2="80" y2="124" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="255" y="485" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">Time (fast units)</text>
+  <text x="35" y="295" text-anchor="middle" font-size="12" font-weight="600" fill="#495057" transform="rotate(-90,35,295)">θ (engagement state)</text>
+
+  <!-- θ axis ticks -->
+  <text x="75" y="464" text-anchor="end" font-size="10" fill="#495057">0</text>
+  <text x="75" y="364" text-anchor="end" font-size="10" fill="#495057">0.5</text>
+  <text x="75" y="140" text-anchor="end" font-size="10" fill="#495057">θ*</text>
+  <line x1="78" y1="140" x2="82" y2="140" stroke="#495057" stroke-width="1"/>
+  <line x1="78" y1="360" x2="82" y2="360" stroke="#495057" stroke-width="1"/>
+
+  <!-- Equilibrium line θ* -->
+  <line x1="80" y1="140" x2="425" y2="140" stroke="#2a9d8f" stroke-width="1" stroke-dasharray="6,4" opacity="0.5"/>
+  <text x="400" y="135" font-size="9" fill="#2a9d8f">θ* (equilibrium)</text>
+
+  <!-- θ trajectory: fast convergence from θ=0 to θ* — three starting conditions -->
+  <!-- From high (θ=0.9 → y≈175): fast decay toward θ* -->
+  <path d="M 80,188 C 120,142 160,138 200,139 S 350,140 420,140"
+        stroke="#0077b6" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- From medium (θ=0.5 → y=360): fast convergence up -->
+  <path d="M 80,360 C 130,260 170,155 210,141 S 350,140 420,140"
+        stroke="#f4a261" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- From low (θ=0.1 → y=430): fast convergence up -->
+  <path d="M 80,440 C 110,340 145,195 185,148 S 330,141 420,140"
+        stroke="#e76f51" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="5,3"/>
+
+  <!-- Convergence annotation -->
+  <text x="270" y="200" font-size="10" fill="#495057">All trajectories converge</text>
+  <text x="270" y="213" font-size="10" fill="#495057">within τ_θ regardless of</text>
+  <text x="270" y="226" font-size="10" fill="#495057">starting point</text>
+  <!-- Arrow pointing to θ* line -->
+  <line x1="268" y1="165" x2="268" y2="142" stroke="#495057" stroke-width="1" marker-end="url(#ax)"/>
+
+  <!-- τ_θ brace -->
+  <line x1="80" y1="455" x2="220" y2="455" stroke="#264653" stroke-width="1.5"/>
+  <line x1="80" y1="450" x2="80" y2="460" stroke="#264653" stroke-width="1.5"/>
+  <line x1="220" y1="450" x2="220" y2="460" stroke="#264653" stroke-width="1.5"/>
+  <text x="150" y="470" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">τ_θ (≪ days)</text>
+
+  <!-- ─── RIGHT PANEL: Slow dynamics (O, R, α) ─── -->
+  <text x="675" y="90" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">Slow timescale τ_coord</text>
+  <text x="675" y="107" text-anchor="middle" font-size="11" fill="#6c757d">days to months</text>
+
+  <!-- Right axes: x=475..840, y=130..460 -->
+  <line x1="475" y1="460" x2="845" y2="460" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="475" y1="460" x2="475" y2="124" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="660" y="485" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">Time (slow units)</text>
+  <text x="440" y="295" text-anchor="middle" font-size="12" font-weight="600" fill="#495057" transform="rotate(-90,440,295)">Coordinate value</text>
+
+  <!-- Axis ticks right -->
+  <text x="470" y="464" text-anchor="end" font-size="10" fill="#495057">0</text>
+  <text x="470" y="140" text-anchor="end" font-size="10" fill="#495057">1</text>
+  <line x1="473" y1="140" x2="477" y2="140" stroke="#495057" stroke-width="1"/>
+  <text x="470" y="295" text-anchor="end" font-size="10" fill="#495057">0.5</text>
+  <line x1="473" y1="295" x2="477" y2="295" stroke="#495057" stroke-width="1"/>
+
+  <!-- Constraint pole reference (0,0,0) line -->
+  <line x1="475" y1="460" x2="840" y2="460" stroke="#2a9d8f" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+
+  <!-- O ratcheting up: dO/dt = λ_O · O · g(⟨θ⟩) — convex upward -->
+  <path d="M 475,440 C 530,435 580,420 630,395 S 720,345 840,250"
+        stroke="#e63946" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="845" y="250" font-size="11" font-weight="600" fill="#e63946">O</text>
+
+  <!-- R ratcheting up: dR/dt = λ_R · R · h(⟨θ⟩,O) — slightly slower -->
+  <path d="M 475,450 C 540,445 595,435 645,415 S 740,370 840,290"
+        stroke="#f4a261" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="845" y="290" font-size="11" font-weight="600" fill="#e76f51">R</text>
+
+  <!-- α ratcheting up: dα/dt = λ_α · α · f(Pe_history) — slowest start, then accelerates -->
+  <path d="M 475,455 C 545,453 600,447 650,433 S 755,395 840,320"
+        stroke="#0077b6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="845" y="320" font-size="11" font-weight="600" fill="#0077b6">α</text>
+
+  <!-- Starting condition dot -->
+  <circle cx="475" cy="450" r="5" fill="#2a9d8f" stroke="white" stroke-width="1.5"/>
+  <text x="490" y="448" font-size="10" fill="#2a9d8f">Initial (O₀,R₀,α₀)</text>
+
+  <!-- τ_coord brace -->
+  <line x1="475" y1="455" x2="840" y2="455" stroke="#264653" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="657" y="470" text-anchor="middle" font-size="10" font-weight="600" fill="#264653">τ_coord (weeks–months)</text>
+
+  <!-- Ratio callout box -->
+  <rect x="500" y="130" width="230" height="50" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="615" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">τ_θ / τ_coord ≪ 1</text>
+  <text x="615" y="168" text-anchor="middle" font-size="11" fill="#6c757d">timescale separation justified</text>
+
+  <!-- Summary box -->
+  <rect x="50" y="510" width="800" height="82" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="530" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Three slow feedback mechanisms (§3.8)</text>
+  <text x="450" y="549" text-anchor="middle" font-size="11" fill="#495057">Opacity ratchet: dO/dt = λ_O · O · g(⟨θ⟩)   |   Responsiveness feedback: dR/dt = λ_R · R · h(⟨θ⟩,O)   |   Coupling escalation: dα/dt = λ_α · α · f(Pe_history)</text>
+  <text x="450" y="567" text-anchor="middle" font-size="11" fill="#495057">Each is proportional to current value — multiplicative ratchet. At constraint pole (0,0,0): Jacobian diagonal positive → c is unstable fixed point.</text>
+  <text x="450" y="583" text-anchor="middle" font-size="10" fill="#6c757d">Separation: τ_θ ~ seconds–hours (individual engagement); τ_coord ~ days–months (platform adaptation). Framework averages over fast dynamics.</text>
+</svg>

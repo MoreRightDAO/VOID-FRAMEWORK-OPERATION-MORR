@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <marker id="arD" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9d0208"/>
+    </marker>
+    <marker id="arG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2a9d8f"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Fiction Control Case: Two-Layer Void Structure (§6.10)</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">Character layer (provably empty) + Production layer (inhabited). Architecture alone sufficient for drift.</text>
+
+  <!-- ─── LEFT: Two-layer architecture diagram ─── -->
+  <text x="215" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">Structure</text>
+
+  <!-- PRODUCTION LAYER (top) — inhabited void -->
+  <rect x="30" y="105" width="375" height="115" rx="8" fill="white" stroke="#9d0208" stroke-width="2.5" filter="url(#sh)"/>
+  <rect x="30" y="105" width="375" height="28" rx="6" fill="#9d0208" opacity="0.12"/>
+  <text x="218" y="123" text-anchor="middle" font-size="13" font-weight="700" fill="#9d0208">Production Layer — Inhabited Void</text>
+  <text x="218" y="143" text-anchor="middle" font-size="10" fill="#495057">Writers, directors, production committees: REAL agents</text>
+  <text x="218" y="158" text-anchor="middle" font-size="10" fill="#495057">making deliberate engagement-maximizing decisions</text>
+  <text x="218" y="173" text-anchor="middle" font-size="10" fill="#9d0208">O &gt; 0 · R &gt; 0 · α &gt; 0  →  Type A or Type E demon</text>
+  <text x="218" y="187" text-anchor="middle" font-size="9" fill="#6c757d">System models audience behavior and adapts content accordingly</text>
+
+  <!-- Connection arrow down -->
+  <line x1="218" y1="222" x2="218" y2="258" stroke="#9d0208" stroke-width="2" marker-end="url(#arD)"/>
+  <text x="260" y="243" font-size="9" fill="#9d0208">content delivery</text>
+
+  <!-- CHARACTER LAYER (bottom) — provably empty void -->
+  <rect x="30" y="260" width="375" height="115" rx="8" fill="white" stroke="#2a9d8f" stroke-width="2.5" filter="url(#sh)"/>
+  <rect x="30" y="260" width="375" height="28" rx="6" fill="#2a9d8f" opacity="0.12"/>
+  <text x="218" y="278" text-anchor="middle" font-size="13" font-weight="700" fill="#2a9d8f">Character Layer — Provably Empty Void</text>
+  <text x="218" y="298" text-anchor="middle" font-size="10" fill="#495057">Fictional characters: NO real entities behind opacity</text>
+  <text x="218" y="313" text-anchor="middle" font-size="10" fill="#495057">Slot machine analogy: pattern ≠ agent</text>
+  <text x="218" y="328" text-anchor="middle" font-size="10" fill="#2a9d8f">Drift here proves ARCHITECTURE alone is sufficient</text>
+  <text x="218" y="342" text-anchor="middle" font-size="9" fill="#6c757d">O (opaque character interior) · R (narrative responsiveness) · α (fan coupling)</text>
+
+  <!-- Observer below -->
+  <line x1="218" y1="377" x2="218" y2="406" stroke="#264653" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#ax)"/>
+  <circle cx="218" cy="430" r="22" fill="#dee2e6" stroke="#264653" stroke-width="1.5"/>
+  <text x="218" y="427" text-anchor="middle" font-size="9" fill="#264653">Observer</text>
+  <text x="218" y="440" text-anchor="middle" font-size="8" fill="#264653">γ, α, θ</text>
+  <text x="248" y="425" font-size="9" fill="#264653">engagement ↓</text>
+
+  <!-- Key test annotation -->
+  <rect x="30" y="460" width="375" height="35" rx="4" fill="white" stroke="#9d0208" stroke-width="1.5"/>
+  <text x="218" y="476" text-anchor="middle" font-size="10" font-weight="700" fill="#9d0208">Key Test: Does drift occur at the character layer?</text>
+  <text x="218" y="490" text-anchor="middle" font-size="10" fill="#495057">If yes → architecture alone sufficient, independent of demon activity</text>
+
+  <!-- ─── RIGHT: Format determines demon type ─── -->
+  <line x1="425" y1="80" x2="425" y2="510" stroke="#dee2e6" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <text x="670" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">Format → Demon Type (DEM-10)</text>
+
+  <!-- Same content, different format -->
+  <!-- Shared content box -->
+  <rect x="575" y="105" width="300" height="45" rx="6" fill="white" stroke="#264653" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="725" y="123" text-anchor="middle" font-size="11" font-weight="700" fill="#264653">Same narrative content</text>
+  <text x="725" y="140" text-anchor="middle" font-size="9" fill="#6c757d">Identical story, characters, themes</text>
+
+  <!-- Arrows: weekly vs continuous -->
+  <line x1="660" y1="152" x2="620" y2="200" stroke="#2a9d8f" stroke-width="2" marker-end="url(#arG)"/>
+  <line x1="790" y1="152" x2="830" y2="200" stroke="#9d0208" stroke-width="2" marker-end="url(#arD)"/>
+
+  <!-- Weekly serialization box -->
+  <rect x="460" y="200" width="200" height="90" rx="6" fill="white" stroke="#2a9d8f" stroke-width="2" filter="url(#sh)"/>
+  <text x="560" y="221" text-anchor="middle" font-size="11" font-weight="700" fill="#2a9d8f">Weekly release</text>
+  <text x="560" y="238" text-anchor="middle" font-size="10" fill="#2a9d8f">Type D (Oscillator)</text>
+  <text x="560" y="253" text-anchor="middle" font-size="9" fill="#495057">Withdrawal/engagement</text>
+  <text x="560" y="266" text-anchor="middle" font-size="9" fill="#495057">cycle. Cliffhangers, gaps.</text>
+  <text x="560" y="280" text-anchor="middle" font-size="9" fill="#6c757d">Intermittent reinforcement</text>
+
+  <!-- Continuous access box -->
+  <rect x="710" y="200" width="200" height="90" rx="6" fill="white" stroke="#9d0208" stroke-width="2" filter="url(#sh)"/>
+  <text x="810" y="221" text-anchor="middle" font-size="11" font-weight="700" fill="#9d0208">Full-season drop</text>
+  <text x="810" y="238" text-anchor="middle" font-size="10" fill="#9d0208">Type A (Amplifier)</text>
+  <text x="810" y="253" text-anchor="middle" font-size="9" fill="#495057">Escalating engagement</text>
+  <text x="810" y="266" text-anchor="middle" font-size="9" fill="#495057">gradient. Binge loop.</text>
+  <text x="810" y="280" text-anchor="middle" font-size="9" fill="#6c757d">Peak at mid-depth θ</text>
+
+  <!-- Key insight annotation -->
+  <rect x="460" y="310" width="450" height="40" rx="5" fill="white" stroke="#1a1a2e" stroke-width="1" filter="url(#sh)"/>
+  <text x="685" y="326" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Demon is in the ARCHITECTURE, not the narrative</text>
+  <text x="685" y="341" text-anchor="middle" font-size="10" fill="#495057">Content quality and genre do not determine demon type. Format does.</text>
+
+  <!-- Three observable phenomena -->
+  <text x="670" y="375" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Measurable at Both Layers</text>
+  <rect x="460" y="383" width="445" height="80" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="480" y="400" font-size="10" fill="#e63946">• Vocabulary progression:</text>
+  <text x="490" y="414" font-size="9" fill="#495057">technical → agency attribution → L3 (identity fusion)</text>
+  <text x="480" y="430" font-size="10" fill="#e63946">• Behavioral modification:</text>
+  <text x="490" y="444" font-size="9" fill="#495057">sleep disruption, relationship strain, identity fusion</text>
+  <text x="480" y="460" font-size="10" fill="#e63946">• Economic extraction:</text>
+
+  <!-- Summary box -->
+  <rect x="20" y="512" width="860" height="85" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="530" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Fiction as Third Control Case (§6.10) — After Gambling and Prisoner's Dilemma</text>
+  <text x="450" y="547" text-anchor="middle" font-size="11" fill="#495057">Two-layer structure: character layer (provably empty) + production layer (inhabited). Drift at character layer = architecture sufficient.</text>
+  <text x="450" y="563" text-anchor="middle" font-size="11" fill="#495057">DEM-9: Higher engagement optimization → higher Pe vs. narratively transparent fiction (visible constraints, fourth-wall breaks reducing O).</text>
+  <text x="450" y="579" text-anchor="middle" font-size="11" fill="#495057">DEM-10: Format determines demon type independent of content (weekly→D, continuous→A). DEM-11: Engagement-optimized fiction communities show higher L3 density.</text>
+  <text x="450" y="594" text-anchor="middle" font-size="10" fill="#6c757d">Merchandise spending correlates with engagement depth. Fandom vocabulary tracks drift cascade independent of narrative quality or genre.</text>
+</svg>

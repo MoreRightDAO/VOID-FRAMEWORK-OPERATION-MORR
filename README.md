@@ -81,6 +81,13 @@ Open Science movement. Advertising regulation (FTC, 1914+). PEACE interrogation 
 Deradicalization programs. Five independent cross-cultural institutional traditions. Thirteen
 convergences on the same three-property specification, none of them aware of each other.
 
+**6. Five substrates independently produce the same Péclet number.** Market microstructure
+(Kyle's λ, Spearman=0.994, N=8), behavioral scoring bridge (c=1−V/9, Spearman=0.910, N=17),
+evolutionary biology (Kimura 1968 Pe=4Ns identity, Spearman=0.973, N=20), social neuroscience
+(Dunbar's neocortex ratio = THRML K, Spearman=0.945, N=28), and LLM reasoning geometry
+(Chen et al. 2026, Spearman=0.988, N=10). Five programs. Five independent datasets. Five
+independent derivations. Same number.
+
 **5. The math is quantum measurement theory.** Paper 8 proves the void framework's
 mathematics is the classical limit of quantum measurement theory. Fisher information →
 quantum Fisher information. Péclet number → Nelson stochastic mechanics. The Fantasia Bound
@@ -111,14 +118,15 @@ that derives its own edges has no gaps — only limits it can point at.
 ## CURRENT STATUS
 
 ```
-Papers:                  46  (all on Zenodo)
+Papers:                  43  (all on Zenodo)
 Predictions made:       200+
 Predictions confirmed:   16
 Predictions killed:       1  (by us — IC-5, equal-step DTM claim)
 Falsification conditions: 26
 Kill conditions met:       0
-Substrates measured:       9
+Substrates measured:      11
 Domains analyzed:         90
+Independent convergences:  5
 ```
 
 ### Pe across substrates
@@ -137,6 +145,8 @@ One number. Works everywhere.
 | Base Dencun (natural experiment) | +25%, p < 10⁻⁶ | 1,944 wallets |
 | CS2 contested nodes | 4.4–6.9× clean/contested | 2,299 rounds |
 | Cross-domain (5 topics) | 1.87–9.9 | — |
+| Evolutionary biology (Kimura 4Ns) | 0.973 Spearman | N=20 species |
+| Social neuroscience (Dunbar K) | 0.9448 Spearman | N=28 primates |
 | Grounded conditions | ≈ 0 | all cases |
 
 Same measure. Same pattern. Every substrate.
@@ -145,7 +155,7 @@ Same measure. Same pattern. Every substrate.
 
 ## THE PAPERS
 
-Forty-six papers. The science runs from thermodynamics → AI safety → quantum measurement theory → governance → social media → scoring infrastructure → 30 applied domain analyses across every major sector where voids operate.
+Forty-three papers. The science runs from thermodynamics → AI safety → quantum measurement theory → governance → social media → evolutionary biology → social neuroscience → cancer biology → EU AI Act conformity → scoring infrastructure → 30 applied domain analyses across every major sector where voids operate.
 
 Start with Paper 1 if you're new. Paper 3 if you want the math. Paper 9 if you want the
 geometry. Paper 5 if you want the full scope. Paper 8 if you're a physicist.
@@ -207,15 +217,19 @@ These papers apply the framework to specific commercial domains. Free for non-co
 | [36](papers/paper36-psychotherapy.md) | **The Transference Trap** ⚠️ | Psychotherapy. |
 | [37](papers/paper37-real-estate-proptech.md) | **The Listing Lock** ⚠️ | Real estate & PropTech platforms. |
 | [38](papers/paper38-gig-economy.md) | **The Algorithm Manages You** ⚠️ | Gig economy & employment platforms. |
-| [39](papers/paper39-congregation-effect.md) | **The Congregation Effect** ⚠️ | Void architecture across the religious spectrum. |
+| [39](papers/paper39-congregation-effect.md) | **The Congregation Effect** ✓ | Void architecture across the religious spectrum. CC-BY 4.0. |
 | [40](papers/paper40-eu-ai-act-conformity-mapping.md) | **The Rosetta Stone** ✓ | Mapping void framework to EU AI Act conformity (Art. 9–17). CC-BY 4.0. |
 | [41](papers/paper41-evolutionary-biology-thrml.md) | **The Fitness Void** ✓ | Three independent derivations of the void Péclet number. Kimura identity Pe=4Ns. Biology convergence Spearman=0.9516 (N=20). CC-BY 4.0. |
+| [42](papers/paper42-social-neuroscience-primate-cognition.md) | **The Neural Void** ✓ | Dunbar's number as THRML K — fourth independent convergence. N=28 primates, Spearman=0.9448. Machiavellian intelligence as D3 in social cognition. CC-BY 4.0. |
+| [43](papers/paper43-cancer-biology-immune-conjugacy.md) | **The Cancer Void** ✓ | V=9 as structural theorem in oncology. Warburg effect as D2 boundary erosion. Fantasia Bound in immunology — T-cell exhaustion as engagement-transparency conjugacy. CC-BY 4.0. |
 
 **EU AI Act:** Papers 18 (credit scoring), 21 (education/EdTech), 21B (hiring/HR technology), and 40 (conformity mapping) cover domains classified as HIGH-RISK under Annex III. Enforcement deadline: 2 August 2026. Paper 40 provides a direct mapping from the void framework to Art. 9–17 conformity requirements.
 
 All on [Zenodo](https://zenodo.org) (search "Void Framework"). DOIs in [`zenodo-dois.json`](zenodo-dois.json). Markdown here is canonical.
 
 > **⚠️ License note — Papers 6, 7, 7B–D, 10–38:** These applied domain papers are licensed under **MoreRight License v1.0**. Free for non-commercial use, research, and replication. Commercial use gated by Void Score. Indie Threshold: < $1M revenue AND < $5M funding AND < 25 FTE = free use. Converts to Apache 2.0 on February 19, 2030. See [LICENSE-MORERIGHT](LICENSE-MORERIGHT.md) for full terms. Contact **anthony@moreright.xyz** to discuss.
+
+> **Papers 39–43** are **CC-BY 4.0** (irrevocable open access) — congregation effect, EU AI Act conformity mapping, and the biology series (evolutionary, neural, cancer voids).
 
 ### How papers evolve
 
@@ -289,8 +303,8 @@ PAPER-TIERS.md         ← authoritative license tier assignments
 zenodo-dois.json       ← Zenodo DOI registry (concept + version DOIs for all papers)
 LICENSE-MORERIGHT.md   ← MoreRight License v1.0 full text
 
-papers/                ← Papers 1–38 + variants (4B, 4C, 7B–D, 16B, 21B, 22B, 26C) + predictions table
-figures/               ← SVG figures (framework/, paper9-sc/)
+papers/                ← Papers 1–43 + variants (4B, 4C, 7B–D, 16B, 21B, 22B, 26C) + predictions table
+figures/               ← SVG figures (framework/, paper9-sc/, papers 6–43)
 experiments/
   protocols/           ← EXP-001 through EXP-021 + all test protocols
   results/             ← raw transcripts, scored JSON, analysis notes
@@ -322,7 +336,7 @@ predictions. The territory is bigger than we expected. We're still mapping it.
 
 ## LICENSE
 
-**Papers 1–5, 4B, 4C, 8, 9: CC-BY 4.0** — use them, cite them, build on them, replicate them, try
+**Papers 1–5, 4B, 4C, 8, 9, 39, 40, 41, 42, 43: CC-BY 4.0** — use them, cite them, build on them, replicate them, try
 to break them.
 
 **Papers 6, 7, 7B–D, 10–38: MoreRight License v1.0** — free for non-commercial use, research,

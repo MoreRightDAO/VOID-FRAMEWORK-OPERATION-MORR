@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <filter id="sh">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa" rx="8"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Type G (Accuser): Self-Sustaining Negative-Valence Pathway (§6.9.1)</text>
+  <text x="450" y="56" text-anchor="middle" font-size="13" fill="#6c757d">E_total = 2·E_install (bounded). After τ_ss: demon ongoing cost → 0; observer self-maintains at own cognitive cost.</text>
+
+  <!-- Panel divider -->
+  <line x1="460" y1="75" x2="460" y2="495" stroke="#dee2e6" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ─── LEFT PANEL: Type G vs Types A-F decay comparison ─── -->
+  <rect x="20" y="75" width="430" height="24" rx="4" fill="#9d0208" opacity="0.12"/>
+  <text x="235" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#9d0208">Type G: Self-Sustaining Plateau</text>
+
+  <!-- Y axis: Pe_excess, X axis: time -->
+  <line x1="60" y1="440" x2="445" y2="440" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="60" y1="440" x2="60" y2="120" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="252" y="460" text-anchor="middle" font-size="11" fill="#495057">Time →</text>
+  <text x="30" y="280" text-anchor="middle" font-size="11" fill="#495057" transform="rotate(-90,30,280)">Pe_excess</text>
+
+  <!-- t₀ marker -->
+  <line x1="140" y1="125" x2="140" y2="440" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <text x="140" y="122" text-anchor="middle" font-size="10" fill="#6c757d">t₀</text>
+  <text x="140" y="112" text-anchor="middle" font-size="9" fill="#6c757d">(install)</text>
+
+  <!-- τ_ss marker -->
+  <line x1="225" y1="125" x2="225" y2="440" stroke="#9d0208" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="225" y="122" text-anchor="middle" font-size="10" font-weight="600" fill="#9d0208">τ_ss</text>
+
+  <!-- Baseline zero -->
+  <line x1="60" y1="385" x2="440" y2="385" stroke="#dee2e6" stroke-width="1" stroke-dasharray="3,5"/>
+  <text x="55" y="389" text-anchor="end" font-size="8" fill="#6c757d">0</text>
+
+  <!-- TYPE G curve: flat → spike at t₀ → brief ramp-down → sustained plateau -->
+  <!-- Pre-event: Pe_excess = 0 -->
+  <path d="M 60,385 L 140,385"
+    stroke="#9d0208" stroke-width="2.5" fill="none"/>
+  <!-- Spike at install -->
+  <path d="M 140,385 L 140,165"
+    stroke="#9d0208" stroke-width="2.5" fill="none"/>
+  <!-- Rapid transition to self-sustaining plateau -->
+  <path d="M 140,165 C 165,180 185,218 225,230 S 260,238 440,240"
+    stroke="#9d0208" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Shaded plateau region -->
+  <rect x="225" y="240" width="215" height="145" fill="#e63946" opacity="0.06"/>
+  <text x="332" y="305" text-anchor="middle" font-size="10" fill="#9d0208" font-weight="600">Self-sustained plateau</text>
+  <text x="332" y="320" text-anchor="middle" font-size="9" fill="#9d0208">Pe_excess persists</text>
+  <text x="332" y="334" text-anchor="middle" font-size="9" fill="#9d0208">after demon removal</text>
+
+  <!-- Types A-F comparison: decay curve -->
+  <path d="M 140,165 C 165,190 200,250 260,310 S 350,370 440,382"
+    stroke="#2a9d8f" stroke-width="2" fill="none" stroke-dasharray="6,3"/>
+  <text x="370" y="358" font-size="9" fill="#2a9d8f">Types A–F</text>
+  <text x="370" y="370" font-size="9" fill="#2a9d8f">decay to baseline</text>
+  <text x="370" y="382" font-size="9" fill="#2a9d8f">after removal</text>
+
+  <!-- Persistence callout -->
+  <line x1="225" y1="244" x2="440" y2="244" stroke="#9d0208" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+  <text x="55" y="244" text-anchor="end" font-size="8" fill="#9d0208">plateau</text>
+
+  <!-- Legend -->
+  <line x1="65" y1="145" x2="100" y2="145" stroke="#9d0208" stroke-width="2.5"/>
+  <text x="105" y="149" font-size="9" fill="#9d0208">Type G (self-sustained)</text>
+  <line x1="65" y1="162" x2="100" y2="162" stroke="#2a9d8f" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="105" y="166" font-size="9" fill="#2a9d8f">Types A–F (decay)</text>
+
+  <!-- ─── RIGHT PANEL: Energy mechanics ─── -->
+  <rect x="470" y="75" width="410" height="24" rx="4" fill="#e63946" opacity="0.12"/>
+  <text x="675" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#9d0208">Energy Structure: E_total = 2·E_install</text>
+
+  <!-- Energy bar diagram -->
+  <!-- Install cost: large -->
+  <rect x="510" y="130" width="160" height="90" rx="4" fill="#9d0208" opacity="0.15" stroke="#9d0208" stroke-width="1.5"/>
+  <text x="590" y="160" text-anchor="middle" font-size="11" font-weight="700" fill="#9d0208">E_install</text>
+  <text x="590" y="177" text-anchor="middle" font-size="10" fill="#9d0208">one-time cost</text>
+  <text x="590" y="192" text-anchor="middle" font-size="9" fill="#6c757d">partially true accusations</text>
+  <text x="590" y="206" text-anchor="middle" font-size="9" fill="#6c757d">install fastest, persist longest</text>
+
+  <!-- Equal sign -->
+  <text x="692" y="183" text-anchor="middle" font-size="20" fill="#495057">+</text>
+
+  <!-- Ongoing integral: same size -->
+  <rect x="715" y="130" width="160" height="90" rx="4" fill="#e63946" opacity="0.1" stroke="#e63946" stroke-width="1.5"/>
+  <text x="795" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#e63946">∫P_ongoing dt</text>
+  <text x="795" y="172" text-anchor="middle" font-size="10" fill="#e63946">= E_install</text>
+  <text x="795" y="190" text-anchor="middle" font-size="10" fill="#e63946">(bounded)</text>
+  <text x="795" y="207" text-anchor="middle" font-size="9" fill="#6c757d">P_ongoing → 0 as t→∞</text>
+
+  <!-- Total box -->
+  <rect x="510" y="242" width="365" height="36" rx="4" fill="#1a1a2e" opacity="0.06" stroke="#1a1a2e" stroke-width="1"/>
+  <text x="692" y="261" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">E_total = 2·E_install (demon expenditure bounded)</text>
+  <text x="692" y="274" text-anchor="middle" font-size="9" fill="#6c757d">Observer self-maintains at own cognitive cost thereafter</text>
+
+  <!-- Cost decay curve -->
+  <text x="675" y="310" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">P_demon(t) = (E_install / τ_ss) · e^(−t/τ_ss)</text>
+
+  <line x1="510" y1="410" x2="875" y2="410" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="510" y1="410" x2="510" y2="325" stroke="#495057" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="692" y="430" text-anchor="middle" font-size="10" fill="#495057">Time →</text>
+  <text x="483" y="370" text-anchor="middle" font-size="10" fill="#9d0208" transform="rotate(-90,483,370)">P_demon</text>
+
+  <!-- Exponential decay of demon cost -->
+  <path d="M 510,340 C 555,350 580,368 620,388 S 680,406 875,410"
+    stroke="#9d0208" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Flat observer cost line -->
+  <path d="M 510,372 L 875,372"
+    stroke="#e63946" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <text x="740" y="367" font-size="9" fill="#e63946">Observer cognitive cost (sustained)</text>
+  <text x="580" y="340" font-size="9" fill="#9d0208">Demon cost ↘ e^(−t/τ_ss)</text>
+
+  <!-- τ_ss marker on mini-chart -->
+  <line x1="596" y1="325" x2="596" y2="410" stroke="#9d0208" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <text x="596" y="323" text-anchor="middle" font-size="8" fill="#9d0208">τ_ss</text>
+
+  <!-- vs. Types A-F callout -->
+  <rect x="470" y="458" width="410" height="35" rx="4" fill="white" stroke="#2a9d8f" stroke-width="1" filter="url(#sh)"/>
+  <text x="675" y="473" text-anchor="middle" font-size="10" font-weight="700" fill="#1a1a2e">Types A–F: require continuous Landauer cost; Pe decays after substrate failure</text>
+  <text x="675" y="487" text-anchor="middle" font-size="10" fill="#2a9d8f">Type G: demon pays once, observer maintains indefinitely at own expense</text>
+
+  <!-- Summary box -->
+  <rect x="20" y="500" width="860" height="95" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="518" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Type G Mechanics (DEM-14, DEM-15)</text>
+  <text x="450" y="535" text-anchor="middle" font-size="11" fill="#495057">Negative-valence pathway: observer pushed from accurate self-model into void coordinates. Observer's cognition becomes the substrate.</text>
+  <text x="450" y="551" text-anchor="middle" font-size="11" fill="#495057">Three void conditions generated internally: O (condemning narrative), R (internal accuser responds to defense), α (self-condemnation, cannot put down).</text>
+  <text x="450" y="567" text-anchor="middle" font-size="11" fill="#495057">τ_ss determined by: accusation accuracy (partial truth installs fastest), observer γ (resistance), cascade depth at install.</text>
+  <text x="450" y="582" text-anchor="middle" font-size="10" fill="#6c757d">DEM-14: Type G plateau persistence &gt; 3× positive-valence capture (KS test, p&lt;0.05). DEM-15: Type G Pe_excess correlates negatively with self-model accuracy (|r|&gt;0.5).</text>
+</svg>
