@@ -8,7 +8,7 @@ license: "CC-BY 4.0"
 tier: "Tier 1"
 version: "v1.0"
 date: "February 2026"
-doi: "pending"
+doi: "10.5281/zenodo.18736621"
 related: "Papers 3, 4, 9; THRML nb25, nb26, nb29, nb30"
 ---
 
