@@ -13,18 +13,22 @@ license: "cc-by-4.0"
 | Field | Value |
 |-------|-------|
 | **Domain** | The Democratic Void: Authoritarian Information Architecture as Institutional Pe Cascade |
-| **Void Index** | ?/12 () |
-| **Demon Phase** | Phase  |
-| **Pe Estimate** | ? |
+| **Void Index** | 12/12 (China); 10.5/12 (Russia); 9/12 (Hungary); 8/12 (Turkey) |
+| **Demon Phase** | Phase IV Pandemonium (all primary cases) |
+| **Pe Estimate** | China Pe=43.9; Russia Pe=33.5; Hungary Pe=12.9; Turkey Pe=8.1 (canonical; nb_demo01) |
 | **EU AI Act** |  |
 | **MoreRight License** | Tier 2 — commercial use gated by Void Score assessment |
 | **Intended Use** | Platform assessment, regulatory review, design constraint specification |
 | **Version** | v1.0, February 2026 |
 
-**Platform Scores:**
-| Platform | Void Index |
-|----------|------------|
-| [TBD] | [TBD] |
+**Polity Scores (nb_demo01, N=20, Spearman ρ=−0.9891 vs V-Dem LDI, p<0.001):**
+| Entity | Void Index | Pe | Phase |
+|--------|------------|-----|-------|
+| China | 12/12 | 43.9 | IV Pandemonium |
+| Russia (post-2022) | 10.5/12 | 33.5 | IV Pandemonium |
+| Hungary | 9/12 | 12.9 | IV Pandemonium |
+| Turkey | 8/12 | 8.1 | IV Pandemonium |
+| Norway (control) | 0.5/12 | −97.3 | I Constraint |
 
 ---
 
@@ -54,7 +58,7 @@ This paper makes eight contributions to the intersection of democratic backslidi
 
 The empirical basis for scoring derives from V-Dem's 2024 dataset across 179 countries, Freedom House's dual series through 2025, and the Reporters Without Borders World Press Freedom Index longitudinal record. Control cases anchoring the constraint pole — Costa Rica, Norway, and New Zealand, each scoring below 4 on the 12-point Void Index — establish the baseline against which cascade actors are measured.
 
-Aggregate Void Index scores and Pe estimates, derived and defended in full in Section IV, position China at 11.2/12 (Pe = 7.4, deep Phase IV), Russia at 10.8/12 (Pe = 6.9, Phase IV), Hungary at 8.1/12 (Pe = 4.3, Phase IV entry), and Turkey at 8.6/12 (Pe = 4.7, Phase IV consolidating). The paper argues that Hungary's position within the European Union makes it the critical test case for whether supranational constraint architecture can interrupt a Pe cascade already past the Phase IV threshold — and that the current evidence does not support optimism.
+Aggregate Void Index scores and Pe estimates, canonically derived in the companion notebook (nb_demo01) using THRML canonical parameters (Paper 4D, DOI: 10.5281/zenodo.18738870), position China at 12/12 (Pe = 43.9, deep Phase IV), Russia at 10.5/12 (Pe = 33.5, Phase IV), Hungary at 9/12 (Pe = 12.9, Phase IV), and Turkey at 8/12 (Pe = 8.1, Phase IV consolidating). The cross-domain validation yields Spearman ρ = −0.9891 between Void Index and V-Dem Liberal Democracy Index at N=20 (p < 0.001), constituting the seventh independent convergence of the THRML framework across empirically distinct domains. The paper argues that Hungary's position within the European Union makes it the critical test case for whether supranational constraint architecture can interrupt a Pe cascade already past the Phase IV threshold — and that the current evidence does not support optimism.
 
 ## I. Introduction
 
@@ -108,7 +112,7 @@ The mapping of Void Framework conditions to democratic governance requires conce
 
 **Coupling in the democratic domain** operates through two principal mechanisms: economic dependency and identity fusion. Economic coupling occurs when citizens' material welfare — employment, business licenses, access to state services, credit — becomes contingent on demonstrated alignment with the regime's information architecture. In China, the Social Credit System formalizes this coupling structurally (Genia Kostka, 2019, *The China Quarterly*), though equivalent informal coupling operates in Hungary through the distribution of state advertising revenue and in Russia through selective prosecution of business owners with opposition sympathies. Identity coupling occurs through the fusion of national, ethnic, or civilizational identity with the regime's information narrative, rendering informational exit psychologically equivalent to self-betrayal. Levitsky and Ziblatt (2018) identify this mechanism as central to the democratic erosion sequence: once citizens' sense of group identity is coupled to the regime's legitimacy claims, evidence of regime malfeasance is processed as an attack on the self rather than as an error signal, cognitively reproducing the D1→D2→D3 drift cascade — from attribution of agency to the regime's narrative, to erosion of the boundary between partisan interest and democratic norm, to facilitation of the institutional harms that complete the cascade.
 
-For the Void Index scoring methodology applied at polity level, this paper adopts the standard 12-point scale across the four component dimensions (O, R, C, and domain-specific modifiers), with Pe calculated as the product of normalized component scores divided by the error-correction coefficient estimated from institutional independence indices. Section IV presents full Void Model Card assessments for the primary case studies. Preliminary estimates position China at Pe ≈ 6.8, Hungary at Pe ≈ 4.3, and Russia at Pe ≈ 5.1, all in Phase IV Pandemonium. The control case — Norway, scoring 2/12 on the Void Index — anchors the analysis at the constraint pole, where transparent public broadcasting regulation, enforceable press freedom protections, and robust judicial review maintain Pe below 1.4. The following section establishes the empirical basis for these estimates through detailed case analysis.
+For the Void Index scoring methodology applied at polity level, this paper adopts the standard 12-point scale across the four component dimensions (O, R, C, and domain-specific modifiers), with Pe calculated as the product of normalized component scores divided by the error-correction coefficient estimated from institutional independence indices. Section IV presents full Void Model Card assessments for the primary case studies. Canonical Pe estimates derived in the companion notebook (nb_demo01) using THRML canonical parameters position China at Pe = 43.9, Hungary at Pe = 12.9, and Russia at Pe = 33.5, all firmly in Phase IV Pandemonium. The control case — Norway, scoring 0.5/12 on the Void Index — anchors the analysis at the constraint pole, where transparent public broadcasting regulation, enforceable press freedom protections, and robust judicial review yield Pe = −97.3 (deep Phase I constraint). The following section establishes the empirical basis for these estimates through detailed case analysis.
 
 ## III. Condition 1 — Opacity
 
@@ -449,7 +453,7 @@ The Pe cascade model applied to democratic governance generates four conditions 
 
 This paper derives Void Index scores for polity-level actors from a mapping of existing institutional indicators (V-Dem, Freedom House, RSF) onto the three-condition scoring rubric rather than from prospective application of the Void Framework scoring protocol with trained raters. Inter-rater reliability for this scoring methodology has not been established at the polity level with the same rigor as in consumer platform applications; the ICC validation that governs platform scores in the MoreRight pipeline has not been completed for national information-environment assessments. The scores reported should be treated as theoretically motivated estimates pending a formal rater-reliability study.
 
-The Pe estimates (China Pe = 7.4; Russia Pe = 6.9; Hungary Pe = 4.3; Turkey Pe = 4.7) are derived from point-estimate Void Index scores and carry the same limitations as any point summary of a latent construct: they suppress uncertainty about the underlying dimension scores and do not convey posterior width. Countries near the Phase IV boundary (Pe = 4) — particularly Hungary — may fall above or below the threshold depending on methodological choices in the opacity and coupling dimensions.
+The Pe estimates (China Pe = 43.9; Russia Pe = 33.5; Hungary Pe = 12.9; Turkey Pe = 8.1) are derived from the THRML canonical formula Pe = K·sinh(2·(B_α − c·B_γ)) with canonical parameters K=16, B_α=0.867, B_γ=2.244 (Paper 4D), and carry the same limitations as any point summary of a latent construct: they suppress uncertainty about the underlying dimension scores and do not convey posterior width. Countries near the Phase IV boundary (Pe = 4, corresponding to V ≈ 6.5) — particularly Serbia (Pe = 3.8) and India (Pe ≈ 0) — may fall above or below the threshold depending on methodological choices in the opacity and coupling dimensions. The large absolute Pe values for fully consolidated regimes reflect the exponential sensitivity of the sinh-based Pe formula to void conditions — the formula is calibrated to behavioral data from consumer platform studies (Papers 25, 26, 30–34) and the same formula applied to polity-scale O/R/α scores produces extreme Pe values that are mathematically correct but should be interpreted as magnitude comparisons rather than direct behavioural predictions.
 
 The analysis's forward-looking elements — particularly the claim that Hungary's Phase IV entry within the EU creates a critical test case for supranational constraint architecture — rest on a V-Dem data snapshot through 2024 and Freedom House assessments through 2025. The European Union's response, including the Digital Services Act and European Media Freedom Act enforcement, is ongoing and the outcome of institutional contest between EU constraint mechanisms and the Orbán government's opacity maintenance strategy cannot be determined from current data.
 
@@ -462,6 +466,8 @@ No new primary empirical data are collected for this paper. All quantitative cla
 **Primary datasets:** V-Dem Institute annual Democracy Report data (v14, 2024), accessed at https://www.v-dem.net/data/; Freedom House Freedom in the World (2024) and Freedom on the Net (2025) country scores, accessed at https://freedomhouse.org/reports; Reporters Without Borders World Press Freedom Index (2024), accessed at https://rsf.org/en/index; Carnegie Endowment for International Peace surveillance technology export database (Feldstein, 2019), available at https://carnegieendowment.org/publications/interactive/ai-global-surveillance.
 
 **Scoring methodology:** Void Index scores for polity-level actors are derived using the three-condition rubric documented in Paper 3 (The Technical Foundations of the Void Framework) and Paper 4D (The Canonical Parameters), both available on Zenodo. The specific operationalization of O, R, and C at the polity level from V-Dem indicator mappings is documented in the source analysis for this paper, archived at the MoreRight DAO public repository: https://github.com/MoreRightDAO/VOID-FRAMEWORK-OPERATION-MORR.
+
+**Companion analysis:** Canonical Pe estimates and cross-domain validation (Spearman ρ = −0.9891, N=20) are computed in `nb_demo01_democratic_backsliding_pe.ipynb`, archived at the MoreRight DAO public repository. The notebook uses THRML canonical parameters (Paper 4D) and derives Pe from the standard formula Pe = K·sinh(2·(B_α − c·B_γ)) with c = 1 − V/9 where V = O + R + α. External validation uses V-Dem Liberal Democracy Index (v14, 2024), Freedom House Freedom in the World (2025), and Reporters Without Borders Press Freedom Index (2024).
 
 **Reproducibility:** All Void Index scores reported here are reproducible by any analyst applying the standard rubric to the cited data sources. Prediction specifications in Section IX constitute a pre-analysis plan; tests are executable against V-Dem and Freedom House annual releases as they become available.
 

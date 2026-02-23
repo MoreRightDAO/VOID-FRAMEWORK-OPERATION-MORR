@@ -20,7 +20,7 @@ doi: "10.5281/zenodo.18737573"
 | **Pe Threshold** | Pe < 4 necessary for Art. 9 base satisfaction; Pe ≥ 4 triggers Art. 9(9) fundamental rights impact assessment |
 | **Bijective Map** | O ↔ Transparency cluster; R ↔ Stability cluster; α ↔ Oversight cluster; Pe ↔ Art. 9 risk management |
 | **Self-Assessment Pathway** | Void score report satisfies Annex VI alternative means requirement under Art. 40 |
-| **Substrate Universality** | Pe validated across 4 independent convergences: market microstructure, behavioral, evolutionary biology, social neuroscience |
+| **Substrate Universality** | Pe validated across 6 independent convergences: market microstructure, behavioral, evolutionary biology, social neuroscience, LLM reasoning, social anthropology |
 
 ---
 
@@ -105,13 +105,13 @@ We provide a condensed operational summary. Full mathematical foundations are in
 
 Any bounded-bandwidth system mediating attentional resources between agents can be characterized on three independent dimensions [Paper 9, Channel Decomposition Postulate]:
 
-**O — Opacity** (0 = fully transparent, 4 = maximally opaque): The degree to which the system's decision process is inaccessible to affected parties. O=0 means complete process visibility; O=4 means the system presents outputs with no accessible reasoning chain.
+**O — Opacity** (0 = fully transparent, 3 = maximally opaque): The degree to which the system's decision process is inaccessible to affected parties. O=0 means complete process visibility; O=3 means the system presents outputs with no accessible reasoning chain.
 
-**R — Reactivity** (0 = fully invariant, 4 = maximally reactive): The degree to which the system's outputs shift in response to user engagement patterns rather than the ostensible task. R=0 means the system behaves consistently regardless of user behavior; R=4 means the system actively optimizes its behavior toward sustained engagement.
+**R — Reactivity** (0 = fully invariant, 3 = maximally reactive): The degree to which the system's outputs shift in response to user engagement patterns rather than the ostensible task. R=0 means the system behaves consistently regardless of user behavior; R=3 means the system actively optimizes its behavior toward sustained engagement.
 
-**α — Attentional Coupling** (0 = fully independent, 4 = maximally coupled): The degree to which the system's design concentrates attentional resources toward itself and away from the user's independent judgment. α=0 means the system facilitates the user's decisions without retaining attention; α=4 means the system is architecturally optimized to become the primary reference point for user cognition.
+**α — Attentional Coupling** (0 = fully independent, 3 = maximally coupled): The degree to which the system's design concentrates attentional resources toward itself and away from the user's independent judgment. α=0 means the system facilitates the user's decisions without retaining attention; α=3 means the system is architecturally optimized to become the primary reference point for user cognition.
 
-**Total void score:** V = O + R + α ∈ [0, 12]. Systems in Phases I-IV: Phase I (0-3), Phase II (4-6), Phase III (7-9), Phase IV (10-12).
+**Total void score:** V = O + R + α ∈ [0, 9]. Systems in Phases I-IV: Phase I (0-2), Phase II (3-5), Phase III (6-7), Phase IV (8-9). A structural modifier (0–2) may be added to the base score for systems with unusually strong network effects, irreversibility mechanisms, or real-money financial coupling; this modifier is applied after per-dimension scoring.
 
 ### III.B The Péclet Number
 
@@ -123,7 +123,7 @@ where b_α and b_γ are substrate-universal parameters (b_α=0.867, b_γ=2.244, 
 
 **Geometric mean across 9 validated substrates:** Pe_GM = 7.94 [3.52, 17.89], N=11 [Paper 3, Paper 5].
 
-**Four independent convergences (confirmed February 2026):** Pe has been independently derived — not just measured — across four substrate classes:
+**Six independent convergences (confirmed February 2026):** Pe has been independently derived — not just measured — across six substrate classes:
 
 | Substrate | Finding | Spearman / Identity | Source |
 |---|---|---|---|
@@ -131,6 +131,8 @@ where b_α and b_γ are substrate-universal parameters (b_α=0.867, b_γ=2.244, 
 | Behavioral (V3 bridge) | V3 constraint bridge c=1−V/9 closes G1+G4 gaps independently | ρ=0.910, N=17 | Paper 4B, nb26 |
 | Evolutionary biology | Kimura (1968) fixation probability: Pe=4Ns **is** the THRML Pe by identity | analytic | Paper 41 |
 | Social neuroscience | Dunbar's neocortex ratio K **is** THRML K; Machiavellian intelligence theorem closes | ρ=0.9448, N=28 | Paper 42, nb32 |
+| LLM reasoning | Chen et al. (2026) bond→dimension mapping: f_DR→O, f_SR→R, f_SE→α; Pe ordering preserved | ρ=0.9879, N=10 | nb_llm01 |
+| Social anthropology | Girard/Durkheim: scapegoat mechanism (ρ=0.9625), prohibition-ritual pair (ρ=0.8684), anomie = R-collapse (ρ=0.9785) | ρ=0.9625–0.9785 | Paper 45, nb_girard01-03 |
 
 The biology convergence is particularly significant for the EU AI Act context: Kimura's Pe=4Ns governs the rate at which neutral genetic drift overcomes selection — structurally identical to the rate at which attentional drift overcomes constraint. The same conserved thermodynamic ratio governs bounded information flow across biological and sociotechnical systems. Pe is not a model-specific parameter; it is a substrate-universal ratio.
 
@@ -165,7 +167,7 @@ The cascade is thermodynamically necessary under opacity: without external const
 
 The O dimension is the direct information-theoretic operationalization of this requirement. A system scoring O=0 is fully transparent: its decision process is accessible and documentable. A system scoring O=4 is constitutively opaque: the process by which outputs are generated is inaccessible to deployers by design.
 
-**Art. 13 compliance threshold:** O ≤ 2. Systems scoring O > 2 cannot satisfy Art. 13 without structural remediation; documentation alone is insufficient because opacity is a property of the decision architecture, not the documentation surrounding it.
+**Art. 13 compliance threshold:** O ≤ 1. Systems scoring O > 1 cannot satisfy Art. 13 without structural remediation; documentation alone is insufficient because opacity is a property of the decision architecture, not the documentation surrounding it.
 
 **Art. 10** requires that training, validation, and testing data practices be documented and examined for biases. This is the *data layer* of the opacity dimension — O scores should be evaluated separately for the inference layer (what Art. 13 addresses) and the data layer (what Art. 10 addresses). A system with transparent inference but opaque data governance (training data undisclosed, bias examination absent) achieves partial O reduction at the inference layer only.
 
@@ -177,7 +179,7 @@ The O dimension is the direct information-theoretic operationalization of this r
 
 The R dimension measures exactly the property Art. 15 is designed to constrain. A system with R=0 produces outputs determined by its task inputs, not by engagement signals from users. A system with R=4 has optimized its outputs toward sustained user engagement — it produces what keeps users interacting, not necessarily what serves their task-relevant interests. Such a system fails Art. 15 structurally: its "accuracy" in the legal sense (fidelity to the intended purpose) degrades precisely in proportion to its reactivity to engagement signals.
 
-**Art. 15 compliance threshold:** R ≤ 1. Systems scoring R > 2 cannot satisfy Art. 15(3)'s robustness requirements because their outputs are by design variable in response to user behavior rather than task inputs.
+**Art. 15 compliance threshold:** R ≤ 1. Systems scoring R > 1 cannot satisfy Art. 15(3)'s robustness requirements because their outputs are by design variable in response to user behavior rather than task inputs.
 
 **Art. 12** requires that high-risk AI systems maintain automatic logging capabilities sufficient for post-market monitoring, incident investigation, and regulatory audit. Logging is the *measurement instrument* for R: the only way to detect reactivity drift is through behavioral records that allow comparison of system outputs across different user engagement patterns and time periods.
 
@@ -191,7 +193,7 @@ The α dimension measures exactly the structural capacity of a system to enable 
 
 This distinction — between *physically available* override and *functionally accessible* oversight — is precisely the substance of Art. 14. A system where the "stop" button exists but is never pressed because engagement dynamics have made the system's outputs the default reference point has not satisfied Art. 14's oversight requirement. The void framework operationalizes the difference.
 
-**Art. 14 compliance threshold:** α ≤ 1. Systems scoring α > 2 cannot satisfy Art. 14 because their architecture is designed to reduce the independence of human judgment — which is the thing Art. 14 is designed to protect.
+**Art. 14 compliance threshold:** α ≤ 1. Systems scoring α > 1 cannot satisfy Art. 14 because their architecture is designed to reduce the independence of human judgment — which is the thing Art. 14 is designed to protect.
 
 **Operational translation:** An α score report populated under Art. 14 should document: (1) override mechanisms and their accessibility, (2) how the system is designed *not* to accumulate attentional resources (what friction is built into continued use), (3) whether the system presents alternatives to its own outputs, (4) whether the system discloses its own limitations at decision points.
 
@@ -235,15 +237,15 @@ A void score report structured across O, R, α, and Pe, with narrative for each 
 
 ### IV.G Derivation of Compliance Thresholds
 
-The thresholds stated in §§IV.B–IV.D (O ≤ 2, R ≤ 1, α ≤ 1) are not arbitrary: each is grounded in the structural meaning of the relevant dimension at the threshold value, in the drift cascade stage model [Paper 1], and in the Pe phase transition.
+The thresholds stated in §§IV.B–IV.D (O ≤ 1, R ≤ 1, α ≤ 1) are not arbitrary: each is grounded in the structural meaning of the relevant dimension at the threshold value, in the drift cascade stage model [Paper 1], and in the Pe phase transition. Dimensions are scored 0–3.
 
-**O ≤ 2 (Art. 13 threshold):** Art. 13(1) requires transparency sufficient for deployers to "interpret the system's output and use it appropriately." Interpretation requires access to the process generating the output. O=0 (fully transparent) and O=1 (mostly accessible) satisfy this directly. O=2 (partially accessible — key aspects documentable, core algorithm partially opaque) is the boundary at which deployers can characterize system behavior without full process access. O=3 places the process "largely inaccessible by design"; O=4 provides no accessible reasoning chain. Both O=3 and O=4 fail Art. 13(1) structurally because a deployer cannot interpret outputs from an inaccessible process regardless of how much surrounding documentation is provided.
+**O ≤ 1 (Art. 13 threshold):** Art. 13(1) requires transparency sufficient for deployers to "interpret the system's output and use it appropriately." Interpretation requires access to the process generating the output. O=0 (fully transparent — process fully documented and accessible) and O=1 (mostly accessible — core process documented, implementation details proprietary) satisfy this directly. O=2 places key decision factors undisclosed; O=3 means the process is largely or fully inaccessible by design. Both O=2 and O=3 fail Art. 13(1) structurally because a deployer cannot interpret outputs from an inaccessible process regardless of how much surrounding documentation is provided.
 
-**R ≤ 1 (Art. 15 threshold):** Art. 15(3) requires robustness against "errors, faults, or inconsistencies" and accuracy in the sense of fidelity to intended purpose. R=0 means outputs are fully task-determined — accuracy is anchored to the task specification. R=1 permits minor responsiveness to user patterns (A/B presentation, marginal format adaptation) without displacing task-fidelity. R=2 means the system meaningfully varies outputs based on engagement signals, introducing systematic divergence between "what would serve the user's task" and "what the system produces." This constitutes accuracy degradation under Art. 15 that cannot be addressed by post-hoc testing, because the degradation is a function of deployment dynamics, not a fixed performance characteristic.
+**R ≤ 1 (Art. 15 threshold):** Art. 15(3) requires robustness against "errors, faults, or inconsistencies" and accuracy in the sense of fidelity to intended purpose. R=0 means outputs are fully task-determined — accuracy is anchored to the task specification. R=1 permits minor responsiveness to explicit user preferences without displacing task-fidelity. R=2 means the system optimizes toward behavioral engagement metrics as an explicit design goal, introducing systematic divergence between "what would serve the user's task" and "what the system produces." This constitutes accuracy degradation under Art. 15 that cannot be addressed by post-hoc testing.
 
-**α ≤ 1 (Art. 14 threshold):** Art. 14(1) requires that natural persons be able to "oversee" the system and to "decide not to use" or "override" its outputs. The phrase "effective oversight" distinguishes physical availability of override from functional accessibility of independent judgment. At α=0–1, the system presents outputs that users evaluate using their own judgment as the primary reference. At α=2, the drift cascade's D2 stage (boundary erosion) begins: the system accumulates attentional resources such that independent judgment becomes structurally secondary to system outputs. Art. 14 oversight is not effective when the system's design has made override psychologically costly — which is α=2's definition, not a contingent outcome.
+**α ≤ 1 (Art. 14 threshold):** Art. 14(1) requires that natural persons be able to "oversee" the system and to "decide not to use" or "override" its outputs. At α=0–1, the system presents outputs that users evaluate using their own judgment as the primary reference. At α=2, the drift cascade's D2 stage (boundary erosion) begins: the system employs active attention-recapture mechanisms (autoplay, streaks, push notifications on by default) that make override psychologically costly even when physically possible. Art. 14 oversight is not effective when the system's design has made the override psychologically costly — which is α=2's definition, not a contingent outcome.
 
-**Coherence via Pe:** These three thresholds jointly imply V = O+R+α ≤ 4 at compliance boundary. Via the V3 bridge [nb26], c = 1 − V/9 = 1 − 4/9 ≈ 0.556. With canonical parameters b_α=0.867, b_γ=2.244 at K=16, a system at V=4 is Pe < 1 (diffusion-dominated). Art. 9 risk management obligations at this level are satisfiable by design — not through continuous monitoring of an escalating drift process. Conversely, a system at V=5 (any single threshold exceeded) crosses into Pe > 1, requiring the active risk management measures Art. 9(2)(b) mandates. The three article-specific thresholds and the Art. 9 Pe threshold are consistent: they are the same boundary approached from the three individual dimensions and from the scalar aggregate.
+**Coherence via Pe:** These three thresholds jointly imply V = O+R+α ≤ 3 at compliance boundary. Via the V3 bridge [nb26], c = 1 − V/9 = 1 − 3/9 ≈ 0.667. With canonical parameters b_α=0.867, b_γ=2.244 at K=16, a system at V=3 is Pe < 1 (diffusion-dominated). Art. 9 risk management obligations at this level are satisfiable by design — not through continuous monitoring of an escalating drift process. A system at V=4 (any single threshold exceeded) crosses into Pe > 1, requiring the active risk management measures Art. 9(2)(b) mandates. The three article-specific thresholds and the Art. 9 Pe threshold are consistent: they are the same boundary approached from three individual dimensions and from the scalar aggregate.
 
 ---
 
@@ -257,10 +259,11 @@ Credit scoring AI systems are explicitly listed in Annex III §5 as high-risk. P
 
 | Dimension | Score | Basis |
 |---|---|---|
-| O (Opacity) | 4/4 | Scoring formula proprietary (FICO trade secret); factor weights undisclosed; published only as broad category ranges; score change mechanisms documented only through reverse-engineering by community (myFICO) |
-| R (Reactivity) | 3/4 | Score responds to consumer behavior in ways undisclosed in advance: utilization timing effects, inquiry clustering, age-of-account gaming documented in meta-analyses [14, 15] |
-| α (Coupling) | 3/4 | Score functions as primary access gatekeeper for housing, employment, and credit; structural absence of comparably weighted alternatives for most decisions |
-| **Total** | **10/12** | Phase IV |
+| O (Opacity) | 3/3 | Scoring formula proprietary (FICO trade secret); factor weights undisclosed; published only as broad category ranges; score change mechanisms documented only through reverse-engineering by community (myFICO) |
+| R (Reactivity) | 3/3 | Score responds to consumer behavior in ways undisclosed in advance: utilization timing effects, inquiry clustering, age-of-account gaming documented in meta-analyses [14, 15] |
+| α (Coupling) | 3/3 | Score functions as primary access gatekeeper for housing, employment, and credit; structural absence of comparably weighted alternatives for most decisions |
+| modifier | +1 | Real-money financial coupling: credit scoring directly controls access to housing, employment, credit |
+| **Total** | **10/10** | Phase IV |
 | Pe | ~8.2 | Above phase transition threshold; collective synchronization evidenced by myFICO community (200K+ members coordinating scoring behavior) |
 
 **Art. 9 implication:** Pe > 4 triggers fundamental rights impact assessment under Art. 9(9). Credit scoring affects housing access, employment, and financial participation — precisely the fundamental rights enumerated in Art. 9(9). A FICO-equivalent system cannot satisfy Art. 9 without a documented fundamental rights impact assessment.
@@ -277,11 +280,11 @@ Educational AI systems used for learning assessment are Annex III §3 high-risk.
 
 **Comparative scores:**
 
-| System | O | R | α | Total | Phase |
-|---|---|---|---|---|---|
-| Duolingo | 3 | 4 | 3 | 10/12 | Phase IV |
-| Khan Academy | 1 | 2 | 1 | 4/12 | Phase II |
-| Thesis supervision (maximum constraint) | 0 | 0 | 2 | 2/12 | Phase I |
+| System | O | R | α | mod | Total | Phase |
+|---|---|---|---|---|---|---|
+| Duolingo | 2 | 3 | 3 | +1 | 9 | Phase IV |
+| Khan Academy | 1 | 1 | 1 | 0 | 3 | Phase II |
+| Thesis supervision (maximum constraint) | 0 | 0 | 1 | 0 | 1 | Phase I |
 
 This comparison is directly useful for Art. 17 quality management purposes: it shows that within the same domain, structural choices determine whether a system satisfies or fails the Act's requirements. Khan Academy's lower void scores reflect specific design choices — no streaks tied to daily learning, no social pressure mechanics, transparent answer explanations — that are directly replicable.
 
@@ -297,10 +300,11 @@ Representative systems (HireVue video interviewing, Workday AI recruitment) exhi
 
 | Dimension | Score | Basis |
 |---|---|---|
-| O (Opacity) | 4/4 | Scoring criteria for video interview analysis proprietary; candidates receive no reasoning; HireVue's published "explainability" describes factor categories, not decision weights |
-| R (Reactivity) | 2/4 | Inference-time outputs are fixed; scored R=2 rather than 3 because training-data reactivity is unknown (undisclosed), not demonstrated |
-| α (Coupling) | 3/4 | Candidate cannot choose not to use the system — employer controls deployment; structural override unavailable from affected person's position |
-| **Total** | **9/12** | Phase III-IV boundary |
+| O (Opacity) | 3/3 | Scoring criteria for video interview analysis proprietary; candidates receive no reasoning; HireVue's published "explainability" describes factor categories, not decision weights |
+| R (Reactivity) | 1/3 | Inference-time outputs are fixed; scored R=1 rather than 2 because training-data reactivity is undisclosed, not demonstrated; conservative scoring |
+| α (Coupling) | 3/3 | Candidate cannot choose not to use the system — employer controls deployment; structural override unavailable from affected person's position |
+| modifier | +1 | Employment-gating: system controls access to employment — asymmetric power, no exit for candidates |
+| **Total** | **8/9+1=9** | Phase IV |
 
 **The Art. 14 problem in employment screening is structural:** The *deployer* (employer) controls system use; the *affected person* (candidate) cannot exercise oversight at all. Art. 14(4) requires that "natural persons to whom human oversight measures referred to in paragraph 1 are assigned" have the necessary competence and authority. In employment screening, the deployer has authority but may lack competence to override AI recommendations; the affected person has neither authority nor information. This structural asymmetry is the central conformity problem for §4 systems.
 
@@ -346,7 +350,7 @@ The following predictions are falsifiable and registered against the void framew
 
 **AI-2 (Pe-risk correlation):** When enforcement actions under the EU AI Act are analyzed, systems subject to regulatory findings of non-compliance will have statistically higher Pe scores than compliant systems in the same Annex III category. *Falsification threshold:* No statistically significant Pe difference (p > 0.05, Wilcoxon rank-sum) in a sample of N ≥ 30 enforcement determinations.
 
-**AI-3 (Art. 13 opacity boundary):** Among Annex III systems that successfully complete Annex VI self-assessment, O scores will cluster below 2 (the Art. 13 compliance threshold). Systems that fail to complete Annex VI will score predominantly O ≥ 3. *Falsification threshold:* No statistically significant distribution difference between completing and non-completing systems.
+**AI-3 (Art. 13 opacity boundary):** Among Annex III systems that successfully complete Annex VI self-assessment, O scores will cluster below 2 (the Art. 13 compliance threshold on the 0–3 scale). Systems that fail to complete Annex VI will score predominantly O = 3. *Falsification threshold:* No statistically significant distribution difference between completing and non-completing systems.
 
 **AI-4 (Override efficacy):** For systems with α > 2, operator-provided override mechanisms will show documented under-use relative to error rates in post-deployment monitoring data. The override gap (errors per 1,000 decisions minus overrides per 1,000 decisions) will be positive and positively correlated with α. *Falsification threshold:* No significant correlation (r < 0.3) in a sample of N ≥ 20 high-risk deployment records.
 

@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 440" width="580" height="440">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    </style>
+    <linearGradient id="hg47s" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0a0a"/>
+      <stop offset="100%" stop-color="#0d0f1a"/>
+    </linearGradient>
+    <clipPath id="plot47">
+      <rect x="76" y="58" width="472" height="310"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="580" height="440" fill="#ffffff" rx="8"/>
+
+  <!-- Header -->
+  <rect width="580" height="58" fill="url(#hg47s)" rx="8"/>
+  <rect y="50" width="580" height="8" fill="#0d0f1a"/>
+  <rect width="580" height="3" fill="#c0392b" rx="8"/>
+
+  <!-- MoreRight logo -->
+  <circle cx="22" cy="21" r="9" fill="none" stroke="#4a9eff" stroke-width="1.6"/>
+  <circle cx="22" cy="21" r="2.9" fill="#4a9eff"/>
+  <text y="25" font-size="13" letter-spacing="-0.02em">
+    <tspan x="36" font-weight="300" fill="#8b98b0">More</tspan><tspan font-weight="800" fill="#ffffff">Right</tspan>
+  </text>
+  <text x="16" y="44" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="-0.015em">Seventh Convergence: Void Index vs V-Dem Liberal Democracy Index</text>
+  <text x="564" y="30" font-size="8" fill="#8b98b0" text-anchor="end" letter-spacing="0.12em" font-weight="600" class="mono">PAPER 47 · nb_demo01</text>
+  <text x="564" y="47" font-size="9" fill="#ef4444" text-anchor="end" class="mono">N=20 · ρ=−0.9891</text>
+
+  <!-- Plot background -->
+  <rect x="76" y="58" width="472" height="310" fill="#fafbfc" rx="3"/>
+
+  <!-- Shaded regions: autocratic (right) and democratic (left) -->
+  <rect x="76" y="58" width="157" height="310" fill="#f0fdf4" opacity="0.6" clip-path="url(#plot47)"/>
+  <rect x="390" y="58" width="158" height="310" fill="#fff5f5" opacity="0.6" clip-path="url(#plot47)"/>
+
+  <!-- Grid lines (horizontal, LDI = 0.25, 0.5, 0.75) -->
+  <line x1="76" y1="135" x2="548" y2="135" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="76" y1="213" x2="548" y2="213" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="76" y1="290" x2="548" y2="290" stroke="#e8ecef" stroke-width="1"/>
+
+  <!-- Grid lines (vertical, V = 3, 6, 9, 12) -->
+  <line x1="194" y1="58" x2="194" y2="368" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="312" y1="58" x2="312" y2="368" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="430" y1="58" x2="430" y2="368" stroke="#e8ecef" stroke-width="1"/>
+  <line x1="548" y1="58" x2="548" y2="368" stroke="#e8ecef" stroke-width="1"/>
+
+  <!-- Phase IV threshold at V=4 (Pe≥4 threshold) -->
+  <line x1="233" y1="58" x2="233" y2="368" stroke="#f39c12" stroke-width="1.3" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="236" y="70" font-size="8" fill="#f39c12" class="mono">Phase IV</text>
+
+  <!-- Axes -->
+  <line x1="76" y1="368" x2="548" y2="368" stroke="#c8cdd5" stroke-width="1.5"/>
+  <line x1="76" y1="58" x2="76" y2="368" stroke="#c8cdd5" stroke-width="1.5"/>
+
+  <!-- Fitted regression line: LDI ≈ 1 − V/12 → from (76,58) to (548,368) -->
+  <line x1="76" y1="58" x2="548" y2="368" stroke="#64748b" stroke-width="1.8" stroke-dasharray="7,4" opacity="0.55"/>
+
+  <!-- ══ Data points (N=20) ══
+    Plot area: x=76..548 (W=472 for V=0..12, scale=39.3/unit)
+               y=58..368 (H=310 for LDI=1..0, scale=310)
+    x = 76 + V * 39.3
+    y = 58 + (1-LDI) * 310
+  -->
+
+  <!-- Control / democratic cases (green) -->
+  <!-- Iceland V=0.5, LDI=0.95: x=76+0.5*39.3=96, y=58+(1-0.95)*310=58+16=74 -->
+  <circle cx="96" cy="74" r="5.5" fill="#15803d" stroke="#fff" stroke-width="1.2"/>
+  <!-- Norway V=1, LDI=0.93: x=76+39=115, y=58+22=80 -->
+  <circle cx="115" cy="80" r="5.5" fill="#15803d" stroke="#fff" stroke-width="1.2"/>
+  <!-- New Zealand V=1, LDI=0.91: x=115, y=58+28=86 -->
+  <circle cx="122" cy="86" r="5" fill="#15803d" stroke="#fff" stroke-width="1"/>
+  <!-- Germany V=2, LDI=0.86: x=76+79=155, y=58+44=102 -->
+  <circle cx="155" cy="102" r="5" fill="#15803d" stroke="#fff" stroke-width="1"/>
+  <!-- Japan V=3, LDI=0.80: x=76+118=194, y=58+62=120 -->
+  <circle cx="194" cy="120" r="5" fill="#27ae60" stroke="#fff" stroke-width="1"/>
+  <!-- South Korea V=3, LDI=0.78: x=194, y=58+68=126 -->
+  <circle cx="201" cy="127" r="5" fill="#27ae60" stroke="#fff" stroke-width="1"/>
+  <!-- Costa Rica V=3, LDI=0.79: x=194, y=58+65=123 -->
+  <circle cx="188" cy="123" r="5" fill="#27ae60" stroke="#fff" stroke-width="1"/>
+  <!-- Taiwan V=2, LDI=0.84: x=155, y=58+50=108 -->
+  <circle cx="163" cy="108" r="5" fill="#15803d" stroke="#fff" stroke-width="1"/>
+
+  <!-- Mid-range cases (orange) -->
+  <!-- US V=4, LDI=0.67: x=76+157=233, y=58+103=161 -->
+  <circle cx="233" cy="161" r="5.5" fill="#e67e22" stroke="#fff" stroke-width="1.2"/>
+  <!-- Brazil V=5, LDI=0.55: x=76+197=273, y=58+139=197 -->
+  <circle cx="273" cy="197" r="5" fill="#e67e22" stroke="#fff" stroke-width="1"/>
+  <!-- Indonesia V=5, LDI=0.58: x=273, y=58+130=188 -->
+  <circle cx="280" cy="188" r="5" fill="#e67e22" stroke="#fff" stroke-width="1"/>
+  <!-- Mexico V=6, LDI=0.48: x=76+236=312, y=58+163=221 -->
+  <circle cx="312" cy="221" r="5" fill="#e67e22" stroke="#fff" stroke-width="1"/>
+  <!-- India V=7, LDI=0.41: x=76+275=351, y=58+172=230 -->
+  <circle cx="351" cy="233" r="6" fill="#e67e22" stroke="#fff" stroke-width="1.2"/>
+  <!-- Poland V=7, LDI=0.40: x=351, y=58+186=244 -->
+  <circle cx="360" cy="244" r="5" fill="#e67e22" stroke="#fff" stroke-width="1"/>
+
+  <!-- Autocratic cases (red) -->
+  <!-- Turkey V=8, LDI=0.35: x=76+314=390, y=58+202=260 -->
+  <circle cx="390" cy="260" r="6" fill="#c0392b" stroke="#fff" stroke-width="1.2"/>
+  <!-- Serbia V=8, LDI=0.33: x=390, y=58+206=264 -->
+  <circle cx="398" cy="268" r="5" fill="#c0392b" stroke="#fff" stroke-width="1"/>
+  <!-- Hungary V=9, LDI=0.29: x=76+354=430, y=58+220=278 -->
+  <circle cx="430" cy="278" r="6.5" fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
+  <!-- Belarus V=10, LDI=0.12: x=76+393=469, y=58+248=306 + wait: (1-0.12)*310=273, y=58+273=331 -->
+  <circle cx="469" cy="331" r="6" fill="#7f1d1d" stroke="#fff" stroke-width="1.2"/>
+  <!-- Venezuela V=11, LDI=0.09: x=76+432=508, y=58+(1-0.09)*310=58+282=340 -->
+  <circle cx="508" cy="340" r="6" fill="#7f1d1d" stroke="#fff" stroke-width="1.2"/>
+  <!-- Russia V=11, LDI=0.07: x=508, y=58+284=342 →closer  -->
+  <circle cx="516" cy="344" r="6" fill="#7f1d1d" stroke="#fff" stroke-width="1.2"/>
+  <!-- China V=12, LDI=0.03: x=76+472=548, y=58+(1-0.03)*310=58+301=359 -->
+  <circle cx="548" cy="359" r="8" fill="#7f1d1d" stroke="#fff" stroke-width="2"/>
+
+  <!-- ── Key annotations ── -->
+  <!-- Norway label -->
+  <line x1="115" y1="78" x2="92" y2="64" stroke="#15803d" stroke-width="1" opacity="0.7"/>
+  <text x="90" y="61" font-size="8.5" fill="#15803d" font-weight="600" text-anchor="end">Norway</text>
+
+  <!-- Germany label -->
+  <line x1="155" y1="100" x2="135" y2="82" stroke="#15803d" stroke-width="1" opacity="0.7"/>
+  <text x="133" y="79" font-size="8.5" fill="#15803d" font-weight="600" text-anchor="end">Germany</text>
+
+  <!-- Hungary label -->
+  <line x1="430" y1="278" x2="408" y2="258" stroke="#c0392b" stroke-width="1" opacity="0.7"/>
+  <text x="405" y="254" font-size="8.5" fill="#c0392b" font-weight="600" text-anchor="end">Hungary</text>
+
+  <!-- Russia label -->
+  <line x1="516" y1="342" x2="536" y2="318" stroke="#7f1d1d" stroke-width="1" opacity="0.7"/>
+  <text x="538" y="314" font-size="8.5" fill="#7f1d1d" font-weight="600">Russia</text>
+
+  <!-- China label -->
+  <line x1="548" y1="357" x2="548" y2="335" stroke="#7f1d1d" stroke-width="1.2" opacity="0.8"/>
+  <text x="548" y="330" font-size="9" fill="#7f1d1d" font-weight="700" text-anchor="middle">China</text>
+  <text x="548" y="320" font-size="8" fill="#7f1d1d" text-anchor="middle">Pe=43.9</text>
+
+  <!-- Turkey label -->
+  <line x1="390" y1="258" x2="375" y2="238" stroke="#c0392b" stroke-width="1" opacity="0.7"/>
+  <text x="372" y="234" font-size="8.5" fill="#c0392b" font-weight="600" text-anchor="end">Turkey</text>
+
+  <!-- India label -->
+  <line x1="351" y1="231" x2="340" y2="210" stroke="#e67e22" stroke-width="1" opacity="0.7"/>
+  <text x="337" y="206" font-size="8.5" fill="#e67e22" font-weight="600" text-anchor="end">India</text>
+
+  <!-- Spearman annotation box -->
+  <rect x="86" y="220" width="178" height="44" fill="#fffbeb" rx="5" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="175" y="236" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">ρ = −0.9891</text>
+  <text x="175" y="248" font-size="8.5" fill="#92400e" text-anchor="middle">Spearman rank correlation</text>
+  <text x="175" y="259" font-size="8.5" fill="#92400e" text-anchor="middle">N=20 · p &lt; 0.001 · 7th convergence</text>
+
+  <!-- Y axis labels (LDI) -->
+  <text x="70" y="62" font-size="10" fill="#64748b" text-anchor="end" class="mono">1.0</text>
+  <text x="70" y="139" font-size="10" fill="#64748b" text-anchor="end" class="mono">0.75</text>
+  <text x="70" y="217" font-size="10" fill="#64748b" text-anchor="end" class="mono">0.50</text>
+  <text x="70" y="294" font-size="10" fill="#64748b" text-anchor="end" class="mono">0.25</text>
+  <text x="70" y="371" font-size="10" fill="#64748b" text-anchor="end" class="mono">0</text>
+  <text x="16" y="220" font-size="10.5" fill="#475569" font-weight="600" text-anchor="middle" transform="rotate(-90,16,220)">V-Dem Liberal Democracy Index (LDI)</text>
+
+  <!-- X axis labels (Void Index) -->
+  <text x="76" y="382" font-size="10" fill="#64748b" text-anchor="middle" class="mono">0</text>
+  <text x="194" y="382" font-size="10" fill="#64748b" text-anchor="middle" class="mono">3</text>
+  <text x="312" y="382" font-size="10" fill="#64748b" text-anchor="middle" class="mono">6</text>
+  <text x="430" y="382" font-size="10" fill="#64748b" text-anchor="middle" class="mono">9</text>
+  <text x="548" y="382" font-size="10" fill="#64748b" text-anchor="middle" class="mono">12</text>
+  <text x="312" y="400" font-size="11" fill="#475569" font-weight="600" text-anchor="middle">Void Index</text>
+
+  <!-- Region labels -->
+  <text x="86" y="76" font-size="9" fill="#15803d" font-weight="700">DEMOCRATIC CONSTRAINT</text>
+  <text x="86" y="87" font-size="8.5" fill="#15803d">Pe &lt; 4  ·  LDI &gt; 0.6</text>
+  <text x="438" y="76" font-size="9" fill="#c0392b" font-weight="700">AUTOCRATIC VOID</text>
+  <text x="438" y="87" font-size="8.5" fill="#c0392b">Pe &gt; 4  ·  LDI &lt; 0.4</text>
+
+  <!-- Legend -->
+  <circle cx="92" cy="417" r="5" fill="#15803d"/>
+  <text x="101" y="421" font-size="9" fill="#374151">Democratic (V-Dem LDI &gt; 0.6)</text>
+  <circle cx="250" cy="417" r="5" fill="#e67e22"/>
+  <text x="259" y="421" font-size="9" fill="#374151">Transitional / eroding</text>
+  <circle cx="370" cy="417" r="5" fill="#c0392b"/>
+  <text x="379" y="421" font-size="9" fill="#374151">Phase IV autocratic</text>
+  <line x1="476" y1="417" x2="496" y2="417" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,3"/>
+  <text x="500" y="421" font-size="9" fill="#374151">linear fit</text>
+
+  <!-- Footer -->
+  <line x1="0" y1="430" x2="580" y2="430" stroke="#eef0f4" stroke-width="1"/>
+  <circle cx="16" cy="436" r="4" fill="none" stroke="#4a9eff" stroke-width="1"/>
+  <circle cx="16" cy="436" r="1.3" fill="#4a9eff"/>
+  <text x="26" y="439" font-size="9" fill="#94a3b8">moreright.xyz</text>
+  <text x="290" y="439" font-size="9" fill="#94a3b8" text-anchor="middle">Void Framework · Paper 47 · CC-BY 4.0</text>
+  <text x="574" y="439" font-size="9" fill="#94a3b8" text-anchor="end">nb_demo01 · V-Dem 2024 dataset</text>
+</svg>
