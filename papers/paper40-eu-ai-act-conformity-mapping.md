@@ -5,10 +5,10 @@ orcid: "0009-0008-1925-5253"
 affiliation: "Independent Researcher, MoreRight DAO"
 paper-number: "Paper 40"
 short-title: "EU Conformity Map"
-version: "v0.1 — working draft"
+version: "v1.0"
 date: "February 2026"
 license: "cc-by-4.0"
-zenodo-doi: "pending"
+doi: "10.5281/zenodo.18737285"
 ---
 
 ## Abstract
@@ -25,7 +25,7 @@ The EU AI Act imposes transparency, human oversight, and risk management obligat
 
 The EU AI Act entered into force on 1 August 2024. High-risk AI system obligations under Articles 9-17 applied (or are slated to apply, pending the proposed Digital Omnibus delay) to providers operating in the European market from August 2026. The legal requirements are clear: high-risk AI providers must implement a risk management system (Art. 9), maintain technical documentation (Art. 11), ensure transparency to deployers (Art. 13), enable human oversight (Art. 14), and sustain accuracy and robustness (Art. 15), all under a quality management framework (Art. 17).
 
-What the Act does not provide is a methodology for *measuring* compliance with these structural requirements. Harmonized standards — the technical specifications under which a provider can follow the Annex VI self-assessment pathway — do not yet exist for most Annex III categories. As of early 2026, one of six anticipated harmonized standard clusters has reached public enquiry stage [CITATION: CEN/CENELEC JTC 21 progress report]. This is not a minor gap: without harmonized standards, providers technically cannot invoke Annex VI and may require third-party notified body assessment (Annex VII) — but no notified bodies have been designated for AI Act purposes.
+What the Act does not provide is a methodology for *measuring* compliance with these structural requirements. Harmonized standards — the technical specifications under which a provider can follow the Annex VI self-assessment pathway — do not yet exist for most Annex III categories. As of early 2026, one of six anticipated harmonized standard clusters has reached public enquiry stage [3]. This is not a minor gap: without harmonized standards, providers technically cannot invoke Annex VI and may require third-party notified body assessment (Annex VII) — but no notified bodies have been designated for AI Act purposes.
 
 The result is a compliance infrastructure with legal obligations and no operational instruments. Companies must demonstrate conformity without a shared language for what conformity means.
 
@@ -86,7 +86,7 @@ The void framework's published methodology provides that alternative means. A vo
 
 ## III. The Void Framework: Operational Summary
 
-We provide a condensed operational summary. Full mathematical foundations are in Papers 3 and 9 [CITATION]; the empirical validation program is detailed in Papers 1-2 [CITATION].
+We provide a condensed operational summary. Full mathematical foundations are in Papers 3 and 9 [6, 10]; the empirical validation program is detailed in Papers 1-2 [4, 5].
 
 ### III.A The Three Dimensions
 
@@ -183,7 +183,7 @@ The Péclet number is the operational instrument for Art. 9. Pe is not a categor
 
 **Art. 9 compliance threshold:** Pe < 4 is necessary (not sufficient) for Art. 9 satisfaction. Pe ≥ 4 triggers elevated obligations including fundamental rights impact assessment.
 
-**Pe as lifecycle metric:** Art. 9 requires continuous risk management, not point-in-time assessment. Pe can be measured at deployment and re-measured at intervals using the standard THRML sampling protocol [CITATION: Papers 3-4]. Pe drift over time — a system whose Pe increases post-deployment — signals risk management system failure under Art. 9(6).
+**Pe as lifecycle metric:** Art. 9 requires continuous risk management, not point-in-time assessment. Pe can be measured at deployment and re-measured at intervals using the standard THRML sampling protocol [6, 7]. Pe drift over time — a system whose Pe increases post-deployment — signals risk management system failure under Art. 9(6).
 
 ### IV.F Quality Management → Art. 17
 
@@ -211,7 +211,7 @@ A void score report structured across O, R, α, and Pe, with narrative for each 
 
 ### V.A Credit Scoring — Annex III §5
 
-Credit scoring AI systems are explicitly listed in Annex III §5 as high-risk. Paper 18 [CITATION] analyzes algorithmic credit scoring as a reflexive opacity system, with the unique structural property that the subject of scoring IS the scored object — engaging with the system to understand one's score alters the score.
+Credit scoring AI systems are explicitly listed in Annex III §5 as high-risk. Paper 18 [11] analyzes algorithmic credit scoring as a reflexive opacity system, with the unique structural property that the subject of scoring IS the scored object — engaging with the system to understand one's score alters the score.
 
 **Void scores (FICO as representative system):**
 
@@ -233,7 +233,7 @@ Credit scoring AI systems are explicitly listed in Annex III §5 as high-risk. P
 
 ### V.B Education AI — Annex III §3
 
-Educational AI systems used for learning assessment are Annex III §3 high-risk. Paper 21 [CITATION] analyzes education as the framework's *positive control*: the same void architecture that produces harm in engagement-optimized platforms can produce learning when constraint specifications are applied.
+Educational AI systems used for learning assessment are Annex III §3 high-risk. Paper 21 [12] analyzes education as the framework's *positive control*: the same void architecture that produces harm in engagement-optimized platforms can produce learning when constraint specifications are applied.
 
 **Comparative scores:**
 
@@ -274,7 +274,7 @@ Representative systems (HireVue video interviewing, Workday AI recruitment) exhi
 
 A void score report can be directly mapped to the Annex IV technical documentation requirements and the Annex VI declaration of conformity. The following protocol produces documentation in a format EU regulators can consume:
 
-**Step 1 — Score the system** on O, R, α dimensions using the standard scoring protocol [CITATION: Paper 3, Appendix]. Each dimension score should be accompanied by the evidence used to determine it, organized by evidence type (design documentation, behavioral data, independent assessment).
+**Step 1 — Score the system** on O, R, α dimensions using the standard scoring protocol [6]. Each dimension score should be accompanied by the evidence used to determine it, organized by evidence type (design documentation, behavioral data, independent assessment).
 
 **Step 2 — Calculate Pe** using the canonical parameter values (b_α=0.867, b_γ=2.244) [Paper 4D]. Pe determines which Art. 9 risk tier applies.
 
@@ -282,7 +282,7 @@ A void score report can be directly mapped to the Annex IV technical documentati
 
 **Step 4 — Populate Annex IV** technical documentation. Each Annex IV element has a corresponding framework instrument (see IV.F table above).
 
-**Step 5 — Produce the Annex VI declaration.** Under Art. 16(a) and Annex VI, the declaration must identify: (a) the AI system, (b) the provider, (c) the conformity assessment procedure followed, and (d) a statement that all relevant Art. 9-15 requirements are met. The conformity assessment procedure under (c) should reference this paper [CITATION] as the published methodology applied.
+**Step 5 — Produce the Annex VI declaration.** Under Art. 16(a) and Annex VI, the declaration must identify: (a) the AI system, (b) the provider, (c) the conformity assessment procedure followed, and (d) a statement that all relevant Art. 9-15 requirements are met. The conformity assessment procedure under (c) should reference this paper [Eckert 2026, Paper 40] as the published methodology applied.
 
 **Step 6 — Register Pe monitoring.** Art. 9 requires *continuous* risk management. Specify the monitoring interval (recommended: quarterly Pe re-assessment for Phase III-IV systems), the threshold that triggers reassessment (Pe increase > 1.0), and the response protocol.
 
@@ -336,23 +336,23 @@ The following predictions are falsifiable and registered against the void framew
 
 [3] CEN/CENELEC JTC 21. "Artificial Intelligence — Standardization Work Programme for the EU AI Act." Progress report, 2025.
 
-[4] Eckert, A. "The Architecture of Drift." MoreRight DAO Research Series, Paper 1. Zenodo, 2025. https://doi.org/[DOI]
+[4] Eckert, A. "The Architecture of Drift." MoreRight DAO Research Series, Paper 1. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716775
 
-[5] Eckert, A. "The Shape of the Cage: AI Safety Through the Void Framework Lens." MoreRight DAO Research Series, Paper 2. Zenodo, 2025. https://doi.org/[DOI]
+[5] Eckert, A. "The Shape of the Cage: AI Safety Through the Void Framework Lens." MoreRight DAO Research Series, Paper 2. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716777
 
-[6] Eckert, A. "Thermodynamics of Opacity: A Physics-Grounded Theory of Attentional Drift." MoreRight DAO Research Series, Paper 3. Zenodo, 2025. https://doi.org/[DOI]
+[6] Eckert, A. "Thermodynamics of Opacity: A Physics-Grounded Theory of Attentional Drift." MoreRight DAO Research Series, Paper 3. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716781
 
-[7] Eckert, A. "Information-Geometric Bounds on Thermodynamic Sampling Under Structural Constraint." MoreRight DAO Research Series, Paper 4. Zenodo, 2025. https://doi.org/[DOI]
+[7] Eckert, A. "Information-Geometric Bounds on Thermodynamic Sampling Under Structural Constraint." MoreRight DAO Research Series, Paper 4. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716783
 
-[8] Eckert, A. "The Canonical Parameters: Substrate-Universal THRML Constants." MoreRight DAO Research Series, Paper 4D. Zenodo, 2026. https://doi.org/[pending]
+[8] Eckert, A. "The Canonical Parameters: Substrate-Universal THRML Constants." MoreRight DAO Research Series, Paper 4D. Zenodo, 2026. https://doi.org/10.5281/zenodo.18716785
 
-[9] Eckert, A. "The Ground State of Observation: A Theory of Everything for Attentional Drift." MoreRight DAO Research Series, Paper 5. Zenodo, 2025. https://doi.org/[DOI]
+[9] Eckert, A. "The Ground State of Observation: A Theory of Everything for Attentional Drift." MoreRight DAO Research Series, Paper 5. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716790
 
-[10] Eckert, A. "Voidspace: The Eckert Manifold and Substrate Independence." MoreRight DAO Research Series, Paper 9. Zenodo, 2025. https://doi.org/[DOI]
+[10] Eckert, A. "Voidspace: The Eckert Manifold and Substrate Independence." MoreRight DAO Research Series, Paper 9. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716800
 
-[11] Eckert, A. "The Score Punished Me: Algorithmic Credit Scoring as Reflexive Opacity." MoreRight DAO Research Series, Paper 18. Zenodo, 2026. https://doi.org/[pending]
+[11] Eckert, A. "The Score Punished Me: Algorithmic Credit Scoring as Reflexive Opacity." MoreRight DAO Research Series, Paper 18. Zenodo, 2026. https://doi.org/10.5281/zenodo.18717286
 
-[12] Eckert, A. "The Guru Problem: Education, Void Architecture, and the Constraint Specification." MoreRight DAO Research Series, Paper 21. Zenodo, 2026. https://doi.org/[pending]
+[12] Eckert, A. "The Guru Problem: Education, Void Architecture, and the Constraint Specification." MoreRight DAO Research Series, Paper 21. Zenodo, 2026. https://doi.org/10.5281/zenodo.18717288
 
 [13] Eckert, A. "The Resume Trap: Employment Screening AI and Fundamental Rights." MoreRight DAO Research Series, Paper 21B. MoreRight DAO, 2026 (forthcoming).
 
