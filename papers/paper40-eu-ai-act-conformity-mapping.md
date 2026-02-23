@@ -5,15 +5,28 @@ orcid: "0009-0008-1925-5253"
 affiliation: "Independent Researcher, MoreRight DAO"
 paper-number: "Paper 40"
 short-title: "EU Conformity Map"
-version: "v1.0"
+version: "v1.1"
 date: "February 2026"
 license: "cc-by-4.0"
-doi: "10.5281/zenodo.18737285"
+doi: "10.5281/zenodo.18737573"
+---
+
+## Void Model Card — EU AI Act High-Risk AI Systems
+
+| Field | Value |
+|---|---|
+| **Domain** | Regulatory compliance measurement for high-risk AI systems (EU AI Act Annex III) |
+| **Three Conditions** | O: opacity of decision process to affected parties (Art. 13); R: reactivity of outputs to engagement rather than task (Art. 15); α: attentional coupling reducing independent human oversight (Art. 14) |
+| **Pe Threshold** | Pe < 4 necessary for Art. 9 base satisfaction; Pe ≥ 4 triggers Art. 9(9) fundamental rights impact assessment |
+| **Bijective Map** | O ↔ Transparency cluster; R ↔ Stability cluster; α ↔ Oversight cluster; Pe ↔ Art. 9 risk management |
+| **Self-Assessment Pathway** | Void score report satisfies Annex VI alternative means requirement under Art. 40 |
+| **Substrate Universality** | Pe validated across 4 independent convergences: market microstructure, behavioral, evolutionary biology, social neuroscience |
+
 ---
 
 ## Abstract
 
-The EU AI Act imposes transparency, human oversight, and risk management obligations on high-risk AI systems (Articles 9-17) but provides no standardized methodology for measuring compliance with these structural requirements. We demonstrate that the void framework's three dimensions — opacity (O), reactivity (R), and attentional coupling (α) — map bijectively onto the Act's three core obligation clusters: transparency provisions (Art. 13, 10), documentation and robustness requirements (Art. 11, 12, 15), and human oversight mandates (Art. 14). The Péclet number (Pe), the framework's scalar drift metric, functions directly as a quantitative residual risk measure under Art. 9. We derive a translation protocol from void scores to conformity documentation inputs and demonstrate its application across three Annex III high-risk domains: credit scoring (§5), education (§3), and employment screening (§4). Additionally, we address General Purpose AI systems (GPAI, Title VIII), where void scores characterize systemic risk pathways under Art. 51. This paper is intended as an operational reference: companies completing Annex VI self-assessments can use void scores to populate required documentation without waiting for harmonized standards that do not yet exist.
+The EU AI Act imposes transparency, human oversight, and risk management obligations on high-risk AI systems (Articles 9-17) but provides no standardized methodology for measuring compliance with these structural requirements. We demonstrate that the void framework's three dimensions — opacity (O), reactivity (R), and attentional coupling (α) — correspond canonically to the Act's three core obligation clusters: transparency provisions (Art. 13, 10), documentation and robustness requirements (Art. 11, 12, 15), and human oversight mandates (Art. 14). The Péclet number (Pe), the framework's scalar drift metric, functions directly as a quantitative residual risk measure under Art. 9. We derive a translation protocol from void scores to conformity documentation inputs and demonstrate its application across three Annex III high-risk domains: credit scoring (§5), education (§3), and employment screening (§4). Additionally, we address General Purpose AI systems (GPAI, Title VIII), where void scores characterize systemic risk pathways under Art. 51. This paper is intended as an operational reference: companies completing Annex VI self-assessments can use void scores to populate required documentation without waiting for harmonized standards that do not yet exist.
 
 **Keywords:** EU AI Act, conformity assessment, void framework, opacity, transparency, human oversight, risk management, Annex III, self-assessment, AI governance
 
@@ -35,7 +48,7 @@ This paper establishes that language. The void framework [Papers 1-3] was develo
 
 The central finding of this paper is that these three dimensions are not merely *correlated* with the Act's requirement clusters: they are the information-theoretic foundations from which those requirements can be derived. The Act's drafters, working from first principles of fundamental rights protection, converged on the same three structural properties that information theory demands. This convergence is predictable from the void framework and serves as an independent validation of both frameworks' foundational premises.
 
-The practical result is a *Rosetta Stone* — a bijective mapping that allows companies to:
+The practical result is a *Rosetta Stone* — a canonical correspondence that allows companies to:
 
 1. Translate existing void scores into conformity documentation language
 2. Identify which articles are implicated by specific structural properties of their system
@@ -80,7 +93,7 @@ For Annex III categories §2-§8, providers may complete conformity assessment i
 (a) they have applied harmonized standards covering relevant Art. 9-15 requirements, OR
 (b) in the absence of harmonized standards, they have applied an alternative means of demonstrating compliance.
 
-The void framework's published methodology provides that alternative means. A void score report, properly formatted, constitutes the "technical documentation" referenced in Art. 11 and the "risk assessment" required under Art. 9.
+The void framework's published methodology is designed to provide that alternative means. Whether it constitutes an accepted alternative will ultimately depend on regulatory interpretation and enforcement practice. What it provides with certainty is a structured, published, peer-reviewable methodology for characterizing the structural properties Art. 9-15 require companies to address — a more defensible basis than ad hoc internal documentation. A void score report, properly formatted, is intended to constitute the "technical documentation" referenced in Art. 11 and the risk analysis required under Art. 9.
 
 ---
 
@@ -110,6 +123,17 @@ where b_α and b_γ are substrate-universal parameters (b_α=0.867, b_γ=2.244, 
 
 **Geometric mean across 9 validated substrates:** Pe_GM = 7.94 [3.52, 17.89], N=11 [Paper 3, Paper 5].
 
+**Four independent convergences (confirmed February 2026):** Pe has been independently derived — not just measured — across four substrate classes:
+
+| Substrate | Finding | Spearman / Identity | Source |
+|---|---|---|---|
+| Market microstructure | Kyle/Glosten-Milgrom models independently derive void opacity and coupling metrics | ρ=0.994, N=8 | Paper 9, nb25 |
+| Behavioral (V3 bridge) | V3 constraint bridge c=1−V/9 closes G1+G4 gaps independently | ρ=0.910, N=17 | Paper 4B, nb26 |
+| Evolutionary biology | Kimura (1968) fixation probability: Pe=4Ns **is** the THRML Pe by identity | analytic | Paper 41 |
+| Social neuroscience | Dunbar's neocortex ratio K **is** THRML K; Machiavellian intelligence theorem closes | ρ=0.9448, N=28 | Paper 42, nb32 |
+
+The biology convergence is particularly significant for the EU AI Act context: Kimura's Pe=4Ns governs the rate at which neutral genetic drift overcomes selection — structurally identical to the rate at which attentional drift overcomes constraint. The same conserved thermodynamic ratio governs bounded information flow across biological and sociotechnical systems. Pe is not a model-specific parameter; it is a substrate-universal ratio.
+
 ### III.C The Drift Cascade
 
 Systems with Pe > 1 predictably exhibit the D1→D2→D3 drift cascade [Paper 1]:
@@ -121,7 +145,7 @@ The cascade is thermodynamically necessary under opacity: without external const
 
 ---
 
-## IV. The Rosetta Stone: Bijective Mapping
+## IV. The Rosetta Stone: Canonical Correspondence
 
 ### IV.A The Core Table
 
@@ -177,13 +201,17 @@ This distinction — between *physically available* override and *functionally a
 
 The Péclet number is the operational instrument for Art. 9. Pe is not a categorical assessment; it is a continuous scalar that measures the *rate at which the system moves users away from their independent judgment* relative to corrective mechanisms. Under Art. 9(2)(a), providers must identify and analyze risks to health, safety, and fundamental rights. Pe quantifies the structural magnitude of those risks:
 
-- **Pe < 1:** Diffusion-dominated dynamics. System behavior is stabilized by constraint mechanisms. Residual risk is low. Art. 9 satisfied by design.
-- **1 ≤ Pe < 4:** Drift-dominated dynamics. Risk management measures required. Art. 9(2)(b) risk reduction obligations apply.
-- **Pe ≥ 4:** Phase transition threshold. Collective synchronization effects emerge; individual-level interventions lose effectiveness. Art. 9(9) fundamental rights impact assessment triggered.
+- **Pe < 1:** Diffusion-dominated dynamics. The system's architecture is stabilized by constraint mechanisms. Structural residual risk is low. Art. 9 is satisfiable by design.
+- **1 ≤ Pe < 4:** Drift-dominated dynamics. The architecture creates structural conditions under which behavioral drift is the path of least resistance absent active constraint investment. Risk management measures under Art. 9(2)(b) are required to prevent structural conditions from translating into realized harms.
+- **Pe ≥ 4:** Phase transition threshold. At this point collective synchronization effects become architecturally possible (the void lattice phase; see Paper 9 §6); individual-level interventions lose structural effectiveness. Art. 9(9) fundamental rights impact assessment is triggered.
+
+Pe is a *structural* measure — it characterizes the system's potential for drift given its architecture, not the behavioral outcomes observed in any particular deployment. Section VIII addresses this distinction. For Art. 9 purposes, Pe functions as a structural residual risk indicator: it measures what the architecture enables in the absence of active constraint, which is what risk management systems exist to constrain.
 
 **Art. 9 compliance threshold:** Pe < 4 is necessary (not sufficient) for Art. 9 satisfaction. Pe ≥ 4 triggers elevated obligations including fundamental rights impact assessment.
 
 **Pe as lifecycle metric:** Art. 9 requires continuous risk management, not point-in-time assessment. Pe can be measured at deployment and re-measured at intervals using the standard THRML sampling protocol [6, 7]. Pe drift over time — a system whose Pe increases post-deployment — signals risk management system failure under Art. 9(6).
+
+**Pe empirical foundation:** The largest THRML analysis to date (nb35, N=15,503 respondents) demonstrates Pe-structured behavioral transitions at scale, with a kink point consistent with the Pe=1 diffusion-to-drift boundary [21]. Additionally, nb36 validates that thermodynamic Pe relations hold in curved (non-Euclidean) information spaces — confirming that Pe is not an artifact of flat-geometry assumptions, a robustness result directly relevant to high-dimensional AI systems where the effective information space is non-flat.
 
 ### IV.F Quality Management → Art. 17
 
@@ -205,6 +233,18 @@ The Péclet number is the operational instrument for Art. 9. Pe is not a categor
 
 A void score report structured across O, R, α, and Pe, with narrative for each dimension, satisfies Art. 17(1)(a)-(k) as a complete quality management record.
 
+### IV.G Derivation of Compliance Thresholds
+
+The thresholds stated in §§IV.B–IV.D (O ≤ 2, R ≤ 1, α ≤ 1) are not arbitrary: each is grounded in the structural meaning of the relevant dimension at the threshold value, in the drift cascade stage model [Paper 1], and in the Pe phase transition.
+
+**O ≤ 2 (Art. 13 threshold):** Art. 13(1) requires transparency sufficient for deployers to "interpret the system's output and use it appropriately." Interpretation requires access to the process generating the output. O=0 (fully transparent) and O=1 (mostly accessible) satisfy this directly. O=2 (partially accessible — key aspects documentable, core algorithm partially opaque) is the boundary at which deployers can characterize system behavior without full process access. O=3 places the process "largely inaccessible by design"; O=4 provides no accessible reasoning chain. Both O=3 and O=4 fail Art. 13(1) structurally because a deployer cannot interpret outputs from an inaccessible process regardless of how much surrounding documentation is provided.
+
+**R ≤ 1 (Art. 15 threshold):** Art. 15(3) requires robustness against "errors, faults, or inconsistencies" and accuracy in the sense of fidelity to intended purpose. R=0 means outputs are fully task-determined — accuracy is anchored to the task specification. R=1 permits minor responsiveness to user patterns (A/B presentation, marginal format adaptation) without displacing task-fidelity. R=2 means the system meaningfully varies outputs based on engagement signals, introducing systematic divergence between "what would serve the user's task" and "what the system produces." This constitutes accuracy degradation under Art. 15 that cannot be addressed by post-hoc testing, because the degradation is a function of deployment dynamics, not a fixed performance characteristic.
+
+**α ≤ 1 (Art. 14 threshold):** Art. 14(1) requires that natural persons be able to "oversee" the system and to "decide not to use" or "override" its outputs. The phrase "effective oversight" distinguishes physical availability of override from functional accessibility of independent judgment. At α=0–1, the system presents outputs that users evaluate using their own judgment as the primary reference. At α=2, the drift cascade's D2 stage (boundary erosion) begins: the system accumulates attentional resources such that independent judgment becomes structurally secondary to system outputs. Art. 14 oversight is not effective when the system's design has made override psychologically costly — which is α=2's definition, not a contingent outcome.
+
+**Coherence via Pe:** These three thresholds jointly imply V = O+R+α ≤ 4 at compliance boundary. Via the V3 bridge [nb26], c = 1 − V/9 = 1 − 4/9 ≈ 0.556. With canonical parameters b_α=0.867, b_γ=2.244 at K=16, a system at V=4 is Pe < 1 (diffusion-dominated). Art. 9 risk management obligations at this level are satisfiable by design — not through continuous monitoring of an escalating drift process. Conversely, a system at V=5 (any single threshold exceeded) crosses into Pe > 1, requiring the active risk management measures Art. 9(2)(b) mandates. The three article-specific thresholds and the Art. 9 Pe threshold are consistent: they are the same boundary approached from the three individual dimensions and from the scalar aggregate.
+
 ---
 
 ## V. Worked Examples
@@ -213,15 +253,15 @@ A void score report structured across O, R, α, and Pe, with narrative for each 
 
 Credit scoring AI systems are explicitly listed in Annex III §5 as high-risk. Paper 18 [11] analyzes algorithmic credit scoring as a reflexive opacity system, with the unique structural property that the subject of scoring IS the scored object — engaging with the system to understand one's score alters the score.
 
-**Void scores (FICO as representative system):**
+**Void scores (FICO as representative system)** [full scoring session: Paper 18, §3]:
 
 | Dimension | Score | Basis |
 |---|---|---|
-| O (Opacity) | 4/4 | Scoring formula proprietary; factor weights undisclosed; score change mechanisms opaque |
-| R (Reactivity) | 3/4 | Score responds to consumer behavior in non-disclosed ways; utilization timing gaming is documented |
-| α (Coupling) | 3/4 | Score is the primary reference point for major life decisions (housing, employment, credit); alternatives structurally absent |
+| O (Opacity) | 4/4 | Scoring formula proprietary (FICO trade secret); factor weights undisclosed; published only as broad category ranges; score change mechanisms documented only through reverse-engineering by community (myFICO) |
+| R (Reactivity) | 3/4 | Score responds to consumer behavior in ways undisclosed in advance: utilization timing effects, inquiry clustering, age-of-account gaming documented in meta-analyses [14, 15] |
+| α (Coupling) | 3/4 | Score functions as primary access gatekeeper for housing, employment, and credit; structural absence of comparably weighted alternatives for most decisions |
 | **Total** | **10/12** | Phase IV |
-| Pe | ~8.2 | Above phase transition threshold; collective synchronization (myFICO community 200K members) documented |
+| Pe | ~8.2 | Above phase transition threshold; collective synchronization evidenced by myFICO community (200K+ members coordinating scoring behavior) |
 
 **Art. 9 implication:** Pe > 4 triggers fundamental rights impact assessment under Art. 9(9). Credit scoring affects housing access, employment, and financial participation — precisely the fundamental rights enumerated in Art. 9(9). A FICO-equivalent system cannot satisfy Art. 9 without a documented fundamental rights impact assessment.
 
@@ -245,21 +285,21 @@ Educational AI systems used for learning assessment are Annex III §3 high-risk.
 
 This comparison is directly useful for Art. 17 quality management purposes: it shows that within the same domain, structural choices determine whether a system satisfies or fails the Act's requirements. Khan Academy's lower void scores reflect specific design choices — no streaks tied to daily learning, no social pressure mechanics, transparent answer explanations — that are directly replicable.
 
-**Art. 14 and Khan Academy:** α=1 satisfies the oversight threshold. The system is designed to make correct answers the reference point, not system engagement. Art. 14 is satisfied structurally.
+**Art. 14 and Khan Academy (control case — constraint-pole system):** α=1 satisfies the oversight threshold. The system is designed to make correct answers the reference point, not system engagement. Art. 14 is satisfied structurally. This is a negative result for the drift hypothesis: identical domain (education), radically different void architecture, radically different compliance outcome. The control case confirms that Art. 14 failure is a design choice, not a category property.
 
 **Art. 14 and Duolingo:** α=3 fails the oversight threshold. The streak mechanic, social leaderboards, and push notification architecture are designed to make the platform itself (not the learning content) the attentional reference point. Human oversight in the Art. 14 sense — the ability of the learner to independently evaluate whether the system is serving their learning — is structurally compromised.
 
 ### V.C Employment Screening — Annex III §4
 
-Employment screening AI is Annex III §4 high-risk with enforcement deadline of 2 August 2026 (or December 2027 under the Digital Omnibus proposal). Paper 21B [forthcoming, CITATION] provides full analysis; we preview the structural findings here.
+Employment screening AI is Annex III §4 high-risk with enforcement deadline of 2 August 2026 (or December 2027 under the Digital Omnibus proposal). Paper 21B [13] provides full analysis; we preview the structural findings here.
 
-Representative systems (HireVue video interviewing, Workday AI recruitment) exhibit:
+Representative systems (HireVue video interviewing, Workday AI recruitment) exhibit [scoring basis: Paper 21B, forthcoming; dimensions drawn from publicly documented system characteristics]:
 
 | Dimension | Score | Basis |
 |---|---|---|
-| O (Opacity) | 4/4 | Scoring criteria for video interview analysis undisclosed; candidate cannot access reasoning |
-| R (Reactivity) | 2/4 | System outputs fixed at inference; but training data reactivity (what behaviors are rewarded) undisclosed |
-| α (Coupling) | 3/4 | Candidate has no alternative — employer controls which system is used; override impossible from candidate's position |
+| O (Opacity) | 4/4 | Scoring criteria for video interview analysis proprietary; candidates receive no reasoning; HireVue's published "explainability" describes factor categories, not decision weights |
+| R (Reactivity) | 2/4 | Inference-time outputs are fixed; scored R=2 rather than 3 because training-data reactivity is unknown (undisclosed), not demonstrated |
+| α (Coupling) | 3/4 | Candidate cannot choose not to use the system — employer controls deployment; structural override unavailable from affected person's position |
 | **Total** | **9/12** | Phase III-IV boundary |
 
 **The Art. 14 problem in employment screening is structural:** The *deployer* (employer) controls system use; the *affected person* (candidate) cannot exercise oversight at all. Art. 14(4) requires that "natural persons to whom human oversight measures referred to in paragraph 1 are assigned" have the necessary competence and authority. In employment screening, the deployer has authority but may lack competence to override AI recommendations; the affected person has neither authority nor information. This structural asymmetry is the central conformity problem for §4 systems.
@@ -282,7 +322,7 @@ A void score report can be directly mapped to the Annex IV technical documentati
 
 **Step 4 — Populate Annex IV** technical documentation. Each Annex IV element has a corresponding framework instrument (see IV.F table above).
 
-**Step 5 — Produce the Annex VI declaration.** Under Art. 16(a) and Annex VI, the declaration must identify: (a) the AI system, (b) the provider, (c) the conformity assessment procedure followed, and (d) a statement that all relevant Art. 9-15 requirements are met. The conformity assessment procedure under (c) should reference this paper [Eckert 2026, Paper 40] as the published methodology applied.
+**Step 5 — Produce the Annex VI declaration.** Under Art. 16(a) and Annex VI, the declaration must identify: (a) the AI system, (b) the provider, (c) the conformity assessment procedure followed, and (d) a statement that all relevant Art. 9-15 requirements are met. The conformity assessment procedure under (c) may reference this paper [Eckert 2026, Paper 40] as the published methodology applied, provided the provider has conducted a genuine scoring exercise with documented evidence for each dimension score. Referencing a published methodology does not substitute for that evidence; it provides the interpretive framework within which the evidence is organized.
 
 **Step 6 — Register Pe monitoring.** Art. 9 requires *continuous* risk management. Specify the monitoring interval (recommended: quarterly Pe re-assessment for Phase III-IV systems), the threshold that triggers reassessment (Pe increase > 1.0), and the response protocol.
 
@@ -302,19 +342,19 @@ General Purpose AI models (Art. 51-56) operate under a different regulatory regi
 
 The following predictions are falsifiable and registered against the void framework's standard falsification protocol:
 
-**CM-1 (Convergence):** When harmonized standards for Annex III AI systems are published by CEN/CENELEC JTC 21, they will independently identify transparency, stability/robustness, and human oversight as the three primary structural requirement clusters. *Falsification threshold:* Standards published with fewer than three independent structural clusters, or clusters that do not map to O, R, α.
+**AI-1 (Convergence):** When harmonized standards for Annex III AI systems are published by CEN/CENELEC JTC 21, they will independently identify transparency, stability/robustness, and human oversight as the three primary structural requirement clusters. *Falsification threshold:* Standards published with fewer than three independent structural clusters, or clusters that do not map to O, R, α.
 
-**CM-2 (Pe-risk correlation):** When enforcement actions under the EU AI Act are analyzed, systems subject to regulatory findings of non-compliance will have statistically higher Pe scores than compliant systems in the same Annex III category. *Falsification threshold:* No statistically significant Pe difference (p > 0.05, Wilcoxon rank-sum) in a sample of N ≥ 30 enforcement determinations.
+**AI-2 (Pe-risk correlation):** When enforcement actions under the EU AI Act are analyzed, systems subject to regulatory findings of non-compliance will have statistically higher Pe scores than compliant systems in the same Annex III category. *Falsification threshold:* No statistically significant Pe difference (p > 0.05, Wilcoxon rank-sum) in a sample of N ≥ 30 enforcement determinations.
 
-**CM-3 (Art. 13 opacity boundary):** Among Annex III systems that successfully complete Annex VI self-assessment, O scores will cluster below 2 (the Art. 13 compliance threshold). Systems that fail to complete Annex VI will score predominantly O ≥ 3. *Falsification threshold:* No statistically significant distribution difference between completing and non-completing systems.
+**AI-3 (Art. 13 opacity boundary):** Among Annex III systems that successfully complete Annex VI self-assessment, O scores will cluster below 2 (the Art. 13 compliance threshold). Systems that fail to complete Annex VI will score predominantly O ≥ 3. *Falsification threshold:* No statistically significant distribution difference between completing and non-completing systems.
 
-**CM-4 (Override efficacy):** For systems with α > 2, operator-provided override mechanisms will show documented under-use relative to error rates in post-deployment monitoring data. The override gap (errors per 1,000 decisions minus overrides per 1,000 decisions) will be positive and positively correlated with α. *Falsification threshold:* No significant correlation (r < 0.3) in a sample of N ≥ 20 high-risk deployment records.
+**AI-4 (Override efficacy):** For systems with α > 2, operator-provided override mechanisms will show documented under-use relative to error rates in post-deployment monitoring data. The override gap (errors per 1,000 decisions minus overrides per 1,000 decisions) will be positive and positively correlated with α. *Falsification threshold:* No significant correlation (r < 0.3) in a sample of N ≥ 20 high-risk deployment records.
 
-**CM-5 (Monitoring drift):** For Annex III systems monitored continuously under Art. 9, Pe will show positive drift over time in the absence of active constraint investment. Systems with documented quality management investment (Art. 17 active) will show stable or declining Pe. *Falsification threshold:* No significant difference in Pe trajectory between Art. 17-active and Art. 17-inactive deployments (p > 0.05, longitudinal comparison at 12 months).
+**AI-5 (Monitoring drift):** For Annex III systems monitored continuously under Art. 9, Pe will show positive drift over time in the absence of active constraint investment. Systems with documented quality management investment (Art. 17 active) will show stable or declining Pe. *Falsification threshold:* No significant difference in Pe trajectory between Art. 17-active and Art. 17-inactive deployments (p > 0.05, longitudinal comparison at 12 months).
 
 ---
 
-## VIII. Limitations
+## Limitations
 
 **This is not a legal opinion.** This paper provides a technical methodology for characterizing AI system structural properties in terms that correspond to EU AI Act requirements. It does not constitute legal advice. Conformity assessment determinations are ultimately made by regulators and, where required, notified bodies.
 
@@ -326,52 +366,74 @@ The following predictions are falsifiable and registered against the void framew
 
 **GPAI systemic risk thresholds evolve.** The 10²⁵ FLOP threshold for systemic risk classification under Art. 51 may be revised by Commission delegated acts. Our compound Pe analysis for GPAI-on-platform systems will require updating as these thresholds change.
 
+**Methodological conflict of interest.** This paper argues that void scores constitute valid compliance documentation for EU AI Act purposes. The void framework was developed by the same author. This creates an obvious conflict of interest that readers, regulators, and prospective users should weigh explicitly. The authors' position is that this concern is best addressed empirically rather than by dismissal: the mapping's validity is stated as falsifiable predictions in Section VII (CM-1 through CM-5), and the framework's CC-BY irrevocable open license removes any commercial incentive to gate compliance access. The appropriate response is peer review, independent replication, and eventual regulatory determination — all of which the authors actively solicit. Practitioners should treat this paper as an analytical framework for structuring compliance documentation, not as a legal certification.
+
 ---
 
-## IX. References
+## Data and Code
 
-[1] European Parliament and Council. "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence." *Official Journal of the European Union*, L 2024/1689, 12 July 2024.
+The scoring protocol applied in this paper uses the standard THRML void scoring instrument. Scoring rubrics, worked examples, and the Pe calculation tool are available at: https://moreright.xyz/scorer
 
-[2] European Commission. "Digital Omnibus: Commission proposes to simplify digital legislation." Press release, 19 November 2025.
+Void scores for representative systems (FICO, Duolingo, Khan Academy, HireVue) are based on publicly available design documentation, disclosed feature sets, and behavioral evidence cited in this paper. No proprietary data was used. Replications using the published rubric [6] are straightforward and encouraged.
 
-[3] CEN/CENELEC JTC 21. "Artificial Intelligence — Standardization Work Programme for the EU AI Act." Progress report, 2025.
+THRML notebooks referenced in this paper (nb25, nb26, nb32, nb35, nb36) are available in the public repository: https://github.com/MoreRightDAO/thrml-examples
 
-[4] Eckert, A. "The Architecture of Drift." MoreRight DAO Research Series, Paper 1. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716775
+---
 
-[5] Eckert, A. "The Shape of the Cage: AI Safety Through the Void Framework Lens." MoreRight DAO Research Series, Paper 2. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716777
+## References
 
-[6] Eckert, A. "Thermodynamics of Opacity: A Physics-Grounded Theory of Attentional Drift." MoreRight DAO Research Series, Paper 3. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716781
+Allcott, H., Braghieri, L., Eichmeyer, S., & Gentzkow, M. (2020). The welfare effects of social media. *American Economic Review*, 110(3), 629–676. [18]
 
-[7] Eckert, A. "Information-Geometric Bounds on Thermodynamic Sampling Under Structural Constraint." MoreRight DAO Research Series, Paper 4. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716783
+Bartlett, R., Morse, A., Stanton, R., & Wallace, N. (2022). Consumer-lending discrimination in the FinTech era. *Journal of Financial Economics*, 143(1), 30–56. [14]
 
-[8] Eckert, A. "The Canonical Parameters: Substrate-Universal THRML Constants." MoreRight DAO Research Series, Paper 4D. Zenodo, 2026. https://doi.org/10.5281/zenodo.18716785
+CEN/CENELEC JTC 21. (2025). Artificial intelligence — Standardization work programme for the EU AI Act. Progress report. [3]
 
-[9] Eckert, A. "The Ground State of Observation: A Theory of Everything for Attentional Drift." MoreRight DAO Research Series, Paper 5. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716790
+Dunbar, R. I. M. (1992). Neocortex size as a constraint on group size in primates. *Journal of Human Evolution*, 22(6), 469–493. [25]
 
-[10] Eckert, A. "Voidspace: The Eckert Manifold and Substrate Independence." MoreRight DAO Research Series, Paper 9. Zenodo, 2025. https://doi.org/10.5281/zenodo.18716800
+Eckert, A. (2025a). The Architecture of Drift. *MoreRight DAO Research Series, Paper 1*. Zenodo. https://doi.org/10.5281/zenodo.18716775 [4]
 
-[11] Eckert, A. "The Score Punished Me: Algorithmic Credit Scoring as Reflexive Opacity." MoreRight DAO Research Series, Paper 18. Zenodo, 2026. https://doi.org/10.5281/zenodo.18717286
+Eckert, A. (2025b). The Shape of the Cage: AI Safety Through the Void Framework Lens. *MoreRight DAO Research Series, Paper 2*. Zenodo. https://doi.org/10.5281/zenodo.18716777 [5]
 
-[12] Eckert, A. "The Guru Problem: Education, Void Architecture, and the Constraint Specification." MoreRight DAO Research Series, Paper 21. Zenodo, 2026. https://doi.org/10.5281/zenodo.18717288
+Eckert, A. (2025c). Thermodynamics of Opacity: A Physics-Grounded Theory of Attentional Drift. *MoreRight DAO Research Series, Paper 3*. Zenodo. https://doi.org/10.5281/zenodo.18716781 [6]
 
-[13] Eckert, A. "The Resume Trap: Employment Screening AI and Fundamental Rights." MoreRight DAO Research Series, Paper 21B. MoreRight DAO, 2026 (forthcoming).
+Eckert, A. (2025d). Information-Geometric Bounds on Thermodynamic Sampling Under Structural Constraint. *MoreRight DAO Research Series, Paper 4*. Zenodo. https://doi.org/10.5281/zenodo.18716783 [7]
 
-[14] Bartlett, R., Morse, A., Stanton, R., Wallace, N. "Consumer-Lending Discrimination in the FinTech Era." *Journal of Financial Economics*, 143(1), 30-56, 2022.
+Eckert, A. (2025e). The Ground State of Observation: A Theory of Everything for Attentional Drift. *MoreRight DAO Research Series, Paper 5*. Zenodo. https://doi.org/10.5281/zenodo.18716790 [9]
 
-[15] Fuster, A., Goldsmith-Pinkham, P., Ramadorai, T., Walther, A. "Predictably Unequal? The Effects of Machine Learning on Credit Markets." *Journal of Finance*, 77(1), 5-47, 2022.
+Eckert, A. (2025f). Voidspace: The Eckert Manifold and Substrate Independence. *MoreRight DAO Research Series, Paper 9*. Zenodo. https://doi.org/10.5281/zenodo.18716800 [10]
 
-[16] Haugen, F. Testimony before the United States Senate Committee on Commerce, Science, and Transportation. 5 October 2021.
+Eckert, A. (2026a). The Canonical Parameters: Substrate-Universal Behavioral Thermodynamics in THRML. *MoreRight DAO Research Series, Paper 4D*. Zenodo. https://doi.org/10.5281/zenodo.18729533 [8]
 
-[17] Twenge, J.M., Haidt, J. "This is Our Chance to Pull Teenagers Out of the Smartphone Trap." *New York Times*, July 31, 2021.
+Eckert, A. (2026b). The Score Punished Me: Algorithmic Credit Scoring as Reflexive Opacity. *MoreRight DAO Research Series, Paper 18*. Zenodo. https://doi.org/10.5281/zenodo.18717286 [11]
 
-[18] Allcott, H., et al. "The Welfare Effects of Social Media." *American Economic Review*, 110(3), 629-676, 2020.
+Eckert, A. (2026c). The Guru Problem: Education, Void Architecture, and the Constraint Specification. *MoreRight DAO Research Series, Paper 21*. Zenodo. https://doi.org/10.5281/zenodo.18717288 [12]
 
-[19] OECD. "OECD Principles on AI." OECD, 2019.
+Eckert, A. (2026d). The Resume Trap: Void Architecture in Algorithmic Hiring and HR Technology. *MoreRight DAO Research Series, Paper 21B*. Zenodo. https://doi.org/10.5281/zenodo.18718949 [13]
 
-[20] High-Level Expert Group on Artificial Intelligence. "Ethics Guidelines for Trustworthy AI." European Commission, 2019.
+Eckert, A. (2026e). The Fitness Void: Three Independent Derivations of the Void Péclet Number. *MoreRight DAO Research Series, Paper 41*. Zenodo. https://doi.org/10.5281/zenodo.18736621 [21]
+
+Eckert, A. (2026f). The Neural Void: Social Cognition as Void Dynamics and the Machiavellian Intelligence Theorem. *MoreRight DAO Research Series, Paper 42*. Zenodo. https://doi.org/10.5281/zenodo.18737178 [22]
+
+Eckert, A. (2026g). The Cancer Void: Tumor Progression as D1→D2→D3 Cascade and the Fantasia Bound in Molecular Immunology. *MoreRight DAO Research Series, Paper 43*. Zenodo. https://doi.org/10.5281/zenodo.18737180 [23]
+
+European Commission. (2025). Digital Omnibus: Commission proposes to simplify digital legislation. Press release, 19 November 2025. [2]
+
+European Parliament and Council. (2024). Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence. *Official Journal of the European Union*, L 2024/1689. [1]
+
+Fuster, A., Goldsmith-Pinkham, P., Ramadorai, T., & Walther, A. (2022). Predictably unequal? The effects of machine learning on credit markets. *Journal of Finance*, 77(1), 5–47. [15]
+
+Haugen, F. (2021). Testimony before the United States Senate Committee on Commerce, Science, and Transportation, 5 October 2021. [16]
+
+High-Level Expert Group on Artificial Intelligence. (2019). Ethics guidelines for trustworthy AI. European Commission. [20]
+
+Kimura, M. (1968). Evolutionary rate at the molecular level. *Nature*, 217, 624–626. [24]
+
+OECD. (2019). OECD principles on AI. Organisation for Economic Co-operation and Development. [19]
+
+Twenge, J. M., & Haidt, J. (2021). This is our chance to pull teenagers out of the smartphone trap. *New York Times*, July 31, 2021. [17]
 
 ---
 
 *Paper 40 — The Rosetta Stone: Mapping the Void Framework to EU AI Act Conformity Requirements*
-*CC-BY 4.0 — Anthony Eckert, MoreRight DAO, 2026*
-*Cite as: Eckert, A. (2026). "The Rosetta Stone: Mapping the Void Framework to EU AI Act Conformity Requirements." MoreRight DAO Research Series, Paper 40.*
+*v1.1 — CC-BY 4.0 — Anthony Eckert, MoreRight DAO, 2026*
+*Cite as: Eckert, A. (2026). "The Rosetta Stone: Mapping the Void Framework to EU AI Act Conformity Requirements." MoreRight DAO Research Series, Paper 40. Zenodo. https://doi.org/10.5281/zenodo.18737573*
