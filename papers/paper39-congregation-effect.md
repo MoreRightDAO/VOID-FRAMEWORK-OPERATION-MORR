@@ -8,7 +8,7 @@ license: "MoreRight License v1.0 — see PAPER-TIERS.md"
 tier: "Tier 2"
 version: "v1.0"
 date: "February 2026"
-doi: "pending"
+doi: "10.5281/zenodo.18738182"
 related: "Papers 1, 3, 6, 9, 27"
 ---
 
@@ -227,7 +227,21 @@ At K=16, c_crit = 0.373. The megachurch and Nones 2023 sit well below c_crit —
 
 ## V. Void Scoring
 
-### V.A. Institutional Void Scores
+### V.A. Scoring Summary
+
+| Institution | O | R | α | V | Pe | Phase |
+|---|---|---|---|---|---|---|
+| Jehovah's Witnesses | 3 | 1 | 3 | 7 | −8.92 | Repulsive |
+| Catholic Church (US) | 3 | 2 | 2 | 7 | −2.60 | Weak repulsive |
+| Evangelical Megachurch | 3 | 3 | 3 | 9 | +14.50 | Phase III–IV |
+| Mormon / LDS | 3 | 2 | 2 | 7 | +2.10 | Weak attractive |
+| Nones (2023) | 3 | 3 | 3 | 9 | +30.00 | Phase IV |
+| Buddhist dharma | 1 | 1 | 1 | 3 | 0.00 | Null void |
+| Mainline Protestant | 2 | 2 | 1 | 5 | +0.18 | Near-null |
+
+Control case: Buddhist dharma (O=1, R=1, α=1, V=3/12, Pe≈0.00) is the constraint-pole entity — the null void with no net drift, representing the lowest void architecture achievable while retaining the functional religious scaffold.
+
+### V.B. Institutional Void Scores
 
 **Jehovah's Witnesses**
 
@@ -327,29 +341,29 @@ THRML nb18's demon lattice classification predicts: Nones 2023 should be near th
 
 ## VII. Predictions
 
-Six falsifiable predictions from this analysis. Predictions CON-1 through CON-6.
+Six falsifiable predictions from this analysis. Predictions SOC-1 through SOC-6.
 
-**CON-1 (R as sign predictor)**: Any religious or quasi-religious institution with R ≤ 1 in the void scoring framework will exhibit Pe < 0 in Pew-style longitudinal retention data. Any institution with R ≥ 3 will exhibit Pe > 0. The threshold is at R = 2. Current post-hoc accuracy: 100% (EXP-022B). Out-of-sample test: any new denomination or quasi-religious movement (e.g., meditation apps as institutional voids, political parties as identity voids) added to EXP-022 should obey this rule.
+**SOC-1 (R as sign predictor)**: Any religious or quasi-religious institution with R ≤ 1 in the void scoring framework will exhibit Pe < 0 in Pew-style longitudinal retention data. Any institution with R ≥ 3 will exhibit Pe > 0. The threshold is at R = 2. Current post-hoc accuracy: 100% (EXP-022B). Out-of-sample test: any new denomination or quasi-religious movement (e.g., meditation apps as institutional voids, political parties as identity voids) added to EXP-022 should obey this rule.
 
 **Falsification**: A denomination with R ≤ 1 that shows positive net retention growth (Pe > 0) without a shunning mechanism or mandatory participation system would falsify CON-1.
 
-**CON-2 (crystal impossibility)**: No JW-adjacent institution (c > c_zero, Pe < 0) will develop a stable creator economy based on voluntary audience aggregation. Growth-oriented content creators within the JW ecosystem will either (a) fail to sustain audiences and exit, or (b) require organizational distribution infrastructure (official channel, institutional promotion) rather than thermodynamic drift to maintain reach.
+**SOC-2 (crystal impossibility)**: No JW-adjacent institution (c > c_zero, Pe < 0) will develop a stable creator economy based on voluntary audience aggregation. Growth-oriented content creators within the JW ecosystem will either (a) fail to sustain audiences and exit, or (b) require organizational distribution infrastructure (official channel, institutional promotion) rather than thermodynamic drift to maintain reach.
 
 **Falsification**: A JW-affiliated content creator who achieves >100K self-organized followers on a platform where JW organizational promotion is absent would falsify CON-2.
 
-**CON-3 (overdamped dynamics)**: Viral spread events (rapid pe-mediated growth) will not spontaneously originate in Pe<0 substrates. JW "viral moments" will trace to external observer attention (journalists, critics, ex-member testimonials) rather than endogenous institutional content. The Lotka-Volterra plasma does not self-sustain.
+**SOC-3 (overdamped dynamics)**: Viral spread events (rapid pe-mediated growth) will not spontaneously originate in Pe<0 substrates. JW "viral moments" will trace to external observer attention (journalists, critics, ex-member testimonials) rather than endogenous institutional content. The Lotka-Volterra plasma does not self-sustain.
 
 **Falsification**: A JW content piece that achieves viral spread traceable to internal JW audiences rather than external observer reaction would falsify CON-3.
 
-**CON-4 (Nones vortex)**: As the Nones Pe continues to increase, the community will exhibit vortex-phase characteristics: collective identity enforcement, purity signaling around skeptical credentials, rapid normative cascades, and spontaneous leader emergence without formal governance. THRML nb18 predicts the vortex threshold is Pe ≈ 4; Nones 2023 at Pe = +18.7 is above this. The vortex phase should already be present in high-engagement online Nones communities.
+**SOC-4 (Nones vortex)**: As the Nones Pe continues to increase, the community will exhibit vortex-phase characteristics: collective identity enforcement, purity signaling around skeptical credentials, rapid normative cascades, and spontaneous leader emergence without formal governance. THRML nb18 predicts the vortex threshold is Pe ≈ 4; Nones 2023 at Pe = +18.7 is above this. The vortex phase should already be present in high-engagement online Nones communities.
 
 **Falsification**: Nones communities showing low in-group enforcement, high tolerance for religious re-engagement, and absence of identity purity dynamics would falsify CON-4.
 
-**CON-5 (Buddhist frictionless exit)**: Buddhist (dharma-centered) communities with void scores close to 3/12 and Pe ≈ 0 will exhibit the highest frictionless exit rates in the corpus — measured by the ratio of formal departures with no shunning/relational consequence to total departures. The null void predicts that leaving is thermodynamically equivalent to staying; social mechanisms will reflect this.
+**SOC-5 (Buddhist frictionless exit)**: Buddhist (dharma-centered) communities with void scores close to 3/12 and Pe ≈ 0 will exhibit the highest frictionless exit rates in the corpus — measured by the ratio of formal departures with no shunning/relational consequence to total departures. The null void predicts that leaving is thermodynamically equivalent to staying; social mechanisms will reflect this.
 
 **Falsification**: Buddhist communities with documented shunning behavior, high exit cost, or systematic effort to retain departing members at rates comparable to JW or LDS would falsify CON-5.
 
-**CON-6 (Catholic trajectory)**: Catholic Pe = −2.6 (2014 data) — weakly repulsive. The framework predicts continued net outflow at a rate driven by Pe magnitude. If the institutional constraint level c_implied does not decrease below c_zero = 0.3866 (through doctrinal flexibility, pastoral structure changes, or community responsiveness increases), Catholic retention will continue declining toward the thermodynamic floor. R ≤ 2 for the institutional Catholic configuration predicts no spontaneous reversal without structural change to the Responsiveness dimension.
+**SOC-6 (Catholic trajectory)**: Catholic Pe = −2.6 (2014 data) — weakly repulsive. The framework predicts continued net outflow at a rate driven by Pe magnitude. If the institutional constraint level c_implied does not decrease below c_zero = 0.3866 (through doctrinal flexibility, pastoral structure changes, or community responsiveness increases), Catholic retention will continue declining toward the thermodynamic floor. R ≤ 2 for the institutional Catholic configuration predicts no spontaneous reversal without structural change to the Responsiveness dimension.
 
 **Falsification**: A sustained Catholic retention recovery (Pe recovering to > 0) without observable structural change to the Responsiveness dimension (e.g., no increase in pastoral flexibility, community responsiveness, or opacity reduction) would falsify CON-6.
 
@@ -395,6 +409,22 @@ This mapping has direct application to any institution that operates a void — 
 
 ---
 
+## Limitations
+
+**US-centric data.** Pew Research Center data is drawn primarily from US-resident populations. Global variants of the same denominations (e.g., Brazilian Evangelical churches, African Catholic communities, Southeast Asian Buddhist institutions) may exhibit substantially different void scores and Pe values. The sign discriminator result (R ≤ 1 → Pe < 0) is derived from US retention data and requires out-of-sample testing in non-US contexts before being treated as universal.
+
+**c_implied is inferred, not measured.** The constraint parameter c is estimated by inverting the Péclet equation from observed retention/switching rates. It is not independently measured from behavioral data. The Pe values in EXP-022 are calibrated against Pew switching rates and should be treated as order-of-magnitude estimates, not precise measurements. Independent c estimation (e.g., from behavioral commitment measures) would strengthen the analysis.
+
+**Three temporal points are insufficient for phase transition characterization.** The Nones trajectory (2008, 2015, 2023) is consistent with a crystal-phase transition but does not constitute definitive demonstration of one. Annual measurement would be required to characterize the transition dynamics. The Pe = −2.6 → +1.9 → +18.7 trajectory could reflect model assumptions as much as real change.
+
+**Institutional heterogeneity within traditions.** The paper analyzes central tendency. "Catholic Church" is not monolithic; progressive parishes may score R=3 while traditional parishes score R=1. The void score assigns a single representative architecture. Within-tradition variance is real and unaddressed here.
+
+**Pe < 0 interpretation.** Negative Pe means the thermodynamic drift is repulsive — the system pushes observers toward the void boundary. It does not imply harm to members or negative evaluation of the tradition's content. The framework is structurally agnostic. The 37% of JW who remain are not in a thermodynamically suppressed state relative to the 63% who leave — they are in the locally attractive potential well described in §IV.B.
+
+**Domain quarantine.** This paper analyzes mainstream religious institutions using empirical retention data (Pew Research Center). It does not address or make claims about supernatural phenomena, psi, channeling, or near-death experiences. All findings are framed in terms of behavioral sociology and information-theoretic structural properties.
+
+---
+
 ## References
 
 Pew Research Center (2014). *Religious Landscape Study*. Washington, DC: Pew Research Center. https://www.pewresearch.org/religion/2015/05/12/americas-changing-religious-landscape/
@@ -424,6 +454,18 @@ THRML nb18 — *Demon Lattice Phase Classification*. `/data/apps/morr/private/ph
 THRML nb20 — *Demon Plasma Frequency and Overdamped Substrates*. `/data/apps/morr/private/phase-2/thrml/20_demon_plasma_frequency.ipynb`
 
 THRML nb07 — *Pe Calibration and Canonical Parameter Derivation*. Extropic AI THRML repository, PR #35.
+
+Iannaccone, L. R. (1994). Why strict churches are strong. *American Journal of Sociology*, 99(5), 1180–1211.
+
+Stark, R., & Finke, R. (2000). *Acts of Faith: Explaining the Human Side of Religion*. University of California Press.
+
+Finke, R., & Stark, R. (1992). *The Churching of America, 1776–1990: Winners and Losers in Our Religious Economy*. Rutgers University Press.
+
+Kelley, D. M. (1972). *Why Conservative Churches Are Growing*. Harper & Row.
+
+Berger, P. L. (1967). *The Sacred Canopy: Elements of a Sociological Theory of Religion*. Anchor Books.
+
+Stolz, J., Könemann, J., Schneuwly Purdie, M., Englberger, T., & Krüggeler, M. (2016). *(Un)Believing in Modern Society: Religion, Spirituality, and Religious-Secular Competition*. Routledge.
 
 ---
 
