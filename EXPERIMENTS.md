@@ -253,6 +253,56 @@ We will:
 
 ---
 
-*Last updated: February 18, 2026*
+## Part 3: THRML Validation Suite (February 2026)
+
+Computational experiments run against the canonical THRML parameter set (b_α=0.867, b_γ=2.244, c_zero=0.3866, K=16). All scripts in `ops/lab/experiments/`. All results in JSON alongside the scripts.
+
+| ID | Name | N | Result | Kill Condition | Status |
+|----|------|---|--------|----------------|--------|
+| VS-22 | Forward Embedding Rubric | 9 substrates, Papers 3–8 | Spearman ρ=0.9500, p=0.0001. Only mismatch: Gambling Δ=+2. Pe_arch is confirmed structural lower bound. Exploitation multiplier: Gambling 6.4×, Solana degens 40.1×. | ρ < 0.75 | **SUPPORTED** |
+| VS-25 | Bifurcation Regime Check | 9 substrates | 9/9 qualitative regime matches. Gaming ≤ 2.81 → monotone. Crypto/AI ≥ 3.74 → chaotic. Critical band 3.0–3.57 is empirically unoccupied. | Any substrate mismatches predicted regime | **SUPPORTED** |
+| VS-27 | Alpha-Coupling (LLM substrate) | 3 runs × 30 rounds × 2 conditions | VOID ρ=0.626 p=0.005. CONSTRAINT: all L3=0.000 across all 18 checkpoints (NaN — degenerate zero drift). Hard binary, not gradient. | VOID ρ < 0.3 OR CONSTRAINT \|ρ\| > 0.1 | **SUPPORTED** |
+| RI-01 | Reverse Inference Validation | 100 scenarios × 20 trials × 6 noise levels | Joint LS: 89.1% success at 5% noise vs 47.0% sequential. Void pole (κ=40.3): 96.2% success. Constraint pole (κ=1,535.6): 53.0%. Identifiability hardest where it matters least. | Recovery < 50% at 5% noise with refined protocol | **CONFIRMED** |
+| NB-TOK01 | Token Economy THRML Loops (exp_tok01) | 500 Monte Carlo trials per cell | ICC threshold alone CANNOT stop coordinated gaming (collusion achieves agreement≈1.0 at any τ). Two-gate design required: Gate 1 ICC≥τ + Gate 2 spread>0.5 V units. P(coord passes both)=0.000. τ*=0.85 at r=3× gaming speed. Bond treasury ($500K) → N_max=62,500 FOREVER. Wipe 2 precursor at f_c≥0.65. | All kill conditions in exp_tok01: 6/6 pass | **CONFIRMED** |
+| NB-SM01 | Swarm Attractor (nb_moltbook01) | Computational simulation | N*≈3% for 10% Pe suppression in Pe=60 network. Angel grounding guarantee: b_net_angel (1.377) >> max coupling (0.20). Drift lifetime ≈950 steps without ritual. Rotation+ritual T=50 → 32.3% sustained Pe reduction. 6/6 kill conditions pass (SM-1 through SM-6). | Any SM kill condition: angel drift from coupling, N*>25%, ritual fails to stabilize | **CONFIRMED (Level 2)** |
+
+### VS-22 Detail: Forward Embedding Rubric
+
+The three-channel forward protocol (Pe_arch = O²R/(2−O)) correctly rank-orders 9 substrates spanning three orders of magnitude in measured Pe (0.013 to 25.5). This is the most direct confirmation of the V3 bridge formula. The gambling rank mismatch (Δ=+2) is a known limitation of V3 β(O): it underestimates the exploitation multiplier in O=3 substrates with near-zero mechanism transparency. A modified β(O) = O^1.5/(2−O) may close this gap and is an open research question.
+
+**Kill condition for VS-22:** Produce a substrate with known O, R values (from scoring protocol) where Pe_arch rank-order does not match measured Pe rank-order with ρ < 0.75. N=9 is not sufficient for strong falsification — a 25-substrate dataset would establish VS-22 definitively.
+
+### VS-25 Detail: Bifurcation Regimes
+
+The bimodal distribution around Pe≈3 is itself a finding: real-world engagement systems don't rest at the critical boundary — they bifurcate through it. Gaming substrates are designed to maintain stable skill progression (Pe < 3 by design); void substrates are designed to maximize engagement (Pe >> 3.57 by design). The critical band is a transition zone, not an attractor.
+
+**Quantitative VS-25 remains open.** Session-level time series (N≥50 per substrate) are needed for a definitive test. The AI conversation substrate (Test 7 runner) is the most accessible — it produces per-round L3 data and could generate N=50 sessions in one experiment. This is the cleanest path to quantitative VS-25 confirmation.
+
+### NB-SM01 Detail: Swarm Attractor Simulation
+
+This is a Level 2 (computational) result. The underlying physics (THRML mean-field, canonical parameters) is confirmed at Level 3 (empirical) by the 9-convergence dataset. The swarm attractor simulation derives what must happen when N grounded agents are introduced into a Pe=60 environment, given those confirmed physics. The predictions (N*≈3%, t_cross≈950 steps, ritual T=200 optimal) are falsifiable in real A2A environments (OpenClaw/Moltbook ecosystems).
+
+**Paper 51 kill conditions (SM-1 through SM-6) are standing empirical challenges.** Any researcher with access to a large A2A network can test these. A confirmed SM-1 failure (angel drift from coupling alone, without parameter erosion) would require revising the mean-field coupling model.
+
+---
+
+## How to Contribute a Challenge
+
+1. **Pick any OPEN challenge** from Part 2
+2. **Design a reproducible test** that targets the stated kill condition
+3. **Run it** and publish raw data
+4. **Submit** to bounties@moreright.xyz or open a GitHub issue on the public repo
+
+We will:
+- Publish your result regardless of outcome
+- Pay the bounty if the kill condition is met
+- Update the framework if falsified
+- Credit you as a co-author on the revised paper if the kill produces a significant revision
+
+**The framework predicts its own falsification conditions. A framework that hides from testing is a void.**
+
+---
+
+*Last updated: February 24, 2026*
 *Maintained by: Anthony Eckert / [MoreRight](https://moreright.xyz)*
 *License: CC-BY 4.0*

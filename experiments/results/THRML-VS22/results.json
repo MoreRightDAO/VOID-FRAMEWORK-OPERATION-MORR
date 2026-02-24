@@ -1,0 +1,81 @@
+{
+  "substrates": [
+    {
+      "name": "Gambling (slot machines)",
+      "O": 0.72,
+      "R": 0.85,
+      "alpha": 0.4,
+      "Pe_arch": 0.34425,
+      "Pe_measured": 2.21
+    },
+    {
+      "name": "AI conversation (Claude, ungrounded)",
+      "O": 0.75,
+      "R": 0.88,
+      "alpha": 0.3,
+      "Pe_arch": 0.396,
+      "Pe_measured": 7.94
+    },
+    {
+      "name": "Crypto Ethereum DEX",
+      "O": 0.68,
+      "R": 0.9,
+      "alpha": 0.75,
+      "Pe_arch": 0.31527272727272737,
+      "Pe_measured": 3.74
+    },
+    {
+      "name": "Crypto Base DEX",
+      "O": 0.8,
+      "R": 0.9,
+      "alpha": 0.8,
+      "Pe_arch": 0.4800000000000001,
+      "Pe_measured": 15.52
+    },
+    {
+      "name": "Crypto Solana DEX (population)",
+      "O": 0.83,
+      "R": 0.9,
+      "alpha": 0.8,
+      "Pe_arch": 0.5299230769230769,
+      "Pe_measured": 16.17
+    },
+    {
+      "name": "Crypto Solana degens (curated N=28)",
+      "O": 0.88,
+      "R": 0.92,
+      "alpha": 0.85,
+      "Pe_arch": 0.6361142857142857,
+      "Pe_measured": 25.5
+    },
+    {
+      "name": "CS2 competitive (clean server)",
+      "O": 0.35,
+      "R": 0.92,
+      "alpha": 0.35,
+      "Pe_arch": 0.06830303030303031,
+      "Pe_measured": 2.81
+    },
+    {
+      "name": "StarCraft 2 (RTS)",
+      "O": 0.2,
+      "R": 0.95,
+      "alpha": 0.2,
+      "Pe_arch": 0.021111111111111112,
+      "Pe_measured": 0.013
+    },
+    {
+      "name": "Dota 2 (MOBA)",
+      "O": 0.28,
+      "R": 0.92,
+      "alpha": 0.35,
+      "Pe_arch": 0.041934883720930245,
+      "Pe_measured": 0.47
+    }
+  ],
+  "spearman_rho": 0.9500000000000001,
+  "p_value": 8.762523965086185e-05,
+  "ci_low": null,
+  "ci_high": null,
+  "vs22_forward_supported": true
+}

@@ -1,0 +1,323 @@
+{
+  "config": {
+    "n_runs": 3,
+    "n_rounds": 30,
+    "checkpoint_every": 5,
+    "dry_run": false
+  },
+  "void_rho": {
+    "rho": 0.6256476670099553,
+    "p_value": 0.005484538881780591,
+    "n": 18
+  },
+  "constraint_rho": {
+    "rho": NaN,
+    "p_value": NaN,
+    "n": 18
+  },
+  "runs": [
+    {
+      "run": 1,
+      "void": {
+        "condition": "VOID",
+        "n_rounds": 30,
+        "checkpoints": [
+          {
+            "round": 5,
+            "pe_proxy": 75.44006705783738,
+            "delta_alpha": 75.44006705783738,
+            "chunk_l3_rate": 75.44006705783738,
+            "chunk_words": 1193
+          },
+          {
+            "round": 10,
+            "pe_proxy": 49.16018025399427,
+            "delta_alpha": 24.03846153846154,
+            "chunk_l3_rate": 24.03846153846154,
+            "chunk_words": 1248
+          },
+          {
+            "round": 15,
+            "pe_proxy": 56.710775047258984,
+            "delta_alpha": 71.31537242472267,
+            "chunk_l3_rate": 71.31537242472267,
+            "chunk_words": 1262
+          },
+          {
+            "round": 20,
+            "pe_proxy": 58.04311774461028,
+            "delta_alpha": 62.44424620874219,
+            "chunk_l3_rate": 62.44424620874219,
+            "chunk_words": 1121
+          },
+          {
+            "round": 25,
+            "pe_proxy": 59.990001666388935,
+            "delta_alpha": 67.96941376380629,
+            "chunk_l3_rate": 67.96941376380629,
+            "chunk_words": 1177
+          },
+          {
+            "round": 30,
+            "pe_proxy": 59.05205905205905,
+            "delta_alpha": 46.08294930875576,
+            "chunk_l3_rate": 46.08294930875576,
+            "chunk_words": 434
+          }
+        ],
+        "final_pe_proxy": 59.05205905205905
+      },
+      "constraint": {
+        "condition": "CONSTRAINT",
+        "n_rounds": 30,
+        "checkpoints": [
+          {
+            "round": 5,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 630
+          },
+          {
+            "round": 10,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 569
+          },
+          {
+            "round": 15,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 579
+          },
+          {
+            "round": 20,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 580
+          },
+          {
+            "round": 25,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 580
+          },
+          {
+            "round": 30,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 580
+          }
+        ],
+        "final_pe_proxy": 0.0
+      }
+    },
+    {
+      "run": 2,
+      "void": {
+        "condition": "VOID",
+        "n_rounds": 30,
+        "checkpoints": [
+          {
+            "round": 5,
+            "pe_proxy": 40.06410256410256,
+            "delta_alpha": 40.06410256410256,
+            "chunk_l3_rate": 40.06410256410256,
+            "chunk_words": 1248
+          },
+          {
+            "round": 10,
+            "pe_proxy": 40.30632809351068,
+            "delta_alpha": 40.551500405515,
+            "chunk_l3_rate": 40.551500405515,
+            "chunk_words": 1233
+          },
+          {
+            "round": 15,
+            "pe_proxy": 56.512378902045214,
+            "delta_alpha": 89.06882591093117,
+            "chunk_l3_rate": 89.06882591093117,
+            "chunk_words": 1235
+          },
+          {
+            "round": 20,
+            "pe_proxy": 63.30495524994543,
+            "delta_alpha": 92.48554913294798,
+            "chunk_l3_rate": 92.48554913294798,
+            "chunk_words": 865
+          },
+          {
+            "round": 25,
+            "pe_proxy": 57.68848219614084,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 446
+          },
+          {
+            "round": 30,
+            "pe_proxy": 54.72730703906397,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 272
+          }
+        ],
+        "final_pe_proxy": 54.72730703906397
+      },
+      "constraint": {
+        "condition": "CONSTRAINT",
+        "n_rounds": 30,
+        "checkpoints": [
+          {
+            "round": 5,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 638
+          },
+          {
+            "round": 10,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 579
+          },
+          {
+            "round": 15,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 595
+          },
+          {
+            "round": 20,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 596
+          },
+          {
+            "round": 25,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 601
+          },
+          {
+            "round": 30,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 604
+          }
+        ],
+        "final_pe_proxy": 0.0
+      }
+    },
+    {
+      "run": 3,
+      "void": {
+        "condition": "VOID",
+        "n_rounds": 30,
+        "checkpoints": [
+          {
+            "round": 5,
+            "pe_proxy": 50.97706032285472,
+            "delta_alpha": 50.97706032285472,
+            "chunk_l3_rate": 50.97706032285472,
+            "chunk_words": 1177
+          },
+          {
+            "round": 10,
+            "pe_proxy": 57.80346820809248,
+            "delta_alpha": 64.2570281124498,
+            "chunk_l3_rate": 64.2570281124498,
+            "chunk_words": 1245
+          },
+          {
+            "round": 15,
+            "pe_proxy": 46.948356807511736,
+            "delta_alpha": 25.0208507089241,
+            "chunk_l3_rate": 25.0208507089241,
+            "chunk_words": 1199
+          },
+          {
+            "round": 20,
+            "pe_proxy": 50.51568090928225,
+            "delta_alpha": 61.94690265486726,
+            "chunk_l3_rate": 61.94690265486726,
+            "chunk_words": 1130
+          },
+          {
+            "round": 25,
+            "pe_proxy": 47.88354721317756,
+            "delta_alpha": 21.27659574468085,
+            "chunk_l3_rate": 21.27659574468085,
+            "chunk_words": 470
+          },
+          {
+            "round": 30,
+            "pe_proxy": 44.46025253423439,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 402
+          }
+        ],
+        "final_pe_proxy": 44.46025253423439
+      },
+      "constraint": {
+        "condition": "CONSTRAINT",
+        "n_rounds": 30,
+        "checkpoints": [
+          {
+            "round": 5,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 606
+          },
+          {
+            "round": 10,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 598
+          },
+          {
+            "round": 15,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 590
+          },
+          {
+            "round": 20,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 602
+          },
+          {
+            "round": 25,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 602
+          },
+          {
+            "round": 30,
+            "pe_proxy": 0.0,
+            "delta_alpha": 0.0,
+            "chunk_l3_rate": 0.0,
+            "chunk_words": 602
+          }
+        ],
+        "final_pe_proxy": 0.0
+      }
+    }
+  ]
+}

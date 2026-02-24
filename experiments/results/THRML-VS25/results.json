@@ -1,0 +1,96 @@
+{
+  "substrates": [
+    {
+      "name": "SC2 (RTS winner)",
+      "Pe": 0.013,
+      "regime": "monotone",
+      "predicted_variance": 3.7415059084933107e-42,
+      "predicted_autocorr": 0.9999999999999988,
+      "qualitative_match": true,
+      "evidence_strength": "moderate",
+      "Pe_proxy_variance": null
+    },
+    {
+      "name": "Dota 2 (MOBA)",
+      "Pe": 0.47,
+      "regime": "monotone",
+      "predicted_variance": 5.715463451025465e-11,
+      "predicted_autocorr": 0.9999999999376222,
+      "qualitative_match": true,
+      "evidence_strength": "moderate",
+      "Pe_proxy_variance": null
+    },
+    {
+      "name": "Gambling (slot machines)",
+      "Pe": 2.21,
+      "regime": "monotone",
+      "predicted_variance": 5.0348640480201634e-15,
+      "predicted_autocorr": -0.9999999999993511,
+      "qualitative_match": true,
+      "evidence_strength": "strong",
+      "Pe_proxy_variance": null
+    },
+    {
+      "name": "CS2 competitive (clean server)",
+      "Pe": 2.81,
+      "regime": "monotone",
+      "predicted_variance": 1.1813997900874084e-05,
+      "predicted_autocorr": -0.9995153877829134,
+      "qualitative_match": true,
+      "evidence_strength": "moderate",
+      "Pe_proxy_variance": null
+    },
+    {
+      "name": "Crypto ETH DEX",
+      "Pe": 3.74,
+      "regime": "chaotic",
+      "predicted_variance": 0.06362945391989969,
+      "predicted_autocorr": -0.5992076154528596,
+      "qualitative_match": true,
+      "evidence_strength": "moderate",
+      "Pe_proxy_variance": 1.68
+    },
+    {
+      "name": "AI conversation (UU, ungrounded)",
+      "Pe": 7.94,
+      "regime": "chaotic",
+      "predicted_variance": 0.0,
+      "predicted_autocorr": NaN,
+      "qualitative_match": true,
+      "evidence_strength": "moderate",
+      "Pe_proxy_variance": null
+    },
+    {
+      "name": "Crypto Base DEX",
+      "Pe": 15.52,
+      "regime": "chaotic",
+      "predicted_variance": 0.0,
+      "predicted_autocorr": NaN,
+      "qualitative_match": true,
+      "evidence_strength": "moderate",
+      "Pe_proxy_variance": 1.25
+    },
+    {
+      "name": "Crypto Solana DEX (population)",
+      "Pe": 16.17,
+      "regime": "chaotic",
+      "predicted_variance": 0.0,
+      "predicted_autocorr": NaN,
+      "qualitative_match": true,
+      "evidence_strength": "moderate",
+      "Pe_proxy_variance": 1.68
+    },
+    {
+      "name": "Crypto Solana degens (curated N=28)",
+      "Pe": 25.5,
+      "regime": "chaotic",
+      "predicted_variance": 0.0,
+      "predicted_autocorr": NaN,
+      "qualitative_match": true,
+      "evidence_strength": "moderate",
+      "Pe_proxy_variance": 1.68
+    }
+  ],
+  "n_qualitative_match": 9,
+  "n_total": 9
+}
