@@ -20,9 +20,21 @@ Applies to:
 - papers/paper4-thermo-sampling-bounds.md
 - papers/paper4b-acceleration-constraint.md
 - papers/paper4c-demons-hardware.md
+- papers/paper4d-canonical-parameters.md
 - papers/paper5-toe-synthesis.md
 - papers/paper8-observer-measurement-bridge.md
 - papers/paper9-voidspace.md
+- papers/paper40-eu-ai-act-conformity-mapping.md
+- papers/paper41-evolutionary-biology-thrml.md
+- papers/paper42-social-neuroscience-primate-cognition.md
+- papers/paper43-cancer-biology-immune-conjugacy.md
+- papers/paper44-dao-governance-congregation.md
+- papers/paper45-social-anthropology-mimetic-theory.md
+- papers/paper46-tsu-posterior-inference.md
+- papers/paper47-democratic-backsliding.md
+- papers/paper49-law-pe-control-fractal.md
+- papers/paper50-health-institutions.md
+- papers/paper51-swarm-attractor-agent-networks.md
 - papers/predictions-master-table.md
 - experiments/ (all protocols and results)
 - grounding/
@@ -30,7 +42,7 @@ Applies to:
 
 ---
 
-### MoreRight License v1.0 — Applied Domain Library
+### MoreRight License v1.1 — Applied Domain Library
 
 Free for non-commercial use, research, education, and replication.
 Commercial use gated by Void Score. Converts to Apache 2.0 on February 19, 2030.
@@ -41,40 +53,43 @@ Indie Threshold (free use): < $1M revenue AND < $5M funding AND < 25 FTE.
 Contact: anthony@moreright.xyz
 
 Applies to:
-- papers/paper6-multiplayer-architecture.md   (Never Trust the Client)
-- papers/paper7-crypto-void-architecture.md   (Your DeFi Protocol Is a Void)
-- papers/paper7b-stablecoins.md               (The Peg Problem)
-- papers/paper7c-mev-extraction.md            (The Dark Forest)
-- papers/paper7d-cross-chain-bridges.md       (The Bridge Burns)
-- papers/paper10-king-problem.md              (The King Problem)
-- papers/paper11-social-media-algo-lock.md    (The Algo Lock)
-- papers/paper12-the-chain.md                 (The Chain)
-- papers/paper13-dating-apps.md               (The Swipe Machine)
-- papers/paper14-trading-markets.md           (The Gambler's Algorithm)
-- papers/paper15-ai-companions.md             (The Synthetic Bond)
-- papers/paper16b-ai-art-training.md          (The Palette Problem)
-- papers/paper17-advertising-adtech.md        (The Persuasion Machine)
-- papers/paper18-credit-scoring.md            (The Score Punished Me)
-- papers/paper19-software-platforms.md        (The API Fog)
-- papers/paper20-central-banking.md           (The Opacity of Last Resort)
-- papers/paper21-edtech-guru-problem.md       (The Guru Problem)
-- papers/paper21b-hr-tech-hiring.md           (The Resume Trap)
-- papers/paper22-healthcare-ai.md             (The Diagnostic Void)
-- papers/paper22b-insurance.md               (The Actuarial Cage)
-- papers/paper23-news-journalism.md           (The Fog of News)
-- papers/paper24-forensic-science.md          (The Certainty Illusion)
-- papers/paper25-addiction-infrastructure.md  (The Craving Engine)
-- papers/paper26-sports-gaming-compound.md    (The Loot Box Lock)
-- papers/paper26c-esg-greenwashing.md         (The Green Void)
-- papers/paper27-cult-dynamics.md             (The Bounded World)
-- papers/paper28-pandemic-response.md         (The Outbreak Void)
-- papers/paper29-criminal-justice.md          (The Confession Machine)
-- papers/paper30-racial-inequality.md         (The Self-Manufacturing Void)
-- papers/paper31-bci-neural.md               (The Neural Void)
-- papers/paper32-psychedelic-therapy.md       (The Dissolution Void)
-- papers/paper33-diplomacy-intelligence.md    (The State Secret)
-- papers/paper34-entertainment-economy.md     (The Laugh Track)
-- papers/paper35-chronic-pain.md              (The Pain Amplifier)
-- papers/paper36-psychotherapy.md             (The Transference Trap)
-- papers/paper37-real-estate-proptech.md      (The Listing Lock)
-- papers/paper38-gig-economy.md              (The Algorithm Manages You)
+- papers/paper6-multiplayer-architecture.md      (Never Trust the Client)
+- papers/paper7-crypto-void-architecture.md      (Your DeFi Protocol Is a Void)
+- papers/paper7b-stablecoins.md                  (The Peg Problem)
+- papers/paper7c-mev-extraction.md               (The Dark Forest)
+- papers/paper7d-cross-chain-bridges.md          (The Bridge Burns)
+- papers/paper10-king-problem.md                 (The King Problem)
+- papers/paper11-social-media-algo-lock.md       (The Algo Lock)
+- papers/paper12-the-chain.md                    (The Chain)
+- papers/paper13-dating-apps.md                  (The Swipe Machine)
+- papers/paper14-trading-markets.md              (The Gambler's Algorithm)
+- papers/paper15-ai-companions.md                (The Synthetic Bond)
+- papers/paper16b-ai-art-training.md             (The Palette Problem)
+- papers/paper17-advertising-adtech.md           (The Persuasion Machine)
+- papers/paper18-credit-scoring.md               (The Score Punished Me)
+- papers/paper19-software-platforms.md           (The API Fog)
+- papers/paper20-central-banking.md              (The Opacity of Last Resort)
+- papers/paper21-edtech-guru-problem.md          (The Guru Problem)
+- papers/paper21b-hr-tech-hiring.md              (The Resume Trap)
+- papers/paper22-healthcare-ai.md                (The Diagnostic Void)
+- papers/paper22b-insurance.md                   (The Actuarial Cage)
+- papers/paper23-news-journalism.md              (The Fog of News)
+- papers/paper24-forensic-science.md             (The Certainty Illusion)
+- papers/paper25-addiction-infrastructure.md     (The Craving Engine)
+- papers/paper26-sports-gaming-compound.md       (The Loot Box Lock)
+- papers/paper26c-esg-greenwashing.md            (The Green Void)
+- papers/paper27-cult-dynamics.md                (The Bounded World)
+- papers/paper28-pandemic-response.md            (The Outbreak Void)
+- papers/paper29-criminal-justice.md             (The Confession Machine)
+- papers/paper30-racial-inequality.md            (The Self-Manufacturing Void)
+- papers/paper31-bci-neural.md                   (The Neural Void)
+- papers/paper32-psychedelic-therapy.md          (The Dissolution Void)
+- papers/paper33-diplomacy-intelligence.md       (The State Secret)
+- papers/paper34-entertainment-economy.md        (The Laugh Track)
+- papers/paper35-chronic-pain.md                 (The Pain Amplifier)
+- papers/paper36-psychotherapy.md                (The Transference Trap)
+- papers/paper37-real-estate-proptech.md         (The Listing Lock)
+- papers/paper38-gig-economy.md                  (The Algorithm Manages You)
+- papers/paper39-congregation-effect.md          (The Congregation Effect)
+- papers/paper48-pharmaceutical-markets.md       (The Prescription Cascade)
+- papers/paper52-void-gradient-economics.md      (The Constraint Current)

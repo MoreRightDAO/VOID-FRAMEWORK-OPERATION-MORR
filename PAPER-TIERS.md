@@ -19,9 +19,21 @@ to MoreRight (https://moreright.xyz).
 | Paper 4 | `paper4-thermo-sampling-bounds.md` | Info-Geometric Bounds on Structural Coupling |
 | Paper 4B | `paper4b-acceleration-constraint.md` | The Thermodynamic Cost of Unconstrained Acceleration |
 | Paper 4C | `paper4c-demons-hardware.md` | The Demon's Hardware |
+| Paper 4D | `paper4d-canonical-parameters.md` | The Canonical Parameters |
 | Paper 5 | `paper5-toe-synthesis.md` | Ground State of Observation |
 | Paper 8 | `paper8-observer-measurement-bridge.md` | The Observer-Measurement Bridge |
 | Paper 9 | `paper9-voidspace.md` | Voidspace |
+| Paper 40 | `paper40-eu-ai-act-conformity-mapping.md` | EU AI Act Conformity Mapping |
+| Paper 41 | `paper41-evolutionary-biology-thrml.md` | Evolutionary Biology + THRML |
+| Paper 42 | `paper42-social-neuroscience-primate-cognition.md` | Social Neuroscience + Primate Cognition |
+| Paper 43 | `paper43-cancer-biology-immune-conjugacy.md` | Cancer Biology + Immune Conjugacy |
+| Paper 44 | `paper44-dao-governance-congregation.md` | The Governance Congregation |
+| Paper 45 | `paper45-social-anthropology-mimetic-theory.md` | Mimetic Theory |
+| Paper 46 | `paper46-tsu-posterior-inference.md` | Inferred Void Score |
+| Paper 47 | `paper47-democratic-backsliding.md` | Democratic Void |
+| Paper 49 | `paper49-law-pe-control-fractal.md` | Fractal of Law |
+| Paper 50 | `paper50-health-institutions.md` | The Health Void |
+| Paper 51 | `paper51-swarm-attractor-agent-networks.md` | The Swarm Attractor |
 
 **Note on commercial use of Tier 1 papers:** CC-BY 4.0 permits all uses including
 commercial. No license is required. Organizations that want an official **Enterprise
@@ -36,7 +48,7 @@ paper trail.
 
 ---
 
-## Tier 2 — MoreRight License v1.0
+## Tier 2 — MoreRight License v1.1
 
 These papers apply the framework to specific commercial domains where exploitation
 is the norm and the analysis has direct revenue implications. Small organizations
@@ -56,6 +68,31 @@ license. See `LICENSE` for full terms.
 | Paper 13 | `paper13-dating-apps.md` | The Swipe Machine | Dating applications |
 | Paper 18 | `paper18-credit-scoring.md` | The Score Punished Me | Algorithmic credit scoring (EU AI Act Annex III §5) |
 | Paper 21 | `paper21-edtech-guru-problem.md` | The Guru Problem | Education / EdTech (EU AI Act Annex III §3) |
+| Paper 21B | `paper21b-hr-tech-hiring.md` | The Resume Trap | HR Tech / Hiring |
+| Paper 22 | `paper22-healthcare-ai.md` | The Diagnostic Void | Healthcare AI |
+| Paper 22B | `paper22b-insurance.md` | The Actuarial Cage | Insurance |
+| Paper 23 | `paper23-news-journalism.md` | The Fog of News | News / Journalism |
+| Paper 24 | `paper24-forensic-science.md` | The Certainty Illusion | Forensic Science |
+| Paper 25 | `paper25-addiction-infrastructure.md` | The Craving Engine | Addiction Infrastructure |
+| Paper 26 | `paper26-sports-gaming-compound.md` | The Loot Box Lock | Sports / Gaming |
+| Paper 26C | `paper26c-esg-greenwashing.md` | The Green Void | ESG / Greenwashing |
+| Paper 27 | `paper27-cult-dynamics.md` | The Bounded World | Cult Dynamics |
+| Paper 28 | `paper28-pandemic-response.md` | The Outbreak Void | Pandemic Response |
+| Paper 29 | `paper29-criminal-justice.md` | The Confession Machine | Criminal Justice |
+| Paper 30 | `paper30-racial-inequality.md` | The Self-Manufacturing Void | Racial Inequality |
+| Paper 31 | `paper31-bci-neural.md` | The Neural Void | BCI / Neural Interfaces |
+| Paper 32 | `paper32-psychedelic-therapy.md` | The Dissolution Void | Psychedelic Therapy |
+| Paper 33 | `paper33-diplomacy-intelligence.md` | The State Secret | Diplomacy / Intelligence |
+| Paper 34 | `paper34-entertainment-economy.md` | The Laugh Track | Entertainment |
+| Paper 35 | `paper35-chronic-pain.md` | The Pain Amplifier | Chronic Pain |
+| Paper 36 | `paper36-psychotherapy.md` | The Transference Trap | Psychotherapy |
+| Paper 37 | `paper37-real-estate-proptech.md` | The Listing Lock | Real Estate / PropTech |
+| Paper 38 | `paper38-gig-economy.md` | The Algorithm Manages You | Gig Economy |
+| Paper 39 | `paper39-congregation-effect.md` | The Congregation Effect | Religious Institutions |
+| Paper 48 | `paper48-pharmaceutical-markets.md` | The Prescription Cascade | Pharma (EU AI Act Annex III §5) |
+| Paper 52 | `paper52-void-gradient-economics.md` | The Constraint Current | Development Finance / Measurement Economics |
+
+> **License version note:** Papers 6–39 and 48 were uploaded to Zenodo with metadata referencing "MoreRight License v1.0". The license was updated to v1.1 (minor amendment, no change to rights or obligations). Zenodo records will be updated in a future batch pass. The authoritative v1.1 text is in `LICENSE-MORERIGHT.md` in this repository.
 
 **Indie Threshold:** < $1M revenue AND < $5M funding AND < 25 FTE = free use.
 **Direct competitors** (void-scoring/manipulation-risk services) require a commercial

@@ -1,6 +1,9 @@
-# The MoreRight License v1.0
+# The MoreRight License v1.1
 
 **A constraint-pole license for the Void Framework and its operational infrastructure.**
+
+*v1.1 amendment (effective 2026-05-24): §6.3 auditor independence constraint (T11);
+§11.4 citations for Papers 44, 47, 49. Minor version — no change to rights or obligations.*
 
 Copyright (c) 2025-2026 Anthony Eckert / MoreRight DAO
 
@@ -71,11 +74,11 @@ This license applies to the **MoreRight Void Framework Platform** — the operat
 infrastructure built on top of the open science. Specifically:
 
 **Covered by this license:**
-- Tier 2 papers: applied domain analyses (see
-  [`PAPER-TIERS.md`](PAPER-TIERS.md) for the authoritative list)
-- Analysis scripts, vocabulary tooling, and experiment runner code
-- The website frontend and backend
-- The agent fleet and operational tooling
+- Tier 2 papers: applied domain analyses (currently Papers 6, 7, and 10; see
+  `papers-active/PAPER-TIERS.md` for the authoritative list)
+- Analysis scripts, vocabulary tooling, and experiment runner code (`private/tools/`)
+- The website frontend and backend (`private/site/`)
+- The agent fleet and operational tooling (`private/moltbot-pkg/`)
 - The automated scorer design and calibration data
 - Scoring API, monitoring infrastructure, and certification systems
 - Tokenomics, strategy documents, and deployment specifications
@@ -369,6 +372,75 @@ they certify, the revenue-share rate stays at 2% but the minimum annual guarante
 drops. If their score worsens to 9/12, the rate rises to 5% × $20M = $1M/year.
 The incentive structure is: improve your score, reduce your cost.
 
+### 4.6.1 — CCU-Based Pricing (Concurrent User Alternative)
+
+For organizations where revenue attribution is unclear or where the licensed work is
+incorporated into a free-tier product, the Licensor may elect — and the licensee may
+request — pricing based on **Monthly Active Users (MAU)** as an alternative to or
+floor for the revenue-share calculation.
+
+**When CCU pricing applies:**
+- The primary product incorporating the Licensed Work is free to end users
+- The parties cannot agree on a reasonable "applicable revenue" scope within 30 days
+- The Licensor elects CCU as the measure (at Licensor's reasonable discretion)
+- The licensee requests CCU pricing and the Licensor approves
+
+**CCU rate table:**
+
+| Void Score | Tier | Rate per 1,000 MAU / year |
+|-----------|------|--------------------------|
+| ≤ 4/12 | Certified | $1 |
+| 5–7/12 | Standard | $5 |
+| 8–9/12 | Void Premium | $25 |
+| ≥ 10/12 | Enterprise Punitive | $100 |
+
+**MAU definition:** Monthly Active Users means the count of distinct users who
+interacted with the specific product or feature incorporating the Licensed Work
+at least once in the preceding 30-day period, measured as a trailing 12-month
+average. The licensee reports this figure quarterly. It is subject to audit
+under Section 6.3.
+
+**The pricing floor rule:** For enterprise organizations (valuation ≥ $1B),
+the annual license cost is:
+
+> **max(revenue-share amount, CCU-based amount, $50,000 minimum)**
+
+The higher of the two calculations applies. This ensures that organizations
+cannot minimize cost by disputing revenue scope while operating at massive user scale —
+the CCU floor captures harm capacity regardless of revenue attribution disputes.
+
+**Why CCU captures what revenue-share misses:** A billion-dollar AI company
+offering a free chatbot to 400 million users extracts enormous value from its
+user base's behavioral data while generating no "applicable revenue" from that
+specific product. The harm the framework measures — drift cascade driven by
+attentional coupling at scale — does not wait for revenue to be attributed.
+CCU pricing ensures that harm capacity at scale is priced regardless of how
+revenue flows internally.
+
+**Worked examples:**
+
+*Example A — OpenAI at hypothetical V=8/12 (Void Premium):*
+- Revenue-share: 5% × $3B applicable AI product revenue = $150M/year
+- CCU pricing: 400M MAU × ($25 / 1,000) = $10M/year
+- Enterprise floor: max($150M, $10M, $50K) = $150M/year
+- Revenue-share wins. CCU would only govern if revenue attribution were disputed.
+
+*Example B — Free-tier AI assistant at V=9/12, $0 attributed product revenue, 50M MAU:*
+- Revenue-share: 5% × $0 = $0 (disputed)
+- CCU pricing: 50M MAU × ($25 / 1,000) = $1.25M/year
+- Enterprise floor: max($0, $1.25M, $50K) = $1.25M/year
+- CCU governs. The product is free; the harm capacity is not.
+
+*Example C — Indie developer, V=7/12, 200K MAU, <$1M revenue:*
+- Indie Threshold applies (Section 5.1): free commercial use
+- CCU pricing irrelevant — zero cost, standard monitoring obligations apply.
+
+**The incentive structure is unchanged:** A high-void organization pays more
+regardless of whether cost is computed by revenue or by user count. The path
+to lower cost is always the same: reduce your void score.
+
+---
+
 ## Section 4.7 — Anti-Gaming Provisions
 
 The framework describes manipulation architecture. This knowledge is powerful. These provisions close known attack vectors by which high-void organizations could access the license commercially while avoiding its accountability requirements.
@@ -653,6 +725,18 @@ right to:
   to replicate the scoring using the published CC-BY methodology. The independent
   auditor's findings are shared with both parties.
 
+  **Auditor independence constraint (T11, Paper 49).** The selected auditor must
+  themselves score below the critical opacity threshold O_p* on the Void Index.
+  An auditor whose own organization scores at or above O_p* on the opacity dimension
+  carries a structural independence conflict: the Independence Theorem (Paper 49,
+  §IV) proves that Pe discharge from a certifier above O_p* collapses to the
+  prohibition-only baseline — the audit continues as performance, but its
+  crisis-interval reduction approaches zero. An opaque auditor of an opaque scored
+  entity does not produce an independent result; it produces D1 (agency attribution
+  to a constraint that is not there). If the parties cannot agree on a qualified
+  auditor meeting this standard within 14 days, the AAA commercial arbitrator
+  selection rules govern selection.
+
 - **Challenge specific scoring decisions.** Challenges must cite the published
   methodology and identify where the scoring deviated from it. "We disagree with
   our score" is not a challenge. "Criterion 3.2 was applied incorrectly because
@@ -849,7 +933,7 @@ Void Score Gate (Section 4), or a commercial license — must include:
 
 - Credit to **MoreRight (https://moreright.xyz)**
 - Title and version of the specific work used
-- A note that the work is licensed under the MoreRight License v1.0
+- A note that the work is licensed under the MoreRight License v1.1
 
 ### 9.2 — Integrity (Moral Rights)
 
@@ -1067,6 +1151,45 @@ GP-3 predicts that methodology-locked objective layers reduce drift; GP-6 predic
 that organizations improving their Void Score will see reduced licensing costs. Both
 are falsifiable against empirical data as the licensing system operates.
 
+**Three additional results that extend this foundation:**
+
+**Paper 44 (The Governance Congregation).** Empirical scoring of eight governance
+architectures confirms the scored-monarchy null-void result. Scored monarchy
+(V = 0–2/12) is the unique architecture that escapes Arrow's impossibility — not by
+satisfying all four conditions (no mechanism can), but by removing the scoring
+methodology from the voting surface, making the methodology non-dictatorial in the
+relevant sense (it responds to evidence, not to voters). Standard DAOs score 10–11/12
+under the framework's own measurement. Paper 44 also derives the prohibition-ritual
+stability theorem: Pe(prohibition)/Pe(ritual) ≥ 1 is the necessary condition for
+institutional stability. When ritual Pe discharge exceeds prohibition Pe, the
+institution enters a drift cascade regardless of nominal governance structure. The
+DAO voting layer in this license (Section 11.1) is the ritual Pe discharge mechanism;
+the objective layer (Section 11.2) is the prohibition. Paper 44 is Tier 1 (CC-BY).
+
+**Paper 47 (The Democratic Void).** Applies the framework to democratic governance
+architectures at state scale. Democratic systems score 5–7/12 under the Void Index —
+substantially lower than totalitarian systems (9–10/12), but well above the scored-
+monarchy null-void form (0–2/12). The Pe cascade analysis confirms that information
+control architecture follows the same D1→D2→D3 progression at state scale as at
+platform scale, with slower propagation constants but larger terminal harm amplitudes.
+Paper 47 provides cross-scale validation that governance void scores predict
+institutional drift trajectories — including in explicitly democratic systems that
+adopt opacity architecture. The scored-monarchy structure in Section 11 is not
+anti-democratic; it is a lower-Pe governance form for the objective layer, where
+voting produces only noise and strategic manipulation. Paper 47 is Tier 1 (CC-BY).
+
+**Paper 49 (The Fractal of Law).** Derives the Independence Theorem (T11): η → 0
+when O_performer ≥ O_p*, where η is the effective Pe discharge rate of a certification
+function and O_p* is the critical opacity threshold for the certifier. When the
+certifier's own opacity exceeds the critical value, audit/certification performance
+continues — but its crisis-interval reduction collapses to the prohibition-only
+baseline. The EU AI Act's Article 31(5) prohibition on notified bodies providing
+consulting is a thermodynamic enforcement of T11: the law separates certifier from
+advisor to keep O_performer below O_p*. The auditor independence constraint in
+Section 6.3 is the license-level application of the same theorem — independent audit
+only produces its intended effect when the auditor is itself constraint-pole. Paper 49
+is Tier 1 (CC-BY).
+
 ### 11.5 — Why This Structure
 
 The DAO governs **discretion**, not **methodology**. An organization that receives a
@@ -1081,8 +1204,9 @@ that requires judgment beyond the methodology is discretionary (voted on). This 
 $MORR a governance token with real utility — it governs the license decisions that
 affect every commercial user of the framework.
 
-See the MoreRight DAO documentation for $MORR token mechanics, the Founder-Custodian model,
-and the relationship between token governance and operational custody.
+Cross-reference: `private/strategy/tokenomics.md` for $MORR token mechanics, the
+Founder-Custodian model, and the relationship between token governance and operational
+custody.
 
 ## Section 12 — Enforcement
 
@@ -1343,5 +1467,5 @@ higher-opacity than one with it.
 
 ---
 
-*MoreRight License v1.0 — Issued February 2026*
+*MoreRight License v1.1 — Issued February 2026 / Amended February 2026 (effective 2026-05-24)*
 *Contact: anthony@moreright.xyz*
