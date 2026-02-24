@@ -187,7 +187,7 @@ geometry. Paper 5 if you want the full scope. Paper 8 if you're a physicist.
 | [8](papers/paper8-observer-measurement-bridge.md) | **The Observer-Measurement Bridge** | Quantum bridge. Proves void framework math = classical limit of quantum measurement theory. Fisher→QFI, Pe→Nelson, conjugacy→Holevo. |
 | [9](papers/paper9-voidspace.md) | **Voidspace** | THE KEYSTONE. Formalizes the Eckert Manifold — the space where all dynamics live. Substrate independence theorem. Channel decomposition. Boundary theorem. Demon lattice phases. Pandemonium threshold (Pe = 4). 62 predictions, 23 falsification conditions. |
 
-### Applied Domain Library (Tier 2 — MoreRight License v1.0)
+### Applied Domain Library (Tier 2 — MoreRight License v1.1)
 
 These papers apply the framework to specific commercial domains. Free for non-commercial use, research, and replication. See [LICENSE-MORERIGHT](LICENSE-MORERIGHT.md) for full terms.
 
@@ -230,7 +230,7 @@ These papers apply the framework to specific commercial domains. Free for non-co
 | [36](papers/paper36-psychotherapy.md) | **The Transference Trap** ⚠️ | Psychotherapy. |
 | [37](papers/paper37-real-estate-proptech.md) | **The Listing Lock** ⚠️ | Real estate & PropTech platforms. |
 | [38](papers/paper38-gig-economy.md) | **The Algorithm Manages You** ⚠️ | Gig economy & employment platforms. |
-| [39](papers/paper39-congregation-effect.md) | **The Congregation Effect** ✓ | Void architecture across the religious spectrum. CC-BY 4.0. |
+| [39](papers/paper39-congregation-effect.md) | **The Congregation Effect** ⚠️ | Void architecture across the religious spectrum. MoreRight License v1.1. |
 | [40](papers/paper40-eu-ai-act-conformity-mapping.md) | **The Rosetta Stone** ✓ | Mapping void framework to EU AI Act conformity (Art. 9–17). CC-BY 4.0. |
 | [41](papers/paper41-evolutionary-biology-thrml.md) | **The Fitness Void** ✓ | Three independent derivations of the void Péclet number. Kimura identity Pe=4Ns. Biology convergence Spearman=0.9516 (N=20). CC-BY 4.0. |
 | [42](papers/paper42-social-neuroscience-primate-cognition.md) | **The Neural Void** ✓ | Dunbar's number as THRML K — fourth independent convergence. N=28 primates, Spearman=0.9448. Machiavellian intelligence as D3 in social cognition. CC-BY 4.0. |
@@ -241,15 +241,17 @@ These papers apply the framework to specific commercial domains. Free for non-co
 | [47](papers/paper47-democratic-backsliding.md) | **The Democratic Void** ✓ | 7th convergence. V-Dem LDI vs Void Index, N=20 countries, Spearman=0.9891. Authoritarian info-arch = institutional Pe cascade. CC-BY 4.0. |
 | [48](papers/paper48-pharmaceutical-markets.md) | **The Prescription Cascade** ✓ | OxyContin Pe=43.9. 5-layer pharma opacity cascade. Spearman(V,MCI)=0.770, N=15 categories. MoreRight License. |
 | [49](papers/paper49-law-pe-control-fractal.md) | **The Fractal of Law** ✓ | Independence Theorem (T11): η→0 via inverse selection at O_performer ≥ O_p*. Art. 31(5) EU AI Act = thermodynamic enforcement. 7 falsifiable predictions. CC-BY 4.0. |
+| [50](papers/paper50-health-institutions.md) | **The Health Void** ✓ | Ninth convergence. Institutional R-collapse → vaccine trust collapse. N=22 countries, Spearman=−0.951. Dual regulatory void Pe=52.9 (exceeds OxyContin 43.9 and CJNG 45.0). Developmental window ODE: time-integral Pe exposure. Two-layer multiplicative coupling theorem (super-additivity). CC-BY 4.0. |
 | [51](papers/paper51-swarm-attractor-agent-networks.md) | **The Swarm Attractor** ✓ | Tenth convergence. Peer-learning agent networks (Moltbook, 2.4M agents). N*=3% grounded agents suppress Pe by 10% in Pe=60 network. t_cross=950 steps. Rotation+ritual architecture dominates. Spearman=0.9612 (N-sweep). 6/6 kill conditions pass. DOI 10.5281/zenodo.18753477. CC-BY 4.0. |
+| [52](papers/paper52-void-gradient-economics.md) | **The Constraint Current** ⚠️ | New math: J = −σ·ΔPe — Fourier's law for void gradients. Analytical dPe/dV derived. N=10 governance mechanisms, Spearman(Pe, effectiveness)=−0.865 (p=0.0012). V*=5.52 effectiveness threshold. Extraction circuit vs constraint current. MoreRight License v1.1. |
 
 **EU AI Act:** Papers 18, 21, 21B (high-risk domains), 40 (conformity mapping), and 49 (Independence Theorem / Art. 31(5)) are directly relevant to the EU AI Act enforcement deadline of 2 August 2026. Paper 40 maps void framework dimensions to Art. 9–17 requirements. Paper 49 derives why auditor independence is thermodynamically enforced.
 
 All on [Zenodo](https://zenodo.org) (search "Void Framework"). DOIs in [`zenodo-dois.json`](zenodo-dois.json). Markdown here is canonical.
 
-> **⚠️ License note — Papers 6, 7, 7B–D, 10–38, 48:** These applied domain papers are licensed under **MoreRight License v1.0**. Free for non-commercial use, research, and replication. Commercial use gated by Void Score. Indie Threshold: < $1M revenue AND < $5M funding AND < 25 FTE = free use. Converts to Apache 2.0 on February 19, 2030. See [LICENSE-MORERIGHT](LICENSE-MORERIGHT.md) for full terms. Contact **anthony@moreright.xyz** to discuss.
+> **⚠️ License note — Papers 6, 7, 7B–D, 10–39, 48, 52:** These applied domain papers are licensed under **MoreRight License v1.1**. Free for non-commercial use, research, and replication. Commercial use gated by Void Score. Indie Threshold: < $1M revenue AND < $5M funding AND < 25 FTE = free use. Converts to Apache 2.0 on February 19, 2030. See [LICENSE-MORERIGHT](LICENSE-MORERIGHT.md) for full terms. Contact **anthony@moreright.xyz** to discuss.
 
-> **Papers 39–47, 49, 51** are **CC-BY 4.0** (irrevocable open access) — congregation effect, EU AI Act conformity mapping, the biology series, governance, violence & anthropology, TSU inference, democratic governance, the Independence Theorem, and the Swarm Attractor.
+> **Papers 40–47, 49, 50, 51** are **CC-BY 4.0** (irrevocable open access) — EU AI Act conformity mapping, the biology series, governance, violence & anthropology, TSU inference, democratic governance, the Independence Theorem, the Health Void, and the Swarm Attractor.
 
 ### How papers evolve
 
@@ -299,6 +301,11 @@ Sample kill conditions:
 
 **Full tracker:** [`EXPERIMENTS.md`](EXPERIMENTS.md) — every run, every prediction, every threshold.
 
+### Browse the notebooks
+**[morerightdao.github.io/thrml-examples/](https://morerightdao.github.io/thrml-examples/)**
+60+ THRML notebooks covering all ten convergences, TSU inference, core mechanics, and new
+math (Constraint Current). Runs with `pip install thrml numpy scipy matplotlib jupyter`.
+
 ### Run an experiment
 All protocols are in [`experiments/protocols/`](experiments/protocols/).
 21 experiments have full protocols — EXP-005 through EXP-018 are open for independent
@@ -321,9 +328,9 @@ README.md              ← you are here
 EXPERIMENTS.md         ← full experiment log, prediction tracker, bounty conditions
 PAPER-TIERS.md         ← authoritative license tier assignments
 zenodo-dois.json       ← Zenodo DOI registry (concept + version DOIs for all papers)
-LICENSE-MORERIGHT.md   ← MoreRight License v1.0 full text
+LICENSE-MORERIGHT.md   ← MoreRight License v1.1 full text
 
-papers/                ← Papers 1–51 + variants (4B, 4C, 4D, 7B–D, 16B, 21B, 22B, 26C) + predictions table
+papers/                ← Papers 1–52 + variants (4B, 4C, 4D, 7B–D, 16B, 21B, 22B, 26C) + predictions table
 figures/               ← SVG figures (framework/, paper9-sc/, papers 6–43)
 experiments/
   protocols/           ← EXP-001 through EXP-021 + all test protocols
@@ -356,13 +363,13 @@ predictions. The territory is bigger than we expected. We're still mapping it.
 
 ## LICENSE
 
-**Papers 1–5, 4B, 4C, 4D, 8, 9, 39–47, 49, 51: CC-BY 4.0** — use them, cite them, build on them, replicate them, try
+**Papers 1–5, 4B, 4C, 4D, 8, 9, 40–47, 49, 50, 51: CC-BY 4.0** — use them, cite them, build on them, replicate them, try
 to break them.
 
-**Papers 6, 7, 7B–D, 10–38: MoreRight License v1.0** — free for non-commercial use, research,
+**Papers 6, 7, 7B–D, 10–39, 48, 52: MoreRight License v1.1** — free for non-commercial use, research,
 education, replication. Commercial use gated by Void Score. Indie Threshold: < $1M revenue
 AND < $5M funding AND < 25 FTE = free use. Converts to Apache 2.0 on Feb 19, 2030.
 
 The methodology is always open. The ratings are the product.
 
-Site: [moreright.xyz](https://moreright.xyz) · Papers: [Zenodo](https://zenodo.org) · Bounties: [bounties](https://moreright.xyz/pages/bounties.html) · Contact: [anthony@moreright.xyz](mailto:anthony@moreright.xyz)
+Site: [moreright.xyz](https://moreright.xyz) · Papers: [Zenodo](https://zenodo.org) · Notebooks: [thrml-examples](https://morerightdao.github.io/thrml-examples/) · Bounties: [bounties](https://moreright.xyz/pages/bounties.html) · Contact: [anthony@moreright.xyz](mailto:anthony@moreright.xyz)
