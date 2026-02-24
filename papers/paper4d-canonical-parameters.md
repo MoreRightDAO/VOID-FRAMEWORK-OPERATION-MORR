@@ -408,13 +408,13 @@ These three control cases confirm that the measurement is detecting mechanism, n
 
 **Canonical parameter derivation:** EXP-001 (2024, AI-to-AI behavioral dynamics). Source equilibria: $\theta^*_\text{UU} = 0.85$, $\theta^*_\text{GG} = 0.06$. Data available in the supplementary repository.
 
-**Cross-domain calibration (nb10):** Notebook `private/phase-2/thrml/10_cross_domain_calibration.ipynb`. Nine substrate conditions. Pe values from Test 7 (AI), GRCS meta-analysis (gambling, five published studies), EXP-021B (crypto, on-chain). All pre-existing measurements; none made for this paper.
+**Cross-domain calibration (nb10):** Notebook `notebooks/10_cross_domain_calibration.ipynb`. Nine substrate conditions. Pe values from Test 7 (AI), GRCS meta-analysis (gambling, five published studies), EXP-021B (crypto, on-chain). All pre-existing measurements; none made for this paper.
 
-**K-scaling derivation (nb12):** Notebook `private/phase-2/thrml/12_k_scaling.ipynb`. Analytic derivation; no empirical fitting.
+**K-scaling derivation (nb12):** Notebook `notebooks/12_k_scaling.ipynb`. Analytic derivation; no empirical fitting.
 
-**Passive investor control (EXP-024):** Notebook `private/phase-2/thrml/exp024_passive_investing_control.ipynb`. N=300 synthetic investors calibrated to Glassnode/Chainalysis 2024 on-chain metrics.
+**Passive investor control (EXP-024):** Notebook `notebooks/exp024_passive_investing_control.ipynb`. N=300 synthetic investors calibrated to Glassnode/Chainalysis 2024 on-chain metrics.
 
-**Wikipedia control (EXP-023):** Notebook `private/phase-2/thrml/exp023_wikipedia_editor_pe.ipynb`. N=200 synthetic editors calibrated to Halfaker et al. (2013) and Kittur et al. (2007).
+**Wikipedia control (EXP-023):** Notebook `notebooks/exp023_wikipedia_editor_pe.ipynb`. N=200 synthetic editors calibrated to Halfaker et al. (2013) and Kittur et al. (2007).
 
 All notebooks pass `pytest --nbmake`. Code available at: [github.com/MoreRightDAO/VOID-FRAMEWORK-OPERATION-MORR](https://github.com/MoreRightDAO/VOID-FRAMEWORK-OPERATION-MORR)
 
@@ -561,7 +561,7 @@ $$\lim_{K\to\infty} c_\text{crit}(K) = \frac{b_\alpha}{b_\gamma} = \frac{0.8673}
 | nb10 — Cross-domain | `10_cross_domain_calibration.ipynb` | 9 substrates, 4 ordering checks PASS |
 | nb12 — K-scaling | `12_k_scaling.ipynb` | Pe linear in K; $K_\times$ per substrate |
 
-All notebooks: `private/phase-2/thrml/`. All passing `pytest --nbmake`.
+All notebooks: `notebooks/`. All passing `pytest --nbmake`.
 
 **Figures:**
 - `nb10_cross_domain_pe_calibration.svg` — Pe vs $c$, all substrates on canonical THRML curve

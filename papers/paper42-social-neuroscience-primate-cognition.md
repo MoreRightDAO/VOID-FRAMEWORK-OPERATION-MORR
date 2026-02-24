@@ -323,11 +323,11 @@ Whiten, A., & Byrne, R. W. (1988). Tactical deception in primates. *Behavioral a
 
 All analyses are reproducible from the THRML notebook:
 
-- nb32 (Social Void — fourth convergence): available from authors on request
+- nb32 (Social Void — fourth convergence): `notebooks/nb32_social_void.ipynb`
 
 Prior convergences (Papers 41):
-- nb25 (market microstructure): available from authors on request
-- nb26 (behavioral bridge): available from authors on request
-- nb30 (Kimura identity): available from authors on request
+- nb25 (market microstructure): `notebooks/25_market_microstructure_mapping.ipynb`
+- nb26 (behavioral bridge): `notebooks/26_g1_bridge_verification.ipynb`
+- nb30 (Kimura identity): `notebooks/nb30_kimura_thrml_convergence.ipynb`
 
 Public repository (CC-BY 4.0): https://github.com/MoreRightDAO/thrml-examples

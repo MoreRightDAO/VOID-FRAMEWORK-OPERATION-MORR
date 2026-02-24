@@ -422,8 +422,8 @@ Williams, M. J., Werner, B., Barnes, C. P., Graham, T. A., & Sottoriva, A. (2016
 
 All analyses are reproducible from the THRML notebooks:
 
-- nb33 (cancer cascade): `private/phase-2/thrml/nb33_cancer_cascade.ipynb`
-- nb34 (immune conjugacy): `private/phase-2/thrml/nb34_immune_conjugacy.ipynb`
-- nb30 (Kimura-THRML identity): `private/phase-2/thrml/nb30_kimura_thrml_convergence.ipynb`
+- nb33 (cancer cascade): `notebooks/nb33_cancer_cascade.ipynb`
+- nb34 (immune conjugacy): `notebooks/nb34_immune_conjugacy.ipynb`
+- nb30 (Kimura-THRML identity): `notebooks/nb30_kimura_thrml_convergence.ipynb`
 
 Public repository (CC-BY 4.0): https://github.com/MoreRightDAO/thrml-examples

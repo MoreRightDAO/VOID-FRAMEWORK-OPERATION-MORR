@@ -415,11 +415,11 @@ The following results would falsify this paper's primary claims:
 
 ## Data and Code
 
-**Transgressive bonding conjugacy (nb40):** Notebook `private/phase-2/thrml/nb40_bonding_conjugacy.ipynb`. N=18 group types. Sources: Cimino 2011, Boswell & Spade 1996, Grossman 1995, Lifton 1961, Hassan 1988.
+**Transgressive bonding conjugacy (nb40):** Notebook `notebooks/nb40_bonding_conjugacy.ipynb`. N=18 group types. Sources: Cimino 2011, Boswell & Spade 1996, Grossman 1995, Lifton 1961, Hassan 1988.
 
-**Girard scapegoat mechanism (nb41):** Notebook `private/phase-2/thrml/nb41_girard_scapegoat.ipynb`. N=12 historical events from Girard's catalogue. Sources: Girard 1972, Girard 1987, Nirenberg 1996, Straus 2006, Bredin 1986.
+**Girard scapegoat mechanism (nb41):** Notebook `notebooks/nb41_girard_scapegoat.ipynb`. N=12 historical events from Girard's catalogue. Sources: Girard 1972, Girard 1987, Nirenberg 1996, Straus 2006, Bredin 1986.
 
-**Prohibition-ritual pair (nb_girard02):** Notebook `private/phase-2/thrml/nb_girard02_prohibition_ritual.ipynb`. N=20 cultures from ethnographic atlas (Murdock 1967). Sources: Girard 1987, Durkheim 1912, Turner 1969.
+**Prohibition-ritual pair (nb_girard02):** Notebook `notebooks/nb_girard02_prohibition_ritual.ipynb`. N=20 cultures from ethnographic atlas (Murdock 1967). Sources: Girard 1987, Durkheim 1912, Turner 1969.
 
 All canonical parameters: $b_\alpha = 0.867$, $b_\gamma = 2.244$, $K = 16$, V3 bridge: $c = 1 - V/9$.
 

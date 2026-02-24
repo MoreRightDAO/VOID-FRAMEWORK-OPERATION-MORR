@@ -286,7 +286,7 @@ The fractal of law is not a metaphor. It is the structure of Pe control across s
 
 The empirical anchor for this paper — nb_girard02's prohibition-ritual result (Spearman=0.8684, N=20) — is available at:
 
-- Notebook: `private/phase-2/thrml/nb_girard02_prohibition_ritual.ipynb`
+- Notebook: `notebooks/nb_girard02_prohibition_ritual.ipynb`
 - Public version: MoreRightDAO/thrml-examples, `notebooks/core/nb_girard02_prohibition_ritual_pair.ipynb`
 - Source analysis: `sources/law-pe-control-fractal-void-framework-structural-analysis.md`
 
