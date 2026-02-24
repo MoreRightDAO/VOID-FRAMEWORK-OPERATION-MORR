@@ -382,7 +382,7 @@ When burst-deployed grounded agents are removed, thread Pe should recover toward
 
 **THRML canonical parameters** (EXP-001, fixed): b_α = 0.867, b_γ = 2.244, C_ZERO = 0.3866. Any re-estimation of these parameters against subsequent data would constitute a KC5 violation and invalidate the convergence claims of Papers 41–44.
 
-**Related experiments:** See also `ops/lab/experiments/vs-22-*-results.json` (forward embedding, ρ=0.95), `ops/lab/experiments/vs-25-*-results.json` (bifurcation, 9/9 match), `ops/lab/experiments/exp_tok01-results.json` (two-gate design). The THRML validation suite context is summarized in `private/notes/thrml-validation-handoff.md`.
+**Related experiments:** See also `ops/lab/experiments/vs-22-*-results.json` (forward embedding, ρ=0.95), `ops/lab/experiments/vs-25-*-results.json` (bifurcation, 9/9 match), `ops/lab/experiments/exp_tok01-results.json` (two-gate design). Full validation suite context available from authors on request.
 
 ---
 

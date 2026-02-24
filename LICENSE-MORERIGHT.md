@@ -1204,7 +1204,7 @@ that requires judgment beyond the methodology is discretionary (voted on). This 
 $MORR a governance token with real utility — it governs the license decisions that
 affect every commercial user of the framework.
 
-Cross-reference: `private/strategy/tokenomics.md` for $MORR token mechanics, the
+See: https://moreright.xyz/pages/tokenomics.html for $MORR token mechanics, the
 Founder-Custodian model, and the relationship between token governance and operational
 custody.
 

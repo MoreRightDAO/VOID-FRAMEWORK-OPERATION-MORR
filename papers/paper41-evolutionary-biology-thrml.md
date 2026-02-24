@@ -452,12 +452,12 @@ Wright, S. (1931). Evolution in Mendelian populations. *Genetics*, 16(2), 97–1
 
 All analyses are reproducible from the THRML notebooks:
 
-- nb25 (market microstructure): `private/phase-2/thrml/25_market_microstructure_mapping.ipynb`
-- nb26 (G1 bridge verification): `private/phase-2/thrml/26_g1_bridge_verification.ipynb`
-- nb27 (dimension weighting): `private/phase-2/thrml/27_dimension_weighting.ipynb`
-- nb28 (coupling emergence): `private/phase-2/thrml/28_coupling_emergence.ipynb`
-- nb29 (validation robustness): `private/phase-2/thrml/29_validation_robustness.ipynb`
-- nb30 (Kimura-THRML convergence): `private/phase-2/thrml/nb30_kimura_thrml_convergence.ipynb`
-- nb31 (parasite-host validation, N=10): `private/phase-2/thrml/nb31_parasite_void_scores.ipynb`
+- nb25 (market microstructure): available from authors on request
+- nb26 (G1 bridge verification): available from authors on request
+- nb27 (dimension weighting): available from authors on request
+- nb28 (coupling emergence): available from authors on request
+- nb29 (validation robustness): available from authors on request
+- nb30 (Kimura-THRML convergence): available from authors on request
+- nb31 (parasite-host validation, N=10): available from authors on request
 
 Public repository (CC-BY 4.0): https://github.com/MoreRightDAO/thrml-examples

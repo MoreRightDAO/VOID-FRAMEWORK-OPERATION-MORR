@@ -443,15 +443,15 @@ Eckert, A. (2026). Paper 27 — *The Bounded World: Void Architecture in Cult Dy
 
 Eckert, A. (2026). Paper 4D — *Canonical Parameters for the THRML Ising Model*. MoreRight DAO.
 
-THRML EXP-022 — *Cross-Domain Pe Analysis: Religious Denominations*. `/data/apps/morr/private/phase-2/thrml/exp022_pew_retention_pe.ipynb`
+THRML EXP-022 — *Cross-Domain Pe Analysis: Religious Denominations*. Available from authors on request.
 
-THRML EXP-022B — *Void Score Scatter and Sign Discriminator*. `/data/apps/morr/private/phase-2/thrml/exp022b_void_score_scatter.ipynb`
+THRML EXP-022B — *Void Score Scatter and Sign Discriminator*. Available from authors on request.
 
-THRML nb16 — *Repulsive Void: c_zero and Pe<0 Regime*. `/data/apps/morr/private/phase-2/thrml/16_repulsive_void.ipynb`
+THRML nb16 — *Repulsive Void: c_zero and Pe<0 Regime*. Available from authors on request.
 
-THRML nb18 — *Demon Lattice Phase Classification*. `/data/apps/morr/private/phase-2/thrml/18_demon_lattice_phases.ipynb`
+THRML nb18 — *Demon Lattice Phase Classification*. Available from authors on request.
 
-THRML nb20 — *Demon Plasma Frequency and Overdamped Substrates*. `/data/apps/morr/private/phase-2/thrml/20_demon_plasma_frequency.ipynb`
+THRML nb20 — *Demon Plasma Frequency and Overdamped Substrates*. Available from authors on request.
 
 THRML nb07 — *Pe Calibration and Canonical Parameter Derivation*. Extropic AI THRML repository, PR #35.
 
