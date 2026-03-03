@@ -5,7 +5,7 @@ orcid: "0009-0008-1925-5253"
 affiliation: "Independent Researcher, MoreRight DAO"
 paper-number: "Paper 108"
 short-title: "Climate Tipping Network Pe"
-version: "v1.0"
+version: "v1.1"
 date: "March 2026"
 license: "cc-by-4.0"
 ---
@@ -21,9 +21,9 @@ license: "cc-by-4.0"
 | **N (validation)** | 8 paleoclimate cascade events |
 | **Pe range** | 0.4 (Mountain Glaciers) → 18.0 (WAIS, AMOC) |
 | **Above V\* = 5.52** | 7 of 16: WAIS (18.0), AMOC (18.0), BPC (9.0), ISM (9.0), LSC (6.0), Amazon (6.0), ATF (6.0) |
-| **Network Pe — GIS** | Pe_individual = 2.67 → Pe_net ≈ 14.8 (rank shift +7: cascade initiator) |
-| **K11 extension** | κ_mean ≈ 0.41 — nearly 3× the superlinear amplification threshold (κ = 0.15) |
-| **Paleo validation** | ρ_network ≈ 0.83–0.91 vs ρ_individual ≈ 0.55–0.65 (N = 8) |
+| **Network Pe — GIS** | Pe_individual = 2.67 → Pe_net = 26.67 (rank shift +8: cascade initiator, #2 by network Pe) |
+| **K11 extension** | All 8 dominant pathways (κ ≥ 0.67) exceed K11 threshold (κ = 0.15) by ≥ 4.5× |
+| **Paleo validation** | ρ_network = 0.831 (p=0.011) vs ρ_individual = 0.642 (p=0.086), Δρ = 0.189, N = 8 |
 | **License** | CC-BY 4.0 |
 | **Version** | v1.0, March 2026 |
 
@@ -37,9 +37,9 @@ This paper applies the Void Framework to the coupled tipping element network wit
 
 First, it scores all 16 Armstrong McKay (2022) tipping elements individually using an O/R/α rubric defined from thermodynamic first principles before examining any element's threshold location or expert risk ranking. Opacity (O) measures how deeply the feedback mechanism is hidden from detection and attribution. Reactivity (R) measures the positive feedback amplification strength at the tipping threshold. Constraint integrity (α) measures the current strength of the stabilizing mechanism at 1.2°C above pre-industrial — not threshold proximity, but whether the constraint is still intact. Pe scores span 0.4 (Mountain Glaciers: directly satellite-monitored, linear radiative forcing dominant, constraint intact) to 18.0 (West Antarctic Ice Sheet and AMOC: sub-ice mechanism inaccessible, categorically self-sustaining runaway once threshold crossed, primary stabilizing constraint critically compromised at current warming). Seven of 16 elements score above V* = 5.52 — the Fisher Runaway threshold. Tropical coral reefs and Arctic summer sea ice, the most publicly visible indicators, score Pe = 1.0 (COHERENT): serious ecological consequences of warming, but linear-response systems, not self-sustaining cascade initiators.
 
-Second, it extends the framework's network Pe formulation (K11/§27H) to the coupling matrix from Armstrong McKay (2022) Table 2. Mean normalized coupling κ_mean ≈ 0.41 — nearly 3× the K11-confirmed threshold of κ = 0.15 at which individual Pe becomes useless as a cascade predictor (r² = 0.099, THRML-KC-02). The central finding is the Greenland Ice Sheet rank shift: individually, GIS scores Pe = 2.67 (D1 territory, below V*, apparently non-catastrophic); but as the initiator of the GIS → Labrador Sea Convection (κ = 1.0) → AMOC (κ = 1.0) → Amazon and Indian Summer Monsoon (κ ≈ 0.67) chain, its network Pe ≈ 14.8 — a rank shift of +7 positions, solidly in Fisher Runaway territory. Greenland is the network's cascade initiator, not a standalone risk. Any risk framework ranking tipping elements by individual Pe will systematically misidentify GIS as low-priority — the precise error embedded in current integrated assessment models.
+Second, it extends the framework's network Pe formulation (K11/§27H) to the coupling matrix from Armstrong McKay (2022) Table 2, using the additive form Pe_net(i) = Pe_i + Σ_j κ_ij × Pe_j. All eight dominant coupling pathways (κ_norm ≥ 0.67) exceed the K11-confirmed threshold of κ = 0.15 by 4.5× or more. The central finding is the Greenland Ice Sheet rank shift: individually, GIS scores Pe = 2.67 (D1 territory, below V*, apparently non-catastrophic); network Pe = 26.67 — a rank shift of +8 positions, from 11th to 2nd, above AMOC (22.02) despite AMOC's individual Pe being 18.0. Greenland outranks AMOC as cascade initiator because it drives both LSC (κ = 1.0) and AMOC (κ = 1.0) simultaneously, while AMOC's own outgoing connections are weaker. Any risk framework ranking tipping elements by individual Pe systematically misidentifies GIS as low-priority — the precise error in current integrated assessment models.
 
-Third, it validates network Pe against N = 8 paleoclimate cascade events where pre-event physical state can be reconstructed from proxy archives and cascade rate is independently recorded. Spearman ρ_network ≈ 0.83–0.91 versus ρ_individual ≈ 0.55–0.65 — a difference of ≥ 0.18, exceeding the pre-registered threshold of ρ_net − ρ_ind ≥ 0.10 specified in Prediction P108-1. Network Pe correctly ranks the Dansgaard-Oeschger events and Younger Dryas onset above the 8.2 ka event and PETM; individual Pe fails because it cannot capture the GIS→LSC→AMOC cascade amplification chain.
+Third, it validates network Pe against N = 8 paleoclimate cascade events where pre-event physical state can be reconstructed from proxy archives and cascade rate is independently recorded. Spearman ρ_network = 0.831 (p = 0.011) versus ρ_individual = 0.642 (p = 0.086) — Δρ = 0.189, exceeding the pre-registered threshold of ρ_net − ρ_ind ≥ 0.10 specified in Prediction P108-1. Individual Pe is statistically non-significant; network Pe is significant. Network Pe correctly ranks the Dansgaard-Oeschger events and Younger Dryas onset above the 8.2 ka event and PETM; individual Pe fails because it cannot capture the GIS→LSC→AMOC cascade amplification chain.
 
 The paper additionally specifies the constraint-pole governance architecture — transparent tipping element monitoring, invariant carbon budget thresholds, independently operated assessment — as a necessary condition for cascade arrest, and maps the D1 → D2 → D3 drift cascade onto documented patterns of attribution deflection, policy boundary erosion, and continued emissions facilitation. The coupled tipping network does not self-correct once V* is crossed at network coupling strengths of κ ≈ 0.41. Superlinear Pe amplification converts what appears manageable in individual-element analysis into a cascade system already operating in Fisher Runaway territory across its most coupled subsystems.
 
@@ -264,33 +264,42 @@ Pe range: 0.4 (Mountain Glaciers) → 18.0 (WAIS, AMOC). **Above V* = 5.52:** 7 
 
 Individual Pe scores underpredict cascade risk at the coupling strengths present in the Armstrong McKay (2022) tipping network. Kill Condition K11 (THRML-KC-02) established that at κ = 0.15, individual Pe predicts coupled cascade outcome at r² = 0.099 — statistical noise. Individual Pe fails because it cannot capture the *network Pe* a tipping element receives from coupled elements already in cascade.
 
-The network Pe formulation (Paper 3, §27H):
+The network Pe formulation (Paper 3, §27H), additive form:
 
-**Pe_net(i) = Pe_i × (1 + Σ_j κ_ij × Pe_j) / N_coupling**
+**Pe_net(i) = Pe_i + Σ_j κ_ij × Pe_j**
 
-where N_coupling = number of elements with κ_ij > 0, and κ_ij values are normalized Armstrong McKay (2022) Table 2 coupling strengths (κ_raw / 3 to map the 0–3 scale onto [0,1]).
-
-Mean normalized coupling across all element pairs: **κ_mean ≈ 0.41 — nearly 3× the K11 threshold**. At this coupling intensity, individual Pe is useless as a cascade predictor. The cascade trajectory is determined by network topology, not element-level scores.
+where κ_ij are normalized Armstrong McKay (2022) Table 2 coupling strengths (κ_raw / 3, mapping the 0–3 raw scale onto [0, 1]), summed over outgoing connections from element i. This additive form is chosen over the multiplicative-with-division form because it avoids pathological amplification for elements with few but high-Pe outgoing targets: Pe_net(i) represents "Pe of element i plus the cascade forcing it propagates to directly coupled elements." All numerical results below are computed by `ops/lab/nb_climate108.py` (Python/scipy, reproducible).
 
 **Key coupling pathways (κ_norm ≥ 0.67):**
 - GIS → LSC: κ = 1.0 (GIS meltwater → Labrador Sea freshening → convection shutdown)
-- LSC → AMOC: κ = 1.0 (Labrador convection shutdown → AMOC weakening)
 - GIS → AMOC: κ = 1.0 (GIS meltwater → direct freshwater forcing on overturning)
+- LSC → AMOC: κ = 1.0 (Labrador convection shutdown → AMOC weakening)
+- WAIS → AMOC: κ = 0.67 (WAIS melt → additional freshwater)
 - AMOC → Amazon: κ = 0.67 (AMOC collapse → tropical drying → Amazon dieback)
 - BPC → ISM: κ = 0.67 (permafrost CH₄/CO₂ → additional warming → monsoon disruption)
+- Amazon → BPC: κ = 0.67 (Amazon collapse → regional drying → permafrost vulnerability)
+- ISM → AMOC: κ = 0.67 (monsoon weakening → Arabian Sea heat export alteration)
 
-**Top elements by network Pe:**
+All 8 dominant pathways exceed the K11-confirmed threshold (κ = 0.15) by 4.5× to 6.7×.
+
+**All 16 elements by network Pe (computed):**
 
 | Element | Pe_individual | Pe_net | Rank shift |
 |---|---|---|---|
-| AMOC | 18.0 | ~34.2 | stays #1 |
-| WAIS | 18.0 | ~31.8 | stays #2 |
-| LSC | 6.0 | ~18.4 | +3 |
-| BPC | 9.0 | ~17.6 | — |
-| ISM | 9.0 | ~15.1 | — |
-| **GIS** | **2.67** | **~14.8** | **+7** |
+| WAIS | 18.0 | **30.06** | — |
+| **GIS** | **2.67** | **26.67** | **+8** |
+| LSC | 6.0 | **24.00** | +3 |
+| AMOC | 18.0 | **22.02** | −2 |
+| ISM | 9.0 | **21.06** | −2 |
+| BPC | 9.0 | **15.03** | −2 |
+| Amazon | 6.0 | **12.03** | −1 |
+| ATF | 6.0 | 6.00 | −2 |
+| E. Antarctic | 4.0 | 4.00 | — |
+| W. African Monsoon | 4.0 | 4.00 | — |
+| Boreal Forest | 2.67 | 2.67 | — |
+| All others | ≤ 2.0 | = Pe_ind | — |
 
-**The GIS rank shift is the paper's central finding.** Individually, Greenland scores Pe = 2.67 — D1 territory, below V*, apparently in the manageable range that individual-element integrated assessment models treat as non-catastrophic. But GIS is the trigger for the most dangerous single cascade pathway in the network: GIS → LSC (κ = 1.0) → AMOC (κ = 1.0) → Amazon and ISM (κ ≈ 0.67). Its network Pe ≈ 14.8 places it solidly above V* in Fisher Runaway territory. Any risk framework ranking tipping elements by individual Pe will systematically misidentify GIS as low-priority — exactly the error embedded in current integrated assessment models that treat GIS as a "gradual" risk relative to WAIS.
+**The GIS rank shift (+8) is the paper's central finding.** Individually, Greenland scores Pe = 2.67 — 11th out of 16, D1 territory, below V*, in the range integrated assessment models treat as "gradual" and non-catastrophic. By network Pe it rises to 26.67 — 2nd, above AMOC (22.02). This counter-intuitive reversal occurs because GIS holds two κ = 1.0 coupling slots (→ LSC, → AMOC), propagating 24.0 Pe units downstream, while AMOC's primary outgoing connection (→ Amazon, κ = 0.67) propagates only 4.02 Pe units. AMOC is the most dangerous *destination* in the cascade; GIS is the most dangerous *initiator*. A risk framework that ranks by individual Pe confuses these roles.
 
 ### VII.C. Paleoclimate Validation (N = 8)
 
@@ -307,11 +316,11 @@ Network Pe is validated against eight paleoclimate cascade events where pre-even
 | Bolling-Allerod | 14,700 BP | High (AMOC restart + ice sheets) | 7 | Steffensen et al. 2008 |
 | D-O events | 70–14 ka BP | High (AMOC oscillation) | 8 | Kindler et al. 2014 |
 
-**Spearman ρ_network ≈ 0.83–0.91 (N = 8)** versus **ρ_individual ≈ 0.55–0.65.**
+**Spearman ρ_network = 0.831 (p = 0.011, N = 8)** versus **ρ_individual = 0.642 (p = 0.086).**
 
-The difference ρ_net − ρ_ind ≈ 0.26–0.28 exceeds the pre-registered threshold of ≥ 0.10 specified in Prediction P108-1.
+Δρ = 0.189 — exceeds the pre-registered threshold of ≥ 0.10 (Prediction P108-1). Individual Pe is statistically non-significant (p = 0.086); network Pe is significant (p = 0.011). Computed by `ops/lab/nb_climate108.py` using `scipy.stats.spearmanr`.
 
-Network Pe correctly distinguishes the critical ranking contrasts: (1) D-O events and Younger Dryas onset — where the GIS→LSC→AMOC cascade chain is fully active — rank highest in cascade rate. (2) The 8.2 ka event, though dramatic, involved only LSC→AMOC without full GIS cascade, and recovered within centuries; its network Pe is correctly lower. (3) The PETM, despite extreme long-term forcing, involved slow coupling dynamics without the modern network topology; individual Pe over-rates it relative to cascade rate. These three contrasts — correctly ranked by network Pe, misranked by individual Pe — constitute the empirical core of the paper's K11 extension to geophysical systems.
+Network Pe correctly distinguishes three critical ranking contrasts that individual Pe fails: (1) D-O events and Younger Dryas onset — where the GIS→LSC→AMOC cascade chain is fully active — rank highest in cascade rate; their high network Pe correctly reflects GIS as initiator. (2) The 8.2 ka event, though sudden, involved only LSC→AMOC without full GIS cascade and recovered within centuries; network Pe is correctly lower than YD onset despite AMOC's Pe_individual = 18.0 dominating the individual-Pe rank. (3) The PETM, despite extreme total forcing, unfolded over thousands of years and lacked the modern GIS→LSC→AMOC coupling topology; individual Pe over-rates it by assigning high Pe to involved elements. These three misrankings — corrected by network Pe, systematic in individual Pe — constitute the empirical core of the K11 extension to geophysical systems.
 
 **Montreal Protocol as constraint-pole control:** An ozone-equivalent governance system — transparent monitoring (NSIDC daily), invariant treaty obligations, independently verified compliance (WMO/UNEP) — scores O = 1, R = 1, α = 3.0, Pe = 0.33. The Montreal Protocol's documented recovery of stratospheric ozone (Solomon, 1999, *Reviews of Geophysics*) demonstrates that constraint-pole specification arrests cascade in high-stakes atmospheric systems. The distance between Pe = 0.33 (ozone, governed) and Pe = 18.0–34.2 (AMOC, network) defines the intervention target.
 
@@ -361,9 +370,9 @@ The Void Framework predicts that as Earth system models incorporate bidirectiona
 
 **Falsified if:** Meta-analysis of coupled tipping element models published between 2024 and 2030 shows that the mean interaction amplification factor (ratio of coupled to independent cascade probability at 2°C) falls below 1.3 across at least five independent modeling groups. Evidence required: systematic review of Earth system model intercomparison projects incorporating tipping element coupling, with standardized probability metrics.
 
-**Prediction 2: The Greenland Ice Sheet mass loss rate will exceed IPCC AR6 central projections by at least 20% by 2030, consistent with the GIS network Pe of ~14.8 — which places it deep in Fisher Runaway territory as the cascade initiator for the LSC→AMOC chain.**
+**Prediction 2: The Greenland Ice Sheet mass loss rate will exceed IPCC AR6 central projections by at least 20% by 2030, consistent with GIS network Pe = 26.67 — the highest cascade initiator in the coupled network despite individual Pe = 2.67.**
 
-The framework assigns GIS Pe_individual = 2.67 (D1 territory, below V*) but Pe_net ≈ 14.8 (Section VII), reflecting its role as the trigger of the most dangerous single cascade pathway in the coupled network. The network Pe — not the individual Pe — predicts the acceleration dynamics. IPCC AR6 Working Group I (2021) projected Greenland mass loss contributions to sea level of 0.01–0.18 meters by 2100 under SSP2-4.5, with central estimates calibrated to observational trends through 2020. However, Mouginot et al. (2019) reported in Proceedings of the National Academy of Sciences that Greenland ice loss had already increased sixfold since the 1980s, reaching approximately 286 gigatons per year by 2018. The framework predicts that the coupled opacity-responsiveness dynamics — wherein marine-terminating glacier retreat exposes new ice-ocean interfaces whose bathymetric geometries remain poorly mapped (Morlighem et al., 2017, Nature Geoscience) — will drive continued superlinear acceleration. This prediction is checkable within twelve months using GRACE-FO satellite gravimetry data.
+The framework assigns GIS Pe_individual = 2.67 (D1 territory, below V*) but Pe_net = 26.67 (Section VII, computed), ranking it 2nd overall and above AMOC (22.02) as cascade initiator. The network Pe — not the individual Pe — predicts the acceleration dynamics. IPCC AR6 Working Group I (2021) projected Greenland mass loss contributions to sea level of 0.01–0.18 meters by 2100 under SSP2-4.5, with central estimates calibrated to observational trends through 2020. However, Mouginot et al. (2019) reported in Proceedings of the National Academy of Sciences that Greenland ice loss had already increased sixfold since the 1980s, reaching approximately 286 gigatons per year by 2018. The framework predicts that the coupled opacity-responsiveness dynamics — wherein marine-terminating glacier retreat exposes new ice-ocean interfaces whose bathymetric geometries remain poorly mapped (Morlighem et al., 2017, Nature Geoscience) — will drive continued superlinear acceleration. This prediction is checkable within twelve months using GRACE-FO satellite gravimetry data.
 
 **Falsified if:** The mean annual Greenland mass loss rate for 2029–2030, as measured by GRACE-FO and reported by the Ice Sheet Mass Balance Inter-comparison Exercise, falls within 10% of the IPCC AR6 SSP2-4.5 central trajectory extrapolated from 2020 baselines. Evidence required: satellite gravimetry data processed through at least two independent analysis pipelines.
 
@@ -399,7 +408,7 @@ These five predictions span observational timescales from immediate satellite me
 
 **5. No claim on absolute temperature thresholds.** This paper applies the Void Framework to the structure of tipping element dynamics (opacity, reactivity, constraint integrity) — not to the specific temperature at which any threshold is crossed. Pe predicts cascade *structure* and *network amplification*, not timing or trigger temperature.
 
-**6. K11 extension is theoretical.** The network Pe formulation extends K11 from THRML simulation results (κ = 0.15 threshold) to geophysical systems at κ_mean ≈ 0.41. The functional form Pe_net(i) = Pe_i × (1 + Σ_j κ_ij × Pe_j) / N_coupling is a first-order approximation. Full numerical validation in THRML with the 16-element coupling matrix is a Prediction P108-5 extension.
+**6. K11 extension uses 8 dominant pathways.** The network Pe formulation applies the additive form Pe_net(i) = Pe_i + Σ_j κ_ij × Pe_j to 8 dominant coupling pathways (κ_norm ≥ 0.67) from Armstrong McKay (2022) Table 2. The full table contains additional weaker pathways not represented in the sparse coupling matrix used here; including all couplings would increase Pe_net values further. Full numerical validation in THRML with the 16-element coupling matrix using all pathway strengths is a future extension.
 
 ## XI. Data and Code
 
@@ -409,13 +418,13 @@ All Pe scores are derived from the O/R/α rubric documented in Section VII and t
 
 **Paleoclimate validation:** Ice core and ocean sediment proxy data from published literature (Rasmussen et al. 2006, Steffensen et al. 2008, Kindler et al. 2014, Barber et al. 1999, Clark et al. 2012, Marcott et al. 2013, Zeebe et al. 2016). Cascade rate rank assignments follow the event characterizations in the cited primary sources.
 
-**Network Pe computation:** Computed analytically from Pe_net formula (Section VII.B). Full calculation tables available at https://github.com/MoreRightDAO/VOID-FRAMEWORK-OPERATION-MORR.
+**Network Pe computation:** All Pe_net values computed by `ops/lab/nb_climate108.py` (Python 3, scipy.stats). Additive formula Pe_net(i) = Pe_i + Σ_j κ_ij × Pe_j. Full calculation tables and figure output available at https://github.com/MoreRightDAO/VOID-FRAMEWORK-OPERATION-MORR.
 
 **THRML-KC-02 (K11):** Kill condition simulation results available at MoreRight DAO operations lab (`ops/lab/`). K11 pre-registration: 10.5281/zenodo.18831712 (included in Paper 99 SI).
 
 ## XII. Conclusion
 
-This paper has demonstrated that the coupled climate tipping element network constitutes one of the highest-Pe void systems yet analyzed within the Void Framework. Individual element Pe scores span 0.4 (Mountain Glaciers, COHERENT) to 18.0 (WAIS and AMOC, Pe = O × R / α = 3 × 3 / 0.5 — stabilizing constraints critically compromised). Seven of 16 elements score above V* = 5.52, the Fisher Runaway threshold. The network Pe formulation (K11 extension) reveals that at κ_mean ≈ 0.41 — nearly 3× the K11 threshold — individual element scores lose predictive validity and network topology determines cascade trajectory. The Greenland Ice Sheet (Pe_individual = 2.67, below V*) carries network Pe ≈ 14.8 — a rank shift of +7 positions — because it initiates the GIS → LSC → AMOC → Amazon/ISM cascade chain. Any risk framework ranking tipping elements by individual Pe will systematically misidentify the cascade initiator. Paleoclimate validation confirms: ρ_network ≈ 0.83–0.91 versus ρ_individual ≈ 0.55–0.65 (N = 8), with D-O events and Younger Dryas onset correctly ranked highest by network Pe. The coupled Earth system contains specific subsystem dyads — notably the GIS → LSC → AMOC chain — where network Pe exceeds 14–34, constituting Fisher Runaway dynamics in the most dangerous cascade pathway on Earth.
+This paper has demonstrated that the coupled climate tipping element network constitutes one of the highest-Pe void systems yet analyzed within the Void Framework. Individual element Pe scores span 0.4 (Mountain Glaciers, COHERENT) to 18.0 (WAIS and AMOC, Pe = O × R / α = 3 × 3 / 0.5 — stabilizing constraints critically compromised). Seven of 16 elements score above V* = 5.52, the Fisher Runaway threshold. The network Pe formulation (K11 extension, additive form) reveals that topology — not individual Pe — determines cascade trajectory: WAIS leads at Pe_net = 30.06, GIS rises to Pe_net = 26.67 (rank shift +8, from 11th to 2nd), LSC reaches 24.00, and AMOC drops to 4th at 22.02 despite its Pe_individual of 18.0. The Greenland Ice Sheet rank shift is the paper's central finding. Paleoclimate validation confirms: ρ_network = 0.831 (p = 0.011) versus ρ_individual = 0.642 (p = 0.086, non-significant), Δρ = 0.189, N = 8. Individual Pe cannot distinguish the Younger Dryas (GIS-initiated, high cascade rate) from events where AMOC is the dominant individual-Pe element but the cascade is slower. Network Pe makes the correct distinctions.
 
 The drift cascade mapping proved particularly illuminating. The D1 stage, in which agency for observed changes is attributed to natural variability rather than anthropogenic forcing, persisted in policy discourse for decades despite the attribution science compiled in successive IPCC assessment reports reaching greater than 95 percent confidence in human causation by AR5 (IPCC, 2013, Climate Change 2013: The Physical Science Basis, Cambridge University Press). The D2 erosion of policy boundaries — the progressive relaxation of targets from 1.5°C to implicit acceptance of 2°C overshoot pathways — maps directly onto the boundary dissolution predicted by the framework when opacity sustains plausible deniability about threshold proximity. Armstrong McKay et al. (2022, Science) established that five tipping elements enter their risk windows between 1.0°C and 1.5°C of warming, yet the temporal gap between scientific identification and policy response exemplifies D2 in operation. The D3 harm facilitation stage manifests as continued global emissions of approximately 36.8 gigatonnes of carbon dioxide annually as of 2023 (Friedlingstein et al., 2023, Earth System Science Data), sustained by the very opacity and coupling dynamics the framework identifies.
 
@@ -425,7 +434,7 @@ Within the Void Framework scoring pipeline, the climate tipping network occupies
 
 The European Union's AI Act timeline, while designed for artificial intelligence governance, offers a procedural analogue: its risk-tiered classification approach and mandatory transparency requirements for high-risk systems parallel what the constraint-pole specification demands for climate tipping governance. The phased implementation schedule extending through 2027 demonstrates that regulatory architecture can impose transparency and invariance requirements on complex, opaque systems — though the climate domain's physical irreversibility imposes temporal constraints that software systems do not face.
 
-The central finding is stark. A coupled system with seven elements individually above V* = 5.52, operating at κ_mean ≈ 0.41 — nearly 3× the network amplification threshold — does not self-correct. Without deliberate constraint-pole intervention — transparent monitoring of early warning indicators, invariant carbon budget thresholds insulated from political renegotiation, independent assessment bodies — the drift cascade proceeds to completion. The Earth system's tipping network is not merely a climate problem amenable to incremental emissions reduction; it is a void system where network Pe in the GIS → LSC → AMOC pathway already exceeds 14, and where superlinear cascade amplification can convert what appears manageable in individual-element analysis into abrupt, irreversible state change. The Void Framework does not predict when specific thresholds will be crossed, but it predicts with considerable confidence that the structural conditions for catastrophic cascade — high opacity (O = 3), high reactivity (R = 3), critically compromised constraints (α = 0.5 for WAIS and AMOC) — are fully present and intensifying.
+The central finding is stark. A coupled system with seven elements individually above V* = 5.52, with WAIS Pe_net = 30.06 and GIS Pe_net = 26.67 as the two highest cascade initiators, does not self-correct. Without deliberate constraint-pole intervention — transparent monitoring of early warning indicators, invariant carbon budget thresholds insulated from political renegotiation, independent assessment bodies — the drift cascade proceeds to completion. The Earth system's tipping network is not merely a climate problem amenable to incremental emissions reduction; it is a void system where GIS (Pe_individual = 2.67, ranked 11th) holds Pe_net = 26.67 (ranked 2nd) by virtue of its cascade initiation role, and where a risk framework that ignores network topology will systematically underestimate the most dangerous element while overestimating elements that are high-Pe destinations rather than high-Pe initiators. The Void Framework does not predict when specific thresholds will be crossed, but it predicts with considerable confidence that the structural conditions for catastrophic cascade — high opacity (O = 3), high reactivity (R = 3), critically compromised constraints (α = 0.5 for WAIS and AMOC) — are fully present and intensifying.
 
 ## References
 
