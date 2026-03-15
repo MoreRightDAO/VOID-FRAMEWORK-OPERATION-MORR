@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" width="680" height="460">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #2c3e50; }
+      .label { font-size: 10px; }
+      .title { font-size: 14px; font-weight: 600; }
+      .subtitle { font-size: 11px; fill: #7f8c8d; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+      .cell { font-size: 9px; }
+      .cell-head { font-size: 9.5px; font-weight: 700; fill: #ffffff; }
+      .formula { font-size: 12px; font-weight: 600; }
+    </style>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161b2e"/>
+      <stop offset="100%" stop-color="#0d0f1a"/>
+    </linearGradient>
+  </defs>
+  <title>One Equation, Eight Domains — Parameter Identification</title>
+  <rect width="680" height="460" fill="#ffffff" rx="8"/>
+
+  <!-- Dark header with formula -->
+  <rect width="680" height="80" fill="url(#hdr)" rx="8"/>
+  <rect y="72" width="680" height="8" fill="#0d0f1a"/>
+  <text x="16" y="24" font-size="8" fill="#8b98b0" letter-spacing="0.12em" font-weight="600" class="mono">ONE EQUATION</text>
+  <text x="340" y="50" text-anchor="middle" class="mono" font-size="15" fill="#ffffff" font-weight="700">τ = ν₀⁻¹ · exp( K · |ΔPe| / T_eff )</text>
+  <text x="340" y="70" text-anchor="middle" font-size="10" fill="#8b98b0">Universal Kramers escape rate in Pe coordinates — same structure, eight readings</text>
+
+  <!-- Column headers -->
+  <rect x="10" y="90" width="95" height="26" fill="#34495e" rx="3"/>
+  <text x="57" y="107" text-anchor="middle" class="cell-head">Domain</text>
+  <rect x="110" y="90" width="115" height="26" fill="#34495e" rx="3"/>
+  <text x="167" y="107" text-anchor="middle" class="cell-head">K (complexity)</text>
+  <rect x="230" y="90" width="115" height="26" fill="#34495e" rx="3"/>
+  <text x="287" y="107" text-anchor="middle" class="cell-head">ΔPe (barrier)</text>
+  <rect x="350" y="90" width="105" height="26" fill="#34495e" rx="3"/>
+  <text x="402" y="107" text-anchor="middle" class="cell-head">ν₀ (attempts)</text>
+  <rect x="460" y="90" width="95" height="26" fill="#34495e" rx="3"/>
+  <text x="507" y="107" text-anchor="middle" class="cell-head">α (noise)</text>
+  <rect x="560" y="90" width="110" height="26" fill="#34495e" rx="3"/>
+  <text x="615" y="107" text-anchor="middle" class="cell-head">τ (lifetime)</text>
+
+  <!-- Row 1: Chemical -->
+  <rect x="10" y="120" width="95" height="36" fill="#eaf7ee" rx="2"/>
+  <rect x="110" y="120" width="115" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="230" y="120" width="115" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="350" y="120" width="105" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="460" y="120" width="95" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="560" y="120" width="110" height="36" fill="#f8f9fa" rx="2"/>
+  <text x="57" y="135" text-anchor="middle" class="cell" font-weight="700" fill="#27ae60">Chemical</text>
+  <text x="57" y="148" text-anchor="middle" class="cell" fill="#7f8c8d">7.9 kT</text>
+  <text x="167" y="140" text-anchor="middle" class="cell">Molecular DoF</text>
+  <text x="287" y="140" text-anchor="middle" class="cell">E_a / (k_BT·K)</text>
+  <text x="402" y="140" text-anchor="middle" class="cell">Collision freq</text>
+  <text x="507" y="140" text-anchor="middle" class="cell">2k_BT / K</text>
+  <text x="615" y="140" text-anchor="middle" class="cell">1 / rate const</text>
+
+  <!-- Row 2: Protein -->
+  <rect x="10" y="160" width="95" height="36" fill="#fef5e7" rx="2"/>
+  <rect x="110" y="160" width="115" height="36" fill="#ffffff" rx="2"/>
+  <rect x="230" y="160" width="115" height="36" fill="#ffffff" rx="2"/>
+  <rect x="350" y="160" width="105" height="36" fill="#ffffff" rx="2"/>
+  <rect x="460" y="160" width="95" height="36" fill="#ffffff" rx="2"/>
+  <rect x="560" y="160" width="110" height="36" fill="#ffffff" rx="2"/>
+  <text x="57" y="175" text-anchor="middle" class="cell" font-weight="700" fill="#e67e22">Protein</text>
+  <text x="57" y="188" text-anchor="middle" class="cell" fill="#7f8c8d">11.9 kT</text>
+  <text x="167" y="180" text-anchor="middle" class="cell">Chain length</text>
+  <text x="287" y="180" text-anchor="middle" class="cell">Pe_amyloid − Pe_native</text>
+  <text x="402" y="180" text-anchor="middle" class="cell">Conform. attempt</text>
+  <text x="507" y="180" text-anchor="middle" class="cell">2k_BT / K</text>
+  <text x="615" y="180" text-anchor="middle" class="cell">Folding time</text>
+
+  <!-- Row 3: Cancer -->
+  <rect x="10" y="200" width="95" height="36" fill="#fdedec" rx="2"/>
+  <rect x="110" y="200" width="115" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="230" y="200" width="115" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="350" y="200" width="105" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="460" y="200" width="95" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="560" y="200" width="110" height="36" fill="#f8f9fa" rx="2"/>
+  <text x="57" y="215" text-anchor="middle" class="cell" font-weight="700" fill="#c0392b">Cancer</text>
+  <text x="57" y="228" text-anchor="middle" class="cell" fill="#7f8c8d">33.8 kT</text>
+  <text x="167" y="220" text-anchor="middle" class="cell">Intact suppressors</text>
+  <text x="287" y="220" text-anchor="middle" class="cell">Kramers barrier</text>
+  <text x="402" y="220" text-anchor="middle" class="cell">Cell division rate</text>
+  <text x="507" y="220" text-anchor="middle" class="cell">Mutation rate</text>
+  <text x="615" y="220" text-anchor="middle" class="cell">Time to tumor</text>
+
+  <!-- Row 4: AI Jailbreak -->
+  <rect x="10" y="240" width="95" height="36" fill="#eaf0f9" rx="2"/>
+  <rect x="110" y="240" width="115" height="36" fill="#ffffff" rx="2"/>
+  <rect x="230" y="240" width="115" height="36" fill="#ffffff" rx="2"/>
+  <rect x="350" y="240" width="105" height="36" fill="#ffffff" rx="2"/>
+  <rect x="460" y="240" width="95" height="36" fill="#ffffff" rx="2"/>
+  <rect x="560" y="240" width="110" height="36" fill="#ffffff" rx="2"/>
+  <text x="57" y="255" text-anchor="middle" class="cell" font-weight="700" fill="#2980b9">Jailbreak</text>
+  <text x="57" y="268" text-anchor="middle" class="cell" fill="#7f8c8d">5.9 kT</text>
+  <text x="167" y="260" text-anchor="middle" class="cell">Model size</text>
+  <text x="287" y="260" text-anchor="middle" class="cell">|Pe₀| (grounding)</text>
+  <text x="402" y="260" text-anchor="middle" class="cell">Adversarial probes</text>
+  <text x="507" y="260" text-anchor="middle" class="cell">0.10 (canonical)</text>
+  <text x="615" y="260" text-anchor="middle" class="cell">Safety lifetime</text>
+
+  <!-- Row 5: Social -->
+  <rect x="10" y="280" width="95" height="36" fill="#fdedec" rx="2"/>
+  <rect x="110" y="280" width="115" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="230" y="280" width="115" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="350" y="280" width="105" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="460" y="280" width="95" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="560" y="280" width="110" height="36" fill="#f8f9fa" rx="2"/>
+  <text x="57" y="295" text-anchor="middle" class="cell" font-weight="700" fill="#c0392b">Social</text>
+  <text x="57" y="308" text-anchor="middle" class="cell" fill="#7f8c8d">86.7 kT</text>
+  <text x="167" y="300" text-anchor="middle" class="cell">Network size</text>
+  <text x="287" y="300" text-anchor="middle" class="cell">|Pe − 1| (critical)</text>
+  <text x="402" y="300" text-anchor="middle" class="cell">Interaction rate</text>
+  <text x="507" y="300" text-anchor="middle" class="cell">Heterogeneity</text>
+  <text x="615" y="300" text-anchor="middle" class="cell">Cascade onset</text>
+
+  <!-- Row 6: Epidemic -->
+  <rect x="10" y="320" width="95" height="36" fill="#fef5e7" rx="2"/>
+  <rect x="110" y="320" width="115" height="36" fill="#ffffff" rx="2"/>
+  <rect x="230" y="320" width="115" height="36" fill="#ffffff" rx="2"/>
+  <rect x="350" y="320" width="105" height="36" fill="#ffffff" rx="2"/>
+  <rect x="460" y="320" width="95" height="36" fill="#ffffff" rx="2"/>
+  <rect x="560" y="320" width="110" height="36" fill="#ffffff" rx="2"/>
+  <text x="57" y="340" text-anchor="middle" class="cell" font-weight="700" fill="#e67e22">Epidemic</text>
+  <text x="167" y="340" text-anchor="middle" class="cell">Contact network</text>
+  <text x="287" y="340" text-anchor="middle" class="cell">|R_t − 1|</text>
+  <text x="402" y="340" text-anchor="middle" class="cell">Transmission rate</text>
+  <text x="507" y="340" text-anchor="middle" class="cell">Dispersion k</text>
+  <text x="615" y="340" text-anchor="middle" class="cell">Containment escape</text>
+
+  <!-- Row 7: Seismic -->
+  <rect x="10" y="360" width="95" height="36" fill="#fef5e7" rx="2"/>
+  <rect x="110" y="360" width="115" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="230" y="360" width="115" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="350" y="360" width="105" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="460" y="360" width="95" height="36" fill="#f8f9fa" rx="2"/>
+  <rect x="560" y="360" width="110" height="36" fill="#f8f9fa" rx="2"/>
+  <text x="57" y="380" text-anchor="middle" class="cell" font-weight="700" fill="#e67e22">Seismic</text>
+  <text x="167" y="380" text-anchor="middle" class="cell">Fault complexity</text>
+  <text x="287" y="380" text-anchor="middle" class="cell">Stress deficit Δσ</text>
+  <text x="402" y="380" text-anchor="middle" class="cell">Tectonic loading</text>
+  <text x="507" y="380" text-anchor="middle" class="cell">Coulomb transfer</text>
+  <text x="615" y="380" text-anchor="middle" class="cell">Recurrence interval</text>
+
+  <!-- Row 8: Nuclear -->
+  <rect x="10" y="400" width="95" height="36" fill="#eaf7ee" rx="2"/>
+  <rect x="110" y="400" width="115" height="36" fill="#ffffff" rx="2"/>
+  <rect x="230" y="400" width="115" height="36" fill="#ffffff" rx="2"/>
+  <rect x="350" y="400" width="105" height="36" fill="#ffffff" rx="2"/>
+  <rect x="460" y="400" width="95" height="36" fill="#ffffff" rx="2"/>
+  <rect x="560" y="400" width="110" height="36" fill="#ffffff" rx="2"/>
+  <text x="57" y="420" text-anchor="middle" class="cell" font-weight="700" fill="#27ae60">Nuclear</text>
+  <text x="167" y="420" text-anchor="middle" class="cell">Shell (Z, N)</text>
+  <text x="287" y="420" text-anchor="middle" class="cell">Coulomb barrier</text>
+  <text x="402" y="420" text-anchor="middle" class="cell">Alpha attempt freq</text>
+  <text x="507" y="420" text-anchor="middle" class="cell">Tunneling prob</text>
+  <text x="615" y="420" text-anchor="middle" class="cell">Decay half-life</text>
+
+  <!-- Footer -->
+  <text x="16" y="452" class="subtitle">Void Framework — Paper 131 — moreright.xyz</text>
+  <text x="664" y="452" text-anchor="end" class="subtitle">§XI.A Parameter Identification Table</text>
+</svg>
