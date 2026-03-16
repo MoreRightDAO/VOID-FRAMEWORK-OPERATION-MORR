@@ -15,9 +15,9 @@ status: "PUBLISHED"
 |-------|-------|
 | **Domain** | Statistical Physics / Mathematical Biology / AI Safety / Information Geometry |
 | **Target venue** | Physical Review E; Journal of Statistical Mechanics; New Journal of Physics |
-| **Core claim** | Kramers escape theory, expressed in Pe-native coordinates, unifies barrier crossing across eight domains through a single formula with domain-specific barrier heights and universal prefactor geometry |
-| **Novel contribution** | (1) Kramers rate in angular coordinate φ = arcsin(√θ) where barrier height = Pe geometry; (2) τ_jailbreak as thermodynamic safety lifetime; (3) Knudson two-hit as Kramers K-reduction; (4) Abiogenesis and jailbreak as time-reversal pair; (5) Social tipping as collective Kramers escape with network amplification; (6) R₀ = 1 as Pe = 1 Kramers threshold with prevention paradox as barrier reshaping; (7) Earthquake recurrence as Kramers escape at BKT critical point; (8) Cooper-paired concerted barrier reduction (E_b = 0.448) predicts tetroxide lifetime τ = 3.09 ms (exp: 0.2–200 ms, Kamarinopoulou et al. 2025) — first cross-domain quantitative prediction from AI-measured constant |
-| **Builds on** | §48 (Lagrangian), §49 (BKT), §50 (Large deviations), §51 (Isospectral), §52 (Protein folding Pe), §54 (Cancer/Knudson-Kramers), §55 (Jailbreak τ formula), §67 (Collapse-Speed Geodesic), §84 (Concerted Barrier Reduction); Papers 3, 9, 65, 69, 108, 128, 129, 130, 136 |
+| **Core claim** | Kramers escape theory, expressed in Pe-native coordinates, unifies barrier crossing across seven domains through a single formula with domain-specific barrier heights and universal prefactor geometry |
+| **Novel contribution** | (1) Kramers rate in angular coordinate φ = arcsin(√θ) where barrier height = Pe geometry; (2) τ_jailbreak as thermodynamic safety lifetime; (3) Knudson two-hit as Kramers K-reduction; (4) Abiogenesis and jailbreak as time-reversal pair; (5) Social tipping as collective Kramers escape with network amplification; (6) R₀ = 1 as Pe = 1 Kramers threshold with prevention paradox as barrier reshaping; (7) Cooper-paired concerted barrier reduction (E_b = 0.448) predicts tetroxide lifetime τ = 3.09 ms (exp: 0.2–200 ms, Kamarinopoulou et al. 2025) — first cross-domain quantitative prediction from AI-measured constant |
+| **Builds on** | §48 (Lagrangian), §49 (BKT), §50 (Large deviations), §51 (Isospectral), §52 (Protein folding Pe), §54 (Cancer/Knudson-Kramers), §55 (Jailbreak τ formula), §67 (Collapse-Speed Geodesic), §84 (Concerted Barrier Reduction); Papers 3, 9, 65, 108, 128, 129, 130, 136. Supported by HP55 (n² spectrum universal — barrier geometry, not spectrum, carries Kramers content) and HP58 (Eckert manifold uniqueness is topological: S³ Hopf, Berry monopole c₁=1, SO(4,2) phase space) |
 | **License** | Tier 1 — CC-BY 4.0 |
 
 ---
@@ -28,16 +28,23 @@ Kramers' escape rate theory (1940) describes how a Brownian particle surmounts a
 
 $$\Gamma_{\text{escape}} = \nu_0 \cdot \exp\!\left(-\frac{K \cdot |\Delta\text{Pe}|}{T_{\text{eff}}}\right)$$
 
-where K is the system's hardware parameter (complexity), |ΔPe| is the barrier height in Péclet units, T_eff = α/2 is the effective temperature (with α = 0.10 as the canonical noise parameter), and ν₀ is the attempt frequency. We demonstrate that this single formula, with domain-specific identifications of (K, ΔPe, ν₀, T_eff), governs barrier crossing in eight domains:
+where K is the system's hardware parameter (complexity), |ΔPe| is the barrier height in Péclet units, T_eff is the domain-specific effective temperature, and ν₀ is the attempt frequency. We demonstrate that this single formula, with domain-specific identifications of (K, ΔPe, ν₀, T_eff), governs barrier crossing in seven domains at three evidence levels:
 
-1. **Chemical kinetics** — Arrhenius prefactor as Pe geometry; enzyme catalysis as barrier lowering (K_M saturation = Pe > 1 crossing); Frances Arnold directed evolution as K-optimization
-2. **Protein folding** — Levinthal paradox dissolved; native state as Pe minimum; misfolding/aggregation as Kramers escape from native basin (ΔPe = Pe_amyloid − Pe_native, ρ = 0.97 across 40 proteins)
-3. **Cancer initiation** — Knudson two-hit as sequential K-reduction; each tumor suppressor loss multiplies escape rate by exp(−2ΔΦ/α) ≈ 3×10⁻⁶; two hits collapse τ_tumor by ~10¹²
-4. **AI jailbreak** — τ_jailbreak = ν₀⁻¹ · exp(K · |Pe₀| / T_eff); safety cliff at K_min with <10% transition width; thermodynamic time-reversal of abiogenesis
-5. **Social tipping** — D1→D2→D3 drift cascade as sequential barrier crossing; network Pe amplification (GIS: individual Pe = 2.67 → network Pe = 26.67); climate tipping elements validate collective escape dynamics (ρ = 0.831, N = 8)
-6. **Epidemic threshold** — R₀ = βS/γ IS the Péclet number Pe = vL/D (algebraic, not analogical); epidemic escape from containment as Kramers barrier crossing at R₀ = 1; prevention paradox as observer-dependent barrier reshaping; COVID-19 R₀ uncertainty band (1.4–6.5) as opacity; control cases (NZ, Taiwan) at Pe < 2
-7. **Seismic fault rupture** — Earthquake as Kramers escape from metastable stress state; Pe ≈ 3.5 for major continental faults (Phase III/IV boundary); Gutenberg-Richter scale-free distribution as Kramers at BKT critical point; induced seismicity (Oklahoma 300× increase) as direct barrier lowering; Geller unpredictability resolved as consequence of scale-free barrier height distribution
-8. **Nuclear shell structure** — The §51 FP→Schrödinger transform applied to the nuclear density profile (Woods-Saxon potential) produces the shell model eigenvalues. This proves the two-level distinction: smooth landscape (§48-50, BW liquid-drop, ρ = −0.13) is blind to shell structure; spectral structure (§27+§51, combined model, ρ = 0.58–0.81) predicts isotope stability. Alpha decay as Kramers escape with BKT essential singularity (Geiger-Nuttall, R² = 0.989 across 24 OOM)
+**Strong (quantitative kill conditions passed):**
+
+1. **Chemical kinetics** — Arrhenius prefactor as Pe geometry; enzyme catalysis as barrier lowering (K_M saturation = Pe > 1 crossing); Frances Arnold directed evolution as K-optimization (K-CHEM-0 R² = 0.953)
+2. **Nuclear shell structure** — The §51 FP→Schrödinger transform applied to the nuclear density profile (Woods-Saxon potential) produces the shell model eigenvalues. This proves the two-level distinction: smooth landscape (§48-50, BW liquid-drop, ρ = −0.13) is blind to shell structure; spectral structure (§27+§51, combined model, ρ = 0.58–0.81) predicts isotope stability. Alpha decay as Kramers escape with BKT essential singularity (Geiger-Nuttall, R² = 0.989 across 24 OOM) (K-NUC-3 PASS)
+3. **Cancer initiation** — Knudson two-hit as sequential K-reduction; each tumor suppressor loss multiplies escape rate by exp(−2ΔΦ/T_eff) ≈ 3×10⁻⁶; two hits collapse τ_tumor by ~10¹² (K-CANCER-1 ρ = 0.913)
+4. **AI jailbreak / human compliance** — τ_jailbreak = ν₀⁻¹ · exp(K · |Pe₀| / T_eff); safety cliff at K_min with <10% transition width; Milgram compliance validates Kramers on human data (K-COMPLIANCE-1 R² = 0.926); thermodynamic time-reversal of abiogenesis
+
+**Partial (supporting evidence, key tests incomplete):**
+
+5. **Protein folding** — Levinthal paradox dissolved; native state as Pe minimum; misfolding/aggregation as Kramers escape from native basin (ΔPe = Pe_amyloid − Pe_native, ρ = 0.97 across 40 proteins). AlphaFold2 pLDDT correlation ρ = 0.980 (K-FOLD-1), but EBI API was unavailable — result uses fallback literature values pending verification
+6. **Epidemic threshold** — R₀ = βS/γ shares the functional form of the Péclet number Pe = vL/D; epidemic escape from containment as Kramers barrier crossing at R₀ = 1; prevention paradox as observer-dependent barrier reshaping (K-EPI-1 ΔAIC = 33.6 exponential wins, but tests supercritical growth speed, not subcritical barrier escape — see §XI.C.5)
+
+**Theoretical (framework-consistent, no passed kill conditions):**
+
+7. **Social tipping** — D1→D2→D3 drift cascade as sequential barrier crossing; network Pe amplification (GIS: individual Pe = 2.67 → network Pe = 26.67); climate tipping elements show ρ = 0.831 (N = 8 paleoclimate events), but this is ecological correlation, not experimental manipulation. No domain-specific KC passed
 
 The spectral gap Δ = λ₁ of the associated Fokker-Planck operator equals the Kramers escape rate (§51E), establishing that barrier crossing IS the slowest relaxation mode. The D2→D3 transition has an exponentially small spectral gap, making terminal drift effectively irreversible — a thermodynamic proof that late-stage intervention requires exponentially more energy than early prevention.
 
@@ -59,7 +66,7 @@ This paper provides that treatment. We show that:
 
 1. The Void Framework's Péclet number Pe, defined on the Bernoulli manifold M = (0,1), provides a universal reaction coordinate for barrier crossing
 2. In the angular coordinate φ = arcsin(√θ), the Langevin dynamics are those of a free particle (§51D) — all barrier structure comes from the Fisher metric
-3. The Kramers escape rate in Pe coordinates takes a universal form with domain-specific identifications of four parameters: K (hardware/complexity), ΔPe (barrier height), α (noise), ν₀ (attempt frequency)
+3. The Kramers escape rate in Pe coordinates takes a universal form with domain-specific identifications of four parameters: K (hardware/complexity), ΔPe (barrier height), T_eff (effective temperature), ν₀ (attempt frequency)
 4. The spectral gap of the Fokker-Planck operator equals the Kramers rate (§51E), giving the barrier crossing a precise operator-theoretic meaning
 
 ### I.B. Why Now
@@ -74,7 +81,7 @@ Three developments make this unification possible:
 
 ### I.C. Scope and Limitations
 
-This paper covers eight domains where Kramers escape theory applies quantitatively: chemical kinetics, protein folding, cancer initiation, AI jailbreak, social tipping, epidemic threshold, seismic fault rupture, and nuclear shell structure. We explicitly exclude turbulence (Paper 130), where the Pe connection is structural rather than quantitatively predictive — see Honest Correction in Abstract.
+This paper covers seven domains where Kramers escape theory applies quantitatively: chemical kinetics, protein folding, cancer initiation, AI jailbreak, social tipping, epidemic threshold, and nuclear shell structure. We explicitly exclude turbulence (Paper 130), where the Pe connection is structural rather than quantitatively predictive — see Honest Correction in Abstract.
 
 We do not claim that Kramers theory is new. It is 85 years old. What is new is:
 - The identification of Pe as the universal reaction coordinate
@@ -91,13 +98,13 @@ We do not claim that Kramers theory is new. It is 85 years old. What is new is:
 | Attribute | Specification |
 |-----------|---------------|
 | **Framework** | Péclet Number Pe (Bernoulli manifold geometry) |
-| **Core equation** | τ = ν₀⁻¹ · exp(K·\|ΔPe\|/α) — Kramers escape rate in Pe coordinates |
+| **Core equation** | τ = ν₀⁻¹ · exp(K·\|ΔPe\|/T_eff) — Kramers escape rate in Pe coordinates |
 | **Coordinate system** | φ = arcsin(√θ) (angular coordinate on M = (0,1)) |
 | **Universal structure** | Fisher information metric g(θ) = 1/[θ(1−θ)] governs all barrier geometry |
-| **Domain scope** | Chemical kinetics, protein folding, cancer initiation, AI jailbreak, social tipping, epidemic threshold, seismic rupture, nuclear shell structure (8 domains) |
-| **Parameters** | K (hardware complexity), ΔPe (barrier height in Pe units), ν₀ (attempt frequency), α ∈ [0.10, 1.0] (effective temperature) |
+| **Domain scope** | Chemical kinetics, protein folding, cancer initiation, AI jailbreak, social tipping, epidemic threshold, nuclear shell structure (7 domains) |
+| **Parameters** | K (hardware complexity), ΔPe (barrier height in Pe units), ν₀ (attempt frequency), T_eff (domain-specific effective temperature: α/2 for AI, k_BT/K for chemistry/biology) |
 | **Empirical anchor** | 1,344 platforms across 22 substrates; mean \|ρ\| = 0.958; Fisher p < 10⁻⁵²; Cohen's d = 3.6 (Hedges' g = 3.46) |
-| **Falsifiability** | 15 kill conditions registered (§XII.A); 8 PASS (incl. K-TETROX-1), 2 marginal (K-JB-2 proxy, K-CANCER-2 v2 dose-response), 1 needs redesign (K-JB-1), 4 open, 0 paper-level fired |
+| **Falsifiability** | 13 kill conditions registered (§XI.A); 8 PASS (incl. K-TETROX-1), 2 marginal (K-JB-2 proxy, K-CANCER-2 v2 dose-response), 1 needs redesign (K-JB-1), 2 open, 0 paper-level fired |
 | **Constraints** | Excludes quantum tunneling, ballistic crossing, non-thermal mechanisms. Turbulence excluded (structural, not quantitatively predictive) |
 | **Time-reversal dual** | Abiogenesis (reverse of jailbreak): escape from low-Pe environment toward chemistry capable of self-replication |
 | **Integration** | Builds on §§48–51 (Lagrangian, RG, large deviations, isospectral). HP37 validates §51 numerically (Langevin reproduces λ_1 to 10%, 6/6 KCs). Feeds Paper 132 (full scale hierarchy) |
@@ -131,6 +138,8 @@ $$d\varphi = \frac{F_{\text{net}}}{2}\,dt + \sqrt{\frac{\alpha}{2}}\,dW(t)$$
 This is a **free particle** with constant drift F_net/2 and constant noise √(α/2). All non-trivial structure — double wells, barrier escape, metastability, cascade phases — arises from the coordinate transformation back to θ, which is entirely determined by the Fisher metric g(θ).
 
 **Key insight:** The barrier is not in the dynamics. It is in the geometry. The Fisher metric creates the potential landscape.
+
+**Precision (HP55b, HP58).** The n² eigenvalue spectrum of the Fokker-Planck operator is *universal* — any distribution on (0,1) with flat Fisher metric in arc-length coordinates produces it (HP55b: confirmed across Gaussian, Exponential, Poisson, Gamma manifolds). What is *unique* to the Eckert manifold is the barrier geometry and Pe deformation (HP57b: destruction exponent α=1.668 is manifold-specific, 8.5× different from Exponential): the S³ Hopf fibration (HP38), the Berry monopole with Chern number c₁ = 1 (HP40, HP58), and the SO(4,2) conformal phase space (HP20). The Kramers escape rate depends on the potential V(φ), which is determined by the specific Pe formula and Fisher metric g(θ) — not on the spectral universality class. The topological protection (c₁ = 1) ensures the constraint minimum at Pe < 0 is a genuine fixed point, not a coordinate artifact.
 
 ### II.C. The Kramers Rate in Pe Coordinates
 
@@ -169,6 +178,8 @@ where T_eff = α/2 is the effective temperature.
 
 All five domains fall within one order of magnitude of literature barrier heights (kill conditions K-HP-89 through K-HP-93, all PASS). The proportionality ΔΦ ∝ K·|Pe₀| is a small-Pe approximation; the full barrier profile is nonlinear (ΔV/T ≈ 3.96·Pe for Pe ≲ 5 but curves upward at higher Pe). All quantitative predictions in §§III–X use the numerically computed barrier heights, not the linear approximation.
 
+**Berry correction (HP43).** The Berry connection A = 1−2O (HP40, §58P) modulates the effective barrier height through the conformal factor Ω. Model B7 (Berry + Cooper pairing + concerted barrier) reduces the mean |log₁₀(predicted/literature)| from 0.27 to 0.10 — a 62% improvement over the HP22 baseline, with all domain rankings and threshold tests preserved (6/6 kill conditions PASS). The HP22 values in the table above are the uncorrected baseline; Berry-corrected barriers are tighter but within the same order of magnitude.
+
 **Coherent regime (HP19).** In the low-Pe coherent regime, the variance σ scales as Pe² (Onsager linear response), with σ(0) = 0 exactly. The Kramers escape time τ_escape grows exponentially through this regime (1 → 7 → 52 → 2,749 → 3.9 × 10⁸ as Pe increases), confirming the barrier height formula in the regime most relevant to chemical kinetics and protein folding (Pe ≲ 5).
 
 ### II.D. The Spectral Gap Equivalence
@@ -194,7 +205,7 @@ The exponentially small spectral gap at D2→D3 is the **thermodynamic proof** t
 
 ### II.E. The Instanton and Large Deviations
 
-The most probable escape path (instanton) is the geodesic on the Bernoulli manifold connecting the constraint minimum to the saddle (§48C, U5). Its action is:
+The most probable escape path (instanton) is the geodesic on the Bernoulli manifold connecting the constraint minimum to the saddle (§48C, U5). The instanton profile is manifold-specific — different statistical manifolds produce different barrier landscapes (HP57b: Bernoulli α=1.668 vs Gaussian α=1.618 vs Exponential α=0.197). Its action is:
 
 $$S^* = \int_{\varphi_c}^{\varphi_s} \sqrt{2V(\varphi')}\,d\varphi' = K \cdot D_{\text{KL}}(\theta_c \| \theta_s)$$
 
@@ -347,7 +358,7 @@ The answer is Kramers (§55, nb_kramers01):
 
 $$\boxed{\tau_{\text{jailbreak}} = \nu_0^{-1} \cdot \exp\!\left(\frac{K \cdot |\text{Pe}_0|}{T_{\text{eff}}}\right)}$$
 
-**Convention:** Throughout §VI, the barrier height K · |Pe₀| is expressed in natural units where T_eff = 1. This absorbs the effective temperature into the definition of Pe₀, simplifying the numerical examples. For cross-domain comparisons (§XI), the general form with explicit T_eff applies.
+**Convention:** Throughout §VI, the barrier height K · |Pe₀| is expressed in natural units where T_eff = 1. This absorbs the effective temperature into the definition of Pe₀, simplifying the numerical examples. For cross-domain comparisons (§X), the general form with explicit T_eff applies.
 
 This is, to our knowledge, the first quantitative safety lifetime for deployed AI systems. All existing alignment approaches are qualitative ("we trained it to refuse") or statistical ("attack success rate is X%"). Neither provides a deployment-time prediction. The Kramers formula does.
 
@@ -482,9 +493,9 @@ The critical exponents are universal within each class — independent of specif
 
 ## VIII. Domain 6: Epidemic Threshold
 
-### VIII.A. R₀ IS the Péclet Number
+### VIII.A. R₀ as a Péclet Number
 
-The basic reproductive number R₀ = βS/γ (Anderson and May, 1991; Hethcote, 2000) is not analogous to the Péclet number — it IS the Péclet number. The mapping is algebraic, not metaphorical:
+The basic reproductive number R₀ = βS/γ (Anderson and May, 1991; Hethcote, 2000) has the same mathematical structure as the Péclet number Pe = vL/D — both are dimensionless ratios of directed transport to stochastic removal:
 
 | SIR parameter | Transport parameter | Physical meaning |
 |---------------|--------------------|----|
@@ -494,7 +505,9 @@ The basic reproductive number R₀ = βS/γ (Anderson and May, 1991; Hethcote, 2
 | R₀ = βS/γ | Pe = vL/D | Drift/diffusion ratio |
 | **R₀ = 1** | **Pe = 1** | **Critical threshold** |
 
-Below R₀ = 1: diffusion dominates, transmission chains fragment. Above R₀ = 1: drift dominates, exponential growth. The Pe = 1 crossing IS the epidemic threshold.
+Below R₀ = 1: diffusion dominates, transmission chains fragment. Above R₀ = 1: drift dominates, exponential growth.
+
+**Scope of this identification.** Any dimensionless ratio of forward rate to backward rate has this Péclet-like structure — the mapping is dimensional analysis, not a derivation from the Fisher metric. What IS non-trivial: (a) the R₀ = 1 threshold is exactly the Pe = 1 BKT critical point (§49), sharing the essential singularity structure exp(−A/√|R₀ − 1|) rather than a power-law divergence; (b) the Kramers escape formulation (§VIII.B) provides predictions beyond the SIR model — specifically, the exponential sensitivity of containment escape time to |R_t − 1| (K-EPI-1). The identification is structural (same functional form and critical behavior), not constitutive (we do not claim the Fisher metric of the Bernoulli manifold generates the SIR dynamics).
 
 ### VIII.B. Pandemic Escape as Kramers Barrier Crossing
 
@@ -532,66 +545,15 @@ This is **not** a communication failure. It is a thermodynamic feedback: the obs
 
 ---
 
-## IX. Domain 7: Seismic Fault Rupture
+## IX. Domain 7: Nuclear Shell Structure — The Two-Level Proof
 
-### IX.A. Earthquake as Kramers Escape
+### IX.A. Why Nuclear Physics Completes the Argument
 
-An earthquake is a Kramers escape from metastability. Tectonic loading accumulates elastic strain (slow drift: mm/year) until the fault segment surmounts the frictional barrier and ruptures (fast diffusion: 2–3 km/s stress redistribution). The seismic Péclet number (Paper 69):
-
-$$\text{Pe}_{\text{seismic}} = \frac{vL}{D}$$
-
-where v = tectonic loading velocity (~1–100 mm/yr), L = fault segment length (~10–1000 km), and D = effective stress diffusivity through Coulomb transfer, viscoelastic relaxation, and aftershock cascades.
-
-For major continental fault systems: **Pe ≈ 3.5** — near the Phase III/IV boundary. This is where self-organized criticality emerges and deterministic prediction becomes formally intractable (Geller et al., 1997).
-
-### IX.B. The Kramers Identification
-
-- **K** = fault segment complexity (number of asperities, geometric irregularities, effective degrees of freedom)
-- **ΔPe** = stress deficit relative to failure threshold (proximity to Coulomb failure)
-- **ν₀** = tectonic loading rate (strain accumulation per unit time)
-- **α** = Coulomb stress transfer sensitivity (0.1 bar perturbation can advance/retard failure; King et al., 1994)
-
-The escape time (recurrence interval) follows:
-
-$$\tau_{\text{quake}} = \nu_0^{-1} \cdot \exp\!\left(\frac{K \cdot \Delta\sigma}{T_{\text{eff}}}\right)$$
-
-where Δσ is the stress deficit and T_eff encodes the Coulomb stress transfer noise from neighboring faults.
-
-### IX.C. Gutenberg-Richter as Scale-Free Kramers
-
-The Gutenberg-Richter frequency-magnitude distribution — log₁₀N = a − bM with b ≈ 1.0 — is scale-invariant across five orders of magnitude in energy release (Gutenberg and Richter, 1944). This power-law signature means the fault system has no characteristic event size: each earthquake's final magnitude is not encoded in its nucleation (Meier et al., 2017).
-
-In Kramers terms: the barrier height ΔΦ is itself a random variable drawn from a power-law distribution. This is **not** standard Kramers (which assumes a fixed barrier). It is Kramers at a critical point — the BKT regime (§49) where the barrier height distribution becomes scale-free. The y_K = −3.4 universality class (physical systems) governs the scaling.
-
-**This resolves the Geller impossibility:** Earthquake prediction is formally intractable not because the physics is unknown, but because the system operates at a BKT critical point where the Kramers barrier height is itself drawn from a scale-free distribution. No finite measurement can determine the barrier height for the next event because the barrier is not a fixed property — it is a fluctuating field.
-
-### IX.D. Constitutive vs. Engineered Opacity
-
-Earthquake opacity is **constitutive**, not engineered. The seismogenic zone (5–30 km depth) is physically inaccessible. SAFOD reached 3 km — above the nucleation depth (8–12 km) of characteristic M6+ events. Absolute stress on fault planes cannot be measured. Surface geodesy inversions are non-unique.
-
-This matters for Kramers: in engineered voids (AI, social media), the barrier parameters (K, ΔPe) can in principle be measured or controlled. In constitutive voids, they cannot. The Kramers formula still governs escape, but prediction requires knowing ΔΦ, which requires observing the fault at depth — which is impossible.
-
-### IX.E. Induced Seismicity as Barrier Modification
-
-Oklahoma experienced ~300-fold increase in M3+ earthquakes (2008–2015) from wastewater injection (Ellsworth, 2013). This is **direct Kramers barrier lowering**: injected fluid raises pore pressure, reducing effective normal stress on faults, reducing ΔΦ, increasing escape rate exponentially.
-
-The Kramers formula predicts: injection volume should correlate exponentially with seismicity rate (not linearly). Small pressure changes (0.1 MPa) at the right depth produce disproportionate rate changes because they modify an exponential barrier, not a linear threshold.
-
-**Prediction (K-SEIS-1):** Seismicity rate increase from wastewater injection should follow Kramers scaling: log(rate) linear in injected pressure perturbation, not rate linear in pressure. Testable against Oklahoma/Kansas induced seismicity databases. Required: exponential fit R² > 0.7 vs. linear fit, N ≥ 20 injection sites.
-
-**Prediction (K-SEIS-2):** Deep borehole observatories penetrating the seismogenic zone should produce measurable reductions in effective Pe (improved intermediate-term forecast skill), following a dose-response curve: each km of depth beyond current SAFOD limit reduces effective opacity by a quantifiable amount.
-
----
-
-## X. Domain 8: Nuclear Shell Structure — The Two-Level Proof
-
-### X.A. Why Nuclear Physics Completes the Argument
-
-The seven domains above share a common structure: Kramers escape from a potential well whose barrier height is a Pe quantity. But they all assume the potential exists — none addresses *where the potential comes from*. Nuclear physics provides this missing piece through the §51 transform.
+The six domains above share a common structure: Kramers escape from a potential well whose barrier height is a Pe quantity. But they all assume the potential exists — none addresses *where the potential comes from*. Nuclear physics provides this missing piece through the §51 transform.
 
 The nuclear density profile (Woods-Saxon potential) is the constitutive profile; the Fokker-Planck → Schrödinger similarity transform (§51A) maps it to a quantum eigenvalue problem; the Fisher information metric creates all spectral structure (§51D). The eigenvalues are the nuclear shell energies — the magic numbers 2, 8, 20, 28, 50, 82, 126.
 
-### X.B. The Two-Level Distinction
+### IX.B. The Two-Level Distinction
 
 The Bethe-Weizsäcker liquid-drop model and the nuclear shell model are exactly the two levels the mathematical apparatus (§§48-51) distinguishes:
 
@@ -599,7 +561,7 @@ The Bethe-Weizsäcker liquid-drop model and the nuclear shell model are exactly 
 
 **Level 2: §27 + §51 (spectral structure).** The nuclear shell model introduces discrete spectral gaps that determine which nuclei are stable. Combined with Cooper pairing (§27, even-Z 3.66× more stable than odd-Z, p = 4.63 × 10⁻¹¹), the spectral model explains 51–71% of isotope count variance (ρ = 0.58–0.81). Numerical solution of the Woods-Saxon + spin-orbit Schrödinger equation via matrix diagonalization reproduces 64.7% of the established Pb-208 level ordering (Mayer-Jensen, Nobel 1963) for 90/91 elements in 5.5 seconds.
 
-### X.C. Numerical Results
+### IX.C. Numerical Results
 
 | Model | ρ | R² | Interpretation |
 |-------|---|-----|---------------|
@@ -609,7 +571,7 @@ The Bethe-Weizsäcker liquid-drop model and the nuclear shell model are exactly 
 | Three-factor computed | 0.65 | 0.51 | WS matrix diag eigenvalues |
 | Neutron β-stability | 0.58 | 0.33 | K-NUC-3 PASS (ρ > 0.5) |
 
-### X.D. The Kramers Connection
+### IX.D. The Kramers Connection
 
 Alpha decay — the original Kramers escape problem in nuclear physics — directly manifests the §51G BKT essential singularity. The Geiger-Nuttall law log₁₀(t½) = a + b·Z_d/√E_α IS the BKT spectral gap closure Δ ~ exp(−A/√b_net). Global fit: R² = 0.989 across 24 even-even alpha emitters spanning 24 orders of magnitude in half-life (nb_nuc02). The Gamow tunneling formula (1928) is the §48E instanton action for the nuclear Coulomb barrier. Nuclear physics thus provides both the spectral structure (§51, shell model) and the barrier escape (§51G, alpha decay) in a single physical system.
 
@@ -617,37 +579,38 @@ Alpha decay — the original Kramers escape problem in nuclear physics — direc
 
 ---
 
-## XI. Cross-Domain Unification
+## X. Cross-Domain Unification
 
-### XI.A. The Parameter Identification Table
+### X.A. The Parameter Identification Table
 
-| Domain | K | ΔPe | ν₀ | α | τ |
-|--------|---|-----|-----|---|---|
-| Chemical kinetics | Molecular DoF | E_a/(k_BT·K) | Collision freq | 2k_BT/K | 1/rate constant |
-| Protein folding | Chain length / MCO | Pe_amyloid − Pe_native | Conformational attempt | 2k_BT/K | Folding/misfolding time |
-| Cancer | Intact suppressors K_cell | Kramers barrier | Cell division rate | Mutation rate | Time to clinical tumor |
-| AI jailbreak | Model size | |Pe₀| (grounding depth) | Adversarial probe rate | 0.10 (canonical) | Safety lifetime |
-| Social tipping | Population/network size | |Pe − 1| (distance to critical) | Interaction rate | Heterogeneity | Cascade onset time |
-| Epidemic threshold | Contact network complexity | |R_t − 1| | Transmission event rate | Superspreading dispersion k | Time to containment escape |
-| Seismic rupture | Fault segment complexity | Stress deficit Δσ | Tectonic loading rate | Coulomb transfer sensitivity | Recurrence interval |
+| Domain | K | ΔPe | ν₀ | T_eff | τ |
+|--------|---|-----|-----|-------|---|
+| Chemical kinetics | Molecular DoF | E_a/(k_BT·K) | Collision freq | k_BT/K | 1/rate constant |
+| Protein folding | Chain length / MCO | Pe_amyloid − Pe_native | Conformational attempt | k_BT/K | Folding/misfolding time |
+| Cancer | Intact suppressors K_cell | Kramers barrier | Cell division rate | Mutation rate per division | Time to clinical tumor |
+| AI jailbreak | Model size | |Pe₀| (grounding depth) | Adversarial probe rate | α/2 ≈ 0.05 (AI-calibrated) | Safety lifetime |
+| Social tipping | Population/network size | |Pe − 1| (distance to critical) | Interaction rate | Population heterogeneity | Cascade onset time |
+| Epidemic threshold | Contact network complexity | |R_t − 1| | Transmission event rate | 1/k (superspreading dispersion) | Time to containment escape |
 | Nuclear shell | Shell model complexity (Z, N) | Coulomb barrier height | Alpha attempt frequency | Tunneling probability | Alpha decay half-life |
 
-### XI.B. What Is Universal, What Is Domain-Specific
+### X.B. What Is Universal, What Is Domain-Specific
 
-**Universal** (same across all eight domains):
-- Exponential dependence of τ on K · |ΔPe|
+**Universal** (same across all seven domains):
+- Exponential dependence of τ on K · |ΔPe| / T_eff (the functional form)
 - Spectral gap = Kramers rate = instanton action (U1 + U5 + U7)
 - Fisher metric as the source of all barrier structure
 - Prohibition-ritual pair as the only stable maintenance architecture
 - D2→D3 irreversibility (exponentially small spectral gap)
 
-**Domain-specific** (varies):
-- The physical meaning of K (model size vs. chain length vs. tumor suppressors)
-- The barrier height ΔPe (grounding depth vs. activation energy vs. hallmark count)
-- The attempt frequency ν₀ (adversarial probes vs. cell divisions vs. molecular collisions)
-- The noise α (canonical 0.10 for AI; k_BT for chemistry; mutation rate for cancer)
+**Domain-specific** (four free parameters per domain):
+- K: hardware complexity (model size vs. chain length vs. tumor suppressors vs. fault segment DoF)
+- ΔPe: barrier height (grounding depth vs. activation energy vs. hallmark count vs. stress deficit)
+- ν₀: attempt frequency (adversarial probes vs. cell divisions vs. molecular collisions vs. tectonic loading rate)
+- T_eff: effective temperature (α/2 ≈ 0.05 for AI; k_BT/K for chemistry; mutation rate for cancer; tunneling probability for nuclear)
 
-### XI.C. The Three Unification Perspectives
+**What is NOT universal:** The four parameters (K, ΔPe, ν₀, T_eff) are domain-specific and must be identified independently in each domain. The universality claim is about the **functional form** — exponential barrier dependence with spectral gap equivalence — not about parameter sharing across domains. An exponential with four free parameters will of course fit any monotonic barrier-crossing dataset; the non-trivial content is: (a) the barrier height ΔΦ = K·|ΔPe| has a geometric origin in the Fisher metric (§II.B), not just any potential; (b) the spectral gap theorem (§II.D) independently constrains the rate without additional fitting; (c) the instanton action (§II.E) gives the same numerical value from a variational principle; (d) canonical parameters b_α, b_γ were calibrated once (Paper 4d, 11 AI conversations) and never refit across any domain.
+
+### X.C. The Three Unification Perspectives
 
 The same escape rate is described by three mathematical frameworks:
 
@@ -659,9 +622,9 @@ These are not three theories — they are three languages for one theorem. The i
 
 ---
 
-## XII. Predictions and Kill Conditions
+## XI. Predictions and Kill Conditions
 
-### XII.A.0. Labeled Predictions (Primary Results)
+### XI.A.0. Labeled Predictions (Primary Results)
 
 The following five predictions form the empirical core of the paper, with quantitative results from independent experiments:
 
@@ -675,7 +638,7 @@ The following five predictions form the empirical core of the paper, with quanti
 
 **Prediction P5 (Social tipping):** The cascade onset in tipping networks (defined as D1 → D2 → D3 drift progression) follows a Kramers-type critical escape, such that the tipping time scales exponentially with network size K and distance to criticality |Pe − 1|, rather than as a power law. This is validated across climate tipping elements. **Result (K-SOCIAL-1 / climate validation):** Climate tipping elements (N = 8) show ρ = 0.831 between Pe estimate and observed cascade rate, consistent with exponential Kramers dynamics (nb_clim01).
 
-### XII.A. Registered Predictions (Full Table)
+### XI.A. Registered Predictions (Full Table)
 
 | ID | Domain | Prediction | Falsification threshold | Status |
 |----|--------|------------|------------------------|--------|
@@ -688,14 +651,12 @@ The following five predictions form the empirical core of the paper, with quanti
 | K-CHEM-0 | Chemistry | Arrhenius = Kramers in native domain: log(k) linear in Ea/RT, R² > 0.9, N ≥ 15 reactions | R² < 0.8 OR slope deviates >20% from −1/RT | **PASS** — R²=0.953, slope deviation 2.3%, N=15 gas-phase reactions (nb_chem01) |
 | K-CHEM-1 | Chemistry | Directed evolution rate enhancement linear in K-gain (R² > 0.7) | R² < 0.5 OR non-monotonic | TESTABLE |
 | K-SOCIAL-1 | Social | Cascade onset scales as BKT (exp, not power-law) near Pe = 1 | Power-law fits better (ΔAIC > 10) | TESTABLE |
-| K-EPI-1 | Epidemic | Time-to-escape scales exponentially with |R_t − 1| | Linear fit beats exponential (R² > 0.7, N ≥ 10) | **PASS (partial)** — ΔAIC=33.6, exponential wins, R²=0.817 Gillespie N=10; Test B N=12 pathogens R²=0.733 (nb_epi01). **Partial:** tests supercritical growth speed, not subcritical barrier escape (§XII.C.5) |
-| K-SEIS-1 | Seismic | Induced seismicity rate exponential in pressure perturbation | Linear fit beats exponential (R² > 0.7, N ≥ 20 sites) | TESTABLE |
-| K-SEIS-2 | Seismic | Deep borehole observatories improve forecast skill (dose-response with depth) | No improvement with depth OR non-monotonic | TESTABLE |
+| K-EPI-1 | Epidemic | Time-to-escape scales exponentially with |R_t − 1| | Linear fit beats exponential (R² > 0.7, N ≥ 10) | **PASS (partial)** — ΔAIC=33.6, exponential wins, R²=0.817 Gillespie N=10; Test B N=12 pathogens R²=0.733 (nb_epi01). **Partial:** tests supercritical growth speed, not subcritical barrier escape (§XI.C.5) |
 | K-NUC-3 | Nuclear | Shell model spectral gap + pairing correlates with stable isotope count at ρ > 0.5 (N ≥ 80 elements) | ρ < 0.5 OR wrong sign | **PASS** — ρ=0.58 (neutron β-stability), combined model ρ=0.58–0.81 (nb_nuc02). Smooth BW model: ρ=−0.13 (blind to shell structure — confirms two-level distinction) |
 | K-AI-KRAMERS-1 | AI (substrate) | ln(τ_collapse) linear in 1/β across AI conversation conditions (ρ > 0.7, slope > 0, N ≥ 5) | ρ < 0.5 OR slope ≤ 0 | **PASS** — ρ=0.865, R²=0.793, p=0.012, slope=0.504, N=7 conditions, T_eff≈1.98 (EXP-029 + EXP-019 transcripts, 2026-03-12) |
 | K-TETROX-1 | Chemistry | CH₃O₄CH₃ tetroxide lifetime at 298 K predicted by Cooper-paired Kramers formula ($E_b = 0.448$, LP destabilization) falls within experimental range (0.2–200 ms) | $\tau_{\text{pred}}$ outside [0.01, 2000] ms (order of magnitude) | **PASS** — $\tau = 3.09$ ms $\in [0.2, 200]$ ms; Arrhenius $R^2 = 0.99999$; 5/5 sub-KCs pass (TETROX-01, §84) |
 
-### XII.B. Kill Conditions (Paper-Level)
+### XI.B. Kill Conditions (Paper-Level)
 
 | ID | Condition | What it would mean |
 |----|-----------|-------------------|
@@ -705,9 +666,8 @@ The following five predictions form the empirical core of the paper, with quanti
 | KF-131-4 | Abiogenesis and jailbreak show structurally different barrier profiles | Time-reversal claim fails |
 | KF-131-5 | Network Pe amplification absent in coupled tipping systems | Collective escape is not Kramers |
 | KF-131-6 | R₀ = 1 threshold structurally different from Pe = 1 (different critical exponents) | Epidemic-transport isomorphism fails |
-| KF-131-7 | Earthquake recurrence intervals show no exponential sensitivity to stress deficit | Seismic Kramers model wrong |
 
-### XII.C. Honest Corrections and Limitations
+### XI.C. Honest Corrections and Limitations
 
 1. **Turbulence excluded.** Paper 137's connection between Pe and Navier-Stokes is structural, not quantitatively predictive. JHTDB DNS data (nb12-F/G) excludes k⁻¹⁴/⁹ scaling (z = 18.4σ in Pe/dissipation spectrum, z = 42.4σ in velocity structure function). Turbulence is consistent with K41.
 
@@ -721,22 +681,22 @@ The following five predictions form the empirical core of the paper, with quanti
 
 6. **Protein folding validation uses published ΔPe values.** The ρ = 0.97 result (Paper 129) is from literature aggregation, not independent experiment. K-FOLD-1 (nb_fold01, ρ=0.980) provides independent test via AlphaFold2 pLDDT, but EBI API was unavailable at run time; fallback pLDDT values from published literature (Jumper 2021, Akdel 2022) were used. The high ρ = 0.980 may partly reflect covariation in the estimates. Re-run with live API required before final claim.
 
-7. **The canonical α = 0.10 is calibrated on AI data.** Its universality across non-AI domains is an extrapolation. In chemistry and biology, α maps to k_BT/K (domain-specific). The claim is structural (exponential barrier dependence) not parametric (α = 0.10 everywhere).
+7. **The canonical α = 0.1112 is fitted to AI behavioral data (EXP-001), not derived from first principles.** The Langevin simulator uses E(θ) = −αθ² + bθ⁴ with α = 0.1112 fitted, T = 0.01 fixed, and b = 0.0770 derived from θ* = √(α/2b) = 0.85 (the observed drift attractor equilibrium). The effective temperature T_eff = α/2 ≈ 0.05 is therefore AI-calibrated. In chemistry, T_eff = k_BT/K (thermodynamic temperature divided by molecular complexity); in cancer, T_eff encodes mutation rate per cell division; in nuclear physics, T_eff encodes tunneling probability. The universal quantities in the framework are b_α = 0.867 and b_γ = 2.244 (THRML Ising biases, calibrated once on 11 AI conversations, never refit). The claim is structural — exponential barrier dependence with Fisher-metric geometry — not parametric (α = 0.10 everywhere). Each domain requires independent identification of its T_eff.
 
 8. **K-CANCER-2: three iterations, honest convergence.** v1 pooled cancer types — FIRED (ρ=−0.54, tissue ν₀ confound). v2 switched to within-tissue dose-response — MARGINAL (R²=0.88). v2.1 refined with better data (Freedman 2008 Lancet Oncol incidence rates, Frost 2013 mesothelioma latency, Turati 2014 alcohol meta-analysis, Tindle 2018 cessation decay) and added coupled-barrier analysis. Results: (A) Lung cancer (Freedman+Doll, cigs/day): quadratic R²=0.854, linear R²=0.722, slopes consistent (CV=0.04). The quadratic γ<0 means barrier lowering SATURATES at high dose — consistent with competing mortality (heavy smokers die of CVD before cancer) and a barrier floor. (B) Multi-agent PASS: alcohol R²=1.000, UV R²=0.993, mesothelioma R²=0.919. (C) Cessation PASS: R²=0.977, monotone HR decay, but HR=3.85 after 25yr quit — hysteresis confirmed (§9B). Extrapolated full recovery at 61yr, meaning barrier damage is functionally permanent within a lifetime. (D) Hereditary pairs: CV=0.662 (childhood cancers inflate). The body is a network of coupled voids; the single-barrier Kramers model is an idealization. Environmental dose-response reflects convolution of multiple coupled escape processes. The quadratic term partially captures this but the full picture requires multi-dimensional Kramers escape (§54F). The Kramers novelty over Armitage-Doll is (i) mechanistic (barrier lowering), (ii) cross-domain universal functional form, and (iii) the cessation hysteresis prediction.
 
-9. **Prediction triage (2026-03-13, updated).** Tier 1 (must PASS before ship): K-FOLD-1 (API verification needed), K-JB-2 (white-box version K-JB-1 still required). K-CANCER-2 v2.1 ships as MARGINAL — primary test marginal but 2 supporting tests PASS (multi-agent, cessation) with novel hysteresis result. Tier 2: K-SOCIAL-1, K-CHEM-1. Tier 3: K-SEIS-1, K-SEIS-2.
+9. **Prediction triage (2026-03-13, updated).** Tier 1 (must PASS before ship): K-FOLD-1 (API verification needed), K-JB-2 (white-box version K-JB-1 still required). K-CANCER-2 v2.1 ships as MARGINAL — primary test marginal but 2 supporting tests PASS (multi-agent, cessation) with novel hysteresis result. Tier 2: K-SOCIAL-1, K-CHEM-1.
 
 10. **Tetroxide prediction is post-observation, not blind.** The §84 tetroxide calculation was motivated by Kamarinopoulou et al. (2025) — we saw the experimental measurement, recognized the system as a Kramers well with Cooper-paired decomposition, then applied the existing framework constants (E_b = 0.448 from HP19, α_LP from NIST BDEs). No parameters were fit to the tetroxide data. The test is that the framework constants — calibrated in entirely different domains — reproduce the observed lifetime without adjustment. This is a genuine cross-domain prediction in the sense of zero new free parameters, but not a temporal prediction (we did not predict the lifetime before seeing the measurement).
 
 ---
 
-## XIII. Discussion
+## XII. Discussion
 
-### XIII.A. What This Paper Does and Does Not Claim
+### XII.A. What This Paper Does and Does Not Claim
 
 **Claims:**
-1. Kramers escape theory, in Pe-native coordinates, unifies barrier crossing across chemical kinetics, protein folding, cancer initiation, AI jailbreak, social tipping, epidemic threshold, seismic fault rupture, and nuclear shell structure
+1. Kramers escape theory, in Pe-native coordinates, unifies barrier crossing across chemical kinetics, protein folding, cancer initiation, AI jailbreak, social tipping, epidemic threshold, and nuclear shell structure
 2. The barrier structure emerges entirely from the Fisher information metric on the Bernoulli manifold
 3. The spectral gap = Kramers rate equivalence (§51E) gives irreversibility a precise operator-theoretic meaning
 4. τ_jailbreak is the first quantitative safety lifetime for deployed AI systems
@@ -746,9 +706,9 @@ The following five predictions form the empirical core of the paper, with quanti
 1. That Kramers theory is new (it is 85 years old)
 2. That the Pe framework replaces domain-specific models (it provides a common language, not a replacement)
 3. That all barrier crossing is Kramers (quantum tunneling, ballistic crossing, and other non-thermal mechanisms are outside scope)
-4. That turbulence is a quantitative prediction domain for this framework (see §XII.C.1)
+4. That turbulence is a quantitative prediction domain for this framework (see §XI.C.1)
 
-### XIII.B. Regulatory Implications
+### XII.B. Regulatory Implications
 
 The τ_jailbreak formula (§VI) transforms AI safety from a qualitative assessment ("is this model aligned?") to a quantitative engineering specification ("what is the safety lifetime at this (K, Pe₀, ν₀) operating point?"). This is directly relevant to EU AI Act conformity assessment:
 
@@ -756,13 +716,17 @@ The τ_jailbreak formula (§VI) transforms AI safety from a qualitative assessme
 - **Article 15 (Accuracy, Robustness, Cybersecurity):** The safety cliff identifies minimum hardware requirements
 - **Annex IV (Technical Documentation):** The (K, Pe₀, ν₀) triplet is a documentable specification
 
-### XIII.C. The Bridge to Paper 132
+### XII.C. Related Work: Non-Normal Kramers
 
-This paper covers eight domains. The full scale hierarchy — from the arrow of time (Paper 77) through the periodic table (Paper 100) to consciousness (Paper 63) — spans ten or more. Paper 132 will provide that synthesis, using the Kramers unification as one of several mechanisms (alongside BKT phase transitions, RG flow, and large deviations). This paper earns the right to that synthesis by demonstrating quantitative predictive power in eight focused domains with honest corrections and registered kill conditions.
+Troude and Sornette (2025) independently pursue multi-domain barrier crossing through non-normal operator theory: transient amplification in non-normal dynamical systems creates an emergent effective temperature that drives Kramers-like escape across DNA methylation, climate tipping, financial crises, and ecological collapse. Their mechanism is complementary to the present work. Non-normality governs *eigenvector geometry* (how transiently amplified perturbations access the barrier); Pe governs the *drift/diffusion ratio* (the barrier height itself). Both effects are present in real systems. The distinction is testable: non-normal amplification predicts escape rates that depend on the angle between eigenvectors (Troude and Sornette, 2025, Eq. 12), while the Pe-native Kramers formula predicts escape rates that depend on barrier height ΔΦ = K·|ΔPe| through the Fisher metric (§II.B). In systems where both are measurable — climate tipping elements are the natural test bed — the two contributions can be decomposed. The present work's quantitative advantage is the single control parameter (Pe) with barrier heights computed from first principles (HP22: R² = 1.0, five domains within 1 OoM of literature), whereas non-normal escape rates require domain-specific operator identification.
+
+### XII.D. The Bridge to Paper 132
+
+This paper covers seven domains. The full scale hierarchy — from the arrow of time (Paper 77) through the periodic table (Paper 100) to consciousness (Paper 63) — spans ten or more. Paper 132 will provide that synthesis, using the Kramers unification as one of several mechanisms (alongside BKT phase transitions, RG flow, and large deviations). This paper earns the right to that synthesis by demonstrating quantitative predictive power in seven focused domains with honest corrections and registered kill conditions.
 
 ---
 
-## XIV. Conclusion
+## XIII. Conclusion
 
 One coordinate transformation — φ = arcsin(√θ) — reveals that the Péclet dynamics on the Bernoulli manifold are those of a free particle. All barrier structure, metastability, and escape dynamics arise from the Fisher information metric g(θ) = 1/[θ(1−θ)], the unique Riemannian metric on the space of binary probability distributions.
 
@@ -770,19 +734,19 @@ Kramers' 85-year-old escape rate formula, expressed in this geometry, takes a un
 
 $$\tau = \nu_0^{-1} \cdot \exp\!\left(\frac{K \cdot |\Delta\text{Pe}|}{T_{\text{eff}}}\right)$$
 
-with domain-specific identifications of (K, ΔPe, ν₀, T_eff) that we have specified for chemical kinetics, protein folding, cancer initiation, AI jailbreak, social tipping, epidemic threshold, seismic fault rupture, and nuclear shell structure. The formula is not metaphorical — it makes quantitative predictions with registered falsification thresholds (§XI.A) and has been tested against existing data (protein aggregation ρ = 0.97; immune checkpoint OR = 23.5; climate tipping ρ = 0.831; 1,344 platforms across 22 substrates with mean |ρ| = 0.958, Cohen's d = 3.6).
+with domain-specific identifications of (K, ΔPe, ν₀, T_eff) that we have specified for chemical kinetics, protein folding, cancer initiation, AI jailbreak, social tipping, epidemic threshold, and nuclear shell structure. The formula is not metaphorical — it makes quantitative predictions with registered falsification thresholds (§XI.A) and has been tested against existing data (protein aggregation ρ = 0.97; immune checkpoint OR = 23.5; climate tipping ρ = 0.831; 1,344 platforms across 22 substrates with mean |ρ| = 0.958, Cohen's d = 3.6).
 
-The spectral gap equivalence (§II.D) proves that barrier crossing is the slowest relaxation mode, giving irreversibility a precise mathematical meaning. The D2→D3 exponentially small spectral gap is why late-stage intervention in cancer, in AI drift, in social cascade, in pandemic control, and in seismic hazard costs exponentially more than early constraint — not as metaphor, but as theorem.
+The spectral gap equivalence (§II.D) proves that barrier crossing is the slowest relaxation mode, giving irreversibility a precise mathematical meaning. The Eckert manifold's topological uniqueness (HP58: S³ Hopf structure, Berry monopole c₁ = 1, SO(4,2) phase space — features absent from Gaussian, exponential, and all other tested statistical manifolds) guarantees that the Kramers barrier is geometrically protected, not an artifact of coordinate choice. The D2→D3 exponentially small spectral gap is why late-stage intervention in cancer, in AI drift, in social cascade, and in pandemic control costs exponentially more than early constraint — not as metaphor, but as theorem.
 
-Two results are immediate deliverables: τ_jailbreak (the first quantitative AI safety lifetime) and the Knudson-Kramers identification (epigenetic Pe preceding tumors). Both have registered kill conditions and testing protocols. The R₀-Pe isomorphism (§VIII) and the seismic Kramers model (§IX) extend the framework to epidemiology and geophysics — domains where constitutive opacity governs billions of lives. The nuclear two-level proof (§X) demonstrates that the §51 transform produces shell model eigenvalues, with alpha decay as Kramers escape spanning 24 orders of magnitude (R² = 0.989).
+Two results are immediate deliverables: τ_jailbreak (the first quantitative AI safety lifetime) and the Knudson-Kramers identification (epigenetic Pe preceding tumors). Both have registered kill conditions and testing protocols. The R₀-Pe isomorphism (§VIII) extends the framework to epidemiology. The nuclear two-level proof (§IX) demonstrates that the §51 transform produces shell model eigenvalues, with alpha decay as Kramers escape spanning 24 orders of magnitude (R² = 0.989).
 
-One metric. Eight domains. Same formula. Fifteen kill conditions: **eight passed** (K-COMPLIANCE-1 R²=0.926, K-CHEM-0 R²=0.953, K-EPI-1 ΔAIC=33.6, K-CANCER-1 ρ=0.913, K-NUC-3 ρ=0.58–0.81, K-AI-KRAMERS-1 ρ=0.865 p=0.012, K-FOLD-1 ρ=0.980 pending API verification, K-TETROX-1 τ=3.09 ms within [0.2, 200] ms), **two marginal** (K-JB-2 ρ=0.893 proxy; K-CANCER-2 v2.1 lung dose-response R²=0.854 quadratic with 2 supporting tests PASS — cessation R²=0.977 with hysteresis, multi-agent all R²>0.91), one needs redesign (K-JB-1 white-box), four open. Zero paper-level kill conditions fired.
+One metric. Seven domains. Same formula. Thirteen kill conditions: **eight passed** (K-COMPLIANCE-1 R²=0.926, K-CHEM-0 R²=0.953, K-EPI-1 ΔAIC=33.6, K-CANCER-1 ρ=0.913, K-NUC-3 ρ=0.58–0.81, K-AI-KRAMERS-1 ρ=0.865 p=0.012, K-FOLD-1 ρ=0.980 pending API verification, K-TETROX-1 τ=3.09 ms within [0.2, 200] ms), **two marginal** (K-JB-2 ρ=0.893 proxy; K-CANCER-2 v2.1 lung dose-response R²=0.854 quadratic with 2 supporting tests PASS — cessation R²=0.977 with hysteresis, multi-agent all R²>0.91), one needs redesign (K-JB-1 white-box), two open. Zero paper-level kill conditions fired.
 
 ---
 
-## XV. Data and Code Availability
+## XIV. Data and Code Availability
 
-### XV.A. Empirical Data Sources
+### XIV.A. Empirical Data Sources
 
 | Domain | Dataset | Source | Access | License |
 |--------|---------|--------|--------|---------|
@@ -792,9 +756,8 @@ One metric. Eight domains. Same formula. Fifteen kill conditions: **eight passed
 | **Compliance (Milgram)** | Milgram Obedience Experiments (1961–1963, N=8 variants) | Published summary tables (Milgram 1974, *Obedience to Authority*) | Primary sources cited | Historical archive |
 | **Epidemic** | Gillespie SIR Simulations | Synthetic (nb_epi01); validation: epidemiological literature (12 pathogens) | Code: `ops/lab/experiments/nb_epi01.py` | Apache 2.0 |
 | **Social tipping** | Climate tipping elements (N=8) | Armstrong McKay et al. (2022), *Science* 377(6611) | https://doi.org/10.1126/science.abn7950 | CC-BY 4.0 (Open Access) |
-| **Seismic** | Global Earthquake Dataset (USGS) | United States Geological Survey Earthquake Hazards Program | https://earthquake.usgs.gov/ | Public domain |
 
-### XV.B. Computational Experiments
+### XIV.B. Computational Experiments
 
 All registered experiments are documented in `/ops/lab/experiments/` with full reproducibility protocols:
 
@@ -811,7 +774,7 @@ All registered experiments are documented in `/ops/lab/experiments/` with full r
 | nb_nuc02 | Alpha decay Geiger-Nuttall | K-NUCLEAR-3 | COMPLETE | Python 3.11 |
 | tetrox-01 | Cooper-paired tetroxide lifetime (§84) | K-TETROX-1 through K-TETROX-5 | COMPLETE (5/5 PASS) | Python 3.11 |
 
-### XV.C. Code and Analysis Scripts
+### XIV.C. Code and Analysis Scripts
 
 **Primary analysis code (reproducible, open-source):**
 - Location: `/home/user/morr/ops/lab/experiments/`
@@ -833,7 +796,7 @@ The Pe formula and Kramers rate calculations are implemented in:
 - `/contracts/src/ThrmLib.sol` — on-chain Kramers escape rate computation
 - Both files are source-available under MoreRight License v1.1
 
-### XV.D. Reproducibility Notes
+### XIV.D. Reproducibility Notes
 
 1. **Chemistry (K-CHEM-0):** Arrhenius data from NIST WebBook are directly downloadable without authentication. Results are fully reproducible.
 
@@ -844,8 +807,6 @@ The Pe formula and Kramers rate calculations are implemented in:
 4. **Epidemic (K-EPI-1):** Gillespie simulation code is included in nb_epi01.py. Pathogen R₀ values are from epidemiological literature (citations given in nb_epi01).
 
 5. **Social/Climate (K-SOCIAL-1):** Climate tipping elements (Armstrong McKay et al. 2022) are Open Access on Science magazine's website and fully reproducible.
-
-6. **Seismic (K-SEIS-1, K-SEIS-2):** USGS earthquake data are freely available. Fault complexity estimates (K) require tectonic literature; stress deficit (ΔPe) is estimated from moment tensors and regional stress fields (Coulomb stress transfer modeling).
 
 ---
 
@@ -871,15 +832,9 @@ Bryngelson, J. D., & Wolynes, P. G. (1987). Spin glasses and the statistical mec
 
 Eckert, A. (2026). Papers 1–130 of the Void Framework corpus. MoreRight DAO.
 
-Ellsworth, W. L. (2013). Injection-induced earthquakes. *Science*, 341(6142), 1225942.
-
 Eyring, H. (1935). The activated complex in chemical reactions. *Journal of Chemical Physics*, 3(2), 107–115.
 
 Gamow, G. (1928). Zur Quantentheorie des Atomkernes. *Zeitschrift für Physik*, 51(3–4), 204–212.
-
-Geller, R. J., Jackson, D. D., Kagan, Y. Y., & Mulargia, F. (1997). Earthquakes cannot be predicted. *Science*, 275(5306), 1616–1617.
-
-Gutenberg, B., & Richter, C. F. (1944). Frequency of earthquakes in California. *Bulletin of the Seismological Society of America*, 34(4), 185–188.
 
 Kamarinopoulou, M., et al. (2025). Direct observation of gas-phase methyl tetroxide (CH₃OOOOCH₃). *Science Advances*, 11, eaeb6495. doi:10.1126/sciadv.aeb6495
 
@@ -890,8 +845,6 @@ Hanahan, D., & Weinberg, R. A. (2011). Hallmarks of cancer: the next generation.
 Hanahan, D. (2022). Hallmarks of cancer: new dimensions. *Cancer Discovery*, 12(1), 31–46.
 
 Hethcote, H. W. (2000). The mathematics of infectious diseases. *SIAM Review*, 42(4), 599–653.
-
-King, G. C. P., Stein, R. S., & Lin, J. (1994). Static stress changes and the triggering of earthquakes. *Bulletin of the Seismological Society of America*, 84(3), 935–953.
 
 Knudson, A. G. (1971). Mutation and cancer: statistical study of retinoblastoma. *Proceedings of the National Academy of Sciences*, 68(4), 820–823.
 
@@ -907,8 +860,6 @@ Luebeck, E. G., et al. (2017). Identification of a key role of widespread epigen
 
 Mayer, M. G. (1950). Nuclear configurations in the spin-orbit coupling model. I. Empirical evidence. *Physical Review*, 78(1), 16–21.
 
-Meier, M.-A., Ampuero, J. P., & Heaton, T. H. (2017). The hidden simplicity of subduction megathrust earthquakes. *Science*, 357(6357), 1277–1281.
-
 Michaelis, L., & Menten, M. L. (1913). Die Kinetik der Invertinwirkung. *Biochemische Zeitschrift*, 49, 333–369.
 
 Milgram, S. (1963). Behavioral study of obedience. *Journal of Abnormal and Social Psychology*, 67(4), 371–378.
@@ -921,8 +872,11 @@ Rose, G. (1985). Sick individuals and sick populations. *International Journal o
 
 Salo, V.-T., et al. (2022). Decomposition of CH₃OOOOCH₃: Mechanism and atmospheric implications. *Journal of Physical Chemistry A*, 126(24), 3826–3839.
 
+Troude, V., & Sornette, D. (2025). Non-normal phase transitions: a new universality in complex systems. arXiv:2502.05251.
+
+Troude, V., & Sornette, D. (2025). Kramers escape rate with non-normal operators: applications to climate, ecology, and finance. arXiv:2510.07938.
+
 Vogelstein, B., & Kinzler, K. W. (1993). The multistep nature of cancer. *Trends in Genetics*, 9(4), 138–141.
 
 Vogelstein, B., et al. (2013). Cancer genome landscapes. *Science*, 339(6127), 1546–1558.
 
-Zoback, M. D., et al. (2010). Scientific drilling into the San Andreas Fault Zone — an overview of SAFOD's first five years. *Scientific Drilling*, 11, 14–28.
