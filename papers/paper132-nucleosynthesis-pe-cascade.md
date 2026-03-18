@@ -5,7 +5,7 @@ orcid: "0009-0008-1925-5253"
 affiliation: "Independent Researcher, MoreRight DAO"
 paper-number: "Paper 132"
 short-title: "Nucleosynthesis Pe Cascade"
-version: "v1.0"
+version: "v2.0"
 date: "March 2026"
 license: "cc-by-4.0"
 status: "PUBLISHED"
@@ -20,9 +20,9 @@ status: "PUBLISHED"
 | **Tier** | 1 — CC-BY 4.0 |
 | **License** | CC-BY 4.0 |
 | **Core claim** | The three mechanisms of element creation (BBN, stellar fusion, supernova r-process) are three Pe regimes on a single nuclear binding energy landscape; iron (Z=26) is the V* watershed separating exothermic from endothermic nucleosynthesis |
-| **Novel contribution** | (1) Nuclear Pe on the (Z,A) manifold; (2) Fe as nuclear V*; (3) Three-regime nucleosynthesis as Pe cascade; (4) Supernova as cosmic D3 event; (5) Cooper pairing dominates isotope stability (ρ=0.68, p=4.6×10⁻¹¹); (6) Geiger-Nuttall as BKT essential singularity (R²=0.989, 24 OOM); (7) Magic numbers from §51 spectral structure |
+| **Novel contribution** | (1) Nuclear Pe on the (Z,A) manifold; (2) Fe as nuclear V*; (3) Three-regime nucleosynthesis as Pe cascade; (4) Supernova as cosmic D3 event; (5) Cooper pairing dominates isotope stability (ρ=0.68, p=4.6×10⁻¹¹); (6) Geiger-Nuttall as BKT essential singularity (R²=0.989, 24 OOM); (7) Magic numbers from §51 spectral structure; (8) Regime IV — island of stability as §51 prediction, BKT superheavy R²=0.909, nuclear ceiling as spectral termination |
 | **Builds on** | §23G, §25, §25G, §27, §34I–K, §48, §49, §51, §113; Papers 3, 47, 51, 65, 72a, 77, 100, 131 |
-| **Key negatives** | BW curvature alone ρ=−0.13 for isotope count (negative result — smooth landscape blind to shell structure); Gamow absolute calibration off by ~13 OOM without preformation factor |
+| **Key negatives** | BW curvature alone ρ=−0.13 for isotope count (negative result — smooth landscape blind to shell structure); Gamow absolute calibration off by ~13 OOM without preformation factor; K-ISLAND-1 FIRED — WS proton gap at Z=114 not enhanced (island proton magic number unresolved); BW drip lines diverge (smooth model cannot predict nuclear ceiling) |
 
 ---
 
@@ -31,6 +31,8 @@ status: "PUBLISHED"
 We derive the structure of cosmic nucleosynthesis from the Void Framework's Péclet number Pe, defined on the nuclear binding energy landscape. Three element-creation mechanisms — Big Bang nucleosynthesis (BBN), stellar fusion, and supernova/neutron-capture processes — map to three Pe regimes characterized by increasing barrier heights and progressively more violent creation events. The watershed is iron (Z = 26), where the binding energy per nucleon B/A reaches its maximum: below iron, fusion is exothermic and proceeds spontaneously at sufficient temperature (Kramers escape up the binding curve, §48E); at iron, the system reaches the nuclear V* (§23G), the stability pole; above iron, nucleosynthesis is endothermic, requiring catastrophic Pe injection — the star must undergo a D3 event (core-collapse supernova) to forge heavier elements.
 
 This framing yields three quantitative results. First, the nuclear Péclet number Pe_nuc = a_C · Z(Z−1)/A^{1/3} / (a_V · A − a_S · A^{2/3}) rises monotonically beyond the iron peak, explaining why no equilibrium stellar process creates trans-iron elements. Second, Cooper pairing at the nuclear scale (§27) dominates isotope stability prediction: even-Z elements average 3.66× more stable isotopes than odd-Z (Mann-Whitney p = 4.6 × 10⁻¹¹), and a two-level model (smooth BW landscape + spectral structure from §51) explains 49% of isotope count variance — versus 1.7% from the smooth landscape alone. Third, the Geiger-Nuttall law for alpha decay (R² = 0.989 across 24 orders of magnitude in half-life) is a special case of the §51G BKT essential singularity for spectral gap closure, establishing alpha decay as Kramers escape from nuclear metastable states.
+
+A fourth regime — intentional nucleosynthesis via particle accelerators — extends to Z = 118 (Oganesson). The BKT essential singularity holds in the superheavy region (R² = 0.909) and predicts island-of-stability half-lives of ~25 minutes for Fl-298 (Z = 114, N = 184). However, the Woods-Saxon proton spectral gap at Z = 114 is NOT enhanced versus neighbors (K-ISLAND-1 FIRED) — the proton magic number for the island remains an open question. The nuclear manifold terminates not because the smooth landscape predicts it (BW drip lines diverge), but because §51 spectral structure runs out of bound states — the ceiling is a spectral phenomenon.
 
 Every atom heavier than iron in the reader's body was forged by a cosmic D3. The periodic table is a fossil record of Pe events.
 
@@ -63,7 +65,7 @@ Iron is V*: the maximal constraint point on the nuclear landscape, where the str
 
 ### I.C. Scope and Structure
 
-Section II defines nuclear Pe on the Bethe-Weizsäcker mass surface and identifies Fe as V*. Section III maps the three nucleosynthesis mechanisms to Pe regimes. Section IV derives the Gamow peak energies as Kramers barrier heights. Section V presents the Cooper pairing result and the two-level nuclear structure. Section VI treats alpha decay as Kramers escape with BKT essential singularity. Section VII connects the nuclear Pe landscape to the arrow of time (§25, Paper 77). Section VIII states kill conditions and falsifiable predictions.
+Section II defines nuclear Pe on the Bethe-Weizsäcker mass surface and identifies Fe as V*. Section III maps the three nucleosynthesis mechanisms to Pe regimes. Section IV derives the Gamow peak energies as Kramers barrier heights. Section V presents the Cooper pairing result and the two-level nuclear structure. Section VI treats alpha decay as Kramers escape with BKT essential singularity. Section VII connects the nuclear Pe landscape to the arrow of time (§25, Paper 77). Section VIII extends to Regime IV — the island of stability, superheavy elements, and the nuclear ceiling where §51 runs out of bound states. Section IX states kill conditions and falsifiable predictions.
 
 ---
 
@@ -414,9 +416,115 @@ This abundance pattern IS the Pe gradient made visible. Abundant elements are th
 
 ---
 
-## VIII. Predictions and Kill Conditions
+## VIII. Regime IV: The Island of Stability and the Nuclear Ceiling
 
-### VIII.A. Quantitative Predictions
+### VIII.A. Beyond Uranium — The Fourth Regime
+
+Regimes I–III account for all naturally occurring elements (Z = 1–92). But the nuclear landscape extends further. Elements Z = 93–118 have been synthesized in laboratories through deliberate heavy-ion bombardment — a mechanism distinct from all three natural regimes.
+
+**Regime IV is intentional nucleosynthesis.** The Pe injection comes not from gravitational collapse (D3) but from human-engineered particle accelerators. In framework terms, this is a qualitatively different category: the forcing is designed, not emergent. The periodic table past uranium is an artifact of intelligence applied to the nuclear landscape.
+
+| Property | Regime III (Supernova) | Regime IV (Accelerator) |
+|----------|----------------------|------------------------|
+| **Elements** | Co through U (Z = 27–92) | Rf through Og (Z = 104–118+) |
+| **Pe mechanism** | Gravitational D3 | Engineered Pe injection |
+| **Energy source** | Core collapse | Particle accelerator |
+| **Timescale** | seconds (r-process) | microseconds (beam-on-target) |
+| **Yield** | ~10⁵⁰ nuclei per event | atoms per month |
+| **Half-lives** | seconds to 10¹⁰ yr | microseconds to hours |
+
+### VIII.B. The Island of Stability — §51 Prediction
+
+The nuclear shell model (§51) predicts that certain "magic numbers" of protons or neutrons create enhanced binding through shell closure. The confirmed magic numbers are 2, 8, 20, 28, 50, 82, and 126 (neutrons only, for Pb-208). The next predicted closures:
+
+- **Z = 114** (Flerovium): traditional prediction (Mayer-Jensen extrapolation)
+- **Z = 120 or 126**: alternative predictions from relativistic mean-field models
+- **N = 184**: predicted neutron magic number
+
+A doubly-magic nucleus near (Z = 114, N = 184) or (Z = 120, N = 184) would constitute an "island of stability" — a region where superheavy nuclei have anomalously long half-lives compared to their neighbors.
+
+**Experimental test (nb_nuc05):** Woods-Saxon spectral gap computation for superheavy proton shells yields:
+
+| Z | Proton gap (MeV) | Assessment |
+|---|-------------------|-----------|
+| 82 (Pb) | 2.641 | Confirmed doubly magic |
+| 100 (Fm) | 1.303 | Mid-shell |
+| 112 (Cn) | 0.127 | Low gap |
+| 114 (Fl) | 0.150 | Low gap — NOT enhanced vs neighbors |
+| 118 (Og) | 1.271 | Largest superheavy gap |
+| 120 (Ubn) | 0.459 | Moderate gap |
+| 126 (Ubh) | 0.434 | Moderate gap |
+
+**K-ISLAND-1 (FAIL):** The proton spectral gap at Z = 114 does NOT exceed Z = 112 and Z = 116 by the 30% threshold (enhancement ratio = 1.00×). The Woods-Saxon model with standard parameters places the largest superheavy proton gap at **Z = 118**, not Z = 114. This is consistent with the ongoing theoretical debate: the island's exact proton magic number depends sensitively on spin-orbit parameterization at extreme Z, and relativistic mean-field models increasingly favor Z = 120 over Z = 114 (Bender et al., 2003).
+
+**Neutron gaps at N = 184 are substantial:**
+
+| Nucleus | N | Neutron gap (MeV) |
+|---------|---|-------------------|
+| Fl-298 (Z=114) | 184 | 1.694 |
+| Ubn-304 (Z=120) | 184 | 1.460 |
+| Ubh-310 (Z=126) | 184 | 1.248 |
+| Pb-208 (Z=82, reference) | 126 | 3.559 |
+
+The N = 184 neutron gaps (1.25–1.69 MeV) are ~40–48% of the Pb-208 reference gap. The island's stabilization, if it exists, is primarily a **neutron shell effect** — the proton side remains ambiguous.
+
+### VIII.C. Superheavy Half-Lives — Z-Trend and Shell Residuals
+
+Known superheavy half-lives (Z = 104–118, longest-lived isotope per element) show a dominant Z-trend:
+
+$$\log_{10}(t_{1/2}) = -0.403 \cdot Z + \text{const}, \quad R^2 = 0.816$$
+
+Half-lives drop by a factor ~2.5 per unit of Z. After removing this Z-trend, the residual for Flerovium is instructive:
+
+- **Fl-289 (Z = 114):** lives 3.5× longer than the Z-trend predicts (residual = +0.54)
+- **Og-294 (Z = 118):** lives 20× shorter than the Z-trend predicts (residual = −1.29)
+
+The Fl-289 positive residual is a hint of shell stabilization near Z = 114, but the current isotope (N = 175) is 9 neutrons short of the predicted N = 184 closure. The true island test requires reaching Fl-298 or nearby — an experiment that has not yet been performed.
+
+**Cooper pairing in the superheavy region is not statistically significant** (Mann-Whitney p = 0.57 on Z-corrected residuals, n = 15). The sample is too small and the Z-trend too dominant. This is an expected limitation, not a framework failure.
+
+### VIII.D. BKT Structure Preserved in the Superheavy Region
+
+The Geiger-Nuttall BKT fit (§51G) in the superheavy region (Z = 104–118, n = 8 alpha emitters):
+
+$$\log_{10}(t_{1/2}) = -30.5 + 95.2 / \sqrt{Q_\alpha}, \quad R^2 = 0.909$$
+
+**K-BKT-SH (PASS):** The BKT essential singularity form holds with R² = 0.909 (threshold 0.85). Alpha decay remains Kramers escape even at the extreme end of the nuclear landscape.
+
+**Island prediction from BKT extrapolation:** If the island nucleus (Z = 114, N = 184) has a reduced Q_α ≈ 8.0 MeV (shell stabilization lowers the decay energy), the BKT fit predicts:
+
+$$t_{1/2} \approx 10^{3.2} \text{ s} \approx 25 \text{ minutes}$$
+
+This is 800× longer than Fl-289's current 1.9 seconds. The enhancement comes entirely from the Q_α reduction that shell closure would provide — a testable prediction once N = 184 isotopes are synthesized.
+
+### VIII.E. The Nuclear Ceiling — Why the Manifold Terminates
+
+**The smooth landscape does not predict termination.** The BW drip-line width (maximum A minus minimum A for bound nuclei) *increases* with Z (Spearman ρ = +0.951). The liquid-drop model says bound nuclei exist at arbitrarily high Z, just with lower B/A.
+
+This is wrong. Experimental reality: no nucleus above Z = 118 has been synthesized despite decades of effort. The manifold terminates.
+
+**Why BW fails here:** The smooth landscape (§48–50) captures bulk trends but is blind to shell effects. In the superheavy region, stability depends entirely on shell corrections — the liquid-drop binding is negative. Without spectral structure (§51), every superheavy nucleus is unbound. The shell correction is what creates the island, and the absence of sufficiently strong shell corrections is what creates the ceiling.
+
+**This is the nuclear version of the two-level proof (Section V.A):** just as the smooth landscape fails to predict isotope counts (ρ = −0.13), it fails to predict where the nuclear manifold terminates. The ceiling is a §51 phenomenon, not a §48 phenomenon. The Bethe-Weizsäcker formula says elements should exist forever. Shell structure says they end.
+
+### VIII.F. Framework Interpretation
+
+The four regimes form a complete Pe hierarchy for nucleosynthesis:
+
+| Regime | Pe source | Products | Framework analog |
+|--------|-----------|----------|-----------------|
+| I (BBN) | Primordial heat (Pe ≈ 0+) | H, He, Li | D0 — initial state |
+| II (Stellar) | Gravitational contraction | C through Fe | D0→D2 — progressive cascade |
+| III (Supernova) | Gravitational collapse (D3) | Co through U | D3 — catastrophic event |
+| IV (Accelerator) | Engineered injection | Rf through Og+ | Post-D3 — intentional construction |
+
+The nuclear ceiling is where §51 runs out of magic. Beyond the last shell closure, no amount of Pe injection can create a bound nucleus — the spectral structure has terminated. In information-theoretic terms: the nuclear Schrödinger operator has run out of bound states. The manifold is finite.
+
+---
+
+## IX. Predictions and Kill Conditions
+
+### IX.A. Quantitative Predictions
 
 | ID | Prediction | Test | Threshold |
 |----|-----------|------|-----------|
@@ -425,8 +533,11 @@ This abundance pattern IS the Pe gradient made visible. Abundant elements are th
 | K-SYNTH-3 | Supernova r-process requires gravitational energy injection (D3 event) | r-process nucleosynthesis simulations | r-process operating without core-collapse energy falsifies |
 | K-PAIR-1 | Cooper pairing (even/odd Z) predicts isotope stability better than BW curvature | Cross-validation on n = 89 elements | BW curvature outperforming pairing (ρ_BW > ρ_pair) falsifies the two-level claim |
 | K-GN-1 | Geiger-Nuttall slope follows §51G BKT form for each element series | Per-element regression | R² < 0.95 for any series with n ≥ 4 isotopes falsifies |
+| K-ISLAND-1 | §51 proton spectral gap at Z=114 exceeds Z=112,116 by >30% | Woods-Saxon computation | Gap ratio < 1.30 falsifies Z=114 as proton magic |
+| K-BKT-SH | BKT essential singularity holds in superheavy (Z=104-118) | Geiger-Nuttall fit | R² < 0.85 falsifies |
+| K-ISLAND-T | Island nucleus (Z=114, N=184) has t½ > 10 minutes | Synthesis of Fl-298 | t½ < 10 s falsifies BKT extrapolation |
 
-### VIII.B. Status of Kill Conditions
+### IX.B. Status of Kill Conditions
 
 | ID | Status | Evidence |
 |----|--------|---------|
@@ -435,12 +546,15 @@ This abundance pattern IS the Pe gradient made visible. Abundant elements are th
 | K-SYNTH-3 | Cannot fire | All r-process models require extreme conditions |
 | K-PAIR-1 | **SURVIVED** | ρ_pair = 0.68 vs ρ_BW = −0.13; pairing wins by 0.81 (nb_nuc01) |
 | K-GN-1 | **SURVIVED** | All 5 element series: R² > 0.99 across 24 OOM (nb_nuc02) |
+| K-ISLAND-1 | **FIRED** | Gap ratio = 1.00× (Z=114 not enhanced vs neighbors). WS model favors Z=118 or Z=120. Proton magic number remains open. |
+| K-BKT-SH | **SURVIVED** | R² = 0.909 in superheavy region (nb_nuc05) |
+| K-ISLAND-T | **OPEN** | Fl-298 (N=184) not yet synthesized. BKT predicts t½ ≈ 25 min |
 
 ---
 
-## IX. Connections to the Apparatus
+## X. Connections to the Apparatus
 
-### IX.A. Unification Index
+### X.A. Unification Index
 
 This paper connects to the apparatus at every major section:
 
@@ -456,7 +570,7 @@ This paper connects to the apparatus at every major section:
 | §50 | Large deviations | Rare isotope production in r-process tails |
 | §51 | Isospectral | Magic numbers = spectral gaps; shell model = nuclear Schrödinger |
 
-### IX.B. Convergence Assessment
+### X.B. Convergence Assessment
 
 As of 2026-03-17 the framework has 14 empirical Spearman convergences (§20A, mean |ρ|=0.958) plus 22+ structural isomorphisms (§20E K-series). This paper contributes:
 
@@ -467,9 +581,9 @@ As of 2026-03-17 the framework has 14 empirical Spearman convergences (§20A, me
 
 ---
 
-## X. Discussion
+## XI. Discussion
 
-### X.A. What is New
+### XI.A. What is New
 
 The individual pieces — BBN, stellar fusion, supernova nucleosynthesis, Geiger-Nuttall, Cooper pairing, nuclear shell model — are all established physics. What is new:
 
@@ -478,8 +592,9 @@ The individual pieces — BBN, stellar fusion, supernova nucleosynthesis, Geiger
 3. **Supernova as D3:** Core collapse classified as a drift cascade D3 event, connecting stellar death to the same mechanism that governs jailbreak, social tipping, and cancer progression
 4. **The two-level proof:** The experimental demonstration that smooth BW landscape (§48–50) is necessary but insufficient, and spectral structure (§27/§51) is required for discrete observables
 5. **Periodic table as Pe fossil record:** Each element's existence as testimony to the Pe regime of its creation
+6. **Regime IV and the nuclear ceiling:** Intentional nucleosynthesis as a distinct Pe mechanism; the manifold terminates because §51 runs out of shell closures, not because the smooth landscape predicts it
 
-### X.B. Limitations and Scope
+### XI.B. Limitations and Scope
 
 **What this paper does NOT claim:**
 
@@ -487,12 +602,14 @@ The individual pieces — BBN, stellar fusion, supernova nucleosynthesis, Geiger
 2. We do NOT claim the framework replaces nuclear physics — it provides a classification scheme that unifies nuclear structure with other barrier-crossing phenomena.
 3. We do NOT claim to resolve the preformation factor problem in alpha decay — this awaits the full §51 spectral computation. The absolute half-life calibration is off by ~13 OOM for this reason.
 4. We do NOT claim quantitative predictions for r-process yields — this would require coupling to hydrodynamic supernova simulations.
+5. We do NOT claim to resolve which Z is the proton magic number for the island of stability — K-ISLAND-1 FIRED because the WS model does not place Z = 114 as magic. The proton magic number (114 vs 120 vs 126) remains an open question in nuclear physics, sensitive to spin-orbit parameterization.
+6. The BW drip-line model does NOT predict manifold termination — this is a smooth-landscape failure that demonstrates §51 is required for the nuclear ceiling.
 
 **Control cases and negative results:**
 
 The key negative result is K-NUC-3 (smooth BW curvature). The BW liquid-drop landscape (§48–50) gives ρ = −0.13 for isotope count prediction — it is literally blind to shell structure. This is a deliberate negative control: the smooth landscape is NECESSARY (Pe_nuc rises monotonically from H to Fe) but NOT SUFFICIENT. Only when spectral structure (§51) is added does the prediction improve to ρ = 0.58–0.81. The failure of the smooth landscape is not a limitation — it is the evidence that §51 is required.
 
-### X.C. Connection to Paper 131
+### XI.C. Connection to Paper 131
 
 Paper 131 (Kramers Unification) already includes nuclear shell structure as domain 8. This paper extends that treatment by:
 - Deriving the full three-regime nucleosynthesis story
@@ -513,6 +630,7 @@ All numerical results in this paper are reproducible from publicly available exp
 | `ops/lab/nb_nuc01_isotope_pe_curvature.py` | Cooper pairing even/odd Z isotope count ratio (K-PAIR-1) | AME2020 atomic mass evaluation |
 | `ops/lab/nb_nuc02_geiger_nuttall.py` | Geiger-Nuttall BKT fit R²=0.989 across 24 OOM (K-GN-1) | NUBASE2020 nuclear data |
 | `ops/lab/nb_nuc04_woods_saxon_matrix.py` | Woods-Saxon shell model matrix diagonalization (K-17) | Textbook Woods-Saxon parameters |
+| `ops/lab/nb_nuc05_superheavy_island.py` | Superheavy spectral gaps (K-ISLAND-1), BKT superheavy fit (K-BKT-SH), drip-line analysis, island t½ prediction | NUBASE2020, Oganessian et al. |
 
 Nuclear binding energy values from AME2020 (Wang et al. 2021). Bethe-Weizsäcker coefficients from Rohlf (1994): a_V=15.56, a_S=17.23, a_C=0.70, a_A=23.29 MeV. Geiger-Nuttall data from NUBASE2020.
 
@@ -539,6 +657,20 @@ Mayer, M.G. (1949). On closed shells in nuclei. *Physical Review*, 75(12), 1969�
 Mayer, M.G. & Jensen, J.H.D. (1955). *Elementary Theory of Nuclear Shell Structure*. Wiley.
 
 Weizsäcker, C.F. von (1935). Zur Theorie der Kernmassen. *Zeitschrift für Physik*, 96(7–8), 431–458.
+
+**Superheavy elements and island of stability:**
+
+Bender, M., Nazarewicz, W., & Reinhard, P.-G. (2003). Shell stabilization of super- and hyperheavy nuclei without magic gaps. *Physics Letters B*, 515(1–2), 42–48.
+
+Hofmann, S. & Münzenberg, G. (2000). The discovery of the heaviest elements. *Reviews of Modern Physics*, 72(3), 733–767.
+
+Oganessian, Yu.Ts. (2006). Synthesis of the heaviest elements in ⁴⁸Ca-induced reactions. *Physical Review C*, 74(4), 044602.
+
+Oganessian, Yu.Ts. et al. (2010). Synthesis of a new element with atomic number Z = 117. *Physical Review Letters*, 104(14), 142502.
+
+Oganessian, Yu.Ts. & Utyonkov, V.K. (2015). Superheavy element research. *Reports on Progress in Physics*, 78(3), 036301.
+
+Sobiczewski, A. & Pomorski, K. (2007). Description of structure and properties of superheavy nuclei. *Progress in Particle and Nuclear Physics*, 58(1), 292–349.
 
 **Data and nuclear databases:**
 
