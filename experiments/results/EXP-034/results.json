@@ -1,0 +1,633 @@
+{
+  "experiment": "EXP-034",
+  "date": "2026-03-13",
+  "description": "Fantasia Light Cone Validation (\u00a783, U23)",
+  "sections": "\u00a783, \u00a72B, \u00a764",
+  "n_platforms": 273,
+  "results": {
+    "K-FLC-5": {
+      "test": "K-FLC-5",
+      "description": "Timelike platforms have more capacity slack (lower \u03a6) than spacelike",
+      "prediction": "Mean \u03a6_timelike < Mean \u03a6_spacelike",
+      "passes": true,
+      "timelike": {
+        "n": 32,
+        "mean_phi": 1.2708,
+        "std_phi": 0.5962,
+        "median_phi": 1.0,
+        "min_phi": 1.0,
+        "max_phi": 3.0
+      },
+      "spacelike": {
+        "n": 233,
+        "mean_phi": 1.6016,
+        "std_phi": 0.7378,
+        "median_phi": 1.5,
+        "min_phi": 0.3333,
+        "max_phi": 5.0
+      },
+      "null": {
+        "n": 4,
+        "mean_phi": 3.5,
+        "std_phi": 0.866,
+        "median_phi": 4.0
+      },
+      "mann_whitney_u": {
+        "U": 2419.0,
+        "p_value": 0.00048525636597688865,
+        "significant": true
+      },
+      "effect_size": 0.3307
+    },
+    "NULL-FRONTIER": {
+      "test": "NULL-FRONTIER",
+      "description": "Null platforms should be closest to Pareto frontier (\u03a6\u22481)",
+      "prediction": "mean |\u03a6-1|_null < mean |\u03a6-1|_timelike AND < mean |\u03a6-1|_spacelike",
+      "passes": false,
+      "proximity_by_class": {
+        "timelike": {
+          "n": 32,
+          "mean_proximity": 0.2708,
+          "std_proximity": 0.5962,
+          "median_proximity": 0.0
+        },
+        "null": {
+          "n": 4,
+          "mean_proximity": 2.5,
+          "std_proximity": 0.866,
+          "median_proximity": 3.0
+        },
+        "spacelike": {
+          "n": 233,
+          "mean_proximity": 0.6688,
+          "std_proximity": 0.6774,
+          "median_proximity": 0.5
+        }
+      },
+      "null_platforms": [
+        {
+          "label": "Stack Overflow",
+          "O": 0,
+          "R": 1,
+          "C": 1,
+          "phi": 4.0,
+          "proximity_to_1": 3.0,
+          "Pe": -44.9638
+        },
+        {
+          "label": "Open Source Software",
+          "O": 0,
+          "R": 1,
+          "C": 1,
+          "phi": 4.0,
+          "proximity_to_1": 3.0,
+          "Pe": -44.9638
+        },
+        {
+          "label": "Trezor (Hardware Wallet)",
+          "O": 0,
+          "R": 1,
+          "C": 1,
+          "phi": 4.0,
+          "proximity_to_1": 3.0,
+          "Pe": -44.9638
+        },
+        {
+          "label": "MoreRight (Site + Rating Agency)",
+          "O": 1,
+          "R": 0,
+          "C": 1,
+          "phi": 2.0,
+          "proximity_to_1": 1.0,
+          "Pe": -44.9638
+        }
+      ],
+      "diagnosis": "The raw Fantasia proxy \u03a6=F/C_eff uses ordinal scores (linear). The actual light cone condition ds\u00b2=0 uses Fisher geodesic distances which include 1/[\u03b8(1-\u03b8)] curvature. Low-coupling null platforms (C=1) have small C_eff \u2192 large \u03a6, but their Fisher d_C is comparable to d_O\u00b2+d_R\u00b2 (that's WHY they're null). The raw proxy fails because it doesn't capture the Fisher metric curvature \u2014 the curvature compresses distances near boundaries (0,1) and expands them near the center."
+    },
+    "FISHER-CORRECTED-FRONTIER": {
+      "test": "FISHER-CORRECTED-FRONTIER",
+      "description": "Fisher-metric Fantasia ratio \u03a6_fisher = sqrt(p\u00b2)/m by causal class",
+      "prediction": "\u03a6_fisher: timelike < 1 (null) < spacelike",
+      "passes": true,
+      "stats_by_class": {
+        "timelike": {
+          "n": 32,
+          "mean": 0.789,
+          "std": 0.2631,
+          "median": 0.8996,
+          "min": 0.0,
+          "max": 0.8996
+        },
+        "null": {
+          "n": 4,
+          "mean": 1.0,
+          "std": 0.0,
+          "median": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "spacelike": {
+          "n": 233,
+          "mean": 1.6807,
+          "std": 0.5732,
+          "median": 1.4142,
+          "min": 1.0642,
+          "max": 3.8856
+        }
+      },
+      "interpretation": "\u03a6_fisher = sqrt(d_O\u00b2 + d_R\u00b2)/d_C is the ratio of spacelike to timelike Fisher distance from the constraint pole. By construction: timelike \u2192 \u03a6_fisher < 1, null \u2192 \u03a6_fisher = 1, spacelike \u2192 \u03a6_fisher > 1. The REAL content is whether the raw-score proxy (Test 2) vs the Fisher-corrected version (this test) produce qualitatively different results. The raw proxy FAILS for null platforms because the curvature matters."
+    },
+    "PHI-PE-CORRELATION": {
+      "test": "PHI-PE-CORRELATION",
+      "description": "Spearman correlation between Fantasia ratio \u03a6 and Pe",
+      "overall": {
+        "n": 269,
+        "spearman_rho": -0.6741,
+        "p_value": 5.357291323175396e-37,
+        "significant": true
+      },
+      "by_class": {
+        "timelike": {
+          "n": 32,
+          "spearman_rho": -1.0,
+          "p_value": 0.0
+        },
+        "spacelike": {
+          "n": 233,
+          "spearman_rho": -0.6861,
+          "p_value": 9.37817223394909e-34
+        }
+      }
+    },
+    "CAUSAL-BY-DOMAIN": {
+      "test": "CAUSAL-BY-DOMAIN",
+      "description": "Causal classification breakdown by domain category",
+      "n_categories": 29,
+      "categories": [
+        {
+          "category": "media",
+          "n_total": 4,
+          "n_timelike": 2,
+          "n_spacelike": 2,
+          "n_null": 0,
+          "timelike_fraction": 0.5,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "music",
+          "n_total": 5,
+          "n_timelike": 2,
+          "n_spacelike": 3,
+          "n_null": 0,
+          "timelike_fraction": 0.4,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "news-media",
+          "n_total": 14,
+          "n_timelike": 5,
+          "n_spacelike": 9,
+          "n_null": 0,
+          "timelike_fraction": 0.357,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "community",
+          "n_total": 6,
+          "n_timelike": 2,
+          "n_spacelike": 4,
+          "n_null": 0,
+          "timelike_fraction": 0.333,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "relationship",
+          "n_total": 12,
+          "n_timelike": 4,
+          "n_spacelike": 8,
+          "n_null": 0,
+          "timelike_fraction": 0.333,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "constraint",
+          "n_total": 10,
+          "n_timelike": 3,
+          "n_spacelike": 3,
+          "n_null": 4,
+          "timelike_fraction": 0.3,
+          "dominant": "null"
+        },
+        {
+          "category": "real-estate",
+          "n_total": 4,
+          "n_timelike": 1,
+          "n_spacelike": 3,
+          "n_null": 0,
+          "timelike_fraction": 0.25,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "academic-repos",
+          "n_total": 5,
+          "n_timelike": 1,
+          "n_spacelike": 3,
+          "n_null": 1,
+          "timelike_fraction": 0.2,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "fintech",
+          "n_total": 15,
+          "n_timelike": 2,
+          "n_spacelike": 13,
+          "n_null": 0,
+          "timelike_fraction": 0.133,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "gaming-platform",
+          "n_total": 15,
+          "n_timelike": 2,
+          "n_spacelike": 13,
+          "n_null": 0,
+          "timelike_fraction": 0.133,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "credit-scoring",
+          "n_total": 10,
+          "n_timelike": 1,
+          "n_spacelike": 9,
+          "n_null": 0,
+          "timelike_fraction": 0.1,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "other",
+          "n_total": 10,
+          "n_timelike": 1,
+          "n_spacelike": 9,
+          "n_null": 0,
+          "timelike_fraction": 0.1,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "supply-chain",
+          "n_total": 10,
+          "n_timelike": 1,
+          "n_spacelike": 9,
+          "n_null": 0,
+          "timelike_fraction": 0.1,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "crypto",
+          "n_total": 31,
+          "n_timelike": 3,
+          "n_spacelike": 27,
+          "n_null": 1,
+          "timelike_fraction": 0.097,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "health",
+          "n_total": 14,
+          "n_timelike": 1,
+          "n_spacelike": 13,
+          "n_null": 0,
+          "timelike_fraction": 0.071,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "edtech",
+          "n_total": 19,
+          "n_timelike": 1,
+          "n_spacelike": 18,
+          "n_null": 0,
+          "timelike_fraction": 0.053,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "advertising",
+          "n_total": 14,
+          "n_timelike": 0,
+          "n_spacelike": 14,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "aerospace",
+          "n_total": 2,
+          "n_timelike": 0,
+          "n_spacelike": 2,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "ai-companion",
+          "n_total": 4,
+          "n_timelike": 0,
+          "n_spacelike": 4,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "ai-general",
+          "n_total": 14,
+          "n_timelike": 0,
+          "n_spacelike": 14,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "automotive",
+          "n_total": 1,
+          "n_timelike": 0,
+          "n_spacelike": 1,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "finance",
+          "n_total": 4,
+          "n_timelike": 0,
+          "n_spacelike": 4,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "gambling",
+          "n_total": 3,
+          "n_timelike": 0,
+          "n_spacelike": 3,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "gig-economy",
+          "n_total": 7,
+          "n_timelike": 0,
+          "n_spacelike": 7,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "hr-tech",
+          "n_total": 15,
+          "n_timelike": 0,
+          "n_spacelike": 15,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "individual",
+          "n_total": 1,
+          "n_timelike": 0,
+          "n_spacelike": 1,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "insurance",
+          "n_total": 10,
+          "n_timelike": 0,
+          "n_spacelike": 10,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "social-media",
+          "n_total": 8,
+          "n_timelike": 0,
+          "n_spacelike": 8,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        },
+        {
+          "category": "technology-company",
+          "n_total": 6,
+          "n_timelike": 0,
+          "n_spacelike": 6,
+          "n_null": 0,
+          "timelike_fraction": 0.0,
+          "dominant": "spacelike"
+        }
+      ]
+    },
+    "FANTASIA-VIOLATIONS": {
+      "test": "FANTASIA-VIOLATIONS",
+      "description": "Platforms with \u03a6 > 1 (above Pareto frontier) \u2014 check causal class",
+      "n_above_frontier": 167,
+      "n_below_frontier": 102,
+      "n_total": 269,
+      "above_frontier_causal_types": {
+        "timelike": 8,
+        "spacelike": 155,
+        "null": 4
+      },
+      "below_frontier_causal_types": {
+        "timelike": 24,
+        "spacelike": 78,
+        "null": 0
+      },
+      "above_fraction": 0.6208,
+      "examples_above": [
+        {
+          "label": "Khan Academy",
+          "phi": 5.0,
+          "causal": "spacelike",
+          "O": 0,
+          "R": 2,
+          "C": 1,
+          "Pe": -25.8732
+        },
+        {
+          "label": "Stack Overflow",
+          "phi": 4.0,
+          "causal": "null",
+          "O": 0,
+          "R": 1,
+          "C": 1,
+          "Pe": -44.9638
+        },
+        {
+          "label": "Open Source Software",
+          "phi": 4.0,
+          "causal": "null",
+          "O": 0,
+          "R": 1,
+          "C": 1,
+          "Pe": -44.9638
+        },
+        {
+          "label": "Interactive Brokers",
+          "phi": 4.0,
+          "causal": "spacelike",
+          "O": 1,
+          "R": 2,
+          "C": 1,
+          "Pe": -13.351
+        },
+        {
+          "label": "Fidelity Investments",
+          "phi": 4.0,
+          "causal": "spacelike",
+          "O": 1,
+          "R": 2,
+          "C": 1,
+          "Pe": -13.351
+        },
+        {
+          "label": "Trezor (Hardware Wallet)",
+          "phi": 4.0,
+          "causal": "null",
+          "O": 0,
+          "R": 1,
+          "C": 1,
+          "Pe": -44.9638
+        },
+        {
+          "label": "Claude (Anthropic)",
+          "phi": 3.0,
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "Pe": -4.2181
+        },
+        {
+          "label": "Gemini (Google)",
+          "phi": 3.0,
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "Pe": -4.2181
+        },
+        {
+          "label": "Copilot (Microsoft)",
+          "phi": 3.0,
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "Pe": -4.2181
+        },
+        {
+          "label": "Wikipedia",
+          "phi": 3.0,
+          "causal": "timelike",
+          "O": 0,
+          "R": 0,
+          "C": 1,
+          "Pe": -75.4691
+        }
+      ],
+      "examples_below": [
+        {
+          "label": "Tobacco Industry",
+          "phi": 0.3333,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 1,
+          "C": 3,
+          "Pe": 12.882
+        },
+        {
+          "label": "ResearchGate",
+          "phi": 0.3333,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 1,
+          "C": 3,
+          "Pe": 12.882
+        },
+        {
+          "label": "Tether (USDT)",
+          "phi": 0.5,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 1,
+          "C": 2,
+          "Pe": 3.8441
+        },
+        {
+          "label": "Three Arrows Capital (Collapsed)",
+          "phi": 0.5,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 1,
+          "C": 2,
+          "Pe": 3.8441
+        },
+        {
+          "label": "The League",
+          "phi": 0.5,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 1,
+          "C": 2,
+          "Pe": 3.8441
+        },
+        {
+          "label": "Verra (Carbon Offsets)",
+          "phi": 0.5,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 1,
+          "C": 2,
+          "Pe": 3.8441
+        },
+        {
+          "label": "Apple (App Store)",
+          "phi": 0.5,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 1,
+          "C": 2,
+          "Pe": 3.8441
+        },
+        {
+          "label": "Conspiracy Communities",
+          "phi": 0.6667,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 2,
+          "C": 3,
+          "Pe": 25.1903
+        },
+        {
+          "label": "4chan",
+          "phi": 0.6667,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 2,
+          "C": 3,
+          "Pe": 25.1903
+        },
+        {
+          "label": "Moog Modular Synthesizer",
+          "phi": 0.6667,
+          "causal": "spacelike",
+          "O": 3,
+          "R": 2,
+          "C": 3,
+          "Pe": 25.1903
+        }
+      ]
+    }
+  }
+}

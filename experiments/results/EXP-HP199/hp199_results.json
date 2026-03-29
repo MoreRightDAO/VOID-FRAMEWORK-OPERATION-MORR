@@ -1,0 +1,901 @@
+{
+  "experiment": "HP199",
+  "title": "Numerical Search for Closed-Form B_A",
+  "date": "2026-03-29T00:22:45.454277",
+  "target": 0.867,
+  "B_G": 2.221441469079183,
+  "fitting_uncertainty_pct": 3.0,
+  "total_candidates_generated": 444,
+  "unique_candidates": 268,
+  "within_1pct": 31,
+  "within_2pct": 70,
+  "within_3pct": 100,
+  "kill_conditions": {
+    "KC-1 (within 1%)": "PASS",
+    "KC-2 (interpretable)": "PASS",
+    "KC-3 (B_G-derived <2%)": "PASS",
+    "KC-FAIL (none within 3%)": "NOT triggered"
+  },
+  "top_10": [
+    {
+      "expression": "1.5*pi^1*e^-1*sqrt(2)^-2",
+      "value": 0.8667955123,
+      "relative_error": 0.00023586,
+      "relative_error_pct": 0.0236,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "sqrt(3)/2",
+      "value": 0.8660254038,
+      "relative_error": 0.0011241,
+      "relative_error_pct": 0.1124,
+      "category": "named"
+    },
+    {
+      "expression": "pi/(phi+2)",
+      "value": 0.8683148537,
+      "relative_error": 0.00151656,
+      "relative_error_pct": 0.1517,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "0.6666666666666666*pi^3*e^-3*sqrt(2)^-0.5",
+      "value": 0.8654010432,
+      "relative_error": 0.00184424,
+      "relative_error_pct": 0.1844,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "2/(phi+ln(2))",
+      "value": 0.8653583832,
+      "relative_error": 0.00189344,
+      "relative_error_pct": 0.1893,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "e/pi",
+      "value": 0.8652559794,
+      "relative_error": 0.00201156,
+      "relative_error_pct": 0.2012,
+      "category": "named"
+    },
+    {
+      "expression": "0.25*pi^0.5*e^0.5*sqrt(2)^0.5",
+      "value": 0.8687997452,
+      "relative_error": 0.00207583,
+      "relative_error_pct": 0.2076,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "1 - exp(-2)",
+      "value": 0.8646647168,
+      "relative_error": 0.00269352,
+      "relative_error_pct": 0.2694,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "0.6666666666666666*pi^0.5*e^-1*sqrt(2)^2",
+      "value": 0.8693991096,
+      "relative_error": 0.00276714,
+      "relative_error_pct": 0.2767,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "pi/(sqrt(2)+B_G)",
+      "value": 0.864106365,
+      "relative_error": 0.00333753,
+      "relative_error_pct": 0.3338,
+      "category": "triple_combination"
+    }
+  ],
+  "top_5_bg_derived": [
+    {
+      "expression": "pi/(sqrt(2)+B_G)",
+      "value": 0.864106365,
+      "relative_error": 0.00333753,
+      "relative_error_pct": 0.3338,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "B_G - e/2",
+      "value": 0.8623005548,
+      "relative_error": 0.00542035,
+      "relative_error_pct": 0.542,
+      "category": "pairwise"
+    },
+    {
+      "expression": "arctan(arctan(B_G))",
+      "value": 0.8541091458,
+      "relative_error": 0.01486834,
+      "relative_error_pct": 1.4868,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "(B_G-phi)*sqrt(2)",
+      "value": 0.8533470423,
+      "relative_error": 0.01574736,
+      "relative_error_pct": 1.5747,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "B_G/(1+phi)",
+      "value": 0.8485151372,
+      "relative_error": 0.02132049,
+      "relative_error_pct": 2.132,
+      "category": "B_G_derived"
+    }
+  ],
+  "top_5_info_theoretic": [
+    {
+      "expression": "1 - exp(-2)",
+      "value": 0.8646647168,
+      "relative_error": 0.00269352,
+      "relative_error_pct": 0.2694,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "ln(2) + 1/(2*e)",
+      "value": 0.8770869011,
+      "relative_error": 0.01163426,
+      "relative_error_pct": 1.1634,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "1/sqrt(1+1/e)",
+      "value": 0.8550196364,
+      "relative_error": 0.01381818,
+      "relative_error_pct": 1.3818,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "erf(1)",
+      "value": 0.8427007929,
+      "relative_error": 0.02802677,
+      "relative_error_pct": 2.8027,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "sqrt(1 - 1/e^2)",
+      "value": 0.929873495,
+      "relative_error": 0.07251845,
+      "relative_error_pct": 7.2518,
+      "category": "information_theoretic"
+    }
+  ],
+  "continued_fraction_BA": [
+    0,
+    1,
+    6,
+    1,
+    1,
+    12,
+    1,
+    4,
+    21136515484,
+    1,
+    3,
+    3,
+    4,
+    1,
+    1
+  ],
+  "continued_fraction_BA_over_BG": [
+    0,
+    2,
+    1,
+    1,
+    3,
+    1,
+    1,
+    13,
+    4,
+    1,
+    12,
+    1,
+    9,
+    3,
+    1
+  ],
+  "all_candidates_within_3pct": [
+    {
+      "expression": "1.5*pi^1*e^-1*sqrt(2)^-2",
+      "value": 0.8667955123,
+      "relative_error": 0.00023586,
+      "relative_error_pct": 0.0236,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "sqrt(3)/2",
+      "value": 0.8660254038,
+      "relative_error": 0.0011241,
+      "relative_error_pct": 0.1124,
+      "category": "named"
+    },
+    {
+      "expression": "pi/(phi+2)",
+      "value": 0.8683148537,
+      "relative_error": 0.00151656,
+      "relative_error_pct": 0.1517,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "0.6666666666666666*pi^3*e^-3*sqrt(2)^-0.5",
+      "value": 0.8654010432,
+      "relative_error": 0.00184424,
+      "relative_error_pct": 0.1844,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "2/(phi+ln(2))",
+      "value": 0.8653583832,
+      "relative_error": 0.00189344,
+      "relative_error_pct": 0.1893,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "e/pi",
+      "value": 0.8652559794,
+      "relative_error": 0.00201156,
+      "relative_error_pct": 0.2012,
+      "category": "named"
+    },
+    {
+      "expression": "0.25*pi^0.5*e^0.5*sqrt(2)^0.5",
+      "value": 0.8687997452,
+      "relative_error": 0.00207583,
+      "relative_error_pct": 0.2076,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "1 - exp(-2)",
+      "value": 0.8646647168,
+      "relative_error": 0.00269352,
+      "relative_error_pct": 0.2694,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "0.6666666666666666*pi^0.5*e^-1*sqrt(2)^2",
+      "value": 0.8693991096,
+      "relative_error": 0.00276714,
+      "relative_error_pct": 0.2767,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "pi/(sqrt(2)+B_G)",
+      "value": 0.864106365,
+      "relative_error": 0.00333753,
+      "relative_error_pct": 0.3338,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "4*pi^-0.5*e^-2*sqrt(2)^3",
+      "value": 0.8638554642,
+      "relative_error": 0.00362692,
+      "relative_error_pct": 0.3627,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.6666666666666666*pi^-3*e^3*sqrt(2)^2",
+      "value": 0.8637191809,
+      "relative_error": 0.00378411,
+      "relative_error_pct": 0.3784,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.3333333333333333*pi^1*e^0.5*sqrt(2)^-2",
+      "value": 0.8632684386,
+      "relative_error": 0.00430399,
+      "relative_error_pct": 0.4304,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "3*pi^-0.5*e^-0.5*sqrt(2)^-0.5",
+      "value": 0.8632599217,
+      "relative_error": 0.00431382,
+      "relative_error_pct": 0.4314,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.3333333333333333*pi^0*e^2*sqrt(2)^-3",
+      "value": 0.8708086124,
+      "relative_error": 0.00439286,
+      "relative_error_pct": 0.4393,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "ln(3) * pi/4",
+      "value": 0.8628480738,
+      "relative_error": 0.00478884,
+      "relative_error_pct": 0.4789,
+      "category": "pairwise"
+    },
+    {
+      "expression": "arcsinh(e)/2",
+      "value": 0.8626912794,
+      "relative_error": 0.00496969,
+      "relative_error_pct": 0.497,
+      "category": "transcendental"
+    },
+    {
+      "expression": "arctan(sqrt(sqrt(2)))",
+      "value": 0.8716111623,
+      "relative_error": 0.00531853,
+      "relative_error_pct": 0.5319,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "B_G - e/2",
+      "value": 0.8623005548,
+      "relative_error": 0.00542035,
+      "relative_error_pct": 0.542,
+      "category": "pairwise"
+    },
+    {
+      "expression": "0.25*pi^2*e^0*sqrt(2)^-3",
+      "value": 0.872358025,
+      "relative_error": 0.00617996,
+      "relative_error_pct": 0.618,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "arcsinh(sin(sqrt(2)))",
+      "value": 0.8726962922,
+      "relative_error": 0.00657012,
+      "relative_error_pct": 0.657,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "1/ln(pi)",
+      "value": 0.8735685268,
+      "relative_error": 0.00757616,
+      "relative_error_pct": 0.7576,
+      "category": "named"
+    },
+    {
+      "expression": "exp(e/pi)/e",
+      "value": 0.8739395936,
+      "relative_error": 0.00800414,
+      "relative_error_pct": 0.8004,
+      "category": "transcendental"
+    },
+    {
+      "expression": "sqrt(2) / phi",
+      "value": 0.8740320489,
+      "relative_error": 0.00811078,
+      "relative_error_pct": 0.8111,
+      "category": "pairwise"
+    },
+    {
+      "expression": "0.6666666666666666*pi^-0.5*e^1*sqrt(2)^-0.5",
+      "value": 0.8597472346,
+      "relative_error": 0.00836536,
+      "relative_error_pct": 0.8365,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "3*pi^-2*e^0*sqrt(2)^3",
+      "value": 0.8597387524,
+      "relative_error": 0.00837514,
+      "relative_error_pct": 0.8375,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "1.5*pi^0*e^0.5*sqrt(2)^-3",
+      "value": 0.8743664931,
+      "relative_error": 0.00849653,
+      "relative_error_pct": 0.8497,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "arctan(1/3)*e",
+      "value": 0.8746086853,
+      "relative_error": 0.00877588,
+      "relative_error_pct": 0.8776,
+      "category": "transcendental"
+    },
+    {
+      "expression": "e/2 - 1/2",
+      "value": 0.8591409142,
+      "relative_error": 0.00906469,
+      "relative_error_pct": 0.9065,
+      "category": "pairwise"
+    },
+    {
+      "expression": "2*pi^0*e^-1*sqrt(2)^0.5",
+      "value": 0.8749696978,
+      "relative_error": 0.00919227,
+      "relative_error_pct": 0.9192,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "4 - pi",
+      "value": 0.8584073464,
+      "relative_error": 0.00991079,
+      "relative_error_pct": 0.9911,
+      "category": "pairwise"
+    },
+    {
+      "expression": "1*pi^0*e^-0.5*sqrt(2)^1",
+      "value": 0.857763885,
+      "relative_error": 0.01065296,
+      "relative_error_pct": 1.0653,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.25*pi^-0.5*e^2*sqrt(2)^-0.5",
+      "value": 0.8763882318,
+      "relative_error": 0.01082841,
+      "relative_error_pct": 1.0828,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "arctan(pi/e)",
+      "value": 0.8575117864,
+      "relative_error": 0.01094373,
+      "relative_error_pct": 1.0944,
+      "category": "transcendental"
+    },
+    {
+      "expression": "1.5*pi^2*e^-3*sqrt(2)^0.5",
+      "value": 0.8765265141,
+      "relative_error": 0.01098791,
+      "relative_error_pct": 1.0988,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "(ln(2)+2)/pi",
+      "value": 0.8572553725,
+      "relative_error": 0.01123948,
+      "relative_error_pct": 1.1239,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "sqrt(5) - e/2",
+      "value": 0.8769270633,
+      "relative_error": 0.0114499,
+      "relative_error_pct": 1.145,
+      "category": "pairwise"
+    },
+    {
+      "expression": "0.3333333333333333*pi^-0.5*e^0.5*sqrt(2)^3",
+      "value": 0.8769928313,
+      "relative_error": 0.01152576,
+      "relative_error_pct": 1.1526,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "ln(2) + 1/(2*e)",
+      "value": 0.8770869011,
+      "relative_error": 0.01163426,
+      "relative_error_pct": 1.1634,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "ln(2)*2/phi",
+      "value": 0.8567770336,
+      "relative_error": 0.0117912,
+      "relative_error_pct": 1.1791,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "cos(1/2)",
+      "value": 0.8775825619,
+      "relative_error": 0.01220595,
+      "relative_error_pct": 1.2206,
+      "category": "transcendental"
+    },
+    {
+      "expression": "pi/2 - ln(2)",
+      "value": 0.8776491462,
+      "relative_error": 0.01228275,
+      "relative_error_pct": 1.2283,
+      "category": "pairwise"
+    },
+    {
+      "expression": "0.3333333333333333*pi^2*e^-1*sqrt(2)^-1",
+      "value": 0.8557935539,
+      "relative_error": 0.01292554,
+      "relative_error_pct": 1.2926,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "3*pi^0.5*e^-2*sqrt(2)^0.5",
+      "value": 0.8557851107,
+      "relative_error": 0.01293528,
+      "relative_error_pct": 1.2935,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.5*pi^-2*e^3*sqrt(2)^-0.5",
+      "value": 0.8556501006,
+      "relative_error": 0.013091,
+      "relative_error_pct": 1.3091,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "1/sqrt(1+1/e)",
+      "value": 0.8550196364,
+      "relative_error": 0.01381818,
+      "relative_error_pct": 1.3818,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "arctan(arctan(B_G))",
+      "value": 0.8541091458,
+      "relative_error": 0.01486834,
+      "relative_error_pct": 1.4868,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "arctanh(ln(2))",
+      "value": 0.853988048,
+      "relative_error": 0.01500802,
+      "relative_error_pct": 1.5008,
+      "category": "transcendental"
+    },
+    {
+      "expression": "3*pi^-0.5*e^-1*sqrt(2)^1",
+      "value": 0.880575979,
+      "relative_error": 0.01565857,
+      "relative_error_pct": 1.5659,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "arcsin(1/pi)*e",
+      "value": 0.8805768159,
+      "relative_error": 0.01565953,
+      "relative_error_pct": 1.566,
+      "category": "transcendental"
+    },
+    {
+      "expression": "arctan(arcsinh(sqrt(2)))",
+      "value": 0.8534203299,
+      "relative_error": 0.01566283,
+      "relative_error_pct": 1.5663,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "arcsinh(sin(phi))",
+      "value": 0.8805845958,
+      "relative_error": 0.01566851,
+      "relative_error_pct": 1.5669,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "0.3333333333333333*pi^1*e^0*sqrt(2)^-0.5",
+      "value": 0.8805846669,
+      "relative_error": 0.01566859,
+      "relative_error_pct": 1.5669,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "(B_G-phi)*sqrt(2)",
+      "value": 0.8533470423,
+      "relative_error": 0.01574736,
+      "relative_error_pct": 1.5747,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "arctan(ln(pi))",
+      "value": 0.8527776484,
+      "relative_error": 0.0164041,
+      "relative_error_pct": 1.6404,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "arcsinh(1)",
+      "value": 0.881373587,
+      "relative_error": 0.01657853,
+      "relative_error_pct": 1.6579,
+      "category": "transcendental"
+    },
+    {
+      "expression": "0.6666666666666666*pi^0.5*e^-0.5*sqrt(2)^0.5",
+      "value": 0.8523028394,
+      "relative_error": 0.01695174,
+      "relative_error_pct": 1.6952,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.75*pi^-1*e^2*sqrt(2)^-2",
+      "value": 0.8820036022,
+      "relative_error": 0.01730519,
+      "relative_error_pct": 1.7305,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.25*pi^3*e^-2*sqrt(2)^-0.5",
+      "value": 0.8821514738,
+      "relative_error": 0.01747575,
+      "relative_error_pct": 1.7476,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.5*pi^0.5*e^1*sqrt(2)^-3",
+      "value": 0.8517152612,
+      "relative_error": 0.01762946,
+      "relative_error_pct": 1.7629,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "ln(2) / pi/4",
+      "value": 0.8825424006,
+      "relative_error": 0.01792664,
+      "relative_error_pct": 1.7927,
+      "category": "pairwise"
+    },
+    {
+      "expression": "2*pi^-1*e^0.5*sqrt(2)^-0.5",
+      "value": 0.8826120756,
+      "relative_error": 0.01800701,
+      "relative_error_pct": 1.8007,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "arcsinh(1/pi)*e",
+      "value": 0.8512731221,
+      "relative_error": 0.01813942,
+      "relative_error_pct": 1.8139,
+      "category": "transcendental"
+    },
+    {
+      "expression": "sin(1/pi)*e",
+      "value": 0.8507183636,
+      "relative_error": 0.01877928,
+      "relative_error_pct": 1.8779,
+      "category": "transcendental"
+    },
+    {
+      "expression": "sin(arctan(phi))",
+      "value": 0.8506508084,
+      "relative_error": 0.0188572,
+      "relative_error_pct": 1.8857,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "arctan(arctan(e))",
+      "value": 0.8834841344,
+      "relative_error": 0.01901284,
+      "relative_error_pct": 1.9013,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "1*pi^1*e^-2*sqrt(2)^2",
+      "value": 0.8503366632,
+      "relative_error": 0.01921953,
+      "relative_error_pct": 1.922,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "(phi+ln(2))/e",
+      "value": 0.850236037,
+      "relative_error": 0.0193356,
+      "relative_error_pct": 1.9336,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "3*pi^-3*e^2*sqrt(2)^0.5",
+      "value": 0.8501941246,
+      "relative_error": 0.01938394,
+      "relative_error_pct": 1.9384,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "arcsinh(arctan(pi/2))",
+      "value": 0.8841179047,
+      "relative_error": 0.01974383,
+      "relative_error_pct": 1.9744,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "arcsinh(arctan(sqrt(2)))",
+      "value": 0.8494221297,
+      "relative_error": 0.02027436,
+      "relative_error_pct": 2.0274,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "2*pi^1*e^-3*sqrt(2)^3",
+      "value": 0.8847924664,
+      "relative_error": 0.02052188,
+      "relative_error_pct": 2.0522,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "1.3333333333333333*pi^-1*e^0*sqrt(2)^2",
+      "value": 0.8488263632,
+      "relative_error": 0.02096152,
+      "relative_error_pct": 2.0962,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "B_G/(1+phi)",
+      "value": 0.8485151372,
+      "relative_error": 0.02132049,
+      "relative_error_pct": 2.132,
+      "category": "B_G_derived"
+    },
+    {
+      "expression": "e*ln(2)/B_G",
+      "value": 0.84817422,
+      "relative_error": 0.0217137,
+      "relative_error_pct": 2.1714,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "arcsin(3/4)",
+      "value": 0.848062079,
+      "relative_error": 0.02184305,
+      "relative_error_pct": 2.1843,
+      "category": "transcendental"
+    },
+    {
+      "expression": "sqrt(pi)/2",
+      "value": 0.8862269255,
+      "relative_error": 0.02217638,
+      "relative_error_pct": 2.2176,
+      "category": "named"
+    },
+    {
+      "expression": "(B_G-1)*ln(2)",
+      "value": 0.8466387105,
+      "relative_error": 0.02348476,
+      "relative_error_pct": 2.3485,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "(pi-e)*2",
+      "value": 0.8466216503,
+      "relative_error": 0.02350444,
+      "relative_error_pct": 2.3504,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "(ln(2)+1)/2",
+      "value": 0.8465735903,
+      "relative_error": 0.02355987,
+      "relative_error_pct": 2.356,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "0.125*pi^0*e^3*sqrt(2)^-3",
+      "value": 0.8876637101,
+      "relative_error": 0.02383358,
+      "relative_error_pct": 2.3834,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "3*pi^-0.5*e^0*sqrt(2)^-2",
+      "value": 0.8462843753,
+      "relative_error": 0.02389345,
+      "relative_error_pct": 2.3893,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "(sqrt(2)+1)/e",
+      "value": 0.8881395362,
+      "relative_error": 0.02438239,
+      "relative_error_pct": 2.4382,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "pi/(e+1)",
+      "value": 0.8449043936,
+      "relative_error": 0.02548513,
+      "relative_error_pct": 2.5485,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "sin(1/3)*e",
+      "value": 0.8894073987,
+      "relative_error": 0.02584475,
+      "relative_error_pct": 2.5845,
+      "category": "transcendental"
+    },
+    {
+      "expression": "arctan(arcsinh(pi/2))",
+      "value": 0.8895257805,
+      "relative_error": 0.02598129,
+      "relative_error_pct": 2.5981,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "0.125*pi^2*e^-0.5*sqrt(2)^0.5",
+      "value": 0.8898565804,
+      "relative_error": 0.02636284,
+      "relative_error_pct": 2.6363,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "arcsinh(1/3)*e",
+      "value": 0.8901017931,
+      "relative_error": 0.02664567,
+      "relative_error_pct": 2.6646,
+      "category": "transcendental"
+    },
+    {
+      "expression": "e/(1+B_G)",
+      "value": 0.8438091626,
+      "relative_error": 0.02674837,
+      "relative_error_pct": 2.6748,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "1*pi^-2*e^2*sqrt(2)^0.5",
+      "value": 0.8903212053,
+      "relative_error": 0.02689874,
+      "relative_error_pct": 2.6899,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "sin(arctan(pi/2))",
+      "value": 0.8435636081,
+      "relative_error": 0.02703159,
+      "relative_error_pct": 2.7032,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "0.3333333333333333*pi^2*e^-2*sqrt(2)^2",
+      "value": 0.8904704714,
+      "relative_error": 0.0270709,
+      "relative_error_pct": 2.7071,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "sin(ln(3))",
+      "value": 0.8905770417,
+      "relative_error": 0.02719382,
+      "relative_error_pct": 2.7194,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "erf(1)",
+      "value": 0.8427007929,
+      "relative_error": 0.02802677,
+      "relative_error_pct": 2.8027,
+      "category": "information_theoretic"
+    },
+    {
+      "expression": "0.75*pi^2*e^-2*sqrt(2)^-0.5",
+      "value": 0.8423926057,
+      "relative_error": 0.02838223,
+      "relative_error_pct": 2.8382,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "0.75*pi^0*e^0*sqrt(2)^0.5",
+      "value": 0.8919053363,
+      "relative_error": 0.02872588,
+      "relative_error_pct": 2.8726,
+      "category": "systematic_power"
+    },
+    {
+      "expression": "sqrt(sin(B_G))",
+      "value": 0.8920163684,
+      "relative_error": 0.02885394,
+      "relative_error_pct": 2.8854,
+      "category": "deep_composition"
+    },
+    {
+      "expression": "phi*sqrt(2)/e",
+      "value": 0.8417985167,
+      "relative_error": 0.02906745,
+      "relative_error_pct": 2.9067,
+      "category": "triple_combination"
+    },
+    {
+      "expression": "sin(1)",
+      "value": 0.8414709848,
+      "relative_error": 0.02944523,
+      "relative_error_pct": 2.9445,
+      "category": "transcendental"
+    },
+    {
+      "expression": "arccos(2/3)",
+      "value": 0.8410686706,
+      "relative_error": 0.02990926,
+      "relative_error_pct": 2.9909,
+      "category": "transcendental"
+    }
+  ]
+}

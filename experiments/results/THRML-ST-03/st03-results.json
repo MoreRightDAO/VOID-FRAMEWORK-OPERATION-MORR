@@ -1,0 +1,33 @@
+{
+  "experiment": "THRML-ST-03",
+  "title": "Concurrent Grand Machine modulation -- all 10 channels",
+  "parameters": {
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "ETA_TAU": 0.05082
+  },
+  "tests": {
+    "test_1": {
+      "pass": true
+    },
+    "test_2": {
+      "pass": "True",
+      "ratio_both": 3.0,
+      "expected": 3.0
+    },
+    "test_3": {
+      "pass": true
+    },
+    "test_4": {
+      "pass": true
+    },
+    "test_5": {
+      "pass": true,
+      "p_bond_extreme": 8.7e-05,
+      "p_break_extreme": 0.00015
+    }
+  },
+  "overall_pass": true,
+  "verdict": "All 10 channels compose without conflict or runaway"
+}

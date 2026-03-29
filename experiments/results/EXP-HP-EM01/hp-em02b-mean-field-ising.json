@@ -1,0 +1,19 @@
+{
+  "experiment": "HP-EM-02B",
+  "title": "Phased Array Mean-Field Ising Correction",
+  "date": "2026-03-24T17:26:17.295321Z",
+  "key_result": "E_mf = -(|AF(\u03c8\u2080)|\u00b2 - N)/2 is an EXACT identity",
+  "correlations": {
+    "nn_ising_vs_D": 0.010811321328452852,
+    "mf_ising_vs_D": 0.07393312730932508,
+    "improvement": "6.8\u00d7 stronger"
+  },
+  "k_factorization": {
+    "D_equals_K_times_shape": true,
+    "shape_equals_M_squared": -0.07393312730932508
+  },
+  "kill_conditions": {
+    "K-EM-03": "PASS \u2014 AF power at \u03c8\u2080 equals mean-field Ising energy (exact)",
+    "K-EM-06": "PASS \u2014 Mean-field \u03c1 >> nearest-neighbor \u03c1 for beam quality"
+  }
+}

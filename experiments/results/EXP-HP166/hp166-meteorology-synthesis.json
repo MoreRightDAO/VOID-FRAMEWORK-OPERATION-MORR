@@ -1,0 +1,176 @@
+{
+  "experiment": "HP166-METEOROLOGY-SYNTHESIS",
+  "date": "2026-03-26T06:34:24.171576Z",
+  "description": "Barrier universality extended to atmospheric science. Four meteorological phenomena tested against barrier = d \u00d7 \u03c0/\u221a2.",
+  "N_total": 14,
+  "N_original": 10,
+  "N_atmospheric": 4,
+  "N_domains": 8,
+  "domains": [
+    "CDW",
+    "EM",
+    "astrophysics",
+    "atmosphere",
+    "biology",
+    "kagome",
+    "magnet",
+    "nuclear"
+  ],
+  "fit": {
+    "slope": 2.201914,
+    "se": 0.01923,
+    "R2": 0.999009,
+    "RMSE": 0.141126,
+    "sigma_from_pi_sqrt2": -1.0155,
+    "CI95": [
+      2.1642,
+      2.2396
+    ],
+    "pi_over_sqrt2": 2.221441
+  },
+  "subgroups": {
+    "d1": {
+      "N": 6,
+      "mean_bd": 2.2312,
+      "std_bd": 0.0963
+    },
+    "d2": {
+      "N": 4,
+      "mean_bd": 2.1499,
+      "std_bd": 0.0168
+    },
+    "d3": {
+      "N": 4,
+      "mean_bd": 2.2202,
+      "std_bd": 0.0663
+    },
+    "atmosphere": {
+      "N": 4,
+      "slope": 2.1485
+    },
+    "original": {
+      "N": 10,
+      "slope": 2.2322
+    }
+  },
+  "systems": [
+    {
+      "name": "CoNb\u2082O\u2086 (1D Ising)",
+      "d": 1,
+      "barrier": 2.278,
+      "barrier_over_d": 2.278,
+      "domain": "magnet"
+    },
+    {
+      "name": "CuGeO\u2083 (spin-Peierls)",
+      "d": 1,
+      "barrier": 2.14,
+      "barrier_over_d": 2.14,
+      "domain": "magnet"
+    },
+    {
+      "name": "KCuF\u2083 (1D Heisenberg AF)",
+      "d": 1,
+      "barrier": 2.314,
+      "barrier_over_d": 2.314,
+      "domain": "magnet"
+    },
+    {
+      "name": "NbSe\u2083 (CDW)",
+      "d": 1,
+      "barrier": 2.08,
+      "barrier_over_d": 2.08,
+      "domain": "CDW"
+    },
+    {
+      "name": "CoFeB MTJ (12nm)",
+      "d": 1,
+      "barrier": 2.22,
+      "barrier_over_d": 2.22,
+      "domain": "EM"
+    },
+    {
+      "name": "Nb Josephson junction",
+      "d": 1,
+      "barrier": 2.355,
+      "barrier_over_d": 2.355,
+      "domain": "EM"
+    },
+    {
+      "name": "Ni\u2083In (kagome FL\u2192SM)",
+      "d": 2,
+      "barrier": 4.243,
+      "barrier_over_d": 2.1215,
+      "domain": "kagome"
+    },
+    {
+      "name": "Solar corona (reconnection)",
+      "d": 3,
+      "barrier": 6.54,
+      "barrier_over_d": 2.18,
+      "domain": "astrophysics"
+    },
+    {
+      "name": "Xenobot memory (Ca\u00b2\u207a)",
+      "d": 3,
+      "barrier": 6.8,
+      "barrier_over_d": 2.2667,
+      "domain": "biology"
+    },
+    {
+      "name": "Nuclear \u03b1-decay (\u00b2\u00b9\u00b2Po)",
+      "d": 3,
+      "barrier": 6.9,
+      "barrier_over_d": 2.3,
+      "domain": "nuclear"
+    },
+    {
+      "name": "SSW (polar vortex)",
+      "d": 2,
+      "barrier": 4.318,
+      "barrier_over_d": 2.159,
+      "domain": "atmosphere"
+    },
+    {
+      "name": "Hurricane RI (Carnot)",
+      "d": 2,
+      "barrier": 4.33,
+      "barrier_over_d": 2.165,
+      "domain": "atmosphere"
+    },
+    {
+      "name": "Tornado (Pe concentration)",
+      "d": 3,
+      "barrier": 6.402,
+      "barrier_over_d": 2.134,
+      "domain": "atmosphere"
+    },
+    {
+      "name": "Atmospheric blocking (Kramers)",
+      "d": 2,
+      "barrier": 4.308,
+      "barrier_over_d": 2.154,
+      "domain": "atmosphere"
+    }
+  ],
+  "kill_conditions": {
+    "K-HP-900": true,
+    "K-HP-901": true,
+    "K-HP-902": true,
+    "K-HP-910": true,
+    "K-HP-911": true,
+    "K-HP-912": true,
+    "K-HP-913": true,
+    "K-HP-920": true,
+    "K-HP-921": true,
+    "K-HP-922": true,
+    "K-HP-923": true,
+    "K-HP-930": true,
+    "K-HP-931": true,
+    "K-HP-932": true,
+    "K-HP-933": true
+  },
+  "total_kc_pass": 15,
+  "total_kc": 15,
+  "all_pass": true
+}

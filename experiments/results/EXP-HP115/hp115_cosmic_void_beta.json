@@ -1,0 +1,238 @@
+{
+  "experiment": "HP115",
+  "date": "2026-03-19T03:52:51.241453",
+  "framework_exponents": {
+    "beta_EP": 1.26,
+    "beta_zeta": 1.34,
+    "beta_theta": 2.15,
+    "y_K": 0.48
+  },
+  "sub1_hubble": {
+    "beta_EP": 1.26,
+    "H_ratio": 1.0834,
+    "H0_predicted": 73.021,
+    "tension_predicted": 5.621,
+    "tension_observed": 5.599999999999994,
+    "residual_pct": 0.38,
+    "KC_pass": true,
+    "comparisons": {
+      "\u03b2_EP (Euler)": {
+        "beta": 1.26,
+        "H0": 73.021156632515,
+        "tension": 5.621156632514996
+      },
+      "\u03b2_\u03b6 (zeta)": {
+        "beta": 1.34,
+        "H0": 74.84330502342203,
+        "tension": 7.4433050234220275
+      },
+      "\u03b2_\u03b8 (theta)": {
+        "beta": 2.15,
+        "H0": 96.0579877418143,
+        "tension": 28.657987741814296
+      },
+      "y_K (RG)": {
+        "beta": 0.48,
+        "H0": 57.422523490762664,
+        "tension": -9.977476509237341
+      }
+    }
+  },
+  "sub2_isw": {
+    "isw_results": [
+      {
+        "name": "Bo\u00f6tes",
+        "R_Mpc": 165,
+        "delta": -0.8,
+        "ISW_EP": 7.598,
+        "ISW_zeta": 8.642,
+        "ISW_theta": 31.826
+      },
+      {
+        "name": "KBC (local)",
+        "R_Mpc": 150,
+        "delta": -0.46,
+        "ISW_EP": 2.174,
+        "ISW_zeta": 2.283,
+        "ISW_theta": 3.761
+      },
+      {
+        "name": "CMB Cold Spot",
+        "R_Mpc": 110,
+        "delta": -0.25,
+        "ISW_EP": 1.437,
+        "ISW_zeta": 1.47,
+        "ISW_theta": 1.856
+      },
+      {
+        "name": "Giant Void",
+        "R_Mpc": 500,
+        "delta": -0.4,
+        "ISW_EP": 1.903,
+        "ISW_zeta": 1.983,
+        "ISW_theta": 2.999
+      },
+      {
+        "name": "SDSS typical",
+        "R_Mpc": 15,
+        "delta": -0.85,
+        "ISW_EP": 10.918,
+        "ISW_zeta": 12.707,
+        "ISW_theta": 59.075
+      },
+      {
+        "name": "BOSS supervoid",
+        "R_Mpc": 200,
+        "delta": -0.3,
+        "ISW_EP": 1.567,
+        "ISW_zeta": 1.613,
+        "ISW_theta": 2.153
+      }
+    ],
+    "KC_pass": true
+  },
+  "sub3_discrimination": {
+    "predictions": {
+      "EP": {
+        "beta": 1.26,
+        "K": 4.601,
+        "G_boost": 2.174,
+        "H0": 73.02,
+        "tension": 5.62
+      },
+      "\u03b6": {
+        "beta": 1.34,
+        "K": 4.379,
+        "G_boost": 2.283,
+        "H0": 74.84,
+        "tension": 7.44
+      },
+      "\u03b8": {
+        "beta": 2.15,
+        "K": 2.659,
+        "G_boost": 3.761,
+        "H0": 96.06,
+        "tension": 28.66
+      }
+    },
+    "spread": 165.67593480345158,
+    "KC_pass": "True"
+  },
+  "sub4_yk_exclusion": {
+    "H0_yk": 57.423,
+    "tension_yk": -9.977,
+    "KC_pass": false,
+    "wrong_sign": true
+  },
+  "sub5_lensing": {
+    "lensing_profile": [
+      {
+        "r_over_R": 0.0,
+        "delta": -0.85,
+        "rho": 0.15,
+        "kappa_lcdm": 0.15,
+        "kappa_framework": 1.6376,
+        "ratio": 10.9175
+      },
+      {
+        "r_over_R": 0.1,
+        "delta": -0.8415,
+        "rho": 0.1585,
+        "kappa_lcdm": 0.1585,
+        "kappa_framework": 1.6143,
+        "ratio": 10.185
+      },
+      {
+        "r_over_R": 0.2,
+        "delta": -0.816,
+        "rho": 0.184,
+        "kappa_lcdm": 0.184,
+        "kappa_framework": 1.5529,
+        "ratio": 8.4397
+      },
+      {
+        "r_over_R": 0.3,
+        "delta": -0.7735,
+        "rho": 0.2265,
+        "kappa_lcdm": 0.2265,
+        "kappa_framework": 1.4712,
+        "ratio": 6.4955
+      },
+      {
+        "r_over_R": 0.5,
+        "delta": -0.6375,
+        "rho": 0.3625,
+        "kappa_lcdm": 0.3625,
+        "kappa_framework": 1.3019,
+        "ratio": 3.5915
+      },
+      {
+        "r_over_R": 0.7,
+        "delta": -0.4335,
+        "rho": 0.5665,
+        "kappa_lcdm": 0.5665,
+        "kappa_framework": 1.1592,
+        "ratio": 2.0463
+      },
+      {
+        "r_over_R": 0.9,
+        "delta": -0.1615,
+        "rho": 0.8385,
+        "kappa_lcdm": 0.8385,
+        "kappa_framework": 1.0469,
+        "ratio": 1.2485
+      },
+      {
+        "r_over_R": 1.0,
+        "delta": 0.2,
+        "rho": 1.2,
+        "kappa_lcdm": 1.2,
+        "kappa_framework": 0.9537,
+        "ratio": 0.7948
+      },
+      {
+        "r_over_R": 1.1,
+        "delta": 0.1282,
+        "rho": 1.1282,
+        "kappa_lcdm": 1.1282,
+        "kappa_framework": 0.9691,
+        "ratio": 0.859
+      },
+      {
+        "r_over_R": 1.3,
+        "delta": 0.0037,
+        "rho": 1.0037,
+        "kappa_lcdm": 1.0037,
+        "kappa_framework": 0.999,
+        "ratio": 0.9954
+      },
+      {
+        "r_over_R": 1.5,
+        "delta": 0.0,
+        "rho": 1.0,
+        "kappa_lcdm": 1.0,
+        "kappa_framework": 1.0,
+        "ratio": 1.0
+      },
+      {
+        "r_over_R": 2.0,
+        "delta": 0.0,
+        "rho": 1.0,
+        "kappa_lcdm": 1.0,
+        "kappa_framework": 1.0,
+        "ratio": 1.0
+      }
+    ],
+    "pct_diff_half": 259.15,
+    "KC_pass": true
+  },
+  "kill_conditions": {
+    "K-VOID-115-1": true,
+    "K-VOID-115-2": true,
+    "K-VOID-115-3": "True",
+    "K-VOID-115-4": false,
+    "K-VOID-115-5": true
+  },
+  "pass_count": 4,
+  "total_kcs": 5
+}

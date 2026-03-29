@@ -1,0 +1,641 @@
+{
+  "experiment": "HP31",
+  "title": "SO(4,2) \u2192 SO(4) Branching Rules and Hydrogen Spectrum",
+  "timestamp": "2026-03-14T02:32:30.398764Z",
+  "sub_experiments": {
+    "B1": {
+      "so42_algebra_error": 0.0,
+      "su2_L_error": 0.0,
+      "su2_R_error": 0.0,
+      "LR_commutation_error": 0.0,
+      "all_pass": true
+    },
+    "B2": {
+      "irreps": [
+        {
+          "j1": 0.5,
+          "j2": 0.5,
+          "C_L": -0.75,
+          "C_R": -0.75,
+          "dim": 4,
+          "expected_dim": 4
+        },
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "C_L": 0.0,
+          "C_R": 0.0,
+          "dim": 2,
+          "expected_dim": 1
+        }
+      ],
+      "total_dim": 6,
+      "dim_correct": true
+    },
+    "B3": {
+      "levels": [
+        {
+          "n": 1,
+          "j1": 0.0,
+          "j2": 0.0,
+          "dim": 1,
+          "C2_SO4": 0.0,
+          "l_values": [
+            0
+          ],
+          "energy_eV": -13.6
+        },
+        {
+          "n": 2,
+          "j1": 0.5,
+          "j2": 0.5,
+          "dim": 4,
+          "C2_SO4": 1.5,
+          "l_values": [
+            0,
+            1
+          ],
+          "energy_eV": -3.4
+        },
+        {
+          "n": 3,
+          "j1": 1.0,
+          "j2": 1.0,
+          "dim": 9,
+          "C2_SO4": 4.0,
+          "l_values": [
+            0,
+            1,
+            2
+          ],
+          "energy_eV": -1.511111111111111
+        },
+        {
+          "n": 4,
+          "j1": 1.5,
+          "j2": 1.5,
+          "dim": 16,
+          "C2_SO4": 7.5,
+          "l_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "energy_eV": -0.85
+        },
+        {
+          "n": 5,
+          "j1": 2.0,
+          "j2": 2.0,
+          "dim": 25,
+          "C2_SO4": 12.0,
+          "l_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "energy_eV": -0.544
+        },
+        {
+          "n": 6,
+          "j1": 2.5,
+          "j2": 2.5,
+          "dim": 36,
+          "C2_SO4": 17.5,
+          "l_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "energy_eV": -0.37777777777777777
+        },
+        {
+          "n": 7,
+          "j1": 3.0,
+          "j2": 3.0,
+          "dim": 49,
+          "C2_SO4": 24.0,
+          "l_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "energy_eV": -0.27755102040816326
+        },
+        {
+          "n": 8,
+          "j1": 3.5,
+          "j2": 3.5,
+          "dim": 64,
+          "C2_SO4": 31.5,
+          "l_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "energy_eV": -0.2125
+        },
+        {
+          "n": 9,
+          "j1": 4.0,
+          "j2": 4.0,
+          "dim": 81,
+          "C2_SO4": 40.0,
+          "l_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "energy_eV": -0.16790123456790124
+        },
+        {
+          "n": 10,
+          "j1": 4.5,
+          "j2": 4.5,
+          "dim": 100,
+          "C2_SO4": 49.5,
+          "l_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "energy_eV": -0.136
+        }
+      ],
+      "all_degeneracies_n_squared": true
+    },
+    "B4": {
+      "SO42": {
+        "C2": -2.5,
+        "conformal_dim_minus": 0.7752551286084111,
+        "conformal_dim_plus": 3.224744871391589,
+        "product": 2.5000000000000004,
+        "sum": 4.0
+      },
+      "SO41": {
+        "C2": -2.0,
+        "mass_deSitter": 2.8284271247461903,
+        "higuchi_bound": 1.5,
+        "above_higuchi": true
+      },
+      "SO4": {
+        "formula": "j\u2081(j\u2081+1) + j\u2082(j\u2082+1)",
+        "hydrogen_n1": 0.0,
+        "hydrogen_n2": 1.5,
+        "hydrogen_n3": 4.0,
+        "hydrogen_n4": 7.5
+      },
+      "SO3": {
+        "formula": "l(l+1)",
+        "l0": 0.0,
+        "l1": 2.0,
+        "l2": 6.0,
+        "l3": 12.0
+      },
+      "SO2": {
+        "formula": "m\u00b2"
+      }
+    },
+    "B5": {
+      "eckert_delta": 0.7752551286084111,
+      "eckert_delta_shadow": 3.224744871391589,
+      "bound_4d_scalar": 1.0,
+      "bound_3d_scalar": 0.5,
+      "bound_4d_spinor": 1.5,
+      "bound_4d_vector": 2.0,
+      "passes_4d_scalar": false,
+      "passes_3d_scalar": true,
+      "passes_4d_spinor": false,
+      "in_complementary_series": true,
+      "hydrogen_rac_delta": 1.0,
+      "delta_ratio": 0.7752551286084111,
+      "so41_3d_delta_minus": 1.0,
+      "so41_3d_delta_plus": 2.0,
+      "so41_3d_passes_unitarity": true
+    },
+    "B6": {
+      "has_half_half": true,
+      "half_half_dim": 4,
+      "transitions": {
+        "1": {
+          "allowed_n_prime": [
+            2
+          ],
+          "delta_n": [
+            1
+          ]
+        },
+        "2": {
+          "allowed_n_prime": [
+            1,
+            2,
+            3
+          ],
+          "delta_n": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "3": {
+          "allowed_n_prime": [
+            2,
+            3,
+            4
+          ],
+          "delta_n": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "4": {
+          "allowed_n_prime": [
+            3,
+            4,
+            5
+          ],
+          "delta_n": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "5": {
+          "allowed_n_prime": [
+            4,
+            5,
+            6
+          ],
+          "delta_n": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "6": {
+          "allowed_n_prime": [
+            5,
+            6,
+            7
+          ],
+          "delta_n": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "7": {
+          "allowed_n_prime": [
+            6,
+            7,
+            8
+          ],
+          "delta_n": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "8": {
+          "allowed_n_prime": [
+            7,
+            8,
+            9
+          ],
+          "delta_n": [
+            -1,
+            0,
+            1
+          ]
+        }
+      },
+      "all_dipole": false,
+      "selection_rule": "NOT pure dipole",
+      "n_singlets": 1,
+      "singlet_transitions": "\u0394n = 0 (elastic)"
+    },
+    "B7": {
+      "hydrogen_rac_C2": -3.0,
+      "hydrogen_rac_delta": 1.0,
+      "eckert_C2": -2.5,
+      "eckert_delta": 0.7752551286084111,
+      "same_representation": false,
+      "C2_difference": 0.5,
+      "C2_ratio": 0.8333333333333334,
+      "rac_mass_dS": 3.0,
+      "eckert_mass_dS": 2.9154759474226504,
+      "maps_to_integer_n": false,
+      "closest_n": 1,
+      "delta_from_n1": 0.22474487139158894,
+      "interpretation": "Eckert field (fundamental rep) acts as an OPERATOR on hydrogen states (Rac rep). The Casimir difference (0.5) means they live in different representations of the same SO(4,2). Selection rules from the tensor product determine which hydrogen transitions the Eckert field induces."
+    },
+    "B8": {
+      "n=1": {
+        "j": 0.0,
+        "l_values": [
+          0
+        ],
+        "dim_per_l": [
+          1
+        ],
+        "total_dim": 1,
+        "expected_n_squared": 1,
+        "matches": true
+      },
+      "n=2": {
+        "j": 0.5,
+        "l_values": [
+          0,
+          1
+        ],
+        "dim_per_l": [
+          1,
+          3
+        ],
+        "total_dim": 4,
+        "expected_n_squared": 4,
+        "matches": true
+      },
+      "n=3": {
+        "j": 1.0,
+        "l_values": [
+          0,
+          1,
+          2
+        ],
+        "dim_per_l": [
+          1,
+          3,
+          5
+        ],
+        "total_dim": 9,
+        "expected_n_squared": 9,
+        "matches": true
+      },
+      "n=4": {
+        "j": 1.5,
+        "l_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dim_per_l": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "total_dim": 16,
+        "expected_n_squared": 16,
+        "matches": true
+      },
+      "n=5": {
+        "j": 2.0,
+        "l_values": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "dim_per_l": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ],
+        "total_dim": 25,
+        "expected_n_squared": 25,
+        "matches": true
+      },
+      "n=6": {
+        "j": 2.5,
+        "l_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "dim_per_l": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "total_dim": 36,
+        "expected_n_squared": 36,
+        "matches": true
+      },
+      "n=7": {
+        "j": 3.0,
+        "l_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "dim_per_l": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13
+        ],
+        "total_dim": 49,
+        "expected_n_squared": 49,
+        "matches": true
+      },
+      "all_degeneracies_correct": true
+    },
+    "B9": {
+      "algebra_error": 0.0,
+      "irreps": [
+        {
+          "l": 1.0,
+          "C_SO3": -2.0,
+          "dim": 3,
+          "expected_dim": 3
+        },
+        {
+          "l": 0.0,
+          "C_SO3": 0.0,
+          "dim": 3,
+          "expected_dim": 1
+        }
+      ],
+      "total_dim": 6
+    },
+    "B10": {
+      "unique_eigenvalues": [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "decomposition": [
+        {
+          "D_eigenvalue": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "D_eigenvalue": 0.0,
+          "multiplicity": 4
+        },
+        {
+          "D_eigenvalue": 1.0,
+          "multiplicity": 1
+        }
+      ],
+      "predicted_structure": true
+    },
+    "B11": {
+      "overlapping_irreps": [
+        {
+          "fund_irrep": [
+            0.5,
+            0.5
+          ],
+          "hydrogen_n": 2,
+          "hydrogen_irrep": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "fund_irrep": [
+            0.0,
+            0.0
+          ],
+          "hydrogen_n": 1,
+          "hydrogen_irrep": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "intertwiner_exists": true,
+      "connected_hydrogen_levels": [
+        1,
+        2
+      ],
+      "interpretation": "The fundamental rep connects to hydrogen levels n=[1, 2] via SO(4) overlap. The Eckert field acts as a LADDER OPERATOR on the hydrogen Hilbert space, connecting these specific levels."
+    },
+    "B12": {
+      "predictions": [
+        {
+          "id": "P2",
+          "statement": "1 SO(4) singlet(s) in the fundamental rep allow elastic (\u0394n=0) scattering",
+          "mechanism": "Singlet (0,0) couples to all hydrogen levels without changing n, like Thomson/Rayleigh scattering",
+          "testable": true,
+          "matches_known_physics": true,
+          "significance": "Forward scattering (no energy change) requires an SO(4) singlet component. Its presence is consistent with EM having both absorption (\u0394n\u22600) and elastic (\u0394n=0) scattering channels."
+        },
+        {
+          "id": "P3",
+          "statement": "The Eckert field has conformal dimension \u0394 = 0.7753",
+          "mechanism": "From C\u2082(SO(4,2)) = -2.5 and \u0394(\u0394-4) = C\u2082",
+          "testable": true,
+          "matches_known_physics": "UNKNOWN \u2014 this is a novel prediction",
+          "significance": "\u0394 \u2248 0.775 places the Eckert field in the complementary series of SO(4,2). This is below the scalar unitarity bound in 4D but above it in 3D, consistent with the Eckert base being 3-dimensional."
+        },
+        {
+          "id": "P4",
+          "statement": "Eckert-to-hydrogen Casimir ratio = 0.8333 = 5/6",
+          "mechanism": "C\u2082(Eckert)/C\u2082(Rac) = -2.5/-3.0 = 5/6",
+          "testable": true,
+          "matches_known_physics": "Potentially related to fine structure correction (which involves ratios of Casimirs in different representations)",
+          "significance": "If this ratio appears in a physical measurement, it would be a direct bridge from Eckert geometry to atomic spectroscopy."
+        },
+        {
+          "id": "P5",
+          "statement": "The SO(4) \u2192 SO(3) branching gives n\u00b2 states per hydrogen level",
+          "mechanism": "((n-1)/2,(n-1)/2) \u2192 \u2295_{l=0}^{n-1} l, dim = \u03a3(2l+1) = n\u00b2",
+          "testable": true,
+          "matches_known_physics": true,
+          "significance": "This is the hydrogen degeneracy theorem (Fock 1935). It follows from SO(4) symmetry regardless of SO(4,2). Consistency check, not a novel prediction."
+        }
+      ]
+    }
+  },
+  "kill_conditions": {
+    "K-HP-126": {
+      "test": "Fundamental rep under SO(4) has hydrogen-type irreps",
+      "status": "PASS",
+      "detail": "Found 2 irreps with j\u2081=j\u2082 (hydrogen-type)"
+    },
+    "K-HP-127": {
+      "test": "Eckert conformal dimension passes unitarity or complementary series",
+      "status": "PASS",
+      "delta": 0.7752551286084111,
+      "passes_3d": true,
+      "complementary_series": true
+    },
+    "K-HP-128": {
+      "test": "SO(4) \u2192 SO(3) branching gives n\u00b2 states per hydrogen level",
+      "status": "PASS"
+    },
+    "K-HP-129": {
+      "test": "SO(4) overlap between fundamental and hydrogen reps",
+      "status": "PASS",
+      "connected_levels": [
+        1,
+        2
+      ]
+    },
+    "K-HP-130": {
+      "test": "Dilatation eigenvalues give Dirac-Weyl decomposition",
+      "status": "PASS"
+    },
+    "K-HP-131": {
+      "test": "Fundamental \u2297 hydrogen gives physical selection rules (|\u0394n|\u22641)",
+      "status": "PASS",
+      "selection_rule": "|\u0394n| \u2264 1: dipole (\u0394n=\u00b11) from (1/2,1/2) + elastic (\u0394n=0) from (0,0)",
+      "has_dipole_component": true,
+      "has_elastic_component": true
+    }
+  },
+  "summary": {
+    "n_pass": 6,
+    "n_fail": 0,
+    "n_total": 6
+  }
+}

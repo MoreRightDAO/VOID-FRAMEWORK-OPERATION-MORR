@@ -1,0 +1,33 @@
+{
+  "experiment": "HP-EM-01",
+  "title": "K-Factorization of Maxwell's Equations",
+  "date": "2026-03-24T17:21:23.288989Z",
+  "tests": {
+    "T1_waveguide_factorization": {
+      "N": 600,
+      "max_error": 2.6186064728553097e-16,
+      "PASS": "True",
+      "note": "Exact shape\u00d7scale separation for rectangular waveguide TE modes"
+    },
+    "T2_shape_scale_independence": {
+      "N": 120,
+      "max_deviation": 2.70542565719088e-16,
+      "PASS": "True",
+      "KC": "K-EM-01",
+      "note": "Shape function identical across 5 orders of magnitude in scale"
+    },
+    "T3_cavity_factorization": {
+      "N": 540,
+      "max_error": 4.3787206152577688e-16,
+      "PASS": "True",
+      "KC": "K-EM-02",
+      "note": "3D cavity modes factor exactly as scale \u00d7 shape(m,n,p,\u03c11,\u03c12)"
+    },
+    "T4_circular_waveguide": {
+      "N": 160,
+      "max_shape_variation": 1.2178632360278403e-16,
+      "PASS": "True",
+      "note": "Bessel zeros are the shape function \u2014 pure numbers, K-independent"
+    }
+  }
+}

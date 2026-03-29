@@ -1,0 +1,96 @@
+{
+  "experiment": "HP105",
+  "paper": "Paper 145",
+  "date": "2026-03-17T21:09:47.620475",
+  "kill_conditions": {
+    "K-HG2S-2v (Group 12 trajectory)": true,
+    "K-HG2S-1v (Arrhenius crossover)": true,
+    "K-HG2S-3v (Cooper coherence)": true,
+    "K-HG2S-4v (MIF factorization)": true
+  },
+  "sub1_group12": {
+    "Zn": {
+      "Z": 30,
+      "n": 4,
+      "Z_eff_ns": 3.9,
+      "EA_eV": 0.0,
+      "IE1_eV": 9.394,
+      "Pe": 0.0,
+      "gamma_rel": 1.001501067379029,
+      "contraction_pct": 0.14988175528932723,
+      "phase_298K": "solid",
+      "Tm_K": 692.7,
+      "remark": "normal metal"
+    },
+    "Cd": {
+      "Z": 48,
+      "n": 5,
+      "Z_eff_ns": 4.09,
+      "EA_eV": 0.0,
+      "IE1_eV": 8.994,
+      "Pe": 0.0,
+      "gamma_rel": 1.0024628913469127,
+      "contraction_pct": 0.2456840415911543,
+      "phase_298K": "solid",
+      "Tm_K": 594.2,
+      "remark": "normal metal"
+    },
+    "Hg": {
+      "Z": 80,
+      "n": 6,
+      "Z_eff_ns": 10.13,
+      "EA_eV": 0.0,
+      "IE1_eV": 10.437,
+      "Pe": 0.0,
+      "gamma_rel": 1.0047673294020167,
+      "contraction_pct": 0.4744709807447678,
+      "phase_298K": "liquid",
+      "Tm_K": 234.3,
+      "remark": "marginal metal \u2014 relativistic Pe=0"
+    },
+    "Cn": {
+      "Z": 112,
+      "n": 7,
+      "Z_eff_ns": null,
+      "EA_eV": 0.0,
+      "IE1_eV": 11.97,
+      "Pe": 0.0,
+      "gamma_rel": 1.0068866648781627,
+      "contraction_pct": 0.6839563099185542,
+      "phase_298K": "gas?",
+      "Tm_K": 283,
+      "remark": "predicted noble liquid \u2014 band gap 6.4 eV"
+    }
+  },
+  "sub2_arrhenius": {
+    "E_b_eV": 0.8667047847129961,
+    "E_b_kJmol": 83.62401115303342,
+    "E_b_range_eV": [
+      0.7583666866238715,
+      0.9750428828021205
+    ],
+    "crossover_T_range_K": [
+      238.87499999999997,
+      307.125
+    ],
+    "barrier_physical": "True"
+  },
+  "sub4_mif": {
+    "ratio_MIE_predicted": 1.806140664048554,
+    "ratio_MIE_observed": 1.36,
+    "ratio_NVE": 1.0,
+    "gap_violations": [
+      [
+        "Arctic marine",
+        1.25,
+        "Blum et al. 2014"
+      ]
+    ],
+    "MIE_mean": 1.3483333333333336,
+    "MIE_std": 0.01572330188676102,
+    "NVE_mean": 1.0,
+    "NVE_std": 0.006324555320336764,
+    "channels_separated": "True"
+  },
+  "summary": "4/4 PASS"
+}

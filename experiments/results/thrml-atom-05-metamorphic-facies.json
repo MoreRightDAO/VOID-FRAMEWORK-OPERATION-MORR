@@ -1,0 +1,132 @@
+{
+  "mineral_pe_values": {
+    "analcime": 8.586475990607893,
+    "laumontite": 22.24273396458092,
+    "prehnite": 11.323329134387812,
+    "chlorite": 18.6317227157053,
+    "epidote": 10.27863615713737,
+    "actinolite": 19.518331502949533,
+    "albite": 8.411419384726402,
+    "hornblende": 19.90346597584509,
+    "andesine": 7.784552847781814,
+    "staurolite": 21.167929956214742,
+    "kyanite": 4.515670184221076,
+    "orthopyroxene": 4.508859434703779,
+    "garnet_alm": 8.418971216395127,
+    "sillimanite": 5.340559820224396,
+    "glaucophane": 21.107169826365237,
+    "lawsonite": 10.077710475657565,
+    "omphacite": 4.625617704800785,
+    "garnet_pyr": 7.876516009180306
+  },
+  "facies_pe_values": {
+    "Zeolite": 15.829672803036107,
+    "Prehnite-Pumpellyite": 12.210163753615337,
+    "Greenschist": 15.440852399087014,
+    "Amphibolite": 15.408360248279651,
+    "Granulite": 9.809610515317662,
+    "Blueschist": 14.395189238920869,
+    "Eclogite": 7.879563774781003
+  },
+  "kill_conditions": {
+    "K1_prograde_monotonic": {
+      "sequence": [
+        "Zeolite",
+        "Prehnite-Pumpellyite",
+        "Greenschist",
+        "Amphibolite",
+        "Granulite"
+      ],
+      "temperatures": [
+        175,
+        275,
+        400,
+        600,
+        800
+      ],
+      "pe_values": [
+        15.829672803036107,
+        12.210163753615337,
+        15.440852399087014,
+        15.408360248279651,
+        9.809610515317662
+      ],
+      "monotonic": false,
+      "passes": false
+    },
+    "K2_pressure_constraint": {
+      "comparisons": [
+        {
+          "low_P": "Greenschist",
+          "high_P": "Blueschist",
+          "low_P_pe": 15.440852399087014,
+          "high_P_pe": 14.395189238920869,
+          "P_low": 0.5,
+          "P_high": 1.5,
+          "correct": "True"
+        },
+        {
+          "low_P": "Amphibolite",
+          "high_P": "Eclogite",
+          "low_P_pe": 15.408360248279651,
+          "high_P_pe": 7.879563774781003,
+          "P_low": 0.7,
+          "P_high": 2.5,
+          "correct": "True"
+        }
+      ],
+      "all_correct": true,
+      "passes": true
+    },
+    "K3_correlation": {
+      "rho": -0.7,
+      "p_val": 0.1881204043741873,
+      "n": 5,
+      "passes": "False"
+    }
+  },
+  "reactions": [
+    {
+      "name": "Chlorite \u2192 Garnet + H\u2082O",
+      "boundary": "Greenschist \u2192 Amphibolite",
+      "T_range": "500-550\u00b0C",
+      "reactant_Pe": 18.6317227157053,
+      "product_Pe": 8.418971216395127,
+      "delta_Pe": -10.212751499310174,
+      "dehydration": true,
+      "prediction": "Chlorite has lower base Pe \u2192 stable at low T. At T > 500\u00b0C, thermal Pe pushes past garnet stability field."
+    },
+    {
+      "name": "Hornblende \u2192 Orthopyroxene + H\u2082O",
+      "boundary": "Amphibolite \u2192 Granulite",
+      "T_range": "700-750\u00b0C",
+      "reactant_Pe": 19.90346597584509,
+      "product_Pe": 4.508859434703779,
+      "delta_Pe": -15.39460654114131,
+      "dehydration": true,
+      "prediction": "Dehydration removes H (high reactivity). Anhydrous pyroxene = more constrained = lower base Pe."
+    },
+    {
+      "name": "Actinolite \u2192 Glaucophane (high P)",
+      "boundary": "Greenschist \u2192 Blueschist",
+      "T_range": "300-400\u00b0C at P > 0.6 GPa",
+      "reactant_Pe": 19.518331502949533,
+      "product_Pe": 21.107169826365237,
+      "delta_Pe": 1.588838323415704,
+      "dehydration": false,
+      "prediction": "Na-bearing amphibole (glaucophane) stabilized by high P. Pressure increases \u03c3_eff \u2192 changes preferred mineral."
+    }
+  ],
+  "phase_diagram": {
+    "T_range": [
+      50.0,
+      950.0
+    ],
+    "P_range": [
+      0.0,
+      4.0
+    ],
+    "pe_min": 0.2777777777777778,
+    "pe_max": 16.56909608285943
+  }
+}

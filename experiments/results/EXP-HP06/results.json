@@ -1,0 +1,353 @@
+{
+  "experiment": "EXP-HP06",
+  "title": "The Resurrection \u2014 Multiplicative Reassembly",
+  "date": "2026-03-13",
+  "framework_sections": [
+    "\u00a780D\u00bd",
+    "\u00a780F",
+    "\u00a780E",
+    "Weil explicit formula"
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "name": "Explicit formula decomposition",
+      "prime_mean_S": {
+        "2": 0.139517,
+        "3": 0.108533,
+        "5": 0.089511,
+        "7": 0.08438,
+        "11": 0.067716,
+        "13": 0.063706,
+        "17": 0.047477,
+        "19": 0.045694,
+        "23": 0.041558,
+        "29": 0.041164
+      },
+      "total_S_rms": 0.310835,
+      "scaling_exponent": -0.4709
+    },
+    {
+      "id": "T2",
+      "name": "Route 1 \u2014 explicit formula zero refinement",
+      "gates": [
+        {
+          "gate": 1,
+          "prime": 2,
+          "dist": 10.86318079,
+          "mult": 0.844224,
+          "sp_var": 0.000579
+        },
+        {
+          "gate": 2,
+          "prime": 3,
+          "dist": 12.0829516,
+          "mult": 0.987359,
+          "sp_var": 0.001895
+        },
+        {
+          "gate": 3,
+          "prime": 5,
+          "dist": 10.91044896,
+          "mult": 0.846451,
+          "sp_var": 0.004163
+        },
+        {
+          "gate": 4,
+          "prime": 7,
+          "dist": 11.97485575,
+          "mult": 1.0269,
+          "sp_var": 0.004401
+        },
+        {
+          "gate": 5,
+          "prime": 11,
+          "dist": 12.91526225,
+          "mult": 1.141787,
+          "sp_var": 0.005082
+        },
+        {
+          "gate": 6,
+          "prime": 13,
+          "dist": 13.08469421,
+          "mult": 1.208001,
+          "sp_var": 0.005407
+        },
+        {
+          "gate": 7,
+          "prime": 17,
+          "dist": 13.85496932,
+          "mult": 1.346263,
+          "sp_var": 0.005762
+        },
+        {
+          "gate": 8,
+          "prime": 19,
+          "dist": 13.14954507,
+          "mult": 1.227677,
+          "sp_var": 0.006071
+        },
+        {
+          "gate": 9,
+          "prime": 23,
+          "dist": 12.68164601,
+          "mult": 1.177339,
+          "sp_var": 0.005362
+        },
+        {
+          "gate": 10,
+          "prime": 29,
+          "dist": 12.18979453,
+          "mult": 1.081632,
+          "sp_var": 0.005407
+        },
+        {
+          "gate": 11,
+          "prime": 31,
+          "dist": 12.05188422,
+          "mult": 1.092323,
+          "sp_var": 0.005868
+        },
+        {
+          "gate": 12,
+          "prime": 37,
+          "dist": 11.58685929,
+          "mult": 1.021153,
+          "sp_var": 0.005927
+        },
+        {
+          "gate": 13,
+          "prime": 41,
+          "dist": 12.00749187,
+          "mult": 1.074,
+          "sp_var": 0.005865
+        },
+        {
+          "gate": 14,
+          "prime": 43,
+          "dist": 12.25146785,
+          "mult": 1.094611,
+          "sp_var": 0.005948
+        },
+        {
+          "gate": 15,
+          "prime": 47,
+          "dist": 11.89637518,
+          "mult": 1.038671,
+          "sp_var": 0.0064
+        },
+        {
+          "gate": 16,
+          "prime": 53,
+          "dist": 12.23230189,
+          "mult": 1.066564,
+          "sp_var": 0.006725
+        },
+        {
+          "gate": 17,
+          "prime": 59,
+          "dist": 11.94239626,
+          "mult": 1.039293,
+          "sp_var": 0.006588
+        },
+        {
+          "gate": 18,
+          "prime": 61,
+          "dist": 11.93289624,
+          "mult": 1.0461,
+          "sp_var": 0.006392
+        },
+        {
+          "gate": 19,
+          "prime": 67,
+          "dist": 12.13113467,
+          "mult": 1.085145,
+          "sp_var": 0.006964
+        },
+        {
+          "gate": 20,
+          "prime": 71,
+          "dist": 11.80693991,
+          "mult": 1.041994,
+          "sp_var": 0.006532
+        }
+      ],
+      "best_dist": 10.86318079,
+      "best_gate": 1
+    },
+    {
+      "id": "T3",
+      "name": "Route 2 \u2014 iterative explicit formula",
+      "iterations": [
+        {
+          "iteration": 1,
+          "dist": 12.52269666,
+          "mult": 0.946756,
+          "sp_var": 0.00025
+        },
+        {
+          "iteration": 6,
+          "dist": 10.33439819,
+          "mult": 0.764187,
+          "sp_var": 0.003216
+        },
+        {
+          "iteration": 11,
+          "dist": 8.42642613,
+          "mult": 0.733132,
+          "sp_var": 0.006215
+        },
+        {
+          "iteration": 16,
+          "dist": 6.76729899,
+          "mult": 0.797312,
+          "sp_var": 0.015667
+        },
+        {
+          "iteration": 21,
+          "dist": 5.31928924,
+          "mult": 0.824249,
+          "sp_var": 0.025846
+        },
+        {
+          "iteration": 26,
+          "dist": 4.05455562,
+          "mult": 0.953152,
+          "sp_var": 0.056496
+        },
+        {
+          "iteration": 31,
+          "dist": 2.96630686,
+          "mult": 1.19249,
+          "sp_var": 0.091278
+        },
+        {
+          "iteration": 36,
+          "dist": 2.03291793,
+          "mult": 1.590525,
+          "sp_var": 0.127111
+        },
+        {
+          "iteration": 41,
+          "dist": 1.25562682,
+          "mult": 1.871148,
+          "sp_var": 0.190664
+        },
+        {
+          "iteration": 46,
+          "dist": 0.69671029,
+          "mult": 2.707574,
+          "sp_var": 0.273519
+        }
+      ],
+      "best_dist": 0.58977106,
+      "best_iter": 49
+    },
+    {
+      "id": "T4",
+      "name": "Route 3 \u2014 explicit formula potential",
+      "strength_scan": [
+        {
+          "strength": 0.001,
+          "dist": 13.09278424,
+          "mult": 1.007397,
+          "sp_var": 1e-06
+        },
+        {
+          "strength": 0.005,
+          "dist": 13.49885463,
+          "mult": 1.038611,
+          "sp_var": 8e-06
+        },
+        {
+          "strength": 0.01,
+          "dist": 14.04796331,
+          "mult": 1.082047,
+          "sp_var": 3.1e-05
+        },
+        {
+          "strength": 0.02,
+          "dist": 15.31448986,
+          "mult": 1.187565,
+          "sp_var": 0.000132
+        },
+        {
+          "strength": 0.05,
+          "dist": 21.56567582,
+          "mult": 1.814982,
+          "sp_var": 0.001162
+        },
+        {
+          "strength": 0.1,
+          "dist": 6.14999681,
+          "mult": 0.846323,
+          "sp_var": 0.000444
+        },
+        {
+          "strength": 0.2,
+          "dist": 9.01948217,
+          "mult": 1.108112,
+          "sp_var": 0.002486
+        },
+        {
+          "strength": 0.5,
+          "dist": 5.53546336,
+          "mult": 0.994423,
+          "sp_var": 0.004901
+        },
+        {
+          "strength": 1.0,
+          "dist": 4.17401548,
+          "mult": 0.992932,
+          "sp_var": 0.009058
+        },
+        {
+          "strength": 2.0,
+          "dist": 6.98161015,
+          "mult": 1.569046,
+          "sp_var": 0.030821
+        }
+      ],
+      "best_dist": 4.17401548,
+      "best_strength": 1.0
+    },
+    {
+      "id": "T5",
+      "name": "sqrt(3) diagnostic",
+      "mult_integers": 1.0,
+      "mult_hp05": 1.731567,
+      "mult_route1": 1.041994,
+      "mult_route2": 2.865567,
+      "mult_route3": 0.992932,
+      "mult_zeros": 0.979435,
+      "sqrt3": 1.732051,
+      "verdict": "1.0 (integers) is closer to zero truth (0.9794) than sqrt(3)"
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-20",
+      "condition": "At least one route improves on HP05 additive (dist<0.153)",
+      "result": "FAIL",
+      "detail": "Route dists: [10.863181, 0.589771, 4.174015], HP05=0.152684"
+    },
+    {
+      "id": "K-HP-21",
+      "condition": "Explicit formula contributions converge",
+      "result": "FAIL",
+      "detail": "Final 3 gate range: 0.32419476"
+    },
+    {
+      "id": "K-HP-22",
+      "condition": "sqrt(3) diagnosis resolved (artifact vs structural)",
+      "result": "FAIL",
+      "detail": "|zeros_mult - sqrt(3)| = 0.752615, |zeros_mult - 1| = 0.020565"
+    },
+    {
+      "id": "K-HP-23",
+      "condition": "Best route produces meaningful spacing statistics",
+      "result": "PASS",
+      "detail": "spacing_var = 0.310021"
+    }
+  ]
+}

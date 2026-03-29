@@ -1,0 +1,116 @@
+{
+  "experiment": "nb12-OU",
+  "description": "OU parameter fitting from per-wallet wci_series (26-week TCI trajectories)",
+  "date": "2026-03-10",
+  "scientific_connections": {
+    "S10F_kimura": "kappa (OU restoring force) = stabilizing selection strength s (Hansen 1997). Bulk OU = stabilizing selection; tail (kappa\u22480) = directional selection = Kimura arms-race regime.",
+    "S43_fdr": "OU equilibrium predicts FDR \u2248 1 (sigma\u00b2/(2*kappa) = chi_0). Departure from FDR=1 signals tail agents. FluctuationOracleV2 on-chain measures this.",
+    "S48_lagrangian": "Kramers escape rate from OU well (\u00a748C) gives theoretical tail fraction. kappa and sigma from data \u2192 compute predicted P(escape to Pe>Pe_c). Compare to empirical \u00a750J f_d.",
+    "S50K_ou": "Confirms the OU interpretation: bulk kappa>0 (reverting), tail kappa\u22480 (non-reverting). The y_K^(temp)=-0.40 result is recovered from OU: Pe(M) \u221d M^{-1/2} for OU trajectories."
+  },
+  "chain_results": {
+    "ethereum": {
+      "chain": "ethereum",
+      "n_fitted": 954,
+      "n_pareto_tail": 173,
+      "n_reverting": 662,
+      "frac_reverting": 0.6939203354297694,
+      "frac_pareto_reverting": 0.6936416184971098,
+      "kappa_median": 0.6720372754823987,
+      "kappa_mean": 0.9688695026549763,
+      "kappa_p25": 0.0,
+      "kappa_p75": 1.5129997996871585,
+      "kappa_bulk_median": 0.7746233051045579,
+      "kappa_tail_median": 0.459520921314265,
+      "kappa_bulk_vs_tail_mwtest": {
+        "statistic": 70858.0,
+        "p": 0.15374359294154605
+      },
+      "tau_median_weeks": 0.8833366114198424,
+      "tau_p25_weeks": 0.5365679922062221,
+      "tau_p75_weeks": 1.6379286953041456,
+      "fdr_mean": 0.0825140777034726,
+      "fdr_median": 0.03876514207661297,
+      "frac_fdr_near_1": 0.010574018126888218,
+      "kimura": {
+        "s_implied_median": 0.33601863774119933,
+        "pe_kimura_at_K16": 21.505192815436757,
+        "interpretation": "kappa = stabilizing selection strength (Hansen 1997). Bulk OU kappa maps to weak stabilizing selection; tail (kappa\u22480) = directional selection. Same equation as \u00a710F Kimura identity."
+      }
+    },
+    "base": {
+      "chain": "base",
+      "n_fitted": 884,
+      "n_pareto_tail": 278,
+      "n_reverting": 648,
+      "frac_reverting": 0.7330316742081447,
+      "frac_pareto_reverting": 0.6330935251798561,
+      "kappa_median": 0.5720090873602122,
+      "kappa_mean": 0.778274318192033,
+      "kappa_p25": 0.0,
+      "kappa_p75": 1.1192813742703398,
+      "kappa_bulk_median": 0.6511323285951721,
+      "kappa_tail_median": 0.19160033149181677,
+      "kappa_bulk_vs_tail_mwtest": {
+        "statistic": 107260.0,
+        "p": 2.155302727414241e-11
+      },
+      "tau_median_weeks": 1.2945809103284336,
+      "tau_p25_weeks": 0.6945733514989658,
+      "tau_p75_weeks": 2.2040320558015503,
+      "fdr_mean": 0.05170498106667214,
+      "fdr_median": 0.021771324846135084,
+      "frac_fdr_near_1": 0.0015479876160990713,
+      "kimura": {
+        "s_implied_median": 0.2860045436801061,
+        "pe_kimura_at_K16": 18.30429079552679,
+        "interpretation": "kappa = stabilizing selection strength (Hansen 1997). Bulk OU kappa maps to weak stabilizing selection; tail (kappa\u22480) = directional selection. Same equation as \u00a710F Kimura identity."
+      }
+    },
+    "solana": {
+      "chain": "solana",
+      "n_fitted": 997,
+      "n_pareto_tail": 519,
+      "n_reverting": 696,
+      "frac_reverting": 0.6980942828485457,
+      "frac_pareto_reverting": 0.7071290944123314,
+      "kappa_median": 0.6304415547114453,
+      "kappa_mean": 0.9432382493887261,
+      "kappa_p25": 0.0,
+      "kappa_p75": 1.2505393187874487,
+      "kappa_bulk_median": 0.5814406962538012,
+      "kappa_tail_median": 0.7550131013538146,
+      "kappa_bulk_vs_tail_mwtest": {
+        "statistic": 123731.0,
+        "p": 0.5276127946747343
+      },
+      "tau_median_weeks": 0.9829955192571453,
+      "tau_p25_weeks": 0.6638018963002671,
+      "tau_p75_weeks": 1.7173367354971494,
+      "fdr_mean": 0.026962885147724103,
+      "fdr_median": 0.0021958276155799503,
+      "frac_fdr_near_1": 0.0028735632183908046,
+      "kimura": {
+        "s_implied_median": 0.3152207773557226,
+        "pe_kimura_at_K16": 20.174129750766248,
+        "interpretation": "kappa = stabilizing selection strength (Hansen 1997). Bulk OU kappa maps to weak stabilizing selection; tail (kappa\u22480) = directional selection. Same equation as \u00a710F Kimura identity."
+      }
+    }
+  },
+  "pooled": {
+    "n_total": 2835,
+    "n_bulk": 1865,
+    "n_tail": 970,
+    "kappa_bulk_median": 0.6395434455912954,
+    "kappa_tail_median": 0.46927860264236393,
+    "bulk_vs_tail_mannwhitney": {
+      "statistic": 991069.0,
+      "p": 1.1370901991127464e-05,
+      "interpretation": "bulk kappa > tail kappa (one-sided). p<0.05 confirms tail agents have weaker mean-reversion."
+    },
+    "typical_sigma": 0.0942988749590336,
+    "cramers_escape_prob_pe16": 0.0,
+    "empirical_tail_frac": 0.3421516754850088
+  },
+  "interpretation": "Bulk crypto traders exhibit Ornstein-Uhlenbeck dynamics with kappa > 0 (mean-reverting to personal TCI baseline). Pareto tail agents have kappa \u2248 0 (non-reverting, directional drift). This is identical to the stabilizing vs directional selection dichotomy in population genetics (\u00a710F Kimura identity). kappa maps to stabilizing selection coefficient s via s = kappa/2. FDR near 1 for bulk agents confirms OU equilibrium (\u00a743 FDR theorem). Kramers escape rate from \u00a748C predicts the empirical tail fraction."
+}

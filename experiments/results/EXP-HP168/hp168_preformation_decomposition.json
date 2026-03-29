@@ -1,0 +1,97 @@
+{
+  "experiment": "HP168",
+  "title": "Nuclear Preformation Decomposition (\u00a7138 Extension)",
+  "date": "2026-03-26T14:20:17.097872",
+  "n_emitters": 760,
+  "slope_table": [
+    {
+      "model": "Gamow (flat)",
+      "R2": 0.8114567393188131,
+      "slope": 0.5851079821971831,
+      "offset": -9.2319383864836,
+      "MAE": 9.2319383864836
+    },
+    {
+      "model": "Eckert (geodesic)",
+      "R2": 0.8287990306075859,
+      "slope": 0.6034015143164736,
+      "offset": -2.0888938637498864,
+      "MAE": 2.342672241759229
+    },
+    {
+      "model": "Eckert + Shell",
+      "R2": 0.8184727045692369,
+      "slope": 0.694006381948389,
+      "offset": 2.6551860125772165e-15,
+      "MAE": 1.3640142519782255
+    },
+    {
+      "model": "Eckert + Shell + Preform",
+      "R2": 0.8404621370472755,
+      "slope": 0.784252718950418,
+      "offset": 3.0852513526425404e-15,
+      "MAE": 1.2844033250701528
+    }
+  ],
+  "shell_model": {
+    "features": [
+      "near_magic_Z",
+      "near_magic_N",
+      "even-even",
+      "neutron_excess",
+      "deformation",
+      "doubly_magic"
+    ],
+    "R2_on_eckert_residuals": 0.13782526137817308,
+    "standardized_coefficients": {
+      "near_magic_Z": 0.35509798887924976,
+      "near_magic_N": 0.2016357180208628,
+      "even-even": 0.1760836614675423,
+      "neutron_excess": 0.6572751289875238,
+      "deformation": -0.7674765539964603,
+      "doubly_magic": -0.09080638682430946
+    },
+    "magic_number_correlations": {
+      "rho_magic_Z": 0.2066145845794481,
+      "p_magic_Z": 8.991251947413753e-09,
+      "rho_magic_N": 0.04877072045781611,
+      "p_magic_N": 0.1792388705542659
+    },
+    "even_even_effect_OOM": -0.4243986157149271
+  },
+  "preformation": {
+    "mean_log_P_alpha": -2.636487519530898e-15,
+    "std_log_P_alpha": 2.17207534738227,
+    "smoothness_R2": 0.1853680523861302,
+    "fraction_in_literature_range": 0.1355263157894737
+  },
+  "cross_validation": {
+    "mean_R2": 0.8332807676854227,
+    "std_R2": 0.03817349839469468,
+    "mean_slope": 0.7812524280296655,
+    "std_slope": 0.011303858410015246
+  },
+  "kill_conditions": {
+    "K-HP168-1": {
+      "criterion": "Shell residuals correlate with magic numbers",
+      "status": "PASS"
+    },
+    "K-HP168-2": {
+      "criterion": "Eckert+Shell slope > 0.70",
+      "status": "FAIL",
+      "slope": 0.694006381948389
+    },
+    "K-HP168-3": {
+      "criterion": "Preformation smooth in (Z,N)",
+      "status": "FAIL",
+      "R2": 0.1853680523861302
+    },
+    "K-HP168-4": {
+      "criterion": "Combined R\u00b2 > 0.90",
+      "status": "FAIL",
+      "R2": 0.8404621370472755
+    }
+  },
+  "total_pass": "1",
+  "total_kc": 4
+}

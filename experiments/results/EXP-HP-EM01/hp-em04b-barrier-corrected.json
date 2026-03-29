@@ -1,0 +1,177 @@
+{
+  "experiment": "HP-EM-04B",
+  "title": "Barrier Universality Corrected \u2014 ln(E/(kT)) formula",
+  "date": "2026-03-24T18:18:56.903618Z",
+  "key_correction": "barrier = ln(E/(kT)), not E/(kT)",
+  "formula_verified": true,
+  "strong_coupling_prediction": "2D/(kTc) = exp(B_G) = 9.22 for d=1",
+  "htsc_in_range": "Bi2212, YBCO near barrier universality at strong coupling",
+  "kappa_pi2": 9.869604401089358,
+  "results": [
+    {
+      "name": "JJ Al/AlOx (E_J, T_MQT)",
+      "d": 1,
+      "E_meV": 0.43,
+      "T_K": 0.3,
+      "ratio": 16.63378592704344,
+      "barrier": 2.8114359237618687,
+      "b_over_d": 2.8114359237618687,
+      "dev_pct": 26.55908169965181,
+      "within_20": "False"
+    },
+    {
+      "name": "JJ Al/AlOx (E_J, T_c)",
+      "d": 1,
+      "E_meV": 0.43,
+      "T_K": 1.2,
+      "ratio": 4.15844648176086,
+      "barrier": 1.425141562641978,
+      "b_over_d": 1.425141562641978,
+      "dev_pct": -35.84608991598963,
+      "within_20": "False"
+    },
+    {
+      "name": "JJ Nb (E_J, T_c)",
+      "d": 1,
+      "E_meV": 8.4,
+      "T_K": 9.25,
+      "ratio": 10.5385645596856,
+      "barrier": 2.3550413440553957,
+      "b_over_d": 2.3550413440553957,
+      "dev_pct": 6.014107363881684,
+      "within_20": "True"
+    },
+    {
+      "name": "BCS Al (2D, T_c)",
+      "d": 1,
+      "E_meV": 0.34,
+      "T_K": 1.2,
+      "ratio": 3.288073962322541,
+      "barrier": 1.190301971564577,
+      "b_over_d": 1.190301971564577,
+      "dev_pct": -46.41758569232198,
+      "within_20": "False"
+    },
+    {
+      "name": "BCS Nb (2D, T_c)",
+      "d": 1,
+      "E_meV": 3.05,
+      "T_K": 9.25,
+      "ratio": 3.8265026079810807,
+      "barrier": 1.341951228825448,
+      "b_over_d": 1.341951228825448,
+      "dev_pct": -39.59097066006854,
+      "within_20": "False"
+    },
+    {
+      "name": "BCS Pb (2D, T_c)",
+      "d": 1,
+      "E_meV": 2.73,
+      "T_K": 7.19,
+      "ratio": 4.406336537907487,
+      "barrier": 1.4830436271943745,
+      "b_over_d": 1.4830436271943745,
+      "dev_pct": -33.239581243204405,
+      "within_20": "False"
+    },
+    {
+      "name": "Fe nano 5nm (KuV, T_B)",
+      "d": 2,
+      "E_meV": 37.5,
+      "T_K": 25.0,
+      "ratio": 17.407450388766392,
+      "barrier": 2.856898297838626,
+      "b_over_d": 1.428449148919313,
+      "dev_pct": -35.697196221360535,
+      "within_20": "False"
+    },
+    {
+      "name": "Fe nano 5nm (KuV, T_C)",
+      "d": 2,
+      "E_meV": 37.5,
+      "T_K": 1043.0,
+      "ratio": 0.4172447360682261,
+      "barrier": -0.8740823322939457,
+      "b_over_d": -0.43704116614697286,
+      "dev_pct": -119.6737646357224,
+      "within_20": "False"
+    },
+    {
+      "name": "Fe nano 5nm (J_ex, T_C)",
+      "d": 2,
+      "E_meV": 10.0,
+      "T_K": 1043.0,
+      "ratio": 0.11126526295152696,
+      "barrier": -2.195838172276265,
+      "b_over_d": -1.0979190861381325,
+      "dev_pct": -149.42372335352297,
+      "within_20": "False"
+    },
+    {
+      "name": "NbN BKT (E_v, T_BKT)",
+      "d": 2,
+      "E_meV": 1.29,
+      "T_K": 4.2,
+      "ratio": 3.564382698652166,
+      "barrier": 1.2709908828147198,
+      "b_over_d": 0.6354954414073599,
+      "dev_pct": -71.39265426287457,
+      "within_20": "False"
+    },
+    {
+      "name": "NbSe3 CDW1 (2D=100, T_P)",
+      "d": 1,
+      "E_meV": 100.0,
+      "T_K": 145.0,
+      "ratio": 8.00342546609949,
+      "barrier": 2.0798696332979785,
+      "b_over_d": 2.0798696332979785,
+      "dev_pct": -6.372971683106645,
+      "within_20": "True"
+    },
+    {
+      "name": "MTJ CoFeB (Ku*a^3, T_C)",
+      "d": 1,
+      "E_meV": 0.025,
+      "T_K": 1000.0,
+      "ratio": 0.00029012417314610656,
+      "barrier": -8.145201543365612,
+      "b_over_d": -8.145201543365612,
+      "dev_pct": -466.66289239400515,
+      "within_20": "False"
+    },
+    {
+      "name": "MTJ CoFeB (KuV 12nm, RT)",
+      "d": 1,
+      "E_meV": 238.0,
+      "T_K": 300.0,
+      "ratio": 9.206607094503115,
+      "barrier": 2.2199213887457354,
+      "b_over_d": 2.2199213887457354,
+      "dev_pct": -0.06842765630362213,
+      "within_20": "True"
+    },
+    {
+      "name": "SC cavity (hw, T_base)",
+      "d": 3,
+      "E_meV": 0.021,
+      "T_K": 0.015,
+      "ratio": 16.24695369618197,
+      "barrier": 2.7879054263516747,
+      "b_over_d": 0.9293018087838916,
+      "dev_pct": -58.16672094587757,
+      "within_20": "False"
+    },
+    {
+      "name": "YIG magnon (E_sw, T_C)",
+      "d": 2,
+      "E_meV": 0.086,
+      "T_K": 560.0,
+      "ratio": 0.001782191349326083,
+      "barrier": -6.329911576727363,
+      "b_over_d": -3.1649557883636814,
+      "dev_pct": -242.47306680898495,
+      "within_20": "False"
+    }
+  ]
+}

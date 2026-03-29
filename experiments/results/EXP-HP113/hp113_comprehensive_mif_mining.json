@@ -1,0 +1,78 @@
+{
+  "experiment": "HP113",
+  "title": "Comprehensive MIF Channel Mining \u2014 Atmospheric Data",
+  "date": "2026-03-18T00:34:14.709785",
+  "data_source": {
+    "authors": "Ga\u010dnik, \u017divkovi\u0107, Horvat",
+    "year": 2025,
+    "journal": "TrAC",
+    "doi": "10.1016/j.trac.2025.118257",
+    "repository": "https://github.com/jgacnik/Hg_isotopes_data_analysis",
+    "n_total": 2506,
+    "n_positive_mif": 308
+  },
+  "channel_results": {
+    "\u2022OH Fenton": {
+      "predicted_R": 1.08,
+      "n_observed": 34,
+      "mean_R": 1.0825794913979663,
+      "deviation": 0.002579491397966205,
+      "env_enrichment": 0.38235294117647056,
+      "bg_rate": 0.44155844155844154
+    },
+    "\u2022CO\u2083\u207b carbonate": {
+      "predicted_R": 1.16,
+      "n_observed": 34,
+      "mean_R": 1.1579919061191197,
+      "deviation": 0.0020080938808801907,
+      "env_enrichment": 0.2647058823529412,
+      "bg_rate": 0.18831168831168832
+    },
+    "\u2022NO\u2082 nitrogen dioxide": {
+      "predicted_R": 1.454,
+      "n_observed": 37,
+      "mean_R": 1.4785215473162636,
+      "deviation": 0.02452154731626366,
+      "env_enrichment": 0.5675675675675675,
+      "bg_rate": 0.44155844155844154
+    },
+    "\u2022I iodine": {
+      "predicted_R": 2.13,
+      "n_observed": 7,
+      "mean_R": 2.092207792207792,
+      "deviation": 0.03779220779220793,
+      "env_enrichment": 0.42857142857142855,
+      "bg_rate": 0.18831168831168832
+    },
+    "Surface 2D cage": {
+      "predicted_R": 2.37,
+      "n_observed": 1,
+      "mean_R": 2.466666666666667,
+      "deviation": 0.09666666666666668,
+      "env_enrichment": null,
+      "bg_rate": null
+    }
+  },
+  "kde_local_maxima": [
+    {
+      "R": 1.12,
+      "density": 1.423116824474571
+    },
+    {
+      "R": 1.5,
+      "density": 0.80611376380275
+    },
+    {
+      "R": 1.98,
+      "density": 0.10066242276968734
+    }
+  ],
+  "kill_conditions": {
+    "K-MIF-113-1 (\u226510 at \u2022NO\u2082)": "PASS",
+    "K-MIF-113-2 (\u22653 at \u2022I, mean near 2.13)": "PASS",
+    "K-MIF-113-3 (\u2022OH density elevation)": "FAIL",
+    "K-MIF-113-4 (\u2022I marine enrichment)": "PASS",
+    "K-MIF-113-5 (non-monotonic R dist.)": "PASS"
+  },
+  "summary": "4/5 PASS"
+}

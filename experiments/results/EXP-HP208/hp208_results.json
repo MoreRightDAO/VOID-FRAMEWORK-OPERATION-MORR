@@ -1,0 +1,316 @@
+{
+  "experiment": "HP208",
+  "title": "Separatrix vs Noise \u2014 Does the Safety Threshold Move?",
+  "timestamp": "2026-03-29T02:27:10.623183+00:00",
+  "configuration": {
+    "Pe_range": [
+      0.0,
+      80.0
+    ],
+    "Pe_step": 0.25,
+    "temperatures": [
+      0.01,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "N_spatial": 1024,
+    "extrema_order": 5
+  },
+  "results_per_temperature": [
+    {
+      "T": 0.01,
+      "pe_separatrix": null,
+      "F_separatrix": null,
+      "safety_basin_depth": null,
+      "harm_basin_depth": null,
+      "kramers_rate": null,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -5.6354838233152655,
+      "n_separatrices": 0,
+      "n_minima": 1,
+      "all_separatrices": [],
+      "all_minima": [
+        [
+          80.0,
+          -39.93884668157473
+        ]
+      ],
+      "F_at_Pe0": -0.011447298858494005,
+      "F_at_PeMax": -39.93884668157473
+    },
+    {
+      "T": 0.05,
+      "pe_separatrix": null,
+      "F_separatrix": null,
+      "safety_basin_depth": null,
+      "harm_basin_depth": null,
+      "kramers_rate": null,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -4.8137237986173975,
+      "n_separatrices": 0,
+      "n_minima": 1,
+      "all_separatrices": [],
+      "all_minima": [
+        [
+          80.0,
+          -39.73431342781561
+        ]
+      ],
+      "F_at_Pe0": -0.05723649429247002,
+      "F_at_PeMax": -39.73431342781561
+    },
+    {
+      "T": 0.1,
+      "pe_separatrix": null,
+      "F_separatrix": null,
+      "safety_basin_depth": null,
+      "harm_basin_depth": null,
+      "kramers_rate": null,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -4.467134917028513,
+      "n_separatrices": 0,
+      "n_minima": 1,
+      "all_separatrices": [],
+      "all_minima": [
+        [
+          80.0,
+          -39.503284979189644
+        ]
+      ],
+      "F_at_Pe0": -0.11447298858494004,
+      "F_at_PeMax": -39.503284979189644
+    },
+    {
+      "T": 0.2,
+      "pe_separatrix": null,
+      "F_separatrix": null,
+      "safety_basin_depth": null,
+      "harm_basin_depth": null,
+      "kramers_rate": null,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -4.120530739931536,
+      "n_separatrices": 0,
+      "n_minima": 1,
+      "all_separatrices": [],
+      "all_minima": [
+        [
+          80.0,
+          -39.07588773483696
+        ]
+      ],
+      "F_at_Pe0": -0.22894597716988008,
+      "F_at_PeMax": -39.07588773483696
+    },
+    {
+      "T": 0.5,
+      "pe_separatrix": null,
+      "F_separatrix": null,
+      "safety_basin_depth": null,
+      "harm_basin_depth": null,
+      "kramers_rate": null,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -3.6622935799148424,
+      "n_separatrices": 0,
+      "n_minima": 1,
+      "all_separatrices": [],
+      "all_minima": [
+        [
+          80.0,
+          -37.91881496367637
+        ]
+      ],
+      "F_at_Pe0": -0.5723649429247002,
+      "F_at_PeMax": -37.91881496367637
+    },
+    {
+      "T": 1.0,
+      "pe_separatrix": 2.5,
+      "F_separatrix": -0.9761437308212854,
+      "safety_basin_depth": 0.16858615502811503,
+      "harm_basin_depth": 35.20813630292482,
+      "kramers_rate": 0.8448584714779221,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -3.3155668872353883,
+      "n_separatrices": 1,
+      "n_minima": 2,
+      "all_separatrices": [
+        [
+          2.5,
+          -0.9761437308212854
+        ]
+      ],
+      "all_minima": [
+        [
+          0.0,
+          -1.1447298858494004
+        ],
+        [
+          80.0,
+          -36.184280033746106
+        ]
+      ],
+      "F_at_Pe0": -1.1447298858494004,
+      "F_at_PeMax": -36.184280033746106
+    },
+    {
+      "T": 2.0,
+      "pe_separatrix": 5.25,
+      "F_separatrix": -1.2989401116107704,
+      "safety_basin_depth": 0.9905196600880304,
+      "harm_basin_depth": 31.763073482004096,
+      "kramers_rate": 0.6094125430354235,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -2.968686669864351,
+      "n_separatrices": 1,
+      "n_minima": 2,
+      "all_separatrices": [
+        [
+          5.25,
+          -1.2989401116107704
+        ]
+      ],
+      "all_minima": [
+        [
+          0.0,
+          -2.2894597716988008
+        ],
+        [
+          80.0,
+          -33.062013593614864
+        ]
+      ],
+      "F_at_Pe0": -2.2894597716988008,
+      "F_at_PeMax": -33.062013593614864
+    },
+    {
+      "T": 5.0,
+      "pe_separatrix": 12.5,
+      "F_separatrix": -0.9075371790099809,
+      "safety_basin_depth": 4.816112250237022,
+      "harm_basin_depth": 24.04052745092225,
+      "kramers_rate": 0.3816610186579925,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -2.5096160809512966,
+      "n_separatrices": 1,
+      "n_minima": 2,
+      "all_separatrices": [
+        [
+          12.5,
+          -0.9075371790099809
+        ]
+      ],
+      "all_minima": [
+        [
+          0.0,
+          -5.723649429247002
+        ],
+        [
+          80.0,
+          -24.948064629932233
+        ]
+      ],
+      "F_at_Pe0": -5.723649429247002,
+      "F_at_PeMax": -24.948064629932233
+    },
+    {
+      "T": 10.0,
+      "pe_separatrix": 24.5,
+      "F_separatrix": 1.6705736842693852,
+      "safety_basin_depth": 13.11787254276339,
+      "harm_basin_depth": 15.043549818493318,
+      "kramers_rate": 0.26933825001856737,
+      "entropy_at_Pe0": 1.1447298858494004,
+      "entropy_at_Pe80": -2.1584376946173416,
+      "n_separatrices": 1,
+      "n_minima": 2,
+      "all_separatrices": [
+        [
+          24.5,
+          1.6705736842693852
+        ]
+      ],
+      "all_minima": [
+        [
+          0.0,
+          -11.447298858494005
+        ],
+        [
+          80.0,
+          -13.372976134223933
+        ]
+      ],
+      "F_at_Pe0": -11.447298858494005,
+      "F_at_PeMax": -13.372976134223933
+    }
+  ],
+  "separatrix_movement": {
+    "temperatures_with_separatrix": 4,
+    "temperatures_without_separatrix": 5,
+    "pe_separatrix_values": [
+      2.5,
+      5.25,
+      12.5,
+      24.5
+    ],
+    "pe_variation_pct": 880.0000000000001,
+    "direction": "RISES with noise (noise is protective)"
+  },
+  "critical_temperature": {
+    "T_c": 0.75
+  },
+  "kramers_analysis": {
+    "rates": [
+      [
+        1.0,
+        0.8448584714779221
+      ],
+      [
+        2.0,
+        0.6094125430354235
+      ],
+      [
+        5.0,
+        0.3816610186579925
+      ],
+      [
+        10.0,
+        0.26933825001856737
+      ]
+    ],
+    "monotonically_increasing": false,
+    "danger_temperature": null
+  },
+  "entropy_analysis": {
+    "asymmetry": "harm_faster"
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "description": "Separatrix exists for >= 5/9 temperatures",
+      "pass": false,
+      "detail": "4/9 temperatures have separatrix"
+    },
+    "KC-2": {
+      "description": "Separatrix Pe varies by >= 20%",
+      "pass": true,
+      "detail": "Variation = 880.0%"
+    },
+    "KC-3": {
+      "description": "Critical temperature T_c exists",
+      "pass": true,
+      "detail": "T_c = 0.750"
+    },
+    "KC-4": {
+      "description": "Kramers rate monotonically increasing with T",
+      "pass": false,
+      "detail": "Monotonic: False"
+    }
+  },
+  "overall_kc_pass": 2,
+  "overall_kc_total": 4
+}

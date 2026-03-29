@@ -1,0 +1,245 @@
+{
+  "experiment": "HP185",
+  "title": "Neural Network Loss Landscape Barrier Growth",
+  "domain": "Deep Learning / Optimization",
+  "data_source": "Self-generated (single-hidden-layer ReLU nets, analytic gradients)",
+  "n_configs": 15,
+  "n_seeds": 3,
+  "n_train": 1000,
+  "intensity_role": "Network capacity (total parameter count)",
+  "barrier_role": "Mean barrier height along linear interpolation between independent minima",
+  "configs": [
+    {
+      "width": 4,
+      "n_params": 64,
+      "mean_barrier": 0.06447222405749782,
+      "max_barrier": 0.11496071338393055,
+      "barriers": [
+        0.11496071338393055,
+        0.06944955519263307,
+        0.009006403595929857
+      ],
+      "min_loss": 1.2139556509816916
+    },
+    {
+      "width": 6,
+      "n_params": 94,
+      "mean_barrier": 0.05806008624019617,
+      "max_barrier": 0.07403379233366203,
+      "barriers": [
+        0.07403379233366203,
+        0.06529762887737234,
+        0.03484883750955414
+      ],
+      "min_loss": 1.2013014183113644
+    },
+    {
+      "width": 8,
+      "n_params": 124,
+      "mean_barrier": 0.07614555674611696,
+      "max_barrier": 0.09844625304486998,
+      "barriers": [
+        0.09844625304486998,
+        0.07547493768503122,
+        0.054515479508449705
+      ],
+      "min_loss": 1.1948896369177606
+    },
+    {
+      "width": 12,
+      "n_params": 184,
+      "mean_barrier": 0.10390264114361607,
+      "max_barrier": 0.1056058830262836,
+      "barriers": [
+        0.1037924381269717,
+        0.1056058830262836,
+        0.10230960227759289
+      ],
+      "min_loss": 1.1831354425401606
+    },
+    {
+      "width": 16,
+      "n_params": 244,
+      "mean_barrier": 0.10976561389833028,
+      "max_barrier": 0.13189737359511366,
+      "barriers": [
+        0.13189737359511366,
+        0.08669915943930184,
+        0.11070030866057534
+      ],
+      "min_loss": 1.1703303813454857
+    },
+    {
+      "width": 24,
+      "n_params": 364,
+      "mean_barrier": 0.10064508461174297,
+      "max_barrier": 0.12253154224491425,
+      "barriers": [
+        0.08785590518228314,
+        0.0915478064080315,
+        0.12253154224491425
+      ],
+      "min_loss": 1.1595262383780385
+    },
+    {
+      "width": 32,
+      "n_params": 484,
+      "mean_barrier": 0.12562074566706335,
+      "max_barrier": 0.15685481735418794,
+      "barriers": [
+        0.15685481735418794,
+        0.13313159257725782,
+        0.08687582706974428
+      ],
+      "min_loss": 1.1412541892063226
+    },
+    {
+      "width": 48,
+      "n_params": 724,
+      "mean_barrier": 0.15311681212252157,
+      "max_barrier": 0.16586313519105977,
+      "barriers": [
+        0.16586313519105977,
+        0.148852531423733,
+        0.1446347697527719
+      ],
+      "min_loss": 1.1218688894989037
+    },
+    {
+      "width": 64,
+      "n_params": 964,
+      "mean_barrier": 0.14233497150893615,
+      "max_barrier": 0.15334975978146592,
+      "barriers": [
+        0.14891107786735125,
+        0.12474407687799127,
+        0.15334975978146592
+      ],
+      "min_loss": 1.0988115294111758
+    },
+    {
+      "width": 96,
+      "n_params": 1444,
+      "mean_barrier": 0.2254795026838612,
+      "max_barrier": 0.24107704622534887,
+      "barriers": [
+        0.2220153676621961,
+        0.24107704622534887,
+        0.2133460941640386
+      ],
+      "min_loss": 1.0725582126589674
+    },
+    {
+      "width": 128,
+      "n_params": 1924,
+      "mean_barrier": 0.24400333987880293,
+      "max_barrier": 0.2570363342470865,
+      "barriers": [
+        0.224552977616032,
+        0.2570363342470865,
+        0.2504207077732903
+      ],
+      "min_loss": 1.0456311165654522
+    },
+    {
+      "width": 192,
+      "n_params": 2884,
+      "mean_barrier": 0.2312772529809708,
+      "max_barrier": 0.2413580359755667,
+      "barriers": [
+        0.2413580359755667,
+        0.2344615255694249,
+        0.21801219739792077
+      ],
+      "min_loss": 1.0185952460098529
+    },
+    {
+      "width": 256,
+      "n_params": 3844,
+      "mean_barrier": 0.2789149419465596,
+      "max_barrier": 0.29274433666390864,
+      "barriers": [
+        0.28061247357591157,
+        0.2633880155998586,
+        0.29274433666390864
+      ],
+      "min_loss": 0.9798410825146987
+    },
+    {
+      "width": 384,
+      "n_params": 5764,
+      "mean_barrier": 0.36466344540021556,
+      "max_barrier": 0.4041618127855843,
+      "barriers": [
+        0.4041618127855843,
+        0.35384384811944003,
+        0.3359846752956225
+      ],
+      "min_loss": 0.9365132717654199
+    },
+    {
+      "width": 512,
+      "n_params": 7684,
+      "mean_barrier": 0.4375219820795054,
+      "max_barrier": 0.4813821861077968,
+      "barriers": [
+        0.4813821861077968,
+        0.4166488484732638,
+        0.4145349116574557
+      ],
+      "min_loss": 0.8836402104821317
+    }
+  ],
+  "fit": {
+    "N": 15,
+    "beta": 0.39825492349591735,
+    "beta_std_err": 0.02065603478351902,
+    "beta_ci_95": [
+      0.3536302733827977,
+      0.442879573609037
+    ],
+    "beta_boot_ci_95": [
+      0.3593834395065055,
+      0.4390687178364618
+    ],
+    "a": 0.011100183609761635,
+    "R_squared": 0.9662101282539413,
+    "spearman_rho": 0.9785714285714284,
+    "spearman_p": 2.645456012398753e-10,
+    "p_value_slope": 6.02828783186749e-11
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "description": "beta > 0 (barriers grow with capacity)",
+      "threshold": "beta > 0",
+      "value": 0.39825492349591735,
+      "PASS": true
+    },
+    "KC-2": {
+      "description": "R^2 >= 0.3",
+      "threshold": "R^2 >= 0.3",
+      "value": 0.9662101282539413,
+      "PASS": true
+    },
+    "KC-3": {
+      "description": "Spearman rho >= 0.3 AND p < 0.05",
+      "threshold": "rho >= 0.3 AND p < 0.05",
+      "value": "rho=0.979, p=2.65e-10",
+      "PASS": true
+    },
+    "KC-4": {
+      "description": "N_configs >= 10",
+      "threshold": "N >= 10",
+      "value": 15,
+      "PASS": true
+    },
+    "KC-5": {
+      "description": "All barrier heights >= 0",
+      "threshold": "min(barrier) >= 0",
+      "value": 0.009006403595929857,
+      "PASS": "True"
+    }
+  },
+  "overall_pass": "5/5",
+  "timestamp": "2026-03-28T17:55:15.189308Z"
+}

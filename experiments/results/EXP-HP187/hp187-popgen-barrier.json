@@ -1,0 +1,362 @@
+{
+  "experiment": "HP187",
+  "title": "Population Genetics Fixation Barrier Growth",
+  "domain": "Population Genetics",
+  "data_source": "Kimura diffusion theory (analytical) + Wright-Fisher simulation",
+  "parameters": {
+    "N_e": 500,
+    "N_sims": 200,
+    "p0": 0.001,
+    "max_gens": 50000
+  },
+  "intensity_role": "N_e * s (effective population size times selection coefficient)",
+  "barrier_role": "Selection barrier = 2*N_e*s*(1-p0) (analytical) or ln(mean fixation time) (simulation)",
+  "analytical_results": [
+    {
+      "N_e_s": 0.1,
+      "fixation_prob": 0.0011032207874691867,
+      "barrier_log_fixation": 6.809521388779108,
+      "barrier_selection": 0.1998
+    },
+    {
+      "N_e_s": 0.2,
+      "fixation_prob": 0.0012130552854566646,
+      "barrier_log_fixation": 6.714613072600754,
+      "barrier_selection": 0.3996
+    },
+    {
+      "N_e_s": 0.5,
+      "fixation_prob": 0.001581185982112726,
+      "barrier_log_fixation": 6.449580091928419,
+      "barrier_selection": 0.999
+    },
+    {
+      "N_e_s": 1.0,
+      "fixation_prob": 0.002310723791466638,
+      "barrier_log_fixation": 6.070194473886677,
+      "barrier_selection": 1.998
+    },
+    {
+      "N_e_s": 1.5,
+      "fixation_prob": 0.00315245604107046,
+      "barrier_log_fixation": 5.7595734343713625,
+      "barrier_selection": 2.997
+    },
+    {
+      "N_e_s": 2.0,
+      "fixation_prob": 0.0040664910373936925,
+      "barrier_log_fixation": 5.504974804369785,
+      "barrier_selection": 3.996
+    },
+    {
+      "N_e_s": 3.0,
+      "fixation_prob": 0.005996900776918763,
+      "barrier_log_fixation": 5.116512480385574,
+      "barrier_selection": 5.994
+    },
+    {
+      "N_e_s": 4.0,
+      "fixation_prob": 0.007970759054718215,
+      "barrier_log_fixation": 4.831975551728983,
+      "barrier_selection": 7.992
+    },
+    {
+      "N_e_s": 5.0,
+      "fixation_prob": 0.009950618008190559,
+      "barrier_log_fixation": 4.610120618364531,
+      "barrier_selection": 9.99
+    },
+    {
+      "N_e_s": 7.0,
+      "fixation_prob": 0.013902467297438933,
+      "barrier_log_fixation": 4.275688951184485,
+      "barrier_selection": 13.986
+    },
+    {
+      "N_e_s": 10.0,
+      "fixation_prob": 0.019801326734058322,
+      "barrier_log_fixation": 3.9220063367558784,
+      "barrier_selection": 19.98
+    },
+    {
+      "N_e_s": 15.0,
+      "fixation_prob": 0.02955446645149461,
+      "barrier_log_fixation": 3.5215203976011336,
+      "barrier_selection": 29.97
+    },
+    {
+      "N_e_s": 20.0,
+      "fixation_prob": 0.03921056084767682,
+      "barrier_log_fixation": 3.2388091590903993,
+      "barrier_selection": 39.96
+    },
+    {
+      "N_e_s": 30.0,
+      "fixation_prob": 0.05823546641575128,
+      "barrier_log_fixation": 2.8432607212597794,
+      "barrier_selection": 59.94
+    },
+    {
+      "N_e_s": 50.0,
+      "fixation_prob": 0.09516258196404048,
+      "barrier_log_fixation": 2.3521684610440903,
+      "barrier_selection": 99.9
+    },
+    {
+      "N_e_s": 75.0,
+      "fixation_prob": 0.1392920235749422,
+      "barrier_log_fixation": 1.9711826606043787,
+      "barrier_selection": 149.85
+    },
+    {
+      "N_e_s": 100.0,
+      "fixation_prob": 0.18126924692201818,
+      "barrier_log_fixation": 1.7077718009705196,
+      "barrier_selection": 199.8
+    }
+  ],
+  "simulation_results": [
+    {
+      "N_e_s": 0.1,
+      "s": 0.0002,
+      "fix_count": 0,
+      "lost_count": 200,
+      "empirical_fix_prob": 0.0,
+      "kimura_fix_prob": 0.0011032207874691867,
+      "mean_fix_time": null,
+      "barrier_sim": null
+    },
+    {
+      "N_e_s": 0.2,
+      "s": 0.0004,
+      "fix_count": 0,
+      "lost_count": 200,
+      "empirical_fix_prob": 0.0,
+      "kimura_fix_prob": 0.0012130552854566646,
+      "mean_fix_time": null,
+      "barrier_sim": null
+    },
+    {
+      "N_e_s": 0.5,
+      "s": 0.001,
+      "fix_count": 0,
+      "lost_count": 200,
+      "empirical_fix_prob": 0.0,
+      "kimura_fix_prob": 0.001581185982112726,
+      "mean_fix_time": null,
+      "barrier_sim": null
+    },
+    {
+      "N_e_s": 1.0,
+      "s": 0.002,
+      "fix_count": 1,
+      "lost_count": 199,
+      "empirical_fix_prob": 0.005,
+      "kimura_fix_prob": 0.002310723791466638,
+      "mean_fix_time": 1150.0,
+      "barrier_sim": 7.047517221357296
+    },
+    {
+      "N_e_s": 1.5,
+      "s": 0.003,
+      "fix_count": 4,
+      "lost_count": 196,
+      "empirical_fix_prob": 0.02,
+      "kimura_fix_prob": 0.00315245604107046,
+      "mean_fix_time": 1275.5,
+      "barrier_sim": 7.1510935375818665
+    },
+    {
+      "N_e_s": 2.0,
+      "s": 0.004,
+      "fix_count": 1,
+      "lost_count": 199,
+      "empirical_fix_prob": 0.005,
+      "kimura_fix_prob": 0.0040664910373936925,
+      "mean_fix_time": 1042.0,
+      "barrier_sim": 6.948897222313312
+    },
+    {
+      "N_e_s": 3.0,
+      "s": 0.006,
+      "fix_count": 4,
+      "lost_count": 196,
+      "empirical_fix_prob": 0.02,
+      "kimura_fix_prob": 0.005996900776918763,
+      "mean_fix_time": 740.5,
+      "barrier_sim": 6.607325633707854
+    },
+    {
+      "N_e_s": 4.0,
+      "s": 0.008,
+      "fix_count": 7,
+      "lost_count": 193,
+      "empirical_fix_prob": 0.035,
+      "kimura_fix_prob": 0.007970759054718215,
+      "mean_fix_time": 632.1428571428571,
+      "barrier_sim": 6.449115408386716
+    },
+    {
+      "N_e_s": 5.0,
+      "s": 0.01,
+      "fix_count": 11,
+      "lost_count": 189,
+      "empirical_fix_prob": 0.055,
+      "kimura_fix_prob": 0.009950618008190559,
+      "mean_fix_time": 726.0909090909091,
+      "barrier_sim": 6.587675226119019
+    },
+    {
+      "N_e_s": 7.0,
+      "s": 0.014,
+      "fix_count": 9,
+      "lost_count": 191,
+      "empirical_fix_prob": 0.045,
+      "kimura_fix_prob": 0.013902467297438933,
+      "mean_fix_time": 577.7777777777778,
+      "barrier_sim": 6.3591893272333
+    },
+    {
+      "N_e_s": 10.0,
+      "s": 0.02,
+      "fix_count": 8,
+      "lost_count": 192,
+      "empirical_fix_prob": 0.04,
+      "kimura_fix_prob": 0.019801326734058322,
+      "mean_fix_time": 472.25,
+      "barrier_sim": 6.157508506381619
+    },
+    {
+      "N_e_s": 15.0,
+      "s": 0.03,
+      "fix_count": 10,
+      "lost_count": 190,
+      "empirical_fix_prob": 0.05,
+      "kimura_fix_prob": 0.02955446645149461,
+      "mean_fix_time": 333.7,
+      "barrier_sim": 5.810242385757328
+    },
+    {
+      "N_e_s": 20.0,
+      "s": 0.04,
+      "fix_count": 12,
+      "lost_count": 188,
+      "empirical_fix_prob": 0.06,
+      "kimura_fix_prob": 0.03921056084767682,
+      "mean_fix_time": 239.33333333333334,
+      "barrier_sim": 5.477857280380115
+    },
+    {
+      "N_e_s": 30.0,
+      "s": 0.06,
+      "fix_count": 26,
+      "lost_count": 174,
+      "empirical_fix_prob": 0.13,
+      "kimura_fix_prob": 0.05823546641575128,
+      "mean_fix_time": 186.46153846153845,
+      "barrier_sim": 5.228224989727669
+    },
+    {
+      "N_e_s": 50.0,
+      "s": 0.1,
+      "fix_count": 36,
+      "lost_count": 164,
+      "empirical_fix_prob": 0.18,
+      "kimura_fix_prob": 0.09516258196404048,
+      "mean_fix_time": 117.58333333333333,
+      "barrier_sim": 4.767147302064814
+    }
+  ],
+  "fit_analytical_selection": {
+    "label": "Analytical: selection barrier vs N_e*s",
+    "N": 17,
+    "beta": 1.0,
+    "beta_std_err": 0.0,
+    "beta_ci_95": [
+      1.0,
+      1.0
+    ],
+    "beta_boot_ci_95": [
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "a": 1.9980000000000004,
+    "R_squared": 1.0,
+    "spearman_rho": 1.0,
+    "spearman_p": 0.0,
+    "p_value_slope": 3.667638234385209e-149
+  },
+  "fit_analytical_log": {
+    "label": "Analytical: -ln(u) barrier vs N_e*s",
+    "N": 17,
+    "beta": -0.20295163671132338,
+    "beta_std_err": 0.018055232083079163,
+    "beta_ci_95": [
+      -0.24143545292977875,
+      -0.164467820492868
+    ],
+    "beta_boot_ci_95": [
+      -0.2676223870949958,
+      -0.15701958701630142
+    ],
+    "a": 5.665425078238234,
+    "R_squared": 0.8938812510026612,
+    "spearman_rho": -1.0,
+    "spearman_p": 0.0,
+    "p_value_slope": 1.050690338964372e-08
+  },
+  "fit_simulation": {
+    "label": "Simulation: ln(T_fix) barrier vs N_e*s",
+    "N": 12,
+    "beta": -0.09994947064825367,
+    "beta_std_err": 0.008266821669695286,
+    "beta_ci_95": [
+      -0.11836909719294378,
+      -0.08152984410356356
+    ],
+    "beta_boot_ci_95": [
+      -0.11969411897616876,
+      -0.0754411444097698
+    ],
+    "a": 7.441138384548152,
+    "R_squared": 0.9359707494825817,
+    "spearman_rho": -0.9860139860139862,
+    "spearman_p": 4.1168959116543235e-09,
+    "p_value_slope": 2.7221645403974007e-07
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "description": "beta > 0 (fixation barrier grows with selection intensity)",
+      "threshold": "beta > 0",
+      "value": 1.0,
+      "PASS": true
+    },
+    "KC-2": {
+      "description": "R^2 >= 0.8 (strong scaling expected from Kimura theory)",
+      "threshold": "R^2 >= 0.8",
+      "value": 1.0,
+      "PASS": true
+    },
+    "KC-3": {
+      "description": "Spearman rho >= 0.8 AND p < 0.001",
+      "threshold": "rho >= 0.8 AND p < 0.001",
+      "value": "rho=1.0000, p=0.00e+00",
+      "PASS": true
+    },
+    "KC-4": {
+      "description": "|beta - 1.0| < 0.3 (near-linear expected from Kimura)",
+      "threshold": "|beta - 1.0| < 0.3",
+      "value": "deviation = 0.0000",
+      "PASS": true
+    },
+    "KC-5": {
+      "description": "Sim beta within 30% of analytical beta",
+      "threshold": "|sim_beta - ana_beta| / ana_beta < 0.30",
+      "value": "sim=-0.100, ana=1.000, dev=110.0%",
+      "PASS": false
+    }
+  },
+  "overall_pass": "4/5",
+  "timestamp": "2026-03-28T17:55:43.477049Z",
+  "note": "Allele fixation is a Kramers escape problem. The selection barrier 2*N_e*s*(1-p0) grows linearly with N_e*s by construction. The non-trivial test is whether Wright-Fisher simulations, which include discrete drift and stochastic fluctuations, also show barrier growth consistent with the analytical prediction. The log-fixation barrier -ln(u) provides a second independent measure."
+}

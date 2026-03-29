@@ -1,0 +1,107 @@
+{
+  "experiment": "HP127",
+  "title": "Asymptotic Freedom: SU(2) \u03b2-Function on Eckert-KK",
+  "timestamp": "2026-03-18T14:03:07.271741",
+  "c1_running_coupling": [
+    {
+      "N": 6,
+      "a": 0.11666666666666665,
+      "mean_R_sq": 2.5142118729400663e-11,
+      "g_squared": 4.657887891148994e-15,
+      "n_valid": 50
+    },
+    {
+      "N": 8,
+      "a": 0.0875,
+      "mean_R_sq": 3.063019488551088e-11,
+      "g_squared": 1.795485789065225e-15,
+      "n_valid": 50
+    },
+    {
+      "N": 10,
+      "a": 0.06999999999999999,
+      "mean_R_sq": 3.0623909143723763e-11,
+      "g_squared": 7.352800585408072e-16,
+      "n_valid": 50
+    },
+    {
+      "N": 12,
+      "a": 0.05833333333333333,
+      "mean_R_sq": 4.916202091756132e-11,
+      "g_squared": 5.692419570942548e-16,
+      "n_valid": 50
+    }
+  ],
+  "c1_decreasing": true,
+  "c2_beta_function": {
+    "beta_0": 1.834953476015528e+17,
+    "beta_0_perturbative": 7.333333333333333,
+    "ratio_to_perturbative": 2.50220928547572e+16,
+    "R_sq_inv_g_sq": 0.9568622887163292,
+    "asymptotically_free": true,
+    "beta_reasonable": false,
+    "slope_inv_g_sq": 2323995726481442.0
+  },
+  "c3_log_symanzik": {
+    "R_sq_pure": 0.7424096207418545,
+    "R_sq_log1": 0.780946165165812,
+    "R_sq_log2": 0.8240942972019694,
+    "R_sq_best": 0.9969611352617948,
+    "best_p": 3.9000000000000057,
+    "best_Delta_inf": -3.1799084277674687,
+    "nl_Delta_inf": -10.934773390635064,
+    "nl_p": 4.452587736596528,
+    "log_corrected_better": true,
+    "good_fit": true
+  },
+  "c4_wilson_loop": {
+    "sigma": 0.0006020354561886638,
+    "R_sq_area": 0.9800176156410872,
+    "R_sq_perimeter": 0.9611037796587285,
+    "area_law": true,
+    "has_confinement": true
+  },
+  "c5_lambda_parameter": {
+    "mean_Lambda": 8.203810555755755,
+    "cv_Lambda": 0.056479057172719255,
+    "lambda_reasonable": true,
+    "lambda_vals": [
+      7.815077694085973,
+      8.993153609946747,
+      7.9569824341204685,
+      8.050028484869832
+    ]
+  },
+  "kill_conditions": {
+    "K-YM-127-1": {
+      "description": "g\u00b2(a) DECREASES with decreasing a (asymptotic freedom)",
+      "result": "PASS",
+      "g_sq_N6": 4.657887891148994e-15,
+      "g_sq_N12": 5.692419570942548e-16
+    },
+    "K-YM-127-2": {
+      "description": "\u03b2\u2080 > 0 and within factor 5 of perturbative 22/3",
+      "result": "FAIL",
+      "beta_0": 1.834953476015528e+17,
+      "perturbative": 7.333333333333333
+    },
+    "K-YM-127-3": {
+      "description": "Log-corrected Symanzik R\u00b2 > 0.9 (explains HP126 FAIL)",
+      "result": "PASS",
+      "R_sq_best": 0.9969611352617948,
+      "R_sq_pure": 0.7424096207418545
+    },
+    "K-YM-127-4": {
+      "description": "Wilson loops show area law (confinement)",
+      "result": "PASS",
+      "sigma": 0.0006020354561886638,
+      "R_sq_area": 0.9800176156410872
+    },
+    "K-YM-127-5": {
+      "description": "\u039b parameter is O(1) in natural units",
+      "result": "PASS",
+      "mean_Lambda": 8.203810555755755
+    }
+  },
+  "score": "4/5"
+}

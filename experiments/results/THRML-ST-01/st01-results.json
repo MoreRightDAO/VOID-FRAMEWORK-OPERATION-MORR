@@ -1,0 +1,50 @@
+{
+  "experiment": "THRML-ST-01",
+  "title": "Numerical stability at Pe extremes",
+  "parameters": {
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "ETA_TAU": 0.05082,
+    "PE_MAX": 80.0,
+    "N_RANDOM": 10000
+  },
+  "tests": {
+    "test_1": {
+      "pass": "True",
+      "quantities": {
+        "chi": 1.0,
+        "sigma": 0.0,
+        "crooks": 1.0,
+        "V": 0.02530795,
+        "J": -0.1,
+        "fdr_dev": 0.0
+      }
+    },
+    "test_2": {
+      "pass": "True",
+      "quantities": {
+        "chi": 0.00018158,
+        "sigma": 4.0656,
+        "crooks": 1.02053602,
+        "V": -0.0229875,
+        "J": -0.1,
+        "fdr_dev": 0.99926176
+      }
+    },
+    "test_3": {
+      "pass": "True"
+    },
+    "test_4": {
+      "pass": true
+    },
+    "test_5": {
+      "pass": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_samples": 10000
+    }
+  },
+  "overall_pass": true,
+  "verdict": "All quantities finite across full Pe range [0, 80]"
+}

@@ -1,0 +1,85 @@
+{
+  "experiment": "HP125",
+  "title": "SU(2) Yang-Mills Isolation + Reflection Positivity",
+  "timestamp": "2026-03-18T13:31:26.306565",
+  "c1_su2_projection": {
+    "fraction_valid": 1.0,
+    "mean_rank": 3.0,
+    "max_bracket_error": 4.0703955761500765e-09,
+    "is_valid_su2": true
+  },
+  "c2_su2_action": {
+    "S_plus": 3.555768279938623e-12,
+    "S_err": 3.484743338199548e-13,
+    "S_positive": true,
+    "fraction_positive": 1.0,
+    "max_curvature": 6.410951684099484e-06
+  },
+  "c3_su2_gap": {
+    "mass_gap_su2": 4.615805127699417,
+    "has_gap": true,
+    "m_gap": 0.13427765555026588,
+    "ratio_QCD": 0.5371106222010635,
+    "scale_match": true,
+    "lowest_10": [
+      4.615805127699417,
+      5.4263745968379515,
+      5.4263745968380865,
+      6.2369440659770605,
+      12.728260233255547,
+      12.81280633335243,
+      12.836109371319973,
+      13.538829702393572,
+      13.538829702394477,
+      13.623375802491173
+    ]
+  },
+  "c4_reflection_positivity": {
+    "fraction_os_positive": 1.0,
+    "n_tests": 200,
+    "os_satisfied": true,
+    "n_negative_eigenvalues": 512,
+    "min_eigenvalue": -0.03862107240063491
+  },
+  "c5_ns_ym_bridge": {
+    "spearman_barrier_gap": 0.38064516129032255,
+    "p_value_barrier_gap": 0.037973775727935914,
+    "spearman_pe_gap": 0.38064516129032255,
+    "spearman_pe_barrier": 1.0,
+    "pearson_log": 0.3767016167375791,
+    "strong_correlation": false
+  },
+  "kill_conditions": {
+    "K-YM-125-1": {
+      "description": "Self-dual \u03c9\u207a is valid su(2) connection (bracket closure)",
+      "result": "PASS",
+      "fraction_valid": 1.0,
+      "max_bracket_error": 4.0703955761500765e-09
+    },
+    "K-YM-125-2": {
+      "description": "SU(2) action S\u207a_YM > 0 (positive definite)",
+      "result": "PASS",
+      "S_plus": 3.555768279938623e-12,
+      "fraction_positive": 1.0
+    },
+    "K-YM-125-3": {
+      "description": "SU(2) mass gap \u0394\u207a > 0, m/\u039b_QCD = O(1)",
+      "result": "PASS",
+      "mass_gap": 4.615805127699417,
+      "ratio_QCD": 0.5371106222010635
+    },
+    "K-YM-125-4": {
+      "description": "OS reflection positivity \u27e8\u03b8f, f\u27e9 \u2265 0 at \u2265 95%",
+      "result": "PASS",
+      "fraction_positive": 1.0,
+      "n_negative_eigs": 512
+    },
+    "K-YM-125-5": {
+      "description": "NS barrier correlates with YM gap (Spearman \u03c1 > 0.8)",
+      "result": "FAIL",
+      "spearman_rho": 0.38064516129032255,
+      "p_value": 0.037973775727935914
+    }
+  },
+  "score": "4/5"
+}

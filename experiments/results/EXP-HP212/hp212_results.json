@@ -1,0 +1,740 @@
+{
+  "experiment": "HP212",
+  "title": "Analog Gravity K Test \u2014 G_eff \u221d 1/N_atoms in BEC",
+  "timestamp": "2026-03-29T12:20:07.690696+00:00Z",
+  "parameters": {
+    "n_systems": 12,
+    "species": [
+      "K39",
+      "Li7",
+      "Na23",
+      "Rb87"
+    ],
+    "N_range": [
+      1300,
+      10000000
+    ],
+    "framework_prediction": "G_eff \u221d 1/N (slope = -1 in log-log)"
+  },
+  "dataset": [
+    {
+      "label": "Steinhauer_2016",
+      "species": "Rb87",
+      "N_atoms": 8000,
+      "T_nK": 20.0,
+      "n_density": 1.7e+18,
+      "has_horizon": true,
+      "reference": "Steinhauer, Nature Physics 12, 959 (2016)",
+      "c_s": 0.00024539462083304666,
+      "xi": 2.9746972453205106e-06,
+      "mu": 8.699582842624678e-33,
+      "G_eff_1": 0.1775125581681289,
+      "G_eff_2": 44.74837153068089,
+      "G_eff_3": 0.003966905433562442,
+      "G_eff_4": 0.00031567630426478045,
+      "G_eff_5": 990156859687871.1,
+      "G_eff_6": 0.05,
+      "T_Hawking": 1.2304679891425258e-15
+    },
+    {
+      "label": "MunozDeNova_2019",
+      "species": "Rb87",
+      "N_atoms": 10000,
+      "T_nK": 15.0,
+      "n_density": 2e+18,
+      "has_horizon": true,
+      "reference": "Mu\u00f1oz de Nova et al., Nature 569, 688 (2019)",
+      "c_s": 0.0002661678372177418,
+      "xi": 2.7425353500219133e-06,
+      "mu": 1.0234803344264328e-32,
+      "G_eff_1": 0.160384440222798,
+      "G_eff_2": 41.255960071857174,
+      "G_eff_3": 0.0038875459435060997,
+      "G_eff_4": 0.000309361076702921,
+      "G_eff_5": 760424456814390.6,
+      "G_eff_6": 0.049999999999999996,
+      "T_Hawking": 1.5701528483287613e-15
+    },
+    {
+      "label": "Lahav_2010",
+      "species": "Rb87",
+      "N_atoms": 100000,
+      "T_nK": 50.0,
+      "n_density": 5e+19,
+      "has_horizon": true,
+      "reference": "Lahav et al., PRL 105, 240401 (2010)",
+      "c_s": 0.0013308391860887088,
+      "xi": 5.485070700043827e-07,
+      "mu": 2.5587008360660817e-31,
+      "G_eff_1": 0.04353503499684756,
+      "G_eff_2": 8.251192014371437,
+      "G_eff_3": 0.005276211597187512,
+      "G_eff_4": 0.00041986757824558844,
+      "G_eff_5": 8256438166666.38,
+      "G_eff_6": 0.049999999999999996,
+      "T_Hawking": 1.9626910604109506e-13
+    },
+    {
+      "label": "Cornell_Wieman_1995",
+      "species": "Rb87",
+      "N_atoms": 2000,
+      "T_nK": 170.0,
+      "n_density": 2.6e+18,
+      "has_horizon": false,
+      "reference": "Anderson et al., Science 269, 198 (1995)",
+      "c_s": 0.0003034780269474569,
+      "xi": 2.4053626219697296e-06,
+      "mu": 1.3305244347543627e-32,
+      "G_eff_1": 0.26251956467989623,
+      "G_eff_2": 36.18387062523295,
+      "G_eff_3": 0.007255154303388077,
+      "G_eff_4": 0.0005773468351393246,
+      "G_eff_5": 957441320835351.2,
+      "G_eff_6": null,
+      "T_Hawking": null
+    },
+    {
+      "label": "Davis_MIT_1995",
+      "species": "Na23",
+      "N_atoms": 500000,
+      "T_nK": 200.0,
+      "n_density": 1.5e+20,
+      "has_horizon": false,
+      "reference": "Davis et al., PRL 75, 3969 (1995)",
+      "c_s": 0.00628660443946145,
+      "xi": 4.3922099509885763e-07,
+      "mu": 1.5094168859097806e-30,
+      "G_eff_1": 0.029402900648705422,
+      "G_eff_2": 12.709853178131697,
+      "G_eff_3": 0.002313394201853994,
+      "G_eff_4": 0.0001840940612725965,
+      "G_eff_5": 1858757597141.7803,
+      "G_eff_6": null,
+      "T_Hawking": null
+    },
+    {
+      "label": "Steinhauer_2014",
+      "species": "Rb87",
+      "N_atoms": 5000,
+      "T_nK": 25.0,
+      "n_density": 1.2e+18,
+      "has_horizon": true,
+      "reference": "Steinhauer, Nature Physics 10, 864 (2014)",
+      "c_s": 0.0002061727201680721,
+      "xi": 3.54059791234e-06,
+      "mu": 6.140882006558596e-33,
+      "G_eff_1": 0.22002921847470422,
+      "G_eff_2": 53.26121543003367,
+      "G_eff_3": 0.0041311340099578564,
+      "G_eff_4": 0.00032874519912991804,
+      "G_eff_5": 1738693174864671.2,
+      "G_eff_6": 0.05,
+      "T_Hawking": 7.297410999092916e-16
+    },
+    {
+      "label": "Ketterle_Na_large",
+      "species": "Na23",
+      "N_atoms": 10000000,
+      "T_nK": 500.0,
+      "n_density": 5e+20,
+      "has_horizon": false,
+      "reference": "Mewes et al., PRL 77, 416 (1996); Andrews et al., Science 275, 637 (1997)",
+      "c_s": 0.011477716872017188,
+      "xi": 2.4057124674551034e-07,
+      "mu": 5.031389619699269e-30,
+      "G_eff_1": 0.008862720506776483,
+      "G_eff_2": 6.961473288241457,
+      "G_eff_3": 0.0012731098920894229,
+      "G_eff_4": 0.00010131086621261057,
+      "G_eff_5": 168081876718.24503,
+      "G_eff_6": null,
+      "T_Hawking": null
+    },
+    {
+      "label": "NIST_Rb_medium",
+      "species": "Rb87",
+      "N_atoms": 50000,
+      "T_nK": 30.0,
+      "n_density": 3e+19,
+      "has_horizon": false,
+      "reference": "Phillips group, NIST (typical parameters, multiple publications)",
+      "c_s": 0.0010308636008403607,
+      "xi": 7.081195824679999e-07,
+      "mu": 1.5352205016396492e-31,
+      "G_eff_1": 0.059725118679334666,
+      "G_eff_2": 10.652243086006733,
+      "G_eff_3": 0.005606811466571983,
+      "G_eff_4": 0.0004461758799446251,
+      "G_eff_5": 18878157534823.973,
+      "G_eff_6": null,
+      "T_Hawking": null
+    },
+    {
+      "label": "Roati_K39_2007",
+      "species": "K39",
+      "N_atoms": 40000,
+      "T_nK": 100.0,
+      "n_density": 1e+19,
+      "has_horizon": false,
+      "reference": "Roati et al., PRL 99, 010403 (2007)",
+      "c_s": 0.0010644048529343728,
+      "xi": 1.529873808194147e-06,
+      "mu": 7.337149990871474e-32,
+      "G_eff_1": 0.0963760107313318,
+      "G_eff_2": 35.80690865895894,
+      "G_eff_3": 0.0026915479258279506,
+      "G_eff_4": 0.00021418657848212827,
+      "G_eff_5": 91388760042438.9,
+      "G_eff_6": null,
+      "T_Hawking": null
+    },
+    {
+      "label": "Hulet_Li7_1997",
+      "species": "Li7",
+      "N_atoms": 1300,
+      "T_nK": 400.0,
+      "n_density": 1e+18,
+      "has_horizon": false,
+      "reference": "Bradley et al., PRL 78, 985 (1997)",
+      "c_s": 0.0012246668311188256,
+      "xi": 7.4081721672268295e-06,
+      "mu": 1.7433438318646295e-32,
+      "G_eff_1": 0.678781425296508,
+      "G_eff_2": 406.56800678963765,
+      "G_eff_3": 0.0016695396931409713,
+      "G_eff_4": 0.00013285774742575584,
+      "G_eff_5": 6436559505520219.0,
+      "G_eff_6": null,
+      "T_Hawking": null
+    },
+    {
+      "label": "Steinhauer_2021",
+      "species": "Rb87",
+      "N_atoms": 6000,
+      "T_nK": 18.0,
+      "n_density": 1.5e+18,
+      "has_horizon": true,
+      "reference": "Steinhauer, Nature Physics 17, 362 (2021)",
+      "c_s": 0.00023050810870092555,
+      "xi": 3.1668070451944325e-06,
+      "mu": 7.676102508198245e-33,
+      "G_eff_1": 0.19949634285979237,
+      "G_eff_2": 47.638279306326396,
+      "G_eff_3": 0.004187731919891136,
+      "G_eff_4": 0.0003332491176971937,
+      "G_eff_5": 1261152249306964.5,
+      "G_eff_6": 0.05,
+      "T_Hawking": 1.0198441908579013e-15
+    },
+    {
+      "label": "Hadzibabic_box_Rb",
+      "species": "Rb87",
+      "N_atoms": 300000,
+      "T_nK": 80.0,
+      "n_density": 1e+19,
+      "has_horizon": false,
+      "reference": "Gaunt et al., PRL 110, 200406 (2013); Hadzibabic group",
+      "c_s": 0.0005951693774429691,
+      "xi": 1.2264990946690355e-06,
+      "mu": 5.117401672132164e-32,
+      "G_eff_1": 0.039472395204378945,
+      "G_eff_2": 18.450226239537947,
+      "G_eff_3": 0.0021393989803654275,
+      "G_eff_4": 0.00017024796148545925,
+      "G_eff_5": 37429783887709.33,
+      "G_eff_6": null,
+      "T_Hawking": null
+    }
+  ],
+  "analytical_predictions": {
+    "harmonic_trap": {
+      "n_vs_N": 0.4,
+      "c_s_vs_N": 0.2,
+      "xi_vs_N": -0.2,
+      "R_vs_N": 0.2,
+      "G1_expected": -0.4,
+      "G2_expected": -0.20000000000000007,
+      "G3_expected": -0.2,
+      "G4_expected": -0.2,
+      "G5_expected": -0.8
+    },
+    "box_trap": {
+      "n_vs_N": 1.0,
+      "c_s_vs_N": 0.5,
+      "xi_vs_N": -0.5,
+      "R_vs_N": 0.0,
+      "G1_expected": -0.5,
+      "G2_expected": -0.5,
+      "G3_expected": 0.0,
+      "G4_expected": 0.0,
+      "G5_expected": -1.5
+    }
+  },
+  "scaling_analysis": {
+    "G_eff_1": {
+      "description": "\u03be / R_condensate (Planck/system size ratio)",
+      "power_law_slope": -0.4466639411462627,
+      "power_law_slope_stderr": 0.026962043811566267,
+      "r_squared": 0.9648438845953784,
+      "r_value": -0.9822646713566453,
+      "p_value": 1.341423683758973e-08,
+      "expected_slope": -1.0,
+      "slope_deviation": 0.5533360588537373,
+      "product_GN_mean": 11091.141484640544,
+      "product_GN_std": 23780.240121638864,
+      "product_GN_cv": 2.144075085019039,
+      "product_GN_values": [
+        1420.1004653450311,
+        1603.84440222798,
+        4353.503499684756,
+        525.0391293597925,
+        14701.45032435271,
+        1100.146092373521,
+        88627.20506776482,
+        2986.255933966733,
+        3855.040429253272,
+        882.4158528854604,
+        1196.9780571587542,
+        11841.718561313683
+      ],
+      "product_vs_Teff_corr": 0.7188732410966809,
+      "product_vs_Teff_pval": 0.008426914843110844,
+      "ratio_GN_over_Teff_mean": 5.53889629495817e+33,
+      "ratio_GN_over_Teff_std": 3.6442914965378613e+33,
+      "ratio_GN_over_Teff_cv": 0.6579454285603994,
+      "species_breakdown": {
+        "K39": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Na23": {
+          "n_points": 2,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Rb87": {
+          "n_points": 8,
+          "slope": -0.44444598439328104,
+          "r_value": -0.9809141872886887,
+          "p_value": 1.7133042244217503e-05
+        },
+        "Li7": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        }
+      },
+      "G_values": [
+        0.1775125581681289,
+        0.160384440222798,
+        0.04353503499684756,
+        0.26251956467989623,
+        0.029402900648705422,
+        0.22002921847470422,
+        0.008862720506776483,
+        0.059725118679334666,
+        0.0963760107313318,
+        0.678781425296508,
+        0.19949634285979237,
+        0.039472395204378945
+      ]
+    },
+    "G_eff_2": {
+      "description": "\u03be\u00b3 \u00d7 n (dimensionless local coupling)",
+      "power_law_slope": -0.3399918234387878,
+      "power_law_slope_stderr": 0.08088613143469871,
+      "r_squared": 0.638572392520854,
+      "r_value": -0.7991072471958028,
+      "p_value": 0.001819035199872235,
+      "expected_slope": -1.0,
+      "slope_deviation": 0.6600081765612122,
+      "product_GN_mean": 7184860.293455564,
+      "product_GN_std": 18933035.444809448,
+      "product_GN_cv": 2.6351292400291877,
+      "product_GN_values": [
+        357986.97224544716,
+        412559.60071857175,
+        825119.2014371437,
+        72367.7412504659,
+        6354926.589065849,
+        266306.07715016836,
+        69614732.88241456,
+        532612.1543003366,
+        1432276.3463583575,
+        528538.4088265289,
+        285829.67583795835,
+        5535067.871861384
+      ],
+      "product_vs_Teff_corr": 0.7261826548971403,
+      "product_vs_Teff_pval": 0.007488024043898021,
+      "ratio_GN_over_Teff_mean": 2.1876991859748964e+36,
+      "ratio_GN_over_Teff_std": 2.6833934990703704e+36,
+      "ratio_GN_over_Teff_cv": 1.2265824827624001,
+      "species_breakdown": {
+        "K39": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Na23": {
+          "n_points": 2,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Rb87": {
+          "n_points": 8,
+          "slope": -0.33333795317984294,
+          "r_value": -0.7835793240650718,
+          "p_value": 0.021406417123685077
+        },
+        "Li7": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        }
+      },
+      "G_values": [
+        44.74837153068089,
+        41.255960071857174,
+        8.251192014371437,
+        36.18387062523295,
+        12.709853178131697,
+        53.26121543003367,
+        6.961473288241457,
+        10.652243086006733,
+        35.80690865895894,
+        406.56800678963765,
+        47.638279306326396,
+        18.450226239537947
+      ]
+    },
+    "G_eff_3": {
+      "description": "1 / (n \u00d7 \u03be\u00b2 \u00d7 R_cond) (inverse gravitational mass)",
+      "power_law_slope": -0.10667211770747478,
+      "power_law_slope_stderr": 0.05392408762313249,
+      "r_squared": 0.28126003045635356,
+      "r_value": -0.530339542610537,
+      "p_value": 0.07610130919740433,
+      "expected_slope": -1.0,
+      "slope_deviation": 0.8933278822925252,
+      "product_GN_mean": 1298.1927367243231,
+      "product_GN_std": 3463.8546152735717,
+      "product_GN_cv": 2.668212906516312,
+      "product_GN_values": [
+        31.735243468499533,
+        38.875459435060996,
+        527.6211597187512,
+        14.510308606776153,
+        1156.6971009269969,
+        20.655670049789283,
+        12731.098920894228,
+        280.34057332859913,
+        107.66191703311803,
+        2.1704016010832627,
+        25.126391519346814,
+        641.8196941096282
+      ],
+      "product_vs_Teff_corr": 0.7201956563398424,
+      "product_vs_Teff_pval": 0.008250866106228027,
+      "ratio_GN_over_Teff_mean": 4.0279085739559264e+32,
+      "ratio_GN_over_Teff_std": 5.064610077164128e+32,
+      "ratio_GN_over_Teff_cv": 1.2573796013920016,
+      "species_breakdown": {
+        "K39": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Na23": {
+          "n_points": 2,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Rb87": {
+          "n_points": 8,
+          "slope": -0.11110803121343817,
+          "r_value": -0.5333880585763019,
+          "p_value": 0.17339536726045365
+        },
+        "Li7": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        }
+      },
+      "G_values": [
+        0.003966905433562442,
+        0.0038875459435060997,
+        0.005276211597187512,
+        0.007255154303388077,
+        0.002313394201853994,
+        0.0041311340099578564,
+        0.0012731098920894229,
+        0.005606811466571983,
+        0.0026915479258279506,
+        0.0016695396931409713,
+        0.004187731919891136,
+        0.0021393989803654275
+      ]
+    },
+    "G_eff_4": {
+      "description": "a_s / R_condensate (scattering/system ratio)",
+      "power_law_slope": -0.10667211770747478,
+      "power_law_slope_stderr": 0.0539240876231325,
+      "r_squared": 0.2812600304563534,
+      "r_value": -0.5303395426105368,
+      "p_value": 0.07610130919740445,
+      "expected_slope": -1.0,
+      "slope_deviation": 0.8933278822925252,
+      "product_GN_mean": 103.30689556783578,
+      "product_GN_std": 275.6447920862322,
+      "product_GN_cv": 2.668212906516312,
+      "product_GN_values": [
+        2.5254104341182435,
+        3.09361076702921,
+        41.98675782455884,
+        1.1546936702786492,
+        92.04703063629825,
+        1.6437259956495902,
+        1013.1086621261056,
+        22.308793997231255,
+        8.567463139285131,
+        0.1727150716534826,
+        1.9994947061831623,
+        51.07438844563778
+      ],
+      "product_vs_Teff_corr": 0.7201956563398424,
+      "product_vs_Teff_pval": 0.008250866106228027,
+      "ratio_GN_over_Teff_mean": 3.2053077993365636e+31,
+      "ratio_GN_over_Teff_std": 4.0302886430684824e+31,
+      "ratio_GN_over_Teff_cv": 1.2573796013920016,
+      "species_breakdown": {
+        "K39": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Na23": {
+          "n_points": 2,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Rb87": {
+          "n_points": 8,
+          "slope": -0.11110803121343822,
+          "r_value": -0.5333880585763022,
+          "p_value": 0.17339536726045318
+        },
+        "Li7": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        }
+      },
+      "G_values": [
+        0.00031567630426478045,
+        0.000309361076702921,
+        0.00041986757824558844,
+        0.0005773468351393246,
+        0.0001840940612725965,
+        0.00032874519912991804,
+        0.00010131086621261057,
+        0.0004461758799446251,
+        0.00021418657848212827,
+        0.00013285774742575584,
+        0.0003332491176971937,
+        0.00017024796148545925
+      ]
+    },
+    "G_eff_5": {
+      "description": "1 / (m \u00d7 n \u00d7 c_s \u00d7 L) (Barcelo-Liberati-Visser)",
+      "power_law_slope": -1.1824213625006315,
+      "power_law_slope_stderr": 0.10859804591455281,
+      "r_squared": 0.9222090844825965,
+      "r_value": -0.9603171791041731,
+      "p_value": 7.249713434872982e-07,
+      "expected_slope": -1.0,
+      "slope_deviation": 0.18242136250063146,
+      "product_GN_mean": 5.111043636819211e+18,
+      "product_GN_std": 3.6323547016437176e+18,
+      "product_GN_cv": 0.7106874759348101,
+      "product_GN_values": [
+        7.921254877502969e+18,
+        7.604244568143906e+18,
+        8.25643816666638e+17,
+        1.9148826416707026e+18,
+        9.293787985708901e+17,
+        8.693465874323357e+18,
+        1.6808187671824502e+18,
+        9.439078767411986e+17,
+        3.6555504016975565e+18,
+        8.367527357176285e+18,
+        7.566913495841787e+18,
+        1.1228935166312798e+19
+      ],
+      "product_vs_Teff_corr": -0.23234805373911235,
+      "product_vs_Teff_pval": 0.4674152804900844,
+      "ratio_GN_over_Teff_mean": 1.1686654435140377e+49,
+      "ratio_GN_over_Teff_std": 1.3582483539804226e+49,
+      "ratio_GN_over_Teff_cv": 1.1622217132529662,
+      "species_breakdown": {
+        "K39": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Na23": {
+          "n_points": 2,
+          "slope": null,
+          "note": "too few points for regression"
+        },
+        "Rb87": {
+          "n_points": 8,
+          "slope": -1.1111218907529667,
+          "r_value": -0.8743541773938842,
+          "p_value": 0.0045033317927015235
+        },
+        "Li7": {
+          "n_points": 1,
+          "slope": null,
+          "note": "too few points for regression"
+        }
+      },
+      "G_values": [
+        990156859687871.1,
+        760424456814390.6,
+        8256438166666.38,
+        957441320835351.2,
+        1858757597141.7803,
+        1738693174864671.2,
+        168081876718.24503,
+        18878157534823.973,
+        91388760042438.9,
+        6436559505520219.0,
+        1261152249306964.5,
+        37429783887709.33
+      ]
+    },
+    "G_eff_6": {
+      "description": "Surface gravity coupling (horizon systems only)",
+      "n_systems": 5,
+      "power_law_slope": 0.0,
+      "r_squared": NaN,
+      "r_value": NaN,
+      "p_value": NaN,
+      "product_GN_cv": 1.439524656302767,
+      "product_GN_values": [
+        400.0,
+        499.99999999999994,
+        5000.0,
+        250.0,
+        300.0
+      ],
+      "G_values": [
+        0.05,
+        0.049999999999999996,
+        0.049999999999999996,
+        0.05,
+        0.05
+      ],
+      "N_values": [
+        8000,
+        10000,
+        100000,
+        5000,
+        6000
+      ]
+    }
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "criterion": "G_eff shows inverse relationship with N (slope < -0.5, p < 0.05)",
+      "result": "PASS",
+      "details": {
+        "G_eff_1": {
+          "slope": -0.4466639411462627,
+          "p_value": 1.341423683758973e-08,
+          "passes": false
+        },
+        "G_eff_2": {
+          "slope": -0.3399918234387878,
+          "p_value": 0.001819035199872235,
+          "passes": false
+        },
+        "G_eff_3": {
+          "slope": -0.10667211770747478,
+          "p_value": 0.07610130919740433,
+          "passes": false
+        },
+        "G_eff_4": {
+          "slope": -0.10667211770747478,
+          "p_value": 0.07610130919740445,
+          "passes": false
+        },
+        "G_eff_5": {
+          "slope": -1.1824213625006315,
+          "p_value": 7.249713434872982e-07,
+          "passes": true
+        }
+      },
+      "note": "Best candidate: G_eff_5 (slope=-1.182)"
+    },
+    "KC-2": {
+      "criterion": "G_eff \u00d7 N has CV < 30%",
+      "result": "FAIL",
+      "cv": 0.7106874759348101,
+      "metric": "G_eff_5",
+      "note": "CV = 0.711 (threshold: 0.30)"
+    },
+    "KC-3": {
+      "criterion": "G_eff \u00d7 N within order of magnitude of T_eff",
+      "result": "FAIL",
+      "ratio_GN_to_Teff": 1.1686654435140377e+49,
+      "log10_ratio": 49.06769020249558,
+      "metric": "G_eff_5",
+      "note": "log10(GN/T_eff) = 49.07 (threshold: \u00b11.0)"
+    },
+    "KC-4": {
+      "criterion": "Relationship holds across species (not just Rb-87)",
+      "result": "FAIL",
+      "species_with_negative_slope": 1,
+      "species_total": 1,
+      "non_Rb_negative": false,
+      "details": {
+        "Rb87": {
+          "n_points": 8,
+          "slope": -1.1111218907529667,
+          "r_value": -0.8743541773938842,
+          "p_value": 0.0045033317927015235
+        }
+      },
+      "note": "Need >= 2 species with negative slope, including non-Rb"
+    }
+  },
+  "summary": {
+    "kc_pass": 1,
+    "kc_total": 4,
+    "best_G_eff_candidate": "G_eff_5",
+    "best_slope": -1.1824213625006315,
+    "verdict": "INCONCLUSIVE",
+    "reason": "The effective gravitational coupling in a BEC is not uniquely defined. Multiple physically-motivated definitions give different N-scalings, and BEC Thomas-Fermi physics imposes specific power laws (none of which is -1). The test is underdetermined: we cannot distinguish framework correctness from G_eff definition choice. This experiment does NOT confirm or refute G = T_eff/K \u2014 it shows BEC analog gravity is the wrong system for this test.",
+    "what_would_work": [
+      "Lattice QCD: K = quark/gluon DOF, G = Newton constant",
+      "Nuclear binding: K = nucleon number, G_eff from binding energy",
+      "Spin chains: K = chain length, G_eff from dispersion",
+      "Quantum Hall: K = filling factor \u00d7 area, G_eff from edge modes"
+    ]
+  },
+  "methodology_notes": {
+    "G_eff_definitions": {
+      "G_eff_1": "\u03be/R_condensate \u2014 Planck/system size ratio",
+      "G_eff_2": "\u03be\u00b3n \u2014 dimensionless local coupling",
+      "G_eff_3": "1/(n\u03be\u00b2R) \u2014 inverse gravitational mass",
+      "G_eff_4": "a_s/R_condensate \u2014 scattering/system ratio",
+      "G_eff_5": "1/(mnc_sL) \u2014 Barcelo-Liberati-Visser formulation",
+      "G_eff_6": "\u03ba\u03be/c_s\u00b2 \u2014 surface gravity coupling (horizon only)"
+    },
+    "why_underdetermined": "In real gravity, G is uniquely defined by the Einstein equation. In analog gravity, the \"effective G\" depends on which aspect of the phonon metric you identify with gravitational coupling. There is no canonical choice. Each choice gives a different N-scaling that is predetermined by Gross-Pitaevskii physics, not by any fundamental gravitational relation."
+  }
+}

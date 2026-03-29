@@ -1,0 +1,217 @@
+{
+  "experiment": "nb_epi01",
+  "description": "K-EPI-1: Epidemic threshold as Pe=1 Kramers crossing. R\u2080=Pe algebraic identity (Paper 131 \u00a7VIII). Test A: Gillespie SIR escape time vs R_t. Test B: published R\u2080 vs doubling time across 12 pathogens.",
+  "paper": "Paper 131 \u00a7VIII, \u00a7XI.A",
+  "kill_condition": "K-EPI-1",
+  "timestamp": "2026-03-11T01:43:35.561279+00:00",
+  "test_A_gillespie": {
+    "simulation_rows": [
+      {
+        "R_t": 1.05,
+        "barrier": 0.050000000000000044,
+        "N_escaped": 12,
+        "median_escape_time": 301.9069,
+        "log_median": 5.7101
+      },
+      {
+        "R_t": 1.1,
+        "barrier": 0.10000000000000009,
+        "N_escaped": 41,
+        "median_escape_time": 158.1786,
+        "log_median": 5.0637
+      },
+      {
+        "R_t": 1.2,
+        "barrier": 0.19999999999999996,
+        "N_escaped": 59,
+        "median_escape_time": 104.6825,
+        "log_median": 4.6509
+      },
+      {
+        "R_t": 1.3,
+        "barrier": 0.30000000000000004,
+        "N_escaped": 91,
+        "median_escape_time": 81.29,
+        "log_median": 4.398
+      },
+      {
+        "R_t": 1.5,
+        "barrier": 0.5,
+        "N_escaped": 115,
+        "median_escape_time": 53.4019,
+        "log_median": 3.9778
+      },
+      {
+        "R_t": 1.7,
+        "barrier": 0.7,
+        "N_escaped": 153,
+        "median_escape_time": 43.7629,
+        "log_median": 3.7788
+      },
+      {
+        "R_t": 2.0,
+        "barrier": 1.0,
+        "N_escaped": 182,
+        "median_escape_time": 29.8624,
+        "log_median": 3.3966
+      },
+      {
+        "R_t": 2.5,
+        "barrier": 1.5,
+        "N_escaped": 248,
+        "median_escape_time": 20.7918,
+        "log_median": 3.0346
+      },
+      {
+        "R_t": 3.0,
+        "barrier": 2.0,
+        "N_escaped": 276,
+        "median_escape_time": 16.1052,
+        "log_median": 2.7791
+      },
+      {
+        "R_t": 4.0,
+        "barrier": 3.0,
+        "N_escaped": 295,
+        "median_escape_time": 10.9583,
+        "log_median": 2.3941
+      }
+    ],
+    "regression": {
+      "n": 10,
+      "exponential": {
+        "R_squared": 0.816704,
+        "slope": -0.985935,
+        "intercept": 4.84022,
+        "p_value": 0.0003342730034227153,
+        "AIC": -12.9802
+      },
+      "linear": {
+        "R_squared_linear_fit": 0.422216,
+        "AIC_on_log_residuals": 20.6024
+      },
+      "delta_AIC_lin_minus_exp": 33.5826,
+      "exponential_wins": true,
+      "note": "\u0394AIC = AIC(linear) \u2212 AIC(exponential). Positive = exponential is better model."
+    }
+  },
+  "test_B_published": {
+    "outbreak_rows": [
+      {
+        "id": "P01",
+        "label": "COVID-19 wild-type",
+        "R0": 2.5,
+        "barrier": 1.5,
+        "T_double": 6.5,
+        "log_T_double": 1.8718,
+        "source": "Li et al. Science 2020; Liu et al. 2020"
+      },
+      {
+        "id": "P02",
+        "label": "COVID-19 Alpha (B.1.1.7)",
+        "R0": 3.8,
+        "barrier": 2.8,
+        "T_double": 4.5,
+        "log_T_double": 1.5041,
+        "source": "Volz et al. Cell 2021; Davies et al. Nat Med 2021"
+      },
+      {
+        "id": "P03",
+        "label": "COVID-19 Delta (B.1.617.2)",
+        "R0": 5.1,
+        "barrier": 4.1,
+        "T_double": 3.2,
+        "log_T_double": 1.1632,
+        "source": "Twohig et al. Lancet ID 2022"
+      },
+      {
+        "id": "P04",
+        "label": "COVID-19 Omicron (BA.1)",
+        "R0": 9.5,
+        "barrier": 8.5,
+        "T_double": 1.8,
+        "log_T_double": 0.5878,
+        "source": "Carabelli et al. Nat Rev Microbiol 2023"
+      },
+      {
+        "id": "P05",
+        "label": "H1N1 2009 pandemic flu",
+        "R0": 1.5,
+        "barrier": 0.5,
+        "T_double": 14.0,
+        "log_T_double": 2.6391,
+        "source": "Fraser et al. Science 2009"
+      },
+      {
+        "id": "P06",
+        "label": "H1N1 1918 pandemic flu",
+        "R0": 2.5,
+        "barrier": 1.5,
+        "T_double": 5.0,
+        "log_T_double": 1.6094,
+        "source": "Mills et al. Emerg Infect Dis 2004"
+      },
+      {
+        "id": "P07",
+        "label": "SARS-CoV-1 2003",
+        "R0": 3.0,
+        "barrier": 2.0,
+        "T_double": 8.4,
+        "log_T_double": 2.1282,
+        "source": "Lipsitch et al. Science 2003"
+      },
+      {
+        "id": "P08",
+        "label": "Seasonal influenza A",
+        "R0": 1.3,
+        "barrier": 0.3,
+        "T_double": 21.0,
+        "log_T_double": 3.0445,
+        "source": "Chowell et al. J R Soc Interface 2008"
+      },
+      {
+        "id": "P09",
+        "label": "Ebola 2014 (West Africa)",
+        "R0": 2.0,
+        "barrier": 1.0,
+        "T_double": 12.6,
+        "log_T_double": 2.5337,
+        "source": "WHO Ebola Response Team NEJM 2014"
+      },
+      {
+        "id": "P10",
+        "label": "Measles (unvaccinated)",
+        "R0": 15.0,
+        "barrier": 14.0,
+        "T_double": 1.5,
+        "log_T_double": 0.4055,
+        "source": "Anderson & May 1992"
+      },
+      {
+        "id": "P11",
+        "label": "Mumps",
+        "R0": 5.5,
+        "barrier": 4.5,
+        "T_double": 3.8,
+        "log_T_double": 1.335,
+        "source": "Edmunds et al. Epidemiol Infect 2002"
+      },
+      {
+        "id": "P12",
+        "label": "Rubella",
+        "R0": 6.0,
+        "barrier": 5.0,
+        "T_double": 3.3,
+        "log_T_double": 1.1939,
+        "source": "Anderson & May 1992"
+      }
+    ],
+    "regression": {
+      "slope": -0.174492,
+      "intercept": 2.332539,
+      "R_squared": 0.733348,
+      "p_value": 0.0003764941052924771
+    }
+  },
+  "K_EPI_1_status": "PASS \u2014 exponential scaling confirmed (\u0394AIC > 10, R\u00b2 > 0.7)"
+}

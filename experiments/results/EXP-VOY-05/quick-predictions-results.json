@@ -1,0 +1,338 @@
+{
+  "experiment": "EXP-VOY-05",
+  "date": "2026-03-03T03:37:33.712701+00:00",
+  "corpus": "ZL3b-n.txt (Zandbergen-Landini EVA transliteration)",
+  "total_tokens": 38940,
+  "results": {
+    "MORPH-10A": {
+      "level_rows": [
+        [
+          1,
+          8.31146106736658,
+          5715,
+          248
+        ],
+        [
+          2,
+          25.110913930789707,
+          1127,
+          102
+        ]
+      ],
+      "baseline_astro_pct": 9.537750385208012,
+      "verdict": "UNDERPOWERED \u2014 insufficient levels"
+    },
+    "MORPH-10B": {
+      "baseline_astro_pct": 9.537750385208012,
+      "prefix_rows": [
+        {
+          "prefix": "oteo",
+          "length": 4,
+          "n_types": 48,
+          "total": 202,
+          "astro_pct": 51.98,
+          "enrichment": 5.45
+        },
+        {
+          "prefix": "oteoa",
+          "length": 5,
+          "n_types": 3,
+          "total": 3,
+          "astro_pct": 100.0,
+          "enrichment": 10.485
+        },
+        {
+          "prefix": "oteod",
+          "length": 5,
+          "n_types": 12,
+          "total": 71,
+          "astro_pct": 52.11,
+          "enrichment": 5.464
+        },
+        {
+          "prefix": "oteol",
+          "length": 5,
+          "n_types": 7,
+          "total": 45,
+          "astro_pct": 24.44,
+          "enrichment": 2.563
+        },
+        {
+          "prefix": "oteor",
+          "length": 5,
+          "n_types": 2,
+          "total": 13,
+          "astro_pct": 15.38,
+          "enrichment": 1.613
+        },
+        {
+          "prefix": "oteos",
+          "length": 5,
+          "n_types": 6,
+          "total": 30,
+          "astro_pct": 80.0,
+          "enrichment": 8.388
+        },
+        {
+          "prefix": "oteot",
+          "length": 5,
+          "n_types": 3,
+          "total": 7,
+          "astro_pct": 100.0,
+          "enrichment": 10.485
+        },
+        {
+          "prefix": "oteoy",
+          "length": 5,
+          "n_types": 3,
+          "total": 3,
+          "astro_pct": 66.67,
+          "enrichment": 6.99
+        },
+        {
+          "prefix": "oteoda",
+          "length": 6,
+          "n_types": 5,
+          "total": 22,
+          "astro_pct": 59.09,
+          "enrichment": 6.195
+        },
+        {
+          "prefix": "oteodc",
+          "length": 6,
+          "n_types": 3,
+          "total": 3,
+          "astro_pct": 66.67,
+          "enrichment": 6.99
+        },
+        {
+          "prefix": "oteody",
+          "length": 6,
+          "n_types": 1,
+          "total": 41,
+          "astro_pct": 51.22,
+          "enrichment": 5.37
+        },
+        {
+          "prefix": "oteola",
+          "length": 6,
+          "n_types": 4,
+          "total": 4,
+          "astro_pct": 75.0,
+          "enrichment": 7.863
+        },
+        {
+          "prefix": "oteote",
+          "length": 6,
+          "n_types": 2,
+          "total": 6,
+          "astro_pct": 100.0,
+          "enrichment": 10.485
+        },
+        {
+          "prefix": "oteodai",
+          "length": 7,
+          "n_types": 3,
+          "total": 9,
+          "astro_pct": 44.44,
+          "enrichment": 4.66
+        },
+        {
+          "prefix": "oteodal",
+          "length": 7,
+          "n_types": 1,
+          "total": 6,
+          "astro_pct": 66.67,
+          "enrichment": 6.99
+        },
+        {
+          "prefix": "oteodar",
+          "length": 7,
+          "n_types": 1,
+          "total": 7,
+          "astro_pct": 71.43,
+          "enrichment": 7.489
+        },
+        {
+          "prefix": "oteodch",
+          "length": 7,
+          "n_types": 3,
+          "total": 3,
+          "astro_pct": 66.67,
+          "enrichment": 6.99
+        },
+        {
+          "prefix": "oteolai",
+          "length": 7,
+          "n_types": 3,
+          "total": 3,
+          "astro_pct": 66.67,
+          "enrichment": 6.99
+        },
+        {
+          "prefix": "oteotey",
+          "length": 7,
+          "n_types": 1,
+          "total": 5,
+          "astro_pct": 100.0,
+          "enrichment": 10.485
+        }
+      ],
+      "length_enrichment": [
+        [
+          4,
+          5.45
+        ],
+        [
+          5,
+          5.703
+        ],
+        [
+          6,
+          7.35
+        ],
+        [
+          7,
+          7.406
+        ]
+      ],
+      "spearman_rho": 1.0,
+      "spearman_p": 0.0,
+      "max_5plus_enrichment": 10.485,
+      "verdict": "CONFIRMED \u2014 max enrichment at \u22655 chars = 10.5x (predicted \u226510x)"
+    },
+    "MORPH-11": {
+      "lk-": {
+        "n_types": 100,
+        "total": 423,
+        "stars_pct": 78.25,
+        "astro_pct": 0.47,
+        "bio_pct": 11.58,
+        "chi2": 556.32,
+        "p_val": 0.0,
+        "astro_verdict": "PASS \u2014 Astro 0.5% < 5.0% threshold",
+        "sec_counts": {
+          "Herbal_A": 18,
+          "Biological": 49,
+          "Stars_Text": 331,
+          "Pharmaceutical": 23,
+          "Astronomical": 2
+        }
+      },
+      "alk-": {
+        "n_types": 16,
+        "total": 34,
+        "stars_pct": 79.41,
+        "astro_pct": 0.0,
+        "bio_pct": 0.0,
+        "chi2": 47.48,
+        "p_val": 0.0,
+        "astro_verdict": "PASS \u2014 Astro 0.0% < 5.0% threshold",
+        "sec_counts": {
+          "Herbal_A": 3,
+          "Pharmaceutical": 4,
+          "Stars_Text": 27
+        }
+      },
+      "ra-": {
+        "n_types": 32,
+        "total": 173,
+        "stars_pct": 61.27,
+        "astro_pct": 3.47,
+        "bio_pct": 21.97,
+        "chi2": 119.46,
+        "p_val": 0.0,
+        "astro_verdict": "PASS \u2014 Astro 3.5% < 5.0% threshold",
+        "sec_counts": {
+          "Herbal_A": 9,
+          "Astronomical": 6,
+          "Biological": 38,
+          "Pharmaceutical": 14,
+          "Stars_Text": 106
+        }
+      },
+      "overall_verdict": "CONFIRMED \u2014 all families show <5% Astronomical"
+    },
+    "MORPH-12": {
+      "total_lk_lines_stars": 255,
+      "universal_words": [
+        "daiin",
+        "ol",
+        "aiin",
+        "chedy",
+        "shedy",
+        "ar",
+        "chol",
+        "or",
+        "chey",
+        "dar"
+      ],
+      "cooccurrence": {
+        "daiin": {
+          "cooccur": 20,
+          "rate": 0.0784,
+          "baseline_rate": 0.0112,
+          "enrichment": 6.977
+        },
+        "ol": {
+          "cooccur": 25,
+          "rate": 0.098,
+          "baseline_rate": 0.0102,
+          "enrichment": 9.594
+        },
+        "aiin": {
+          "cooccur": 46,
+          "rate": 0.1804,
+          "baseline_rate": 0.0198,
+          "enrichment": 9.116
+        },
+        "chedy": {
+          "cooccur": 38,
+          "rate": 0.149,
+          "baseline_rate": 0.0185,
+          "enrichment": 8.061
+        },
+        "shedy": {
+          "cooccur": 20,
+          "rate": 0.0784,
+          "baseline_rate": 0.0108,
+          "enrichment": 7.278
+        },
+        "ar": {
+          "cooccur": 36,
+          "rate": 0.1412,
+          "baseline_rate": 0.014,
+          "enrichment": 10.064
+        },
+        "chol": {
+          "cooccur": 12,
+          "rate": 0.0471,
+          "baseline_rate": 0.0059,
+          "enrichment": 8.04
+        },
+        "or": {
+          "cooccur": 14,
+          "rate": 0.0549,
+          "baseline_rate": 0.0066,
+          "enrichment": 8.323
+        },
+        "chey": {
+          "cooccur": 34,
+          "rate": 0.1333,
+          "baseline_rate": 0.0116,
+          "enrichment": 11.482
+        },
+        "dar": {
+          "cooccur": 7,
+          "rate": 0.0275,
+          "baseline_rate": 0.0043,
+          "enrichment": 6.424
+        }
+      },
+      "fisher_odds_ratio": 0.783,
+      "fisher_p": 0.825487,
+      "daiin_enrichment": 6.977,
+      "verdict": "DIRECTIONAL \u2014 daiin enriched 6.98x but p=0.8255 (not significant)"
+    }
+  }
+}

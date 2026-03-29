@@ -1,0 +1,269 @@
+{
+  "experiment": "nb_fsr03",
+  "paper": 133,
+  "timestamp": "2026-03-17T22:36:58.972782+00:00",
+  "note": "Fast math-based hardness tests, no optimization loops",
+  "experiments": {
+    "T1_gap": {
+      "test": "T1_gap_scaling",
+      "results": {
+        "0.001": {
+          "gaps": {
+            "4": 222.02773301,
+            "8": 152.68625942,
+            "12": 210.85775865,
+            "16": 352.17245592,
+            "20": 369.06933756,
+            "24": 313.43183214,
+            "32": 135.50641622
+          },
+          "log_gap_slope": -0.0002
+        },
+        "0.005": {
+          "gaps": {
+            "4": 23.90237592,
+            "8": 16.20981727,
+            "12": 16.06982865,
+            "16": 10.68952826,
+            "20": 5.21621224,
+            "24": 27.34728673,
+            "32": 34.25138904
+          },
+          "log_gap_slope": 0.0124
+        },
+        "0.01": {
+          "gaps": {
+            "4": 41.51809053,
+            "8": 20.72903679,
+            "12": 9.61598471,
+            "16": 12.71489644,
+            "20": 7.92166288,
+            "24": 5.26841099,
+            "32": 8.94405106
+          },
+          "log_gap_slope": -0.0563
+        },
+        "0.05": {
+          "gaps": {
+            "4": 9.93674925,
+            "8": 5.83539949,
+            "12": 2.64919771,
+            "16": 4.51026167,
+            "20": 3.42687909,
+            "24": 3.5428469,
+            "32": 2.82546025
+          },
+          "log_gap_slope": -0.0352
+        }
+      },
+      "passed": false
+    },
+    "T2_cramer_rao": {
+      "test": "T2_cramer_rao",
+      "T": 0.01,
+      "results": {
+        "4": {
+          "lambda_min_F": 0.003627,
+          "lambda_max_F": 5.736,
+          "cramer_rao_bound": 275.7391
+        },
+        "8": {
+          "lambda_min_F": 0.0,
+          "lambda_max_F": 16.5332,
+          "cramer_rao_bound": 286775148353.8472
+        },
+        "12": {
+          "lambda_min_F": 0.0,
+          "lambda_max_F": 16.8009,
+          "cramer_rao_bound": 131539181421488.75
+        },
+        "16": {
+          "lambda_min_F": 0.0,
+          "lambda_max_F": 12.0309,
+          "cramer_rao_bound": 2013903929645962.8
+        },
+        "20": {
+          "lambda_min_F": 0.0,
+          "lambda_max_F": 14.4602,
+          "cramer_rao_bound": 4915548254457303.0
+        },
+        "24": {
+          "lambda_min_F": 0.0,
+          "lambda_max_F": 16.4222,
+          "cramer_rao_bound": 4674620642415335.0
+        }
+      },
+      "passed": true
+    },
+    "T3_eff_rank": {
+      "test": "T3_effective_rank",
+      "T": 0.01,
+      "results": {
+        "4": {
+          "effective_rank": 1.977,
+          "full_rank": 4,
+          "fraction": 0.494,
+          "sv_ratio": 1273.62
+        },
+        "8": {
+          "effective_rank": 2.158,
+          "full_rank": 8,
+          "fraction": 0.27,
+          "sv_ratio": 44826.84
+        },
+        "12": {
+          "effective_rank": 2.653,
+          "full_rank": 12,
+          "fraction": 0.221,
+          "sv_ratio": 23354968.54
+        },
+        "16": {
+          "effective_rank": 2.307,
+          "full_rank": 16,
+          "fraction": 0.144,
+          "sv_ratio": 52653775460.95
+        },
+        "20": {
+          "effective_rank": 2.839,
+          "full_rank": 16,
+          "fraction": 0.177,
+          "sv_ratio": 265871044.02
+        },
+        "24": {
+          "effective_rank": 4.129,
+          "full_rank": 16,
+          "fraction": 0.258,
+          "sv_ratio": 409327.43
+        }
+      },
+      "passed": false
+    },
+    "T4_entropy": {
+      "test": "T4_spectral_entropy",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "mean_entropy_bits": 3.227,
+          "fraction_of_max": 0.747,
+          "n_dims": 7
+        },
+        "16": {
+          "mean_entropy_bits": 3.31,
+          "fraction_of_max": 0.766,
+          "n_dims": 11
+        },
+        "32": {
+          "mean_entropy_bits": 3.429,
+          "fraction_of_max": 0.793,
+          "n_dims": 11
+        }
+      },
+      "passed": true
+    },
+    "T5_transition": {
+      "test": "T5_phase_transition",
+      "T": 0.01,
+      "N_star": 8,
+      "results": {
+        "4": {
+          "median_kappa": 87.17,
+          "median_gap": 22.20040814
+        },
+        "6": {
+          "median_kappa": 1032.75,
+          "median_gap": 22.23159074
+        },
+        "8": {
+          "median_kappa": 3025939.83,
+          "median_gap": 20.46617716
+        },
+        "10": {
+          "median_kappa": 82052329.89,
+          "median_gap": 9.79540975
+        },
+        "12": {
+          "median_kappa": 245874618.95,
+          "median_gap": 9.41873305
+        },
+        "14": {
+          "median_kappa": 945179386.97,
+          "median_gap": 12.01492462
+        },
+        "16": {
+          "median_kappa": 34490782.88,
+          "median_gap": 18.95761925
+        },
+        "18": {
+          "median_kappa": 24608782.28,
+          "median_gap": 5.86487003
+        },
+        "20": {
+          "median_kappa": 3585488.17,
+          "median_gap": 28.26280479
+        },
+        "22": {
+          "median_kappa": 424531.32,
+          "median_gap": 12.09335737
+        },
+        "24": {
+          "median_kappa": 204969.48,
+          "median_gap": 19.28119141
+        },
+        "26": {
+          "median_kappa": 160658.9,
+          "median_gap": 13.65737998
+        },
+        "28": {
+          "median_kappa": 235247.88,
+          "median_gap": 11.80180923
+        },
+        "30": {
+          "median_kappa": 16607.41,
+          "median_gap": 13.57553141
+        },
+        "32": {
+          "median_kappa": 98984.77,
+          "median_gap": 30.582613
+        },
+        "34": {
+          "median_kappa": 81355.48,
+          "median_gap": 13.57900473
+        }
+      },
+      "passed": true
+    },
+    "T6_rigidity": {
+      "test": "T6_rigidity",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "ks_stat_vs_poisson": 0.1714,
+          "ks_pval": 0.0,
+          "mean_spacing": 1.0,
+          "std_spacing": 0.5536,
+          "interpretation": "rigid (GUE-like)"
+        },
+        "16": {
+          "ks_stat_vs_poisson": 0.1632,
+          "ks_pval": 0.0,
+          "mean_spacing": 1.0,
+          "std_spacing": 0.5967,
+          "interpretation": "rigid (GUE-like)"
+        },
+        "32": {
+          "ks_stat_vs_poisson": 0.1083,
+          "ks_pval": 0.0,
+          "mean_spacing": 1.0,
+          "std_spacing": 0.7877,
+          "interpretation": "rigid (GUE-like)"
+        }
+      },
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 4,
+    "total": 6,
+    "runtime_s": 1.53
+  }
+}

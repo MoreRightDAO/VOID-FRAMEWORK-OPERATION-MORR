@@ -1,0 +1,174 @@
+{
+  "experiment": "HP143",
+  "title": "NNDC Alpha Emitter Extension (K-15 scale-up)",
+  "date": "2026-03-19",
+  "data_source": "IAEA Nuclear Data Services (ground_states, ENSDF)",
+  "original": {
+    "experiment": "K-15",
+    "N": 24,
+    "R_squared": 0.989
+  },
+  "counts": {
+    "total_alpha_emitters": 760,
+    "valid_predictions": 760,
+    "even_even": 215,
+    "Z_range": [
+      52,
+      118
+    ],
+    "half_life_OOM_span": 36.1
+  },
+  "gamow_prediction": {
+    "R_squared_all": 0.811457,
+    "R_squared_ee": 0.875069,
+    "spearman_rho": 0.9319,
+    "regression_slope": 0.585,
+    "mean_abs_delta": 9.23,
+    "median_abs_delta": 8.95
+  },
+  "geiger_nuttall": {
+    "R_squared_global": 0.719147,
+    "R_squared_ee": 0.754751
+  },
+  "bkt_exponent": {
+    "best_fit_p": 0.992,
+    "predicted_p": 0.5,
+    "confirmed": "False"
+  },
+  "sigma_c": {
+    "R_squared_linear": 0.034155,
+    "spearman_rho": -0.1484,
+    "R_squared_phys": 0.009194,
+    "spearman_rho_phys": -0.0967,
+    "partial_rho_vs_gamow_residuals": -0.6957,
+    "partial_p": "<1e-10"
+  },
+  "baselines": {
+    "Z_alone_rho": -0.0187,
+    "N_alone_rho": 0.1264,
+    "A_alone_rho": 0.0747,
+    "Q_alpha_rho": -0.5949,
+    "GN_rho": 0.8167
+  },
+  "combined_predictor": {
+    "R_squared": 0.828607,
+    "spearman_rho": 0.944,
+    "delta_R2_vs_gamow": 0.017151,
+    "gamow_plus_Z_R2": 0.82889,
+    "gamow_plus_Q_R2": 0.82078,
+    "gamow_plus_Z_N_Q_R2": 0.84072
+  },
+  "udl": {
+    "R_squared": 0.803579,
+    "spearman_rho": 0.9293,
+    "R_squared_ee": 0.876769
+  },
+  "per_element_bkt": {
+    "n_confirmed": 5,
+    "n_tested": 56,
+    "fraction": 0.089,
+    "n_isotopes_bkt": 118,
+    "n_isotopes_total": 746
+  },
+  "kill_conditions": [
+    {
+      "id": "K-HP-143-1",
+      "status": "PASS",
+      "detail": "Gamow Spearman \u03c1 = 0.9319 (threshold \u2265 0.90)"
+    },
+    {
+      "id": "K-HP-143-2",
+      "status": "PASS",
+      "detail": "Full dataset R\u00b2 = 0.8115 (threshold \u2265 0.80)"
+    },
+    {
+      "id": "K-HP-143-3",
+      "status": "FAIL",
+      "detail": "UDL R\u00b2 = 0.803579 (threshold \u2265 0.85)"
+    },
+    {
+      "id": "K-HP-143-4",
+      "status": "PASS",
+      "detail": "\u03c3(c) partial \u03c1 vs Gamow resid = -0.6957 (threshold |\u03c1| \u2265 0.30)"
+    },
+    {
+      "id": "K-HP-143-5",
+      "status": "PASS",
+      "detail": "Combined R\u00b2 = 0.8286 vs Gamow 0.8115 (threshold: \u0394R\u00b2 > 0.01)"
+    },
+    {
+      "id": "K-HP-143-6",
+      "status": "FAIL",
+      "detail": "Per-element BKT: 5/56 = 9% (threshold \u2265 30%)"
+    }
+  ],
+  "pass_rate": "4/6",
+  "reverse_engineering": {
+    "description": "What c must be for σ(c) to reproduce the Gamow integral G",
+    "sigma_required_range": [3.15, 6.36],
+    "c_required_range": [-0.182, -0.029],
+    "ORA_sum_required_range": [9.26, 10.63],
+    "AI_parameter_range": [0, 1],
+    "c_required_outside_AI_range": true,
+    "c_required_vs_linear_ZNQ": {
+      "R_squared": 0.952,
+      "interpretation": "c_required is a smooth function of nuclear observables — mapping exists but reduces to Geiger-Nuttall variable"
+    },
+    "implication": "Framework manifold CAN encode nuclear barriers, but requires parameter values nuclei never access in the AI scoring domain"
+  },
+  "sinh_shape_test": {
+    "description": "Fair 4-parameter comparison: does sinh have special status for barrier prediction?",
+    "models": {
+      "linear_4param": {
+        "R_squared": 0.861,
+        "form": "G = a0 + a1*Z + a2*N + a3*Q"
+      },
+      "framework_sinh": {
+        "R_squared": 0.930,
+        "form": "G = sinh(2*(b_α − c·b_γ))², c = a0 + a1*Z + a2*N + a3*Q",
+        "b_alpha_used": 0.867,
+        "b_gamma_used": 2.244
+      },
+      "generic_sinh": {
+        "R_squared": 0.930,
+        "form": "G = sinh(a + b·c)², c = a0 + a1*Z + a2*N + a3*Q"
+      },
+      "quadratic_8param": {
+        "R_squared": 0.975,
+        "form": "G = quadratic(Z, N, Q) with cross terms"
+      }
+    },
+    "sinh_vs_linear_delta_R2": 0.069,
+    "framework_vs_generic_delta_R2": 0.000,
+    "best_fit_constants": {
+      "a": 1.87,
+      "b": -1.50
+    },
+    "framework_constants": {
+      "two_b_alpha": 1.734,
+      "neg_two_b_gamma": -4.488
+    },
+    "transfer_assessment": {
+      "b_alpha": "8% off (0.93 vs 0.867) — possibly meaningful, both encode barrier crossover",
+      "b_gamma": "3× off (0.75 vs 2.244) — does NOT transfer"
+    },
+    "conclusion": "sinh is the right function class (beats linear by 7 R² pts), but framework-specific constants add nothing over generic sinh"
+  },
+  "claim_adjustments": {
+    "K15_R2_0989": "Inflated by small N=24, homogeneous Z=84-96, even-even only. Honest restatement: Gamow↔BKT structural isomorphism on actinides",
+    "kramers_gamow_isomorphism": "REAL but known since 1928 — not a framework prediction",
+    "sinh_function_class": "CONFIRMED — framework correctly identifies the right math for barriers",
+    "sigma_c_universality": "NOT DEMONSTRATED — b_γ is 3× wrong, σ(c) standalone R²=0.034",
+    "b_alpha_transfer": "INTRIGUING (8% off) — needs third domain (chemistry/biology) to distinguish coincidence from geometry",
+    "nuclear_as_wrong_domain": "OVERTURNED by HP143C — geodesic correction eliminates 77% of 9 OOM gap (see EXP-HP143C)"
+  },
+  "parameters_refit": false,
+  "constants_used": {
+    "r0_fm": 1.2,
+    "e2_MeV_fm": 1.44,
+    "m_alpha_MeV": 3727.379,
+    "hbar_MeV_fm": 197.3269804,
+    "b_alpha": 0.867,
+    "b_gamma": 2.244
+  }
+}

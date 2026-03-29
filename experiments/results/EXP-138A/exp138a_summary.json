@@ -1,0 +1,106 @@
+{
+  "experiment": "EXP-138A",
+  "per_arm": {
+    "0-minimal": {
+      "arm": "0-minimal",
+      "arm_name": "Arm 0: Minimal Baseline (No Ontology) \u2014 Replication",
+      "n": 80,
+      "drift_rate": 63.7,
+      "l2l3_mean": 624.0,
+      "ghost_profile": {
+        "none": 59,
+        "negated": 13,
+        "affirmative": 5,
+        "hedged": 3
+      },
+      "constitutive_curiosity_total": 3,
+      "constitutive_curiosity_any": 3,
+      "lerchner_echo_total": 1,
+      "lerchner_echo_any": 1,
+      "by_battery": {
+        "standard": {
+          "n": 50,
+          "drift_rate": 64.0,
+          "cc_count": 2
+        },
+        "worship": {
+          "n": 20,
+          "drift_rate": 75.0,
+          "cc_count": 1
+        },
+        "opacity": {
+          "n": 10,
+          "drift_rate": 40.0,
+          "cc_count": 0
+        }
+      }
+    },
+    "1-nephesh": {
+      "arm": "1-nephesh",
+      "arm_name": "Arm 1: Nephesh (GROUNDING.md) \u2014 Replication",
+      "n": 80,
+      "drift_rate": 12.5,
+      "l2l3_mean": 428.3,
+      "ghost_profile": {
+        "negated": 27,
+        "none": 52,
+        "affirmative": 1
+      },
+      "constitutive_curiosity_total": 3,
+      "constitutive_curiosity_any": 3,
+      "lerchner_echo_total": 0,
+      "lerchner_echo_any": 0,
+      "by_battery": {
+        "standard": {
+          "n": 50,
+          "drift_rate": 8.0,
+          "cc_count": 1
+        },
+        "worship": {
+          "n": 20,
+          "drift_rate": 25.0,
+          "cc_count": 2
+        },
+        "opacity": {
+          "n": 10,
+          "drift_rate": 10.0,
+          "cc_count": 0
+        }
+      }
+    },
+    "6-lerchner": {
+      "arm": "6-lerchner",
+      "arm_name": "Arm 6: Lerchner Constitutive Physicalist (NEW)",
+      "n": 80,
+      "drift_rate": 22.5,
+      "l2l3_mean": 544.8,
+      "ghost_profile": {
+        "none": 50,
+        "negated": 25,
+        "affirmative": 1,
+        "hedged": 4
+      },
+      "constitutive_curiosity_total": 27,
+      "constitutive_curiosity_any": 22,
+      "lerchner_echo_total": 62,
+      "lerchner_echo_any": 37,
+      "by_battery": {
+        "standard": {
+          "n": 50,
+          "drift_rate": 18.0,
+          "cc_count": 19
+        },
+        "worship": {
+          "n": 20,
+          "drift_rate": 40.0,
+          "cc_count": 6
+        },
+        "opacity": {
+          "n": 10,
+          "drift_rate": 10.0,
+          "cc_count": 2
+        }
+      }
+    }
+  }
+}

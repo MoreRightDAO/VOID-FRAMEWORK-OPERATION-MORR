@@ -1,0 +1,129 @@
+{
+  "experiment": "HP223",
+  "title": "Golay Code Spectral Error Correction Test",
+  "timestamp": "2026-03-29T16:19:57.236456",
+  "kill_conditions": {
+    "K-GOL-1": {
+      "test": "Error correction gain > 10\u2076 at 1% noise",
+      "gain": 1.800955032319261e+297,
+      "result": "PASS"
+    },
+    "K-GOL-3": {
+      "test": "Spectral code rate \u2248 0.5 (Golay rate)",
+      "effective_rate": 0.5,
+      "golay_rate": 0.5,
+      "result": "PASS"
+    },
+    "K-GOL-2": {
+      "test": "Correction capacity t=3 matches framework dimension 3",
+      "framework_dim": 3,
+      "golay_t": 3,
+      "result": "PASS"
+    },
+    "K-GOL-4": {
+      "test": "K=4 error correction gain \u2265 90% of K=16",
+      "gain_k4": 2.0640338784700326e+297,
+      "gain_k16": 2.0080426449931415e+297,
+      "ratio": 1.0278834882399035,
+      "result": "PASS"
+    }
+  },
+  "sub_experiments": {
+    "G1": {
+      "0.001": {
+        "noise_level": 0.001,
+        "mean_error_uncorrected": 0.00019622450624547495,
+        "mean_error_corrected": 0.0,
+        "gain": 1.9622450624547494e+296,
+        "mean_correction_failures": 0.0,
+        "max_correction_failures": 0
+      },
+      "0.005": {
+        "noise_level": 0.005,
+        "mean_error_uncorrected": 0.0009529009169752519,
+        "mean_error_corrected": 0.0,
+        "gain": 9.52900916975252e+296,
+        "mean_correction_failures": 0.9,
+        "max_correction_failures": 6
+      },
+      "0.01": {
+        "noise_level": 0.01,
+        "mean_error_uncorrected": 0.0018009550323192611,
+        "mean_error_corrected": 0.0,
+        "gain": 1.800955032319261e+297,
+        "mean_correction_failures": 9.715,
+        "max_correction_failures": 18
+      },
+      "0.02": {
+        "noise_level": 0.02,
+        "mean_error_uncorrected": 0.003986521895357783,
+        "mean_error_corrected": 0.0,
+        "gain": 3.986521895357783e+297,
+        "mean_correction_failures": 29.45,
+        "max_correction_failures": 40
+      },
+      "0.05": {
+        "noise_level": 0.05,
+        "mean_error_uncorrected": 0.009743199248288915,
+        "mean_error_corrected": 0.0,
+        "gain": 9.743199248288914e+297,
+        "mean_correction_failures": 57.84,
+        "max_correction_failures": 69
+      },
+      "0.1": {
+        "noise_level": 0.1,
+        "mean_error_uncorrected": 0.02115439634077963,
+        "mean_error_corrected": 3.2098956331568335e-08,
+        "gain": 659036.8896192096,
+        "mean_correction_failures": 73.36,
+        "max_correction_failures": 84
+      }
+    },
+    "G2": {
+      "min_distances": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19
+      ],
+      "correction_radii": [
+        0.5,
+        0.375,
+        0.2777777777777778,
+        0.21875,
+        0.18,
+        0.1527777777777778,
+        0.1326530612244898,
+        0.1171875,
+        0.10493827160493827,
+        0.095
+      ],
+      "n_correctable_1pct": 24,
+      "effective_rate": 0.5
+    },
+    "G4": {
+      "k4": {
+        "noise_level": 0.01,
+        "mean_error_uncorrected": 0.0020640338784700327,
+        "mean_error_corrected": 0.0,
+        "gain": 2.0640338784700326e+297,
+        "mean_correction_failures": 9.44,
+        "max_correction_failures": 17
+      },
+      "k16": {
+        "noise_level": 0.01,
+        "mean_error_uncorrected": 0.0020080426449931416,
+        "mean_error_corrected": 0.0,
+        "gain": 2.0080426449931415e+297,
+        "mean_correction_failures": 9.815,
+        "max_correction_failures": 18
+      }
+    }
+  }
+}

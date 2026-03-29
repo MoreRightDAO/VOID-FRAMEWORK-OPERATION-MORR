@@ -1,0 +1,52 @@
+{
+  "experiment": "THRML-CV-05",
+  "title": "ICC Interrater Reliability",
+  "author": "Shamir / MoreRight (2026-03-09)",
+  "tests": {
+    "T1_perfect_agreement": {
+      "icc": 1.0,
+      "pass": true
+    },
+    "T2_random_scores": {
+      "icc": -0.007214,
+      "pass": true
+    },
+    "T3_systematic_bias": {
+      "icc_consistency_unbiased": 0.973505,
+      "icc_consistency_biased": 0.973505,
+      "diff": 0.0,
+      "pass": true
+    },
+    "T4_rater_count_effect": {
+      "k_values": [
+        2,
+        3,
+        5,
+        8,
+        12
+      ],
+      "icc_values": [
+        0.92888,
+        0.935432,
+        0.934122,
+        0.938065,
+        0.939412
+      ],
+      "monotone": true,
+      "pass": true
+    },
+    "T5_realistic_simulation": {
+      "n": 30,
+      "k": 5,
+      "pe_range": [
+        -2.7,
+        30.92
+      ],
+      "noise_sigma": 2.0,
+      "icc": 0.958397,
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "THRML-CV-05 PASS \u2014 ICC interrater reliability validated"
+}

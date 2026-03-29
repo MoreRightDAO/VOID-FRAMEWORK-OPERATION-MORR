@@ -1,0 +1,13 @@
+name,K_value,description,source,framework_predicted,G4_eckert,log10_ratio_to_alpha_G,notes
+K_naive,18,3 quarks × 3 colors × 2 spins,QFT counting,True,0.0005401234567901234,6.908087314821922,Standard quark DOF for color-spin
+K_constituent,3,Constituent quark model,Non-relativistic quark model,False,0.019444444444444445,8.46438981558921,Simplest effective description
+K_SB_Nf2,26.5,"Stefan-Boltzmann limit, N_f=2",QCD thermodynamics,True,0.0002491990032039872,6.572140577154919,Free gas limit for 2-flavor QGP
+K_SB_Nf3,31.75,"Stefan-Boltzmann limit, N_f=3",QCD thermodynamics,True,0.0001736003472006944,6.415144865772546,Free gas limit for 3-flavor QGP
+K_gluon,16,8 gluons × 2 polarizations,QFT counting,True,0.00068359375,7.010392359716685,Gluonic sector only
+K_parton,5.2,Effective parton count at Q²=10 GeV²,"NNPDF4.0 (Ball et al., 2022)",False,0.00647189349112426,7.986625637758936,"Scale-dependent, from momentum sum rule"
+K_parton_spin,10.4,Effective partons × 2 (spin),NNPDF4.0 + spin,False,0.001617973372781065,7.384565646430974,Scale-dependent
+K_Ji,12.29,Ji mass decomposition weighted DOF,"Ji (1995), Yang et al. (2018)",False,0.001158602024177045,7.239528559255627,Energy-fraction-weighted DOF from mass decomposition
+K_lattice_confined,4.0,Lattice g_eff below T_c,"HotQCD (Bazavov et al., 2014)",False,0.0109375,8.21451234237261,Hadron resonance gas regime
+K_lattice_deconfined,25.400000000000002,Lattice g_eff at T ~ 2T_c,"Wuppertal-Budapest (Borsanyi et al., 2014)",True,0.00027125054250108497,6.608964891788658,~80% of Stefan-Boltzmann limit
+K_entropy,33.11545195869231,e^S from parton entanglement entropy,Kharzeev & Levin (2017),False,0.00015957934397204033,6.378570951705772,"Information-theoretic, scale-dependent"
+K_Regge,2,Proton spin states (2J+1),Regge theory,False,0.04375,8.816572333700572,Ground state only

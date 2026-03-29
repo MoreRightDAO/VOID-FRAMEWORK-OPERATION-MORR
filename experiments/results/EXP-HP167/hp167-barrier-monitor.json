@@ -1,0 +1,330 @@
+{
+  "experiment": "EXP-HP167",
+  "title": "Real-Time Atmospheric Barrier Monitor",
+  "section": "136D2",
+  "framework_constants": {
+    "B_alpha": 0.867,
+    "B_gamma": 2.244,
+    "K": 16,
+    "pi_over_sqrt2": 2.221441469079183
+  },
+  "d_eff": 2,
+  "barrier_predicted": 4.442882938158366,
+  "non_gradient_correction": {
+    "best": 3.0,
+    "low": 2.0,
+    "high": 5.0,
+    "reference": "Bouchet & Reygner (2016)"
+  },
+  "timestamp": "2026-03-26T15:53:44.971300+00:00",
+  "data_sources": {
+    "ao": {
+      "source": "FTP ASCII",
+      "n_records": 27817
+    },
+    "nao": {
+      "source": "FTP ASCII",
+      "n_records": 27816
+    }
+  },
+  "phase_2_potential": {
+    "ao_full": {
+      "n_wells": 1,
+      "barrier_raw": null,
+      "well_positions": [
+        -0.0891124999999997
+      ]
+    },
+    "ao_djf": {
+      "n_wells": 1,
+      "barrier_raw": null,
+      "well_positions": [
+        -0.004699999999998816
+      ]
+    },
+    "ao_sensitive": {
+      "n_wells": 7,
+      "barrier_raw": 2.186924384880294,
+      "well_positions": [
+        -6.1499299999999995,
+        -5.33957,
+        -2.908489999999999,
+        -0.0722299999999989
+      ]
+    },
+    "nao_full": {
+      "n_wells": 2,
+      "barrier_raw": 6.590359651343971,
+      "well_positions": [
+        -2.99128125,
+        0.23640625000000015
+      ]
+    },
+    "nao_djf": {
+      "n_wells": 1,
+      "barrier_raw": null,
+      "well_positions": [
+        0.2930999999999999
+      ]
+    },
+    "nao_sensitive": {
+      "n_wells": 7,
+      "barrier_raw": 0.09062293109180553,
+      "well_positions": [
+        -3.043825,
+        -2.8036250000000003,
+        -2.4433249999999997,
+        -0.34157499999999996
+      ]
+    }
+  },
+  "phase_3_kramers": {
+    "ao": {
+      "tau_attempt_days": 8.652438784756532,
+      "regime_stats": {
+        "mean_pos_duration": 5.716981132075472,
+        "mean_neg_duration": 6.57265625,
+        "n_pos_events": 1325,
+        "n_neg_events": 1280,
+        "frac_positive": 0.27231549052737536,
+        "frac_negative": 0.30244095337383614,
+        "frac_neutral": 0.4252435560987885
+      },
+      "barrier_kramers_raw": 1.601203256227768,
+      "barrier_kramers_corrected": 4.803609768683304,
+      "barrier_predicted": 4.442882938158366,
+      "best_threshold_sd": 1.0,
+      "ratio_corrected_over_predicted": 1.0811920627993103,
+      "prediction_in_correction_range": true
+    },
+    "nao": {
+      "tau_attempt_days": 6.930955630959432,
+      "regime_stats": {
+        "mean_pos_duration": 6.885524372230428,
+        "mean_neg_duration": 6.811367380560132,
+        "n_pos_events": 1354,
+        "n_neg_events": 1214,
+        "frac_positive": 0.33516681046879493,
+        "frac_negative": 0.2972749496692551,
+        "frac_neutral": 0.36755823986194996
+      },
+      "barrier_kramers_raw": 1.7230122755347834,
+      "barrier_kramers_corrected": 5.1690368266043505,
+      "barrier_predicted": 4.442882938158366,
+      "best_threshold_sd": 1.0,
+      "ratio_corrected_over_predicted": 1.1634420484522117,
+      "prediction_in_correction_range": true
+    }
+  },
+  "phase_4_seasonal": {
+    "ao": {
+      "djf_gt_jja": false,
+      "seasons": {
+        "DJF": {
+          "n_days": 6918,
+          "tau_attempt": 10.569678772200898,
+          "mfpt": 40.309859154929576,
+          "n_transitions": 71,
+          "threshold_sd": 1.0,
+          "barrier_raw": 1.3386066741749914,
+          "barrier_corrected": 4.015820022524974
+        },
+        "MAM": {
+          "n_days": 6991,
+          "tau_attempt": 7.144376127325251,
+          "mfpt": 42.51111111111111,
+          "n_transitions": 90,
+          "threshold_sd": 1.0,
+          "barrier_raw": 1.7834399880800356,
+          "barrier_corrected": 5.350319964240107
+        },
+        "JJA": {
+          "n_days": 6992,
+          "tau_attempt": 5.312654255337727,
+          "mfpt": 30.99056603773585,
+          "n_transitions": 106,
+          "threshold_sd": 1.0,
+          "barrier_raw": 1.7635912666787874,
+          "barrier_corrected": 5.290773800036362
+        },
+        "SON": {
+          "n_days": 6916,
+          "tau_attempt": 5.032752202721719,
+          "mfpt": 28.20967741935484,
+          "n_transitions": 124,
+          "threshold_sd": 1.0,
+          "barrier_raw": 1.72369809789925,
+          "barrier_corrected": 5.17109429369775
+        }
+      }
+    },
+    "nao": {
+      "djf_gt_jja": true,
+      "seasons": {
+        "DJF": {
+          "n_days": 6917,
+          "tau_attempt": 7.49460076078189,
+          "mfpt": 53.56410256410256,
+          "n_transitions": 78,
+          "threshold_sd": 1.0,
+          "barrier_raw": 1.96669625269847,
+          "barrier_corrected": 5.90008875809541
+        },
+        "MAM": {
+          "n_days": 6992,
+          "tau_attempt": 6.401631781040502,
+          "mfpt": 34.66981132075472,
+          "n_transitions": 106,
+          "threshold_sd": 1.0,
+          "barrier_raw": 1.6893163938799178,
+          "barrier_corrected": 5.0679491816397535
+        },
+        "JJA": {
+          "n_days": 6992,
+          "tau_attempt": 6.207105589768815,
+          "mfpt": 33.07216494845361,
+          "n_transitions": 97,
+          "threshold_sd": 1.0,
+          "barrier_raw": 1.6729972917947464,
+          "barrier_corrected": 5.0189918753842395
+        },
+        "SON": {
+          "n_days": 6915,
+          "tau_attempt": 5.908037699508348,
+          "mfpt": 29.436363636363637,
+          "n_transitions": 110,
+          "threshold_sd": 1.0,
+          "barrier_raw": 1.6059170227015442,
+          "barrier_corrected": 4.8177510681046325
+        }
+      }
+    }
+  },
+  "phase_5_monitor": {
+    "ao": {
+      "available": true,
+      "current_value": -0.321,
+      "current_std": -0.16312337853165765,
+      "current_regime": "neutral",
+      "barrier_full_raw": 1.601203256227768,
+      "barrier_full_corrected": 4.803609768683304,
+      "barrier_effective_raw": 0.1601203256227768,
+      "tau_attempt_days": 8.652438784756532,
+      "tau_escape_days": 10.154952802013078,
+      "transition_probabilities": {
+        "7d": 0.4980821468690647,
+        "14d": 0.7480784687084329,
+        "28d": 0.936535542071712
+      },
+      "stability": "TRANSITION_LIKELY"
+    },
+    "nao": {
+      "available": true,
+      "current_value": 2.082,
+      "current_std": 2.5196625195873352,
+      "current_regime": "positive",
+      "barrier_full_raw": 1.7230122755347834,
+      "barrier_full_corrected": 5.1690368266043505,
+      "barrier_effective_raw": 1.7230122755347834,
+      "tau_attempt_days": 6.930955630959432,
+      "tau_escape_days": 38.822888283378745,
+      "transition_probabilities": {
+        "7d": 0.16498534873557102,
+        "14d": 0.30275053217374404,
+        "28d": 0.5138431796160028
+      },
+      "stability": "STABLE_REGIME"
+    }
+  },
+  "kill_conditions": {
+    "K-HP-940": {
+      "description": "Effective double-well structure (PDF peaks or positive MFPT barrier)",
+      "details": [
+        "ao_full: 1 well(s)",
+        "ao_djf: 1 well(s)",
+        "ao_sensitive: 7 wells (barrier=2.1869)",
+        "AO_MFPT: barrier_raw=1.6012 (positive MFPT barrier implies effective double-well)",
+        "nao_full: 2 wells (barrier=6.5904)",
+        "nao_djf: 1 well(s)",
+        "nao_sensitive: 7 wells (barrier=0.0906)",
+        "NAO_MFPT: barrier_raw=1.7230 (positive MFPT barrier implies effective double-well)"
+      ],
+      "has_double_well": true,
+      "result": "PASS"
+    },
+    "K-HP-941": {
+      "description": "Kramers-inferred barrier within factor 3 of prediction",
+      "best_barrier_corrected": 5.1690368266043505,
+      "best_index": "NAO",
+      "prediction": 4.442882938158366,
+      "ratio": 1.1634420484522117,
+      "result": "PASS"
+    },
+    "K-HP-942": {
+      "description": "Winter DJF barrier > summer JJA barrier",
+      "details": [
+        "AO: DJF=1.3386 JJA=1.7636 -> NOT DJF>JJA",
+        "NAO: DJF=1.9667 JJA=1.6730 -> DJF>JJA"
+      ],
+      "djf_gt_jja_any_index": true,
+      "result": "PASS"
+    },
+    "K-HP-943": {
+      "description": "Corrected barrier within [2.5, 7.0]",
+      "barriers_checked": [
+        {
+          "label": "AO_Kramers_x2.0",
+          "value": 3.202406512455536,
+          "in_range": true
+        },
+        {
+          "label": "AO_Kramers_x3.0",
+          "value": 4.803609768683304,
+          "in_range": true
+        },
+        {
+          "label": "AO_Kramers_x5.0",
+          "value": 8.006016281138841,
+          "in_range": false
+        },
+        {
+          "label": "NAO_Kramers_x2.0",
+          "value": 3.446024551069567,
+          "in_range": true
+        },
+        {
+          "label": "NAO_Kramers_x3.0",
+          "value": 5.1690368266043505,
+          "in_range": true
+        },
+        {
+          "label": "NAO_Kramers_x5.0",
+          "value": 8.615061377673918,
+          "in_range": false
+        },
+        {
+          "label": "nao_full_PDF_x3.0",
+          "value": 19.771078954031914,
+          "in_range": false
+        }
+      ],
+      "any_in_range": true,
+      "result": "PASS"
+    }
+  },
+  "kill_conditions_passed": "4/4",
+  "references": [
+    "Hurrell, J.W. (1995). Science, 269, 676-679.",
+    "Thompson, D.W.J. & Wallace, J.M. (2000). J. Climate, 13, 1000-1016.",
+    "Woollings, T. et al. (2010). Q.J.R.Meteorol.Soc., 136, 856-868.",
+    "Feldstein, S.B. (2000). J. Atmos. Sci., 57, 2077-2091.",
+    "Keeley, S.P.E. et al. (2009). Q.J.R.Meteorol.Soc., 135, 1692-1708.",
+    "Bouchet, F. & Reygner, J. (2016). Ann. Henri Poincare, 17, 3499-3532.",
+    "Kramers, H.A. (1940). Physica, 7, 284-304.",
+    "Charney, J.G. & DeVore, J.G. (1979). J. Atmos. Sci., 36, 1205-1216.",
+    "Baldwin, M.P. & Dunkerton, T.J. (2001). Science, 294, 581-584.",
+    "Stephenson, D.B. et al. (2004). J. Climate, 17, 2078-2092.",
+    "Christiansen, B. (2005). J. Climate, 18, 720-732.",
+    "Franzke, C.L.E. et al. (2011). J. Climate, 24, 3084-3098."
+  ]
+}

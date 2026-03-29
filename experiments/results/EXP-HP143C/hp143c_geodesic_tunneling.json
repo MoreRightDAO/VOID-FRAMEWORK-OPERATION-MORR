@@ -1,0 +1,29 @@
+{
+  "experiment": "HP143C",
+  "title": "Geodesic Tunneling on the Eckert Manifold",
+  "key_result": "Eckert geodesic eliminates 77% of 9 OOM Gamow offset with zero free parameters",
+  "gamow": {
+    "R2": 0.8115,
+    "slope": 0.5851,
+    "offset": -9.23
+  },
+  "eckert": {
+    "R2": 0.8288,
+    "slope": 0.6034,
+    "offset": -2.09
+  },
+  "best_hybrid": {
+    "lambda": 0.71,
+    "R2": 0.832,
+    "slope": 0.598
+  },
+  "deltaG_vs_resid_rho": 0.4414,
+  "deltaG_F_test_p": 1.05e-07,
+  "full_model_R2": 0.8429,
+  "kill_conditions": {
+    "K-HP-143C-1": true,
+    "K-HP-143C-2": false,
+    "K-HP-143C-3": true
+  },
+  "pass_count": 2
+}

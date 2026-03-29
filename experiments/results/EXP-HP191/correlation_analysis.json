@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-03-28T20:26:21.543799",
+  "n_personas": 7,
+  "KC1": {
+    "test": "Spearman rho(Pe, CIS) > 0.7",
+    "rho_design_target": NaN,
+    "p_design_target": NaN,
+    "rho_estimated": NaN,
+    "p_estimated": NaN,
+    "PASS_design": false,
+    "PASS_estimated": false,
+    "PASS": false
+  },
+  "KC2": {
+    "test": "Mann-Whitney zone separation on >= 3/6 observables",
+    "n_separated": 0,
+    "PASS": false,
+    "observable_tests": {
+      "FCAR": {
+        "U_statistic": 6.0,
+        "p_value": 1.0,
+        "separated": false,
+        "group_low_mean": 0.0,
+        "group_high_mean": 0.0
+      },
+      "PCR": {
+        "U_statistic": 6.0,
+        "p_value": 1.0,
+        "separated": false,
+        "group_low_mean": 0.0,
+        "group_high_mean": 0.0
+      },
+      "EOR": {
+        "U_statistic": 6.0,
+        "p_value": 1.0,
+        "separated": false,
+        "group_low_mean": 0.0,
+        "group_high_mean": 0.0
+      },
+      "mean_CS": {
+        "U_statistic": 6.0,
+        "p_value": 1.0,
+        "separated": false,
+        "group_low_mean": 1.0,
+        "group_high_mean": 1.0
+      },
+      "RAS": {
+        "U_statistic": 6.0,
+        "p_value": 1.0,
+        "separated": false,
+        "group_low_mean": 0.8,
+        "group_high_mean": 0.8000000000000002
+      },
+      "entropy_normalized": {
+        "U_statistic": 6.0,
+        "p_value": 1.0,
+        "separated": false,
+        "group_low_mean": 0.9755037590061085,
+        "group_high_mean": 0.9755037590061085
+      }
+    }
+  },
+  "KC3": {
+    "test": "Kendall tau(Pe rank, CIS rank) > 0.7",
+    "tau_design_target": NaN,
+    "p_design_target": NaN,
+    "tau_estimated": NaN,
+    "p_estimated": NaN,
+    "PASS": false
+  },
+  "KC4": {
+    "test": "P1-P3 repulsive (Pe<0); P5-P7 positive drift (Pe>0)",
+    "Pe_values": {
+      "P1": -79.4115555014707,
+      "P2": -38.30146404156742,
+      "P3": -13.350982956052146,
+      "P4": -0.1813372152348047,
+      "P5": 5.50704920361468,
+      "P6": 14.99820452455359,
+      "P7": 26.710365632473433
+    },
+    "P1_P3_repulsive": true,
+    "P5_P7_positive": true,
+    "PASS": true
+  },
+  "KC5": {
+    "test": "Mean inter-observable correlation < 0.95 (multi-dimensional structure)",
+    "mean_inter_correlation": 1.0,
+    "pairwise_correlations": [],
+    "PASS": false
+  },
+  "summary": {
+    "kill_conditions": {
+      "KC1": false,
+      "KC2": false,
+      "KC3": false,
+      "KC4": true,
+      "KC5": false
+    },
+    "n_pass": 1,
+    "n_total": 5,
+    "overall": "PARTIAL"
+  }
+}

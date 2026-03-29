@@ -1,0 +1,57 @@
+{
+  "experiment": "THRML-ALC-02",
+  "title": "Compound Persistence Tracking",
+  "author": "Shamir / MoreRight (2026-03-09)",
+  "tests": {
+    "T1_initial_persistence": {
+      "persistence": 0,
+      "stable": false,
+      "pass": true
+    },
+    "T2_increment": {
+      "ticks_survived": 100,
+      "all_increments_one": true,
+      "sequential": true,
+      "sample_persistence": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "pass": true
+    },
+    "T3_reset_on_break": {
+      "pe_used": 10.4148,
+      "chi_break_prob": 0.6725,
+      "resets_observed": 32,
+      "n_trials": 100,
+      "persistence_after_break": 0,
+      "pass": true
+    },
+    "T4_stable_threshold": {
+      "threshold": 50,
+      "unstable_before_threshold": true,
+      "became_stable_at_tick": 49,
+      "final_stable": true,
+      "pass": true
+    },
+    "T5_hysteresis_bonus": {
+      "pe_mid": 20.34,
+      "p_break_young": 0.270451,
+      "p_break_stable": 0.065879,
+      "reduction_factor": 4.1053,
+      "mean_lifetime_young": 2.66,
+      "mean_lifetime_stable": 14.39,
+      "hysteresis_multiplier": 2.08,
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "THRML-ALC-02 PASS \u2014 Compound persistence tracking validated"
+}

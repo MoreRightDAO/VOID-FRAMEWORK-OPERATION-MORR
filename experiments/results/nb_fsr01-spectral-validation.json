@@ -1,0 +1,132 @@
+{
+  "experiment": "nb_fsr01",
+  "paper": 133,
+  "title": "Fisher Spectral Recovery: Core Validation",
+  "timestamp": "2026-03-17T21:29:49.699368+00:00",
+  "framework_sections": [
+    "\u00a751",
+    "\u00a748",
+    "\u00a735"
+  ],
+  "experiments": {
+    "exp1_forward_scaling": {
+      "kill_condition": "K-FSR-EXP-1",
+      "description": "Forward map polynomial scaling",
+      "Ns": [
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "times_s": [
+        0.0007987690000007319,
+        0.0007218421999994007,
+        0.0007752370000005726,
+        0.0012585103999995795,
+        0.004646379000000422,
+        0.020687641799999313
+      ],
+      "scaling_exponent": 0.921,
+      "passed": "True"
+    },
+    "exp2_condition_number": {
+      "kill_condition": "K-FSR-EXP-2",
+      "description": "Exponential ill-conditioning of Jacobian",
+      "Ns": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "kappas": [
+        65.00396769116549,
+        186.4576487883829,
+        2189.3455933315686,
+        27931.91246541123,
+        67920.33826035418,
+        5736.866454865916
+      ],
+      "log_kappa_slope": 0.3046,
+      "passed": "True"
+    },
+    "exp3_isospectrality": {
+      "kill_condition": "K-FSR-EXP-3",
+      "description": "SUSY isospectrality (shared eigenvalue matching)",
+      "N": 8,
+      "T": 0.2,
+      "n_grid": 400,
+      "n_trials": 10,
+      "match_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_match_error": 0.0,
+      "passed": true
+    },
+    "exp4_encrypt_decrypt": {
+      "kill_condition": "K-FSR-EXP-4",
+      "description": "Encrypt/decrypt correctness",
+      "N": 32,
+      "T": 0.05,
+      "M": 32,
+      "spectral_gap": 5.051207,
+      "noise_levels": [
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "success_rates": {
+        "0.01": 1.0,
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0,
+        "0.5": 1.0
+      },
+      "n_trials_per_level": 200,
+      "passed": true
+    },
+    "exp5_inversion": {
+      "kill_condition": "K-FSR-EXP-5",
+      "description": "Gradient inversion attack failure",
+      "T": 0.05,
+      "results_by_N": {
+        "8": {
+          "best_spectral_loss": 9.234449,
+          "best_key_recovery_error": 3.743686,
+          "n_starts": 5
+        },
+        "16": {
+          "best_spectral_loss": 28.11500102,
+          "best_key_recovery_error": 2.060527,
+          "n_starts": 5
+        },
+        "32": {
+          "best_spectral_loss": 1027.47774965,
+          "best_key_recovery_error": 1.709827,
+          "n_starts": 5
+        }
+      },
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 5,
+    "total": 5,
+    "all_passed": true,
+    "runtime_s": 18.51
+  }
+}

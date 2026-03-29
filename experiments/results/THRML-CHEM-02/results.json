@@ -1,0 +1,112 @@
+{
+  "experiment": "THRML-CHEM-02",
+  "title": "Cosmic Ray Spectrum, Error Correction & Materia",
+  "date": "2026-03-09",
+  "overall_pass": "True",
+  "test_1_spectrum": {
+    "pass": true,
+    "fitted_alpha": 2.698402278292553,
+    "categories": {
+      "BACKGROUND": 98020,
+      "PROTON": 1942,
+      "HEAVY_ION": 37,
+      "SHOWER": 1
+    },
+    "omg_fraction": 0.0
+  },
+  "test_2_ec": {
+    "pass": true,
+    "ec_values": {
+      "GAS": 0.14500000000000002,
+      "FLUID": 0.245,
+      "CRYSTAL": 0.745,
+      "VORTEX": 0.195,
+      "GLASS": 0.29500000000000004
+    },
+    "ec_max": 0.95
+  },
+  "test_3_propagation": {
+    "pass": true,
+    "speeds": {
+      "GAS": 8.0,
+      "FLUID": 4.0,
+      "CRYSTAL": 6.0,
+      "VORTEX": 5.0,
+      "GLASS": 5.5
+    }
+  },
+  "test_4_materia": {
+    "pass": true,
+    "grades": [
+      {
+        "hits": 0,
+        "grade": "DORMANT",
+        "level": 0,
+        "bonus": 0.0
+      },
+      {
+        "hits": 1,
+        "grade": "NASCENT",
+        "level": 1,
+        "bonus": 0.1
+      },
+      {
+        "hits": 3,
+        "grade": "ACTIVE",
+        "level": 2,
+        "bonus": 0.25
+      },
+      {
+        "hits": 6,
+        "grade": "MASTERED",
+        "level": 3,
+        "bonus": 0.5
+      },
+      {
+        "hits": 10,
+        "grade": "TRANSCENDENT",
+        "level": 4,
+        "bonus": 1.0
+      },
+      {
+        "hits": 15,
+        "grade": "TRANSCENDENT",
+        "level": 4,
+        "bonus": 1.0
+      }
+    ]
+  },
+  "test_5_mc": {
+    "pass": "True",
+    "results": {
+      "GAS": {
+        "total_damage": 0.11122794228822863,
+        "bond_breaks": 0,
+        "rays_absorbed": 22,
+        "theta_variance": 2.0550628036232376e-05,
+        "mean_theta": 0.49994696157590485
+      },
+      "FLUID": {
+        "total_damage": 0.00474382426137729,
+        "bond_breaks": 0,
+        "rays_absorbed": 6,
+        "theta_variance": 1.756938653106292e-07,
+        "mean_theta": 0.5000442123727918
+      },
+      "CRYSTAL": {
+        "total_damage": 0.0005858265780213995,
+        "bond_breaks": 0,
+        "rays_absorbed": 1,
+        "theta_variance": 6.726578478519224e-09,
+        "mean_theta": 0.5000117165315604
+      },
+      "GLASS": {
+        "total_damage": 0.0071307335859828085,
+        "bond_breaks": 0,
+        "rays_absorbed": 3,
+        "theta_variance": 6.062739382346332e-07,
+        "mean_theta": 0.4999147777813202
+      }
+    }
+  }
+}

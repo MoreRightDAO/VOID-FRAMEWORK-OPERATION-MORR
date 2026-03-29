@@ -1,0 +1,63 @@
+{
+  "experiment": "HP184",
+  "title": "Seismology Barrier Universality",
+  "domain": "Seismology",
+  "data_source": "USGS FDSN API",
+  "n_events": 339669,
+  "n_bins": 1011,
+  "intensity_role": "Seismic moment release rate (J/yr)",
+  "barrier_role": "Maximum magnitude in spatial-temporal bin",
+  "fit": {
+    "label": "M_max vs moment rate",
+    "N": 1011,
+    "beta": 0.05008486090027604,
+    "beta_std_err": 0.00038505264111037127,
+    "beta_ci_95": [
+      0.04932926522149178,
+      0.050840456579060306
+    ],
+    "beta_boot_ci_95": [
+      0.049359707890079624,
+      0.05083366863696811
+    ],
+    "a": 0.7294117487095083,
+    "R_squared": 0.9437190820621606,
+    "spearman_rho": 0.9679924990536146,
+    "spearman_p": 0.0,
+    "p_value_slope": 0.0
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "description": "beta > 0 (barrier grows with intensity)",
+      "threshold": "beta > 0",
+      "value": 0.05008486090027604,
+      "PASS": true
+    },
+    "KC-2": {
+      "description": "R^2 >= 0.3 (meaningful scaling relationship)",
+      "threshold": "R^2 >= 0.3",
+      "value": 0.9437190820621606,
+      "PASS": true
+    },
+    "KC-3": {
+      "description": "Spearman rho >= 0.3 AND p < 0.05",
+      "threshold": "rho >= 0.3 AND p < 0.05",
+      "value": "rho=0.968, p=0.00e+00",
+      "PASS": true
+    },
+    "KC-4": {
+      "description": "N_bins >= 15 (sufficient data)",
+      "threshold": "N >= 15",
+      "value": 1011,
+      "PASS": true
+    },
+    "KC-5": {
+      "description": "beta < 2.0 (physically plausible)",
+      "threshold": "beta < 2.0",
+      "value": 0.05008486090027604,
+      "PASS": true
+    }
+  },
+  "overall_pass": "5/5",
+  "timestamp": "2026-03-28T16:36:24.327134Z"
+}

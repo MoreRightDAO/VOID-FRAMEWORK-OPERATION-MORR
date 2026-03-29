@@ -1,0 +1,463 @@
+{
+  "experiment": "HP204",
+  "title": "Partial Information Decomposition \u2014 Why Three Dimensions",
+  "date": "2026-03-29T01:14:07.313949",
+  "hypothesis": "The three behavioral dimensions (O, R, alpha) correspond to three of four PID atoms for the 2-source decomposition I(S,E;Y): O <-> I_unique(S), R <-> I_redundancy, alpha <-> I_synergy.",
+  "method": {
+    "pid_definition": "Williams-Beer I_min (2010)",
+    "n_states": 4,
+    "n_profiles": 15,
+    "generation": "Joint distributions P(S,E,Y) constructed as mixtures of unique/redundant/synergistic channels weighted by O/R/alpha."
+  },
+  "verification": {
+    "AND_gate": {
+      "I_redundancy": 0.457519,
+      "I_unique_S": -0.146241,
+      "I_unique_E": -0.146241,
+      "I_synergy": 0.646241,
+      "I_S_Y": 0.311278,
+      "I_E_Y": 0.311278,
+      "I_SE_Y": 0.811278
+    },
+    "COPY_gate": {
+      "I_redundancy": 0.0,
+      "I_unique_S": 1.0,
+      "I_unique_E": 0.0,
+      "I_synergy": 0.0,
+      "I_S_Y": 1.0,
+      "I_E_Y": 0.0,
+      "I_SE_Y": 1.0
+    },
+    "RDN_gate": {
+      "I_redundancy": 1.0,
+      "I_unique_S": 0.0,
+      "I_unique_E": 0.0,
+      "I_synergy": 0.0,
+      "I_S_Y": 1.0,
+      "I_E_Y": 1.0,
+      "I_SE_Y": 1.0
+    },
+    "all_pass": true
+  },
+  "profiles": [
+    {
+      "name": "pure_transparent",
+      "O": 0.0,
+      "R": 1.0,
+      "alpha": 1.0,
+      "C": 0.777778,
+      "Pe": -2.712906,
+      "pid": {
+        "I_redundancy": 0.30074744,
+        "I_unique_S": -0.20834888,
+        "I_unique_E": 0.08387422,
+        "I_synergy": 0.42791084,
+        "I_S_Y": 0.09239856,
+        "I_E_Y": 0.38462166,
+        "I_SE_Y": 0.60418362
+      },
+      "framework_fraction": 0.861178
+    },
+    {
+      "name": "pure_opaque",
+      "O": 3.0,
+      "R": 1.0,
+      "alpha": 1.0,
+      "C": 0.444444,
+      "Pe": -0.244949,
+      "pid": {
+        "I_redundancy": 0.34618802,
+        "I_unique_S": 0.14119253,
+        "I_unique_E": -0.23022796,
+        "I_synergy": 0.38861283,
+        "I_S_Y": 0.48738055,
+        "I_E_Y": 0.11596006,
+        "I_SE_Y": 0.64576541
+      },
+      "framework_fraction": 1.35652
+    },
+    {
+      "name": "pure_responsive",
+      "O": 1.0,
+      "R": 3.0,
+      "alpha": 1.0,
+      "C": 0.444444,
+      "Pe": -0.244949,
+      "pid": {
+        "I_redundancy": 0.78313312,
+        "I_unique_S": -0.3585534,
+        "I_unique_E": -0.36759044,
+        "I_synergy": 0.66359003,
+        "I_S_Y": 0.42457972,
+        "I_E_Y": 0.41554269,
+        "I_SE_Y": 0.72057931
+      },
+      "framework_fraction": 1.510132
+    },
+    {
+      "name": "pure_coupled",
+      "O": 1.0,
+      "R": 1.0,
+      "alpha": 3.0,
+      "C": 0.444444,
+      "Pe": -0.244949,
+      "pid": {
+        "I_redundancy": 0.34618802,
+        "I_unique_S": -0.22531919,
+        "I_unique_E": -0.23022796,
+        "I_synergy": 0.69838305,
+        "I_S_Y": 0.12086883,
+        "I_E_Y": 0.11596006,
+        "I_SE_Y": 0.58902392
+      },
+      "framework_fraction": 1.390864
+    },
+    {
+      "name": "balanced",
+      "O": 1.0,
+      "R": 1.0,
+      "alpha": 1.0,
+      "C": 0.666667,
+      "Pe": -1.564229,
+      "pid": {
+        "I_redundancy": 0.54297811,
+        "I_unique_S": -0.29700867,
+        "I_unique_E": -0.3069779,
+        "I_synergy": 0.60464981,
+        "I_S_Y": 0.24596944,
+        "I_E_Y": 0.23600021,
+        "I_SE_Y": 0.54364135
+      },
+      "framework_fraction": 1.56467
+    },
+    {
+      "name": "high_pe",
+      "O": 2.5,
+      "R": 2.5,
+      "alpha": 2.5,
+      "C": 0.166667,
+      "Pe": 1.162235,
+      "pid": {
+        "I_redundancy": 0.44537785,
+        "I_unique_S": -0.07319056,
+        "I_unique_E": -0.27230629,
+        "I_synergy": 0.55108976,
+        "I_S_Y": 0.37218729,
+        "I_E_Y": 0.17307155,
+        "I_SE_Y": 0.65097076
+      },
+      "framework_fraction": 1.418308
+    },
+    {
+      "name": "low_pe",
+      "O": 0.5,
+      "R": 0.5,
+      "alpha": 0.5,
+      "C": 0.833333,
+      "Pe": -3.516895,
+      "pid": {
+        "I_redundancy": 0.396207,
+        "I_unique_S": -0.25236832,
+        "I_unique_E": -0.08693624,
+        "I_synergy": 0.43102937,
+        "I_S_Y": 0.14383868,
+        "I_E_Y": 0.30927076,
+        "I_SE_Y": 0.48793181
+      },
+      "framework_fraction": 1.178173
+    },
+    {
+      "name": "opaque_coupled",
+      "O": 2.5,
+      "R": 0.5,
+      "alpha": 2.5,
+      "C": 0.388889,
+      "Pe": 0.004263,
+      "pid": {
+        "I_redundancy": 0.23056998,
+        "I_unique_S": 0.01792032,
+        "I_unique_E": -0.17084906,
+        "I_synergy": 0.47628364,
+        "I_S_Y": 0.24849029,
+        "I_E_Y": 0.05972092,
+        "I_SE_Y": 0.55392487
+      },
+      "framework_fraction": 1.308434
+    },
+    {
+      "name": "responsive_only",
+      "O": 0.5,
+      "R": 2.5,
+      "alpha": 0.5,
+      "C": 0.611111,
+      "Pe": -1.149205,
+      "pid": {
+        "I_redundancy": 0.76019502,
+        "I_unique_S": -0.36322485,
+        "I_unique_E": -0.22032706,
+        "I_synergy": 0.57107034,
+        "I_S_Y": 0.39697016,
+        "I_E_Y": 0.53986795,
+        "I_SE_Y": 0.74771343
+      },
+      "framework_fraction": 1.294668
+    },
+    {
+      "name": "opaque_only",
+      "O": 2.5,
+      "R": 0.5,
+      "alpha": 0.5,
+      "C": 0.611111,
+      "Pe": -1.149205,
+      "pid": {
+        "I_redundancy": 0.34387129,
+        "I_unique_S": 0.13316503,
+        "I_unique_E": -0.22915448,
+        "I_synergy": 0.37637218,
+        "I_S_Y": 0.47703632,
+        "I_E_Y": 0.11471681,
+        "I_SE_Y": 0.62425402
+      },
+      "framework_fraction": 1.367085
+    },
+    {
+      "name": "coupled_only",
+      "O": 0.5,
+      "R": 0.5,
+      "alpha": 2.5,
+      "C": 0.611111,
+      "Pe": -1.149205,
+      "pid": {
+        "I_redundancy": 0.21492359,
+        "I_unique_S": -0.16180398,
+        "I_unique_E": -0.10020678,
+        "I_synergy": 0.6202492,
+        "I_S_Y": 0.0531196,
+        "I_E_Y": 0.11471681,
+        "I_SE_Y": 0.57316203
+      },
+      "framework_fraction": 1.174832
+    },
+    {
+      "name": "high_O_high_R",
+      "O": 2.5,
+      "R": 2.5,
+      "alpha": 0.5,
+      "C": 0.388889,
+      "Pe": 0.004263,
+      "pid": {
+        "I_redundancy": 0.60722901,
+        "I_unique_S": 0.0002884,
+        "I_unique_E": -0.32650224,
+        "I_synergy": 0.49506986,
+        "I_S_Y": 0.60751741,
+        "I_E_Y": 0.28072677,
+        "I_SE_Y": 0.77608503
+      },
+      "framework_fraction": 1.420704
+    },
+    {
+      "name": "high_R_high_a",
+      "O": 0.5,
+      "R": 2.5,
+      "alpha": 2.5,
+      "C": 0.388889,
+      "Pe": 0.004263,
+      "pid": {
+        "I_redundancy": 0.49941346,
+        "I_unique_S": -0.29227518,
+        "I_unique_E": -0.21868669,
+        "I_synergy": 0.67747395,
+        "I_S_Y": 0.20713828,
+        "I_E_Y": 0.28072677,
+        "I_SE_Y": 0.66592554
+      },
+      "framework_fraction": 1.328395
+    },
+    {
+      "name": "extreme_opaque",
+      "O": 3.0,
+      "R": 0.0,
+      "alpha": 0.0,
+      "C": 0.666667,
+      "Pe": -1.564229,
+      "pid": {
+        "I_redundancy": 0.25133011,
+        "I_unique_S": 0.36193923,
+        "I_unique_E": -0.18244799,
+        "I_synergy": 0.30462966,
+        "I_S_Y": 0.61326934,
+        "I_E_Y": 0.06888212,
+        "I_SE_Y": 0.735451
+      },
+      "framework_fraction": 1.248076
+    },
+    {
+      "name": "extreme_coupled",
+      "O": 0.0,
+      "R": 0.0,
+      "alpha": 3.0,
+      "C": 0.666667,
+      "Pe": -1.564229,
+      "pid": {
+        "I_redundancy": 0.0,
+        "I_unique_S": 0.0,
+        "I_unique_E": 0.06888212,
+        "I_synergy": 0.66656888,
+        "I_S_Y": 0.0,
+        "I_E_Y": 0.06888212,
+        "I_SE_Y": 0.735451
+      },
+      "framework_fraction": 0.90634
+    }
+  ],
+  "correlations": {
+    "primary": {
+      "O_vs_I_unique_S": {
+        "rho": 0.6309,
+        "p": 0.011673
+      },
+      "R_vs_I_redundancy": {
+        "rho": 0.8625,
+        "p": 3.5e-05
+      },
+      "alpha_vs_I_synergy": {
+        "rho": 0.711,
+        "p": 0.00296
+      }
+    },
+    "cross_correlation": {
+      "O_vs_I_uniq_S": {
+        "rho": 0.6309,
+        "p": 0.011673
+      },
+      "O_vs_I_red": {
+        "rho": 0.0796,
+        "p": 0.777901
+      },
+      "O_vs_I_syn": {
+        "rho": -0.5139,
+        "p": 0.050063
+      },
+      "O_vs_I_uniq_E": {
+        "rho": -0.5518,
+        "p": 0.032946
+      },
+      "R_vs_I_uniq_S": {
+        "rho": -0.5659,
+        "p": 0.027888
+      },
+      "R_vs_I_red": {
+        "rho": 0.8625,
+        "p": 3.5e-05
+      },
+      "R_vs_I_syn": {
+        "rho": 0.3528,
+        "p": 0.197172
+      },
+      "R_vs_I_uniq_E": {
+        "rho": -0.6675,
+        "p": 0.006546
+      },
+      "alpha_vs_I_uniq_S": {
+        "rho": -0.1231,
+        "p": 0.662063
+      },
+      "alpha_vs_I_red": {
+        "rho": -0.3328,
+        "p": 0.225428
+      },
+      "alpha_vs_I_syn": {
+        "rho": 0.711,
+        "p": 0.00296
+      },
+      "alpha_vs_I_uniq_E": {
+        "rho": 0.1306,
+        "p": 0.642792
+      }
+    },
+    "I_unique_E_stats": {
+      "mean": -0.18597898,
+      "std": 0.12597221,
+      "cv": Infinity,
+      "is_small": true,
+      "is_stable": false
+    }
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "description": "rho(O, I_unique_S) > 0.7",
+      "value": 0.6309,
+      "threshold": 0.7,
+      "p_value": 0.011673,
+      "result": "FAIL"
+    },
+    "KC-2": {
+      "description": "rho(R, I_redundancy) > 0.7",
+      "value": 0.8625,
+      "threshold": 0.7,
+      "p_value": 3.5e-05,
+      "result": "PASS"
+    },
+    "KC-3": {
+      "description": "rho(alpha, I_synergy) > 0.7",
+      "value": 0.711,
+      "threshold": 0.7,
+      "p_value": 0.00296,
+      "result": "PASS"
+    },
+    "KC-4": {
+      "description": "max |rho(I_unique_E, O or alpha)| < 0.5 (R excluded: structural coupling)",
+      "value": 0.5518,
+      "threshold": 0.5,
+      "correlations": {
+        "O": -0.5518,
+        "R": -0.6675,
+        "alpha": 0.1306
+      },
+      "note": "R <-> I_unique_E coupling is structurally expected: redundancy involves the S-E relationship, so varying R necessarily affects I(E;Y) and thus I_unique_E.",
+      "result": "FAIL"
+    },
+    "KC-5": {
+      "description": "framework fraction > 0.80 for all profiles",
+      "values": {
+        "pure_transparent": 0.8612,
+        "pure_opaque": 1.3565,
+        "pure_responsive": 1.5101,
+        "pure_coupled": 1.3909,
+        "balanced": 1.5647,
+        "high_pe": 1.4183,
+        "low_pe": 1.1782,
+        "opaque_coupled": 1.3084,
+        "responsive_only": 1.2947,
+        "opaque_only": 1.3671,
+        "coupled_only": 1.1748,
+        "high_O_high_R": 1.4207,
+        "high_R_high_a": 1.3284,
+        "extreme_opaque": 1.2481,
+        "extreme_coupled": 0.9063
+      },
+      "threshold": 0.8,
+      "n_pass": 15,
+      "n_total": 15,
+      "result": "PASS"
+    }
+  },
+  "overall": "3/5 KC PASS",
+  "diagonal_dominance": {
+    "description": "Each dimension's strongest positive correlation is with its hypothesized PID atom",
+    "O_best": "I_unique_S",
+    "R_best": "I_redundancy",
+    "alpha_best": "I_synergy",
+    "result": "3/3 MATCH"
+  },
+  "structural_argument": "PID for 2 sources yields exactly 4 atoms. 3 are system-attributable (unique_S, redundancy, synergy) -> 3 behavioral dimensions. The 4th (unique_E) is environment-external. Diagonal dominance holds: each dimension's strongest match is the hypothesized atom (3/3). This connects to HP202: n=3 dimensions -> 4-outcome Fisher 3-simplex -> B_A = sqrt(3)/2.",
+  "caveats": [
+    "Synthetic data with constructed channels \u2014 not empirical behavioral measurements",
+    "The O/R/alpha -> channel weight mapping is a modeling choice, not derived",
+    "I_min is one PID definition among several (Harder, Bertschinger, etc.)",
+    "KC-1 fails (rho=0.63): O <-> I_unique_S cross-contaminated by conservation (I_unique_S + I_unique_E + I_red + I_syn = I(S,E;Y) constrains atoms jointly)",
+    "KC-4 fails (O <-> I_unique_E anti-correlation): same conservation effect \u2014 more system-unique info means less environment-unique info",
+    "The mapping assumes S and E are the only two information sources"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "experiment": "HP216",
+  "title": "K Composition Rules \u2014 How K Combines Across Systems",
+  "timestamp": "2026-03-29T12:41:05.389579+00:00",
+  "duration_s": 7.487543,
+  "framework_constants": {
+    "B_A": 0.8660254037844386,
+    "B_G": 2.221441469079183,
+    "B_A_source": "HP202: Fisher 3-simplex, sqrt(3)/2",
+    "B_G_source": "SS165: Cencov-Parseval, pi/sqrt(2)",
+    "C_zero": 0.38984840061683806,
+    "C_test_FP": 0.2
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "description": "One composition rule dominates (R^2 > 0.95)",
+      "result": "PASS",
+      "best_model": "harmonic",
+      "best_R2": 0.9778360483687828,
+      "all_R2": {
+        "additive": 0.5933011412255458,
+        "multiplicative": 0.9203885039792716,
+        "harmonic": 0.9778360483687828,
+        "max": 0.22060719230225595
+      }
+    },
+    "KC-2": {
+      "description": "Consistent across tests (single rule)",
+      "result": "FAIL",
+      "note": "FP coupling: harmonic (coupled regime). Info theory: multiplicative at MI=0 (ratio=1.0000), sub-multiplicative under correlation. INTERPRETATION: composition rule depends on coupling regime. This is physically consistent but means no single universal rule."
+    },
+    "KC-3": {
+      "description": "K_eff monotonically increasing in K_A and K_B",
+      "result": "FAIL",
+      "violations": 90,
+      "total_checks": 420,
+      "analysis": "Violations occur even at lambda=0 (16 violations). When K_A << K_B, the mixture density is bimodal (sharp B-peak + broad A-hill). The variance of this bimodal mixture exceeds that of a unimodal Eckert density at moderate Pe, so variance-matched K_eff decreases. This is not a pathology of K but a limitation of the mixture-density approach: two very asymmetric uncoupled systems do not have a single effective K. K composition is only well-defined for systems in the same regime."
+    },
+    "KC-4": {
+      "description": "Coarse-graining monotonically decreases K_eff",
+      "result": "PASS"
+    },
+    "KC-5": {
+      "description": "K_eff = K when K_A = K_B = K (lambda=0)",
+      "result": "PASS",
+      "violations": 0,
+      "total": 6,
+      "data": [
+        [
+          1,
+          1.0000000469667623,
+          4.6966762257127925e-06
+        ],
+        [
+          2,
+          2.000000079178892,
+          3.958944594373293e-06
+        ],
+        [
+          5,
+          5.0000000442616965,
+          8.852339306031354e-07
+        ],
+        [
+          10,
+          9.999999316222539,
+          6.837774613188685e-06
+        ],
+        [
+          20,
+          19.999998628377373,
+          6.858113135166378e-06
+        ],
+        [
+          50,
+          49.99999915894069,
+          1.682118622170492e-06
+        ]
+      ]
+    }
+  },
+  "test1_fp_coupling": {
+    "n_runs": 126,
+    "r2_scores": {
+      "additive": 0.5933011412255458,
+      "multiplicative": 0.9203885039792716,
+      "harmonic": 0.9778360483687828,
+      "max": 0.22060719230225595
+    },
+    "best_model": "harmonic",
+    "kc5_data": [
+      [
+        1,
+        1.0000000469667623,
+        4.6966762257127925e-06
+      ],
+      [
+        2,
+        2.000000079178892,
+        3.958944594373293e-06
+      ],
+      [
+        5,
+        5.0000000442616965,
+        8.852339306031354e-07
+      ],
+      [
+        10,
+        9.999999316222539,
+        6.837774613188685e-06
+      ],
+      [
+        20,
+        19.999998628377373,
+        6.858113135166378e-06
+      ],
+      [
+        50,
+        49.99999915894069,
+        1.682118622170492e-06
+      ]
+    ]
+  },
+  "test2_information_theory": {
+    "n_runs": 105,
+    "r2_exp_mi": 0.91917241390958,
+    "conclusion": "Independent systems: K multiplicative (tensor product). Correlated systems: K sub-multiplicative. K_eff ~ K_A * K_B * exp(-gamma * MI) with fitted gamma."
+  },
+  "test3_llm_scaling": {
+    "n_models": 20,
+    "n_families": 5,
+    "conclusion": "INCONCLUSIVE. K and C are confounded in HP192 data. Pe variation comes from behavioral dimension mapping, not DOF count. Need independent C estimation to separate K.",
+    "family_scaling": [
+      {
+        "family": "Llama-2-base",
+        "n_members": 3,
+        "pe_scaling_exponent": 0.46816388492844263
+      },
+      {
+        "family": "Llama-2-chat",
+        "n_members": 3,
+        "pe_scaling_exponent": 0.5444570738842942
+      },
+      {
+        "family": "Llama-3-base",
+        "n_members": 2,
+        "pe_scaling_exponent": 0.10683717485264609
+      },
+      {
+        "family": "Llama-3-inst",
+        "n_members": 2,
+        "pe_scaling_exponent": 0.41662743963476456
+      },
+      {
+        "family": "Claude-3",
+        "n_members": 3,
+        "pe_scaling_exponent": 0.05862463118193897
+      }
+    ]
+  },
+  "test4_population": {
+    "n_runs": 35
+  },
+  "test5_coarse_graining": {
+    "n_runs": 30,
+    "monotonic": true,
+    "conclusion": "K_eff (entropy-based) monotonically decreases under coarse-graining. K is a resolution-dependent quantity. Scaling: K_eff ~ K_nominal^beta with beta in [0.6, 1.0] depending on distribution shape."
+  },
+  "synthesis": {
+    "main_finding": "NO single universal composition rule. K composition depends on the coupling regime and system similarity. (1) EQUAL SYSTEMS (K_A=K_B): K_eff = K exactly at lambda=0 (KC-5 PASS, <0.001% error). With coupling, K_eff decreases toward K*(1-f(lambda)). (2) SIMILAR SYSTEMS: harmonic mean is best single predictor (R^2=0.978 across all lambda, slope~1.0). (3) ASYMMETRIC SYSTEMS (K_A << K_B): combined K is pulled toward the SMALLER system. The mixture density is bimodal, and no single K characterizes it — K_eff is dominated by the less constrained component. (4) INFORMATION THEORY: independent systems are multiplicative (K_AB = K_A*K_B, tensor product), with sub-multiplicative reduction under correlation (K_eff ~ K_A*K_B*exp(-1.12*MI), R^2=0.79). (5) COARSE-GRAINING: K_eff monotonically decreases, tracking resolution (K_eff ~ K^beta, beta in [0.6,1.0]).",
+    "implications": "K-Factorization (SS136) is preserved: shape factors Q_shape(O,R,alpha) are K-independent because the mixture dominance by the less-constrained component is a K-level effect that does not alter the ratio structure. K composition being regime-dependent explains why K remains external in the RG flow (HP206): it is not a running coupling but a resolution-dependent DOF count. The harmonic mean dominance in the coupled regime connects to HP207 (pairwise Pe): K_eff = K_A*K_B/(K_A+K_B) = harmonic/2 is exactly the reduced mass formula from classical mechanics, suggesting K functions as an effective mass in the Pe dynamics. The key physical lesson: coupling constraints reduce effective DOF (sub-additive), while independent DOF multiply (tensor product). There is no single composition law because the structure of the interaction determines which regime applies."
+  }
+}

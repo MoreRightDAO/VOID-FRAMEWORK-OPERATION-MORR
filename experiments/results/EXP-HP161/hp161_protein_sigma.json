@@ -1,0 +1,45 @@
+{
+  "experiment": "EXP-HP161",
+  "title": "External Validation: \u03c3(c) Shape Test \u2014 Protein Folding",
+  "n_proteins": 30,
+  "framework_constants": {
+    "b_alpha": 0.867,
+    "b_gamma": 2.244
+  },
+  "timestamp": "2026-03-24T18:37:26.067007+00:00",
+  "baselines": {
+    "ln_N": {
+      "R2": 0.8020428978971363,
+      "rho": -0.895568477503053
+    },
+    "CO": {
+      "R2": 0.7729872807568697,
+      "rho": -0.8791969521994886
+    },
+    "multilinear_CO_lnN": {
+      "R2": 0.9118296922209383
+    }
+  },
+  "sigma_fixed": {
+    "rho": 0.4547073337640222,
+    "R2": 0.24922665089141743,
+    "MAE": 1.2618199954036384
+  },
+  "sigma_fitted": {
+    "R2": 0.30420784430308145,
+    "b_alpha_fit": 3.458523245469663,
+    "b_gamma_fit": 1.5161298650603057
+  },
+  "functional_form": {
+    "linear_CO_R2": 0.7729872807568697,
+    "quadratic_CO_R2": 0.7833391453785578,
+    "sinh2_CO_R2": null
+  },
+  "kill_conditions": {
+    "K-HP-161-1": "FAIL",
+    "K-HP-161-2": "FAIL",
+    "K-HP-161-3": "FAIL",
+    "K-HP-161-4": "FAIL"
+  },
+  "kill_conditions_passed": "0/4"
+}

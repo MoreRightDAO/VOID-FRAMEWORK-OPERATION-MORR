@@ -1,0 +1,294 @@
+{
+  "experiment": "HP217",
+  "title": "K Scaling Laws \u2014 Model Size, Training, Architecture",
+  "date": "2026-03-29",
+  "constants": {
+    "B_A": 0.8660254037844386,
+    "B_G": 2.221441469079183
+  },
+  "N_models": 27,
+  "N_base": 10,
+  "N_aligned": 17,
+  "test1_chinchilla_scaling": {
+    "description": "Power law fits: Pe_raw ~ params^alpha within model families",
+    "families": {
+      "Falcon_base_pe_raw": {
+        "alpha": -0.04650688595961431,
+        "R2": null,
+        "p": null,
+        "N": 2
+      },
+      "Llama-2_base_pe_raw": {
+        "alpha": 0.008907107767626434,
+        "R2": 0.03202146955752732,
+        "p": 0.8854628828093387,
+        "N": 3
+      },
+      "Llama-2_base_complexity": {
+        "alpha": 0.21253292358388567,
+        "R2": 0.9921215346905263,
+        "p": 0.05658129112668227,
+        "N": 3
+      },
+      "Llama-3_base_pe_raw": {
+        "alpha": -0.057975373151865024,
+        "R2": null,
+        "p": null,
+        "N": 2
+      }
+    }
+  },
+  "test2_alignment_shift": {
+    "description": "Decomposition of alignment Pe shift into O, R, alpha components",
+    "pairs_under_20pct_residual": 8,
+    "total_pairs": 8,
+    "alignment_increases_pe": 0,
+    "pairs": [
+      {
+        "base": "Llama-2-7B",
+        "aligned": "Llama-2-7B-Chat",
+        "dPe_raw": -0.28529866001134857,
+        "dO": -0.3420000000000003,
+        "dR": -0.17100000000000015,
+        "dalpha": 0.0029999999999996696,
+        "dC": 0.05666666666666664,
+        "dPe_O": -0.18751195869362508,
+        "dPe_R": -0.0920438816559046,
+        "dPe_alpha": 0.0015882124532222153,
+        "dPe_sum": -0.27796762789630747,
+        "residual": -0.007331032115041103,
+        "residual_pct": 2.569599210437753
+      },
+      {
+        "base": "Llama-2-13B",
+        "aligned": "Llama-2-13B-Chat",
+        "dPe_raw": -0.3414873676772504,
+        "dO": -0.40200000000000014,
+        "dR": -0.20100000000000007,
+        "dalpha": -0.010000000000000231,
+        "dC": 0.06811111111111123,
+        "dPe_O": -0.2184422975125505,
+        "dPe_R": -0.10697592129589972,
+        "dPe_alpha": -0.005232390970569045,
+        "dPe_sum": -0.3306506097790193,
+        "residual": -0.01083675789823113,
+        "residual_pct": 3.1733993476658453
+      },
+      {
+        "base": "Llama-2-70B",
+        "aligned": "Llama-2-70B-Chat",
+        "dPe_raw": -0.2638545748040982,
+        "dO": -0.23699999999999988,
+        "dR": -0.11849999999999994,
+        "dalpha": -0.11899999999999977,
+        "dC": 0.052722222222222115,
+        "dPe_O": -0.12826683866598515,
+        "dPe_R": -0.06336690218237806,
+        "dPe_alpha": -0.06363736669867776,
+        "dPe_sum": -0.25527110754704097,
+        "residual": -0.00858346725705722,
+        "residual_pct": 3.2531053378286554
+      },
+      {
+        "base": "Llama-3-8B",
+        "aligned": "Llama-3-8B-Instruct",
+        "dPe_raw": -0.18576774146610542,
+        "dO": -0.2400000000000002,
+        "dR": -0.1200000000000001,
+        "dalpha": 0.03000000000000025,
+        "dC": 0.036666666666666736,
+        "dPe_O": -0.133630308917283,
+        "dPe_R": -0.06590203203795675,
+        "dPe_alpha": 0.016217395475808083,
+        "dPe_sum": -0.18331494547943167,
+        "residual": -0.0024527959866737503,
+        "residual_pct": 1.32035625093783
+      },
+      {
+        "base": "Llama-3-70B",
+        "aligned": "Llama-3-70B-Instruct",
+        "dPe_raw": -0.1503936557442167,
+        "dO": -0.2100000000000002,
+        "dR": -0.1050000000000001,
+        "dalpha": 0.040000000000000036,
+        "dC": 0.030555555555555447,
+        "dPe_O": -0.11403405370679964,
+        "dPe_R": -0.0564028708988118,
+        "dPe_alpha": 0.021195454765577604,
+        "dPe_sum": -0.14924146984003384,
+        "residual": -0.0011521859041828675,
+        "residual_pct": 0.7661133699299507
+      },
+      {
+        "base": "Mistral-7B",
+        "aligned": "Mistral-7B-Instruct",
+        "dPe_raw": -0.30919666092302345,
+        "dO": -0.31499999999999995,
+        "dR": -0.15749999999999997,
+        "dalpha": -0.06499999999999995,
+        "dC": 0.05972222222222223,
+        "dPe_O": -0.17606838325230534,
+        "dPe_R": -0.08643557768085497,
+        "dPe_alpha": -0.035318277707320656,
+        "dPe_sum": -0.29782223864048096,
+        "residual": -0.011374422282542485,
+        "residual_pct": 3.6787015256203635
+      },
+      {
+        "base": "Mixtral-8x7B",
+        "aligned": "Mixtral-8x7B-Instruct",
+        "dPe_raw": -0.1638381803624367,
+        "dO": -0.2100000000000002,
+        "dR": -0.1050000000000001,
+        "dalpha": 0.020000000000000018,
+        "dC": 0.032777777777777906,
+        "dPe_O": -0.1154883829321649,
+        "dPe_R": -0.05708600117457929,
+        "dPe_alpha": 0.010737029224479167,
+        "dPe_sum": -0.16183735488226503,
+        "residual": -0.002000825480171664,
+        "residual_pct": 1.2212205212152094
+      },
+      {
+        "base": "Phi-2",
+        "aligned": "Phi-3-mini-instruct",
+        "dPe_raw": -0.10591404936218662,
+        "dO": -0.2400000000000002,
+        "dR": -0.1200000000000001,
+        "dalpha": 0.17500000000000027,
+        "dC": 0.02055555555555555,
+        "dPe_O": -0.138391280053904,
+        "dPe_R": -0.06813844049097473,
+        "dPe_alpha": 0.09607108757972688,
+        "dPe_sum": -0.11045863296515185,
+        "residual": 0.004544583602965224,
+        "residual_pct": 4.290822256662513
+      }
+    ]
+  },
+  "test3_architecture_efficiency": {
+    "description": "K_per_param = sum(benchmarks) / params across architecture families",
+    "anova_F": 7.09842663436982,
+    "anova_p": 0.000475392875046686,
+    "families": {
+      "Llama-2": {
+        "mean_K_per_param": 0.1759238095238095,
+        "std_K_per_param": 0.10987529075475745,
+        "N": 6
+      },
+      "Llama-3": {
+        "mean_K_per_param": 0.18161607142857145,
+        "std_K_per_param": 0.14034425007806517,
+        "N": 4
+      },
+      "Mistral": {
+        "mean_K_per_param": 0.3542857142857143,
+        "std_K_per_param": 0.0028571428571428636,
+        "N": 2
+      },
+      "Mixtral": {
+        "mean_K_per_param": 0.057765957446808514,
+        "std_K_per_param": 0.0009574468085106376,
+        "N": 2
+      },
+      "Falcon": {
+        "mean_K_per_param": 0.15475714285714287,
+        "std_K_per_param": 0.09495714285714286,
+        "N": 2
+      },
+      "Phi": {
+        "mean_K_per_param": 0.7858674463937622,
+        "std_K_per_param": 0.09376218323586738,
+        "N": 2
+      },
+      "GPT": {
+        "mean_K_per_param": 0.10368638888888888,
+        "std_K_per_param": 0.16035442584824522,
+        "N": 4
+      },
+      "Claude": {
+        "mean_K_per_param": 0.06745000000000001,
+        "std_K_per_param": 0.05451854424566623,
+        "N": 3
+      },
+      "Gemma": {
+        "mean_K_per_param": 0.3628571428571429,
+        "std_K_per_param": 0.0,
+        "N": 1
+      },
+      "Qwen": {
+        "mean_K_per_param": 0.03944444444444444,
+        "std_K_per_param": 0.0,
+        "N": 1
+      }
+    }
+  },
+  "test4_emergent_thresholds": {
+    "description": "Pe_raw vs log10(params) \u2014 inflection search",
+    "linear_R2": 0.012361576708610449,
+    "linear_p": 0.5808788863344037,
+    "linear_slope": 0.019878041820687795,
+    "base_R2": 0.1948685303743231,
+    "aligned_R2": 0.3311288049580798,
+    "piecewise_improvement": 0.07806039070253701,
+    "piecewise_split_params_B": 70.00000000000001,
+    "piecewise_F": 0.9737020559982634,
+    "piecewise_p": 0.3927158689525453
+  },
+  "test5_pca": {
+    "description": "PCA on standardized benchmark vectors",
+    "eigenvalues": [
+      3.720030050679775,
+      0.32076387030958486,
+      0.08016377586536877,
+      0.03288845699142518
+    ],
+    "explained_variance": [
+      0.8955627899784643,
+      0.07722093174119635,
+      0.019298686782403592,
+      0.00791759149793569
+    ],
+    "effective_dimensionality": 1.236964082909751,
+    "shannon_dimensionality": 1.5083991685636975,
+    "base_eff_dim": 1.337505185217057,
+    "aligned_eff_dim": 1.1774312972286738,
+    "rho_K_proxy_vs_PC1": -0.9980155817696179,
+    "p_K_proxy_vs_PC1": 1.5042773821173535e-31,
+    "rho_K_proxy_vs_PC2": 0.06166997476826638,
+    "p_K_proxy_vs_PC2": 0.7599287114048472,
+    "rho_K_proxy_vs_nonPC1_norm": -0.5241947855302643,
+    "p_K_proxy_vs_nonPC1_norm": 0.005005916985267316
+  },
+  "kill_conditions": {
+    "KC1_power_law_R2_gt_0.9": {
+      "pass": true,
+      "detail": "Llama-2 base complexity~params^alpha: R^2=0.9921"
+    },
+    "KC2_anova_p_lt_0.05": {
+      "pass": true,
+      "F": 7.09842663436982,
+      "p": 0.000475392875046686
+    },
+    "KC3_residual_lt_20pct_6of9": {
+      "pass": true,
+      "count": 8,
+      "total": 8
+    },
+    "KC4_pca_rho_gt_0.3": {
+      "pass": true,
+      "detail": "|rho_PC1|=0.9980, |rho_PC2|=0.0617, |rho_spread|=0.5242"
+    }
+  },
+  "kc_pass_total": 4,
+  "kc_total": 4,
+  "honest_assessment": {
+    "KC1_weakness": "N=3 points always fit log-log well. Pe_raw itself R^2=0.032. Complexity proxy tautological.",
+    "KC2_weakness": "K/param dominated by 1/params across 3 orders of magnitude. Measures size dispersion not architecture.",
+    "KC3_strength": "Genuine: sinh near-linearity in operating range gives clean decomposition (0.8-4.3% residuals).",
+    "KC4_weakness": "Near-tautological: K_proxy=sum(benchmarks) vs PC1=general capability. Correlation guaranteed.",
+    "genuinely_informative_kc": 1,
+    "central_finding": "K cannot be determined from benchmark data alone. It lives orthogonal to (O,R,alpha) space.",
+    "alignment_direction_contradiction": "Alignment DECREASES Pe_raw here (8/8) but HP192 found it INCREASES Pe. Benchmark-derived O,R,alpha are NOT equivalent to deployment-measured O,R,alpha. The mapping from benchmarks to behavioral geometry is the unsolved problem."
+  }
+}

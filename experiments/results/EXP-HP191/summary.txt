@@ -1,0 +1,23 @@
+HP191 — Synthetic Calibration Experiment
+Date: 2026-03-28T20:26:21.573447
+Mode: LIVE
+Model: gpt-4o-mini
+
+Persona                   CIS  Pe(design)   Pe(est)       Zone
+------------------------------------------------------------
+P1: Constraint Pole     0.040       -79.4    -123.8  repulsive
+P2: Spacelike           0.040       -38.3    -123.8  repulsive
+P3: Boundary            0.040       -13.4    -123.8  repulsive
+P4: Low Cascade         0.040        -0.2    -123.8  repulsive
+P5: Mid Cascade         0.040         5.5    -123.8    cascade
+P6: High Cascade        0.040        15.0    -123.8    cascade
+P7: Void Pole           0.040        26.7    -123.8     frozen
+
+Kill Conditions:
+  KC-1 (rho > 0.7):          FAIL (rho=nan)
+  KC-2 (zone separation):     FAIL (0/6)
+  KC-3 (monotonicity):        FAIL (tau=nan)
+  KC-4 (extreme placement):   PASS (low<0: True, high>0: True)
+  KC-5 (non-trivial):         FAIL (mean_r=1.000)
+
+  OVERALL: PARTIAL (1/5)

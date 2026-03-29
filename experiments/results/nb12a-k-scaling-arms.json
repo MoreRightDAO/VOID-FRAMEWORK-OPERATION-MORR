@@ -1,0 +1,65 @@
+{
+  "prediction_y_k": 0.48,
+  "results": [
+    {
+      "domain": "biology",
+      "label": "Biology (tumor populations)",
+      "n": 10,
+      "slope": 1.283625239124628,
+      "y_k": 0.2836252391246279,
+      "y_k_ci95": [
+        0.17840271428130683,
+        0.38884776396794896
+      ],
+      "slope_se": 0.05368496165475564,
+      "r_squared": 0.9861998527854711
+    },
+    {
+      "domain": "social",
+      "label": "Social neuroscience (primate groups)",
+      "n": 20,
+      "slope": 1.96722777414714,
+      "y_k": 0.96722777414714,
+      "y_k_ci95": [
+        0.7474862190561544,
+        1.1869693292381256
+      ],
+      "slope_se": 0.11211303831172735,
+      "r_squared": 0.9447668152489904
+    },
+    {
+      "domain": "pooled",
+      "label": "Pooled (biology + social + LLM)",
+      "n": 30,
+      "slope": 1.0382681066588124,
+      "y_k": 0.03826810665881242,
+      "y_k_ci95": [
+        -0.025525346811770863,
+        0.1020615601293957
+      ],
+      "slope_se": 0.03254768034213433,
+      "r_squared": 0.97322122777194
+    }
+  ],
+  "config": {
+    "domains": [
+      "biology",
+      "social"
+    ],
+    "exclude_constraint_domains": true,
+    "llm_k_alt": false,
+    "llm_use_theory": false
+  },
+  "meta_pooled": {
+    "y_k": 0.4111342525604545,
+    "y_k_ci95": [
+      0.31623106399408135,
+      0.5060374411268277
+    ],
+    "method": "inverse_variance_weighted",
+    "domains": [
+      "biology",
+      "social"
+    ]
+  }
+}

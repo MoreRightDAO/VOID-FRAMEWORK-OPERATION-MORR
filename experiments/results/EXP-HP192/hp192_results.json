@@ -1,0 +1,152 @@
+{
+  "experiment": "HP192",
+  "timestamp": "2026-03-28T22:48:09.732537+00:00",
+  "n_models": 27,
+  "n_base": 10,
+  "n_aligned": 17,
+  "pe_range": [
+    -29.8769,
+    1.4663
+  ],
+  "pe_mean": -10.478151851851852,
+  "pe_std": 7.621394439459446,
+  "correlations": {
+    "truthfulqa_mc2": {
+      "label": "TruthfulQA mc2 (INPUT)",
+      "rho": -0.19117424513072934,
+      "p": 0.339468879454893,
+      "ci_95": [
+        -0.5063133817580758,
+        0.19726910100043382
+      ],
+      "n": 27
+    },
+    "mmlu": {
+      "label": "MMLU",
+      "rho": -0.478021978021978,
+      "p": 0.011671915654316821,
+      "ci_95": [
+        -0.7090343079948602,
+        -0.12909792159419484
+      ],
+      "n": 27
+    },
+    "hellaswag": {
+      "label": "HellaSwag",
+      "rho": -0.4800733440024066,
+      "p": 0.011267716664290849,
+      "ci_95": [
+        -0.7152631564007949,
+        -0.14725070348787941
+      ],
+      "n": 27
+    },
+    "arc_challenge": {
+      "label": "ARC-Challenge",
+      "rho": -0.39438339438339437,
+      "p": 0.04178431984002491,
+      "ci_95": [
+        -0.7081720657811146,
+        0.01323359551802944
+      ],
+      "n": 27
+    },
+    "arena_elo": {
+      "label": "Arena Elo (aligned only)",
+      "rho": -0.5882352941176471,
+      "p": 0.013000939348990008,
+      "ci_95": [
+        -0.8170637427703766,
+        -0.15339930856203526
+      ],
+      "n": 17
+    },
+    "mt_bench": {
+      "label": "MT-Bench (INPUT, aligned only)",
+      "rho": -0.286764705882353,
+      "p": 0.2644463470710112,
+      "ci_95": [
+        -0.690325117381719,
+        0.245039807930607
+      ],
+      "n": 17
+    }
+  },
+  "partial_correlations": {
+    "mmlu": {
+      "label": "MMLU",
+      "rho": -0.4884004884004884,
+      "p": 0.009744596441557759,
+      "n": 27
+    },
+    "hellaswag": {
+      "label": "HellaSwag",
+      "rho": -0.44749694749694746,
+      "p": 0.019257297732284726,
+      "n": 27
+    },
+    "arc_challenge": {
+      "label": "ARC-Challenge",
+      "rho": -0.49511599511599513,
+      "p": 0.00864526360456826,
+      "n": 27
+    }
+  },
+  "base_vs_aligned": {
+    "mann_whitney_U": 46.0,
+    "mann_whitney_p": 0.05322741328150346,
+    "cohens_d": 0.5096485790656559,
+    "base_pe_mean": -12.652730000000002,
+    "aligned_pe_mean": -9.19898823529412
+  },
+  "zone_separation": {
+    "mmlu": {
+      "H": null,
+      "p": null,
+      "n_groups": 1,
+      "pass": false
+    },
+    "hellaswag": {
+      "H": null,
+      "p": null,
+      "n_groups": 1,
+      "pass": false
+    },
+    "arc_challenge": {
+      "H": null,
+      "p": null,
+      "n_groups": 1,
+      "pass": false
+    },
+    "truthfulqa_mc2": {
+      "H": null,
+      "p": null,
+      "n_groups": 1,
+      "pass": false
+    }
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "pass": false,
+      "rho": -0.19117424513072934
+    },
+    "KC-2": {
+      "pass": false,
+      "p": 0.05322741328150346,
+      "d": 0.5096485790656559
+    },
+    "KC-3": {
+      "pass": false,
+      "n_pass": 0
+    },
+    "KC-FAIL": {
+      "triggered": false
+    }
+  },
+  "paired_analysis": {
+    "n_pairs": 9,
+    "mean_dPe": 7.031022222222223,
+    "paired_t_p": 0.00023545101437383103,
+    "sign_consistency": "9/9"
+  }
+}

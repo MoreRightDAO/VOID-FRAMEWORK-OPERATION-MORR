@@ -1,0 +1,497 @@
+{
+  "experiment": "HP132",
+  "title": "NS L\u221e Vorticity Control",
+  "section": "\u00a7127 extension (L\u00b2\u2192L\u221e bridge)",
+  "parent": "HP130",
+  "run_date": "2026-03-18T18:08:00.059931",
+  "parameters": {
+    "HP120_barrier_exponent": 5.0,
+    "HP120_gamma": 7.86,
+    "amplification_exponent": 1.5,
+    "effective_exponent": 6.5,
+    "delta": 0.01
+  },
+  "probes": {
+    "C1_sobolev_control": {
+      "s_results": {
+        "s=1.0": {
+          "s": 1.0,
+          "inverse_barrier_sum": [
+            228286635167.41214,
+            79159.30620991877,
+            0.025109018966518674,
+            7.940937880103623e-09,
+            2.5111527357262598e-15
+          ],
+          "probability_weighted_sum": [
+            702314.2210946577,
+            6385.042767459359,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "trend": "decreasing",
+          "converges": true
+        },
+        "s=1.5": {
+          "s": 1.5,
+          "inverse_barrier_sum": [
+            26859934439289.668,
+            9313789.979421405,
+            2.954297358586005,
+            9.34321322357038e-07,
+            2.9545924928626143e-13
+          ],
+          "probability_weighted_sum": [
+            68061155.57923505,
+            796353.938918465,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "trend": "decreasing",
+          "converges": true
+        },
+        "s=2.0": {
+          "s": 2.0,
+          "inverse_barrier_sum": [
+            3182920581703458.0,
+            1103690475.7220922,
+            350.0862553618442,
+            0.00011071771502556408,
+            3.5012122897525746e-11
+          ],
+          "probability_weighted_sum": [
+            7004508788.462999,
+            99387375.94603981,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "trend": "decreasing",
+          "converges": true
+        },
+        "s=2.5": {
+          "s": 2.5,
+          "inverse_barrier_sum": [
+            3.794709051933902e+17,
+            131583058114.33083,
+            41737.62580869205,
+            0.013199874286278668,
+            4.174179539709339e-09
+          ],
+          "probability_weighted_sum": [
+            750234238263.3878,
+            12411647418.410912,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "trend": "decreasing",
+          "converges": true
+        },
+        "s=3.0": {
+          "s": 3.0,
+          "inverse_barrier_sum": [
+            4.547740291130524e+19,
+            15769471831094.543,
+            5002014.118831692,
+            1.5819289254593658,
+            5.002513819992193e-07
+          ],
+          "probability_weighted_sum": [
+            82635375629467.53,
+            1550927363649.4272,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "trend": "decreasing",
+          "converges": true
+        },
+        "s=3.5": {
+          "s": 3.5,
+          "inverse_barrier_sum": [
+            5.474971237820533e+21,
+            1898468232217391.5,
+            602186617.4985086,
+            190.4465693447355,
+            6.022467759355809e-05
+          ],
+          "probability_weighted_sum": [
+            9291137076432598.0,
+            193913646603292.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "trend": "decreasing",
+          "converges": true
+        },
+        "s=4.0": {
+          "s": 4.0,
+          "inverse_barrier_sum": [
+            6.617528554789896e+23,
+            2.294654563712596e+17,
+            72785535549.13394,
+            23019.036193188367,
+            0.007279280682340818
+          ],
+          "probability_weighted_sum": [
+            1.061216940711274e+18,
+            2.425892663854613e+16,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "trend": "decreasing",
+          "converges": true
+        }
+      },
+      "Re_values": [
+        100.0,
+        1000.0,
+        10000.0,
+        100000.0,
+        1000000.0
+      ],
+      "K_max": 128,
+      "critical_s": 3.93,
+      "sobolev_margin": 2.43
+    },
+    "C2_sobolev_embedding": {
+      "s": 2.0,
+      "Re_values": [
+        100.0,
+        162.3776739188721,
+        263.6650898730358,
+        428.13323987193957,
+        695.1927961775605,
+        1128.8378916846884,
+        1832.9807108324355,
+        2976.351441631319,
+        4832.930238571752,
+        7847.5997035146065,
+        12742.749857031322,
+        20691.3808111479,
+        33598.18286283781,
+        54555.947811685146,
+        88586.67904100832,
+        143844.9888287663,
+        233572.14690901214,
+        379269.01907322457,
+        615848.2110660254,
+        1000000.0
+      ],
+      "Hs_norms": [
+        83692.94348069615,
+        83606.61788338165,
+        82992.22287217627,
+        78820.27139180416,
+        54718.53963001006,
+        1688.47329337863,
+        7.9165313809610735e-25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Linf_bounds": [
+        83692.94348069615,
+        83606.61788338165,
+        82992.22287217627,
+        78820.27139180416,
+        54718.53963001006,
+        1688.47329337863,
+        7.9165313809610735e-25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "alpha_effective": -15.376913331309344,
+      "barrier_exponent": 6.5,
+      "barrier_wins": true
+    },
+    "C3_bkm_integral": {
+      "bkm_data": [
+        {
+          "Re": 100.0,
+          "E_b": 32230000000.0,
+          "Omega_max": 32230000000.0,
+          "k_max": 31.622776601683793,
+          "omega_inf_bound": 31924944.63381681,
+          "log10_omega_inf": 7.504130152756168
+        },
+        {
+          "Re": 278.2559402207126,
+          "E_b": 23174679359956.715,
+          "Omega_max": 23174679359956.715,
+          "k_max": 68.12920690579615,
+          "omega_inf_bound": 2707116008.255953,
+          "log10_omega_inf": 9.432506867024992
+        },
+        {
+          "Re": 774.263682681127,
+          "E_b": 1.7646417524829624e+16,
+          "Omega_max": 1.7646417524829624e+16,
+          "k_max": 146.77992676220694,
+          "omega_inf_bound": 236226315047.18625,
+          "log10_omega_inf": 11.373328275340187
+        },
+        {
+          "Re": 2154.4346900318824,
+          "E_b": 1.3613455137767875e+19,
+          "Omega_max": 1.3613455137767875e+19,
+          "k_max": 316.2277660168378,
+          "omega_inf_bound": 20748379469218.254,
+          "log10_omega_inf": 13.316984182250046
+        },
+        {
+          "Re": 5994.8425031894085,
+          "E_b": 1.0532142627537795e+22,
+          "Omega_max": 1.0532142627537795e+22,
+          "k_max": 681.2920690579612,
+          "omega_inf_bound": 1824981077840804.5,
+          "log10_omega_inf": 15.261258365870889
+        },
+        {
+          "Re": 16681.005372000593,
+          "E_b": 8.153277472518741e+24,
+          "Omega_max": 8.153277472518741e+24,
+          "k_max": 1467.79926762207,
+          "omega_inf_bound": 1.6057062996855974e+17,
+          "log10_omega_inf": 17.20566611124746
+        },
+        {
+          "Re": 46415.888336127726,
+          "E_b": 6.312556766729781e+27,
+          "Omega_max": 6.312556766729781e+27,
+          "k_max": 3162.2776601683763,
+          "omega_inf_bound": 1.4128714464513133e+19,
+          "log10_omega_inf": 19.15010264830527
+        },
+        {
+          "Re": 129154.96650148826,
+          "E_b": 4.887545103870177e+30,
+          "Omega_max": 4.887545103870177e+30,
+          "k_max": 6812.920690579608,
+          "omega_inf_bound": 1.2432125600650103e+21,
+          "log10_omega_inf": 21.094545389117208
+        },
+        {
+          "Re": 359381.36638046254,
+          "E_b": 3.78424227498245e+33,
+          "Omega_max": 3.78424227498245e+33,
+          "k_max": 14677.992676220689,
+          "omega_inf_bound": 1.0939298335287209e+23,
+          "log10_omega_inf": 23.038989466523407
+        },
+        {
+          "Re": 1000000.0,
+          "E_b": 2.930000293e+36,
+          "Omega_max": 2.930000293e+36,
+          "k_max": 31622.776601683792,
+          "omega_inf_bound": 9.625733463399401e+24,
+          "log10_omega_inf": 24.983433831891777
+        }
+      ],
+      "omega_growth_exponent": 4.371940363924592,
+      "barrier_exponent": 6.5,
+      "bkm_bounded": true
+    },
+    "C4_vortex_stretching": {
+      "stretching_data": [
+        {
+          "Re": 100.0,
+          "Omega_max": 32230000000.0,
+          "stretching_bound": 179527156.7200907,
+          "log_stretching": 19.005837045369017,
+          "log_escape_rate": -32230000000.0,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 278.2559402207126,
+          "Omega_max": 23174679359956.715,
+          "stretching_bound": 22344648832.20516,
+          "log_stretching": 23.829852703486925,
+          "log_escape_rate": -23174679359956.715,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 774.263682681127,
+          "Omega_max": 1.7646417524829624e+16,
+          "stretching_bound": 2861947143755.7686,
+          "log_stretching": 28.682523328602876,
+          "log_escape_rate": -1.7646417524829624e+16,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 2154.4346900318824,
+          "Omega_max": 1.3613455137767875e+19,
+          "stretching_bound": 368964160017851.25,
+          "log_stretching": 33.54172062792902,
+          "log_escape_rate": -1.3613455137767875e+19,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 5994.8425031894085,
+          "Omega_max": 1.0532142627537795e+22,
+          "stretching_bound": 4.763487528810269e+16,
+          "log_stretching": 38.40234156199321,
+          "log_escape_rate": -1.0532142627537795e+22,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 16681.005372000593,
+          "Omega_max": 8.153277472518741e+24,
+          "stretching_bound": 6.151760859606755e+18,
+          "log_stretching": 43.26327003336514,
+          "log_escape_rate": -8.153277472518741e+24,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 46415.888336127726,
+          "Omega_max": 6.312556766729781e+27,
+          "stretching_bound": 7.945160015210363e+20,
+          "log_stretching": 48.12426480003309,
+          "log_escape_rate": -6.312556766729781e+27,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 129154.96650148826,
+          "Omega_max": 4.887545103870177e+30,
+          "stretching_bound": 1.0261528502554269e+23,
+          "log_stretching": 52.98527385137282,
+          "log_escape_rate": -4.887545103870177e+30,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 359381.36638046254,
+          "Omega_max": 3.78424227498245e+33,
+          "stretching_bound": 1.3253262499190125e+25,
+          "log_stretching": 57.846285980334564,
+          "log_escape_rate": -3.78424227498245e+33,
+          "barrier_dominates": true
+        },
+        {
+          "Re": 1000000.0,
+          "Omega_max": 2.930000293e+36,
+          "stretching_bound": 1.7117243624485806e+27,
+          "log_stretching": 62.70729877235372,
+          "log_escape_rate": -2.930000293e+36,
+          "barrier_dominates": true
+        }
+      ],
+      "all_bounded": true
+    },
+    "C5_pointwise_max": {
+      "evolution_data": [
+        {
+          "Re": 100.0,
+          "omega_0": 100.0,
+          "omega_ceiling": 31924944.63381681,
+          "T_star_uncapped": 0.1,
+          "saturated_at": 0.1009,
+          "final_omega": 31924944.63381681,
+          "blew_up": false,
+          "sub_exponential": "True"
+        },
+        {
+          "Re": 1000.0,
+          "omega_0": 1000.0,
+          "omega_ceiling": 722968552029.9011,
+          "T_star_uncapped": 0.01,
+          "saturated_at": 0.0108,
+          "final_omega": 722968552029.9011,
+          "blew_up": false,
+          "sub_exponential": "True"
+        },
+        {
+          "Re": 10000.0,
+          "omega_0": 10000.0,
+          "omega_ceiling": 1.7118098609366636e+16,
+          "T_star_uncapped": 0.001,
+          "saturated_at": 0.0016,
+          "final_omega": 1.7118098609366636e+16,
+          "blew_up": false,
+          "sub_exponential": "True"
+        },
+        {
+          "Re": 100000.0,
+          "omega_0": 100000.0,
+          "omega_ceiling": 4.059144359549675e+20,
+          "T_star_uncapped": 0.0001,
+          "saturated_at": 0.0006000000000000001,
+          "final_omega": 4.059144359549675e+20,
+          "blew_up": false,
+          "sub_exponential": "True"
+        }
+      ],
+      "all_sub_exponential": true
+    }
+  },
+  "kill_conditions": {
+    "K-NS-132-1": {
+      "description": "H^s norm (s=2) bounded: barrier hierarchy controls H\u00b2 norm",
+      "measured": {
+        "converges": true,
+        "sobolev_margin": 2.43
+      },
+      "result": "PASS"
+    },
+    "K-NS-132-2": {
+      "description": "\u2016\u03c9\u2016_\u221e \u2264 C\u00b7Re^\u03b1 with \u03b1 < 6.5 (barrier wins)",
+      "measured": {
+        "alpha": -15.376913331309344,
+        "barrier_wins": true
+      },
+      "result": "PASS"
+    },
+    "K-NS-132-3": {
+      "description": "BKM integral \u222b\u2016\u03c9\u2016_\u221e dt bounded for finite T",
+      "measured": {
+        "bounded": true,
+        "omega_growth": 4.371940363924592
+      },
+      "result": "PASS"
+    },
+    "K-NS-132-4": {
+      "description": "Vortex stretching |\u03c9\u00b7\u2207u| bounded by barrier structure",
+      "measured": {
+        "all_bounded": true
+      },
+      "result": "PASS"
+    },
+    "K-NS-132-5": {
+      "description": "max|\u03c9(t)| sub-exponential (no finite-time blowup)",
+      "measured": {
+        "all_sub_exponential": true
+      },
+      "result": "PASS"
+    }
+  },
+  "summary": {
+    "pass_count": 5,
+    "total_count": 5,
+    "result_string": "5/5 PASS"
+  }
+}

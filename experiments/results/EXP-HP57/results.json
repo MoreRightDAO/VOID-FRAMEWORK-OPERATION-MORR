@@ -1,0 +1,126 @@
+{
+  "experiment": "EXP-HP57",
+  "title": "Spectral Functional Equation (S-transform)",
+  "date": "2026-03-15",
+  "framework_sections": [
+    "\u00a780D",
+    "\u00a780L",
+    "HP53",
+    "HP54",
+    "HP55"
+  ],
+  "tests": [
+    {
+      "id": "F1",
+      "name": "S-transform at Pe=0",
+      "max_relative_defect": 6.18e-08,
+      "defects_by_tau": {
+        "0.3j": 6.18e-08,
+        "0.5j": 1.02e-08,
+        "0.7j": 1.3e-09,
+        "0.8j": 5e-10,
+        "1.2j": 3e-10,
+        "1.5j": 1.9e-09,
+        "2j": 1.02e-08,
+        "3j": 4.66e-08
+      }
+    },
+    {
+      "id": "F2",
+      "name": "S-defect growth with Pe",
+      "alpha_by_tau": {
+        "0.5j": 1.5922,
+        "0.7j": 1.9205,
+        "0.8j": 2.0692,
+        "1.2j": 2.1106,
+        "1.5j": 1.866,
+        "2j": 1.5922
+      },
+      "mean_alpha": 1.8584
+    },
+    {
+      "id": "F3",
+      "name": "E\u2082 anomaly prediction",
+      "r2_e2_anomaly": 0.9242,
+      "r2_theta3_cubed_deriv": 0.5443,
+      "r2_composite": 0.6345,
+      "delta2_by_tau": {
+        "0.5j": -0.0014467184,
+        "0.7j": -0.0003842677,
+        "0.8j": -0.0001835064,
+        "1.2j": 0.0001680889,
+        "1.5j": 0.0007279757,
+        "2j": 0.0028934367
+      }
+    },
+    {
+      "id": "F4",
+      "name": "Linguistic hierarchy",
+      "onset_pe": {
+        "phonology": 0.35,
+        "syntax": 1.5,
+        "semantics": 2.5
+      },
+      "alpha": {
+        "phonology": 0.3518,
+        "syntax": 1.003,
+        "semantics": 1.3092
+      },
+      "hierarchy_ordered": "True"
+    },
+    {
+      "id": "F5",
+      "name": "Quasi-modular decomposition of S-defect",
+      "r2": -0.407505,
+      "coefficients": {
+        "\u03b8\u2083\u00b3\u00b7\u03b8\u2083'": 1.4313916603,
+        "\u03b8\u2083\u00b2\u00b7(\u03b8\u2083')\u00b2": -1.5197026964,
+        "\u03b8\u2083\u00b3\u00b7\u03b8\u2083''": -1.7167999158,
+        "\u03b8\u2083\u2076\u00b7\u03b8\u2083'": 0.323193923
+      },
+      "delta2_extended": {
+        "0.5j": -0.0014467184,
+        "0.7j": -0.0003842677,
+        "0.8j": -0.0001835064,
+        "1.2j": 0.0001680889,
+        "1.5j": 0.0007279757,
+        "2j": 0.0028934367,
+        "2.5j": 0.0064500708,
+        "3j": 0.0108732961,
+        "4j": 0.0206808634
+      }
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-225",
+      "description": "S-transform holds at Pe=0 (|defect| < 10\u207b\u00b2)",
+      "result": "PASS",
+      "max_defect": 6.18e-08
+    },
+    {
+      "id": "K-HP-226",
+      "description": "S-defect power law \u03b1 \u2265 1.50 (at least syntax-level)",
+      "result": "PASS",
+      "mean_alpha": 1.8584
+    },
+    {
+      "id": "K-HP-227",
+      "description": "E\u2082 anomaly predicts S-defect structure (R\u00b2 > 0.85)",
+      "result": "PASS",
+      "best_r2": 0.9242,
+      "best_predictor": "E\u2082_anomaly"
+    },
+    {
+      "id": "K-HP-228",
+      "description": "Hierarchy: phono \u2264 syntax \u2264 semantic onset",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-229",
+      "description": "S-defect Pe\u00b2 coefficient decomposes in quasi-modular basis (R\u00b2 > 0.80)",
+      "result": "FAIL",
+      "r2": -0.407505
+    }
+  ]
+}

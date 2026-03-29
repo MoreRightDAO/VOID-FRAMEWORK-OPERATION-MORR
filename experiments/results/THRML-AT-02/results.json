@@ -1,0 +1,162 @@
+{
+  "experiment": "THRML-AT-02",
+  "verdict": "PASS",
+  "description": "Entropy production \u03c3 \u2192 0 as Pe \u2192 0 (Paper 77 arrow of time)",
+  "eta_tau": 0.05082,
+  "sigma_at_pe0": 0.0,
+  "sigma_at_pe_01": 0.005082,
+  "sigma_at_pe_10": 0.05082,
+  "sigma_at_pe_40": 0.20328,
+  "ratio_pe10_to_pe01": 10.0,
+  "ratio_pe40_to_pe01": 40.0,
+  "spearman_rho": 1.0,
+  "spearman_p": 0.0,
+  "pass_criteria": {
+    "sigma_zero_at_pe0": true,
+    "spearman_rho_ge_0999": true,
+    "transition_ratio_ge_5": true,
+    "drifting_ratio_ge_10": true
+  },
+  "results": [
+    {
+      "Pe": 0.0,
+      "regime": "GROUND STATE",
+      "sigma_crooks": 0.0,
+      "crooks_analytic": 1.0,
+      "sigma_ratio_to_pe1": 0.0
+    },
+    {
+      "Pe": 0.05,
+      "regime": "COHERENT (deep)",
+      "sigma_crooks": 0.002541,
+      "crooks_analytic": 1.0025442310766424,
+      "sigma_ratio_to_pe1": 0.05
+    },
+    {
+      "Pe": 0.1,
+      "regime": "COHERENT (deep)",
+      "sigma_crooks": 0.005082,
+      "crooks_analytic": 1.005094935265056,
+      "sigma_ratio_to_pe1": 0.1
+    },
+    {
+      "Pe": 0.15,
+      "regime": "COHERENT",
+      "sigma_crooks": 0.007623,
+      "crooks_analytic": 1.0076521290343332,
+      "sigma_ratio_to_pe1": 0.15
+    },
+    {
+      "Pe": 0.2,
+      "regime": "COHERENT",
+      "sigma_crooks": 0.010164,
+      "crooks_analytic": 1.010215828895467,
+      "sigma_ratio_to_pe1": 0.2
+    },
+    {
+      "Pe": 0.3,
+      "regime": "COHERENT",
+      "sigma_crooks": 0.015246,
+      "crooks_analytic": 1.0153628131474244,
+      "sigma_ratio_to_pe1": 0.3
+    },
+    {
+      "Pe": 0.5,
+      "regime": "COHERENT (boundary)",
+      "sigma_crooks": 0.02541,
+      "crooks_analytic": 1.0257355859133586,
+      "sigma_ratio_to_pe1": 0.5
+    },
+    {
+      "Pe": 0.7,
+      "regime": "COHERENT/pre-crossing",
+      "sigma_crooks": 0.035573999999999995,
+      "crooks_analytic": 1.0362143251510412,
+      "sigma_ratio_to_pe1": 0.7
+    },
+    {
+      "Pe": 1.0,
+      "regime": "Pe=1 TRANSITION",
+      "sigma_crooks": 0.05082,
+      "crooks_analytic": 1.052133492209021,
+      "sigma_ratio_to_pe1": 1.0
+    },
+    {
+      "Pe": 1.5,
+      "regime": "DRIFTING (weak)",
+      "sigma_crooks": 0.07622999999999999,
+      "crooks_analytic": 1.0792107640900883,
+      "sigma_ratio_to_pe1": 1.5
+    },
+    {
+      "Pe": 2.0,
+      "regime": "DRIFTING",
+      "sigma_crooks": 0.10164,
+      "crooks_analytic": 1.10698488542795,
+      "sigma_ratio_to_pe1": 2.0
+    },
+    {
+      "Pe": 3.0,
+      "regime": "DRIFTING",
+      "sigma_crooks": 0.15245999999999998,
+      "crooks_analytic": 1.164695873327912,
+      "sigma_ratio_to_pe1": 3.0
+    },
+    {
+      "Pe": 4.0,
+      "regime": "DRIFTING (Pe*)",
+      "sigma_crooks": 0.20328,
+      "crooks_analytic": 1.2254155365659316,
+      "sigma_ratio_to_pe1": 4.0
+    },
+    {
+      "Pe": 6.0,
+      "regime": "DRIFTING",
+      "sigma_crooks": 0.30491999999999997,
+      "crooks_analytic": 1.3565164773470677,
+      "sigma_ratio_to_pe1": 6.0
+    },
+    {
+      "Pe": 8.0,
+      "regime": "DRIFTING",
+      "sigma_crooks": 0.40656,
+      "crooks_analytic": 1.5016432372571702,
+      "sigma_ratio_to_pe1": 8.0
+    },
+    {
+      "Pe": 12.0,
+      "regime": "DRIFTING (strong)",
+      "sigma_crooks": 0.6098399999999999,
+      "crooks_analytic": 1.8401369533140979,
+      "sigma_ratio_to_pe1": 12.0
+    },
+    {
+      "Pe": 15.0,
+      "regime": "FISHER CRITICAL",
+      "sigma_crooks": 0.7623,
+      "crooks_analytic": 2.1431999158831267,
+      "sigma_ratio_to_pe1": 15.0
+    },
+    {
+      "Pe": 20.0,
+      "regime": "RUNAWAY",
+      "sigma_crooks": 1.0164,
+      "crooks_analytic": 2.763229211571128,
+      "sigma_ratio_to_pe1": 20.0
+    },
+    {
+      "Pe": 25.0,
+      "regime": "RUNAWAY",
+      "sigma_crooks": 1.2705,
+      "crooks_analytic": 3.562633433817462,
+      "sigma_ratio_to_pe1": 25.0
+    },
+    {
+      "Pe": 38.0,
+      "regime": "FISHER BOUND (Pe=38)",
+      "sigma_crooks": 1.93116,
+      "crooks_analytic": 6.897506710516839,
+      "sigma_ratio_to_pe1": 38.0
+    }
+  ]
+}

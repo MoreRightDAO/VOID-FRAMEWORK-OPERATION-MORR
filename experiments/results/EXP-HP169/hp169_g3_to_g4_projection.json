@@ -1,0 +1,122 @@
+{
+  "experiment": "HP169",
+  "title": "G\u2083 \u2192 G\u2084 Gauge Projection",
+  "date": "2026-03-26T14:20:16.072663",
+  "key_result": "G\u2084 = \u03b1/(2K\u00b2)",
+  "derivation": {
+    "G3": "1/K",
+    "T_eff": "\u03b1/(2K)",
+    "R_v": "K/(\u03c0\u03b1)",
+    "G4": "G\u2083/(2\u03c0R_v) = \u03b1/(2K\u00b2)"
+  },
+  "planck_units": {
+    "M_P": "\u221aK",
+    "l_P": "\u03b1/(2K^{3/2})",
+    "t_P": "\u03b1/(2K^{3/2})"
+  },
+  "consistency_checks": {
+    "hbar_G4_equals_lP_squared": true,
+    "G4_positive": true,
+    "G4_classical_limit": true,
+    "KK_ratio_consistent": true
+  },
+  "system_evaluations": [
+    {
+      "system": "Single LLM token",
+      "K": 0.025,
+      "alpha": 0.5,
+      "G3": 40.0,
+      "G4": 399.99999999999994,
+      "T_eff": 10.0,
+      "M_Planck": 0.15811388300841897,
+      "l_Planck": 63.24555320336758,
+      "central_charge": 0.0009375000000000002
+    },
+    {
+      "system": "Single chatbot",
+      "K": 1.0,
+      "alpha": 0.3,
+      "G3": 1.0,
+      "G4": 0.15,
+      "T_eff": 0.15,
+      "M_Planck": 1.0,
+      "l_Planck": 0.15,
+      "central_charge": 1.5
+    },
+    {
+      "system": "Human agent",
+      "K": 1.0,
+      "alpha": 0.5,
+      "G3": 1.0,
+      "G4": 0.25,
+      "T_eff": 0.25,
+      "M_Planck": 1.0,
+      "l_Planck": 0.25,
+      "central_charge": 1.5
+    },
+    {
+      "system": "Small platform",
+      "K": 10.0,
+      "alpha": 0.7,
+      "G3": 0.1,
+      "G4": 0.0034999999999999996,
+      "T_eff": 0.034999999999999996,
+      "M_Planck": 3.1622776601683795,
+      "l_Planck": 0.011067971810589328,
+      "central_charge": 150.0
+    },
+    {
+      "system": "Standard platform",
+      "K": 16.0,
+      "alpha": 0.5,
+      "G3": 0.0625,
+      "G4": 0.0009765625,
+      "T_eff": 0.015625,
+      "M_Planck": 4.0,
+      "l_Planck": 0.00390625,
+      "central_charge": 384.0
+    },
+    {
+      "system": "Large platform",
+      "K": 100.0,
+      "alpha": 0.3,
+      "G3": 0.01,
+      "G4": 1.4999999999999999e-05,
+      "T_eff": 0.0015,
+      "M_Planck": 10.0,
+      "l_Planck": 0.00015,
+      "central_charge": 15000.0
+    },
+    {
+      "system": "Population (M=1000)",
+      "K": 26.6,
+      "alpha": 0.5,
+      "G3": 0.03759398496240601,
+      "G4": 0.00035332692633840236,
+      "T_eff": 0.009398496240601503,
+      "M_Planck": 5.157518783291051,
+      "l_Planck": 0.0018222902592328037,
+      "central_charge": 1061.3400000000001
+    },
+    {
+      "system": "Massive platform",
+      "K": 1000.0,
+      "alpha": 0.8,
+      "G3": 0.001,
+      "G4": 4.0000000000000003e-07,
+      "T_eff": 0.0004,
+      "M_Planck": 31.622776601683793,
+      "l_Planck": 1.2649110640673518e-05,
+      "central_charge": 1500000.0
+    }
+  ],
+  "kill_conditions": {
+    "K-HP169-1": "PASS",
+    "K-HP169-2": "PASS",
+    "K-HP169-3": "PASS",
+    "K-HP169-4": "PASS",
+    "K-HP169-5": "PASS"
+  },
+  "total_pass": 5,
+  "total_kc": 5
+}

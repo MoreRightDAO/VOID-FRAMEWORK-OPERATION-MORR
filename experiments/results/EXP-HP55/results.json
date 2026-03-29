@@ -1,0 +1,173 @@
+{
+  "experiment": "EXP-HP55",
+  "title": "Other Statistical Manifolds \u2014 Is Bernoulli Special?",
+  "date": "2026-03-15",
+  "framework_sections": [
+    "\u00a780A",
+    "\u00a780D",
+    "Fisher metric",
+    "\u010cencov uniqueness"
+  ],
+  "tests": [
+    {
+      "id": "M1",
+      "name": "Bernoulli (calibration)",
+      "n_sq_rms_error": 0.000944,
+      "zeta_ratios": {
+        "2.0": 0.999997,
+        "3.0": 1.0,
+        "4.0": 1.0
+      },
+      "first_10_ratios": [
+        1.0,
+        4.0,
+        8.9999,
+        15.9997,
+        24.9992,
+        35.9984,
+        48.997,
+        63.9948,
+        80.9917,
+        99.9873
+      ]
+    },
+    {
+      "id": "M2",
+      "name": "Gaussian manifold",
+      "n_sq_rms_error": 0.000243,
+      "is_integer_spectrum": "True",
+      "zeta_ratios": {
+        "2.0": 0.999997,
+        "3.0": 1.0,
+        "4.0": 1.0
+      },
+      "first_10_ratios": [
+        1.0,
+        4.0,
+        8.9999,
+        15.9997,
+        24.9992,
+        35.9984,
+        48.997,
+        63.9948,
+        80.9917,
+        99.9873
+      ]
+    },
+    {
+      "id": "M3",
+      "name": "Exponential manifold (Poincar\u00e9 half-line)",
+      "n_sq_rms_error": 0.000243,
+      "is_integer_spectrum": "True",
+      "zeta_ratios": {
+        "2.0": 0.999997,
+        "3.0": 1.0,
+        "4.0": 1.0
+      },
+      "first_10_ratios": [
+        1.0,
+        4.0,
+        8.9999,
+        15.9997,
+        24.9992,
+        35.9984,
+        48.997,
+        63.9948,
+        80.9917,
+        99.9873
+      ]
+    },
+    {
+      "id": "M4",
+      "name": "Poisson manifold",
+      "n_sq_rms_error": 0.000243,
+      "is_integer_spectrum": "True",
+      "zeta_ratios": {
+        "2.0": 0.999997,
+        "3.0": 1.0,
+        "4.0": 1.0
+      },
+      "first_10_ratios": [
+        1.0,
+        4.0,
+        8.9999,
+        15.9997,
+        24.9992,
+        35.9984,
+        48.997,
+        63.9948,
+        80.9917,
+        99.9873
+      ]
+    },
+    {
+      "id": "M5",
+      "name": "Reparametrized Bernoulli (angular coords)",
+      "n_sq_rms_error": 0.000243,
+      "ratio_preserved": "True",
+      "scale_factor": 414.2576,
+      "zeta_ratios": {
+        "2.0": 0.999997,
+        "3.0": 1.0,
+        "4.0": 1.0
+      },
+      "first_10_ratios": [
+        1.0,
+        4.0,
+        8.9999,
+        15.9997,
+        24.9992,
+        35.9984,
+        48.997,
+        63.9948,
+        80.9917,
+        99.9873
+      ]
+    },
+    {
+      "id": "M6",
+      "name": "Gamma manifold (trigamma metric)",
+      "n_sq_rms_error": 0.000243,
+      "is_integer_spectrum": "True",
+      "zeta_ratios": {
+        "2.0": 0.999997,
+        "3.0": 1.0,
+        "4.0": 1.0
+      },
+      "first_10_ratios": [
+        1.0,
+        4.0,
+        8.9999,
+        15.9997,
+        24.9992,
+        35.9984,
+        48.997,
+        63.9948,
+        80.9917,
+        99.9873
+      ]
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-215",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-216",
+      "result": "PASS (Gaussian, Exponential, Poisson, Gamma)"
+    },
+    {
+      "id": "K-HP-217",
+      "result": "PASS (Gaussian n\u00b2 error: 0.000243) \u2014 NOTE: Gaussian gives n\u00b2 because flat metric + box = particle-in-box"
+    },
+    {
+      "id": "K-HP-218",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-219",
+      "result": "PASS"
+    }
+  ]
+}

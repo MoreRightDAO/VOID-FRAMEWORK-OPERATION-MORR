@@ -1,0 +1,149 @@
+{
+  "experiment": "EXP-HP14",
+  "title": "Closed Form Identification for V(\u03b8)",
+  "date": "2026-03-13",
+  "tests": [
+    {
+      "id": "F1",
+      "name": "Digamma family",
+      "r2": 0.62819,
+      "dist": 1.294572,
+      "n_params": 10
+    },
+    {
+      "id": "F2",
+      "name": "Bernoulli polynomials",
+      "r2": 0.516092,
+      "dist": 1.384682,
+      "n_params": 12
+    },
+    {
+      "id": "F3",
+      "name": "log + rational correction",
+      "r2": 0.71292,
+      "dist": 0.540697,
+      "n_params": 15
+    },
+    {
+      "id": "F4",
+      "name": "Weierstrass/modular basis",
+      "r2": 0.641631,
+      "dist": 0.98532,
+      "n_params": 12
+    },
+    {
+      "id": "F5",
+      "name": "Pad\u00e9 [M,N] scan in u=\u03b8(1-\u03b8)",
+      "best_M": 13,
+      "best_N": 0,
+      "best_r2": 0.706674,
+      "best_dist": 0.450385,
+      "top_10": [
+        [
+          13,
+          0,
+          0.706674
+        ],
+        [
+          11,
+          0,
+          0.632724
+        ],
+        [
+          12,
+          0,
+          0.630223
+        ],
+        [
+          10,
+          0,
+          0.620492
+        ],
+        [
+          9,
+          0,
+          0.620451
+        ],
+        [
+          8,
+          0,
+          0.62025
+        ],
+        [
+          7,
+          0,
+          0.620249
+        ],
+        [
+          9,
+          1,
+          0.618591
+        ],
+        [
+          8,
+          1,
+          0.60459
+        ],
+        [
+          10,
+          1,
+          0.565921
+        ]
+      ]
+    },
+    {
+      "id": "F6",
+      "name": "Combined basis + optimize",
+      "r2_fit": 0.688745,
+      "dist_fit": 0.808678,
+      "dist_optimized": 0.10894603
+    },
+    {
+      "id": "F7",
+      "name": "Fourier analysis",
+      "modes_90pct": 9,
+      "modes_95pct": 12,
+      "modes_99pct": 16
+    },
+    {
+      "id": "F8",
+      "name": "Named-function optimization",
+      "bases": {
+        "Digamma+poly": {
+          "dist": 0.137175,
+          "r2": -1006711.750916,
+          "n_params": 10
+        },
+        "Log+rational": {
+          "dist": 0.117928,
+          "r2": 0.709085,
+          "n_params": 15
+        },
+        "Weierstrass": {
+          "dist": 0.027881,
+          "r2": -164.106563,
+          "n_params": 12
+        },
+        "Combined-20": {
+          "dist": 0.120756,
+          "r2": -68042.735135,
+          "n_params": 20
+        }
+      }
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-52",
+      "result": "FAIL (best R\u00b2=0.712920)"
+    },
+    {
+      "id": "K-HP-53",
+      "result": "FAIL (best dist=0.540697)"
+    },
+    {
+      "id": "K-HP-54",
+      "result": "FAIL (best R\u00b2=0.632724)"
+    }
+  ]
+}

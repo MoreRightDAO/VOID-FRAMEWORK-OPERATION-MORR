@@ -1,0 +1,359 @@
+{
+  "experiment": "DIANA-01",
+  "title": "Pe-Controlled Dendritic Morphology via DLA",
+  "date": "2026-03-20",
+  "parameters": {
+    "grid_size": 256,
+    "n_particles": 5000,
+    "n_pe_steps": 10,
+    "pe_range": [
+      0.0,
+      5.0
+    ],
+    "n_realizations": 3,
+    "rng_seed": 42,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "K": 16
+  },
+  "results": [
+    {
+      "pe_eff": 0.0,
+      "fractal_dimension": {
+        "mean": 1.6505,
+        "std": 0.0671,
+        "runs": [
+          1.573,
+          1.642,
+          1.7366
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.023078
+      },
+      "compactness": {
+        "mean": 0.0881
+      },
+      "branching_angle": {
+        "mean": 67.11
+      },
+      "n_attached": 4017,
+      "framework_bridge": {
+        "O": 0.0,
+        "R": 0.0,
+        "alpha": 0.0,
+        "C": 1.0,
+        "Pe_framework": -125.1332,
+        "epsilon": 0.0
+      }
+    },
+    {
+      "pe_eff": 0.5556,
+      "fractal_dimension": {
+        "mean": 1.584,
+        "std": 0.0581,
+        "runs": [
+          1.507,
+          1.5977,
+          1.6472
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.032236
+      },
+      "compactness": {
+        "mean": 0.071
+      },
+      "branching_angle": {
+        "mean": 193.89
+      },
+      "n_attached": 3393,
+      "framework_bridge": {
+        "O": 1.2787,
+        "R": 0.8125,
+        "alpha": 1.0714,
+        "C": 0.6486,
+        "Pe_framework": -23.4875,
+        "epsilon": 0.4262
+      }
+    },
+    {
+      "pe_eff": 1.1111,
+      "fractal_dimension": {
+        "mean": 1.5993,
+        "std": 0.0413,
+        "runs": [
+          1.5959,
+          1.6515,
+          1.5505
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.027089
+      },
+      "compactness": {
+        "mean": 0.0815
+      },
+      "branching_angle": {
+        "mean": 90.0
+      },
+      "n_attached": 3025,
+      "framework_bridge": {
+        "O": 2.0124,
+        "R": 1.514,
+        "alpha": 1.5789,
+        "C": 0.4327,
+        "Pe_framework": -3.3539,
+        "epsilon": 0.6708
+      }
+    },
+    {
+      "pe_eff": 1.6667,
+      "fractal_dimension": {
+        "mean": 1.5374,
+        "std": 0.0199,
+        "runs": [
+          1.5571,
+          1.5102,
+          1.545
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.024166
+      },
+      "compactness": {
+        "mean": 0.0748
+      },
+      "branching_angle": {
+        "mean": 119.17
+      },
+      "n_attached": 3034,
+      "framework_bridge": {
+        "O": 2.4334,
+        "R": 2.0468,
+        "alpha": 1.875,
+        "C": 0.2939,
+        "Pe_framework": 6.8341,
+        "epsilon": 0.8111
+      }
+    },
+    {
+      "pe_eff": 2.2222,
+      "fractal_dimension": {
+        "mean": 1.535,
+        "std": 0.0401,
+        "runs": [
+          1.5435,
+          1.5793,
+          1.4822
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.030257
+      },
+      "compactness": {
+        "mean": 0.0704
+      },
+      "branching_angle": {
+        "mean": 207.0
+      },
+      "n_attached": 2777,
+      "framework_bridge": {
+        "O": 2.6749,
+        "R": 2.4134,
+        "alpha": 2.069,
+        "C": 0.2048,
+        "Pe_framework": 14.5338,
+        "epsilon": 0.8916
+      }
+    },
+    {
+      "pe_eff": 2.7778,
+      "fractal_dimension": {
+        "mean": 1.5985,
+        "std": 0.0367,
+        "runs": [
+          1.5548,
+          1.5961,
+          1.6447
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.021374
+      },
+      "compactness": {
+        "mean": 0.0901
+      },
+      "branching_angle": {
+        "mean": 85.0
+      },
+      "n_attached": 4384,
+      "framework_bridge": {
+        "O": 2.8135,
+        "R": 2.6488,
+        "alpha": 2.2059,
+        "C": 0.148,
+        "Pe_framework": 20.5748,
+        "epsilon": 0.9378
+      }
+    },
+    {
+      "pe_eff": 3.3333,
+      "fractal_dimension": {
+        "mean": 1.5564,
+        "std": 0.0561,
+        "runs": [
+          1.5109,
+          1.6355,
+          1.5228
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.025699
+      },
+      "compactness": {
+        "mean": 0.078
+      },
+      "branching_angle": {
+        "mean": 115.0
+      },
+      "n_attached": 3110,
+      "framework_bridge": {
+        "O": 2.893,
+        "R": 2.7933,
+        "alpha": 2.3077,
+        "C": 0.1118,
+        "Pe_framework": 25.1011,
+        "epsilon": 0.9643
+      }
+    },
+    {
+      "pe_eff": 3.8889,
+      "fractal_dimension": {
+        "mean": 1.5593,
+        "std": 0.0314,
+        "runs": [
+          1.5554,
+          1.5995,
+          1.5229
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.024077
+      },
+      "compactness": {
+        "mean": 0.0783
+      },
+      "branching_angle": {
+        "mean": 115.42
+      },
+      "n_attached": 3530,
+      "framework_bridge": {
+        "O": 2.9386,
+        "R": 2.8797,
+        "alpha": 2.3864,
+        "C": 0.0884,
+        "Pe_framework": 28.3717,
+        "epsilon": 0.9795
+      }
+    },
+    {
+      "pe_eff": 4.4444,
+      "fractal_dimension": {
+        "mean": 1.5651,
+        "std": 0.0328,
+        "runs": [
+          1.6113,
+          1.5461,
+          1.5379
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.026385
+      },
+      "compactness": {
+        "mean": 0.077
+      },
+      "branching_angle": {
+        "mean": 180.0
+      },
+      "n_attached": 2776,
+      "framework_bridge": {
+        "O": 2.9648,
+        "R": 2.9304,
+        "alpha": 2.449,
+        "C": 0.0729,
+        "Pe_framework": 30.7079,
+        "epsilon": 0.9883
+      }
+    },
+    {
+      "pe_eff": 5.0,
+      "fractal_dimension": {
+        "mean": 1.5391,
+        "std": 0.0267,
+        "runs": [
+          1.5425,
+          1.57,
+          1.5049
+        ]
+      },
+      "tip_velocity": {
+        "mean": 0.029514
+      },
+      "compactness": {
+        "mean": 0.0749
+      },
+      "branching_angle": {
+        "mean": 100.0
+      },
+      "n_attached": 2820,
+      "framework_bridge": {
+        "O": 2.9798,
+        "R": 2.9598,
+        "alpha": 2.5,
+        "C": 0.0623,
+        "Pe_framework": 32.3928,
+        "epsilon": 0.9933
+      }
+    }
+  ],
+  "kill_conditions": {
+    "K-DIANA-01-1": {
+      "description": "d_f(Pe=0)=1.651 vs 1.71",
+      "delta": 0.0595,
+      "pass": true
+    },
+    "K-DIANA-01-2": {
+      "description": "d_f monotonic: \u03c1=-0.467, p=1.74e-01",
+      "spearman_rho": -0.4667,
+      "pass": false
+    },
+    "K-DIANA-01-3": {
+      "description": "Transition d_f>1.85 at Pe=None",
+      "pass": false
+    },
+    "K-DIANA-01-4": {
+      "description": "V scaling: \u03c1=-0.283",
+      "pass": false
+    },
+    "K-DIANA-01-5": {
+      "description": "Branch angle=119.1\u00b0 (target 60\u00b0)",
+      "pass": false
+    }
+  },
+  "overall_pass": false,
+  "n_pass": 1,
+  "n_total": 5,
+  "summary": {
+    "df_range": [
+      1.535,
+      1.651
+    ],
+    "transition_pe": null,
+    "framework_pe_range": [
+      -125.1332,
+      32.3928
+    ]
+  }
+}

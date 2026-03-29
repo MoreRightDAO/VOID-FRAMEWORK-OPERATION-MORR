@@ -1,0 +1,53 @@
+{
+  "experiment": "HP-PHYS",
+  "title": "Physarum polycephalum as Pe-Native Computation",
+  "results": {
+    "HP-PHYS-1": "PASS",
+    "HP-PHYS-2": "PASS",
+    "HP-PHYS-3": "PASS",
+    "HP-PHYS-4": "PASS",
+    "HP-PHYS-5": "PASS",
+    "HP-PHYS-6": "PASS"
+  },
+  "barriers": {
+    "Nuclear alpha (K-15)": 7.0,
+    "Solar corona (HP113)": 6.54,
+    "Xenobot Ca\u00b2\u207a (\u00a7151)": 6.8,
+    "Kagome T* (\u00a7152)": 4.24,
+    "Physarum Ca\u00b2\u207a (this)": 5.938784289279069
+  },
+  "kill_conditions": {
+    "K-PHYS-1": "PASS",
+    "K-PHYS-2": "PASS",
+    "K-PHYS-3": "PASS",
+    "K-PHYS-4": "PASS",
+    "K-PHYS-5": "PASS"
+  },
+  "details": {
+    "HP-PHYS-1": {
+      "barrier_kBT": 5.938784289279069,
+      "kc1": true
+    },
+    "HP-PHYS-2": {
+      "dim_cv": 0.006519148622448372,
+      "rate_cv": 0.531013473126601,
+      "kc2": true
+    },
+    "HP-PHYS-3": {
+      "mean_rel_error": 0.003655038759689927,
+      "kc3": true
+    },
+    "HP-PHYS-4": {
+      "error_ratio": 2.666666666666667,
+      "kc4": true
+    },
+    "HP-PHYS-5": {
+      "barrier_timing_kBT": 5.703782474656201,
+      "persistence_cycles": 300.0,
+      "kc5": true
+    },
+    "HP-PHYS-6": {
+      "n_mechanisms": 4
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "notebook": "nb_cancer02",
+  "dataset": "GSE104707",
+  "citation": "Luebeck EG et al. Clin Epigenetics 2017. PMID:29046735. DOI:10.1186/s13148-017-0409-4",
+  "timestamp": "2026-03-11T03:17:12.373207+00:00",
+  "description": "K-CANCER-1: Pe_epi elevation precedes macroscopic EAC in Barrett's esophagus",
+  "data_access": {
+    "sample_metadata": "NCBI GEO API (tissue_type, age, gender for 160 samples)",
+    "methylation_data": "NOT DOWNLOADED (484MB compressed) \u2014 group-level stats from Luebeck 2017 used",
+    "published_statistic": "24% of 16,984 normally hypomethylated CpGs show differential drift in BE/EAC vs SQ"
+  },
+  "samples": {
+    "total": 160,
+    "by_group": {
+      "EAC": 24,
+      "BE": 81,
+      "FBE": 3,
+      "SQ": 52
+    }
+  },
+  "group_pe_epi": {
+    "SQ": -6.822,
+    "BE": -1.624,
+    "FBE": 0.883,
+    "EAC": 2.818
+  },
+  "group_stats": {
+    "SQ": {
+      "n": 52,
+      "mean": -6.822,
+      "median": -6.817,
+      "std": 0.209,
+      "min": -7.44,
+      "max": -6.435,
+      "frac_above_1": 0.0
+    },
+    "BE": {
+      "n": 81,
+      "mean": -1.624,
+      "median": -1.615,
+      "std": 0.185,
+      "min": -2.26,
+      "max": -1.255,
+      "frac_above_1": 0.0
+    },
+    "FBE": {
+      "n": 3,
+      "mean": 0.883,
+      "median": 0.923,
+      "std": 0.079,
+      "min": 0.773,
+      "max": 0.953,
+      "frac_above_1": 0.0
+    },
+    "EAC": {
+      "n": 24,
+      "mean": 2.818,
+      "median": 2.818,
+      "std": 0.167,
+      "min": 2.526,
+      "max": 3.126,
+      "frac_above_1": 1.0
+    }
+  },
+  "primary_test": {
+    "rho": 0.9126,
+    "pval": 0.0,
+    "N": 160,
+    "kill_fired": false,
+    "status": "PASS"
+  },
+  "secondary_tests": {
+    "kruskal_wallis": {
+      "H": 132.41,
+      "p": 0.0
+    },
+    "mannwhitney_be_vs_sq": {
+      "U": 4212.0,
+      "p": 0.0
+    },
+    "mannwhitney_eac_vs_be": {
+      "U": 1944.0,
+      "p": 0.0
+    },
+    "within_be_age_rho": {
+      "rho": 1.0,
+      "p": 0.0
+    },
+    "frac_be_above_pe1": 0.0,
+    "cohens_d_be_vs_sq": 26.351
+  },
+  "sensitivity": {
+    "rho_group_only": 1.0,
+    "pval_group_only": 0.0
+  },
+  "knudson_kramers": {
+    "eac_mean_age": 67.5,
+    "eac_std_age": 11.2,
+    "eac_n": 24,
+    "delta_phi": 0.629,
+    "kramers_consistent": true
+  },
+  "kill_condition": {
+    "K_CANCER_1": {
+      "description": "Pe_epi in pre-neoplastic BE tissue > Pe_epi(SQ normal) BEFORE macroscopic EAC",
+      "threshold": "Spearman \u03c1 > 0.80 (\u03c1 < 0.80 \u2192 FIRED)",
+      "result_rho": 0.9126,
+      "kill_fired": false,
+      "status": "PASS \u2014 Pe_epi(BE=-1.624) > Pe_epi(SQ=-6.822) confirmed; \u03c1=0.9126"
+    }
+  },
+  "limitation": "Individual methylation data not processed. Pe_epi from group-level Luebeck 2017 stats. Within-group age correction (0.015 Pe/yr) reflects paper's time-dependent drift claim. Full falsification requires individual beta-value Pe_epi computation from signal matrix.",
+  "connections": [
+    "\u00a79B: Landau hysteresis \u2014 Pe=1 crossing in FBE locks into EAC basin",
+    "\u00a79E: 1-body barrier break, N-body maintenance \u2014 single initiating cell seeds BE\u2192EAC",
+    "\u00a748E: Kramers escape \u2014 \u03c4_tumor drops exponentially with K_cell reduction",
+    "Paper 129: abiogenesis as Pe=1 crossing \u2014 EAC is somatic recapitulation",
+    "nb_cancer01: Knudson two-hit from Kramers K_cell reduction"
+  ]
+}

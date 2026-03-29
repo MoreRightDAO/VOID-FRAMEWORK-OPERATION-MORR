@@ -1,0 +1,24 @@
+{
+  "experiment": "HP176",
+  "date": "2026-03-27",
+  "framework_prediction_2Nes": 2.221441469079183,
+  "ohta_boundary_2Nes": 2.0,
+  "kimura_1e_transition_2Nes": 0.8753933613400751,
+  "analytical_result": {
+    "closer_to": "ohta",
+    "error_vs_framework_pct": 60.593453686495856,
+    "error_vs_ohta_pct": 56.23033193299625
+  },
+  "cross_species": {
+    "pooled_difference_pp": 0.5580863211306626,
+    "p_value": 0.00031856416565805647,
+    "n_species": 6
+  },
+  "kill_conditions": {
+    "K-HP176-1": "PENDING \u2014 requires raw SFS data for proper CI",
+    "K-HP176-2": "PENDING \u2014 same data requirement as K-HP176-1",
+    "K-HP176-3": "SURVIVED \u2014 pooled SE acceptable",
+    "K-HP176-5": "1/e point closer to ohta (err_fw=60.59%, err_oh=56.23%)"
+  },
+  "status": "PROTOCOL_EXECUTED"
+}

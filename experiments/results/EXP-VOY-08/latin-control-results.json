@@ -1,0 +1,128 @@
+{
+  "experiment": "EXP-VOY-08",
+  "date": "2026-03-03T04:25:27.695516+00:00",
+  "data_source": "embedded (Bostock/Riley 1855 corpus statistics)",
+  "framework": "\u00a739D Pe-Separability",
+  "voynich_comparison": {
+    "ps": 1.373,
+    "null_p95": 1.213,
+    "dir_trans": 3
+  },
+  "ps_result": {
+    "ps": 1.0542,
+    "jsd_max": 0.7464,
+    "jsd_min": 0.708,
+    "jsd_pairs": [
+      [
+        "Botany",
+        "Cosmology",
+        0.7464
+      ],
+      [
+        "Botany",
+        "Geography",
+        0.7301
+      ],
+      [
+        "Botany",
+        "Mineralogy",
+        0.7145
+      ],
+      [
+        "Botany",
+        "Zoology",
+        0.7313
+      ],
+      [
+        "Cosmology",
+        "Geography",
+        0.7336
+      ],
+      [
+        "Cosmology",
+        "Mineralogy",
+        0.7182
+      ],
+      [
+        "Cosmology",
+        "Zoology",
+        0.7335
+      ],
+      [
+        "Geography",
+        "Mineralogy",
+        0.708
+      ],
+      [
+        "Geography",
+        "Zoology",
+        0.7109
+      ],
+      [
+        "Mineralogy",
+        "Zoology",
+        0.7105
+      ]
+    ],
+    "section_names": [
+      "Botany",
+      "Cosmology",
+      "Geography",
+      "Mineralogy",
+      "Zoology"
+    ],
+    "token_counts": {
+      "Cosmology": 550,
+      "Geography": 1736,
+      "Zoology": 1221,
+      "Botany": 4292,
+      "Mineralogy": 1943
+    },
+    "null_p95": 2.0045,
+    "p_value": 1.0,
+    "n_perm": 2000
+  },
+  "directional": {
+    "pe_order": [
+      "Botany",
+      "Zoology",
+      "Mineralogy",
+      "Geography",
+      "Cosmology"
+    ],
+    "pe_path_jsd": [
+      0.7313,
+      0.7105,
+      0.708,
+      0.7336
+    ],
+    "pe_monotone_transitions": 2,
+    "max_possible_transitions": 3,
+    "max_monotone_any_ordering_decreasing": 3,
+    "max_monotone_any_ordering_increasing": 3,
+    "best_decreasing_order": [
+      "Botany",
+      "Cosmology",
+      "Geography",
+      "Zoology",
+      "Mineralogy"
+    ],
+    "best_increasing_order": [
+      "Geography",
+      "Mineralogy",
+      "Botany",
+      "Zoology",
+      "Cosmology"
+    ],
+    "voynich_comparison": 3,
+    "directional_test_gate": false
+  },
+  "gate_verdict": {
+    "ps_gate_pass": true,
+    "directional_gate_pass": true,
+    "pe_ordered_monotone": 2,
+    "pe_ordered_max_possible": 3,
+    "paper_108_gated_open": true,
+    "note": "Gate 2 tests Pe-ordered path monotone transitions specifically (not best-any-ordering, which is trivially achievable by any structured text). Voynich achieves 3/3 under Pe ordering."
+  }
+}

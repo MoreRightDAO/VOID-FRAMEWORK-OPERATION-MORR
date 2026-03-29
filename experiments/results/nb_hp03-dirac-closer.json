@@ -1,0 +1,292 @@
+{
+  "experiment": "EXP-HP03",
+  "title": "SUSY Dirac Operator \u2014 Closing the Factor of 2",
+  "date": "2026-03-13",
+  "framework_sections": [
+    "\u00a751C",
+    "\u00a748E",
+    "\u00a780"
+  ],
+  "tests": [
+    {
+      "id": "T3",
+      "name": "Factor-of-2 closer",
+      "zeta_ratios": [
+        [
+          0.5,
+          1.002677
+        ],
+        [
+          1.0,
+          1.001911
+        ],
+        [
+          1.5,
+          1.00046
+        ],
+        [
+          2.0,
+          1.000063
+        ],
+        [
+          2.5,
+          1.000008
+        ],
+        [
+          3.0,
+          1.000001
+        ],
+        [
+          4.0,
+          1.0
+        ],
+        [
+          5.0,
+          1.0
+        ]
+      ],
+      "mean_ratio_high_s": 1.000089
+    },
+    {
+      "id": "T4",
+      "name": "Pe deformation of Dirac spectrum",
+      "data": [
+        {
+          "pe": 0.0,
+          "d1": 0.196349,
+          "ratio_1.5": 1.000869,
+          "ratio_2.0": 1.000151
+        },
+        {
+          "pe": 5.09,
+          "d1": 0.237062,
+          "ratio_1.5": 1.179425,
+          "ratio_2.0": 1.153949
+        },
+        {
+          "pe": 10.21,
+          "d1": 0.324864,
+          "ratio_1.5": 1.580947,
+          "ratio_2.0": 1.521347
+        },
+        {
+          "pe": 15.4,
+          "d1": 0.417853,
+          "ratio_1.5": 2.000157,
+          "ratio_2.0": 1.911677
+        },
+        {
+          "pe": 20.68,
+          "d1": 0.49885,
+          "ratio_1.5": 2.334172,
+          "ratio_2.0": 2.206966
+        },
+        {
+          "pe": 26.1,
+          "d1": 0.568389,
+          "ratio_1.5": 2.59216,
+          "ratio_2.0": 2.418772
+        },
+        {
+          "pe": 31.68,
+          "d1": 0.630284,
+          "ratio_1.5": 2.802872,
+          "ratio_2.0": 2.581877
+        },
+        {
+          "pe": 37.46,
+          "d1": 0.68677,
+          "ratio_1.5": 2.982217,
+          "ratio_2.0": 2.714641
+        },
+        {
+          "pe": 43.47,
+          "d1": 0.739116,
+          "ratio_1.5": 3.138802,
+          "ratio_2.0": 2.826467
+        },
+        {
+          "pe": 49.77,
+          "d1": 0.788139,
+          "ratio_1.5": 3.277933,
+          "ratio_2.0": 2.922879
+        },
+        {
+          "pe": 56.37,
+          "d1": 0.834412,
+          "ratio_1.5": 3.403177,
+          "ratio_2.0": 3.007451
+        },
+        {
+          "pe": 63.33,
+          "d1": 0.878356,
+          "ratio_1.5": 3.517074,
+          "ratio_2.0": 3.082639
+        },
+        {
+          "pe": 70.69,
+          "d1": 0.920295,
+          "ratio_1.5": 3.621505,
+          "ratio_2.0": 3.150208
+        },
+        {
+          "pe": 78.5,
+          "d1": 0.960482,
+          "ratio_1.5": 3.717905,
+          "ratio_2.0": 3.211468
+        },
+        {
+          "pe": 86.81,
+          "d1": 0.999121,
+          "ratio_1.5": 3.807398,
+          "ratio_2.0": 3.267422
+        },
+        {
+          "pe": 95.66,
+          "d1": 1.03638,
+          "ratio_1.5": 3.890881,
+          "ratio_2.0": 3.31885
+        },
+        {
+          "pe": 105.11,
+          "d1": 1.072396,
+          "ratio_1.5": 3.969082,
+          "ratio_2.0": 3.366375
+        },
+        {
+          "pe": 115.23,
+          "d1": 1.107288,
+          "ratio_1.5": 4.042602,
+          "ratio_2.0": 3.410499
+        },
+        {
+          "pe": 126.08,
+          "d1": 1.141154,
+          "ratio_1.5": 4.111942,
+          "ratio_2.0": 3.451634
+        },
+        {
+          "pe": 137.73,
+          "d1": 1.17408,
+          "ratio_1.5": 4.177526,
+          "ratio_2.0": 3.490123
+        }
+      ]
+    },
+    {
+      "id": "T5",
+      "name": "Selberg trace: instantons \u2194 eigenvalues",
+      "data": [
+        {
+          "c": 0.35,
+          "pe": 10.49,
+          "S_star": 48.1631,
+          "exp_neg_S": "1.2107e-21",
+          "lambda_1_gap": 0.107855
+        },
+        {
+          "c": 0.3,
+          "pe": 25.43,
+          "S_star": 203.4522,
+          "exp_neg_S": "4.3837e-89",
+          "lambda_1_gap": 0.219973
+        },
+        {
+          "c": 0.25,
+          "pe": 41.66,
+          "S_star": 461.8691,
+          "exp_neg_S": "2.5871e-201",
+          "lambda_1_gap": 0.423926
+        },
+        {
+          "c": 0.2,
+          "pe": 59.99,
+          "S_star": 823.4137,
+          "exp_neg_S": "0.0000e+00",
+          "lambda_1_gap": 0.625404
+        },
+        {
+          "c": 0.15,
+          "pe": 81.36,
+          "S_star": 1288.0862,
+          "exp_neg_S": "0.0000e+00",
+          "lambda_1_gap": 0.828483
+        },
+        {
+          "c": 0.1,
+          "pe": 106.84,
+          "S_star": 1855.8864,
+          "exp_neg_S": "0.0000e+00",
+          "lambda_1_gap": 1.033246
+        }
+      ]
+    },
+    {
+      "id": "T6",
+      "name": "Time-reversal breaking: GOE\u2192GUE",
+      "results": [
+        {
+          "b_imag": 0.0,
+          "brody_beta": 0.95,
+          "class": "GOE"
+        },
+        {
+          "b_imag": 0.001,
+          "brody_beta": 1.49,
+          "class": "GOE"
+        },
+        {
+          "b_imag": 0.01,
+          "brody_beta": 1.49,
+          "class": "GOE"
+        },
+        {
+          "b_imag": 0.1,
+          "brody_beta": 1.49,
+          "class": "GOE"
+        },
+        {
+          "b_imag": 0.5,
+          "brody_beta": 1.49,
+          "class": "GOE"
+        },
+        {
+          "b_imag": 1.0,
+          "brody_beta": 1.45,
+          "class": "GOE"
+        },
+        {
+          "b_imag": 2.0,
+          "brody_beta": NaN,
+          "class": "super-rigid"
+        },
+        {
+          "b_imag": 5.0,
+          "brody_beta": NaN,
+          "class": "super-rigid"
+        }
+      ],
+      "beta_shift": NaN
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-8",
+      "condition": "Dirac eigenvalues must be \u221d \u00b1n at Pe=0",
+      "result": "PASS",
+      "detail": "R\u00b2(d_n, n) = 1.00000000"
+    },
+    {
+      "id": "K-HP-9",
+      "condition": "\u03b6_{|D|}(s) must equal 2\u00b7\u03b6(s) at Pe=0",
+      "result": "PASS",
+      "detail": "mean ratio (s\u22651.5) = 1.000089"
+    },
+    {
+      "id": "K-HP-11",
+      "condition": "Complex drift must shift Brody \u03b2 upward (GOE\u2192GUE)",
+      "result": "FAIL",
+      "detail": "\u03b2(b_imag=0)=0.950, \u03b2(b_imag=5)=nan"
+    }
+  ]
+}

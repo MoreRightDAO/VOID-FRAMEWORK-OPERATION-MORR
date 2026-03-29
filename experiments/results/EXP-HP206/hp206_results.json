@@ -1,0 +1,293 @@
+{
+  "experiment": "HP206",
+  "title": "Renormalization Group Flow for Effective K",
+  "date": "2026-03-29T01:11:09.441042",
+  "parameters": {
+    "Pe_values": [
+      1,
+      5,
+      10,
+      20,
+      40,
+      60,
+      80
+    ],
+    "N_grid": 1000,
+    "N_eigenvalues": 200,
+    "saturation_window": 50,
+    "saturation_threshold": 0.05
+  },
+  "spectra_summary": {
+    "1": {
+      "lambda_0": 1.16549561,
+      "lambda_1": 4.13373957,
+      "spectral_gap": 2.96824396,
+      "lambda_max": 38703.93295351
+    },
+    "5": {
+      "lambda_0": 4.35502209,
+      "lambda_1": 7.66285253,
+      "spectral_gap": 3.30783044,
+      "lambda_max": 38706.93299902
+    },
+    "10": {
+      "lambda_0": 9.45141405,
+      "lambda_1": 17.63683454,
+      "spectral_gap": 8.18542049,
+      "lambda_max": 38716.30847645
+    },
+    "20": {
+      "lambda_0": 19.4787723,
+      "lambda_1": 37.86556165,
+      "spectral_gap": 18.38678935,
+      "lambda_max": 38753.81546515
+    },
+    "40": {
+      "lambda_0": 39.48895032,
+      "lambda_1": 77.93791745,
+      "spectral_gap": 38.44896712,
+      "lambda_max": 38903.92468424
+    },
+    "60": {
+      "lambda_0": 59.4908535,
+      "lambda_1": 117.95789781,
+      "spectral_gap": 58.46704432,
+      "lambda_max": 39154.39566149
+    },
+    "80": {
+      "lambda_0": 79.49038926,
+      "lambda_1": 157.966084,
+      "spectral_gap": 78.47569474,
+      "lambda_max": 39505.66185901
+    }
+  },
+  "K_eff_saturation": {
+    "1": {
+      "saturated": true,
+      "relative_change_final_50": 0.0,
+      "K_eff_final": 1.103247,
+      "K_eff_M10": 1.103247,
+      "mean_abs_dK_dM_final": 0.0
+    },
+    "5": {
+      "saturated": true,
+      "relative_change_final_50": 0.0,
+      "K_eff_final": 1.07379,
+      "K_eff_M10": 1.07379,
+      "mean_abs_dK_dM_final": 0.0
+    },
+    "10": {
+      "saturated": true,
+      "relative_change_final_50": 0.0,
+      "K_eff_final": 1.000558,
+      "K_eff_M10": 1.000558,
+      "mean_abs_dK_dM_final": 0.0
+    },
+    "20": {
+      "saturated": true,
+      "relative_change_final_50": 0.0,
+      "K_eff_final": 1.0,
+      "K_eff_M10": 1.0,
+      "mean_abs_dK_dM_final": 0.0
+    },
+    "40": {
+      "saturated": true,
+      "relative_change_final_50": 0.0,
+      "K_eff_final": 1.0,
+      "K_eff_M10": 1.0,
+      "mean_abs_dK_dM_final": 0.0
+    },
+    "60": {
+      "saturated": true,
+      "relative_change_final_50": 0.0,
+      "K_eff_final": 1.0,
+      "K_eff_M10": 1.0,
+      "mean_abs_dK_dM_final": 0.0
+    },
+    "80": {
+      "saturated": true,
+      "relative_change_final_50": 0.0,
+      "K_eff_final": 1.0,
+      "K_eff_M10": 1.0,
+      "mean_abs_dK_dM_final": 0.0
+    }
+  },
+  "K_eff_vs_Pe": {
+    "Pe_values": [
+      1,
+      5,
+      10,
+      20,
+      40,
+      60,
+      80
+    ],
+    "K_eff_at_M200": [
+      1.103247,
+      1.07379,
+      1.000558,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "closest_to_K16": {
+      "Pe": 1,
+      "K_eff": 1.103247,
+      "error_pct": 93.1
+    }
+  },
+  "spectral_zeta": {
+    "1": {
+      "zeta_s1.5": 0.28266738,
+      "zeta_s2.0": 0.13753415,
+      "zeta_s3.0": 0.04063119,
+      "zeta_s4.0": 0.01315519,
+      "all_finite": true,
+      "all_positive": true
+    },
+    "5": {
+      "zeta_s1.5": 0.2532944,
+      "zeta_s2.0": 0.11535966,
+      "zeta_s3.0": 0.03000215,
+      "zeta_s4.0": 0.00862155,
+      "all_finite": true,
+      "all_positive": true
+    },
+    "10": {
+      "zeta_s1.5": 0.09282134,
+      "zeta_s2.0": 0.02488966,
+      "zeta_s3.0": 0.00233015,
+      "zeta_s4.0": 0.00025234,
+      "all_finite": true,
+      "all_positive": true
+    },
+    "20": {
+      "zeta_s1.5": 0.03088907,
+      "zeta_s2.0": 0.00510383,
+      "zeta_s3.0": 0.00020075,
+      "zeta_s4.0": 9.64e-06,
+      "all_finite": true,
+      "all_positive": true
+    },
+    "40": {
+      "zeta_s1.5": 0.01060551,
+      "zeta_s2.0": 0.00115425,
+      "zeta_s3.0": 2.152e-05,
+      "zeta_s4.0": 5e-07,
+      "all_finite": true,
+      "all_positive": true
+    },
+    "60": {
+      "zeta_s1.5": 0.00571461,
+      "zeta_s2.0": 0.00049532,
+      "zeta_s3.0": 6.08e-06,
+      "zeta_s4.0": 9e-08,
+      "all_finite": true,
+      "all_positive": true
+    },
+    "80": {
+      "zeta_s1.5": 0.00369092,
+      "zeta_s2.0": 0.00027359,
+      "zeta_s3.0": 2.51e-06,
+      "zeta_s4.0": 3e-08,
+      "all_finite": true,
+      "all_positive": true
+    }
+  },
+  "c_function_monotonicity": {
+    "1": {
+      "monotonic": false,
+      "frac_increasing": 0.0203,
+      "c_M3": -0.000993,
+      "c_M100": 0.0,
+      "c_M200": 0.0
+    },
+    "5": {
+      "monotonic": false,
+      "frac_increasing": 0.0203,
+      "c_M3": -0.000973,
+      "c_M100": 0.0,
+      "c_M200": 0.0
+    },
+    "10": {
+      "monotonic": false,
+      "frac_increasing": 0.0152,
+      "c_M3": -1e-06,
+      "c_M100": 0.0,
+      "c_M200": 0.0
+    },
+    "20": {
+      "monotonic": false,
+      "frac_increasing": 0.0051,
+      "c_M3": -0.0,
+      "c_M100": 0.0,
+      "c_M200": 0.0
+    },
+    "40": {
+      "monotonic": false,
+      "frac_increasing": 0.0,
+      "c_M3": 0.0,
+      "c_M100": 0.0,
+      "c_M200": 0.0
+    },
+    "60": {
+      "monotonic": false,
+      "frac_increasing": 0.0,
+      "c_M3": 0.0,
+      "c_M100": 0.0,
+      "c_M200": 0.0
+    },
+    "80": {
+      "monotonic": false,
+      "frac_increasing": 0.0,
+      "c_M3": 0.0,
+      "c_M100": 0.0,
+      "c_M200": 0.0
+    }
+  },
+  "scaling_fits": {
+    "K_eff_vs_log_Pe": {
+      "a": 1.093876,
+      "b": -0.025142,
+      "R2": 0.788654
+    },
+    "K_eff_vs_Pe_power": {
+      "a": 1.093833,
+      "b_exponent": -0.024003,
+      "R2": 0.795933
+    },
+    "K_eff_vs_Pe_linear": {
+      "a": 1.053637,
+      "b_slope": -0.000916,
+      "R2": 0.39504
+    }
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "description": "K_eff saturates (<5% change over final 50 modes) for >= 4/7 Pe values",
+      "n_saturated": 7,
+      "required": 4,
+      "result": "PASS"
+    },
+    "KC-2": {
+      "description": "At least one Pe has K_eff saturation in [5, 50]",
+      "best_Pe": null,
+      "best_K_eff": null,
+      "result": "FAIL"
+    },
+    "KC-3": {
+      "description": "Spectral zeta converges for s > 1.5 for all Pe",
+      "all_converge": true,
+      "result": "PASS"
+    },
+    "KC-4": {
+      "description": "c-function monotonically decreasing for >= 4/7 Pe values",
+      "n_monotonic": 0,
+      "required": 4,
+      "result": "FAIL"
+    }
+  },
+  "overall": "2/4 KC PASS",
+  "interpretation": "K_eff from Boltzmann participation ratio tested as a spectral RG definition of effective degrees of freedom. Mode truncation serves as a UV cutoff. Results determine whether the Eckert FP operator encodes a natural K."
+}

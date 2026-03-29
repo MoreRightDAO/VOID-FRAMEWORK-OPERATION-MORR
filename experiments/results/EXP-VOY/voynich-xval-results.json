@@ -1,0 +1,845 @@
+{
+  "timestamp": "2026-03-02T22:07:59.420027+00:00",
+  "xval_1": {
+    "takahashi_lk": {
+      "lk_word_types": 96,
+      "lk_token_total": 423,
+      "lk_st_tokens": 355,
+      "lk_st_pct": 83.9,
+      "lk_astro_pct": 0.5,
+      "lk_bio_tokens": 48,
+      "alk_word_types": 17,
+      "top_lk_words": [
+        [
+          "lkaiin",
+          45,
+          40,
+          88.9
+        ],
+        [
+          "lkeey",
+          41,
+          36,
+          87.8
+        ],
+        [
+          "lkeedy",
+          41,
+          33,
+          80.5
+        ],
+        [
+          "lkain",
+          35,
+          29,
+          82.9
+        ],
+        [
+          "lkar",
+          26,
+          21,
+          80.8
+        ],
+        [
+          "lkedy",
+          29,
+          19,
+          65.5
+        ],
+        [
+          "lky",
+          17,
+          14,
+          82.4
+        ],
+        [
+          "lkchedy",
+          13,
+          11,
+          84.6
+        ],
+        [
+          "lkeeey",
+          8,
+          8,
+          100.0
+        ],
+        [
+          "lkl",
+          9,
+          7,
+          77.8
+        ]
+      ],
+      "elongated_lk_count": 27,
+      "elongated_st_pct": 88.5,
+      "gate_pass": true,
+      "gate_threshold": 70.0
+    },
+    "takahashi_qo": {
+      "qo_word_types": 714,
+      "qo_token_total": 5009,
+      "qo_astro_pct": 1.5,
+      "astro_exclusion_gate": true,
+      "top_medials": [
+        {
+          "medial": "lch",
+          "total": 29,
+          "dominant_section": "Biological",
+          "dominant_pct": 82.8,
+          "section_counts": {
+            "Biological": 24,
+            "Stars_Text": 5
+          }
+        },
+        {
+          "medial": "eed",
+          "total": 24,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 70.8,
+          "section_counts": {
+            "Stars_Text": 17,
+            "Biological": 6,
+            "Herbal_A": 1
+          }
+        },
+        {
+          "medial": "tor",
+          "total": 27,
+          "dominant_section": "Herbal_A",
+          "dominant_pct": 70.4,
+          "section_counts": {
+            "Herbal_A": 19,
+            "Stars_Text": 7,
+            "Biological": 1
+          }
+        },
+        {
+          "medial": "pch",
+          "total": 96,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 65.6,
+          "section_counts": {
+            "Stars_Text": 63,
+            "Herbal_A": 17,
+            "Biological": 12,
+            "Pharmaceutical": 3,
+            "Astronomical": 1
+          }
+        },
+        {
+          "medial": "kec",
+          "total": 23,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 65.2,
+          "section_counts": {
+            "Stars_Text": 15,
+            "Biological": 5,
+            "Herbal_A": 2,
+            "Pharmaceutical": 1
+          }
+        },
+        {
+          "medial": "ked",
+          "total": 297,
+          "dominant_section": "Biological",
+          "dominant_pct": 58.9,
+          "section_counts": {
+            "Biological": 175,
+            "Stars_Text": 76,
+            "Herbal_A": 44,
+            "Pharmaceutical": 2
+          }
+        },
+        {
+          "medial": "tch",
+          "total": 206,
+          "dominant_section": "Herbal_A",
+          "dominant_pct": 57.8,
+          "section_counts": {
+            "Herbal_A": 119,
+            "Stars_Text": 62,
+            "Pharmaceutical": 13,
+            "Biological": 12
+          }
+        },
+        {
+          "medial": "tai",
+          "total": 142,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 56.3,
+          "section_counts": {
+            "Stars_Text": 80,
+            "Biological": 40,
+            "Herbal_A": 18,
+            "Pharmaceutical": 3,
+            "Astronomical": 1
+          }
+        },
+        {
+          "medial": "dai",
+          "total": 51,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 52.9,
+          "section_counts": {
+            "Stars_Text": 27,
+            "Herbal_A": 17,
+            "Pharmaceutical": 6,
+            "Biological": 1
+          }
+        },
+        {
+          "medial": "kal",
+          "total": 227,
+          "dominant_section": "Biological",
+          "dominant_pct": 52.9,
+          "section_counts": {
+            "Biological": 120,
+            "Stars_Text": 48,
+            "Herbal_A": 44,
+            "Astronomical": 8,
+            "Pharmaceutical": 7
+          }
+        },
+        {
+          "medial": "cth",
+          "total": 23,
+          "dominant_section": "Herbal_A",
+          "dominant_pct": 52.2,
+          "section_counts": {
+            "Herbal_A": 12,
+            "Pharmaceutical": 5,
+            "Stars_Text": 4,
+            "Biological": 2
+          }
+        },
+        {
+          "medial": "kam",
+          "total": 25,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 52.0,
+          "section_counts": {
+            "Stars_Text": 13,
+            "Herbal_A": 6,
+            "Biological": 6
+          }
+        },
+        {
+          "medial": "tar",
+          "total": 56,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 51.8,
+          "section_counts": {
+            "Stars_Text": 29,
+            "Biological": 16,
+            "Herbal_A": 7,
+            "Pharmaceutical": 4
+          }
+        },
+        {
+          "medial": "kee",
+          "total": 764,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 51.0,
+          "section_counts": {
+            "Stars_Text": 390,
+            "Biological": 257,
+            "Pharmaceutical": 54,
+            "Herbal_A": 53,
+            "Astronomical": 10
+          }
+        },
+        {
+          "medial": "keo",
+          "total": 139,
+          "dominant_section": "Pharmaceutical",
+          "dominant_pct": 50.4,
+          "section_counts": {
+            "Pharmaceutical": 70,
+            "Stars_Text": 32,
+            "Herbal_A": 21,
+            "Astronomical": 8,
+            "Biological": 8
+          }
+        },
+        {
+          "medial": "ted",
+          "total": 106,
+          "dominant_section": "Biological",
+          "dominant_pct": 50.0,
+          "section_counts": {
+            "Biological": 53,
+            "Stars_Text": 38,
+            "Herbal_A": 14,
+            "Pharmaceutical": 1
+          }
+        },
+        {
+          "medial": "tol",
+          "total": 53,
+          "dominant_section": "Herbal_A",
+          "dominant_pct": 49.1,
+          "section_counts": {
+            "Herbal_A": 26,
+            "Stars_Text": 13,
+            "Biological": 10,
+            "Pharmaceutical": 4
+          }
+        },
+        {
+          "medial": "teo",
+          "total": 39,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 48.7,
+          "section_counts": {
+            "Stars_Text": 19,
+            "Pharmaceutical": 12,
+            "Herbal_A": 6,
+            "Astronomical": 1,
+            "Biological": 1
+          }
+        },
+        {
+          "medial": "tee",
+          "total": 156,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 46.8,
+          "section_counts": {
+            "Stars_Text": 73,
+            "Biological": 53,
+            "Herbal_A": 20,
+            "Astronomical": 6,
+            "Pharmaceutical": 4
+          }
+        },
+        {
+          "medial": "tey",
+          "total": 24,
+          "dominant_section": "Stars_Text",
+          "dominant_pct": 45.8,
+          "section_counts": {
+            "Stars_Text": 11,
+            "Biological": 8,
+            "Herbal_A": 4,
+            "Pharmaceutical": 1
+          }
+        }
+      ],
+      "key_medials": {
+        "lch": {
+          "expected": "Biological",
+          "found": "Biological",
+          "found_pct": 82.8,
+          "total": 29,
+          "replicated": true
+        },
+        "lka": {
+          "expected": "Biological",
+          "found": null,
+          "found_pct": 0,
+          "total": 0,
+          "replicated": false
+        },
+        "lke": {
+          "expected": "Biological",
+          "found": null,
+          "found_pct": 0,
+          "total": 0,
+          "replicated": false
+        },
+        "tch": {
+          "expected": "Herbal_A",
+          "found": "Herbal_A",
+          "found_pct": 57.8,
+          "total": 206,
+          "replicated": true
+        },
+        "kch": {
+          "expected": "Herbal_A",
+          "found": "Herbal_A",
+          "found_pct": 42.9,
+          "total": 268,
+          "replicated": false
+        },
+        "pch": {
+          "expected": "Stars_Text",
+          "found": "Stars_Text",
+          "found_pct": 65.6,
+          "total": 96,
+          "replicated": true
+        },
+        "ckh": {
+          "expected": "Pharmaceutical",
+          "found": "Pharmaceutical",
+          "found_pct": 42.6,
+          "total": 68,
+          "replicated": true
+        }
+      },
+      "medials_replicated": 4,
+      "medials_total": 7,
+      "gate_pass": true
+    },
+    "lk_replicated": true,
+    "qo_replicated": true,
+    "gate_pass": true
+  },
+  "xval_2": {
+    "observed_max": 0.6643883293831151,
+    "observed_min": 0.48403707298053433,
+    "observed_ratio": 1.3725980228994437,
+    "shuffle_mean_ratio": 1.1910763609670676,
+    "shuffle_95th_pctile": 1.2132699568924779,
+    "shuffle_99th_pctile": 1.2235933240727994,
+    "p_value": 0.0,
+    "significant_p05": true,
+    "significant_p01": true,
+    "spearman_rho": -0.7999999999999999,
+    "spearman_p": 0.2000000000000001,
+    "n_permutations": 5000,
+    "section_order": [
+      "Herbal_A",
+      "Astronomical",
+      "Biological",
+      "Pharmaceutical",
+      "Stars_Text"
+    ],
+    "jsd_matrix": [
+      [
+        0.0,
+        0.5962610818755923,
+        0.5856506489757941,
+        0.5294212161114581,
+        0.5522957081503467
+      ],
+      [
+        0.5962610818755923,
+        0.0,
+        0.6643883293831151,
+        0.6088473000641181,
+        0.6159670994187807
+      ],
+      [
+        0.5856506489757941,
+        0.6643883293831151,
+        0.0,
+        0.6157396564836624,
+        0.48403707298053433
+      ],
+      [
+        0.5294212161114581,
+        0.6088473000641181,
+        0.6157396564836624,
+        0.0,
+        0.5791496509539276
+      ],
+      [
+        0.5522957081503467,
+        0.6159670994187807,
+        0.48403707298053433,
+        0.5791496509539276,
+        0.0
+      ]
+    ]
+  },
+  "xval_3": {
+    "source_a": "ZL",
+    "source_b": "Takahashi",
+    "total_types_a": 7717,
+    "total_types_b": 7811,
+    "shared_types": 6270,
+    "overall_jaccard": 0.6773,
+    "lk_types_a": 97,
+    "lk_types_b": 96,
+    "lk_shared": 88,
+    "lk_jaccard": 0.8381,
+    "qo_types_a": 716,
+    "qo_types_b": 714,
+    "qo_shared": 619,
+    "qo_jaccard": 0.7633
+  },
+  "zl_lk": {
+    "lk_word_types": 97,
+    "lk_token_total": 402,
+    "lk_st_tokens": 332,
+    "lk_st_pct": 82.6,
+    "lk_astro_pct": 0.5,
+    "lk_bio_tokens": 48,
+    "alk_word_types": 17,
+    "top_lk_words": [
+      [
+        "lkaiin",
+        45,
+        39,
+        86.7
+      ],
+      [
+        "lkeey",
+        39,
+        34,
+        87.2
+      ],
+      [
+        "lkeedy",
+        37,
+        30,
+        81.1
+      ],
+      [
+        "lkain",
+        34,
+        28,
+        82.4
+      ],
+      [
+        "lkar",
+        27,
+        22,
+        81.5
+      ],
+      [
+        "lkedy",
+        27,
+        17,
+        63.0
+      ],
+      [
+        "lky",
+        19,
+        14,
+        73.7
+      ],
+      [
+        "lkchedy",
+        13,
+        11,
+        84.6
+      ],
+      [
+        "lkchey",
+        8,
+        7,
+        87.5
+      ],
+      [
+        "lkeeey",
+        7,
+        7,
+        100.0
+      ]
+    ],
+    "elongated_lk_count": 25,
+    "elongated_st_pct": 86.4,
+    "gate_pass": true,
+    "gate_threshold": 70.0
+  },
+  "zl_qo": {
+    "qo_word_types": 716,
+    "qo_token_total": 5013,
+    "qo_astro_pct": 1.4,
+    "astro_exclusion_gate": true,
+    "top_medials": [
+      {
+        "medial": "lch",
+        "total": 32,
+        "dominant_section": "Biological",
+        "dominant_pct": 84.4,
+        "section_counts": {
+          "Biological": 27,
+          "Stars_Text": 5
+        }
+      },
+      {
+        "medial": "tor",
+        "total": 27,
+        "dominant_section": "Herbal_A",
+        "dominant_pct": 74.1,
+        "section_counts": {
+          "Herbal_A": 20,
+          "Stars_Text": 6,
+          "Biological": 1
+        }
+      },
+      {
+        "medial": "eed",
+        "total": 25,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 72.0,
+        "section_counts": {
+          "Stars_Text": 18,
+          "Biological": 6,
+          "Herbal_A": 1
+        }
+      },
+      {
+        "medial": "kec",
+        "total": 23,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 65.2,
+        "section_counts": {
+          "Stars_Text": 15,
+          "Biological": 5,
+          "Herbal_A": 2,
+          "Pharmaceutical": 1
+        }
+      },
+      {
+        "medial": "pch",
+        "total": 97,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 64.9,
+        "section_counts": {
+          "Stars_Text": 63,
+          "Herbal_A": 17,
+          "Biological": 12,
+          "Pharmaceutical": 3,
+          "Astronomical": 2
+        }
+      },
+      {
+        "medial": "ked",
+        "total": 298,
+        "dominant_section": "Biological",
+        "dominant_pct": 58.7,
+        "section_counts": {
+          "Biological": 175,
+          "Stars_Text": 76,
+          "Herbal_A": 45,
+          "Pharmaceutical": 2
+        }
+      },
+      {
+        "medial": "tai",
+        "total": 137,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 57.7,
+        "section_counts": {
+          "Stars_Text": 79,
+          "Biological": 37,
+          "Herbal_A": 17,
+          "Pharmaceutical": 3,
+          "Astronomical": 1
+        }
+      },
+      {
+        "medial": "dai",
+        "total": 50,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 56.0,
+        "section_counts": {
+          "Stars_Text": 28,
+          "Herbal_A": 16,
+          "Pharmaceutical": 6
+        }
+      },
+      {
+        "medial": "tch",
+        "total": 199,
+        "dominant_section": "Herbal_A",
+        "dominant_pct": 55.8,
+        "section_counts": {
+          "Herbal_A": 111,
+          "Stars_Text": 63,
+          "Pharmaceutical": 13,
+          "Biological": 12
+        }
+      },
+      {
+        "medial": "kal",
+        "total": 235,
+        "dominant_section": "Biological",
+        "dominant_pct": 52.3,
+        "section_counts": {
+          "Biological": 123,
+          "Stars_Text": 49,
+          "Herbal_A": 48,
+          "Astronomical": 8,
+          "Pharmaceutical": 7
+        }
+      },
+      {
+        "medial": "kam",
+        "total": 25,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 52.0,
+        "section_counts": {
+          "Stars_Text": 13,
+          "Herbal_A": 7,
+          "Biological": 5
+        }
+      },
+      {
+        "medial": "tar",
+        "total": 58,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 51.7,
+        "section_counts": {
+          "Stars_Text": 30,
+          "Biological": 17,
+          "Herbal_A": 7,
+          "Pharmaceutical": 4
+        }
+      },
+      {
+        "medial": "keo",
+        "total": 140,
+        "dominant_section": "Pharmaceutical",
+        "dominant_pct": 51.4,
+        "section_counts": {
+          "Pharmaceutical": 72,
+          "Stars_Text": 32,
+          "Herbal_A": 21,
+          "Biological": 8,
+          "Astronomical": 7
+        }
+      },
+      {
+        "medial": "tol",
+        "total": 51,
+        "dominant_section": "Herbal_A",
+        "dominant_pct": 51.0,
+        "section_counts": {
+          "Herbal_A": 26,
+          "Stars_Text": 13,
+          "Biological": 9,
+          "Pharmaceutical": 3
+        }
+      },
+      {
+        "medial": "kee",
+        "total": 770,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 50.8,
+        "section_counts": {
+          "Stars_Text": 391,
+          "Biological": 259,
+          "Herbal_A": 56,
+          "Pharmaceutical": 53,
+          "Astronomical": 11
+        }
+      },
+      {
+        "medial": "ted",
+        "total": 103,
+        "dominant_section": "Biological",
+        "dominant_pct": 50.5,
+        "section_counts": {
+          "Biological": 52,
+          "Stars_Text": 36,
+          "Herbal_A": 14,
+          "Pharmaceutical": 1
+        }
+      },
+      {
+        "medial": "teo",
+        "total": 36,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 50.0,
+        "section_counts": {
+          "Stars_Text": 18,
+          "Pharmaceutical": 11,
+          "Herbal_A": 5,
+          "Astronomical": 1,
+          "Biological": 1
+        }
+      },
+      {
+        "medial": "cth",
+        "total": 24,
+        "dominant_section": "Herbal_A",
+        "dominant_pct": 50.0,
+        "section_counts": {
+          "Herbal_A": 12,
+          "Pharmaceutical": 5,
+          "Stars_Text": 5,
+          "Biological": 2
+        }
+      },
+      {
+        "medial": "tey",
+        "total": 23,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 47.8,
+        "section_counts": {
+          "Stars_Text": 11,
+          "Biological": 8,
+          "Herbal_A": 3,
+          "Pharmaceutical": 1
+        }
+      },
+      {
+        "medial": "tee",
+        "total": 157,
+        "dominant_section": "Stars_Text",
+        "dominant_pct": 45.9,
+        "section_counts": {
+          "Stars_Text": 72,
+          "Biological": 55,
+          "Herbal_A": 21,
+          "Astronomical": 5,
+          "Pharmaceutical": 4
+        }
+      }
+    ],
+    "key_medials": {
+      "lch": {
+        "expected": "Biological",
+        "found": "Biological",
+        "found_pct": 84.4,
+        "total": 32,
+        "replicated": true
+      },
+      "lka": {
+        "expected": "Biological",
+        "found": null,
+        "found_pct": 0,
+        "total": 0,
+        "replicated": false
+      },
+      "lke": {
+        "expected": "Biological",
+        "found": null,
+        "found_pct": 0,
+        "total": 0,
+        "replicated": false
+      },
+      "tch": {
+        "expected": "Herbal_A",
+        "found": "Herbal_A",
+        "found_pct": 55.8,
+        "total": 199,
+        "replicated": true
+      },
+      "kch": {
+        "expected": "Herbal_A",
+        "found": "Herbal_A",
+        "found_pct": 43.7,
+        "total": 254,
+        "replicated": false
+      },
+      "pch": {
+        "expected": "Stars_Text",
+        "found": "Stars_Text",
+        "found_pct": 64.9,
+        "total": 97,
+        "replicated": true
+      },
+      "ckh": {
+        "expected": "Pharmaceutical",
+        "found": "Pharmaceutical",
+        "found_pct": 42.6,
+        "total": 68,
+        "replicated": true
+      }
+    },
+    "medials_replicated": 4,
+    "medials_total": 7,
+    "gate_pass": true
+  },
+  "summary": {
+    "paper_i_ready": true,
+    "paper_ii_ready": true,
+    "voy1_confirmed": true,
+    "spearman_rho": -0.7999999999999999
+  }
+}

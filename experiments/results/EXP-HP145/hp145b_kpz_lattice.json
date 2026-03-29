@@ -1,0 +1,70 @@
+{
+  "experiment": "HP145B",
+  "date": "2026-03-20T08:53:20.133469",
+  "title": "KPZ Lattice Models: Numerical Verification of 1/3 Exponent",
+  "parameters": {
+    "L": 1024,
+    "n_monolayers": 2000
+  },
+  "results": {
+    "BD": {
+      "model": "Ballistic Deposition",
+      "class": "KPZ",
+      "beta": 0.2809658893586075,
+      "se": 0.03484901915157585,
+      "expected": 0.3333333333333333
+    },
+    "RSOS": {
+      "model": "RSOS",
+      "class": "KPZ",
+      "beta": 0.32118793857508354,
+      "se": 0.021866711093770808,
+      "expected": 0.3333333333333333
+    },
+    "RD": {
+      "model": "Random Deposition",
+      "class": "uncorrelated",
+      "beta": 0.4984441350651989,
+      "se": 0.0008526464928056963,
+      "expected": 0.5
+    },
+    "EW": {
+      "model": "Family Model",
+      "class": "Edwards-Wilkinson",
+      "beta": 0.23175263823626469,
+      "se": 0.02935118892630427,
+      "expected": 0.25
+    }
+  },
+  "kill_conditions": {
+    "K-HP-780": {
+      "desc": "Ballistic deposition \u03b2 = 0.333 \u00b1 0.03",
+      "val": 0.2809658893586075,
+      "pass": false
+    },
+    "K-HP-785": {
+      "desc": "RSOS \u03b2 = 0.333 \u00b1 0.03",
+      "val": 0.32118793857508354,
+      "pass": true
+    },
+    "K-HP-786": {
+      "desc": "Random deposition \u03b2 = 0.500 \u00b1 0.05",
+      "val": 0.4984441350651989,
+      "pass": true
+    },
+    "K-HP-784": {
+      "desc": "Family model \u03b2 = 0.250 \u00b1 0.03",
+      "val": 0.23175263823626469,
+      "pass": true
+    },
+    "K-HP-787": {
+      "desc": "KPZ \u2260 EW at > 3\u03c3",
+      "val": 1.0801249186890167,
+      "pass": false
+    }
+  },
+  "summary": {
+    "pass": "3",
+    "total": 5
+  }
+}

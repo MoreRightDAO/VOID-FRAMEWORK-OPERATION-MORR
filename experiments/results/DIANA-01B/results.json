@@ -1,0 +1,479 @@
+{
+  "experiment": "DIANA-01B",
+  "title": "Kramers Barrier DLA \u2014 Noise-Reduced Dendritic Morphogenesis",
+  "date": "2026-03-20",
+  "parameters": {
+    "grid_size": 128,
+    "n_sym": 4,
+    "epsilon": 0.4,
+    "target_attached": 800,
+    "max_walkers": 300000,
+    "m_values": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13,
+      20,
+      30
+    ],
+    "n_realizations": 2,
+    "rng_seed": 42,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "K": 16
+  },
+  "physics": {
+    "model": "Noise-reduced DLA with anisotropic Kramers barrier",
+    "barrier": "E_b(\u03b8) = m\u2080\u00b7(1 \u2212 \u03b5\u00b7cos(n\u00b7\u03b8))",
+    "selection_ratio": "\u0393_pref/\u0393_valley = exp(2\u00b7m\u2080\u00b7\u03b5)",
+    "pe_eff_definition": "Pe_eff = 2\u00b7m\u2080\u00b7\u03b5 (barrier anisotropy)",
+    "connection_paper_131": "Solidification barrier IS a Kramers barrier"
+  },
+  "results": [
+    {
+      "condition": "control",
+      "m0": 1,
+      "epsilon": 0.0,
+      "pe_eff_kramers": 0.0,
+      "fractal_dimension": {
+        "mean": 1.4783,
+        "runs": [
+          1.4993,
+          1.4572
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 1.0
+      },
+      "arm_count": {
+        "mean": 0
+      },
+      "compactness": {
+        "mean": 0.0
+      },
+      "tip_velocity": {
+        "mean": 0.0
+      },
+      "preferred_attached": 0,
+      "valley_attached": 0,
+      "kramers_ratio_predicted": 1.0,
+      "kramers_ratio_measured": 1.0
+    },
+    {
+      "condition": "sweep",
+      "m0": 1,
+      "epsilon": 0.4,
+      "pe_eff_kramers": 0.8,
+      "fractal_dimension": {
+        "mean": 1.5961,
+        "std": 0.0026,
+        "runs": [
+          1.5987,
+          1.5936
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 1.0276,
+        "runs": [
+          0.8626,
+          1.1925
+        ]
+      },
+      "arm_count": {
+        "mean": 4.5,
+        "runs": [
+          4,
+          5
+        ]
+      },
+      "compactness": {
+        "mean": 0.1134
+      },
+      "tip_velocity": {
+        "mean": 0.045592
+      },
+      "preferred_attached": 605,
+      "valley_attached": 995,
+      "kramers_ratio_predicted": 2.23,
+      "kramers_ratio_measured": 0.608,
+      "framework_bridge": {
+        "O": 1.2,
+        "R": 0.2727,
+        "alpha": 0.3976,
+        "C": 0.7922,
+        "Pe_framework": -48.1449,
+        "Pe_eff_kramers": 0.8
+      }
+    },
+    {
+      "condition": "sweep",
+      "m0": 2,
+      "epsilon": 0.4,
+      "pe_eff_kramers": 1.6,
+      "fractal_dimension": {
+        "mean": 1.3824,
+        "std": 0.0318,
+        "runs": [
+          1.4142,
+          1.3506
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 2.5425,
+        "runs": [
+          2.8886,
+          2.1964
+        ]
+      },
+      "arm_count": {
+        "mean": 2.5,
+        "runs": [
+          3,
+          2
+        ]
+      },
+      "compactness": {
+        "mean": 0.0713
+      },
+      "tip_velocity": {
+        "mean": 0.046157
+      },
+      "preferred_attached": 1220,
+      "valley_attached": 68,
+      "kramers_ratio_predicted": 4.95,
+      "kramers_ratio_measured": 17.9412,
+      "framework_bridge": {
+        "O": 1.2,
+        "R": 0.5,
+        "alpha": 0.7816,
+        "C": 0.7243,
+        "Pe_framework": -34.6952,
+        "Pe_eff_kramers": 1.6
+      }
+    },
+    {
+      "condition": "sweep",
+      "m0": 3,
+      "epsilon": 0.4,
+      "pe_eff_kramers": 2.4,
+      "fractal_dimension": {
+        "mean": 1.5433,
+        "std": 0.0225,
+        "runs": [
+          1.5658,
+          1.5208
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 1.479,
+        "runs": [
+          1.577,
+          1.3809
+        ]
+      },
+      "arm_count": {
+        "mean": 3.5,
+        "runs": [
+          3,
+          4
+        ]
+      },
+      "compactness": {
+        "mean": 0.0886
+      },
+      "tip_velocity": {
+        "mean": 0.051038
+      },
+      "preferred_attached": 1410,
+      "valley_attached": 136,
+      "kramers_ratio_predicted": 11.02,
+      "kramers_ratio_measured": 10.3676,
+      "framework_bridge": {
+        "O": 1.2,
+        "R": 0.6923,
+        "alpha": 1.1398,
+        "C": 0.6631,
+        "Pe_framework": -25.3888,
+        "Pe_eff_kramers": 2.4
+      }
+    },
+    {
+      "condition": "sweep",
+      "m0": 5,
+      "epsilon": 0.4,
+      "pe_eff_kramers": 4.0,
+      "fractal_dimension": {
+        "mean": 1.4753,
+        "std": 0.0258,
+        "runs": [
+          1.5011,
+          1.4494
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 1.94,
+        "runs": [
+          1.5627,
+          2.3173
+        ]
+      },
+      "arm_count": {
+        "mean": 1.5,
+        "runs": [
+          2,
+          1
+        ]
+      },
+      "compactness": {
+        "mean": 0.0715
+      },
+      "tip_velocity": {
+        "mean": 0.057357
+      },
+      "preferred_attached": 1199,
+      "valley_attached": 62,
+      "kramers_ratio_predicted": 54.6,
+      "kramers_ratio_measured": 19.3387,
+      "framework_bridge": {
+        "O": 1.2,
+        "R": 1.0,
+        "alpha": 1.7483,
+        "C": 0.5613,
+        "Pe_framework": -13.8922,
+        "Pe_eff_kramers": 4.0
+      }
+    },
+    {
+      "condition": "sweep",
+      "m0": 8,
+      "epsilon": 0.4,
+      "pe_eff_kramers": 6.4,
+      "fractal_dimension": {
+        "mean": 1.5609,
+        "std": 0.0008,
+        "runs": [
+          1.5601,
+          1.5616
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 2.1645,
+        "runs": [
+          1.8918,
+          2.4373
+        ]
+      },
+      "arm_count": {
+        "mean": 3.5,
+        "runs": [
+          4,
+          3
+        ]
+      },
+      "compactness": {
+        "mean": 0.0796
+      },
+      "tip_velocity": {
+        "mean": 0.057112
+      },
+      "preferred_attached": 1356,
+      "valley_attached": 48,
+      "kramers_ratio_predicted": 601.85,
+      "kramers_ratio_measured": 28.25,
+      "framework_bridge": {
+        "O": 1.2,
+        "R": 1.3333,
+        "alpha": 2.3646,
+        "C": 0.4558,
+        "Pe_framework": -5.066,
+        "Pe_eff_kramers": 6.4
+      }
+    },
+    {
+      "condition": "sweep",
+      "m0": 13,
+      "epsilon": 0.4,
+      "pe_eff_kramers": 10.4,
+      "fractal_dimension": {
+        "mean": 1.5427,
+        "std": 0.0124,
+        "runs": [
+          1.5551,
+          1.5303
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 2.1065,
+        "runs": [
+          1.8477,
+          2.3653
+        ]
+      },
+      "arm_count": {
+        "mean": 3.0,
+        "runs": [
+          3,
+          3
+        ]
+      },
+      "compactness": {
+        "mean": 0.078
+      },
+      "tip_velocity": {
+        "mean": 0.052169
+      },
+      "preferred_attached": 1349,
+      "valley_attached": 27,
+      "kramers_ratio_predicted": 32859.63,
+      "kramers_ratio_measured": 49.963,
+      "framework_bridge": {
+        "O": 1.2,
+        "R": 1.6957,
+        "alpha": 2.8183,
+        "C": 0.3651,
+        "Pe_framework": 1.5284,
+        "Pe_eff_kramers": 10.4
+      }
+    },
+    {
+      "condition": "sweep",
+      "m0": 20,
+      "epsilon": 0.4,
+      "pe_eff_kramers": 16.0,
+      "fractal_dimension": {
+        "mean": 1.5077,
+        "std": 0.0057,
+        "runs": [
+          1.5021,
+          1.5134
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 2.3996,
+        "runs": [
+          2.457,
+          2.3422
+        ]
+      },
+      "arm_count": {
+        "mean": 3.0,
+        "runs": [
+          3,
+          3
+        ]
+      },
+      "compactness": {
+        "mean": 0.0718
+      },
+      "tip_velocity": {
+        "mean": 0.059643
+      },
+      "preferred_attached": 1251,
+      "valley_attached": 15,
+      "kramers_ratio_predicted": 8886110.52,
+      "kramers_ratio_measured": 83.4,
+      "framework_bridge": {
+        "O": 1.2,
+        "R": 2.0,
+        "alpha": 2.9712,
+        "C": 0.3143,
+        "Pe_framework": 5.2644,
+        "Pe_eff_kramers": 16.0
+      }
+    },
+    {
+      "condition": "sweep",
+      "m0": 30,
+      "epsilon": 0.4,
+      "pe_eff_kramers": 24.0,
+      "fractal_dimension": {
+        "mean": 1.5194,
+        "std": 0.0065,
+        "runs": [
+          1.5129,
+          1.526
+        ]
+      },
+      "anisotropy_ratio": {
+        "mean": 2.3801,
+        "runs": [
+          2.4968,
+          2.2634
+        ]
+      },
+      "arm_count": {
+        "mean": 3.5,
+        "runs": [
+          3,
+          4
+        ]
+      },
+      "compactness": {
+        "mean": 0.074
+      },
+      "tip_velocity": {
+        "mean": 0.061733
+      },
+      "preferred_attached": 1285,
+      "valley_attached": 19,
+      "kramers_ratio_predicted": 26489122129.84,
+      "kramers_ratio_measured": 67.6316,
+      "framework_bridge": {
+        "O": 1.2,
+        "R": 2.25,
+        "alpha": 2.998,
+        "C": 0.2836,
+        "Pe_framework": 7.6471,
+        "Pe_eff_kramers": 24.0
+      }
+    }
+  ],
+  "kill_conditions": {
+    "K-DIANA-01B-1": {
+      "description": "d_f(control)=1.478 vs 1.71",
+      "delta": 0.2317,
+      "pass": false
+    },
+    "K-DIANA-01B-2": {
+      "description": "Anisotropy ratio monotonic: \u03c1=0.452, p=2.60e-01",
+      "spearman_rho": 0.4524,
+      "pass": false
+    },
+    "K-DIANA-01B-3": {
+      "description": "Transition A>1.5 at Pe_eff=4.0",
+      "pass": true
+    },
+    "K-DIANA-01B-4": {
+      "description": "d_f trend: \u03c1=-0.190, p=6.51e-01",
+      "spearman_rho": -0.1905,
+      "pass": false
+    },
+    "K-DIANA-01B-5": {
+      "description": "Kramers scaling: R\u00b2=0.551, slope=0.116",
+      "R2": 0.5513,
+      "slope": 0.1159,
+      "pass": false
+    },
+    "K-DIANA-01B-6": {
+      "description": "Arms at max Pe: 3.5 (target 4)",
+      "pass": true
+    }
+  },
+  "overall_pass": false,
+  "n_pass": 2,
+  "n_total": 6,
+  "summary": {
+    "control_df": 1.4782851225121707,
+    "df_range": [
+      1.382,
+      1.596
+    ],
+    "anisotropy_range": [
+      1.028,
+      2.542
+    ],
+    "transition_pe": 4.0
+  }
+}

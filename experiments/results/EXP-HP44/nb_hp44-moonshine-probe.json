@@ -1,0 +1,241 @@
+{
+  "M1": {
+    "n2_max_error": 0.0020522208796004415,
+    "poisson_errors": [
+      3.8766881049456195e-07,
+      1.4250317806660908e-07,
+      1.0211012157112917e-08,
+      0.0,
+      1.0211012345205677e-08,
+      1.425031984783251e-07,
+      3.8766896071072323e-07
+    ],
+    "max_poisson_error": 3.8766896071072323e-07,
+    "s_transform_errors": [
+      1.0211012240940906e-08,
+      0.0,
+      1.0211012157112917e-08,
+      4.663733728229726e-08
+    ],
+    "max_s_transform_error": 4.663733728229726e-08,
+    "theta_match_errors": [
+      1.0211012574227723e-08,
+      4.9712567206709046e-11,
+      2.2121837960940693e-16,
+      2.2200877292328874e-16
+    ],
+    "max_theta_error": 1.0211012574227723e-08,
+    "K-MOON-1": "PASS",
+    "K-MOON-4": "PASS"
+  },
+  "M2": {
+    "deformation_data": [
+      {
+        "Pe": 0.0,
+        "theta_H_real": 1.4194955025782525,
+        "theta_H_imag": 0.0,
+        "deviation": 1.0211012574227723e-08,
+        "mult_break": 1.000004929872634
+      },
+      {
+        "Pe": 0.5,
+        "theta_H_real": 1.4198896663967042,
+        "theta_H_imag": 0.0,
+        "deviation": 0.00027768902137906276,
+        "mult_break": 0.985168489053115
+      },
+      {
+        "Pe": 1.0,
+        "theta_H_real": 1.4212153542173853,
+        "theta_H_imag": 0.0,
+        "deviation": 0.0012116038043493824,
+        "mult_break": 0.9440443156461791
+      },
+      {
+        "Pe": 2.0,
+        "theta_H_real": 1.4286358005593613,
+        "theta_H_imag": 0.0,
+        "deviation": 0.006439127529692945,
+        "mult_break": 0.8178808369858032
+      },
+      {
+        "Pe": 5.0,
+        "theta_H_real": 1.5318942974219183,
+        "theta_H_imag": 0.0,
+        "deviation": 0.07918222374196039,
+        "mult_break": 0.513147549104799
+      },
+      {
+        "Pe": 10.0,
+        "theta_H_real": 1.8577763305586776,
+        "theta_H_imag": 0.0,
+        "deviation": 0.30875817933494404,
+        "mult_break": 0.40569343107631956
+      },
+      {
+        "Pe": 20.0,
+        "theta_H_real": 2.0837454981323265,
+        "theta_H_imag": 0.0,
+        "deviation": 0.46794795448434845,
+        "mult_break": 0.5499994833951789
+      }
+    ],
+    "deformation_exponent": 2.1501488139314704,
+    "K-MOON-3": "PASS"
+  },
+  "M3": {
+    "e4_transform_errors": [
+      0.0,
+      0.0,
+      0.0,
+      6.884275320756416e-16
+    ],
+    "max_e4_error": 6.884275320756416e-16,
+    "theta3_spectral": 1.0864348112673177,
+    "theta3_analytic": 1.0864348112133082,
+    "e4_at_i": 1.4557628922687091,
+    "K-MOON-5": "PASS"
+  },
+  "M4": {
+    "j_at_i_eisenstein": 1728.0,
+    "j_at_i_qexp": 1727.999816068111,
+    "j_at_i_exact": 1728.0,
+    "j_error_eisenstein": 0.0,
+    "j_error_qexp": 1.0644206543335915e-07,
+    "j_at_rho": 6.8813350924949e-43,
+    "e4_at_i": 1.4557628922687091,
+    "e6_at_i": -3.359065488123923e-16,
+    "delta_at_i": 0.0017853698506421513,
+    "delta_eta_match": 1.821811047322567e-15,
+    "spectral_theta_match": 4.9712567206709046e-11,
+    "K-MOON-2": "PASS",
+    "K-MOON-6": "PASS"
+  },
+  "M5": {
+    "s_transform_deviations": [
+      {
+        "Pe": 0.0,
+        "error": 1.0211012157112917e-08
+      },
+      {
+        "Pe": 0.1,
+        "error": 1.079665225648433e-05
+      },
+      {
+        "Pe": 0.5,
+        "error": 0.00027761191964480723
+      },
+      {
+        "Pe": 1.0,
+        "error": 0.0012101375113033664
+      },
+      {
+        "Pe": 2.0,
+        "error": 0.0063979270962344105
+      },
+      {
+        "Pe": 5.0,
+        "error": 0.0733561456264264
+      },
+      {
+        "Pe": 10.0,
+        "error": 0.23490127537548472
+      },
+      {
+        "Pe": 20.0,
+        "error": 0.31630044540383206
+      },
+      {
+        "Pe": 50.0,
+        "error": 0.3049905258636671
+      }
+    ],
+    "breaking_exponent": 1.8086276027569013
+  },
+  "M6": {
+    "theta3_to_e4_ratio": 1.3333333338636026,
+    "mckay_check": {
+      "1": true,
+      "2": true
+    },
+    "heat_kernel_theta_match": true,
+    "note": "Spectral \u03b8\u2083 at Pe=0 is one ingredient of j; full Monster requires \u03b8\u2082, \u03b8\u2084 too"
+  },
+  "M7": {
+    "j_results": [
+      {
+        "tau": "0.5j",
+        "j_spec_real": 287495.96664053824,
+        "j_spec_imag": 0.0,
+        "j_exact_real": 287496.00000000006,
+        "j_exact_imag": 0.0,
+        "rel_error": 1.1603452504811819e-07,
+        "theta3": 1.4194955025782525,
+        "theta4": 0.5879742973188331,
+        "theta2_from_jacobi": 1.4089316505056464,
+        "lambda": 0.9705627467902704
+      },
+      {
+        "tau": "1j",
+        "j_spec_real": 1728.0,
+        "j_spec_imag": 0.0,
+        "j_exact_real": 1728.0,
+        "j_exact_imag": 0.0,
+        "rel_error": 0.0,
+        "theta3": 1.0864348112673177,
+        "theta4": 0.9135791382101263,
+        "theta2_from_jacobi": 0.9135791381929405,
+        "lambda": 0.4999999999811885
+      },
+      {
+        "tau": "1.5j",
+        "j_spec_real": 13151.676683052463,
+        "j_spec_imag": 0.0,
+        "j_exact_real": 13151.676683048861,
+        "j_exact_imag": 0.0,
+        "rel_error": 2.738509397560602e-13,
+        "theta3": 1.0179665950672345,
+        "theta4": 0.9820334309827167,
+        "theta2_from_jacobi": 0.6157776316053193,
+        "lambda": 0.13389412726572533
+      },
+      {
+        "tau": "2j",
+        "j_spec_real": 287495.9999999973,
+        "j_spec_imag": 0.0,
+        "j_exact_real": 287495.9999999577,
+        "j_exact_imag": 0.0,
+        "rel_error": 1.3787815163368235e-13,
+        "theta3": 1.0037348854877395,
+        "theta4": 0.9962651145609075,
+        "theta2_from_jacobi": 0.4157606025960277,
+        "lambda": 0.02943725152285955
+      }
+    ],
+    "j_at_i_spectral": 1728.0,
+    "j_at_i_error": 0.0,
+    "max_rel_error": 1.1603452504811819e-07,
+    "K-MOON-7": "PASS"
+  },
+  "summary": {
+    "kill_conditions": {
+      "K-MOON-1": "PASS",
+      "K-MOON-4": "PASS",
+      "K-MOON-3": "PASS",
+      "K-MOON-5": "PASS",
+      "K-MOON-2": "PASS",
+      "K-MOON-6": "PASS",
+      "K-MOON-7": "PASS"
+    },
+    "n_pass": 7,
+    "n_total": 7,
+    "timestamp": "2026-03-15T06:29:29.828835",
+    "parameters": {
+      "K": 16,
+      "B_A": 0.867,
+      "B_G": 2.244,
+      "N_grid": 2000,
+      "N_eig": 100
+    }
+  }
+}

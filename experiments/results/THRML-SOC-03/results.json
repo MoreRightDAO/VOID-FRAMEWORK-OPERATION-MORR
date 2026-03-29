@@ -1,0 +1,66 @@
+{
+  "experiment": "THRML-SOC-03",
+  "verdict": "PASS",
+  "pass_count": 5,
+  "pass_criteria": {
+    "1_peak_at_mopt_range": true,
+    "2_uncanny_valley": true,
+    "3_optimal_above_vstar": true,
+    "4_baseline_below_vstar": true,
+    "5_inverted_u_shape": true
+  },
+  "mirror_scan": {
+    "peak_pe_m": 0.65,
+    "peak_pe_value": 22.499,
+    "peak_rp_m": 0.65,
+    "peak_rp_value": 13.6467,
+    "pe_at_m1": 9.931,
+    "pe_at_m0": 4.592,
+    "rho_ascending": 1.0,
+    "rho_descending": -1.0,
+    "inverted_u": true
+  },
+  "baseline_interaction": {
+    "baseline_interaction": [
+      {
+        "alpha_baseline": 0.2,
+        "alpha_at_mopt": 0.08,
+        "pe_at_mopt": 29.617,
+        "crosses_vstar": true
+      },
+      {
+        "alpha_baseline": 0.25,
+        "alpha_at_mopt": 0.1,
+        "pe_at_mopt": 26.71,
+        "crosses_vstar": true
+      },
+      {
+        "alpha_baseline": 0.28,
+        "alpha_at_mopt": 0.112,
+        "pe_at_mopt": 25.071,
+        "crosses_vstar": true
+      },
+      {
+        "alpha_baseline": 0.32,
+        "alpha_at_mopt": 0.128,
+        "pe_at_mopt": 22.999,
+        "crosses_vstar": true
+      },
+      {
+        "alpha_baseline": 0.36,
+        "alpha_at_mopt": 0.144,
+        "pe_at_mopt": 21.044,
+        "crosses_vstar": true
+      }
+    ]
+  },
+  "canonical": {
+    "K": 16,
+    "B_ALPHA": 0.867,
+    "B_GAMMA": 2.244,
+    "V_STAR": 5.52,
+    "M_OPT": 0.65,
+    "A_SUPP": 0.6,
+    "ALPHA_0": 0.33
+  }
+}

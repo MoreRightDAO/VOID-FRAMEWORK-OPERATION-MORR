@@ -1,0 +1,51 @@
+{
+  "experiment": "EXP-HK01",
+  "title": "Heat Kernel on the Bernoulli Manifold",
+  "section": "\u00a7164",
+  "date": "2026-03-25",
+  "kill_conditions": {
+    "K-HK-1": {
+      "description": "Eigenvalues of \u0394_g = n\u00b2",
+      "max_error_pct": 0.10010404232401182,
+      "n_tested": 20,
+      "status": "PASS"
+    },
+    "K-HK-4": {
+      "description": "Eigenfunctions = Chebyshev T_n(1-2\u03b8)",
+      "chebyshev_identity_max_error": 1.63202784619898e-14,
+      "n_tested": 10,
+      "status": "PASS"
+    },
+    "K-HK-2": {
+      "description": "Spectral zeta from numerical eigenvalues = \u03b6(2s)",
+      "max_deviation": 0.0015034735161090218,
+      "s_values_tested": [
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "status": "PASS"
+    },
+    "K-HK-3": {
+      "description": "r\u2083(N) = 0 iff N = 4^a(8b+7) \u2014 Gauss's theorem",
+      "N_max": 200,
+      "forbidden_count": 32,
+      "agreement": "32/32",
+      "status": "PASS"
+    }
+  },
+  "bonus_jacobi_theta": {
+    "max_deviation": 2.6645352591003757e-15,
+    "status": "CONFIRMED"
+  },
+  "bonus_geodesic_length": {
+    "L_expected": 3.141592653589793,
+    "weyl_ratio_at_t_0.001": 1.0178412411615276,
+    "deviation_pct": 1.7841241161527632
+  },
+  "overall": "ALL PASS"
+}

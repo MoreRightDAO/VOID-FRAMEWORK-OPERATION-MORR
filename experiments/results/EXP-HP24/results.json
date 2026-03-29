@@ -1,0 +1,93 @@
+{
+  "experiment": "HP24",
+  "title": "Forbidden Transition Test \u2014 \u03b1-Timelike Signature",
+  "date": "2026-03-14T00:04:39.916951",
+  "data_source": "within-platform rater disagreements",
+  "n_scores": 7595,
+  "n_pairs": 132157,
+  "n_intervals": 132157,
+  "F1_intervals": {
+    "n": 132157,
+    "ds2_dynamical_sample": [
+      1.6538810027182116,
+      1.6538810027182116,
+      0.5181532944867772,
+      0.5181532944867772,
+      0.5181532944867772,
+      0.5181532944867772,
+      0.5181532944867772,
+      0.5181532944867772,
+      0.5181532944867772,
+      0.5181532944867772
+    ]
+  },
+  "F2_sign_distribution": {
+    "n_total": 131594,
+    "n_timelike": 36425,
+    "n_spacelike": 95169,
+    "n_null_ish": 6665,
+    "frac_timelike": 0.27679833427055944,
+    "frac_spacelike": 0.7232016657294406,
+    "frac_null": 0.0506482058452513,
+    "spacelike_ci_lo": 0.7207777712239819,
+    "spacelike_ci_hi": 0.7256125288430672,
+    "binom_p_timelike_bias": 1.0,
+    "K_HP_102": true,
+    "ds2_mean": 0.9475243718148977,
+    "ds2_median": 1.6538810027182116,
+    "ds2_std": 1.0461161902481488,
+    "ds2_min": -3.2399999999999993,
+    "ds2_max": 4.375727708231434
+  },
+  "F3_speed_limit": {
+    "n_transitions": 90339,
+    "v_max": 3.073247737876032,
+    "v_95": 2.0474071114005232,
+    "v_99": 2.0474071114005232,
+    "v_median": 2.0474071114005232,
+    "v_mean": 1.2413858918736562,
+    "frac_subluminal": 0.4094355704623695,
+    "frac_superluminal": 0.5905644295376304,
+    "K_HP_104": "False"
+  },
+  "F4_null_cone": {
+    "n_active": 131594,
+    "ds2_range": 4.375727708231434,
+    "frac_within_0.01": 0.0,
+    "frac_within_0.05": 0.0506482058452513,
+    "frac_within_0.1": 0.05067860236788911,
+    "frac_within_0.5": 0.9980166268978828,
+    "expected_uniform_within_0.1": 0.2,
+    "K_HP_105": false
+  },
+  "F5_bootstrap": {
+    "frac_timelike_mean": 0.27681502576105294,
+    "frac_timelike_ci_lo": 0.2743742115901941,
+    "frac_timelike_ci_hi": 0.2792680517348815,
+    "frac_timelike_std": 0.0012454345062595208,
+    "ci_excludes_50pct": true
+  },
+  "F6_permutation": {
+    "observed_frac_timelike": 0.2819095477386935,
+    "perm_frac_timelike_mean": 0.25315323759446823,
+    "perm_frac_timelike_std": 0.006653045122959305,
+    "p_value": 0.0,
+    "K_HP_103": "True"
+  },
+  "F7_cross_platform_chi2": {
+    "chi2": 137.83452302138812,
+    "chi2_p": 7.920982231719297e-32,
+    "dof": 1,
+    "within_timelike_frac": 0.27679833427055944,
+    "cross_timelike_frac": 0.19284294234592445,
+    "K_HP_102B": "True"
+  },
+  "kill_conditions": {
+    "K_HP_102": true,
+    "K_HP_102B": "True",
+    "K_HP_103": "True",
+    "K_HP_104": "False",
+    "K_HP_105": false
+  },
+  "verdict": "INCONCLUSIVE \u2014 insufficient evidence to discriminate."
+}

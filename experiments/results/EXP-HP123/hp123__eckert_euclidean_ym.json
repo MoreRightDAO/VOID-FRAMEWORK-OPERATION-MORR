@@ -1,0 +1,80 @@
+{
+  "experiment": "HP123",
+  "title": "Eckert Euclidean YM + KK 4D Lift",
+  "timestamp": "2026-03-18T12:26:48.451336",
+  "c1_euclidean_action": {
+    "S_E": -4.190378453003071,
+    "S_err": 0.511251364345548,
+    "S_positive": false,
+    "S_finite": true,
+    "fraction_positive_integrand": 0.0
+  },
+  "c2_kk_metric": {
+    "all_nondegenerate": true,
+    "signatures": [
+      "(4,0)"
+    ],
+    "n_samples": 20
+  },
+  "c3_4d_field_strength": {
+    "max_F4": 29.31941076040667,
+    "has_curvature": "True",
+    "fraction_nonabelian": 1.0
+  },
+  "c4_4d_gap": {
+    "N_total": 2048,
+    "mass_gap_4d": 0.6338706771224449,
+    "has_gap": true,
+    "lowest_10": [
+      -0.9872682611544663,
+      -0.176698792016033,
+      -0.1766987920155549,
+      0.6338706771224449,
+      5.617173875690275,
+      5.617173875690642,
+      5.617173875690652,
+      6.427743344829135,
+      6.427743344829264,
+      6.427743344829271
+    ]
+  },
+  "c5_scale_comparison": {
+    "m_gap_natural": 0.15064963491492436,
+    "Lambda_QCD": 0.25,
+    "ratio_m_gap_Lambda": 0.6025985396596975,
+    "scale_match": true,
+    "sigma_Eckert": 0.363125,
+    "sigma_QCD": 0.0625,
+    "sigma_ratio": 5.81
+  },
+  "kill_conditions": {
+    "K-YM-123-1": {
+      "description": "Euclidean YM action S_E > 0 (positive definite)",
+      "result": "FAIL",
+      "S_E": -4.190378453003071
+    },
+    "K-YM-123-2": {
+      "description": "4D KK metric non-degenerate (det g_4 != 0)",
+      "result": "PASS",
+      "signatures": [
+        "(4,0)"
+      ]
+    },
+    "K-YM-123-3": {
+      "description": "4D field strength has non-trivial curvature",
+      "result": "PASS",
+      "max_F4": 29.31941076040667
+    },
+    "K-YM-123-4": {
+      "description": "4D Laplacian has mass gap Delta_4 > 0",
+      "result": "PASS",
+      "mass_gap_4d": 0.6338706771224449
+    },
+    "K-YM-123-5": {
+      "description": "Gap ratio Delta/Lambda_QCD is O(1)",
+      "result": "PASS",
+      "ratio": 0.6025985396596975
+    }
+  },
+  "score": "4/5"
+}

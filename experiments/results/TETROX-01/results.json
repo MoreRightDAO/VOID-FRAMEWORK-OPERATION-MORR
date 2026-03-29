@@ -1,0 +1,156 @@
+{
+  "experiment": "TETROX-01",
+  "title": "Tetroxide Lifetimes via Pe-Native Kramers Escape",
+  "date": "2026-03-15",
+  "overall_pass": true,
+  "constants": {
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "ETA_TAU": 0.05082,
+    "E_b_Cooper": 0.448,
+    "BDE_OO_peroxide_kJ": 157.0,
+    "alpha_LP_kJ": 12.666666666666666
+  },
+  "references": [
+    "Kamarinopoulou et al., Sci. Adv. (2025) doi:10.1126/sciadv.aeb6495",
+    "Salo et al., J. Phys. Chem. A 126, 4337 (2022)",
+    "Salo et al., J. Phys. Chem. A 128, 959 (2024)",
+    "Paper 131 \u00a7V.A, HP19 (Cooper pairs), HP22 (barriers)"
+  ],
+  "test_1": {
+    "pass": "True",
+    "bde_central_kJ": 106.33,
+    "barrier_kJ": 58.7,
+    "barrier_kT": 23.68,
+    "tau_ms": 3.092,
+    "tau_exp_range_ms": [
+      0.2,
+      200
+    ],
+    "barrier_exp_range_kJ": [
+      51.9,
+      69.0
+    ]
+  },
+  "test_2": {
+    "pass": true,
+    "alkyl_series": [
+      {
+        "name": "CH\u2083O\u2082\u2022",
+        "barrier_kJ": 58.7,
+        "tau_ms": 3.092,
+        "has_alpha_H": true,
+        "n_heavy": 1,
+        "label": "methyl"
+      },
+      {
+        "name": "C\u2082H\u2085O\u2082\u2022",
+        "barrier_kJ": 60.7,
+        "tau_ms": 6.929,
+        "has_alpha_H": true,
+        "n_heavy": 2,
+        "label": "ethyl"
+      },
+      {
+        "name": "n-C\u2083H\u2087O\u2082\u2022",
+        "barrier_kJ": 62.7,
+        "tau_ms": 15.527,
+        "has_alpha_H": true,
+        "n_heavy": 3,
+        "label": "n-propyl"
+      },
+      {
+        "name": "i-C\u2083H\u2087O\u2082\u2022",
+        "barrier_kJ": 62.7,
+        "tau_ms": 15.527,
+        "has_alpha_H": true,
+        "n_heavy": 3,
+        "label": "isopropyl"
+      }
+    ]
+  },
+  "test_3": {
+    "pass": "True",
+    "T_low_K": 224.3,
+    "T_high_K": 387.7,
+    "barrier_kJ": 58.7
+  },
+  "test_4": {
+    "pass": true,
+    "n_detectable": 10,
+    "detectable": [
+      {
+        "name": "CH\u2083O\u2084CH\u2083",
+        "barrier_kJ": 58.7,
+        "tau_ms": 3.092,
+        "label": "methyl self"
+      },
+      {
+        "name": "C\u2082H\u2085O\u2084C\u2082H\u2085",
+        "barrier_kJ": 60.7,
+        "tau_ms": 6.929,
+        "label": "ethyl self"
+      },
+      {
+        "name": "CH\u2083O\u2084C\u2082H\u2085",
+        "barrier_kJ": 58.7,
+        "tau_ms": 3.092,
+        "label": "methyl \u00d7 ethyl cross"
+      },
+      {
+        "name": "HOCH\u2082O\u2084CH\u2082OH",
+        "barrier_kJ": 60.7,
+        "tau_ms": 6.929,
+        "label": "hydroxymethyl self"
+      },
+      {
+        "name": "CH\u2083O\u2084CH\u2082OH",
+        "barrier_kJ": 58.7,
+        "tau_ms": 3.092,
+        "label": "methyl \u00d7 hydroxymethyl"
+      },
+      {
+        "name": "n-C\u2083H\u2087O\u2084C\u2083H\u2087-n",
+        "barrier_kJ": 62.7,
+        "tau_ms": 15.527,
+        "label": "n-propyl self"
+      },
+      {
+        "name": "i-C\u2083H\u2087O\u2084C\u2083H\u2087-i",
+        "barrier_kJ": 62.7,
+        "tau_ms": 15.527,
+        "label": "isopropyl self"
+      },
+      {
+        "name": "CH\u2083OCH\u2082O\u2084CH\u2082OCH\u2083",
+        "barrier_kJ": 60.7,
+        "tau_ms": 6.929,
+        "label": "methoxymethyl self"
+      },
+      {
+        "name": "CH\u2082=CHCH\u2082O\u2084 self",
+        "barrier_kJ": 60.7,
+        "tau_ms": 6.929,
+        "label": "allyl self"
+      },
+      {
+        "name": "c-C\u2086H\u2081\u2081O\u2084 self",
+        "barrier_kJ": 62.7,
+        "tau_ms": 15.527,
+        "label": "cyclohexyl self"
+      }
+    ]
+  },
+  "test_5": {
+    "pass": "True",
+    "r_squared": 0.99999296,
+    "barrier_fit_kJ": 61.32,
+    "log10_nu0": 13.26
+  },
+  "test_6": {
+    "pass": true,
+    "bde_central_kJ": 106.33,
+    "barrier_russell_kJ": 58.7
+  }
+}

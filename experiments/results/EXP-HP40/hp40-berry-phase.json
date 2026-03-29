@@ -1,0 +1,172 @@
+{
+  "experiment": "HP40",
+  "title": "Berry Phase on the Eckert-Hopf Bundle",
+  "timestamp": "2026-03-14T19:13:41.120080",
+  "kill_conditions": {
+    "K-HP-180 (A = cos(2\u03be))": true,
+    "K-HP-181 (nodal line O=0.5)": true,
+    "K-HP-182 (c\u2081 integer)": true,
+    "K-HP-183 (crisis Berry phase)": true
+  },
+  "total_pass": 4,
+  "total_kc": 4,
+  "results": {
+    "B1": {
+      "test": "B1_berry_connection",
+      "max_pure_error": 2.142575783459222e-09,
+      "max_rel_error": 2.6530364898065e-09,
+      "mean_dynamical": 0.5800947811072136,
+      "dynamical_ratio": 0.9359291962780755,
+      "kc_180_passed": true
+    },
+    "B2": {
+      "test": "B2_holonomy",
+      "loops": [
+        {
+          "O": 0.1,
+          "xi": 0.3217505543966422,
+          "gamma_numerical": 1.2406371510363186,
+          "gamma_analytical": 1.2406370614359172,
+          "error": 7.222128381120792e-08
+        },
+        {
+          "O": 0.25,
+          "xi": 0.5235987755982989,
+          "gamma_numerical": 0.7753982800646427,
+          "gamma_analytical": 0.775398163397448,
+          "error": 1.5046101498571607e-07
+        },
+        {
+          "O": 0.5,
+          "xi": 0.7853981633974484,
+          "gamma_numerical": -2.4811974183799244e-16,
+          "gamma_analytical": -2.493870698154204e-16,
+          "error": 1.267327977427945e-18
+        },
+        {
+          "O": 0.75,
+          "xi": 1.0471975511965976,
+          "gamma_numerical": -0.7753982800646455,
+          "gamma_analytical": -0.7753981633974479,
+          "error": 1.504610187084227e-07
+        },
+        {
+          "O": 0.9,
+          "xi": 1.2490457723982544,
+          "gamma_numerical": -1.2406371510363123,
+          "gamma_analytical": -1.2406370614359172,
+          "error": 7.222127879987211e-08
+        }
+      ],
+      "nodal_gamma": -2.4811974183799244e-16,
+      "kc_181_passed": true
+    },
+    "B3": {
+      "test": "B3_chern_number",
+      "flux_full_S2": -6.283185307179586,
+      "flux_physical": -3.141592653589793,
+      "chern_number": -1.0,
+      "chern_integer": -1,
+      "kc_182_passed": true
+    },
+    "B4": {
+      "test": "B4_financial_crisis",
+      "gamma_connection": -0.49725914968710033,
+      "gamma_holonomy": -0.4989734463515801,
+      "gamma_over_pi": -0.15828250334074945,
+      "mean_opacity": 0.54,
+      "frac_opaque": 0.499,
+      "pe_range": [
+        32.49791640599454,
+        64.73093924489311
+      ],
+      "crisis_phases": {
+        "Pre-crisis (2004-06)": {
+          "O": 0.3,
+          "R": 0.2
+        },
+        "Build-up (2006-07)": {
+          "O": 0.7,
+          "R": 0.3
+        },
+        "Crisis peak (Sep 2008)": {
+          "O": 0.9,
+          "R": 0.9
+        },
+        "Intervention (Q4 2008)": {
+          "O": 0.5,
+          "R": 0.8
+        },
+        "Recovery (2009-10)": {
+          "O": 0.3,
+          "R": 0.3
+        },
+        "New normal": {
+          "O": 0.3,
+          "R": 0.2
+        }
+      },
+      "kc_183_passed": true
+    },
+    "B5": {
+      "test": "B5_world_wars",
+      "wars": {
+        "WWI": {
+          "gamma": -0.09369288109419607,
+          "gamma_over_pi": -0.029823370317324988,
+          "pe_range": [
+            34.345405884411576,
+            71.71429002129719
+          ],
+          "mean_O": 0.5400499999999999,
+          "frac_opaque": 0.599
+        },
+        "WWII": {
+          "gamma": -0.21374960467714074,
+          "gamma_over_pi": -0.06803861233661092,
+          "pe_range": [
+            36.278319249032855,
+            61.484998893295355
+          ],
+          "mean_O": 0.6400999999999999,
+          "frac_opaque": 0.999
+        },
+        "Cold War": {
+          "gamma": -0.0635958164310985,
+          "gamma_over_pi": -0.02024317708994821,
+          "pe_range": [
+            36.278319249032855,
+            71.71429002129719
+          ],
+          "mean_O": 0.75015,
+          "frac_opaque": 0.999
+        }
+      },
+      "all_opacity_driven": true,
+      "severity_ranking": [
+        "WWII",
+        "WWI",
+        "Cold War"
+      ]
+    },
+    "B6": {
+      "test": "B6_quantization",
+      "total_flux": -6.283185307179586,
+      "chern_number": -1.0,
+      "chern_integer": -1,
+      "gamma_pole": 6.283185307179586,
+      "gamma_equator": 3.8473413874435795e-16,
+      "gamma_antipole": -6.283185307179586,
+      "dirac_string": "O=0 (north patch) / O=1 (south patch)"
+    }
+  },
+  "novel_findings": {
+    "berry_connection_is_opacity": "A = cos(2\u03be) = 1 - 2O",
+    "nodal_line": "O = 0.5 \u2192 A = 0 (topological equator)",
+    "chern_number": -1,
+    "dirac_string": "O=0 (north) / O=1 (south)",
+    "crisis_2008_gamma_pi": -0.15828250334074945,
+    "all_conflicts_opacity_driven": true,
+    "topological_invariant": "\u03b3 depends only on enclosed S\u00b2 area, not path speed"
+  }
+}

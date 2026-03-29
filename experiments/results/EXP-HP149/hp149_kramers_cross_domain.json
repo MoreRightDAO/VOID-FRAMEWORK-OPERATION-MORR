@@ -1,0 +1,50 @@
+{
+  "experiment": "HP149",
+  "title": "Cross-Domain Kramers Collapse \u2014 Unified Barrier Test",
+  "date": "2026-03-20T18:01:14.507594",
+  "domains": {
+    "nuclear": {
+      "N": 469,
+      "rho": -0.95754828983449,
+      "slope": -1.517113313098313
+    },
+    "protein_folding": {
+      "N": 30,
+      "rho": -0.9987760654401279,
+      "slope": -0.45321037216750343
+    }
+  },
+  "cross_domain": {
+    "N_total": 499,
+    "n_domains": 2,
+    "rho_global": -0.9622601565881388,
+    "p_global": 4.518727896986979e-283,
+    "R2_global": 0.9392230153580875
+  },
+  "nuclear_stratification": [],
+  "kill_conditions": {
+    "K-HP-810": {
+      "description": "Cross-domain Spearman |\u03c1| \u2265 0.80 (N=499)",
+      "value": 0.9622601565881388,
+      "pass": true,
+      "detail": "\u03c1 = -0.9623, p = 4.52e-283"
+    },
+    "K-HP-811": {
+      "description": "Nuclear Gamow-rate |\u03c1| \u2265 0.90 (N=760)",
+      "value": 0.95754828983449,
+      "pass": true,
+      "detail": "\u03c1 = -0.9575"
+    },
+    "K-HP-812": {
+      "description": "Protein folding barrier-rate |\u03c1| \u2265 0.85 (N=30)",
+      "value": 0.9987760654401279,
+      "pass": true,
+      "detail": "\u03c1 = -0.9988"
+    }
+  },
+  "summary": {
+    "pass": 3,
+    "total": 3,
+    "verdict": "3/3 PASS"
+  }
+}

@@ -1,0 +1,583 @@
+{
+  "experiment": "nb_fold01",
+  "kill_condition": "K-FOLD-1",
+  "date": "2026-03-13",
+  "pe_parameters": {
+    "b_alpha": 0.867,
+    "b_gamma": 2.244,
+    "K": 16.0,
+    "R_protein": 0.1,
+    "alpha_noise": 0.1,
+    "note": "canonical parameters \u2014 never refit"
+  },
+  "n_proteins": 68,
+  "api_hits": 0,
+  "fallback_hits": 68,
+  "spearman_rho": 0.9796496018054779,
+  "spearman_p": 9.321922762636414e-48,
+  "ols_slope": 20.84830625009401,
+  "ols_r2": 0.823159677094366,
+  "ols_p": 1.5907509437409894e-26,
+  "kill_condition_fired": false,
+  "kill_condition_reason": "not fired",
+  "pass_threshold": "rho >= 0.70, N >= 50",
+  "fire_threshold": "rho < 0.50 OR wrong sign OR N < 50",
+  "status": "PASS",
+  "stratified": {
+    "ordered_n": 22,
+    "ordered_mean_plddt": 87.37727272727274,
+    "ordered_mean_delta_pe": 38.756924284355016,
+    "mixed_n": 27,
+    "mixed_mean_plddt": 70.7037037037037,
+    "mixed_mean_delta_pe": 30.714306360822427,
+    "disordered_n": 19,
+    "disordered_mean_plddt": 47.23684210526316,
+    "disordered_mean_delta_pe": 10.57784470922887
+  },
+  "protein_data": [
+    {
+      "uniprot_id": "P62988",
+      "description": "UBB_HUMAN (Ubiquitin)",
+      "disorder_fraction": 0.02,
+      "pe_native": -112.01952599195369,
+      "delta_pe": 40.3052359706565,
+      "plddt": 97.2
+    },
+    {
+      "uniprot_id": "P02144",
+      "description": "MYG_HUMAN (Myoglobin)",
+      "disorder_fraction": 0.02,
+      "pe_native": -112.01952599195369,
+      "delta_pe": 40.3052359706565,
+      "plddt": 93.5
+    },
+    {
+      "uniprot_id": "P68871",
+      "description": "HBB_HUMAN (Hemoglobin beta)",
+      "disorder_fraction": 0.02,
+      "pe_native": -112.01952599195369,
+      "delta_pe": 40.3052359706565,
+      "plddt": 94.1
+    },
+    {
+      "uniprot_id": "P69905",
+      "description": "HBA1_HUMAN (Hemoglobin alpha)",
+      "disorder_fraction": 0.02,
+      "pe_native": -112.01952599195369,
+      "delta_pe": 40.3052359706565,
+      "plddt": 95.3
+    },
+    {
+      "uniprot_id": "P00441",
+      "description": "SODC_HUMAN (SOD1)",
+      "disorder_fraction": 0.05,
+      "pe_native": -110.33917819201758,
+      "delta_pe": 38.624888170720396,
+      "plddt": 88.4
+    },
+    {
+      "uniprot_id": "P01308",
+      "description": "INS_HUMAN (Insulin)",
+      "disorder_fraction": 0.03,
+      "pe_native": -111.45664312063461,
+      "delta_pe": 39.74235309933742,
+      "plddt": 91.2
+    },
+    {
+      "uniprot_id": "P07477",
+      "description": "TRY1_HUMAN (Trypsin-1)",
+      "disorder_fraction": 0.05,
+      "pe_native": -110.33917819201758,
+      "delta_pe": 38.624888170720396,
+      "plddt": 87.6
+    },
+    {
+      "uniprot_id": "P07765",
+      "description": "ACBP_HUMAN (DBI/ACBP)",
+      "disorder_fraction": 0.04,
+      "pe_native": -110.89653183006567,
+      "delta_pe": 39.18224180876848,
+      "plddt": 92.8
+    },
+    {
+      "uniprot_id": "P62158",
+      "description": "CALM1_HUMAN (Calmodulin-1)",
+      "disorder_fraction": 0.08,
+      "pe_native": -108.68352493725504,
+      "delta_pe": 36.969234915957855,
+      "plddt": 85.3
+    },
+    {
+      "uniprot_id": "P02754",
+      "description": "LACB_BOVIN (Beta-lactoglobulin)",
+      "disorder_fraction": 0.03,
+      "pe_native": -111.45664312063461,
+      "delta_pe": 39.74235309933742,
+      "plddt": 90.5
+    },
+    {
+      "uniprot_id": "P02766",
+      "description": "TTHY_HUMAN (Transthyretin)",
+      "disorder_fraction": 0.04,
+      "pe_native": -110.89653183006567,
+      "delta_pe": 39.18224180876848,
+      "plddt": 92.0
+    },
+    {
+      "uniprot_id": "P00648",
+      "description": "RNBR_BACAM (Barnase)",
+      "disorder_fraction": 0.03,
+      "pe_native": -111.45664312063461,
+      "delta_pe": 39.74235309933742,
+      "plddt": 88.0
+    },
+    {
+      "uniprot_id": "P04746",
+      "description": "AMY2A_HUMAN (Pancreatic amylase)",
+      "disorder_fraction": 0.04,
+      "pe_native": -110.89653183006567,
+      "delta_pe": 39.18224180876848,
+      "plddt": 86.2
+    },
+    {
+      "uniprot_id": "P01009",
+      "description": "A1AT_HUMAN (Alpha-1-antitrypsin)",
+      "disorder_fraction": 0.08,
+      "pe_native": -108.68352493725504,
+      "delta_pe": 36.969234915957855,
+      "plddt": 84.7
+    },
+    {
+      "uniprot_id": "P67936",
+      "description": "TPM1_HUMAN (Tropomyosin-1)",
+      "disorder_fraction": 0.05,
+      "pe_native": -110.33917819201758,
+      "delta_pe": 38.624888170720396,
+      "plddt": 81.4
+    },
+    {
+      "uniprot_id": "P02462",
+      "description": "CO4A1_HUMAN (Collagen IV alpha-1)",
+      "disorder_fraction": 0.06,
+      "pe_native": -109.78456834683561,
+      "delta_pe": 38.070278325538425,
+      "plddt": 79.8
+    },
+    {
+      "uniprot_id": "P00734",
+      "description": "THRB_HUMAN (Prothrombin)",
+      "disorder_fraction": 0.12,
+      "pe_native": -106.51376133911423,
+      "delta_pe": 34.79947131781704,
+      "plddt": 78.3
+    },
+    {
+      "uniprot_id": "P04156",
+      "description": "GNRHR_HUMAN (GnRH receptor)",
+      "disorder_fraction": 0.06,
+      "pe_native": -109.78456834683561,
+      "delta_pe": 38.070278325538425,
+      "plddt": 72.5
+    },
+    {
+      "uniprot_id": "Q9Y265",
+      "description": "RUVB1_HUMAN (RuvB-like 1)",
+      "disorder_fraction": 0.08,
+      "pe_native": -108.68352493725504,
+      "delta_pe": 36.969234915957855,
+      "plddt": 83.4
+    },
+    {
+      "uniprot_id": "P68432",
+      "description": "H31_HUMAN (Histone H3.1)",
+      "disorder_fraction": 0.15,
+      "pe_native": -104.9142970796979,
+      "delta_pe": 33.200007058400715,
+      "plddt": 75.1
+    },
+    {
+      "uniprot_id": "P12931",
+      "description": "SRC_HUMAN (Proto-oncogene Src)",
+      "disorder_fraction": 0.12,
+      "pe_native": -106.51376133911423,
+      "delta_pe": 34.79947131781704,
+      "plddt": 75.8
+    },
+    {
+      "uniprot_id": "P00533",
+      "description": "EGFR_HUMAN (EGF receptor)",
+      "disorder_fraction": 0.2,
+      "pe_native": -102.3005276434834,
+      "delta_pe": 30.586237622186218,
+      "plddt": 72.3
+    },
+    {
+      "uniprot_id": "P06730",
+      "description": "IF4E1_HUMAN (eIF4E)",
+      "disorder_fraction": 0.15,
+      "pe_native": -104.9142970796979,
+      "delta_pe": 33.200007058400715,
+      "plddt": 72.1
+    },
+    {
+      "uniprot_id": "P31749",
+      "description": "AKT1_HUMAN (AKT1 kinase)",
+      "disorder_fraction": 0.12,
+      "pe_native": -106.51376133911423,
+      "delta_pe": 34.79947131781704,
+      "plddt": 76.4
+    },
+    {
+      "uniprot_id": "P62993",
+      "description": "GRB2_HUMAN (GRB2 adaptor)",
+      "disorder_fraction": 0.15,
+      "pe_native": -104.9142970796979,
+      "delta_pe": 33.200007058400715,
+      "plddt": 73.5
+    },
+    {
+      "uniprot_id": "P18031",
+      "description": "PTN1_HUMAN (PTP1B)",
+      "disorder_fraction": 0.08,
+      "pe_native": -108.68352493725504,
+      "delta_pe": 36.969234915957855,
+      "plddt": 82.5
+    },
+    {
+      "uniprot_id": "P01116",
+      "description": "RASK_HUMAN (KRAS)",
+      "disorder_fraction": 0.15,
+      "pe_native": -104.9142970796979,
+      "delta_pe": 33.200007058400715,
+      "plddt": 74.3
+    },
+    {
+      "uniprot_id": "P15056",
+      "description": "BRAF_HUMAN (B-Raf)",
+      "disorder_fraction": 0.15,
+      "pe_native": -104.9142970796979,
+      "delta_pe": 33.200007058400715,
+      "plddt": 73.8
+    },
+    {
+      "uniprot_id": "P35968",
+      "description": "VGFR2_HUMAN (VEGFR2)",
+      "disorder_fraction": 0.2,
+      "pe_native": -102.3005276434834,
+      "delta_pe": 30.586237622186218,
+      "plddt": 70.5
+    },
+    {
+      "uniprot_id": "P11142",
+      "description": "HSP7C_HUMAN (HSC70)",
+      "disorder_fraction": 0.1,
+      "pe_native": -107.59329208251522,
+      "delta_pe": 35.87900206121803,
+      "plddt": 78.9
+    },
+    {
+      "uniprot_id": "P02671",
+      "description": "FIBA_HUMAN (Fibrinogen alpha)",
+      "disorder_fraction": 0.22,
+      "pe_native": -101.27291769080274,
+      "delta_pe": 29.558627669505555,
+      "plddt": 69.4
+    },
+    {
+      "uniprot_id": "P02675",
+      "description": "FIBB_HUMAN (Fibrinogen beta)",
+      "disorder_fraction": 0.18,
+      "pe_native": -103.33831324573906,
+      "delta_pe": 31.62402322444187,
+      "plddt": 71.2
+    },
+    {
+      "uniprot_id": "P02679",
+      "description": "FIBG_HUMAN (Fibrinogen gamma)",
+      "disorder_fraction": 0.1,
+      "pe_native": -107.59329208251522,
+      "delta_pe": 35.87900206121803,
+      "plddt": 74.8
+    },
+    {
+      "uniprot_id": "P02787",
+      "description": "TRFE_HUMAN (Transferrin)",
+      "disorder_fraction": 0.05,
+      "pe_native": -110.33917819201758,
+      "delta_pe": 38.624888170720396,
+      "plddt": 82.4
+    },
+    {
+      "uniprot_id": "P04114",
+      "description": "APOB_HUMAN (Apolipoprotein B-100)",
+      "disorder_fraction": 0.2,
+      "pe_native": -102.3005276434834,
+      "delta_pe": 30.586237622186218,
+      "plddt": 67.5
+    },
+    {
+      "uniprot_id": "P35222",
+      "description": "CTNB1_HUMAN (Beta-catenin)",
+      "disorder_fraction": 0.22,
+      "pe_native": -101.27291769080274,
+      "delta_pe": 29.558627669505555,
+      "plddt": 68.3
+    },
+    {
+      "uniprot_id": "P68400",
+      "description": "CSK21_HUMAN (CK2 alpha)",
+      "disorder_fraction": 0.06,
+      "pe_native": -109.78456834683561,
+      "delta_pe": 38.070278325538425,
+      "plddt": 84.1
+    },
+    {
+      "uniprot_id": "P05067",
+      "description": "A4_HUMAN (APP)",
+      "disorder_fraction": 0.28,
+      "pe_native": -98.2501245849293,
+      "delta_pe": 26.535834563632108,
+      "plddt": 67.8
+    },
+    {
+      "uniprot_id": "Q13148",
+      "description": "TADBP_HUMAN (TDP-43)",
+      "disorder_fraction": 0.28,
+      "pe_native": -98.2501245849293,
+      "delta_pe": 26.535834563632108,
+      "plddt": 64.5
+    },
+    {
+      "uniprot_id": "Q16596",
+      "description": "NCOA1_HUMAN (NCoA1)",
+      "disorder_fraction": 0.25,
+      "pe_native": -99.75035878474067,
+      "delta_pe": 28.03606876344348,
+      "plddt": 63.4
+    },
+    {
+      "uniprot_id": "P04637",
+      "description": "P53_HUMAN (p53)",
+      "disorder_fraction": 0.42,
+      "pe_native": -91.53447979769211,
+      "delta_pe": 19.820189776394926,
+      "plddt": 62.8
+    },
+    {
+      "uniprot_id": "P35637",
+      "description": "FUS_HUMAN (FUS/TLS)",
+      "disorder_fraction": 0.35,
+      "pe_native": -94.83451956091797,
+      "delta_pe": 23.12022953962078,
+      "plddt": 57.2
+    },
+    {
+      "uniprot_id": "P38398",
+      "description": "BRCA1_HUMAN (BRCA1)",
+      "disorder_fraction": 0.42,
+      "pe_native": -91.53447979769211,
+      "delta_pe": 19.820189776394926,
+      "plddt": 56.4
+    },
+    {
+      "uniprot_id": "Q09472",
+      "description": "EP300_HUMAN (p300/CBP co-act.)",
+      "disorder_fraction": 0.55,
+      "pe_native": -85.69881829136732,
+      "delta_pe": 13.984528270070129,
+      "plddt": 52.1
+    },
+    {
+      "uniprot_id": "Q92793",
+      "description": "CREB1_HUMAN (CREBBP/CBP)",
+      "disorder_fraction": 0.55,
+      "pe_native": -85.69881829136732,
+      "delta_pe": 13.984528270070129,
+      "plddt": 53.3
+    },
+    {
+      "uniprot_id": "P06748",
+      "description": "NPM_HUMAN (Nucleophosmin-1)",
+      "disorder_fraction": 0.55,
+      "pe_native": -85.69881829136732,
+      "delta_pe": 13.984528270070129,
+      "plddt": 55.8
+    },
+    {
+      "uniprot_id": "P09429",
+      "description": "HMGB1_HUMAN (HMGB1)",
+      "disorder_fraction": 0.55,
+      "pe_native": -85.69881829136732,
+      "delta_pe": 13.984528270070129,
+      "plddt": 57.4
+    },
+    {
+      "uniprot_id": "Q16595",
+      "description": "ROA1_HUMAN (hnRNP A1)",
+      "disorder_fraction": 0.25,
+      "pe_native": -99.75035878474067,
+      "delta_pe": 28.03606876344348,
+      "plddt": 65.2
+    },
+    {
+      "uniprot_id": "P11274",
+      "description": "BCR_HUMAN (BCR kinase)",
+      "disorder_fraction": 0.45,
+      "pe_native": -90.1545527339588,
+      "delta_pe": 18.440262712661607,
+      "plddt": 58.3
+    },
+    {
+      "uniprot_id": "P16070",
+      "description": "CD44_HUMAN (CD44)",
+      "disorder_fraction": 0.35,
+      "pe_native": -94.83451956091797,
+      "delta_pe": 23.12022953962078,
+      "plddt": 61.5
+    },
+    {
+      "uniprot_id": "P38484",
+      "description": "IKBA_HUMAN (IkappaB-alpha)",
+      "disorder_fraction": 0.35,
+      "pe_native": -94.83451956091797,
+      "delta_pe": 23.12022953962078,
+      "plddt": 55.6
+    },
+    {
+      "uniprot_id": "Q13237",
+      "description": "GBR2_HUMAN (GABA-B R2)",
+      "disorder_fraction": 0.2,
+      "pe_native": -102.3005276434834,
+      "delta_pe": 30.586237622186218,
+      "plddt": 71.2
+    },
+    {
+      "uniprot_id": "P54253",
+      "description": "ATXN1_HUMAN (Ataxin-1)",
+      "disorder_fraction": 0.6,
+      "pe_native": -83.55155397221158,
+      "delta_pe": 11.83726395091439,
+      "plddt": 51.4
+    },
+    {
+      "uniprot_id": "P37840",
+      "description": "SYUA_HUMAN (Alpha-synuclein)",
+      "disorder_fraction": 0.95,
+      "pe_native": -69.90435431353843,
+      "delta_pe": 1.8099357077587541,
+      "plddt": 31.5
+    },
+    {
+      "uniprot_id": "P10636",
+      "description": "TAU_HUMAN (Tau/MAPT)",
+      "disorder_fraction": 0.82,
+      "pe_native": -74.70340243640591,
+      "delta_pe": 2.989112415108721,
+      "plddt": 28.7
+    },
+    {
+      "uniprot_id": "Q99700",
+      "description": "ATX2_HUMAN (Ataxin-2)",
+      "disorder_fraction": 0.75,
+      "pe_native": -77.41624749909965,
+      "delta_pe": 5.701957477802466,
+      "plddt": 40.2
+    },
+    {
+      "uniprot_id": "P42858",
+      "description": "HD_HUMAN (Huntingtin)",
+      "disorder_fraction": 0.75,
+      "pe_native": -77.41624749909965,
+      "delta_pe": 5.701957477802466,
+      "plddt": 43.8
+    },
+    {
+      "uniprot_id": "P20810",
+      "description": "CAST_HUMAN (Calpastatin)",
+      "disorder_fraction": 0.8,
+      "pe_native": -75.46906943466793,
+      "delta_pe": 3.7547794133707413,
+      "plddt": 35.4
+    },
+    {
+      "uniprot_id": "P01106",
+      "description": "MYC_HUMAN (c-Myc)",
+      "disorder_fraction": 0.85,
+      "pe_native": -73.56881074111207,
+      "delta_pe": 1.8545207198148859,
+      "plddt": 29.5
+    },
+    {
+      "uniprot_id": "Q8IYB3",
+      "description": "SRRM2_HUMAN (SRm300/SRRM2)",
+      "disorder_fraction": 0.75,
+      "pe_native": -77.41624749909965,
+      "delta_pe": 5.701957477802466,
+      "plddt": 41.5
+    },
+    {
+      "uniprot_id": "P35659",
+      "description": "DEK_HUMAN (DEK oncoprotein)",
+      "disorder_fraction": 0.5,
+      "pe_native": -87.89936185020576,
+      "delta_pe": 16.185071828908576,
+      "plddt": 54.3
+    },
+    {
+      "uniprot_id": "Q9NR56",
+      "description": "DIDO1_HUMAN (DIDO1)",
+      "disorder_fraction": 0.7,
+      "pe_native": -79.4115555014707,
+      "delta_pe": 7.697265480173513,
+      "plddt": 45.2
+    },
+    {
+      "uniprot_id": "P62136",
+      "description": "PP1A_HUMAN (PP1-alpha)",
+      "disorder_fraction": 0.1,
+      "pe_native": -107.59329208251522,
+      "delta_pe": 35.87900206121803,
+      "plddt": 87.5
+    },
+    {
+      "uniprot_id": "O75369",
+      "description": "FLNB_HUMAN (Filamin B)",
+      "disorder_fraction": 0.18,
+      "pe_native": -103.33831324573906,
+      "delta_pe": 31.62402322444187,
+      "plddt": 74.6
+    },
+    {
+      "uniprot_id": "Q9UPN3",
+      "description": "MPRIP_HUMAN (SHANK3)",
+      "disorder_fraction": 0.55,
+      "pe_native": -85.69881829136732,
+      "delta_pe": 13.984528270070129,
+      "plddt": 52.1
+    },
+    {
+      "uniprot_id": "P98160",
+      "description": "PGBM_HUMAN (Perlecan/HSPG2)",
+      "disorder_fraction": 0.25,
+      "pe_native": -99.75035878474067,
+      "delta_pe": 28.03606876344348,
+      "plddt": 68.3
+    },
+    {
+      "uniprot_id": "Q9Y6N7",
+      "description": "PCNT_HUMAN (Pericentrin)",
+      "disorder_fraction": 0.65,
+      "pe_native": -81.45623393138663,
+      "delta_pe": 9.741943910089446,
+      "plddt": 47.8
+    },
+    {
+      "uniprot_id": "P19105",
+      "description": "MYL2_HUMAN (MLC-2/Myosin RLC)",
+      "disorder_fraction": 0.06,
+      "pe_native": -109.78456834683561,
+      "delta_pe": 38.070278325538425,
+      "plddt": 89.4
+    }
+  ]
+}

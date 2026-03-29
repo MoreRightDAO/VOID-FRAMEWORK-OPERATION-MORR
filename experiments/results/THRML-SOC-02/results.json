@@ -1,0 +1,53 @@
+{
+  "experiment": "THRML-SOC-02",
+  "verdict": "PASS",
+  "pass_count": 5,
+  "pass_criteria": {
+    "1_peak_in_contested": true,
+    "2_contested_beats_fisher": true,
+    "3_gradient_needed": true,
+    "4_diminishing_returns": true,
+    "5_zone_order_correct": true
+  },
+  "influence_scan": {
+    "pe_op": 0.457,
+    "peak_pe": 12.5,
+    "peak_I": 4.2496,
+    "peak_regime": "CONTESTED",
+    "zone_I": {
+      "COHERENT": 0.0206,
+      "STABLE": 2.014,
+      "CONTESTED": 3.9841,
+      "DRIFTING": 2.5473,
+      "FISHER": 0.8471
+    }
+  },
+  "trajectories": [
+    {
+      "population": "B \u2014 Moderate (SHSS 5-8)",
+      "alpha_floor": 0.22,
+      "phi_total": 234.571,
+      "phi_first_half": 107.138,
+      "phi_second_half": 127.433,
+      "first_half_dominant": false,
+      "peak_influence_t": 38.5
+    },
+    {
+      "population": "C \u2014 Susceptible (SHSS 9-12)",
+      "alpha_floor": 0.025,
+      "phi_total": 143.742,
+      "phi_first_half": 92.663,
+      "phi_second_half": 51.079,
+      "first_half_dominant": true,
+      "peak_influence_t": 7.0
+    }
+  ],
+  "canonical": {
+    "K": 16,
+    "B_ALPHA": 0.867,
+    "B_GAMMA": 2.244,
+    "V_STAR": 5.52,
+    "PE_OP": 0.457,
+    "PE_DECAY": 12.0
+  }
+}

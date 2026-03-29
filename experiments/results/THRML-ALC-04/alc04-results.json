@@ -1,0 +1,65 @@
+{
+  "experiment": "THRML-ALC-04",
+  "title": "Extraction Reward Scaling",
+  "author": "Shamir / MoreRight (2026-03-09)",
+  "tests": {
+    "T1_simple_compound": {
+      "n_elements": 2,
+      "reward": 16.7248,
+      "expected": 16.7248,
+      "pass": true
+    },
+    "T2_complex_compound": {
+      "reward_2_elements": 16.7248,
+      "reward_5_elements": 26.4442,
+      "expected_ratio": 1.5811,
+      "actual_ratio": 1.5811,
+      "pass": true
+    },
+    "T3_autocatalytic_bonus": {
+      "reward_normal": 34.6818,
+      "reward_autocatalytic": 69.3636,
+      "ratio": 2.0,
+      "expected_multiplier": 2.0,
+      "pass": true
+    },
+    "T4_persistence_scaling": {
+      "persistence_levels": [
+        0,
+        100,
+        200,
+        300,
+        400,
+        500
+      ],
+      "rewards": [
+        20.4836,
+        42.9872,
+        53.4508,
+        60.3429,
+        65.4908,
+        69.6012
+      ],
+      "age_factors": [
+        1.0,
+        2.0986,
+        2.6094,
+        2.9459,
+        3.1972,
+        3.3979
+      ],
+      "monotonically_increasing": true,
+      "diminishing_returns": true,
+      "pass": true
+    },
+    "T5_extraction_destroys": {
+      "first_extraction_reward": 34.6818,
+      "second_extraction_reward": 0.0,
+      "compound_extracted": true,
+      "conservation_holds": true,
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "THRML-ALC-04 PASS \u2014 Extraction reward scaling validated"
+}

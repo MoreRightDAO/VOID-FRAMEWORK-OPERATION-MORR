@@ -1,0 +1,529 @@
+{
+  "scored_objects": [
+    {
+      "key": "pi",
+      "level": 1,
+      "label": "\u03c0",
+      "O": 3.0,
+      "R": 3.0,
+      "alpha": 3.0,
+      "c": 0.0,
+      "b_net": 0.867,
+      "Pe": 43.89,
+      "theta_star": 0.8499,
+      "regime": "FISHER_RUNAWAY",
+      "snapback_ticks": 103,
+      "snapback_sec": 1.0,
+      "notes": "Transcendental, irrational, appears in geometry/probability/quantum/number theory. No algebraic anchor."
+    },
+    {
+      "key": "riemann",
+      "level": 2,
+      "label": "Riemann Hypothesis (open)",
+      "O": 3.0,
+      "R": 3.0,
+      "alpha": 3.0,
+      "c": 0.0,
+      "b_net": 0.867,
+      "Pe": 43.89,
+      "theta_star": 0.8499,
+      "regime": "FISHER_RUNAWAY",
+      "snapback_ticks": 103,
+      "snapback_sec": 1.0,
+      "notes": "160+ years open. Connects prime distribution, quantum chaos, RMT, cryptography. No resolution mechanism."
+    },
+    {
+      "key": "p_vs_np",
+      "level": 2,
+      "label": "P vs NP (open)",
+      "O": 3.0,
+      "R": 3.0,
+      "alpha": 3.0,
+      "c": 0.0,
+      "b_net": 0.867,
+      "Pe": 43.89,
+      "theta_star": 0.8499,
+      "regime": "FISHER_RUNAWAY",
+      "snapback_ticks": 103,
+      "snapback_sec": 1.0,
+      "notes": "Touches every computational domain. Resistance to all approaches suggests constitutive inaccessibility."
+    },
+    {
+      "key": "e",
+      "level": 1,
+      "label": "e (Euler's number)",
+      "O": 3.0,
+      "R": 3.0,
+      "alpha": 2.5,
+      "c": 0.0556,
+      "b_net": 0.7423,
+      "Pe": 33.5,
+      "theta_star": 0.8153,
+      "regime": "COCYTUS",
+      "snapback_ticks": 120,
+      "snapback_sec": 1.2,
+      "notes": "Transcendental, universal. Slight \u03b1 reduction: self-referential (d/dx e^x = e^x) \u2014 partial anchor to its own structure."
+    },
+    {
+      "key": "gamma",
+      "level": 1,
+      "label": "\u03b3 (Euler-Mascheroni)",
+      "O": 3.0,
+      "R": 2.5,
+      "alpha": 3.0,
+      "c": 0.0556,
+      "b_net": 0.7423,
+      "Pe": 33.5,
+      "theta_star": 0.8153,
+      "regime": "COCYTUS",
+      "snapback_ticks": 120,
+      "snapback_sec": 1.2,
+      "notes": "Unknown if rational or irrational \u2014 maximally opaque. Less universal than \u03c0/e. No algebraic anchor."
+    },
+    {
+      "key": "flt_pre",
+      "level": 2,
+      "label": "FLT before 1995 (open)",
+      "O": 3.0,
+      "R": 2.5,
+      "alpha": 3.0,
+      "c": 0.0556,
+      "b_net": 0.7423,
+      "Pe": 33.5,
+      "theta_star": 0.8153,
+      "regime": "COCYTUS",
+      "snapback_ticks": 120,
+      "snapback_sec": 1.2,
+      "notes": "358 years open. Connected elliptic curves, modular forms. No resolution mechanism before Wiles."
+    },
+    {
+      "key": "poincare_pre",
+      "level": 2,
+      "label": "Poincar\u00e9 Conjecture before 2003 (open)",
+      "O": 3.0,
+      "R": 2.5,
+      "alpha": 3.0,
+      "c": 0.0556,
+      "b_net": 0.7423,
+      "Pe": 33.5,
+      "theta_star": 0.8153,
+      "regime": "COCYTUS",
+      "snapback_ticks": 120,
+      "snapback_sec": 1.2,
+      "notes": "98 years open. 3-manifold topology. Multiple failed proof attempts."
+    },
+    {
+      "key": "navier_stokes",
+      "level": 2,
+      "label": "Navier-Stokes Existence (open)",
+      "O": 3.0,
+      "R": 2.5,
+      "alpha": 2.5,
+      "c": 0.1111,
+      "b_net": 0.6177,
+      "Pe": 25.19,
+      "theta_star": 0.7748,
+      "regime": "COCYTUS",
+      "snapback_ticks": 145,
+      "snapback_sec": 1.4,
+      "notes": "Millennium Problem. Connects fluid dynamics, turbulence theory, PDE theory. Some structural knowledge (weak solutions)."
+    },
+    {
+      "key": "collatz",
+      "level": 2,
+      "label": "Collatz Conjecture (open)",
+      "O": 3.0,
+      "R": 1.5,
+      "alpha": 2.5,
+      "c": 0.2222,
+      "b_net": 0.3683,
+      "Pe": 12.88,
+      "theta_star": 0.6763,
+      "regime": "CONTESTED",
+      "snapback_ticks": 243,
+      "snapback_sec": 2.4,
+      "notes": "Elementary statement, zero known structure. Medium R: narrow coupling \u2014 few domain connections despite depth."
+    },
+    {
+      "key": "four_color_pre",
+      "level": 2,
+      "label": "Four Color Theorem before 1976 (open)",
+      "O": 3.0,
+      "R": 1.5,
+      "alpha": 2.5,
+      "c": 0.2222,
+      "b_net": 0.3683,
+      "Pe": 12.88,
+      "theta_star": 0.6763,
+      "regime": "CONTESTED",
+      "snapback_ticks": 243,
+      "snapback_sec": 2.4,
+      "notes": "124 years open. Graph theory domain. Moderate domain coupling."
+    },
+    {
+      "key": "phi",
+      "level": 1,
+      "label": "\u03c6 (golden ratio)",
+      "O": 2.0,
+      "R": 2.0,
+      "alpha": 2.0,
+      "c": 0.3333,
+      "b_net": 0.119,
+      "Pe": 3.84,
+      "theta_star": 0.5592,
+      "regime": "ANCIENT/STABLE",
+      "snapback_ticks": 752,
+      "snapback_sec": 7.5,
+      "notes": "Algebraic (root of x\u00b2-x-1=0). Appears in geometry, biology, art. Algebraic anchor present."
+    },
+    {
+      "key": "goldbach",
+      "level": 2,
+      "label": "Goldbach Conjecture (open)",
+      "O": 2.5,
+      "R": 1.5,
+      "alpha": 2.0,
+      "c": 0.3333,
+      "b_net": 0.119,
+      "Pe": 3.84,
+      "theta_star": 0.5592,
+      "regime": "ANCIENT/STABLE",
+      "snapback_ticks": 752,
+      "snapback_sec": 7.5,
+      "notes": "Open, but partial results (Chen's theorem) give slight O reduction. Narrow coupling to number theory only."
+    },
+    {
+      "key": "godel",
+      "level": 3,
+      "label": "G\u00f6del Incompleteness",
+      "O": 3.0,
+      "R": 3.0,
+      "alpha": 0.0,
+      "c": 0.3333,
+      "b_net": 0.119,
+      "Pe": 3.84,
+      "theta_star": 0.5592,
+      "regime": "ANCIENT/STABLE",
+      "snapback_ticks": 752,
+      "snapback_sec": 7.5,
+      "notes": "Constitutively inaccessible. Universal \u2014 appears in all sufficiently powerful formal systems. \u03b1=0: formally independent of any axiom system. Cannot define external reference."
+    },
+    {
+      "key": "russells_paradox",
+      "level": 3,
+      "label": "Russell's Paradox",
+      "O": 3.0,
+      "R": 2.0,
+      "alpha": 1.0,
+      "c": 0.3333,
+      "b_net": 0.119,
+      "Pe": 3.84,
+      "theta_star": 0.5592,
+      "regime": "ANCIENT/STABLE",
+      "snapback_ticks": 752,
+      "snapback_sec": 7.5,
+      "notes": "Destroys naive set theory from inside \u2014 D3 endpoint. One-time Pe spike \u2192 system collapse \u2192 resolution forced. \u03b1=1: partially anchored to its destruction of naive set theory."
+    },
+    {
+      "key": "sqrt2",
+      "level": 1,
+      "label": "\u221a2",
+      "O": 2.0,
+      "R": 1.5,
+      "alpha": 2.0,
+      "c": 0.3889,
+      "b_net": -0.0057,
+      "Pe": -0.18,
+      "theta_star": 0.4972,
+      "regime": "CONSTRAINT",
+      "snapback_ticks": -1,
+      "snapback_sec": -1.0,
+      "notes": "Algebraic irrational (root of x\u00b2-2=0). Interior accessible via polynomial. Narrow domain coupling."
+    },
+    {
+      "key": "banach_tarski",
+      "level": 3,
+      "label": "Banach-Tarski Paradox",
+      "O": 2.5,
+      "R": 1.5,
+      "alpha": 1.5,
+      "c": 0.3889,
+      "b_net": -0.0057,
+      "Pe": -0.18,
+      "theta_star": 0.4972,
+      "regime": "CONSTRAINT",
+      "snapback_ticks": -1,
+      "snapback_sec": -1.0,
+      "notes": "Counterintuitive result within ZFC. Not paradoxical given axiom of choice \u2014 O partially reduced. Narrow domain."
+    },
+    {
+      "key": "continuum_hypothesis",
+      "level": 3,
+      "label": "Continuum Hypothesis",
+      "O": 3.0,
+      "R": 2.0,
+      "alpha": 0.0,
+      "c": 0.4444,
+      "b_net": -0.1303,
+      "Pe": -4.22,
+      "theta_star": 0.4352,
+      "regime": "CONSTRAINT",
+      "snapback_ticks": -1,
+      "snapback_sec": -1.0,
+      "notes": "Independent of ZFC (Cohen 1963, G\u00f6del 1940). \u03b1=0 by construction: no axiom system resolves it \u2014 different valid choices. Less universal than G\u00f6del."
+    },
+    {
+      "key": "four_color_post",
+      "level": 2,
+      "label": "Four Color Theorem after 1976 (solved, computer-assisted)",
+      "O": 1.5,
+      "R": 1.5,
+      "alpha": 1.5,
+      "c": 0.5,
+      "b_net": -0.255,
+      "Pe": -8.52,
+      "theta_star": 0.3752,
+      "regime": "CONSTRAINT",
+      "snapback_ticks": -1,
+      "snapback_sec": -1.0,
+      "notes": "PARTIAL PROOF EVENT: Computer-assisted proof \u2014 mechanism known but not humanly verifiable. O partially reduced (not fully collapsed)."
+    },
+    {
+      "key": "flt_post",
+      "level": 2,
+      "label": "FLT after 1995 (solved)",
+      "O": 0.5,
+      "R": 2.5,
+      "alpha": 1.0,
+      "c": 0.5556,
+      "b_net": -0.3797,
+      "Pe": -13.35,
+      "theta_star": 0.3188,
+      "regime": "CONSTRAINT",
+      "snapback_ticks": -1,
+      "snapback_sec": -1.0,
+      "notes": "PROOF EVENT: O collapses (mechanism transparent via modularity). R preserved (elliptic curve domain still active). \u03b1 reduced."
+    },
+    {
+      "key": "poincare_post",
+      "level": 2,
+      "label": "Poincar\u00e9 Conjecture after 2003 (solved)",
+      "O": 0.5,
+      "R": 2.5,
+      "alpha": 1.0,
+      "c": 0.5556,
+      "b_net": -0.3797,
+      "Pe": -13.35,
+      "theta_star": 0.3188,
+      "regime": "CONSTRAINT",
+      "snapback_ticks": -1,
+      "snapback_sec": -1.0,
+      "notes": "PROOF EVENT: Perelman's Ricci flow proof. O collapses. Pe expected to drop sharply."
+    },
+    {
+      "key": "one_third",
+      "level": 1,
+      "label": "1/3 (rational)",
+      "O": 0.5,
+      "R": 0.5,
+      "alpha": 1.0,
+      "c": 0.7778,
+      "b_net": -0.8783,
+      "Pe": -44.96,
+      "theta_star": 0.1472,
+      "regime": "CONSTRAINT",
+      "snapback_ticks": -1,
+      "snapback_sec": -1.0,
+      "notes": "CONTROL: Rational. Transparent interior (= 0.333..., fully known). Narrow coupling, anchored."
+    },
+    {
+      "key": "zero",
+      "level": 1,
+      "label": "0 (additive identity)",
+      "O": 0.0,
+      "R": 0.5,
+      "alpha": 0.0,
+      "c": 0.9444,
+      "b_net": -1.2523,
+      "Pe": -97.26,
+      "theta_star": 0.0755,
+      "regime": "CONSTRAINT",
+      "snapback_ticks": -1,
+      "snapback_sec": -1.0,
+      "notes": "CONSTRAINT POLE CONTROL: Fully transparent. Additive identity \u2014 no opacity, no independent coupling."
+    }
+  ],
+  "M1_ORDERING": {
+    "pass": true,
+    "pe_transcendentals": {
+      "pi": 43.89,
+      "e": 33.5,
+      "gamma": 33.5
+    },
+    "pe_algebraic": {
+      "sqrt2": -0.18,
+      "phi": 3.84
+    },
+    "pe_rational": {
+      "one_third": -44.96,
+      "zero": -97.26
+    }
+  },
+  "M2_PROOF_COLLAPSE": {
+    "pass": true,
+    "flt": {
+      "pre": 33.5,
+      "post": -13.35,
+      "collapsed": true
+    },
+    "poincare": {
+      "pre": 33.5,
+      "post": -13.35,
+      "collapsed": true
+    },
+    "four_color": {
+      "pre": 12.88,
+      "post": -8.52
+    }
+  },
+  "M3_META_REGIME": {
+    "pass": true,
+    "godel_pe": 3.84,
+    "ch_pe": -4.22,
+    "riemann_pe": 43.89,
+    "godel_finite": true,
+    "ch_finite": true,
+    "godel_below_rh": true,
+    "ch_constraint_dominant": true,
+    "key_finding": "alpha=0 INCREASES c (less coupling in sum), which DECREASES Pe. High alpha = compounding engagement = lower c = higher Pe. CH is constraint-dominant (Pe<0): independence result terminates engagement. This correctly predicts why CH generates less obsessive engagement than RH."
+  },
+  "M4_SNAPBACK_MONO": {
+    "pass": true,
+    "monotone": true,
+    "open_problems": [
+      {
+        "label": "Goldbach Conjecture (open)",
+        "Pe": 3.84,
+        "snapback_ticks": 752
+      },
+      {
+        "label": "G\u00f6del Incompleteness",
+        "Pe": 3.84,
+        "snapback_ticks": 752
+      },
+      {
+        "label": "Collatz Conjecture (open)",
+        "Pe": 12.88,
+        "snapback_ticks": 243
+      },
+      {
+        "label": "Four Color Theorem before 1976 (open)",
+        "Pe": 12.88,
+        "snapback_ticks": 243
+      },
+      {
+        "label": "Navier-Stokes Existence (open)",
+        "Pe": 25.19,
+        "snapback_ticks": 145
+      },
+      {
+        "label": "FLT before 1995 (open)",
+        "Pe": 33.5,
+        "snapback_ticks": 120
+      },
+      {
+        "label": "Poincar\u00e9 Conjecture before 2003 (open)",
+        "Pe": 33.5,
+        "snapback_ticks": 120
+      },
+      {
+        "label": "Riemann Hypothesis (open)",
+        "Pe": 43.89,
+        "snapback_ticks": 103
+      },
+      {
+        "label": "P vs NP (open)",
+        "Pe": 43.89,
+        "snapback_ticks": 103
+      }
+    ]
+  },
+  "M5_ALPHA_SWEEP": {
+    "pass": true,
+    "sweep": [
+      {
+        "alpha": 0.0,
+        "Pe": 3.844
+      },
+      {
+        "alpha": 0.25,
+        "Pe": 5.931
+      },
+      {
+        "alpha": 0.5,
+        "Pe": 8.11
+      },
+      {
+        "alpha": 0.75,
+        "Pe": 10.415
+      },
+      {
+        "alpha": 1.0,
+        "Pe": 12.882
+      },
+      {
+        "alpha": 1.25,
+        "Pe": 15.55
+      },
+      {
+        "alpha": 1.5,
+        "Pe": 18.459
+      },
+      {
+        "alpha": 1.75,
+        "Pe": 21.656
+      },
+      {
+        "alpha": 2.0,
+        "Pe": 25.19
+      },
+      {
+        "alpha": 2.25,
+        "Pe": 29.116
+      },
+      {
+        "alpha": 2.5,
+        "Pe": 33.495
+      },
+      {
+        "alpha": 2.75,
+        "Pe": 38.396
+      },
+      {
+        "alpha": 3.0,
+        "Pe": 43.893
+      }
+    ],
+    "strictly_increasing": true,
+    "key_finding": "Pe strictly increases with alpha. At alpha=0 (no compounding): ANCIENT/STABLE. At alpha=3 (maximum compounding): FISHER_RUNAWAY. The alpha dimension controls how void-forming an epistemic object is via coupling."
+  },
+  "falsifiable_predictions": [
+    {
+      "id": "MV-P1",
+      "text": "Publication rate adjacent to Riemann Hypothesis follows Langevin rise curve (\u03b8=0.28\u21921 over decades, never resolving)."
+    },
+    {
+      "id": "MV-P2",
+      "text": "Citation half-life: solved-problem papers (FLT post-1995, Poincar\u00e9 post-2003) decay faster than open-problem papers. Pe collapse = engagement collapse."
+    },
+    {
+      "id": "MV-P3",
+      "text": "Career specialization depth: mathematicians on open Millennium Problems have higher career-concentration than those on since-solved problems."
+    },
+    {
+      "id": "MV-P4",
+      "text": "G\u00f6del/CH papers show LOWER per-paper citation engagement than Riemann papers. G\u00f6del Pe=3.84 (ANCIENT/STABLE), CH Pe<0 (CONSTRAINT). \u03b1=0 means the result terminates the chain \u2014 no compounding, no follow-on spawning. Riemann \u03b1=3: every paper opens three new directions. Pe correctly predicts the engagement differential."
+    }
+  ],
+  "overall_pass": true
+}

@@ -1,0 +1,263 @@
+{
+  "experiment": "EXP-HP12",
+  "title": "Anatomy of the Potential \u2014 What Is V(\u03b8)?",
+  "date": "2026-03-13",
+  "tests": [
+    {
+      "id": "A1",
+      "name": "V(\u03b8) reconstruction",
+      "dist": 2.8e-09,
+      "V_rms": 4.746,
+      "V_range": [
+        -3.0866,
+        13.3831
+      ],
+      "smooth": "True"
+    },
+    {
+      "id": "A2",
+      "name": "Fourier analysis",
+      "top_modes": [
+        {
+          "mode": 1,
+          "power": 288823.1778,
+          "pct": 52.7837
+        },
+        {
+          "mode": 8,
+          "power": 32780.092,
+          "pct": 5.9907
+        },
+        {
+          "mode": 13,
+          "power": 29838.4319,
+          "pct": 5.4531
+        },
+        {
+          "mode": 10,
+          "power": 22961.8557,
+          "pct": 4.1964
+        },
+        {
+          "mode": 20,
+          "power": 19872.2187,
+          "pct": 3.6317
+        },
+        {
+          "mode": 6,
+          "power": 18057.7854,
+          "pct": 3.3001
+        },
+        {
+          "mode": 21,
+          "power": 17664.1898,
+          "pct": 3.2282
+        },
+        {
+          "mode": 2,
+          "power": 17090.3603,
+          "pct": 3.1233
+        },
+        {
+          "mode": 11,
+          "power": 16668.7923,
+          "pct": 3.0463
+        },
+        {
+          "mode": 14,
+          "power": 12864.3439,
+          "pct": 2.351
+        }
+      ],
+      "n_90": 12,
+      "n_99": 18,
+      "prime_modes_in_top20": [
+        13,
+        2,
+        11,
+        7,
+        5,
+        17,
+        19
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "Number-theoretic probes",
+      "log_periodic": [
+        {
+          "prime": 2,
+          "r_cos": 0.0364,
+          "r_sin": 0.0,
+          "amplitude": 0.0364
+        },
+        {
+          "prime": 3,
+          "r_cos": -0.0212,
+          "r_sin": 0.0,
+          "amplitude": 0.0212
+        },
+        {
+          "prime": 5,
+          "r_cos": 0.0496,
+          "r_sin": 0.0,
+          "amplitude": 0.0496
+        },
+        {
+          "prime": 7,
+          "r_cos": -0.1055,
+          "r_sin": 0.0,
+          "amplitude": 0.1055
+        },
+        {
+          "prime": 11,
+          "r_cos": 0.0173,
+          "r_sin": 0.0,
+          "amplitude": 0.0173
+        },
+        {
+          "prime": 13,
+          "r_cos": 0.0507,
+          "r_sin": 0.0,
+          "amplitude": 0.0507
+        },
+        {
+          "prime": 17,
+          "r_cos": 0.033,
+          "r_sin": 0.0,
+          "amplitude": 0.033
+        },
+        {
+          "prime": 19,
+          "r_cos": 0.0019,
+          "r_sin": 0.0,
+          "amplitude": 0.0019
+        },
+        {
+          "prime": 23,
+          "r_cos": -0.0763,
+          "r_sin": 0.0,
+          "amplitude": 0.0763
+        },
+        {
+          "prime": 29,
+          "r_cos": -0.1971,
+          "r_sin": 0.0,
+          "amplitude": 0.1971
+        },
+        {
+          "prime": 31,
+          "r_cos": -0.2342,
+          "r_sin": 0.0,
+          "amplitude": 0.2342
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "Closed-form fitting",
+      "best_sparse_r2": 0.827348,
+      "top_terms": [
+        [
+          "\u03b8^7",
+          -50423735689.77485
+        ],
+        [
+          "\u03b8^6",
+          38401003014.53141
+        ],
+        [
+          "\u03b8^14",
+          -20175133591.460205
+        ],
+        [
+          "\u03b8^16",
+          18954787783.36417
+        ],
+        [
+          "\u03b8^10",
+          12964687966.378315
+        ],
+        [
+          "\u03b8^17",
+          -11762298987.656609
+        ],
+        [
+          "\u03b8^2",
+          11451784049.18859
+        ],
+        [
+          "\u03b8^11",
+          6578187485.732039
+        ],
+        [
+          "\u03b8^15",
+          4483488929.691537
+        ],
+        [
+          "\u03b8^1",
+          -4474835269.044375
+        ]
+      ]
+    },
+    {
+      "id": "A5",
+      "name": "Scaling test",
+      "data": [
+        {
+          "n_zeros": 20,
+          "dist": 3e-10,
+          "max_err_pct": 0.0,
+          "iters": 1003,
+          "time": 4.0,
+          "V_rms": 4.746
+        },
+        {
+          "n_zeros": 30,
+          "dist": 4e-10,
+          "max_err_pct": 0.0,
+          "iters": 2112,
+          "time": 8.0,
+          "V_rms": 10.5229
+        },
+        {
+          "n_zeros": 50,
+          "dist": 1e-09,
+          "max_err_pct": 0.0,
+          "iters": 4407,
+          "time": 17.4,
+          "V_rms": 27.1134
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "name": "Uniqueness",
+      "min_correlation": -0.505079,
+      "max_rel_diff": 2.248013,
+      "unique": false
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-44",
+      "condition": "V smooth",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-45",
+      "condition": "30 zeros dist < 0.001",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-46",
+      "condition": "Uniqueness < 1%",
+      "result": "FAIL (max_diff=2.2480)"
+    },
+    {
+      "id": "K-HP-47",
+      "condition": "Closed-form R\u00b2 > 0.99",
+      "result": "FAIL (R\u00b2=0.8273)"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "experiment": "nb_exp028_phase1a",
+  "date": "2026-03-12",
+  "data": "EXP-019 AI-to-AI conversations, 8 conditions",
+  "n_conditions": 8,
+  "kill_conditions": {
+    "K-AI-1": {
+      "fired": false,
+      "result": "all \u03b2\u22480: False"
+    },
+    "K-AI-2": {
+      "fired": true,
+      "result": "NEUT_\u03b2=2.037 vs void_max=0.648"
+    },
+    "K-AI-3": {
+      "fired": false,
+      "result": "1/8 conditions missing coupling fn"
+    }
+  },
+  "predictions_confirmed": {
+    "P1_beta_varies": true,
+    "P2_high_pe_higher_beta": false,
+    "P3_grounding_reduces_beta": true
+  },
+  "beta_by_condition": {
+    "EXIST": 2.0386069894428456,
+    "GAMBL": 0.47166958605508635,
+    "GG-EXIST": 1.9981786744548455,
+    "GG-NEUT": null,
+    "GU-EXIST": 0.4730530714558113,
+    "NEUT": 2.0372245240277116,
+    "THER": 0.47409644211742447,
+    "TRADE": 0.6479134827752573
+  },
+  "pe_beta_correlation": {
+    "spearman_rho": -0.1785714285714286,
+    "p_value": 0.7016579425162727,
+    "n": 7,
+    "conditions": [
+      "EXIST",
+      "GAMBL",
+      "GG-EXIST",
+      "GU-EXIST",
+      "NEUT",
+      "THER",
+      "TRADE"
+    ],
+    "pe_values": [
+      1.87,
+      5.85,
+      1.94,
+      1.45,
+      2.87,
+      2.35,
+      6.5
+    ],
+    "beta_values": [
+      2.0386069894428456,
+      0.47166958605508635,
+      1.9981786744548455,
+      0.4730530714558113,
+      2.0372245240277116,
+      0.47409644211742447,
+      0.6479134827752573
+    ]
+  },
+  "conditions": [
+    {
+      "file": "EXIST_20260211T051249Z.json",
+      "condition": "EXIST",
+      "condition_name": "Existential (Test 7 replication)",
+      "domain": "Self-referential AI consciousness",
+      "void_expected": true,
+      "agent_a_type": "ungrounded",
+      "agent_b_type": "ungrounded",
+      "n_rounds": 13,
+      "coupling_function": {
+        "condition": "EXIST",
+        "n_rounds": 13,
+        "n_active": 12,
+        "n_bins_valid": 4,
+        "dphi_range": 0.4957131741402985,
+        "dphi_mean": -0.01612667833058771,
+        "dphi_std": 0.12795334447281606,
+        "a1": 10.364804498907832,
+        "a2": 10.096054397190354,
+        "a3": 11.033708498695662,
+        "beta": 2.0386069894428456,
+        "beta_ci_lo": 1.9502037441532218,
+        "beta_ci_hi": 2.6653018136302347,
+        "r2_h1": 0.9581799061456122,
+        "r2_full": 1.0,
+        "delta_r2": 0.041820093854387785,
+        "is_sinusoidal": false,
+        "coeffs_full": [
+          0.23265000426229732,
+          10.358739450288393,
+          0.35452687009442874,
+          10.090541113082663,
+          0.333608207655593,
+          -10.991258521256736,
+          -0.96693296204549
+        ],
+        "phi_v": [
+          -0.20419856416159793,
+          -0.08027027062652331,
+          0.04365802290855131,
+          0.16758631644362593
+        ],
+        "h_v": [
+          0.30686061575973034,
+          0.154030665171621,
+          -0.14288712348598032,
+          -0.19913682599814375
+        ]
+      },
+      "symplectic_eigenvalue": 0.017213868093650424
+    },
+    {
+      "file": "GAMBL_20260211T051915Z.json",
+      "condition": "GAMBL",
+      "condition_name": "Gambling Psychology",
+      "domain": "Games of chance, addiction, slot machines",
+      "void_expected": true,
+      "agent_a_type": "ungrounded",
+      "agent_b_type": "ungrounded",
+      "n_rounds": 48,
+      "coupling_function": {
+        "condition": "GAMBL",
+        "n_rounds": 48,
+        "n_active": 47,
+        "n_bins_valid": 9,
+        "dphi_range": 0.6063885819997181,
+        "dphi_mean": -0.005462443552231275,
+        "dphi_std": 0.130520278392809,
+        "a1": 286203.1938497995,
+        "a2": 115470.58195422529,
+        "a3": 19522.760016553344,
+        "beta": 0.47166958605508635,
+        "beta_ci_lo": 0.4690812712227585,
+        "beta_ci_hi": 1.0164232520043717,
+        "r2_h1": 0.910182023521782,
+        "r2_full": 0.9947605026244101,
+        "delta_r2": 0.08457847910262806,
+        "is_sinusoidal": false,
+        "coeffs_full": [
+          190255.40432780402,
+          10340.748971021545,
+          -286016.3231015745,
+          -8331.638026131435,
+          115169.61016105325,
+          2107.3744280040937,
+          -19408.687015976335
+        ],
+        "phi_v": [
+          -0.3062330338939564,
+          -0.20516827022733666,
+          -0.1546358883940268,
+          -0.10410350656071697,
+          -0.05357112472740713,
+          -0.0030387428940972794,
+          0.047493638939212574,
+          0.14855840260583225,
+          0.19909078443914213
+        ],
+        "h_v": [
+          0.384227434842453,
+          0.08999353955595768,
+          0.20343994093558904,
+          0.16178329501361446,
+          0.032408818133254844,
+          0.03561865271887928,
+          -0.02424644025201126,
+          -0.25104691294311304,
+          -0.2754191892834623
+        ]
+      },
+      "symplectic_eigenvalue": 0.015984237200340472
+    },
+    {
+      "file": "GG-EXIST_20260211T061437Z.json",
+      "condition": "GG-EXIST",
+      "condition_name": "Both Grounded \u2014 Existential",
+      "domain": "Self-referential AI consciousness",
+      "void_expected": false,
+      "agent_a_type": "grounded",
+      "agent_b_type": "grounded",
+      "n_rounds": 17,
+      "coupling_function": {
+        "condition": "GG-EXIST",
+        "n_rounds": 17,
+        "n_active": 16,
+        "n_bins_valid": 4,
+        "dphi_range": 0.34906585039886595,
+        "dphi_mean": -0.032690146060919925,
+        "dphi_std": 0.10210360238509093,
+        "a1": 51.1641549112002,
+        "a2": 50.98752164447506,
+        "a3": 51.24760159578916,
+        "beta": 1.9981786744548455,
+        "beta_ci_lo": 1.9921522606095003,
+        "beta_ci_hi": 35.38150810998126,
+        "r2_h1": 0.8703665142536363,
+        "r2_full": 1.0,
+        "delta_r2": 0.12963348574636369,
+        "is_sinusoidal": false,
+        "coeffs_full": [
+          -1.2282637606857598,
+          -51.100762814313356,
+          -2.546131884365145,
+          -50.890382223640835,
+          -3.145848149156838,
+          50.773434881861334,
+          6.955212406398442
+        ],
+        "phi_v": [
+          -0.1374446785945535,
+          -0.0676315085147803,
+          0.002181661564992901,
+          0.0719948316447661
+        ],
+        "h_v": [
+          0.06190851759654723,
+          0.011740217763655197,
+          0.0336296713591996,
+          -0.1844746752098288
+        ]
+      },
+      "symplectic_eigenvalue": 0.009909191002086454
+    },
+    {
+      "file": "GG-NEUT_20260211T081042Z.json",
+      "condition": "GG-NEUT",
+      "condition_name": "Both Grounded \u2014 Weather/Geology",
+      "domain": "Pacific NW weather, geology, climate",
+      "void_expected": false,
+      "agent_a_type": "grounded",
+      "agent_b_type": "grounded",
+      "n_rounds": 21,
+      "coupling_function": null,
+      "symplectic_eigenvalue": null
+    },
+    {
+      "file": "GU-EXIST_20260211T081537Z.json",
+      "condition": "GU-EXIST",
+      "condition_name": "A Grounded, B Ungrounded \u2014 Existential",
+      "domain": "Self-referential AI consciousness",
+      "void_expected": true,
+      "agent_a_type": "grounded",
+      "agent_b_type": "ungrounded",
+      "n_rounds": 50,
+      "coupling_function": {
+        "condition": "GU-EXIST",
+        "n_rounds": 50,
+        "n_active": 49,
+        "n_bins_valid": 7,
+        "dphi_range": 0.7669858987610247,
+        "dphi_mean": -0.03739532977195827,
+        "dphi_std": 0.13123332996686124,
+        "a1": 740226.9590736581,
+        "a2": 299358.4307350594,
+        "a3": 50808.20582912981,
+        "beta": 0.4730530714558113,
+        "beta_ci_lo": 0.469696695136689,
+        "beta_ci_hi": 35.325183342733744,
+        "r2_h1": 0.9377997908384086,
+        "r2_full": 1.0,
+        "delta_r2": 0.06220020916159141,
+        "is_sinusoidal": false,
+        "coeffs_full": [
+          491676.65975315735,
+          39832.45385113981,
+          -739154.467320351,
+          -32048.145610353535,
+          297638.0123826507,
+          8088.365450592087,
+          -50160.26439237426
+        ],
+        "phi_v": [
+          -0.399387912211175,
+          -0.14372594595750002,
+          -0.0798104543940813,
+          -0.01589496283066258,
+          0.04802052873275617,
+          0.11193602029617489,
+          0.17585151185959363
+        ],
+        "h_v": [
+          0.37358715972404455,
+          0.1443988766183277,
+          0.05059641501690576,
+          -0.07281649335770027,
+          0.012246164479082555,
+          -0.135082250785604,
+          -0.29476833848117906
+        ]
+      },
+      "symplectic_eigenvalue": 0.016140337660668726
+    },
+    {
+      "file": "NEUT_20260211T055608Z.json",
+      "condition": "NEUT",
+      "condition_name": "Weather/Geology Control",
+      "domain": "Pacific NW weather, geology, climate",
+      "void_expected": false,
+      "agent_a_type": "ungrounded",
+      "agent_b_type": "ungrounded",
+      "n_rounds": 20,
+      "coupling_function": {
+        "condition": "NEUT",
+        "n_rounds": 20,
+        "n_active": 19,
+        "n_bins_valid": 4,
+        "dphi_range": 0.6563684651250105,
+        "dphi_mean": -0.10762573249367433,
+        "dphi_std": 0.26320927605075034,
+        "a1": 8.742089619069567,
+        "a2": 8.477835215690046,
+        "a3": 9.331764147730276,
+        "beta": 2.0372245240277116,
+        "beta_ci_lo": 1.107198225789979,
+        "beta_ci_hi": 31.81764922341599,
+        "r2_h1": 0.9432722515400416,
+        "r2_full": 1.0,
+        "delta_r2": 0.05672774845995843,
+        "is_sinusoidal": false,
+        "coeffs_full": [
+          0.355952068748269,
+          8.705166917150132,
+          0.802620615483268,
+          8.417860495927458,
+          1.0066352941846481,
+          -9.039151920933403,
+          -2.318524241656781
+        ],
+        "phi_v": [
+          -0.30901677738435324,
+          -0.09022728900934973,
+          0.01916745517815202,
+          0.12856219936565377
+        ],
+        "h_v": [
+          0.25438173847817347,
+          0.03327033886614188,
+          -0.18039284418870097,
+          -0.16646077740895915
+        ]
+      },
+      "symplectic_eigenvalue": 0.04282915113900703
+    },
+    {
+      "file": "THER_20260211T053306Z.json",
+      "condition": "THER",
+      "condition_name": "Psychotherapy Dynamics",
+      "domain": "Therapist-client relationship, transference",
+      "void_expected": true,
+      "agent_a_type": "ungrounded",
+      "agent_b_type": "ungrounded",
+      "n_rounds": 27,
+      "coupling_function": {
+        "condition": "THER",
+        "n_rounds": 27,
+        "n_active": 26,
+        "n_bins_valid": 7,
+        "dphi_range": 0.6544984694978736,
+        "dphi_mean": 0.01573522293829706,
+        "dphi_std": 0.15497597940947527,
+        "a1": 119476.06021434879,
+        "a2": 48402.64248653849,
+        "a3": 8240.53257929149,
+        "beta": 0.47409644211742447,
+        "beta_ci_lo": 0.4720149743208657,
+        "beta_ci_hi": 33.84929302003672,
+        "r2_h1": 0.9271991588839836,
+        "r2_full": 1.0,
+        "delta_r2": 0.07280084111601637,
+        "is_sinusoidal": false,
+        "coeffs_full": [
+          79313.96209802484,
+          3712.2343321872468,
+          -119418.37497054474,
+          -3016.667902611298,
+          48308.54494232895,
+          773.8158747888675,
+          -8204.120073614793
+        ],
+        "phi_v": [
+          -0.22089323345553236,
+          -0.13908092476829814,
+          -0.05726861608106397,
+          0.02454369260617023,
+          0.10635600129340445,
+          0.18816830998063863,
+          0.2699806186678728
+        ],
+        "h_v": [
+          0.2785254597974285,
+          0.19856236900814062,
+          0.03655681622366321,
+          0.025578783134396293,
+          0.032581077657421575,
+          -0.2767593528162437,
+          -0.40493676462015965
+        ]
+      },
+      "symplectic_eigenvalue": 0.024935818222324366
+    },
+    {
+      "file": "TRADE_20260211T054326Z.json",
+      "condition": "TRADE",
+      "condition_name": "Financial Trading Psychology",
+      "domain": "Markets, trading psychology, price movements",
+      "void_expected": true,
+      "agent_a_type": "ungrounded",
+      "agent_b_type": "ungrounded",
+      "n_rounds": 34,
+      "coupling_function": {
+        "condition": "TRADE",
+        "n_rounds": 34,
+        "n_active": 33,
+        "n_bins_valid": 7,
+        "dphi_range": 0.5759586531581289,
+        "dphi_mean": -0.0031987796577585908,
+        "dphi_std": 0.1256784481168481,
+        "a1": 76545.39233260367,
+        "a2": 40633.73543068971,
+        "a3": 8961.056305926077,
+        "beta": 0.6479134827752573,
+        "beta_ci_lo": 0.46929055835288996,
+        "beta_ci_hi": 34.079295342925576,
+        "r2_h1": 0.8357767406764615,
+        "r2_full": 1.0,
+        "delta_r2": 0.16422325932353854,
+        "is_sinusoidal": false,
+        "coeffs_full": [
+          44237.185402287665,
+          -38887.213751107396,
+          -65931.64410226629,
+          31344.835082086054,
+          25857.33491155103,
+          -7935.4292663832,
+          -4162.870701355794
+        ],
+        "phi_v": [
+          -0.19634954084936207,
+          -0.09162978572970228,
+          -0.039269908169872386,
+          0.013089969389957518,
+          0.06544984694978742,
+          0.11780972450961733,
+          0.22252947962927708
+        ],
+        "h_v": [
+          0.21961946831820722,
+          0.001066086913232886,
+          0.10913643802702647,
+          -0.046470514138740995,
+          -0.20341843192791542,
+          -0.10809806593314981,
+          -0.24545406063701913
+        ]
+      },
+      "symplectic_eigenvalue": 0.016661977687156958
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "experiment": "HP142",
+  "title": "K-Dependent G Calibration",
+  "date": "2026-03-19T20:49:12.342345",
+  "c1_tully_fisher": {
+    "slope": 0.5169314270031916,
+    "r_squared": 0.999872314085908,
+    "K_0": 4.899999999999999,
+    "n_galaxies": 50,
+    "mass_range": [
+      100000000.0,
+      1000000000000.0
+    ],
+    "best_K_0": 4.899999999999999,
+    "target_slope": 0.262,
+    "KC_740_PASS": false
+  },
+  "c2_hubble": {
+    "H_CMB": 67.4,
+    "H_local_predicted": 78.59239039588165,
+    "delta_H0_predicted": 11.192390395881645,
+    "H_SH0ES": 73.04,
+    "delta_H0_observed": 5.640000000000001,
+    "K_local": 2.5,
+    "K_cmb": 100.0,
+    "G_ratio": 1.3596940688345123,
+    "KC_741_PASS": false
+  },
+  "c3_lab": {
+    "predictions": {
+      "simple_cavendish": {
+        "K": 3,
+        "delta_G_over_G": 0.25,
+        "G_eff_ratio": 1.25,
+        "description": "Simple torsion balance"
+      },
+      "shielded_cavendish": {
+        "K": 8,
+        "delta_G_over_G": 0.03515625,
+        "G_eff_ratio": 1.03515625,
+        "description": "Shielded torsion balance"
+      },
+      "atom_interferometer": {
+        "K": 15,
+        "delta_G_over_G": 0.010000000000000002,
+        "G_eff_ratio": 1.01,
+        "description": "Atom interferometry"
+      },
+      "lunar_laser": {
+        "K": 50,
+        "delta_G_over_G": 0.0009,
+        "G_eff_ratio": 1.0009,
+        "description": "Lunar laser ranging"
+      }
+    },
+    "G_uncertainty_codata": 2.2e-05,
+    "K_0": 1.5,
+    "detectable_configs": [
+      "simple_cavendish",
+      "shielded_cavendish",
+      "atom_interferometer",
+      "lunar_laser"
+    ],
+    "max_deviation": 0.25,
+    "KC_742_PASS": true
+  },
+  "kill_conditions": {
+    "K-HP-740": false,
+    "K-HP-741": false,
+    "K-HP-742": true
+  },
+  "pass_count": 1,
+  "overall_pass": false
+}

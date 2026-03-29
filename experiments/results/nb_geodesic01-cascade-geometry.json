@@ -1,0 +1,33 @@
+{
+  "notebook": "nb_geodesic01",
+  "date": "2026-03-10",
+  "u5_status": "PARTIAL \u2014 product manifold proved, coupling remains",
+  "key_results": {
+    "instanton_equals_geodesic": true,
+    "d3_is_unique_attractor": true,
+    "attractor_robust_to_coupling": true,
+    "cascade_fractions": {
+      "D1": 0.36394849567959126,
+      "D2": 0.5447268030696846,
+      "D3": 0.7873364117231167
+    }
+  },
+  "geometric_proof": {
+    "manifold_structure": "M_O \u00d7 M_R \u00d7 M_\u03b1 \u2245 S\u00b9 \u00d7 S\u00b9 \u00d7 S\u00b9",
+    "curvature": "+1/4 (positive, sphere-like)",
+    "void_pole": "unique boundary attractor at (1,1,1)",
+    "geodesic_uniqueness": true
+  },
+  "connections": [
+    "\u00a79C: angular coord drift = constant-velocity geodesic (CONFIRMED)",
+    "\u00a748A: instanton = geodesic on Bernoulli manifold (NEW)",
+    "\u00a748C: instanton path \u03b8*(t) = sin\u00b2(t/2) = geodesic parameterization (NEW)",
+    "\u00a710B U5: D1\u2192D2\u2192D3 as geodesic flow \u2014 PARTIAL CLOSURE",
+    "Amari information geometry: natural gradient flow on Fisher manifold"
+  ],
+  "remaining": [
+    "G3: \u03ba_12, \u03ba_13 coupling constants from cascade data",
+    "G5: cross-term Fisher metric empirical validation",
+    "Full coupled geodesic equation (helix in S\u00b9 \u00d7 S\u00b9 \u00d7 S\u00b9)"
+  ]
+}

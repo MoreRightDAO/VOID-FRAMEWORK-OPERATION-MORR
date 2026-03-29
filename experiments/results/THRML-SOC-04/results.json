@@ -1,0 +1,59 @@
+{
+  "experiment": "THRML-SOC-04",
+  "verdict": "PASS",
+  "pass_count": 5,
+  "pass_criteria": {
+    "1_spearman_monotone": true,
+    "2_t1_f0_protected": true,
+    "3_t1_f08_unprotected": true,
+    "4_t06_double_t0": true,
+    "5_gradient_15pct": true
+  },
+  "transparency_sweep": {
+    "spearman_rho": 1.0,
+    "spearman_p": 6.64689742203186e-64,
+    "n_protected": 1
+  },
+  "gradient": {
+    "rows": [
+      {
+        "T_lo": 0.0,
+        "T_hi": 0.2,
+        "t_lo": 7.06,
+        "t_hi": 8.83,
+        "pct_gain": 25.0
+      },
+      {
+        "T_lo": 0.2,
+        "T_hi": 0.4,
+        "t_lo": 8.83,
+        "t_hi": 11.77,
+        "pct_gain": 33.3
+      },
+      {
+        "T_lo": 0.4,
+        "T_hi": 0.6,
+        "t_lo": 11.77,
+        "t_hi": 17.66,
+        "pct_gain": 50.0
+      }
+    ],
+    "all_above_15pct": true
+  },
+  "user_profile": {
+    "T": 0.9,
+    "F_normal": 0.0,
+    "F_fatigued": 0.8,
+    "time_to_vstar_normal": null,
+    "time_to_vstar_fatigued": 17.7,
+    "interpretation": "resistant under normal conditions, vulnerable under high fatigue"
+  },
+  "canonical": {
+    "K": 16,
+    "B_ALPHA": 0.867,
+    "B_GAMMA": 2.244,
+    "V_STAR": 5.52,
+    "KAPPA": 0.08,
+    "KAPPA_F": 0.04
+  }
+}

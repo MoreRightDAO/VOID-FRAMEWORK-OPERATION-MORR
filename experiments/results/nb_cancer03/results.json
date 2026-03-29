@@ -1,0 +1,402 @@
+{
+  "experiment": "nb_cancer03",
+  "version": "v2.1 \u2014 refined environmental dose-response + coupled-barrier analysis",
+  "kill_condition": "K-CANCER-2",
+  "date": "2026-03-13",
+  "redesign_history": [
+    "v1: Cross-cancer K_cell \u2014 FIRED (\u03c1=\u22120.54, tissue-heterogeneity confound)",
+    "v2: Within-tissue dose-response \u2014 MARGINAL (R\u00b2=0.88)",
+    "v2.1: Better data + quadratic model + cessation + honest coupled-barrier analysis"
+  ],
+  "canonical_parameters": {
+    "alpha": 0.1,
+    "K_total": 8
+  },
+  "test_A": {
+    "description": "Lung cancer log(RR) vs cigs/day \u2014 linear and quadratic fits",
+    "n_studies": 2,
+    "studies": [
+      {
+        "label": "Freedman 2008 (Lancet Oncol, N=463k, incidence rates)",
+        "n_points": 6,
+        "linear_r2": 0.5455811395429503,
+        "quadratic_r2": 0.753512817493605,
+        "delta_aic": 1.670256271887728,
+        "quadratic_wins": false,
+        "linear_slope": 0.06544130742537023,
+        "quadratic_gamma": -0.003222918895813847,
+        "spearman_rho": 1.0,
+        "monotonic": true,
+        "data": [
+          {
+            "dose": 0.0,
+            "rr": 1.0,
+            "log_rr": 0.0
+          },
+          {
+            "dose": 5.0,
+            "rr": 23.61,
+            "log_rr": 3.1616703510974213
+          },
+          {
+            "dose": 15.0,
+            "rr": 35.66,
+            "log_rr": 3.574029612434994
+          },
+          {
+            "dose": 25.0,
+            "rr": 42.72,
+            "log_rr": 3.7546671946519394
+          },
+          {
+            "dose": 35.0,
+            "rr": 48.67,
+            "log_rr": 3.885062823845363
+          },
+          {
+            "dose": 45.0,
+            "rr": 62.03,
+            "log_rr": 4.127618138985026
+          }
+        ]
+      },
+      {
+        "label": "Doll 2004 (BMJ, British Doctors N=34k, mortality rates)",
+        "n_points": 5,
+        "linear_r2": 0.8979310142847279,
+        "quadratic_r2": 0.9553085746200533,
+        "delta_aic": 2.1293362897556385,
+        "quadratic_wins": false,
+        "linear_slope": 0.0711557230086453,
+        "quadratic_gamma": -0.001769848183147198,
+        "spearman_rho": 0.9999999999999999,
+        "monotonic": true,
+        "data": [
+          {
+            "dose": 0.0,
+            "rr": 1.0,
+            "log_rr": 0.0
+          },
+          {
+            "dose": 5.0,
+            "rr": 3.7142857142857144,
+            "log_rr": 1.3121863889661687
+          },
+          {
+            "dose": 15.0,
+            "rr": 7.5,
+            "log_rr": 2.0149030205422647
+          },
+          {
+            "dose": 30.0,
+            "rr": 14.857142857142858,
+            "log_rr": 2.6984807500860595
+          },
+          {
+            "dose": 40.0,
+            "rr": 25.357142857142858,
+            "log_rr": 3.233060459860157
+          }
+        ]
+      }
+    ],
+    "pooled": {
+      "mean_r2_linear": 0.7217560769138391,
+      "mean_r2_quadratic": 0.8544106960568292,
+      "best_r2": 0.8544106960568292,
+      "mean_slope": 0.06829851521700776,
+      "slope_cv": 0.041834112828942276
+    },
+    "kill_condition_fired": false,
+    "kill_condition_reason": "not fired",
+    "status": "MARGINAL"
+  },
+  "test_B": {
+    "description": "Multi-agent dose-response: alcohol, UV, mesothelioma latency",
+    "agents": [
+      {
+        "label": "Alcohol\u2192HCC (Turati 2014, 19 prospective cohorts, N=4,445 cases)",
+        "linear_r2": 0.9998976825975014,
+        "spearman_rho": 1.0,
+        "monotonic": true,
+        "data": [
+          {
+            "dose": 0.0,
+            "rr": 1.0,
+            "log_rr": 0.0
+          },
+          {
+            "dose": 12.0,
+            "rr": 1.06,
+            "log_rr": 0.058268908123975824
+          },
+          {
+            "dose": 25.0,
+            "rr": 1.13,
+            "log_rr": 0.12221763272424911
+          },
+          {
+            "dose": 50.0,
+            "rr": 1.29,
+            "log_rr": 0.25464221837358075
+          },
+          {
+            "dose": 75.0,
+            "rr": 1.46,
+            "log_rr": 0.37843643572024505
+          },
+          {
+            "dose": 100.0,
+            "rr": 1.66,
+            "log_rr": 0.5068176023684519
+          }
+        ]
+      },
+      {
+        "label": "UV\u2192Melanoma (Armstrong 2001/Gandini 2005, meta-analysis)",
+        "linear_r2": 0.9933963866105974,
+        "spearman_rho": 1.0,
+        "monotonic": true,
+        "data": [
+          {
+            "dose": 0.0,
+            "rr": 1.0,
+            "log_rr": 0.0
+          },
+          {
+            "dose": 1.0,
+            "rr": 1.2,
+            "log_rr": 0.1823215567939546
+          },
+          {
+            "dose": 2.0,
+            "rr": 1.45,
+            "log_rr": 0.371563556432483
+          },
+          {
+            "dose": 3.0,
+            "rr": 1.71,
+            "log_rr": 0.5364933705145685
+          },
+          {
+            "dose": 4.0,
+            "rr": 2.01,
+            "log_rr": 0.6981347220709843
+          },
+          {
+            "dose": 5.0,
+            "rr": 2.24,
+            "log_rr": 0.8064758658669485
+          }
+        ]
+      },
+      {
+        "label": "Mesothelioma latency vs age-at-exposure (Frost 2013, N=614)",
+        "n_points": 5,
+        "linear": {
+          "slope": -0.03306586380234218,
+          "r2": 0.9189909818323719,
+          "p": 0.010034346310791312
+        },
+        "spearman_rho": -0.9999999999999999,
+        "monotonic": true,
+        "data": [
+          {
+            "age_at_exposure": 15.0,
+            "latency_years": 40.6,
+            "log_latency": 3.703768066607687
+          },
+          {
+            "age_at_exposure": 25.0,
+            "latency_years": 34.5,
+            "log_latency": 3.5409593240373143
+          },
+          {
+            "age_at_exposure": 35.0,
+            "latency_years": 30.2,
+            "log_latency": 3.407841924380824
+          },
+          {
+            "age_at_exposure": 45.0,
+            "latency_years": 18.2,
+            "log_latency": 2.9014215940827497
+          },
+          {
+            "age_at_exposure": 55.0,
+            "latency_years": 10.7,
+            "log_latency": 2.3702437414678603
+          }
+        ]
+      }
+    ],
+    "kill_condition_fired": false,
+    "status": "PASS"
+  },
+  "test_C": {
+    "description": "Smoking cessation \u2014 barrier re-establishment and hysteresis",
+    "label": "Cessation decay (Tindle 2018, Framingham)",
+    "n_points": 5,
+    "linear": {
+      "slope": -0.043839482891183265,
+      "r2": 0.9767033469516994,
+      "p": 0.0015198197397914138
+    },
+    "spearman_rho": -0.9999999999999999,
+    "monotone_decreasing": true,
+    "residual_hr_25yr": 3.85,
+    "extrapolated_full_recovery_years": 60.53889292277012,
+    "hysteresis_confirmed": true,
+    "data": [
+      {
+        "years_quit": 2.5,
+        "hr": 12.12,
+        "log_hr": 2.4948569806411682,
+        "ci_low": 6.94,
+        "ci_high": 21.17
+      },
+      {
+        "years_quit": 7.0,
+        "hr": 11.77,
+        "log_hr": 2.4655539212721855,
+        "ci_low": 6.78,
+        "ci_high": 20.45
+      },
+      {
+        "years_quit": 12.0,
+        "hr": 7.81,
+        "log_hr": 2.0554049638515948,
+        "ci_low": 3.98,
+        "ci_high": 15.33
+      },
+      {
+        "years_quit": 20.0,
+        "hr": 5.88,
+        "log_hr": 1.7715567619105355,
+        "ci_low": 3.19,
+        "ci_high": 10.83
+      },
+      {
+        "years_quit": 30.0,
+        "hr": 3.85,
+        "log_hr": 1.3480731482996928,
+        "ci_low": 1.8,
+        "ci_high": 8.26
+      }
+    ],
+    "kill_condition_fired": false,
+    "status": "PASS"
+  },
+  "test_D": {
+    "description": "Hereditary vs sporadic within-tissue pairs",
+    "n_pairs": 8,
+    "mean_log_tau_ratio": 0.9444393126626311,
+    "std_log_tau_ratio": 0.625247341060836,
+    "cv_log_tau_ratio": 0.6620301936585992,
+    "implied_rate_multiplier": 2.5713712390380112,
+    "pair_data": [
+      {
+        "cancer_type": "Retinoblastoma",
+        "gene": "RB1",
+        "age_hereditary": 0.3,
+        "age_sporadic": 1.5,
+        "tau_ratio": 5.0,
+        "log_tau_ratio": 1.6094379124341003,
+        "source": "Knudson 1971 PNAS \u2014 the original two-hit paper"
+      },
+      {
+        "cancer_type": "Breast (BRCA1)",
+        "gene": "BRCA1",
+        "age_hereditary": 40.0,
+        "age_sporadic": 62.0,
+        "tau_ratio": 1.55,
+        "log_tau_ratio": 0.4382549309311553,
+        "source": "Claus 1991 NEJM; penetrance-weighted median onset"
+      },
+      {
+        "cancer_type": "Colorectal (FAP)",
+        "gene": "APC",
+        "age_hereditary": 39.0,
+        "age_sporadic": 68.0,
+        "tau_ratio": 1.7435897435897436,
+        "log_tau_ratio": 0.5559460590464603,
+        "source": "Lynch 1991; FAP cancer onset ~39 vs sporadic SEER ~68"
+      },
+      {
+        "cancer_type": "Colorectal (Lynch)",
+        "gene": "MLH1",
+        "age_hereditary": 45.0,
+        "age_sporadic": 68.0,
+        "tau_ratio": 1.511111111111111,
+        "log_tau_ratio": 0.4128452154057869,
+        "source": "Lynch syndrome mean onset ~45 vs sporadic ~68"
+      },
+      {
+        "cancer_type": "Melanoma (CDKN2A)",
+        "gene": "CDKN2A",
+        "age_hereditary": 35.0,
+        "age_sporadic": 65.0,
+        "tau_ratio": 1.8571428571428572,
+        "log_tau_ratio": 0.6190392084062235,
+        "source": "Bishop 2002; p16 germline carriers ~35 vs sporadic ~65"
+      },
+      {
+        "cancer_type": "Renal (VHL)",
+        "gene": "VHL",
+        "age_hereditary": 40.0,
+        "age_sporadic": 64.0,
+        "tau_ratio": 1.6,
+        "log_tau_ratio": 0.47000362924573563,
+        "source": "Lonser 2003 NEJM; VHL renal onset ~40 vs sporadic ~64"
+      },
+      {
+        "cancer_type": "Wilms (WT1)",
+        "gene": "WT1",
+        "age_hereditary": 1.0,
+        "age_sporadic": 3.5,
+        "tau_ratio": 3.5,
+        "log_tau_ratio": 1.252762968495368,
+        "source": "Coppes 1994; bilateral/early = germline"
+      },
+      {
+        "cancer_type": "Neuroblastoma (ALK)",
+        "gene": "ALK",
+        "age_hereditary": 0.5,
+        "age_sporadic": 4.5,
+        "tau_ratio": 9.0,
+        "log_tau_ratio": 2.1972245773362196,
+        "source": "Mosse 2008 NEJM; germline ALK earlier onset"
+      }
+    ],
+    "kill_condition_fired": false,
+    "status": "MARGINAL"
+  },
+  "test_E": {
+    "description": "Linear vs quadratic model comparison (coupled-barrier diagnostic)",
+    "studies": [
+      {
+        "label": "Freedman 2008 (Lancet Oncol, N=463k, incidence rates)",
+        "linear_r2": 0.5455811395429503,
+        "quadratic_r2": 0.753512817493605,
+        "delta_aic": 1.670256271887728,
+        "quadratic_wins": false,
+        "gamma_coefficient": -0.003222918895813847,
+        "gamma_interpretation": "saturation"
+      },
+      {
+        "label": "Doll 2004 (BMJ, British Doctors N=34k, mortality rates)",
+        "linear_r2": 0.8979310142847279,
+        "quadratic_r2": 0.9553085746200533,
+        "delta_aic": 2.1293362897556385,
+        "quadratic_wins": false,
+        "gamma_coefficient": -0.001769848183147198,
+        "gamma_interpretation": "saturation"
+      }
+    ],
+    "note": "Diagnostic only \u2014 not a kill condition. Tests whether void-network coupling is detectable."
+  },
+  "overall": {
+    "kill_condition_fired": false,
+    "status": "MARGINAL",
+    "note": "Test A (lung dose-response) is primary \u2014 only it can fire the overall kill condition. Tests B-D are supporting/secondary. Test E is diagnostic (coupled-barrier detection). The body as void-network means dose-response reflects coupled escape processes, not a single Kramers barrier. The quadratic model tests this explicitly."
+  }
+}

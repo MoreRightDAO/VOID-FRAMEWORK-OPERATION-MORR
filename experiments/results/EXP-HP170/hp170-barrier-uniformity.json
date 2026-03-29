@@ -1,0 +1,172 @@
+{
+  "experiment": "HP170",
+  "title": "Barrier Uniformity at Extreme Re",
+  "date": "2026-03-26T19:44:08.561192",
+  "motivation": "sigma(t) uniformity \u2014 does barrier prevent sigma -> 0?",
+  "phases": {
+    "A": {
+      "phase": "A",
+      "subcubes": [
+        {
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "enstrophy": 52034.42402226097,
+          "sigma": 0.0006122518443063324,
+          "sigma_over_nu": 17.492909837323783,
+          "r_squared": 0.6587255635145409,
+          "gevrey_class_s": 1.0,
+          "status": "OK"
+        },
+        {
+          "offset": [
+            512,
+            0,
+            0
+          ],
+          "enstrophy": 22910.98816360992,
+          "sigma": 0.0007932558919834905,
+          "sigma_over_nu": 22.66445405667116,
+          "r_squared": 0.6782293945153817,
+          "gevrey_class_s": 1.0,
+          "status": "OK"
+        },
+        {
+          "offset": [
+            0,
+            512,
+            0
+          ],
+          "enstrophy": 115962.22248345682,
+          "sigma": 0.0006661934794075342,
+          "sigma_over_nu": 19.034099411643837,
+          "r_squared": 0.6685460663763207,
+          "gevrey_class_s": 1.0,
+          "status": "OK"
+        },
+        {
+          "offset": [
+            0,
+            0,
+            512
+          ],
+          "enstrophy": 26817.128064134995,
+          "sigma": 0.0005306826191955571,
+          "sigma_over_nu": 15.162360548444491,
+          "r_squared": 0.5246085337659379,
+          "gevrey_class_s": 1.0,
+          "status": "OK"
+        },
+        {
+          "offset": [
+            512,
+            512,
+            0
+          ],
+          "enstrophy": 26224.01000670563,
+          "sigma": 0.000772342969189832,
+          "sigma_over_nu": 22.066941976852345,
+          "r_squared": 0.7070145157753194,
+          "gevrey_class_s": 1.0,
+          "status": "OK"
+        },
+        {
+          "offset": [
+            512,
+            0,
+            512
+          ],
+          "enstrophy": 66832.38156822081,
+          "sigma": 0.0006370981459364323,
+          "sigma_over_nu": 18.202804169612353,
+          "r_squared": 0.6230043528297795,
+          "gevrey_class_s": 1.0,
+          "status": "OK"
+        }
+      ],
+      "analysis": {
+        "n_valid": 6,
+        "n_total": 6,
+        "sigma_high_enstrophy": 18.243271139526655,
+        "sigma_low_enstrophy": 19.964585527322665,
+        "ratio_high_low": 0.9137816116723138,
+        "cv": 0.13583741815664957,
+        "min_sigma_over_nu": 15.162360548444491,
+        "mean_sigma_over_nu": 19.103928333424662,
+        "enstrophy_sigma_correlation": -0.19300837293608863,
+        "enstrophy_sigma_p_value": 0.7140824369414077,
+        "kc_1": "True",
+        "kc_2": "True",
+        "kc_3": "True",
+        "kc_5": "True"
+      }
+    },
+    "B": {
+      "phase": "B",
+      "snapshots": [
+        {
+          "time_step": 1,
+          "time_sec": 0.0,
+          "enstrophy": 1704.1039657029937,
+          "sigma": 0.0036432828343648128,
+          "sigma_over_nu": 19.693420726296285,
+          "r_squared": 0.8654354064210715,
+          "status": "OK"
+        },
+        {
+          "time_step": 25,
+          "time_sec": 0.0048000000000000004,
+          "enstrophy": 1690.1563815659606,
+          "sigma": 0.0036451948971408673,
+          "sigma_over_nu": 19.703756200761443,
+          "r_squared": 0.8659616728100834,
+          "status": "OK"
+        },
+        {
+          "time_step": 50,
+          "time_sec": 0.0098,
+          "enstrophy": 1675.241451784689,
+          "sigma": 0.0036450780329930926,
+          "sigma_over_nu": 19.703124502665364,
+          "r_squared": 0.8668388397725861,
+          "status": "OK"
+        },
+        {
+          "time_step": 75,
+          "time_sec": 0.0148,
+          "enstrophy": 1665.6429442752144,
+          "sigma": 0.003626242759389343,
+          "sigma_over_nu": 19.601312212915367,
+          "r_squared": 0.8655263646883891,
+          "status": "OK"
+        },
+        {
+          "time_step": 100,
+          "time_sec": 0.0198,
+          "enstrophy": 1659.4407064470138,
+          "sigma": 0.003600717707214533,
+          "sigma_over_nu": 19.463338957916395,
+          "r_squared": 0.8631353559727114,
+          "status": "OK"
+        }
+      ],
+      "analysis": {
+        "n_valid": 5,
+        "n_total": 5,
+        "mean_sigma_over_nu": 19.63299052011097,
+        "min_sigma_over_nu": 19.463338957916395,
+        "cv": 0.004743412330945294,
+        "kc_4": "True"
+      }
+    }
+  },
+  "kill_conditions": {
+    "K-HP-170-1": "True",
+    "K-HP-170-2": "True",
+    "K-HP-170-3": "True",
+    "K-HP-170-5": "True",
+    "K-HP-170-4": "True"
+  }
+}

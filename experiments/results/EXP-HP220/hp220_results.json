@@ -1,0 +1,131 @@
+{
+  "experiment": "HP220",
+  "title": "Vertex Algebra Character Identity Test",
+  "timestamp": "2026-03-29T16:00:35.039649",
+  "kill_conditions": {
+    "K-VOA-1": {
+      "test": "|j_spec - j_exact|/|j| < 1e-6 at \u03c4=i",
+      "value": 0.0,
+      "result": "PASS"
+    },
+    "K-VOA-2": {
+      "test": "c\u2081 = 196884 \u00b1 1",
+      "extracted": -1601931993.4593296,
+      "expected": 196884,
+      "error": 1602128877.4593296,
+      "result": "FAIL"
+    },
+    "K-VOA-3": {
+      "test": "c\u2082 = 21493760 \u00b1 100",
+      "extracted": 116195338531.02454,
+      "expected": 21493760,
+      "error": 116173844771.02454,
+      "result": "FAIL"
+    },
+    "K-VOA-4": {
+      "test": "McKay: c\u2081 = 1 + 196883 = 196884",
+      "extracted_c1": -1601931993.4593296,
+      "mckay_sum": 196884,
+      "error": 1602128877.4593296,
+      "result": "FAIL"
+    },
+    "K-VOA-5": {
+      "test": "j(i)=1728 at K=4,16,64 (K-independence)",
+      "errors": {
+        "4": 0.0,
+        "16": 0.0,
+        "64": 0.0
+      },
+      "result": "PASS"
+    }
+  },
+  "sub_experiments": {
+    "V1": {
+      "max_ratio_error": 0.0005132173821430497,
+      "n_eigenvalues": 200,
+      "status": "FAIL"
+    },
+    "V2": {
+      "0.5j": {
+        "j_spectral": 287495.96664053824,
+        "j_exact": 287496.0,
+        "chi_spectral": 286751.96664053824,
+        "chi_exact": 286752.0,
+        "rel_error_j": 1.1603452484565396e-07,
+        "rel_error_chi": 1.1633558529679351e-07
+      },
+      "1j": {
+        "j_spectral": 1728.0,
+        "j_exact": 1728.0,
+        "chi_spectral": 984.0,
+        "chi_exact": 984.0,
+        "rel_error_j": 0.0,
+        "rel_error_chi": 0.0
+      },
+      "1.5j": {
+        "j_spectral": 13151.676683052463,
+        "j_exact": 13151.67668304886,
+        "chi_spectral": 12407.676683052463,
+        "chi_exact": 12407.67668304886,
+        "rel_error_j": 2.7398924831149263e-13,
+        "rel_error_chi": 2.9041843211044216e-13
+      },
+      "2j": {
+        "j_spectral": 287495.9999999973,
+        "j_exact": 287495.9999999576,
+        "chi_spectral": 286751.9999999973,
+        "chi_exact": 286751.9999999576,
+        "rel_error_j": 1.380806158798405e-13,
+        "rel_error_chi": 1.3843887660065365e-13
+      }
+    },
+    "V3": {
+      "coefficients": {
+        "-1": 1.0000001854787355,
+        "1": -1601931993.4593296,
+        "2": 116195338531.02454,
+        "3": -2179608521145.8853,
+        "4": 11498335742998.023,
+        "5": 3934973945771.6157,
+        "6": 894937651309.9011,
+        "7": 172067493263.1762
+      }
+    },
+    "V4": {
+      "4": {
+        "j_at_i": 1728.0,
+        "error": 0.0,
+        "central_charge": 24.0
+      },
+      "8": {
+        "j_at_i": 1728.0,
+        "error": 0.0,
+        "central_charge": 96.0
+      },
+      "16": {
+        "j_at_i": 1728.0,
+        "error": 0.0,
+        "central_charge": 384.0
+      },
+      "32": {
+        "j_at_i": 1728.0,
+        "error": 0.0,
+        "central_charge": 1536.0
+      },
+      "64": {
+        "j_at_i": 1728.0,
+        "error": 0.0,
+        "central_charge": 6144.0
+      },
+      "k4_monster_cft_match": true
+    },
+    "V5": {
+      "theta3_8_over_E4_at_i": 1.3333333333333335,
+      "expected_ratio": 1.3333333333333333,
+      "error": 2.220446049250313e-16,
+      "structural_identity": false,
+      "arithmetic_identity": true,
+      "conclusion": "The spectral partition function \u03b8\u2083 is NOT the Monster VOA character (j-744). They have different modular weights (1/2 vs 0). However, they produce the same j-invariant through different but exact arithmetic paths. The Monster is accessible at 3 degrees of separation (\u03b8\u2083\u2192j\u2192Monster) rather than the previous 4 (n\u00b2\u2192\u03b8\u2083\u2192j\u2192Monster) because \u03b8\u2083 IS the partition function, not just a derived object."
+    }
+  }
+}

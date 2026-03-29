@@ -1,0 +1,144 @@
+{
+  "experiment": "HP141",
+  "title": "Spectral Lattice Cryptographic Hardness",
+  "date": "2026-03-19T20:49:11.320604",
+  "c1_scaling": {
+    "scaling_results": [
+      {
+        "eff_dim": 3,
+        "n_eigenvalues": 3,
+        "grid_size": 5,
+        "time_sec": 0.0008075237274169922,
+        "evaluations": 125,
+        "best_error": 0.00170591773072971
+      },
+      {
+        "eff_dim": 5,
+        "n_eigenvalues": 5,
+        "grid_size": 7,
+        "time_sec": 0.0019502639770507812,
+        "evaluations": 343,
+        "best_error": 0.04043635810958775
+      },
+      {
+        "eff_dim": 8,
+        "n_eigenvalues": 8,
+        "grid_size": 10,
+        "time_sec": 0.007045269012451172,
+        "evaluations": 1000,
+        "best_error": 0.06178578217816045
+      },
+      {
+        "eff_dim": 10,
+        "n_eigenvalues": 10,
+        "grid_size": 12,
+        "time_sec": 0.01392054557800293,
+        "evaluations": 1728,
+        "best_error": 0.02477708462999148
+      },
+      {
+        "eff_dim": 12,
+        "n_eigenvalues": 12,
+        "grid_size": 15,
+        "time_sec": 0.029378414154052734,
+        "evaluations": 3375,
+        "best_error": 0.649286495917743
+      },
+      {
+        "eff_dim": 15,
+        "n_eigenvalues": 15,
+        "grid_size": 18,
+        "time_sec": 0.05648040771484375,
+        "evaluations": 5832,
+        "best_error": 2.8512324932923825
+      }
+    ],
+    "log_fit": {
+      "slope": 0.3196890535405403,
+      "intercept": 4.1467109086934775,
+      "r_squared": 0.9774847524773556,
+      "p_value": 0.00019154620883621767
+    },
+    "KC_730_PASS": 1,
+    "KC_730_detail": "R\u00b2 = 0.9775 for log(evals) vs dim (slope=0.320)"
+  },
+  "c2_distance": {
+    "dimension": 6,
+    "d_min": 2.449489742783178,
+    "d_min_squared": 6.0,
+    "sqrt_n": 2.449489742783178,
+    "n_quarter": 1.5650845800732873,
+    "gram_determinant": -2.6891909294516853e-20,
+    "norms_first_8": [
+      6.0,
+      63.704378726489374,
+      303.7170093752809,
+      943.5947288508473,
+      2286.9556409190614,
+      4724.18442720997,
+      8732.407361032727,
+      14875.45116964075
+    ],
+    "packing_bound": 0.5927048077634557,
+    "KC_731_PASS": 0,
+    "KC_731_FAIL": 0,
+    "KC_731_detail": "d_min=2.449, sqrt(n)=2.449, n^(1/4)=1.565"
+  },
+  "c3_lll": {
+    "gap_ratio": 10.617396454414896,
+    "gaussian_heuristic": 0.00032442082398902156,
+    "hermite_defect": 7550.346838605123,
+    "lll_quality_bound": 5.656854249492381,
+    "dimension_scaling": [
+      {
+        "dimension": 4,
+        "shortest_vector": 1.0,
+        "gaussian_heuristic": 1.2322994099936997,
+        "quality_ratio": 0.8114910969608535,
+        "lll_bound": 2.8284271247461903,
+        "lll_would_fail": 1
+      },
+      {
+        "dimension": 8,
+        "shortest_vector": 1.0,
+        "gaussian_heuristic": 6.200314874723054,
+        "quality_ratio": 0.16128213166668676,
+        "lll_bound": 11.313708498984761,
+        "lll_would_fail": 1
+      },
+      {
+        "dimension": 12,
+        "shortest_vector": 1.0,
+        "gaussian_heuristic": 16.907761034217472,
+        "quality_ratio": 0.05914443656828523,
+        "lll_bound": 45.254833995939045,
+        "lll_would_fail": 1
+      },
+      {
+        "dimension": 16,
+        "shortest_vector": 1.0,
+        "gaussian_heuristic": 34.82375716013875,
+        "quality_ratio": 0.02871602841133572,
+        "lll_bound": 181.01933598375618,
+        "lll_would_fail": 1
+      },
+      {
+        "dimension": 20,
+        "shortest_vector": 1.0,
+        "gaussian_heuristic": 61.183042449098075,
+        "quality_ratio": 0.01634439805493428,
+        "lll_bound": 724.0773439350247,
+        "lll_would_fail": 1
+      }
+    ],
+    "KC_732_PASS": false,
+    "KC_732_detail": "Gap ratio=10.617, Hermite defect=7550.347"
+  },
+  "kill_conditions": {
+    "K-HP-730": true,
+    "K-HP-731": false,
+    "K-HP-732": false
+  },
+  "pass_count": 1,
+  "overall_pass": false
+}

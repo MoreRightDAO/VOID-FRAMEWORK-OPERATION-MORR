@@ -1,0 +1,69 @@
+{
+  "experiment": "EXP-HP13",
+  "title": "The Selection Principle \u2014 Which V(\u03b8) Is The Right One?",
+  "date": "2026-03-13",
+  "tests": [
+    {
+      "id": "S1",
+      "name": "Minimum norm",
+      "dist": 2.8e-09,
+      "norm_rms": 4.746,
+      "norm_uncon": 4.746
+    },
+    {
+      "id": "S2",
+      "name": "Euler product decomposition",
+      "dist": 0.01100459,
+      "n_primes": 10,
+      "n_params": 120
+    },
+    {
+      "id": "S2b",
+      "name": "Euler polynomial\u00d7trig",
+      "dist": 0.05740978,
+      "n_params": 80
+    },
+    {
+      "id": "S3",
+      "name": "Symmetric V(\u03b8)=V(1-\u03b8)",
+      "dist": 2.5e-09,
+      "n_params": 100
+    },
+    {
+      "id": "S3b",
+      "name": "Anti-symmetric V(\u03b8)=-V(1-\u03b8)",
+      "dist": 0.0364240207
+    },
+    {
+      "id": "S4",
+      "name": "Sym/Asym decomposition of min-norm",
+      "sym_frac": 1.0,
+      "asym_frac": 0.0,
+      "sym_only_dist": 0.0,
+      "asym_only_dist": 8.265329
+    },
+    {
+      "id": "S5",
+      "name": "Euler + min norm",
+      "dist": 0.01093342
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-48",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-49",
+      "result": "FAIL (0.011005)"
+    },
+    {
+      "id": "K-HP-50",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-51",
+      "result": "FAIL (r=-0.3405)"
+    }
+  ]
+}

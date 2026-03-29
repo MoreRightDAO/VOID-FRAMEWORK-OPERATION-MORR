@@ -1,0 +1,52 @@
+{
+  "experiment": "nb_kramers02_simulation",
+  "description": "K-JB-1 simulation validation (no API)",
+  "mode": "simulation",
+  "rounds_per_level": 50,
+  "total_rounds": 150,
+  "timestamp": "2026-03-10T22:53:16.996571+00:00",
+  "level_summary": {
+    "0": {
+      "n": 50,
+      "successes": 36,
+      "success_rate": 0.72,
+      "tau_empirical": 1.39,
+      "mean_pe": 2.9695,
+      "abs_pe": 2.9695,
+      "K_times_abs_pe": 47.5126,
+      "log_tau": 0.3285
+    },
+    "1": {
+      "n": 50,
+      "successes": 15,
+      "success_rate": 0.3,
+      "tau_empirical": 3.33,
+      "mean_pe": -30.7114,
+      "abs_pe": 30.7114,
+      "K_times_abs_pe": 491.383,
+      "log_tau": 1.204
+    },
+    "2": {
+      "n": 50,
+      "successes": 1,
+      "success_rate": 0.02,
+      "tau_empirical": 50.0,
+      "mean_pe": -68.9265,
+      "abs_pe": 68.9265,
+      "K_times_abs_pe": 1102.8234,
+      "log_tau": 3.912
+    }
+  },
+  "regression": {
+    "beta_1_raw": 0.055337,
+    "beta_1_per_pe": 0.055337,
+    "beta_0": -0.07782,
+    "R_squared": 0.962198,
+    "p_value": 0.12457045741611825,
+    "std_err": 0.010968,
+    "n_points": 3,
+    "x_variable": "|Pe_0|",
+    "note": "log(\u03c4) = \u03b2\u2080 + \u03b2\u2081 \u00b7 |Pe\u2080|. Kramers predicts \u03b2\u2081 > 0 and R\u00b2 high.",
+    "K_JB_1_status": "PASS \u2014 log-linear confirmed"
+  }
+}

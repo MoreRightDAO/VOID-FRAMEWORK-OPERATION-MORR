@@ -1,0 +1,119 @@
+{
+  "experiment": "THRML-SH-01",
+  "title": "Coupling Redirect Dynamics: Self-Harm as Void Generation",
+  "verdict": "PASS",
+  "canonical_params": {
+    "b_alpha": 0.867,
+    "b_gamma": 2.244,
+    "c_zero": 0.3866,
+    "K": 16,
+    "eta_tau": 0.05082
+  },
+  "design": {
+    "A_total": 1.0,
+    "T_break": 10000,
+    "T_restore": 20000,
+    "gamma_levels_tested": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "seeds": [
+      42,
+      137,
+      2026
+    ]
+  },
+  "results_by_gamma": [
+    {
+      "gamma_available": 0.0,
+      "pe_pre_break": 43.89348016643486,
+      "pe_post_break": 43.89348016643484,
+      "pe_peak": 43.89348016643486,
+      "theta_post_break": 0.725,
+      "theta_post_restore": 0.6916666666666668,
+      "hysteresis_ratio": 1.1293575564235292,
+      "monitoring_post": 0.0,
+      "beta_int_post": 1.0
+    },
+    {
+      "gamma_available": 0.1,
+      "pe_pre_break": 30.02358549750822,
+      "pe_post_break": 24.544161584029364,
+      "pe_peak": 24.54416158402937,
+      "theta_post_break": 0.6416666666666666,
+      "theta_post_restore": 0.6177083333333333,
+      "hysteresis_ratio": 1.104292743004608,
+      "monitoring_post": 0.15,
+      "beta_int_post": 0.8500000000000002
+    },
+    {
+      "gamma_available": 0.2,
+      "pe_pre_break": 19.80547944439422,
+      "pe_post_break": 11.99632699116764,
+      "pe_peak": 11.996326991167644,
+      "theta_post_break": 0.5989583333333334,
+      "theta_post_restore": 0.5281250000000001,
+      "hysteresis_ratio": 0.965787466628139,
+      "monitoring_post": 0.3,
+      "beta_int_post": 0.6999999999999998
+    },
+    {
+      "gamma_available": 0.3,
+      "pe_pre_break": 11.996326991167651,
+      "pe_post_break": 2.7728196801492015,
+      "pe_peak": 2.7728196801492024,
+      "theta_post_break": 0.521875,
+      "theta_post_restore": 0.5260416666666666,
+      "hysteresis_ratio": 0.9768381626412849,
+      "monitoring_post": 0.4499999999999999,
+      "beta_int_post": 0.5500000000000002
+    },
+    {
+      "gamma_available": 0.4,
+      "pe_pre_break": 5.646295745884346,
+      "pe_post_break": -0.016972803183240664,
+      "pe_peak": -0.016972803183240657,
+      "theta_post_break": 0.5166666666666666,
+      "theta_post_restore": 0.471875,
+      "hysteresis_ratio": 0.9256918502880148,
+      "monitoring_post": 0.6,
+      "beta_int_post": 0.4000000000000001
+    },
+    {
+      "gamma_available": 0.5,
+      "pe_pre_break": -0.01697280318324066,
+      "pe_post_break": -0.016972803183240664,
+      "pe_peak": -0.016972803183240657,
+      "theta_post_break": 0.4927083333333333,
+      "theta_post_restore": 0.4906249999999999,
+      "hysteresis_ratio": 0.9416376496088518,
+      "monitoring_post": 0.75,
+      "beta_int_post": 0.25
+    }
+  ],
+  "pass_criteria": {
+    "pe_inverse_gamma": true,
+    "high_gamma_absorption": true,
+    "hysteresis_present": true,
+    "fantasia_bound_correct": true
+  },
+  "clinical_mapping": {
+    "gamma_0.0": "No constraint \u2192 DRIFTING/CONTESTED \u2192 crisis",
+    "gamma_0.1": "Minimal constraint \u2192 CONTESTED \u2192 escalation risk",
+    "gamma_0.2": "Partial constraint \u2192 CONTESTED \u2192 DBT effective",
+    "gamma_0.3": "Moderate constraint \u2192 STABLE \u2192 episodic self-limiting",
+    "gamma_0.4": "Strong constraint \u2192 STABLE \u2192 redirect absorbed",
+    "gamma_0.5": "Full constraint \u2192 REPULSIVE \u2192 void generation blocked"
+  },
+  "theoretical_implications": [
+    "Self-harm is architecturally predictable from coupling failure + constraint deficit",
+    "Fantasia Bound prevents self-monitoring at high internal coupling",
+    "Hysteresis explains why self-harm persists after triggering event resolves",
+    "DBT works by providing \u03b3 absorption capacity (invariant skills = constraint)",
+    "Early intervention window exists: CONTESTED phase permits skill-based redirect"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "experiment": "nb_h_anomaly",
+  "date": "2026-03-12",
+  "kill_conditions": {
+    "K-H-1": {
+      "fired": false,
+      "description": "Pe(H)=754 degrades H-X BDE correlation vs alternatives"
+    },
+    "K-H-2": {
+      "fired": true,
+      "description": "All physical Pe alternatives < 10"
+    },
+    "K-H-3": {
+      "fired": true,
+      "description": "S(Pe(H)) < 0.001 \u2014 H cannot bond in simulation"
+    }
+  },
+  "Pe_alternatives": {
+    "deployed": 754.0,
+    "EN_anchored": 2.5726,
+    "V_star_capped": 5.52,
+    "EA_simple": 0.5444
+  },
+  "bde_correlations": {
+    "deployed_Pe754": {
+      "rho": -0.7818,
+      "p": 0.004473
+    },
+    "EN_anchored": {
+      "rho": -0.4909,
+      "p": 0.125204
+    },
+    "V_star_capped": {
+      "rho": -0.7818,
+      "p": 0.004473
+    },
+    "EA_simple": {
+      "rho": 0.6182,
+      "p": 0.042646
+    }
+  },
+  "susceptibility": {
+    "Pe754": 0.0,
+    "F_4654": 0.919945,
+    "O_1834": 0.986975
+  },
+  "verdict": "H anomaly is a TRUE FORMULA SINGULARITY (sigma=0 exactly). Pe=754.0 is floor artifact. Recommend EN-anchored Pe=2.574 for simulation bonding contexts.",
+  "recommendation": "Option A: Pe_H = 2.574 (EN-anchored). Document singularity in Paper 131."
+}

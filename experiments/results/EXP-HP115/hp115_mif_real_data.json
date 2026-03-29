@@ -1,0 +1,155 @@
+{
+  "experiment": "HP115",
+  "title": "MIF Channel Predictions on Real Atmospheric Hg Data",
+  "data_source": "Ga\u010dnik et al. 2025, TrAC 189",
+  "data_file": "/tmp/hg_isotope_data.xlsx",
+  "n_records": 2506,
+  "n_valid_R": 1783,
+  "timestamp": "2026-03-19T04:47:06.669575",
+  "sub_experiments": {
+    "C1": {
+      "sub_experiment": "C1",
+      "description": "KDE multimodality of R distribution",
+      "n_valid": 1783,
+      "n_maxima_total": 12,
+      "n_maxima_above_1": 12,
+      "maxima": [
+        {
+          "R": 1.0115115115115114,
+          "density": 1.3302585058893126
+        },
+        {
+          "R": 1.6876876876876876,
+          "density": 0.2599969009089432
+        },
+        {
+          "R": 1.9924924924924925,
+          "density": 0.1320694398750217
+        },
+        {
+          "R": 2.1186186186186187,
+          "density": 0.06296340609048558
+        },
+        {
+          "R": 2.29029029029029,
+          "density": 0.03698203182631033
+        },
+        {
+          "R": 2.391891891891892,
+          "density": 0.04466047692258348
+        },
+        {
+          "R": 2.7387387387387387,
+          "density": 0.017080186004110764
+        },
+        {
+          "R": 2.843843843843844,
+          "density": 0.02024414212100656
+        },
+        {
+          "R": 3.0015015015015014,
+          "density": 0.027399782982156944
+        },
+        {
+          "R": 3.16966966966967,
+          "density": 0.01164785967884032
+        },
+        {
+          "R": 3.4324324324324325,
+          "density": 0.01607681594929291
+        },
+        {
+          "R": 3.5935935935935936,
+          "density": 0.014602072977830484
+        }
+      ],
+      "KC": "K-MIF-115-1",
+      "KC_result": "PASS"
+    },
+    "C2": {
+      "sub_experiment": "C2",
+      "description": "\u2022I channel population (R \u2208 [1.95, 2.30])",
+      "n_candidates": 43,
+      "by_type": {
+        "Urban/industrial": 21,
+        "Remote": 10,
+        "Polar": 5,
+        "Marine boundary": 5,
+        "Emission anthropogenic": 2
+      },
+      "by_species": {
+        "PBM": 26,
+        "GEM": 2,
+        "TGM": 14,
+        "GOM": 1
+      },
+      "KC": "K-MIF-115-2",
+      "KC_result": "PASS"
+    },
+    "C3": {
+      "sub_experiment": "C3",
+      "description": "Marine boundary enrichment for \u2022I channel",
+      "n_candidates": 43,
+      "n_marine_I": 5,
+      "frac_marine_I": 0.11627906976744186,
+      "frac_marine_bg": 0.09310151430173864,
+      "enrichment": 1.2489492855141495,
+      "n_marine_adj_I": 20,
+      "frac_marine_adj_I": 0.46511627906976744,
+      "adj_enrichment": 1.1582434714823957,
+      "KC": "K-MIF-115-3",
+      "KC_result": "FAIL"
+    },
+    "C4": {
+      "sub_experiment": "C4",
+      "description": "Mean R of \u2022I cluster vs HP108B prediction",
+      "n_candidates": 43,
+      "R_mean": 2.0849359942383203,
+      "R_median": 2.076923076923077,
+      "R_std": 0.09644083273464235,
+      "deviation_from_prediction": 0.04506400576167957,
+      "prediction": 2.13,
+      "KC": "K-MIF-115-4",
+      "KC_result": "PASS"
+    },
+    "C5": {
+      "sub_experiment": "C5",
+      "description": "Signal quality \u2014 \u2022I survival under stricter D201 threshold",
+      "survival_by_threshold": {
+        "0.05": 43,
+        "0.08": 27,
+        "0.10": 16,
+        "0.15": 5,
+        "0.20": 1
+      },
+      "n_at_010": 16,
+      "KC": "K-MIF-115-5",
+      "KC_result": "PASS"
+    },
+    "C6": {
+      "sub_experiment": "C6",
+      "description": "Hartigan dip test for unimodality",
+      "dip_statistic": 0.6601108952429038,
+      "p_value": 0.0,
+      "dip_positive_mif": 0.6313978365022448,
+      "p_positive_mif": 0.0,
+      "n_positive_mif": 385,
+      "KC": "K-MIF-115-6",
+      "KC_result": "PASS"
+    }
+  },
+  "kill_conditions": {
+    "K-MIF-115-1": "PASS",
+    "K-MIF-115-2": "PASS",
+    "K-MIF-115-3": "FAIL",
+    "K-MIF-115-4": "PASS",
+    "K-MIF-115-5": "PASS",
+    "K-MIF-115-6": "PASS"
+  },
+  "summary": {
+    "n_pass": 5,
+    "n_fail": 1,
+    "total": 6,
+    "overall": "5/6 PASS"
+  }
+}

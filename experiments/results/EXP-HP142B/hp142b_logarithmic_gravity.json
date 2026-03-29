@@ -1,0 +1,78 @@
+{
+  "experiment": "HP142B",
+  "title": "Logarithmic vs Power-Law Gravity Running from RG",
+  "date": "2026-03-19T23:31:21.722964",
+  "analytics": {
+    "model_A_slope": 0.41666666666666663,
+    "model_C_eta_for_target": -0.8559999999999999,
+    "model_C_eta_for_025": -1.0,
+    "model_C_slope_with_yK": 0.3733333333333333,
+    "y_K": 0.48
+  },
+  "model_results": {
+    "A": {
+      "params": {
+        "K_ref": 99.99999216596116,
+        "K0": 99.99999216596116
+      },
+      "TF_slope": 0.4166666666666667,
+      "TF_passes": false,
+      "delta_H0": 358.87502859069764,
+      "Hubble_passes": false,
+      "max_lab_dev": 333332.3333333334,
+      "lab_passes": false,
+      "passes_all": false
+    },
+    "B": {
+      "params": {
+        "epsilon": 0.01,
+        "K0": 0.5
+      },
+      "TF_slope": 0.33416667658359556,
+      "TF_passes": false,
+      "delta_H0": 1.3001633350967694,
+      "Hubble_passes": false,
+      "max_lab_dev": 0.14875071478467894,
+      "lab_passes": false,
+      "passes_all": false
+    },
+    "C": {
+      "params": {
+        "eta": 0.01,
+        "K0": 0.5
+      },
+      "TF_slope": 0.33416666666666656,
+      "TF_passes": false,
+      "delta_H0": 1.2546877862696988,
+      "Hubble_passes": false,
+      "max_lab_dev": 0.1356088998187006,
+      "lab_passes": false,
+      "passes_all": false
+    },
+    "D": {
+      "params": {
+        "K0": 9.074439308255377
+      },
+      "TF_slope": 0.4166666666666667,
+      "TF_passes": false,
+      "delta_H0": 185.3230226749716,
+      "Hubble_passes": false,
+      "max_lab_dev": 9.14949430574316,
+      "lab_passes": false,
+      "passes_all": false
+    }
+  },
+  "joint_B_count": 0,
+  "joint_C_count": 0,
+  "joint_B_pass_all": 0,
+  "joint_C_pass_all": 0,
+  "kill_conditions": {
+    "K-HP-750": false,
+    "K-HP-751": false,
+    "K-HP-752": false,
+    "K-HP-753": false,
+    "K-HP-754": false
+  },
+  "pass_count": 0,
+  "critical_finding": "K_flat mass scaling sign wrong in HP142"
+}

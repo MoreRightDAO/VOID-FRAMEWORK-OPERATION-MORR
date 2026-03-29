@@ -1,0 +1,362 @@
+{
+  "experiment": "EXP-HP145",
+  "phase": 3,
+  "domain": "protein_folding",
+  "n_proteins": 30,
+  "tests": {
+    "variable_k0": {
+      "slope": -0.4690939297340762,
+      "R2": 0.9979855502398552,
+      "deviation_pct": 8.012868981968037,
+      "intercept": 3.403418101605417
+    },
+    "fixed_k0": {
+      "slope": -0.43429448190325176,
+      "R2": 0.9999999999999998,
+      "deviation_pct": 0.0,
+      "intercept": 2.9999999999999987
+    }
+  },
+  "kill_conditions": {
+    "K-HP-145-5": {
+      "rho": 0.9989922673573881,
+      "result": "PASS"
+    },
+    "K-HP-145-1_protein": {
+      "deviation_pct": 8.012868981968037,
+      "result": "PASS"
+    }
+  },
+  "proteins": [
+    {
+      "name": "Trp-cage (TC5b)",
+      "N_residues": 20,
+      "fold_type": "helix",
+      "log10_kf": 4.1,
+      "log10_k0": 6.698970004336019,
+      "beta": 5.984349589122788,
+      "Lambda": 0.7505149978319903,
+      "log10_Gamma": 4.1,
+      "log10_lambda": 6.698970004336019
+    },
+    {
+      "name": "Villin HP35",
+      "N_residues": 35,
+      "fold_type": "helix",
+      "log10_kf": 3.8,
+      "log10_k0": 6.455931955649724,
+      "beta": 6.115509329085579,
+      "Lambda": 0.5720340221751377,
+      "log10_Gamma": 3.8,
+      "log10_lambda": 6.455931955649724
+    },
+    {
+      "name": "BBA5",
+      "N_residues": 23,
+      "fold_type": "helix/sheet",
+      "log10_kf": 3.6,
+      "log10_k0": 6.638272163982407,
+      "beta": 6.99588019324465,
+      "Lambda": 0.2808639180087966,
+      "log10_Gamma": 3.6,
+      "log10_lambda": 6.638272163982407
+    },
+    {
+      "name": "WW domain (FBP28)",
+      "N_residues": 37,
+      "fold_type": "sheet",
+      "log10_kf": 3.5,
+      "log10_k0": 6.431798275933005,
+      "beta": 6.750715005828981,
+      "Lambda": 0.2841008620334975,
+      "log10_Gamma": 3.5,
+      "log10_lambda": 6.431798275933005
+    },
+    {
+      "name": "Protein G B1",
+      "N_residues": 56,
+      "fold_type": "mixed",
+      "log10_kf": 2.54,
+      "log10_k0": 6.251811972993799,
+      "beta": 8.54676291701234,
+      "Lambda": -0.5859059864968996,
+      "log10_Gamma": 2.54,
+      "log10_lambda": 6.251811972993799
+    },
+    {
+      "name": "Protein L B1",
+      "N_residues": 62,
+      "fold_type": "mixed",
+      "log10_kf": 2.3,
+      "log10_k0": 6.2076083105017466,
+      "beta": 8.99760064502097,
+      "Lambda": -0.8038041552508735,
+      "log10_Gamma": 2.3,
+      "log10_lambda": 6.2076083105017466
+    },
+    {
+      "name": "CI2",
+      "N_residues": 64,
+      "fold_type": "mixed",
+      "log10_kf": 1.7,
+      "log10_k0": 6.1938200260161125,
+      "beta": 10.347403002502816,
+      "Lambda": -1.3969100130080563,
+      "log10_Gamma": 1.7,
+      "log10_lambda": 6.1938200260161125
+    },
+    {
+      "name": "src SH3",
+      "N_residues": 64,
+      "fold_type": "sheet",
+      "log10_kf": 1.57,
+      "log10_k0": 6.1938200260161125,
+      "beta": 10.64673906459204,
+      "Lambda": -1.5269100130080562,
+      "log10_Gamma": 1.57,
+      "log10_lambda": 6.1938200260161125
+    },
+    {
+      "name": "AcP",
+      "N_residues": 98,
+      "fold_type": "mixed",
+      "log10_kf": 0.73,
+      "log10_k0": 6.008773924307505,
+      "beta": 12.15482614739614,
+      "Lambda": -2.2743869621537525,
+      "log10_Gamma": 0.73,
+      "log10_lambda": 6.008773924307505
+    },
+    {
+      "name": "CspB",
+      "N_residues": 67,
+      "fold_type": "sheet",
+      "log10_kf": 2.85,
+      "log10_k0": 6.173925197299173,
+      "beta": 7.653620609528368,
+      "Lambda": -0.23696259864958646,
+      "log10_Gamma": 2.85,
+      "log10_lambda": 6.173925197299173
+    },
+    {
+      "name": "Cold shock Bc-Csp",
+      "N_residues": 66,
+      "fold_type": "sheet",
+      "log10_kf": 2.95,
+      "log10_k0": 6.180456064458132,
+      "beta": 7.438399977593505,
+      "Lambda": -0.14022803222906566,
+      "log10_Gamma": 2.95,
+      "log10_lambda": 6.180456064458132
+    },
+    {
+      "name": "Ubiquitin",
+      "N_residues": 76,
+      "fold_type": "mixed",
+      "log10_kf": 2.52,
+      "log10_k0": 6.119186407719209,
+      "beta": 8.287432969321038,
+      "Lambda": -0.5395932038596043,
+      "log10_Gamma": 2.52,
+      "log10_lambda": 6.119186407719209
+    },
+    {
+      "name": "FKBP12",
+      "N_residues": 107,
+      "fold_type": "sheet",
+      "log10_kf": 0.3,
+      "log10_k0": 5.97061622231479,
+      "beta": 13.057076381592246,
+      "Lambda": -2.6853081111573953,
+      "log10_Gamma": 0.3,
+      "log10_lambda": 5.97061622231479
+    },
+    {
+      "name": "Barnase",
+      "N_residues": 110,
+      "fold_type": "mixed",
+      "log10_kf": 0.48,
+      "log10_k0": 5.958607314841775,
+      "beta": 12.614959533522807,
+      "Lambda": -2.4993036574208873,
+      "log10_Gamma": 0.48,
+      "log10_lambda": 5.958607314841775
+    },
+    {
+      "name": "\u03bb repressor",
+      "N_residues": 80,
+      "fold_type": "helix",
+      "log10_kf": 3.48,
+      "log10_k0": 6.096910013008056,
+      "beta": 6.025657985659205,
+      "Lambda": 0.43154499349597186,
+      "log10_Gamma": 3.48,
+      "log10_lambda": 6.096910013008056
+    },
+    {
+      "name": "Engrailed HD",
+      "N_residues": 54,
+      "fold_type": "helix",
+      "log10_kf": 3.7,
+      "log10_k0": 6.267606240177032,
+      "beta": 5.912131853310123,
+      "Lambda": 0.5661968799114843,
+      "log10_Gamma": 3.7,
+      "log10_lambda": 6.267606240177032
+    },
+    {
+      "name": "\u03b1-spectrin SH3",
+      "N_residues": 62,
+      "fold_type": "sheet",
+      "log10_kf": 1.04,
+      "log10_k0": 6.2076083105017466,
+      "beta": 11.898857862193468,
+      "Lambda": -2.0638041552508732,
+      "log10_Gamma": 1.04,
+      "log10_lambda": 6.2076083105017466
+    },
+    {
+      "name": "Tenascin TNfn3",
+      "N_residues": 90,
+      "fold_type": "sheet",
+      "log10_kf": 0.9,
+      "log10_k0": 6.045757490560675,
+      "beta": 11.848544489927459,
+      "Lambda": -2.1228787452803375,
+      "log10_Gamma": 0.9,
+      "log10_lambda": 6.045757490560675
+    },
+    {
+      "name": "Titin I27",
+      "N_residues": 89,
+      "fold_type": "sheet",
+      "log10_kf": 1.3,
+      "log10_k0": 6.050609993355088,
+      "beta": 10.938683753327968,
+      "Lambda": -1.7253049966775438,
+      "log10_Gamma": 1.3,
+      "log10_lambda": 6.050609993355088
+    },
+    {
+      "name": "Muscle AcP",
+      "N_residues": 98,
+      "fold_type": "mixed",
+      "log10_kf": 0.6,
+      "log10_k0": 6.008773924307505,
+      "beta": 12.454162209485366,
+      "Lambda": -2.4043869621537524,
+      "log10_Gamma": 0.6,
+      "log10_lambda": 6.008773924307505
+    },
+    {
+      "name": "Im7",
+      "N_residues": 87,
+      "fold_type": "helix",
+      "log10_kf": 2.3,
+      "log10_k0": 6.060480747381382,
+      "beta": 8.658826911411477,
+      "Lambda": -0.7302403736906911,
+      "log10_Gamma": 2.3,
+      "log10_lambda": 6.060480747381382
+    },
+    {
+      "name": "Im9",
+      "N_residues": 86,
+      "fold_type": "helix",
+      "log10_kf": 2.63,
+      "log10_k0": 6.0655015487564325,
+      "beta": 7.910534653124518,
+      "Lambda": -0.4027507743782164,
+      "log10_Gamma": 2.63,
+      "log10_lambda": 6.0655015487564325
+    },
+    {
+      "name": "Cytochrome c",
+      "N_residues": 104,
+      "fold_type": "helix",
+      "log10_kf": 2.54,
+      "log10_k0": 5.982966660701219,
+      "beta": 7.927723708606116,
+      "Lambda": -0.4514833303506096,
+      "log10_Gamma": 2.54,
+      "log10_lambda": 5.982966660701219
+    },
+    {
+      "name": "RNase A",
+      "N_residues": 124,
+      "fold_type": "mixed",
+      "log10_kf": -0.05,
+      "log10_k0": 5.906578314837765,
+      "beta": 13.715528432997031,
+      "Lambda": -3.0032891574188825,
+      "log10_Gamma": -0.05,
+      "log10_lambda": 5.906578314837765
+    },
+    {
+      "name": "Lysozyme",
+      "N_residues": 129,
+      "fold_type": "mixed",
+      "log10_kf": 0.7,
+      "log10_k0": 5.889410289700751,
+      "beta": 11.949058774494862,
+      "Lambda": -2.244705144850376,
+      "log10_Gamma": 0.7,
+      "log10_lambda": 5.889410289700751
+    },
+    {
+      "name": "Myoglobin",
+      "N_residues": 153,
+      "fold_type": "helix",
+      "log10_kf": 0.3,
+      "log10_k0": 5.815308569182402,
+      "beta": 12.699467294661718,
+      "Lambda": -2.607654284591201,
+      "log10_Gamma": 0.3,
+      "log10_lambda": 5.815308569182402
+    },
+    {
+      "name": "Triosephosphate isomerase",
+      "N_residues": 247,
+      "fold_type": "barrel",
+      "log10_kf": -0.92,
+      "log10_k0": 5.607303046740334,
+      "beta": 15.029670692878911,
+      "Lambda": -3.723651523370167,
+      "log10_Gamma": -0.92,
+      "log10_lambda": 5.607303046740334
+    },
+    {
+      "name": "GFP",
+      "N_residues": 238,
+      "fold_type": "barrel",
+      "log10_kf": -1.4,
+      "log10_k0": 5.623423042943488,
+      "beta": 16.172029200472554,
+      "Lambda": -4.211711521471743,
+      "log10_Gamma": -1.4,
+      "log10_lambda": 5.623423042943488
+    },
+    {
+      "name": "\u03b1-helix 21-mer",
+      "N_residues": 21,
+      "fold_type": "helix",
+      "log10_kf": 6.3,
+      "log10_k0": 6.6777807052660805,
+      "beta": 0.8698722203664545,
+      "Lambda": 2.9611096473669596,
+      "log10_Gamma": 6.3,
+      "log10_lambda": 6.6777807052660805
+    },
+    {
+      "name": "\u03b2-hairpin (GB1)",
+      "N_residues": 16,
+      "fold_type": "sheet",
+      "log10_kf": 5.8,
+      "log10_k0": 6.795880017344075,
+      "beta": 2.293098482347119,
+      "Lambda": 2.4020599913279623,
+      "log10_Gamma": 5.8,
+      "log10_lambda": 6.795880017344075
+    }
+  ]
+}

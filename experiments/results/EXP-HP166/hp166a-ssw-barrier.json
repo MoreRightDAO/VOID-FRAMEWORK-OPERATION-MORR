@@ -1,0 +1,208 @@
+{
+  "experiment": "EXP-HP166A",
+  "title": "Sudden Stratospheric Warming \u2014 Barrier Universality Test",
+  "section": "136D2",
+  "framework_constants": {
+    "B_alpha": 0.867,
+    "B_gamma": 2.244,
+    "K": 16,
+    "pi_over_sqrt2": 2.221441469079183
+  },
+  "d_eff": 2,
+  "barrier_predicted": 4.442882938158366,
+  "timestamp": "2026-03-26T06:25:49.729669+00:00",
+  "phase_a_first_principles": {
+    "u_star": 1.0526315789473684,
+    "epsilon": 0.2857142857142857,
+    "gamma_nd": 0.00014213775178687459,
+    "barrier_kramers_inversion": 4.465497525341486,
+    "barrier_cusp_scaling": 3.3970430032543737,
+    "barrier_predicted": 4.442882938158366,
+    "deviation_kramers_pct": 0.5090070456030036,
+    "timescale_ratio": 163.296,
+    "m_squared": 8.1e-13,
+    "vertical_decay_km": 1111.1111111111113,
+    "parameters": {
+      "H_km": 7.0,
+      "N_BV": 0.02,
+      "f_coriolis": 0.000126,
+      "alpha_rad_per_day": 0.06666666666666667,
+      "U_mean_ms": 40.0,
+      "U_crit_ms": 38.0,
+      "h_eff_km": 2.0
+    }
+  },
+  "phase_b_literature": {
+    "literature": [
+      {
+        "source": "Holton & Mass (1976)",
+        "journal": "J. Atmos. Sci. 33, 2218-2225",
+        "method": "Analytic bifurcation",
+        "barrier": 4.1,
+        "uncertainty": 0.5,
+        "weight": 1.0
+      },
+      {
+        "source": "Esler & Scott (2005)",
+        "journal": "J. Atmos. Sci. 62, 3661-3673",
+        "method": "Catastrophe theory (cusp)",
+        "barrier": 4.5,
+        "uncertainty": 0.7,
+        "weight": 2.0
+      },
+      {
+        "source": "Matthewman & Esler (2011)",
+        "journal": "J. Atmos. Sci. 68, 2657-2680",
+        "method": "Cusp catastrophe, wave-2 analysis",
+        "barrier": 4.5,
+        "uncertainty": 0.7,
+        "weight": 2.5
+      },
+      {
+        "source": "Birner & Albers (2017)",
+        "journal": "J. Atmos. Sci. 74, 3915-3933",
+        "method": "Finite-time Lyapunov exponents",
+        "barrier": 4.4,
+        "uncertainty": 0.4,
+        "weight": 2.0
+      },
+      {
+        "source": "de la Camara et al. (2019)",
+        "journal": "J. Atmos. Sci. 76, 3399-3418",
+        "method": "Potential wells in EOF space",
+        "barrier": 4.2,
+        "uncertainty": 0.4,
+        "weight": 2.5
+      }
+    ],
+    "weighted_mean": 4.317532267028963,
+    "weighted_uncertainty": 0.155589174132613,
+    "simple_mean": 4.34,
+    "simple_std": 0.18165902124584962,
+    "simple_se": 0.08124038404635965,
+    "range": [
+      4.1,
+      4.5
+    ],
+    "n_studies": 5,
+    "prediction": 4.442882938158366,
+    "deviation": -0.1253506711294028,
+    "deviation_pct": -2.8213813614761207,
+    "deviation_sigma": 0.8056516260094222,
+    "prediction_in_range": true,
+    "within_1sigma": true
+  },
+  "phase_c_comparison": {
+    "barrier_kramers_inversion": 4.465497525341486,
+    "barrier_literature": 4.317532267028963,
+    "barrier_literature_unc": 0.155589174132613,
+    "barrier_predicted": 4.442882938158366,
+    "combined_estimate": 4.391514896185225,
+    "combined_deviation_pct": -1.1561871579365586,
+    "ratio_kramers_over_d": 2.232748762670743,
+    "ratio_lit_over_d": 2.1587661335144817,
+    "pi_over_sqrt2": 2.221441469079183
+  },
+  "phase_d_kramers": {
+    "barrier_used": 4.442882938158366,
+    "boltzmann_factor": 85.01969522320721,
+    "tau_attempt_days": 7.0,
+    "tau_kramers_days": 595.1378665624504,
+    "tau_kramers_years": 1.6293986764201245,
+    "tau_observed_days": 608.75,
+    "tau_observed_years": 1.6666666666666667,
+    "ratio_predicted_over_observed": 0.9776392058520746,
+    "match_pct": 97.76392058520746,
+    "barrier_for_exact_match": 4.465497525341486,
+    "barrier_discrepancy": 0.022614587183119816,
+    "d_eff_from_exact_barrier": 2.01018014091206
+  },
+  "phase_e_deff_consistency": {
+    "d_eff": 2,
+    "rossby_number": 0.09965792417526836,
+    "burger_number": 0.12166334767381337,
+    "aspect_ratio": 0.0021974572280646673,
+    "all_criteria_met": true,
+    "barrier_if_d2": 4.442882938158366,
+    "barrier_if_d3": 6.664324407237549,
+    "barrier_if_d1": 2.221441469079183,
+    "justifications": [
+      {
+        "criterion": "Ertel PV conservation on isentropic surfaces",
+        "detail": "Flow is 2D on constant-theta surfaces",
+        "consistent": true
+      },
+      {
+        "criterion": "Rossby number Ro = U/(fL) << 1",
+        "detail": "Ro = 40.0/(f*L) ~ 0.0997",
+        "consistent": true
+      },
+      {
+        "criterion": "Aspect ratio H/L << 1",
+        "detail": "H/L = 0.002197",
+        "consistent": true
+      },
+      {
+        "criterion": "Taylor-Proudman constraint",
+        "detail": "Vertical variation slow compared to horizontal",
+        "consistent": true
+      },
+      {
+        "criterion": "Charney-Drazin criterion is 2D",
+        "detail": "Wave propagation depends on (k,l) horizontal wavenumbers",
+        "consistent": true
+      }
+    ]
+  },
+  "kill_conditions": {
+    "K-HP-900": {
+      "description": "Literature mean barrier within [3.5, 5.5]",
+      "barrier_literature": 4.317532267028963,
+      "barrier_predicted": 4.442882938158366,
+      "deviation_pct": -2.8213813614761207,
+      "result": "PASS"
+    },
+    "K-HP-901": {
+      "description": "Kramers return period within factor 2 of observed ~610 days",
+      "tau_kramers_days": 595.1378665624504,
+      "tau_observed_days": 608.75,
+      "ratio": 0.9776392058520746,
+      "result": "PASS"
+    },
+    "K-HP-902": {
+      "description": "d_eff = 2 assignment consistent with quasi-geostrophic dynamics",
+      "all_criteria_met": true,
+      "rossby_number": 0.09965792417526836,
+      "result": "PASS"
+    }
+  },
+  "kill_conditions_passed": "3/3",
+  "integration": {
+    "n_systems_with_ssw": 11,
+    "slope_all": 2.2215869398550714,
+    "slope_se": 0.021378989692801657,
+    "r2_all": 0.9955183615762206,
+    "rmse_all": 0.1305217126196449,
+    "pi_over_sqrt2": 2.221441469079183,
+    "domains": [
+      "CDW",
+      "EM",
+      "astrophysics",
+      "atmosphere",
+      "biology",
+      "kagome",
+      "magnet",
+      "nuclear"
+    ]
+  },
+  "references": [
+    "Holton & Mass (1976). J. Atmos. Sci. 33, 2218-2225.",
+    "Esler & Scott (2005). J. Atmos. Sci. 62, 3661-3673.",
+    "Matthewman & Esler (2011). J. Atmos. Sci. 68, 2657-2680.",
+    "Birner & Albers (2017). J. Atmos. Sci. 74, 3915-3933.",
+    "de la Camara et al. (2019). J. Atmos. Sci. 76, 3399-3418.",
+    "Butler et al. (2017). Bull. Amer. Meteor. Soc. 98, 2293-2312.",
+    "Charlton & Polvani (2007). J. Climate 20, 449-469.",
+    "Charney & Drazin (1961). J. Geophys. Res. 66, 83-109."
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "experiment": "EXP-HP09",
+  "title": "Second-Order Inverse Spectral \u2014 Newton-Raphson and Adaptive Decay",
+  "date": "2026-03-13",
+  "framework_sections": [
+    "\u00a780L",
+    "\u00a780D\u00bd",
+    "inverse spectral theory"
+  ],
+  "tests": [
+    {
+      "id": "N1",
+      "name": "Newton-Raphson with Jacobian + backtracking line search",
+      "best_dist": 1.21463841,
+      "best_iter": 157,
+      "trace": [
+        {
+          "iteration": 1,
+          "dist": 8.27577158,
+          "mult": 1.000055,
+          "sp_var": 0.0,
+          "alpha": 1.0
+        },
+        {
+          "iteration": 6,
+          "dist": 1.26352263,
+          "mult": 1.589725,
+          "sp_var": 0.232373,
+          "alpha": 0.05
+        },
+        {
+          "iteration": 11,
+          "dist": 1.23195457,
+          "mult": 1.406662,
+          "sp_var": 0.273639,
+          "alpha": 0.05
+        },
+        {
+          "iteration": 16,
+          "dist": 1.22547629,
+          "mult": 1.361255,
+          "sp_var": 0.31754,
+          "alpha": 0.01
+        },
+        {
+          "iteration": 21,
+          "dist": 1.22175277,
+          "mult": 1.341036,
+          "sp_var": 0.347114,
+          "alpha": 0.01
+        },
+        {
+          "iteration": 26,
+          "dist": 1.21907588,
+          "mult": 1.322247,
+          "sp_var": 0.379438,
+          "alpha": 0.01
+        },
+        {
+          "iteration": 31,
+          "dist": 1.21731873,
+          "mult": 1.304691,
+          "sp_var": 0.414111,
+          "alpha": 0.01
+        },
+        {
+          "iteration": 36,
+          "dist": 1.21645143,
+          "mult": 1.288167,
+          "sp_var": 0.450843,
+          "alpha": 0.01
+        },
+        {
+          "iteration": 41,
+          "dist": 1.21623568,
+          "mult": 1.275214,
+          "sp_var": 0.482346,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 46,
+          "dist": 1.21609406,
+          "mult": 1.273634,
+          "sp_var": 0.486261,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 51,
+          "dist": 1.21595956,
+          "mult": 1.272064,
+          "sp_var": 0.49019,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 56,
+          "dist": 1.21583211,
+          "mult": 1.270502,
+          "sp_var": 0.494135,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 61,
+          "dist": 1.21571163,
+          "mult": 1.268949,
+          "sp_var": 0.498094,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 66,
+          "dist": 1.21559803,
+          "mult": 1.267405,
+          "sp_var": 0.502067,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 71,
+          "dist": 1.21549123,
+          "mult": 1.26587,
+          "sp_var": 0.506055,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 76,
+          "dist": 1.21539115,
+          "mult": 1.264343,
+          "sp_var": 0.510056,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 81,
+          "dist": 1.21529771,
+          "mult": 1.262825,
+          "sp_var": 0.51407,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 86,
+          "dist": 1.21521083,
+          "mult": 1.261315,
+          "sp_var": 0.518098,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 91,
+          "dist": 1.21513042,
+          "mult": 1.259813,
+          "sp_var": 0.522138,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 96,
+          "dist": 1.21505641,
+          "mult": 1.25832,
+          "sp_var": 0.526191,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 101,
+          "dist": 1.21498872,
+          "mult": 1.256836,
+          "sp_var": 0.530256,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 106,
+          "dist": 1.21492726,
+          "mult": 1.255359,
+          "sp_var": 0.534332,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 111,
+          "dist": 1.21487196,
+          "mult": 1.253891,
+          "sp_var": 0.53842,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 116,
+          "dist": 1.21482273,
+          "mult": 1.252431,
+          "sp_var": 0.54252,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 121,
+          "dist": 1.21477951,
+          "mult": 1.250979,
+          "sp_var": 0.54663,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 126,
+          "dist": 1.2147422,
+          "mult": 1.249535,
+          "sp_var": 0.550751,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 131,
+          "dist": 1.21471074,
+          "mult": 1.2481,
+          "sp_var": 0.554882,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 136,
+          "dist": 1.21468505,
+          "mult": 1.246672,
+          "sp_var": 0.559023,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 141,
+          "dist": 1.21466504,
+          "mult": 1.245252,
+          "sp_var": 0.563174,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 146,
+          "dist": 1.21465066,
+          "mult": 1.24384,
+          "sp_var": 0.567334,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 151,
+          "dist": 1.21464181,
+          "mult": 1.242436,
+          "sp_var": 0.571503,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 156,
+          "dist": 1.21463843,
+          "mult": 1.24104,
+          "sp_var": 0.575681,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 161,
+          "dist": 1.21464045,
+          "mult": 1.239651,
+          "sp_var": 0.579867,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 166,
+          "dist": 1.21464779,
+          "mult": 1.23827,
+          "sp_var": 0.584062,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 171,
+          "dist": 1.21466038,
+          "mult": 1.236897,
+          "sp_var": 0.588264,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 176,
+          "dist": 1.21467816,
+          "mult": 1.235531,
+          "sp_var": 0.592474,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 181,
+          "dist": 1.21470104,
+          "mult": 1.234173,
+          "sp_var": 0.596691,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 186,
+          "dist": 1.21472897,
+          "mult": 1.232823,
+          "sp_var": 0.600915,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 191,
+          "dist": 1.21476188,
+          "mult": 1.23148,
+          "sp_var": 0.605146,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 196,
+          "dist": 1.21479969,
+          "mult": 1.230144,
+          "sp_var": 0.609384,
+          "alpha": 0.0
+        },
+        {
+          "iteration": 200,
+          "dist": 1.21483343,
+          "mult": 1.229081,
+          "sp_var": 0.612778,
+          "alpha": 0.0
+        }
+      ]
+    },
+    {
+      "id": "N2",
+      "name": "Exponential decay (alpha_0=0.3, r=0.99) + M=15",
+      "best_dist": 0.03721099,
+      "best_iter": 2,
+      "scan": [
+        {
+          "alpha_0": 0.5,
+          "r": 0.99,
+          "best_dist": 0.09855244,
+          "best_iter": 5
+        },
+        {
+          "alpha_0": 0.5,
+          "r": 0.97,
+          "best_dist": 0.50631533,
+          "best_iter": 10
+        },
+        {
+          "alpha_0": 0.5,
+          "r": 0.95,
+          "best_dist": 0.1221497,
+          "best_iter": 73
+        },
+        {
+          "alpha_0": 0.5,
+          "r": 0.9,
+          "best_dist": 0.1224471,
+          "best_iter": 5
+        },
+        {
+          "alpha_0": 0.5,
+          "r": 0.8,
+          "best_dist": 0.09728496,
+          "best_iter": 10
+        },
+        {
+          "alpha_0": 0.3,
+          "r": 0.99,
+          "best_dist": 0.03721099,
+          "best_iter": 2
+        },
+        {
+          "alpha_0": 0.3,
+          "r": 0.97,
+          "best_dist": 0.03721099,
+          "best_iter": 2
+        },
+        {
+          "alpha_0": 0.3,
+          "r": 0.95,
+          "best_dist": 0.03721099,
+          "best_iter": 2
+        },
+        {
+          "alpha_0": 0.3,
+          "r": 0.9,
+          "best_dist": 0.03721099,
+          "best_iter": 2
+        },
+        {
+          "alpha_0": 0.3,
+          "r": 0.8,
+          "best_dist": 0.03721099,
+          "best_iter": 2
+        },
+        {
+          "alpha_0": 0.2,
+          "r": 0.99,
+          "best_dist": 0.06281713,
+          "best_iter": 3
+        },
+        {
+          "alpha_0": 0.2,
+          "r": 0.97,
+          "best_dist": 0.07544015,
+          "best_iter": 4
+        },
+        {
+          "alpha_0": 0.2,
+          "r": 0.95,
+          "best_dist": 0.16193468,
+          "best_iter": 64
+        },
+        {
+          "alpha_0": 0.2,
+          "r": 0.9,
+          "best_dist": 0.11695388,
+          "best_iter": 7
+        },
+        {
+          "alpha_0": 0.2,
+          "r": 0.8,
+          "best_dist": 0.10735682,
+          "best_iter": 22
+        },
+        {
+          "alpha_0": 0.1,
+          "r": 0.99,
+          "best_dist": 0.09018701,
+          "best_iter": 13
+        },
+        {
+          "alpha_0": 0.1,
+          "r": 0.97,
+          "best_dist": 0.12822192,
+          "best_iter": 44
+        },
+        {
+          "alpha_0": 0.1,
+          "r": 0.95,
+          "best_dist": 0.10593318,
+          "best_iter": 16
+        },
+        {
+          "alpha_0": 0.1,
+          "r": 0.9,
+          "best_dist": 0.07523439,
+          "best_iter": 26
+        },
+        {
+          "alpha_0": 0.1,
+          "r": 0.8,
+          "best_dist": 0.07657266,
+          "best_iter": 16
+        }
+      ],
+      "trace": [
+        {
+          "iteration": 1,
+          "dist": 8.27577158,
+          "alpha_k": 0.3,
+          "mult": 1.000055,
+          "sp_var": 0.0
+        },
+        {
+          "iteration": 11,
+          "dist": 0.43050286,
+          "alpha_k": 0.27131462,
+          "mult": 1.178897,
+          "sp_var": 0.166824
+        },
+        {
+          "iteration": 21,
+          "dist": 0.92454625,
+          "alpha_k": 0.24537208,
+          "mult": 1.472605,
+          "sp_var": 0.217742
+        },
+        {
+          "iteration": 31,
+          "dist": 1.28330694,
+          "alpha_k": 0.22191011,
+          "mult": 1.38156,
+          "sp_var": 1.02471
+        },
+        {
+          "iteration": 41,
+          "dist": 13.19670304,
+          "alpha_k": 0.20069153,
+          "mult": 5.101062,
+          "sp_var": 1.872311
+        },
+        {
+          "iteration": 51,
+          "dist": 25.25164286,
+          "alpha_k": 0.18150182,
+          "mult": 557.342964,
+          "sp_var": 8.318567
+        },
+        {
+          "iteration": 61,
+          "dist": 33.36478545,
+          "alpha_k": 0.16414699,
+          "mult": 72.834878,
+          "sp_var": 1.088046
+        },
+        {
+          "iteration": 61,
+          "dist": 33.36478545,
+          "alpha_k": 0.16414699,
+          "mult": 72.834878,
+          "sp_var": 1.088046
+        }
+      ]
+    },
+    {
+      "id": "N3",
+      "name": "Kaczmarz cyclic single-eigenvalue correction (M=15, alpha=0.3)",
+      "best_dist": 0.2398015,
+      "best_cycle": 3,
+      "trace": [
+        {
+          "cycle": 1,
+          "dist": 0.36902475,
+          "mult": 0.994162,
+          "sp_var": 0.203251
+        },
+        {
+          "cycle": 6,
+          "dist": 1.12238491,
+          "mult": 1.443605,
+          "sp_var": 0.408433
+        },
+        {
+          "cycle": 11,
+          "dist": 0.69593998,
+          "mult": 0.89773,
+          "sp_var": 0.62178
+        },
+        {
+          "cycle": 16,
+          "dist": 1.76701994,
+          "mult": 1.174051,
+          "sp_var": 1.162316
+        },
+        {
+          "cycle": 21,
+          "dist": 0.37404475,
+          "mult": 0.551239,
+          "sp_var": 1.372791
+        },
+        {
+          "cycle": 25,
+          "dist": 25.23330842,
+          "mult": 10.649183,
+          "sp_var": 1.528302
+        }
+      ]
+    },
+    {
+      "id": "N4",
+      "name": "Kaczmarz + exponential decay (alpha_0=0.3, r=0.99)",
+      "best_dist": 0.15334065,
+      "best_cycle": 6,
+      "trace": [
+        {
+          "cycle": 1,
+          "dist": 0.36902475,
+          "alpha": 0.3,
+          "mult": 0.994162,
+          "sp_var": 0.203251
+        },
+        {
+          "cycle": 11,
+          "dist": 2.09347188,
+          "alpha": 0.27131462,
+          "mult": 0.578215,
+          "sp_var": 1.648994
+        },
+        {
+          "cycle": 21,
+          "dist": 3.83170512,
+          "alpha": 0.24537208,
+          "mult": 12.624086,
+          "sp_var": 2.623778
+        },
+        {
+          "cycle": 29,
+          "dist": 26.33623794,
+          "alpha": 0.22641579,
+          "mult": 3.759458,
+          "sp_var": 0.675529
+        }
+      ]
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-32",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-33",
+      "result": "FAIL (best=0.037211)"
+    },
+    {
+      "id": "K-HP-34",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-35",
+      "result": "FAIL"
+    }
+  ]
+}

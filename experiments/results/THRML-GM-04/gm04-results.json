@@ -1,0 +1,43 @@
+{
+  "experiment": "THRML-GM-04",
+  "title": "Economic feedback from FluctuationOracle",
+  "contracts": [
+    "PeEconomy",
+    "TributeVault",
+    "WishWellV4",
+    "AuctionHouse"
+  ],
+  "parameters": {
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "ETA_TAU": 0.05082,
+    "BASE_REWARD_ATH": 10,
+    "REWARD_BOOST_HIGH": 1.5,
+    "REWARD_CUT_LOW": 0.7,
+    "FDR_HIGH_THRESH": 2.0,
+    "FDR_LOW_THRESH": 0.5
+  },
+  "tests": {
+    "test_1": {
+      "pass": true,
+      "reward_at_eq": 9.666666666666666
+    },
+    "test_2": {
+      "pass": true,
+      "reward_high": 15.0,
+      "reward_low": 7.0
+    },
+    "test_3": {
+      "pass": "True"
+    },
+    "test_4": {
+      "pass": true
+    },
+    "test_5": {
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "All economic contracts respond correctly to FluctuationOracle state"
+}

@@ -1,0 +1,182 @@
+{
+  "experiment": "THRML-OP-01",
+  "title": "Opacity Dominance Theorem (T12) Validation",
+  "date": "2026-03-09",
+  "section": "\u00a747",
+  "overall_pass": true,
+  "test_1_core": {
+    "pass": "True",
+    "monotonic": true,
+    "asymptotic": "True",
+    "genome_scale": "True",
+    "data": [
+      {
+        "N": 100.0,
+        "f_dark": 0.0,
+        "n_transparent": 100.0
+      },
+      {
+        "N": 1000.0,
+        "f_dark": 0.0,
+        "n_transparent": 1000.0
+      },
+      {
+        "N": 10000.0,
+        "f_dark": 0.0,
+        "n_transparent": 10000.0
+      },
+      {
+        "N": 100000.0,
+        "f_dark": 0.0,
+        "n_transparent": 100000.0
+      },
+      {
+        "N": 1000000.0,
+        "f_dark": 0.0,
+        "n_transparent": 1000000.0
+      },
+      {
+        "N": 10000000.0,
+        "f_dark": 0.0,
+        "n_transparent": 10000000.0
+      },
+      {
+        "N": 100000000.0,
+        "f_dark": 0.8315428398388558,
+        "n_transparent": 16845716.016114414
+      },
+      {
+        "N": 1000000000.0,
+        "f_dark": 0.9831542839838856,
+        "n_transparent": 16845716.016114414
+      },
+      {
+        "N": 10000000000.0,
+        "f_dark": 0.9983154283983886,
+        "n_transparent": 16845716.016114414
+      },
+      {
+        "N": 1000000000000.0,
+        "f_dark": 0.9999831542839839,
+        "n_transparent": 16845716.016114414
+      }
+    ]
+  },
+  "test_2_junk": {
+    "pass": "True",
+    "rho": 1.0,
+    "p": 0.0,
+    "organisms": [
+      {
+        "name": "E. coli",
+        "observed": 0.15,
+        "predicted": 0.33
+      },
+      {
+        "name": "S. cerevisiae",
+        "observed": 0.43,
+        "predicted": 2.64
+      },
+      {
+        "name": "C. elegans",
+        "observed": 35.0,
+        "predicted": 198.0
+      },
+      {
+        "name": "D. melanogaster",
+        "observed": 4.6,
+        "predicted": 165.0
+      },
+      {
+        "name": "M. musculus",
+        "observed": 58.0,
+        "predicted": 396.0
+      },
+      {
+        "name": "H. sapiens",
+        "observed": 66.0,
+        "predicted": 660.0
+      }
+    ],
+    "f_dark_by_organism": [
+      {
+        "organism": "E. coli",
+        "f_dark": 0.0,
+        "coding_frac": 0.87
+      },
+      {
+        "organism": "S. cerevisiae",
+        "f_dark": 0.0,
+        "coding_frac": 0.7
+      },
+      {
+        "organism": "C. elegans",
+        "f_dark": 0.8315428398388558,
+        "coding_frac": 0.027
+      },
+      {
+        "organism": "D. melanogaster",
+        "f_dark": 0.9064126887993644,
+        "coding_frac": 0.18
+      },
+      {
+        "organism": "M. musculus",
+        "f_dark": 0.9937608459199576,
+        "coding_frac": 0.017
+      },
+      {
+        "organism": "H. sapiens",
+        "f_dark": 0.9947357137449643,
+        "coding_frac": 0.015
+      }
+    ]
+  },
+  "test_3_ai": {
+    "pass": true,
+    "observed_decreasing": true,
+    "predicted_increasing": true,
+    "gpt4_f_dark": 0.9999984567901234,
+    "rho": 0.8660254037844387
+  },
+  "test_4_universality": {
+    "pass": true,
+    "systems": [
+      {
+        "name": "Cell membrane / cytoplasm",
+        "N": 10000000000.0,
+        "n_T": 100000000.0,
+        "f_dark": 0.99
+      },
+      {
+        "name": "Photosphere / stellar interior",
+        "N": 1e+57,
+        "n_T": 1e+54,
+        "f_dark": 0.999
+      },
+      {
+        "name": "Conscious / unconscious",
+        "N": 86000000000.0,
+        "n_T": 17000000000.0,
+        "f_dark": 0.8
+      },
+      {
+        "name": "Coding exons / non-coding",
+        "N": 3200000000.0,
+        "n_T": 45000000.0,
+        "f_dark": 0.986
+      },
+      {
+        "name": "Baryonic / dark matter",
+        "N": 1e+80,
+        "n_T": 5e+78,
+        "f_dark": 0.95
+      },
+      {
+        "name": "Output tokens / model weights",
+        "N": 1800000000000.0,
+        "n_T": 100000.0,
+        "f_dark": 0.99999
+      }
+    ]
+  }
+}

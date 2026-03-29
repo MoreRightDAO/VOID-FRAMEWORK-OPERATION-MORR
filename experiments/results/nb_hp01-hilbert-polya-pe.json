@@ -1,0 +1,559 @@
+{
+  "experiment": "EXP-HP01",
+  "title": "Hilbert-P\u00f3lya Operator from Pe Dynamics",
+  "date": "2026-03-13",
+  "framework_sections": [
+    "\u00a751",
+    "\u00a766",
+    "Paper 110"
+  ],
+  "constants": {
+    "b_alpha": 0.867,
+    "b_gamma": 2.244,
+    "c_zero": 0.3863636363636363
+  },
+  "tests": [
+    {
+      "id": "T1",
+      "name": "1D Pe Schr\u00f6dinger level statistics",
+      "expectation": "Poisson (integrable system, BGS conjecture)",
+      "results": [
+        {
+          "K": 16,
+          "c": 0.1,
+          "Pe": 26.7104,
+          "b_net": 0.6426,
+          "T": 0.015625,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.25,
+          "repulsion_exponent": 0.11,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 16,
+          "c": 0.2,
+          "Pe": 14.9982,
+          "b_net": 0.4182,
+          "T": 0.015625,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.24,
+          "repulsion_exponent": 0.077,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 16,
+          "c": 0.3,
+          "Pe": 6.3581,
+          "b_net": 0.1938,
+          "T": 0.015625,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.24,
+          "repulsion_exponent": 0.06,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 16,
+          "c": 0.3864,
+          "Pe": 0.0,
+          "b_net": 0.0,
+          "T": 0.015625,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.24,
+          "repulsion_exponent": 0.06,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 16,
+          "c": 0.5,
+          "Pe": -8.5184,
+          "b_net": -0.255,
+          "T": 0.015625,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.24,
+          "repulsion_exponent": 0.06,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 16,
+          "c": 0.7,
+          "Pe": -30.7313,
+          "b_net": -0.7038,
+          "T": 0.015625,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.25,
+          "repulsion_exponent": 0.11,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 16,
+          "c": 0.9,
+          "Pe": -79.4116,
+          "b_net": -1.1526,
+          "T": 0.015625,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.25,
+          "repulsion_exponent": -0.04,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0706
+        },
+        {
+          "K": 64,
+          "c": 0.1,
+          "Pe": 106.8415,
+          "b_net": 0.6426,
+          "T": 0.003906,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.26,
+          "repulsion_exponent": -0.004,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0702
+        },
+        {
+          "K": 64,
+          "c": 0.2,
+          "Pe": 59.9928,
+          "b_net": 0.4182,
+          "T": 0.003906,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.25,
+          "repulsion_exponent": 0.059,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0705
+        },
+        {
+          "K": 64,
+          "c": 0.3,
+          "Pe": 25.4322,
+          "b_net": 0.1938,
+          "T": 0.003906,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.25,
+          "repulsion_exponent": 0.179,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 64,
+          "c": 0.3864,
+          "Pe": 0.0,
+          "b_net": 0.0,
+          "T": 0.003906,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.24,
+          "repulsion_exponent": 0.06,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 64,
+          "c": 0.5,
+          "Pe": -34.0735,
+          "b_net": -0.255,
+          "T": 0.003906,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.25,
+          "repulsion_exponent": -0.04,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0706
+        },
+        {
+          "K": 64,
+          "c": 0.7,
+          "Pe": -122.925,
+          "b_net": -0.7038,
+          "T": 0.003906,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.26,
+          "repulsion_exponent": 0.021,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0701
+        },
+        {
+          "K": 64,
+          "c": 0.9,
+          "Pe": -317.6462,
+          "b_net": -1.1526,
+          "T": 0.003906,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.3,
+          "repulsion_exponent": 0.131,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0691
+        },
+        {
+          "K": 256,
+          "c": 0.1,
+          "Pe": 427.3659,
+          "b_net": 0.6426,
+          "T": 0.000977,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.52,
+          "repulsion_exponent": 0.607,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0631
+        },
+        {
+          "K": 256,
+          "c": 0.2,
+          "Pe": 239.9713,
+          "b_net": 0.4182,
+          "T": 0.000977,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.36,
+          "repulsion_exponent": 0.068,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0674
+        },
+        {
+          "K": 256,
+          "c": 0.3,
+          "Pe": 101.7288,
+          "b_net": 0.1938,
+          "T": 0.000977,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.27,
+          "repulsion_exponent": 0.102,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.07
+        },
+        {
+          "K": 256,
+          "c": 0.3864,
+          "Pe": 0.0,
+          "b_net": 0.0,
+          "T": 0.000977,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.24,
+          "repulsion_exponent": 0.06,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0707
+        },
+        {
+          "K": 256,
+          "c": 0.5,
+          "Pe": -136.2938,
+          "b_net": -0.255,
+          "T": 0.000977,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.28,
+          "repulsion_exponent": -0.004,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0695
+        },
+        {
+          "K": 256,
+          "c": 0.7,
+          "Pe": -491.7001,
+          "b_net": -0.7038,
+          "T": 0.000977,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 3.57,
+          "repulsion_exponent": 0.657,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0618
+        },
+        {
+          "K": 256,
+          "c": 0.9,
+          "Pe": -1270.5849,
+          "b_net": -1.1526,
+          "T": 0.000977,
+          "n_eigenvalues": 2000,
+          "n_spacings": 1999,
+          "brody_beta": 4.16,
+          "repulsion_exponent": 3.154,
+          "mean_spacing": 1.0,
+          "var_spacing": 0.0496
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "name": "3D Eckert manifold level statistics",
+      "expectation": "GOE or GUE if coupling breaks separability; Poisson if effectively separable",
+      "results": [
+        {
+          "c": 0.2,
+          "Pe": 14.9982,
+          "grid": "12\u00b3",
+          "matrix_dim": 1728,
+          "n_eigenvalues": 1728,
+          "n_spacings": 1656,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.541,
+          "mean_spacing": 1.0,
+          "var_spacing": 1.9963
+        },
+        {
+          "c": 0.3864,
+          "Pe": 0.0,
+          "grid": "12\u00b3",
+          "matrix_dim": 1728,
+          "n_eigenvalues": 1728,
+          "n_spacings": 1656,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.541,
+          "mean_spacing": 1.0,
+          "var_spacing": 1.9963
+        },
+        {
+          "c": 0.5,
+          "Pe": -8.5184,
+          "grid": "12\u00b3",
+          "matrix_dim": 1728,
+          "n_eigenvalues": 1728,
+          "n_spacings": 1656,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.541,
+          "mean_spacing": 1.0,
+          "var_spacing": 1.9963
+        },
+        {
+          "c": 0.8,
+          "Pe": -49.9554,
+          "grid": "12\u00b3",
+          "matrix_dim": 1728,
+          "n_eigenvalues": 1728,
+          "n_spacings": 1656,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.541,
+          "mean_spacing": 1.0,
+          "var_spacing": 1.9963
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "name": "K-body coupled system",
+      "expectation": "Poisson\u2192GOE transition as coupling J increases",
+      "results": [
+        {
+          "K": 8,
+          "J": 0.0,
+          "n_eigenvalues": 64,
+          "brody_beta": 0.13,
+          "repulsion_exponent": NaN
+        },
+        {
+          "K": 8,
+          "J": 0.01,
+          "n_eigenvalues": 64,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.641
+        },
+        {
+          "K": 8,
+          "J": 0.1,
+          "n_eigenvalues": 64,
+          "brody_beta": 0.04,
+          "repulsion_exponent": 0.04
+        },
+        {
+          "K": 8,
+          "J": 1.0,
+          "n_eigenvalues": 64,
+          "brody_beta": 0.65,
+          "repulsion_exponent": 0.314
+        },
+        {
+          "K": 16,
+          "J": 0.0,
+          "n_eigenvalues": 256,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.376
+        },
+        {
+          "K": 16,
+          "J": 0.01,
+          "n_eigenvalues": 256,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.193
+        },
+        {
+          "K": 16,
+          "J": 0.1,
+          "n_eigenvalues": 256,
+          "brody_beta": 0.02,
+          "repulsion_exponent": 0.271
+        },
+        {
+          "K": 16,
+          "J": 1.0,
+          "n_eigenvalues": 256,
+          "brody_beta": 0.86,
+          "repulsion_exponent": 0.437
+        },
+        {
+          "K": 32,
+          "J": 0.0,
+          "n_eigenvalues": 400,
+          "brody_beta": 0.02,
+          "repulsion_exponent": -0.32
+        },
+        {
+          "K": 32,
+          "J": 0.01,
+          "n_eigenvalues": 400,
+          "brody_beta": 0.02,
+          "repulsion_exponent": 0.087
+        },
+        {
+          "K": 32,
+          "J": 0.1,
+          "n_eigenvalues": 400,
+          "brody_beta": 0.24,
+          "repulsion_exponent": 0.51
+        },
+        {
+          "K": 32,
+          "J": 1.0,
+          "n_eigenvalues": 400,
+          "brody_beta": 0.95,
+          "repulsion_exponent": 0.478
+        },
+        {
+          "K": 64,
+          "J": 0.0,
+          "n_eigenvalues": 400,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.287
+        },
+        {
+          "K": 64,
+          "J": 0.01,
+          "n_eigenvalues": 400,
+          "brody_beta": 0.0,
+          "repulsion_exponent": -0.165
+        },
+        {
+          "K": 64,
+          "J": 0.1,
+          "n_eigenvalues": 400,
+          "brody_beta": 0.12,
+          "repulsion_exponent": 0.603
+        },
+        {
+          "K": 64,
+          "J": 1.0,
+          "n_eigenvalues": 400,
+          "brody_beta": 0.75,
+          "repulsion_exponent": 0.324
+        }
+      ]
+    },
+    {
+      "id": "T4",
+      "name": "Riemann zeta zeros pair correlation",
+      "n_zeros": 2000,
+      "zeta_brody_beta": 1.61,
+      "zeta_repulsion_exponent": 1.627,
+      "pe0_K16_brody_beta": 3.24,
+      "pe0_K256_brody_beta": 3.24
+    },
+    {
+      "id": "T5",
+      "name": "Pe=0 critical boundary analysis",
+      "pe_at_c_zero": 0.0,
+      "n2_fit_r_squared": 1.0,
+      "approach_results": [
+        {
+          "eps": 0.0001,
+          "pe_positive": 0.1149,
+          "pe_negative": -0.1149,
+          "beta_positive": 3.24,
+          "beta_negative": 3.24,
+          "gap_positive": 0.028914,
+          "gap_negative": 0.028914
+        },
+        {
+          "eps": 0.001,
+          "pe_positive": 1.1489,
+          "pe_negative": -1.1489,
+          "beta_positive": 3.24,
+          "beta_negative": 3.24,
+          "gap_positive": 0.02887,
+          "gap_negative": 0.02887
+        },
+        {
+          "eps": 0.01,
+          "pe_positive": 11.4931,
+          "pe_negative": -11.4931,
+          "beta_positive": 3.24,
+          "beta_negative": 3.24,
+          "gap_positive": 0.027068,
+          "gap_negative": 0.027068
+        },
+        {
+          "eps": 0.05,
+          "pe_positive": 57.9297,
+          "pe_negative": -57.9297,
+          "beta_positive": 3.25,
+          "beta_negative": 3.25,
+          "gap_positive": 0.170153,
+          "gap_negative": 0.170153
+        },
+        {
+          "eps": 0.1,
+          "pe_positive": 118.7888,
+          "pe_negative": -118.7888,
+          "beta_positive": 3.28,
+          "beta_negative": 3.28,
+          "gap_positive": 0.375878,
+          "gap_negative": 0.375878
+        }
+      ]
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-1",
+      "condition": "1D integrable Pe operator must NOT show GUE (\u03b2\u22482)",
+      "result": "PASS",
+      "detail": "0/21 GUE-like (1.5<\u03b2<2.5), 21/21 super-rigid (\u03b2>3)"
+    },
+    {
+      "id": "K-HP-3",
+      "condition": "K-body system at large J must approach GOE/GUE",
+      "result": "PASS",
+      "detail": "J=0 \u03b2=0.037, J=1 \u03b2=0.802"
+    },
+    {
+      "id": "K-HP-4",
+      "condition": "Zeta zeros must show GUE-like statistics (\u03b2>1.2)",
+      "result": "PASS",
+      "detail": "\u03b2_zeta = 1.610"
+    },
+    {
+      "id": "K-HP-5",
+      "condition": "Pe=0 must produce free-particle (n\u00b2) spectrum",
+      "result": "PASS",
+      "detail": "R\u00b2(\u03bb_n, n\u00b2) = 1.000000"
+    }
+  ]
+}

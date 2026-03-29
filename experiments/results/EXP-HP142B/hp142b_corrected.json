@@ -1,0 +1,70 @@
+{
+  "corrected_models": {
+    "A": {
+      "params": {
+        "K_ref": 5.9,
+        "K0": 5.9
+      },
+      "TF_slope": 0.2500000000000001,
+      "TF_R2": 1.0,
+      "TF_passes": true,
+      "delta_H0": 358.87502859069764,
+      "Hubble_passes": false,
+      "max_lab_dev": 333332.3333333333,
+      "lab_passes": false,
+      "passes_all": false
+    },
+    "B": {
+      "params": {
+        "epsilon": 0.7899999999999999,
+        "K0": 0.5
+      },
+      "TF_slope": 0.26162069857015646,
+      "TF_R2": 0.9976125382855899,
+      "TF_passes": true,
+      "delta_H0": -47.725253836697746,
+      "Hubble_passes": false,
+      "max_lab_dev": Infinity,
+      "lab_passes": false,
+      "passes_all": false
+    },
+    "C": {
+      "params": {
+        "eta": 0.86,
+        "K0": 0.5
+      },
+      "TF_slope": 0.2616666666666665,
+      "TF_R2": 0.9999999999999991,
+      "TF_passes": true,
+      "delta_H0": 261.86509401012347,
+      "Hubble_passes": false,
+      "max_lab_dev": 56191.15928206405,
+      "lab_passes": false,
+      "passes_all": false,
+      "eta_vs_yK": {
+        "eta": 0.86,
+        "y_K": 0.48,
+        "consistent": false
+      }
+    },
+    "D": {
+      "params": {
+        "K0": 0.1
+      },
+      "TF_slope": 0.25000000000000006,
+      "TF_R2": 0.9962432559234123,
+      "TF_passes": true,
+      "delta_H0": 0.0538647223132358,
+      "Hubble_passes": false,
+      "max_lab_dev": 0.0011111111111010707,
+      "lab_passes": false,
+      "passes_all": false
+    }
+  },
+  "joint_C_corrected": {
+    "n_TF_Hubble": 0,
+    "n_all_three": 0,
+    "n_with_yK": 0,
+    "best": null
+  }
+}

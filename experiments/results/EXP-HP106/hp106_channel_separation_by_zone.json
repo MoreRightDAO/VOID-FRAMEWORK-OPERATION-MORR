@@ -1,0 +1,173 @@
+{
+  "experiment": "HP106",
+  "run_date": "2026-03-17T20:35:26.678773",
+  "kill_condition": {
+    "K-HP-610": "|\u0394C\u2082| varies > 30% across zones",
+    "result": "PASS"
+  },
+  "zone_results": {
+    "spacelike_low": {
+      "zone_name": "spacelike_low",
+      "description": "Low spacelike: Pe \u2248 0.5",
+      "alpha": 0.175,
+      "Pe": -1.3398008555466958,
+      "expected_channel": "spacelike",
+      "actual_channel": "spacelike",
+      "C2_Berry": 0.40182018013739956,
+      "C2_U1R": 0.00029550092205072557,
+      "delta_C2": 0.40152467921534885,
+      "mean_A": -0.4025606448293561,
+      "mean_n": 1.0002955876519257,
+      "d_Berry": 0.0845811100352265,
+      "d_U1R": 0.0005796835588734699,
+      "deriv_sign_corr": 1.0
+    },
+    "spacelike_mid": {
+      "zone_name": "spacelike_mid",
+      "description": "Mid spacelike: Pe \u2248 1.5",
+      "alpha": 0.165,
+      "Pe": -2.0619855169921495,
+      "expected_channel": "spacelike",
+      "actual_channel": "spacelike",
+      "C2_Berry": 0.4683834893800454,
+      "C2_U1R": 0.0010891416125619823,
+      "delta_C2": 0.46729434776748346,
+      "mean_A": -0.5481902099641799,
+      "mean_n": 1.0010903131606268,
+      "d_Berry": 0.09229613569676709,
+      "d_U1R": 0.0022803406462533794,
+      "deriv_sign_corr": 1.0
+    },
+    "BOTH": {
+      "zone_name": "BOTH",
+      "description": "BOTH zone: Pe \u2248 0.07 (dual-channel access)",
+      "alpha": 0.193,
+      "Pe": -0.04569606212172978,
+      "expected_channel": "BOTH",
+      "actual_channel": "timelike",
+      "C2_Berry": 0.3331377188141447,
+      "C2_U1R": 8.089210979134946e-05,
+      "delta_C2": 0.3330568267043534,
+      "mean_A": -0.018542929952472705,
+      "mean_n": 1.0000808986299012,
+      "d_Berry": 0.004708736993392526,
+      "d_U1R": 8.647298906028903e-06,
+      "deriv_sign_corr": 1.0
+    },
+    "SILENT": {
+      "zone_name": "SILENT",
+      "description": "SILENT zone: Pe \u2248 0 (near-trivial)",
+      "alpha": 0.1936,
+      "Pe": -0.0026112000115988067,
+      "expected_channel": "SILENT",
+      "actual_channel": "timelike",
+      "C2_Berry": 0.33300722089649454,
+      "C2_U1R": 8.069766492683712e-05,
+      "delta_C2": 0.3329265232315677,
+      "mean_A": -0.004199486788117905,
+      "mean_n": 1.0000807041537572,
+      "d_Berry": 0.001066754290592331,
+      "d_U1R": 1.9541252401963623e-06,
+      "deriv_sign_corr": 1.0
+    },
+    "timelike_near": {
+      "zone_name": "timelike_near",
+      "description": "Near timelike: Pe \u2248 -0.1",
+      "alpha": 0.196,
+      "Pe": 0.1697311832570414,
+      "expected_channel": "timelike",
+      "actual_channel": "spacelike",
+      "C2_Berry": 0.3344285496753175,
+      "C2_U1R": 8.284185713512078e-05,
+      "delta_C2": 0.33434570781818235,
+      "mean_A": -0.059720895379696604,
+      "mean_n": 1.0000828486950473,
+      "d_Berry": 0.015116249232822454,
+      "d_U1R": 2.8456520542330946e-05,
+      "deriv_sign_corr": 1.0
+    },
+    "timelike_far": {
+      "zone_name": "timelike_far",
+      "description": "Far timelike: Pe \u2248 -0.5",
+      "alpha": 0.21,
+      "Pe": 1.1760965349135255,
+      "expected_channel": "timelike",
+      "actual_channel": "spacelike",
+      "C2_Berry": 0.38798754433928545,
+      "C2_U1R": 0.00022661713200300884,
+      "delta_C2": 0.38776092720728245,
+      "mean_A": -0.3620290640407067,
+      "mean_n": 1.000226668181614,
+      "d_Berry": 0.07925536502218106,
+      "d_U1R": 0.0004165590472604121,
+      "deriv_sign_corr": 1.0
+    },
+    "spacelike_high": {
+      "zone_name": "spacelike_high",
+      "description": "High spacelike: Pe \u2248 8 (above Pe=5 crossover)",
+      "alpha": 0.1,
+      "Pe": -6.923501781825971,
+      "expected_channel": "spacelike",
+      "actual_channel": "spacelike",
+      "C2_Berry": 0.7462211078461863,
+      "C2_U1R": 0.17271446214551092,
+      "delta_C2": 0.5735066457006754,
+      "mean_A": -0.8509807051098932,
+      "mean_n": 1.204013991465238,
+      "d_Berry": 0.0285290310090498,
+      "d_U1R": 0.05896960698731937,
+      "deriv_sign_corr": 1.0
+    }
+  },
+  "c2_variation": {
+    "mean_delta_C2": 0.4043450939492705,
+    "max_delta_C2": 0.5735066457006754,
+    "min_delta_C2": 0.3329265232315677,
+    "variation": 0.5949871188477711,
+    "kc_610_pass": true,
+    "both_zone_delta_C2": 0.3330568267043534
+  },
+  "c3_derivatives": {
+    "spacelike_low": {
+      "d_Berry": 0.0845811100352265,
+      "d_U1R": 0.0005796835588734699,
+      "deriv_sign_corr": 1.0
+    },
+    "spacelike_mid": {
+      "d_Berry": 0.09229613569676709,
+      "d_U1R": 0.0022803406462533794,
+      "deriv_sign_corr": 1.0
+    },
+    "BOTH": {
+      "d_Berry": 0.004708736993392526,
+      "d_U1R": 8.647298906028903e-06,
+      "deriv_sign_corr": 1.0
+    },
+    "SILENT": {
+      "d_Berry": 0.001066754290592331,
+      "d_U1R": 1.9541252401963623e-06,
+      "deriv_sign_corr": 1.0
+    },
+    "timelike_near": {
+      "d_Berry": 0.015116249232822454,
+      "d_U1R": 2.8456520542330946e-05,
+      "deriv_sign_corr": 1.0
+    },
+    "timelike_far": {
+      "d_Berry": 0.07925536502218106,
+      "d_U1R": 0.0004165590472604121,
+      "deriv_sign_corr": 1.0
+    },
+    "spacelike_high": {
+      "d_Berry": 0.0285290310090498,
+      "d_U1R": 0.05896960698731937,
+      "deriv_sign_corr": 1.0
+    }
+  },
+  "c4_crossover": {
+    "crossover_pe": 5.0,
+    "n_zones": 7,
+    "n_match": 6,
+    "alignment_fraction": 0.8571428571428571
+  }
+}

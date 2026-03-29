@@ -1,0 +1,97 @@
+{
+  "experiment": "nb12-B2",
+  "title": "Temporal K-Scaling \u2014 Single-Agent RG Coarse-Graining",
+  "date": "2026-03-10",
+  "scientific_goal": "Pe_eff(M) \u221d M^{y_K}, predict y_K = 0.5 (analytical random-walk result)",
+  "m_weeks": [
+    1,
+    2,
+    4,
+    8,
+    13,
+    26
+  ],
+  "analytical_prediction": {
+    "y_K": 0.5,
+    "derivation": "Pe = signal/noise = drift*M / sqrt(diffusion*M) = Pe_0 * sqrt(M)",
+    "connection": "\u00a749B RG prediction y_K \u2248 0.48 confirmed by different route"
+  },
+  "chains": {
+    "ethereum": {
+      "n_wallets": 1000,
+      "n_wallets_used": 877,
+      "n_wallets_skipped": 123,
+      "mode": "empirical",
+      "fit": {
+        "y_K": -0.3691732203175275,
+        "intercept": 2.2941123680423923,
+        "r2": 0.9026948757202741,
+        "n_points": 5,
+        "analytical_prediction": 0.5,
+        "agreement": 0.8691732203175275,
+        "gm_by_M": {
+          "2": 8.512132833504204,
+          "4": 5.510333915125143,
+          "8": 4.5290384279209634,
+          "13": 3.308756272691548,
+          "26": 3.4222601434750146
+        }
+      }
+    },
+    "base": {
+      "n_wallets": 1000,
+      "n_wallets_used": 818,
+      "n_wallets_skipped": 182,
+      "mode": "empirical",
+      "fit": {
+        "y_K": -0.4996107159761851,
+        "intercept": 3.7051404089850397,
+        "r2": 0.9683367205070019,
+        "n_points": 5,
+        "analytical_prediction": 0.5,
+        "agreement": 0.9996107159761851,
+        "gm_by_M": {
+          "2": 28.79755096399117,
+          "4": 18.500089659064955,
+          "8": 15.938537502985145,
+          "13": 12.180762926837373,
+          "26": 7.329883468613336
+        }
+      }
+    },
+    "solana": {
+      "n_wallets": 1000,
+      "n_wallets_used": 727,
+      "n_wallets_skipped": 273,
+      "mode": "empirical",
+      "fit": {
+        "y_K": -0.31695672490471044,
+        "intercept": 3.7906867648276767,
+        "r2": 0.9293647280542788,
+        "n_points": 5,
+        "analytical_prediction": 0.5,
+        "agreement": 0.8169567249047105,
+        "gm_by_M": {
+          "2": 37.31332080054695,
+          "4": 25.355293900960472,
+          "8": 25.564123221993615,
+          "13": 18.762528529686392,
+          "26": 15.866416851562388
+        }
+      }
+    }
+  },
+  "pooled": {
+    "y_K_mean": -0.39524688706614103,
+    "y_K_per_chain": {
+      "ethereum": -0.3691732203175275,
+      "base": -0.4996107159761851,
+      "solana": -0.31695672490471044
+    },
+    "analytical_prediction": 0.5,
+    "absolute_error": 0.895246887066141,
+    "passes_NB12_B2_1": false,
+    "passes_NB12_B2_2": false,
+    "passes_NB12_B2_3": false
+  }
+}

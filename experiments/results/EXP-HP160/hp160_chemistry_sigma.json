@@ -1,0 +1,143 @@
+{
+  "experiment": "EXP-HP160",
+  "title": "External Validation: \u03c3(c) Shape Test \u2014 Chemistry",
+  "data_source": "RDB7 (Spiekermann et al. 2022, CCSD(T)-F12a)",
+  "data_doi": "10.1038/s41597-022-01529-6",
+  "n_reactions": 11926,
+  "framework_constants": {
+    "b_alpha": 0.867,
+    "b_gamma": 2.244
+  },
+  "timestamp": "2026-03-24T18:21:34.530558+00:00",
+  "phase_a": {
+    "n": 11926,
+    "in_domain_cascade": 6,
+    "in_domain_coherent": 396,
+    "in_domain_either": 396,
+    "pct_either": 0.03320476270333725,
+    "K-HP-160-3": "FAIL",
+    "c_coherent_stats": {
+      "min": 0.6605419034544467,
+      "max": 1.9313917954165785,
+      "median": 1.216264155506651
+    },
+    "correlations": {
+      "c_vs_dH": {
+        "rho": 0.4148347319546718,
+        "p": 0.0
+      },
+      "c_vs_hetero_frac": {
+        "rho": -0.04891247609811537,
+        "p": 9.08244060338928e-08
+      },
+      "c_vs_N_heavy": {
+        "rho": -0.3209686774508731,
+        "p": 7.001311032043535e-284
+      }
+    }
+  },
+  "phase_b": {
+    "evans_polanyi": {
+      "params": 2,
+      "test_R2": 0.2551895391850666,
+      "test_MAE": 15.49556812309015,
+      "slope": 0.35256973825316285,
+      "intercept": 67.55611350413878
+    },
+    "multilinear": {
+      "params": 4,
+      "test_R2": 0.26686480860146367,
+      "test_MAE": 15.388730949690718
+    },
+    "quadratic": {
+      "params": 3,
+      "test_R2": 0.26666910034956637,
+      "test_MAE": 15.309254884841566
+    },
+    "sinh2": {
+      "params": 4,
+      "test_R2": 0.27337383792730285,
+      "test_MAE": 15.188715391886719,
+      "fit": [
+        0.4210558477888515,
+        0.2327540268732451,
+        2.6219978764322613,
+        58.01445355444814
+      ]
+    },
+    "framework_fixed": {
+      "params": 4,
+      "test_R2": 0.2666688150568438,
+      "test_MAE": 15.309238939932003,
+      "fit": [
+        50.460315378854375,
+        64.94742950614396,
+        0.612691669783505,
+        0.09081299794713427
+      ]
+    },
+    "framework_fitted": {
+      "params": 6,
+      "test_R2": 0.2666690755277099,
+      "test_MAE": 15.309253544840773,
+      "b_alpha_fit": 0.3030876450129559,
+      "b_gamma_fit": 3.5825049017500006,
+      "b_alpha_deviation_pct": 65.04179411615273,
+      "b_gamma_deviation_pct": 59.64816852718361
+    },
+    "kill_conditions": {
+      "K-HP-160-1": {
+        "sinh2_vs_linear_delta_R2": 0.01818429874223626,
+        "result": "FAIL"
+      },
+      "K-HP-160-2": {
+        "b_alpha_fit": 0.3030876450129559,
+        "b_alpha_deviation_pct": 65.04179411615273,
+        "result": "FAIL"
+      }
+    }
+  },
+  "phase_c": {
+    "b_alpha_mean": 0.7000292150043187,
+    "b_alpha_cv_pct": 40.26346249781005,
+    "b_alpha_consistent": false
+  },
+  "kill_conditions": {
+    "K-HP-160-1": "FAIL",
+    "K-HP-160-2": "FAIL",
+    "K-HP-160-3": "FAIL"
+  },
+  "kill_conditions_passed": "0/3",
+  "phase_d_stratified": {
+    "ketoenol": {
+      "N": 687,
+      "evans_polanyi_R2": 0.21063662887331547,
+      "sinh2_R2": 0.21947713926561419,
+      "delta_R2": 0.008840510392298717
+    },
+    "Singlet_Carbene_Intra_Disproportionation": {
+      "N": 256,
+      "evans_polanyi_R2": 0.8087976358044586,
+      "sinh2_R2": 0.7937282637083397,
+      "delta_R2": -0.015069372096118916
+    },
+    "1,3_Insertion_ROR": {
+      "N": 195,
+      "evans_polanyi_R2": 0.33536488058226643,
+      "sinh2_R2": 0.32507162327182293,
+      "delta_R2": -0.010293257310443504
+    },
+    "Retroene": {
+      "N": 173,
+      "evans_polanyi_R2": 0.4635212214315677,
+      "sinh2_R2": 0.47899996997555594,
+      "delta_R2": 0.01547874854398823
+    },
+    "2+2_cycloaddition": {
+      "N": 61,
+      "evans_polanyi_R2": 0.15755874361801414,
+      "sinh2_R2": 0.13779792828456128,
+      "delta_R2": -0.019760815333452864
+    }
+  }
+}

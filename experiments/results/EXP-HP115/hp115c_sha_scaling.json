@@ -1,0 +1,223 @@
+{
+  "experiment": "HP115C",
+  "title": "Sha Scaling Law",
+  "section": "\u00a7123",
+  "run_date": "2026-03-18T14:16:25.534409",
+  "probes": {
+    "C1_C2_C3_scan": {
+      "scans": [
+        {
+          "N": 20,
+          "n_silent": 2,
+          "n_total": 20,
+          "fraction": 0.1,
+          "sqrt_sha": 1.4142135623730951,
+          "nearest_perfect_square": 1,
+          "is_perfect_square": false,
+          "sq_deviation": 1.0,
+          "channels": {
+            "spacelike": 16,
+            "timelike": 2,
+            "BOTH": 0,
+            "SILENT": 2
+          }
+        },
+        {
+          "N": 40,
+          "n_silent": 2,
+          "n_total": 40,
+          "fraction": 0.05,
+          "sqrt_sha": 1.4142135623730951,
+          "nearest_perfect_square": 1,
+          "is_perfect_square": false,
+          "sq_deviation": 1.0,
+          "channels": {
+            "spacelike": 33,
+            "timelike": 4,
+            "BOTH": 1,
+            "SILENT": 2
+          }
+        },
+        {
+          "N": 80,
+          "n_silent": 4,
+          "n_total": 80,
+          "fraction": 0.05,
+          "sqrt_sha": 2.0,
+          "nearest_perfect_square": 4,
+          "is_perfect_square": true,
+          "sq_deviation": 0.0,
+          "channels": {
+            "spacelike": 66,
+            "timelike": 9,
+            "BOTH": 1,
+            "SILENT": 4
+          }
+        },
+        {
+          "N": 160,
+          "n_silent": 9,
+          "n_total": 160,
+          "fraction": 0.05625,
+          "sqrt_sha": 3.0,
+          "nearest_perfect_square": 9,
+          "is_perfect_square": true,
+          "sq_deviation": 0.0,
+          "channels": {
+            "spacelike": 130,
+            "timelike": 19,
+            "BOTH": 2,
+            "SILENT": 9
+          }
+        },
+        {
+          "N": 320,
+          "n_silent": 18,
+          "n_total": 320,
+          "fraction": 0.05625,
+          "sqrt_sha": 4.242640687119285,
+          "nearest_perfect_square": 16,
+          "is_perfect_square": false,
+          "sq_deviation": 0.125,
+          "channels": {
+            "spacelike": 262,
+            "timelike": 36,
+            "BOTH": 4,
+            "SILENT": 18
+          }
+        },
+        {
+          "N": 640,
+          "n_silent": 36,
+          "n_total": 640,
+          "fraction": 0.05625,
+          "sqrt_sha": 6.0,
+          "nearest_perfect_square": 36,
+          "is_perfect_square": true,
+          "sq_deviation": 0.0,
+          "channels": {
+            "spacelike": 523,
+            "timelike": 74,
+            "BOTH": 7,
+            "SILENT": 36
+          }
+        }
+      ],
+      "scaling_fit": {
+        "beta": 0.8308588755482658,
+        "A": 0.14783962752748886,
+        "formula": "|Sha| = 0.1478 * N^0.831"
+      },
+      "linear_sqrt_fit": {
+        "slope": 0.00756067374956932,
+        "intercept": 1.4241031479013553,
+        "r_squared": 0.9706227692569195,
+        "conductor_c": 132.263344924381
+      },
+      "all_perfect_squares": false,
+      "high_res_perfect_squares": false
+    },
+    "C5_2d_scan": {
+      "n_silent_2d": 15,
+      "n_total_2d": 450,
+      "fraction_2d": 0.03333333333333333,
+      "is_perfect_square_2d": false,
+      "nearest_sq_2d": 16,
+      "ratio_2d_1d": 0.5952380952380952,
+      "silent_points": [
+        [
+          0.15,
+          0.24379310344827587
+        ],
+        [
+          0.1607142857142857,
+          0.2313793103448276
+        ],
+        [
+          0.1607142857142857,
+          0.23448275862068965
+        ],
+        [
+          0.1607142857142857,
+          0.24379310344827587
+        ],
+        [
+          0.17142857142857143,
+          0.22206896551724137
+        ],
+        [
+          0.17142857142857143,
+          0.23448275862068965
+        ],
+        [
+          0.18214285714285713,
+          0.2096551724137931
+        ],
+        [
+          0.18214285714285713,
+          0.22206896551724137
+        ],
+        [
+          0.19285714285714284,
+          0.19724137931034483
+        ],
+        [
+          0.19285714285714284,
+          0.2003448275862069
+        ],
+        [
+          0.20357142857142857,
+          0.1879310344827586
+        ],
+        [
+          0.21428571428571427,
+          0.17551724137931035
+        ],
+        [
+          0.21428571428571427,
+          0.17862068965517242
+        ],
+        [
+          0.22499999999999998,
+          0.16310344827586207
+        ],
+        [
+          0.22499999999999998,
+          0.16620689655172413
+        ]
+      ]
+    }
+  },
+  "kill_conditions": {
+    "K-HP-720": {
+      "description": "|Sha| is perfect square at N=320 AND N=640",
+      "measured": "N=320: 18 (\u2717), N=640: 36 (\u2713)",
+      "result": "FAIL"
+    },
+    "K-HP-721": {
+      "description": "Scaling exponent \u03b2 in [0.8, 1.5]",
+      "measured": 0.8308588755482658,
+      "result": "PASS"
+    },
+    "K-HP-722": {
+      "description": "Perfect square at all tested resolutions (N\u226540)",
+      "measured": false,
+      "result": "FAIL"
+    },
+    "K-HP-723": {
+      "description": "2D SILENT fraction within factor of 2 of 1D",
+      "measured": 0.5952380952380952,
+      "result": "PASS"
+    },
+    "K-HP-724": {
+      "description": "\u221a|Sha| scales linearly with N (R\u00b2 > 0.95)",
+      "measured": 0.9706227692569195,
+      "result": "PASS"
+    }
+  },
+  "summary": {
+    "n_pass": 3,
+    "n_total": 5,
+    "verdict": "3/5 PASS"
+  }
+}

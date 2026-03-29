@@ -1,0 +1,122 @@
+{
+  "experiment": "HP125",
+  "description": "Mode Contraction Validation on Synthetic DNS",
+  "timestamp": "2026-03-24T14:36:01.109510",
+  "parameters": {
+    "nu": 0.01,
+    "dt": 0.001,
+    "n_steps": 200,
+    "n_modes": 64,
+    "s": 2.0
+  },
+  "results": {
+    "c1_mode_evolution": {
+      "1": {
+        "initial": 0.2450853096974094,
+        "final": 0.29401763094679156,
+        "ratio": 1.1996542400268528,
+        "trend": 0.0002522664723257078,
+        "decreasing": false
+      },
+      "2": {
+        "initial": 0.5734476643058072,
+        "final": 0.5798384583179524,
+        "ratio": 1.0111445113650985,
+        "trend": 3.9137852592776213e-05,
+        "decreasing": false
+      },
+      "4": {
+        "initial": 0.24677846896400973,
+        "final": 0.26802851816593243,
+        "ratio": 1.0861098186204479,
+        "trend": 0.00013538091876139657,
+        "decreasing": false
+      },
+      "8": {
+        "initial": 0.1397476503300927,
+        "final": 0.5270598296929071,
+        "ratio": 3.771511209297321,
+        "trend": 0.002116233318768202,
+        "decreasing": false
+      },
+      "16": {
+        "initial": 0.016999445464926093,
+        "final": 0.20222505548259295,
+        "ratio": 11.895979542381628,
+        "trend": 0.0009142379480072792,
+        "decreasing": false
+      },
+      "32": {
+        "initial": 0.0018769845485255671,
+        "final": 0.022948942507533626,
+        "ratio": 12.226495165109789,
+        "trend": 8.96508218141384e-05,
+        "decreasing": false
+      }
+    },
+    "c2_contraction_factors": [
+      {
+        "k": 1,
+        "L_k": 1.0009581958871734,
+        "contracts": false
+      },
+      {
+        "k": 2,
+        "L_k": 1.000091327401299,
+        "contracts": false
+      },
+      {
+        "k": 4,
+        "L_k": 1.0007907579751438,
+        "contracts": false
+      },
+      {
+        "k": 8,
+        "L_k": 1.0068621746566049,
+        "contracts": false
+      },
+      {
+        "k": 16,
+        "L_k": 1.0127720889803191,
+        "contracts": false
+      },
+      {
+        "k": 32,
+        "L_k": 1.0151720929106707,
+        "contracts": false
+      },
+      {
+        "k": 48,
+        "L_k": 1.0329778998181114,
+        "contracts": false
+      },
+      {
+        "k": 64,
+        "L_k": 1.0010085173881824,
+        "contracts": false
+      }
+    ],
+    "c3_theoretical": {
+      "C_eff": 0.07278673677038805,
+      "k0_theory": 1,
+      "rho": 0.057872929258514866
+    },
+    "c4_sobolev": {
+      "monotone_fraction": 0.095,
+      "initial_norm": 40140.52584066658,
+      "final_norm": 880922.4302147583
+    },
+    "c5_gevrey": {
+      "all_positive": true,
+      "min_sigma": 0.03714646378559178,
+      "mean_sigma": 0.07819934006429605
+    }
+  },
+  "kill_conditions": {
+    "K-HP125-1": "FAIL",
+    "K-HP125-2": "FAIL",
+    "K-HP125-3": "FAIL",
+    "K-HP125-4": "PASS"
+  },
+  "score": "1/4"
+}

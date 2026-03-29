@@ -1,0 +1,52 @@
+{
+  "experiment": "THRML-SOC-05",
+  "verdict": "PASS",
+  "pass_count": 5,
+  "pass_criteria": {
+    "1_threshold_gated": true,
+    "2_expert_onset_under_5": true,
+    "3_novice_slower": true,
+    "4_no_breath_no_cascade": true,
+    "5_delta_T_benson_range": true
+  },
+  "expert": {
+    "i_visu": 1.0,
+    "r_breath": 1.5,
+    "onset_time": 5.0,
+    "dT_t2": 0.0,
+    "dT_t5": 1.083,
+    "dT_t10": 9.613,
+    "dT_t20": 10.0,
+    "pe_thresh_crossed": true
+  },
+  "novice": {
+    "i_visu": 0.4,
+    "r_breath": 1.5,
+    "onset_time": 15.8,
+    "dT_t2": 0.0,
+    "dT_t5": 0.0,
+    "dT_t10": 0.0,
+    "dT_t20": 4.824,
+    "pe_thresh_crossed": true
+  },
+  "no_breath": {
+    "i_visu": 1.0,
+    "r_breath": 0.0,
+    "onset_time": null,
+    "dT_t2": 0.0,
+    "dT_t5": 0.0,
+    "dT_t10": 0.0,
+    "dT_t20": 0.0,
+    "pe_thresh_crossed": false
+  },
+  "canonical": {
+    "K": 16,
+    "B_ALPHA": 0.867,
+    "B_GAMMA": 2.244,
+    "V_STAR": 5.52,
+    "PE_THRESH": 4.0,
+    "XI": 0.5,
+    "K_THERMO": 2.0,
+    "R_BREATH": 1.5
+  }
+}

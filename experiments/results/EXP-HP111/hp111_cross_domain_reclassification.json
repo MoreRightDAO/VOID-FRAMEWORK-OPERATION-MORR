@@ -1,0 +1,308 @@
+{
+  "experiment": "HP111",
+  "paper": "Discovery Engine",
+  "date": "2026-03-17T23:13:38.632827",
+  "n_misfits": 30,
+  "kill_conditions": {
+    "K-PE-111-1 (\u226535/57 justified)": false,
+    "K-PE-111-2 (\u22652 large clusters)": false,
+    "K-PE-111-3 (\u226580% fit improvement)": false
+  },
+  "audit_results": [
+    {
+      "platform": "Japan e-Gov e-Stat (Integrated National Statistical System)",
+      "from_domain": "national_ai_systems",
+      "to_domain": "government_civic",
+      "pe": -79.41,
+      "justified": true,
+      "verdict": "LIKELY OK",
+      "reason": "Low Pe (-79.4) \u2192 government_civic is the safe attractor"
+    },
+    {
+      "platform": "DuckDuckGo",
+      "from_domain": "digital_advertising",
+      "to_domain": "government_civic",
+      "pe": -63.63,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Privacy-first search engine; no ad targeting, no user tracking. Architecturally closer to a public information service than an ad platform."
+    },
+    {
+      "platform": "Social Credit System (China, Ministry of Public Security)",
+      "from_domain": "algorithmic_legal",
+      "to_domain": "modern_gaming",
+      "pe": 24.21,
+      "justified": null,
+      "verdict": "UNREVIEWED",
+      "reason": "Needs manual review"
+    },
+    {
+      "platform": "Garmin (wearables)",
+      "from_domain": "surveillance",
+      "to_domain": "education",
+      "pe": -19.02,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Fitness tracker with user-controlled data. No selling data to advertisers, no engagement manipulation. Health information tool."
+    },
+    {
+      "platform": "GarageBand (Apple)",
+      "from_domain": "workplace_tech",
+      "to_domain": "government_civic",
+      "pe": -64.73,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Local-first music creation tool. No cloud dependency, no tracking, no engagement hooks. Pure creative tool."
+    },
+    {
+      "platform": "Apple Arcade",
+      "from_domain": "modern_gaming",
+      "to_domain": "news_media",
+      "pe": -28.49,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Curated subscription gaming \u2014 no microtransactions, no loot boxes, no engagement hooks. Architecture is content-delivery, not engagement-capture."
+    },
+    {
+      "platform": "EcoCounter Urban Mobility Analytics",
+      "from_domain": "smart_cities",
+      "to_domain": "government_civic",
+      "pe": -57.39,
+      "justified": true,
+      "verdict": "LIKELY OK",
+      "reason": "Low Pe (-57.4) \u2192 government_civic is the safe attractor"
+    },
+    {
+      "platform": "Doxy.me",
+      "from_domain": "healthcare",
+      "to_domain": "government_civic",
+      "pe": -55.44,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Telehealth platform with minimal tracking, simple interface, healthcare-as-public-service architecture."
+    },
+    {
+      "platform": "Veritone Redact",
+      "from_domain": "law_enforcement_tech",
+      "to_domain": "healthcare",
+      "pe": -13.7,
+      "justified": false,
+      "verdict": "SPURIOUS",
+      "reason": "Video redaction tool \u2192 healthcare fit is spurious. Low Pe because it is a narrow-purpose tool, but domain fit is wrong."
+    },
+    {
+      "platform": "Wolfram Alpha",
+      "from_domain": "education",
+      "to_domain": "government_civic",
+      "pe": -74.2,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Computational knowledge engine. Pure information retrieval, no engagement hooks, no tracking. Public knowledge tool."
+    },
+    {
+      "platform": "Procreate",
+      "from_domain": "workplace_tech",
+      "to_domain": "government_civic",
+      "pe": -59.41,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Local-first drawing app. No subscription, no cloud lock-in, no tracking. One-time purchase, pure tool."
+    },
+    {
+      "platform": "US Social Security Death Master File (DMF) Automation",
+      "from_domain": "national_ai_systems",
+      "to_domain": "government_civic",
+      "pe": -49.09,
+      "justified": true,
+      "verdict": "LIKELY OK",
+      "reason": "Low Pe (-49.1) \u2192 government_civic is the safe attractor"
+    },
+    {
+      "platform": "Finland Suomi.fi",
+      "from_domain": "national_ai_systems",
+      "to_domain": "government_civic",
+      "pe": -48.24,
+      "justified": true,
+      "verdict": "LIKELY OK",
+      "reason": "Low Pe (-48.2) \u2192 government_civic is the safe attractor"
+    },
+    {
+      "platform": "Mastodon",
+      "from_domain": "social_media",
+      "to_domain": "government_civic",
+      "pe": -41.15,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Federated, no algorithmic feed, no engagement optimization, chronological timeline. Architecturally a public commons."
+    },
+    {
+      "platform": "Brave Search",
+      "from_domain": "digital_advertising",
+      "to_domain": "government_civic",
+      "pe": -41.15,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Privacy-focused search with no behavioral targeting. Transparent ranking, no engagement optimization."
+    },
+    {
+      "platform": "Bristlr",
+      "from_domain": "dating_apps",
+      "to_domain": "ai_systems",
+      "pe": -2.32,
+      "justified": false,
+      "verdict": "SPURIOUS",
+      "reason": "Beard-themed dating app \u2192 AI systems fit is spurious. Just a very simple dating app with low engagement mechanics."
+    },
+    {
+      "platform": "Benefitfocus Government Solutions (US)",
+      "from_domain": "benefits_welfare_ai",
+      "to_domain": "smart_cities",
+      "pe": -8.52,
+      "justified": false,
+      "verdict": "SPURIOUS",
+      "reason": "Benefits enrollment \u2192 smart cities fit is spurious. Low Pe outlier in benefits domain, but not a smart city tool."
+    },
+    {
+      "platform": "Among Us (Innersloth)",
+      "from_domain": "modern_gaming",
+      "to_domain": "education",
+      "pe": -20.28,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Social deduction game \u2014 no gacha, no loot boxes, minimal MTX. Architecture is peer interaction, not engagement extraction."
+    },
+    {
+      "platform": "Curiosity Stream",
+      "from_domain": "streaming_media",
+      "to_domain": "government_civic",
+      "pe": -45.76,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Documentary streaming \u2014 no algorithmic engagement, curated educational content, minimal reactivity. Public broadcasting model."
+    },
+    {
+      "platform": "Vimeo On Demand",
+      "from_domain": "streaming_media",
+      "to_domain": "government_civic",
+      "pe": -43.4,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Creator-first video platform. No algorithmic recommendations, no engagement manipulation. Platform-as-tool architecture."
+    },
+    {
+      "platform": "Minecraft (Microsoft)",
+      "from_domain": "modern_gaming",
+      "to_domain": "education",
+      "pe": -17.8,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Creative sandbox with education edition widely used in schools. Low opacity, moderate reactivity, no gacha/MTX mechanics."
+    },
+    {
+      "platform": "Ecosia",
+      "from_domain": "digital_advertising",
+      "to_domain": "government_civic",
+      "pe": -34.35,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Search engine that plants trees. Minimal tracking, mission-driven, no engagement manipulation. Civic architecture."
+    },
+    {
+      "platform": "OnBuy",
+      "from_domain": "ecommerce",
+      "to_domain": "government_civic",
+      "pe": -31.31,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Transparent marketplace with no algorithmic manipulation. Seller-first architecture, minimal engagement hooks."
+    },
+    {
+      "platform": "Nintendo Switch Online",
+      "from_domain": "modern_gaming",
+      "to_domain": "education",
+      "pe": -17.02,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Retro game library + online play. No engagement manipulation, no algorithmic content. Architecture is subscription content."
+    },
+    {
+      "platform": "TrueLayer (Open Banking Lending)",
+      "from_domain": "predatory_finance",
+      "to_domain": "algorithmic_legal",
+      "pe": -4.49,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Open banking API \u2014 regulated, transparent, low engagement. Architecture is financial infrastructure, not predatory lending."
+    },
+    {
+      "platform": "Oura Ring (iot domain)",
+      "from_domain": "surveillance",
+      "to_domain": "traditional_finance",
+      "pe": -11.99,
+      "justified": false,
+      "verdict": "SPURIOUS",
+      "reason": "Health ring \u2192 finance fit is spurious. Really another health tool that should be in wellness/healthcare domain."
+    },
+    {
+      "platform": "OneSoil",
+      "from_domain": "agriculture",
+      "to_domain": "government_civic",
+      "pe": -49.09,
+      "justified": true,
+      "verdict": "JUSTIFIED",
+      "reason": "Satellite-based crop monitoring with transparent data. Public-good architecture for farming communities."
+    },
+    {
+      "platform": "RealPage",
+      "from_domain": "real_estate",
+      "to_domain": "social_media",
+      "pe": 6.65,
+      "justified": false,
+      "verdict": "SPURIOUS",
+      "reason": "Rental pricing algorithm \u2192 social media fit is spurious. High Pe because it is algorithmically opaque and responsive, not because it resembles social media."
+    },
+    {
+      "platform": "Bluebeam Revu",
+      "from_domain": "real_estate",
+      "to_domain": "government_civic",
+      "pe": -38.3,
+      "justified": true,
+      "verdict": "LIKELY OK",
+      "reason": "Low Pe (-38.3) \u2192 government_civic is the safe attractor"
+    },
+    {
+      "platform": "DeepL Write",
+      "from_domain": "ai_systems",
+      "to_domain": "news_media",
+      "pe": -24.39,
+      "justified": false,
+      "verdict": "SPURIOUS",
+      "reason": "Translation tool \u2192 news media fit is spurious. Should be in workplace_tech or education. Low scores make it an outlier in AI."
+    }
+  ],
+  "cluster_sizes": {
+    "government_civic": 17,
+    "modern_gaming": 1,
+    "education": 4,
+    "news_media": 2,
+    "healthcare": 1,
+    "ai_systems": 1,
+    "smart_cities": 1,
+    "algorithmic_legal": 1,
+    "traditional_finance": 1,
+    "social_media": 1
+  },
+  "large_clusters": [
+    "government_civic"
+  ],
+  "fit_improvement": {
+    "improved": 30,
+    "total": 30
+  },
+  "report": {
+    "civic_reclassifiers": 17,
+    "edu_reclassifiers": 4,
+    "spurious": 6
+  },
+  "summary": "0/3 PASS"
+}

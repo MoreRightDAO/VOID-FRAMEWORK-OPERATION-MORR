@@ -1,0 +1,216 @@
+{
+  "experiment": "HP128",
+  "title": "Corrected Eckert-BSD Identity",
+  "section": "\u00a7123 (corrections to \u00a7123L)",
+  "parent": "HP115",
+  "run_date": "2026-03-18T14:52:12.172864",
+  "parameters": {
+    "BOTH_point": [
+      0.21,
+      0.21,
+      0.194
+    ],
+    "holonomy_angle_deg": 14.0,
+    "zone_fractions": {
+      "spacelike": 0.8,
+      "timelike": 0.12,
+      "BOTH": 0.003,
+      "SILENT": 0.08
+    },
+    "wasserstein_ratio": 0.019607843137254905,
+    "W_inf": 0.002,
+    "W_0": 0.102,
+    "torsion_order": 4,
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "N_grid": 1000,
+    "N_states": 60,
+    "corrections_applied": [
+      "critical point s=1/4 (not s=1/2)",
+      "pole order (not vanishing order)",
+      "Wasserstein regulator (not metric perturbation)"
+    ]
+  },
+  "probes": {
+    "C1_corrected_critical_point": {
+      "Pe_both": 0.026112011591220483,
+      "lambda1": 0.07711000042260907,
+      "zeta_at_quarter": {
+        "value": 21.176188213370704,
+        "type": "regular",
+        "order": 0,
+        "alpha": -0.014566995480704868,
+        "R_sq": 0.5221448026470035
+      },
+      "zeta_theoretical_quarter": -2.7712813526160143,
+      "zeta_profile": {
+        "s=0.1": 42.06902934224593,
+        "s=0.15": 35.74968331359382,
+        "s=0.2": 30.730071358505295,
+        "s=0.25": 26.75445974869704,
+        "s=0.3": 23.622235290082255,
+        "s=0.35": 21.176188213370704,
+        "s=0.4": 19.293384173397808,
+        "s=0.45": 17.878054044066428,
+        "s=0.5": 16.856058616707347,
+        "s=0.6": 15.778806870955908,
+        "s=0.8": 16.65302634833443,
+        "s=1.0": 21.118934611740162,
+        "s=1.5": 56.13267577305694,
+        "s=2.0": 182.02792513058927,
+        "s=3.0": 2218.8925032301686
+      },
+      "pe0_verification": {
+        "zeta_H_quarter": 26.754489204751234,
+        "lambda1_quarter_zeta_half": -2.771315310231875,
+        "ratio": -9.654076209218033
+      }
+    },
+    "C2_pole_at_half": {
+      "type": "regular",
+      "alpha_raw": -0.007364676092719188,
+      "r_squared": 0.6847916598707462,
+      "pole_order": 0,
+      "residue_measured": 15.778806870955908,
+      "residue_predicted_pe0": 1.800633371231998,
+      "is_pole": false,
+      "full_analysis": {
+        "value": 15.778806870955908,
+        "type": "regular",
+        "order": 0,
+        "alpha": -0.0046707640485868515,
+        "R_sq": 0.5708084205657981
+      }
+    },
+    "C3_corrected_identity": {
+      "theta_hol": 0.03888888888888889,
+      "zeta_quarter": 21.176188213370704,
+      "N_sha": 9,
+      "wasserstein_ratio": 0.019607843137254905,
+      "prod_fz": 2.304e-05,
+      "torsion_sq": 16,
+      "lhs": 544.5305540581038,
+      "rhs_wasserstein": 2.5411764705882357e-07,
+      "rhs_bare_hp115": 3.0222675274516337e-05,
+      "ratio_wasserstein": 2142828569.2101305,
+      "log10_ratio_wasserstein": 9.330987427960109,
+      "log10_ratio_bare": 5.845514883382937,
+      "wasserstein_improvement_factor": 0.6264626255809728,
+      "ratio_residue_half": null,
+      "log10_ratio_residue": null
+    },
+    "C4_sha_squared": {
+      "80": {
+        "sha": 4,
+        "sha_squared": 16,
+        "predicted_zeta": 1.9520697167755998e-09,
+        "actual_zeta": 21.176188213370704,
+        "ratio": 10848069631.626284,
+        "one_test": 10848069631.626286
+      },
+      "160": {
+        "sha": 9,
+        "sha_squared": 81,
+        "predicted_zeta": 9.882352941176472e-09,
+        "actual_zeta": 21.176188213370704,
+        "ratio": 2142828569.2101305,
+        "one_test": 2142828569.2101302
+      }
+    },
+    "C5_sha_multiresolution": {
+      "20": {
+        "n_silent": 2,
+        "n_total": 20,
+        "fraction": 0.1,
+        "sqrt_silent": 1,
+        "is_perfect_square": false,
+        "nearest_perfect_square": 1,
+        "deviation_from_square": 1.0
+      },
+      "40": {
+        "n_silent": 2,
+        "n_total": 40,
+        "fraction": 0.05,
+        "sqrt_silent": 1,
+        "is_perfect_square": false,
+        "nearest_perfect_square": 1,
+        "deviation_from_square": 1.0
+      },
+      "80": {
+        "n_silent": 4,
+        "n_total": 80,
+        "fraction": 0.05,
+        "sqrt_silent": 2,
+        "is_perfect_square": true,
+        "nearest_perfect_square": 4,
+        "deviation_from_square": 0.0
+      },
+      "160": {
+        "n_silent": 9,
+        "n_total": 160,
+        "fraction": 0.05625,
+        "sqrt_silent": 3,
+        "is_perfect_square": true,
+        "nearest_perfect_square": 9,
+        "deviation_from_square": 0.0
+      },
+      "320": {
+        "n_silent": 18,
+        "n_total": 320,
+        "fraction": 0.05625,
+        "sqrt_silent": 4,
+        "is_perfect_square": false,
+        "nearest_perfect_square": 16,
+        "deviation_from_square": 0.125
+      }
+    }
+  },
+  "kill_conditions": {
+    "K-HP-128-1": {
+      "description": "Corrected identity balance |log\u2081\u2080(LHS/RHS)| < 1 at s=1/4 with Wasserstein",
+      "threshold": "|log\u2081\u2080(LHS/RHS)| < 1",
+      "measured": 9.330987427960109,
+      "result": "FAIL"
+    },
+    "K-HP-128-2": {
+      "description": "\u03b6_H has a POLE at s=1/2, order = 1 \u00b1 0.5",
+      "threshold": "\u03b1 < -0.5 AND |order - 1| < 0.5",
+      "measured": {
+        "alpha": -0.007364676092719188,
+        "pole_order": 0,
+        "is_pole": false
+      },
+      "result": "FAIL"
+    },
+    "K-HP-128-3": {
+      "description": "Wasserstein regulator improves identity balance by > 10\u00d7 in log space",
+      "threshold": "improvement_factor > 10",
+      "measured": 0.6264626255809728,
+      "result": "FAIL"
+    },
+    "K-HP-128-4": {
+      "description": "Sha-squared 1-test = 1 within 50% (|log\u2081\u2080| < 0.176)",
+      "threshold": "|log\u2081\u2080(one_test)| < 0.176 (= log\u2081\u2080(1.5))",
+      "measured": 2142828569.2101302,
+      "log10_deviation": 9.330987427960109,
+      "result": "FAIL"
+    },
+    "K-HP-128-5": {
+      "description": "SILENT count at N=320 is a perfect square (deviation < 0.05)",
+      "threshold": "deviation < 0.05 AND is_perfect_square=True",
+      "measured": {
+        "n_silent": 18,
+        "is_perfect_square": false,
+        "deviation": 0.125
+      },
+      "result": "FAIL"
+    }
+  },
+  "summary": {
+    "pass_count": 0,
+    "total_count": 5,
+    "result_string": "0/5 PASS",
+    "corrections_validated": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "experiment": "EXP-HP145",
+  "phase": "cross-domain",
+  "domains": [
+    "nuclear",
+    "chemistry",
+    "protein"
+  ],
+  "n_total": 145,
+  "per_domain_slopes": {
+    "nuclear": {
+      "slope": -0.403143242926984,
+      "se": 0.018409392641156156,
+      "R2": 0.8838830768473688
+    },
+    "chemistry": {
+      "slope": -0.36728682964327947,
+      "se": 0.005932657525480499,
+      "R2": 0.9876313035802518
+    },
+    "protein": {
+      "slope": -0.4690939297340762,
+      "se": 0.003982876967389058,
+      "R2": 0.9979855502398552
+    }
+  },
+  "pooled_regression": {
+    "slope": -0.17487348964352234,
+    "intercept": -4.177104424849601,
+    "R2": 0.88382261428058,
+    "deviation_pct": 59.73389095869768
+  },
+  "slope_consistency": {
+    "mean": -0.4131746674347799,
+    "weighted_mean": -0.4363915929947869,
+    "std": 0.04216351910887011,
+    "cv_pct": 10.20476869277705,
+    "chi2": 206.3584476899768,
+    "p_chi2": 0.0,
+    "consistent": false
+  },
+  "kill_conditions": {
+    "K-HP-145-1": {
+      "value": 59.73389095869768,
+      "result": "FAIL"
+    },
+    "K-HP-145-2": {
+      "value": 0.88382261428058,
+      "result": "PASS"
+    },
+    "K-HP-145-3": {
+      "value": 0.9405340855121787,
+      "result": "PASS"
+    },
+    "K-HP-145-4": {
+      "value": 0.9999999999999999,
+      "result": "PASS"
+    },
+    "K-HP-145-5": {
+      "value": 1.0,
+      "result": "PASS"
+    },
+    "K-HP-145-6": {
+      "value": 29.667401009526895,
+      "result": "FAIL"
+    }
+  },
+  "total_pass": 4,
+  "total_kc": 6,
+  "honesty_note": "Per-domain slopes are structurally guaranteed by Kramers/Arrhenius/Gamow. Cross-domain consistency is genuine. \u03c3(c) \u2192 \u03b2 mapping NOT yet tested."
+}

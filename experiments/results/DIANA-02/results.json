@@ -1,0 +1,301 @@
+{
+  "experiment": "DIANA-02",
+  "title": "Spectral Selection in Dendritic Growth",
+  "date": "2026-03-20",
+  "parameters": {
+    "D_th": 1.0,
+    "d0": 0.005,
+    "delta_undercooling": 0.3,
+    "eps4_range": [
+      0.005,
+      0.08
+    ],
+    "n_eps": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "K": 16
+  },
+  "ivantsov_verification": {
+    "test_Pe": [
+      0.01,
+      0.05,
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      5.0
+    ],
+    "max_inversion_error_pct": 0.0002
+  },
+  "solvability": {
+    "kkl_exponent_measured": 1.75,
+    "kkl_exponent_expected": 1.75,
+    "r_squared": 1.0
+  },
+  "spectrum": [
+    {
+      "epsilon4": 0.005,
+      "V_star": 5e-06,
+      "R_star": 18266.80592682,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -31.6048,
+      "framework": {
+        "O": 0.15,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.7056,
+        "Pe_framework": -31.6048
+      }
+    },
+    {
+      "epsilon4": 0.01,
+      "V_star": 1.6e-05,
+      "R_star": 5430.75389414,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -29.041,
+      "framework": {
+        "O": 0.3,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.6889,
+        "Pe_framework": -29.041
+      }
+    },
+    {
+      "epsilon4": 0.015,
+      "V_star": 3.4e-05,
+      "R_star": 2671.16317555,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -26.6399,
+      "framework": {
+        "O": 0.45,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.6722,
+        "Pe_framework": -26.6399
+      }
+    },
+    {
+      "epsilon4": 0.02,
+      "V_star": 5.5e-05,
+      "R_star": 1614.57279268,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -24.3878,
+      "framework": {
+        "O": 0.6,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.6556,
+        "Pe_framework": -24.3878
+      }
+    },
+    {
+      "epsilon4": 0.025,
+      "V_star": 8.2e-05,
+      "R_star": 1092.60983918,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -22.2723,
+      "framework": {
+        "O": 0.75,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.6389,
+        "Pe_framework": -22.2723
+      }
+    },
+    {
+      "epsilon4": 0.03,
+      "V_star": 0.000113,
+      "R_star": 794.14156342,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -20.2814,
+      "framework": {
+        "O": 0.9,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.6222,
+        "Pe_framework": -20.2814
+      }
+    },
+    {
+      "epsilon4": 0.035,
+      "V_star": 0.000148,
+      "R_star": 606.37466077,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -18.4041,
+      "framework": {
+        "O": 1.05,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.6056,
+        "Pe_framework": -18.4041
+      }
+    },
+    {
+      "epsilon4": 0.04,
+      "V_star": 0.000187,
+      "R_star": 480.01536319,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -16.6298,
+      "framework": {
+        "O": 1.2,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.5889,
+        "Pe_framework": -16.6298
+      }
+    },
+    {
+      "epsilon4": 0.045,
+      "V_star": 0.000229,
+      "R_star": 390.60538219,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -14.9485,
+      "framework": {
+        "O": 1.35,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.5722,
+        "Pe_framework": -14.9485
+      }
+    },
+    {
+      "epsilon4": 0.05,
+      "V_star": 0.000276,
+      "R_star": 324.83484867,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -13.351,
+      "framework": {
+        "O": 1.5,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.5556,
+        "Pe_framework": -13.351
+      }
+    },
+    {
+      "epsilon4": 0.055,
+      "V_star": 0.000326,
+      "R_star": 274.93207869,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -11.8282,
+      "framework": {
+        "O": 1.65,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.5389,
+        "Pe_framework": -11.8282
+      }
+    },
+    {
+      "epsilon4": 0.06,
+      "V_star": 0.000379,
+      "R_star": 236.09969939,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -10.3716,
+      "framework": {
+        "O": 1.8,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.5222,
+        "Pe_framework": -10.3716
+      }
+    },
+    {
+      "epsilon4": 0.065,
+      "V_star": 0.000436,
+      "R_star": 205.23987816,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -8.973,
+      "framework": {
+        "O": 1.95,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.5056,
+        "Pe_framework": -8.973
+      }
+    },
+    {
+      "epsilon4": 0.07,
+      "V_star": 0.000497,
+      "R_star": 180.27626524,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -7.6247,
+      "framework": {
+        "O": 2.1,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.4889,
+        "Pe_framework": -7.6247
+      }
+    },
+    {
+      "epsilon4": 0.075,
+      "V_star": 0.000561,
+      "R_star": 159.77282396,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -6.319,
+      "framework": {
+        "O": 2.25,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.4722,
+        "Pe_framework": -6.319
+      }
+    },
+    {
+      "epsilon4": 0.08,
+      "V_star": 0.000628,
+      "R_star": 142.7094213,
+      "Pe_tip": 0.044792,
+      "Pe_framework": -5.0488,
+      "framework": {
+        "O": 2.4,
+        "R": 1.5,
+        "alpha": 1.0,
+        "C": 0.4556,
+        "Pe_framework": -5.0488
+      }
+    }
+  ],
+  "eigenvalue_analysis": {
+    "spacing_cv": 1.2451,
+    "ratio_cv": 0.0988,
+    "mean_spacing_ratio": 1.1385
+  },
+  "kill_conditions": {
+    "K-DIANA-02-1": {
+      "description": "Ivantsov inversion max error: 0.000%",
+      "max_error_pct": 0.0002,
+      "pass": true
+    },
+    "K-DIANA-02-2": {
+      "description": "\u03c3* \u221d \u03b5\u2084^1.750 (expected 1.750)",
+      "measured_exponent": 1.75,
+      "expected_exponent": 1.75,
+      "r_squared": 1.0,
+      "pass": true
+    },
+    "K-DIANA-02-3": {
+      "description": "V* monotonic increase: \u03c1=1.0000",
+      "spearman_rho": 1.0,
+      "all_positive_diffs": true,
+      "pass": true
+    },
+    "K-DIANA-02-4": {
+      "description": "Pe_fw \u2194 V* correlation: \u03c1=1.0000",
+      "spearman_rho": 1.0,
+      "pass": true
+    },
+    "K-DIANA-02-5": {
+      "description": "Eigenvalue spacing structured: CV=1.2451",
+      "spacing_cv": 1.2451,
+      "ratio_cv": 0.0988,
+      "mean_ratio": 1.1385,
+      "pass": false
+    }
+  },
+  "overall_pass": true,
+  "n_pass": 4,
+  "n_total": 5
+}

@@ -1,0 +1,56 @@
+{
+  "experiment": "HP114B",
+  "title": "MIF Channel Mining \u2014 iGOS4M Full Dataset",
+  "timestamp": "2026-03-18T01:44:24.966813",
+  "data_source": "iGOS4M via Google Sheets export (Sonke et al. 2026)",
+  "N_total": 11407,
+  "N_significant": 8824,
+  "N_filtered": 8310,
+  "N_strong": 3550,
+  "channel_matches": {
+    "OH": {
+      "predicted_R": 1.08,
+      "N_nearby": 366,
+      "kde_peak": 1.0844,
+      "delta": 0.0044
+    },
+    "CO3": {
+      "predicted_R": 1.16,
+      "N_nearby": 225,
+      "kde_peak": 1.1559,
+      "delta": 0.0041
+    },
+    "MeHg": {
+      "predicted_R": 1.27,
+      "N_nearby": 159,
+      "kde_peak": 1.2714,
+      "delta": 0.0014
+    },
+    "NO2": {
+      "predicted_R": 1.454,
+      "N_nearby": 50,
+      "kde_peak": 1.4296,
+      "delta": 0.0244
+    },
+    "NVE": {
+      "predicted_R": 1.6,
+      "N_nearby": 31,
+      "kde_peak": 1.6012,
+      "delta": 0.0012
+    },
+    "I_iodine": {
+      "predicted_R": 2.13,
+      "N_nearby": 9,
+      "kde_peak": 2.1299,
+      "delta": 0.0001
+    },
+    "Surface": {
+      "predicted_R": 2.37,
+      "N_nearby": 0,
+      "kde_peak": 2.4667,
+      "delta": 0.0967
+    }
+  },
+  "p_value": 0.21856,
+  "n_kde_peaks": 32
+}

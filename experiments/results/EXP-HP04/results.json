@@ -1,0 +1,205 @@
+{
+  "experiment": "EXP-HP04",
+  "title": "Spectral Flow \u2014 Pe Deformation Route to Zeta Zeros",
+  "date": "2026-03-13",
+  "framework_sections": [
+    "\u00a751C",
+    "\u00a780D\u00bd",
+    "\u00a780B",
+    "\u00a748E"
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "name": "Spectral flow map",
+      "n_tracked": 20,
+      "min_dist_gamma": 0.346163,
+      "best_pe": 36.8529,
+      "best_c": 0.264263,
+      "best_ratios": [
+        1.0,
+        1.337789,
+        1.549497,
+        1.702359,
+        1.889564,
+        2.109237,
+        2.347028,
+        2.596481,
+        2.853982,
+        3.117281,
+        3.384893,
+        3.655798,
+        3.929271,
+        4.204785,
+        4.481946,
+        4.760455,
+        5.04008,
+        5.32064,
+        5.601989,
+        5.884012
+      ],
+      "gamma_ratios": [
+        1.0,
+        1.487262,
+        1.769462,
+        2.152492,
+        2.330082,
+        2.659138,
+        2.894907,
+        3.065293,
+        3.396256,
+        3.521387,
+        3.747531,
+        3.993445,
+        4.19867,
+        4.303712,
+        4.606566,
+        4.745746,
+        4.920252,
+        5.098589,
+        5.355937,
+        5.457824
+      ],
+      "level_crossings": 0
+    },
+    {
+      "id": "T2",
+      "name": "Inverse spectral reconstruction",
+      "n_eigenvalues": 15,
+      "chebyshev_coefficients": [
+        -4.90315109,
+        -2.31574652,
+        -5.25619701,
+        -2.45450206,
+        -2.84446736,
+        -2.64095464,
+        -1.89502612,
+        -1.20489258
+      ],
+      "final_cost": 5.3764649469,
+      "mean_error": 0.10753271,
+      "max_error": 0.48725526,
+      "reconstructed_ratios": [
+        1.0,
+        1.000007,
+        1.98112,
+        1.98119,
+        2.499863,
+        2.500106,
+        2.981311,
+        2.985629,
+        3.437489,
+        3.509057,
+        3.727323,
+        3.943074,
+        4.150026,
+        4.378588,
+        4.606798
+      ]
+    },
+    {
+      "id": "T3",
+      "name": "Pe-native test",
+      "pe_fit_b": 0.003956,
+      "pe_fit_T": 2.4e-07,
+      "pe_residual_abs": 2.49365663,
+      "pe_residual_rel": 0.09702484,
+      "is_pe_native": "False",
+      "polynomial_coeffs": [
+        -6407.606757,
+        19222.820271,
+        -21665.338182,
+        11292.642579,
+        -2701.323589,
+        258.805678,
+        -5.424344
+      ]
+    },
+    {
+      "id": "T4",
+      "name": "Spectral zeta at critical deformation",
+      "zeta_values": [
+        {
+          "s": 1.5,
+          "zeta_D": 21.296799,
+          "zeta_ref": 4.825748,
+          "ratio": 4.41316,
+          "zeta_zeros": 0.193989
+        },
+        {
+          "s": 2.0,
+          "zeta_D": 15.904027,
+          "zeta_ref": 3.269968,
+          "ratio": 4.863665,
+          "zeta_zeros": 0.034414
+        },
+        {
+          "s": 2.5,
+          "zeta_D": 14.074884,
+          "zeta_ref": 2.681651,
+          "ratio": 5.248589,
+          "zeta_zeros": 0.006694
+        },
+        {
+          "s": 3.0,
+          "zeta_D": 13.907982,
+          "zeta_ref": 2.404015,
+          "ratio": 5.785315,
+          "zeta_zeros": 0.001409
+        },
+        {
+          "s": 4.0,
+          "zeta_D": 16.157929,
+          "zeta_ref": 2.164646,
+          "ratio": 7.464468,
+          "zeta_zeros": 7.4e-05
+        },
+        {
+          "s": 5.0,
+          "zeta_D": 20.803834,
+          "zeta_ref": 2.073856,
+          "ratio": 10.031477,
+          "zeta_zeros": 4e-06
+        }
+      ],
+      "weyl_exponent": 0.6734
+    },
+    {
+      "id": "T5",
+      "name": "Modular structure test",
+      "reflection_symmetry_error": 0.0,
+      "relative_asymmetry": 0.0,
+      "is_symmetric": "True",
+      "spacing_variance": 0.302766,
+      "spacing_class": "GOE-like"
+    },
+    {
+      "id": "T6",
+      "name": "Continuous spectral flow interpolation",
+      "n_steps": 50,
+      "flow_crossings": 0,
+      "final_dist_gamma": 0.161712,
+      "final_dist_integer": 5.97606
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-15",
+      "condition": "No level crossings in spectral flow (smooth deformation exists)",
+      "result": "PASS",
+      "detail": "0 crossings in 80 Pe steps"
+    },
+    {
+      "id": "K-HP-13",
+      "condition": "Reconstructed V(\u03b8) cannot be expressed as pure Pe potential",
+      "result": "PASS",
+      "detail": "Relative residual = 9.702484e-02, Pe-native = False"
+    },
+    {
+      "id": "K-HP-12",
+      "condition": "Smooth Pe deformation connects {n} to {\u03b3_n}/\u03b3_1",
+      "result": "PASS",
+      "detail": "final dist_gamma = 0.161712, crossings = 0"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "THRML-GM-03",
+  "title": "FluctuationOracle -- Grand Machine governor",
+  "parameters": {
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "ETA_TAU": 0.05082,
+    "DT": 0.005,
+    "N_SAMPLES": 1000
+  },
+  "tests": {
+    "test_1": {
+      "pass": "True",
+      "rel_err": 0.0
+    },
+    "test_2": {
+      "pass": true,
+      "neg_count": 0
+    },
+    "test_3": {
+      "pass": "True",
+      "fdr_eq": 1.0332,
+      "fdr_far": 24.6039
+    },
+    "test_4": {
+      "pass": true,
+      "hash": "bbbb856931b18893"
+    },
+    "test_5": {
+      "pass": "True"
+    }
+  },
+  "overall_pass": true,
+  "verdict": "FluctuationOracle computes correctly: Welford, entropy, FDR, Crooks, hashing"
+}

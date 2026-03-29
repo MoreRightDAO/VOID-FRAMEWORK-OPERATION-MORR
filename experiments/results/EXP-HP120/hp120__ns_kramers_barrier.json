@@ -1,0 +1,178 @@
+{
+  "experiment": "HP120",
+  "title": "NS Kramers Barrier Dynamics",
+  "timestamp": "2026-03-18T11:32:35.241484",
+  "c1_kramers_potential": {
+    "Re_results": {
+      "10": {
+        "Omega_eq": 1.0,
+        "Omega_target": 100.0,
+        "V_well": -0.006666666666666675,
+        "V_target": 29333.333333333336,
+        "E_b": 29333.340000000004,
+        "V_pp_at_eq": 0.04999999999999999,
+        "is_minimum": true
+      },
+      "100": {
+        "Omega_eq": 100.0,
+        "Omega_target": 10000.0,
+        "V_well": -666.6666666666674,
+        "V_target": 2933333333.3333335,
+        "E_b": 2933334000.0,
+        "V_pp_at_eq": 0.4999999999999998,
+        "is_minimum": true
+      },
+      "1000": {
+        "Omega_eq": 10000.0,
+        "Omega_target": 1000000.0,
+        "V_well": -66666666.666666746,
+        "V_target": 293333333333333.3,
+        "E_b": 293333400000000.0,
+        "V_pp_at_eq": 4.999999999999998,
+        "is_minimum": true
+      },
+      "10000": {
+        "Omega_eq": 1000000.0,
+        "Omega_target": 100000000.0,
+        "V_well": -6666666666666.676,
+        "V_target": 2.933333333333333e+19,
+        "E_b": 2.933334e+19,
+        "V_pp_at_eq": 49.99999999999997,
+        "is_minimum": true
+      },
+      "100000": {
+        "Omega_eq": 100000000.0,
+        "Omega_target": 10000000000.0,
+        "V_well": -6.666666666666675e+17,
+        "V_target": 2.9333333333333337e+24,
+        "E_b": 2.9333340000000005e+24,
+        "V_pp_at_eq": 500.0,
+        "is_minimum": true
+      },
+      "1000000": {
+        "Omega_eq": 10000000000.0,
+        "Omega_target": 1000000000000.0,
+        "V_well": -6.666666666666677e+22,
+        "V_target": 2.9333333333333333e+29,
+        "E_b": 2.933334e+29,
+        "V_pp_at_eq": 4999.999999999998,
+        "is_minimum": true
+      }
+    },
+    "all_have_wells": true
+  },
+  "c2_barrier_scaling": {
+    "beta": 4.999999999999999,
+    "beta_stderr": 0.0,
+    "r_squared": 1.0,
+    "barrier_positive_all": true,
+    "E_b_at_Re_1e6": 2.933334e+29
+  },
+  "c3_escape_time": {
+    "tau_over_Re_diverges": false,
+    "tau_over_Re_monotone": false,
+    "log10_tau_at_Re_1e6": 299.0061373322763
+  },
+  "c4_bkm_connection": {
+    "Re_results": {
+      "100": {
+        "omega_max": 100.0,
+        "tau_eddy": 1.0,
+        "bkm_per_cycle": 100.0,
+        "bkm_finite": true
+      },
+      "1000": {
+        "omega_max": 1000.0,
+        "tau_eddy": 0.1,
+        "bkm_per_cycle": 100.0,
+        "bkm_finite": true
+      },
+      "10000": {
+        "omega_max": 10000.0,
+        "tau_eddy": 0.01,
+        "bkm_per_cycle": 100.0,
+        "bkm_finite": true
+      },
+      "100000": {
+        "omega_max": 100000.0,
+        "tau_eddy": 0.001,
+        "bkm_per_cycle": 100.0,
+        "bkm_finite": true
+      }
+    },
+    "all_bkm_finite": true
+  },
+  "c5_kbody_chain": {
+    "K_results": {
+      "4": {
+        "min_Eb": 279744529.7241211,
+        "min_mode": 4,
+        "max_Omega_eq": 10000.0,
+        "gap_exists": "True",
+        "n_active_modes": 4
+      },
+      "8": {
+        "min_Eb": 273188.017308712,
+        "min_mode": 8,
+        "max_Omega_eq": 10000.0,
+        "gap_exists": "True",
+        "n_active_modes": 8
+      },
+      "16": {
+        "min_Eb": 266.78517315303907,
+        "min_mode": 16,
+        "max_Omega_eq": 10000.0,
+        "gap_exists": "True",
+        "n_active_modes": 16
+      },
+      "32": {
+        "min_Eb": 0.357885891274603,
+        "min_mode": 31,
+        "max_Omega_eq": 10000.0,
+        "gap_exists": "True",
+        "n_active_modes": 31
+      },
+      "64": {
+        "min_Eb": 0.357885891274603,
+        "min_mode": 31,
+        "max_Omega_eq": 10000.0,
+        "gap_exists": "True",
+        "n_active_modes": 31
+      }
+    },
+    "all_gap": true,
+    "scaling_exponent": -7.862588931160626
+  },
+  "kill_conditions": {
+    "K-NS-120-1": {
+      "description": "Kramers potential V(\u03a9) has well for all Re \u2208 [10, 10\u2076]",
+      "result": "PASS",
+      "all_have_wells": true
+    },
+    "K-NS-120-2": {
+      "description": "Barrier height E_b > 0 for all Re tested",
+      "result": "PASS",
+      "barrier_positive_all": true,
+      "beta": 4.999999999999999
+    },
+    "K-NS-120-3": {
+      "description": "E_b scaling exponent \u03b1 < 1 (barrier vanishes sub-linearly if at all)",
+      "result": "PASS",
+      "alpha": -4.999999999999999,
+      "beta": 4.999999999999999,
+      "note": "E_b ~ Re^5.0000 \u2192 barrier GROWS with Re"
+    },
+    "K-NS-120-4": {
+      "description": "Kramers escape time \u03c4/Re \u2192 \u221e (super-linear)",
+      "result": "FAIL",
+      "diverges": false
+    },
+    "K-NS-120-5": {
+      "description": "K-body barrier chain maintains gap \u2014 min E_b > 0 for all K \u2264 64",
+      "result": "PASS",
+      "all_gap": true,
+      "scaling_exponent": -7.862588931160626
+    }
+  },
+  "score": "4/5"
+}

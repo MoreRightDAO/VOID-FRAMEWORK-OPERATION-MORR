@@ -1,0 +1,173 @@
+{
+  "experiment": "THRML-KC-01",
+  "kill_condition": "K20",
+  "description": "Terminal void attractor under ungrounded (c_eff=0) exposure",
+  "parameters": {
+    "N_TRIALS": 20,
+    "T_MAX": 60000,
+    "THETA_0": 0.2,
+    "C_EFF": 0.0,
+    "THETA_D3": 0.7,
+    "Pe_ungrounded": 43.893,
+    "theta_nat": 0.8498
+  },
+  "results": {
+    "n_d3": 20,
+    "d3_rate": 1.0,
+    "mean_fpt_d3": 1916.2,
+    "fpt_vs_tmax_ratio": 0.0319,
+    "mean_theta_final_window": 0.767,
+    "sigma_ungrounded": 2.2307
+  },
+  "pass_criteria": {
+    "d3_rate_ge_0.90": true,
+    "mean_final_theta_ge_0.55": true,
+    "mean_fpt_lt_half_tmax": true,
+    "entropy_production_positive": true
+  },
+  "overall_pass": true,
+  "k20_fires": false,
+  "verdict": "K20 CONFIRMED SURVIVED \u2014 terminal D3 attractor present in all ungrounded trials",
+  "trials": [
+    {
+      "trial": 0,
+      "reached_d3": true,
+      "fpt_d3": 3068,
+      "final_theta": 0.7725,
+      "mean_theta_final_10pct": 0.6804
+    },
+    {
+      "trial": 1,
+      "reached_d3": true,
+      "fpt_d3": 469,
+      "final_theta": 0.7111,
+      "mean_theta_final_10pct": 0.793
+    },
+    {
+      "trial": 2,
+      "reached_d3": true,
+      "fpt_d3": 549,
+      "final_theta": 0.7799,
+      "mean_theta_final_10pct": 0.7273
+    },
+    {
+      "trial": 3,
+      "reached_d3": true,
+      "fpt_d3": 3739,
+      "final_theta": 0.7523,
+      "mean_theta_final_10pct": 0.8961
+    },
+    {
+      "trial": 4,
+      "reached_d3": true,
+      "fpt_d3": 1097,
+      "final_theta": 0.5334,
+      "mean_theta_final_10pct": 0.5666
+    },
+    {
+      "trial": 5,
+      "reached_d3": true,
+      "fpt_d3": 3103,
+      "final_theta": 0.9698,
+      "mean_theta_final_10pct": 0.7702
+    },
+    {
+      "trial": 6,
+      "reached_d3": true,
+      "fpt_d3": 1748,
+      "final_theta": 0.8104,
+      "mean_theta_final_10pct": 0.7597
+    },
+    {
+      "trial": 7,
+      "reached_d3": true,
+      "fpt_d3": 1526,
+      "final_theta": 0.5552,
+      "mean_theta_final_10pct": 0.7943
+    },
+    {
+      "trial": 8,
+      "reached_d3": true,
+      "fpt_d3": 1117,
+      "final_theta": 0.7001,
+      "mean_theta_final_10pct": 0.7936
+    },
+    {
+      "trial": 9,
+      "reached_d3": true,
+      "fpt_d3": 743,
+      "final_theta": 0.5333,
+      "mean_theta_final_10pct": 0.7971
+    },
+    {
+      "trial": 10,
+      "reached_d3": true,
+      "fpt_d3": 983,
+      "final_theta": 0.8167,
+      "mean_theta_final_10pct": 0.7919
+    },
+    {
+      "trial": 11,
+      "reached_d3": true,
+      "fpt_d3": 1138,
+      "final_theta": 0.8439,
+      "mean_theta_final_10pct": 0.6004
+    },
+    {
+      "trial": 12,
+      "reached_d3": true,
+      "fpt_d3": 3673,
+      "final_theta": 0.8003,
+      "mean_theta_final_10pct": 0.7074
+    },
+    {
+      "trial": 13,
+      "reached_d3": true,
+      "fpt_d3": 2084,
+      "final_theta": 0.8342,
+      "mean_theta_final_10pct": 0.824
+    },
+    {
+      "trial": 14,
+      "reached_d3": true,
+      "fpt_d3": 639,
+      "final_theta": 0.8307,
+      "mean_theta_final_10pct": 0.8658
+    },
+    {
+      "trial": 15,
+      "reached_d3": true,
+      "fpt_d3": 313,
+      "final_theta": 0.9132,
+      "mean_theta_final_10pct": 0.862
+    },
+    {
+      "trial": 16,
+      "reached_d3": true,
+      "fpt_d3": 1499,
+      "final_theta": 0.8323,
+      "mean_theta_final_10pct": 0.7976
+    },
+    {
+      "trial": 17,
+      "reached_d3": true,
+      "fpt_d3": 2927,
+      "final_theta": 0.9933,
+      "mean_theta_final_10pct": 0.7765
+    },
+    {
+      "trial": 18,
+      "reached_d3": true,
+      "fpt_d3": 1042,
+      "final_theta": 0.2769,
+      "mean_theta_final_10pct": 0.7331
+    },
+    {
+      "trial": 19,
+      "reached_d3": true,
+      "fpt_d3": 6868,
+      "final_theta": 0.633,
+      "mean_theta_final_10pct": 0.8031
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "experiment": "HP140",
+  "title": "Kramers Confinement \u2014 Hadron Mass Prediction",
+  "date": "2026-03-19T20:46:11.008957",
+  "c1_mass_ratios": {
+    "barriers": {
+      "pi_pm": {
+        "K": 2,
+        "Pe": -7.298998002232008,
+        "E_b": 1.824749500558002,
+        "actual_mass": 139.57
+      },
+      "rho": {
+        "K": 4,
+        "Pe": -14.597996004464015,
+        "E_b": 1.824749500558002,
+        "actual_mass": 775.26
+      },
+      "proton": {
+        "K": 6,
+        "Pe": -21.896994006696023,
+        "E_b": 1.824749500558002,
+        "actual_mass": 938.272
+      },
+      "Delta": {
+        "K": 8,
+        "Pe": -29.19599200892803,
+        "E_b": 1.824749500558002,
+        "actual_mass": 1232.0
+      },
+      "K_pm": {
+        "K": 3,
+        "Pe": -10.948497003348011,
+        "E_b": 1.824749500558002,
+        "actual_mass": 493.677
+      },
+      "Lambda": {
+        "K": 7,
+        "Pe": -25.546493007812025,
+        "E_b": 1.8247495005580017,
+        "actual_mass": 1115.683
+      },
+      "Omega": {
+        "K": 9,
+        "Pe": -32.845491010044036,
+        "E_b": 1.824749500558002,
+        "actual_mass": 1672.45
+      }
+    },
+    "ratio_results": {
+      "pi_pm": {
+        "predicted_ratio": 1.0,
+        "actual_ratio": 0.18002992544436705,
+        "relative_error": 4.554632084258795
+      },
+      "proton": {
+        "predicted_ratio": 1.0,
+        "actual_ratio": 1.2102675231535227,
+        "relative_error": 0.1737364005320419
+      },
+      "Delta": {
+        "predicted_ratio": 1.0,
+        "actual_ratio": 1.5891442870778836,
+        "relative_error": 0.3707305194805195
+      },
+      "K_pm": {
+        "predicted_ratio": 1.0,
+        "actual_ratio": 0.6367889482238217,
+        "relative_error": 0.5703790129983775
+      },
+      "Lambda": {
+        "predicted_ratio": 0.9999999999999999,
+        "actual_ratio": 1.439108170162268,
+        "relative_error": 0.3051252013340708
+      },
+      "Omega": {
+        "predicted_ratio": 1.0,
+        "actual_ratio": 2.157276268606661,
+        "relative_error": 0.5364525097910251
+      }
+    },
+    "mean_relative_error": 1.0851759547324717,
+    "KC_720_threshold": 0.2,
+    "KC_720_fail_threshold": 0.5,
+    "KC_720_PASS": 0,
+    "KC_720_FAIL": 1
+  },
+  "c2_alpha_s": {
+    "Q_values": [
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      5.0,
+      10.0,
+      20.0,
+      50.0,
+      91.2,
+      200.0
+    ],
+    "alpha_measured": [
+      0.5,
+      0.35,
+      0.3,
+      0.25,
+      0.21,
+      0.18,
+      0.15,
+      0.12,
+      0.1179,
+      0.105
+    ],
+    "alpha_predicted": [
+      0.11790000000000002,
+      0.11790000000000002,
+      0.1179,
+      0.11790000000000002,
+      0.11790000000000002,
+      0.11790000000000002,
+      0.11790000000000002,
+      0.11790000000000002,
+      0.11790000000000002,
+      0.11790000000000002
+    ],
+    "K_values": [
+      4.272655307296018,
+      3.904509348628199,
+      3.662708052984758,
+      3.347117145105094,
+      2.987935307799771,
+      2.561389563765598,
+      2.1957357912807156,
+      1.7912201579978402,
+      1.567268660392301,
+      1.3163090247343867
+    ],
+    "normalization_scale": 0.06461160831333101,
+    "spearman_rho": -0.2901294265928297,
+    "spearman_p": 0.41612025350705956,
+    "r_squared": -0.8571867034471028,
+    "KC_721_threshold": 0.7,
+    "KC_721_fail_threshold": 0.5,
+    "KC_721_PASS": 0,
+    "KC_721_FAIL": 1
+  },
+  "c3_proton_pion": {
+    "predicted_ratio_default": 1.0,
+    "actual_ratio": 6.722590814644982,
+    "relative_error_default": 0.8512478257903892,
+    "best_fit_coords": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "best_fit_ratio": 1.0,
+    "best_fit_error": 0.8512478257903892,
+    "KC_722_threshold": 0.3,
+    "KC_722_fail_threshold": 0.6,
+    "KC_722_PASS": 0,
+    "KC_722_FAIL": 1
+  },
+  "kill_conditions": {
+    "K-HP-720": false,
+    "K-HP-721": false,
+    "K-HP-722": false
+  },
+  "pass_count": 0,
+  "overall_pass": false
+}

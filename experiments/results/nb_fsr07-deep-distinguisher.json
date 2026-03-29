@@ -1,0 +1,154 @@
+{
+  "experiment": "HP-FSR-AI",
+  "description": "DeepDistinguisher attack on dFSR assumption",
+  "date": "2026-03-18",
+  "kill_conditions": {
+    "K-FSR-14": "Transformer accuracy > 0.9 at N=256",
+    "K-FSR-15": "No countermeasure reduces accuracy below 0.7 at N=256"
+  },
+  "E1_scaling": {
+    "24": {
+      "accuracy": 0.995,
+      "n_samples": 500,
+      "gen_time_s": 1.2,
+      "classify_time_s": 0.16,
+      "top_features": {
+        "spacing_mean": 1.1764661649930923,
+        "growth_exponent": 1.1618187092263115,
+        "spacing_std": 0.6664604265783115,
+        "spacing_max": 0.49345633660411564,
+        "spacing_min": 0.47429136442532394
+      }
+    },
+    "32": {
+      "accuracy": 1.0,
+      "n_samples": 500,
+      "gen_time_s": 2.1,
+      "classify_time_s": 0.16,
+      "top_features": {
+        "spacing_mean": 1.290559245757279,
+        "growth_exponent": 1.2663356046194634,
+        "spacing_std": 0.5292498253322065,
+        "spacing_skew": 0.49570586286203777,
+        "spacing_min": 0.4954170310041691
+      }
+    },
+    "64": {
+      "accuracy": 1.0,
+      "n_samples": 500,
+      "gen_time_s": 8.7,
+      "classify_time_s": 0.16,
+      "top_features": {
+        "spacing_mean": 1.3152342397073535,
+        "growth_exponent": 1.309753016120888,
+        "spacing_std": 0.5698340729360873,
+        "spacing_skew": 0.5511430584176914,
+        "spacing_kurtosis": 0.4844206649194657
+      }
+    },
+    "128": {
+      "accuracy": 1.0,
+      "n_samples": 500,
+      "gen_time_s": 38.5,
+      "classify_time_s": 0.19,
+      "top_features": {
+        "spacing_mean": 1.4044795312704446,
+        "growth_exponent": 1.3725338222151255,
+        "spacing_skew": 0.5873274352030696,
+        "spacing_kurtosis": 0.4914527966217228,
+        "spacing_std": 0.4344195895673131
+      }
+    },
+    "256": {
+      "accuracy": 1.0,
+      "n_samples": 200,
+      "gen_time_s": 75.4,
+      "top_features": {
+        "spacing_mean": 1.3998854706445194,
+        "growth_exponent": 1.3703540443422162,
+        "spacing_skew": 0.5721172008239829,
+        "spacing_kurtosis": 0.45858673859506177,
+        "spacing_min": 0.3888129465102878
+      },
+      "K-FSR-14": "FIRE"
+    }
+  },
+  "E4_noise": {
+    "spectral_gap": -17075.471230615953,
+    "sigma_correctness": -533.6084759567485,
+    "results": {
+      "0.0x": {
+        "sigma_multiplier": 0.0,
+        "sigma_e": -0.0,
+        "accuracy": 1.0,
+        "correctness": "YES"
+      },
+      "0.1x": {
+        "sigma_multiplier": 0.1,
+        "sigma_e": -53.360847595674855,
+        "accuracy": 1.0,
+        "correctness": "YES"
+      },
+      "0.2x": {
+        "sigma_multiplier": 0.25,
+        "sigma_e": -133.40211898918713,
+        "accuracy": 1.0,
+        "correctness": "YES"
+      },
+      "0.5x": {
+        "sigma_multiplier": 0.5,
+        "sigma_e": -266.80423797837426,
+        "accuracy": 1.0,
+        "correctness": "YES"
+      },
+      "1.0x": {
+        "sigma_multiplier": 1.0,
+        "sigma_e": -533.6084759567485,
+        "accuracy": 1.0,
+        "correctness": "YES"
+      },
+      "2.0x": {
+        "sigma_multiplier": 2.0,
+        "sigma_e": -1067.216951913497,
+        "accuracy": 1.0,
+        "correctness": "DEGRADED"
+      },
+      "4.0x": {
+        "sigma_multiplier": 4.0,
+        "sigma_e": -2134.433903826994,
+        "accuracy": 1.0,
+        "correctness": "DEGRADED"
+      }
+    }
+  },
+  "E5_shuffling": {
+    "sorted_accuracy": 1.0,
+    "shuffled_accuracy": 1.0,
+    "improvement": 0.0,
+    "K-FSR-15_shuffling": "INSUFFICIENT"
+  },
+  "E7_perturbative": {
+    "T=1/N": {
+      "T_multiplier": 1.0,
+      "accuracy": 1.0
+    },
+    "T=2/N": {
+      "T_multiplier": 2.0,
+      "accuracy": 1.0
+    },
+    "T=5/N": {
+      "T_multiplier": 5.0,
+      "accuracy": 1.0
+    },
+    "T=10/N": {
+      "T_multiplier": 10.0,
+      "accuracy": 1.0
+    }
+  },
+  "K-FSR-14_status": "FIRE",
+  "K-FSR-15_status": "FIRE",
+  "best_countermeasure": {
+    "name": null,
+    "accuracy": 1.0
+  }
+}

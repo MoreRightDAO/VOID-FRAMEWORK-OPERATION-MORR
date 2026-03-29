@@ -1,0 +1,213 @@
+{
+  "experiment": "HP100E",
+  "title": "Tautology Escape Probes",
+  "timestamp": "2026-03-18T18:23:19.152344Z",
+  "kill_condition": {
+    "id": "K-HP-542",
+    "description": "Geometry must predict \u22651 outcome V alone doesn't (effect>0.05, p<0.01)",
+    "verdict": "PASS"
+  },
+  "probes": {
+    "K": {
+      "probe": "K",
+      "n": 1234,
+      "rho_raw": 0.10380645168949365,
+      "p_raw": 0.00025947268468773144,
+      "rho_V_control": 0.032371560027354154,
+      "p_V_control": 0.2558291895171447,
+      "partial_rho": 0.09875775807473965,
+      "p_partial": 0.0005151264484106743,
+      "verdict": "PASS",
+      "top_10_curved": [
+        {
+          "name": "US Social Security Death Master File (DMF) Automation",
+          "curvature": 201575029632.37952,
+          "delta_pe": 44.870000000000005,
+          "pe": -49.09
+        },
+        {
+          "name": "GovHK",
+          "curvature": 128138653.39364901,
+          "delta_pe": 22.37,
+          "pe": -48.24
+        },
+        {
+          "name": "Finland Suomi.fi",
+          "curvature": 25397222.47236286,
+          "delta_pe": 22.37,
+          "pe": -48.24
+        },
+        {
+          "name": "OpenGov",
+          "curvature": 4662043.271894207,
+          "delta_pe": 20.709999999999997,
+          "pe": -46.58
+        },
+        {
+          "name": "RFI (Radio France Internationale)",
+          "curvature": 4440467.41977473,
+          "delta_pe": 24.959999999999997,
+          "pe": -50.83
+        },
+        {
+          "name": "Reuters",
+          "curvature": 3685282.436117013,
+          "delta_pe": 21.529999999999998,
+          "pe": -47.4
+        },
+        {
+          "name": "AP News",
+          "curvature": 3487016.2057475545,
+          "delta_pe": 21.529999999999998,
+          "pe": -47.4
+        },
+        {
+          "name": "Estonia X-Road",
+          "curvature": 1023458.4823035428,
+          "delta_pe": 32.07,
+          "pe": -43.4
+        },
+        {
+          "name": "Curiosity Stream",
+          "curvature": 786022.7105766378,
+          "delta_pe": 32.41,
+          "pe": -45.76
+        },
+        {
+          "name": "Amnesty International Digital",
+          "curvature": 760317.7467122372,
+          "delta_pe": 19.889999999999997,
+          "pe": -45.76
+        }
+      ]
+    },
+    "I": {
+      "probe": "I",
+      "n": 552,
+      "r2_linear": 0.013067435183798048,
+      "r2_zone": 0.025249600779395864,
+      "delta_r2": 0.012182165595597816,
+      "F_stat": 1.1331273608273087,
+      "p_F": 0.3415358356902053,
+      "df": [
+        6,
+        544
+      ],
+      "zones": [
+        "BOTH",
+        "D0",
+        "D1",
+        "D2",
+        "SILENT",
+        "spacelike",
+        "timelike"
+      ],
+      "verdict": "FAIL"
+    },
+    "G": {
+      "probe": "G",
+      "n_total": 1343,
+      "n_zones": 7,
+      "H_stat": 12.805284896014642,
+      "p_kw": 0.04623437935706983,
+      "eta2": 0.005093776119771439,
+      "zone_stats": {
+        "BOTH": {
+          "n": 16,
+          "mean_sd": 0.072125,
+          "median_sd": 0.0
+        },
+        "D0": {
+          "n": 173,
+          "mean_sd": 0.33476300578034685,
+          "median_sd": 0.0
+        },
+        "D1": {
+          "n": 212,
+          "mean_sd": 0.3360094339622642,
+          "median_sd": 0.0
+        },
+        "D2": {
+          "n": 106,
+          "mean_sd": 0.26639622641509436,
+          "median_sd": 0.0
+        },
+        "SILENT": {
+          "n": 11,
+          "mean_sd": 0.1668181818181818,
+          "median_sd": 0.0
+        },
+        "spacelike": {
+          "n": 795,
+          "mean_sd": 0.36533584905660377,
+          "median_sd": 0.0
+        },
+        "timelike": {
+          "n": 30,
+          "mean_sd": 0.3141666666666667,
+          "median_sd": 0.0
+        }
+      },
+      "verdict": "FAIL"
+    },
+    "H": {
+      "probe": "H",
+      "n": 1344,
+      "modifiers": {
+        "gradient_direction": {
+          "chi2": 400.7366963707677,
+          "p": 1.6578833121915504e-82,
+          "dof": 7,
+          "cramers_v": 0.546046870515415,
+          "verdict": "PASS"
+        },
+        "agent_to_agent": {
+          "chi2": 278.3782078259361,
+          "p": 2.489953293363616e-56,
+          "dof": 7,
+          "cramers_v": 0.45511168159873794,
+          "verdict": "PASS"
+        },
+        "identity_persistence": {
+          "chi2": 453.3833667027013,
+          "p": 8.334129952891636e-94,
+          "dof": 7,
+          "cramers_v": 0.5808087589826263,
+          "verdict": "PASS"
+        },
+        "economic_incentives": {
+          "chi2": 403.7870931953323,
+          "p": 3.6758769897052774e-83,
+          "dof": 7,
+          "cramers_v": 0.548121177564,
+          "verdict": "PASS"
+        }
+      },
+      "verdict": "PASS"
+    },
+    "J": {
+      "probe": "J",
+      "n": 1344,
+      "zone_domain_V": 0.3450491470758267,
+      "zone_domain_p": 2.630717994386947e-143,
+      "zone_mod_domain_V": 0.31480010811960546,
+      "zone_mod_domain_p": 1.3697555508189495e-287,
+      "delta_V": -0.03024903895622122,
+      "n_zones": 8,
+      "n_domains": 24,
+      "n_zone_mod_combos": 32,
+      "verdict": "FAIL"
+    }
+  },
+  "summary": {
+    "n_pass": 2,
+    "n_fail": 3,
+    "n_marginal": 0,
+    "tautology_escaped": true
+  },
+  "parameters": {
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "K": 16
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "experiment": "THRML-KC-03",
+  "kill_condition": "K7",
+  "title": "Measurement Invariance Across Observers",
+  "author": "Shamir / MoreRight (2026-03-09)",
+  "parameters": {
+    "N_OBSERVERS": 10,
+    "N_PLATFORMS": 15,
+    "N_MEASUREMENTS_PER": 20,
+    "NOISE_SIGMA": 0.02,
+    "OBSERVER_VARIANCE_THRESHOLD": 0.2
+  },
+  "tests": {
+    "T1_similar_pe": {
+      "true_pe": 10.4148,
+      "grand_mean": 10.346,
+      "observer_means": [
+        10.5442,
+        10.3627,
+        10.1616,
+        10.3928,
+        10.4922,
+        9.809,
+        10.4752,
+        10.4427,
+        10.3577,
+        10.4217
+      ],
+      "max_deviation": 0.537,
+      "relative_deviation": 0.051906,
+      "pass": true
+    },
+    "T2_low_variance": {
+      "mean_pe": 10.4344,
+      "observer_std": 0.2934,
+      "cv": 0.028114,
+      "threshold": 0.05,
+      "pass": true
+    },
+    "T3_no_trend": {
+      "slope": 0.036748,
+      "r_squared": 0.072517,
+      "p_value": 0.45182,
+      "pass": true
+    },
+    "T4_anova": {
+      "n_platforms": 15,
+      "n_observers": 10,
+      "n_significant_p05": 1,
+      "frac_significant": 0.0667,
+      "mean_p_value": 0.5234,
+      "min_p_value": 0.037485,
+      "pass": true
+    },
+    "T5_k7_fire_condition": {
+      "biased_observer_var": 65.2643,
+      "unbiased_observer_var": 0.268374,
+      "platform_var": 129.5658,
+      "variance_ratio_biased": 0.503715,
+      "variance_ratio_unbiased": 0.002071,
+      "threshold": 0.2,
+      "k7_fires_biased": true,
+      "k7_fires_unbiased": false,
+      "pass": true
+    }
+  },
+  "k7_fires": false,
+  "overall_pass": true,
+  "verdict": "K7 CONFIRMED SURVIVED \u2014 Pe measurement is invariant to observer identity (no systematic bias detected)"
+}

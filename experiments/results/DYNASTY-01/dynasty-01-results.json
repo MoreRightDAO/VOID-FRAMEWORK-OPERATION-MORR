@@ -1,0 +1,528 @@
+{
+  "experiment": "DYNASTY-01",
+  "date": "2026-03-26T07:07:54.043068+00:00",
+  "prediction": 9.2206,
+  "prediction_source": "e^(\u03c0/\u221a2), \u00a7136D2 + \u00a7165",
+  "barrier": 2.2214,
+  "N_total": 70,
+  "combined": {
+    "mean": 17.47,
+    "median": 12.5,
+    "std": 16.54,
+    "se": 1.98,
+    "t_vs_prediction": 4.173,
+    "p_vs_prediction": 0.0001,
+    "shapiro_W": 0.6754,
+    "shapiro_p": 0.0
+  },
+  "excluding_military": {
+    "N": 60,
+    "mean": 12.65,
+    "std": 7.26,
+    "t_vs_prediction": 3.66,
+    "p_vs_prediction": 0.0005
+  },
+  "log_transformed": {
+    "mean_ln": 2.5714,
+    "prediction_ln": 2.2214,
+    "t": 4.087,
+    "p": 0.0001
+  },
+  "domains": {
+    "sports": {
+      "domain": "sports",
+      "N": 26,
+      "mean": 10.08,
+      "median": 10.0,
+      "std": 4.69,
+      "se": 0.92,
+      "t_stat_vs_prediction": 0.931,
+      "p_value_vs_prediction": 0.3607,
+      "in_range_6_5_to_12": true,
+      "entries": [
+        {
+          "name": "Boston Celtics (Russell era)",
+          "duration": 13,
+          "unit": "season",
+          "source": "1957-1969, 11 titles in 13 seasons. Sports Reference."
+        },
+        {
+          "name": "Chicago Bulls (Jordan era)",
+          "duration": 8,
+          "unit": "season",
+          "source": "1991-1998, 6 titles. Two three-peats. Sports Reference."
+        },
+        {
+          "name": "LA Lakers (Showtime)",
+          "duration": 11,
+          "unit": "season",
+          "source": "1980-1991, 5 titles, 8 Finals. Sports Reference."
+        },
+        {
+          "name": "Golden State Warriors",
+          "duration": 8,
+          "unit": "season",
+          "source": "2015-2022, 4 titles, 6 Finals. Sports Reference."
+        },
+        {
+          "name": "San Antonio Spurs (Duncan era)",
+          "duration": 13,
+          "unit": "season",
+          "source": "1999-2014, 5 titles, consistent 50+ wins. Sports Reference."
+        },
+        {
+          "name": "Miami Heat (LeBron era)",
+          "duration": 4,
+          "unit": "season",
+          "source": "2011-2014, 4 Finals, 2 titles. Sports Reference."
+        },
+        {
+          "name": "New England Patriots",
+          "duration": 18,
+          "unit": "season",
+          "source": "2001-2018, 6 titles, 9 Super Bowls. Pro Football Reference."
+        },
+        {
+          "name": "Pittsburgh Steelers (70s)",
+          "duration": 6,
+          "unit": "season",
+          "source": "1974-1979, 4 titles in 6 years. Pro Football Reference."
+        },
+        {
+          "name": "San Francisco 49ers",
+          "duration": 10,
+          "unit": "season",
+          "source": "1981-1994, 5 titles. Pro Football Reference."
+        },
+        {
+          "name": "Dallas Cowboys (90s)",
+          "duration": 4,
+          "unit": "season",
+          "source": "1992-1995, 3 titles in 4 years. Pro Football Reference."
+        },
+        {
+          "name": "New York Yankees (classic)",
+          "duration": 18,
+          "unit": "season",
+          "source": "1947-1964, 10 titles, 14 pennants. Baseball Reference."
+        },
+        {
+          "name": "New York Yankees (modern)",
+          "duration": 5,
+          "unit": "season",
+          "source": "1996-2000, 4 titles in 5 years. Baseball Reference."
+        },
+        {
+          "name": "Oakland Athletics (Moneyball)",
+          "duration": 5,
+          "unit": "season",
+          "source": "2000-2004 or 1971-1975 (5 division titles). Baseball Reference."
+        },
+        {
+          "name": "St. Louis Cardinals (40s)",
+          "duration": 5,
+          "unit": "season",
+          "source": "1942-1946, 4 pennants, 3 titles. Baseball Reference."
+        },
+        {
+          "name": "Montreal Canadiens (70s)",
+          "duration": 6,
+          "unit": "season",
+          "source": "1975-1979 run: 4 consecutive Cups + deep runs before. Hockey Reference."
+        },
+        {
+          "name": "Edmonton Oilers (Gretzky)",
+          "duration": 7,
+          "unit": "season",
+          "source": "1983-1990, 5 Cups. Hockey Reference."
+        },
+        {
+          "name": "Detroit Red Wings",
+          "duration": 13,
+          "unit": "season",
+          "source": "1995-2008, 4 Cups, 6 Finals. Hockey Reference."
+        },
+        {
+          "name": "New York Islanders",
+          "duration": 5,
+          "unit": "season",
+          "source": "1980-1984, 4 consecutive Cups. Hockey Reference."
+        },
+        {
+          "name": "Manchester United (Ferguson)",
+          "duration": 21,
+          "unit": "season",
+          "source": "1993-2013, 13 league titles, 2 UCL. Transfermarkt."
+        },
+        {
+          "name": "Real Madrid (Di St\u00e9fano era)",
+          "duration": 11,
+          "unit": "season",
+          "source": "1954-1966, 6 European Cups, 8 league titles. UEFA."
+        },
+        {
+          "name": "Barcelona (Messi era)",
+          "duration": 16,
+          "unit": "season",
+          "source": "2005-2021, 10 league titles, 4 UCL. Transfermarkt."
+        },
+        {
+          "name": "AC Milan (Berlusconi era peak)",
+          "duration": 9,
+          "unit": "season",
+          "source": "1988-1996, 3 European Cups, 4 league titles. UEFA."
+        },
+        {
+          "name": "Bayern Munich (2010s)",
+          "duration": 11,
+          "unit": "season",
+          "source": "2012-2023, 11 consecutive Bundesliga, 2 UCL. Transfermarkt."
+        },
+        {
+          "name": "Roger Federer (peak)",
+          "duration": 10,
+          "unit": "season",
+          "source": "2003-2012, 16 of 20 Slams. ATP."
+        },
+        {
+          "name": "Serena Williams (peak)",
+          "duration": 13,
+          "unit": "season",
+          "source": "2002-2015, 18 of 23 Slams. WTA."
+        },
+        {
+          "name": "Novak Djokovic (peak)",
+          "duration": 12,
+          "unit": "season",
+          "source": "2011-2023, 22 of 24 Slams. ATP."
+        }
+      ]
+    },
+    "politics": {
+      "domain": "politics",
+      "N": 20,
+      "mean": 14.9,
+      "median": 13.0,
+      "std": 9.77,
+      "se": 2.18,
+      "t_stat_vs_prediction": 2.601,
+      "p_value_vs_prediction": 0.0175,
+      "in_range_6_5_to_12": false,
+      "entries": [
+        {
+          "name": "FDR-Truman Democrats",
+          "duration": 20,
+          "unit": "year",
+          "source": "1933-1953. Presidency. Dave Leip Election Atlas."
+        },
+        {
+          "name": "Reagan-Bush Republicans",
+          "duration": 12,
+          "unit": "year",
+          "source": "1981-1993. Presidency. Dave Leip Election Atlas."
+        },
+        {
+          "name": "Eisenhower Republicans",
+          "duration": 8,
+          "unit": "year",
+          "source": "1953-1961. Presidency. Dave Leip Election Atlas."
+        },
+        {
+          "name": "Kennedy-Johnson Democrats",
+          "duration": 8,
+          "unit": "year",
+          "source": "1961-1969. Presidency. Dave Leip Election Atlas."
+        },
+        {
+          "name": "Nixon-Ford Republicans",
+          "duration": 8,
+          "unit": "year",
+          "source": "1969-1977. Presidency. Dave Leip Election Atlas."
+        },
+        {
+          "name": "Obama-Biden Democrats",
+          "duration": 8,
+          "unit": "year",
+          "source": "2009-2017. Presidency. Dave Leip Election Atlas."
+        },
+        {
+          "name": "Thatcher-Major Conservatives",
+          "duration": 18,
+          "unit": "year",
+          "source": "1979-1997. PM. UK Parliament records."
+        },
+        {
+          "name": "Blair-Brown Labour",
+          "duration": 13,
+          "unit": "year",
+          "source": "1997-2010. PM. UK Parliament records."
+        },
+        {
+          "name": "Conservative (2010s)",
+          "duration": 14,
+          "unit": "year",
+          "source": "2010-2024. PM. UK Parliament records."
+        },
+        {
+          "name": "Attlee Labour",
+          "duration": 6,
+          "unit": "year",
+          "source": "1945-1951. PM. UK Parliament records."
+        },
+        {
+          "name": "Adenauer CDU",
+          "duration": 14,
+          "unit": "year",
+          "source": "1949-1963. Chancellor. Bundeswahlleiter."
+        },
+        {
+          "name": "Kohl CDU",
+          "duration": 16,
+          "unit": "year",
+          "source": "1982-1998. Chancellor. Bundeswahlleiter."
+        },
+        {
+          "name": "Merkel CDU",
+          "duration": 16,
+          "unit": "year",
+          "source": "2005-2021. Chancellor. Bundeswahlleiter."
+        },
+        {
+          "name": "Schr\u00f6der SPD",
+          "duration": 7,
+          "unit": "year",
+          "source": "1998-2005. Chancellor. Bundeswahlleiter."
+        },
+        {
+          "name": "LDP dominant era",
+          "duration": 38,
+          "unit": "year",
+          "source": "1955-1993. PM. National Diet Library. Outlier \u2014 one-party dominant system."
+        },
+        {
+          "name": "Abe era LDP",
+          "duration": 9,
+          "unit": "year",
+          "source": "2012-2020 (continuous). PM. National Diet Library."
+        },
+        {
+          "name": "Swedish Social Democrats",
+          "duration": 44,
+          "unit": "year",
+          "source": "1932-1976. PM. Riksdag records. Outlier \u2014 corporatist dominant system."
+        },
+        {
+          "name": "Mitterrand-Jospin Socialists",
+          "duration": 14,
+          "unit": "year",
+          "source": "1981-1995 (presidency). French Constitutional Council."
+        },
+        {
+          "name": "Hawke-Keating Labor (Australia)",
+          "duration": 13,
+          "unit": "year",
+          "source": "1983-1996. PM. Australian Parliament House records."
+        },
+        {
+          "name": "Howard Liberal (Australia)",
+          "duration": 12,
+          "unit": "year",
+          "source": "1996-2007. PM. Australian Parliament House records."
+        }
+      ]
+    },
+    "business": {
+      "domain": "business",
+      "N": 14,
+      "mean": 14.21,
+      "median": 14.5,
+      "std": 5.81,
+      "se": 1.55,
+      "t_stat_vs_prediction": 3.218,
+      "p_value_vs_prediction": 0.0067,
+      "in_range_6_5_to_12": false,
+      "entries": [
+        {
+          "name": "IBM mainframe dominance",
+          "duration": 20,
+          "unit": "year",
+          "source": "~1964-1984. System/360 through early PC era. Gartner."
+        },
+        {
+          "name": "Microsoft Windows dominance",
+          "duration": 18,
+          "unit": "year",
+          "source": "~1995-2013. OS market share >90% \u2192 mobile shift. IDC."
+        },
+        {
+          "name": "Google search dominance",
+          "duration": 20,
+          "unit": "year",
+          "source": "2004-ongoing (still >88% share but counted to 2024). StatCounter."
+        },
+        {
+          "name": "Nokia mobile phones",
+          "duration": 14,
+          "unit": "year",
+          "source": "1998-2012 (#1 market share \u2192 smartphone collapse). IDC."
+        },
+        {
+          "name": "Intel x86 processors",
+          "duration": 20,
+          "unit": "year",
+          "source": "~1993-2013. >80% share \u2192 AMD Ryzen + ARM shift. Mercury Research."
+        },
+        {
+          "name": "MySpace social dominance",
+          "duration": 3,
+          "unit": "year",
+          "source": "2005-2008. #1 social network \u2192 Facebook overtake. Comscore."
+        },
+        {
+          "name": "BlackBerry smartphones",
+          "duration": 5,
+          "unit": "year",
+          "source": "2006-2011. Enterprise dominant \u2192 iPhone/Android collapse. IDC."
+        },
+        {
+          "name": "Kodak film photography",
+          "duration": 20,
+          "unit": "year",
+          "source": "~1976-1996. >70% US film market. Industry reports."
+        },
+        {
+          "name": "Blockbuster video rental",
+          "duration": 12,
+          "unit": "year",
+          "source": "1994-2006. >25% market share \u2192 Netflix/streaming. SEC filings."
+        },
+        {
+          "name": "Apple iPhone US smartphone",
+          "duration": 12,
+          "unit": "year",
+          "source": "2012-ongoing (counted to 2024). >50% US share sustained. IDC."
+        },
+        {
+          "name": "Amazon e-commerce",
+          "duration": 15,
+          "unit": "year",
+          "source": "2005-ongoing (counted to 2020). >37% US e-commerce. eMarketer."
+        },
+        {
+          "name": "Toyota global auto sales #1",
+          "duration": 10,
+          "unit": "year",
+          "source": "2008-ongoing (most years #1, counted to 2018). OICA."
+        },
+        {
+          "name": "GE conglomerate #1 market cap",
+          "duration": 10,
+          "unit": "year",
+          "source": "1993-2004. Largest US company by market cap. Fortune 500."
+        },
+        {
+          "name": "Sears retail dominance",
+          "duration": 20,
+          "unit": "year",
+          "source": "~1960-1980. Largest US retailer. Census Bureau retail data."
+        }
+      ]
+    },
+    "military": {
+      "domain": "military",
+      "N": 10,
+      "mean": 46.4,
+      "median": 52.0,
+      "std": 25.83,
+      "se": 8.17,
+      "t_stat_vs_prediction": 4.551,
+      "p_value_vs_prediction": 0.0014,
+      "in_range_6_5_to_12": false,
+      "entries": [
+        {
+          "name": "Achaemenid Persia (Cyrus\u2192Xerxes decline)",
+          "duration": 70,
+          "unit": "year",
+          "source": "550-480 BC. Peak to Salamis. Cambridge Ancient History."
+        },
+        {
+          "name": "Alexander's Empire (intact)",
+          "duration": 10,
+          "unit": "year",
+          "source": "334-323 BC. Granicus to death/fragmentation. Arrian."
+        },
+        {
+          "name": "Roman Republic peak expansion",
+          "duration": 70,
+          "unit": "year",
+          "source": "200-130 BC. Zama to Gracchi crisis. Cambridge Ancient History."
+        },
+        {
+          "name": "Mongol Empire (united)",
+          "duration": 60,
+          "unit": "year",
+          "source": "1206-1260s. Genghis to Kublai/fragmentation. Ratchnevsky."
+        },
+        {
+          "name": "Ottoman peak",
+          "duration": 80,
+          "unit": "year",
+          "source": "1453-1529 (Constantinople to failed Vienna). Finkel."
+        },
+        {
+          "name": "Spanish Empire peak",
+          "duration": 60,
+          "unit": "year",
+          "source": "1519-1588 (Cort\u00e9s to Armada). Elliott."
+        },
+        {
+          "name": "British Empire peak",
+          "duration": 40,
+          "unit": "year",
+          "source": "1880s-1920s. Scramble for Africa to post-WWI decline. Ferguson."
+        },
+        {
+          "name": "Napoleonic France",
+          "duration": 10,
+          "unit": "year",
+          "source": "1804-1814/15. Empire to Waterloo. Chandler."
+        },
+        {
+          "name": "Soviet Union superpower",
+          "duration": 44,
+          "unit": "year",
+          "source": "1945-1989 (WWII victory to Berlin Wall). Zubok."
+        },
+        {
+          "name": "US unipolar moment",
+          "duration": 20,
+          "unit": "year",
+          "source": "1991-2010s. Soviet collapse to multipolar shift. Krauthammer/Zakaria."
+        }
+      ]
+    }
+  },
+  "kill_conditions": {
+    "K-DYN-1": {
+      "description": "Combined mean in [6.5, 12.0]",
+      "value": 17.47,
+      "PASS": false
+    },
+    "K-DYN-2": {
+      "description": "t-test vs 9.22: p > 0.05",
+      "value": 0.0001,
+      "PASS": false
+    },
+    "K-DYN-3": {
+      "description": "\u22653 of 4 domain means in [6.5, 12.0]",
+      "value": 1,
+      "PASS": false
+    },
+    "K-DYN-4": {
+      "description": "Shapiro-Wilk p > 0.01 (unimodal)",
+      "value": 0.0,
+      "PASS": false
+    }
+  },
+  "overall_pass": false
+}

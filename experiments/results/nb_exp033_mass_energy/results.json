@@ -1,0 +1,716 @@
+{
+  "experiment": "EXP-033",
+  "date": "2026-03-13",
+  "description": "Mass-Energy Equivalence Tests (\u00a780, U20)",
+  "sections": "\u00a780, \u00a764G, \u00a751D",
+  "results": {
+    "K-ME-4": {
+      "test": "K-ME-4",
+      "description": "Algebraic consistency of (2,1) dispersion with \u00a751D spectrum",
+      "checks": [
+        {
+          "alpha": 0.05,
+          "T": 0.0015625,
+          "lambda_1": 0.1,
+          "lambda_2": 0.4,
+          "ratio_lambda2_lambda1": 4.0,
+          "expected_ratio": 4.0,
+          "match": true,
+          "euclidean_spectrum": "\u03bb_n = 0.1000 \u00b7 n\u00b2",
+          "lorentzian_spectrum_m0": "E_n = 0.4472 \u00b7 n"
+        },
+        {
+          "alpha": 0.1,
+          "T": 0.003125,
+          "lambda_1": 0.2,
+          "lambda_2": 0.8,
+          "ratio_lambda2_lambda1": 4.0,
+          "expected_ratio": 4.0,
+          "match": true,
+          "euclidean_spectrum": "\u03bb_n = 0.2000 \u00b7 n\u00b2",
+          "lorentzian_spectrum_m0": "E_n = 0.6325 \u00b7 n"
+        },
+        {
+          "alpha": 0.2,
+          "T": 0.00625,
+          "lambda_1": 0.4,
+          "lambda_2": 1.6,
+          "ratio_lambda2_lambda1": 4.0,
+          "expected_ratio": 4.0,
+          "match": true,
+          "euclidean_spectrum": "\u03bb_n = 0.4000 \u00b7 n\u00b2",
+          "lorentzian_spectrum_m0": "E_n = 0.8944 \u00b7 n"
+        },
+        {
+          "alpha": 0.5,
+          "T": 0.015625,
+          "lambda_1": 1.0,
+          "lambda_2": 4.0,
+          "ratio_lambda2_lambda1": 4.0,
+          "expected_ratio": 4.0,
+          "match": true,
+          "euclidean_spectrum": "\u03bb_n = 1.0000 \u00b7 n\u00b2",
+          "lorentzian_spectrum_m0": "E_n = 1.4142 \u00b7 n"
+        },
+        {
+          "alpha": 0.8,
+          "T": 0.025,
+          "lambda_1": 1.6,
+          "lambda_2": 6.4,
+          "ratio_lambda2_lambda1": 4.0,
+          "expected_ratio": 4.0,
+          "match": true,
+          "euclidean_spectrum": "\u03bb_n = 1.6000 \u00b7 n\u00b2",
+          "lorentzian_spectrum_m0": "E_n = 1.7889 \u00b7 n"
+        }
+      ],
+      "passes": true,
+      "interpretation": "The \u00a751D spectrum \u03bb_n = 2\u03b1\u00b7n\u00b2 is the Euclidean (imaginary-time) spectrum. The (2,1) Lorentzian spectrum is E_n = \u221a(4\u03b1\u00b7n\u00b2 + m\u00b2). For m = 0 (free particle): E_n = 2\u221a\u03b1 \u00b7 n (linear, relativistic). For m >> p: E_n \u2248 m + \u03b1\u00b7n\u00b2/m (quadratic correction, non-relativistic). Wick rotation connects the two consistently. Eigenvalue ratio \u03bb\u2082/\u03bb\u2081 = 4 confirmed for all \u03b1 values.",
+      "new_prediction": "The LORENTZIAN spectrum (post-Wick) is E_n = \u221a(4\u03b1\u00b7n\u00b2 + m\u00b2). For massive systems, the transition from quadratic (small n) to linear (large n) spacing occurs at n_cross = m/(2\u221a\u03b1). This is testable: platforms with high Pe (large m) should show quadratic eigenvalue spacing for low modes and linear spacing for high modes."
+    },
+    "MASS-LANDSCAPE": {
+      "test": "MASS-LANDSCAPE",
+      "description": "Fisher-metric mass factor across 273 platforms",
+      "n_platforms": 273,
+      "coupling_stats": {
+        "C=0": {
+          "n": 4,
+          "alpha_normalized": 0.05,
+          "mass_factor": 4.5883,
+          "pe_range": [
+            -125.13,
+            -25.87
+          ],
+          "rest_energy_range": [
+            0,
+            0
+          ]
+        },
+        "C=1": {
+          "n": 53,
+          "alpha_normalized": 0.35,
+          "mass_factor": 2.0966,
+          "pe_range": [
+            -75.47,
+            12.88
+          ],
+          "rest_energy_range": [
+            0,
+            5.19
+          ]
+        },
+        "C=2": {
+          "n": 118,
+          "alpha_normalized": 0.65,
+          "mass_factor": 2.0966,
+          "pe_range": [
+            -25.87,
+            25.19
+          ],
+          "rest_energy_range": [
+            0,
+            19.83
+          ]
+        },
+        "C=3": {
+          "n": 98,
+          "alpha_normalized": 0.95,
+          "mass_factor": 4.5883,
+          "pe_range": [
+            3.84,
+            43.89
+          ],
+          "rest_energy_range": [
+            0.46,
+            60.21
+          ]
+        }
+      },
+      "heaviest_10": [
+        {
+          "label": "Character.AI",
+          "category": "ai-companion",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "Replika",
+          "category": "ai-companion",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "Chai AI",
+          "category": "ai-companion",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "Pi (Inflection)",
+          "category": "ai-companion",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "TikTok",
+          "category": "social-media",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "Instagram",
+          "category": "social-media",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "YouTube",
+          "category": "social-media",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "Slot Machines",
+          "category": "gambling",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "Facebook / Meta",
+          "category": "social-media",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        },
+        {
+          "label": "Roko's Basilisk",
+          "category": "other",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "alpha_norm": 0.95,
+          "mass_factor": 4.5883,
+          "Pe": 43.8935,
+          "rest_energy": 60.2074
+        }
+      ],
+      "lightest_10": [
+        {
+          "label": "TaskRabbit",
+          "category": "gig-economy",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "alpha_norm": 0.35,
+          "mass_factor": 2.0966,
+          "Pe": -4.2181,
+          "rest_energy": 0
+        },
+        {
+          "label": "Gold Standard",
+          "category": "supply-chain",
+          "O": 2,
+          "R": 1,
+          "C": 1,
+          "alpha_norm": 0.35,
+          "mass_factor": 2.0966,
+          "Pe": -13.351,
+          "rest_energy": 0
+        },
+        {
+          "label": "CDP (Carbon Disclosure Project)",
+          "category": "supply-chain",
+          "O": 1,
+          "R": 1,
+          "C": 2,
+          "alpha_norm": 0.65,
+          "mass_factor": 2.0966,
+          "Pe": -13.351,
+          "rest_energy": 0
+        },
+        {
+          "label": "Science Based Targets initiative",
+          "category": "supply-chain",
+          "O": 1,
+          "R": 1,
+          "C": 1,
+          "alpha_norm": 0.35,
+          "mass_factor": 2.0966,
+          "Pe": -25.8732,
+          "rest_energy": 0
+        },
+        {
+          "label": "B Corp Certification",
+          "category": "supply-chain",
+          "O": 2,
+          "R": 1,
+          "C": 2,
+          "alpha_norm": 0.65,
+          "mass_factor": 2.0966,
+          "Pe": -4.2181,
+          "rest_energy": 0
+        },
+        {
+          "label": "Carbon Trust",
+          "category": "supply-chain",
+          "O": 2,
+          "R": 1,
+          "C": 1,
+          "alpha_norm": 0.35,
+          "mass_factor": 2.0966,
+          "Pe": -13.351,
+          "rest_energy": 0
+        },
+        {
+          "label": "Mistral AI",
+          "category": "ai-general",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "alpha_norm": 0.35,
+          "mass_factor": 2.0966,
+          "Pe": -4.2181,
+          "rest_energy": 0
+        },
+        {
+          "label": "Stability AI",
+          "category": "ai-general",
+          "O": 1,
+          "R": 2,
+          "C": 2,
+          "alpha_norm": 0.65,
+          "mass_factor": 2.0966,
+          "Pe": -4.2181,
+          "rest_energy": 0
+        },
+        {
+          "label": "MoreRight (Methodology)",
+          "category": "constraint",
+          "O": 0,
+          "R": 0,
+          "C": 1,
+          "alpha_norm": 0.35,
+          "mass_factor": 2.0966,
+          "Pe": -75.4691,
+          "rest_energy": 0
+        },
+        {
+          "label": "MoreRight (Site + Rating Agency)",
+          "category": "constraint",
+          "O": 1,
+          "R": 0,
+          "C": 1,
+          "alpha_norm": 0.35,
+          "mass_factor": 2.0966,
+          "Pe": -44.9638,
+          "rest_energy": 0
+        }
+      ],
+      "mass_factor_pattern": {
+        "C=0": 4.5883,
+        "C=1": 2.0966,
+        "C=2": 2.0966,
+        "C=3": 4.5883
+      },
+      "symmetry_check": {
+        "C0_factor": 4.5883,
+        "C3_factor": 4.5883,
+        "ratio": 1.0
+      }
+    },
+    "K-ME-1-PROXY": {
+      "test": "K-ME-1-PROXY",
+      "description": "Inertia proxy: high coupling \u2192 less O-R variance within categories",
+      "n_categories_tested": 12,
+      "n_inertia_holds": 3,
+      "fraction": 0.25,
+      "categories": [
+        {
+          "category": "advertising",
+          "n_high_c": 10,
+          "n_low_c": 4,
+          "high_c_or_var": 0.3,
+          "low_c_or_var": 0.1875,
+          "inertia_holds": false
+        },
+        {
+          "category": "ai-general",
+          "n_high_c": 10,
+          "n_low_c": 4,
+          "high_c_or_var": 0.57,
+          "low_c_or_var": 0.0,
+          "inertia_holds": false
+        },
+        {
+          "category": "constraint",
+          "n_high_c": 2,
+          "n_low_c": 8,
+          "high_c_or_var": 0.5,
+          "low_c_or_var": 0.7188,
+          "inertia_holds": true
+        },
+        {
+          "category": "crypto",
+          "n_high_c": 26,
+          "n_low_c": 5,
+          "high_c_or_var": 1.0666,
+          "low_c_or_var": 0.8,
+          "inertia_holds": false
+        },
+        {
+          "category": "edtech",
+          "n_high_c": 15,
+          "n_low_c": 4,
+          "high_c_or_var": 1.0578,
+          "low_c_or_var": 0.9375,
+          "inertia_holds": false
+        },
+        {
+          "category": "fintech",
+          "n_high_c": 10,
+          "n_low_c": 5,
+          "high_c_or_var": 0.21,
+          "low_c_or_var": 0.24,
+          "inertia_holds": true
+        },
+        {
+          "category": "gaming-platform",
+          "n_high_c": 13,
+          "n_low_c": 2,
+          "high_c_or_var": 0.4852,
+          "low_c_or_var": 0.0,
+          "inertia_holds": false
+        },
+        {
+          "category": "health",
+          "n_high_c": 12,
+          "n_low_c": 2,
+          "high_c_or_var": 0.4375,
+          "low_c_or_var": 0.0,
+          "inertia_holds": false
+        },
+        {
+          "category": "hr-tech",
+          "n_high_c": 6,
+          "n_low_c": 9,
+          "high_c_or_var": 0.4722,
+          "low_c_or_var": 0.321,
+          "inertia_holds": false
+        },
+        {
+          "category": "news-media",
+          "n_high_c": 12,
+          "n_low_c": 2,
+          "high_c_or_var": 0.3819,
+          "low_c_or_var": 0.0,
+          "inertia_holds": false
+        },
+        {
+          "category": "supply-chain",
+          "n_high_c": 7,
+          "n_low_c": 3,
+          "high_c_or_var": 0.7755,
+          "low_c_or_var": 0.2222,
+          "inertia_holds": false
+        },
+        {
+          "category": "technology-company",
+          "n_high_c": 3,
+          "n_low_c": 3,
+          "high_c_or_var": 0.4444,
+          "low_c_or_var": 0.6667,
+          "inertia_holds": true
+        }
+      ],
+      "pooled": {
+        "n_high_c": 216,
+        "n_low_c": 57,
+        "high_c_o_var": 0.4671,
+        "high_c_r_var": 0.3563,
+        "low_c_o_var": 1.0089,
+        "low_c_r_var": 0.5306,
+        "inertia_holds_O": true,
+        "inertia_holds_R": true,
+        "O_var_ratio": 2.16,
+        "R_var_ratio": 1.489
+      },
+      "passes": false,
+      "pooled_direction_correct": true,
+      "diagnosis": "Within-category test FAILS (25%), but most low-C groups have N=2-4 (underpowered \u2014 zero variance by construction with N=2 identical scores). POOLED analysis shows correct direction: low-C O-var is 2.16x higher than high-C O-var, and low-C R-var is 1.49x higher. The inertia hypothesis is NOT killed but needs temporal data to test properly. Cross-sectional variance is a weak proxy \u2014 the real test (K-ME-1) requires measuring resistance to CHANGE, not static variance.",
+      "kill_condition": "K-ME-1 requires temporal data to test properly. The cross-sectional proxy is inconclusive. POOLED direction is correct (high-C \u2192 less O-R variance). Status: NEEDS REDESIGN with longitudinal platform scoring data."
+    },
+    "MASS-ENERGY-BUDGET": {
+      "test": "MASS-ENERGY-BUDGET",
+      "description": "Numerical E\u00b2 = p\u00b2 + m\u00b2 check for 273 platforms",
+      "causal_classification": {
+        "timelike": 32,
+        "spacelike": 235,
+        "null": 6,
+        "total": 273
+      },
+      "c3_causal": {
+        "timelike": 26,
+        "spacelike": 72,
+        "null": 0
+      },
+      "c0_causal": {
+        "timelike": 0,
+        "spacelike": 2,
+        "null": 2
+      },
+      "passes": true,
+      "real_test": "E\u00b2 = p\u00b2 + m\u00b2 is an algebraic identity (Pythagorean theorem on the metric). The non-trivial content is the CAUSAL CLASSIFICATION: which platforms are timelike (coupling-dominated) vs spacelike (transparency-dominated) from the constraint pole.",
+      "timelike_examples": [
+        {
+          "label": "Reddit",
+          "O": 2,
+          "R": 2,
+          "C": 3,
+          "d_O": 1.4245,
+          "d_R": 1.4245,
+          "d_C": 2.2395,
+          "p_squared": 4.0582,
+          "m_squared": 5.0155,
+          "E_riem_squared": 9.0737,
+          "lorentz_interval": -0.9574,
+          "causal_type": "timelike"
+        },
+        {
+          "label": "LessWrong",
+          "O": 1,
+          "R": 1,
+          "C": 2,
+          "d_O": 0.8151,
+          "d_R": 0.8151,
+          "d_C": 1.4245,
+          "p_squared": 1.3287,
+          "m_squared": 2.0291,
+          "E_riem_squared": 3.3578,
+          "lorentz_interval": -0.7004,
+          "causal_type": "timelike"
+        },
+        {
+          "label": "Cable News (24/7)",
+          "O": 2,
+          "R": 2,
+          "C": 3,
+          "d_O": 1.4245,
+          "d_R": 1.4245,
+          "d_C": 2.2395,
+          "p_squared": 4.0582,
+          "m_squared": 5.0155,
+          "E_riem_squared": 9.0737,
+          "lorentz_interval": -0.9574,
+          "causal_type": "timelike"
+        },
+        {
+          "label": "Wikipedia",
+          "O": 0,
+          "R": 0,
+          "C": 1,
+          "d_O": 0.0,
+          "d_R": 0.0,
+          "d_C": 0.8151,
+          "p_squared": 0.0,
+          "m_squared": 0.6644,
+          "E_riem_squared": 0.6644,
+          "lorentz_interval": -0.6644,
+          "causal_type": "timelike"
+        },
+        {
+          "label": "Fast Food Industry",
+          "O": 2,
+          "R": 2,
+          "C": 3,
+          "d_O": 1.4245,
+          "d_R": 1.4245,
+          "d_C": 2.2395,
+          "p_squared": 4.0582,
+          "m_squared": 5.0155,
+          "E_riem_squared": 9.0737,
+          "lorentz_interval": -0.9574,
+          "causal_type": "timelike"
+        }
+      ],
+      "spacelike_examples": [
+        {
+          "label": "Character.AI",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "d_O": 2.2395,
+          "d_R": 2.2395,
+          "d_C": 2.2395,
+          "p_squared": 10.0311,
+          "m_squared": 5.0155,
+          "E_riem_squared": 15.0466,
+          "lorentz_interval": 5.0155,
+          "causal_type": "spacelike"
+        },
+        {
+          "label": "Replika",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "d_O": 2.2395,
+          "d_R": 2.2395,
+          "d_C": 2.2395,
+          "p_squared": 10.0311,
+          "m_squared": 5.0155,
+          "E_riem_squared": 15.0466,
+          "lorentz_interval": 5.0155,
+          "causal_type": "spacelike"
+        },
+        {
+          "label": "Chai AI",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "d_O": 2.2395,
+          "d_R": 2.2395,
+          "d_C": 2.2395,
+          "p_squared": 10.0311,
+          "m_squared": 5.0155,
+          "E_riem_squared": 15.0466,
+          "lorentz_interval": 5.0155,
+          "causal_type": "spacelike"
+        },
+        {
+          "label": "Pi (Inflection)",
+          "O": 3,
+          "R": 3,
+          "C": 3,
+          "d_O": 2.2395,
+          "d_R": 2.2395,
+          "d_C": 2.2395,
+          "p_squared": 10.0311,
+          "m_squared": 5.0155,
+          "E_riem_squared": 15.0466,
+          "lorentz_interval": 5.0155,
+          "causal_type": "spacelike"
+        },
+        {
+          "label": "ChatGPT",
+          "O": 2,
+          "R": 3,
+          "C": 2,
+          "d_O": 1.4245,
+          "d_R": 2.2395,
+          "d_C": 1.4245,
+          "p_squared": 7.0446,
+          "m_squared": 2.0291,
+          "E_riem_squared": 9.0737,
+          "lorentz_interval": 5.0155,
+          "causal_type": "spacelike"
+        }
+      ]
+    },
+    "SPECTRAL-CROSSOVER": {
+      "test": "SPECTRAL-CROSSOVER",
+      "description": "Lorentzian\u2192Euclidean crossover mode number n_cross",
+      "regime_distribution": {
+        "nonrelativistic": 82,
+        "transitional": 66,
+        "relativistic": 125
+      },
+      "passes": true,
+      "examples_relativistic": [
+        {
+          "label": "Claude (Anthropic)",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "Pe": -4.22,
+          "mass_proxy": 0.01,
+          "n_cross": 0.01,
+          "regime": "relativistic"
+        },
+        {
+          "label": "Gemini (Google)",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "Pe": -4.22,
+          "mass_proxy": 0.01,
+          "n_cross": 0.01,
+          "regime": "relativistic"
+        },
+        {
+          "label": "Copilot (Microsoft)",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "Pe": -4.22,
+          "mass_proxy": 0.01,
+          "n_cross": 0.01,
+          "regime": "relativistic"
+        },
+        {
+          "label": "LessWrong",
+          "O": 1,
+          "R": 1,
+          "C": 2,
+          "Pe": -13.35,
+          "mass_proxy": 0.01,
+          "n_cross": 0.01,
+          "regime": "relativistic"
+        },
+        {
+          "label": "Wikipedia",
+          "O": 0,
+          "R": 0,
+          "C": 1,
+          "Pe": -75.47,
+          "mass_proxy": 0.01,
+          "n_cross": 0.01,
+          "regime": "relativistic"
+        }
+      ],
+      "examples_deep_nr": []
+    }
+  }
+}

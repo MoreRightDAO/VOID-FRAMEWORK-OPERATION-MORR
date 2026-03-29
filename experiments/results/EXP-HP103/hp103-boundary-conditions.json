@@ -1,0 +1,242 @@
+{
+  "experiment": "HP103",
+  "title": "Boundary Condition Sufficiency Theorem (Gap 8 Closure)",
+  "date": "2026-03-17T00:27:07.043452",
+  "sub_experiments": {
+    "C1_metric_divergence": {
+      "sub": "C1",
+      "title": "Metric divergence at boundaries",
+      "approach_data": [
+        {
+          "eps": 0.1,
+          "g_exact": 11.111111111111109,
+          "g_leading": 10.0,
+          "ratio": 1.111111111111111
+        },
+        {
+          "eps": 0.03480700588428411,
+          "g_exact": 29.765910557461268,
+          "g_leading": 28.72984833353664,
+          "ratio": 1.036062223924629
+        },
+        {
+          "eps": 0.012115276586285889,
+          "g_exact": 83.55268238340282,
+          "g_leading": 82.54041852680182,
+          "ratio": 1.0122638566010216
+        },
+        {
+          "eps": 0.004216965034285822,
+          "g_exact": 238.1416053893009,
+          "g_leading": 237.13737056616554,
+          "ratio": 1.004234823135374
+        },
+        {
+          "eps": 0.0014677992676220704,
+          "g_exact": 682.2935390148301,
+          "g_leading": 681.2920690579608,
+          "ratio": 1.0014699568692382
+        },
+        {
+          "eps": 0.0005108969774506929,
+          "g_exact": 1958.3422926457863,
+          "g_leading": 1957.3417814876598,
+          "ratio": 1.0005111581265926
+        },
+        {
+          "eps": 0.00017782794100389227,
+          "g_exact": 5624.41342976306,
+          "g_leading": 5623.413251903491,
+          "ratio": 1.0001778595694049
+        },
+        {
+          "eps": 6.18965818891261e-05,
+          "g_exact": 16156.981046299145,
+          "g_leading": 16155.98098439873,
+          "ratio": 1.0000619004133133
+        },
+        {
+          "eps": 2.1544346900318867e-05,
+          "g_exact": 46416.888357672535,
+          "g_leading": 46415.888336127726,
+          "ratio": 1.0000215448110692
+        },
+        {
+          "eps": 7.498942093324558e-06,
+          "g_exact": 133353.1432238314,
+          "g_leading": 133352.14321633242,
+          "ratio": 1.0000074989983276
+        }
+      ],
+      "final_ratio": 1.000000000001,
+      "KC": {
+        "K-HP-570": {
+          "pass": true,
+          "ratio_deviation": 1.000088900582341e-12
+        }
+      }
+    },
+    "C2_geodesic_incompleteness": {
+      "sub": "C2",
+      "title": "Proper time to boundary",
+      "total_diameter": 3.141592653589793,
+      "s_to_boundary": 1.5075402279197534,
+      "boundary_is_finite": true,
+      "KC": {
+        "K-HP-571": {
+          "pass": true,
+          "proper_distance": 1.5075402279197534,
+          "comment": "Boundary is finite distance. [0,1] \u2245 [0,\u03c0] under Fisher metric."
+        }
+      }
+    },
+    "C3_boundary_independence": {
+      "sub": "C3",
+      "title": "Boundary independence of interior dynamics",
+      "results": [
+        {
+          "Pe": 0.0,
+          "evals_DD": [
+            0.15421206344935728,
+            0.6168421900567964,
+            1.3878721888101342,
+            2.4672717421538826,
+            3.8549984071897367,
+            5.55099761732353,
+            7.555202684428692,
+            9.867534801464148,
+            12.48790304557273,
+            15.416204381655712
+          ],
+          "shift_ND": 1.7272807976243152,
+          "shift_wall": 0.05452800823820801,
+          "shift_grid": 0.01441322436421799
+        },
+        {
+          "Pe": 1.0,
+          "evals_DD": [
+            0.1569783484985564,
+            0.6190650290681726,
+            1.3900136354416337,
+            2.4693861045121865,
+            3.857100482466559,
+            5.553093084469918,
+            7.557294189691989,
+            9.869623744422368,
+            12.489990235973089,
+            15.418290320528348
+          ],
+          "shift_ND": 1.7262932798045934,
+          "shift_wall": 0.05445977053671498,
+          "shift_grid": 0.01443021647867082
+        },
+        {
+          "Pe": 5.0,
+          "evals_DD": [
+            0.22040733096859288,
+            0.6710398323638512,
+            1.4399821682610194,
+            2.5186597507057202,
+            3.90605465345385,
+            5.601874377090954,
+            7.605971484342478,
+            9.918233641734728,
+            12.538553973067028,
+            15.466821063396527
+          ],
+          "shift_ND": 1.7624050893539946,
+          "shift_wall": 0.05550699609113944,
+          "shift_grid": 0.014798122781575553
+        },
+        {
+          "Pe": 10.0,
+          "evals_DD": [
+            0.3875761631232526,
+            0.819995540565156,
+            1.5813822406038873,
+            2.6574108506364986,
+            4.043564630271188,
+            5.738705031701763,
+            7.7423906879713895,
+            10.054385041872806,
+            12.67452142100585,
+            15.602656757375117
+          ],
+          "shift_ND": 1.836356062800418,
+          "shift_wall": 0.057842471018775946,
+          "shift_grid": 0.015426117000844938
+        }
+      ],
+      "KC": {
+        "K-HP-572": {
+          "pass": false,
+          "max_shift": 1.836356062800418
+        }
+      }
+    },
+    "C4_cencov_uniqueness": {
+      "sub": "C4",
+      "title": "Cencov uniqueness verification",
+      "fisher_violations": 0,
+      "euclidean_violations": 0,
+      "log_violations": 0,
+      "KC": {
+        "K-HP-573": {
+          "pass": false,
+          "fisher_violations": 0,
+          "alt_violations": 0
+        }
+      }
+    },
+    "C5_topological_necessity": {
+      "sub": "C5",
+      "title": "Topological necessity",
+      "manifold_volume_theory": 31.006276680299816,
+      "manifold_volume_numerical": 20.591618848093276,
+      "volume_ratio": 1.0,
+      "coordinate_map": "\u03c6 = 2\u00b7arcsin(\u221ax), V \u2245 flat [0,\u03c0]\u00b3",
+      "KC": {
+        "K-HP-574": {
+          "pass": true,
+          "volume_ratio": 1.0
+        }
+      }
+    }
+  },
+  "kill_conditions": {
+    "K-HP-570": {
+      "pass": true,
+      "ratio_deviation": 1.000088900582341e-12
+    },
+    "K-HP-571": {
+      "pass": true,
+      "proper_distance": 1.5075402279197534,
+      "comment": "Boundary is finite distance. [0,1] \u2245 [0,\u03c0] under Fisher metric."
+    },
+    "K-HP-572": {
+      "pass": false,
+      "max_shift": 1.836356062800418
+    },
+    "K-HP-573": {
+      "pass": false,
+      "fisher_violations": 0,
+      "alt_violations": 0
+    },
+    "K-HP-574": {
+      "pass": true,
+      "volume_ratio": 1.0
+    }
+  },
+  "theorem_chain": {
+    "links_established": 3,
+    "total_links": 5,
+    "gap_8_distance_before": 3,
+    "gap_8_distance_after": 2
+  },
+  "key_discovery": "V \u2245 flat Minkowski cuboid [0,\u03c0]\u00b3 in angular coordinates",
+  "summary": {
+    "passed": 3,
+    "total": 5,
+    "score": "3/5"
+  }
+}

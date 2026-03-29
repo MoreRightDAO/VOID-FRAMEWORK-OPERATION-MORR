@@ -1,0 +1,1137 @@
+{
+  "experiment": "MATH-NUC-06",
+  "title": "Iron Peak Validation \u2014 Fe Watershed Theorem (section 34K)",
+  "date": "2026-03-11",
+  "author": "Shamir / MoreRight",
+  "math_sections": [
+    "34K",
+    "48E",
+    "23G",
+    "K-15"
+  ],
+  "BW_coefficients": {
+    "a_V": 15.56,
+    "a_S": 17.23,
+    "a_C": 0.7,
+    "a_A": 23.29,
+    "a_P": 12.0
+  },
+  "tests": {
+    "test1_bw_vs_experimental": {
+      "comparisons": [
+        {
+          "Z": 1,
+          "symbol": "H",
+          "A": 1,
+          "BA_exp": 0.0,
+          "BA_BW": 0.0,
+          "delta_MeV": 0.0,
+          "error_pct": 0
+        },
+        {
+          "Z": 2,
+          "symbol": "He",
+          "A": 4,
+          "BA_exp": 7.074,
+          "BA_BW": 5.9853,
+          "delta_MeV": -1.0887,
+          "error_pct": 15.39
+        },
+        {
+          "Z": 6,
+          "symbol": "C",
+          "A": 12,
+          "BA_exp": 7.68,
+          "BA_BW": 7.5584,
+          "delta_MeV": -0.1216,
+          "error_pct": 1.58
+        },
+        {
+          "Z": 8,
+          "symbol": "O",
+          "A": 16,
+          "BA_exp": 7.976,
+          "BA_BW": 7.9375,
+          "delta_MeV": -0.0385,
+          "error_pct": 0.48
+        },
+        {
+          "Z": 10,
+          "symbol": "Ne",
+          "A": 20,
+          "BA_exp": 8.032,
+          "BA_BW": 8.1861,
+          "delta_MeV": 0.1541,
+          "error_pct": 1.92
+        },
+        {
+          "Z": 12,
+          "symbol": "Mg",
+          "A": 24,
+          "BA_exp": 8.261,
+          "BA_BW": 8.354,
+          "delta_MeV": 0.093,
+          "error_pct": 1.13
+        },
+        {
+          "Z": 14,
+          "symbol": "Si",
+          "A": 28,
+          "BA_exp": 8.448,
+          "BA_BW": 8.4685,
+          "delta_MeV": 0.0205,
+          "error_pct": 0.24
+        },
+        {
+          "Z": 16,
+          "symbol": "S",
+          "A": 32,
+          "BA_exp": 8.493,
+          "BA_BW": 8.5455,
+          "delta_MeV": 0.0525,
+          "error_pct": 0.62
+        },
+        {
+          "Z": 20,
+          "symbol": "Ca",
+          "A": 40,
+          "BA_exp": 8.551,
+          "BA_BW": 8.6249,
+          "delta_MeV": 0.0739,
+          "error_pct": 0.86
+        },
+        {
+          "Z": 22,
+          "symbol": "Ti",
+          "A": 48,
+          "BA_exp": 8.723,
+          "BA_BW": 8.8394,
+          "delta_MeV": 0.1164,
+          "error_pct": 1.33
+        },
+        {
+          "Z": 24,
+          "symbol": "Cr",
+          "A": 52,
+          "BA_exp": 8.776,
+          "BA_BW": 8.8472,
+          "delta_MeV": 0.0712,
+          "error_pct": 0.81
+        },
+        {
+          "Z": 26,
+          "symbol": "Fe",
+          "A": 56,
+          "BA_exp": 8.79,
+          "BA_BW": 8.8425,
+          "delta_MeV": 0.0525,
+          "error_pct": 0.6
+        },
+        {
+          "Z": 28,
+          "symbol": "Ni",
+          "A": 62,
+          "BA_exp": 8.795,
+          "BA_BW": 8.8566,
+          "delta_MeV": 0.0616,
+          "error_pct": 0.7
+        },
+        {
+          "Z": 30,
+          "symbol": "Zn",
+          "A": 64,
+          "BA_exp": 8.736,
+          "BA_BW": 8.8061,
+          "delta_MeV": 0.0701,
+          "error_pct": 0.8
+        },
+        {
+          "Z": 34,
+          "symbol": "Se",
+          "A": 80,
+          "BA_exp": 8.711,
+          "BA_BW": 8.7756,
+          "delta_MeV": 0.0646,
+          "error_pct": 0.74
+        },
+        {
+          "Z": 36,
+          "symbol": "Kr",
+          "A": 84,
+          "BA_exp": 8.717,
+          "BA_BW": 8.7685,
+          "delta_MeV": 0.0515,
+          "error_pct": 0.59
+        },
+        {
+          "Z": 42,
+          "symbol": "Mo",
+          "A": 98,
+          "BA_exp": 8.635,
+          "BA_BW": 8.692,
+          "delta_MeV": 0.057,
+          "error_pct": 0.66
+        },
+        {
+          "Z": 50,
+          "symbol": "Sn",
+          "A": 120,
+          "BA_exp": 8.505,
+          "BA_BW": 8.5315,
+          "delta_MeV": 0.0265,
+          "error_pct": 0.31
+        },
+        {
+          "Z": 54,
+          "symbol": "Xe",
+          "A": 132,
+          "BA_exp": 8.428,
+          "BA_BW": 8.4332,
+          "delta_MeV": 0.0052,
+          "error_pct": 0.06
+        },
+        {
+          "Z": 82,
+          "symbol": "Pb",
+          "A": 208,
+          "BA_exp": 7.868,
+          "BA_BW": 7.8411,
+          "delta_MeV": -0.0269,
+          "error_pct": 0.34
+        },
+        {
+          "Z": 92,
+          "symbol": "U",
+          "A": 238,
+          "BA_exp": 7.57,
+          "BA_BW": 7.6106,
+          "delta_MeV": 0.0406,
+          "error_pct": 0.54
+        }
+      ],
+      "rms_error": 0.25356,
+      "pass": true
+    },
+    "test2_peak_location": {
+      "peak_Z": 28,
+      "peak_symbol": "Ni",
+      "peak_A": 62,
+      "peak_BA": 8.795,
+      "pass": true
+    },
+    "test3_coulomb_barriers": {
+      "reactions": [
+        {
+          "reaction": "pp",
+          "description": "H+H -> He (pp chain)",
+          "Z1": 1,
+          "A1": 1,
+          "Z2": 1,
+          "A2": 1,
+          "coulomb_barrier_MeV": 0.6,
+          "T_burn_keV": 1.5,
+          "barrier_over_kT": 400.0
+        },
+        {
+          "reaction": "triple-alpha",
+          "description": "He+He -> C (triple-alpha)",
+          "Z1": 2,
+          "A1": 4,
+          "Z2": 2,
+          "A2": 4,
+          "coulomb_barrier_MeV": 1.5119,
+          "T_burn_keV": 20.0,
+          "barrier_over_kT": 75.6
+        },
+        {
+          "reaction": "C+C",
+          "description": "C+C -> Mg",
+          "Z1": 6,
+          "A1": 12,
+          "Z2": 6,
+          "A2": 12,
+          "coulomb_barrier_MeV": 9.4344,
+          "T_burn_keV": 70.0,
+          "barrier_over_kT": 134.8
+        },
+        {
+          "reaction": "O+O",
+          "description": "O+O -> S",
+          "Z1": 8,
+          "A1": 16,
+          "Z2": 8,
+          "A2": 16,
+          "coulomb_barrier_MeV": 15.2387,
+          "T_burn_keV": 200.0,
+          "barrier_over_kT": 76.2
+        },
+        {
+          "reaction": "Si+Si",
+          "description": "Si+Si -> Ni -> Fe",
+          "Z1": 14,
+          "A1": 28,
+          "Z2": 14,
+          "A2": 28,
+          "coulomb_barrier_MeV": 38.7267,
+          "T_burn_keV": 350.0,
+          "barrier_over_kT": 110.6
+        }
+      ],
+      "monotonic": true,
+      "pass": true
+    },
+    "test4_gamow_peaks": {
+      "reactions": [
+        {
+          "reaction": "pp",
+          "T_keV": 1.5,
+          "E_gamow_keV": 126.89,
+          "E_gamow_over_kT": 84.59,
+          "E_gamow_over_V_C": 0.2115
+        },
+        {
+          "reaction": "triple-alpha",
+          "T_keV": 20.0,
+          "E_gamow_keV": 2853.84,
+          "E_gamow_over_kT": 142.69,
+          "E_gamow_over_V_C": 1.8876
+        },
+        {
+          "reaction": "C+C",
+          "T_keV": 70.0,
+          "E_gamow_keV": 41052.91,
+          "E_gamow_over_kT": 586.47,
+          "E_gamow_over_V_C": 4.3514
+        },
+        {
+          "reaction": "O+O",
+          "T_keV": 200.0,
+          "E_gamow_keV": 133514.92,
+          "E_gamow_over_kT": 667.57,
+          "E_gamow_over_V_C": 8.7616
+        },
+        {
+          "reaction": "Si+Si",
+          "T_keV": 350.0,
+          "E_gamow_keV": 492740.87,
+          "E_gamow_over_kT": 1407.83,
+          "E_gamow_over_V_C": 12.7235
+        }
+      ],
+      "all_below_barrier": false,
+      "pass": false
+    },
+    "test5_kramers_rates": {
+      "reactions": [
+        {
+          "reaction": "pp",
+          "E_gamow_keV": 126.89,
+          "T_keV": 1.5,
+          "E_G_over_kT": 84.59,
+          "log10_rate": -15.74
+        },
+        {
+          "reaction": "triple-alpha",
+          "E_gamow_keV": 2853.84,
+          "T_keV": 20.0,
+          "E_G_over_kT": 142.69,
+          "log10_rate": -40.97
+        },
+        {
+          "reaction": "C+C",
+          "E_gamow_keV": 41052.91,
+          "T_keV": 70.0,
+          "E_G_over_kT": 586.47,
+          "log10_rate": -233.7
+        },
+        {
+          "reaction": "O+O",
+          "E_gamow_keV": 133514.92,
+          "T_keV": 200.0,
+          "E_G_over_kT": 667.57,
+          "log10_rate": -268.92
+        },
+        {
+          "reaction": "Si+Si",
+          "E_gamow_keV": 492740.87,
+          "T_keV": 350.0,
+          "E_G_over_kT": 1407.83,
+          "log10_rate": -Infinity
+        }
+      ],
+      "all_tunneling_regime": true,
+      "pass": true
+    },
+    "test6_pe_nuc_scan": {
+      "elements": [
+        {
+          "Z": 1,
+          "symbol": "H",
+          "A": 1,
+          "Pe_nuc": Infinity,
+          "BA_BW": 0.0,
+          "regime": "BBN"
+        },
+        {
+          "Z": 2,
+          "symbol": "He",
+          "A": 4,
+          "Pe_nuc": 0.09371,
+          "BA_BW": 5.9853,
+          "regime": "BBN"
+        },
+        {
+          "Z": 3,
+          "symbol": "Li",
+          "A": 7,
+          "Pe_nuc": 0.0718,
+          "BA_BW": 5.7639,
+          "regime": "BBN"
+        },
+        {
+          "Z": 4,
+          "symbol": "Be",
+          "A": 9,
+          "Pe_nuc": 0.08222,
+          "BA_BW": 6.5404,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 5,
+          "symbol": "B",
+          "A": 11,
+          "Pe_nuc": 0.09156,
+          "BA_BW": 7.0479,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 6,
+          "symbol": "C",
+          "A": 12,
+          "Pe_nuc": 0.11417,
+          "BA_BW": 7.5584,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 7,
+          "symbol": "N",
+          "A": 14,
+          "Pe_nuc": 0.12086,
+          "BA_BW": 7.3106,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 8,
+          "symbol": "O",
+          "A": 16,
+          "Pe_nuc": 0.1274,
+          "BA_BW": 7.9375,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 9,
+          "symbol": "F",
+          "A": 19,
+          "Pe_nuc": 0.12286,
+          "BA_BW": 8.0443,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 10,
+          "symbol": "Ne",
+          "A": 20,
+          "Pe_nuc": 0.13996,
+          "BA_BW": 8.1861,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 11,
+          "symbol": "Na",
+          "A": 23,
+          "Pe_nuc": 0.13629,
+          "BA_BW": 8.2801,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 12,
+          "symbol": "Mg",
+          "A": 24,
+          "Pe_nuc": 0.15188,
+          "BA_BW": 8.354,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 13,
+          "symbol": "Al",
+          "A": 27,
+          "Pe_nuc": 0.14878,
+          "BA_BW": 8.4366,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 14,
+          "symbol": "Si",
+          "A": 28,
+          "Pe_nuc": 0.16323,
+          "BA_BW": 8.4685,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 15,
+          "symbol": "P",
+          "A": 31,
+          "Pe_nuc": 0.16053,
+          "BA_BW": 8.5414,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 16,
+          "symbol": "S",
+          "A": 32,
+          "Pe_nuc": 0.17408,
+          "BA_BW": 8.5455,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 17,
+          "symbol": "Cl",
+          "A": 35,
+          "Pe_nuc": 0.17168,
+          "BA_BW": 8.6105,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 18,
+          "symbol": "Ar",
+          "A": 40,
+          "Pe_nuc": 0.15757,
+          "BA_BW": 8.7706,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 19,
+          "symbol": "K",
+          "A": 39,
+          "Pe_nuc": 0.18233,
+          "BA_BW": 8.6538,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 20,
+          "symbol": "Ca",
+          "A": 40,
+          "Pe_nuc": 0.19453,
+          "BA_BW": 8.6249,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 21,
+          "symbol": "Sc",
+          "A": 45,
+          "Pe_nuc": 0.17998,
+          "BA_BW": 8.7756,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 22,
+          "symbol": "Ti",
+          "A": 48,
+          "Pe_nuc": 0.17952,
+          "BA_BW": 8.8394,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 23,
+          "symbol": "V",
+          "A": 51,
+          "Pe_nuc": 0.1794,
+          "BA_BW": 8.8172,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 24,
+          "symbol": "Cr",
+          "A": 52,
+          "Pe_nuc": 0.18982,
+          "BA_BW": 8.8472,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 25,
+          "symbol": "Mn",
+          "A": 55,
+          "Pe_nuc": 0.18965,
+          "BA_BW": 8.8288,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 26,
+          "symbol": "Fe",
+          "A": 56,
+          "Pe_nuc": 0.19976,
+          "BA_BW": 8.8425,
+          "regime": "Stellar"
+        },
+        {
+          "Z": 27,
+          "symbol": "Co",
+          "A": 59,
+          "Pe_nuc": 0.19954,
+          "BA_BW": 8.8274,
+          "regime": "Fe-peak"
+        },
+        {
+          "Z": 28,
+          "symbol": "Ni",
+          "A": 62,
+          "Pe_nuc": 0.19956,
+          "BA_BW": 8.8566,
+          "regime": "Fe-peak"
+        },
+        {
+          "Z": 29,
+          "symbol": "Cu",
+          "A": 63,
+          "Pe_nuc": 0.20912,
+          "BA_BW": 8.8157,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 30,
+          "symbol": "Zn",
+          "A": 64,
+          "Pe_nuc": 0.2187,
+          "BA_BW": 8.8061,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 31,
+          "symbol": "Ga",
+          "A": 69,
+          "Pe_nuc": 0.20926,
+          "BA_BW": 8.8192,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 32,
+          "symbol": "Ge",
+          "A": 74,
+          "Pe_nuc": 0.2014,
+          "BA_BW": 8.8144,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 33,
+          "symbol": "As",
+          "A": 75,
+          "Pe_nuc": 0.21005,
+          "BA_BW": 8.8018,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 34,
+          "symbol": "Se",
+          "A": 80,
+          "Pe_nuc": 0.20305,
+          "BA_BW": 8.7756,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 35,
+          "symbol": "Br",
+          "A": 79,
+          "Pe_nuc": 0.21912,
+          "BA_BW": 8.7848,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 36,
+          "symbol": "Kr",
+          "A": 84,
+          "Pe_nuc": 0.21212,
+          "BA_BW": 8.7685,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 37,
+          "symbol": "Rb",
+          "A": 85,
+          "Pe_nuc": 0.22026,
+          "BA_BW": 8.7564,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 38,
+          "symbol": "Sr",
+          "A": 88,
+          "Pe_nuc": 0.22098,
+          "BA_BW": 8.7533,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 39,
+          "symbol": "Y",
+          "A": 89,
+          "Pe_nuc": 0.22899,
+          "BA_BW": 8.7344,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 40,
+          "symbol": "Zr",
+          "A": 90,
+          "Pe_nuc": 0.23703,
+          "BA_BW": 8.7343,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 41,
+          "symbol": "Nb",
+          "A": 93,
+          "Pe_nuc": 0.23753,
+          "BA_BW": 8.7066,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 42,
+          "symbol": "Mo",
+          "A": 98,
+          "Pe_nuc": 0.23116,
+          "BA_BW": 8.692,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 43,
+          "symbol": "Tc",
+          "A": 98,
+          "Pe_nuc": 0.2423,
+          "BA_BW": 8.6633,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 44,
+          "symbol": "Ru",
+          "A": 102,
+          "Pe_nuc": 0.23952,
+          "BA_BW": 8.6662,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 45,
+          "symbol": "Rh",
+          "A": 103,
+          "Pe_nuc": 0.24704,
+          "BA_BW": 8.6426,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 46,
+          "symbol": "Pd",
+          "A": 106,
+          "Pe_nuc": 0.24772,
+          "BA_BW": 8.6356,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 47,
+          "symbol": "Ag",
+          "A": 107,
+          "Pe_nuc": 0.25514,
+          "BA_BW": 8.6076,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 48,
+          "symbol": "Cd",
+          "A": 114,
+          "Pe_nuc": 0.24301,
+          "BA_BW": 8.5789,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 49,
+          "symbol": "In",
+          "A": 115,
+          "Pe_nuc": 0.25009,
+          "BA_BW": 8.5639,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 50,
+          "symbol": "Sn",
+          "A": 120,
+          "Pe_nuc": 0.24502,
+          "BA_BW": 8.5315,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 51,
+          "symbol": "Sb",
+          "A": 121,
+          "Pe_nuc": 0.25191,
+          "BA_BW": 8.5196,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 52,
+          "symbol": "Te",
+          "A": 130,
+          "Pe_nuc": 0.23639,
+          "BA_BW": 8.4163,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 53,
+          "symbol": "I",
+          "A": 127,
+          "Pe_nuc": 0.25389,
+          "BA_BW": 8.4733,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 54,
+          "symbol": "Xe",
+          "A": 132,
+          "Pe_nuc": 0.24943,
+          "BA_BW": 8.4332,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 55,
+          "symbol": "Cs",
+          "A": 133,
+          "Pe_nuc": 0.25598,
+          "BA_BW": 8.4257,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 56,
+          "symbol": "Ba",
+          "A": 138,
+          "Pe_nuc": 0.25178,
+          "BA_BW": 8.3832,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 57,
+          "symbol": "La",
+          "A": 139,
+          "Pe_nuc": 0.25819,
+          "BA_BW": 8.3772,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 58,
+          "symbol": "Ce",
+          "A": 140,
+          "Pe_nuc": 0.26461,
+          "BA_BW": 8.3811,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 59,
+          "symbol": "Pr",
+          "A": 141,
+          "Pe_nuc": 0.27105,
+          "BA_BW": 8.3659,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 60,
+          "symbol": "Nd",
+          "A": 144,
+          "Pe_nuc": 0.27205,
+          "BA_BW": 8.3497,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 61,
+          "symbol": "Pm",
+          "A": 145,
+          "Pe_nuc": 0.27843,
+          "BA_BW": 8.3311,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 62,
+          "symbol": "Sm",
+          "A": 152,
+          "Pe_nuc": 0.26899,
+          "BA_BW": 8.284,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 63,
+          "symbol": "Eu",
+          "A": 153,
+          "Pe_nuc": 0.27517,
+          "BA_BW": 8.272,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 64,
+          "symbol": "Gd",
+          "A": 158,
+          "Pe_nuc": 0.2713,
+          "BA_BW": 8.235,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 65,
+          "symbol": "Tb",
+          "A": 159,
+          "Pe_nuc": 0.27735,
+          "BA_BW": 8.2242,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 66,
+          "symbol": "Dy",
+          "A": 164,
+          "Pe_nuc": 0.27366,
+          "BA_BW": 8.186,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 67,
+          "symbol": "Ho",
+          "A": 165,
+          "Pe_nuc": 0.2796,
+          "BA_BW": 8.1761,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 68,
+          "symbol": "Er",
+          "A": 166,
+          "Pe_nuc": 0.28555,
+          "BA_BW": 8.1741,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 69,
+          "symbol": "Tm",
+          "A": 169,
+          "Pe_nuc": 0.28664,
+          "BA_BW": 8.1448,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 70,
+          "symbol": "Yb",
+          "A": 174,
+          "Pe_nuc": 0.28307,
+          "BA_BW": 8.1092,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 71,
+          "symbol": "Lu",
+          "A": 175,
+          "Pe_nuc": 0.28887,
+          "BA_BW": 8.0973,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 72,
+          "symbol": "Hf",
+          "A": 180,
+          "Pe_nuc": 0.28545,
+          "BA_BW": 8.0608,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 73,
+          "symbol": "Ta",
+          "A": 181,
+          "Pe_nuc": 0.29114,
+          "BA_BW": 8.0497,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 74,
+          "symbol": "W",
+          "A": 184,
+          "Pe_nuc": 0.2923,
+          "BA_BW": 8.0307,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 75,
+          "symbol": "Re",
+          "A": 187,
+          "Pe_nuc": 0.29347,
+          "BA_BW": 8.0022,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 76,
+          "symbol": "Os",
+          "A": 192,
+          "Pe_nuc": 0.29032,
+          "BA_BW": 7.9648,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 77,
+          "symbol": "Ir",
+          "A": 193,
+          "Pe_nuc": 0.29583,
+          "BA_BW": 7.9547,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 78,
+          "symbol": "Pt",
+          "A": 195,
+          "Pe_nuc": 0.29918,
+          "BA_BW": 7.9392,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 79,
+          "symbol": "Au",
+          "A": 197,
+          "Pe_nuc": 0.30251,
+          "BA_BW": 7.9231,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 80,
+          "symbol": "Hg",
+          "A": 202,
+          "Pe_nuc": 0.29943,
+          "BA_BW": 7.8882,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 81,
+          "symbol": "Tl",
+          "A": 205,
+          "Pe_nuc": 0.30065,
+          "BA_BW": 7.8605,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 82,
+          "symbol": "Pb",
+          "A": 208,
+          "Pe_nuc": 0.30187,
+          "BA_BW": 7.8411,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 83,
+          "symbol": "Bi",
+          "A": 209,
+          "Pe_nuc": 0.30719,
+          "BA_BW": 7.8296,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 84,
+          "symbol": "Po",
+          "A": 209,
+          "Pe_nuc": 0.31464,
+          "BA_BW": 7.8255,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 85,
+          "symbol": "At",
+          "A": 210,
+          "Pe_nuc": 0.32001,
+          "BA_BW": 7.8082,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 86,
+          "symbol": "Rn",
+          "A": 222,
+          "Pe_nuc": 0.30292,
+          "BA_BW": 7.73,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 87,
+          "symbol": "Fr",
+          "A": 223,
+          "Pe_nuc": 0.30805,
+          "BA_BW": 7.7213,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 88,
+          "symbol": "Ra",
+          "A": 226,
+          "Pe_nuc": 0.3093,
+          "BA_BW": 7.7019,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 89,
+          "symbol": "Ac",
+          "A": 227,
+          "Pe_nuc": 0.31441,
+          "BA_BW": 7.6911,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 90,
+          "symbol": "Th",
+          "A": 232,
+          "Pe_nuc": 0.31181,
+          "BA_BW": 7.6561,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 91,
+          "symbol": "Pa",
+          "A": 231,
+          "Pe_nuc": 0.32072,
+          "BA_BW": 7.6591,
+          "regime": "Supernova"
+        },
+        {
+          "Z": 92,
+          "symbol": "U",
+          "A": 238,
+          "Pe_nuc": 0.31433,
+          "BA_BW": 7.6106,
+          "regime": "Supernova"
+        }
+      ]
+    },
+    "test7_pe_regimes": {
+      "bbn_range": [
+        0.0718,
+        Infinity
+      ],
+      "stellar_range": [
+        0.11417,
+        0.19976
+      ],
+      "supernova_range": [
+        0.2014,
+        0.32072
+      ],
+      "monotonic_violations": 21,
+      "violation_fraction": 0.3387,
+      "regimes_separated": false,
+      "pass_strict": false,
+      "pass_relaxed": false,
+      "pass_separation": false
+    }
+  },
+  "summary": {
+    "total_tests": 8,
+    "passed": 4,
+    "kill_conditions": {
+      "K-NUC-SYNTH-1": "SURVIVED",
+      "K-NUC-SYNTH-2_strict": "TRIGGERED",
+      "K-NUC-SYNTH-2_relaxed": "TRIGGERED",
+      "K-NUC-SYNTH-3": "SURVIVED"
+    },
+    "overall": "ISSUES_FOUND"
+  }
+}

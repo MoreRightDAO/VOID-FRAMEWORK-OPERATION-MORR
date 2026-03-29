@@ -1,0 +1,210 @@
+{
+  "experiment": "HP205",
+  "title": "Mean Field Game - Multi-Agent Pe Dynamics",
+  "seed": 42,
+  "particle_simulation": {
+    "0.0": {
+      "order_parameter": 0.09606801453330212,
+      "n_modes": 0,
+      "x_mean": 1.6852956302334166,
+      "x_std": 1.5174898092774718
+    },
+    "0.5": {
+      "order_parameter": 0.0958653649193884,
+      "n_modes": 0,
+      "x_mean": 1.6851859742472868,
+      "x_std": 1.5177072987515519
+    },
+    "1.0": {
+      "order_parameter": 0.09566492700604688,
+      "n_modes": 0,
+      "x_mean": 1.6850785668415929,
+      "x_std": 1.5179237552803568
+    },
+    "2.0": {
+      "order_parameter": 0.0952729892229022,
+      "n_modes": 0,
+      "x_mean": 1.6848746747293615,
+      "x_std": 1.5183486246783067
+    },
+    "5.0": {
+      "order_parameter": 0.09349416839835668,
+      "n_modes": 0,
+      "x_mean": 1.680276084356833,
+      "x_std": 1.517776951657054
+    },
+    "10.0": {
+      "order_parameter": 0.07529523760411455,
+      "n_modes": 0,
+      "x_mean": 1.6520117791082505,
+      "x_std": 1.5239622740229097
+    }
+  },
+  "mean_field_pde": {
+    "Pe10_J0.0": {
+      "converged": true,
+      "iterations": 2,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 8.332305926754898,
+      "rho_entropy": -1.615755836678439
+    },
+    "Pe10_J1.0": {
+      "converged": true,
+      "iterations": 5,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 8.352699987081731,
+      "rho_entropy": -1.6122913444205405
+    },
+    "Pe10_J5.0": {
+      "converged": false,
+      "iterations": 200,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 4.390100842959844,
+      "rho_entropy": -0.9042501847665294
+    },
+    "Pe10_J10.0": {
+      "converged": false,
+      "iterations": 200,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 9.186270698594548,
+      "rho_entropy": -1.6664284182415279
+    },
+    "Pe20_J0.0": {
+      "converged": true,
+      "iterations": 2,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 16.33292110432921,
+      "rho_entropy": -2.292024214147741
+    },
+    "Pe20_J1.0": {
+      "converged": true,
+      "iterations": 5,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 16.342699884542466,
+      "rho_entropy": -2.2911483608113343
+    },
+    "Pe20_J5.0": {
+      "converged": true,
+      "iterations": 6,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 16.382141604565383,
+      "rho_entropy": -2.2876223612596065
+    },
+    "Pe20_J10.0": {
+      "converged": false,
+      "iterations": 200,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 8.40050608544565,
+      "rho_entropy": -1.58988299205312
+    },
+    "Pe40_J0.0": {
+      "converged": true,
+      "iterations": 2,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 32.302180936380736,
+      "rho_entropy": -2.974834732188958
+    },
+    "Pe40_J1.0": {
+      "converged": true,
+      "iterations": 4,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 32.305849646079714,
+      "rho_entropy": -2.9746125630014633
+    },
+    "Pe40_J5.0": {
+      "converged": true,
+      "iterations": 5,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 32.32055266820066,
+      "rho_entropy": -2.9737224294705777
+    },
+    "Pe40_J10.0": {
+      "converged": true,
+      "iterations": 5,
+      "n_modes": 0,
+      "multi_stable": true,
+      "rho_max": 32.338995341948106,
+      "rho_entropy": -2.972606468422965
+    }
+  },
+  "pde_converged_count": 9,
+  "pde_total_combos": 12,
+  "social_cascade": {
+    "shift_high_pe_minority": 0.17466668731214896,
+    "shift_low_pe_minority": 0.03169478047349661,
+    "asymmetry_ratio": 5.510897526430462,
+    "pe_weighted_shift_A": 0.16685772870470816,
+    "pe_weighted_shift_B": 0.02466182399123107
+  },
+  "critical_coupling": {
+    "J_c": null,
+    "max_dr_dJ": -0.000193251489767593,
+    "J_at_max_dr": 14.5,
+    "mean_abs_dr_dJ": 0.0024376314094237224,
+    "is_sharp_transition": false,
+    "r_values": {
+      "0.0": 0.09606801453330212,
+      "0.5": 0.0958653649193884,
+      "1.0": 0.09566492700604688,
+      "1.5": 0.09546759445963715,
+      "2.0": 0.0952729892229022,
+      "2.5": 0.09508046746774439,
+      "3.0": 0.09488936329444288,
+      "3.5": 0.09469903501324535,
+      "4.0": 0.0945078963253685,
+      "4.5": 0.09434169611411651,
+      "5.0": 0.09349416839835668,
+      "5.5": 0.08856655852009107,
+      "6.0": 0.08011270965442652,
+      "6.5": 0.07721207297362151,
+      "7.0": 0.07650007399525803,
+      "7.5": 0.07622178243509171,
+      "8.0": 0.07600990994649927,
+      "8.5": 0.07589480740026956,
+      "9.0": 0.07576806455392311,
+      "9.5": 0.07560722406570348,
+      "10.0": 0.07529523760411455,
+      "10.5": 0.06691377128984358,
+      "11.0": 0.06683055661808991,
+      "11.5": 0.0591555845748864,
+      "12.0": 0.05904636255606312,
+      "12.5": 0.058926341569456336,
+      "13.0": 0.05882451496705617,
+      "13.5": 0.05872856556196723,
+      "14.0": 0.05862859962466604,
+      "14.5": 0.05853393941631277,
+      "15.0": 0.058435348134898445
+    }
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "pass": false,
+      "detail": "Sharp=False, J_c=None, max_dr/mean_dr=-0.08"
+    },
+    "KC-2": {
+      "pass": false,
+      "detail": "modes at J=10: 0"
+    },
+    "KC-3": {
+      "pass": "True",
+      "detail": "ratio=5.5109"
+    },
+    "KC-4": {
+      "pass": true,
+      "detail": "9/12 converged"
+    }
+  },
+  "kc_summary": "2/4 PASS",
+  "elapsed_seconds": 3.2
+}

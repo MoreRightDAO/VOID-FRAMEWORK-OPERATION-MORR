@@ -1,0 +1,212 @@
+{
+  "experiment": "EXP-VOY-09",
+  "date": "2026-03-03T04:08:01.626712+00:00",
+  "mode": "offline_top30",
+  "apparatus": "\u00a739D\u2013E, \u00a739K (dimensional address table)",
+  "result": {
+    "mode": "offline_top30",
+    "n_words": 30,
+    "spearman_rho": -0.0852,
+    "spearman_p": 0.6544,
+    "prediction": "rho < 0 (more-frequent universals have lower Pe proxy)",
+    "prediction_pass": true,
+    "kill_triggered": false,
+    "pe_mean": 7.92,
+    "pe_median": 7.612,
+    "pe_std": 2.591,
+    "n_near_v_star": 0,
+    "n_near_high_pe": 6,
+    "pe_histogram": {
+      "Pe < 1": 0,
+      "Pe 1\u20132": 0,
+      "Pe 2\u20135": 3,
+      "Pe 5\u201310": 21,
+      "Pe 10\u201325": 6,
+      "Pe \u2265 25": 0
+    },
+    "top_words_by_freq": [
+      [
+        "daiin",
+        819,
+        11.419
+      ],
+      [
+        "ol",
+        509,
+        7.632
+      ],
+      [
+        "chedy",
+        484,
+        7.592
+      ],
+      [
+        "aiin",
+        447,
+        5.886
+      ],
+      [
+        "shedy",
+        418,
+        8.466
+      ],
+      [
+        "chol",
+        384,
+        11.393
+      ],
+      [
+        "ar",
+        351,
+        5.843
+      ],
+      [
+        "chey",
+        340,
+        7.408
+      ],
+      [
+        "or",
+        327,
+        9.012
+      ],
+      [
+        "qokeey",
+        301,
+        5.174
+      ],
+      [
+        "dar",
+        294,
+        8.682
+      ],
+      [
+        "shey",
+        267,
+        6.649
+      ],
+      [
+        "dy",
+        266,
+        11.378
+      ],
+      [
+        "al",
+        244,
+        3.214
+      ],
+      [
+        "dal",
+        229,
+        8.191
+      ]
+    ],
+    "lowest_pe_proxy": [
+      [
+        "okeey",
+        184,
+        3.058
+      ],
+      [
+        "al",
+        244,
+        3.214
+      ],
+      [
+        "cheey",
+        179,
+        4.843
+      ],
+      [
+        "qokeey",
+        301,
+        5.174
+      ],
+      [
+        "cheol",
+        171,
+        5.187
+      ],
+      [
+        "otaiin",
+        142,
+        5.618
+      ],
+      [
+        "ar",
+        351,
+        5.843
+      ],
+      [
+        "aiin",
+        447,
+        5.886
+      ],
+      [
+        "sheey",
+        140,
+        6.393
+      ],
+      [
+        "shey",
+        267,
+        6.649
+      ]
+    ],
+    "highest_pe_proxy": [
+      [
+        "dar",
+        294,
+        8.682
+      ],
+      [
+        "qokar",
+        138,
+        8.861
+      ],
+      [
+        "or",
+        327,
+        9.012
+      ],
+      [
+        "chckhy",
+        136,
+        9.961
+      ],
+      [
+        "dain",
+        212,
+        11.244
+      ],
+      [
+        "dy",
+        266,
+        11.378
+      ],
+      [
+        "chol",
+        384,
+        11.393
+      ],
+      [
+        "daiin",
+        819,
+        11.419
+      ],
+      [
+        "shol",
+        181,
+        13.103
+      ],
+      [
+        "chy",
+        160,
+        13.34
+      ]
+    ],
+    "subset_note": "SUBSET ANALYSIS: top-30 universal words by frequency. Full 187-word analysis requires live voynich.nu transliteration. Gradient direction valid; p-value unreliable at N=30.",
+    "full_187_blocked": true,
+    "universal_count_expected": 187
+  }
+}

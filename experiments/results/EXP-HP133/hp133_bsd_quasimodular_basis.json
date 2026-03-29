@@ -1,0 +1,459 @@
+{
+  "experiment": "HP133",
+  "title": "BSD Structural Invariants in Quasi-Modular Basis",
+  "section": "\u00a7123 extension (QM basis projection)",
+  "parent": "HP115/HP128/HP55/HP59",
+  "run_date": "2026-03-18T19:10:59",
+  "parameters": {
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "N_grid": 1000,
+    "N_eigenvalues": 60,
+    "BOTH_point": [
+      0.21,
+      0.21,
+      0.194
+    ]
+  },
+  "probes": {
+    "C1_spectral_zeta_qm": {
+      "Pe_both": -91.8129135608573,
+      "n_eigenvalues": 60,
+      "lambda_1": 3.1897240664946303,
+      "n_basis": 23,
+      "svd_rank": 6,
+      "reconstruction_residual": 0.004081570876912224,
+      "relative_error": 0.00264917557126223,
+      "convergence_comparison": [
+        {
+          "s": 0.6,
+          "zeta_raw": 6.836089168155376,
+          "zeta_qm": 3963164470820.08,
+          "ratio": 579741482788.3945,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.5,
+          "zeta_raw": 9.415430438841847,
+          "zeta_qm": 40930771075248.22,
+          "ratio": 4347201260857.3784,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.45,
+          "zeta_raw": 11.12108680325366,
+          "zeta_qm": 155481004849871.6,
+          "ratio": 13980738357728.045,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.4,
+          "zeta_raw": 13.192213703016572,
+          "zeta_qm": 684211177804574.8,
+          "ratio": 51864773661763.91,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.35,
+          "zeta_raw": 15.716044980889276,
+          "zeta_qm": 3630477877574549.0,
+          "ratio": 231004548662797.38,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.3,
+          "zeta_raw": 18.80214989176663,
+          "zeta_qm": 2.462760214311596e+16,
+          "ratio": 1309829050660864.5,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.25,
+          "zeta_raw": 22.58842836784581,
+          "zeta_qm": 2.3386006379532634e+17,
+          "ratio": 1.0353091414196022e+16,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.2,
+          "zeta_raw": 27.248769441718796,
+          "zeta_qm": 3.618510874790415e+18,
+          "ratio": 1.3279538668819118e+17,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.15,
+          "zeta_raw": 33.00284534085747,
+          "zeta_qm": 1.212754714502533e+20,
+          "ratio": 3.6746974449537674e+18,
+          "raw_finite": true,
+          "qm_finite": true
+        },
+        {
+          "s": 0.1,
+          "zeta_raw": 40.12865043113175,
+          "zeta_qm": 1.6680262396073594e+22,
+          "ratio": 4.156696578844593e+20,
+          "raw_finite": true,
+          "qm_finite": true
+        }
+      ],
+      "raw_convergence_limit": 0.6,
+      "qm_convergence_limit": 0.6,
+      "convergence_gain": 0.0,
+      "dominant_modes": [
+        {
+          "monomial": "E2^4 E4^1 E6^0",
+          "degree": 6,
+          "coefficient": 3.8923083110140695,
+          "magnitude": 3.8923083110140695
+        },
+        {
+          "monomial": "E2^3 E4^0 E6^1",
+          "degree": 6,
+          "coefficient": 3.6106667457235204,
+          "magnitude": 3.6106667457235204
+        },
+        {
+          "monomial": "E2^0 E4^0 E6^2",
+          "degree": 6,
+          "coefficient": -1.8021583722349632,
+          "magnitude": 1.8021583722349632
+        },
+        {
+          "monomial": "E2^0 E4^3 E6^0",
+          "degree": 6,
+          "coefficient": 1.7510116446469368,
+          "magnitude": 1.7510116446469368
+        },
+        {
+          "monomial": "E2^1 E4^2 E6^0",
+          "degree": 5,
+          "coefficient": -1.392485593215504,
+          "magnitude": 1.392485593215504
+        }
+      ],
+      "singular_values": [
+        2811715.640970922,
+        1829.088271913003,
+        31.16681331446956,
+        12.183680254154837,
+        1.6515177550026032,
+        0.005847998694758007,
+        1.1977890940966907e-06,
+        1.327462813226398e-11,
+        1.0972916785644246e-15,
+        8.401693117999399e-16,
+        7.708664692605474e-16,
+        3.932860646699276e-16
+      ]
+    },
+    "C2_bsd_in_qm": {
+      "raw_identity": {
+        "lhs": 580.6793924896095,
+        "rhs": 5.85252864e-12,
+        "log_ratio": 13.996592866152675
+      },
+      "qm_identity": {
+        "lhs": 3.048665983519994e+21,
+        "rhs": 2.472906214425363e-13,
+        "log_ratio": 34.090902199059194,
+        "improvement_orders": -20.09430933290652
+      },
+      "anomaly_identity": {
+        "lhs_anomaly": 0.09175426675510523,
+        "rhs_anomaly": 3.702142922291565e-07,
+        "log_ratio": 5.394173088143331
+      },
+      "eisenstein_at_i": {
+        "E2": 0.954929658551372,
+        "E4": 1.4557628922687091,
+        "E6": -3.359065488123923e-16,
+        "discriminant": 0.0017853698506421513
+      },
+      "qm_energy_unit": 0.954929658551372,
+      "regulator_qm": 1.6309903931853125,
+      "theta_qm": 0.04272895410707063,
+      "n_coefficients": 23,
+      "svd_rank": 6
+    },
+    "C3_functional_equation": {
+      "fe_s_1ms": [
+        {
+          "s": 0.1,
+          "1-s": 0.9,
+          "zeta_qm_s": 9.72104109394998e+24,
+          "zeta_qm_1ms": 17085621694626.744,
+          "ratio_qm": 568960337978.638,
+          "zeta_raw_s": 40.12865043113175,
+          "zeta_raw_1ms": 2.8894551629831855,
+          "ratio_raw": 13.887964397309208
+        },
+        {
+          "s": 0.15,
+          "1-s": 0.85,
+          "zeta_qm_s": 7.236272019941492e+22,
+          "zeta_qm_1ms": 35777177206919.92,
+          "ratio_qm": 2022594454.0258117,
+          "zeta_raw_s": 33.00284534085747,
+          "zeta_raw_1ms": 3.302652106107816,
+          "ratio_raw": 9.992831300585095
+        },
+        {
+          "s": 0.2,
+          "1-s": 0.8,
+          "zeta_qm_s": 2.211208992922612e+21,
+          "zeta_qm_1ms": 77994589941703.11,
+          "ratio_qm": 28350799.64617258,
+          "zeta_raw_s": 27.248769441718796,
+          "zeta_raw_1ms": 3.789352923610721,
+          "ratio_raw": 7.1908766459669184
+        },
+        {
+          "s": 0.25,
+          "1-s": 0.75,
+          "zeta_qm_s": 1.4641359437229446e+20,
+          "zeta_qm_1ms": 177971299504892.8,
+          "ratio_qm": 822680.9310243264,
+          "zeta_raw_s": 22.58842836784581,
+          "zeta_raw_1ms": 4.364861915440279,
+          "ratio_raw": 5.175061389214037
+        },
+        {
+          "s": 0.3,
+          "1-s": 0.7,
+          "zeta_qm_s": 1.5804092066139259e+19,
+          "zeta_qm_1ms": 427847486249352.2,
+          "ratio_qm": 36938.61147738177,
+          "zeta_raw_s": 18.80214989176663,
+          "zeta_raw_1ms": 5.048033546892944,
+          "ratio_raw": 3.7246483639831043
+        },
+        {
+          "s": 0.35,
+          "1-s": 0.65,
+          "zeta_qm_s": 2.3892466968549693e+18,
+          "zeta_qm_1ms": 1092280008918029.0,
+          "ratio_qm": 2187.3939624892214,
+          "zeta_raw_s": 15.716044980889276,
+          "zeta_raw_1ms": 5.862159501739172,
+          "ratio_raw": 2.6809309736841302
+        },
+        {
+          "s": 0.4,
+          "1-s": 0.6,
+          "zeta_qm_s": 4.620596396649313e+17,
+          "zeta_qm_1ms": 2990643119211121.0,
+          "ratio_qm": 154.50176475313262,
+          "zeta_raw_s": 13.192213703016572,
+          "zeta_raw_1ms": 6.836089168155376,
+          "ratio_raw": 1.9297895885369658
+        },
+        {
+          "s": 0.45,
+          "1-s": 0.55,
+          "zeta_qm_s": 1.078183093768554e+17,
+          "zeta_qm_1ms": 8891527776163712.0,
+          "ratio_qm": 12.125959912748995,
+          "zeta_raw_s": 11.12108680325366,
+          "zeta_raw_1ms": 8.005647295533036,
+          "ratio_raw": 1.3891552291416793
+        }
+      ],
+      "fe_s_half_ms": [
+        {
+          "s": 0.1,
+          "1/2-s": 0.4,
+          "zeta_qm_s": 9.72104109394998e+24,
+          "zeta_qm_half_ms": 4.620596396649313e+17,
+          "ratio": 21038498.625414077
+        },
+        {
+          "s": 0.15,
+          "1/2-s": 0.35,
+          "zeta_qm_s": 7.236272019941492e+22,
+          "zeta_qm_half_ms": 2.3892466968549693e+18,
+          "ratio": 30286.83488175078
+        },
+        {
+          "s": 0.2,
+          "1/2-s": 0.3,
+          "zeta_qm_s": 2.211208992922612e+21,
+          "zeta_qm_half_ms": 1.5804092066139259e+19,
+          "ratio": 139.91369979805378
+        },
+        {
+          "s": 0.22,
+          "1/2-s": 0.28,
+          "zeta_qm_s": 6.942681685659096e+20,
+          "zeta_qm_half_ms": 3.6731960583606837e+19,
+          "ratio": 18.900928715353018
+        }
+      ],
+      "cv_ratio_1ms": 2.634902500343423,
+      "cv_ratio_half_ms": 1.7287151961443061,
+      "power_law": {
+        "log_A": -9.55174248399881,
+        "B": -16.251494690307375,
+        "R_squared": 0.9946893794187701
+      },
+      "fe_detected": true
+    },
+    "C4_normalization": {
+      "eigenvalue_norm": 1017.378496430528,
+      "qm_norm": 6.010354747138894,
+      "bsd_norm": 0.4401032606105072,
+      "discriminant_norm": 0.0017853698506421513,
+      "log_ratio_ev_qm": 2.2285824480584133,
+      "log_ratio_qm_bsd": 1.135345519826167,
+      "log_ratio_ev_bsd": 3.363927967884581,
+      "gap_decomposition_sum": 3.3639279678845804,
+      "raw_gap": 9.0,
+      "qm_fraction_of_gap": 0.66249410490792,
+      "degree_norms": [
+        {
+          "degree": 0,
+          "pe_order": 0,
+          "n_elements": 1,
+          "norm": 1.0,
+          "log_norm": 0.0
+        },
+        {
+          "degree": 1,
+          "pe_order": 2,
+          "n_elements": 1,
+          "norm": 0.954929658551372,
+          "log_norm": -0.020028617974471415
+        },
+        {
+          "degree": 2,
+          "pe_order": 4,
+          "n_elements": 2,
+          "norm": 1.7177864131305698,
+          "log_norm": 0.23496916335706688
+        },
+        {
+          "degree": 3,
+          "pe_order": 6,
+          "n_elements": 3,
+          "norm": 1.640365192954961,
+          "log_norm": 0.21494054538259544
+        },
+        {
+          "degree": 4,
+          "pe_order": 8,
+          "n_elements": 4,
+          "norm": 2.635320743428107,
+          "log_norm": 0.4208334805063276
+        },
+        {
+          "degree": 5,
+          "pe_order": 10,
+          "n_elements": 5,
+          "norm": 2.5165459376951502,
+          "log_norm": 0.40080486253185615
+        },
+        {
+          "degree": 6,
+          "pe_order": 12,
+          "n_elements": 7,
+          "norm": 3.9106222687709717,
+          "log_norm": 0.5922458690048351
+        }
+      ]
+    },
+    "C5_sha_tamagawa_encoding": {
+      "zone_fractions": [
+        0.8,
+        0.12,
+        0.003,
+        0.08
+      ],
+      "prod_fz": 2.304e-05,
+      "sha": 9,
+      "sha_over_5_8": 2.304e-05,
+      "ratio_prod_to_sha": 1.0,
+      "gram_determinant": 4.635136595389278e-74,
+      "log_gram_over_log_5_8": -13.114643154918179,
+      "gram_eigenvalues_top5": [
+        1.2447914131558248e+16,
+        23947.12289902903,
+        16.255609970622864,
+        1.179619615400549,
+        0.7829225414428468
+      ],
+      "zone_qm_norms": {
+        "spacelike": 22.995902192024296,
+        "timelike": 21.93372420720424,
+        "BOTH": 9804.500367082273,
+        "SILENT": 862858849.0926731
+      },
+      "product_zone_norms": 4267053182160581.0,
+      "sha_from_qm": 10923656146.331087,
+      "silent_norm": 394460297.9305738,
+      "sqrt_sha": 3.0,
+      "silent_norm_over_sqrt_sha": 131486765.97685795,
+      "silent_gram_trace": 1.5559892664347706e+17
+    }
+  },
+  "kill_conditions": [
+    {
+      "id": "K-HP-133-1",
+      "description": "QM zeta convergence extends by \u2265 0.1 in s",
+      "value": 0.0,
+      "threshold": 0.1,
+      "result": "FAIL"
+    },
+    {
+      "id": "K-HP-133-2",
+      "description": "BSD identity improves by > 1 order in QM coords",
+      "value": -20.09430933290652,
+      "threshold": 1.0,
+      "result": "FAIL"
+    },
+    {
+      "id": "K-HP-133-3",
+      "description": "Functional equation detected (CV < 0.1 or power law R\u00b2 > 0.9)",
+      "value": {
+        "cv": 2.634902500343423,
+        "r_squared": 0.9946893794187701
+      },
+      "threshold": {
+        "cv": 0.1,
+        "r_squared": 0.9
+      },
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-133-4",
+      "description": "Norm ratio decomposition within 2 orders of 9-order gap",
+      "value": 3.3639279678845804,
+      "threshold": {
+        "target": 9.0,
+        "tolerance": 2.0
+      },
+      "result": "FAIL"
+    },
+    {
+      "id": "K-HP-133-5",
+      "description": "Sha-Tamagawa relation (\u220ff_z \u2248 |\u0428|/5^8) holds within factor 2",
+      "value": 1.0,
+      "threshold": "0.5 < ratio < 2.0",
+      "result": "PASS"
+    }
+  ],
+  "summary": {
+    "total_pass": 2,
+    "total_fail": 3,
+    "verdict": "2/5 PASS"
+  }
+}

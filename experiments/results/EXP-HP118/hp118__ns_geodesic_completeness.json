@@ -1,0 +1,263 @@
+{
+  "experiment": "HP118",
+  "title": "NS Geodesic Completeness",
+  "timestamp": "2026-03-18T11:00:35.061291",
+  "c1_geodesic_completeness": {
+    "geodesics": [
+      {
+        "initial_condition": [
+          0.5,
+          0.5,
+          0.5,
+          0.1,
+          0.0,
+          0.0
+        ],
+        "t_end": 100.0,
+        "complete": "True"
+      },
+      {
+        "initial_condition": [
+          0.5,
+          0.5,
+          0.5,
+          0.0,
+          0.1,
+          0.0
+        ],
+        "t_end": 100.0,
+        "complete": "True"
+      },
+      {
+        "initial_condition": [
+          0.5,
+          0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.1
+        ],
+        "t_end": 100.0,
+        "complete": "True"
+      },
+      {
+        "initial_condition": [
+          0.3,
+          0.3,
+          0.3,
+          0.05,
+          0.05,
+          0.0
+        ],
+        "t_end": 100.0,
+        "complete": "True"
+      },
+      {
+        "initial_condition": [
+          0.3,
+          0.3,
+          0.3,
+          0.05,
+          0.0,
+          0.05
+        ],
+        "t_end": 100.0,
+        "complete": "True"
+      },
+      {
+        "initial_condition": [
+          0.7,
+          0.7,
+          0.2,
+          0.1,
+          -0.1,
+          0.0
+        ],
+        "t_end": 100.0,
+        "complete": "True"
+      },
+      {
+        "initial_condition": [
+          0.1,
+          0.1,
+          0.8,
+          0.0,
+          0.0,
+          0.1
+        ],
+        "t_end": 100.0,
+        "complete": "True"
+      },
+      {
+        "initial_condition": [
+          0.5,
+          0.5,
+          0.5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "t_end": 100.0,
+        "complete": "True"
+      }
+    ],
+    "n_complete": 8,
+    "n_total": 8,
+    "all_complete": true
+  },
+  "c2_self_sourcing": {
+    "eta_results": {
+      "0.01": {
+        "converged": false,
+        "convergence_iter": -1,
+        "blew_up": "True",
+        "final_max_pe": Infinity,
+        "final_delta": Infinity
+      },
+      "0.05": {
+        "converged": false,
+        "convergence_iter": -1,
+        "blew_up": "True",
+        "final_max_pe": Infinity,
+        "final_delta": Infinity
+      },
+      "0.1": {
+        "converged": false,
+        "convergence_iter": -1,
+        "blew_up": "True",
+        "final_max_pe": Infinity,
+        "final_delta": Infinity
+      },
+      "0.2": {
+        "converged": false,
+        "convergence_iter": -1,
+        "blew_up": "True",
+        "final_max_pe": Infinity,
+        "final_delta": Infinity
+      },
+      "0.5": {
+        "converged": false,
+        "convergence_iter": -1,
+        "blew_up": "True",
+        "final_max_pe": Infinity,
+        "final_delta": Infinity
+      }
+    },
+    "all_converge": false,
+    "none_blow_up": false
+  },
+  "c3_pe_energy": {
+    "profiles": {
+      "sine": {
+        "initial_energy": 12.5,
+        "final_energy": 11.168975268310515,
+        "monotone_decrease": true,
+        "n_energy_increases": 0,
+        "energy_ratio": 0.8935180214648412
+      },
+      "gaussian": {
+        "initial_energy": 28.024761100847247,
+        "final_energy": 22.27767305293743,
+        "monotone_decrease": true,
+        "n_energy_increases": 0,
+        "energy_ratio": 0.7949282055526222
+      },
+      "step": {
+        "initial_energy": 10.050251256281408,
+        "final_energy": 7.105776968605185,
+        "monotone_decrease": true,
+        "n_energy_increases": 0,
+        "energy_ratio": 0.7070248083762158
+      },
+      "random": {
+        "initial_energy": 3.4737556594218084,
+        "final_energy": 0.06525140534484145,
+        "monotone_decrease": true,
+        "n_energy_increases": 0,
+        "energy_ratio": 0.018784109114831138
+      }
+    },
+    "all_monotone": true
+  },
+  "c4_arcsinh_barrier": {
+    "polynomial_comparisons": {
+      "0.1": {
+        "ratio_at_pe_1e6": 2.9479672521425626,
+        "arcsinh_slower": true
+      },
+      "0.25": {
+        "ratio_at_pe_1e6": 0.37112708868592953,
+        "arcsinh_slower": true
+      },
+      "0.5": {
+        "ratio_at_pe_1e6": 0.011736069016348438,
+        "arcsinh_slower": "False"
+      },
+      "0.75": {
+        "ratio_at_pe_1e6": 0.00037112708868592954,
+        "arcsinh_slower": "True"
+      },
+      "1.0": {
+        "ratio_at_pe_1e6": 1.1736069016348438e-05,
+        "arcsinh_slower": "True"
+      }
+    },
+    "arcsinh_at_1e6": 11.736069016348438,
+    "log_at_1e6": 11.736069016284437,
+    "sub_polynomial": true
+  },
+  "c5_stretching_ratio": {
+    "profiles": {
+      "mild": {
+        "max_ratio": 85.26402614050812,
+        "bounded": true
+      },
+      "moderate": {
+        "max_ratio": 426.3201307028398,
+        "bounded": true
+      },
+      "strong": {
+        "max_ratio": 2131.6006535132683,
+        "bounded": false
+      },
+      "peaked": {
+        "max_ratio": 6920.712155271258,
+        "bounded": false
+      },
+      "multi": {
+        "max_ratio": 605.2166259886585,
+        "bounded": true
+      }
+    },
+    "all_bounded": false
+  },
+  "kill_conditions": {
+    "K-NS-118-1": {
+      "description": "All geodesics extend to t\u2192\u221e",
+      "result": "PASS",
+      "complete_fraction": "8/8"
+    },
+    "K-NS-118-2": {
+      "description": "Self-sourcing with stretching converges in \u2264 10 iterations",
+      "result": "FAIL",
+      "all_converge": false,
+      "none_blow_up": false
+    },
+    "K-NS-118-3": {
+      "description": "Pe energy non-increasing under diffusion",
+      "result": "PASS",
+      "all_monotone": true
+    },
+    "K-NS-118-4": {
+      "description": "arcsinh(Pe/K) grows sub-polynomially",
+      "result": "PASS",
+      "note": "arcsinh(x) ~ ln(2x) for large x \u2014 proven sub-polynomial"
+    },
+    "K-NS-118-5": {
+      "description": "Stretching/diffusion ratio bounded for all Pe profiles",
+      "result": "FAIL",
+      "all_bounded": false
+    }
+  },
+  "score": "3/5"
+}

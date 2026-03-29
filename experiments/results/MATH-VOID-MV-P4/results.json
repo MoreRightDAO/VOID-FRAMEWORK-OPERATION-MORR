@@ -1,0 +1,147 @@
+{
+  "experiment": "MATH-VOID-MV-P4",
+  "date": "2026-02-27",
+  "prediction": "CH papers have lower median citations than RH papers (\u03b1=0 vs \u03b1=3)",
+  "result": "CONFIRMED",
+  "rh": {
+    "n": 1000,
+    "median": 1.0,
+    "mean": 6.42
+  },
+  "ch": {
+    "n": 556,
+    "median": 0.0,
+    "mean": 17.18
+  },
+  "mann_whitney": {
+    "U": 321699.5,
+    "p_value": 3.985947399970057e-08,
+    "p_value_scientific": "3.99e-08",
+    "significance": "p < 0.001",
+    "test_direction": "one-tailed (RH > CH)"
+  },
+  "by_decade": {
+    "rh": {
+      "1920s": {
+        "n": 2,
+        "median": 16.0,
+        "mean": 16
+      },
+      "1930s": {
+        "n": 1,
+        "median": 13,
+        "mean": 13
+      },
+      "1940s": {
+        "n": 2,
+        "median": 49.0,
+        "mean": 49
+      },
+      "1950s": {
+        "n": 3,
+        "median": 4,
+        "mean": 4.33
+      },
+      "1960s": {
+        "n": 11,
+        "median": 10,
+        "mean": 25.55
+      },
+      "1970s": {
+        "n": 13,
+        "median": 12,
+        "mean": 33.23
+      },
+      "1980s": {
+        "n": 25,
+        "median": 12,
+        "mean": 16.8
+      },
+      "1990s": {
+        "n": 56,
+        "median": 9.0,
+        "mean": 18.7
+      },
+      "2000s": {
+        "n": 157,
+        "median": 3,
+        "mean": 13.38
+      },
+      "2010s": {
+        "n": 278,
+        "median": 2.0,
+        "mean": 5.02
+      },
+      "2020s": {
+        "n": 450,
+        "median": 0.0,
+        "mean": 1.31
+      }
+    },
+    "ch": {
+      "1930s": {
+        "n": 3,
+        "median": 174,
+        "mean": 187.33
+      },
+      "1940s": {
+        "n": 10,
+        "median": 1.0,
+        "mean": 93.3
+      },
+      "1950s": {
+        "n": 12,
+        "median": 1.0,
+        "mean": 3.83
+      },
+      "1960s": {
+        "n": 46,
+        "median": 0.0,
+        "mean": 54.61
+      },
+      "1970s": {
+        "n": 47,
+        "median": 0,
+        "mean": 12.72
+      },
+      "1980s": {
+        "n": 23,
+        "median": 2,
+        "mean": 13.35
+      },
+      "1990s": {
+        "n": 43,
+        "median": 2,
+        "mean": 19.07
+      },
+      "2000s": {
+        "n": 66,
+        "median": 1.5,
+        "mean": 28.83
+      },
+      "2010s": {
+        "n": 121,
+        "median": 0,
+        "mean": 13.69
+      },
+      "2020s": {
+        "n": 184,
+        "median": 0.0,
+        "mean": 1.16
+      }
+    }
+  },
+  "interpretation": "RH papers have significantly higher median citations (1.0) vs CH (0.0). Mann-Whitney U=321699.5, p=0.0000 (one-tailed, RH>CH). Consistent with \u03b1=3 (self-amplifying downstream engagement) for RH vs \u03b1=0 (no compounding) for CH. MV-P4 prediction supported at p<0.05.",
+  "structural_notes": {
+    "ch_mean_exceeds_rh_mean": true,
+    "ch_mean": 17.18,
+    "rh_mean": 6.42,
+    "explanation": "CH mean (17.18) > RH mean (6.42) despite CH median (0) < RH median (1). This is driven by a small number of extremely high-cited foundational CH papers (e.g. Cohen independence proof, Godel constructibility) which received massive one-time citations when CH was resolved. This is structurally coherent with \u03b1=0: CH had a SINGLE resolution event (Cohen 1963) that concentrated all citation mass in a few landmark papers, while the bulk of CH-adjacent work (n=556 papers) shows near-zero engagement (median=0). RH by contrast sustains distributed ongoing engagement (median=1) across a far larger corpus (n=1000 from 3958 total) because the problem remains open and each partial result feeds the next \u2014 the signature of \u03b1=3 compounding coupling.",
+    "mann_whitney_direction": "RH > CH, p=3.99e-08 (one-tailed)",
+    "n_openalex_total": {
+      "rh_total_in_corpus": 3958,
+      "ch_total_in_corpus": 556
+    },
+    "corpus_size_note": "RH corpus is 7x larger (3958 vs 556 papers). This itself is a Pe signal: higher \u03b1 \u2192 more downstream work generated \u2192 larger research corpus. Framework prediction: Pe_RH=43.89 (FISHER_RUNAWAY) vs Pe_CH=-4.22 (CONSTRAINT). A CONSTRAINT-regime problem cannot self-amplify to generate sustained research programs."
+  }
+}

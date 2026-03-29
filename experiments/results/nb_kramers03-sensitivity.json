@@ -1,0 +1,28 @@
+{
+  "experiment": "nb_kramers03_sensitivity",
+  "description": "Monte Carlo robustness check on K-COMPLIANCE-1 Milgram Pe estimates.",
+  "timestamp": "2026-03-11T01:31:24.156355+00:00",
+  "config": {
+    "N_runs": 10000,
+    "delta_ORA": 0.3,
+    "delta_K": 2.0,
+    "monotone_tol_pct": 10.0
+  },
+  "nominal": {
+    "R_squared": 0.926417,
+    "beta_1": 0.031949,
+    "p_value": 0.0001280973099495193
+  },
+  "monte_carlo": {
+    "R2_median": 0.8848,
+    "R2_10th_percentile": 0.8206,
+    "R2_min": 0.6576,
+    "beta1_median": 0.030452,
+    "beta1_min": 0.020821,
+    "P_R2_above_0p7": 0.9994,
+    "P_beta1_positive": 1.0,
+    "P_monotonic": 0.855,
+    "P_full_pass": 0.9994
+  },
+  "K_COMPLIANCE_1_ROBUST_status": "PASS \u2014 result robust to \u00b10.3 parameter noise"
+}

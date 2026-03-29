@@ -1,0 +1,799 @@
+{
+  "experiment": "HP168",
+  "title": "Hurricane Rapid Intensification -- Retrospective Barrier Analysis",
+  "date": "2026-03-26T16:59:20.182903+00:00",
+  "framework": {
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "K": 16,
+    "pi_over_sqrt2": 2.221441469079183,
+    "d_eff": 2,
+    "barrier_prediction": 4.442882938158366
+  },
+  "physics": {
+    "MPI_A": 28.2,
+    "MPI_B": 55.8,
+    "MPI_C": 0.1813,
+    "alpha_shear": 2.0,
+    "V_shear_crit_ms": 10.0,
+    "RI_threshold_kt": 30.0,
+    "RI_threshold_ms": 15.431999999999999,
+    "tau_attempt_hr": 6.0
+  },
+  "storms": {
+    "Katrina (2005)": {
+      "basin": "Gulf of Mexico",
+      "notes": "RI began Aug 27 00Z. Crossed Loop Current warm eddy (SST 31C). Cat 3 to Cat 5.",
+      "n_steps": 14,
+      "ri_onset_idx": 4,
+      "ri_onset_label": "Aug 26 12Z",
+      "barrier_at_ri": 1.4904007189139497,
+      "barrier_24h_before": 3.674896687105913,
+      "barrier_48h_before": null,
+      "barrier_dropped_before_ri": true,
+      "barrier_min": 0.9520606242707836,
+      "barrier_max": 3.674896687105913,
+      "time_series": [
+        {
+          "label": "Aug 25 12Z",
+          "v_kt": 70,
+          "v_ms": 36.01,
+          "sst_c": 28.5,
+          "shear_ms": 15.0,
+          "v_mpi_ms": 70.71,
+          "v_over_mpi": 0.5092,
+          "effective_barrier": 3.6749,
+          "p_ri": 0.025033
+        },
+        {
+          "label": "Aug 25 18Z",
+          "v_kt": 80,
+          "v_ms": 41.15,
+          "sst_c": 28.5,
+          "shear_ms": 12.0,
+          "v_mpi_ms": 70.71,
+          "v_over_mpi": 0.582,
+          "effective_barrier": 2.9414,
+          "p_ri": 0.051424
+        },
+        {
+          "label": "Aug 26 00Z",
+          "v_kt": 85,
+          "v_ms": 43.72,
+          "sst_c": 29.0,
+          "shear_ms": 10.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 0.585,
+          "effective_barrier": 2.5362,
+          "p_ri": 0.076113
+        },
+        {
+          "label": "Aug 26 06Z",
+          "v_kt": 90,
+          "v_ms": 46.3,
+          "sst_c": 29.5,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.5848,
+          "effective_barrier": 2.1365,
+          "p_ri": 0.111367
+        },
+        {
+          "label": "Aug 26 12Z",
+          "v_kt": 100,
+          "v_ms": 51.44,
+          "sst_c": 30.0,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.6124,
+          "effective_barrier": 1.4904,
+          "p_ri": 0.201709
+        },
+        {
+          "label": "Aug 26 18Z",
+          "v_kt": 100,
+          "v_ms": 51.44,
+          "sst_c": 30.0,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.6124,
+          "effective_barrier": 1.4904,
+          "p_ri": 0.201709
+        },
+        {
+          "label": "Aug 27 00Z",
+          "v_kt": 100,
+          "v_ms": 51.44,
+          "sst_c": 30.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 89.29,
+          "v_over_mpi": 0.5761,
+          "effective_barrier": 1.3515,
+          "p_ri": 0.228057
+        },
+        {
+          "label": "Aug 27 06Z",
+          "v_kt": 115,
+          "v_ms": 59.16,
+          "sst_c": 31.0,
+          "shear_ms": 3.0,
+          "v_mpi_ms": 95.09,
+          "v_over_mpi": 0.6221,
+          "effective_barrier": 1.0747,
+          "p_ri": 0.289235
+        },
+        {
+          "label": "Aug 27 12Z",
+          "v_kt": 130,
+          "v_ms": 66.87,
+          "sst_c": 31.0,
+          "shear_ms": 3.0,
+          "v_mpi_ms": 95.09,
+          "v_over_mpi": 0.7032,
+          "effective_barrier": 0.9521,
+          "p_ri": 0.320192
+        },
+        {
+          "label": "Aug 27 18Z",
+          "v_kt": 140,
+          "v_ms": 72.02,
+          "sst_c": 30.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 89.29,
+          "v_over_mpi": 0.8065,
+          "effective_barrier": 1.0151,
+          "p_ri": 0.303984
+        },
+        {
+          "label": "Aug 28 00Z",
+          "v_kt": 150,
+          "v_ms": 77.16,
+          "sst_c": 30.0,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.9186,
+          "effective_barrier": 1.0849,
+          "p_ri": 0.28675
+        },
+        {
+          "label": "Aug 28 06Z",
+          "v_kt": 150,
+          "v_ms": 77.16,
+          "sst_c": 29.5,
+          "shear_ms": 6.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.9747,
+          "effective_barrier": 1.2256,
+          "p_ri": 0.254402
+        },
+        {
+          "label": "Aug 28 12Z",
+          "v_kt": 145,
+          "v_ms": 74.59,
+          "sst_c": 29.0,
+          "shear_ms": 7.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 0.9979,
+          "effective_barrier": 1.4021,
+          "p_ri": 0.218133
+        },
+        {
+          "label": "Aug 28 18Z",
+          "v_kt": 140,
+          "v_ms": 72.02,
+          "sst_c": 28.5,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 70.71,
+          "v_over_mpi": 1.0184,
+          "effective_barrier": 1.6,
+          "p_ri": 0.182821
+        }
+      ]
+    },
+    "Harvey (2017)": {
+      "basin": "Gulf of Mexico",
+      "notes": "RI from Cat 1 (65kt) to Cat 4 (115kt) in ~36 hours.",
+      "n_steps": 9,
+      "ri_onset_idx": 4,
+      "ri_onset_label": "Aug 25 00Z",
+      "barrier_at_ri": 1.7746687517736621,
+      "barrier_24h_before": 3.572207739883059,
+      "barrier_48h_before": null,
+      "barrier_dropped_before_ri": true,
+      "barrier_min": 1.4568857161172786,
+      "barrier_max": 3.572207739883059,
+      "time_series": [
+        {
+          "label": "Aug 24 00Z",
+          "v_kt": 45,
+          "v_ms": 23.15,
+          "sst_c": 29.0,
+          "shear_ms": 12.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 0.3097,
+          "effective_barrier": 3.5722,
+          "p_ri": 0.027703
+        },
+        {
+          "label": "Aug 24 06Z",
+          "v_kt": 50,
+          "v_ms": 25.72,
+          "sst_c": 29.5,
+          "shear_ms": 10.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.3249,
+          "effective_barrier": 3.1243,
+          "p_ri": 0.043017
+        },
+        {
+          "label": "Aug 24 12Z",
+          "v_kt": 60,
+          "v_ms": 30.86,
+          "sst_c": 30.0,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.3674,
+          "effective_barrier": 2.6012,
+          "p_ri": 0.071498
+        },
+        {
+          "label": "Aug 24 18Z",
+          "v_kt": 70,
+          "v_ms": 36.01,
+          "sst_c": 30.0,
+          "shear_ms": 6.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.4287,
+          "effective_barrier": 2.0471,
+          "p_ri": 0.121124
+        },
+        {
+          "label": "Aug 25 00Z",
+          "v_kt": 80,
+          "v_ms": 41.15,
+          "sst_c": 30.5,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 89.29,
+          "v_over_mpi": 0.4609,
+          "effective_barrier": 1.7747,
+          "p_ri": 0.155947
+        },
+        {
+          "label": "Aug 25 06Z",
+          "v_kt": 90,
+          "v_ms": 46.3,
+          "sst_c": 30.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 89.29,
+          "v_over_mpi": 0.5185,
+          "effective_barrier": 1.4569,
+          "p_ri": 0.207815
+        },
+        {
+          "label": "Aug 25 12Z",
+          "v_kt": 100,
+          "v_ms": 51.44,
+          "sst_c": 30.0,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.6124,
+          "effective_barrier": 1.4904,
+          "p_ri": 0.201709
+        },
+        {
+          "label": "Aug 25 18Z",
+          "v_kt": 110,
+          "v_ms": 56.58,
+          "sst_c": 30.0,
+          "shear_ms": 6.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.6736,
+          "effective_barrier": 1.5951,
+          "p_ri": 0.183632
+        },
+        {
+          "label": "Aug 26 00Z",
+          "v_kt": 115,
+          "v_ms": 59.16,
+          "sst_c": 29.5,
+          "shear_ms": 7.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.7473,
+          "effective_barrier": 1.6913,
+          "p_ri": 0.16829
+        }
+      ]
+    },
+    "Maria (2017)": {
+      "basin": "Caribbean",
+      "notes": "Explosive RI -- Cat 1 to Cat 5 in ~24 hours. Hit Dominica at peak.",
+      "n_steps": 10,
+      "ri_onset_idx": 4,
+      "ri_onset_label": "Sep 18 12Z",
+      "barrier_at_ri": 1.0487868255002293,
+      "barrier_24h_before": 3.7755386587548876,
+      "barrier_48h_before": null,
+      "barrier_dropped_before_ri": true,
+      "barrier_min": 0.894636145672971,
+      "barrier_max": 3.7755386587548876,
+      "time_series": [
+        {
+          "label": "Sep 17 12Z",
+          "v_kt": 60,
+          "v_ms": 30.86,
+          "sst_c": 28.0,
+          "shear_ms": 15.0,
+          "v_mpi_ms": 67.03,
+          "v_over_mpi": 0.4605,
+          "effective_barrier": 3.7755,
+          "p_ri": 0.022664
+        },
+        {
+          "label": "Sep 17 18Z",
+          "v_kt": 65,
+          "v_ms": 33.44,
+          "sst_c": 28.5,
+          "shear_ms": 12.0,
+          "v_mpi_ms": 70.71,
+          "v_over_mpi": 0.4728,
+          "effective_barrier": 3.149,
+          "p_ri": 0.041988
+        },
+        {
+          "label": "Sep 18 00Z",
+          "v_kt": 75,
+          "v_ms": 38.58,
+          "sst_c": 29.0,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 0.5161,
+          "effective_barrier": 2.2614,
+          "p_ri": 0.098961
+        },
+        {
+          "label": "Sep 18 06Z",
+          "v_kt": 90,
+          "v_ms": 46.3,
+          "sst_c": 29.5,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.5848,
+          "effective_barrier": 1.5365,
+          "p_ri": 0.193571
+        },
+        {
+          "label": "Sep 18 12Z",
+          "v_kt": 120,
+          "v_ms": 61.73,
+          "sst_c": 29.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.7797,
+          "effective_barrier": 1.0488,
+          "p_ri": 0.295567
+        },
+        {
+          "label": "Sep 18 18Z",
+          "v_kt": 140,
+          "v_ms": 72.02,
+          "sst_c": 29.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.9097,
+          "effective_barrier": 0.8946,
+          "p_ri": 0.335524
+        },
+        {
+          "label": "Sep 19 00Z",
+          "v_kt": 150,
+          "v_ms": 77.16,
+          "sst_c": 29.5,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.9747,
+          "effective_barrier": 1.0256,
+          "p_ri": 0.301322
+        },
+        {
+          "label": "Sep 19 06Z",
+          "v_kt": 155,
+          "v_ms": 79.73,
+          "sst_c": 29.0,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 1.0667,
+          "effective_barrier": 1.0,
+          "p_ri": 0.307799
+        },
+        {
+          "label": "Sep 19 12Z",
+          "v_kt": 160,
+          "v_ms": 82.3,
+          "sst_c": 29.0,
+          "shear_ms": 6.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 1.1011,
+          "effective_barrier": 1.2,
+          "p_ri": 0.260066
+        },
+        {
+          "label": "Sep 20 00Z",
+          "v_kt": 155,
+          "v_ms": 79.73,
+          "sst_c": 28.5,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 70.71,
+          "v_over_mpi": 1.1275,
+          "effective_barrier": 1.6,
+          "p_ri": 0.182821
+        }
+      ]
+    },
+    "Michael (2018)": {
+      "basin": "Gulf of Mexico",
+      "notes": "Cat 2 to Cat 5 before Florida Panhandle landfall. Near-record at landfall.",
+      "n_steps": 10,
+      "ri_onset_idx": 5,
+      "ri_onset_label": "Oct 09 06Z",
+      "barrier_at_ri": 1.231108382294184,
+      "barrier_24h_before": 2.7303749876040198,
+      "barrier_48h_before": null,
+      "barrier_dropped_before_ri": true,
+      "barrier_min": 1.135798202489859,
+      "barrier_max": 3.149004659259634,
+      "time_series": [
+        {
+          "label": "Oct 08 00Z",
+          "v_kt": 65,
+          "v_ms": 33.44,
+          "sst_c": 28.5,
+          "shear_ms": 12.0,
+          "v_mpi_ms": 70.71,
+          "v_over_mpi": 0.4728,
+          "effective_barrier": 3.149,
+          "p_ri": 0.041988
+        },
+        {
+          "label": "Oct 08 06Z",
+          "v_kt": 70,
+          "v_ms": 36.01,
+          "sst_c": 29.0,
+          "shear_ms": 10.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 0.4817,
+          "effective_barrier": 2.7304,
+          "p_ri": 0.063115
+        },
+        {
+          "label": "Oct 08 12Z",
+          "v_kt": 80,
+          "v_ms": 41.15,
+          "sst_c": 29.0,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 0.5505,
+          "effective_barrier": 2.1968,
+          "p_ri": 0.105199
+        },
+        {
+          "label": "Oct 08 18Z",
+          "v_kt": 85,
+          "v_ms": 43.72,
+          "sst_c": 29.5,
+          "shear_ms": 6.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.5523,
+          "effective_barrier": 1.7936,
+          "p_ri": 0.153255
+        },
+        {
+          "label": "Oct 09 00Z",
+          "v_kt": 90,
+          "v_ms": 46.3,
+          "sst_c": 29.5,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.5848,
+          "effective_barrier": 1.5365,
+          "p_ri": 0.193571
+        },
+        {
+          "label": "Oct 09 06Z",
+          "v_kt": 100,
+          "v_ms": 51.44,
+          "sst_c": 29.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.6498,
+          "effective_barrier": 1.2311,
+          "p_ri": 0.253208
+        },
+        {
+          "label": "Oct 09 12Z",
+          "v_kt": 110,
+          "v_ms": 56.58,
+          "sst_c": 29.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.7148,
+          "effective_barrier": 1.1358,
+          "p_ri": 0.274697
+        },
+        {
+          "label": "Oct 09 18Z",
+          "v_kt": 120,
+          "v_ms": 61.73,
+          "sst_c": 29.0,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 0.8258,
+          "effective_barrier": 1.1914,
+          "p_ri": 0.261993
+        },
+        {
+          "label": "Oct 10 00Z",
+          "v_kt": 130,
+          "v_ms": 66.87,
+          "sst_c": 28.5,
+          "shear_ms": 6.0,
+          "v_mpi_ms": 70.71,
+          "v_over_mpi": 0.9457,
+          "effective_barrier": 1.2559,
+          "p_ri": 0.247859
+        },
+        {
+          "label": "Oct 10 06Z",
+          "v_kt": 140,
+          "v_ms": 72.02,
+          "sst_c": 28.0,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 67.03,
+          "v_over_mpi": 1.0744,
+          "effective_barrier": 1.6,
+          "p_ri": 0.182821
+        }
+      ]
+    },
+    "Patricia (2015)": {
+      "basin": "Eastern Pacific",
+      "notes": "Most rapid intensification ever observed: 100kt in 24h. SST > 31C.",
+      "n_steps": 7,
+      "ri_onset_idx": 4,
+      "ri_onset_label": "Oct 23 00Z",
+      "barrier_at_ri": 0.8548091008028523,
+      "barrier_24h_before": 2.4392072729112333,
+      "barrier_48h_before": null,
+      "barrier_dropped_before_ri": true,
+      "barrier_min": 0.8,
+      "barrier_max": 2.4392072729112333,
+      "time_series": [
+        {
+          "label": "Oct 22 00Z",
+          "v_kt": 75,
+          "v_ms": 38.58,
+          "sst_c": 30.5,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 89.29,
+          "v_over_mpi": 0.4321,
+          "effective_barrier": 2.4392,
+          "p_ri": 0.083534
+        },
+        {
+          "label": "Oct 22 06Z",
+          "v_kt": 90,
+          "v_ms": 46.3,
+          "sst_c": 31.0,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 95.09,
+          "v_over_mpi": 0.4869,
+          "effective_barrier": 1.7198,
+          "p_ri": 0.163982
+        },
+        {
+          "label": "Oct 22 12Z",
+          "v_kt": 120,
+          "v_ms": 61.73,
+          "sst_c": 31.5,
+          "shear_ms": 3.0,
+          "v_mpi_ms": 101.44,
+          "v_over_mpi": 0.6085,
+          "effective_barrier": 1.0967,
+          "p_ri": 0.283922
+        },
+        {
+          "label": "Oct 22 18Z",
+          "v_kt": 150,
+          "v_ms": 77.16,
+          "sst_c": 31.5,
+          "shear_ms": 3.0,
+          "v_mpi_ms": 101.44,
+          "v_over_mpi": 0.7607,
+          "effective_barrier": 0.8736,
+          "p_ri": 0.34128
+        },
+        {
+          "label": "Oct 23 00Z",
+          "v_kt": 175,
+          "v_ms": 90.02,
+          "sst_c": 31.0,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 95.09,
+          "v_over_mpi": 0.9467,
+          "effective_barrier": 0.8548,
+          "p_ri": 0.346468
+        },
+        {
+          "label": "Oct 23 06Z",
+          "v_kt": 185,
+          "v_ms": 95.16,
+          "sst_c": 31.0,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 95.09,
+          "v_over_mpi": 1.0008,
+          "effective_barrier": 0.8,
+          "p_ri": 0.361944
+        },
+        {
+          "label": "Oct 23 12Z",
+          "v_kt": 185,
+          "v_ms": 95.16,
+          "sst_c": 30.5,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 89.29,
+          "v_over_mpi": 1.0657,
+          "effective_barrier": 1.0,
+          "p_ri": 0.307799
+        }
+      ]
+    },
+    "Ida (2021)": {
+      "basin": "Gulf of Mexico",
+      "notes": "Cat 1 to Cat 4 in 24 hours. Hit Louisiana.",
+      "n_steps": 7,
+      "ri_onset_idx": 4,
+      "ri_onset_label": "Aug 29 00Z",
+      "barrier_at_ri": 1.2117632580842936,
+      "barrier_24h_before": 3.2044829597577413,
+      "barrier_48h_before": null,
+      "barrier_dropped_before_ri": true,
+      "barrier_min": 1.2117632580842936,
+      "barrier_max": 3.2044829597577413,
+      "time_series": [
+        {
+          "label": "Aug 28 00Z",
+          "v_kt": 65,
+          "v_ms": 33.44,
+          "sst_c": 29.0,
+          "shear_ms": 12.0,
+          "v_mpi_ms": 74.75,
+          "v_over_mpi": 0.4473,
+          "effective_barrier": 3.2045,
+          "p_ri": 0.039768
+        },
+        {
+          "label": "Aug 28 06Z",
+          "v_kt": 75,
+          "v_ms": 38.58,
+          "sst_c": 29.5,
+          "shear_ms": 8.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.4873,
+          "effective_barrier": 2.3188,
+          "p_ri": 0.093707
+        },
+        {
+          "label": "Aug 28 12Z",
+          "v_kt": 85,
+          "v_ms": 43.72,
+          "sst_c": 30.0,
+          "shear_ms": 6.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.5205,
+          "effective_barrier": 1.8529,
+          "p_ri": 0.145107
+        },
+        {
+          "label": "Aug 28 18Z",
+          "v_kt": 100,
+          "v_ms": 51.44,
+          "sst_c": 30.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 89.29,
+          "v_over_mpi": 0.5761,
+          "effective_barrier": 1.3515,
+          "p_ri": 0.228057
+        },
+        {
+          "label": "Aug 29 00Z",
+          "v_kt": 115,
+          "v_ms": 59.16,
+          "sst_c": 30.5,
+          "shear_ms": 4.0,
+          "v_mpi_ms": 89.29,
+          "v_over_mpi": 0.6625,
+          "effective_barrier": 1.2118,
+          "p_ri": 0.257455
+        },
+        {
+          "label": "Aug 29 06Z",
+          "v_kt": 130,
+          "v_ms": 66.87,
+          "sst_c": 30.0,
+          "shear_ms": 5.0,
+          "v_mpi_ms": 84.0,
+          "v_over_mpi": 0.7961,
+          "effective_barrier": 1.228,
+          "p_ri": 0.253879
+        },
+        {
+          "label": "Aug 29 12Z",
+          "v_kt": 130,
+          "v_ms": 66.87,
+          "sst_c": 29.5,
+          "shear_ms": 6.0,
+          "v_mpi_ms": 79.16,
+          "v_over_mpi": 0.8447,
+          "effective_barrier": 1.3687,
+          "p_ri": 0.224639
+        }
+      ]
+    }
+  },
+  "aggregate": {
+    "n_storms": 6,
+    "n_barrier_dropped": 6,
+    "mean_barrier_at_ri": 1.2685895062281953,
+    "std_barrier_at_ri": 0.32541601569179845,
+    "mean_barrier_24h_before": 3.232784717669476,
+    "std_barrier_24h_before": 0.5455702538235886,
+    "mean_barrier_48h_before": null,
+    "mean_barrier_all_steps": 1.7537053105891325,
+    "std_barrier_all_steps": 0.7965135767430963,
+    "unconditional_deviation_pct": -60.52776237863097,
+    "conditional_to_unconditional_ratio": 0.7233766691406269,
+    "pooled_auc": 0.904375,
+    "mean_per_storm_auc": 0.9586111111111112,
+    "per_storm_aucs": [
+      1.0,
+      1.0,
+      0.9583333333333334,
+      0.96,
+      0.9166666666666666,
+      0.9166666666666666
+    ],
+    "n_positive_ri_window_steps": 32,
+    "n_negative_pre_ri_steps": 25
+  },
+  "kill_conditions": {
+    "K-HP-950": {
+      "description": "Barrier drops before RI onset in >= 5/6 storms",
+      "n_dropped": 6,
+      "n_storms": 6,
+      "threshold": 5,
+      "status": "PASS"
+    },
+    "K-HP-951": {
+      "description": "Mean barrier at RI onset < mean barrier 24h before RI",
+      "mean_at_ri": 1.2685895062281953,
+      "mean_24h_before": 3.232784717669476,
+      "monotonic_decrease": true,
+      "status": "PASS"
+    },
+    "K-HP-952": {
+      "description": "Mean barrier at RI onset < 3.0 (well below unconditional ~4.44)",
+      "mean_at_ri": 1.2685895062281953,
+      "threshold": 3.0,
+      "unconditional": 4.442882938158366,
+      "status": "PASS"
+    },
+    "K-HP-953": {
+      "description": "Barrier predicts RI with AUC > 0.7 (pre-RI vs RI-window)",
+      "pooled_auc": 0.904375,
+      "mean_per_storm_auc": 0.9586111111111112,
+      "threshold": 0.7,
+      "status": "PASS"
+    }
+  },
+  "verdict": "PASS",
+  "verdict_detail": "All 4/4 kill conditions passed. Thermodynamic barrier drops before RI onset in all tested historic storms."
+}

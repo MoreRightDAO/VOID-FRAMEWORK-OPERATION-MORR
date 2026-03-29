@@ -1,0 +1,91 @@
+{
+  "G1_SELF_REFERENCE": {
+    "pass": true,
+    "o_monotone": true,
+    "o_final": 2.9965,
+    "pe_initial": -8.5184,
+    "pe_final": 40.2273,
+    "final_regime": "FISHER_RUNAWAY"
+  },
+  "G2_GODEL_SENTENCE": {
+    "pass": true,
+    "pe_sentence": 43.89348016643486,
+    "pe_result": 3.844052013849119,
+    "c_sentence": 0.0,
+    "constitutive_immediate": true
+  },
+  "G3_FISHER_DIAGONAL": {
+    "pass": true,
+    "pe_monotone": true,
+    "c_final": 0.006725,
+    "reaches_runaway": true,
+    "regimes_traversed": [
+      "CONSTRAINT",
+      "ANCIENT/STABLE",
+      "CONTESTED",
+      "DRIFTING",
+      "COCYTUS",
+      "FISHER_RUNAWAY"
+    ]
+  },
+  "G4_TARSKI_UNSCORABILITY": {
+    "pass": true,
+    "pe_scorer": 3.844052013849119,
+    "pe_godel_result": 3.844052013849119,
+    "isomorphic": true,
+    "scorability_sweep": [
+      {
+        "alpha_star_scoreable": 0.0,
+        "Pe": 3.8441
+      },
+      {
+        "alpha_star_scoreable": 0.5,
+        "Pe": 8.1097
+      },
+      {
+        "alpha_star_scoreable": 1.0,
+        "Pe": 12.882
+      },
+      {
+        "alpha_star_scoreable": 1.5,
+        "Pe": 18.4594
+      },
+      {
+        "alpha_star_scoreable": 2.0,
+        "Pe": 25.1903
+      },
+      {
+        "alpha_star_scoreable": 2.5,
+        "Pe": 33.4953
+      },
+      {
+        "alpha_star_scoreable": 3.0,
+        "Pe": 43.8935
+      }
+    ]
+  },
+  "G5_CHAITIN_POLE": {
+    "pass": true,
+    "pe_omega": 43.89348016643486,
+    "pe_pi": 33.495329190784275,
+    "pe_gamma": 29.116260198733265,
+    "pe_e": 25.19029603454555,
+    "pe_bb": 25.19029603454555,
+    "pe_gap_omega_pi": 10.398150975650587,
+    "omega_at_max": true,
+    "order_at_fixed_ra": true,
+    "refinement": "O rubric refined: O=3.0 = computationally inaccessible (incomputable), O=2.5 = algebraically inaccessible but computable. No 4th axis needed \u2014 the constitutive/incidental distinction already lives inside O when properly applied."
+  },
+  "G6_NP_CONSTRAINT_FLOOR": {
+    "pass": true,
+    "pe_godel": 3.844052013849119,
+    "pe_np": 3.844052013849119,
+    "same_pe": true,
+    "c_zero": 0.3863636363636363,
+    "pe_at_floor": 3.552713678800501e-15,
+    "pe_sat2": -13.350982956052146,
+    "pe_sat3": 12.882029960948563,
+    "np_gap_ratio": -0.964875021064198
+  },
+  "overall_pass": true
+}

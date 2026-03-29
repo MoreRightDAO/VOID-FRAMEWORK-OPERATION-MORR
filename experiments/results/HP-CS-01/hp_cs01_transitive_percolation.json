@@ -1,0 +1,533 @@
+{
+  "experiment": "HP-CS-01",
+  "title": "Transitive Percolation -> Pe Distribution (K-CS-3)",
+  "date": "2026-03-24T13:45:29.222848",
+  "runtime_seconds": 36.767406702041626,
+  "parameters": {
+    "N_elements": 1344,
+    "p_link": 0.288,
+    "N_runs_main": 100,
+    "N_runs_sweep": 10,
+    "K_hardware": 16,
+    "B_A": 0.867,
+    "B_G": 2.244
+  },
+  "empirical": {
+    "N": 1344,
+    "mean": -7.25860119047619,
+    "std": 17.190388297797295,
+    "median": -3.4,
+    "skewness": -1.3347945142455633,
+    "kurtosis": 3.225336286829055,
+    "mean_O": 1.936636904761905,
+    "mean_R": 1.2463169642857141,
+    "mean_alpha": 1.7018377976190475
+  },
+  "mappings": {
+    "A_naive": {
+      "metrics": {
+        "label": "A_naive",
+        "sim_mean": -7.304401315653515,
+        "sim_std": 4.570719664750355,
+        "sim_median": -6.817272049852699,
+        "sim_skew": -12.32986918260029,
+        "sim_kurt": 184.44978062818194,
+        "ks_D": 0.5233110119047619,
+        "ks_p": 0.0,
+        "histogram_overlap": 0.17832589285714323,
+        "mean_ratio": 1.0063097729129158,
+        "range_overlap_frac": 0.8164860299878816,
+        "pos_frac_emp": 0.37797619047619047,
+        "pos_frac_sim": 0.0014806547619047618
+      },
+      "kill_condition": {
+        "C1_range": {
+          "val": 0.8164860299878816,
+          "pass": true
+        },
+        "C2_mean": {
+          "val": 1.0063097729129158,
+          "pass": true
+        },
+        "C3_sign": {
+          "val": 0.3764955357142857,
+          "pass": false
+        },
+        "C4_overlap": {
+          "val": 0.17832589285714323,
+          "weak": false,
+          "strong": false
+        },
+        "C5_ks": {
+          "val": 0.5233110119047619,
+          "weak": false,
+          "strong": false
+        },
+        "weak_pass": 2,
+        "strong_pass": 2,
+        "verdict": "FIRES"
+      },
+      "simulated_stats": {
+        "mean": -7.304401315653515,
+        "std": 4.570719664750355,
+        "median": -6.817272049852699,
+        "skewness": -12.32986918260029,
+        "kurtosis": 184.44978062818194
+      },
+      "coords": {
+        "mean_O": 0.8634879418685251,
+        "mean_R": 0.8635213274985346,
+        "mean_a": 2.9297636230684145
+      }
+    },
+    "B_depth": {
+      "metrics": {
+        "label": "B_depth",
+        "sim_mean": -13.50116907787353,
+        "sim_std": 5.0498054758879185,
+        "sim_median": -12.887393166259356,
+        "sim_skew": -8.02014291341343,
+        "sim_kurt": 93.61687047888493,
+        "ks_D": 0.5899255952380953,
+        "ks_p": 0.0,
+        "histogram_overlap": 0.25509672619047696,
+        "mean_ratio": 1.8600235394648823,
+        "range_overlap_frac": 0.7850771191945808,
+        "pos_frac_emp": 0.37797619047619047,
+        "pos_frac_sim": 0.00043898809523809526
+      },
+      "kill_condition": {
+        "C1_range": {
+          "val": 0.7850771191945808,
+          "pass": true
+        },
+        "C2_mean": {
+          "val": 1.8600235394648823,
+          "pass": true
+        },
+        "C3_sign": {
+          "val": 0.3775372023809524,
+          "pass": false
+        },
+        "C4_overlap": {
+          "val": 0.25509672619047696,
+          "weak": true,
+          "strong": false
+        },
+        "C5_ks": {
+          "val": 0.5899255952380953,
+          "weak": false,
+          "strong": false
+        },
+        "weak_pass": 3,
+        "strong_pass": 2,
+        "verdict": "SURVIVES"
+      },
+      "simulated_stats": {
+        "mean": -13.50116907787353,
+        "std": 5.0498054758879185,
+        "median": -12.887393166259356,
+        "skewness": -8.02014291341343,
+        "kurtosis": 93.61687047888493
+      },
+      "coords": {
+        "mean_O": 0.8634879418685251,
+        "mean_R": 0.8635213274985346,
+        "mean_a": 2.284119397470987
+      }
+    },
+    "C_cluster": {
+      "metrics": {
+        "label": "C_cluster",
+        "sim_mean": 1.8335569034984662,
+        "sim_std": 8.575630631811004,
+        "sim_median": 3.284969016371573,
+        "sim_skew": -11.449100764158077,
+        "sim_kurt": 149.93379266973577,
+        "ks_D": 0.5609151785714286,
+        "ks_p": 0.0,
+        "histogram_overlap": 0.21849702380952385,
+        "mean_ratio": -0.2526047175458855,
+        "range_overlap_frac": 0.8209683134601118,
+        "pos_frac_emp": 0.37797619047619047,
+        "pos_frac_sim": 0.9259672619047619
+      },
+      "kill_condition": {
+        "C1_range": {
+          "val": 0.8209683134601118,
+          "pass": true
+        },
+        "C2_mean": {
+          "val": -0.2526047175458855,
+          "pass": true
+        },
+        "C3_sign": {
+          "val": 0.5479910714285714,
+          "pass": false
+        },
+        "C4_overlap": {
+          "val": 0.21849702380952385,
+          "weak": true,
+          "strong": false
+        },
+        "C5_ks": {
+          "val": 0.5609151785714286,
+          "weak": false,
+          "strong": false
+        },
+        "weak_pass": 3,
+        "strong_pass": 2,
+        "verdict": "SURVIVES"
+      },
+      "simulated_stats": {
+        "mean": 1.8335569034984662,
+        "std": 8.575630631811004,
+        "median": 3.284969016371573,
+        "skewness": -11.449100764158077,
+        "kurtosis": 149.93379266973577
+      },
+      "coords": {
+        "mean_O": 0.8634879418685251,
+        "mean_R": 2.0330952112193006,
+        "mean_a": 2.903644506966457
+      }
+    },
+    "D_log": {
+      "metrics": {
+        "label": "D_log",
+        "sim_mean": 21.49414609773907,
+        "sim_std": 5.468118529652231,
+        "sim_median": 22.444153212571734,
+        "sim_skew": -16.94604561826004,
+        "sim_kurt": 404.5498690319874,
+        "ks_D": 0.9234300595238095,
+        "ks_p": 0.0,
+        "histogram_overlap": 0.08875744047619039,
+        "mean_ratio": -2.9611967283642673,
+        "range_overlap_frac": 1.0,
+        "pos_frac_emp": 0.37797619047619047,
+        "pos_frac_sim": 0.9930877976190476
+      },
+      "kill_condition": {
+        "C1_range": {
+          "val": 1.0,
+          "pass": true
+        },
+        "C2_mean": {
+          "val": -2.9611967283642673,
+          "pass": true
+        },
+        "C3_sign": {
+          "val": 0.6151116071428572,
+          "pass": false
+        },
+        "C4_overlap": {
+          "val": 0.08875744047619039,
+          "weak": false,
+          "strong": false
+        },
+        "C5_ks": {
+          "val": 0.9234300595238095,
+          "weak": false,
+          "strong": false
+        },
+        "weak_pass": 2,
+        "strong_pass": 2,
+        "verdict": "FIRES"
+      },
+      "simulated_stats": {
+        "mean": 21.49414609773907,
+        "std": 5.468118529652231,
+        "median": 22.444153212571734,
+        "skewness": -16.94604561826004,
+        "kurtosis": 404.5498690319874
+      },
+      "coords": {
+        "mean_O": 2.378252876857671,
+        "mean_R": 2.376339014891259,
+        "mean_a": 2.9738844605730956
+      }
+    }
+  },
+  "p_sweep": [
+    {
+      "p": 0.01,
+      "A_naive_ks": 0.9494047619047619,
+      "A_naive_overlap": 0.05193452380952384,
+      "A_naive_mean": -83.3571227263986,
+      "best_mapping": "D_log",
+      "best_ks": 0.5343005952380953,
+      "best_overlap": 0.4488839285714288,
+      "B_depth_ks": 0.8808035714285715,
+      "B_depth_overlap": 0.12321428571428578,
+      "B_depth_mean": -71.41828888342559,
+      "C_cluster_ks": 0.9390625,
+      "C_cluster_overlap": 0.06450892857142859,
+      "C_cluster_mean": -82.3755749177477,
+      "D_log_ks": 0.5343005952380953,
+      "D_log_overlap": 0.4488839285714288,
+      "D_log_mean": -20.514404017377316
+    },
+    {
+      "p": 0.02,
+      "A_naive_ks": 0.897172619047619,
+      "A_naive_overlap": 0.11123511904761915,
+      "A_naive_mean": -55.57822046162867,
+      "best_mapping": "D_log",
+      "best_ks": 0.34464285714285714,
+      "best_overlap": 0.46636904761904785,
+      "B_depth_ks": 0.8590029761904763,
+      "B_depth_overlap": 0.14866071428571437,
+      "B_depth_mean": -62.9608816197188,
+      "C_cluster_ks": 0.7928571428571429,
+      "C_cluster_overlap": 0.21071428571428574,
+      "C_cluster_mean": -51.04887709456907,
+      "D_log_ks": 0.34464285714285714,
+      "D_log_overlap": 0.46636904761904785,
+      "D_log_mean": -8.402637372179246
+    },
+    {
+      "p": 0.05,
+      "A_naive_ks": 0.8305059523809524,
+      "A_naive_overlap": 0.1797619047619044,
+      "A_naive_mean": -33.014310494949285,
+      "best_mapping": "C_cluster",
+      "best_ks": 0.47180059523809526,
+      "best_overlap": 0.5268601190476193,
+      "B_depth_ks": 0.8389880952380953,
+      "B_depth_overlap": 0.165848214285714,
+      "B_depth_mean": -48.20222568882682,
+      "C_cluster_ks": 0.47180059523809526,
+      "C_cluster_overlap": 0.5268601190476193,
+      "C_cluster_mean": -19.839009363854803,
+      "D_log_ks": 0.4956845238095239,
+      "D_log_overlap": 0.3545386904761906,
+      "D_log_mean": 2.2723506392553996
+    },
+    {
+      "p": 0.1,
+      "A_naive_ks": 0.7516369047619047,
+      "A_naive_overlap": 0.21994047619047657,
+      "A_naive_mean": -22.35692599036985,
+      "best_mapping": "C_cluster",
+      "best_ks": 0.2914434523809524,
+      "best_overlap": 0.5108630952380955,
+      "B_depth_ks": 0.7913690476190476,
+      "B_depth_overlap": 0.20900297619047664,
+      "B_depth_mean": -32.99290251330177,
+      "C_cluster_ks": 0.2914434523809524,
+      "C_cluster_overlap": 0.5108630952380955,
+      "C_cluster_mean": -5.923956710993837,
+      "D_log_ks": 0.7188988095238096,
+      "D_log_overlap": 0.22031250000000024,
+      "D_log_mean": 9.240842384966912
+    },
+    {
+      "p": 0.15,
+      "A_naive_ks": 0.6686755952380953,
+      "A_naive_overlap": 0.2209077380952381,
+      "A_naive_mean": -16.775501568855873,
+      "best_mapping": "C_cluster",
+      "best_ks": 0.39025297619047616,
+      "best_overlap": 0.3868303571428572,
+      "B_depth_ks": 0.7353422619047619,
+      "B_depth_overlap": 0.2615327380952381,
+      "B_depth_mean": -25.25171525513421,
+      "C_cluster_ks": 0.39025297619047616,
+      "C_cluster_overlap": 0.3868303571428572,
+      "C_cluster_mean": -1.4626596945238173,
+      "D_log_ks": 0.8057291666666666,
+      "D_log_overlap": 0.17953869047619003,
+      "D_log_mean": 13.578109898721236
+    },
+    {
+      "p": 0.2,
+      "A_naive_ks": 0.6145089285714287,
+      "A_naive_overlap": 0.2045386904761909,
+      "A_naive_mean": -12.813746398238852,
+      "best_mapping": "C_cluster",
+      "best_ks": 0.4813988095238095,
+      "best_overlap": 0.32135416666666666,
+      "B_depth_ks": 0.6715029761904762,
+      "B_depth_overlap": 0.27976190476190543,
+      "B_depth_mean": -20.061920420772157,
+      "C_cluster_ks": 0.4813988095238095,
+      "C_cluster_overlap": 0.32135416666666666,
+      "C_cluster_mean": 0.4001978499966821,
+      "D_log_ks": 0.8584077380952381,
+      "D_log_overlap": 0.13392857142857173,
+      "D_log_mean": 16.863130449361854
+    },
+    {
+      "p": 0.25,
+      "A_naive_ks": 0.5558779761904762,
+      "A_naive_overlap": 0.1697916666666671,
+      "A_naive_mean": -9.54183792234807,
+      "best_mapping": "C_cluster",
+      "best_ks": 0.5366071428571428,
+      "best_overlap": 0.24880952380952384,
+      "B_depth_ks": 0.6287202380952381,
+      "B_depth_overlap": 0.25840773809523876,
+      "B_depth_mean": -15.986016125676603,
+      "C_cluster_ks": 0.5366071428571428,
+      "C_cluster_overlap": 0.24880952380952384,
+      "C_cluster_mean": 1.3616240114931597,
+      "D_log_ks": 0.8969494047619048,
+      "D_log_overlap": 0.10833333333333327,
+      "D_log_mean": 19.620211567206063
+    },
+    {
+      "p": 0.288,
+      "A_naive_ks": 0.521875,
+      "A_naive_overlap": 0.17924107142857182,
+      "A_naive_mean": -7.311940215313846,
+      "best_mapping": "A_naive",
+      "best_ks": 0.521875,
+      "best_overlap": 0.17924107142857182,
+      "B_depth_ks": 0.5899553571428572,
+      "B_depth_overlap": 0.25357142857142934,
+      "B_depth_mean": -13.48853516286311,
+      "C_cluster_ks": 0.5607142857142857,
+      "C_cluster_overlap": 0.2191220238095238,
+      "C_cluster_mean": 1.822065427170307,
+      "D_log_ks": 0.923139880952381,
+      "D_log_overlap": 0.08705357142857145,
+      "D_log_mean": 21.48899602274313
+    },
+    {
+      "p": 0.3,
+      "A_naive_ks": 0.5037202380952381,
+      "A_naive_overlap": 0.16718750000000032,
+      "A_naive_mean": -6.638880923725967,
+      "best_mapping": "A_naive",
+      "best_ks": 0.5037202380952381,
+      "best_overlap": 0.16718750000000032,
+      "B_depth_ks": 0.576860119047619,
+      "B_depth_overlap": 0.2538690476190483,
+      "B_depth_mean": -12.711604849713764,
+      "C_cluster_ks": 0.5676339285714286,
+      "C_cluster_overlap": 0.2113095238095238,
+      "C_cluster_mean": 1.9401712626053684,
+      "D_log_ks": 0.928422619047619,
+      "D_log_overlap": 0.08169642857142863,
+      "D_log_mean": 22.047835289138373
+    },
+    {
+      "p": 0.35,
+      "A_naive_ks": 0.4230654761904762,
+      "A_naive_overlap": 0.19627976190476246,
+      "A_naive_mean": -3.9509405421352626,
+      "best_mapping": "A_naive",
+      "best_ks": 0.4230654761904762,
+      "best_overlap": 0.19627976190476246,
+      "B_depth_ks": 0.5394345238095238,
+      "B_depth_overlap": 0.209226190476191,
+      "B_depth_mean": -9.692489684049029,
+      "C_cluster_ks": 0.5970982142857143,
+      "C_cluster_overlap": 0.18511904761904763,
+      "C_cluster_mean": 2.344487310807605,
+      "D_log_ks": 0.9489583333333333,
+      "D_log_overlap": 0.05572916666666665,
+      "D_log_mean": 24.244417401772637
+    },
+    {
+      "p": 0.4,
+      "A_naive_ks": 0.4646577380952381,
+      "A_naive_overlap": 0.22552083333333392,
+      "A_naive_mean": -1.4085117828347156,
+      "best_mapping": "A_naive",
+      "best_ks": 0.4646577380952381,
+      "best_overlap": 0.22552083333333392,
+      "B_depth_ks": 0.48080357142857144,
+      "B_depth_overlap": 0.20491071428571478,
+      "B_depth_mean": -7.095910948014301,
+      "C_cluster_ks": 0.619642857142857,
+      "C_cluster_overlap": 0.1676339285714286,
+      "C_cluster_mean": 2.6188317416904683,
+      "D_log_ks": 0.9635416666666666,
+      "D_log_overlap": 0.038764880952380926,
+      "D_log_mean": 26.25407469081494
+    },
+    {
+      "p": 0.5,
+      "A_naive_ks": 0.6470238095238094,
+      "A_naive_overlap": 0.19866071428571486,
+      "A_naive_mean": 3.5850825410690614,
+      "best_mapping": "B_depth",
+      "best_ks": 0.4139136904761905,
+      "best_overlap": 0.2720982142857149,
+      "B_depth_ks": 0.4139136904761905,
+      "B_depth_overlap": 0.2720982142857149,
+      "B_depth_mean": -2.2552724041906247,
+      "C_cluster_ks": 0.6478422619047619,
+      "C_cluster_overlap": 0.15007440476190476,
+      "C_cluster_mean": 3.0077997291946024,
+      "D_log_ks": 0.9796875,
+      "D_log_overlap": 0.02105654761904761,
+      "D_log_mean": 29.887201388707368
+    },
+    {
+      "p": 0.6,
+      "A_naive_ks": 0.7916666666666666,
+      "A_naive_overlap": 0.13727678571428598,
+      "A_naive_mean": 8.823129980521756,
+      "best_mapping": "B_depth",
+      "best_ks": 0.5727678571428572,
+      "best_overlap": 0.2844494047619054,
+      "B_depth_ks": 0.5727678571428572,
+      "B_depth_overlap": 0.2844494047619054,
+      "B_depth_mean": 2.303949601751171,
+      "C_cluster_ks": 0.6648065476190476,
+      "C_cluster_overlap": 0.14166666666666666,
+      "C_cluster_mean": 3.186382394663729,
+      "D_log_ks": 0.9875744047619047,
+      "D_log_overlap": 0.013318452380952393,
+      "D_log_mean": 33.096088595960794
+    },
+    {
+      "p": 0.7,
+      "A_naive_ks": 0.8875744047619047,
+      "A_naive_overlap": 0.11101190476190452,
+      "A_naive_mean": 14.863182431165527,
+      "best_mapping": "C_cluster",
+      "best_ks": 0.6786458333333333,
+      "best_overlap": 0.13504464285714285,
+      "B_depth_ks": 0.7188988095238096,
+      "B_depth_overlap": 0.2060267857142861,
+      "B_depth_mean": 6.855374985225591,
+      "C_cluster_ks": 0.6786458333333333,
+      "C_cluster_overlap": 0.13504464285714285,
+      "C_cluster_mean": 3.2923251644935765,
+      "D_log_ks": 0.9931547619047619,
+      "D_log_overlap": 0.007068452380952382,
+      "D_log_mean": 36.038956518245485
+    },
+    {
+      "p": 0.8,
+      "A_naive_ks": 0.9650297619047619,
+      "A_naive_overlap": 0.03772321428571422,
+      "A_naive_mean": 22.23759448039415,
+      "best_mapping": "C_cluster",
+      "best_ks": 0.6904761904761905,
+      "best_overlap": 0.13169642857142855,
+      "B_depth_ks": 0.8033482142857143,
+      "B_depth_overlap": 0.1956845238095243,
+      "B_depth_mean": 11.495889334396798,
+      "C_cluster_ks": 0.6904761904761905,
+      "C_cluster_overlap": 0.13169642857142855,
+      "C_cluster_mean": 3.3994026970653377,
+      "D_log_ks": 0.9964285714285714,
+      "D_log_overlap": 0.0028273809523809454,
+      "D_log_mean": 38.768384763846356
+    }
+  ],
+  "best_p": 0.1,
+  "best_mapping_at_best_p": "C_cluster",
+  "transitive_structure": {
+    "mean_direct_in": 193.7046130952381,
+    "mean_trans_reach": 666.4858630952381,
+    "mean_two_step": 469.2782738095238,
+    "mean_reach_fraction": 0.9757766762489772
+  },
+  "overall_verdict": "SURVIVES (at least one mapping)"
+}

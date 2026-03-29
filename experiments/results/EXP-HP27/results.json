@@ -1,0 +1,701 @@
+{
+  "experiment": "HP27",
+  "title": "SO(4,1) Euclidean Conformal Group on (3,0) Eckert Manifold",
+  "premise": "\u03b1 is spacelike. Signature is (3,0). SO(4,2) does not apply.",
+  "date": "2026-03-14T00:24:47.180934",
+  "C1_conformal_flatness": {
+    "method": "angular_coordinate_transform",
+    "max_metric_deviation_from_4": 8.881784197001252e-16,
+    "conformally_flat": "True",
+    "actually_flat": true,
+    "proof": "1D Riemannian manifolds have identically zero Riemann tensor. Product of flat factors is flat. Angular transform \u03c6 = arcsin(\u221ax) maps Fisher metric to 4\u00b7d\u03c6\u00b2 (Euclidean). The Eckert manifold is isometrically R\u00b3 (up to scale factor 2)."
+  },
+  "C2_generators": {
+    "n_generators": 10,
+    "classification": {
+      "rotations": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "boosts": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "internal_rotation": [
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    "conformal_decomposition": {
+      "rotations": 3,
+      "translations": 3,
+      "special_conformal": 3,
+      "dilatation": 1
+    },
+    "interpretation": {
+      "J_01": "Rotation: mix O \u2194 R. Preserves \u03c6\u00b2 norm. Trades one dimension for another.",
+      "J_02": "Rotation: mix O \u2194 \u03b1. Preserves \u03c6\u00b2 norm. Trades one dimension for another.",
+      "J_03": "Boost in O direction. Part of translation P_0 and special conformal K_0.",
+      "J_04": "Timelike boost in O direction. Part of translation P_0 and special conformal K_0.",
+      "J_12": "Rotation: mix R \u2194 \u03b1. Preserves \u03c6\u00b2 norm. Trades one dimension for another.",
+      "J_13": "Boost in R direction. Part of translation P_1 and special conformal K_1.",
+      "J_14": "Timelike boost in R direction. Part of translation P_1 and special conformal K_1.",
+      "J_23": "Boost in \u03b1 direction. Part of translation P_2 and special conformal K_2.",
+      "J_24": "Timelike boost in \u03b1 direction. Part of translation P_2 and special conformal K_2.",
+      "J_34": "Dilatation: rescales all coordinates uniformly. \u03c6_i \u2192 \u03bb\u00b7\u03c6_i. Preserves angles, changes scale."
+    }
+  },
+  "C3_algebra_closure": {
+    "n_checked": 100,
+    "n_nonzero": 60,
+    "max_error": 0.0,
+    "K_HP_114": true
+  },
+  "C4_casimir": {
+    "c2_eigenvalue": -2.0,
+    "c2_eigenvalues": [
+      -2.0,
+      -2.0,
+      -2.0,
+      -2.0,
+      -2.0
+    ],
+    "proportional_to_identity": true,
+    "max_commutator_error": 0.0,
+    "K_HP_115": true
+  },
+  "C5_pe_symmetry": {
+    "point_0": {
+      "O": 0.3,
+      "R": 0.3,
+      "alpha": 0.3,
+      "Pe": -30.73125573834434,
+      "grad_Pe_angular": [
+        47.50464241176644,
+        47.50464241176644,
+        47.50464241176644
+      ],
+      "generators": {
+        "J_01": {
+          "type": "rotation",
+          "delta_Pe": -3.3018650352110726e-16,
+          "preserves_Pe": "True"
+        },
+        "J_02": {
+          "type": "rotation",
+          "delta_Pe": -3.3018650352110726e-16,
+          "preserves_Pe": "True"
+        },
+        "J_03": {
+          "type": "boost_spatial",
+          "delta_Pe": 47.50464241176644,
+          "preserves_Pe": "False"
+        },
+        "J_04": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_12": {
+          "type": "rotation",
+          "delta_Pe": -3.3018650352110726e-16,
+          "preserves_Pe": "True"
+        },
+        "J_13": {
+          "type": "boost_spatial",
+          "delta_Pe": 47.50464241176644,
+          "preserves_Pe": "False"
+        },
+        "J_14": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_23": {
+          "type": "boost_spatial",
+          "delta_Pe": 47.50464241176644,
+          "preserves_Pe": "False"
+        },
+        "J_24": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_34": {
+          "type": "dilatation",
+          "delta_Pe": 82.60673578088074,
+          "preserves_Pe": "False"
+        }
+      }
+    },
+    "point_1": {
+      "O": 0.7,
+      "R": 0.7,
+      "alpha": 0.7,
+      "Pe": 6.358052222395611,
+      "grad_Pe_angular": [
+        23.60633277032065,
+        23.60633277032065,
+        23.60633277032065
+      ],
+      "generators": {
+        "J_01": {
+          "type": "rotation",
+          "delta_Pe": -1.69086928936988e-15,
+          "preserves_Pe": "True"
+        },
+        "J_02": {
+          "type": "rotation",
+          "delta_Pe": -1.69086928936988e-15,
+          "preserves_Pe": "True"
+        },
+        "J_03": {
+          "type": "boost_spatial",
+          "delta_Pe": 23.60633277032065,
+          "preserves_Pe": "False"
+        },
+        "J_04": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_12": {
+          "type": "rotation",
+          "delta_Pe": -1.69086928936988e-15,
+          "preserves_Pe": "True"
+        },
+        "J_13": {
+          "type": "boost_spatial",
+          "delta_Pe": 23.60633277032065,
+          "preserves_Pe": "False"
+        },
+        "J_14": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_23": {
+          "type": "boost_spatial",
+          "delta_Pe": 23.60633277032065,
+          "preserves_Pe": "False"
+        },
+        "J_24": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_34": {
+          "type": "dilatation",
+          "delta_Pe": 70.19271662036941,
+          "preserves_Pe": "False"
+        }
+      }
+    },
+    "point_2": {
+      "O": 0.2,
+      "R": 0.5,
+      "alpha": 0.8,
+      "Pe": -8.518364929068968,
+      "grad_Pe_angular": [
+        21.693548890588943,
+        27.11693610990551,
+        21.693548878154445
+      ],
+      "generators": {
+        "J_01": {
+          "type": "rotation",
+          "delta_Pe": 4.465370865456001,
+          "preserves_Pe": "False"
+        },
+        "J_02": {
+          "type": "rotation",
+          "delta_Pe": 13.959822770520534,
+          "preserves_Pe": "False"
+        },
+        "J_03": {
+          "type": "boost_spatial",
+          "delta_Pe": 21.693548890588943,
+          "preserves_Pe": "False"
+        },
+        "J_04": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_12": {
+          "type": "rotation",
+          "delta_Pe": 12.984407598110876,
+          "preserves_Pe": "False"
+        },
+        "J_13": {
+          "type": "boost_spatial",
+          "delta_Pe": 27.11693610990551,
+          "preserves_Pe": "False"
+        },
+        "J_14": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_23": {
+          "type": "boost_spatial",
+          "delta_Pe": 21.693548878154445,
+          "preserves_Pe": "False"
+        },
+        "J_24": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_34": {
+          "type": "dilatation",
+          "delta_Pe": 55.37373871640151,
+          "preserves_Pe": "False"
+        }
+      }
+    },
+    "point_3": {
+      "O": 0.1,
+      "R": 0.1,
+      "alpha": 0.1,
+      "Pe": -79.4115555014707,
+      "grad_Pe_angular": [
+        72.71222170857072,
+        72.71222170857072,
+        72.71222170857072
+      ],
+      "generators": {
+        "J_01": {
+          "type": "rotation",
+          "delta_Pe": -1.1657083790892152e-15,
+          "preserves_Pe": "True"
+        },
+        "J_02": {
+          "type": "rotation",
+          "delta_Pe": -1.1657083790892152e-15,
+          "preserves_Pe": "True"
+        },
+        "J_03": {
+          "type": "boost_spatial",
+          "delta_Pe": 72.71222170857072,
+          "preserves_Pe": "False"
+        },
+        "J_04": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_12": {
+          "type": "rotation",
+          "delta_Pe": -1.1657083790892152e-15,
+          "preserves_Pe": "True"
+        },
+        "J_13": {
+          "type": "boost_spatial",
+          "delta_Pe": 72.71222170857072,
+          "preserves_Pe": "False"
+        },
+        "J_14": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_23": {
+          "type": "boost_spatial",
+          "delta_Pe": 72.71222170857072,
+          "preserves_Pe": "False"
+        },
+        "J_24": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_34": {
+          "type": "dilatation",
+          "delta_Pe": 70.18559293843258,
+          "preserves_Pe": "False"
+        }
+      }
+    },
+    "point_4": {
+      "O": 0.9,
+      "R": 0.9,
+      "alpha": 0.9,
+      "Pe": 26.710365632473447,
+      "grad_Pe_angular": [
+        27.94757465629516,
+        27.94757465629516,
+        27.94757465629516
+      ],
+      "generators": {
+        "J_01": {
+          "type": "rotation",
+          "delta_Pe": 1.6366004369909119e-15,
+          "preserves_Pe": "True"
+        },
+        "J_02": {
+          "type": "rotation",
+          "delta_Pe": 1.6366004369909119e-15,
+          "preserves_Pe": "True"
+        },
+        "J_03": {
+          "type": "boost_spatial",
+          "delta_Pe": 27.94757465629516,
+          "preserves_Pe": "False"
+        },
+        "J_04": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_12": {
+          "type": "rotation",
+          "delta_Pe": 1.6366004369909119e-15,
+          "preserves_Pe": "True"
+        },
+        "J_13": {
+          "type": "boost_spatial",
+          "delta_Pe": 27.94757465629516,
+          "preserves_Pe": "False"
+        },
+        "J_14": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_23": {
+          "type": "boost_spatial",
+          "delta_Pe": 27.94757465629516,
+          "preserves_Pe": "False"
+        },
+        "J_24": {
+          "type": "boost_timelike",
+          "delta_Pe": 0.0,
+          "preserves_Pe": true
+        },
+        "J_34": {
+          "type": "dilatation",
+          "delta_Pe": 104.72339991969021,
+          "preserves_Pe": "False"
+        }
+      }
+    }
+  },
+  "C5_pe_subgroup": {
+    "description": "Pe = f(sin\u00b2\u03c6_O + sin\u00b2\u03c6_R + sin\u00b2\u03c6_\u03b1). No continuous SO(4,1) generator preserves this exactly. The nonlinearity sin\u00b2(\u00b7) breaks the conformal symmetry. Pe preserves only: (1) discrete S\u2083 permutation symmetry, (2) the 2D subspace perpendicular to grad(Pe) at each point.",
+    "K_HP_116": true
+  },
+  "C6_comparison": {
+    "SO(4,1)": {
+      "dim": 10,
+      "signature": "(4,1)",
+      "generators": "3 rot + 3 trans + 3 SCT + 1 dil",
+      "acts_on": "R\u00b3 (3D Euclidean, angular coords)",
+      "spacetime": "de Sitter (4,1) via ED lift",
+      "minkowski": "NO \u2014 only via In\u00f6n\u00fc-Wigner contraction (\u039b\u21920)",
+      "gauge_fixings": [
+        "Euclidean R\u00b3 (original, flat)",
+        "S\u00b3 (compact, via conformal compactification)",
+        "H\u00b3 (hyperbolic, via Wick on one spatial)",
+        "de Sitter dS\u2083 (cosmological, from the ambient (4,1))"
+      ],
+      "hydrogen": "NOT a gauge fixing (no SO(4) subgroup acting on 4D)",
+      "traditions": "Fewer natural mappings \u2014 de Sitter cosmology + Euclidean",
+      "pe0": "A critical surface of Pe, not a gauge-invariant point",
+      "poincare": "Appears as \u039b\u21920 contraction limit"
+    },
+    "SO(4,2)": {
+      "dim": 15,
+      "signature": "(4,2)",
+      "generators": "6 Lorentz + 4 trans + 4 SCT + 1 dil",
+      "acts_on": "R^{2,1} (3D pseudo-Euclidean)",
+      "spacetime": "Minkowski (3,1) as gauge-fixed slice",
+      "minkowski": "YES \u2014 direct gauge fixing",
+      "gauge_fixings": [
+        "Minkowski (3,1)",
+        "Hydrogen/Fock SO(4)",
+        "Harmonic oscillator",
+        "AdS\u2085 Poincar\u00e9",
+        "de Sitter",
+        "Conformal mechanics SO(2,1)"
+      ],
+      "hydrogen": "Gauge fixing of compact SO(4) subgroup",
+      "traditions": "6 natural mappings to traditional systems",
+      "pe0": "Gauge-invariant point (exact S\u00b3 in all slices)",
+      "poincare": "Direct subgroup (Lorentz + translations)"
+    },
+    "shared_explanatory_power": [
+      "Conformal invariance of the base manifold",
+      "Dilatation symmetry (scale invariance of Pe dynamics)",
+      "Special conformal transformations (inversions)",
+      "3 rotational generators mixing O, R, \u03b1",
+      "Pe as a function on the representation space",
+      "FP dynamics as geodesic flow (Eisenhart-Duval)"
+    ],
+    "unique_to_SO42": [
+      "Minkowski spacetime as a gauge-fixed slice",
+      "Hydrogen atom spectrum as a gauge fixing",
+      "6 traditional system mappings (only ~3 for SO(4,1))",
+      "Pe=0 as a gauge-INVARIANT fixed point",
+      "Lorentz boosts (requires second timelike direction)",
+      "AdS/CFT holographic structure (requires SO(4,2) = conformal of R^{3,1})"
+    ],
+    "unique_to_SO41": [
+      "de Sitter is the natural spacetime (positive \u039b), not Minkowski",
+      "Poincar\u00e9 symmetry is a contraction LIMIT, not a gauge slice",
+      "No causal structure in the base (no light cones, no speed limit)",
+      "The 5 \"missing\" generators don't exist \u2014 simpler theory",
+      "Conformal flatness is EXACT (not approximate or conjectured)",
+      "The manifold is actually flat (stronger than conformally flat)"
+    ]
+  },
+  "C7_contraction": {
+    "R_values": [
+      1,
+      10,
+      100,
+      1000,
+      10000
+    ],
+    "contractions": [
+      {
+        "R": 1,
+        "PP_comm_normalized": 1.0,
+        "MP_comm_normalized": 1.0
+      },
+      {
+        "R": 10,
+        "PP_comm_normalized": 1.0,
+        "MP_comm_normalized": 1.0
+      },
+      {
+        "R": 100,
+        "PP_comm_normalized": 1.0,
+        "MP_comm_normalized": 1.0
+      },
+      {
+        "R": 1000,
+        "PP_comm_normalized": 1.0,
+        "MP_comm_normalized": 1.0
+      },
+      {
+        "R": 10000,
+        "PP_comm_normalized": 1.0,
+        "MP_comm_normalized": 1.0
+      }
+    ],
+    "interpretation": "As R\u2192\u221e, [P_i,P_j]/R\u00b2 \u2192 finite (becomes zero in Poincar\u00e9 limit). [M_ij, P_k]/R \u2192 finite (Lorentz acts on translations). Poincar\u00e9 group ISO(3,1) is the R\u2192\u221e contraction of SO(4,1). Special relativity is what the Eckert conformal symmetry looks like at scales much smaller than the de Sitter radius."
+  },
+  "C8_ed_lift": {
+    "lift_dim": 5,
+    "base_dim": 3,
+    "base_signature": "(3,0)",
+    "lift_eigenvalues": [
+      -0.0005505909897819017,
+      4.0,
+      4.0,
+      4.0,
+      1816.2302299863582
+    ],
+    "n_positive": 4,
+    "n_negative": 1,
+    "n_zero": 0,
+    "lift_signature": "(4,1)",
+    "V_at_test": 908.1148396976843,
+    "Pe_at_test": -42.61724626715537,
+    "is_de_sitter": "True",
+    "interpretation": "ED lift of (3,0) Eckert \u2192 (4,1) manifold. This IS de Sitter signature (4,1). The isometry group of (4,1) is SO(4,1) \u2014 same as base conformal group. Consistency check: conformal(base) = isometry(lift). \u2713",
+    "signature_stable": true,
+    "signatures_across_pe": [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ]
+  },
+  "C9_universality": {
+    "question": "Does cross-domain universality require SO(4,2)?",
+    "option_a": {
+      "name": "Universal FP (no group)",
+      "explains": [
+        "Pe universality \u2014 same dimensionless ratio across domains",
+        "Kramers barriers \u2014 FP stationary distribution is universal",
+        "BKT universality \u2014 RG flow on K is generic",
+        "20 convergences \u2014 central limit theorem for drift-diffusion",
+        "EXP-138A \u2014 words change drift bias (no algebra needed)"
+      ],
+      "cannot_explain": [
+        "WHY the Fisher metric on (O,R,\u03b1) is flat",
+        "WHY Pe depends on O+R+\u03b1 only (not on individual coords)",
+        "The specific numerical values (B_A, B_G) \u2014 fitted, not derived"
+      ],
+      "verdict": "Sufficient for ALL current empirical results"
+    },
+    "option_b": {
+      "name": "SO(4,1) conformal (Euclidean)",
+      "explains": [
+        "Everything in Option A",
+        "Conformal flatness of the Eckert manifold",
+        "Dilatation symmetry (scale invariance)",
+        "Special conformal transformations (inversions)",
+        "de Sitter spacetime as ED lift",
+        "Poincar\u00e9 as contraction limit"
+      ],
+      "cannot_explain": [
+        "Minkowski spacetime as a gauge slice (need SO(4,2))",
+        "Hydrogen atom as a gauge fixing (need SO(4) compact subgroup of SO(4,2))",
+        "Pe=0 as gauge-invariant (it is just a critical surface)",
+        "6 traditional system mappings"
+      ],
+      "verdict": "Adds geometric structure but no new empirical predictions"
+    },
+    "option_c": {
+      "name": "SO(4,2) conformal (pseudo-Euclidean)",
+      "explains": [
+        "Everything in Options A and B",
+        "Minkowski spacetime as gauge slice",
+        "Hydrogen atom spectrum as gauge fixing",
+        "Pe=0 as gauge-invariant fixed point",
+        "6 traditional system mappings",
+        "Words as specific Lie algebra generators"
+      ],
+      "cannot_explain": [
+        "Why \u03b1 should be timelike (assumed, not derived)",
+        "The specific Casimir eigenvalue (C\u2082 = -2.5)",
+        "Whether the gauge equivalences are physical or coincidental"
+      ],
+      "requires": [
+        "\u03b1-timelike hypothesis (unproven)",
+        "Intertwiner between Eckert and Minkowski representations"
+      ],
+      "verdict": "Most explanatory power but most assumptions"
+    },
+    "K_HP_117": null,
+    "recommendation": "Option A is sufficient for Paper 131 and all current empirical results. Option B adds structure without cost (conformal flatness is a theorem). Option C adds the most but requires the most (\u03b1-timelike unproven). The honest position: report Option A (FP universality) as the mechanism, note Option B (conformal flatness) as a structural observation, and present Option C (SO(4,2)) as a conjecture with specific tests."
+  },
+  "kill_conditions": {
+    "K_HP_114": true,
+    "K_HP_115": true,
+    "K_HP_116": true,
+    "K_HP_117": null
+  },
+  "key_findings": [
+    "The Eckert manifold is ISOMETRICALLY FLAT (not just conformally flat). The Fisher product metric on (0,1)\u00b3 is a product of 1D flat spaces. Angular coordinates make this manifest: ds\u00b2 = 4(d\u03c6_O\u00b2 + d\u03c6_R\u00b2 + d\u03c6_\u03b1\u00b2).",
+    "SO(4,1) algebra closes exactly on the Eckert manifold (max error 0.00e+00). The conformal group IS SO(4,1).",
+    "Casimir C\u2082 = -2.0000 (nontrivial). The SO(4,1) representation has invariant content.",
+    "ED lift gives de Sitter signature (4,1). The natural \"spacetime\" of the Eckert manifold is de Sitter, not Minkowski. Poincar\u00e9 symmetry appears via In\u00f6n\u00fc-Wigner contraction (\u039b\u21920 limit).",
+    "Pe breaks ALL continuous SO(4,1) generators. The conformal symmetry of the base is completely broken by the dynamics. Pe preserves only discrete S\u2083 (permutation of O, R, \u03b1). The Pe function is NOT a Casimir \u2014 it is a specific function on the representation space.",
+    "Cross-domain universality (20 convergences, |\u03c1|=0.958) does NOT require any conformal group. It follows from FP universality on a Bernoulli manifold (Option A). Both SO(4,1) and SO(4,2) are explanatory surplus for the current empirical results."
+  ],
+  "verdict": "The (3,0) Eckert manifold has conformal group SO(4,1) (de Sitter group, 10 generators). The algebra closes, the Casimir is nontrivial, and the ED lift gives de Sitter signature (4,1). Pe breaks all continuous conformal generators \u2014 the dynamics is NOT conformally invariant. Cross-domain universality is explained by FP universality, not group theory. SO(4,2) adds structure (Minkowski, hydrogen, 6 tradition mappings) but requires the unproven \u03b1-timelike hypothesis. SO(4,1) is the mathematically honest symmetry group of the actual manifold."
+}

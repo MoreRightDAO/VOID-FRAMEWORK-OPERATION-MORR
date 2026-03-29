@@ -1,0 +1,56 @@
+{
+  "experiment": "EXP-ECS-01",
+  "paper": "117",
+  "timestamp": "20260305_035908",
+  "results": {
+    "P1_homeostatic_range": {
+      "pass": true,
+      "mean_pe": 2.656857661615218,
+      "note": "Normal DSI maintains Pe in [1,4] during drive ramp"
+    },
+    "P2_cb1ko_runaway": {
+      "pass": false,
+      "ko_ratio": 1.103405185027508,
+      "note": "CB1-KO Pe is 1.10\u00d7 normal at plateau"
+    },
+    "P3_thc_gradient_loss": {
+      "pass": false,
+      "var_ratio": 1.4420064268560995,
+      "note": "Normal spatial Pe variance is 1.44\u00d7 THC"
+    },
+    "cellular_scale": {
+      "normal_peak_pe": 2.4999993875834363,
+      "tumor_peak_pe": 37.499990813751545,
+      "therapy_peak_pe": 3.00151498310746,
+      "tumor_vs_normal_ratio": 15.0,
+      "therapy_reduction_pct": 91.99595808432363
+    },
+    "cross_scale_isomorphism": {
+      "note": "CB receptor removal \u2192 T4 runaway at BOTH neural and cellular scale",
+      "neural_mechanism": "DSI disabled \u2192 Pe\u2191 \u2192 seizure threshold breached",
+      "cellular_mechanism": "CB downregulation \u2192 Pe\u2191 \u2192 apoptosis signal absent \u2192 proliferation"
+    }
+  },
+  "conditions": {
+    "neural": [
+      "normal",
+      "cb1ko",
+      "thc"
+    ],
+    "cellular": [
+      "normal_cell",
+      "tumor_cb_ko",
+      "cannabinoid_therapy"
+    ]
+  },
+  "params": {
+    "O_BASE": 2.0,
+    "ALPHA_BASE": 1.5,
+    "ALPHA_MAX": 5.0,
+    "PE_THRESH": 3.0,
+    "TAU_SLOW": 2000,
+    "TAU_DECAY": 8000,
+    "N_SYNAPSES": 20,
+    "T_TOTAL": 20000
+  }
+}

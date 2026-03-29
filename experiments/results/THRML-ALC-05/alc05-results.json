@@ -1,0 +1,62 @@
+{
+  "experiment": "THRML-ALC-05",
+  "title": "Bond Network Topology",
+  "author": "Shamir / MoreRight (2026-03-09)",
+  "tests": {
+    "T1_disconnected": {
+      "n_atoms": 4,
+      "n_edges": 0,
+      "n_components": 4,
+      "pass": true
+    },
+    "T2_linear_chain": {
+      "n_atoms": 3,
+      "n_edges": 2,
+      "max_degree": 2,
+      "degrees": [
+        1,
+        2,
+        1
+      ],
+      "pass": true
+    },
+    "T3_ring": {
+      "n_atoms": 8,
+      "n_edges": 8,
+      "expected_edges": 8,
+      "all_degree_2": true,
+      "pass": true
+    },
+    "T4_complete_graph": {
+      "n_atoms": 6,
+      "n_edges": 15,
+      "expected_edges": 15,
+      "pass": true
+    },
+    "T5_percolation_transition": {
+      "n_atoms": 200,
+      "p_critical": 0.005,
+      "below_pc": {
+        "p": 0.0015,
+        "largest_frac": 0.025,
+        "n_components": 167
+      },
+      "above_pc": {
+        "p": 0.025,
+        "largest_frac": 0.995,
+        "n_components": 2
+      },
+      "well_above_pc": {
+        "p": 0.1,
+        "largest_frac": 1.0,
+        "n_components": 1
+      },
+      "fragmented_below": true,
+      "giant_above": true,
+      "giant_dominant_well_above": true,
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "THRML-ALC-05 PASS \u2014 Bond network topology validated"
+}

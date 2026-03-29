@@ -1,0 +1,238 @@
+{
+  "experiment": "HP218",
+  "title": "Information-Theoretic Bounds on K",
+  "timestamp": "2026-03-29T12:40:32.026015+00:00",
+  "n_models": 27,
+  "framework_K": 16,
+  "kill_conditions": {
+    "KC-1": {
+      "pass": true
+    },
+    "KC-2": {
+      "pass": true
+    },
+    "KC-3": {
+      "pass": true
+    },
+    "KC-4": {
+      "pass": false
+    },
+    "KC-5": {
+      "pass": true
+    }
+  },
+  "kc_summary": "4/5 PASS",
+  "bounds": {
+    "channel_capacity": {
+      "type": "upper_bound",
+      "textbook": true,
+      "K_range": [
+        2559999.000000002,
+        15999998.999999998
+      ],
+      "K_median": 7111110.111111112,
+      "note": "Very loose -- channel capacity >> actual K"
+    },
+    "entropy_production": {
+      "type": "scaling_law",
+      "textbook": false,
+      "slope": -0.18382817232230128,
+      "R2": 0.1467089160578491,
+      "note": "sigma_rate ~ K^slope for Eckert FP (spectral method)"
+    },
+    "fisher_cramer_rao": {
+      "type": "precision_scaling",
+      "textbook": true,
+      "N_slope": -0.5058627725842719,
+      "expected_slope": -0.5,
+      "kc5_pass": true,
+      "note": "Estimation error vs sample size scaling"
+    },
+    "mutual_information": {
+      "type": "lower_bound",
+      "textbook": true,
+      "K_lower_bench": 42.92189267361746,
+      "K_lower_ora": 8.326273328885309,
+      "total_MI_bits": 5.423641789123414,
+      "note": "Genuine lower bound from pairwise MI of benchmarks"
+    },
+    "data_processing_inequality": {
+      "type": "funnel",
+      "textbook": true,
+      "stages": {
+        "raw_params": 2.232453563799239,
+        "benchmarks": 2.2712337974982235,
+        "O_R_alpha": 2.2506100451204634,
+        "Pe": 2.860026040729018,
+        "zone": -0.0
+      },
+      "monotonic": false,
+      "note": "Information loss from raw parameters to zone classification"
+    },
+    "rate_distortion": {
+      "type": "effective_dimensionality",
+      "textbook": true,
+      "K_effective": 3,
+      "eigenvalues": [
+        0.027382568292727543,
+        0.0010145517527068377,
+        0.00031832211678574634,
+        0.00014951339333543068
+      ],
+      "note": "Tightest bound -- benchmark covariance dimensionality"
+    },
+    "kolmogorov": {
+      "type": "compression",
+      "textbook": true,
+      "note": "Not meaningful at this data size -- zlib overhead dominates"
+    }
+  },
+  "synthesis": {
+    "K_bracket": "[42.9, 15999999]",
+    "K_tight": 3,
+    "K_framework": 16,
+    "consistent": true,
+    "conclusion": "Information theory brackets K but cannot uniquely determine it. Tight bounds give K_eff~3, consistent with K_AI=16."
+  },
+  "novelty_assessment": {
+    "textbook_bounds": [
+      "channel_capacity",
+      "fisher",
+      "MI",
+      "DPI",
+      "rate_distortion",
+      "kolmogorov"
+    ],
+    "novel_bounds": [
+      "entropy_production"
+    ],
+    "novel_synthesis": "Combination of 7 bounds on K is new framing",
+    "honest_statement": "Most bounds are standard IT applied to new context. Entropy production scaling is genuinely novel. K remains open."
+  },
+  "families_tested": {
+    "llama2": {
+      "rho": 1.0,
+      "p": 0.0,
+      "monotonic": true,
+      "n": 3
+    },
+    "gpt": {
+      "rho": 0.6000000000000001,
+      "p": 0.4,
+      "monotonic": true,
+      "n": 4
+    },
+    "claude": {
+      "rho": 1.0,
+      "p": 0.0,
+      "monotonic": true,
+      "n": 3
+    }
+  },
+  "entropy_production_data": [
+    {
+      "K": 1,
+      "sigma_rate": 18.58143478549392,
+      "spectral_gap": 0.39152158052023367,
+      "kl_divergence": 47.45954172131168,
+      "top_eigenvalues": [
+        1136.7928921785144,
+        1029.5563133855685,
+        947.0136987771948,
+        877.8634383711512,
+        864.9096195088426
+      ]
+    },
+    {
+      "K": 2,
+      "sigma_rate": 172.9513069698872,
+      "spectral_gap": 2.911690567804029,
+      "kl_divergence": 59.3989309448928,
+      "top_eigenvalues": [
+        1137.138605626133,
+        1032.035384917745,
+        1001.6466467998272,
+        951.1542660705411,
+        900.5668753081964
+      ]
+    },
+    {
+      "K": 4,
+      "sigma_rate": 43.653082246758785,
+      "spectral_gap": 0.673253225782753,
+      "kl_divergence": 64.8390242705571,
+      "top_eigenvalues": [
+        1137.4242999590317,
+        1070.0598833987424,
+        1033.394384085916,
+        967.9523487406607,
+        953.3537745982416
+      ]
+    },
+    {
+      "K": 8,
+      "sigma_rate": 42.75620232080907,
+      "spectral_gap": 0.6392652165605454,
+      "kl_divergence": 66.88335484738452,
+      "top_eigenvalues": [
+        1137.5946852221296,
+        1104.2770534439092,
+        1034.10429061979,
+        1001.6639484767163,
+        954.4871507156698
+      ]
+    },
+    {
+      "K": 16,
+      "sigma_rate": 13.293490025025818,
+      "spectral_gap": 0.19651237317451362,
+      "kl_divergence": 67.64708913886292,
+      "top_eigenvalues": [
+        1137.6866895113353,
+        1121.3882033721497,
+        1034.4669171917435,
+        1018.5243307685078,
+        955.0624129888927
+      ]
+    },
+    {
+      "K": 32,
+      "sigma_rate": 15.660877844941876,
+      "spectral_gap": 0.23043307472223817,
+      "kl_divergence": 67.9628037937668,
+      "top_eigenvalues": [
+        1137.7343861681572,
+        1129.9444107554027,
+        1034.6501580771348,
+        1026.95565145185,
+        955.3522091286485
+      ]
+    },
+    {
+      "K": 64,
+      "sigma_rate": 28.6662012956109,
+      "spectral_gap": 0.42086750590585054,
+      "kl_divergence": 68.11217519373811,
+      "top_eigenvalues": [
+        1137.7586571189845,
+        1134.2226714702015,
+        1034.74226160187,
+        1031.171592205178,
+        955.4976511556478
+      ]
+    },
+    {
+      "K": 128,
+      "sigma_rate": 26.6589833503754,
+      "spectral_gap": 0.39092468362168686,
+      "kl_divergence": 68.19467909622801,
+      "top_eigenvalues": [
+        1137.7708981271098,
+        1136.3618409493724,
+        1034.788434284048,
+        1033.2796324403664,
+        955.5705084983855
+      ]
+    }
+  ]
+}

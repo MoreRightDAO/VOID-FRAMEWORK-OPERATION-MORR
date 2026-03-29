@@ -1,0 +1,936 @@
+{
+  "experiment": "EXP-VOY-07",
+  "date": "2026-03-03T02:40:38.185254+00:00",
+  "lk_decomposition": {
+    "total_lk_tokens": 402,
+    "stars_text_tokens": 332,
+    "stars_text_pct": 82.6,
+    "section_distribution": {
+      "Herbal_A": 16,
+      "Astronomical": 2,
+      "Biological": 48,
+      "Pharmaceutical": 4,
+      "Stars_Text": 332
+    },
+    "top_words": [
+      [
+        "lkaiin",
+        45,
+        39
+      ],
+      [
+        "lkeey",
+        39,
+        34
+      ],
+      [
+        "lkeedy",
+        37,
+        30
+      ],
+      [
+        "lkain",
+        34,
+        28
+      ],
+      [
+        "lkar",
+        27,
+        22
+      ],
+      [
+        "lkedy",
+        27,
+        17
+      ],
+      [
+        "lky",
+        19,
+        14
+      ],
+      [
+        "lkchedy",
+        13,
+        11
+      ],
+      [
+        "lkchey",
+        8,
+        7
+      ],
+      [
+        "lkeeey",
+        7,
+        7
+      ],
+      [
+        "lkl",
+        7,
+        6
+      ],
+      [
+        "lkchdy",
+        5,
+        5
+      ],
+      [
+        "lkal",
+        5,
+        5
+      ],
+      [
+        "lkair",
+        4,
+        4
+      ],
+      [
+        "lkey",
+        5,
+        4
+      ],
+      [
+        "lkeeedy",
+        4,
+        4
+      ],
+      [
+        "lkeody",
+        4,
+        4
+      ],
+      [
+        "lkam",
+        4,
+        4
+      ],
+      [
+        "lkshedy",
+        4,
+        4
+      ],
+      [
+        "lkeeody",
+        5,
+        4
+      ]
+    ],
+    "suffix_decomposition": [
+      {
+        "suffix": "aiin",
+        "tokens": 45,
+        "st_tokens": 39,
+        "st_pct": 86.7,
+        "example_words": [
+          "lkaiin"
+        ]
+      },
+      {
+        "suffix": "eey",
+        "tokens": 39,
+        "st_tokens": 34,
+        "st_pct": 87.2,
+        "example_words": [
+          "lkeey"
+        ]
+      },
+      {
+        "suffix": "eedy",
+        "tokens": 37,
+        "st_tokens": 30,
+        "st_pct": 81.1,
+        "example_words": [
+          "lkeedy"
+        ]
+      },
+      {
+        "suffix": "ain",
+        "tokens": 34,
+        "st_tokens": 28,
+        "st_pct": 82.4,
+        "example_words": [
+          "lkain"
+        ]
+      },
+      {
+        "suffix": "ar",
+        "tokens": 27,
+        "st_tokens": 22,
+        "st_pct": 81.5,
+        "example_words": [
+          "lkar"
+        ]
+      },
+      {
+        "suffix": "edy",
+        "tokens": 27,
+        "st_tokens": 17,
+        "st_pct": 63.0,
+        "example_words": [
+          "lkedy"
+        ]
+      },
+      {
+        "suffix": "y",
+        "tokens": 19,
+        "st_tokens": 14,
+        "st_pct": 73.7,
+        "example_words": [
+          "lky"
+        ]
+      },
+      {
+        "suffix": "chedy",
+        "tokens": 13,
+        "st_tokens": 11,
+        "st_pct": 84.6,
+        "example_words": [
+          "lkchedy"
+        ]
+      },
+      {
+        "suffix": "chey",
+        "tokens": 8,
+        "st_tokens": 7,
+        "st_pct": 87.5,
+        "example_words": [
+          "lkchey"
+        ]
+      },
+      {
+        "suffix": "eeey",
+        "tokens": 7,
+        "st_tokens": 7,
+        "st_pct": 100.0,
+        "example_words": [
+          "lkeeey"
+        ]
+      },
+      {
+        "suffix": "l",
+        "tokens": 7,
+        "st_tokens": 6,
+        "st_pct": 85.7,
+        "example_words": [
+          "lkl"
+        ]
+      },
+      {
+        "suffix": "chdy",
+        "tokens": 5,
+        "st_tokens": 5,
+        "st_pct": 100.0,
+        "example_words": [
+          "lkchdy"
+        ]
+      },
+      {
+        "suffix": "al",
+        "tokens": 5,
+        "st_tokens": 5,
+        "st_pct": 100.0,
+        "example_words": [
+          "lkal"
+        ]
+      },
+      {
+        "suffix": "ey",
+        "tokens": 5,
+        "st_tokens": 4,
+        "st_pct": 80.0,
+        "example_words": [
+          "lkey"
+        ]
+      },
+      {
+        "suffix": "eeody",
+        "tokens": 5,
+        "st_tokens": 4,
+        "st_pct": 80.0,
+        "example_words": [
+          "lkeeody"
+        ]
+      },
+      {
+        "suffix": "air",
+        "tokens": 4,
+        "st_tokens": 4,
+        "st_pct": 100.0,
+        "example_words": [
+          "lkair"
+        ]
+      },
+      {
+        "suffix": "eeedy",
+        "tokens": 4,
+        "st_tokens": 4,
+        "st_pct": 100.0,
+        "example_words": [
+          "lkeeedy"
+        ]
+      },
+      {
+        "suffix": "eody",
+        "tokens": 4,
+        "st_tokens": 4,
+        "st_pct": 100.0,
+        "example_words": [
+          "lkeody"
+        ]
+      },
+      {
+        "suffix": "am",
+        "tokens": 4,
+        "st_tokens": 4,
+        "st_pct": 100.0,
+        "example_words": [
+          "lkam"
+        ]
+      },
+      {
+        "suffix": "shedy",
+        "tokens": 4,
+        "st_tokens": 4,
+        "st_pct": 100.0,
+        "example_words": [
+          "lkshedy"
+        ]
+      }
+    ]
+  },
+  "universal_words": {
+    "total_count": 187,
+    "mean_length": 4.2,
+    "top_by_frequency": [
+      [
+        "daiin",
+        819,
+        11.41938892230935
+      ],
+      [
+        "ol",
+        509,
+        7.63192747125346
+      ],
+      [
+        "chedy",
+        484,
+        7.592260755321826
+      ],
+      [
+        "aiin",
+        447,
+        5.886189137334239
+      ],
+      [
+        "shedy",
+        418,
+        8.46603484858171
+      ],
+      [
+        "chol",
+        384,
+        11.393073176414251
+      ],
+      [
+        "ar",
+        351,
+        5.8426000496167765
+      ],
+      [
+        "chey",
+        340,
+        7.408452406801431
+      ],
+      [
+        "or",
+        327,
+        9.011608055773305
+      ],
+      [
+        "qokeey",
+        301,
+        5.173880570490929
+      ],
+      [
+        "dar",
+        294,
+        8.681945380405296
+      ],
+      [
+        "shey",
+        267,
+        6.648912435494063
+      ],
+      [
+        "dy",
+        266,
+        11.378204827690485
+      ],
+      [
+        "al",
+        244,
+        3.2136659580280904
+      ],
+      [
+        "dal",
+        229,
+        8.19130871705956
+      ],
+      [
+        "dain",
+        212,
+        11.243884920419836
+      ],
+      [
+        "okaiin",
+        206,
+        7.420884758485373
+      ],
+      [
+        "qokal",
+        186,
+        8.288597930578264
+      ],
+      [
+        "okeey",
+        184,
+        3.0580541652291884
+      ],
+      [
+        "shol",
+        181,
+        13.103057807995231
+      ],
+      [
+        "cheey",
+        179,
+        4.843352257755337
+      ],
+      [
+        "cheol",
+        171,
+        5.187430807047855
+      ],
+      [
+        "chy",
+        160,
+        13.34026277855927
+      ],
+      [
+        "okal",
+        144,
+        8.276062235539536
+      ],
+      [
+        "otaiin",
+        142,
+        5.618157294083377
+      ],
+      [
+        "otedy",
+        141,
+        7.319984249729818
+      ],
+      [
+        "sheey",
+        140,
+        6.3927558446642445
+      ],
+      [
+        "okain",
+        139,
+        6.733639332633179
+      ],
+      [
+        "qokar",
+        138,
+        8.860635431202711
+      ],
+      [
+        "chckhy",
+        136,
+        9.960807225163139
+      ]
+    ],
+    "top_by_pe_proxy": [
+      [
+        "chy",
+        160,
+        13.34026277855927
+      ],
+      [
+        "shol",
+        181,
+        13.103057807995231
+      ],
+      [
+        "daiin",
+        819,
+        11.41938892230935
+      ],
+      [
+        "chol",
+        384,
+        11.393073176414251
+      ],
+      [
+        "dy",
+        266,
+        11.378204827690485
+      ],
+      [
+        "dain",
+        212,
+        11.243884920419836
+      ],
+      [
+        "chckhy",
+        136,
+        9.960807225163139
+      ],
+      [
+        "or",
+        327,
+        9.011608055773305
+      ],
+      [
+        "qokar",
+        138,
+        8.860635431202711
+      ],
+      [
+        "dar",
+        294,
+        8.681945380405296
+      ],
+      [
+        "shedy",
+        418,
+        8.46603484858171
+      ],
+      [
+        "qokal",
+        186,
+        8.288597930578264
+      ],
+      [
+        "okal",
+        144,
+        8.276062235539536
+      ],
+      [
+        "dal",
+        229,
+        8.19130871705956
+      ],
+      [
+        "ol",
+        509,
+        7.63192747125346
+      ],
+      [
+        "chedy",
+        484,
+        7.592260755321826
+      ],
+      [
+        "okaiin",
+        206,
+        7.420884758485373
+      ],
+      [
+        "chey",
+        340,
+        7.408452406801431
+      ],
+      [
+        "otedy",
+        141,
+        7.319984249729818
+      ],
+      [
+        "okain",
+        139,
+        6.733639332633179
+      ]
+    ],
+    "lowest_pe_proxy": [
+      [
+        "okeey",
+        184,
+        3.0580541652291884
+      ],
+      [
+        "al",
+        244,
+        3.2136659580280904
+      ],
+      [
+        "cheey",
+        179,
+        4.843352257755337
+      ],
+      [
+        "qokeey",
+        301,
+        5.173880570490929
+      ],
+      [
+        "cheol",
+        171,
+        5.187430807047855
+      ],
+      [
+        "otaiin",
+        142,
+        5.618157294083377
+      ],
+      [
+        "ar",
+        351,
+        5.8426000496167765
+      ],
+      [
+        "aiin",
+        447,
+        5.886189137334239
+      ],
+      [
+        "sheey",
+        140,
+        6.3927558446642445
+      ],
+      [
+        "shey",
+        267,
+        6.648912435494063
+      ]
+    ],
+    "top_prefix_2char": [
+      [
+        "ch",
+        7
+      ],
+      [
+        "da",
+        4
+      ],
+      [
+        "sh",
+        4
+      ],
+      [
+        "ok",
+        4
+      ],
+      [
+        "qo",
+        3
+      ],
+      [
+        "ot",
+        2
+      ],
+      [
+        "ol",
+        1
+      ],
+      [
+        "ai",
+        1
+      ],
+      [
+        "ar",
+        1
+      ],
+      [
+        "or",
+        1
+      ]
+    ],
+    "top_prefix_3char": [
+      [
+        "che",
+        4
+      ],
+      [
+        "she",
+        3
+      ],
+      [
+        "qok",
+        3
+      ],
+      [
+        "oka",
+        3
+      ],
+      [
+        "dai",
+        2
+      ],
+      [
+        "ol",
+        1
+      ],
+      [
+        "aii",
+        1
+      ],
+      [
+        "cho",
+        1
+      ],
+      [
+        "ar",
+        1
+      ],
+      [
+        "or",
+        1
+      ]
+    ]
+  },
+  "qo_dimensional_address": {
+    "total_qo_words": 706,
+    "astro_absent_pct": 92.63456090651559,
+    "chi2": 348.39729363349426,
+    "chi2_p": 5.239136779991866e-57,
+    "dimensional_address_table": {
+      "\u03b1": [
+        {
+          "medial": "k",
+          "dom_section": "Biological",
+          "dom_pct": 38.4,
+          "total_tokens": 2524
+        },
+        {
+          "medial": "ky",
+          "dom_section": "Biological",
+          "dom_pct": 43.7,
+          "total_tokens": 142
+        },
+        {
+          "medial": "lch",
+          "dom_section": "Biological",
+          "dom_pct": 82.1,
+          "total_tokens": 28
+        },
+        {
+          "medial": "lk",
+          "dom_section": "Biological",
+          "dom_pct": 76.0,
+          "total_tokens": 25
+        }
+      ],
+      "O": [
+        {
+          "medial": "tch",
+          "dom_section": "Herbal_A",
+          "dom_pct": 54.1,
+          "total_tokens": 111
+        },
+        {
+          "medial": "ty",
+          "dom_section": "Herbal_A",
+          "dom_pct": 38.6,
+          "total_tokens": 83
+        },
+        {
+          "medial": "kchy",
+          "dom_section": "Herbal_A",
+          "dom_pct": 66.7,
+          "total_tokens": 66
+        },
+        {
+          "medial": "tchy",
+          "dom_section": "Herbal_A",
+          "dom_pct": 75.8,
+          "total_tokens": 62
+        }
+      ],
+      "V*": [
+        {
+          "medial": "t",
+          "dom_section": "Stars_Text",
+          "dom_pct": 43.9,
+          "total_tokens": 727
+        },
+        {
+          "medial": "(null)",
+          "dom_section": "Stars_Text",
+          "dom_pct": 44.6,
+          "total_tokens": 204
+        },
+        {
+          "medial": "kch",
+          "dom_section": "Stars_Text",
+          "dom_pct": 41.4,
+          "total_tokens": 133
+        },
+        {
+          "medial": "d",
+          "dom_section": "Stars_Text",
+          "dom_pct": 44.3,
+          "total_tokens": 79
+        },
+        {
+          "medial": "pch",
+          "dom_section": "Stars_Text",
+          "dom_pct": 67.2,
+          "total_tokens": 67
+        },
+        {
+          "medial": "kchdy",
+          "dom_section": "Stars_Text",
+          "dom_pct": 34.9,
+          "total_tokens": 43
+        }
+      ],
+      "constraint": [
+        {
+          "medial": "ckh",
+          "dom_section": "Pharmaceutical",
+          "dom_pct": 44.4,
+          "total_tokens": 45
+        }
+      ],
+      "R": []
+    },
+    "phonological_clusters": {
+      "l-initial (lch, lk)": {
+        "medials": [
+          "lch",
+          "lk"
+        ],
+        "dominant_dim": "\u03b1",
+        "mean_dom_pct": 79.1
+      },
+      "palatal affricates (tch, tchy, kchy)": {
+        "medials": [
+          "tch",
+          "tchy",
+          "kchy"
+        ],
+        "dominant_dim": "O",
+        "mean_dom_pct": 65.5
+      },
+      "dental+labial-palatal (t, d, pch, kch)": {
+        "medials": [
+          "t",
+          "d",
+          "pch",
+          "kch",
+          ""
+        ],
+        "dominant_dim": "V*",
+        "mean_dom_pct": 48.3
+      },
+      "pure velar (k, ky, kchdy)": {
+        "medials": [
+          "k",
+          "ky",
+          "kchdy"
+        ],
+        "dominant_dim": "\u03b1",
+        "mean_dom_pct": 39.0
+      }
+    },
+    "top_finals": [
+      [
+        "",
+        602
+      ],
+      [
+        "edy",
+        498
+      ],
+      [
+        "eedy",
+        421
+      ],
+      [
+        "aiin",
+        398
+      ],
+      [
+        "eey",
+        377
+      ],
+      [
+        "ain",
+        365
+      ],
+      [
+        "al",
+        260
+      ],
+      [
+        "ey",
+        236
+      ],
+      [
+        "ar",
+        225
+      ],
+      [
+        "ol",
+        196
+      ]
+    ]
+  },
+  "lk_elongation": {
+    "total_lk_types": 97,
+    "spearman_rho": 0.7999999999999999,
+    "spearman_p": 0.2000000000000001,
+    "level_table": [
+      {
+        "level": 0,
+        "types": 32,
+        "tokens": 178,
+        "st_pct": 82.02247191011236,
+        "example_suffix": ""
+      },
+      {
+        "level": 1,
+        "types": 31,
+        "tokens": 95,
+        "st_pct": 77.89473684210526,
+        "example_suffix": "e"
+      },
+      {
+        "level": 2,
+        "types": 24,
+        "tokens": 109,
+        "st_pct": 85.3211009174312,
+        "example_suffix": "ee"
+      },
+      {
+        "level": 3,
+        "types": 9,
+        "tokens": 19,
+        "st_pct": 94.73684210526315,
+        "example_suffix": "eee"
+      },
+      {
+        "level": 4,
+        "types": 1,
+        "tokens": 1,
+        "st_pct": 100.0,
+        "example_suffix": "eeee"
+      }
+    ],
+    "verdict": "WEAK \u2014 aggregate \u03c1=0.800 p=0.2000, word-level \u03c1=0.181 p=7.6413e-02",
+    "interpretation": "Level 3 reaches 94.7% Stars_Text and level 4 reaches 100.0%. The monotone increase (82%\u219278%\u219285%\u219295%\u2192100%) is non-monotone at levels 0\u21921, suppressing Spearman \u03c1. The key diagnostic is the CEILING at level 3-4: near-total V* specificity as elongation increases. A logistic model (St_pct ~ sigmoid(level)) would fit better than rank correlation."
+  },
+  "key_findings": {
+    "lk_stars_text_pct": 82.6,
+    "universal_mean_length": 4.2,
+    "qo_lch_alpha_pct": 82.1,
+    "qo_tchy_O_pct": 75.8,
+    "qo_pch_Vstar_pct": 67.2,
+    "lk_level3_st_pct": 94.73684210526315,
+    "lk_level4_st_pct": 100.0,
+    "new_apparatus_section": "\u00a739K \u2014 qo- Dimensional Address Table"
+  }
+}

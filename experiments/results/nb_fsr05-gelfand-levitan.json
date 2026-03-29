@@ -1,0 +1,345 @@
+{
+  "experiment": "nb_fsr05",
+  "paper": 133,
+  "timestamp": "2026-03-17T23:20:31.806942+00:00",
+  "direction_change": "Drop CLWE (K-FSR-2) as primary. Information-geometric hardness replaces it.",
+  "framework": [
+    "\u00a78D (\u010cencov)",
+    "\u00a748E (Kramers)",
+    "\u00a751 (isospectral/SUSY)",
+    "\u00a7113 (factorization)"
+  ],
+  "kill_conditions": [
+    "K-FSR-6: GL cond polynomial \u2192 FSR breaks",
+    "K-FSR-7: GL reconstruction < 0.1 at N\u226516 \u2192 FSR breaks",
+    "K-FSR-8: Eigenfunction filtering fails \u2192 proof blocked"
+  ],
+  "experiments": {
+    "GL1_condition_number": {
+      "exp": "GL1_condition_number",
+      "T": 0.01,
+      "results": {
+        "4": {
+          "gl_condition_number": 1.01,
+          "log2_cond": 0.0
+        },
+        "8": {
+          "gl_condition_number": 1.01,
+          "log2_cond": 0.0
+        },
+        "12": {
+          "gl_condition_number": 1.01,
+          "log2_cond": 0.0
+        },
+        "16": {
+          "gl_condition_number": 1.01,
+          "log2_cond": 0.0
+        },
+        "20": {
+          "gl_condition_number": 1.01,
+          "log2_cond": 0.0
+        },
+        "24": {
+          "gl_condition_number": 1.01,
+          "log2_cond": 0.0
+        }
+      },
+      "kill_condition": "K-FSR-6",
+      "passed": false
+    },
+    "GL2_reconstruction": {
+      "exp": "GL2_reconstruction",
+      "T": 0.01,
+      "results": {
+        "4": {
+          "reconstruction_error": 1.000009,
+          "solved": true
+        },
+        "8": {
+          "reconstruction_error": 1.000003,
+          "solved": true
+        },
+        "12": {
+          "reconstruction_error": 1.000004,
+          "solved": true
+        },
+        "16": {
+          "reconstruction_error": 1.000002,
+          "solved": true
+        },
+        "20": {
+          "reconstruction_error": 1.000001,
+          "solved": true
+        }
+      },
+      "kill_condition": "K-FSR-7",
+      "passed": true
+    },
+    "GL3_eigenfunction_filtering": {
+      "exp": "GL3_eigenfunction_filtering",
+      "T": 0.01,
+      "results": {
+        "12": {
+          "decay_rate": -0.004719,
+          "sigma_est": 0.0,
+          "j_star": 12,
+          "J_ground_first5": [
+            266.798655,
+            256.004263,
+            224.551639,
+            175.147156,
+            112.02543
+          ],
+          "J_ground_last3": [
+            209.561102,
+            237.804992,
+            246.397225
+          ],
+          "gaussian_decay": "False"
+        },
+        "16": {
+          "decay_rate": 0.003786,
+          "sigma_est": 0.087,
+          "j_star": 16,
+          "J_ground_first5": [
+            134.429568,
+            125.308372,
+            99.305247,
+            60.282711,
+            13.986132
+          ],
+          "J_ground_last3": [
+            5.475241,
+            38.361453,
+            62.723741
+          ],
+          "gaussian_decay": "True"
+        },
+        "24": {
+          "decay_rate": -0.000232,
+          "sigma_est": 0.0,
+          "j_star": 24,
+          "J_ground_first5": [
+            191.346597,
+            181.719476,
+            153.887019,
+            110.873977,
+            57.329981
+          ],
+          "J_ground_last3": [
+            105.400424,
+            83.268433,
+            55.243296
+          ],
+          "gaussian_decay": "False"
+        },
+        "32": {
+          "decay_rate": 0.001091,
+          "sigma_est": 0.0467,
+          "j_star": 32,
+          "J_ground_first5": [
+            169.270552,
+            162.843168,
+            144.082584,
+            114.50832,
+            76.50648
+          ],
+          "J_ground_last3": [
+            8.999985,
+            14.439626,
+            34.998687
+          ],
+          "gaussian_decay": "True"
+        }
+      },
+      "kill_condition": "K-FSR-8",
+      "passed": true
+    },
+    "GL4_fisher_nullspace": {
+      "exp": "GL4_fisher_nullspace",
+      "T": 0.01,
+      "epsilon": 0.01,
+      "results": {
+        "8": {
+          "N": 8,
+          "n_recoverable": 8,
+          "n_null": 0,
+          "top_3_eigenvalues": [
+            1165209.0828,
+            584617.8475,
+            37536.4513
+          ],
+          "bottom_3_eigenvalues": [
+            20.94559158,
+            0.02433936,
+            0.00246465
+          ],
+          "log2_info_hardness": 57.9,
+          "exceeds_AES128": "False"
+        },
+        "12": {
+          "N": 12,
+          "n_recoverable": 10,
+          "n_null": 2,
+          "top_3_eigenvalues": [
+            6367010.5696,
+            1867465.6132,
+            528023.1834
+          ],
+          "bottom_3_eigenvalues": [
+            0.00147855,
+            2e-08,
+            -0.0
+          ],
+          "log2_info_hardness": 78.7,
+          "exceeds_AES128": "False"
+        },
+        "16": {
+          "N": 16,
+          "n_recoverable": 12,
+          "n_null": 4,
+          "top_3_eigenvalues": [
+            10448984.724,
+            7882360.6419,
+            1368764.7158
+          ],
+          "bottom_3_eigenvalues": [
+            1e-08,
+            0.0,
+            -0.0
+          ],
+          "log2_info_hardness": 101.4,
+          "exceeds_AES128": "False"
+        },
+        "20": {
+          "N": 20,
+          "n_recoverable": 13,
+          "n_null": 7,
+          "top_3_eigenvalues": [
+            9189045.0864,
+            7507071.0689,
+            2192201.6589
+          ],
+          "bottom_3_eigenvalues": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "log2_info_hardness": 141.3,
+          "exceeds_AES128": "True"
+        },
+        "24": {
+          "N": 24,
+          "n_recoverable": 13,
+          "n_null": 11,
+          "top_3_eigenvalues": [
+            23717976.0032,
+            18489446.7881,
+            5711012.664
+          ],
+          "bottom_3_eigenvalues": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "log2_info_hardness": 164.1,
+          "exceeds_AES128": "True"
+        }
+      },
+      "min_secure_N": 20,
+      "passed": true
+    },
+    "GL5_full_ig_hardness": {
+      "exp": "GL5_full_ig_hardness",
+      "T": 0.01,
+      "r": 0.01,
+      "results": {
+        "8": {
+          "log2_cr": 37.6,
+          "fiber_dim": 1,
+          "log2_fiber": 6.6,
+          "log2_gl_cond": 1.0,
+          "log2_total": 45.2,
+          "exceeds_AES128": "False",
+          "layer_fractions": {
+            "cr": 0.831,
+            "fiber": 0.147,
+            "gl": 0.022
+          }
+        },
+        "12": {
+          "log2_cr": 50.7,
+          "fiber_dim": 4,
+          "log2_fiber": 26.6,
+          "log2_gl_cond": 1.0,
+          "log2_total": 78.3,
+          "exceeds_AES128": "False",
+          "layer_fractions": {
+            "cr": 0.648,
+            "fiber": 0.339,
+            "gl": 0.013
+          }
+        },
+        "16": {
+          "log2_cr": 51.6,
+          "fiber_dim": 6,
+          "log2_fiber": 39.9,
+          "log2_gl_cond": 1.0,
+          "log2_total": 92.5,
+          "exceeds_AES128": "False",
+          "layer_fractions": {
+            "cr": 0.558,
+            "fiber": 0.431,
+            "gl": 0.011
+          }
+        },
+        "20": {
+          "log2_cr": 50.5,
+          "fiber_dim": 8,
+          "log2_fiber": 53.2,
+          "log2_gl_cond": 1.0,
+          "log2_total": 104.6,
+          "exceeds_AES128": "False",
+          "layer_fractions": {
+            "cr": 0.482,
+            "fiber": 0.508,
+            "gl": 0.01
+          }
+        },
+        "24": {
+          "log2_cr": 56.2,
+          "fiber_dim": 12,
+          "log2_fiber": 79.7,
+          "log2_gl_cond": 1.0,
+          "log2_total": 136.9,
+          "exceeds_AES128": "True",
+          "layer_fractions": {
+            "cr": 0.41,
+            "fiber": 0.582,
+            "gl": 0.007
+          }
+        },
+        "32": {
+          "log2_cr": 53.4,
+          "fiber_dim": 20,
+          "log2_fiber": 132.9,
+          "log2_gl_cond": 1.0,
+          "log2_total": 187.3,
+          "exceeds_AES128": "True",
+          "layer_fractions": {
+            "cr": 0.285,
+            "fiber": 0.709,
+            "gl": 0.005
+          }
+        }
+      },
+      "min_secure_N": 24,
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 4,
+    "total": 5,
+    "runtime_s": 0.31
+  }
+}

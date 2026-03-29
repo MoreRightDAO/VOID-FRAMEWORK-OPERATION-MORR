@@ -1,0 +1,503 @@
+{
+  "experiment": "HP40B",
+  "title": "Berry Phase Financial Crises: The Big Pe",
+  "timestamp": "2026-03-15T06:24:58.896210",
+  "kill_conditions": {
+    "K-HP-184 (\u22656/7 crises \u03b3 < 0)": true,
+    "K-HP-185 (|\u03b3| tracks O_peak)": true,
+    "K-HP-186 (regulation \u2192 \u03c4\u2191)": true,
+    "K-HP-187 (financial \u2248 social tipping)": true
+  },
+  "total_pass": 4,
+  "total_kc": 4,
+  "results": {
+    "B1": {
+      "crises": {
+        "black_monday_1987": {
+          "name": "Black Monday 1987",
+          "gamma": -0.17526238720534318,
+          "gamma_holonomy": -0.17774565811197152,
+          "gamma_over_pi": -0.05578775052363224,
+          "mean_opacity": 0.5099750000000001,
+          "frac_opaque": 0.5,
+          "pe_range": [
+            36.27831924903289,
+            73.56881074111207
+          ],
+          "mean_curvature": 1.8438980257028956,
+          "tau_onset_months": 3
+        },
+        "asian_crisis_1997": {
+          "name": "Asian Financial Crisis 1997",
+          "gamma": -0.10771855053044273,
+          "gamma_holonomy": -0.10914680542663409,
+          "gamma_over_pi": -0.03428787955922813,
+          "mean_opacity": 0.529975,
+          "frac_opaque": 0.535,
+          "pe_range": [
+            38.30146404156742,
+            68.13787837480086
+          ],
+          "mean_curvature": 1.885487374212763,
+          "tau_onset_months": 6
+        },
+        "dotcom_2000": {
+          "name": "Dot-com Bubble 2000",
+          "gamma": 0.045475682342758283,
+          "gamma_holonomy": 0.04411691722176498,
+          "gamma_over_pi": 0.014475359270653609,
+          "mean_opacity": 0.5400499999999999,
+          "frac_opaque": 0.559,
+          "pe_range": [
+            41.516437015662014,
+            71.71429002129719
+          ],
+          "mean_curvature": 1.8918711789571518,
+          "tau_onset_months": 18
+        },
+        "gfc_2008": {
+          "name": "Global Financial Crisis 2008",
+          "gamma": -0.49725914968710033,
+          "gamma_holonomy": -0.4989734463515801,
+          "gamma_over_pi": -0.15828250334074945,
+          "mean_opacity": 0.54,
+          "frac_opaque": 0.499,
+          "pe_range": [
+            32.49791640599454,
+            64.73093924489311
+          ],
+          "mean_curvature": 1.8111370046887787,
+          "tau_onset_months": 24
+        },
+        "covid_2020": {
+          "name": "COVID Market Crash 2020",
+          "gamma": -0.013153097191057558,
+          "gamma_holonomy": -0.015393710170274263,
+          "gamma_over_pi": -0.004186760869849868,
+          "mean_opacity": 0.44000000000000006,
+          "frac_opaque": 0.349,
+          "pe_range": [
+            35.30088922674145,
+            68.13787837480086
+          ],
+          "mean_curvature": 1.8566212475940902,
+          "tau_onset_months": 2
+        },
+        "svb_2023": {
+          "name": "SVB/Banking Crisis 2023",
+          "gamma": -0.11815022658810281,
+          "gamma_holonomy": -0.11989582993497198,
+          "gamma_over_pi": -0.037608385177848085,
+          "mean_opacity": 0.439975,
+          "frac_opaque": 0.395,
+          "pe_range": [
+            43.78769709699049,
+            81.45623393138662
+          ],
+          "mean_curvature": 1.8541281847636428,
+          "tau_onset_months": 4
+        },
+        "ltcm_1998": {
+          "name": "LTCM Crisis 1998",
+          "gamma": -0.19028872600502747,
+          "gamma_holonomy": -0.19189820318165754,
+          "gamma_over_pi": -0.06057078271671883,
+          "mean_opacity": 0.53,
+          "frac_opaque": 0.499,
+          "pe_range": [
+            37.27830362277383,
+            68.13787837480086
+          ],
+          "mean_curvature": 1.840547955904662,
+          "tau_onset_months": 5
+        }
+      },
+      "n_opacity_driven": 6,
+      "severity_ranking": [
+        "gfc_2008",
+        "ltcm_1998",
+        "black_monday_1987",
+        "svb_2023",
+        "asian_crisis_1997",
+        "dotcom_2000",
+        "covid_2020"
+      ],
+      "kc_184_passed": true
+    },
+    "B2": {
+      "crises": {
+        "black_monday_1987": {
+          "name": "Black Monday 1987",
+          "Pe_peak": -36.27831924903289,
+          "Pe_mean": -58.140891871509666,
+          "barrier_peak": 369.14568231217226,
+          "barrier_mean": 785.4094628108787,
+          "tau_kramers_peak": 2.0793751358546007e+160,
+          "tau_kramers_mean": null
+        },
+        "asian_crisis_1997": {
+          "name": "Asian Financial Crisis 1997",
+          "Pe_peak": -38.30146404156742,
+          "Pe_mean": -55.44420167263545,
+          "barrier_peak": 403.581842429429,
+          "barrier_mean": 729.8271712849958,
+          "tau_kramers_peak": 1.876580345715221e+175,
+          "tau_kramers_mean": null
+        },
+        "dotcom_2000": {
+          "name": "Dot-com Bubble 2000",
+          "Pe_peak": -41.516437015662014,
+          "Pe_mean": -57.393622269123725,
+          "barrier_peak": 460.35593150342305,
+          "barrier_mean": 769.9203734020862,
+          "tau_kramers_peak": 8.512179307242357e+199,
+          "tau_kramers_mean": null
+        },
+        "gfc_2008": {
+          "name": "Global Financial Crisis 2008",
+          "Pe_peak": -32.49791640599454,
+          "Pe_mean": -51.27889526994963,
+          "barrier_peak": 307.79002530822976,
+          "barrier_mean": 645.8821688547108,
+          "tau_kramers_peak": 4.693637837102794e+133,
+          "tau_kramers_mean": null
+        },
+        "covid_2020": {
+          "name": "COVID Market Crash 2020",
+          "Pe_peak": -35.30088922674145,
+          "Pe_mean": -55.6844843501667,
+          "barrier_peak": 352.89111122340694,
+          "barrier_mean": 734.7407209861749,
+          "tau_kramers_peak": 1.814104568549582e+153,
+          "tau_kramers_mean": null
+        },
+        "svb_2023": {
+          "name": "SVB/Banking Crisis 2023",
+          "Pe_peak": -43.78769709699049,
+          "Pe_mean": -65.8482868496188,
+          "barrier_peak": 501.8707695883879,
+          "barrier_mean": 948.4172125104656,
+          "tau_kramers_peak": null,
+          "tau_kramers_mean": null
+        },
+        "ltcm_1998": {
+          "name": "LTCM Crisis 1998",
+          "Pe_peak": -37.27830362277383,
+          "Pe_mean": -55.44420167263545,
+          "barrier_peak": 386.0359460959502,
+          "barrier_mean": 729.8271712849958,
+          "tau_kramers_peak": 4.5007118175495573e+167,
+          "tau_kramers_mean": null
+        }
+      },
+      "domain_mean_barrier": 763.432040162044,
+      "domain_std_barrier": 85.89391964860242,
+      "social_tipping_ratio": 0.9447512852439922,
+      "kc_187_passed": true
+    },
+    "B3": {
+      "crisis_data": {
+        "names": [
+          "Black Monday 1987",
+          "Asian Financial Crisis 1997",
+          "Dot-com Bubble 2000",
+          "Global Financial Crisis 2008",
+          "COVID Market Crash 2020",
+          "SVB/Banking Crisis 2023",
+          "LTCM Crisis 1998"
+        ],
+        "gammas": [
+          0.17526238720534318,
+          0.10771855053044273,
+          0.045475682342758283,
+          0.49725914968710033,
+          0.013153097191057558,
+          0.11815022658810281,
+          0.19028872600502747
+        ],
+        "peak_Os": [
+          0.85,
+          0.8,
+          0.8,
+          0.9,
+          0.8,
+          0.75,
+          0.85
+        ],
+        "delta_Ks": [
+          2,
+          3,
+          4,
+          6,
+          0,
+          1,
+          2
+        ],
+        "tau_onsets": [
+          3,
+          6,
+          18,
+          24,
+          2,
+          4,
+          5
+        ],
+        "alphas": [
+          0.6,
+          0.65,
+          0.55,
+          0.8,
+          0.75,
+          0.5,
+          0.7
+        ]
+      },
+      "gamma_vs_O_peak": {
+        "rho": 0.7297691588509918,
+        "p": 0.06263829916616732
+      },
+      "gamma_vs_delta_K": {
+        "rho": 0.41443123283995714,
+        "p": 0.35526894376605234
+      },
+      "gamma_alpha_vs_tau": {
+        "rho": 0.4642857142857144,
+        "p": 0.29393410760025196
+      },
+      "gfc_rank": 1,
+      "kc_185_passed": true
+    },
+    "B4": {
+      "crises": {
+        "black_monday_1987": {
+          "name": "Black Monday 1987",
+          "K_pre": 12,
+          "K_post": 14,
+          "delta_K": 2,
+          "Pe_pre": 43.60566890363225,
+          "Pe_post": 50.87328038757096,
+          "barrier_pre": 498.5016561767611,
+          "barrier_post": 637.8410907719085,
+          "barrier_increase": 139.3394345951474,
+          "tau_increased": true,
+          "regulation": "Circuit breakers, Brady Commission"
+        },
+        "asian_crisis_1997": {
+          "name": "Asian Financial Crisis 1997",
+          "K_pre": 10,
+          "K_post": 13,
+          "delta_K": 3,
+          "Pe_pre": 34.652626045397156,
+          "Pe_post": 45.04841385901631,
+          "barrier_pre": 342.2625723729308,
+          "barrier_post": 525.3882811959221,
+          "barrier_increase": 183.12570882299133,
+          "tau_increased": true,
+          "regulation": "IMF conditionality, Basel II prep"
+        },
+        "dotcom_2000": {
+          "name": "Dot-com Bubble 2000",
+          "K_pre": 14,
+          "K_post": 18,
+          "delta_K": 4,
+          "Pe_pre": 50.21941948548326,
+          "Pe_post": 64.56782505276419,
+          "barrier_pre": 624.9323491014723,
+          "barrier_post": 920.973518281944,
+          "barrier_increase": 296.0411691804718,
+          "tau_increased": true,
+          "regulation": "Sarbanes-Oxley Act 2002"
+        },
+        "gfc_2008": {
+          "name": "Global Financial Crisis 2008",
+          "K_pre": 14,
+          "K_post": 20,
+          "delta_K": 6,
+          "Pe_pre": 44.86903336120592,
+          "Pe_post": 64.09861908743704,
+          "barrier_pre": 522.0228682324143,
+          "barrier_post": 910.9495579259798,
+          "barrier_increase": 388.92668969356544,
+          "tau_increased": true,
+          "regulation": "Dodd-Frank Act, Volcker Rule, stress tests"
+        },
+        "covid_2020": {
+          "name": "COVID Market Crash 2020",
+          "K_pre": 20,
+          "K_post": 20,
+          "delta_K": 0,
+          "Pe_pre": 69.60560543770838,
+          "Pe_post": 69.60560543770838,
+          "barrier_pre": 1029.6186701102247,
+          "barrier_post": 1029.6186701102247,
+          "barrier_increase": 0.0,
+          "tau_increased": true,
+          "regulation": "Fed facilities, existing Basel III held"
+        },
+        "svb_2023": {
+          "name": "SVB/Banking Crisis 2023",
+          "K_pre": 18,
+          "K_post": 19,
+          "delta_K": 1,
+          "Pe_pre": 74.07932270582116,
+          "Pe_post": 78.19484063392233,
+          "barrier_pre": 1127.3795569631159,
+          "barrier_post": 1218.0890233928908,
+          "barrier_increase": 90.70946642977492,
+          "tau_increased": true,
+          "regulation": "FDIC backstop, renewed scrutiny"
+        },
+        "ltcm_1998": {
+          "name": "LTCM Crisis 1998",
+          "K_pre": 12,
+          "K_post": 14,
+          "delta_K": 2,
+          "Pe_pre": 41.58315125447659,
+          "Pe_post": 48.51367646355602,
+          "barrier_pre": 461.55916609251227,
+          "barrier_post": 591.5810315684424,
+          "barrier_increase": 130.02186547593016,
+          "tau_increased": true,
+          "regulation": "Voluntary hedge fund oversight, margin rules"
+        },
+        "regulation_correlation": {
+          "rho": 0.9856107606091624,
+          "p": 0.0003090856678496653
+        }
+      },
+      "all_tau_increased": true,
+      "kc_186_passed": true
+    },
+    "B5": {
+      "hp22_domains": {
+        "Jailbreak": {
+          "pe_typical": 1.5,
+          "barrier_kT": 5.9
+        },
+        "Chemical kinetics": {
+          "pe_typical": 2.0,
+          "barrier_kT": 7.9
+        },
+        "Protein folding": {
+          "pe_typical": 3.0,
+          "barrier_kT": 11.9
+        },
+        "Cancer initiation": {
+          "pe_typical": 8.0,
+          "barrier_kT": 33.8
+        },
+        "Social tipping": {
+          "pe_typical": 15.0,
+          "barrier_kT": 86.7
+        }
+      },
+      "financial_pe_mean": 57.03351199366278,
+      "financial_barrier_mean": 763.432040162044,
+      "ranking": [
+        [
+          "Jailbreak",
+          1.5,
+          5.9
+        ],
+        [
+          "Chemical kinetics",
+          2.0,
+          7.9
+        ],
+        [
+          "Protein folding",
+          3.0,
+          11.9
+        ],
+        [
+          "Cancer initiation",
+          8.0,
+          33.8
+        ],
+        [
+          "Social tipping",
+          15.0,
+          86.7
+        ],
+        [
+          "Financial",
+          57.03351199366278,
+          763.432040162044
+        ]
+      ],
+      "monotonic": true,
+      "closest_domain": "Social tipping"
+    },
+    "B6": {
+      "crisis_data": {
+        "names": [
+          "Black Monday 1987",
+          "Asian Financial Crisis 1997",
+          "Dot-com Bubble 2000",
+          "Global Financial Crisis 2008",
+          "COVID Market Crash 2020",
+          "SVB/Banking Crisis 2023",
+          "LTCM Crisis 1998"
+        ],
+        "gammas": [
+          0.17526238720534318,
+          0.10771855053044273,
+          0.045475682342758283,
+          0.49725914968710033,
+          0.013153097191057558,
+          0.11815022658810281,
+          0.19028872600502747
+        ],
+        "tau_onsets": [
+          3,
+          6,
+          18,
+          24,
+          2,
+          4,
+          5
+        ],
+        "peak_Os": [
+          0.85,
+          0.8,
+          0.8,
+          0.9,
+          0.8,
+          0.75,
+          0.85
+        ],
+        "delta_Ks": [
+          2,
+          3,
+          4,
+          6,
+          0,
+          1,
+          2
+        ]
+      },
+      "correlations": {
+        "gamma_vs_tau": {
+          "rho": 0.39285714285714296,
+          "p": 0.3833168704269727
+        },
+        "gamma_vs_O_peak": {
+          "rho": 0.7297691588509918,
+          "p": 0.06263829916616732
+        },
+        "gamma_vs_delta_K": {
+          "rho": 0.41443123283995714,
+          "p": 0.35526894376605234
+        }
+      }
+    }
+  },
+  "constants": {
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "K": 16,
+    "K_grid": 64,
+    "d": 2.6849,
+    "E_b": 0.448
+  }
+}

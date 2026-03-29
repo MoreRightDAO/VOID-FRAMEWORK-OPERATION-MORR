@@ -1,0 +1,119 @@
+{
+  "phases": [
+    {
+      "name": "Kaolinite",
+      "pe": 7.140072425441691,
+      "crooks": 1.437432420360218,
+      "temp_range": [
+        0,
+        500
+      ]
+    },
+    {
+      "name": "Metakaolin",
+      "pe": 8.365533280284863,
+      "crooks": 1.5297990720212273,
+      "temp_range": [
+        500,
+        980
+      ]
+    },
+    {
+      "name": "Al-Si Spinel",
+      "pe": 6.848439205208448,
+      "crooks": 1.4162856149554035,
+      "temp_range": [
+        980,
+        1100
+      ]
+    },
+    {
+      "name": "Mullite",
+      "pe": 11.31631064115742,
+      "crooks": 1.7772991966602458,
+      "temp_range": [
+        1100,
+        1800
+      ]
+    }
+  ],
+  "kill_conditions": {
+    "K1_transition_T": {
+      "Kaolinite\u2192Metakaolin": {
+        "known_T": 500,
+        "observed_T": 502.5,
+        "error": 2.5,
+        "passes": true
+      },
+      "Metakaolin\u2192Al-Si Spinel": {
+        "known_T": 980,
+        "observed_T": 985.0,
+        "error": 5.0,
+        "passes": true
+      },
+      "Al-Si Spinel\u2192Mullite": {
+        "known_T": 1100,
+        "observed_T": 1105.0,
+        "error": 5.0,
+        "passes": true
+      }
+    },
+    "K2_water_release": {
+      "water_released": 100,
+      "total_units": 100,
+      "fraction": 1.0,
+      "expected_mass_loss": 0.14,
+      "passes": true
+    },
+    "K3_crooks_increase": {
+      "initial_crooks": 1.4476141884123472,
+      "final_crooks": 1.7898883437556574,
+      "peak_crooks": 2.565435475195095,
+      "ratio": 1.236440177281417,
+      "passes": "True"
+    }
+  },
+  "golem_comparison": {
+    "Ushabti (Spell 6)": {
+      "type": "bounded",
+      "scope": "finite",
+      "max_pe": 7.516099973475771,
+      "final_pe": 4.321655529031319,
+      "max_temp": 600,
+      "regime": "D2 (boundary erosion)",
+      "loss_of_control": "False",
+      "events": 50,
+      "history_length": 657
+    },
+    "Golem (Shem)": {
+      "type": "unbounded",
+      "scope": "infinite",
+      "max_pe": 40.61559859013892,
+      "final_pe": 34.08782081236111,
+      "max_temp": 1200,
+      "regime": "RUNAWAY",
+      "loss_of_control": "True",
+      "events": 150,
+      "history_length": 1461
+    },
+    "Enkidu (Aruru clay)": {
+      "type": "bounded_inverse",
+      "scope": "narrowing",
+      "max_pe": 17.899124602730666,
+      "final_pe": 1.7259986901910014,
+      "max_temp": 1100,
+      "regime": "D3 (harm facilitation)",
+      "loss_of_control": "False",
+      "events": 100,
+      "history_length": 1018
+    }
+  },
+  "scope_prediction_confirmed": "True",
+  "firing_summary": {
+    "total_steps": 1086,
+    "peak_temp": 1300,
+    "total_events": 300,
+    "final_pe": 11.455199530046311,
+    "peak_pe": 18.538532863379668
+  }
+}

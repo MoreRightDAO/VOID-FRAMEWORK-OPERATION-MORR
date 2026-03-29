@@ -1,0 +1,623 @@
+{
+  "experiment": "HP100",
+  "title": "Eckert Holonomy: Geometric Memory on the Full Manifold",
+  "date": "2026-03-16T20:41:22.372843",
+  "hypothesis": "Pe-coupled Eckert metric has nonzero Riemann curvature producing measurable holonomy; Queen's domain has distinct signature",
+  "sub_experiments": {
+    "C1": {
+      "test": "C1_christoffel_riemann",
+      "points": [
+        {
+          "point": [
+            0.22,
+            0.22,
+            0.22
+          ],
+          "label": "near transition (Pe\u22481)",
+          "Pe": 3.353356862355389,
+          "FR_Riemann_max": 0.0,
+          "coupled_Riemann_max": 35.54069806460063,
+          "R_0101": -22.230723273079832,
+          "R_0202": -7.682545178371683,
+          "R_1212": -7.6825451782828935,
+          "metric_eigenvalues": [
+            -3.3422187958686678,
+            5.827505827505826,
+            19.623652884014056
+          ],
+          "signature": "(2+, 1\u2212)"
+        },
+        {
+          "point": [
+            0.2,
+            0.2,
+            0.22
+          ],
+          "label": "Queen's domain (Pe<1)",
+          "Pe": 0.45702212423497196,
+          "FR_Riemann_max": 0.0,
+          "coupled_Riemann_max": 141.25219434388612,
+          "R_0101": -53.79339401241634,
+          "R_0202": 36.44139796285231,
+          "R_1212": 36.441397955746766,
+          "metric_eigenvalues": [
+            -2.001348892125521,
+            6.2500000000000195,
+            160.5329084640706
+          ],
+          "signature": "(2+, 1\u2212)"
+        },
+        {
+          "point": [
+            0.3,
+            0.3,
+            0.25
+          ],
+          "label": "drift regime (Pe>5)",
+          "Pe": 20.340018027410782,
+          "FR_Riemann_max": 0.0,
+          "coupled_Riemann_max": 0.2604718280656802,
+          "R_0101": -0.2404752313014055,
+          "R_0202": -0.2452883243976795,
+          "R_1212": -0.24528832439976103,
+          "metric_eigenvalues": [
+            -4.962399813066752,
+            4.761904761904759,
+            5.595678932944426
+          ],
+          "signature": "(2+, 1\u2212)"
+        },
+        {
+          "point": [
+            0.15,
+            0.35,
+            0.22
+          ],
+          "label": "asymmetric",
+          "Pe": 7.931155634550842,
+          "FR_Riemann_max": 0.0,
+          "coupled_Riemann_max": 5.345768026796364,
+          "R_0101": -2.95429113090401,
+          "R_0202": -3.020997626460937,
+          "R_1212": -2.65177985724349,
+          "metric_eigenvalues": [
+            -4.820757519506363,
+            5.297503470694972,
+            9.657361333737574
+          ],
+          "signature": "(2+, 1\u2212)"
+        }
+      ],
+      "KC": {
+        "K-HP-520": {
+          "pass": true,
+          "max_Riemann": 141.25219434388612
+        }
+      }
+    },
+    "C2": {
+      "test": "C2_spacelike_holonomy",
+      "center": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "results": [
+        {
+          "radius": 0.01,
+          "holonomy_angle_rad": 0.00039725300595420824,
+          "holonomy_angle_deg": 0.022760920640061494,
+          "cos_angle": 0.9999999210950257,
+          "metric_area": 0.0019180619095603363,
+          "v_final": [
+            1.0001375492594589,
+            -0.00045593080894311975,
+            0.00020009747097447434
+          ],
+          "Pe_center": 10.414805532665206
+        },
+        {
+          "radius": 0.02,
+          "holonomy_angle_rad": 0.0016698895349741814,
+          "holonomy_angle_deg": 0.09567762260708428,
+          "cos_angle": 0.9999986057347945,
+          "metric_area": 0.007672247638241345,
+          "v_final": [
+            1.000567417969923,
+            -0.0018897549289331674,
+            0.0008299308714762539
+          ],
+          "Pe_center": 10.414805532665206
+        },
+        {
+          "radius": 0.04,
+          "holonomy_angle_rad": 0.008169562107944001,
+          "holonomy_angle_deg": 0.46808142925519153,
+          "cos_angle": 0.9999666293130843,
+          "metric_area": 0.03068899055296538,
+          "v_final": [
+            1.0027108065845363,
+            -0.008999983256774435,
+            0.0039085006200235296
+          ],
+          "Pe_center": 10.414805532665206
+        },
+        {
+          "radius": 0.06,
+          "holonomy_angle_rad": 0.026255345501835482,
+          "holonomy_angle_deg": 1.5043204869129636,
+          "cos_angle": 0.9996553482155848,
+          "metric_area": 0.06905022874417209,
+          "v_final": [
+            1.0087450068253394,
+            -0.028260943575773235,
+            0.011949148215507322
+          ],
+          "Pe_center": 10.414805532665206
+        },
+        {
+          "radius": 0.08,
+          "holonomy_angle_rad": 0.07969735058059242,
+          "holonomy_angle_deg": 4.566321826642447,
+          "cos_angle": 0.9968258467861234,
+          "metric_area": 0.12275596221186152,
+          "v_final": [
+            1.0257152038826158,
+            -0.08541179038493335,
+            0.035874699705108024
+          ],
+          "Pe_center": 10.414805532665206
+        }
+      ],
+      "KC": {
+        "K-HP-521": {
+          "pass": 1,
+          "ratio_cv": 0.47795809591711313
+        }
+      }
+    },
+    "C3": {
+      "test": "C3_full_holonomy_decomposition",
+      "results": [
+        {
+          "plane": "O-R (spacelike)",
+          "radius": 0.02,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.0020359000908179025,
+          "total_holonomy": 0.0020359000908179025,
+          "H_diag": [
+            1.000567417969923,
+            1.0003244966191553,
+            0.9995630340911965
+          ],
+          "H_offdiag_02": 0.0017926030699785603,
+          "H_offdiag_12": -0.0009651264891199773
+        },
+        {
+          "plane": "O-R (spacelike)",
+          "radius": 0.04,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.010126907789779375,
+          "total_holonomy": 0.010126907789779375,
+          "H_diag": [
+            1.0027108065845363,
+            1.0016521698955763,
+            0.9977509184456451
+          ],
+          "H_offdiag_02": 0.009020863297467695,
+          "H_offdiag_12": -0.004602368150333976
+        },
+        {
+          "plane": "O-R (spacelike)",
+          "radius": 0.06,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.03360594084480294,
+          "total_holonomy": 0.03360594084480294,
+          "H_diag": [
+            1.0087450068253394,
+            1.005611385818328,
+            0.9919829146459022
+          ],
+          "H_offdiag_02": 0.030417741339169878,
+          "H_offdiag_12": -0.014301939962539175
+        },
+        {
+          "plane": "O-\u03b1 (timelike)",
+          "radius": 0.02,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.0026862107384894177,
+          "total_holonomy": 0.0026862107384894177,
+          "H_diag": [
+            1.000319580130091,
+            1.0001231210885484,
+            1.0001765912828797
+          ],
+          "H_offdiag_02": 0.0023477968547587994,
+          "H_offdiag_12": 0.001305218531876842
+        },
+        {
+          "plane": "O-\u03b1 (timelike)",
+          "radius": 0.04,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.013636368168774657,
+          "total_holonomy": 0.013636368168774657,
+          "H_diag": [
+            1.0016735785053195,
+            1.0009318546146477,
+            1.0004620940622015
+          ],
+          "H_offdiag_02": 0.011916675974514877,
+          "H_offdiag_12": 0.0066298489202954594
+        },
+        {
+          "plane": "O-\u03b1 (timelike)",
+          "radius": 0.06,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.04488405227066326,
+          "total_holonomy": 0.04488405227066326,
+          "H_diag": [
+            1.0059221313265931,
+            1.0041592791943605,
+            1.0004310375557621
+          ],
+          "H_offdiag_02": 0.039285028234645254,
+          "H_offdiag_12": 0.02173977713739373
+        },
+        {
+          "plane": "R-\u03b1 (timelike)",
+          "radius": 0.02,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.002686210738489412,
+          "total_holonomy": 0.002686210738489412,
+          "H_diag": [
+            1.0001231210885484,
+            1.000319580130091,
+            1.0001765912828797
+          ],
+          "H_offdiag_02": 0.001305218531876848,
+          "H_offdiag_12": 0.0023477968547587894
+        },
+        {
+          "plane": "R-\u03b1 (timelike)",
+          "radius": 0.04,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.013636368168774648,
+          "total_holonomy": 0.013636368168774648,
+          "H_diag": [
+            1.0009318546146477,
+            1.0016735785053195,
+            1.0004620940622015
+          ],
+          "H_offdiag_02": 0.006629848920295448,
+          "H_offdiag_12": 0.011916675974514873
+        },
+        {
+          "plane": "R-\u03b1 (timelike)",
+          "radius": 0.06,
+          "rotation_angle_rad": 0.0,
+          "rotation_angle_deg": 0.0,
+          "rapidity": 0.0448840522706632,
+          "total_holonomy": 0.0448840522706632,
+          "H_diag": [
+            1.0041592791943603,
+            1.0059221313265931,
+            1.0004310375557621
+          ],
+          "H_offdiag_02": 0.021739777137393685,
+          "H_offdiag_12": 0.03928502823464521
+        }
+      ],
+      "KC": {
+        "K-HP-522": {
+          "pass": true,
+          "max_rapidity": 0.04488405227066326,
+          "max_spacelike_rotation": 0.0,
+          "has_boost": true
+        }
+      }
+    },
+    "C4": {
+      "test": "C4_holonomy_vs_pe",
+      "scan": [
+        {
+          "alpha": 0.18,
+          "Pe": 0.45702212423497196,
+          "spacelike_holonomy": 0.02748948430061122,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9996221879191685,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.20133333333333334,
+          "Pe": 1.9939897752899725,
+          "spacelike_holonomy": 0.07039912691673136,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9975230047249344,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.22266666666666665,
+          "Pe": 3.549250125770307,
+          "spacelike_holonomy": 0.04687759626975252,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9989014466794947,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.244,
+          "Pe": 5.137071007172433,
+          "spacelike_holonomy": 0.024448172873068618,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9997011583071634,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.2653333333333333,
+          "Pe": 6.7720189586455,
+          "spacelike_holonomy": 0.013697661477128822,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9999061885018319,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.2866666666666666,
+          "Pe": 8.4690928592324,
+          "spacelike_holonomy": 0.007868380428346483,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9999690444544264,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.308,
+          "Pe": 10.243861526361774,
+          "spacelike_holonomy": 0.004695788086516642,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9999889748073825,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.3293333333333333,
+          "Pe": 12.112606542908116,
+          "spacelike_holonomy": 0.0028944697592534273,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.999995811025331,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.3506666666666667,
+          "Pe": 14.092471623104018,
+          "spacelike_holonomy": 0.0018153935645324804,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9999983521735555,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.372,
+          "Pe": 16.201619887575063,
+          "spacelike_holonomy": 0.001132710257333345,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9999993584838051,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.3933333333333333,
+          "Pe": 18.459400490325695,
+          "spacelike_holonomy": 0.0006740065254325649,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9999997728576104,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.41466666666666663,
+          "Pe": 20.88652612629868,
+          "spacelike_holonomy": 0.00033268904955685385,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 0.9999999446589987,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.436,
+          "Pe": 23.505263047947516,
+          "spacelike_holonomy": 0.0,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 1.0,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.4573333333333333,
+          "Pe": 26.339635334018965,
+          "spacelike_holonomy": 0.0,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 1.0,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.47866666666666663,
+          "Pe": 29.415645284490235,
+          "spacelike_holonomy": 0.0,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 1.0,
+          "cos_timelike": 1.0
+        },
+        {
+          "alpha": 0.5,
+          "Pe": 32.76151196354644,
+          "spacelike_holonomy": 0.0,
+          "timelike_holonomy": 0.0,
+          "cos_spacelike": 1.0,
+          "cos_timelike": 1.0
+        }
+      ],
+      "KC": {
+        "K-HP-523": {
+          "pass": 1,
+          "spearman_rho": -0.9837306925702933,
+          "p_value": 7.750190624827472e-12
+        }
+      }
+    },
+    "C5": {
+      "test": "C5_queen_vs_drift",
+      "results": [
+        {
+          "domain": "Queen",
+          "label": "Queen \u03b1=0.185",
+          "point": [
+            0.21,
+            0.21,
+            0.185
+          ],
+          "Pe": -0.6203152932790292,
+          "spacelike_holonomy": 0.0,
+          "timelike_holonomy": 0.005659683873107192,
+          "holonomy_ratio": 5659683873107.191,
+          "total_holonomy": 0.005659683873107192
+        },
+        {
+          "domain": "Queen",
+          "label": "Queen \u03b1=0.190",
+          "point": [
+            0.21,
+            0.21,
+            0.19
+          ],
+          "Pe": -0.26113159137561603,
+          "spacelike_holonomy": 0.0,
+          "timelike_holonomy": 0.014796120319984465,
+          "holonomy_ratio": 14796120319984.465,
+          "total_holonomy": 0.014796120319984465
+        },
+        {
+          "domain": "Queen",
+          "label": "Queen \u03b1=0.195",
+          "point": [
+            0.21,
+            0.21,
+            0.195
+          ],
+          "Pe": 0.0979206112569476,
+          "spacelike_holonomy": 0.0,
+          "timelike_holonomy": 0.006055995387853162,
+          "holonomy_ratio": 6055995387853.161,
+          "total_holonomy": 0.006055995387853162
+        },
+        {
+          "domain": "Queen",
+          "label": "Queen \u03b1=0.200",
+          "point": [
+            0.21,
+            0.21,
+            0.2
+          ],
+          "Pe": 0.45702212423497196,
+          "spacelike_holonomy": 0.020904510630885244,
+          "timelike_holonomy": 0.0,
+          "holonomy_ratio": 0.0,
+          "total_holonomy": 0.020904510630885244
+        },
+        {
+          "domain": "Drift",
+          "label": "Drift \u03b1=0.26",
+          "point": [
+            0.22,
+            0.22,
+            0.26
+          ],
+          "Pe": 6.358052222395622,
+          "spacelike_holonomy": 0.006112475387284353,
+          "timelike_holonomy": 0.0,
+          "holonomy_ratio": 0.0,
+          "total_holonomy": 0.006112475387284353
+        },
+        {
+          "domain": "Drift",
+          "label": "Drift \u03b1=0.3",
+          "point": [
+            0.22,
+            0.22,
+            0.3
+          ],
+          "Pe": 9.568202152676145,
+          "spacelike_holonomy": 0.002282587992212963,
+          "timelike_holonomy": 0.0,
+          "holonomy_ratio": 0.0,
+          "total_holonomy": 0.002282587992212963
+        },
+        {
+          "domain": "Drift",
+          "label": "Drift \u03b1=0.35",
+          "point": [
+            0.22,
+            0.22,
+            0.35
+          ],
+          "Pe": 14.028741282144313,
+          "spacelike_holonomy": 0.0007645274478082509,
+          "timelike_holonomy": 0.0,
+          "holonomy_ratio": 0.0,
+          "total_holonomy": 0.0007645274478082509
+        },
+        {
+          "domain": "Drift",
+          "label": "Drift \u03b1=0.4",
+          "point": [
+            0.22,
+            0.22,
+            0.4
+          ],
+          "Pe": 19.198672055231395,
+          "spacelike_holonomy": 0.00023228310199020565,
+          "timelike_holonomy": 0.0,
+          "holonomy_ratio": 0.0,
+          "total_holonomy": 0.00023228310199020565
+        }
+      ],
+      "queen_mean_holonomy": 0.011854077552957516,
+      "drift_mean_holonomy": 0.0023479684823239436,
+      "KC": {
+        "K-HP-524": {
+          "pass": 1,
+          "ratio": 5.048652757563735
+        }
+      }
+    }
+  },
+  "kill_conditions": {
+    "K-HP-520": {
+      "pass": true,
+      "max_Riemann": 141.25219434388612
+    },
+    "K-HP-521": {
+      "pass": 1,
+      "ratio_cv": 0.47795809591711313
+    },
+    "K-HP-522": {
+      "pass": true,
+      "max_rapidity": 0.04488405227066326,
+      "max_spacelike_rotation": 0.0,
+      "has_boost": true
+    },
+    "K-HP-523": {
+      "pass": 1,
+      "spearman_rho": -0.9837306925702933,
+      "p_value": 7.750190624827472e-12
+    },
+    "K-HP-524": {
+      "pass": 1,
+      "ratio": 5.048652757563735
+    }
+  },
+  "summary": {
+    "passed": 5,
+    "total": 5,
+    "score": "5/5"
+  }
+}

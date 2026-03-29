@@ -1,0 +1,30 @@
+{
+  "experiment": "THRML-CHEM-01",
+  "date": "2026-03-02",
+  "predictions_tested": [
+    "Pe<0 correctly classifies all inert/anomalous-stable elements (noble gases + N + Be + Mg)",
+    "Spearman(Pe, Pauling-EN) > 0.60 for reactive (non-noble) elements"
+  ],
+  "binary_classification_accuracy": "16/16 = 100%",
+  "spearman_pe_vs_EN_reactive_elements": {
+    "rho": 0.7011,
+    "p": 0.0052,
+    "n": 14
+  },
+  "spearman_pe_vs_IE_all": {
+    "rho": -0.0223,
+    "p": 0.916,
+    "note": "EXPECTED FAIL \u2014 IE measures electron-loss resistance, Pe captures electron-gain tendency. Different physics."
+  },
+  "key_finding": "Pe sign = sign(EA). Elements with negative electron affinity are constraint poles. 100% binary classification. The periodic table is a Pe landscape.",
+  "structural_isomorphisms": [
+    "Noble gas closed shell = constraint pole (Pe<<0)",
+    "Alkali metal lone electron = high-Pe extraction surface",
+    "Pauli exclusion = hardest prohibition in physics (antisymmetric wavefunction = mathematical impossibility of violation)",
+    "Octet rule = constraint specification ritual",
+    "Bond formation = prohibition-ritual pair",
+    "Fe Z=26 = nuclear V* (\u00a723G)"
+  ],
+  "pass": true,
+  "headline": "100% binary: Pe<0 identifies ALL constraint-pole elements. \u03c1(Pe, EN)=0.70 p=0.005 for reactive elements."
+}

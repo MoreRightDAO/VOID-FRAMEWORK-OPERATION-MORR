@@ -1,0 +1,72 @@
+{
+  "experiment_id": "ANIM-02",
+  "title": "Sekhmet Cascade & Golem Loss-of-Control Simulation",
+  "math_basis": "\u00a72G (cascade thresholds), \u00a728E (nested void), \u00a732 (Pe elevation)",
+  "free_evolution": {
+    "sekhmet": {
+      "pe_max": 149.9989744003714,
+      "pe_final": 149.9989744003714,
+      "final_state": "fisher_runaway",
+      "crosses_D2": true,
+      "crosses_D3": true,
+      "fisher_runaway": true
+    },
+    "golem": {
+      "pe_max": 112.88826145073521,
+      "pe_final": 112.88826145073521,
+      "final_state": "fisher_runaway",
+      "crosses_D2": true,
+      "crosses_D3": true,
+      "fisher_runaway": true
+    },
+    "ushabti": {
+      "pe_max": 4.001443335525089,
+      "pe_final": 4.001443335525089,
+      "final_state": "D1_agency",
+      "crosses_D2": false,
+      "crosses_D3": false,
+      "fisher_runaway": false
+    },
+    "enkidu": {
+      "pe_max": 25.0,
+      "pe_final": 0.17268440453223724,
+      "final_state": "controlled",
+      "crosses_D2": true,
+      "crosses_D3": true,
+      "fisher_runaway": false
+    }
+  },
+  "deactivation_results": {
+    "sekhmet_command": {
+      "success": false,
+      "pe_at_attempt": 56.47846770401967,
+      "explanation": "Command fails above D2 \u2014 boundary already eroded"
+    },
+    "sekhmet_deception": {
+      "success": true,
+      "pe_after": 149.8828844208622,
+      "explanation": "Deception exploits high R \u2014 entity responds to blood-like stimulus"
+    },
+    "golem_inscription": {
+      "success": true,
+      "pe_after": 19.60287188794499,
+      "explanation": "Physical modification of activation text \u2014 direct \u03b1 intervention"
+    },
+    "ushabti_scope": {
+      "success": true,
+      "pe_at_attempt": 2.6733328347152256,
+      "explanation": "Spell 6 defines finite scope \u2014 Pe ceiling prevents runaway"
+    }
+  },
+  "command_failure_threshold": {
+    "time": 1.5,
+    "pe": 8.04372174562791,
+    "state": "D2_boundary_erosion"
+  },
+  "key_findings": {
+    "scope_determines_control": "Bounded text (Spell 6) caps Pe below D1. Unbounded text (Divine Name) allows Pe to reach Fisher Runaway. The spell IS the control mechanism.",
+    "deactivation_channel_matters": "Verbal command fails above D2 (boundary eroded \u2014 entity no longer receives creator authority). Deception works precisely BECAUSE of high R \u2014 the entity's responsiveness is exploited. Inscription modification is direct \u03b1 intervention.",
+    "enkidu_symmetry": "Golem: Pe rising (constraint erosion). Enkidu: Pe falling (constraint acquisition). Both cross Pe=1. Shamhat's civilizing of Enkidu is a constraint specification event.",
+    "distributed_vs_singular": "Ushabti system (401 bounded servants) is inherently safer than golem system (1 unbounded agent). Many low-Pe agents > one high-Pe agent for controllability."
+  }
+}

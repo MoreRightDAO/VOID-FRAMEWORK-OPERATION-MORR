@@ -1,0 +1,133 @@
+{
+  "experiment": "HP180",
+  "title": "Phase Transition Barrier Growth vs Order Parameter",
+  "date": "2026-03-28T14:12:16.513192",
+  "results": {
+    "landau": {
+      "system": "Landau Theory",
+      "beta": 4.000000000000001,
+      "beta_exact": 4.0,
+      "R2": 1.0,
+      "n_points": 100,
+      "order_param_range": [
+        0.1,
+        5.0
+      ],
+      "barrier_range": [
+        2.500000000000001e-05,
+        156.25
+      ],
+      "note": "\u0394F = b\u00b7\u03c8\u2074/4, exact \u03b2=4",
+      "K-180-1": "PASS"
+    },
+    "kramers": {
+      "system": "Kramers Double-Well",
+      "beta": 4.0,
+      "beta_exact": 4.0,
+      "R2": 1.0,
+      "n_points": 100,
+      "order_param_range": [
+        0.1,
+        5.0
+      ],
+      "barrier_range": [
+        0.00010000000000000002,
+        625.0
+      ],
+      "note": "V=(x\u00b2-a\u00b2)\u00b2, barrier=a\u2074, exact \u03b2=4",
+      "K-180-2": "PASS"
+    },
+    "nucleation": {
+      "system": "Classical Nucleation (3D Ising exponents)",
+      "beta": 1.7800000000000011,
+      "beta_theoretical": 1.7800000000000002,
+      "R2": 1.0,
+      "n_points": 100,
+      "order_param_range": [
+        0.01,
+        0.5
+      ],
+      "barrier_range": [
+        0.004614754485713773,
+        4.87882463818479
+      ],
+      "note": "\u0394G* ~ \u03c3\u00b3/\u0394G_v\u00b2, \u03b2_theory=1.78",
+      "K-180-3": "PASS"
+    },
+    "GL_sc": {
+      "system": "Ginzburg-Landau (Vortex Nucleation)",
+      "beta": 2.0000000000000004,
+      "beta_exact": 2.0,
+      "R2": 1.0,
+      "n_points": 100,
+      "order_param_range": [
+        0.1,
+        5.0
+      ],
+      "barrier_range": [
+        0.016094379124341005,
+        40.23594781085251
+      ],
+      "note": "\u0394F_vortex ~ |\u03c8|\u00b2\u00b7ln(\u03ba), exact \u03b2=2"
+    },
+    "ising": {
+      "system": "Ising Mean-Field",
+      "beta": 5.252485506811311,
+      "R2": 0.9809596428988971,
+      "n_points": 50,
+      "order_param_range": [
+        0.9974138168919128,
+        0.37948973087421617
+      ],
+      "barrier_range": [
+        1.7546440809358625,
+        0.011134945476447555
+      ],
+      "note": "Numerical free energy landscape, barrier = F(0) - F(m_eq)"
+    },
+    "allen_cahn": {
+      "system": "Allen-Cahn / \u03c6\u2074 Theory",
+      "sub_results": {
+        "Homogeneous": {
+          "beta": 4.000000000000001,
+          "beta_exact": 4,
+          "R2": 1.0
+        },
+        "Domain Wall 1D": {
+          "beta": 3.000000000000003,
+          "beta_exact": 3,
+          "R2": 1.0
+        },
+        "Critical Droplet 3D": {
+          "beta": 1.0000000000000002,
+          "beta_exact": 1,
+          "R2": 0.9999999999999998
+        }
+      },
+      "note": "Three barrier types: homogeneous (\u03b2=4), wall (\u03b2=3), droplet (\u03b2=1)",
+      "all_beta_positive": true
+    }
+  },
+  "all_betas": [
+    4.000000000000001,
+    4.0,
+    1.7800000000000011,
+    2.0000000000000004,
+    5.252485506811311,
+    4.000000000000001,
+    3.000000000000003,
+    1.0000000000000002
+  ],
+  "kill_conditions": {
+    "K-180-1": "PASS",
+    "K-180-2": "PASS",
+    "K-180-3": "PASS",
+    "K-180-4": "PASS",
+    "K-180-5": "PASS"
+  },
+  "summary": {
+    "kc_pass": 5,
+    "kc_total": 5,
+    "status": "PASS"
+  }
+}

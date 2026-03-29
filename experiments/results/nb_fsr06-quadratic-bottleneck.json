@@ -1,0 +1,409 @@
+{
+  "experiment": "nb_fsr06",
+  "paper": 145,
+  "version": 2,
+  "timestamp": "2026-03-17T23:51:36.132686+00:00",
+  "replaces": "nb_fsr05 GL3 (marginal eigenfunction filtering) + nb_fsr06 v1 (W\u22480 wrong)",
+  "mechanism": "Quadratic coupling (2W/T)\u00b7T_j DOMINATES J_kj. Wavefunction localization at wells samples J at well positions \u2192 rank = 2\u00b7n_wells = O(1). The 2 effective params per well are Kramers barrier height \u0394\u03a6 and curvature \u03c9\u2080.",
+  "v1_corrections": [
+    "W is NOT zero at wells \u2014 V = W\u00b2/T - W' wells \u2260 W zeros",
+    "Quadratic term dominates linear by 10-15\u00d7 (from v1 QP5)",
+    "Column vectors are T_j(\u03b8_well) not U_{j-1}(\u03b8_well)",
+    "Rank \u2248 2\u00b7n_wells (position+curvature), not exactly n_wells"
+  ],
+  "framework": [
+    "\u00a748E (Kramers barriers)",
+    "\u00a751 (SUSY V=W\u00b2/T)",
+    "\u00a78D (\u010cencov)"
+  ],
+  "kill_conditions": [
+    "K-FSR-9: \u03c8 not localized \u2192 mechanism fails",
+    "K-FSR-10: Chebyshev-at-well model fails \u2192 wrong column vectors",
+    "K-FSR-11: Kramers R\u00b2 < 0.9 \u2192 bottleneck not Kramers params"
+  ],
+  "experiments": {
+    "QP1_wavefunction_localization": {
+      "exp": "QP1_wavefunction_localization",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "n_wells": 0,
+          "ipr_normalized": [
+            0.0265,
+            0.024,
+            0.0338
+          ],
+          "well_probability": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localized": true,
+          "well_concentrated": false
+        },
+        "12": {
+          "n_wells": 1,
+          "ipr_normalized": [
+            0.0196,
+            0.0392,
+            0.0377
+          ],
+          "well_probability": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "localized": true,
+          "well_concentrated": false
+        },
+        "16": {
+          "n_wells": 1,
+          "ipr_normalized": [
+            0.0242,
+            0.0292,
+            0.0227
+          ],
+          "well_probability": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "localized": true,
+          "well_concentrated": false
+        },
+        "24": {
+          "n_wells": 6,
+          "ipr_normalized": [
+            0.0116,
+            0.0131,
+            0.0152
+          ],
+          "well_probability": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "localized": true,
+          "well_concentrated": true
+        },
+        "32": {
+          "n_wells": 7,
+          "ipr_normalized": [
+            0.0119,
+            0.0177,
+            0.0208
+          ],
+          "well_probability": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "localized": true,
+          "well_concentrated": true
+        }
+      },
+      "kill_condition": "K-FSR-9",
+      "passed": true
+    },
+    "QP2_well_chebyshev_reconstruction": {
+      "exp": "QP2_well_chebyshev_reconstruction",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "n_wells": 0,
+          "subspace_capture": 0,
+          "passed": false
+        },
+        "12": {
+          "n_wells": 0,
+          "subspace_capture": 0,
+          "passed": false
+        },
+        "16": {
+          "n_wells": 2,
+          "subspace_capture": 0.5855,
+          "variance_top_2nw": 0.9941,
+          "subspace_alignment": 0.4196,
+          "passed": true
+        },
+        "24": {
+          "n_wells": 3,
+          "subspace_capture": 0.5538,
+          "variance_top_2nw": 0.9968,
+          "subspace_alignment": 0.4023,
+          "passed": true
+        },
+        "32": {
+          "n_wells": 9,
+          "subspace_capture": 0.7424,
+          "variance_top_2nw": 1.0,
+          "subspace_alignment": 0.4989,
+          "passed": true
+        }
+      },
+      "kill_condition": "K-FSR-10",
+      "passed": true
+    },
+    "QP3_temperature_scaling": {
+      "exp": "QP3_temperature_scaling",
+      "N": 16,
+      "results": {
+        "0.001": {
+          "T": 0.001,
+          "effective_rank": 3.87,
+          "variance_top2": 0.919217,
+          "variance_top4": 0.998797
+        },
+        "0.003": {
+          "T": 0.003,
+          "effective_rank": 3.72,
+          "variance_top2": 0.920312,
+          "variance_top4": 0.999109
+        },
+        "0.005": {
+          "T": 0.005,
+          "effective_rank": 3.67,
+          "variance_top2": 0.941014,
+          "variance_top4": 0.999231
+        },
+        "0.01": {
+          "T": 0.01,
+          "effective_rank": 4.59,
+          "variance_top2": 0.877178,
+          "variance_top4": 0.981243
+        },
+        "0.02": {
+          "T": 0.02,
+          "effective_rank": 4.85,
+          "variance_top2": 0.870467,
+          "variance_top4": 0.988492
+        },
+        "0.05": {
+          "T": 0.05,
+          "effective_rank": 7.19,
+          "variance_top2": 0.632707,
+          "variance_top4": 0.910671
+        },
+        "0.1": {
+          "T": 0.1,
+          "effective_rank": 8.16,
+          "variance_top2": 0.626016,
+          "variance_top4": 0.865834
+        },
+        "0.5": {
+          "T": 0.5,
+          "effective_rank": 6.83,
+          "variance_top2": 0.553605,
+          "variance_top4": 0.844473
+        }
+      },
+      "passed": true
+    },
+    "QP4_kramers_sufficiency": {
+      "exp": "QP4_kramers_sufficiency",
+      "T": 0.01,
+      "N": 16,
+      "M": 8,
+      "results": {
+        "n_samples": 93,
+        "modes": {
+          "lambda_0": {
+            "R_squared": 0.112328,
+            "coefficients": [
+              253.8476,
+              -0.0003,
+              -0.0
+            ]
+          },
+          "lambda_1": {
+            "R_squared": 0.018214,
+            "coefficients": [
+              395.8981,
+              -0.0004,
+              -0.0
+            ]
+          },
+          "lambda_2": {
+            "R_squared": 0.02068,
+            "coefficients": [
+              577.531,
+              -0.0036,
+              -0.0
+            ]
+          },
+          "lambda_3": {
+            "R_squared": 0.025206,
+            "coefficients": [
+              730.5959,
+              -0.0046,
+              0.0
+            ]
+          },
+          "lambda_4": {
+            "R_squared": 0.05359,
+            "coefficients": [
+              911.0138,
+              -0.0072,
+              0.0
+            ]
+          },
+          "lambda_5": {
+            "R_squared": 0.066816,
+            "coefficients": [
+              1015.2101,
+              -0.0074,
+              0.0
+            ]
+          },
+          "lambda_6": {
+            "R_squared": 0.097136,
+            "coefficients": [
+              1184.4755,
+              -0.0099,
+              0.0
+            ]
+          },
+          "lambda_7": {
+            "R_squared": 0.088519,
+            "coefficients": [
+              1302.2246,
+              -0.0098,
+              0.0
+            ]
+          }
+        },
+        "mean_R_squared": 0.0603,
+        "min_R_squared": 0.0182,
+        "kramers_range": {
+          "delta_phi": [
+            2170.6,
+            32140.52
+          ],
+          "omega": [
+            0.0,
+            9873030.68
+          ]
+        }
+      },
+      "kill_condition": "K-FSR-11",
+      "passed": false
+    },
+    "QP5_n_independence": {
+      "exp": "QP5_n_independence",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "N": 8,
+          "variance_top2": 0.9777,
+          "variance_top4": 0.9996,
+          "effective_rank": 3.14,
+          "sigma_ratio_1_3": 5.9,
+          "sigma_ratio_1_N": 734557.5,
+          "sv_top5": [
+            1140.12,
+            1089.35,
+            192.64,
+            136.4,
+            32.43
+          ]
+        },
+        "12": {
+          "N": 12,
+          "variance_top2": 0.9074,
+          "variance_top4": 0.9981,
+          "effective_rank": 4.0,
+          "sigma_ratio_1_3": 2.9,
+          "sigma_ratio_1_N": 31476637260.2,
+          "sv_top5": [
+            2523.8,
+            2254.54,
+            874.01,
+            616.79,
+            133.33
+          ]
+        },
+        "16": {
+          "N": 16,
+          "variance_top2": 0.8547,
+          "variance_top4": 0.9854,
+          "effective_rank": 4.5,
+          "sigma_ratio_1_3": 2.4,
+          "sigma_ratio_1_N": 18727585.8,
+          "sv_top5": [
+            3447.15,
+            2490.23,
+            1456.66,
+            801.94,
+            523.98
+          ]
+        },
+        "20": {
+          "N": 20,
+          "variance_top2": 0.8298,
+          "variance_top4": 0.9826,
+          "effective_rank": 4.69,
+          "sigma_ratio_1_3": 2.1,
+          "sigma_ratio_1_N": 19707.1,
+          "sv_top5": [
+            3583.76,
+            2132.45,
+            1671.95,
+            637.9,
+            560.94
+          ]
+        },
+        "24": {
+          "N": 24,
+          "variance_top2": 0.7367,
+          "variance_top4": 0.9544,
+          "effective_rank": 5.61,
+          "sigma_ratio_1_3": 1.7,
+          "sigma_ratio_1_N": 7646.9,
+          "sv_top5": [
+            3419.55,
+            3072.81,
+            2020.51,
+            1469.98,
+            883.28
+          ]
+        },
+        "32": {
+          "N": 32,
+          "variance_top2": 0.8562,
+          "variance_top4": 0.9697,
+          "effective_rank": 5.5,
+          "sigma_ratio_1_3": 2.8,
+          "sigma_ratio_1_N": 1265.0,
+          "sv_top5": [
+            3135.48,
+            1853.21,
+            1125.72,
+            700.68,
+            492.49
+          ]
+        },
+        "48": {
+          "N": 48,
+          "variance_top2": 0.7387,
+          "variance_top4": 0.9521,
+          "effective_rank": 6.31,
+          "sigma_ratio_1_3": 1.7,
+          "sigma_ratio_1_N": 244.9,
+          "sv_top5": [
+            4228.43,
+            2716.31,
+            2449.71,
+            1138.24,
+            1014.26
+          ]
+        }
+      },
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 4,
+    "total": 5,
+    "runtime_s": 1.11
+  }
+}

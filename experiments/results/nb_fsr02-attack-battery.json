@@ -1,0 +1,219 @@
+{
+  "experiment": "nb_fsr02",
+  "paper": 133,
+  "timestamp": "2026-03-17T21:44:31.759139+00:00",
+  "framework_sections": [
+    "\u00a751",
+    "\u00a784",
+    "\u00a78D (\u010cencov)",
+    "\u00a7113"
+  ],
+  "experiments": {
+    "exp1_condition": {
+      "kill_condition": "K-FSR2-EXP-1",
+      "Ns": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26
+      ],
+      "kappas": [
+        67.5397216476688,
+        33228.58312243459,
+        26603.92432667097,
+        21812756.653437946,
+        103525561.59737529,
+        40132882.72467592,
+        1118068.9210480384,
+        11178025.283040704,
+        860336.244133254,
+        304013.67548848764,
+        140213.90445946853,
+        31417.574334470795
+      ],
+      "log_kappa_slope": 0.1244,
+      "decreasing_runs": 6,
+      "monotone_ok": false,
+      "passed": false
+    },
+    "exp2_cryptosystem": {
+      "kill_condition": "K-FSR2-EXP-2",
+      "N": 32,
+      "delta": 0.2513536483390908,
+      "success_rates": {
+        "0.01": 1.0,
+        "0.05": 1.0,
+        "0.10": 1.0,
+        "0.20": 1.0,
+        "0.50": 1.0
+      },
+      "passed": true
+    },
+    "exp3_newton_attack": {
+      "kill_condition": "K-FSR2-EXP-3",
+      "T": 0.01,
+      "n_starts": 50,
+      "results": {
+        "8": {
+          "best_loss": 1e-06,
+          "key_error": 0.0025
+        },
+        "16": {
+          "best_loss": 0.007201,
+          "key_error": 0.5837
+        },
+        "32": {
+          "best_loss": 55884.848033,
+          "key_error": 1.6788
+        },
+        "64": {
+          "best_loss": 12640.309596,
+          "key_error": 1.171
+        }
+      },
+      "passed": true
+    },
+    "exp4_pca_attack": {
+      "kill_condition": "K-FSR2-EXP-4",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "sv_ratio": 1.54,
+          "error_before_pca": 1.185,
+          "error_after_pca": 1.231,
+          "improvement": -0.046
+        },
+        "16": {
+          "sv_ratio": 1.8,
+          "error_before_pca": 1.3172,
+          "error_after_pca": 1.3321,
+          "improvement": -0.0149
+        },
+        "32": {
+          "sv_ratio": 1.11,
+          "error_before_pca": 1.8642,
+          "error_after_pca": 1.8525,
+          "improvement": 0.0117
+        }
+      },
+      "passed": true
+    },
+    "exp5_cooper": {
+      "kill_condition": "K-FSR2-EXP-5",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "mean_pair_ratio": 0.03628,
+          "n_trials": 20
+        },
+        "16": {
+          "mean_pair_ratio": 0.00718,
+          "n_trials": 20
+        },
+        "32": {
+          "mean_pair_ratio": 0.00157,
+          "n_trials": 20
+        }
+      },
+      "passed": false
+    },
+    "exp6_svd_structure": {
+      "kill_condition": "K-FSR2-EXP-6",
+      "T": 0.01,
+      "results": {
+        "4": {
+          "sv_ratio_1_2": 2.381,
+          "frac_variance_top": 0.8437,
+          "kappa": 1310.88
+        },
+        "8": {
+          "sv_ratio_1_2": 1.197,
+          "frac_variance_top": 0.5743,
+          "kappa": 26421.93
+        },
+        "12": {
+          "sv_ratio_1_2": 1.043,
+          "frac_variance_top": 0.5061,
+          "kappa": 345330325.49
+        },
+        "16": {
+          "sv_ratio_1_2": 1.219,
+          "frac_variance_top": 0.5486,
+          "kappa": 51322476.39
+        },
+        "20": {
+          "sv_ratio_1_2": 1.179,
+          "frac_variance_top": 0.5258,
+          "kappa": 107212822.06
+        },
+        "24": {
+          "sv_ratio_1_2": 1.232,
+          "frac_variance_top": 0.5185,
+          "kappa": 163340.94
+        }
+      },
+      "passed": false
+    },
+    "exp7_cencov": {
+      "kill_condition": "K-FSR2-EXP-7",
+      "N": 16,
+      "T": 0.01,
+      "mean_key_error": 1.0,
+      "n_trials": 30,
+      "passed": true
+    },
+    "exp8_barrier_depth": {
+      "kill_condition": "K-FSR2-EXP-8",
+      "N": 16,
+      "results": {
+        "0.001": {
+          "kappa": 9977411982.861,
+          "log_kappa_per_N": 1.439
+        },
+        "0.005": {
+          "kappa": 8945492381.93,
+          "log_kappa_per_N": 1.4322
+        },
+        "0.01": {
+          "kappa": 70188229.193,
+          "log_kappa_per_N": 1.1292
+        },
+        "0.02": {
+          "kappa": 9924.664,
+          "log_kappa_per_N": 0.5752
+        },
+        "0.05": {
+          "kappa": 795.882,
+          "log_kappa_per_N": 0.4175
+        },
+        "0.1": {
+          "kappa": 36.36,
+          "log_kappa_per_N": 0.2246
+        },
+        "0.2": {
+          "kappa": 999.784,
+          "log_kappa_per_N": 0.4317
+        },
+        "0.5": {
+          "kappa": 797.144,
+          "log_kappa_per_N": 0.4176
+        }
+      },
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 5,
+    "total": 8,
+    "all_passed": false,
+    "runtime_s": 4056.83
+  }
+}

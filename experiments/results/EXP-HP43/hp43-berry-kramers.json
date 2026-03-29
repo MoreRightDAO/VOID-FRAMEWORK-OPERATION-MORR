@@ -1,0 +1,606 @@
+{
+  "experiment": "HP43",
+  "timestamp": "2026-03-15T02:39:52.019995+00:00",
+  "parameters": {
+    "K_scoring": 16,
+    "K_grid": 64,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "y_K": 0.48,
+    "alpha_fp": 0.5,
+    "N_platforms": 1344
+  },
+  "B0_baseline": {
+    "chemical_kinetics": {
+      "pe_abs_mean": 9.970899999999999,
+      "pe_mean": -8.007100000000001,
+      "n_platforms": 100,
+      "delta_V_over_T": 46.35476771339724,
+      "literature": 40.0,
+      "ratio": 1.1588691928349308,
+      "log10_ratio": 0.0640344178134615,
+      "label": "Chemical"
+    },
+    "protein_folding": {
+      "pe_abs_mean": 9.86551401869159,
+      "pe_mean": 0.12196261682242965,
+      "n_platforms": 107,
+      "delta_V_over_T": 45.63579563468633,
+      "literature": 15.0,
+      "ratio": 3.0423863756457554,
+      "log10_ratio": 0.4832143675589571,
+      "label": "Protein"
+    },
+    "cancer_initiation": {
+      "pe_abs_mean": 11.458157894736841,
+      "pe_mean": 11.291842105263155,
+      "n_platforms": 114,
+      "delta_V_over_T": 57.06608198964065,
+      "literature": 50.0,
+      "ratio": 1.141321639792813,
+      "log10_ratio": 0.05740805169479517,
+      "label": "Cancer"
+    },
+    "jailbreak": {
+      "pe_abs_mean": 5.308058252427183,
+      "pe_mean": -1.2100000000000004,
+      "n_platforms": 103,
+      "delta_V_over_T": 20.996941537727185,
+      "literature": 5.0,
+      "ratio": 4.199388307545437,
+      "log10_ratio": 0.6231860346825123,
+      "label": "Jailbreak"
+    },
+    "social_tipping": {
+      "pe_abs_mean": 14.211470588235292,
+      "pe_mean": -13.102254901960782,
+      "n_platforms": 102,
+      "delta_V_over_T": 79.59807827022313,
+      "literature": 60.0,
+      "ratio": 1.3266346378370522,
+      "log10_ratio": 0.12275133234507413,
+      "label": "Social"
+    }
+  },
+  "B1_static_berry": {
+    "chemical_kinetics": {
+      "label": "Chemical",
+      "n_platforms": 100,
+      "O_mean": 2.0418,
+      "A_mean": -0.36119999999999997,
+      "correction_factor": 0.8850264691104148,
+      "delta_V_T_uncorrected": 46.35476771339724,
+      "delta_V_T_corrected": 41.02519639582142,
+      "literature": 40.0,
+      "ratio": 1.0256299098955355,
+      "log10_ratio": 0.010990677456701695
+    },
+    "protein_folding": {
+      "label": "Protein",
+      "n_platforms": 107,
+      "O_mean": 2.1755140186915884,
+      "A_mean": -0.4503426791277258,
+      "correction_factor": 0.8566514730631503,
+      "delta_V_T_uncorrected": 45.63579563468633,
+      "delta_V_T_corrected": 39.093971554862925,
+      "literature": 15.0,
+      "ratio": 2.606264770324195,
+      "log10_ratio": 0.41601853357523977
+    },
+    "cancer_initiation": {
+      "label": "Cancer",
+      "n_platforms": 114,
+      "O_mean": 2.38719298245614,
+      "A_mean": -0.5914619883040936,
+      "correction_factor": 0.8117318018208854,
+      "delta_V_T_uncorrected": 57.06608198964065,
+      "delta_V_T_corrected": 46.32235355630939,
+      "literature": 50.0,
+      "ratio": 0.9264470711261877,
+      "log10_ratio": -0.033179387326675566
+    },
+    "jailbreak": {
+      "label": "Jailbreak",
+      "n_platforms": 103,
+      "O_mean": 2.3453398058252426,
+      "A_mean": -0.5635598705501617,
+      "correction_factor": 0.8206133217474263,
+      "delta_V_T_uncorrected": 20.996941537727185,
+      "delta_V_T_corrected": 17.230369941810817,
+      "literature": 5.0,
+      "ratio": 3.4460739883621634,
+      "log10_ratio": 0.5373245976600247
+    },
+    "social_tipping": {
+      "label": "Social",
+      "n_platforms": 102,
+      "O_mean": 1.7398039215686276,
+      "A_mean": -0.15986928104575163,
+      "correction_factor": 0.9491120273460424,
+      "delta_V_T_uncorrected": 79.59807827022313,
+      "delta_V_T_corrected": 75.54749343990044,
+      "literature": 60.0,
+      "ratio": 1.2591248906650072,
+      "log10_ratio": 0.10006880924734404
+    }
+  },
+  "B2_curvature_berry": {
+    "chemical_kinetics": {
+      "label": "Chemical",
+      "n_platforms": 100,
+      "O_mean": 2.0418,
+      "F_mean": -1.7674720862480908,
+      "correction_factor": 0.7186980806966716,
+      "delta_V_T_uncorrected": 46.35476771339724,
+      "delta_V_T_corrected": 33.315082586758635,
+      "literature": 40.0,
+      "ratio": 0.8328770646689658,
+      "log10_ratio": -0.07941909712380431
+    },
+    "protein_folding": {
+      "label": "Protein",
+      "n_platforms": 107,
+      "O_mean": 2.1755140186915884,
+      "F_mean": -1.6821512091627677,
+      "correction_factor": 0.7322773200337367,
+      "delta_V_T_uncorrected": 45.63579563468633,
+      "delta_V_T_corrected": 33.41805812497541,
+      "literature": 15.0,
+      "ratio": 2.2278705416650273,
+      "log10_ratio": 0.34788995101066655
+    },
+    "cancer_initiation": {
+      "label": "Cancer",
+      "n_platforms": 114,
+      "O_mean": 2.38719298245614,
+      "F_mean": -1.5867020897828368,
+      "correction_factor": 0.7474685191968212,
+      "delta_V_T_uncorrected": 57.06608198964065,
+      "delta_V_T_corrected": 42.655099801161086,
+      "literature": 50.0,
+      "ratio": 0.8531019960232217,
+      "log10_ratio": -0.06899904191343312
+    },
+    "jailbreak": {
+      "label": "Jailbreak",
+      "n_platforms": 103,
+      "O_mean": 2.3453398058252426,
+      "F_mean": -1.581617480816636,
+      "correction_factor": 0.7482777598474815,
+      "delta_V_T_uncorrected": 20.996941537727185,
+      "delta_V_T_corrected": 15.711544377499031,
+      "literature": 5.0,
+      "ratio": 3.1423088754998063,
+      "log10_ratio": 0.4972488720890938
+    },
+    "social_tipping": {
+      "label": "Social",
+      "n_platforms": 102,
+      "O_mean": 1.7398039215686276,
+      "F_mean": -1.8997631339118544,
+      "correction_factor": 0.697643306534178,
+      "delta_V_T_uncorrected": 79.59807827022313,
+      "delta_V_T_corrected": 55.53106651820477,
+      "literature": 60.0,
+      "ratio": 0.9255177753034128,
+      "log10_ratio": -0.03361523586077536
+    }
+  },
+  "B3_geometric_berry": {
+    "chemical_kinetics": {
+      "label": "Chemical",
+      "n_platforms": 100,
+      "O_mean": 2.0418,
+      "R_std": 0.12708702180439635,
+      "A_mean": -0.36119999999999997,
+      "gamma": -0.04590383227574796,
+      "gamma_over_2pi": -0.007305821813546575,
+      "delta_V_T_uncorrected": 46.35476771339724,
+      "delta_V_T_corrected": 46.016108040274815,
+      "literature": 40.0,
+      "ratio": 1.1504027010068705,
+      "log10_ratio": 0.06084989271109734
+    },
+    "protein_folding": {
+      "label": "Protein",
+      "n_platforms": 107,
+      "O_mean": 2.1755140186915884,
+      "R_std": 0.2685552211627854,
+      "A_mean": -0.4503426791277258,
+      "gamma": -0.12094187779218771,
+      "gamma_over_2pi": -0.019248497677442595,
+      "delta_V_T_uncorrected": 45.63579563468633,
+      "delta_V_T_corrected": 44.75737512840382,
+      "literature": 15.0,
+      "ratio": 2.9838250085602547,
+      "log10_ratio": 0.47477334961660705
+    },
+    "cancer_initiation": {
+      "label": "Cancer",
+      "n_platforms": 114,
+      "O_mean": 2.38719298245614,
+      "R_std": 0.11763981710653411,
+      "A_mean": -0.5914619883040936,
+      "gamma": -0.06957948012956058,
+      "gamma_over_2pi": -0.011073918200383878,
+      "delta_V_T_uncorrected": 57.06608198964065,
+      "delta_V_T_corrected": 56.43413686567097,
+      "literature": 50.0,
+      "ratio": 1.1286827373134194,
+      "log10_ratio": 0.052571882759855325
+    },
+    "jailbreak": {
+      "label": "Jailbreak",
+      "n_platforms": 103,
+      "O_mean": 2.3453398058252426,
+      "R_std": 0.1965339635030915,
+      "A_mean": -0.5635598705501617,
+      "gamma": -0.11075865503051244,
+      "gamma_over_2pi": -0.017627787438316073,
+      "delta_V_T_uncorrected": 20.996941537727185,
+      "delta_V_T_corrected": 20.62681191544538,
+      "literature": 5.0,
+      "ratio": 4.125362383089076,
+      "log10_ratio": 0.6154621041740241
+    },
+    "social_tipping": {
+      "label": "Social",
+      "n_platforms": 102,
+      "O_mean": 1.7398039215686276,
+      "R_std": 0.14083708601233488,
+      "A_mean": -0.15986928104575163,
+      "gamma": -0.022515523685370662,
+      "gamma_over_2pi": -0.0035834568908293895,
+      "delta_V_T_uncorrected": 79.59807827022313,
+      "delta_V_T_corrected": 79.31284198814892,
+      "literature": 60.0,
+      "ratio": 1.321880699802482,
+      "log10_ratio": 0.12119226168865241
+    }
+  },
+  "B4_conformal": {
+    "chemical_kinetics": {
+      "label": "Chemical",
+      "n_platforms": 100,
+      "pe_mean": -8.007100000000001,
+      "pe_ref": -3.4,
+      "omega": 1.2282283582836413,
+      "omega_sq": 1.5085449000921287,
+      "delta_V_T_uncorrected": 46.35476771339724,
+      "delta_V_T_corrected": 69.92824842900067,
+      "literature": 40.0,
+      "ratio": 1.748206210725017,
+      "log10_ratio": 0.2425926587892021
+    },
+    "protein_folding": {
+      "label": "Protein",
+      "n_platforms": 107,
+      "pe_mean": 0.12196261682242965,
+      "pe_ref": -3.4,
+      "omega": 0.44992432737126337,
+      "omega_sq": 0.20243190036048378,
+      "delta_V_T_uncorrected": 45.63579563468633,
+      "delta_V_T_corrected": 9.238140834792224,
+      "literature": 15.0,
+      "ratio": 0.615876055652815,
+      "log10_ratio": -0.21050668030656247
+    },
+    "cancer_initiation": {
+      "label": "Cancer",
+      "n_platforms": 114,
+      "pe_mean": 11.291842105263155,
+      "pe_ref": -3.4,
+      "omega": 1.333854969395074,
+      "omega_sq": 1.779169079379934,
+      "delta_V_T_uncorrected": 57.06608198964065,
+      "delta_V_T_corrected": 101.53020855732879,
+      "literature": 50.0,
+      "ratio": 2.030604171146576,
+      "log10_ratio": 0.3076252739509847
+    },
+    "jailbreak": {
+      "label": "Jailbreak",
+      "n_platforms": 103,
+      "pe_mean": -1.2100000000000004,
+      "pe_ref": -3.4,
+      "omega": 0.7803933299106451,
+      "omega_sq": 0.609013749369025,
+      "delta_V_T_uncorrected": 20.996941537727185,
+      "delta_V_T_corrected": 12.787426091173455,
+      "literature": 5.0,
+      "ratio": 2.557485218234691,
+      "log10_ratio": 0.40781313225412597
+    },
+    "social_tipping": {
+      "label": "Social",
+      "n_platforms": 102,
+      "pe_mean": -13.102254901960782,
+      "pe_ref": -3.4,
+      "omega": 1.3823184687546566,
+      "omega_sq": 1.9108043490602185,
+      "delta_V_T_uncorrected": 79.59807827022313,
+      "delta_V_T_corrected": 152.09635413557803,
+      "literature": 60.0,
+      "ratio": 2.534939235592967,
+      "log10_ratio": 0.4039675534275568
+    }
+  },
+  "B5_null_test": {
+    "actual_mean_abs_log_ratio": 0.21951640105319714,
+    "shuffled_mean": 0.22785912762899113,
+    "shuffled_std": 0.002057638245648898,
+    "p_value": 0.0,
+    "n_shuffles": 1000,
+    "better_count": 0
+  },
+  "B6_combined": {
+    "chemical_kinetics": {
+      "label": "Chemical",
+      "n_platforms": 100,
+      "A_mean": -0.36119999999999997,
+      "omega": 1.2282283582836413,
+      "combined_correction": 1.3351021664230602,
+      "delta_V_T_uncorrected": 46.35476771339724,
+      "delta_V_T_corrected": 61.88835079819438,
+      "literature": 40.0,
+      "ratio": 1.5472087699548596,
+      "log10_ratio": 0.1895489184324422
+    },
+    "protein_folding": {
+      "label": "Protein",
+      "n_platforms": 107,
+      "A_mean": -0.4503426791277258,
+      "omega": 0.44992432737126337,
+      "combined_correction": 0.1734135856387813,
+      "delta_V_T_uncorrected": 45.63579563468633,
+      "delta_V_T_corrected": 7.913866954489599,
+      "literature": 15.0,
+      "ratio": 0.5275911302993066,
+      "log10_ratio": -0.27770251429027987
+    },
+    "cancer_initiation": {
+      "label": "Cancer",
+      "n_platforms": 114,
+      "A_mean": -0.5914619883040936,
+      "omega": 1.333854969395074,
+      "combined_correction": 1.4442081225490797,
+      "delta_V_T_uncorrected": 57.06608198964065,
+      "delta_V_T_corrected": 82.41529913149077,
+      "literature": 50.0,
+      "ratio": 1.6483059826298154,
+      "log10_ratio": 0.2170378349295139
+    },
+    "jailbreak": {
+      "label": "Jailbreak",
+      "n_platforms": 103,
+      "A_mean": -0.5635598705501617,
+      "omega": 0.7803933299106451,
+      "combined_correction": 0.4997647958595701,
+      "delta_V_T_uncorrected": 20.996941537727185,
+      "delta_V_T_corrected": 10.493532201277555,
+      "literature": 5.0,
+      "ratio": 2.098706440255511,
+      "log10_ratio": 0.32195169523163836
+    },
+    "social_tipping": {
+      "label": "Social",
+      "n_platforms": 102,
+      "A_mean": -0.15986928104575163,
+      "omega": 1.3823184687546566,
+      "combined_correction": 1.8135673895981788,
+      "delta_V_T_uncorrected": 79.59807827022313,
+      "delta_V_T_corrected": 144.35647902556008,
+      "literature": 60.0,
+      "ratio": 2.405941317092668,
+      "log10_ratio": 0.38128503032982675
+    }
+  },
+  "B7_berry_cooper_concerted": {
+    "chemical_kinetics": {
+      "label": "Chemical",
+      "n_platforms": 100,
+      "O_mean": 2.0418,
+      "F_mean": -1.7674720862480908,
+      "berry_factor": 0.7186980806966716,
+      "is_concerted": false,
+      "cooper_factor": 1.0,
+      "combined_factor": 0.7186980806966716,
+      "delta_V_T_uncorrected": 46.35476771339724,
+      "delta_V_T_corrected": 33.315082586758635,
+      "literature": 40.0,
+      "ratio": 0.8328770646689658,
+      "log10_ratio": -0.07941909712380431
+    },
+    "protein_folding": {
+      "label": "Protein",
+      "n_platforms": 107,
+      "O_mean": 2.1755140186915884,
+      "F_mean": -1.6821512091627677,
+      "berry_factor": 0.7322773200337367,
+      "is_concerted": true,
+      "cooper_factor": 0.552,
+      "combined_factor": 0.40421708065862266,
+      "delta_V_T_uncorrected": 45.63579563468633,
+      "delta_V_T_corrected": 18.446768084986427,
+      "literature": 15.0,
+      "ratio": 1.2297845389990951,
+      "log10_ratio": 0.08982902873986545
+    },
+    "cancer_initiation": {
+      "label": "Cancer",
+      "n_platforms": 114,
+      "O_mean": 2.38719298245614,
+      "F_mean": -1.5867020897828368,
+      "berry_factor": 0.7474685191968212,
+      "is_concerted": false,
+      "cooper_factor": 1.0,
+      "combined_factor": 0.7474685191968212,
+      "delta_V_T_uncorrected": 57.06608198964065,
+      "delta_V_T_corrected": 42.655099801161086,
+      "literature": 50.0,
+      "ratio": 0.8531019960232217,
+      "log10_ratio": -0.06899904191343312
+    },
+    "jailbreak": {
+      "label": "Jailbreak",
+      "n_platforms": 103,
+      "O_mean": 2.3453398058252426,
+      "F_mean": -1.581617480816636,
+      "berry_factor": 0.7482777598474815,
+      "is_concerted": true,
+      "cooper_factor": 0.552,
+      "combined_factor": 0.4130493234358098,
+      "delta_V_T_uncorrected": 20.996941537727185,
+      "delta_V_T_corrected": 8.672772496379466,
+      "literature": 5.0,
+      "ratio": 1.7345544992758932,
+      "log10_ratio": 0.23918794981829272
+    },
+    "social_tipping": {
+      "label": "Social",
+      "n_platforms": 102,
+      "O_mean": 1.7398039215686276,
+      "F_mean": -1.8997631339118544,
+      "berry_factor": 0.697643306534178,
+      "is_concerted": false,
+      "cooper_factor": 1.0,
+      "combined_factor": 0.697643306534178,
+      "delta_V_T_uncorrected": 79.59807827022313,
+      "delta_V_T_corrected": 55.53106651820477,
+      "literature": 60.0,
+      "ratio": 0.9255177753034128,
+      "log10_ratio": -0.03361523586077536
+    }
+  },
+  "B8_berry_cooper_all": {
+    "chemical_kinetics": {
+      "label": "Chemical",
+      "n_platforms": 100,
+      "O_mean": 2.0418,
+      "F_mean": -1.7674720862480908,
+      "berry_factor": 0.7186980806966716,
+      "cooper_factor": 0.552,
+      "combined_factor": 0.39672134054456276,
+      "delta_V_T_uncorrected": 46.35476771339724,
+      "delta_V_T_corrected": 18.38992558789077,
+      "literature": 40.0,
+      "ratio": 0.45974813969726924,
+      "log10_ratio": -0.3374800193946053
+    },
+    "protein_folding": {
+      "label": "Protein",
+      "n_platforms": 107,
+      "O_mean": 2.1755140186915884,
+      "F_mean": -1.6821512091627677,
+      "berry_factor": 0.7322773200337367,
+      "cooper_factor": 0.552,
+      "combined_factor": 0.40421708065862266,
+      "delta_V_T_uncorrected": 45.63579563468633,
+      "delta_V_T_corrected": 18.446768084986427,
+      "literature": 15.0,
+      "ratio": 1.2297845389990951,
+      "log10_ratio": 0.08982902873986545
+    },
+    "cancer_initiation": {
+      "label": "Cancer",
+      "n_platforms": 114,
+      "O_mean": 2.38719298245614,
+      "F_mean": -1.5867020897828368,
+      "berry_factor": 0.7474685191968212,
+      "cooper_factor": 0.552,
+      "combined_factor": 0.4126026225966454,
+      "delta_V_T_uncorrected": 57.06608198964065,
+      "delta_V_T_corrected": 23.545615090240922,
+      "literature": 50.0,
+      "ratio": 0.47091230180481847,
+      "log10_ratio": -0.3270599641842341
+    },
+    "jailbreak": {
+      "label": "Jailbreak",
+      "n_platforms": 103,
+      "O_mean": 2.3453398058252426,
+      "F_mean": -1.581617480816636,
+      "berry_factor": 0.7482777598474815,
+      "cooper_factor": 0.552,
+      "combined_factor": 0.4130493234358098,
+      "delta_V_T_uncorrected": 20.996941537727185,
+      "delta_V_T_corrected": 8.672772496379466,
+      "literature": 5.0,
+      "ratio": 1.7345544992758932,
+      "log10_ratio": 0.23918794981829272
+    },
+    "social_tipping": {
+      "label": "Social",
+      "n_platforms": 102,
+      "O_mean": 1.7398039215686276,
+      "F_mean": -1.8997631339118544,
+      "berry_factor": 0.697643306534178,
+      "cooper_factor": 0.552,
+      "combined_factor": 0.3850991052068663,
+      "delta_V_T_uncorrected": 79.59807827022313,
+      "delta_V_T_corrected": 30.653148718049035,
+      "literature": 60.0,
+      "ratio": 0.510885811967484,
+      "log10_ratio": -0.2916761581315764
+    }
+  },
+  "summary": {
+    "baseline_mal": 0.27011884081896004,
+    "b1_mal": 0.21951640105319714,
+    "b2_mal": 0.2054344395995546,
+    "b3_mal": 0.2649698981900473,
+    "b4_mal": 0.31450105974568643,
+    "b6_mal": 0.27750519864274026,
+    "b7_mal": 0.1022100706912342,
+    "b8_mal": 0.2570466240537148
+  },
+  "kill_conditions": {
+    "K-HP-200": {
+      "description": "Berry correction reduces mean |log\u2081\u2080(ratio)| vs baseline",
+      "baseline_mal": 0.27011884081896004,
+      "best_model": "B7_berry_cooper_concerted",
+      "best_mal": 0.1022100706912342,
+      "improvement": 0.16790877012772584,
+      "passed": true
+    },
+    "K-HP-201": {
+      "description": "Best model |log\u2081\u2080(ratio)| < 0.3 for \u22654 of 5 domains",
+      "domains_within": 5,
+      "threshold": 4,
+      "passed": true
+    },
+    "K-HP-202": {
+      "description": "Correction sign physically consistent (monotonic in O)",
+      "sign_consistent": true,
+      "passed": true
+    },
+    "K-HP-203": {
+      "description": "Conformal correction preserves Arrhenius linearity (R\u00b2 > 0.99)",
+      "r_squared": 1.0,
+      "passed": "True"
+    },
+    "K-HP-204": {
+      "description": "Domain ranking preserved under correction",
+      "baseline_order": [
+        "jailbreak",
+        "protein_folding",
+        "chemical_kinetics",
+        "cancer_initiation",
+        "social_tipping"
+      ],
+      "corrected_order": [
+        "jailbreak",
+        "protein_folding",
+        "chemical_kinetics",
+        "cancer_initiation",
+        "social_tipping"
+      ],
+      "passed": true
+    },
+    "K-HP-205": {
+      "description": "Shuffled O does NOT improve fit (p < 0.05 = actual is better)",
+      "p_value": 0.0,
+      "passed": true
+    }
+  }
+}

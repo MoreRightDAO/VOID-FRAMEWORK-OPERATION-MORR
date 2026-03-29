@@ -1,0 +1,150 @@
+{
+  "experiment": "EXP-HP02",
+  "title": "Arithmetic Structure of the Eckert Manifold",
+  "date": "2026-03-13",
+  "hacks": [
+    {
+      "id": "H1",
+      "name": "Bernoulli \u2192 Poincar\u00e9 \u2192 Modular",
+      "poincare_point": {
+        "theta": 0.066987,
+        "T": 0.0625
+      },
+      "fundamental_domain_pe_max": 8.3375,
+      "modular_T_shifts_b_net_by": 0.5,
+      "modular_S_swaps": "drift \u2194 noise (Pe \u2194 1/Pe duality)",
+      "pe0_is_fixed_point": true
+    },
+    {
+      "id": "H2",
+      "name": "p-adic Bernoulli Pe operator",
+      "det_scaling_exponent": 116.4321,
+      "det_scaling_r2": 0.704156,
+      "gap_scaling_exponent": 2.1186,
+      "p_adic_spectra": [
+        {
+          "p": 2,
+          "dim": 1,
+          "E0": -0.0625,
+          "gap": 0.0,
+          "log_det": -2.7726
+        },
+        {
+          "p": 3,
+          "dim": 2,
+          "E0": 0.1683,
+          "gap": 0.289,
+          "log_det": -2.5641
+        },
+        {
+          "p": 5,
+          "dim": 4,
+          "E0": 0.0241,
+          "gap": 0.7638,
+          "log_det": -3.6866
+        },
+        {
+          "p": 7,
+          "dim": 6,
+          "E0": 0.0222,
+          "gap": 0.7525,
+          "log_det": -1.4642
+        },
+        {
+          "p": 11,
+          "dim": 10,
+          "E0": 0.0205,
+          "gap": 0.7108,
+          "log_det": 6.5539
+        },
+        {
+          "p": 13,
+          "dim": 12,
+          "E0": 0.0201,
+          "gap": 0.6965,
+          "log_det": 11.8471
+        },
+        {
+          "p": 17,
+          "dim": 16,
+          "E0": 0.0195,
+          "gap": 0.6767,
+          "log_det": 24.3266
+        },
+        {
+          "p": 19,
+          "dim": 18,
+          "E0": 0.0193,
+          "gap": 0.6697,
+          "log_det": 31.349
+        },
+        {
+          "p": 23,
+          "dim": 22,
+          "E0": 0.0189,
+          "gap": 0.6591,
+          "log_det": 46.6797
+        },
+        {
+          "p": 29,
+          "dim": 28,
+          "E0": 0.0186,
+          "gap": 0.6485,
+          "log_det": 72.3366
+        }
+      ]
+    },
+    {
+      "id": "H3",
+      "name": "Euler product in Pe spectral zeta",
+      "pe0_spectral_zeta_equals": "\u03b6(2s) (Riemann zeta at doubled argument)",
+      "euler_product": "\u03a0_p 1/(1-p^{-2s})",
+      "multiplicative_at_pe0": true,
+      "deformation_breaks_multiplicativity": true
+    },
+    {
+      "id": "H4",
+      "name": "Hecke operators on Bernoulli manifold",
+      "hecke_eigenvalues": [
+        {
+          "p": 2,
+          "max_eigenvalue": 2.3424,
+          "ramanujan_bound": 2.8284,
+          "violations": 0
+        },
+        {
+          "p": 3,
+          "max_eigenvalue": 2.6972,
+          "ramanujan_bound": 3.4641,
+          "violations": 0
+        },
+        {
+          "p": 5,
+          "max_eigenvalue": 3.8492,
+          "ramanujan_bound": 4.4721,
+          "violations": 0
+        },
+        {
+          "p": 7,
+          "max_eigenvalue": 4.9396,
+          "ramanujan_bound": 5.2915,
+          "violations": 0
+        },
+        {
+          "p": 11,
+          "max_eigenvalue": 7.1896,
+          "ramanujan_bound": 6.6332,
+          "violations": 1
+        },
+        {
+          "p": 13,
+          "max_eigenvalue": 8.2365,
+          "ramanujan_bound": 7.2111,
+          "violations": 1
+        }
+      ],
+      "sato_tate_ks_stat": 0.158,
+      "sato_tate_ks_p": 0.0
+    }
+  ]
+}

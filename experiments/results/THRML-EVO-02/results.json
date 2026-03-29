@@ -1,0 +1,142 @@
+{
+  "experiment": "THRML-EVO-02",
+  "version": "v2",
+  "verdict": "PASS",
+  "theta_nat": 0.8497516825978764,
+  "c_thresh_double_well": 0.2224,
+  "t1_pass_count": 7,
+  "t1_results": [
+    {
+      "theta_init": 0.1,
+      "theta_final": 0.7458537085691268,
+      "delta": 0.10389797402874956,
+      "near_nat": true
+    },
+    {
+      "theta_init": 0.2,
+      "theta_final": 0.708697131835401,
+      "delta": 0.14105455076247542,
+      "near_nat": false
+    },
+    {
+      "theta_init": 0.35,
+      "theta_final": 0.7816275515172186,
+      "delta": 0.06812413108065773,
+      "near_nat": true
+    },
+    {
+      "theta_init": 0.5,
+      "theta_final": 0.8108556750622752,
+      "delta": 0.038896007535601185,
+      "near_nat": true
+    },
+    {
+      "theta_init": 0.65,
+      "theta_final": 0.7848868520844069,
+      "delta": 0.06486483051346947,
+      "near_nat": true
+    },
+    {
+      "theta_init": 0.75,
+      "theta_final": 0.799220206248372,
+      "delta": 0.05053147634950439,
+      "near_nat": true
+    },
+    {
+      "theta_init": 0.85,
+      "theta_final": 0.7808521538996384,
+      "delta": 0.06889952869823801,
+      "near_nat": true
+    },
+    {
+      "theta_init": 0.92,
+      "theta_final": 0.7596905014903089,
+      "delta": 0.09006118110756745,
+      "near_nat": true
+    }
+  ],
+  "amplification_results": [
+    {
+      "c_eff": 0.05,
+      "Pe": 34.431376835687935,
+      "theta_eq_theory": 0.7481579109654991,
+      "theta_single_mean": 0.6857563833409972,
+      "theta_coupled_mean": 0.7243189292202515,
+      "ratio_coupled_to_single": 1.0562335937601894,
+      "runaway_triggered": true
+    },
+    {
+      "c_eff": 0.08,
+      "Pe": 29.61655050739861,
+      "theta_eq_theory": 0.6799541619386282,
+      "theta_single_mean": 0.5967713353162363,
+      "theta_coupled_mean": 0.6545818443089942,
+      "ratio_coupled_to_single": 1.0968721276837525,
+      "runaway_triggered": true
+    },
+    {
+      "c_eff": 0.12,
+      "Pe": 24.019526896097943,
+      "theta_eq_theory": 0.5765999761251578,
+      "theta_single_mean": 0.4830934228939907,
+      "theta_coupled_mean": 0.5410977966889531,
+      "ratio_coupled_to_single": 1.120068647276307,
+      "runaway_triggered": true
+    },
+    {
+      "c_eff": 0.16,
+      "Pe": 19.198672055231384,
+      "theta_eq_theory": 0.45010821209727175,
+      "theta_single_mean": 0.40274578839320835,
+      "theta_coupled_mean": 0.4077889179682208,
+      "ratio_coupled_to_single": 1.0125218679384147,
+      "runaway_triggered": false
+    },
+    {
+      "c_eff": 0.2,
+      "Pe": 14.998204524553582,
+      "theta_eq_theory": 0.2696799449852967,
+      "theta_single_mean": 0.33891294296371943,
+      "theta_coupled_mean": 0.3019154556848272,
+      "ratio_coupled_to_single": 0.8908348351781513,
+      "runaway_triggered": false
+    },
+    {
+      "c_eff": 0.22,
+      "Pe": 13.087539675711213,
+      "theta_eq_theory": 0.08827348295047469,
+      "theta_single_mean": 0.31194845713438046,
+      "theta_coupled_mean": 0.26627950065181616,
+      "ratio_coupled_to_single": 0.8536009541381026,
+      "runaway_triggered": false
+    },
+    {
+      "c_eff": 0.25,
+      "Pe": 10.414805532665206,
+      "theta_eq_theory": 0.0,
+      "theta_single_mean": 0.2767950919005479,
+      "theta_coupled_mean": 0.22969304998221862,
+      "ratio_coupled_to_single": 0.8298306462195039,
+      "runaway_triggered": false
+    },
+    {
+      "c_eff": 0.3,
+      "Pe": 6.358052222395626,
+      "theta_eq_theory": 0.0,
+      "theta_single_mean": 0.23461450188787933,
+      "theta_coupled_mean": 0.19172304426842968,
+      "ratio_coupled_to_single": 0.8171832632922785,
+      "runaway_triggered": false
+    }
+  ],
+  "fisher_runaway_threshold_c": 0.05,
+  "fisher_runaway_threshold_Pe": 34.431376835687935,
+  "mean_ratio_high_pe": 1.076552860721971,
+  "no_spurious_runaway": true,
+  "pass_criteria": {
+    "t1_holds": true,
+    "amplification_gt_1_05": true,
+    "no_low_pe_spurious": true,
+    "threshold_identified": true
+  }
+}

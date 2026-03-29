@@ -1,0 +1,2501 @@
+{
+  "experiment": "THRML-ATOM-04",
+  "extends": "THRML-ATOM-03",
+  "date": "2026-03-09",
+  "params": [
+    0.017420038220203993,
+    0.4917527749548995,
+    0.07894422410149246,
+    0.4105293832841698,
+    0.5492056288982565,
+    0.2310098794487554,
+    0.0026258518093905565,
+    2.5185578216517146
+  ],
+  "params_atom03": [
+    0.2316,
+    0.3408,
+    0.0789,
+    0.2093,
+    2.9424,
+    0.1252,
+    0.0405,
+    1.5418
+  ],
+  "weights": [
+    4053.754281458158,
+    591.1938861216082,
+    3096.156333211213,
+    -53.56834969399126,
+    25.314249106720784,
+    -25.347590514751214,
+    -0.004451615419557217,
+    -0.28132509594269695,
+    -370.211158274296
+  ],
+  "feature_names": [
+    "\u03b8_sep",
+    "\u03b8_corr",
+    "\u0394\u03b8",
+    "\u03c7_mean",
+    "\u0394Pe",
+    "\u03a3Pe",
+    "Pe\u00b7Pe",
+    "\u03a3var",
+    "bias"
+  ],
+  "full_stats": {
+    "rho": 0.8814874321613725,
+    "r": 0.8221816822890239,
+    "rmse": 129.4349541131702,
+    "p_val": 3.0866860284286927e-19,
+    "n": 56
+  },
+  "atom03_subset_stats": {
+    "rho": 0.8931788931788932,
+    "r": 0.8643391799158103,
+    "rmse": 119.39087643094534,
+    "p_val": 2.390498428048444e-13,
+    "n": 36
+  },
+  "cv_results": [
+    {
+      "split": 0,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.8447390072070484,
+      "rmse": 181.13118196837468,
+      "p_val": 3.82853369353103e-05
+    },
+    {
+      "split": 1,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.9147058823529413,
+      "rmse": 124.46392224279413,
+      "p_val": 7.011802190203182e-07
+    },
+    {
+      "split": 2,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.7411764705882353,
+      "rmse": 142.82057471033667,
+      "p_val": 0.0010184695495736751
+    },
+    {
+      "split": 3,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.8491540194398379,
+      "rmse": 159.5130716239006,
+      "p_val": 3.167326728390614e-05
+    },
+    {
+      "split": 4,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.7588235294117647,
+      "rmse": 155.0460238240131,
+      "p_val": 0.0006540302361647908
+    },
+    {
+      "split": 5,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.8176470588235294,
+      "rmse": 160.46944030200413,
+      "p_val": 0.00010936308081986552
+    },
+    {
+      "split": 6,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.7058823529411764,
+      "rmse": 153.6330215085158,
+      "p_val": 0.0022459006010513297
+    },
+    {
+      "split": 7,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.7676470588235293,
+      "rmse": 159.1301803788612,
+      "p_val": 0.0005168835242959222
+    },
+    {
+      "split": 8,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.7235294117647059,
+      "rmse": 124.64303103982647,
+      "p_val": 0.001534481189823956
+    },
+    {
+      "split": 9,
+      "train_n": 40,
+      "test_n": 16,
+      "rho": 0.7235294117647059,
+      "rmse": 193.7344102060197,
+      "p_val": 0.001534481189823956
+    }
+  ],
+  "cv_summary": {
+    "mean_rho": 0.7846834203117474,
+    "std_rho": 0.06503586222562757,
+    "min_rho": 0.7058823529411764,
+    "max_rho": 0.9147058823529413,
+    "mean_rmse": 155.45848578046463,
+    "kill_condition_survives": true
+  },
+  "known_predictions": {
+    "N-N": {
+      "actual": 945,
+      "predicted": 549.094032625934,
+      "source": "NEW"
+    },
+    "Na-F": {
+      "actual": 923,
+      "predicted": 743.1289738137461,
+      "source": "v03"
+    },
+    "B-O": {
+      "actual": 809,
+      "predicted": 607.0328596297954,
+      "source": "v03"
+    },
+    "Si-O": {
+      "actual": 800,
+      "predicted": 532.7772805973209,
+      "source": "v03"
+    },
+    "C-O": {
+      "actual": 799,
+      "predicted": 516.9762612391289,
+      "source": "v03"
+    },
+    "Na-Cl": {
+      "actual": 787,
+      "predicted": 606.7404984002733,
+      "source": "v03"
+    },
+    "C-N": {
+      "actual": 749,
+      "predicted": 566.788513285248,
+      "source": "NEW"
+    },
+    "B-F": {
+      "actual": 732,
+      "predicted": 571.0825372496251,
+      "source": "v03"
+    },
+    "Ti-O": {
+      "actual": 672,
+      "predicted": 585.2493442022726,
+      "source": "NEW"
+    },
+    "Al-F": {
+      "actual": 664,
+      "predicted": 585.8514144105309,
+      "source": "v03"
+    },
+    "V-O": {
+      "actual": 637,
+      "predicted": 548.364331717599,
+      "source": "NEW"
+    },
+    "N-O": {
+      "actual": 631,
+      "predicted": 571.1775976897816,
+      "source": "NEW"
+    },
+    "Li-F": {
+      "actual": 577,
+      "predicted": 661.8063262413607,
+      "source": "v03"
+    },
+    "Si-F": {
+      "actual": 576,
+      "predicted": 631.5731927184477,
+      "source": "v03"
+    },
+    "C-F": {
+      "actual": 536,
+      "predicted": 513.0536487790766,
+      "source": "v03"
+    },
+    "Al-Cl": {
+      "actual": 502,
+      "predicted": 608.315396561962,
+      "source": "v03"
+    },
+    "Al-O": {
+      "actual": 501,
+      "predicted": 537.5774186707179,
+      "source": "v03"
+    },
+    "O-O": {
+      "actual": 498,
+      "predicted": 420.39648302151767,
+      "source": "v03"
+    },
+    "P-F": {
+      "actual": 490,
+      "predicted": 545.747034961701,
+      "source": "v03"
+    },
+    "Li-Cl": {
+      "actual": 469,
+      "predicted": 621.0458179889602,
+      "source": "v03"
+    },
+    "Cr-O": {
+      "actual": 461,
+      "predicted": 562.3598543359135,
+      "source": "NEW"
+    },
+    "B-Cl": {
+      "actual": 443,
+      "predicted": 591.9072559430924,
+      "source": "v03"
+    },
+    "O-H": {
+      "actual": 428,
+      "predicted": 487.42146814083566,
+      "source": "NEW"
+    },
+    "Si-Cl": {
+      "actual": 416,
+      "predicted": 526.5258662780743,
+      "source": "v03"
+    },
+    "C-H": {
+      "actual": 411,
+      "predicted": 326.28872283872016,
+      "source": "v03"
+    },
+    "H-Br": {
+      "actual": 366,
+      "predicted": 411.6378484499821,
+      "source": "NEW"
+    },
+    "Mn-O": {
+      "actual": 362,
+      "predicted": 576.9599113016013,
+      "source": "NEW"
+    },
+    "S-H": {
+      "actual": 353,
+      "predicted": 372.60787921525736,
+      "source": "NEW"
+    },
+    "C-C": {
+      "actual": 346,
+      "predicted": 524.8110272178469,
+      "source": "v03"
+    },
+    "S-F": {
+      "actual": 343,
+      "predicted": 416.7854121074395,
+      "source": "v03"
+    },
+    "N-F": {
+      "actual": 343,
+      "predicted": 512.2411441886579,
+      "source": "NEW"
+    },
+    "C-Cl": {
+      "actual": 339,
+      "predicted": 393.8268600367448,
+      "source": "v03"
+    },
+    "N-H": {
+      "actual": 339,
+      "predicted": 391.59501229505423,
+      "source": "NEW"
+    },
+    "N-Cl": {
+      "actual": 333,
+      "predicted": 397.3708291849919,
+      "source": "NEW"
+    },
+    "P-Cl": {
+      "actual": 326,
+      "predicted": 521.396322497189,
+      "source": "v03"
+    },
+    "H-I": {
+      "actual": 298,
+      "predicted": 205.17358401008238,
+      "source": "NEW"
+    },
+    "B-B": {
+      "actual": 290,
+      "predicted": 334.6160166578481,
+      "source": "v03"
+    },
+    "C-S": {
+      "actual": 272,
+      "predicted": 499.6886010581357,
+      "source": "v03"
+    },
+    "S-Cl": {
+      "actual": 271,
+      "predicted": 270.5450153555776,
+      "source": "v03"
+    },
+    "S-S": {
+      "actual": 266,
+      "predicted": 390.10295603047297,
+      "source": "v03"
+    },
+    "Ge-Ge": {
+      "actual": 264,
+      "predicted": 105.32875109079743,
+      "source": "NEW"
+    },
+    "Cl-Cl": {
+      "actual": 242,
+      "predicted": 223.92067356393176,
+      "source": "v03"
+    },
+    "Si-Si": {
+      "actual": 222,
+      "predicted": 299.94506178710645,
+      "source": "v03"
+    },
+    "Br-Cl": {
+      "actual": 218,
+      "predicted": 238.39546315425804,
+      "source": "NEW"
+    },
+    "Ni-Ni": {
+      "actual": 204,
+      "predicted": 214.2681237541504,
+      "source": "NEW"
+    },
+    "P-P": {
+      "actual": 201,
+      "predicted": 351.7025823405665,
+      "source": "v03"
+    },
+    "Cu-Cu": {
+      "actual": 201,
+      "predicted": 237.94150121028218,
+      "source": "NEW"
+    },
+    "Br-Br": {
+      "actual": 194,
+      "predicted": 81.62861002803407,
+      "source": "NEW"
+    },
+    "Al-Al": {
+      "actual": 186,
+      "predicted": 248.2035053451786,
+      "source": "v03"
+    },
+    "F-F": {
+      "actual": 155,
+      "predicted": 93.09937918886953,
+      "source": "v03"
+    },
+    "I-I": {
+      "actual": 151,
+      "predicted": 238.28015045696094,
+      "source": "NEW"
+    },
+    "Fe-Fe": {
+      "actual": 118,
+      "predicted": 81.2003675831183,
+      "source": "v03"
+    },
+    "Li-Li": {
+      "actual": 110,
+      "predicted": 150.82076774439787,
+      "source": "v03"
+    },
+    "Na-Na": {
+      "actual": 72,
+      "predicted": 81.18500367653019,
+      "source": "v03"
+    },
+    "K-K": {
+      "actual": 57,
+      "predicted": 15.448033158090254,
+      "source": "v03"
+    },
+    "Ca-Ca": {
+      "actual": 16,
+      "predicted": 14.991474971669959,
+      "source": "v03"
+    }
+  },
+  "novel_predictions": [
+    {
+      "pair": "F-Ga",
+      "predicted_bde": 819.3817257217738,
+      "pe_A": 4.654,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "F-K",
+      "predicted_bde": 811.6670195073343,
+      "pe_A": 4.654,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "F-Ti",
+      "predicted_bde": 802.8052913016479,
+      "pe_A": 4.654,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "F-Cr",
+      "predicted_bde": 794.8117419050168,
+      "pe_A": 4.654,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "F-Sc",
+      "predicted_bde": 765.9249229278591,
+      "pe_A": 4.654,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Cl-Sc",
+      "predicted_bde": 734.476491590741,
+      "pe_A": 2.0302,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "F-Ge",
+      "predicted_bde": 732.4538315155696,
+      "pe_A": 4.654,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Cl-Ca",
+      "predicted_bde": 731.0188478552986,
+      "pe_A": 2.0302,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "F-V",
+      "predicted_bde": 702.392310068607,
+      "pe_A": 4.654,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "Cl-K",
+      "predicted_bde": 698.1151844097728,
+      "pe_A": 2.0302,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "F-Co",
+      "predicted_bde": 692.4269550538022,
+      "pe_A": 4.654,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "F-As",
+      "predicted_bde": 688.5533610472737,
+      "pe_A": 4.654,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Cl-Ga",
+      "predicted_bde": 679.0309280673093,
+      "pe_A": 2.0302,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "F-Ca",
+      "predicted_bde": 675.3817737141178,
+      "pe_A": 4.654,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "F-Cu",
+      "predicted_bde": 666.3903074731868,
+      "pe_A": 4.654,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Cl-Co",
+      "predicted_bde": 665.5209501254919,
+      "pe_A": 2.0302,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "F-Ni",
+      "predicted_bde": 658.6173603237514,
+      "pe_A": 4.654,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Cl-As",
+      "predicted_bde": 655.5225231936201,
+      "pe_A": 2.0302,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Cl-Ti",
+      "predicted_bde": 655.3586448006272,
+      "pe_A": 2.0302,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "F-Fe",
+      "predicted_bde": 650.5959854674982,
+      "pe_A": 4.654,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Cl-Fe",
+      "predicted_bde": 645.7745643645846,
+      "pe_A": 2.0302,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Li-O",
+      "predicted_bde": 625.3910250529116,
+      "pe_A": 0.4593,
+      "pe_B": 1.8342
+    },
+    {
+      "pair": "Cl-V",
+      "predicted_bde": 625.3372065277395,
+      "pe_A": 2.0302,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "O-Ge",
+      "predicted_bde": 608.9968794101153,
+      "pe_A": 1.8342,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "O-Na",
+      "predicted_bde": 601.2296324747244,
+      "pe_A": 1.8342,
+      "pe_B": 0.1618
+    },
+    {
+      "pair": "O-P",
+      "predicted_bde": 597.2346398325035,
+      "pe_A": 1.8342,
+      "pe_B": 0.3609
+    },
+    {
+      "pair": "Cl-Cr",
+      "predicted_bde": 596.3065175806566,
+      "pe_A": 2.0302,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Cl-Cu",
+      "predicted_bde": 576.778016322892,
+      "pe_A": 2.0302,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "O-K",
+      "predicted_bde": 571.7999790139852,
+      "pe_A": 1.8342,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "F-Se",
+      "predicted_bde": 568.8687283607028,
+      "pe_A": 4.654,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "Cl-Ge",
+      "predicted_bde": 567.4910800500302,
+      "pe_A": 2.0302,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "O-Ni",
+      "predicted_bde": 555.7494897085664,
+      "pe_A": 1.8342,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Ga-Br",
+      "predicted_bde": 552.5856009461497,
+      "pe_A": 0.1079,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "O-Fe",
+      "predicted_bde": 549.4439501238421,
+      "pe_A": 1.8342,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Fe-Br",
+      "predicted_bde": 546.3284836166131,
+      "pe_A": 0.0492,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "O-Co",
+      "predicted_bde": 544.2640160079218,
+      "pe_A": 1.8342,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "O-Ga",
+      "predicted_bde": 541.9480458951825,
+      "pe_A": 1.8342,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "O-As",
+      "predicted_bde": 532.2886392017967,
+      "pe_A": 1.8342,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Sc-Br",
+      "predicted_bde": 520.3749398737675,
+      "pe_A": 0.056,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Ti-Br",
+      "predicted_bde": 519.9348689880583,
+      "pe_A": 0.024,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "H-Cl",
+      "predicted_bde": 513.253507494635,
+      "pe_A": 754.0,
+      "pe_B": 2.0302
+    },
+    {
+      "pair": "Cl-Ni",
+      "predicted_bde": 513.0403311682746,
+      "pe_A": 2.0302,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "K-Br",
+      "predicted_bde": 507.74218947390597,
+      "pe_A": 0.1132,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "S-V",
+      "predicted_bde": 506.11081061685235,
+      "pe_A": 1.0825,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "O-Ca",
+      "predicted_bde": 505.0265053033907,
+      "pe_A": 1.8342,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "O-Sc",
+      "predicted_bde": 498.7371729549911,
+      "pe_A": 1.8342,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "B-S",
+      "predicted_bde": 488.74158964689246,
+      "pe_A": 0.2628,
+      "pe_B": 1.0825
+    },
+    {
+      "pair": "Al-S",
+      "predicted_bde": 487.3195245110733,
+      "pe_A": 0.2007,
+      "pe_B": 1.0825
+    },
+    {
+      "pair": "Li-Br",
+      "predicted_bde": 484.9730063022976,
+      "pe_A": 0.4593,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "C-Si",
+      "predicted_bde": 483.58657344345426,
+      "pe_A": 1.3829,
+      "pe_B": 0.6109
+    },
+    {
+      "pair": "B-C",
+      "predicted_bde": 473.3123809834149,
+      "pe_A": 0.2628,
+      "pe_B": 1.3829
+    },
+    {
+      "pair": "Ca-Br",
+      "predicted_bde": 465.50363800968177,
+      "pe_A": 0.007,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "O-Cu",
+      "predicted_bde": 465.47183710834526,
+      "pe_A": 1.8342,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "O-Se",
+      "predicted_bde": 460.8236031487899,
+      "pe_A": 1.8342,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "C-P",
+      "predicted_bde": 460.15103899670515,
+      "pe_A": 1.3829,
+      "pe_B": 0.3609
+    },
+    {
+      "pair": "S-Cu",
+      "predicted_bde": 459.94832315475975,
+      "pe_A": 1.0825,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Na-S",
+      "predicted_bde": 458.3416187790544,
+      "pe_A": 0.1618,
+      "pe_B": 1.0825
+    },
+    {
+      "pair": "S-Co",
+      "predicted_bde": 456.4086665745295,
+      "pe_A": 1.0825,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "S-Fe",
+      "predicted_bde": 456.3908728806579,
+      "pe_A": 1.0825,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Cr-Br",
+      "predicted_bde": 453.96442724757577,
+      "pe_A": 0.2103,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "P-S",
+      "predicted_bde": 451.56084889264304,
+      "pe_A": 0.3609,
+      "pe_B": 1.0825
+    },
+    {
+      "pair": "H-F",
+      "predicted_bde": 448.9169110837385,
+      "pe_A": 754.0,
+      "pe_B": 4.654
+    },
+    {
+      "pair": "C-Al",
+      "predicted_bde": 438.8869866594263,
+      "pe_A": 1.3829,
+      "pe_B": 0.2007
+    },
+    {
+      "pair": "S-As",
+      "predicted_bde": 434.13288982455066,
+      "pe_A": 1.0825,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "V-Br",
+      "predicted_bde": 432.4319054310983,
+      "pe_A": 0.1629,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Li-S",
+      "predicted_bde": 431.62030539626033,
+      "pe_A": 0.4593,
+      "pe_B": 1.0825
+    },
+    {
+      "pair": "Si-S",
+      "predicted_bde": 426.6552953830215,
+      "pe_A": 0.6109,
+      "pe_B": 1.0825
+    },
+    {
+      "pair": "Co-Br",
+      "predicted_bde": 425.5355076955746,
+      "pe_A": 0.2186,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "As-Br",
+      "predicted_bde": 425.41041673701415,
+      "pe_A": 0.2373,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Na-Br",
+      "predicted_bde": 425.1305184535693,
+      "pe_A": 0.1618,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "S-Ti",
+      "predicted_bde": 424.94981843845795,
+      "pe_A": 1.0825,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "B-Br",
+      "predicted_bde": 423.6928742993328,
+      "pe_A": 0.2628,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Cl-Se",
+      "predicted_bde": 423.6878043279308,
+      "pe_A": 2.0302,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "S-Ca",
+      "predicted_bde": 422.74194875470727,
+      "pe_A": 1.0825,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "S-K",
+      "predicted_bde": 421.255201776191,
+      "pe_A": 1.0825,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "C-Se",
+      "predicted_bde": 418.9301878690508,
+      "pe_A": 1.3829,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "O-S",
+      "predicted_bde": 415.40182558644045,
+      "pe_A": 1.8342,
+      "pe_B": 1.0825
+    },
+    {
+      "pair": "S-Ni",
+      "predicted_bde": 414.4378653620466,
+      "pe_A": 1.0825,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Ge-Br",
+      "predicted_bde": 411.57713997780746,
+      "pe_A": 0.3315,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Ni-Br",
+      "predicted_bde": 390.68545226425584,
+      "pe_A": 0.3866,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Li-C",
+      "predicted_bde": 390.6177996790495,
+      "pe_A": 0.4593,
+      "pe_B": 1.3829
+    },
+    {
+      "pair": "S-Cr",
+      "predicted_bde": 390.4342111918398,
+      "pe_A": 1.0825,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Al-Br",
+      "predicted_bde": 388.80474905540626,
+      "pe_A": 0.2007,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "C-Ni",
+      "predicted_bde": 386.5008656150721,
+      "pe_A": 1.3829,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "S-Ga",
+      "predicted_bde": 384.75387211500566,
+      "pe_A": 1.0825,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "S-Ge",
+      "predicted_bde": 378.5989004549736,
+      "pe_A": 1.0825,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "C-Cu",
+      "predicted_bde": 376.23111675197623,
+      "pe_A": 1.3829,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "S-Se",
+      "predicted_bde": 369.5898083467411,
+      "pe_A": 1.0825,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "C-Ti",
+      "predicted_bde": 368.3862810140118,
+      "pe_A": 1.3829,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "C-Ca",
+      "predicted_bde": 366.43576983086604,
+      "pe_A": 1.3829,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "S-Sc",
+      "predicted_bde": 365.5911457755133,
+      "pe_A": 1.0825,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "C-Cr",
+      "predicted_bde": 362.99794301589503,
+      "pe_A": 1.3829,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "C-As",
+      "predicted_bde": 362.4710083086712,
+      "pe_A": 1.3829,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "O-Br",
+      "predicted_bde": 350.246342947728,
+      "pe_A": 1.8342,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "C-Br",
+      "predicted_bde": 347.3953315591221,
+      "pe_A": 1.3829,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "P-Br",
+      "predicted_bde": 346.4018844868128,
+      "pe_A": 0.3609,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "B-P",
+      "predicted_bde": 345.18796140792,
+      "pe_A": 0.2628,
+      "pe_B": 0.3609
+    },
+    {
+      "pair": "Si-P",
+      "predicted_bde": 341.9804375068581,
+      "pe_A": 0.6109,
+      "pe_B": 0.3609
+    },
+    {
+      "pair": "F-Br",
+      "predicted_bde": 340.084204472983,
+      "pe_A": 4.654,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Si-Br",
+      "predicted_bde": 334.0816415702748,
+      "pe_A": 0.6109,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Cu-Br",
+      "predicted_bde": 332.69997685474954,
+      "pe_A": 0.4178,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "C-Co",
+      "predicted_bde": 330.3609617902002,
+      "pe_A": 1.3829,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "C-V",
+      "predicted_bde": 324.52107318315194,
+      "pe_A": 1.3829,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "Se-Br",
+      "predicted_bde": 322.6589415950561,
+      "pe_A": 0.6311,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "B-Se",
+      "predicted_bde": 321.9159507660269,
+      "pe_A": 0.2628,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "C-Na",
+      "predicted_bde": 320.84774445758416,
+      "pe_A": 1.3829,
+      "pe_B": 0.1618
+    },
+    {
+      "pair": "H-P",
+      "predicted_bde": 316.62995248184205,
+      "pe_A": 754.0,
+      "pe_B": 0.3609
+    },
+    {
+      "pair": "P-Cu",
+      "predicted_bde": 308.25316256374157,
+      "pe_A": 0.3609,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "P-Se",
+      "predicted_bde": 307.4393841325298,
+      "pe_A": 0.3609,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "B-Si",
+      "predicted_bde": 306.315709652006,
+      "pe_A": 0.2628,
+      "pe_B": 0.6109
+    },
+    {
+      "pair": "C-Ga",
+      "predicted_bde": 304.942809783511,
+      "pe_A": 1.3829,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "C-Ge",
+      "predicted_bde": 304.25577074036954,
+      "pe_A": 1.3829,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "B-Cu",
+      "predicted_bde": 301.99780787777735,
+      "pe_A": 0.2628,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Si-Se",
+      "predicted_bde": 300.99102361718377,
+      "pe_A": 0.6109,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "C-Sc",
+      "predicted_bde": 299.57990513520673,
+      "pe_A": 1.3829,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Si-Cu",
+      "predicted_bde": 299.1403736149468,
+      "pe_A": 0.6109,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Al-Si",
+      "predicted_bde": 298.62435089919694,
+      "pe_A": 0.2007,
+      "pe_B": 0.6109
+    },
+    {
+      "pair": "O-F",
+      "predicted_bde": 293.0095130746419,
+      "pe_A": 1.8342,
+      "pe_B": 4.654
+    },
+    {
+      "pair": "C-K",
+      "predicted_bde": 291.8440274355691,
+      "pe_A": 1.3829,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "Si-Co",
+      "predicted_bde": 288.17273283097626,
+      "pe_A": 0.6109,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "P-Ni",
+      "predicted_bde": 282.0661649890763,
+      "pe_A": 0.3609,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Si-Ni",
+      "predicted_bde": 279.91183626032256,
+      "pe_A": 0.6109,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Al-P",
+      "predicted_bde": 274.14660012328324,
+      "pe_A": 0.2007,
+      "pe_B": 0.3609
+    },
+    {
+      "pair": "C-Fe",
+      "predicted_bde": 271.0346714616183,
+      "pe_A": 1.3829,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "H-Se",
+      "predicted_bde": 269.8442257665601,
+      "pe_A": 754.0,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "Al-Se",
+      "predicted_bde": 269.3334540467811,
+      "pe_A": 0.2007,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "Ni-Se",
+      "predicted_bde": 268.4569392500029,
+      "pe_A": 0.3866,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "Li-Se",
+      "predicted_bde": 266.45437504582327,
+      "pe_A": 0.4593,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "Li-B",
+      "predicted_bde": 264.96159995391935,
+      "pe_A": 0.4593,
+      "pe_B": 0.2628
+    },
+    {
+      "pair": "As-Se",
+      "predicted_bde": 264.01643960048847,
+      "pe_A": 0.2373,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "H-Si",
+      "predicted_bde": 255.21492647108033,
+      "pe_A": 754.0,
+      "pe_B": 0.6109
+    },
+    {
+      "pair": "Fe-Se",
+      "predicted_bde": 254.1885242731451,
+      "pe_A": 0.0492,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "H-B",
+      "predicted_bde": 253.79331864369777,
+      "pe_A": 754.0,
+      "pe_B": 0.2628
+    },
+    {
+      "pair": "B-Co",
+      "predicted_bde": 250.2157986222091,
+      "pe_A": 0.2628,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "O-Cl",
+      "predicted_bde": 248.89104358494848,
+      "pe_A": 1.8342,
+      "pe_B": 2.0302
+    },
+    {
+      "pair": "Na-Se",
+      "predicted_bde": 247.140107446537,
+      "pe_A": 0.1618,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "B-Al",
+      "predicted_bde": 245.84834234180784,
+      "pe_A": 0.2628,
+      "pe_B": 0.2007
+    },
+    {
+      "pair": "Ni-Cu",
+      "predicted_bde": 245.80214313544974,
+      "pe_A": 0.3866,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "B-Ni",
+      "predicted_bde": 244.87456666590555,
+      "pe_A": 0.2628,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Ti-Se",
+      "predicted_bde": 240.31010517661747,
+      "pe_A": 0.024,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "Si-Cr",
+      "predicted_bde": 239.51224103828832,
+      "pe_A": 0.6109,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Se-Se",
+      "predicted_bde": 238.30789826926565,
+      "pe_A": 0.6311,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "V-Se",
+      "predicted_bde": 236.2202021145785,
+      "pe_A": 0.1629,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "S-Br",
+      "predicted_bde": 236.16915525418318,
+      "pe_A": 1.0825,
+      "pe_B": 1.1099
+    },
+    {
+      "pair": "Li-Si",
+      "predicted_bde": 235.90751045759686,
+      "pe_A": 0.4593,
+      "pe_B": 0.6109
+    },
+    {
+      "pair": "B-Cr",
+      "predicted_bde": 234.76254976409695,
+      "pe_A": 0.2628,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Li-P",
+      "predicted_bde": 233.01106784942039,
+      "pe_A": 0.4593,
+      "pe_B": 0.3609
+    },
+    {
+      "pair": "Si-Fe",
+      "predicted_bde": 232.34985777609103,
+      "pe_A": 0.6109,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "H-Al",
+      "predicted_bde": 229.18822560710015,
+      "pe_A": 754.0,
+      "pe_B": 0.2007
+    },
+    {
+      "pair": "Li-Al",
+      "predicted_bde": 226.77559556742023,
+      "pe_A": 0.4593,
+      "pe_B": 0.2007
+    },
+    {
+      "pair": "Cr-Se",
+      "predicted_bde": 226.33981130916806,
+      "pe_A": 0.2103,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "Co-Se",
+      "predicted_bde": 221.78457861217709,
+      "pe_A": 0.2186,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "P-Fe",
+      "predicted_bde": 220.87721114426864,
+      "pe_A": 0.3609,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "B-Na",
+      "predicted_bde": 219.77836825689945,
+      "pe_A": 0.2628,
+      "pe_B": 0.1618
+    },
+    {
+      "pair": "Na-P",
+      "predicted_bde": 219.5144514850378,
+      "pe_A": 0.1618,
+      "pe_B": 0.3609
+    },
+    {
+      "pair": "P-V",
+      "predicted_bde": 219.43384621714694,
+      "pe_A": 0.3609,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "P-Co",
+      "predicted_bde": 219.38887667651653,
+      "pe_A": 0.3609,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "Al-Cu",
+      "predicted_bde": 218.84390488258015,
+      "pe_A": 0.2007,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "P-Cr",
+      "predicted_bde": 216.9264884655674,
+      "pe_A": 0.3609,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "B-As",
+      "predicted_bde": 214.74952108897077,
+      "pe_A": 0.2628,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Si-V",
+      "predicted_bde": 213.04370308095105,
+      "pe_A": 0.6109,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "Na-Si",
+      "predicted_bde": 211.86472351918172,
+      "pe_A": 0.1618,
+      "pe_B": 0.6109
+    },
+    {
+      "pair": "Si-Sc",
+      "predicted_bde": 209.0593882527175,
+      "pe_A": 0.6109,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Si-Ga",
+      "predicted_bde": 209.00675034647867,
+      "pe_A": 0.6109,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Cu-Se",
+      "predicted_bde": 208.7360478613238,
+      "pe_A": 0.4178,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "H-Co",
+      "predicted_bde": 203.1022709282111,
+      "pe_A": 754.0,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "H-Cu",
+      "predicted_bde": 200.2815725000416,
+      "pe_A": 754.0,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Ge-Se",
+      "predicted_bde": 198.61698567815773,
+      "pe_A": 0.3315,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "H-Ni",
+      "predicted_bde": 198.0109076030979,
+      "pe_A": 754.0,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Si-As",
+      "predicted_bde": 196.04312193805646,
+      "pe_A": 0.6109,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Li-Cu",
+      "predicted_bde": 194.51457286981775,
+      "pe_A": 0.4593,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "P-Ti",
+      "predicted_bde": 192.65323416444545,
+      "pe_A": 0.3609,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "Al-Ni",
+      "predicted_bde": 189.31674713403362,
+      "pe_A": 0.2007,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Li-Ni",
+      "predicted_bde": 188.19894595863042,
+      "pe_A": 0.4593,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Sc-Se",
+      "predicted_bde": 186.66702146329538,
+      "pe_A": 0.056,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "P-Ge",
+      "predicted_bde": 186.6067684393683,
+      "pe_A": 0.3609,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "B-Ca",
+      "predicted_bde": 185.28142588384134,
+      "pe_A": 0.2628,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "B-Fe",
+      "predicted_bde": 184.49117108800425,
+      "pe_A": 0.2628,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "P-As",
+      "predicted_bde": 184.40246878843783,
+      "pe_A": 0.3609,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Al-Co",
+      "predicted_bde": 183.3425305355376,
+      "pe_A": 0.2007,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "P-K",
+      "predicted_bde": 182.36041634317706,
+      "pe_A": 0.3609,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "F-Cl",
+      "predicted_bde": 180.59613921284478,
+      "pe_A": 4.654,
+      "pe_B": 2.0302
+    },
+    {
+      "pair": "Si-Ge",
+      "predicted_bde": 179.62687120988636,
+      "pe_A": 0.6109,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Ca-Se",
+      "predicted_bde": 178.92689445206491,
+      "pe_A": 0.007,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "V-Cu",
+      "predicted_bde": 178.4930894344913,
+      "pe_A": 0.1629,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "B-Ge",
+      "predicted_bde": 177.30885097646836,
+      "pe_A": 0.2628,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "B-V",
+      "predicted_bde": 177.05886707174096,
+      "pe_A": 0.2628,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "Si-Ti",
+      "predicted_bde": 171.69535713194176,
+      "pe_A": 0.6109,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "P-Ca",
+      "predicted_bde": 169.3137516367372,
+      "pe_A": 0.3609,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "P-Sc",
+      "predicted_bde": 167.8306558830257,
+      "pe_A": 0.3609,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "P-Ga",
+      "predicted_bde": 164.52436433282134,
+      "pe_A": 0.3609,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Ti-Ni",
+      "predicted_bde": 164.51193817293648,
+      "pe_A": 0.024,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Cu-As",
+      "predicted_bde": 162.35381679270012,
+      "pe_A": 0.4178,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "B-K",
+      "predicted_bde": 161.79541433079402,
+      "pe_A": 0.2628,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "B-Ti",
+      "predicted_bde": 161.59845904504817,
+      "pe_A": 0.2628,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "Al-Sc",
+      "predicted_bde": 160.95682963173414,
+      "pe_A": 0.2007,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Al-Fe",
+      "predicted_bde": 160.84176044738382,
+      "pe_A": 0.2007,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Na-Cu",
+      "predicted_bde": 160.25472478542537,
+      "pe_A": 0.1618,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "K-Se",
+      "predicted_bde": 159.08524183183619,
+      "pe_A": 0.1132,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "Cu-Ge",
+      "predicted_bde": 158.21659959141806,
+      "pe_A": 0.4178,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Co-Ni",
+      "predicted_bde": 157.95926052391718,
+      "pe_A": 0.2186,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Na-Al",
+      "predicted_bde": 156.59497330645303,
+      "pe_A": 0.1618,
+      "pe_B": 0.2007
+    },
+    {
+      "pair": "Co-Cu",
+      "predicted_bde": 156.40575662629664,
+      "pe_A": 0.2186,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Al-Cr",
+      "predicted_bde": 152.46583500277342,
+      "pe_A": 0.2007,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Fe-Cu",
+      "predicted_bde": 151.2685948848801,
+      "pe_A": 0.0492,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Si-K",
+      "predicted_bde": 150.63632125793362,
+      "pe_A": 0.6109,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "Na-Ni",
+      "predicted_bde": 149.3953019433631,
+      "pe_A": 0.1618,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Co-Co",
+      "predicted_bde": 149.23436577812123,
+      "pe_A": 0.2186,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "Cr-Cu",
+      "predicted_bde": 148.81596149997227,
+      "pe_A": 0.2103,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Ga-Se",
+      "predicted_bde": 148.50914365842954,
+      "pe_A": 0.1079,
+      "pe_B": 0.6311
+    },
+    {
+      "pair": "H-V",
+      "predicted_bde": 146.38065234180857,
+      "pe_A": 754.0,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "Ni-As",
+      "predicted_bde": 144.0681021262232,
+      "pe_A": 0.3866,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Si-Ca",
+      "predicted_bde": 142.01125500318398,
+      "pe_A": 0.6109,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "Li-Na",
+      "predicted_bde": 140.07376768223628,
+      "pe_A": 0.4593,
+      "pe_B": 0.1618
+    },
+    {
+      "pair": "Ni-Ga",
+      "predicted_bde": 139.04557725030088,
+      "pe_A": 0.3866,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Al-V",
+      "predicted_bde": 137.39983483611684,
+      "pe_A": 0.2007,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "B-Sc",
+      "predicted_bde": 135.34066633372674,
+      "pe_A": 0.2628,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Fe-Ni",
+      "predicted_bde": 135.1623061089066,
+      "pe_A": 0.0492,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Cr-Ni",
+      "predicted_bde": 133.40423758788074,
+      "pe_A": 0.2103,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "H-Li",
+      "predicted_bde": 132.70003760455842,
+      "pe_A": 754.0,
+      "pe_B": 0.4593
+    },
+    {
+      "pair": "Al-Ca",
+      "predicted_bde": 132.39879560871202,
+      "pe_A": 0.2007,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "Ca-Ni",
+      "predicted_bde": 131.61835896839966,
+      "pe_A": 0.007,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "H-Ti",
+      "predicted_bde": 131.41951939217387,
+      "pe_A": 754.0,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "K-Ni",
+      "predicted_bde": 128.0964881428398,
+      "pe_A": 0.1132,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Li-V",
+      "predicted_bde": 125.65378163113019,
+      "pe_A": 0.4593,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "H-Ge",
+      "predicted_bde": 125.58738054048592,
+      "pe_A": 754.0,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Al-K",
+      "predicted_bde": 124.62047393450428,
+      "pe_A": 0.2007,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "Li-Co",
+      "predicted_bde": 124.52142253078154,
+      "pe_A": 0.4593,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "B-Ga",
+      "predicted_bde": 123.69954728452967,
+      "pe_A": 0.2628,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Li-As",
+      "predicted_bde": 123.18440105697454,
+      "pe_A": 0.4593,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "V-Ni",
+      "predicted_bde": 123.09095682329666,
+      "pe_A": 0.1629,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Li-Ca",
+      "predicted_bde": 120.57656898704005,
+      "pe_A": 0.4593,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "Al-As",
+      "predicted_bde": 120.12681324055296,
+      "pe_A": 0.2007,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Li-Ti",
+      "predicted_bde": 120.05542819828656,
+      "pe_A": 0.4593,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "Sc-Cu",
+      "predicted_bde": 118.86221638353061,
+      "pe_A": 0.056,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Li-Ge",
+      "predicted_bde": 117.64692507964662,
+      "pe_A": 0.4593,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Li-Cr",
+      "predicted_bde": 114.42854532375736,
+      "pe_A": 0.4593,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Al-Ge",
+      "predicted_bde": 114.07758525985247,
+      "pe_A": 0.2007,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Cu-Ga",
+      "predicted_bde": 113.6308435947924,
+      "pe_A": 0.4178,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "H-Cr",
+      "predicted_bde": 113.57994192483608,
+      "pe_A": 754.0,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Fe-As",
+      "predicted_bde": 112.79468265427522,
+      "pe_A": 0.0492,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Ca-Cr",
+      "predicted_bde": 111.30088098543257,
+      "pe_A": 0.007,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "V-Cr",
+      "predicted_bde": 110.38323691551233,
+      "pe_A": 0.1629,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Cr-Co",
+      "predicted_bde": 109.78507018169108,
+      "pe_A": 0.2103,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "Ca-Cu",
+      "predicted_bde": 108.35208633063195,
+      "pe_A": 0.007,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Ca-Fe",
+      "predicted_bde": 107.89828435533053,
+      "pe_A": 0.007,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "H-Ca",
+      "predicted_bde": 106.54020766238949,
+      "pe_A": 754.0,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "Ti-Cu",
+      "predicted_bde": 105.46578840892857,
+      "pe_A": 0.024,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Ni-Ge",
+      "predicted_bde": 105.45016396959733,
+      "pe_A": 0.3866,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Cr-As",
+      "predicted_bde": 105.00447214729724,
+      "pe_A": 0.2103,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "V-Fe",
+      "predicted_bde": 104.49753929745265,
+      "pe_A": 0.1629,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Ti-V",
+      "predicted_bde": 103.59833604292487,
+      "pe_A": 0.024,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "Li-K",
+      "predicted_bde": 103.2810918521626,
+      "pe_A": 0.4593,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "Ca-V",
+      "predicted_bde": 101.51500489830732,
+      "pe_A": 0.007,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "V-Co",
+      "predicted_bde": 100.49386802036867,
+      "pe_A": 0.1629,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "Li-Ga",
+      "predicted_bde": 100.14081708359379,
+      "pe_A": 0.4593,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Li-Sc",
+      "predicted_bde": 98.51187334229002,
+      "pe_A": 0.4593,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Na-Cr",
+      "predicted_bde": 97.95137741591492,
+      "pe_A": 0.1618,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "H-Sc",
+      "predicted_bde": 97.03762697203337,
+      "pe_A": 754.0,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Sc-Ni",
+      "predicted_bde": 96.71120018775031,
+      "pe_A": 0.056,
+      "pe_B": 0.3866
+    },
+    {
+      "pair": "Cr-Fe",
+      "predicted_bde": 96.67551927348802,
+      "pe_A": 0.2103,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Na-Sc",
+      "predicted_bde": 95.65278179874167,
+      "pe_A": 0.1618,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "H-As",
+      "predicted_bde": 95.37992859869865,
+      "pe_A": 754.0,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Na-Ga",
+      "predicted_bde": 94.94188189446606,
+      "pe_A": 0.1618,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "H-Na",
+      "predicted_bde": 93.77503362072383,
+      "pe_A": 754.0,
+      "pe_B": 0.1618
+    },
+    {
+      "pair": "Cr-Cr",
+      "predicted_bde": 92.58342876149663,
+      "pe_A": 0.2103,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Li-Fe",
+      "predicted_bde": 89.33503836088653,
+      "pe_A": 0.4593,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Co-Ga",
+      "predicted_bde": 89.28621808368655,
+      "pe_A": 0.2186,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "H-Fe",
+      "predicted_bde": 88.80041437777396,
+      "pe_A": 754.0,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "K-Co",
+      "predicted_bde": 86.68839216531086,
+      "pe_A": 0.1132,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "Sc-Cr",
+      "predicted_bde": 86.51254486328656,
+      "pe_A": 0.056,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Cr-Ge",
+      "predicted_bde": 86.44697121355728,
+      "pe_A": 0.2103,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Ti-Co",
+      "predicted_bde": 84.44452752680172,
+      "pe_A": 0.024,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "V-Ge",
+      "predicted_bde": 83.61424447903613,
+      "pe_A": 0.1629,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Al-Ti",
+      "predicted_bde": 83.03676337518448,
+      "pe_A": 0.2007,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "H-Ga",
+      "predicted_bde": 82.42351866622516,
+      "pe_A": 754.0,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Co-As",
+      "predicted_bde": 82.11697393708909,
+      "pe_A": 0.2186,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "K-As",
+      "predicted_bde": 81.80257665045713,
+      "pe_A": 0.1132,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Ti-Cr",
+      "predicted_bde": 81.69083438915658,
+      "pe_A": 0.024,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Na-Ti",
+      "predicted_bde": 78.25054733019533,
+      "pe_A": 0.1618,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "Sc-Co",
+      "predicted_bde": 77.95686795362349,
+      "pe_A": 0.056,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "K-Cu",
+      "predicted_bde": 77.3767826001619,
+      "pe_A": 0.1132,
+      "pe_B": 0.4178
+    },
+    {
+      "pair": "Cr-Ga",
+      "predicted_bde": 77.34580795120576,
+      "pe_A": 0.2103,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Na-V",
+      "predicted_bde": 74.93700236488274,
+      "pe_A": 0.1618,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "K-Cr",
+      "predicted_bde": 72.69758982798862,
+      "pe_A": 0.1132,
+      "pe_B": 0.2103
+    },
+    {
+      "pair": "Ti-As",
+      "predicted_bde": 72.38433904842304,
+      "pe_A": 0.024,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Fe-Ge",
+      "predicted_bde": 72.26521057363317,
+      "pe_A": 0.0492,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "K-V",
+      "predicted_bde": 70.95473880880701,
+      "pe_A": 0.1132,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "V-Ga",
+      "predicted_bde": 70.71886997089592,
+      "pe_A": 0.1629,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "K-Ti",
+      "predicted_bde": 69.6705713279012,
+      "pe_A": 0.1132,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "Ge-As",
+      "predicted_bde": 68.19246927094014,
+      "pe_A": 0.3315,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Fe-Co",
+      "predicted_bde": 67.06559666901938,
+      "pe_A": 0.0492,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "Ca-Ti",
+      "predicted_bde": 65.05080670084118,
+      "pe_A": 0.007,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "Ga-Ga",
+      "predicted_bde": 64.62980681867538,
+      "pe_A": 0.1079,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Ti-Ga",
+      "predicted_bde": 64.54028925611988,
+      "pe_A": 0.024,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Ti-Ge",
+      "predicted_bde": 64.40076342908122,
+      "pe_A": 0.024,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Co-Ge",
+      "predicted_bde": 62.71609370512567,
+      "pe_A": 0.2186,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Ca-Ge",
+      "predicted_bde": 61.35061886720092,
+      "pe_A": 0.007,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Ga-As",
+      "predicted_bde": 61.28719544080218,
+      "pe_A": 0.1079,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Ti-Fe",
+      "predicted_bde": 61.02575187880922,
+      "pe_A": 0.024,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Na-Co",
+      "predicted_bde": 60.82934640401669,
+      "pe_A": 0.1618,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "Na-Fe",
+      "predicted_bde": 60.440856529629,
+      "pe_A": 0.1618,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Sc-Ga",
+      "predicted_bde": 60.27254417827413,
+      "pe_A": 0.056,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Na-As",
+      "predicted_bde": 58.03563658349697,
+      "pe_A": 0.1618,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Ca-Co",
+      "predicted_bde": 57.60405016639021,
+      "pe_A": 0.007,
+      "pe_B": 0.2186
+    },
+    {
+      "pair": "H-K",
+      "predicted_bde": 57.58031597682242,
+      "pe_A": 754.0,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "Al-Ga",
+      "predicted_bde": 56.6964777864668,
+      "pe_A": 0.2007,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Sc-V",
+      "predicted_bde": 55.321387830830986,
+      "pe_A": 0.056,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "As-As",
+      "predicted_bde": 54.90272553350553,
+      "pe_A": 0.2373,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "K-Ca",
+      "predicted_bde": 54.20050514853216,
+      "pe_A": 0.1132,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "Ca-Sc",
+      "predicted_bde": 54.09391056874881,
+      "pe_A": 0.007,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "K-Fe",
+      "predicted_bde": 52.82389307264657,
+      "pe_A": 0.1132,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Na-Ge",
+      "predicted_bde": 51.69230708346663,
+      "pe_A": 0.1618,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "Sc-As",
+      "predicted_bde": 51.267721062023725,
+      "pe_A": 0.056,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Sc-Ge",
+      "predicted_bde": 50.67203135052432,
+      "pe_A": 0.056,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "V-V",
+      "predicted_bde": 49.21770708564537,
+      "pe_A": 0.1629,
+      "pe_B": 0.1629
+    },
+    {
+      "pair": "Na-Ca",
+      "predicted_bde": 48.173955169282124,
+      "pe_A": 0.1618,
+      "pe_B": 0.007
+    },
+    {
+      "pair": "Ca-Ga",
+      "predicted_bde": 45.46016489261916,
+      "pe_A": 0.007,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "K-Ga",
+      "predicted_bde": 42.61227741134098,
+      "pe_A": 0.1132,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Sc-Sc",
+      "predicted_bde": 40.768628308799634,
+      "pe_A": 0.056,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Ti-Ti",
+      "predicted_bde": 38.53437496148763,
+      "pe_A": 0.024,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "Na-K",
+      "predicted_bde": 36.87367695526905,
+      "pe_A": 0.1618,
+      "pe_B": 0.1132
+    },
+    {
+      "pair": "Ca-As",
+      "predicted_bde": 33.49347164171235,
+      "pe_A": 0.007,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "V-As",
+      "predicted_bde": 26.62904556698504,
+      "pe_A": 0.1629,
+      "pe_B": 0.2373
+    },
+    {
+      "pair": "Sc-Ti",
+      "predicted_bde": 26.059095966716086,
+      "pe_A": 0.056,
+      "pe_B": 0.024
+    },
+    {
+      "pair": "K-Sc",
+      "predicted_bde": 21.390068770963808,
+      "pe_A": 0.1132,
+      "pe_B": 0.056
+    },
+    {
+      "pair": "Sc-Fe",
+      "predicted_bde": 16.574181980814956,
+      "pe_A": 0.056,
+      "pe_B": 0.0492
+    },
+    {
+      "pair": "Fe-Ga",
+      "predicted_bde": 15.272865305774133,
+      "pe_A": 0.0492,
+      "pe_B": 0.1079
+    },
+    {
+      "pair": "Ga-Ge",
+      "predicted_bde": 9.083907435684694,
+      "pe_A": 0.1079,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "K-Ge",
+      "predicted_bde": -13.815579579840119,
+      "pe_A": 0.1132,
+      "pe_B": 0.3315
+    },
+    {
+      "pair": "H-H",
+      "predicted_bde": -40525.278077588126,
+      "pe_A": 754.0,
+      "pe_B": 754.0
+    }
+  ],
+  "training_bonds": {
+    "Na-F": 923,
+    "B-O": 809,
+    "Si-O": 800,
+    "C-O": 799,
+    "Na-Cl": 787,
+    "Al-F": 664,
+    "Li-F": 577,
+    "Si-F": 576,
+    "C-F": 536,
+    "Al-O": 501,
+    "Al-Cl": 502,
+    "O-O": 498,
+    "P-F": 490,
+    "Li-Cl": 469,
+    "B-F": 732,
+    "B-Cl": 443,
+    "Si-Cl": 416,
+    "C-H": 411,
+    "C-C": 346,
+    "C-Cl": 339,
+    "S-F": 343,
+    "P-Cl": 326,
+    "B-B": 290,
+    "C-S": 272,
+    "S-Cl": 271,
+    "S-S": 266,
+    "Cl-Cl": 242,
+    "Si-Si": 222,
+    "P-P": 201,
+    "Al-Al": 186,
+    "F-F": 155,
+    "Fe-Fe": 118,
+    "Li-Li": 110,
+    "Na-Na": 72,
+    "K-K": 57,
+    "Ca-Ca": 16,
+    "N-H": 339,
+    "N-O": 631,
+    "N-F": 343,
+    "N-Cl": 333,
+    "C-N": 749,
+    "N-N": 945,
+    "O-H": 428,
+    "S-H": 353,
+    "Br-Br": 194,
+    "I-I": 151,
+    "H-Br": 366,
+    "H-I": 298,
+    "Br-Cl": 218,
+    "Ti-O": 672,
+    "Cr-O": 461,
+    "Cu-Cu": 201,
+    "Ni-Ni": 204,
+    "Mn-O": 362,
+    "V-O": 637,
+    "Ge-Ge": 264
+  },
+  "new_bonds": {
+    "N-H": 339,
+    "N-O": 631,
+    "N-F": 343,
+    "N-Cl": 333,
+    "C-N": 749,
+    "N-N": 945,
+    "O-H": 428,
+    "S-H": 353,
+    "Br-Br": 194,
+    "I-I": 151,
+    "H-Br": 366,
+    "H-I": 298,
+    "Br-Cl": 218,
+    "Ti-O": 672,
+    "Cr-O": 461,
+    "Cu-Cu": 201,
+    "Ni-Ni": 204,
+    "Mn-O": 362,
+    "V-O": 637,
+    "Ge-Ge": 264
+  }
+}

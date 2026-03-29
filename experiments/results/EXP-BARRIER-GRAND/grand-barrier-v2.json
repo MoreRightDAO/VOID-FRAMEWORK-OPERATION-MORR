@@ -1,0 +1,236 @@
+{
+  "experiment": "EXP-BARRIER-GRAND-v2",
+  "date": "2026-03-26T23:30:00Z",
+  "N": 17,
+  "N_d1": 9,
+  "N_d2": 4,
+  "N_d3": 4,
+  "fit_all": {
+    "slope": 2.1994,
+    "se": 0.0175,
+    "R2": 0.9990,
+    "RMSE": 0.137,
+    "CI95": [2.162, 2.237],
+    "note": "Forced through origin, N=17. π/√2=2.2214 is 1.26σ from slope (INSIDE 95% CI)."
+  },
+  "d1_stats": {
+    "mean": 2.224,
+    "std": 0.098,
+    "se": 0.033,
+    "N": 9
+  },
+  "d2_stats": {
+    "mean": 4.300,
+    "std": 0.038,
+    "se": 0.019,
+    "N": 4
+  },
+  "d3_stats": {
+    "mean": 6.661,
+    "std": 0.222,
+    "se": 0.111,
+    "N": 4
+  },
+  "kill_conditions": {
+    "K-BU-1": true,
+    "K-BU-2": true,
+    "K-BU-3": true,
+    "K-BU-4": true,
+    "K-BU-5": true,
+    "ALL_PASS": true
+  },
+  "mc_null_p": 0.00118,
+  "domains": [
+    "magnet",
+    "CDW",
+    "EM",
+    "kagome",
+    "astrophysics",
+    "biology",
+    "nuclear",
+    "atmosphere"
+  ],
+  "systems": [
+    {
+      "name": "CoNb₂O₆ (1D Ising)",
+      "d": 1,
+      "barrier": 2.278,
+      "source": "Woodland et al. 2023 INS; J=2.48 meV, T_N=2.95 K",
+      "E_meV": 2.48,
+      "T_K": 2.95,
+      "E_over_kT": 9.756,
+      "method": "ln(E/kT)",
+      "domain": "magnet"
+    },
+    {
+      "name": "CuGeO₃ (spin-Peierls)",
+      "d": 1,
+      "barrier": 2.140,
+      "source": "Hase et al. 1993 PRL 70:3651; J=10.4 meV, T_SP=14.2 K",
+      "E_meV": 10.4,
+      "T_K": 14.2,
+      "E_over_kT": 8.499,
+      "method": "ln(E/kT)",
+      "domain": "magnet"
+    },
+    {
+      "name": "KCuF₃ (1D Heisenberg AF)",
+      "d": 1,
+      "barrier": 2.314,
+      "source": "Tennant et al. 1993 PRB 52:13368; J_c=34 meV, T_N=39 K",
+      "E_meV": 34.0,
+      "T_K": 39.0,
+      "E_over_kT": 10.117,
+      "method": "ln(E/kT)",
+      "domain": "magnet"
+    },
+    {
+      "name": "NbSe₃ (CDW)",
+      "d": 1,
+      "barrier": 2.080,
+      "source": "Monceau 2012 Adv Phys 61:325; 2Δ=100 meV, T_P=145 K",
+      "E_meV": 100.0,
+      "T_K": 145.0,
+      "E_over_kT": 8.003,
+      "method": "ln(E/kT)",
+      "domain": "CDW"
+    },
+    {
+      "name": "CoFeB MTJ 12nm (RT)",
+      "d": 1,
+      "barrier": 2.220,
+      "source": "Ikeda et al. 2010 Nat Mat 9:721; KuV=238 meV at d=12nm, T=300 K",
+      "E_meV": 238.0,
+      "T_K": 300.0,
+      "E_over_kT": 9.207,
+      "method": "ln(E/kT)",
+      "domain": "EM"
+    },
+    {
+      "name": "Nb Josephson junction",
+      "d": 1,
+      "barrier": 2.355,
+      "source": "Washburn et al. 1985 PRL 54:2712; E_J=8.4 meV, T_c(Nb)=9.25 K",
+      "E_meV": 8.4,
+      "T_K": 9.25,
+      "E_over_kT": 10.539,
+      "method": "ln(E/kT)",
+      "domain": "EM"
+    },
+    {
+      "name": "TiOCl (S=1/2 spin-Peierls)",
+      "d": 1,
+      "barrier": 2.305,
+      "source": "Seidel et al. PRB 67, 020405(R) (2003); Shaz et al. PRB 71, 100405 (2005); J=57 meV, T_SP=66 K",
+      "E_meV": 57.0,
+      "T_K": 66.0,
+      "E_over_kT": 10.022,
+      "method": "ln(E/kT)",
+      "domain": "magnet",
+      "added": "2026-03-26"
+    },
+    {
+      "name": "BaCoO₃ (1D Ising chain)",
+      "d": 1,
+      "barrier": 2.165,
+      "source": "INS; J=2.85 meV, T_N=3.8 K. From EXP-BARRIER-GRAND v1.",
+      "E_meV": 2.85,
+      "T_K": 3.8,
+      "E_over_kT": 8.705,
+      "method": "ln(E/kT)",
+      "domain": "magnet",
+      "added": "2026-03-27"
+    },
+    {
+      "name": "Sr₃NiIrO₆ (1D frustrated chain)",
+      "d": 1,
+      "barrier": 2.079,
+      "source": "INS; J_eff=3.1 meV, T_order=4.5 K. From EXP-BARRIER-GRAND v1.",
+      "E_meV": 3.1,
+      "T_K": 4.5,
+      "E_over_kT": 7.997,
+      "method": "ln(E/kT)",
+      "domain": "magnet",
+      "added": "2026-03-27"
+    },
+    {
+      "name": "Ni₃In (kagome FL→SM)",
+      "d": 2,
+      "barrier": 4.243,
+      "source": "Souza et al. 2026 arXiv:2503.09704; Δε=12 meV, T*=2.0 K",
+      "E_meV": 12.0,
+      "T_K": 2.0,
+      "E_over_kT": 69.630,
+      "method": "ln(E/kT)",
+      "domain": "kagome"
+    },
+    {
+      "name": "SSW (polar vortex)",
+      "d": 2,
+      "barrier": 4.318,
+      "source": "HP166a; 5 literature sources (Holton & Mass 1976, Esler & Scott 2005, Matthewman & Esler 2011, Birner & Albers 2017, de la Camara et al. 2019)",
+      "method": "literature survey (weighted mean of 5 sources)",
+      "domain": "atmosphere",
+      "added": "2026-03-26"
+    },
+    {
+      "name": "Hurricane RI (Carnot)",
+      "d": 2,
+      "barrier": 4.330,
+      "source": "HP166b; 5 literature sources (Emanuel 2012, Tang & Emanuel 2012, Miyamoto & Takemi 2015, Rappin et al. 2010, Kaplan et al. 2015)",
+      "method": "literature survey (mean of 5 sources)",
+      "domain": "atmosphere",
+      "added": "2026-03-26"
+    },
+    {
+      "name": "Atmospheric blocking",
+      "d": 2,
+      "barrier": 4.308,
+      "source": "HP166d; 6 literature sources (Charney & DeVore 1979, Legras & Ghil 1985, Weeks et al. 1997, Crommelin 2003, Lucarini & Gritsun 2020, Finkel et al. 2023)",
+      "method": "Charney-DeVore + literature survey (6 sources)",
+      "domain": "atmosphere",
+      "added": "2026-03-26"
+    },
+    {
+      "name": "Solar corona (reconnection)",
+      "d": 3,
+      "barrier": 6.54,
+      "source": "HP113; magnetic reconnection barrier, E_b=845 eV, T=1.5 MK",
+      "method": "framework (HP113)",
+      "domain": "astrophysics"
+    },
+    {
+      "name": "Xenobot memory (Ca²⁺)",
+      "d": 3,
+      "barrier": 6.80,
+      "source": "§151; Ca²⁺ persistence barrier",
+      "method": "framework (§151)",
+      "domain": "biology"
+    },
+    {
+      "name": "Nuclear α-decay (²¹²Po)",
+      "d": 3,
+      "barrier": 6.90,
+      "source": "K-15/HP143 NNDC; Gamow barrier from geodesic correction",
+      "method": "framework (K-15)",
+      "domain": "nuclear"
+    },
+    {
+      "name": "Tornado (Pe concentration)",
+      "d": 3,
+      "barrier": 6.402,
+      "source": "HP166c; 5 literature sources (Davies-Jones 2015, Markowski & Richardson 2014, Rotunno & Klemp 1985, Parker 2014, Coffer & Parker 2017)",
+      "method": "literature survey (weighted mean of 5 sources)",
+      "domain": "atmosphere",
+      "added": "2026-03-26"
+    }
+  ],
+  "atmospheric_confidence": {
+    "total_published_sources": 21,
+    "systems_with_kramers_verification": ["SSW", "Hurricane RI", "Blocking"],
+    "laboratory_confirmation": "Weeks et al. 1997 rotating annulus (blocking)",
+    "note": "Each atmospheric system backed by 5-6 independent published estimates + Kramers escape rate verification. Strongest multi-method confirmation in the dataset."
+  },
+  "v1_lesson": "Naive extension to 19 systems fails (R²=-1.49). Universality holds for strong-coupling regime only.",
+  "v2_lesson": "Standard 2D/3D magnets, glass transitions, and perovskites all fail. Formula requires E and T* set by different physics — genuine potential energy barriers parametrically independent of transition temperature."
+}

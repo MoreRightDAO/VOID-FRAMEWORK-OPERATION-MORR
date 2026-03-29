@@ -1,0 +1,601 @@
+{
+  "experiment": "EXP-HP08",
+  "title": "Stabilized Inverse Spectral Reconstruction",
+  "date": "2026-03-13",
+  "framework_sections": [
+    "\u00a780D\u00bd",
+    "\u00a780F",
+    "inverse spectral theory"
+  ],
+  "tests": [
+    {
+      "id": "S1",
+      "name": "Tikhonov regularization",
+      "best_lambda": 1.0,
+      "scan": [
+        {
+          "lambda": 0.01,
+          "best_dist": 0.41562429,
+          "best_iter": 5,
+          "final_dist": 7.1293,
+          "monotone_pct": 15.0
+        },
+        {
+          "lambda": 0.05,
+          "best_dist": 0.15502858,
+          "best_iter": 15,
+          "final_dist": 12.7225,
+          "monotone_pct": 15.0
+        },
+        {
+          "lambda": 0.1,
+          "best_dist": 0.23994091,
+          "best_iter": 4,
+          "final_dist": 17.0432,
+          "monotone_pct": 7.5
+        },
+        {
+          "lambda": 0.5,
+          "best_dist": 0.20258777,
+          "best_iter": 7,
+          "final_dist": 3.606,
+          "monotone_pct": 12.5
+        },
+        {
+          "lambda": 1.0,
+          "best_dist": 0.12978621,
+          "best_iter": 7,
+          "final_dist": 5.9764,
+          "monotone_pct": 15.0
+        },
+        {
+          "lambda": 2.0,
+          "best_dist": 0.14153364,
+          "best_iter": 10,
+          "final_dist": 10.6163,
+          "monotone_pct": 15.0
+        },
+        {
+          "lambda": 5.0,
+          "best_dist": 0.21972345,
+          "best_iter": 3,
+          "final_dist": 1.4497,
+          "monotone_pct": 22.5
+        },
+        {
+          "lambda": 10.0,
+          "best_dist": 0.13118877,
+          "best_iter": 15,
+          "final_dist": 8.9867,
+          "monotone_pct": 20.0
+        }
+      ],
+      "best_dist": 0.12978621,
+      "best_iter": 7,
+      "trace": [
+        {
+          "iteration": 1,
+          "dist": 8.27577158,
+          "mult": 1.000055,
+          "sp_var": 0.0
+        },
+        {
+          "iteration": 11,
+          "dist": 0.70744135,
+          "mult": 1.330275,
+          "sp_var": 0.231822
+        },
+        {
+          "iteration": 20,
+          "dist": 5.97643766,
+          "mult": 4.847246,
+          "sp_var": 0.487034
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "Spectral truncation",
+      "best_M": 15,
+      "scan": [
+        {
+          "M": 3,
+          "best_dist": 0.08828307,
+          "best_iter": 45,
+          "final_dist": 12.8932,
+          "monotone_pct": 48.8
+        },
+        {
+          "M": 5,
+          "best_dist": 0.06793002,
+          "best_iter": 10,
+          "final_dist": 1.5183,
+          "monotone_pct": 51.2
+        },
+        {
+          "M": 7,
+          "best_dist": 0.07728849,
+          "best_iter": 14,
+          "final_dist": 0.1816,
+          "monotone_pct": 53.8
+        },
+        {
+          "M": 10,
+          "best_dist": 0.08678987,
+          "best_iter": 9,
+          "final_dist": 11.939,
+          "monotone_pct": 35.0
+        },
+        {
+          "M": 12,
+          "best_dist": 0.10250355,
+          "best_iter": 10,
+          "final_dist": 82.8865,
+          "monotone_pct": 28.7
+        },
+        {
+          "M": 15,
+          "best_dist": 0.03721099,
+          "best_iter": 2,
+          "final_dist": 25.4375,
+          "monotone_pct": 16.2
+        },
+        {
+          "M": 18,
+          "best_dist": 0.14311773,
+          "best_iter": 9,
+          "final_dist": 14.5553,
+          "monotone_pct": 21.2
+        },
+        {
+          "M": 20,
+          "best_dist": 0.11372454,
+          "best_iter": 10,
+          "final_dist": 34.8173,
+          "monotone_pct": 13.8
+        }
+      ],
+      "best_dist": 0.03721099,
+      "best_iter": 2,
+      "trace": [
+        {
+          "iteration": 1,
+          "dist": 8.27577158,
+          "mult": 1.000055,
+          "sp_var": 0.0
+        },
+        {
+          "iteration": 11,
+          "dist": 2.71994136,
+          "mult": 2.146237,
+          "sp_var": 0.296615
+        },
+        {
+          "iteration": 21,
+          "dist": 0.86490958,
+          "mult": 0.45895,
+          "sp_var": 2.061012
+        },
+        {
+          "iteration": 31,
+          "dist": 1.39129934,
+          "mult": 0.383873,
+          "sp_var": 2.520861
+        },
+        {
+          "iteration": 37,
+          "dist": 25.43748597,
+          "mult": 290.621301,
+          "sp_var": 3.892814
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "name": "Line search on step size",
+      "best_dist": 0.04969968,
+      "best_iter": 46,
+      "trace": [
+        {
+          "iteration": 1,
+          "dist": 8.27577158,
+          "alpha": 0.00309,
+          "mult": 1.000055,
+          "sp_var": 0.0
+        },
+        {
+          "iteration": 11,
+          "dist": 0.78289811,
+          "alpha": 0.00309,
+          "mult": 1.07281,
+          "sp_var": 0.068943
+        },
+        {
+          "iteration": 21,
+          "dist": 2.51957984,
+          "alpha": 0.00309,
+          "mult": 1.640103,
+          "sp_var": 0.135039
+        },
+        {
+          "iteration": 31,
+          "dist": 3.2505578,
+          "alpha": 0.00691,
+          "mult": 2.077537,
+          "sp_var": 0.193162
+        },
+        {
+          "iteration": 41,
+          "dist": 0.09348989,
+          "alpha": 0.003618,
+          "mult": 1.010037,
+          "sp_var": 0.100825
+        },
+        {
+          "iteration": 51,
+          "dist": 1.10354744,
+          "alpha": 0.00691,
+          "mult": 1.291415,
+          "sp_var": 0.144583
+        },
+        {
+          "iteration": 61,
+          "dist": 1.89911926,
+          "alpha": 0.00309,
+          "mult": 1.664437,
+          "sp_var": 0.199027
+        },
+        {
+          "iteration": 71,
+          "dist": 0.17264471,
+          "alpha": 0.00309,
+          "mult": 0.989105,
+          "sp_var": 0.114692
+        },
+        {
+          "iteration": 81,
+          "dist": 0.60400529,
+          "alpha": 0.00309,
+          "mult": 1.188333,
+          "sp_var": 0.15554
+        },
+        {
+          "iteration": 91,
+          "dist": 0.18025132,
+          "alpha": 0.00691,
+          "mult": 1.023717,
+          "sp_var": 0.131065
+        },
+        {
+          "iteration": 101,
+          "dist": 0.85433195,
+          "alpha": 0.00309,
+          "mult": 1.309833,
+          "sp_var": 0.183161
+        },
+        {
+          "iteration": 111,
+          "dist": 11.5821932,
+          "alpha": 0.00309,
+          "mult": 9.215524,
+          "sp_var": 0.408477
+        },
+        {
+          "iteration": 121,
+          "dist": 6.15079924,
+          "alpha": 0.00691,
+          "mult": 4.179764,
+          "sp_var": 0.346332
+        },
+        {
+          "iteration": 131,
+          "dist": 0.86425939,
+          "alpha": 0.00309,
+          "mult": 1.270554,
+          "sp_var": 0.179801
+        },
+        {
+          "iteration": 141,
+          "dist": 0.41018969,
+          "alpha": 0.00309,
+          "mult": 1.174662,
+          "sp_var": 0.169947
+        },
+        {
+          "iteration": 151,
+          "dist": 0.85396639,
+          "alpha": 0.00309,
+          "mult": 1.333486,
+          "sp_var": 0.196924
+        },
+        {
+          "iteration": 161,
+          "dist": 0.35427176,
+          "alpha": 0.00691,
+          "mult": 0.986853,
+          "sp_var": 0.136564
+        },
+        {
+          "iteration": 171,
+          "dist": 0.69927178,
+          "alpha": 0.00309,
+          "mult": 1.285434,
+          "sp_var": 0.189803
+        },
+        {
+          "iteration": 181,
+          "dist": 2.52708611,
+          "alpha": 0.00309,
+          "mult": 1.988383,
+          "sp_var": 0.257352
+        },
+        {
+          "iteration": 191,
+          "dist": 0.0954299,
+          "alpha": 0.003649,
+          "mult": 1.059761,
+          "sp_var": 0.154223
+        },
+        {
+          "iteration": 200,
+          "dist": 0.26475179,
+          "alpha": 0.00691,
+          "mult": 1.006651,
+          "sp_var": 0.143692
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "name": "Combined: truncation + line search + Tikhonov",
+      "M": 15,
+      "lambda": 1.0,
+      "best_dist": 0.03756926,
+      "best_iter": 67,
+      "trace": [
+        {
+          "iteration": 1,
+          "dist": 8.27577158,
+          "alpha": 0.00691,
+          "mult": 1.000055,
+          "sp_var": 0.0
+        },
+        {
+          "iteration": 11,
+          "dist": 0.72454852,
+          "alpha": 0.004362,
+          "mult": 0.96539,
+          "sp_var": 0.037491
+        },
+        {
+          "iteration": 21,
+          "dist": 15.35856127,
+          "alpha": 0.00691,
+          "mult": 9.78042,
+          "sp_var": 0.223163
+        },
+        {
+          "iteration": 31,
+          "dist": 2.72641003,
+          "alpha": 0.00309,
+          "mult": 1.672874,
+          "sp_var": 0.127317
+        },
+        {
+          "iteration": 41,
+          "dist": 0.5262909,
+          "alpha": 0.003204,
+          "mult": 1.042238,
+          "sp_var": 0.082263
+        },
+        {
+          "iteration": 51,
+          "dist": 1.26727082,
+          "alpha": 0.00309,
+          "mult": 1.218502,
+          "sp_var": 0.112177
+        },
+        {
+          "iteration": 61,
+          "dist": 0.11862878,
+          "alpha": 0.004053,
+          "mult": 0.99449,
+          "sp_var": 0.086006
+        },
+        {
+          "iteration": 71,
+          "dist": 0.06952532,
+          "alpha": 0.004277,
+          "mult": 0.994484,
+          "sp_var": 0.087033
+        },
+        {
+          "iteration": 81,
+          "dist": 0.17553173,
+          "alpha": 0.003907,
+          "mult": 1.037392,
+          "sp_var": 0.09685
+        },
+        {
+          "iteration": 91,
+          "dist": 0.04621496,
+          "alpha": 0.004436,
+          "mult": 0.981123,
+          "sp_var": 0.087548
+        },
+        {
+          "iteration": 101,
+          "dist": 3.90175014,
+          "alpha": 0.00309,
+          "mult": 2.311656,
+          "sp_var": 0.199434
+        },
+        {
+          "iteration": 111,
+          "dist": 1.00301825,
+          "alpha": 0.00309,
+          "mult": 1.246915,
+          "sp_var": 0.134204
+        },
+        {
+          "iteration": 121,
+          "dist": 0.05605461,
+          "alpha": 0.004184,
+          "mult": 0.981004,
+          "sp_var": 0.099478
+        },
+        {
+          "iteration": 131,
+          "dist": 0.98642737,
+          "alpha": 0.00309,
+          "mult": 1.315932,
+          "sp_var": 0.152575
+        },
+        {
+          "iteration": 141,
+          "dist": 0.70372791,
+          "alpha": 0.00309,
+          "mult": 1.201964,
+          "sp_var": 0.138221
+        },
+        {
+          "iteration": 151,
+          "dist": 0.45804611,
+          "alpha": 0.00309,
+          "mult": 1.110664,
+          "sp_var": 0.128097
+        },
+        {
+          "iteration": 161,
+          "dist": 0.30225022,
+          "alpha": 0.00309,
+          "mult": 1.083406,
+          "sp_var": 0.125734
+        },
+        {
+          "iteration": 171,
+          "dist": 0.06619725,
+          "alpha": 0.00431,
+          "mult": 1.024034,
+          "sp_var": 0.117325
+        },
+        {
+          "iteration": 181,
+          "dist": 0.90316275,
+          "alpha": 0.00309,
+          "mult": 1.264677,
+          "sp_var": 0.156732
+        },
+        {
+          "iteration": 191,
+          "dist": 0.14156132,
+          "alpha": 0.004852,
+          "mult": 0.992233,
+          "sp_var": 0.114514
+        },
+        {
+          "iteration": 201,
+          "dist": 0.24261983,
+          "alpha": 0.007439,
+          "mult": 0.98189,
+          "sp_var": 0.115051
+        },
+        {
+          "iteration": 211,
+          "dist": 0.40557639,
+          "alpha": 0.00309,
+          "mult": 1.135217,
+          "sp_var": 0.146941
+        },
+        {
+          "iteration": 221,
+          "dist": 0.12959338,
+          "alpha": 0.003953,
+          "mult": 1.020275,
+          "sp_var": 0.127236
+        },
+        {
+          "iteration": 231,
+          "dist": 0.08201786,
+          "alpha": 0.010871,
+          "mult": 1.043308,
+          "sp_var": 0.133866
+        },
+        {
+          "iteration": 241,
+          "dist": 0.09400651,
+          "alpha": 0.003205,
+          "mult": 1.024885,
+          "sp_var": 0.132975
+        },
+        {
+          "iteration": 251,
+          "dist": 0.19347169,
+          "alpha": 0.00447,
+          "mult": 0.996825,
+          "sp_var": 0.126823
+        },
+        {
+          "iteration": 261,
+          "dist": 0.13039594,
+          "alpha": 0.004183,
+          "mult": 1.018312,
+          "sp_var": 0.13027
+        },
+        {
+          "iteration": 271,
+          "dist": 0.30064636,
+          "alpha": 0.00309,
+          "mult": 1.120714,
+          "sp_var": 0.153094
+        },
+        {
+          "iteration": 281,
+          "dist": 0.20595121,
+          "alpha": 0.003988,
+          "mult": 1.022513,
+          "sp_var": 0.134723
+        },
+        {
+          "iteration": 291,
+          "dist": 0.56348937,
+          "alpha": 0.00309,
+          "mult": 1.166188,
+          "sp_var": 0.162239
+        },
+        {
+          "iteration": 300,
+          "dist": 0.47860924,
+          "alpha": 0.00309,
+          "mult": 1.181361,
+          "sp_var": 0.169292
+        }
+      ]
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-28",
+      "condition": "S1 (Tikhonov) converges monotonically for >10 iterations",
+      "result": "FAIL (streak=1)"
+    },
+    {
+      "id": "K-HP-29",
+      "condition": "Stabilized approach beats HP07's 0.1276",
+      "result": "PASS",
+      "detail": "best=0.03721099"
+    },
+    {
+      "id": "K-HP-30",
+      "condition": "Best stabilized dist < 0.05",
+      "result": "PASS",
+      "detail": "best=0.03721099"
+    },
+    {
+      "id": "K-HP-31",
+      "condition": "Best multiplicativity in [0.9, 1.1]",
+      "result": "PASS",
+      "detail": "mult=0.960358"
+    }
+  ]
+}

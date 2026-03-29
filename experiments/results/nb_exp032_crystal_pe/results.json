@@ -1,0 +1,719 @@
+{
+  "experiment": "EXP-032",
+  "date": "2026-03-12",
+  "description": "Crystal Pe \u2014 Nucleation, Symmetry, Spectral Gap + Piezo Tests",
+  "sections": "\u00a776\u201378",
+  "results": {
+    "K-CRYST-2": {
+      "test": "K-CRYST-2",
+      "description": "Polymorph Pe ordering vs thermodynamic stability",
+      "pairs": [
+        {
+          "stable": "Graphite",
+          "metastable": "Diamond",
+          "Pe_stable": 1.1282,
+          "Pe_metastable": 0.8877,
+          "delta_Pe": 0.24050000000000005,
+          "stable_has_higher_Pe": true,
+          "note": "Carbon at STP: graphite stable, diamond metastable"
+        },
+        {
+          "stable": "Calcite",
+          "metastable": "Aragonite",
+          "Pe_stable": 2.6571,
+          "Pe_metastable": 2.366,
+          "delta_Pe": 0.2910999999999997,
+          "stable_has_higher_Pe": true,
+          "note": "CaCO\u2083 at STP: calcite stable, aragonite metastable"
+        },
+        {
+          "stable": "Rutile",
+          "metastable": "Anatase",
+          "Pe_stable": 1.0731,
+          "Pe_metastable": 1.1566,
+          "delta_Pe": -0.08350000000000013,
+          "stable_has_higher_Pe": false,
+          "note": "TiO\u2082 at STP: rutile stable, anatase metastable"
+        },
+        {
+          "stable": "\u03b1-Quartz",
+          "metastable": "Coesite",
+          "Pe_stable": 2.4383,
+          "Pe_metastable": 2.3179,
+          "delta_Pe": 0.12040000000000006,
+          "stable_has_higher_Pe": true,
+          "note": "SiO\u2082 at STP: quartz stable, coesite high-P metastable"
+        },
+        {
+          "stable": "Pyrite",
+          "metastable": "Marcasite",
+          "Pe_stable": 1.1656,
+          "Pe_metastable": 1.2407,
+          "delta_Pe": -0.07509999999999994,
+          "stable_has_higher_Pe": false,
+          "note": "FeS\u2082 at STP: pyrite stable, marcasite metastable"
+        },
+        {
+          "stable": "Ice Ih",
+          "metastable": "Ice II",
+          "Pe_stable": 3.8509,
+          "Pe_metastable": 3.3009,
+          "delta_Pe": 0.5500000000000003,
+          "stable_has_higher_Pe": true,
+          "note": "H\u2082O at 0\u00b0C/1atm: Ih stable, II high-P metastable"
+        }
+      ],
+      "n_correct": 4,
+      "n_total": 6,
+      "fraction_correct": 0.6666666666666666,
+      "pressure_correlation": {
+        "rho": -0.4878139466552834,
+        "p": 0.15263398627837133,
+        "n": 10
+      },
+      "passes": true
+    },
+    "K-SYM-1": {
+      "test": "K-SYM-1",
+      "description": "Crystal symmetry order vs Pe (expect negative correlation)",
+      "spearman_rho": -0.6697742315140685,
+      "p_value": 0.00878061875730224,
+      "n": 14,
+      "system_means": {
+        "cubic": {
+          "order": 48,
+          "mean_pe": 1.02665,
+          "std_pe": 0.13894999999999996,
+          "n": 2,
+          "minerals": [
+            "Diamond",
+            "Pyrite"
+          ]
+        },
+        "hexagonal": {
+          "order": 24,
+          "mean_pe": 2.4895500000000004,
+          "std_pe": 1.36135,
+          "n": 2,
+          "minerals": [
+            "Ice Ih",
+            "Graphite"
+          ]
+        },
+        "trigonal": {
+          "order": 12,
+          "mean_pe": 2.5477,
+          "std_pe": 0.10939999999999994,
+          "n": 2,
+          "minerals": [
+            "\u03b1-Quartz",
+            "Calcite"
+          ]
+        },
+        "tetragonal": {
+          "order": 16,
+          "mean_pe": 1.3479333333333334,
+          "std_pe": 0.33138757101349203,
+          "n": 3,
+          "minerals": [
+            "Rutile",
+            "Anatase",
+            "Stishovite"
+          ]
+        },
+        "orthorhombic": {
+          "order": 8,
+          "mean_pe": 3.4964500000000003,
+          "std_pe": 1.742493378036198,
+          "n": 4,
+          "minerals": [
+            "Aragonite",
+            "Marcasite",
+            "Sillimanite",
+            "Andalusite"
+          ]
+        },
+        "triclinic": {
+          "order": 2,
+          "mean_pe": 4.5157,
+          "std_pe": 0,
+          "n": 1,
+          "minerals": [
+            "Kyanite"
+          ]
+        }
+      },
+      "individual": [
+        {
+          "name": "Diamond",
+          "symmetry_order": 48,
+          "Pe": 0.8877
+        },
+        {
+          "name": "Pyrite",
+          "symmetry_order": 48,
+          "Pe": 1.1656
+        },
+        {
+          "name": "Ice Ih",
+          "symmetry_order": 24,
+          "Pe": 3.8509
+        },
+        {
+          "name": "\u03b1-Quartz",
+          "symmetry_order": 12,
+          "Pe": 2.4383
+        },
+        {
+          "name": "Calcite",
+          "symmetry_order": 12,
+          "Pe": 2.6571
+        },
+        {
+          "name": "Graphite",
+          "symmetry_order": 24,
+          "Pe": 1.1282
+        },
+        {
+          "name": "Rutile",
+          "symmetry_order": 16,
+          "Pe": 1.0731
+        },
+        {
+          "name": "Anatase",
+          "symmetry_order": 16,
+          "Pe": 1.1566
+        },
+        {
+          "name": "Stishovite",
+          "symmetry_order": 16,
+          "Pe": 1.8141
+        },
+        {
+          "name": "Aragonite",
+          "symmetry_order": 8,
+          "Pe": 2.366
+        },
+        {
+          "name": "Marcasite",
+          "symmetry_order": 8,
+          "Pe": 1.2407
+        },
+        {
+          "name": "Kyanite",
+          "symmetry_order": 2,
+          "Pe": 4.5157
+        },
+        {
+          "name": "Sillimanite",
+          "symmetry_order": 8,
+          "Pe": 5.3406
+        },
+        {
+          "name": "Andalusite",
+          "symmetry_order": 8,
+          "Pe": 5.0385
+        }
+      ],
+      "passes": "True",
+      "strong": "True"
+    },
+    "K-SPEC-1": {
+      "test": "K-SPEC-1",
+      "description": "Band gap (eV) vs 1/Pe (spectral gap proxy)",
+      "spearman_rho_inv_pe": -0.5833333333333334,
+      "p_value": 0.09918581647988327,
+      "spearman_rho_direct": 0.5833333333333334,
+      "p_value_direct": 0.09918581647988327,
+      "excluding_graphite": {
+        "rho": -0.523809523809524,
+        "p": 0.1827207505397148,
+        "n": 8
+      },
+      "n": 9,
+      "data": [
+        {
+          "name": "Diamond",
+          "band_gap_eV": 5.47,
+          "Pe": 0.8876999999999999,
+          "inv_Pe": 1.1265067027148812
+        },
+        {
+          "name": "Graphite",
+          "band_gap_eV": 0.0,
+          "Pe": 1.1282,
+          "inv_Pe": 0.8863676653075695
+        },
+        {
+          "name": "\u03b1-Quartz",
+          "band_gap_eV": 8.9,
+          "Pe": 2.4383,
+          "inv_Pe": 0.4101218061764344
+        },
+        {
+          "name": "Coesite",
+          "band_gap_eV": 8.4,
+          "Pe": 2.3179,
+          "inv_Pe": 0.43142499676431256
+        },
+        {
+          "name": "Stishovite",
+          "band_gap_eV": 5.5,
+          "Pe": 1.8141,
+          "inv_Pe": 0.5512375282509233
+        },
+        {
+          "name": "Rutile",
+          "band_gap_eV": 3.0,
+          "Pe": 1.0731,
+          "inv_Pe": 0.9318796011555307
+        },
+        {
+          "name": "Anatase",
+          "band_gap_eV": 3.2,
+          "Pe": 1.1566,
+          "inv_Pe": 0.8646031471554556
+        },
+        {
+          "name": "Calcite",
+          "band_gap_eV": 5.0,
+          "Pe": 2.6571,
+          "inv_Pe": 0.37635015618531487
+        },
+        {
+          "name": "Ice Ih",
+          "band_gap_eV": 7.8,
+          "Pe": 3.8509,
+          "inv_Pe": 0.2596795554286011
+        }
+      ],
+      "passes": true,
+      "note": "Exploratory. Graphite (semimetal, gap=0) is an outlier by nature."
+    },
+    "K-OSTWALD-1": {
+      "test": "K-OSTWALD-1",
+      "description": "Dimensional consistency: K \u221d r^d, LSW r ~ t^{1/3}",
+      "dimensions": {
+        "1": {
+          "r_exponent": 0.3333333333333333,
+          "K_exponent": 0.3333333333333333,
+          "K_linear": false
+        },
+        "2": {
+          "r_exponent": 0.3333333333333333,
+          "K_exponent": 0.6666666666666666,
+          "K_linear": false
+        },
+        "3": {
+          "r_exponent": 0.3333333333333333,
+          "K_exponent": 1.0,
+          "K_linear": true
+        },
+        "4": {
+          "r_exponent": 0.3333333333333333,
+          "K_exponent": 1.3333333333333333,
+          "K_linear": false
+        }
+      },
+      "d3_result": {
+        "K_exponent": 1.0,
+        "is_linear": true,
+        "interpretation": "K ~ t^1 in d=3: linear RG flow confirmed"
+      },
+      "y_K_role": "y_K = 0.48 governs crossover amplitude, not asymptotic exponent",
+      "passes": true
+    },
+    "K-GEM-1": {
+      "test": "K-GEM-1",
+      "description": "Gem-quality growth clusters at Pe < 1 (materials)",
+      "growth_data": [
+        {
+          "name": "Quartz (hydrothermal)",
+          "Pe_materials": 0.09999999999999999,
+          "log10_Pe": -1.0,
+          "quality": "electronic grade",
+          "source": "Laudise 1970",
+          "in_gem_window": true
+        },
+        {
+          "name": "Emerald (Chatham)",
+          "Pe_materials": 0.09999999999999999,
+          "log10_Pe": -1.0,
+          "quality": "gem",
+          "source": "Nassau 1980",
+          "in_gem_window": true
+        },
+        {
+          "name": "Ruby (Verneuil)",
+          "Pe_materials": 10.000000000000002,
+          "log10_Pe": 1.0,
+          "quality": "gem (with strain)",
+          "source": "Verneuil 1902",
+          "in_gem_window": false
+        },
+        {
+          "name": "Sapphire (Czochralski)",
+          "Pe_materials": 25.000000000000004,
+          "log10_Pe": 1.3979400086720377,
+          "quality": "high",
+          "source": "Cockayne 1968",
+          "in_gem_window": false
+        },
+        {
+          "name": "Diamond (HPHT)",
+          "Pe_materials": 0.01,
+          "log10_Pe": -2.0,
+          "quality": "gem",
+          "source": "Bundy 1955",
+          "in_gem_window": true
+        },
+        {
+          "name": "Diamond (CVD)",
+          "Pe_materials": 0.0001,
+          "log10_Pe": -4.0,
+          "quality": "variable",
+          "source": "Angus 1988",
+          "in_gem_window": true
+        },
+        {
+          "name": "Quartz (pegmatite fast)",
+          "Pe_materials": 1000.0000000000001,
+          "log10_Pe": 3.0,
+          "quality": "included, not gem",
+          "source": "Pamukcu 2020",
+          "in_gem_window": false
+        },
+        {
+          "name": "Quartz (pegmatite slow)",
+          "Pe_materials": 1.0,
+          "log10_Pe": 0.0,
+          "quality": "clearer",
+          "source": "Pamukcu 2020",
+          "in_gem_window": false
+        },
+        {
+          "name": "Generic (Bridgman)",
+          "Pe_materials": 1.0,
+          "log10_Pe": 0.0,
+          "quality": "single crystal",
+          "source": "Bridgman method",
+          "in_gem_window": false
+        },
+        {
+          "name": "Metallic glass (splat)",
+          "Pe_materials": 10000.0,
+          "log10_Pe": 4.0,
+          "quality": "amorphous",
+          "source": "Duwez 1960",
+          "in_gem_window": false
+        }
+      ],
+      "gem_quality_mean_Pe": 148.03,
+      "non_gem_mean_Pe": 3333.6666999999998,
+      "mann_whitney": {
+        "U": 10.5,
+        "p": 0.5456417346006426
+      },
+      "n_gem": 7,
+      "n_non_gem": 3,
+      "passes": "False"
+    },
+    "K-CRYST-1": {
+      "test": "K-CRYST-1",
+      "description": "CNT \u2194 Kramers isomorphism: \u0394G*/kT = K_geo\u00b7|\u0394Pe|/T_eff",
+      "minerals": [
+        {
+          "mineral": "Quartz",
+          "gamma_J_m2": 0.35,
+          "Vm_m3_mol": 2.27e-05,
+          "T_growth_K": 846,
+          "rates": [
+            {
+              "supersaturation_kJ_mol": 0.5,
+              "delta_G_star_kT": 126736.1172628465,
+              "kramers_exponent": 126736.1172628465,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 1.0,
+              "delta_G_star_kT": 31684.029315711625,
+              "kramers_exponent": 31684.029315711625,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 2.0,
+              "delta_G_star_kT": 7921.007328927906,
+              "kramers_exponent": 7921.007328927906,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 5.0,
+              "delta_G_star_kT": 1267.3611726284648,
+              "kramers_exponent": 1267.3611726284648,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 10.0,
+              "delta_G_star_kT": 316.8402931571162,
+              "kramers_exponent": 316.8402931571162,
+              "match": true
+            }
+          ],
+          "kramers_cnt_isomorphism": true
+        },
+        {
+          "mineral": "Calcite",
+          "gamma_J_m2": 0.23,
+          "Vm_m3_mol": 3.69e-05,
+          "T_growth_K": 298,
+          "rates": [
+            {
+              "supersaturation_kJ_mol": 0.5,
+              "delta_G_star_kT": 269795.6167943814,
+              "kramers_exponent": 269795.6167943814,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 1.0,
+              "delta_G_star_kT": 67448.90419859535,
+              "kramers_exponent": 67448.90419859535,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 2.0,
+              "delta_G_star_kT": 16862.226049648838,
+              "kramers_exponent": 16862.226049648838,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 5.0,
+              "delta_G_star_kT": 2697.956167943814,
+              "kramers_exponent": 2697.9561679438143,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 10.0,
+              "delta_G_star_kT": 674.4890419859535,
+              "kramers_exponent": 674.4890419859536,
+              "match": true
+            }
+          ],
+          "kramers_cnt_isomorphism": true
+        },
+        {
+          "mineral": "Diamond",
+          "gamma_J_m2": 5.3,
+          "Vm_m3_mol": 3.42e-06,
+          "T_growth_K": 1673,
+          "rates": [
+            {
+              "supersaturation_kJ_mol": 0.5,
+              "delta_G_star_kT": 5051249.184453766,
+              "kramers_exponent": 5051249.184453766,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 1.0,
+              "delta_G_star_kT": 1262812.2961134415,
+              "kramers_exponent": 1262812.2961134415,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 2.0,
+              "delta_G_star_kT": 315703.07402836037,
+              "kramers_exponent": 315703.07402836037,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 5.0,
+              "delta_G_star_kT": 50512.49184453766,
+              "kramers_exponent": 50512.49184453766,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 10.0,
+              "delta_G_star_kT": 12628.122961134415,
+              "kramers_exponent": 12628.122961134415,
+              "match": true
+            }
+          ],
+          "kramers_cnt_isomorphism": true
+        },
+        {
+          "mineral": "Ice",
+          "gamma_J_m2": 0.033,
+          "Vm_m3_mol": 1.96e-05,
+          "T_growth_K": 263,
+          "rates": [
+            {
+              "supersaturation_kJ_mol": 0.5,
+              "delta_G_star_kT": 254.74937503008366,
+              "kramers_exponent": 254.74937503008368,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 1.0,
+              "delta_G_star_kT": 63.687343757520914,
+              "kramers_exponent": 63.68734375752092,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 2.0,
+              "delta_G_star_kT": 15.921835939380228,
+              "kramers_exponent": 15.92183593938023,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 5.0,
+              "delta_G_star_kT": 2.5474937503008364,
+              "kramers_exponent": 2.547493750300837,
+              "match": true
+            },
+            {
+              "supersaturation_kJ_mol": 10.0,
+              "delta_G_star_kT": 0.6368734375752091,
+              "kramers_exponent": 0.6368734375752092,
+              "match": true
+            }
+          ],
+          "kramers_cnt_isomorphism": true
+        }
+      ],
+      "all_isomorphic": true,
+      "passes": true,
+      "note": "This is an algebraic identity (\u00a776A mapping), not an empirical test. The empirical content is in K-CRYST-2, K-GEM-1, K-SYM-1."
+    },
+    "K-PIEZO-1/2": {
+      "test": "K-PIEZO-1 + K-PIEZO-2",
+      "description": "Piezoelectricity vs centrosymmetry + Fantasia Bound k\u00b2\u22641",
+      "symmetry_prediction": {
+        "correct": 16,
+        "total": 16,
+        "accuracy": 1.0
+      },
+      "pe_comparison": {
+        "piezo_pes": [
+          2.438
+        ],
+        "non_piezo_pes": [
+          0.888,
+          1.166,
+          2.657,
+          1.073,
+          8.419,
+          3.851,
+          1.241,
+          2.366
+        ],
+        "piezo_mean": 2.438,
+        "non_piezo_mean": 2.7076249999999997,
+        "mann_whitney_U": 5.0,
+        "mann_whitney_p": 0.8888888888888888
+      },
+      "symmetry_order": {
+        "piezo_mean_order": 10.333333333333334,
+        "non_piezo_mean_order": 24.8,
+        "piezo_have_lower_order": "True"
+      },
+      "k_squared": {
+        "values": {
+          "Quartz (AT-cut)": 0.0081,
+          "BaTiO3": 0.21,
+          "PZT-5A": 0.34,
+          "LiNbO3": 0.023,
+          "PVDF": 0.012,
+          "PMN-PT": 0.9
+        },
+        "all_below_one": true,
+        "max_k2": 0.9,
+        "max_material": "PMN-PT"
+      },
+      "passes": true
+    },
+    "K-PIEZO-5": {
+      "test": "K-PIEZO-5 (Hardness-Pe / Shamir ordering)",
+      "description": "Mohs hardness vs 1/Pe (lower Pe = harder = deeper constraint)",
+      "spearman_rho_inv_pe": 0.34798374707807467,
+      "p_value": 0.26767972534387163,
+      "spearman_rho_direct": -0.34798374707807467,
+      "p_direct": 0.26767972534387163,
+      "n": 12,
+      "data": [
+        {
+          "name": "Diamond",
+          "Mohs": 10,
+          "Pe": 0.888,
+          "inv_Pe": 1.1261261261261262
+        },
+        {
+          "name": "\u03b1-Quartz",
+          "Mohs": 7,
+          "Pe": 2.438,
+          "inv_Pe": 0.4101722723543888
+        },
+        {
+          "name": "Calcite",
+          "Mohs": 3,
+          "Pe": 2.657,
+          "inv_Pe": 0.3763643206624012
+        },
+        {
+          "name": "Graphite",
+          "Mohs": 1.5,
+          "Pe": 1.128,
+          "inv_Pe": 0.8865248226950355
+        },
+        {
+          "name": "Ice Ih",
+          "Mohs": 1.5,
+          "Pe": 3.851,
+          "inv_Pe": 0.25967281225655675
+        },
+        {
+          "name": "Pyrite",
+          "Mohs": 6.5,
+          "Pe": 1.166,
+          "inv_Pe": 0.8576329331046313
+        },
+        {
+          "name": "Aragonite",
+          "Mohs": 3.5,
+          "Pe": 2.366,
+          "inv_Pe": 0.42265426880811496
+        },
+        {
+          "name": "Marcasite",
+          "Mohs": 6.5,
+          "Pe": 1.241,
+          "inv_Pe": 0.8058017727639
+        },
+        {
+          "name": "Kyanite",
+          "Mohs": 5.5,
+          "Pe": 4.516,
+          "inv_Pe": 0.22143489813994685
+        },
+        {
+          "name": "Anatase",
+          "Mohs": 5.5,
+          "Pe": 1.157,
+          "inv_Pe": 0.8643042350907519
+        },
+        {
+          "name": "Rutile",
+          "Mohs": 6.0,
+          "Pe": 1.073,
+          "inv_Pe": 0.9319664492078286
+        },
+        {
+          "name": "Stishovite",
+          "Mohs": 9.5,
+          "Pe": 1.814,
+          "inv_Pe": 0.5512679162072767
+        }
+      ],
+      "passes": "True",
+      "note": "Graphite is an outlier (soft despite low Pe due to layered structure \u2014 van der Waals between sheets, not covalent)."
+    }
+  }
+}

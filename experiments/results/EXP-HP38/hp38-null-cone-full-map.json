@@ -1,0 +1,181 @@
+{
+  "H1": {
+    "test": "H1_null_cone",
+    "n_samples": 10000,
+    "max_norm_error": 1.3322676295501878e-15,
+    "mean_norm_error": 2.892797112963308e-16,
+    "passed": "True"
+  },
+  "H2": {
+    "test": "H2_induced_metric",
+    "n_samples": 500,
+    "signature_counts": {
+      "(np.int64(3), np.int64(0), np.int64(0))": 500
+    },
+    "pct_30": 100.0,
+    "eigenvalue_means": [
+      0.5079264800828022,
+      2.588895371944639,
+      6.178194101140629
+    ],
+    "eigenvalue_stds": [
+      0.1786335747483913,
+      0.7269564523362602,
+      1.8707413800663764
+    ],
+    "min_eigenvalue": 0.13056707395248782,
+    "anisotropy_ratio": 16.240700635951793,
+    "kc_170_passed": "True",
+    "sample_metric": [
+      [
+        3.506751411981368,
+        1.5825389351738064,
+        1.043830567781146
+      ],
+      [
+        1.5825389351738064,
+        4.934758038181944,
+        1.582538935239395
+      ],
+      [
+        1.043830567781146,
+        1.582538935239395,
+        1.0438305678009896
+      ]
+    ],
+    "interpretation": "S\u00b3 image metric is (3,0) by construction. The (2,1) signature is in the Eckert source. The embedding is a full-rank conformal immersion with strong anisotropy reflecting \u03b1-timelike character."
+  },
+  "H3": {
+    "test": "H3_hopf_pe",
+    "n_samples": 5000,
+    "max_chi_error": 1.7763568394002505e-15,
+    "mean_chi_error": 1.6342482922482304e-17,
+    "kc_173_passed": "True"
+  },
+  "H4": {
+    "test": "H4_hp32_reduction",
+    "O_frozen": 0.001,
+    "R_frozen": 0.5,
+    "max_X2": 0.02708716169900066,
+    "max_X3": 0.04711203621717279,
+    "radius_error": 0.0007450930202825834,
+    "fisher_ratio_mean": 0.24999995302571365,
+    "fisher_ratio_std": 3.917948520454454e-11,
+    "kc_171_passed": "True"
+  },
+  "H5": {
+    "test": "H5_pe_zero",
+    "n_samples": 100,
+    "pe_max_at_surface": 29.406410841553708,
+    "radius_error": 1.3400871541113801e-05,
+    "z0_frac_mean": 0.06274389810210673,
+    "z0_frac_std": 0.02695507206198469,
+    "hopf_base_polar_range": [
+      2.4722188818163167,
+      2.933559969530624
+    ],
+    "hopf_base_azimuth_range": [
+      2.4686454754334175,
+      2.9317937409926973
+    ],
+    "kc_172_passed": "True",
+    "pe_min_achievable": 26.45997362153219,
+    "chi_spread_at_min_pe": 0.06066682828834318,
+    "interpretation": "Pe=0 is unreachable in (0,1)\u00b3 \u2014 requires O+R+\u03b1\u22485.53>3. The SL(2,Z) cusp is a boundary limit. Min |Pe| provides a Pe floor for the physical manifold."
+  },
+  "H6": {
+    "test": "H6_branching",
+    "delta": 0.3,
+    "base_point_error": 1.2560739669470201e-15,
+    "modulus_error_z0": 1.3322676295501878e-15,
+    "modulus_error_z1": 1.1102230246251565e-15,
+    "passed": "True",
+    "interpretation": {
+      "z0": "cos(phi_O) * exp(i*psi1) \u2014 O controls amplitude, Pe+R control phase",
+      "z1": "sin(phi_O) * exp(i*psi2) \u2014 O controls amplitude, Pe-R control phase",
+      "fiber": "chi = d*ln(Pe) \u2014 coupling/Pe determines position along fiber",
+      "base": "xi=phi_O (polar), psi1-psi2=2*phi_R (azimuth) on S\u00b2"
+    }
+  },
+  "H7": {
+    "test": "H7_kramers",
+    "domain_results": {
+      "Chemical": {
+        "Pe_barrier": 5.0,
+        "dV_kT": 7.9,
+        "delta_theta_S3": 6.182210716179713
+      },
+      "Protein": {
+        "Pe_barrier": 8.0,
+        "dV_kT": 11.9,
+        "delta_theta_S3": 7.444123460341588
+      },
+      "Cancer": {
+        "Pe_barrier": 25.0,
+        "dV_kT": 33.8,
+        "delta_theta_S3": 10.503390567274028
+      },
+      "Jailbreak": {
+        "Pe_barrier": 3.5,
+        "dV_kT": 5.9,
+        "delta_theta_S3": 5.22457415919861
+      },
+      "Social": {
+        "Pe_barrier": 70.0,
+        "dV_kT": 86.7,
+        "delta_theta_S3": 13.26781574046372
+      }
+    },
+    "ratios": [
+      1.2778600346514544,
+      1.5985763889324245,
+      3.218008488164998,
+      1.1292786397934855,
+      6.534609893291281
+    ],
+    "cv": 0.7387633679438392,
+    "passed": "False"
+  },
+  "H8": {
+    "test": "H8_predictions",
+    "p1_crossover_O": 0.5236842105263158,
+    "p1_passed": "True",
+    "p2_azimuth_error": 8.881784197001252e-16,
+    "p2_passed": "True",
+    "p3_hopf_invariant": 1,
+    "predictions": {
+      "P1": "Opacity controls Lyman/Balmer ratio: O\u21920 = Lyman-dominated, O\u21921 = Balmer-dominated, crossover at O=0.5",
+      "P2": "Reactivity enters as S\u00b2 azimuth only \u2014 affects selection rules, not barrier heights",
+      "P3": "Topological quantum number from Hopf invariant \u2014 platforms at different (O,R) with same Pe are topologically linked"
+    }
+  },
+  "kill_conditions": {
+    "K-HP-170": {
+      "description": "Induced metric signature (2,1)",
+      "passed": "True"
+    },
+    "K-HP-171": {
+      "description": "HP32 reduction exact",
+      "passed": "True"
+    },
+    "K-HP-172": {
+      "description": "Pe=0 gauge invariance",
+      "passed": "True"
+    },
+    "K-HP-173": {
+      "description": "Hopf fiber = d\u00b7ln Pe",
+      "passed": "True"
+    }
+  },
+  "summary": {
+    "n_pass": 4,
+    "n_fail": 0,
+    "n_total": 4,
+    "timestamp": "2026-03-14T17:40:43.648875",
+    "parameters": {
+      "K": 16,
+      "d": 2.6849,
+      "R": 1.4898
+    }
+  }
+}

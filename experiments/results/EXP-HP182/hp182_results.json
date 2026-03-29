@@ -1,0 +1,103 @@
+{
+  "experiment": "HP182",
+  "title": "Barrier Scaling Across Reynolds Numbers",
+  "date": "2026-03-28T14:12:29.053708",
+  "combined_analysis": {
+    "beta": 0.21318187277115655,
+    "beta_ci": [
+      0.14690190009194345,
+      0.2620803469874083
+    ],
+    "beta_std": 0.03529918309141346,
+    "R2": 0.6695609394898189,
+    "p_value": 1.0399753039686031e-05,
+    "spearman_rho": 0.8299473288186604,
+    "spearman_p": 5.985028854543354e-06,
+    "n_points": 20,
+    "enstrophy_range": [
+      18234.0,
+      115962.0
+    ],
+    "barrier_range": [
+      283.0055186076128,
+      436.3001745200698
+    ]
+  },
+  "per_Re_analysis": {
+    "Re_433_isotropic1024coarse": {
+      "Re_lambda": 433,
+      "dataset": "isotropic1024coarse",
+      "beta": 0.14437970737349098,
+      "R2": 0.985082957100201,
+      "n_points": 7,
+      "enstrophy_range": [
+        22911.0,
+        78965.0
+      ]
+    },
+    "Re_610_mixing": {
+      "Re_lambda": 610,
+      "dataset": "mixing",
+      "beta": 0.13011138083330875,
+      "R2": 0.9897514466783144,
+      "n_points": 7,
+      "enstrophy_range": [
+        31245.0,
+        115962.0
+      ]
+    },
+    "Re_433_rotor": {
+      "Re_lambda": 433,
+      "dataset": "rotor",
+      "beta": 0.12522691061499225,
+      "R2": 0.9967396695723181,
+      "n_points": 6,
+      "enstrophy_range": [
+        18234.0,
+        71234.0
+      ]
+    }
+  },
+  "hp170_contribution": {
+    "Re_lambda": 610,
+    "sigma_over_nu_mean": 19.58,
+    "sigma_over_nu_std": 0.092,
+    "sigma_over_nu_cv": 0.0047,
+    "sigma_over_nu_range": [
+      19.46,
+      19.7
+    ],
+    "enstrophy_range": [
+      26891,
+      115962
+    ],
+    "n_timesteps": 21
+  },
+  "hp175_contribution": {
+    "gamma": 0.15,
+    "gamma_ci": [
+      0.02,
+      0.28
+    ],
+    "P_gamma_positive": 0.978,
+    "n_snapshots": 21,
+    "enstrophy_range": [
+      26891,
+      115962
+    ],
+    "note": "Mode support grows \u2192 barrier changes with enstrophy"
+  },
+  "kill_conditions": {
+    "K-182-1": "PASS",
+    "K-182-2": "PASS",
+    "K-182-3": "PASS",
+    "K-182-4": "PASS",
+    "K-182-5": "PASS"
+  },
+  "key_finding": "Barrier E_b = 1/\u03c3 grows with enstrophy: \u03b2 = 0.2132, 95% CI [0.1469, 0.2621]",
+  "summary": {
+    "kc_pass": 5,
+    "kc_total": 5,
+    "status": "PASS"
+  }
+}

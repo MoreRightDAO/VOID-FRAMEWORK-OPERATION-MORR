@@ -1,0 +1,70 @@
+{
+  "experiment": "EXP-HP16",
+  "title": "Enriched Euler Product \u2014 Closing the Prime Decomposition Gap",
+  "date": "2026-03-13",
+  "tests": [
+    {
+      "id": "E1",
+      "name": "Original trig",
+      "dist": 0.02022461,
+      "n_params": 120,
+      "corr_ref": -0.1671
+    },
+    {
+      "id": "E2",
+      "name": "Symmetric trig",
+      "dist": 0.11531417,
+      "n_params": 60,
+      "corr_ref": 0.0622
+    },
+    {
+      "id": "E3",
+      "name": "Cross u^n \u00d7 trig",
+      "dist": 0.0335063,
+      "n_params": 160,
+      "corr_ref": 0.2542
+    },
+    {
+      "id": "E4",
+      "name": "log \u00d7 trig",
+      "dist": 0.03313454,
+      "n_params": 95,
+      "corr_ref": 0.1268
+    },
+    {
+      "id": "E5",
+      "name": "Chebyshev \u00d7 trig",
+      "dist": 0.03453286,
+      "n_params": 127,
+      "corr_ref": 0.4261
+    },
+    {
+      "id": "E6",
+      "name": "25 primes sym trig",
+      "dist": 0.15272345,
+      "n_params": 100,
+      "corr_ref": -0.2387
+    },
+    {
+      "id": "E7",
+      "name": "Kitchen sink 15p",
+      "dist": 0.05491461,
+      "n_params": 191,
+      "corr_ref": 0.0208
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-58",
+      "result": "FAIL (best=0.020225)"
+    },
+    {
+      "id": "K-HP-59",
+      "result": "FAIL (best corr=0.4261)"
+    },
+    {
+      "id": "K-HP-60",
+      "result": "FAIL (0.5674)"
+    }
+  ]
+}

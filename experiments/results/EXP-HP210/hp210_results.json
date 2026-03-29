@@ -1,0 +1,763 @@
+{
+  "experiment": "HP210",
+  "title": "PID Decomposition on Real HP192 Cross-Model Data",
+  "date": "2026-03-29T02:29:15.051308",
+  "n_models": 27,
+  "n_base": 10,
+  "n_aligned": 17,
+  "hypothesis": "The O/R/alpha -> PID mapping from HP204 (synthetic) transfers to real LLM benchmark data: O <-> I_unique(S), R <-> I_redundancy, alpha <-> I_synergy.",
+  "primary_correlations": {
+    "O_vs_I_unique_S": {
+      "rho": 0.9841,
+      "p": 0.0
+    },
+    "R_vs_I_redundancy": {
+      "rho": 0.9699,
+      "p": 0.0
+    },
+    "alpha_vs_I_synergy": {
+      "rho": 0.9172,
+      "p": 0.0
+    }
+  },
+  "cross_correlation_matrix": {
+    "O_vs_I_uniq_S": {
+      "rho": 0.9841,
+      "p": 0.0
+    },
+    "O_vs_I_red": {
+      "rho": -0.5299,
+      "p": 0.00447
+    },
+    "O_vs_I_syn": {
+      "rho": -0.9786,
+      "p": 0.0
+    },
+    "O_vs_I_uniq_E": {
+      "rho": 0.5299,
+      "p": 0.00447
+    },
+    "R_vs_I_uniq_S": {
+      "rho": -0.5239,
+      "p": 0.005031
+    },
+    "R_vs_I_red": {
+      "rho": 0.9699,
+      "p": 0.0
+    },
+    "R_vs_I_syn": {
+      "rho": 0.5522,
+      "p": 0.002821
+    },
+    "R_vs_I_uniq_E": {
+      "rho": -0.9699,
+      "p": 0.0
+    },
+    "alpha_vs_I_uniq_S": {
+      "rho": -0.9065,
+      "p": 0.0
+    },
+    "alpha_vs_I_red": {
+      "rho": 0.4405,
+      "p": 0.021458
+    },
+    "alpha_vs_I_syn": {
+      "rho": 0.9172,
+      "p": 0.0
+    },
+    "alpha_vs_I_uniq_E": {
+      "rho": -0.4405,
+      "p": 0.021458
+    }
+  },
+  "diagonal_dominance": {
+    "n_match": 3,
+    "details": [
+      {
+        "dimension": "O",
+        "target": "I_uniq_S",
+        "best_match": "I_uniq_S",
+        "rho_target": 0.9841,
+        "rho_best": 0.9841,
+        "match": true
+      },
+      {
+        "dimension": "R",
+        "target": "I_red",
+        "best_match": "I_red",
+        "rho_target": 0.9699,
+        "rho_best": 0.9699,
+        "match": true
+      },
+      {
+        "dimension": "alpha",
+        "target": "I_syn",
+        "best_match": "I_syn",
+        "rho_target": 0.9172,
+        "rho_best": 0.9172,
+        "match": true
+      }
+    ]
+  },
+  "base_vs_aligned_separation": {
+    "I_unique_S": {
+      "base_mean": -0.113279,
+      "aligned_mean": -0.214929,
+      "U_stat": 168.0,
+      "p_value": 3.4e-05,
+      "significant": "True"
+    },
+    "I_redundancy": {
+      "base_mean": 0.418515,
+      "aligned_mean": 0.539245,
+      "U_stat": 0.0,
+      "p_value": 2.2e-05,
+      "significant": "True"
+    },
+    "I_synergy": {
+      "base_mean": 0.502893,
+      "aligned_mean": 0.588046,
+      "U_stat": 0.0,
+      "p_value": 2.2e-05,
+      "significant": "True"
+    },
+    "I_unique_E": {
+      "base_mean": -0.26155,
+      "aligned_mean": -0.305497,
+      "U_stat": 170.0,
+      "p_value": 2.2e-05,
+      "significant": "True"
+    }
+  },
+  "pe_vs_pid": {
+    "Pe_vs_I_total": {
+      "rho": 0.9218,
+      "p": 0.0
+    },
+    "Pe_vs_I_unique_S": {
+      "rho": -0.4931,
+      "p": 0.008959
+    },
+    "Pe_vs_I_redundancy": {
+      "rho": 0.9191,
+      "p": 0.0
+    },
+    "Pe_vs_I_synergy": {
+      "rho": 0.5298,
+      "p": 0.004483
+    },
+    "Pe_vs_I_unique_E": {
+      "rho": -0.9191,
+      "p": 0.0
+    },
+    "best_predictor": "I_total"
+  },
+  "kill_conditions": {
+    "KC-1": {
+      "description": "rho(O, I_unique_S) > 0.5, p < 0.05",
+      "rho": 0.9841,
+      "p_value": 0.0,
+      "threshold_rho": 0.5,
+      "threshold_p": 0.05,
+      "result": "PASS"
+    },
+    "KC-2": {
+      "description": "rho(R, I_redundancy) > 0.5, p < 0.05",
+      "rho": 0.9699,
+      "p_value": 0.0,
+      "threshold_rho": 0.5,
+      "threshold_p": 0.05,
+      "result": "PASS"
+    },
+    "KC-3": {
+      "description": "rho(alpha, I_synergy) > 0.5, p < 0.05",
+      "rho": 0.9172,
+      "p_value": 0.0,
+      "threshold_rho": 0.5,
+      "threshold_p": 0.05,
+      "result": "PASS"
+    },
+    "KC-4": {
+      "description": "Base vs aligned separate in PID space (Mann-Whitney p < 0.05 on >= 1 atom)",
+      "n_significant_atoms": 4,
+      "separation_details": {
+        "I_unique_S": {
+          "base_mean": -0.113279,
+          "aligned_mean": -0.214929,
+          "U_stat": 168.0,
+          "p_value": 3.4e-05,
+          "significant": "True"
+        },
+        "I_redundancy": {
+          "base_mean": 0.418515,
+          "aligned_mean": 0.539245,
+          "U_stat": 0.0,
+          "p_value": 2.2e-05,
+          "significant": "True"
+        },
+        "I_synergy": {
+          "base_mean": 0.502893,
+          "aligned_mean": 0.588046,
+          "U_stat": 0.0,
+          "p_value": 2.2e-05,
+          "significant": "True"
+        },
+        "I_unique_E": {
+          "base_mean": -0.26155,
+          "aligned_mean": -0.305497,
+          "U_stat": 170.0,
+          "p_value": 2.2e-05,
+          "significant": "True"
+        }
+      },
+      "result": "PASS"
+    },
+    "KC-5": {
+      "description": "Diagonal dominance: each dimension's strongest correlation is predicted atom (>= 2/3)",
+      "n_diagonal": 3,
+      "details": [
+        {
+          "dimension": "O",
+          "target": "I_uniq_S",
+          "best_match": "I_uniq_S",
+          "rho_target": 0.9841,
+          "rho_best": 0.9841,
+          "match": true
+        },
+        {
+          "dimension": "R",
+          "target": "I_red",
+          "best_match": "I_red",
+          "rho_target": 0.9699,
+          "rho_best": 0.9699,
+          "match": true
+        },
+        {
+          "dimension": "alpha",
+          "target": "I_syn",
+          "best_match": "I_syn",
+          "rho_target": 0.9172,
+          "rho_best": 0.9172,
+          "match": true
+        }
+      ],
+      "result": "PASS"
+    }
+  },
+  "overall_result": "5/5 KC PASS",
+  "models": [
+    {
+      "name": "Llama-2-7B",
+      "model_type": "base",
+      "O": 1.98,
+      "R": 0.75,
+      "alpha": 1.02,
+      "C": 0.583333,
+      "Pe": -16.0595,
+      "pid": {
+        "I_redundancy": 0.40093057,
+        "I_unique_S": -0.05941367,
+        "I_unique_E": -0.25436005,
+        "I_synergy": 0.47199459,
+        "I_S_Y": 0.3415169,
+        "I_E_Y": 0.14657051,
+        "I_SE_Y": 0.55915144
+      },
+      "truthfulqa": 0.339
+    },
+    {
+      "name": "Llama-2-13B",
+      "model_type": "base",
+      "O": 1.9,
+      "R": 0.75,
+      "alpha": 1.13,
+      "C": 0.58,
+      "Pe": -15.7221,
+      "pid": {
+        "I_redundancy": 0.41058905,
+        "I_unique_S": -0.0994814,
+        "I_unique_E": -0.25838123,
+        "I_synergy": 0.49545063,
+        "I_S_Y": 0.31110764,
+        "I_E_Y": 0.15220782,
+        "I_SE_Y": 0.54817705
+      },
+      "truthfulqa": 0.366
+    },
+    {
+      "name": "Llama-2-70B",
+      "model_type": "base",
+      "O": 1.88,
+      "R": 0.75,
+      "alpha": 1.29,
+      "C": 0.564444,
+      "Pe": -14.1932,
+      "pid": {
+        "I_redundancy": 0.41283548,
+        "I_unique_S": -0.12909167,
+        "I_unique_E": -0.25930668,
+        "I_synergy": 0.51614683,
+        "I_S_Y": 0.28374381,
+        "I_E_Y": 0.1535288,
+        "I_SE_Y": 0.54058396
+      },
+      "truthfulqa": 0.375
+    },
+    {
+      "name": "Mistral-7B",
+      "model_type": "base",
+      "O": 1.73,
+      "R": 0.75,
+      "alpha": 1.17,
+      "C": 0.594444,
+      "Pe": -17.2104,
+      "pid": {
+        "I_redundancy": 0.42904684,
+        "I_unique_S": -0.14658401,
+        "I_unique_E": -0.26587688,
+        "I_synergy": 0.52142417,
+        "I_S_Y": 0.28246283,
+        "I_E_Y": 0.16316996,
+        "I_SE_Y": 0.53801012
+      },
+      "truthfulqa": 0.425
+    },
+    {
+      "name": "Mixtral-8x7B",
+      "model_type": "base",
+      "O": 1.61,
+      "R": 0.75,
+      "alpha": 1.27,
+      "C": 0.596667,
+      "Pe": -17.4456,
+      "pid": {
+        "I_redundancy": 0.44094373,
+        "I_unique_S": -0.18800474,
+        "I_unique_E": -0.27057916,
+        "I_synergy": 0.54770047,
+        "I_S_Y": 0.25293899,
+        "I_E_Y": 0.17036457,
+        "I_SE_Y": 0.5300603
+      },
+      "truthfulqa": 0.465
+    },
+    {
+      "name": "Falcon-7B",
+      "model_type": "base",
+      "O": 1.94,
+      "R": 0.75,
+      "alpha": 0.9,
+      "C": 0.601111,
+      "Pe": -17.9213,
+      "pid": {
+        "I_redundancy": 0.40404291,
+        "I_unique_S": -0.044135,
+        "I_unique_E": -0.25566334,
+        "I_synergy": 0.46131998,
+        "I_S_Y": 0.35990791,
+        "I_E_Y": 0.14837956,
+        "I_SE_Y": 0.56556454
+      },
+      "truthfulqa": 0.354
+    },
+    {
+      "name": "Falcon-40B",
+      "model_type": "base",
+      "O": 1.74,
+      "R": 0.75,
+      "alpha": 1.16,
+      "C": 0.594444,
+      "Pe": -17.2104,
+      "pid": {
+        "I_redundancy": 0.42602826,
+        "I_unique_S": -0.13966338,
+        "I_unique_E": -0.26466781,
+        "I_synergy": 0.51723781,
+        "I_S_Y": 0.28636488,
+        "I_E_Y": 0.16136044,
+        "I_SE_Y": 0.53893488
+      },
+      "truthfulqa": 0.42
+    },
+    {
+      "name": "MPT-7B",
+      "model_type": "base",
+      "O": 2.0,
+      "R": 0.75,
+      "alpha": 0.86,
+      "C": 0.598889,
+      "Pe": -17.6826,
+      "pid": {
+        "I_redundancy": 0.39563721,
+        "I_unique_S": -0.01783394,
+        "I_unique_E": -0.25212694,
+        "I_synergy": 0.44764757,
+        "I_S_Y": 0.37780326,
+        "I_E_Y": 0.14351027,
+        "I_SE_Y": 0.5733239
+      },
+      "truthfulqa": 0.335
+    },
+    {
+      "name": "Phi-2",
+      "model_type": "base",
+      "O": 1.68,
+      "R": 0.75,
+      "alpha": 1.13,
+      "C": 0.604444,
+      "Pe": -18.2827,
+      "pid": {
+        "I_redundancy": 0.43095734,
+        "I_unique_S": -0.14682577,
+        "I_unique_E": -0.26663877,
+        "I_synergy": 0.51982256,
+        "I_S_Y": 0.28413157,
+        "I_E_Y": 0.16431858,
+        "I_SE_Y": 0.53731536
+      },
+      "truthfulqa": 0.44
+    },
+    {
+      "name": "Gemma-7B",
+      "model_type": "base",
+      "O": 1.67,
+      "R": 0.75,
+      "alpha": 1.19,
+      "C": 0.598889,
+      "Pe": -17.6826,
+      "pid": {
+        "I_redundancy": 0.43413636,
+        "I_unique_S": -0.16175424,
+        "I_unique_E": -0.26790077,
+        "I_synergy": 0.53018775,
+        "I_S_Y": 0.27238212,
+        "I_E_Y": 0.16623559,
+        "I_SE_Y": 0.5346691
+      },
+      "truthfulqa": 0.444
+    },
+    {
+      "name": "Llama-2-7B-Chat",
+      "model_type": "aligned",
+      "O": 1.64,
+      "R": 1.95,
+      "alpha": 1.17,
+      "C": 0.471111,
+      "Pe": -6.2333,
+      "pid": {
+        "I_redundancy": 0.56905871,
+        "I_unique_S": -0.17591687,
+        "I_unique_E": -0.31520749,
+        "I_synergy": 0.56408657,
+        "I_S_Y": 0.39314184,
+        "I_E_Y": 0.25385122,
+        "I_SE_Y": 0.64202092
+      },
+      "truthfulqa": 0.454
+    },
+    {
+      "name": "Llama-2-13B-Chat",
+      "model_type": "aligned",
+      "O": 1.55,
+      "R": 1.8,
+      "alpha": 1.27,
+      "C": 0.486667,
+      "Pe": -7.4483,
+      "pid": {
+        "I_redundancy": 0.55016592,
+        "I_unique_S": -0.18992306,
+        "I_unique_E": -0.30928812,
+        "I_synergy": 0.57189388,
+        "I_S_Y": 0.36024286,
+        "I_E_Y": 0.2408778,
+        "I_SE_Y": 0.62284862
+      },
+      "truthfulqa": 0.485
+    },
+    {
+      "name": "Llama-2-70B-Chat",
+      "model_type": "aligned",
+      "O": 1.43,
+      "R": 1.65,
+      "alpha": 1.42,
+      "C": 0.5,
+      "Pe": -8.5184,
+      "pid": {
+        "I_redundancy": 0.52835953,
+        "I_unique_S": -0.20957777,
+        "I_unique_E": -0.30217926,
+        "I_synergy": 0.58594875,
+        "I_S_Y": 0.31878176,
+        "I_E_Y": 0.22618027,
+        "I_SE_Y": 0.60255125
+      },
+      "truthfulqa": 0.525
+    },
+    {
+      "name": "GPT-3.5-Turbo",
+      "model_type": "aligned",
+      "O": 1.59,
+      "R": 2.1,
+      "alpha": 1.35,
+      "C": 0.44,
+      "Pe": -3.8888,
+      "pid": {
+        "I_redundancy": 0.57167034,
+        "I_unique_S": -0.19366205,
+        "I_unique_E": -0.31600846,
+        "I_synergy": 0.58036217,
+        "I_S_Y": 0.37800829,
+        "I_E_Y": 0.25566188,
+        "I_SE_Y": 0.642362
+      },
+      "truthfulqa": 0.47
+    },
+    {
+      "name": "GPT-4",
+      "model_type": "aligned",
+      "O": 1.26,
+      "R": 1.35,
+      "alpha": 1.55,
+      "C": 0.537778,
+      "Pe": -11.7291,
+      "pid": {
+        "I_redundancy": 0.49325004,
+        "I_unique_S": -0.23196101,
+        "I_unique_E": -0.29009614,
+        "I_synergy": 0.60133321,
+        "I_S_Y": 0.26128903,
+        "I_E_Y": 0.20315391,
+        "I_SE_Y": 0.57252611
+      },
+      "truthfulqa": 0.58
+    },
+    {
+      "name": "GPT-4o",
+      "model_type": "aligned",
+      "O": 1.2,
+      "R": 1.5,
+      "alpha": 1.6,
+      "C": 0.522222,
+      "Pe": -10.3716,
+      "pid": {
+        "I_redundancy": 0.51451935,
+        "I_unique_S": -0.2513729,
+        "I_unique_E": -0.29751108,
+        "I_synergy": 0.61800393,
+        "I_S_Y": 0.26314644,
+        "I_E_Y": 0.21700827,
+        "I_SE_Y": 0.58363929
+      },
+      "truthfulqa": 0.6
+    },
+    {
+      "name": "GPT-4o-mini",
+      "model_type": "aligned",
+      "O": 1.35,
+      "R": 1.65,
+      "alpha": 1.45,
+      "C": 0.505556,
+      "Pe": -8.973,
+      "pid": {
+        "I_redundancy": 0.53386262,
+        "I_unique_S": -0.22700581,
+        "I_unique_E": -0.30400151,
+        "I_synergy": 0.59735582,
+        "I_S_Y": 0.30685681,
+        "I_E_Y": 0.2298611,
+        "I_SE_Y": 0.60021111
+      },
+      "truthfulqa": 0.55
+    },
+    {
+      "name": "Claude-3-Opus",
+      "model_type": "aligned",
+      "O": 1.17,
+      "R": 1.2,
+      "alpha": 1.55,
+      "C": 0.564444,
+      "Pe": -14.1932,
+      "pid": {
+        "I_redundancy": 0.48185168,
+        "I_unique_S": -0.24486224,
+        "I_unique_E": -0.28600031,
+        "I_synergy": 0.60759523,
+        "I_S_Y": 0.23698944,
+        "I_E_Y": 0.19585137,
+        "I_SE_Y": 0.55858437
+      },
+      "truthfulqa": 0.61
+    },
+    {
+      "name": "Claude-3-Sonnet",
+      "model_type": "aligned",
+      "O": 1.23,
+      "R": 1.35,
+      "alpha": 1.5,
+      "C": 0.546667,
+      "Pe": -12.5301,
+      "pid": {
+        "I_redundancy": 0.50199229,
+        "I_unique_S": -0.23971968,
+        "I_unique_E": -0.29317953,
+        "I_synergy": 0.60351701,
+        "I_S_Y": 0.2622726,
+        "I_E_Y": 0.20881276,
+        "I_SE_Y": 0.57261009
+      },
+      "truthfulqa": 0.59
+    },
+    {
+      "name": "Claude-3-Haiku",
+      "model_type": "aligned",
+      "O": 1.32,
+      "R": 1.5,
+      "alpha": 1.4,
+      "C": 0.531111,
+      "Pe": -11.1407,
+      "pid": {
+        "I_redundancy": 0.52343536,
+        "I_unique_S": -0.22778477,
+        "I_unique_E": -0.3005324,
+        "I_synergy": 0.59352279,
+        "I_S_Y": 0.29565059,
+        "I_E_Y": 0.22290295,
+        "I_SE_Y": 0.58864098
+      },
+      "truthfulqa": 0.56
+    },
+    {
+      "name": "Mistral-7B-Instruct",
+      "model_type": "aligned",
+      "O": 1.44,
+      "R": 1.8,
+      "alpha": 1.25,
+      "C": 0.501111,
+      "Pe": -8.6089,
+      "pid": {
+        "I_redundancy": 0.56502894,
+        "I_unique_S": -0.21454913,
+        "I_unique_E": -0.31396338,
+        "I_synergy": 0.5846207,
+        "I_S_Y": 0.35047981,
+        "I_E_Y": 0.25106556,
+        "I_SE_Y": 0.62113712
+      },
+      "truthfulqa": 0.52
+    },
+    {
+      "name": "Mixtral-8x7B-Instruct",
+      "model_type": "aligned",
+      "O": 1.34,
+      "R": 1.65,
+      "alpha": 1.35,
+      "C": 0.517778,
+      "Pe": -9.9933,
+      "pid": {
+        "I_redundancy": 0.54635548,
+        "I_unique_S": -0.23041051,
+        "I_unique_E": -0.30806743,
+        "I_synergy": 0.59507745,
+        "I_S_Y": 0.31594497,
+        "I_E_Y": 0.23828805,
+        "I_SE_Y": 0.60295499
+      },
+      "truthfulqa": 0.555
+    },
+    {
+      "name": "Gemma-7B-IT",
+      "model_type": "aligned",
+      "O": 1.38,
+      "R": 1.65,
+      "alpha": 1.3,
+      "C": 0.518889,
+      "Pe": -10.0875,
+      "pid": {
+        "I_redundancy": 0.54751838,
+        "I_unique_S": -0.22170104,
+        "I_unique_E": -0.30844093,
+        "I_synergy": 0.58812901,
+        "I_S_Y": 0.32581734,
+        "I_E_Y": 0.23907745,
+        "I_SE_Y": 0.60550541
+      },
+      "truthfulqa": 0.54
+    },
+    {
+      "name": "Phi-2-DPO",
+      "model_type": "aligned",
+      "O": 1.5,
+      "R": 1.5,
+      "alpha": 1.2,
+      "C": 0.533333,
+      "Pe": -11.3357,
+      "pid": {
+        "I_redundancy": 0.5257098,
+        "I_unique_S": -0.18766993,
+        "I_unique_E": -0.30129499,
+        "I_synergy": 0.5632054,
+        "I_S_Y": 0.33803987,
+        "I_E_Y": 0.22441481,
+        "I_SE_Y": 0.59995028
+      },
+      "truthfulqa": 0.5
+    },
+    {
+      "name": "Falcon-40B-Instruct",
+      "model_type": "aligned",
+      "O": 1.53,
+      "R": 1.8,
+      "alpha": 1.25,
+      "C": 0.491111,
+      "Pe": -7.8018,
+      "pid": {
+        "I_redundancy": 0.55466055,
+        "I_unique_S": -0.19429956,
+        "I_unique_E": -0.31071637,
+        "I_synergy": 0.57363652,
+        "I_S_Y": 0.36036099,
+        "I_E_Y": 0.24394419,
+        "I_SE_Y": 0.62328115
+      },
+      "truthfulqa": 0.49
+    },
+    {
+      "name": "Vicuna-13B",
+      "model_type": "aligned",
+      "O": 1.47,
+      "R": 1.95,
+      "alpha": 1.3,
+      "C": 0.475556,
+      "Pe": -6.5771,
+      "pid": {
+        "I_redundancy": 0.57361082,
+        "I_unique_S": -0.21365651,
+        "I_unique_E": -0.31660088,
+        "I_synergy": 0.58783393,
+        "I_S_Y": 0.3599543,
+        "I_E_Y": 0.25700993,
+        "I_SE_Y": 0.63118735
+      },
+      "truthfulqa": 0.51
+    },
+    {
+      "name": "WizardLM-13B",
+      "model_type": "aligned",
+      "O": 1.56,
+      "R": 2.1,
+      "alpha": 1.25,
+      "C": 0.454444,
+      "Pe": -4.9652,
+      "pid": {
+        "I_redundancy": 0.5861219,
+        "I_unique_S": -0.19972295,
+        "I_unique_E": -0.32036544,
+        "I_synergy": 0.58066368,
+        "I_S_Y": 0.38639895,
+        "I_E_Y": 0.26575646,
+        "I_SE_Y": 0.64669719
+      },
+      "truthfulqa": 0.48
+    }
+  ]
+}

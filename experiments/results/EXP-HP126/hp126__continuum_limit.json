@@ -1,0 +1,122 @@
+{
+  "experiment": "HP126",
+  "title": "Continuum Limit: SU(2) Mass Gap Scaling",
+  "timestamp": "2026-03-18T13:37:21.245079",
+  "c1_gap_vs_spacing": [
+    {
+      "N": 6,
+      "N_total": 864,
+      "a": 0.13999999999999999,
+      "gap": 4.927622013207744,
+      "gap_times_a2": 0.09658139145887176,
+      "lowest_5": [
+        4.927622013207744,
+        5.73819148234642,
+        5.7381914823464335,
+        6.548760951485249,
+        11.014620568552278
+      ]
+    },
+    {
+      "N": 8,
+      "N_total": 2048,
+      "a": 0.1,
+      "gap": 4.615805127700021,
+      "gap_times_a2": 0.04615805127700022,
+      "lowest_5": [
+        4.615805127700021,
+        5.426374596837783,
+        5.426374596839268,
+        6.236944065977047,
+        12.72826023325539
+      ]
+    },
+    {
+      "N": 10,
+      "N_total": 4000,
+      "a": 0.07777777777777778,
+      "gap": 3.883637629348094,
+      "gap_times_a2": 0.023493610350377357,
+      "lowest_5": [
+        3.883637629348094,
+        4.694207098487823,
+        4.694207098488532,
+        5.504776567624399,
+        13.630772797099915
+      ]
+    },
+    {
+      "N": 12,
+      "N_total": 6912,
+      "a": 0.06363636363636363,
+      "gap": 2.79761720238035,
+      "gap_times_a2": 0.01132919362947414,
+      "lowest_5": [
+        2.79761720238035,
+        3.6081866715147908,
+        3.6081866715171755,
+        4.418756140658535,
+        13.946338901946602
+      ]
+    }
+  ],
+  "c2_symanzik": {
+    "Delta_inf": 2.909697332799243,
+    "c_coeff": 115.516667057526,
+    "R_squared": 0.7110919071616676,
+    "m_inf": 0.10661146845554208,
+    "ratio_QCD": 0.4264458738221683,
+    "positive_extrapolation": true,
+    "good_fit": false
+  },
+  "c3_finite_size": {
+    "R_sq_artifact": 0.9838507857582072,
+    "R_sq_finite_size": 0.8180770101281841,
+    "ratio_first_last": 0.567741842795929,
+    "intercept_finite": 1.2519656878838057,
+    "not_artifact": false,
+    "converging": true
+  },
+  "c4_scaling_dimension": {
+    "best_alpha": -0.75,
+    "min_cv": 0.09141033318979648,
+    "power_exponent": 0.6799402304670045,
+    "power_R_sq": 0.8339167455147746,
+    "not_artifact": true
+  },
+  "c5_lattice_comparison": {
+    "Delta_inf": 2.909697332799243,
+    "m_inf": 0.10661146845554208,
+    "our_ratio": 0.4264458738221683,
+    "teper_m0pp": 1.1715,
+    "lattice_ratio": 3.9050000000000002
+  },
+  "kill_conditions": {
+    "K-YM-126-1": {
+      "description": "Gap \u0394(a) converges: \u0394(N=12) < 2\u00b7\u0394(N=6)",
+      "result": "PASS",
+      "ratio": 0.567741842795929
+    },
+    "K-YM-126-2": {
+      "description": "Continuum extrapolation \u0394_\u221e > 0",
+      "result": "PASS",
+      "Delta_inf": 2.909697332799243
+    },
+    "K-YM-126-3": {
+      "description": "Symanzik a\u00b2 scaling: R\u00b2 > 0.9",
+      "result": "FAIL",
+      "R_squared": 0.7110919071616676
+    },
+    "K-YM-126-4": {
+      "description": "\u0394_\u221e/\u039b_QCD is O(1) \u2014 physical mass at correct scale",
+      "result": "PASS",
+      "ratio_QCD": 0.4264458738221683
+    },
+    "K-YM-126-5": {
+      "description": "Gap does NOT scale as a\u207b\u00b2 (not a lattice artifact)",
+      "result": "PASS",
+      "power_exponent": 0.6799402304670045
+    }
+  },
+  "score": "4/5"
+}

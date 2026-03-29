@@ -1,0 +1,67 @@
+{
+  "experiment": "THRML-EVO-05",
+  "verdict": "PASS",
+  "pe_initial": 6.0,
+  "c_initial": 0.3046513805191317,
+  "n_rounds": 100,
+  "n_simulations": 500,
+  "rare_variance_mean": 37.43838764157185,
+  "common_variance_mean": 39.94162088766142,
+  "mannwhitney_p": 1.0,
+  "rare_per_scorer_impact": 9.364134354139335,
+  "common_per_scorer_impact": 0.9415947630777036,
+  "impact_ratio_rare_common": 9.944972849606401,
+  "founder_effect_design_mult": 5,
+  "founder_effect_physics_basis": 9.944972849606401,
+  "summary": [
+    {
+      "n_scorers": 2,
+      "pe_variance_mean": 37.43838764157185,
+      "pe_drop_mean": 18.72826870827867,
+      "per_scorer_impact": 9.364134354139335,
+      "impact_mult_vs_N20": null,
+      "var_mult_vs_N20": null,
+      "label": "RARE"
+    },
+    {
+      "n_scorers": 5,
+      "pe_variance_mean": 39.843849198070956,
+      "pe_drop_mean": 18.820953438010335,
+      "per_scorer_impact": 3.7641906876020674,
+      "impact_mult_vs_N20": null,
+      "var_mult_vs_N20": null,
+      "label": "mid"
+    },
+    {
+      "n_scorers": 10,
+      "pe_variance_mean": 39.971168833818766,
+      "pe_drop_mean": 18.83154112479756,
+      "per_scorer_impact": 1.8831541124797562,
+      "impact_mult_vs_N20": null,
+      "var_mult_vs_N20": null,
+      "label": "mid"
+    },
+    {
+      "n_scorers": 20,
+      "pe_variance_mean": 39.94162088766142,
+      "pe_drop_mean": 18.831895261554074,
+      "per_scorer_impact": 0.9415947630777036,
+      "impact_mult_vs_N20": 1.0,
+      "var_mult_vs_N20": 1.0,
+      "label": "COMMON"
+    },
+    {
+      "n_scorers": 50,
+      "pe_variance_mean": 40.08716593049587,
+      "pe_drop_mean": 18.831514544373398,
+      "per_scorer_impact": 0.3766302908874683,
+      "impact_mult_vs_N20": 0.3999919133539058,
+      "var_mult_vs_N20": 1.0036439443267413,
+      "label": "COMMON"
+    }
+  ],
+  "pass_criteria": {
+    "variance_test": false,
+    "impact_ratio": true
+  }
+}

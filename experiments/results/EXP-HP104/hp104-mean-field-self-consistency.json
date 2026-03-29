@@ -1,0 +1,114 @@
+{
+  "experiment": "HP104",
+  "title": "Mean-Field Self-Consistency",
+  "date": "2026-03-17T09:14:41.910980",
+  "parameters": {
+    "K": 16.0,
+    "B_A": 0.867,
+    "B_G": 2.244
+  },
+  "sub_experiments": {
+    "C1_mean_field": {
+      "n_platforms": 1344,
+      "smoothing_results": {
+        "sigma_0.1": {
+          "correlation_mf_raw": 0.9964503358895598,
+          "smoothness_ratio": 0.9507296488823367,
+          "pe_mf_mean": -7.048161600995808,
+          "pe_mf_std": 15.811448681879018,
+          "pe_raw_mean": -7.262316318971413,
+          "pe_raw_std": 17.189165024650276
+        },
+        "sigma_0.2": {
+          "correlation_mf_raw": 0.9954105663667252,
+          "smoothness_ratio": 0.7676203126573169,
+          "pe_mf_mean": -6.708117016840906,
+          "pe_mf_std": 12.113897014353045,
+          "pe_raw_mean": -7.262316318971413,
+          "pe_raw_std": 17.189165024650276
+        },
+        "sigma_0.3": {
+          "correlation_mf_raw": 0.9956833456882953,
+          "smoothness_ratio": 0.462213669325612,
+          "pe_mf_mean": -6.512438700029389,
+          "pe_mf_std": 8.27956548338733,
+          "pe_raw_mean": -7.262316318971413,
+          "pe_raw_std": 17.189165024650276
+        },
+        "sigma_0.5": {
+          "correlation_mf_raw": 0.9933574496866984,
+          "smoothness_ratio": 0.17464986216377767,
+          "pe_mf_mean": -6.53356908930659,
+          "pe_mf_std": 3.9895090389301595,
+          "pe_raw_mean": -7.262316318971413,
+          "pe_raw_std": 17.189165024650276
+        },
+        "sigma_0.8": {
+          "correlation_mf_raw": 0.9887112891768682,
+          "smoothness_ratio": 0.0673214697821333,
+          "pe_mf_mean": -6.81042561129042,
+          "pe_mf_std": 1.760172974188209,
+          "pe_raw_mean": -7.262316318971413,
+          "pe_raw_std": 17.189165024650276
+        }
+      },
+      "default_sigma": 0.3,
+      "converged": true
+    },
+    "C2_self_consistency": {
+      "converged": true,
+      "n_steps": 3,
+      "wasserstein_history": [
+        0.1024588693046462,
+        0.06622083442313105,
+        0.002239057295150437
+      ],
+      "final_wasserstein": 0.002239057295150437,
+      "threshold": 0.01,
+      "KC_580": "PASS"
+    },
+    "C3_uniqueness": {
+      "wasserstein_distances": {
+        "empirical_vs_uniform": 0.0,
+        "empirical_vs_void_pole": 0.0,
+        "uniform_vs_void_pole": 0.0
+      },
+      "n_converged_to_same": 3,
+      "KC_582": "PASS"
+    },
+    "C4_backreaction": {
+      "n_samples": 50,
+      "mean_curvature_ratio": 28151768946.204014,
+      "deviation_from_unity": 28151768945.204014,
+      "std_ratio": 52688581058.32904,
+      "KC_581": "PASS"
+    },
+    "C5_observer_emergence": {
+      "basin_measure": 0.0,
+      "n_test_points": 500,
+      "void_threshold": 0.1,
+      "KC_583": "FAIL"
+    },
+    "C5b_rg_coupling": {
+      "K_bare": 16.0,
+      "K_eff": 16.048941299191036,
+      "rg_correction": 0.0030588311994396624,
+      "deviation_fraction": 0.0030588311994397266,
+      "pe_variance": 72.09831170339562,
+      "pe_mean_sq": 11313.860543847428,
+      "KC_584": "FAIL"
+    }
+  },
+  "kill_conditions": {
+    "K-HP-580": "PASS",
+    "K-HP-581": "PASS",
+    "K-HP-582": "PASS",
+    "K-HP-583": "FAIL",
+    "K-HP-584": "FAIL"
+  },
+  "summary": {
+    "pass": 3,
+    "total": 5,
+    "verdict": "3/5 PASS"
+  }
+}

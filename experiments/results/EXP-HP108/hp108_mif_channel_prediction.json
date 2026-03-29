@@ -1,0 +1,185 @@
+{
+  "experiment": "HP108",
+  "paper": "Discovery Engine",
+  "date": "2026-03-17T22:44:20.650651",
+  "gamma_fit": 0.5744223148493486,
+  "kill_conditions": {
+    "K-MIF-108-1 (retrodiction)": false,
+    "K-MIF-108-2 (monotonicity)": true,
+    "K-MIF-108-3 (observable gap)": true
+  },
+  "retrodiction_max_error": 0.23494684366021779,
+  "retrodiction_mean_error": 0.09410101996713582,
+  "observable_channels": [
+    "I_oxidation",
+    "NO2_radical",
+    "surface_confined",
+    "CO3_carbonate"
+  ],
+  "invisible_channels": [
+    "OH_Fenton",
+    "SR_thiyl",
+    "e_aq_solvated"
+  ],
+  "predictions": {
+    "OH_Fenton": {
+      "x_normalized": 0.10868575438527628,
+      "R_predicted": 1.2487402430161745,
+      "hfc_MHz": 26.7,
+      "mass_amu": 17.0,
+      "environment": "Acidic lakes, high-DOC waters, mine drainage",
+      "testability": "HIGH \u2014 mine existing acidic lake Hg isotope data",
+      "literature_targets": [
+        "Yin et al. 2016 (acid mine drainage)",
+        "Laffont et al. 2011 (French Guiana rivers)",
+        "Tsui et al. 2012 (Appalachian streams)"
+      ]
+    },
+    "SR_thiyl": {
+      "x_normalized": 0.10395933929811947,
+      "R_predicted": 1.2424680214780788,
+      "hfc_MHz": 12.0,
+      "mass_amu": 77.0,
+      "environment": "Wetlands, biological tissues, sulfidic waters",
+      "testability": "MEDIUM \u2014 biological tissue Hg isotopes less studied",
+      "literature_targets": [
+        "Kwon et al. 2020 (fish muscle)",
+        "Li et al. 2020 (rice paddy soils)",
+        "Perrot et al. 2016 (tropical wetlands)"
+      ]
+    },
+    "I_oxidation": {
+      "x_normalized": 2.7804028295791445,
+      "R_predicted": 2.6013836580012915,
+      "hfc_MHz": 250.0,
+      "mass_amu": 126.9,
+      "environment": "Open ocean, kelp forests, coastal atmosphere",
+      "testability": "HIGH \u2014 marine Hg isotope datasets exist (Blum lab)",
+      "literature_targets": [
+        "Motta et al. 2019 (Pacific open ocean)",
+        "Strok et al. 2015 (Baltic Sea)",
+        "Enrico et al. 2016 (Pic du Midi atmosphere)"
+      ]
+    },
+    "NO2_radical": {
+      "x_normalized": 0.36828031626005675,
+      "R_predicted": 1.501410311123149,
+      "hfc_MHz": 55.0,
+      "mass_amu": 46.0,
+      "environment": "Combustion plumes, urban atmosphere, coal plants",
+      "testability": "MEDIUM \u2014 coal plant plume Hg isotopes studied",
+      "literature_targets": [
+        "Sun et al. 2014 (Chinese coal plants)",
+        "Gratz et al. 2010 (US power plants)",
+        "Sherman et al. 2012 (Detroit urban)"
+      ]
+    },
+    "surface_confined": {
+      "x_normalized": 5.58485486208872,
+      "R_predicted": 3.390508578002883,
+      "hfc_MHz": 80.0,
+      "mass_amu": 200.0,
+      "environment": "Snow grains, biofilm surfaces, mineral surfaces, sea ice",
+      "testability": "HIGH \u2014 polar/cryogenic Hg isotope datasets",
+      "literature_targets": [
+        "Sherman et al. 2010 (Arctic snow)",
+        "Douglas et al. 2008 (Barrow sea ice)",
+        "Obrist et al. 2011 (Antarctic plateau)"
+      ]
+    },
+    "CO3_carbonate": {
+      "x_normalized": 0.06117901976716792,
+      "R_predicted": 1.1788081928988077,
+      "hfc_MHz": 8.0,
+      "mass_amu": 60.0,
+      "environment": "Alkaline waters, carbonate-buffered systems, coral reefs",
+      "testability": "MEDIUM \u2014 overlaps MeHg channel, needs careful separation",
+      "literature_targets": [
+        "Blum et al. 2014 (carbonate sediments)",
+        "Yin et al. 2013 (Three Gorges Reservoir)"
+      ]
+    },
+    "e_aq_solvated": {
+      "x_normalized": 1.10380386035412e-05,
+      "R_predicted": 1.0012644932105395,
+      "hfc_MHz": 0.5,
+      "mass_amu": 0.0005,
+      "environment": "Deep UV photolysis, high-DOC, radiolysis environments",
+      "testability": "LOW \u2014 barely distinguishable from NVE",
+      "literature_targets": [
+        "Motta et al. 2019 (deep ocean UV)",
+        "Zheng & Hintelmann 2010 (UV photolysis)"
+      ]
+    }
+  },
+  "kill_predictions": [
+    {
+      "prediction_id": "K-MIF-109",
+      "channel": "I_oxidation",
+      "R_predicted": 2.601,
+      "R_range": [
+        2.551,
+        2.651
+      ],
+      "environment": "Open ocean, kelp forests, coastal atmosphere",
+      "mechanism": "Iodine atom oxidation (marine boundary layer)",
+      "literature": [
+        "Motta et al. 2019 (Pacific open ocean)",
+        "Strok et al. 2015 (Baltic Sea)",
+        "Enrico et al. 2016 (Pic du Midi atmosphere)"
+      ],
+      "testability": "HIGH \u2014 marine Hg isotope datasets exist (Blum lab)"
+    },
+    {
+      "prediction_id": "K-MIF-110",
+      "channel": "NO2_radical",
+      "R_predicted": 1.501,
+      "R_range": [
+        1.451,
+        1.551
+      ],
+      "environment": "Combustion plumes, urban atmosphere, coal plants",
+      "mechanism": "Nitrogen dioxide oxidation in combustion/urban plumes",
+      "literature": [
+        "Sun et al. 2014 (Chinese coal plants)",
+        "Gratz et al. 2010 (US power plants)",
+        "Sherman et al. 2012 (Detroit urban)"
+      ],
+      "testability": "MEDIUM \u2014 coal plant plume Hg isotopes studied"
+    },
+    {
+      "prediction_id": "K-MIF-111",
+      "channel": "surface_confined",
+      "R_predicted": 3.391,
+      "R_range": [
+        3.341,
+        3.441
+      ],
+      "environment": "Snow grains, biofilm surfaces, mineral surfaces, sea ice",
+      "mechanism": "Radical pair on mineral/ice/biofilm surface, 2D diffusion",
+      "literature": [
+        "Sherman et al. 2010 (Arctic snow)",
+        "Douglas et al. 2008 (Barrow sea ice)",
+        "Obrist et al. 2011 (Antarctic plateau)"
+      ],
+      "testability": "HIGH \u2014 polar/cryogenic Hg isotope datasets"
+    },
+    {
+      "prediction_id": "K-MIF-112",
+      "channel": "CO3_carbonate",
+      "R_predicted": 1.179,
+      "R_range": [
+        1.129,
+        1.229
+      ],
+      "environment": "Alkaline waters, carbonate-buffered systems, coral reefs",
+      "mechanism": "Carbonate radical from CO\u2083\u00b2\u207b + \u2022OH or UV",
+      "literature": [
+        "Blum et al. 2014 (carbonate sediments)",
+        "Yin et al. 2013 (Three Gorges Reservoir)"
+      ],
+      "testability": "MEDIUM \u2014 overlaps MeHg channel, needs careful separation"
+    }
+  ],
+  "summary": "2/3 PASS"
+}

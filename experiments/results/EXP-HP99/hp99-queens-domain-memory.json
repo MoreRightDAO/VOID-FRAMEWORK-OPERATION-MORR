@@ -1,0 +1,382 @@
+{
+  "C1": {
+    "pe_center_results": [
+      {
+        "Pe_center": 0.0,
+        "berry_phases": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "c1_n0": -0.0
+      },
+      {
+        "Pe_center": 0.5,
+        "berry_phases": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "c1_n0": -0.0
+      },
+      {
+        "Pe_center": 1.0,
+        "berry_phases": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "c1_n0": -0.0
+      },
+      {
+        "Pe_center": 2.0,
+        "berry_phases": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "c1_n0": -0.0
+      },
+      {
+        "Pe_center": 5.0,
+        "berry_phases": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "c1_n0": -0.0
+      },
+      {
+        "Pe_center": 10.0,
+        "berry_phases": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "c1_n0": -0.0
+      }
+    ],
+    "radius_results": [
+      {
+        "radius": 0.1,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.2,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.3,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.5,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.8,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 1.0,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      }
+    ],
+    "mean_c1_deviation": 0.0,
+    "K-HP-510": "PASS"
+  },
+  "C2": {
+    "clean_phase": -0.0,
+    "corruption_results": [
+      {
+        "corruption": 0.01,
+        "mean_phase": 0.0,
+        "rel_change": 0.0,
+        "c1_survives": true
+      },
+      {
+        "corruption": 0.05,
+        "mean_phase": 0.0,
+        "rel_change": 0.0,
+        "c1_survives": true
+      },
+      {
+        "corruption": 0.1,
+        "mean_phase": 0.0,
+        "rel_change": 0.0,
+        "c1_survives": true
+      },
+      {
+        "corruption": 0.2,
+        "mean_phase": 0.0,
+        "rel_change": 0.0,
+        "c1_survives": true
+      },
+      {
+        "corruption": 0.3,
+        "mean_phase": 0.0,
+        "rel_change": 0.0,
+        "c1_survives": true
+      },
+      {
+        "corruption": 0.5,
+        "mean_phase": 0.0,
+        "rel_change": 0.0,
+        "c1_survives": true
+      }
+    ],
+    "K-HP-511": "PASS"
+  },
+  "C3": {
+    "comparison": [
+      {
+        "Pe": 0.0,
+        "spectral_survival": 0.5,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "QUEEN"
+      },
+      {
+        "Pe": 0.1,
+        "spectral_survival": 0.5,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "QUEEN"
+      },
+      {
+        "Pe": 0.3,
+        "spectral_survival": 0.75,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "QUEEN"
+      },
+      {
+        "Pe": 0.5,
+        "spectral_survival": 0.75,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "QUEEN"
+      },
+      {
+        "Pe": 0.7,
+        "spectral_survival": 0.75,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "QUEEN"
+      },
+      {
+        "Pe": 1.0,
+        "spectral_survival": 0.75,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "STABLE"
+      },
+      {
+        "Pe": 2.0,
+        "spectral_survival": 0.75,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "STABLE"
+      },
+      {
+        "Pe": 5.0,
+        "spectral_survival": 0.75,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "DRIFT"
+      },
+      {
+        "Pe": 10.0,
+        "spectral_survival": 0.75,
+        "berry_change": 0.0,
+        "topological_survival": 1.0,
+        "winner": "TOPO",
+        "regime": "DRIFT"
+      }
+    ],
+    "topo_wins_queen": 5,
+    "K-HP-512": "PASS"
+  },
+  "C4": {
+    "fluctuation_results": [
+      {
+        "Pe": 0.0,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      },
+      {
+        "Pe": 0.1,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      },
+      {
+        "Pe": 0.3,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      },
+      {
+        "Pe": 0.5,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      },
+      {
+        "Pe": 0.7,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      },
+      {
+        "Pe": 1.0,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      },
+      {
+        "Pe": 2.0,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      },
+      {
+        "Pe": 5.0,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      },
+      {
+        "Pe": 10.0,
+        "mean_phase": 0.0,
+        "std_phase": 0.0,
+        "cv": 0.0,
+        "stable": true
+      }
+    ],
+    "pe_at_min_cv": 0.0,
+    "K-HP-513": "PASS"
+  },
+  "C5": {
+    "phase_vs_area": [
+      {
+        "radius": 0.05,
+        "area": 0.3141592653589793,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.1,
+        "area": 0.6283185307179586,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.2,
+        "area": 1.2566370614359172,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.3,
+        "area": 1.8849555921538759,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.5,
+        "area": 3.141592653589793,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 0.8,
+        "area": 5.026548245743669,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      },
+      {
+        "radius": 1.0,
+        "area": 6.283185307179586,
+        "berry_phase": -0.0,
+        "c1": -0.0
+      }
+    ],
+    "winding_results": [
+      {
+        "n_wind": 1,
+        "berry_phase": -0.0,
+        "per_wind": -0.0,
+        "distinguishable": true
+      },
+      {
+        "n_wind": 2,
+        "berry_phase": -0.0,
+        "per_wind": -0.0,
+        "distinguishable": true
+      },
+      {
+        "n_wind": 3,
+        "berry_phase": -0.0,
+        "per_wind": -0.0,
+        "distinguishable": true
+      },
+      {
+        "n_wind": 4,
+        "berry_phase": -0.0,
+        "per_wind": -0.0,
+        "distinguishable": true
+      },
+      {
+        "n_wind": 5,
+        "berry_phase": -0.0,
+        "per_wind": -0.0,
+        "distinguishable": true
+      }
+    ],
+    "n_distinguishable": 5,
+    "K-HP-514": "PASS"
+  },
+  "summary": {
+    "kill_conditions": {
+      "K-HP-510": "PASS",
+      "K-HP-511": "PASS",
+      "K-HP-512": "PASS",
+      "K-HP-513": "PASS",
+      "K-HP-514": "PASS"
+    },
+    "n_pass": 5,
+    "n_total": 5,
+    "timestamp": "2026-03-16T19:39:25.059894",
+    "parameters": {
+      "K": 16,
+      "B_A": 0.867,
+      "B_G": 2.244,
+      "N_grid": 1000,
+      "N_states": 60
+    }
+  }
+}

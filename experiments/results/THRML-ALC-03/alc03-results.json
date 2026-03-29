@@ -1,0 +1,49 @@
+{
+  "experiment": "THRML-ALC-03",
+  "title": "Genesis Threshold Detection",
+  "author": "Shamir / MoreRight (2026-03-09)",
+  "tests": {
+    "T1_too_few_compounds": {
+      "n_compounds": 2,
+      "min_required": 3,
+      "genesis_fired": false,
+      "pass": true
+    },
+    "T2_too_short_persistence": {
+      "ticks_run": 100,
+      "min_persistence_needed": 100,
+      "compound_stable_threshold": 50,
+      "total_needed": 150,
+      "genesis_fired": false,
+      "pass": true
+    },
+    "T3_genesis_fires": {
+      "ticks_run": 200,
+      "genesis_fired": true,
+      "genesis_count": 1,
+      "genesis_tick": 149,
+      "pass": true
+    },
+    "T4_seed_data_format": {
+      "seed_count": 3,
+      "grid_size": 32,
+      "sample_seed": {
+        "x": 9,
+        "y": 2,
+        "pe": 1499,
+        "trait": 117
+      },
+      "all_valid_format": true,
+      "pass": true
+    },
+    "T5_genesis_debounce": {
+      "total_ticks": 700,
+      "genesis_count": 1,
+      "genesis_at_tick": 149,
+      "debounced": true,
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "THRML-ALC-03 PASS \u2014 Genesis threshold detection validated"
+}

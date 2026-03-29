@@ -1,0 +1,103 @@
+{
+  "experiment": "HP221",
+  "title": "\u03c4-Transition Point Test",
+  "timestamp": "2026-03-29T16:04:10.952731",
+  "kill_conditions": {
+    "K-TAU-4": {
+      "test": "Modularity violation minimum at \u03c4=i (j=1728)",
+      "min_tau": 0.9995991983967936,
+      "expected_tau": 1.0,
+      "min_value": 4.510195259806975e-13,
+      "result": "PASS"
+    },
+    "K-TAU-1": {
+      "test": "Spectral entropy extremum within 5% of \u03c4=1 (j=1728)",
+      "extremum_tau": 0.8016032064128256,
+      "expected_tau": 1.0,
+      "result": "FAIL"
+    },
+    "K-TAU-2": {
+      "test": "Identifiable feature at \u03c4=\u221a3 (j=54000)",
+      "tau_sqrt3": 1.7320508075688772,
+      "feature_present": false,
+      "result": "FAIL"
+    },
+    "K-TAU-3": {
+      "test": "Entropy extremum coincides with j-special \u03c4 (within 5%)",
+      "best_match": null,
+      "min_relative_distance": null,
+      "result": "FAIL"
+    }
+  },
+  "sub_experiments": {
+    "T1": {
+      "i/2": {
+        "tau": 0.5,
+        "heat_kernel": 4.013534704762406,
+        "entropy": 1.9519660529183307,
+        "modularity_violation": 7.22027599834816e-09
+      },
+      "\u03c1=(1+i\u221a3)/2": {
+        "tau": 0.8660254037844386,
+        "heat_kernel": 2.929538944788494,
+        "entropy": 1.6601854153523303,
+        "modularity_violation": 1.9922572751074188e-10
+      },
+      "i": {
+        "tau": 1.0,
+        "heat_kernel": 2.691544620006952,
+        "entropy": 1.5830010747163088,
+        "modularity_violation": 0.0
+      },
+      "i\u221a2": {
+        "tau": 1.4142135623730951,
+        "heat_kernel": 2.183756859537384,
+        "entropy": 1.395530069402318,
+        "modularity_violation": 1.4798560362452616e-09
+      },
+      "i\u221a3": {
+        "tau": 1.7320508075688772,
+        "heat_kernel": 1.9250474467766936,
+        "entropy": 1.2848189972235562,
+        "modularity_violation": 6.267203556951878e-09
+      },
+      "2i": {
+        "tau": 2.0,
+        "heat_kernel": 1.756760588751447,
+        "entropy": 1.2057802037572292,
+        "modularity_violation": 1.4440552025598293e-08
+      }
+    },
+    "T2": {
+      "mod_viol_min_tau": 0.9995991983967936,
+      "mod_viol_min_value": 4.510195259806975e-13
+    },
+    "T5": {
+      "tau_0.5000": {
+        "entropy_k4": 1.2057802037572292,
+        "entropy_k16": 1.9519660529183307,
+        "ratio": 0.617726011143739
+      },
+      "tau_1.0000": {
+        "entropy_k4": 0.8196080506480867,
+        "entropy_k16": 1.5830010747163088,
+        "ratio": 0.5177558396762109
+      },
+      "tau_1.4142": {
+        "entropy_k4": 0.624834696492184,
+        "entropy_k16": 1.395530069402318,
+        "ratio": 0.4477400453003425
+      },
+      "tau_1.7321": {
+        "entropy_k4": 0.5119223996568799,
+        "entropy_k16": 1.2848189972235562,
+        "ratio": 0.39843931383574205
+      },
+      "tau_2.0000": {
+        "entropy_k4": 0.4332319325993534,
+        "entropy_k16": 1.2057802037572292,
+        "ratio": 0.35929594071074994
+      }
+    }
+  }
+}

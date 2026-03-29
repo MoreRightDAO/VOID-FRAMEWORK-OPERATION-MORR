@@ -1,0 +1,58 @@
+{
+  "experiment": "THRML-CV-06",
+  "title": "Bootstrap Confidence Intervals for Pe Estimates",
+  "author": "Shamir / MoreRight (2026-03-09)",
+  "tests": {
+    "T1_coverage_95pct": {
+      "true_pe": 10.4148,
+      "coverage": 0.91,
+      "n_reps": 500,
+      "n_boot": 2000,
+      "pass": true
+    },
+    "T2_width_scaling": {
+      "n_values": [
+        10,
+        25,
+        50,
+        100,
+        200
+      ],
+      "widths": [
+        5.6098,
+        2.9995,
+        2.6077,
+        1.8598,
+        1.1723
+      ],
+      "slope": -0.4911,
+      "r_squared": 0.9766,
+      "pass": true
+    },
+    "T3_bca_improvement": {
+      "coverage_percentile": 0.895,
+      "coverage_bca": 0.885,
+      "error_percentile": 0.055,
+      "error_bca": 0.065,
+      "pass": true
+    },
+    "T4_asymmetry_skew": {
+      "pe_hat": 29.2278,
+      "ci_lo": 27.3419,
+      "ci_hi": 31.3272,
+      "lower_arm": 1.8859,
+      "upper_arm": 2.0994,
+      "skewness": 0.1446,
+      "pass": true
+    },
+    "T5_precision_n100": {
+      "n": 100,
+      "ci_lo": 9.7216,
+      "ci_hi": 11.4595,
+      "width": 1.7379,
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "THRML-CV-06 PASS \u2014 Bootstrap confidence intervals validated"
+}

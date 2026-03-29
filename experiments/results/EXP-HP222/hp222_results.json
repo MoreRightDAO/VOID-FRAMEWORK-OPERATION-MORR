@@ -1,0 +1,64 @@
+{
+  "experiment": "HP222",
+  "title": "AdS\u2083 Curvature Test",
+  "timestamp": "2026-03-29T16:19:34.372052",
+  "kill_conditions": {
+    "K-ADS-1": {
+      "test": "Ricci scalar constant to within 1% across manifold",
+      "cv": Infinity,
+      "mean": 0.0,
+      "std": 0.0,
+      "result": "FAIL"
+    },
+    "K-ADS-2": {
+      "test": "Ricci tensor proportional to metric (Einstein)",
+      "max_error": 0.0,
+      "mean_error": 0.0,
+      "result": "PASS"
+    },
+    "K-ADS-3": {
+      "test": "All sectional curvatures have same sign",
+      "all_negative": false,
+      "all_positive": false,
+      "all_zero": true,
+      "min_sectional": -0.0,
+      "max_sectional": -0.0,
+      "result": "PASS"
+    },
+    "K-ADS-4": {
+      "test": "Geometry has known classification",
+      "classification": "FLAT (Minkowski-like for Lorentzian, Euclidean for Riemannian)",
+      "result": "PASS"
+    }
+  },
+  "sub_experiments": {
+    "curvature_lorentzian": {
+      "mean_ricci_scalar": 0.0,
+      "std_ricci_scalar": 0.0,
+      "cv": Infinity,
+      "points": {
+        "center": 0.0,
+        "generic_1": 0.0,
+        "generic_2": 0.0,
+        "edge_1": 0.0,
+        "near_boundary": 0.0
+      }
+    },
+    "dense_scan": {
+      "n_points": 3375,
+      "ricci_scalar_mean": 0.0,
+      "ricci_scalar_std": 0.0,
+      "ricci_scalar_cv": Infinity,
+      "geometry": "FLAT (Minkowski-like for Lorentzian, Euclidean for Riemannian)"
+    },
+    "analytical": {
+      "product_metric": true,
+      "each_factor_1d": true,
+      "riemann_zero": true,
+      "intrinsically_flat": true,
+      "is_ads3": false,
+      "is_minkowski_like": true,
+      "topology": "(0,1)\u00b3 \u2014 open cube, not \u211d\u00b3"
+    }
+  }
+}

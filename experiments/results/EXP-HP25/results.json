@@ -1,0 +1,109 @@
+{
+  "experiment": "HP25",
+  "title": "Perturbation Wavefront Detection \u2014 Wave vs Diffusion",
+  "date": "2026-03-14T00:00:13.279214",
+  "note": "FP simulation ground truth. Replace with LLM data for empirical validation.",
+  "W1_baseline": {
+    "n_conv": 30,
+    "n_turns": 20,
+    "O_noise_floor": 0.015653848254880153,
+    "R_noise_floor": 0.019713482011588367,
+    "O_noise_std": 0.0034732544312892897,
+    "R_noise_std": 0.004665574823121572
+  },
+  "W2_step_response": {
+    "delta_alpha": 0.2,
+    "n_conv": 30
+  },
+  "W3_model_comparison": {
+    "O": {
+      "diffusion_params": {
+        "A": 0.014888628559503642,
+        "D": 0.3813905156721451
+      },
+      "diffusion_AIC": -91.78248943847703,
+      "diffusion_SS": 0.025287398387240964,
+      "wave_params": {
+        "A": 0.018502933012678413,
+        "omega": 2.90317765732461,
+        "gamma": 0.010000054599645493,
+        "t_delay": 0.9224377418204945
+      },
+      "wave_AIC": -90.42355351450291,
+      "wave_SS": 0.02120496273982813,
+      "delta_AIC": -1.3589359239741157,
+      "preferred": "diffusion"
+    },
+    "R": {
+      "diffusion_params": {
+        "A": 0.39609986483917575,
+        "D": 0.010000000000000012
+      },
+      "diffusion_AIC": -82.69378272937917,
+      "diffusion_SS": 0.046349938483418805,
+      "wave_params": {
+        "A": 0.04944758682364669,
+        "omega": 0.6149676042552159,
+        "gamma": 0.010000000000000004,
+        "t_delay": 4.999999999999999
+      },
+      "wave_AIC": -88.31378229118967,
+      "wave_SS": 0.02440740721638342,
+      "delta_AIC": 5.619999561810502,
+      "preferred": "wave"
+    },
+    "K_HP_108": false
+  },
+  "W4_propagation_speed": {
+    "delay_O_mean": 4.7272727272727275,
+    "delay_O_median": 3.5,
+    "delay_O_std": 3.5825564536796426,
+    "delay_R_mean": 6.956521739130435,
+    "delay_R_median": 7.0,
+    "delay_R_std": 3.5321906107112873,
+    "frac_delayed_O": 0.7727272727272727,
+    "frac_delayed_R": 0.9565217391304348,
+    "K_HP_107": true
+  },
+  "W5_frequency_analysis": {
+    "n_trials": 30,
+    "frac_oscillating_O": 1.0,
+    "frac_oscillating_R": 1.0,
+    "dominant_freq_O_mean": 0.09777777777777781,
+    "dominant_freq_R_mean": 0.09111111111111114,
+    "K_HP_109": true
+  },
+  "W6_dose_response": {
+    "da_0.05": {
+      "delta_alpha": 0.05,
+      "peak_O": 0.14255902840268644,
+      "peak_R": 0.15635248504560284
+    },
+    "da_0.15": {
+      "delta_alpha": 0.15,
+      "peak_O": 0.08900275174974244,
+      "peak_R": 0.10162808358245137
+    },
+    "da_0.3": {
+      "delta_alpha": 0.3,
+      "peak_O": 0.12733794487884792,
+      "peak_R": 0.09516460922994155
+    },
+    "linearity_O": {
+      "slope": -0.03590125870408642,
+      "R2": 0.026796012384358015
+    },
+    "linearity_R": {
+      "slope": -0.2288308447695468,
+      "R2": 0.733654315114334
+    }
+  },
+  "kill_conditions": {
+    "K_HP_106": true,
+    "K_HP_107": true,
+    "K_HP_108": false,
+    "K_HP_109": true,
+    "frac_immediate_monotonic": 0.0
+  },
+  "verdict": "WAVE \u2014 (2,1) supported. Wave propagation detected."
+}

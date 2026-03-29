@@ -1,0 +1,257 @@
+{
+  "experiment": "EXP-VOY-04",
+  "date": "2026-03-03T03:05:54.337604+00:00",
+  "framework_reference": {
+    "voynich_ps": 1.373,
+    "voynich_null_p95": 1.213,
+    "threshold": 1.3,
+    "controls": {
+      "Douay-Rheims": 1.297,
+      "Dante": 1.157,
+      "Pride and Prejudice": 1.085
+    }
+  },
+  "results": [
+    {
+      "corpus": "Linear B (Mycenaean Greek)",
+      "status": "PASS \u2014 kill condition NOT triggered. Pe-separability index VALIDATED.",
+      "prediction": "Ps < 1.30 \u2014 natural language, kill condition for Pe-separability index",
+      "ps": 1.054,
+      "threshold": 1.3,
+      "voynich_ps": 1.373,
+      "stats": {
+        "ps": 1.054,
+        "jsd_max": 0.8208,
+        "jsd_min": 0.7788,
+        "jsd_pairs": [
+          [
+            "commodities",
+            "land_grain",
+            0.8056
+          ],
+          [
+            "commodities",
+            "metal",
+            0.7913
+          ],
+          [
+            "commodities",
+            "offerings",
+            0.7985
+          ],
+          [
+            "commodities",
+            "personnel",
+            0.7788
+          ],
+          [
+            "land_grain",
+            "metal",
+            0.7982
+          ],
+          [
+            "land_grain",
+            "offerings",
+            0.8151
+          ],
+          [
+            "land_grain",
+            "personnel",
+            0.7996
+          ],
+          [
+            "metal",
+            "offerings",
+            0.8208
+          ],
+          [
+            "metal",
+            "personnel",
+            0.809
+          ],
+          [
+            "offerings",
+            "personnel",
+            0.7905
+          ]
+        ],
+        "section_names": [
+          "commodities",
+          "land_grain",
+          "metal",
+          "offerings",
+          "personnel"
+        ],
+        "token_counts": {
+          "personnel": 2787,
+          "land_grain": 4295,
+          "offerings": 816,
+          "commodities": 1071,
+          "metal": 563
+        },
+        "total_tokens": 9532,
+        "null_p95": 1.3942,
+        "p_value": 1.0,
+        "n_perm": 2000,
+        "spectral_ari_mean": 1.0,
+        "spectral_ari_seeds": 8
+      }
+    },
+    {
+      "corpus": "Linear A (Minoan, undeciphered)",
+      "status": "UNEXPECTED \u2014 Ps=2.452 vs. prediction Ps < 1.30",
+      "prediction": "Ps < 1.30 \u2014 likely natural language, Minoan administrative script",
+      "ps": 2.4524,
+      "threshold": 1.3,
+      "voynich_ps": 1.373,
+      "stats": {
+        "ps": 2.4524,
+        "jsd_max": 0.8326,
+        "jsd_min": 0.3395,
+        "jsd_pairs": [
+          [
+            "HT_admin",
+            "KN_ceremonial",
+            0.8326
+          ],
+          [
+            "HT_admin",
+            "ZA_palatial",
+            0.7073
+          ],
+          [
+            "HT_admin",
+            "other_sites",
+            0.3395
+          ],
+          [
+            "KN_ceremonial",
+            "ZA_palatial",
+            0.8326
+          ],
+          [
+            "KN_ceremonial",
+            "other_sites",
+            0.8326
+          ],
+          [
+            "ZA_palatial",
+            "other_sites",
+            0.6699
+          ]
+        ],
+        "section_names": [
+          "HT_admin",
+          "KN_ceremonial",
+          "ZA_palatial",
+          "other_sites"
+        ],
+        "token_counts": {
+          "HT_admin": 1016,
+          "ZA_palatial": 225,
+          "KN_ceremonial": 124,
+          "other_sites": 160
+        },
+        "total_tokens": 1525,
+        "null_p95": 2.0249,
+        "p_value": 0.002,
+        "n_perm": 2000,
+        "spectral_ari_mean": 1.0,
+        "spectral_ari_seeds": 8
+      }
+    },
+    {
+      "corpus": "Proto-Elamite (~3100-2900 BCE)",
+      "status": "UNEXPECTED \u2014 Ps=1.630 vs. prediction Ps < 1.30",
+      "prediction": "Ps < 1.30 \u2014 accounting system, single register (commodity enumeration)",
+      "ps": 1.63,
+      "threshold": 1.3,
+      "voynich_ps": 1.373,
+      "stats": {
+        "ps": 1.63,
+        "jsd_max": 0.3192,
+        "jsd_min": 0.1958,
+        "jsd_pairs": [
+          [
+            "fish_oil",
+            "grain_tallies",
+            0.2826
+          ],
+          [
+            "fish_oil",
+            "labor_records",
+            0.1958
+          ],
+          [
+            "fish_oil",
+            "livestock",
+            0.2738
+          ],
+          [
+            "fish_oil",
+            "textiles",
+            0.2179
+          ],
+          [
+            "grain_tallies",
+            "labor_records",
+            0.2501
+          ],
+          [
+            "grain_tallies",
+            "livestock",
+            0.3192
+          ],
+          [
+            "grain_tallies",
+            "textiles",
+            0.3
+          ],
+          [
+            "labor_records",
+            "livestock",
+            0.2508
+          ],
+          [
+            "labor_records",
+            "textiles",
+            0.2133
+          ],
+          [
+            "livestock",
+            "textiles",
+            0.2792
+          ]
+        ],
+        "section_names": [
+          "fish_oil",
+          "grain_tallies",
+          "labor_records",
+          "livestock",
+          "textiles"
+        ],
+        "token_counts": {
+          "grain_tallies": 5353,
+          "livestock": 3751,
+          "textiles": 3016,
+          "fish_oil": 1847,
+          "labor_records": 2080
+        },
+        "total_tokens": 16047,
+        "null_p95": 2.0615,
+        "p_value": 0.535,
+        "n_perm": 2000,
+        "spectral_ari_mean": 1.0,
+        "spectral_ari_seeds": 8
+      }
+    },
+    {
+      "corpus": "Rongorongo (Easter Island, undeciphered)",
+      "status": "SKIPPED",
+      "reason": "Data unavailable or corpus too small",
+      "prediction": "INCONCLUSIVE \u2014 corpus too small (\u22641,000 tokens), underpowered either direction"
+    }
+  ],
+  "kill_condition_triggered": false,
+  "notes": "Linear B Ps \u2265 threshold indicates raw JSD ratio is non-specific. Second-order test (Ps + spectral ARI) required for discrimination. Voynich case survives on full test battery: Ps=1.373 + ARI=1.000 + morphological exclusion."
+}

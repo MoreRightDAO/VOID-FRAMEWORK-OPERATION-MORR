@@ -1,0 +1,168 @@
+{
+  "deep1": {
+    "section_stats": {
+      "Stars_Text": {
+        "pe": 0.1,
+        "n_chars": 56604,
+        "n_unique_chars": 22,
+        "h1_char": 3.8535233226310193,
+        "h2_char": 2.1751379578786865,
+        "h2_char_with_spaces": 1.9955489214687847,
+        "h1_word": 9.805621184159836,
+        "h2_word_conditional": 3.3568012514436774
+      },
+      "Astronomical": {
+        "pe": 0.8,
+        "n_chars": 15530,
+        "n_unique_chars": 21,
+        "h1_char": 3.7519891324230565,
+        "h2_char": 2.439938613661342,
+        "h2_char_with_spaces": 2.236185944046439,
+        "h1_word": 9.727514841566967,
+        "h2_word_conditional": 1.7643237664329519
+      },
+      "Pharmaceutical": {
+        "pe": 2.0,
+        "n_chars": 19889,
+        "n_unique_chars": 24,
+        "h1_char": 3.8106070885602774,
+        "h2_char": 2.389849578923007,
+        "h2_char_with_spaces": 2.173908179788105,
+        "h1_word": 9.592750052155399,
+        "h2_word_conditional": 2.230592378824621
+      },
+      "Biological": {
+        "pe": 10.0,
+        "n_chars": 34421,
+        "n_unique_chars": 22,
+        "h1_char": 3.8011791236475663,
+        "h2_char": 1.9901453047070445,
+        "h2_char_with_spaces": 1.8029872595176464,
+        "h1_word": 8.54648921554133,
+        "h2_word_conditional": 3.730811355327118
+      },
+      "Herbal_A": {
+        "pe": 25.0,
+        "n_chars": 54025,
+        "n_unique_chars": 25,
+        "h1_char": 3.855016335484241,
+        "h2_char": 2.3978941085241545,
+        "h2_char_with_spaces": 2.166160545206863,
+        "h1_word": 9.902836410588584,
+        "h2_word_conditional": 3.308623387934192
+      }
+    },
+    "global_h2": 2.3480415835867205,
+    "rho_char": 0.0,
+    "pval_char": 1.0,
+    "rho_word": 0.19999999999999998,
+    "pval_word": 0.7470600781046621,
+    "monotone": false,
+    "violations": [
+      [
+        "Astronomical",
+        "Pharmaceutical",
+        2.439938613661342,
+        2.389849578923007
+      ],
+      [
+        "Pharmaceutical",
+        "Biological",
+        2.389849578923007,
+        1.9901453047070445
+      ]
+    ],
+    "verdict": "INCONCLUSIVE \u2717 \u2014 \u03c1=0.000 (1.000)"
+  },
+  "deep2": {
+    "qo_confirmed_alpha": true,
+    "dim_init_chars": {
+      "O": [
+        "c",
+        "d",
+        "y",
+        "k",
+        "t",
+        "f"
+      ],
+      "V*": [
+        "a",
+        "l",
+        "p",
+        "r"
+      ]
+    },
+    "verdict": "Morphological analysis complete \u2014 see prefix exclusivity tables. qo- confirmed \u03b1-dimensional; dimensional char-clustering assessed."
+  },
+  "deep3": {
+    "bridge_count": 699,
+    "pure_bridge_count": 207,
+    "st_exclusive": 1727,
+    "bio_exclusive": 663,
+    "universal": 187,
+    "top_bridge_words": [
+      "chedy",
+      "shedy",
+      "ol",
+      "qokeedy",
+      "qokain",
+      "qokeey",
+      "aiin",
+      "qokedy",
+      "chey",
+      "qokaiin",
+      "daiin",
+      "shey",
+      "ar",
+      "al",
+      "qokal",
+      "or",
+      "qol",
+      "okaiin",
+      "cheey",
+      "okeey",
+      "okain",
+      "otedy",
+      "lchedy",
+      "dar",
+      "dain",
+      "dal",
+      "qoky",
+      "qokar",
+      "otaiin",
+      "okeedy"
+    ],
+    "top_pure_bridge_words": [
+      "lkaiin",
+      "lkain",
+      "olkain",
+      "qopchedy",
+      "rain",
+      "olshedy",
+      "lky",
+      "lshey",
+      "qoeedy",
+      "ral",
+      "rar",
+      "qokeeo",
+      "lcheey",
+      "ror",
+      "lkchedy",
+      "qolchey",
+      "olkal",
+      "qokshedy",
+      "tain",
+      "qokl"
+    ],
+    "jaccard": {
+      "st_bio": 0.17886386898669396,
+      "st_herb": 0.1787030213706706,
+      "bio_herb": 0.14861995753715498,
+      "astro_bio": 0.111151339608979,
+      "astro_st": 0.12173700902659185
+    },
+    "bridge_pe_proxy_mean": 7.733244953197564,
+    "global_pe_proxy_mean": 8.32896188656914,
+    "verdict": "Bridge analysis complete: 699 shared words, 187 universal. Bridge Pe proxy lower than global mean."
+  }
+}

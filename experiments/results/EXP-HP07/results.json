@@ -1,0 +1,353 @@
+{
+  "experiment": "EXP-HP07",
+  "title": "The Synthesis \u2014 Weil Frequencies on the Bernoulli Hamiltonian",
+  "date": "2026-03-13",
+  "framework_sections": [
+    "\u00a780D\u00bd",
+    "\u00a780F",
+    "\u00a780E",
+    "Weil explicit formula"
+  ],
+  "tests": [
+    {
+      "id": "A",
+      "name": "Weil V_p gate-by-gate (single pass)",
+      "gates": [
+        {
+          "gate": 1,
+          "prime": 2,
+          "dist": 9.33079985,
+          "mult": 1.122539,
+          "sp_var": 9.3e-05
+        },
+        {
+          "gate": 2,
+          "prime": 3,
+          "dist": 9.20447339,
+          "mult": 1.101396,
+          "sp_var": 7.1e-05
+        },
+        {
+          "gate": 3,
+          "prime": 5,
+          "dist": 8.54881992,
+          "mult": 1.025293,
+          "sp_var": 1.4e-05
+        },
+        {
+          "gate": 4,
+          "prime": 7,
+          "dist": 9.47862501,
+          "mult": 1.136688,
+          "sp_var": 0.000116
+        },
+        {
+          "gate": 5,
+          "prime": 11,
+          "dist": 9.04486582,
+          "mult": 1.084473,
+          "sp_var": 5.5e-05
+        },
+        {
+          "gate": 6,
+          "prime": 13,
+          "dist": 9.03225985,
+          "mult": 1.08497,
+          "sp_var": 5.8e-05
+        },
+        {
+          "gate": 7,
+          "prime": 17,
+          "dist": 7.61557582,
+          "mult": 0.925703,
+          "sp_var": 4.8e-05
+        },
+        {
+          "gate": 8,
+          "prime": 19,
+          "dist": 7.6951623,
+          "mult": 0.934784,
+          "sp_var": 4e-05
+        },
+        {
+          "gate": 9,
+          "prime": 23,
+          "dist": 7.19721151,
+          "mult": 0.884412,
+          "sp_var": 0.00012
+        },
+        {
+          "gate": 10,
+          "prime": 29,
+          "dist": 6.88567829,
+          "mult": 0.852932,
+          "sp_var": 0.000206
+        },
+        {
+          "gate": 11,
+          "prime": 31,
+          "dist": 6.97753725,
+          "mult": 0.861473,
+          "sp_var": 0.00018
+        },
+        {
+          "gate": 12,
+          "prime": 37,
+          "dist": 6.66135291,
+          "mult": 0.831982,
+          "sp_var": 0.00028
+        },
+        {
+          "gate": 13,
+          "prime": 41,
+          "dist": 6.84678324,
+          "mult": 0.849843,
+          "sp_var": 0.000213
+        },
+        {
+          "gate": 14,
+          "prime": 43,
+          "dist": 6.57424276,
+          "mult": 0.823961,
+          "sp_var": 0.000312
+        },
+        {
+          "gate": 15,
+          "prime": 47,
+          "dist": 6.7398626,
+          "mult": 0.839309,
+          "sp_var": 0.000252
+        }
+      ],
+      "best_dist": 6.57424276
+    },
+    {
+      "id": "B",
+      "name": "Weil V_p gate-by-gate (iterative eigenvectors)",
+      "gates": [
+        {
+          "gate": 1,
+          "prime": 2,
+          "dist": 9.33079985,
+          "mult": 1.122539,
+          "sp_var": 9.3e-05
+        },
+        {
+          "gate": 2,
+          "prime": 3,
+          "dist": 9.22599505,
+          "mult": 1.104752,
+          "sp_var": 7.4e-05
+        },
+        {
+          "gate": 3,
+          "prime": 5,
+          "dist": 8.75058953,
+          "mult": 1.051334,
+          "sp_var": 2.6e-05
+        },
+        {
+          "gate": 4,
+          "prime": 7,
+          "dist": 9.35554819,
+          "mult": 1.122098,
+          "sp_var": 9.7e-05
+        },
+        {
+          "gate": 5,
+          "prime": 11,
+          "dist": 10.36016462,
+          "mult": 1.253096,
+          "sp_var": 0.00032
+        },
+        {
+          "gate": 6,
+          "prime": 13,
+          "dist": 9.67595723,
+          "mult": 1.166714,
+          "sp_var": 0.000167
+        },
+        {
+          "gate": 7,
+          "prime": 17,
+          "dist": 9.57970068,
+          "mult": 1.155622,
+          "sp_var": 0.000149
+        },
+        {
+          "gate": 8,
+          "prime": 19,
+          "dist": 10.41104611,
+          "mult": 1.264869,
+          "sp_var": 0.000352
+        },
+        {
+          "gate": 9,
+          "prime": 23,
+          "dist": 10.9077138,
+          "mult": 1.333354,
+          "sp_var": 0.000502
+        },
+        {
+          "gate": 10,
+          "prime": 29,
+          "dist": 10.36914191,
+          "mult": 1.257849,
+          "sp_var": 0.000336
+        },
+        {
+          "gate": 11,
+          "prime": 31,
+          "dist": 10.48884325,
+          "mult": 1.273973,
+          "sp_var": 0.000369
+        },
+        {
+          "gate": 12,
+          "prime": 37,
+          "dist": 9.8059928,
+          "mult": 1.18494,
+          "sp_var": 0.000201
+        },
+        {
+          "gate": 13,
+          "prime": 41,
+          "dist": 10.01222398,
+          "mult": 1.210723,
+          "sp_var": 0.000247
+        },
+        {
+          "gate": 14,
+          "prime": 43,
+          "dist": 10.6375263,
+          "mult": 1.292589,
+          "sp_var": 0.00041
+        },
+        {
+          "gate": 15,
+          "prime": 47,
+          "dist": 10.10319087,
+          "mult": 1.221203,
+          "sp_var": 0.000266
+        }
+      ],
+      "best_dist": 8.75058953
+    },
+    {
+      "id": "C",
+      "name": "Full iterative inverse spectral reconstruction",
+      "iterations": [
+        {
+          "iteration": 1,
+          "dist": 8.27577158,
+          "mult": 1.000055,
+          "sp_var": 0.0
+        },
+        {
+          "iteration": 6,
+          "dist": 3.08320079,
+          "mult": 2.356634,
+          "sp_var": 0.356409
+        },
+        {
+          "iteration": 11,
+          "dist": 5.2262643,
+          "mult": 3.059848,
+          "sp_var": 0.767468
+        },
+        {
+          "iteration": 16,
+          "dist": 22.56911444,
+          "mult": 3.291407,
+          "sp_var": 1.684922
+        },
+        {
+          "iteration": 16,
+          "dist": 22.56911444,
+          "mult": 3.291407,
+          "sp_var": 1.684922
+        }
+      ],
+      "best_dist": 0.12758156,
+      "best_iter": 2
+    },
+    {
+      "id": "D",
+      "name": "Hybrid: Weil-seeded inverse spectral",
+      "weil_seed_alpha": 50.0,
+      "weil_seed_dist": 7.27419684,
+      "iterations": [
+        {
+          "iteration": 1,
+          "dist": 7.27419684,
+          "mult": 0.889792,
+          "sp_var": 0.03529
+        },
+        {
+          "iteration": 6,
+          "dist": 1.71029088,
+          "mult": 1.576338,
+          "sp_var": 0.270621
+        },
+        {
+          "iteration": 11,
+          "dist": 0.85498824,
+          "mult": 1.446692,
+          "sp_var": 0.266085
+        },
+        {
+          "iteration": 16,
+          "dist": 3.55200483,
+          "mult": 1.47616,
+          "sp_var": 0.344608
+        },
+        {
+          "iteration": 21,
+          "dist": 2.36077432,
+          "mult": 0.955469,
+          "sp_var": 0.976952
+        },
+        {
+          "iteration": 26,
+          "dist": 68.95594204,
+          "mult": 2485.265825,
+          "sp_var": 6.190619
+        },
+        {
+          "iteration": 27,
+          "dist": 116.873855,
+          "mult": 7897.469601,
+          "sp_var": 7.188386
+        }
+      ],
+      "best_dist": 0.15325391,
+      "best_iter": 5
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-24",
+      "condition": "Approach A (Weil V_p) beats HP05's 0.153",
+      "result": "FAIL",
+      "detail": "A best=6.57424276, HP05=0.152684"
+    },
+    {
+      "id": "K-HP-25",
+      "condition": "Approach B (iterative) improves on A",
+      "result": "FAIL",
+      "detail": "B best=8.75058953, A best=6.57424276"
+    },
+    {
+      "id": "K-HP-26",
+      "condition": "Approach C (inverse spectral) reaches dist<0.05",
+      "result": "FAIL",
+      "detail": "C best=0.12758156"
+    },
+    {
+      "id": "K-HP-27",
+      "condition": "Best approach has multiplicativity in [0.9, 1.1]",
+      "result": "FAIL",
+      "detail": "mult=1.103113, zeros actual=0.979435"
+    }
+  ]
+}

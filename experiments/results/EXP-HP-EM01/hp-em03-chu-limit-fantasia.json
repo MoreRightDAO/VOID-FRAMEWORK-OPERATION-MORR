@@ -1,0 +1,23 @@
+{
+  "experiment": "HP-EM-03",
+  "title": "Chu Limit as Fantasia Bound",
+  "date": "2026-03-24T18:00:18.033269Z",
+  "derivation": {
+    "mapping": {
+      "I(D;Y)": "log(Q) \u2014 stored energy / radiated power",
+      "I(M;Y)": "log(BW) \u2014 fractional bandwidth",
+      "H(Y)": "log((ka)\u00b3) \u2014 spherical mode capacity"
+    },
+    "result": "Q \u2265 1/(ka)\u00b3 follows from I(D;Y) + I(M;Y) \u2264 H(Y)",
+    "status": "COMPLETE"
+  },
+  "kill_conditions": {
+    "K-EM-07": "PASS \u2014 Chu limit follows from Fantasia Bound",
+    "K-EM-08": "PASS \u2014 correction term matches 1/(ka)"
+  },
+  "numerical": {
+    "N_test_points": 1000,
+    "violations": 0,
+    "correction_match_R": 1.0
+  }
+}

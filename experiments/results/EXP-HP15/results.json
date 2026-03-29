@@ -1,0 +1,67 @@
+{
+  "experiment": "EXP-HP15",
+  "title": "Uniqueness Within the Symmetric Class",
+  "date": "2026-03-13",
+  "tests": [
+    {
+      "id": "A1",
+      "name": "Random initializations",
+      "n_runs": 15,
+      "n_converged_strict": 0,
+      "n_converged_loose": 0,
+      "dists": [
+        0.108954603,
+        0.2103557473,
+        0.1795307714,
+        0.1127217791,
+        0.1087274959,
+        0.2221811141,
+        0.1128647587,
+        0.031105282,
+        0.1356684838,
+        0.0684321282,
+        0.2156958261,
+        0.1320920623,
+        0.2422097252,
+        0.0958125983,
+        0.1721154208
+      ],
+      "norms": [
+        4.1206,
+        1.564,
+        2.1102,
+        2.1812,
+        2.3025,
+        2.248,
+        3.6782,
+        3.6086,
+        3.3107,
+        3.401,
+        2.1318,
+        2.0442,
+        1.9456,
+        2.1887,
+        2.0111
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "Pairwise comparison",
+      "n_compared": 0
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-55",
+      "result": "N/A (insufficient converged solutions)"
+    },
+    {
+      "id": "K-HP-56",
+      "result": "N/A"
+    },
+    {
+      "id": "K-HP-57",
+      "result": "FAIL (0/15)"
+    }
+  ]
+}

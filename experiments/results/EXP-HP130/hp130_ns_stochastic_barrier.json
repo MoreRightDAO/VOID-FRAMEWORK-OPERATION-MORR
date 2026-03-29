@@ -1,0 +1,587 @@
+{
+  "experiment": "HP130",
+  "title": "NS Stochastic Barrier Amplification",
+  "section": "\u00a748 (Lagrangian extension)",
+  "parent": "HP120/HP122",
+  "run_date": "2026-03-18T15:01:30.157692",
+  "parameters": {
+    "HP120_barrier_exponent": 5.0,
+    "HP120_C_barrier": 0.293,
+    "amplification_model": "enstrophy intermittency",
+    "amplification_exponent": 1.5,
+    "reference_delta": 0.01
+  },
+  "probes": {
+    "C1_barrier_amplification": {
+      "delta_0.001": [
+        {
+          "Re": 10.0,
+          "E_naive": 29300.0,
+          "E_amplified": 30226.547354429338,
+          "amplification": 1.0316227766016839,
+          "ratio": 1.0316227766016839
+        },
+        {
+          "Re": 100.0,
+          "E_naive": 2930000000.0,
+          "E_amplified": 5860000000.0,
+          "amplification": 2.0,
+          "ratio": 2.0
+        },
+        {
+          "Re": 1000.0,
+          "E_naive": 293000000000000.0,
+          "E_amplified": 9558473544293352.0,
+          "amplification": 32.622776601683796,
+          "ratio": 32.622776601683796
+        },
+        {
+          "Re": 10000.0,
+          "E_naive": 2.93e+19,
+          "E_amplified": 2.93293e+22,
+          "amplification": 1001.0,
+          "ratio": 1001.0
+        },
+        {
+          "Re": 100000.0,
+          "E_naive": 2.93e+24,
+          "E_amplified": 9.265766544293352e+28,
+          "amplification": 31623.776601683792,
+          "ratio": 31623.776601683796
+        },
+        {
+          "Re": 1000000.0,
+          "E_naive": 2.93e+29,
+          "E_amplified": 2.93000293e+35,
+          "amplification": 1000001.0,
+          "ratio": 1000001.0
+        }
+      ],
+      "delta_0.01": [
+        {
+          "Re": 10.0,
+          "E_naive": 29300.0,
+          "E_amplified": 38565.47354429335,
+          "amplification": 1.316227766016838,
+          "ratio": 1.316227766016838
+        },
+        {
+          "Re": 100.0,
+          "E_naive": 2930000000.0,
+          "E_amplified": 32230000000.0,
+          "amplification": 11.0,
+          "ratio": 11.0
+        },
+        {
+          "Re": 1000.0,
+          "E_naive": 293000000000000.0,
+          "E_amplified": 9.29477354429335e+16,
+          "amplification": 317.2277660168379,
+          "ratio": 317.2277660168379
+        },
+        {
+          "Re": 10000.0,
+          "E_naive": 2.93e+19,
+          "E_amplified": 2.930293e+23,
+          "amplification": 10001.0,
+          "ratio": 10001.0
+        },
+        {
+          "Re": 100000.0,
+          "E_naive": 2.93e+24,
+          "E_amplified": 9.265502844293351e+29,
+          "amplification": 316228.7660168379,
+          "ratio": 316228.7660168379
+        },
+        {
+          "Re": 1000000.0,
+          "E_naive": 2.93e+29,
+          "E_amplified": 2.930000293e+36,
+          "amplification": 10000001.0,
+          "ratio": 10000001.0
+        }
+      ],
+      "delta_0.1": [
+        {
+          "Re": 10.0,
+          "E_naive": 29300.0,
+          "E_amplified": 121954.73544293354,
+          "amplification": 4.16227766016838,
+          "ratio": 4.16227766016838
+        },
+        {
+          "Re": 100.0,
+          "E_naive": 2930000000.0,
+          "E_amplified": 295930000000.0,
+          "amplification": 101.0,
+          "ratio": 101.0
+        },
+        {
+          "Re": 1000.0,
+          "E_naive": 293000000000000.0,
+          "E_amplified": 9.268403544293352e+17,
+          "amplification": 3163.2776601683795,
+          "ratio": 3163.2776601683795
+        },
+        {
+          "Re": 10000.0,
+          "E_naive": 2.93e+19,
+          "E_amplified": 2.9300293e+24,
+          "amplification": 100001.0,
+          "ratio": 100001.00000000001
+        },
+        {
+          "Re": 100000.0,
+          "E_naive": 2.93e+24,
+          "E_amplified": 9.265476474293352e+30,
+          "amplification": 3162278.6601683795,
+          "ratio": 3162278.6601683795
+        },
+        {
+          "Re": 1000000.0,
+          "E_naive": 2.93e+29,
+          "E_amplified": 2.9300000293e+37,
+          "amplification": 100000001.0,
+          "ratio": 100000001.0
+        }
+      ]
+    },
+    "C2_escape_time": {
+      "Re_values": [
+        10.0,
+        18.329807108324356,
+        33.59818286283781,
+        61.58482110660264,
+        112.88378916846884,
+        206.913808111479,
+        379.26901907322497,
+        695.1927961775605,
+        1274.2749857031333,
+        2335.7214690901214,
+        4281.332398719392,
+        7847.5997035146065,
+        14384.498882876629,
+        26366.508987303554,
+        48329.30238571752,
+        88586.67904100832,
+        162377.67391887208,
+        297635.14416313195,
+        545559.4781168514,
+        1000000.0
+      ],
+      "log10_tau_naive": [
+        12724.828319765278,
+        263294.26852074236,
+        5447921.975355306,
+        112725028.22149792,
+        2332436485.8783994,
+        48261331547.12574,
+        998593589494.6434,
+        20662280235804.742,
+        427531108785690.3,
+        8846208980497017.0,
+        1.8304027875046003e+17,
+        3.7873561114044257e+18,
+        7.836562756849759e+19,
+        1.621493042524364e+21,
+        3.3550930025498595e+22,
+        6.942150697257703e+23,
+        1.4364268372533415e+25,
+        2.9721654696961804e+26,
+        6.149820756722752e+27,
+        1.2724828319765277e+29
+      ],
+      "log10_tau_amplified": [
+        16748.772352272445,
+        469917.0708787899,
+        16057657.625105966,
+        657517225.7570295,
+        30306605522.08495,
+        1484688168800.4731,
+        74756711520043.9,
+        3808018391640241.0,
+        1.9490193903902768e+17,
+        9.994782103926907e+18,
+        5.129441627280767e+20,
+        2.633321420818553e+22,
+        1.3520504399675775e+24,
+        6.942312846561884e+25,
+        3.56471193579695e+27,
+        1.8304097296553095e+29,
+        9.398826831412407e+30,
+        4.8261361268780524e+32,
+        2.4781393488314123e+34,
+        1.2724829592248109e+36
+      ],
+      "log10_ratio": [
+        4023.9440325071664,
+        206622.8023580475,
+        10609735.649750661,
+        544792197.5355316,
+        27974169036.20655,
+        1436426837253.3474,
+        73758117930549.27,
+        3787356111404436.5,
+        1.94474407930242e+17,
+        9.98593589494641e+18,
+        5.127611224493263e+20,
+        2.6329426852074123e+22,
+        1.351972074340009e+24,
+        6.942150697257632e+25,
+        3.564678384866925e+27,
+        1.8304027875046122e+29,
+        9.398812467144035e+30,
+        4.8261331547125826e+32,
+        2.4781387338493366e+34,
+        1.2724828319765277e+36
+      ],
+      "alpha_naive": 4.999998063635707,
+      "alpha_amplified": 6.436678100009852,
+      "ratio_diverges": true,
+      "super_exponential": true
+    },
+    "C3_multimode": {
+      "Re": 10000.0,
+      "mode_data": [
+        {
+          "K": 1,
+          "min_barrier_naive": 2.93e+19,
+          "min_barrier_amplified": 2.930293e+23,
+          "ratio": 10001.0
+        },
+        {
+          "K": 2,
+          "min_barrier_naive": 1.2611648396556517e+17,
+          "min_barrier_amplified": 6.307085363117915e+20,
+          "ratio": 5001.000000000001
+        },
+        {
+          "K": 4,
+          "min_barrier_naive": 542845308117292.2,
+          "min_barrier_amplified": 1.3576561156013478e+18,
+          "ratio": 2501.0
+        },
+        {
+          "K": 8,
+          "min_barrier_naive": 2336578211500.231,
+          "min_barrier_amplified": 2923059342586789.5,
+          "ratio": 1251.0000000000002
+        },
+        {
+          "K": 16,
+          "min_barrier_naive": 10057372987.882519,
+          "min_barrier_amplified": 6295915490414.458,
+          "ratio": 626.0000000000001
+        },
+        {
+          "K": 32,
+          "min_barrier_naive": 43290120.10791789,
+          "min_barrier_amplified": 13571452653.83226,
+          "ratio": 313.50000000000006
+        },
+        {
+          "K": 64,
+          "min_barrier_naive": 186334.39380401425,
+          "min_barrier_amplified": 29301083.42568125,
+          "ratio": 157.25000000000003
+        }
+      ],
+      "all_strengthened": true
+    },
+    "C4_trapped_surfaces": {
+      "n_test": 20,
+      "trapped_naive": 20,
+      "trapped_amplified": 0,
+      "fraction_naive": 1.0,
+      "fraction_amplified": 0.0,
+      "hp122_fraction": 0.35,
+      "point_data": [
+        {
+          "Pe": 33.0,
+          "ricci": 4.25390625,
+          "vorticity_naive": 4.25390625,
+          "vorticity_amp": 520.3597758215928,
+          "raychaudhuri_naive": -1.8237515258789059,
+          "raychaudhuri_amp": 514.2821180457139,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 44.34368327751865,
+          "ricci": 7.681102525847216,
+          "vorticity_naive": 7.681102525847216,
+          "vorticity_amp": 1459.2952142996264,
+          "raychaudhuri_naive": -5.925537276343804,
+          "raychaudhuri_amp": 1445.6885744974354,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 59.58673474596627,
+          "ricci": 13.8694490534615,
+          "vorticity_naive": 13.8694490534615,
+          "vorticity_amp": 4096.7207664583575,
+          "raychaudhuri_naive": -19.282393201501282,
+          "raychaudhuri_amp": 4063.5689242033945,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 80.069554336868,
+          "ricci": 25.043490358221312,
+          "vorticity_naive": 25.043490358221312,
+          "vorticity_amp": 11508.5877359192,
+          "raychaudhuri_naive": -62.80111923342646,
+          "raychaudhuri_amp": 11420.743126327552,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 107.59330174806496,
+          "ricci": 45.21999445722718,
+          "vorticity_naive": 45.21999445722718,
+          "vorticity_amp": 32344.164577032865,
+          "raychaudhuri_naive": -204.63552318602314,
+          "raychaudhuri_amp": 32094.309059389612,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 144.57828168177835,
+          "ricci": 81.65187317990487,
+          "vorticity_naive": 81.65187317990487,
+          "vorticity_amp": 90926.58605380578,
+          "raychaudhuri_naive": -666.9750122893265,
+          "raychaudhuri_amp": 90177.95916833654,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 194.27677368802006,
+          "ricci": 147.43540935400844,
+          "vorticity_naive": 147.43540935400844,
+          "vorticity_amp": 255660.49235098637,
+          "raychaudhuri_naive": -2174.211444502918,
+          "raychaudhuri_amp": 253338.84549712946,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 261.05902183635544,
+          "ricci": 266.21801907091685,
+          "vorticity_naive": 266.21801907091685,
+          "vorticity_amp": 718929.540927627,
+          "raychaudhuri_naive": -7088.090761201208,
+          "raychaudhuri_amp": 711575.2321473549,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 350.79753275909604,
+          "ricci": 480.698863241676,
+          "vorticity_naive": 480.698863241676,
+          "vorticity_amp": 2021813.6901238314,
+          "raychaudhuri_naive": -23108.742041728092,
+          "raychaudhuri_amp": 1998224.2492188618,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 471.38347536982803,
+          "ricci": 867.9780502020988,
+          "vorticity_naive": 867.9780502020988,
+          "vorticity_amp": 5686126.890419056,
+          "raychaudhuri_naive": -75341.48282343104,
+          "raychaudhuri_amp": 5609917.429545423,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 633.4205919410808,
+          "ricci": 1567.2720558398016,
+          "vorticity_naive": 1567.2720558398016,
+          "vorticity_amp": 15992088.893390486,
+          "raychaudhuri_naive": -245639.39394181798,
+          "raychaudhuri_amp": 15744882.227392828,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 851.1576397119293,
+          "ricci": 2829.9583110936815,
+          "vorticity_naive": 2829.9583110936815,
+          "vorticity_amp": 44978227.85374848,
+          "raychaudhuri_naive": -800875.8374471905,
+          "raychaudhuri_amp": 44174522.05799019,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 1143.7413574129127,
+          "ricci": 5109.93864319036,
+          "vorticity_naive": 5109.93864319036,
+          "vorticity_amp": 126504198.82102835,
+          "raychaudhuri_naive": -2611164.3268458247,
+          "raychaudhuri_amp": 123887924.55553934,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 1536.9001365005288,
+          "ricci": 9226.804803028688,
+          "vorticity_naive": 9226.804803028688,
+          "vorticity_amp": 355804177.75279534,
+          "raychaudhuri_naive": -8513423.443335338,
+          "raychaudhuri_amp": 347281527.504657,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 2065.2064509743827,
+          "ricci": 16660.459707602364,
+          "vorticity_naive": 16660.459707602364,
+          "vorticity_amp": 1000735703.0907869,
+          "raychaudhuri_naive": -27757147.30172988,
+          "raychaudhuri_amp": 972961895.3293494,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 2775.1169928695867,
+          "ricci": 30083.102828568506,
+          "vorticity_naive": 30083.102828568506,
+          "vorticity_amp": 2814681048.823945,
+          "raychaudhuri_naive": -90499407.85643208,
+          "raychaudhuri_amp": 2724151557.8646846,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 3729.057848177846,
+          "ricci": 54319.81419944058,
+          "vorticity_naive": 54319.81419944058,
+          "vorticity_amp": 7916622028.974302,
+          "raychaudhuri_naive": -295064402.532222,
+          "raychaudhuri_amp": 7621503306.62788,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 5010.913943731624,
+          "ricci": 98083.04121673446,
+          "vorticity_naive": 98083.04121673446,
+          "vorticity_amp": 22266462565.523247,
+          "raychaudhuri_naive": -962028624.3758337,
+          "raychaudhuri_amp": 21304335858.106197,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 6733.405480355668,
+          "ricci": 177104.48969876464,
+          "vorticity_naive": 177104.48969876464,
+          "vorticity_amp": 62627189906.14458,
+          "raychaudhuri_naive": -3136600617.4942822,
+          "raychaudhuri_amp": 59490412184.1606,
+          "trapped_naive": true,
+          "trapped_amp": false
+        },
+        {
+          "Pe": 9048.000000000002,
+          "ricci": 319790.2500000001,
+          "vorticity_naive": 319790.2500000001,
+          "vorticity_amp": 176146844991.7203,
+          "raychaudhuri_naive": -10226581465.473759,
+          "raychaudhuri_amp": 165919943735.99655,
+          "trapped_naive": true,
+          "trapped_amp": false
+        }
+      ]
+    },
+    "C5_regularity": {
+      "epsilon_0.5": {
+        "epsilon": 0.5,
+        "diverges": true,
+        "predicted_diverges": true,
+        "ratio_at_Re_1e8": 2.9300000002929997e+37
+      },
+      "epsilon_1.0": {
+        "epsilon": 1.0,
+        "diverges": true,
+        "predicted_diverges": true,
+        "ratio_at_Re_1e8": 2.9300000002929996e+33
+      },
+      "epsilon_2.0": {
+        "epsilon": 2.0,
+        "diverges": true,
+        "predicted_diverges": true,
+        "ratio_at_Re_1e8": 2.9300000002929996e+25
+      },
+      "epsilon_3.0": {
+        "epsilon": 3.0,
+        "diverges": true,
+        "predicted_diverges": true,
+        "ratio_at_Re_1e8": 2.930000000293e+17
+      },
+      "epsilon_4.0": {
+        "epsilon": 4.0,
+        "diverges": true,
+        "predicted_diverges": true,
+        "ratio_at_Re_1e8": 2930000000.2929997
+      },
+      "epsilon_5.0": {
+        "epsilon": 5.0,
+        "diverges": true,
+        "predicted_diverges": true,
+        "ratio_at_Re_1e8": 29.300000002929995
+      },
+      "summary": {
+        "alpha_effective": 6.5,
+        "exponent_gap": 5.5,
+        "max_epsilon": 5.0,
+        "super_linear": true
+      }
+    }
+  },
+  "kill_conditions": {
+    "K-NS-130-1": {
+      "description": "Amplified barrier E_b^eff > E_b for all Re \u2265 100",
+      "result": "PASS"
+    },
+    "K-NS-130-2": {
+      "description": "\u03c4_eff/\u03c4_naive \u2192 \u221e as Re \u2192 \u221e",
+      "measured": {
+        "diverges": true
+      },
+      "result": "PASS"
+    },
+    "K-NS-130-3": {
+      "description": "Multi-mode min barrier increases with amplification",
+      "measured": {
+        "all_strengthened": true
+      },
+      "result": "PASS"
+    },
+    "K-NS-130-4": {
+      "description": "Trapped fraction decreases with effective metric (< 35%)",
+      "measured": {
+        "fraction_amplified": 0.0,
+        "hp122": 0.35
+      },
+      "result": "PASS"
+    },
+    "K-NS-130-5": {
+      "description": "E_b^eff/Re^(1+\u03b5) \u2192 \u221e for some \u03b5 > 0 (super-linear barrier)",
+      "measured": {
+        "exponent_gap": 5.5,
+        "super_linear": true
+      },
+      "result": "PASS"
+    }
+  },
+  "summary": {
+    "pass_count": 5,
+    "total_count": 5,
+    "result_string": "5/5 PASS"
+  }
+}

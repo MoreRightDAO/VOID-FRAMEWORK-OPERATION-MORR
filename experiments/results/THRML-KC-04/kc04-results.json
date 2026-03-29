@@ -1,0 +1,31 @@
+{
+  "experiment": "THRML-KC-04",
+  "kill_condition": "K16",
+  "description": "Predictive validity of Pe for behavioral drift outcomes",
+  "parameters": {
+    "N_PLATFORMS": 500,
+    "PE_THRESHOLD": 13.0,
+    "BETA_LOGISTIC": 0.35,
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244
+  },
+  "results": {
+    "auc": 0.9728,
+    "sensitivity": 0.9527,
+    "specificity": 0.8052,
+    "point_biserial_r": 0.5958,
+    "p_value": 2.307632954740106e-49,
+    "n_drift": 423,
+    "n_no_drift": 77
+  },
+  "pass_criteria": {
+    "auc_gt_0.85": true,
+    "sensitivity_gt_0.80": true,
+    "specificity_gt_0.80": true,
+    "beta_positive": true
+  },
+  "overall_pass": true,
+  "k16_fires": false,
+  "verdict": "K16 CONFIRMED SURVIVED -- Pe predicts drift with AUC > 0.85"
+}

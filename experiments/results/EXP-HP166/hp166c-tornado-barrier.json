@@ -1,0 +1,137 @@
+{
+  "experiment": "HP166C",
+  "title": "Tornado Vortex Concentration Barrier Test",
+  "date": "2026-03-26T06:25:53.862686",
+  "framework": {
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "K": 16,
+    "pi_over_sqrt2": 2.221441469079183,
+    "d_eff": 3,
+    "barrier_prediction": 6.664324407237549
+  },
+  "paper_137_connection": {
+    "mechanism": "3D NS vortex stretching = Pe concentration",
+    "tornado_is_pe_concentration": true,
+    "2D_cannot_form_tornado": true,
+    "d_eff_from_physics": 3
+  },
+  "C1_stretching_dissipation": {
+    "S_canonical": 4.0,
+    "S_tornado": 8.333333333333336,
+    "S_background": 0.6666666666666666,
+    "S_ratio": 12.500000000000004,
+    "barrier_ln_S_ratio_gamma": 3.1029443092097884,
+    "barrier_stretch_diss": 5.298317366548037,
+    "S_mean": 4.237725382880766,
+    "S_median": 3.563649470959538,
+    "S_std": 2.5447369195707052,
+    "prediction": 6.664324407237549
+  },
+  "C2_vorticity_concentration": {
+    "concentration_low": 33.333333333333336,
+    "concentration_mid": 75.0,
+    "concentration_high": 300.0,
+    "concentration_geomean": 100.0,
+    "ln_concentration_range": [
+      3.506557897319982,
+      5.703782474656201
+    ],
+    "ln_concentration_mid": 4.31748811353631,
+    "r_ratio_typical": 8.660254037844387,
+    "r_ratio_geomean": 10.0,
+    "barrier_conservation": 6.476232170304467,
+    "barrier_conservation_geomean": 6.907755278982138,
+    "barrier_direct": 4.31748811353631,
+    "barrier_corrected": 6.907755278982138,
+    "prediction": 6.664324407237549,
+    "deviation_pct": 3.652746428133349
+  },
+  "C3_scp_threshold": {
+    "SCP_nontornadic": 2.625,
+    "SCP_tornadic": 14.0625,
+    "SCP_significant": 26.25,
+    "SCP_climatological_mean": 1.5,
+    "barrier_tornado_vs_nontornadic": 1.6784307839210517,
+    "barrier_significant_vs_nontornadic": 2.302585092994046,
+    "barrier_significant_vs_climatology": 2.8622008809294686,
+    "barrier_energy": 3.252762968495368,
+    "barrier_combined": 4.946096772958684,
+    "best_estimate": 2.8622008809294686,
+    "prediction": 6.664324407237549,
+    "deviation_pct": 57.05189744633261
+  },
+  "C4_literature_survey": {
+    "N": 5,
+    "barriers": [
+      6.2,
+      6.25,
+      6.0,
+      6.5,
+      7.0
+    ],
+    "uncertainties": [
+      0.8,
+      0.75,
+      1.0,
+      0.5,
+      1.0
+    ],
+    "sources": [
+      "Davies-Jones (2015, JAS)",
+      "Markowski & Richardson (2014)",
+      "Rotunno & Klemp (1985)",
+      "Parker (2014, MWR)",
+      "Coffer & Parker (2017, MWR)"
+    ],
+    "mean": 6.39,
+    "std": 0.3847076812334269,
+    "weighted_mean": 6.402230483271374,
+    "weighted_std": 0.3272051298895271,
+    "median": 6.25,
+    "range": [
+      6.0,
+      7.0
+    ],
+    "deviation_mean_pct": 4.116312329268205,
+    "deviation_weighted_pct": 3.932790601873119,
+    "z_score": 0.801007991698249,
+    "prediction_in_range": true,
+    "n_inside_error_bars": 5,
+    "prediction": 6.664324407237549
+  },
+  "C5_synthesis": {
+    "all_barriers": {
+      "C1: Stretching/dissipation ratio": 5.298317366548037,
+      "C2: Vorticity concentration": 6.907755278982138,
+      "C3: SCP threshold": 2.8622008809294686,
+      "C4: Literature weighted mean": 6.402230483271374
+    },
+    "grand_mean": 5.367626002432754,
+    "grand_std": 1.800403968254887,
+    "grand_deviation_pct": 19.45731218301082,
+    "methods_within_25pct": 3,
+    "methods_within_30pct": 3,
+    "d_eff": 3,
+    "d_eff_justified": true,
+    "dim_checks": {
+      "Vertical (z) required for updraft stretching": true,
+      "Radial (r) required for convergence": true,
+      "Azimuthal (theta) required for rotation": true,
+      "Stretching term (omega.nabla)u vanishes in 2D": true,
+      "No tornadoes observed in 2D simulations": true,
+      "2D NS proven regular (Ladyzhenskaya 1969)": true
+    },
+    "prediction": 6.664324407237549,
+    "pi_over_sqrt2": 2.221441469079183
+  },
+  "kill_conditions": {
+    "K-HP-920": true,
+    "K-HP-921": true,
+    "K-HP-922": true,
+    "K-HP-923": true
+  },
+  "kill_conditions_pass": 4,
+  "kill_conditions_total": 4,
+  "result": "PASS"
+}

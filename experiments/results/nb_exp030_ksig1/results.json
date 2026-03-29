@@ -1,0 +1,78 @@
+{
+  "experiment": "nb_exp030_ksig1_temporal_structure",
+  "date": "2026-03-12",
+  "part1_propagator": {
+    "finding": "FP propagator does NOT have alpha\u00b7\u0394t product structure",
+    "implication": "The (2,1) signature minus sign does NOT come from FP semigroup \u2014 it comes from the measurement definition carrying \u0394t",
+    "K_SIG_1_B_fired": false,
+    "propagator_results": [
+      {
+        "alpha": 0.1,
+        "c": 0.8777777777777778,
+        "Pe": -71.71429002129719,
+        "mean_theta": -2.2486843549049063,
+        "std_theta": 0.489821393661608
+      },
+      {
+        "alpha": 0.3,
+        "c": 0.8555555555555555,
+        "Pe": -64.73093924489311,
+        "mean_theta": -2.0074662205277445,
+        "std_theta": 0.45596032301560613
+      },
+      {
+        "alpha": 0.5,
+        "c": 0.8333333333333334,
+        "Pe": -58.39198401785606,
+        "mean_theta": -1.7924606365170896,
+        "std_theta": 0.4244393289778036
+      },
+      {
+        "alpha": 0.7,
+        "c": 0.8111111111111111,
+        "Pe": -52.63432013401208,
+        "mean_theta": -1.5862846356685663,
+        "std_theta": 0.37909196049007504
+      },
+      {
+        "alpha": 0.9,
+        "c": 0.7888888888888889,
+        "Pe": -47.40063013397036,
+        "mean_theta": -1.4337016617006002,
+        "std_theta": 0.3600202453791251
+      }
+    ]
+  },
+  "part2_measurement": {
+    "N_platforms": 100,
+    "rho_longitudinal_true": -0.9117791779177916,
+    "p_longitudinal_true": 1.1691904974024913e-39,
+    "rho_cs_proxy_true": 0.8764679412268214,
+    "p_cs_proxy_true": 7.113817791846848e-33,
+    "rho_longitudinal_cs": -0.7832038168486779,
+    "p_longitudinal_cs": 6.081719856040471e-22,
+    "ols_cs_slope": 1.0117843118603562,
+    "ols_cs_intercept": -0.025162967481412668,
+    "ols_cs_R2": 0.7525890538710275,
+    "ols_longitudinal_slope": -1.0514783836240704,
+    "ols_longitudinal_R2": 0.7351590993236222,
+    "K_SIG_1_A_fired": false,
+    "finding": "IV proxy correlates with alpha_true but does not consistently recover it"
+  },
+  "part3_formal": {
+    "conclusion": "K-SIG-1 cannot fire by definition \u2014 alpha is I(S_out; O_future)/H(O_future), irreducibly longitudinal",
+    "bridge_formula_also_longitudinal": "c requires theta* which requires temporal convergence",
+    "minus_sign_origin": "Measurement definition carries \u0394t, not FP semigroup product structure"
+  },
+  "kill_conditions": {
+    "K_SIG_1_A": {
+      "fired": false,
+      "result": "\u03c1(\u03b1_CS, \u03b1_true)=0.876, slope=1.012",
+      "threshold": "\u03c1>0.9 AND |slope-1|<0.1"
+    },
+    "K_SIG_1_B": {
+      "fired": false,
+      "result": "\u03b1 and \u0394t enter FP propagator independently through c(\u03b1) \u2014 no product structure"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "experiment": "nb_exp028_power_grid",
+  "date": "2026-03-12",
+  "data": "Germany grid frequency, Jan 2020, N=2,678,400 (1s resolution)",
+  "basic_stats": {
+    "mean_mhz": 0.23310695287771932,
+    "std_mhz": 19.35879036373391,
+    "excess_kurtosis": 1.107650838256407,
+    "skewness": -0.07455143291222659,
+    "shapiro_p": 4.2435051520729554e-08
+  },
+  "tail_analysis": {
+    "alpha_est": 9.998941049199495,
+    "pe_from_tail": 0.11112418611620481
+  },
+  "autocorrelation": {
+    "r2_exponential": 0.9877170455693033,
+    "r2_power_law": 0.7122860346847983,
+    "decay_is_exponential": true,
+    "slope_exp": -0.0037984836416721035
+  },
+  "coupling_function": {
+    "beta_nonsinusoidal": 2.916705242135325,
+    "r2_h1_only": 0.011603740936769413,
+    "r2_full": 0.06817470706447903,
+    "delta_r2": 0.05657096612770962,
+    "is_sinusoidal": false
+  },
+  "diurnal_pe": {
+    "morning_07_09": 0.8424221232504459,
+    "evening_17_20": 1.0490389800501072,
+    "night_02_04": 0.6656981783303986,
+    "pe_cv": 0.3066966511862593,
+    "pe_range": 0.9484612166385815,
+    "hourly_pe": [
+      1.4835268776243804,
+      0.8606780378018963,
+      0.7430900625310257,
+      0.5350656609857989,
+      0.7189388114743711,
+      1.1580270139568318,
+      1.3917536197383054,
+      1.1337340574285453,
+      0.6802733210155942,
+      0.7132589913071979,
+      0.7755992155889062,
+      0.6509250344066283,
+      0.8421909719254834,
+      0.6452826814957301,
+      0.6601598836906152,
+      0.8889928326757598,
+      1.1897205568732072,
+      0.8657200368338647,
+      0.766175720332037,
+      1.1767291411267458,
+      1.387531021907781,
+      1.4563987136455534,
+      1.04107236806048,
+      1.4362498962866965
+    ]
+  },
+  "langevin_fit": {
+    "phi_ar1": 0.9982920993331404,
+    "gamma_per_sec": 0.001707900666859552,
+    "tau_sec": 585.5141457604656,
+    "pe_langevin": 0.4388577996589249
+  },
+  "kill_conditions": {
+    "K-GRID-1": {
+      "fired": false,
+      "result": "Gaussian=False, kurtosis=1.108"
+    },
+    "K-GRID-2": {
+      "fired": true,
+      "result": "R\u00b2_exp=0.9877, R\u00b2_pl=0.7123"
+    },
+    "K-GRID-3": {
+      "fired": false,
+      "result": "\u03b2=2.9167, \u0394R\u00b2=0.0566"
+    },
+    "K-GRID-4": {
+      "fired": false,
+      "result": "Pe_CV=0.307, range=0.948"
+    },
+    "K-GRID-5": {
+      "fired": false,
+      "result": "\u03b1=9.999"
+    }
+  },
+  "predictions_confirmed": {
+    "P1_nongaussian": true,
+    "P2_powerlaw_ac": false,
+    "P3_nonsinusoidal": true,
+    "P4_diurnal_pe": true,
+    "P5_bkt_tail": true
+  }
+}

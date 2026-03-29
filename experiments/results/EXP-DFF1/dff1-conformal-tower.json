@@ -1,0 +1,196 @@
+{
+  "experiment": "EXP-DFF-1",
+  "version": "v2 \u2014 zero-parameter",
+  "title": "DFF Conformal Tower Self-Consistency Test",
+  "timestamp": "2026-03-14T23:31:02.655984",
+  "duration_seconds": 4.846409,
+  "parameters": {
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "K": 16,
+    "omega": "1 (zero-parameter)",
+    "x": "Pe/K (normalized)",
+    "g": "(O/3)\u00b2 + (R/3)\u00b2 + (\u03b1/3)\u00b2",
+    "n_platforms": 1344
+  },
+  "B1_zero_param": {
+    "n_cont_range": [
+      -0.9385973175141036,
+      16.765117767564462
+    ],
+    "n_max": 17,
+    "n_unique_levels": 18,
+    "residual_mean": 0.580002785513028,
+    "residual_median": 0.668601474757803,
+    "frac_lt_010": 0.057291666666666664,
+    "frac_lt_025": 0.18377976190476192,
+    "pe_residual_mean": 10.782795922716518,
+    "pe_residual_median": 11.195905476586967,
+    "level_distribution": {
+      "0": 1161,
+      "1": 90,
+      "2": 39,
+      "3": 14,
+      "4": 10,
+      "5": 2,
+      "6": 5,
+      "7": 8,
+      "8": 1,
+      "9": 1,
+      "10": 3,
+      "11": 2,
+      "12": 1,
+      "13": 2,
+      "14": 1,
+      "15": 2,
+      "16": 1,
+      "17": 1
+    }
+  },
+  "B2_uniformity": {
+    "n_tower": 183,
+    "frac_mean": 0.5351840240964589,
+    "frac_std": 0.2881890101665671,
+    "watson_U2": 0.20308258184563446,
+    "watson_p": 0.0364,
+    "rayleigh_Z": 3.4031807625615764,
+    "rayleigh_p": 0.03326728615669163,
+    "rayleigh_R_bar": 0.13636941075204906,
+    "ks_D": 0.09489915273313676,
+    "ks_p": 0.06931873566663838,
+    "chi2": 15.415300546448087,
+    "chi2_p": 0.08014200269562753,
+    "chi2_observed_bins": [
+      19,
+      14,
+      14,
+      19,
+      11,
+      17,
+      23,
+      25,
+      28,
+      13
+    ],
+    "watson_all_U2": 12.861586019847369,
+    "watson_all_p": 0.0,
+    "KC": {
+      "K-DFF-1": {
+        "pass": true,
+        "detail": "Watson U\u00b2=0.203083, p=0.0364 \u2014 non-uniform (tower signal)"
+      }
+    }
+  },
+  "B3_omega_scan": {
+    "best_omega_mean": 84.32628764341015,
+    "best_omega_median": 53.43969022196648,
+    "best_omega_frac": 53.43969022196648,
+    "at_omega_1_mean": 0.4415953922595809,
+    "at_omega_1_median": 0.4257543887432408,
+    "best_mean_res": 0.22436615574750923,
+    "best_median_res": 0.18846676452592348,
+    "best_frac_near": 0.40044994375703036
+  },
+  "B4_domain": {
+    "domain_means": {
+      "agriculture": 0.6666666666666666,
+      "ai_systems": 0.017543859649122806,
+      "algorithmic_legal": 0.0,
+      "benefits_welfare_ai": 0.0,
+      "dating_apps": 0.0,
+      "digital_advertising": 0.2222222222222222,
+      "ecommerce": 0.05084745762711865,
+      "education": 0.7241379310344828,
+      "government_civic": 4.788461538461538,
+      "healthcare": 0.2631578947368421,
+      "insurance": 0.22,
+      "law_enforcement_tech": 0.0,
+      "modern_gaming": 0.017543859649122806,
+      "national_ai_systems": 0.21359223300970873,
+      "news_media": 1.0862068965517242,
+      "pharma": 0.06,
+      "predatory_finance": 0.0,
+      "real_estate": 0.21153846153846154,
+      "smart_cities": 0.24,
+      "social_media": 0.05357142857142857,
+      "streaming_media": 0.22807017543859648,
+      "surveillance": 0.0,
+      "traditional_finance": 0.21153846153846154,
+      "workplace_tech": 0.42857142857142855
+    },
+    "anova_F": 30.215140861144587,
+    "anova_p": 3.1103831983822806e-104,
+    "kruskal_H": 391.73508888783573,
+    "kruskal_p": 8.906026063737675e-69,
+    "dominant_level": 0,
+    "dominant_frac": 0.8638392857142857,
+    "chi2_level": 16842.937499999996,
+    "p_chi2_level": 0.0,
+    "KC": {
+      "K-DFF-4": {
+        "pass": true,
+        "detail": "n=0 at 86.4%"
+      },
+      "K-DFF-5": {
+        "pass": true,
+        "detail": "\u03c7\u00b2=16842.94, p=0.0000e+00"
+      },
+      "K-DFF-6": {
+        "pass": true,
+        "detail": "ANOVA F=30.22, p=3.1104e-104"
+      }
+    }
+  },
+  "B5_null": {
+    "real_ks": 0.09489915273313676,
+    "real_U2": 0.20308258184563446,
+    "null_ks_mean": 0.08738423465998056,
+    "null_U2_mean": 0.14690084674798473,
+    "p_ks": 0.36,
+    "p_U2": 0.186,
+    "cohen_d": 0.8232417129477408,
+    "KC": {
+      "K-DFF-2": {
+        "pass": false,
+        "detail": "U\u00b2 p=0.1860, d=0.82"
+      }
+    }
+  },
+  "B6_berry": {
+    "base_ks": 0.09489915273313676,
+    "best_lambda": -1.4949832775919731,
+    "best_ks": 0.12820567255434784,
+    "improvement_pct": 35.096751511440154
+  },
+  "kill_conditions": {
+    "K-DFF-1": {
+      "pass": true,
+      "detail": "Watson U\u00b2=0.203083, p=0.0364 \u2014 non-uniform (tower signal)"
+    },
+    "K-DFF-4": {
+      "pass": true,
+      "detail": "n=0 at 86.4%"
+    },
+    "K-DFF-5": {
+      "pass": true,
+      "detail": "\u03c7\u00b2=16842.94, p=0.0000e+00"
+    },
+    "K-DFF-6": {
+      "pass": true,
+      "detail": "ANOVA F=30.22, p=3.1104e-104"
+    },
+    "K-DFF-2": {
+      "pass": false,
+      "detail": "U\u00b2 p=0.1860, d=0.82"
+    },
+    "K-DFF-3": {
+      "pass": true,
+      "detail": "g > 0 always; tower exists for all physical states"
+    }
+  },
+  "summary": {
+    "total_kc": 6,
+    "passed_kc": 5,
+    "result": "PARTIAL (5/6)"
+  }
+}

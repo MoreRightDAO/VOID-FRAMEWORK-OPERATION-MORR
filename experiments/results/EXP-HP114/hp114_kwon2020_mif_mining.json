@@ -1,0 +1,605 @@
+{
+  "experiment": "HP114",
+  "title": "MIF Channel Mining \u2014 Kwon 2020 Global Compilation",
+  "timestamp": "2026-03-18T01:25:15.678703",
+  "data_source": {
+    "citation": "Kwon et al. 2020, Earth-Sci Rev 200:102929",
+    "github": "https://github.com/saeyunk/isotope_data",
+    "doi": "10.5281/zenodo.3370412"
+  },
+  "data_stats": {
+    "total_entries": 2096,
+    "significant_mif": 1348,
+    "filtered": 1246,
+    "mif_threshold": 0.1
+  },
+  "env_stats": {
+    "Fish_FW": {
+      "N": 363,
+      "mean_R": 0.7919,
+      "median_R": 0.7792,
+      "std_R": 0.0883
+    },
+    "Fish_Marine": {
+      "N": 147,
+      "mean_R": 0.7972,
+      "median_R": 0.806,
+      "std_R": 0.0658
+    },
+    "Atm_TGM": {
+      "N": 77,
+      "mean_R": 0.9053,
+      "median_R": 0.913,
+      "std_R": 0.2086
+    },
+    "Atm_PBM": {
+      "N": 59,
+      "mean_R": 0.9933,
+      "median_R": 0.9333,
+      "std_R": 0.3069
+    },
+    "Atm_Precip": {
+      "N": 120,
+      "mean_R": 1.0166,
+      "median_R": 0.9477,
+      "std_R": 0.3389
+    },
+    "Terr_Foliage": {
+      "N": 166,
+      "mean_R": 1.0314,
+      "median_R": 1.0,
+      "std_R": 0.177
+    },
+    "Terr_Soil": {
+      "N": 87,
+      "mean_R": 1.0117,
+      "median_R": 0.98,
+      "std_R": 0.1602
+    },
+    "Sed": {
+      "N": 227,
+      "mean_R": 0.9323,
+      "median_R": 0.8947,
+      "std_R": 0.3255
+    }
+  },
+  "kde_all": {
+    "label": "all_filtered",
+    "N": 1246,
+    "mean_R": 0.9035383627608345,
+    "median_R": 0.8285,
+    "std_R": 0.23662873980693133,
+    "peaks": [
+      {
+        "R": 0.7809,
+        "height": 6.131,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.2991
+      },
+      {
+        "R": 0.9007,
+        "height": 1.612,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.1793
+      },
+      {
+        "R": 0.9469,
+        "height": 1.495,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.1331
+      },
+      {
+        "R": 0.9994,
+        "height": 1.671,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.0806
+      },
+      {
+        "R": 1.054,
+        "height": 0.901,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.026
+      },
+      {
+        "R": 1.0855,
+        "height": 0.927,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.0055
+      },
+      {
+        "R": 1.1822,
+        "height": 0.595,
+        "nearest_channel": "CO3",
+        "nearest_R": 1.16,
+        "delta": 0.0222
+      },
+      {
+        "R": 1.2473,
+        "height": 0.499,
+        "nearest_channel": "MeHg_photodeg",
+        "nearest_R": 1.27,
+        "delta": 0.0227
+      },
+      {
+        "R": 1.3314,
+        "height": 0.28,
+        "nearest_channel": "MeHg_photodeg",
+        "nearest_R": 1.27,
+        "delta": 0.0614
+      },
+      {
+        "R": 1.3975,
+        "height": 0.143,
+        "nearest_channel": "NO2",
+        "nearest_R": 1.454,
+        "delta": 0.0565
+      },
+      {
+        "R": 1.4994,
+        "height": 0.109,
+        "nearest_channel": "NO2",
+        "nearest_R": 1.454,
+        "delta": 0.0454
+      },
+      {
+        "R": 1.553,
+        "height": 0.127,
+        "nearest_channel": "NVE",
+        "nearest_R": 1.6,
+        "delta": 0.047
+      },
+      {
+        "R": 1.6812,
+        "height": 0.027,
+        "nearest_channel": "NVE",
+        "nearest_R": 1.6,
+        "delta": 0.0812
+      },
+      {
+        "R": 1.7222,
+        "height": 0.027,
+        "nearest_channel": "NVE",
+        "nearest_R": 1.6,
+        "delta": 0.1222
+      },
+      {
+        "R": 1.7852,
+        "height": 0.027,
+        "nearest_channel": "NVE",
+        "nearest_R": 1.6,
+        "delta": 0.1852
+      },
+      {
+        "R": 1.8493,
+        "height": 0.044,
+        "nearest_channel": "NVE",
+        "nearest_R": 1.6,
+        "delta": 0.2493
+      },
+      {
+        "R": 1.9092,
+        "height": 0.027,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.2208
+      },
+      {
+        "R": 1.9995,
+        "height": 0.027,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.1305
+      },
+      {
+        "R": 2.0804,
+        "height": 0.073,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.0496
+      },
+      {
+        "R": 2.1487,
+        "height": 0.049,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.0187
+      },
+      {
+        "R": 2.2212,
+        "height": 0.046,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.0912
+      },
+      {
+        "R": 2.467,
+        "height": 0.054,
+        "nearest_channel": "Surface",
+        "nearest_R": 2.37,
+        "delta": 0.097
+      }
+    ]
+  },
+  "kde_aquatic": {
+    "label": "aquatic",
+    "N": 737,
+    "mean_R": 0.8361875169606513,
+    "median_R": 0.7873,
+    "std_R": 0.20362241963087246,
+    "peaks": [
+      {
+        "R": 0.7809,
+        "height": 10.019,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.2991
+      },
+      {
+        "R": 0.9059,
+        "height": 1.188,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.1741
+      },
+      {
+        "R": 0.9479,
+        "height": 1.0,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.1321
+      },
+      {
+        "R": 0.9994,
+        "height": 0.808,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.0806
+      },
+      {
+        "R": 1.0761,
+        "height": 0.51,
+        "nearest_channel": "OH",
+        "nearest_R": 1.08,
+        "delta": 0.0039
+      },
+      {
+        "R": 1.1286,
+        "height": 0.355,
+        "nearest_channel": "CO3",
+        "nearest_R": 1.16,
+        "delta": 0.0314
+      },
+      {
+        "R": 1.1822,
+        "height": 0.386,
+        "nearest_channel": "CO3",
+        "nearest_R": 1.16,
+        "delta": 0.0222
+      },
+      {
+        "R": 1.241,
+        "height": 0.28,
+        "nearest_channel": "MeHg_photodeg",
+        "nearest_R": 1.27,
+        "delta": 0.029
+      },
+      {
+        "R": 1.2998,
+        "height": 0.182,
+        "nearest_channel": "MeHg_photodeg",
+        "nearest_R": 1.27,
+        "delta": 0.0298
+      },
+      {
+        "R": 1.3629,
+        "height": 0.054,
+        "nearest_channel": "NO2",
+        "nearest_R": 1.454,
+        "delta": 0.0911
+      },
+      {
+        "R": 1.5005,
+        "height": 0.106,
+        "nearest_channel": "NO2",
+        "nearest_R": 1.454,
+        "delta": 0.0465
+      },
+      {
+        "R": 1.5572,
+        "height": 0.09,
+        "nearest_channel": "NVE",
+        "nearest_R": 1.6,
+        "delta": 0.0428
+      },
+      {
+        "R": 1.7222,
+        "height": 0.053,
+        "nearest_channel": "NVE",
+        "nearest_R": 1.6,
+        "delta": 0.1222
+      },
+      {
+        "R": 1.8566,
+        "height": 0.053,
+        "nearest_channel": "NVE",
+        "nearest_R": 1.6,
+        "delta": 0.2566
+      },
+      {
+        "R": 1.9092,
+        "height": 0.053,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.2208
+      },
+      {
+        "R": 1.9995,
+        "height": 0.053,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.1305
+      },
+      {
+        "R": 2.0909,
+        "height": 0.053,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.0391
+      },
+      {
+        "R": 2.1487,
+        "height": 0.092,
+        "nearest_channel": "I_iodine",
+        "nearest_R": 2.13,
+        "delta": 0.0187
+      },
+      {
+        "R": 2.467,
+        "height": 0.106,
+        "nearest_channel": "Surface",
+        "nearest_R": 2.37,
+        "delta": 0.097
+      }
+    ]
+  },
+  "kill_conditions": {
+    "K-MIF-114-1": {
+      "description": "KDE peak within 0.03 of \u2022OH R=1.08",
+      "result": "PASS",
+      "peak_R": 1.0855,
+      "delta": 0.0055,
+      "threshold": 0.03
+    },
+    "K-MIF-114-2": {
+      "description": "KDE peak within 0.05 of \u2022CO\u2083\u207b R=1.16",
+      "result": "PASS",
+      "peak_R": 1.1822,
+      "delta": 0.0222,
+      "threshold": 0.05
+    },
+    "K-MIF-114-3": {
+      "description": "\u2022I channel: \u22652 points R\u2208[2.05,2.25], \u226550% marine",
+      "result": "FAIL",
+      "N_total": 8,
+      "N_marine": 3,
+      "marine_fraction": 0.375,
+      "examples": [
+        {
+          "R": 2.1429,
+          "D199": 0.42,
+          "sheet": "Sed",
+          "location": "South China Sea"
+        },
+        {
+          "R": 2.2275,
+          "D199": 0.19180184389205746,
+          "sheet": "Atm_Precip",
+          "location": "Chicago"
+        },
+        {
+          "R": 2.0588,
+          "D199": -0.17,
+          "sheet": "Atm_PBM",
+          "location": "Xiamen, China"
+        },
+        {
+          "R": 2.0738,
+          "D199": 0.15621534586243913,
+          "sheet": "Atm_Precip",
+          "location": "Dexter"
+        },
+        {
+          "R": 2.2143,
+          "D199": 0.14,
+          "sheet": "Atm_Precip",
+          "location": "Grand Rapid, MI, US"
+        }
+      ]
+    },
+    "K-MIF-114-4": {
+      "description": "\u2022OH enriched in photoreduction-active media (\u22651.5\u00d7)",
+      "result": "FAIL",
+      "oh_photo_fraction": 0.515,
+      "baseline_fraction": 0.494,
+      "enrichment": 1.04,
+      "N_oh": 103,
+      "N_oh_photo": 53
+    },
+    "K-MIF-114-5": {
+      "description": "\u22653 KDE peaks above R=1.0 (multi-channel structure)",
+      "result": "PASS",
+      "N_peaks": 18,
+      "peaks": [
+        {
+          "R": 1.054,
+          "nearest": "OH"
+        },
+        {
+          "R": 1.0855,
+          "nearest": "OH"
+        },
+        {
+          "R": 1.1822,
+          "nearest": "CO3"
+        },
+        {
+          "R": 1.2473,
+          "nearest": "MeHg_photodeg"
+        },
+        {
+          "R": 1.3314,
+          "nearest": "MeHg_photodeg"
+        },
+        {
+          "R": 1.3975,
+          "nearest": "NO2"
+        },
+        {
+          "R": 1.4994,
+          "nearest": "NO2"
+        },
+        {
+          "R": 1.553,
+          "nearest": "NVE"
+        },
+        {
+          "R": 1.6812,
+          "nearest": "NVE"
+        },
+        {
+          "R": 1.7222,
+          "nearest": "NVE"
+        },
+        {
+          "R": 1.7852,
+          "nearest": "NVE"
+        },
+        {
+          "R": 1.8493,
+          "nearest": "NVE"
+        },
+        {
+          "R": 1.9092,
+          "nearest": "I_iodine"
+        },
+        {
+          "R": 1.9995,
+          "nearest": "I_iodine"
+        },
+        {
+          "R": 2.0804,
+          "nearest": "I_iodine"
+        },
+        {
+          "R": 2.1487,
+          "nearest": "I_iodine"
+        },
+        {
+          "R": 2.2212,
+          "nearest": "I_iodine"
+        },
+        {
+          "R": 2.467,
+          "nearest": "Surface"
+        }
+      ]
+    }
+  },
+  "score": "3/5",
+  "channel_matches": {
+    "OH": {
+      "predicted_R": 1.08,
+      "N_nearby": 103,
+      "env_distribution": {
+        "Atm_TGM": 12,
+        "Atm_PBM": 7,
+        "Atm_Precip": 14,
+        "Fish_FW": 6,
+        "Fish_Marine": 1,
+        "Terr_Foliage": 33,
+        "Terr_Soil": 14,
+        "Sed": 16
+      },
+      "kde_peak_R": 1.0855,
+      "delta": 0.0055
+    },
+    "CO3": {
+      "predicted_R": 1.16,
+      "N_nearby": 65,
+      "env_distribution": {
+        "Atm_TGM": 7,
+        "Atm_PBM": 3,
+        "Atm_Precip": 6,
+        "Fish_FW": 1,
+        "Terr_Foliage": 22,
+        "Terr_Soil": 7,
+        "Sed": 19
+      },
+      "kde_peak_R": 1.1822,
+      "delta": 0.0222
+    },
+    "MeHg_photodeg": {
+      "predicted_R": 1.27,
+      "N_nearby": 45,
+      "env_distribution": {
+        "Atm_TGM": 3,
+        "Atm_PBM": 4,
+        "Atm_Precip": 8,
+        "Fish_FW": 3,
+        "Terr_Foliage": 10,
+        "Terr_Soil": 7,
+        "Sed": 10
+      },
+      "kde_peak_R": 1.2473,
+      "delta": 0.0227
+    },
+    "NO2": {
+      "predicted_R": 1.454,
+      "N_nearby": 8,
+      "env_distribution": {
+        "Atm_PBM": 1,
+        "Terr_Foliage": 4,
+        "Terr_Soil": 1,
+        "Sed": 2
+      },
+      "kde_peak_R": 1.4994,
+      "delta": 0.0454
+    },
+    "NVE": {
+      "predicted_R": 1.6,
+      "N_nearby": 10,
+      "env_distribution": {
+        "Atm_TGM": 1,
+        "Atm_PBM": 2,
+        "Atm_Precip": 3,
+        "Terr_Foliage": 2,
+        "Sed": 2
+      },
+      "kde_peak_R": 1.553,
+      "delta": 0.047
+    },
+    "I_iodine": {
+      "predicted_R": 2.13,
+      "N_nearby": 4,
+      "env_distribution": {
+        "Atm_Precip": 1,
+        "Sed": 3
+      },
+      "kde_peak_R": 2.1487,
+      "delta": 0.0187
+    },
+    "Surface": {
+      "predicted_R": 2.37,
+      "N_nearby": 0,
+      "env_distribution": {},
+      "kde_peak_R": 2.467,
+      "delta": 0.097
+    }
+  }
+}

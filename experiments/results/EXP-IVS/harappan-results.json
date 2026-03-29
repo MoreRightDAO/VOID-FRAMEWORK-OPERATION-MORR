@@ -1,0 +1,421 @@
+{
+  "metadata": {
+    "experiment": "EXP-IVS",
+    "date": "2026-03-15T06:14:21.763757+00:00",
+    "corpus_type": "synthetic",
+    "corpus_size": 1500,
+    "total_signs": 6189,
+    "unique_signs": 61,
+    "seed": 42,
+    "note": "Synthetic corpus preserving published distributional properties. Replace with Mahadevan/CISI/Wells corpus for definitive results."
+  },
+  "IVS-1": {
+    "test": "IVS-1",
+    "description": "Sign distribution by animal motif (JSD)",
+    "motif_counts": {
+      "tiger": 47,
+      "none": 72,
+      "unicorn": 894,
+      "bull": 161,
+      "elephant": 86,
+      "buffalo": 86,
+      "rhinoceros": 54,
+      "unknown": 50
+    },
+    "jsd_matrix": {
+      "buffalo": {
+        "buffalo": 0.0,
+        "bull": 0.29198598829014477,
+        "elephant": 0.272284785905026,
+        "none": 0.24157539280128193,
+        "rhinoceros": 0.2876682702806725,
+        "tiger": 0.276634699413232,
+        "unicorn": 0.2656568292678693,
+        "unknown": 0.20540030656864844
+      },
+      "bull": {
+        "buffalo": 0.29198598829014477,
+        "bull": 0.0,
+        "elephant": 0.2830113246235715,
+        "none": 0.21886154604876606,
+        "rhinoceros": 0.31227535111040394,
+        "tiger": 0.2780536061956825,
+        "unicorn": 0.25102471170120555,
+        "unknown": 0.2205036899797282
+      },
+      "elephant": {
+        "buffalo": 0.272284785905026,
+        "bull": 0.2830113246235715,
+        "elephant": 0.0,
+        "none": 0.2658559448496267,
+        "rhinoceros": 0.31666739901777496,
+        "tiger": 0.22731727275146885,
+        "unicorn": 0.24459732722838956,
+        "unknown": 0.24433370595679493
+      },
+      "none": {
+        "buffalo": 0.24157539280128193,
+        "bull": 0.21886154604876606,
+        "elephant": 0.2658559448496267,
+        "none": 0.0,
+        "rhinoceros": 0.27092577730761214,
+        "tiger": 0.2434462943501245,
+        "unicorn": 0.19335637172218026,
+        "unknown": 0.17769202304433823
+      },
+      "rhinoceros": {
+        "buffalo": 0.2876682702806725,
+        "bull": 0.31227535111040394,
+        "elephant": 0.31666739901777496,
+        "none": 0.27092577730761214,
+        "rhinoceros": 0.0,
+        "tiger": 0.27714267495058104,
+        "unicorn": 0.31122427086485327,
+        "unknown": 0.2647347759645138
+      },
+      "tiger": {
+        "buffalo": 0.276634699413232,
+        "bull": 0.2780536061956825,
+        "elephant": 0.22731727275146885,
+        "none": 0.2434462943501245,
+        "rhinoceros": 0.27714267495058104,
+        "tiger": 0.0,
+        "unicorn": 0.23372163384433708,
+        "unknown": 0.21890812131005055
+      },
+      "unicorn": {
+        "buffalo": 0.2656568292678693,
+        "bull": 0.25102471170120555,
+        "elephant": 0.24459732722838956,
+        "none": 0.19335637172218026,
+        "rhinoceros": 0.31122427086485327,
+        "tiger": 0.23372163384433708,
+        "unicorn": 0.0,
+        "unknown": 0.15978580054493863
+      },
+      "unknown": {
+        "buffalo": 0.20540030656864844,
+        "bull": 0.2205036899797282,
+        "elephant": 0.24433370595679493,
+        "none": 0.17769202304433823,
+        "rhinoceros": 0.2647347759645138,
+        "tiger": 0.21890812131005055,
+        "unicorn": 0.15978580054493863,
+        "unknown": 0.0
+      }
+    },
+    "observed_ratio": 1.9818244045328326,
+    "mean_jsd": 0.2519516391390649,
+    "p_value": 0.8662674650698603,
+    "n_permutations": 500,
+    "prediction": "p < 0.001 (motif-conditioned separation)",
+    "status": "FAILED"
+  },
+  "IVS-2": {
+    "test": "IVS-2",
+    "description": "Positional rigidity index",
+    "n_signs": 31,
+    "mean_PR": 0.46301953717130434,
+    "median_PR": 0.5613188752313427,
+    "std_PR": 0.30016019524730075,
+    "high_rigidity_count": 13,
+    "high_rigidity_pct": 41.935483870967744,
+    "top_10_rigid": [
+      [
+        85,
+        0.898531971103862,
+        85
+      ],
+      [
+        48,
+        0.8375239944688698,
+        166
+      ],
+      [
+        130,
+        0.8195904208895458,
+        211
+      ],
+      [
+        89,
+        0.8009255681325418,
+        304
+      ],
+      [
+        87,
+        0.7794344728251298,
+        208
+      ],
+      [
+        65,
+        0.7709104380459549,
+        147
+      ],
+      [
+        72,
+        0.7538051026300251,
+        92
+      ],
+      [
+        293,
+        0.701245537453566,
+        172
+      ],
+      [
+        44,
+        0.7002556403212019,
+        113
+      ],
+      [
+        99,
+        0.6562860695633146,
+        175
+      ]
+    ],
+    "prediction": "mean PR > 0.6 (coordinate notation)",
+    "assessment": "INTERMEDIATE \u2014 between language and notation",
+    "status": "SUPPORTS"
+  },
+  "IVS-3": {
+    "test": "IVS-3",
+    "description": "Sign co-occurrence clustering",
+    "n_signs_filtered": 33,
+    "best_k": 2,
+    "best_silhouette": -0.2605952275727874,
+    "all_k": {
+      "2": {
+        "silhouette": -0.2605952275727874,
+        "sizes": [
+          23,
+          10
+        ]
+      },
+      "3": {
+        "silhouette": -0.4298798052943811,
+        "sizes": [
+          24,
+          5,
+          4
+        ]
+      },
+      "4": {
+        "silhouette": -0.8292123151245985,
+        "sizes": [
+          1,
+          30,
+          1,
+          1
+        ]
+      },
+      "5": {
+        "silhouette": -0.8465007228106667,
+        "sizes": [
+          1,
+          22,
+          1,
+          1,
+          8
+        ]
+      },
+      "6": {
+        "silhouette": -0.8464028576536573,
+        "sizes": [
+          11,
+          16,
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      "7": {
+        "silhouette": -0.8197989521957005,
+        "sizes": [
+          3,
+          1,
+          20,
+          1,
+          6,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "silhouette": -0.8290177894436774,
+        "sizes": [
+          9,
+          3,
+          5,
+          12,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "prediction": "k=3 best silhouette (O/R/\u03b1 dimensions)",
+    "status": "PARTIAL",
+    "chi2": 29.75615584332098,
+    "chi2_p": 0.00048265354201258075,
+    "chi2_dof": 9
+  },
+  "IVS-4": {
+    "test": "IVS-4",
+    "description": "Inscription length distribution",
+    "mean": 4.126,
+    "median": 4.0,
+    "std": 1.5172751892784644,
+    "cv": 0.3677351403971072,
+    "min": 1,
+    "max": 9,
+    "n": 1500,
+    "length_distribution": {
+      "5": 323,
+      "6": 193,
+      "4": 384,
+      "2": 155,
+      "1": 62,
+      "3": 298,
+      "8": 11,
+      "7": 70,
+      "9": 4
+    },
+    "prediction": "CV < 0.6 (fixed-dim state vectors)",
+    "assessment": "CONSISTENT with fixed-dim state vectors",
+    "status": "CONFIRMED"
+  },
+  "IVS-5": {
+    "test": "IVS-5",
+    "description": "Geographic uniformity (anti-dialect)",
+    "pairs": {
+      "Banawali_vs_Chanhu-daro": {
+        "rho": 0.8099253512463468,
+        "p": 6.552587754562317e-09
+      },
+      "Banawali_vs_Dholavira": {
+        "rho": 0.7972528617568092,
+        "p": 2.806348882214948e-08
+      },
+      "Banawali_vs_Harappa": {
+        "rho": 0.8797298706852122,
+        "p": 3.66580028319427e-14
+      },
+      "Banawali_vs_Kalibangan": {
+        "rho": 0.7571140316677971,
+        "p": 2.19272448203352e-07
+      },
+      "Banawali_vs_Lothal": {
+        "rho": 0.8704943286114979,
+        "p": 2.556525611061424e-12
+      },
+      "Banawali_vs_Mohenjo-daro": {
+        "rho": 0.879697797942317,
+        "p": 8.794101798612659e-17
+      },
+      "Banawali_vs_other": {
+        "rho": 0.7637936043141805,
+        "p": 1.4795031700859544e-07
+      },
+      "Chanhu-daro_vs_Dholavira": {
+        "rho": 0.8317462001160231,
+        "p": 2.0134726020735673e-09
+      },
+      "Chanhu-daro_vs_Harappa": {
+        "rho": 0.915514076463032,
+        "p": 2.069902034639481e-17
+      },
+      "Chanhu-daro_vs_Kalibangan": {
+        "rho": 0.9020451720360905,
+        "p": 3.249458901762001e-13
+      },
+      "Chanhu-daro_vs_Lothal": {
+        "rho": 0.9023485507671319,
+        "p": 2.375437147024312e-14
+      },
+      "Chanhu-daro_vs_Mohenjo-daro": {
+        "rho": 0.9126430342190007,
+        "p": 6.924824609438635e-20
+      },
+      "Chanhu-daro_vs_other": {
+        "rho": 0.8617409978443068,
+        "p": 5.97134523992083e-11
+      },
+      "Dholavira_vs_Harappa": {
+        "rho": 0.9249729938191615,
+        "p": 3.983794074743051e-17
+      },
+      "Dholavira_vs_Kalibangan": {
+        "rho": 0.759815184631608,
+        "p": 7.140473327579512e-07
+      },
+      "Dholavira_vs_Lothal": {
+        "rho": 0.9140195303841103,
+        "p": 1.7609095750075624e-14
+      },
+      "Dholavira_vs_Mohenjo-daro": {
+        "rho": 0.9350549581102244,
+        "p": 6.817887825845441e-22
+      },
+      "Dholavira_vs_other": {
+        "rho": 0.8700355842548513,
+        "p": 2.0670170538097658e-10
+      },
+      "Harappa_vs_Kalibangan": {
+        "rho": 0.9254999962039616,
+        "p": 1.3131392697925354e-17
+      },
+      "Harappa_vs_Lothal": {
+        "rho": 0.9338147083202248,
+        "p": 2.3266748298296802e-20
+      },
+      "Harappa_vs_Mohenjo-daro": {
+        "rho": 0.9008141277055067,
+        "p": 4.092024331261296e-20
+      },
+      "Harappa_vs_other": {
+        "rho": 0.9492236516098057,
+        "p": 1.1106505584055782e-20
+      },
+      "Kalibangan_vs_Lothal": {
+        "rho": 0.9055041888332866,
+        "p": 3.278587559623882e-14
+      },
+      "Kalibangan_vs_Mohenjo-daro": {
+        "rho": 0.934946684878103,
+        "p": 2.4814441830706976e-22
+      },
+      "Kalibangan_vs_other": {
+        "rho": 0.8512871242799558,
+        "p": 6.637426044301327e-10
+      },
+      "Lothal_vs_Mohenjo-daro": {
+        "rho": 0.9075304095003216,
+        "p": 4.3001570163787404e-20
+      },
+      "Lothal_vs_other": {
+        "rho": 0.950617381255601,
+        "p": 7.540677307784304e-19
+      },
+      "Mohenjo-daro_vs_other": {
+        "rho": 0.9446367081776306,
+        "p": 6.749007126116386e-24
+      }
+    },
+    "mean_rho": 0.8818506824869321,
+    "n_sites": 8,
+    "site_counts": {
+      "Chanhu-daro": 63,
+      "Mohenjo-daro": 675,
+      "Harappa": 352,
+      "Lothal": 132,
+      "other": 119,
+      "Banawali": 33,
+      "Kalibangan": 80,
+      "Dholavira": 46
+    },
+    "prediction": "mean \u03c1 > 0.8 (constraint specification)",
+    "assessment": "STRONG geographic uniformity \u2014 constraint specification",
+    "status": "CONFIRMED"
+  }
+}

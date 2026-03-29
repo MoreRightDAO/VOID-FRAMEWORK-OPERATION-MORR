@@ -1,0 +1,302 @@
+{
+  "T1_SENSITIVITY": {
+    "pass": true,
+    "rows": [
+      {
+        "O": 1.5,
+        "R": 1.5,
+        "alpha": 1.5,
+        "delta_O": -0.01,
+        "Pe_before": -8.518,
+        "Pe_after": -8.609,
+        "dPe_formula": -0.0904,
+        "dPe_actual": -0.0905,
+        "error_pct": 0.12,
+        "pass": true
+      },
+      {
+        "O": 2.0,
+        "R": 2.0,
+        "alpha": 2.0,
+        "delta_O": -0.01,
+        "Pe_before": 3.844,
+        "Pe_after": 3.762,
+        "dPe_formula": -0.0821,
+        "dPe_actual": -0.082,
+        "error_pct": 0.06,
+        "pass": true
+      },
+      {
+        "O": 2.5,
+        "R": 2.5,
+        "alpha": 2.5,
+        "delta_O": -0.01,
+        "Pe_before": 18.459,
+        "Pe_after": 18.338,
+        "dPe_formula": -0.1218,
+        "dPe_actual": -0.1216,
+        "error_pct": 0.19,
+        "pass": true
+      },
+      {
+        "O": 2.8,
+        "R": 2.8,
+        "alpha": 2.8,
+        "delta_O": -0.01,
+        "Pe_before": 31.685,
+        "Pe_after": 31.509,
+        "dPe_formula": -0.177,
+        "dPe_actual": -0.1766,
+        "error_pct": 0.22,
+        "pass": true
+      },
+      {
+        "O": 1.0,
+        "R": 1.0,
+        "alpha": 1.0,
+        "delta_O": 0.01,
+        "Pe_before": -25.873,
+        "Pe_after": -25.722,
+        "dPe_formula": 0.1517,
+        "dPe_actual": 0.1514,
+        "error_pct": 0.21,
+        "pass": true
+      }
+    ]
+  },
+  "T2_RECOVERY": {
+    "pass": true,
+    "rows": [
+      {
+        "Pe": 2.0,
+        "b_net": 0.0623,
+        "c": 0.3586,
+        "theta_star_ising": 0.5311,
+        "snapback_ticks_to_0.70": 1437,
+        "snapback_seconds": 71.9
+      },
+      {
+        "Pe": 4.0,
+        "b_net": 0.1237,
+        "c": 0.3312,
+        "theta_star_ising": 0.5616,
+        "snapback_ticks_to_0.70": 724,
+        "snapback_seconds": 36.2
+      },
+      {
+        "Pe": 8.0,
+        "b_net": 0.2406,
+        "c": 0.2791,
+        "theta_star_ising": 0.618,
+        "snapback_ticks_to_0.70": 372,
+        "snapback_seconds": 18.6
+      },
+      {
+        "Pe": 13.0,
+        "b_net": 0.3712,
+        "c": 0.2209,
+        "theta_star_ising": 0.6775,
+        "snapback_ticks_to_0.70": 241,
+        "snapback_seconds": 12.1
+      },
+      {
+        "Pe": 21.0,
+        "b_net": 0.543,
+        "c": 0.1444,
+        "theta_star_ising": 0.7476,
+        "snapback_ticks_to_0.70": 165,
+        "snapback_seconds": 8.2
+      }
+    ],
+    "monotone_decreasing": true
+  },
+  "T3_KAIROS": {
+    "pass": true,
+    "rows": [
+      {
+        "name": "ESS_boundary",
+        "c_threshold": 0.331,
+        "Pe_at_threshold_K16": 4.02,
+        "Pe_expected_K16": 4.0,
+        "error_Pe_units": 0.02,
+        "pass": true
+      },
+      {
+        "name": "double_well",
+        "c_threshold": 0.2224,
+        "Pe_at_threshold_K16": 12.87,
+        "Pe_expected_K16": 12.9,
+        "error_Pe_units": 0.03,
+        "pass": true
+      },
+      {
+        "name": "cocytus",
+        "c_threshold": 0.147,
+        "Pe_at_threshold_K16": 20.69,
+        "Pe_expected_K16": 21.0,
+        "error_Pe_units": 0.31,
+        "pass": true
+      },
+      {
+        "name": "fisher_runaway",
+        "c_threshold": 0.052,
+        "Pe_at_threshold_K16": 34.09,
+        "Pe_expected_K16": 34.0,
+        "error_Pe_units": 0.09,
+        "pass": true
+      }
+    ]
+  },
+  "T4_ATTRACTOR": {
+    "pass": true,
+    "rows": [
+      {
+        "c": 0.5,
+        "Pe": -8.52,
+        "b_net": -0.255,
+        "label": "void-absent",
+        "final_theta": 0.005,
+        "expected": "\u03b8\u21920 (strong constraint)",
+        "pass": true
+      },
+      {
+        "c": 0.42,
+        "Pe": -2.42,
+        "b_net": -0.0755,
+        "label": "stable",
+        "final_theta": 0.0107,
+        "expected": "\u03b8\u21920 (constraint wins)",
+        "pass": true
+      },
+      {
+        "c": 0.3866,
+        "Pe": -0.02,
+        "b_net": -0.0005,
+        "label": "c_zero",
+        "final_theta": 0.492,
+        "expected": "\u03b8 stays (neutral, b_net\u22480)",
+        "pass": true
+      },
+      {
+        "c": 0.3,
+        "Pe": 6.36,
+        "b_net": 0.1938,
+        "label": "contested",
+        "final_theta": 0.995,
+        "expected": "\u03b8\u21921 (void wins)",
+        "pass": true
+      },
+      {
+        "c": 0.15,
+        "Pe": 20.34,
+        "b_net": 0.5304,
+        "label": "drifting",
+        "final_theta": 0.995,
+        "expected": "\u03b8\u21921 (void strong)",
+        "pass": true
+      },
+      {
+        "c": 0.05,
+        "Pe": 34.43,
+        "b_net": 0.7548,
+        "label": "runaway",
+        "final_theta": 0.995,
+        "expected": "\u03b8\u21921 (Fisher regime)",
+        "pass": true
+      }
+    ]
+  },
+  "T5_ENTROPY_TIME": {
+    "pass": true,
+    "rows": [
+      {
+        "Pe": 1.0,
+        "expected_void_time": 0.5082,
+        "measured_void_time": 0.5082,
+        "error_pct": 0.0,
+        "pass": true
+      },
+      {
+        "Pe": 4.0,
+        "expected_void_time": 2.0328,
+        "measured_void_time": 2.0328,
+        "error_pct": 0.0,
+        "pass": true
+      },
+      {
+        "Pe": 8.0,
+        "expected_void_time": 4.0656,
+        "measured_void_time": 4.0656,
+        "error_pct": 0.0,
+        "pass": true
+      },
+      {
+        "Pe": 21.0,
+        "expected_void_time": 10.6722,
+        "measured_void_time": 10.6722,
+        "error_pct": 0.0,
+        "pass": true
+      },
+      {
+        "Pe": 38.0,
+        "expected_void_time": 19.3116,
+        "measured_void_time": 19.3116,
+        "error_pct": 0.0,
+        "pass": true
+      }
+    ]
+  },
+  "T6_FEEDBACK": {
+    "pass": true,
+    "result": {
+      "Pe_before": 30.208,
+      "Pe_after": 24.587,
+      "ts_ising_before": 0.7081,
+      "ts_ising_after": 0.6787,
+      "effective_delta_O": -0.2775,
+      "snapback_ticks_original": 202,
+      "snapback_ticks_intervention": 239,
+      "a_Pe_in_range": true,
+      "b_direction_magnitude": true,
+      "c_slower_rebuild": true,
+      "d_icc_scales_delta": true,
+      "pass": true
+    }
+  },
+  "T7_K_DEPENDENCE": {
+    "pass": true,
+    "rows": [
+      {
+        "threshold": "double_well",
+        "c_eff": 0.2224,
+        "by_K": {
+          "Baseline": 12.87,
+          "Feed Algo": 24.12,
+          "OxyContin": 35.3,
+          "Synthetic Bond": 64.33
+        }
+      },
+      {
+        "threshold": "cocytus",
+        "c_eff": 0.147,
+        "by_K": {
+          "Baseline": 20.69,
+          "Feed Algo": 38.79,
+          "OxyContin": 56.77,
+          "Synthetic Bond": 103.45
+        }
+      },
+      {
+        "threshold": "runaway",
+        "c_eff": 0.052,
+        "by_K": {
+          "Baseline": 34.09,
+          "Feed Algo": 63.92,
+          "OxyContin": 93.54,
+          "Synthetic Bond": 170.46
+        }
+      }
+    ]
+  },
+  "overall_pass": true
+}

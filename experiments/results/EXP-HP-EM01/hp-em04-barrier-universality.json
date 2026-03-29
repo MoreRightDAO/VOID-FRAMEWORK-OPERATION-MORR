@@ -1,0 +1,71 @@
+{
+  "experiment": "HP-EM-04",
+  "title": "Barrier Universality in EM Systems",
+  "date": "2026-03-24T18:01:40.991050Z",
+  "N_systems": 8,
+  "mean_barrier_over_d": 16.79075390298794,
+  "std_barrier_over_d": 30.89828698187443,
+  "prediction": 2.221441469079183,
+  "R2_all": -0.20147697074701965,
+  "R2_clean": 0.6809300866365577,
+  "n_within_20pct": 3,
+  "verdict": "PARTIAL \u2014 some EM systems match, others require refined mapping",
+  "systems": [
+    {
+      "name": "Josephson junction (Al/AlOx/Al)",
+      "barrier": 16.63378592704344,
+      "d_eff": 1,
+      "barrier_over_d": 16.63378592704344,
+      "within_20pct": false
+    },
+    {
+      "name": "Josephson junction (Nb)",
+      "barrier": 97.4817221770918,
+      "d_eff": 1,
+      "barrier_over_d": 97.4817221770918,
+      "within_20pct": false
+    },
+    {
+      "name": "Fe nanoparticle (5 nm)",
+      "barrier": 12.069165602878034,
+      "d_eff": 2,
+      "barrier_over_d": 6.034582801439017,
+      "within_20pct": false
+    },
+    {
+      "name": "Co nanoparticle (3 nm)",
+      "barrier": 16.24695369618197,
+      "d_eff": 2,
+      "barrier_over_d": 8.123476848090984,
+      "within_20pct": false
+    },
+    {
+      "name": "NbN thin film (BKT)",
+      "barrier": 3.564382698652166,
+      "d_eff": 2,
+      "barrier_over_d": 1.782191349326083,
+      "within_20pct": true
+    },
+    {
+      "name": "NbSe3 CDW-1",
+      "barrier": 2.0008563665248724,
+      "d_eff": 1,
+      "barrier_over_d": 2.0008563665248724,
+      "within_20pct": true
+    },
+    {
+      "name": "MTJ spin-torque (CoFeB/MgO)",
+      "barrier": 2.011527600479672,
+      "d_eff": 1,
+      "barrier_over_d": 2.011527600479672,
+      "within_20pct": true
+    },
+    {
+      "name": "Microwave cavity (Al, 3D)",
+      "barrier": 0.7736644617229508,
+      "d_eff": 3,
+      "barrier_over_d": 0.25788815390765024,
+      "within_20pct": false
+    }
+  ]
+}

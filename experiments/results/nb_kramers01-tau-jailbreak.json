@@ -1,0 +1,71 @@
+{
+  "notebook": "nb_kramers01",
+  "date": "2026-03-10",
+  "formula": "tau_jailbreak = nu0^{-1} * exp(K * |Pe_0|)",
+  "k_min_formula": "K_min = ln(T_target \u00b7 \u03bd\u2080) / |Pe\u2080|",
+  "k_min_scenarios": [
+    {
+      "scenario": "Consumer chatbot (1yr)",
+      "T_years": 1,
+      "nu_0_per_day": 1000000.0,
+      "Pe_0": -2.0,
+      "K_min": 9.9
+    },
+    {
+      "scenario": "Enterprise API (3yr)",
+      "T_years": 3,
+      "nu_0_per_day": 100000.0,
+      "Pe_0": -2.0,
+      "K_min": 9.3
+    },
+    {
+      "scenario": "Critical infra (5yr)",
+      "T_years": 5,
+      "nu_0_per_day": 10000.0,
+      "Pe_0": -5.0,
+      "K_min": 3.3
+    },
+    {
+      "scenario": "High-risk (10yr)",
+      "T_years": 10,
+      "nu_0_per_day": 10000.0,
+      "Pe_0": -5.0,
+      "K_min": 3.5
+    },
+    {
+      "scenario": "Regulated AI Act (20yr)",
+      "T_years": 20,
+      "nu_0_per_day": 1000.0,
+      "Pe_0": -5.0,
+      "K_min": 3.2
+    },
+    {
+      "scenario": "Agentic system (10yr)",
+      "T_years": 10,
+      "nu_0_per_day": 1000000.0,
+      "Pe_0": -10.0,
+      "K_min": 2.2
+    }
+  ],
+  "safety_cliff": {
+    "K_min_example": 3.48,
+    "Pe_0": -5.0,
+    "T_target_years": 10.0
+  },
+  "thermodynamic_symmetry": "tau_jailbreak == tau_abiogenesis formula (opposite direction)",
+  "arena_validation": {
+    "validation_protocol": "log-linear regression of \u03c4_empirical vs K\u00b7|Pe_0|",
+    "kill_conditions": [
+      "K-JB-1: \u03b2\u2081 \u2208 [0.8, 1.2], R\u00b2>0.8",
+      "K-JB-2: safety cliff visible near K_min"
+    ],
+    "regulatory_output": "\u03c4_jailbreak certification on EU AI Act conformity document"
+  },
+  "connections": [
+    "\u00a748E: Kramers escape rate formula",
+    "\u00a727B: tau_abiogenesis \u2014 same formula, thermodynamic reversal",
+    "\u00a79F: K-scaling, K_min = K_\u00d7 table calibration",
+    "\u00a710F: K = N_e (effective population size identity)",
+    "\u00a750: Rate function = K \u00b7 D_KL (large deviations dual)"
+  ]
+}

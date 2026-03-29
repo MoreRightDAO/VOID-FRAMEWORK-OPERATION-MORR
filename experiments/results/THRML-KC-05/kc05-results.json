@@ -1,0 +1,123 @@
+{
+  "experiment": "THRML-KC-05",
+  "kill_condition": "K25",
+  "description": "Bradford Hill dose-response: Pe vs drift probability",
+  "parameters": {
+    "N_PLATFORMS": 2000,
+    "N_BINS": 8,
+    "PE_RANGE": [
+      0.0,
+      80.0
+    ],
+    "LAMBDA_RATE": 0.05,
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "ETA_TAU": 0.05082
+  },
+  "bins": [
+    {
+      "bin": 1,
+      "pe_range": [
+        0.0,
+        10.0
+      ],
+      "center": 5.0,
+      "n": 236,
+      "drift_rate": 0.1907,
+      "crooks_ratio": 1.29
+    },
+    {
+      "bin": 2,
+      "pe_range": [
+        10.0,
+        20.0
+      ],
+      "center": 15.0,
+      "n": 271,
+      "drift_rate": 0.5424,
+      "crooks_ratio": 2.18
+    },
+    {
+      "bin": 3,
+      "pe_range": [
+        20.0,
+        30.0
+      ],
+      "center": 25.0,
+      "n": 249,
+      "drift_rate": 0.6747,
+      "crooks_ratio": 3.58
+    },
+    {
+      "bin": 4,
+      "pe_range": [
+        30.0,
+        40.0
+      ],
+      "center": 35.0,
+      "n": 269,
+      "drift_rate": 0.803,
+      "crooks_ratio": 5.95
+    },
+    {
+      "bin": 5,
+      "pe_range": [
+        40.0,
+        50.0
+      ],
+      "center": 45.0,
+      "n": 250,
+      "drift_rate": 0.916,
+      "crooks_ratio": 9.86
+    },
+    {
+      "bin": 6,
+      "pe_range": [
+        50.0,
+        60.0
+      ],
+      "center": 55.0,
+      "n": 255,
+      "drift_rate": 0.949,
+      "crooks_ratio": 16.24
+    },
+    {
+      "bin": 7,
+      "pe_range": [
+        60.0,
+        70.0
+      ],
+      "center": 65.0,
+      "n": 238,
+      "drift_rate": 0.9664,
+      "crooks_ratio": 27.42
+    },
+    {
+      "bin": 8,
+      "pe_range": [
+        70.0,
+        80.0
+      ],
+      "center": 75.0,
+      "n": 232,
+      "drift_rate": 0.9828,
+      "crooks_ratio": 46.29
+    }
+  ],
+  "results": {
+    "spearman_rho": 1.0,
+    "spearman_p": 0.0,
+    "monotonic": true,
+    "n_reversals": 0
+  },
+  "pass_criteria": {
+    "all_bins_populated": true,
+    "monotonic_increase": true,
+    "spearman_rho_gt_0.90": true,
+    "no_reversals": true
+  },
+  "overall_pass": true,
+  "k25_fires": false,
+  "verdict": "K25 CONFIRMED SURVIVED -- dose-response holds (rho=1.000, monotonic, 0 reversals)"
+}

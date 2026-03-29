@@ -1,0 +1,78 @@
+{
+  "experiment": "THRML-ALC-01",
+  "title": "Autocatalytic Network Detection",
+  "author": "Shamir / MoreRight (2026-03-09)",
+  "tests": {
+    "T1_single_compound": {
+      "n_compounds": 1,
+      "cycles_found": 0,
+      "pass": true
+    },
+    "T2_mutual_catalysis": {
+      "cycles": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "A"
+        ]
+      ],
+      "has_length_2": true,
+      "pass": true
+    },
+    "T3_cycle_length_3": {
+      "cycles": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "B",
+          "C",
+          "A"
+        ],
+        [
+          "C",
+          "A",
+          "B"
+        ]
+      ],
+      "has_length_3": true,
+      "pass": true
+    },
+    "T4_rate_proportionality": {
+      "catalyst_levels": [
+        0.1,
+        0.5,
+        1.0,
+        2.0,
+        5.0
+      ],
+      "growth_rates": [
+        0.035,
+        0.135,
+        0.26,
+        0.51,
+        1.26
+      ],
+      "r_squared": 1.0,
+      "slope": 0.25,
+      "pass": true
+    },
+    "T5_growth_dynamics": {
+      "early_exp_r_sq": 0.999828,
+      "early_growth_rate": 0.129663,
+      "late_cv": 0.0,
+      "final_conc_A": 20.0,
+      "final_conc_B": 20.0,
+      "exponential_early": true,
+      "saturated_late": true,
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "THRML-ALC-01 PASS \u2014 Autocatalytic network detection validated"
+}

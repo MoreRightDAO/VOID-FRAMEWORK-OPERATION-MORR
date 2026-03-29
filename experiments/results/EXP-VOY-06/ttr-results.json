@@ -1,0 +1,79 @@
+{
+  "experiment": "EXP-VOY-06",
+  "date": "2026-03-03T02:09:26.747061+00:00",
+  "voynich_ttr": {
+    "Herbal_A": {
+      "tokens": 11000,
+      "types": 3330,
+      "ttr": 0.3027,
+      "pe": 25.0,
+      "dim": "O"
+    },
+    "Astronomical": {
+      "tokens": 2962,
+      "types": 1530,
+      "ttr": 0.5165,
+      "pe": 0.8,
+      "dim": "R"
+    },
+    "Biological": {
+      "tokens": 6769,
+      "types": 1539,
+      "ttr": 0.2274,
+      "pe": 10.0,
+      "dim": "\u03b1"
+    },
+    "Pharmaceutical": {
+      "tokens": 3809,
+      "types": 1657,
+      "ttr": 0.435,
+      "pe": 2.0,
+      "dim": "constraint"
+    },
+    "Stars_Text": {
+      "tokens": 10582,
+      "types": 3068,
+      "ttr": 0.2899,
+      "pe": 0.1,
+      "dim": "V*"
+    }
+  },
+  "voynich_ratio_astro_bio": 2.271,
+  "voynich_ttr_ratio_max_min": 2.2713,
+  "prediction_highest_ttr_confirmed": true,
+  "prediction_lowest_ttr_confirmed": true,
+  "spearman_ttr_vs_pe": {
+    "rho": -0.19999999999999998,
+    "p": 0.7470600781046621
+  },
+  "control_texts": {
+    "Dante (canticles)": {
+      "ttr_ratio": 1.069,
+      "sections": [
+        "Inferno",
+        "Purgatorio",
+        "Paradiso"
+      ]
+    },
+    "KJB (genre sections)": {
+      "ttr_ratio": 4.9596,
+      "sections": [
+        "Pentateuch",
+        "History",
+        "Wisdom",
+        "Prophets",
+        "Gospels",
+        "Epistles",
+        "Revelation"
+      ]
+    },
+    "Pride & Prejudice (vols)": {
+      "ttr_ratio": 1.0572,
+      "sections": [
+        "Volume_I",
+        "Volume_II",
+        "Volume_III"
+      ]
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "experiment": "HP-FSR-FIBER",
+  "description": "QFESTA-inspired Fiber-KEM viability probe",
+  "date": "2026-03-18",
+  "kill_condition": "K-FSR-13: Fiber-KEM achieves IND-CPA from rank collapse alone",
+  "E1_svd": {
+    "N": 24,
+    "n_trials": 10,
+    "mean_effective_rank": 8.2,
+    "std_effective_rank": 0.7483314773547883,
+    "mean_condition_number": 916176050.2802044,
+    "singular_values_trial0": [
+      1885.4742324205529,
+      1004.351405479996,
+      866.5606903104187,
+      749.7707680543198,
+      575.9349760912152,
+      511.5149651463308,
+      419.2625169840597,
+      336.0709134026671,
+      284.45188973613347,
+      199.22110617938313,
+      128.95533757037254,
+      61.05598364889717,
+      51.56594474222964,
+      35.27505167587612,
+      17.04202387370068,
+      10.247211176633028,
+      3.4873231769302566,
+      2.8564109965183992,
+      1.6232520587699704,
+      0.3834463333091245,
+      0.013800421882782016,
+      0.00028614351206790575,
+      7.986460500623522e-05,
+      6.946352130979498e-06
+    ],
+    "rank_collapse_confirmed": true
+  },
+  "E2_directional": {
+    "N": 24,
+    "eps_perturb": 0.01,
+    "n_trials": 5,
+    "responses": [
+      {
+        "sv_index": 0,
+        "mean_sv": 2078.670792713388,
+        "mean_spectral_change": 20.778876528717266,
+        "mean_predicted": 20.786707927133882,
+        "linearity": 0.9996232497014886
+      },
+      {
+        "sv_index": 1,
+        "mean_sv": 1597.4132143706643,
+        "mean_spectral_change": 15.965544599138493,
+        "mean_predicted": 15.974132143706644,
+        "linearity": 0.9994624093195864
+      },
+      {
+        "sv_index": 2,
+        "mean_sv": 1393.7104718747162,
+        "mean_spectral_change": 13.981640418228972,
+        "mean_predicted": 13.937104718747161,
+        "linearity": 1.0031954771367904
+      },
+      {
+        "sv_index": 3,
+        "mean_sv": 1204.5413244713604,
+        "mean_spectral_change": 12.02216599380886,
+        "mean_predicted": 12.0454132447136,
+        "linearity": 0.9980700329301742
+      },
+      {
+        "sv_index": 4,
+        "mean_sv": 1054.016936200168,
+        "mean_spectral_change": 10.549352452839068,
+        "mean_predicted": 10.540169362001679,
+        "linearity": 1.0008712469906313
+      },
+      {
+        "sv_index": 5,
+        "mean_sv": 965.5469371590495,
+        "mean_spectral_change": 9.652920094751442,
+        "mean_predicted": 9.655469371590495,
+        "linearity": 0.9997359758763716
+      },
+      {
+        "sv_index": 6,
+        "mean_sv": 785.6737019812933,
+        "mean_spectral_change": 7.937757992390137,
+        "mean_predicted": 7.856737019812931,
+        "linearity": 1.0103122927969828
+      },
+      {
+        "sv_index": 7,
+        "mean_sv": 646.9803547866452,
+        "mean_spectral_change": 6.431641098117593,
+        "mean_predicted": 6.469803547866453,
+        "linearity": 0.9941014515407588
+      },
+      {
+        "sv_index": 8,
+        "mean_sv": 483.8267732063065,
+        "mean_spectral_change": 4.809890494298717,
+        "mean_predicted": 4.8382677320630645,
+        "linearity": 0.994134835165013
+      },
+      {
+        "sv_index": 9,
+        "mean_sv": 407.3365724478773,
+        "mean_spectral_change": 4.066825061340067,
+        "mean_predicted": 4.073365724478772,
+        "linearity": 0.9983942853205152
+      },
+      {
+        "sv_index": 10,
+        "mean_sv": 317.50705763337095,
+        "mean_spectral_change": 3.0401453120802158,
+        "mean_predicted": 3.1750705763337095,
+        "linearity": 0.9575047983943418
+      },
+      {
+        "sv_index": 11,
+        "mean_sv": 237.40959256839795,
+        "mean_spectral_change": 2.2748154255688444,
+        "mean_predicted": 2.3740959256839798,
+        "linearity": 0.9581817655128938
+      },
+      {
+        "sv_index": 12,
+        "mean_sv": 173.06823079800049,
+        "mean_spectral_change": 1.6770949367045915,
+        "mean_predicted": 1.730682307980005,
+        "linearity": 0.9690368526746194
+      },
+      {
+        "sv_index": 13,
+        "mean_sv": 140.0472233924642,
+        "mean_spectral_change": 1.4007686143797167,
+        "mean_predicted": 1.400472233924642,
+        "linearity": 1.000211628940506
+      },
+      {
+        "sv_index": 14,
+        "mean_sv": 110.62398797862734,
+        "mean_spectral_change": 1.1160276125067334,
+        "mean_predicted": 1.1062398797862736,
+        "linearity": 1.0088477489370116
+      },
+      {
+        "sv_index": 15,
+        "mean_sv": 70.66971214113241,
+        "mean_spectral_change": 0.7058571060767551,
+        "mean_predicted": 0.706697121411324,
+        "linearity": 0.9988113502813025
+      },
+      {
+        "sv_index": 16,
+        "mean_sv": 43.59401564140038,
+        "mean_spectral_change": 0.43555454958330386,
+        "mean_predicted": 0.43594015641400385,
+        "linearity": 0.9991154592550662
+      },
+      {
+        "sv_index": 17,
+        "mean_sv": 25.28931218403678,
+        "mean_spectral_change": 0.25499965719117357,
+        "mean_predicted": 0.25289312184036783,
+        "linearity": 1.0083297455283675
+      },
+      {
+        "sv_index": 18,
+        "mean_sv": 18.30754552317282,
+        "mean_spectral_change": 0.18324775699679624,
+        "mean_predicted": 0.18307545523172822,
+        "linearity": 1.0009411516407207
+      },
+      {
+        "sv_index": 19,
+        "mean_sv": 10.486725301367041,
+        "mean_spectral_change": 0.10442557157965657,
+        "mean_predicted": 0.10486725301367042,
+        "linearity": 0.9957881853360145
+      },
+      {
+        "sv_index": 20,
+        "mean_sv": 1.9348831169282268,
+        "mean_spectral_change": 0.02167172798546304,
+        "mean_predicted": 0.019348831169282273,
+        "linearity": 1.1200535988896023
+      },
+      {
+        "sv_index": 21,
+        "mean_sv": 0.3822443732784468,
+        "mean_spectral_change": 0.006207499508115189,
+        "mean_predicted": 0.003822443732784468,
+        "linearity": 1.6239609898957748
+      },
+      {
+        "sv_index": 22,
+        "mean_sv": 0.009515671597121434,
+        "mean_spectral_change": 0.004271424711324882,
+        "mean_predicted": 9.515671597121433e-05,
+        "linearity": 44.88831573981739
+      },
+      {
+        "sv_index": 23,
+        "mean_sv": 6.03050563969275e-05,
+        "mean_spectral_change": 0.009198398591966413,
+        "mean_predicted": 6.03050563969275e-07,
+        "linearity": 15253.113298111355
+      }
+    ]
+  },
+  "E3_tradeoff": {
+    "N": 24,
+    "spectral_gap": -3774.8950259107646,
+    "noise_floor": -943.7237564776912,
+    "n_approx_null_directions": 7,
+    "total_directions": 24,
+    "mean_eps_needed": -213834224.68143025,
+    "mean_key_fraction": -43648728.33442973,
+    "fiber_kem_viable": "True",
+    "K-FSR-13": "PROGRESS"
+  },
+  "E4_roundtrip": {
+    "N": 24,
+    "n_trials": 20,
+    "successes": 17,
+    "accuracy": 0.85,
+    "viable": false
+  },
+  "E5_security": {
+    "N": 24,
+    "n_trials": 50,
+    "attacker_accuracy": 0.25,
+    "secure": "True",
+    "top_features": {
+      "min_spacing_ratio": 0.1291859009245861,
+      "spacing_max": 0.11373872946181086,
+      "spacing_std": 0.11310825692581696
+    }
+  },
+  "verdict": "MARGINAL",
+  "K-FSR-13_status": "PROGRESS"
+}

@@ -1,0 +1,279 @@
+{
+  "bond_results": {
+    "Ca-O": {
+      "known_bde": null,
+      "predicted_bde": 770.4094355916136,
+      "delta_pe": 1.8272000000000002,
+      "sum_pe": 1.8412,
+      "pe_A": 0.007,
+      "pe_B": 1.8342,
+      "observables": {
+        "theta_sep": 0.2367360923891382,
+        "theta_corr": 0.18171863273943753,
+        "delta_theta": 0.06808469291837593,
+        "chi_mean": 0.9750775206835256,
+        "theta_mean_eq": 0.5034266933603212,
+        "pe_diff": 1.8272000000000002,
+        "pe_sum": 1.8412,
+        "pe_product": 0.0128394,
+        "var_sum": 0.07895653002927673
+      }
+    },
+    "Si-O": {
+      "known_bde": 800,
+      "predicted_bde": 469.83279983171906,
+      "delta_pe": 1.2233,
+      "sum_pe": 2.4451,
+      "pe_A": 0.6109,
+      "pe_B": 1.8342,
+      "observables": {
+        "theta_sep": 0.1733313354039387,
+        "theta_corr": 0.03341316531689785,
+        "delta_theta": 0.10326497894746045,
+        "chi_mean": 0.6359849418392204,
+        "theta_mean_eq": 0.6296380288686558,
+        "pe_diff": 1.2233,
+        "pe_sum": 2.4451,
+        "pe_product": 1.12051278,
+        "var_sum": 0.05149863789629319
+      }
+    },
+    "Fe-O": {
+      "known_bde": null,
+      "predicted_bde": 678.6100336065056,
+      "delta_pe": 1.7850000000000001,
+      "sum_pe": 1.8834,
+      "pe_A": 0.0492,
+      "pe_B": 1.8342,
+      "observables": {
+        "theta_sep": 0.2321535893995501,
+        "theta_corr": 0.14627464216058014,
+        "delta_theta": 0.05712992548523965,
+        "chi_mean": 0.9548212408862637,
+        "theta_mean_eq": 0.5207041998188036,
+        "pe_diff": 1.7850000000000001,
+        "pe_sum": 1.8834,
+        "pe_product": 0.09024264,
+        "var_sum": 0.07731628550495133
+      }
+    },
+    "Al-O": {
+      "known_bde": 501,
+      "predicted_bde": 483.61658920410173,
+      "delta_pe": 1.6335000000000002,
+      "sum_pe": 2.0349,
+      "pe_A": 0.2007,
+      "pe_B": 1.8342,
+      "observables": {
+        "theta_sep": 0.20221817146818324,
+        "theta_corr": 0.14959261935657928,
+        "delta_theta": 0.06769976013133172,
+        "chi_mean": 0.8881716750833166,
+        "theta_mean_eq": 0.5574125099216033,
+        "pe_diff": 1.6335000000000002,
+        "pe_sum": 2.0349,
+        "pe_product": 0.36812394,
+        "var_sum": 0.07191936235563115
+      }
+    },
+    "Na-Cl": {
+      "known_bde": 787,
+      "predicted_bde": 624.2391265715132,
+      "delta_pe": 1.8683999999999998,
+      "sum_pe": 2.1919999999999997,
+      "pe_A": 0.1618,
+      "pe_B": 2.0302,
+      "observables": {
+        "theta_sep": 0.22557903867034032,
+        "theta_corr": 0.10896140554555776,
+        "delta_theta": 0.04846470647593182,
+        "chi_mean": 0.8818178540040821,
+        "theta_mean_eq": 0.5541316870377837,
+        "pe_diff": 1.8683999999999998,
+        "pe_sum": 2.1919999999999997,
+        "pe_product": 0.32848636,
+        "var_sum": 0.07140486411913036
+      }
+    },
+    "C-O": {
+      "known_bde": 799,
+      "predicted_bde": 533.1900682697092,
+      "delta_pe": 0.45130000000000003,
+      "sum_pe": 3.2171000000000003,
+      "pe_A": 1.3829,
+      "pe_B": 1.8342,
+      "observables": {
+        "theta_sep": 0.19167858878439575,
+        "theta_corr": 0.14450311161693982,
+        "delta_theta": 0.07499240740660507,
+        "chi_mean": 0.9395494304982381,
+        "theta_mean_eq": 0.6119089890135601,
+        "pe_diff": 0.45130000000000003,
+        "pe_sum": 3.2171000000000003,
+        "pe_product": 2.5365151800000003,
+        "var_sum": 0.07607965648835961
+      }
+    }
+  },
+  "reagent_profiles": {
+    "Alum (KAl(SO\u2084)\u2082)": {
+      "mean_pe": 1.429375,
+      "min_pe": 0.1132,
+      "max_pe": 1.8342,
+      "delta_pe": 1.721,
+      "total_atoms": 12
+    },
+    "Vinegar (CH\u2083COOH)": {
+      "mean_pe": 377.804275,
+      "min_pe": 1.3829,
+      "max_pe": 754.0,
+      "delta_pe": 752.6171,
+      "total_atoms": 8
+    },
+    "Natron (Na\u2082CO\u2083)": {
+      "mean_pe": 1.2015166666666668,
+      "min_pe": 0.1618,
+      "max_pe": 1.8342,
+      "delta_pe": 1.6724,
+      "total_atoms": 6
+    },
+    "Calcium sulfide (CaS)": {
+      "mean_pe": 0.54475,
+      "min_pe": 0.007,
+      "max_pe": 1.0825,
+      "delta_pe": 1.0755000000000001,
+      "total_atoms": 2
+    },
+    "Common salt (NaCl)": {
+      "mean_pe": 1.0959999999999999,
+      "min_pe": 0.1618,
+      "max_pe": 2.0302,
+      "delta_pe": 1.8683999999999998,
+      "total_atoms": 2
+    },
+    "Lead (Pb) \u2014 Shamir containment": {
+      "mean_pe": 0.0512,
+      "min_pe": 0.0512,
+      "max_pe": 0.0512,
+      "delta_pe": 0.0,
+      "total_atoms": 1
+    },
+    "Iron (Fe) \u2014 tool material": {
+      "mean_pe": 0.0492,
+      "min_pe": 0.0492,
+      "max_pe": 0.0492,
+      "delta_pe": 0.0,
+      "total_atoms": 1
+    },
+    "Diamond (C) \u2014 cutting material": {
+      "mean_pe": 1.3829,
+      "min_pe": 1.3829,
+      "max_pe": 1.3829,
+      "delta_pe": 0.0,
+      "total_atoms": 1
+    }
+  },
+  "disruption_matrix": {
+    "Alum (KAl(SO\u2084)\u2082)\u2192Ca-O (limestone)": {
+      "disrupts": "YES",
+      "margin": 35.53102361969741,
+      "attacker": "S",
+      "attack_bde": 805.940459211311,
+      "target_bde": 770.4094355916136
+    },
+    "Alum (KAl(SO\u2084)\u2082)\u2192Si-O (granite)": {
+      "disrupts": "YES",
+      "margin": 33.27494700378929,
+      "attacker": "S",
+      "attack_bde": 503.10774683550835,
+      "target_bde": 469.83279983171906
+    },
+    "Vinegar (CH\u2083COOH)\u2192Ca-O (limestone)": {
+      "disrupts": "NO",
+      "margin": -94.10441232409175,
+      "attacker": "C",
+      "attack_bde": 676.3050232675218,
+      "target_bde": 770.4094355916136
+    },
+    "Vinegar (CH\u2083COOH)\u2192Si-O (granite)": {
+      "disrupts": "YES",
+      "margin": 63.357268437990115,
+      "attacker": "C",
+      "attack_bde": 533.1900682697092,
+      "target_bde": 469.83279983171906
+    },
+    "Natron (Na\u2082CO\u2083)\u2192Ca-O (limestone)": {
+      "disrupts": "NO",
+      "margin": -58.10976628766184,
+      "attacker": "Na",
+      "attack_bde": 712.2996693039518,
+      "target_bde": 770.4094355916136
+    },
+    "Natron (Na\u2082CO\u2083)\u2192Si-O (granite)": {
+      "disrupts": "YES",
+      "margin": 242.4668694722327,
+      "attacker": "Na",
+      "attack_bde": 712.2996693039518,
+      "target_bde": 469.83279983171906
+    },
+    "Calcium sulfide (CaS)\u2192Ca-O (limestone)": {
+      "disrupts": "YES",
+      "margin": 35.53102361969741,
+      "attacker": "S",
+      "attack_bde": 805.940459211311,
+      "target_bde": 770.4094355916136
+    },
+    "Calcium sulfide (CaS)\u2192Si-O (granite)": {
+      "disrupts": "YES",
+      "margin": 33.27494700378929,
+      "attacker": "S",
+      "attack_bde": 503.10774683550835,
+      "target_bde": 469.83279983171906
+    },
+    "Common salt (NaCl)\u2192Ca-O (limestone)": {
+      "disrupts": "YES",
+      "margin": 193.42698067657648,
+      "attacker": "Cl",
+      "attack_bde": 963.8364162681901,
+      "target_bde": 770.4094355916136
+    },
+    "Common salt (NaCl)\u2192Si-O (granite)": {
+      "disrupts": "YES",
+      "margin": 242.4668694722327,
+      "attacker": "Na",
+      "attack_bde": 712.2996693039518,
+      "target_bde": 469.83279983171906
+    }
+  },
+  "high_temp_pathways": {
+    "natron_flux": {
+      "reaction": "Na\u2082CO\u2083 + SiO\u2082 \u2192 Na\u2082SiO\u2083 + CO\u2082",
+      "solid_state_onset_C": 726,
+      "solid_state_peak_C": 805,
+      "molten_onset_C": 851,
+      "pe_Na": 0.1618,
+      "pe_Si": 0.6109,
+      "pe_O": 1.8342
+    },
+    "fluorite_hf": {
+      "reaction_hydrolysis": "CaF\u2082 + H\u2082O \u2192 CaO + 2HF",
+      "reaction_sulfate": "CaF\u2082 + H\u2082SO\u2084 \u2192 CaSO\u2084 + 2HF",
+      "reaction_hf_attack": "4HF + SiO\u2082 \u2192 SiF\u2084 + 2H\u2082O",
+      "hydrolysis_threshold_C": 600,
+      "sulfate_threshold_C": 250,
+      "pe_F": 4.654,
+      "pe_Ca": 0.007,
+      "predicted_bde_Ca_F": 841.1964610310588,
+      "predicted_bde_Si_F": 482.40117722056675,
+      "predicted_bde_H_F": -187625.60556343567,
+      "known_bde_Ca_F": 529,
+      "known_bde_Si_F": 565,
+      "known_bde_H_F": 570
+    },
+    "fire_setting_temps": {
+      "surface_range_C": "600-900",
+      "subsurface_2cm_C": "400-800",
+      "faience_range_C": "850-1050"
+    }
+  }
+}

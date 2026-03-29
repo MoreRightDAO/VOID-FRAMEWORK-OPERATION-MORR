@@ -1,0 +1,163 @@
+{
+  "notebook": "nb_cancer01",
+  "date": "2026-03-10",
+  "new_result": "Knudson two-hit = Kramers barrier collapse (K_cell reduction collapses \u03c4_tumor exponentially)",
+  "hallmark_mapping": {
+    "normal_pe": -6.822,
+    "malignant_pe": 5.093,
+    "all_hallmarks_map_to_void_dimensions": true
+  },
+  "kramers_knudson": {
+    "delta_phi": 0.629,
+    "alpha": 0.1,
+    "tau_ratio_per_hit": 3e-06,
+    "k_results": [
+      {
+        "K_cell": 8,
+        "hits": 0,
+        "exponent": 100.64,
+        "tau_years": Infinity
+      },
+      {
+        "K_cell": 7,
+        "hits": 1,
+        "exponent": 88.06,
+        "tau_years": Infinity
+      },
+      {
+        "K_cell": 6,
+        "hits": 2,
+        "exponent": 75.48,
+        "tau_years": Infinity
+      },
+      {
+        "K_cell": 5,
+        "hits": 3,
+        "exponent": 62.9,
+        "tau_years": Infinity
+      },
+      {
+        "K_cell": 4,
+        "hits": 4,
+        "exponent": 50.32,
+        "tau_years": Infinity
+      },
+      {
+        "K_cell": 3,
+        "hits": 5,
+        "exponent": 37.74,
+        "tau_years": Infinity
+      },
+      {
+        "K_cell": 2,
+        "hits": 6,
+        "exponent": 25.16,
+        "tau_years": 84498532137.09393
+      },
+      {
+        "K_cell": 1,
+        "hits": 7,
+        "exponent": 12.58,
+        "tau_years": 290686.3122630543
+      },
+      {
+        "K_cell": 0,
+        "hits": 8,
+        "exponent": 0.0,
+        "tau_years": 1.0
+      }
+    ]
+  },
+  "trajectory": {
+    "monotone": false,
+    "pe_1_crossing_stage": "Carcinoma in situ",
+    "stages": [
+      {
+        "stage": "Normal adjacent tissue",
+        "B_A": 0.12,
+        "B_G": 0.76,
+        "V": 3.0,
+        "K": 8.0,
+        "c": 0.6667,
+        "b_net": -0.3867,
+        "pe": -6.822
+      },
+      {
+        "stage": "Low-grade dysplasia",
+        "B_A": 0.175,
+        "B_G": 0.68,
+        "V": 4.5,
+        "K": 7.0,
+        "c": 0.5,
+        "b_net": -0.165,
+        "pe": -2.352
+      },
+      {
+        "stage": "High-grade dysplasia",
+        "B_A": 0.24,
+        "B_G": 0.6,
+        "V": 6.0,
+        "K": 6.0,
+        "c": 0.3333,
+        "b_net": 0.04,
+        "pe": 0.481
+      },
+      {
+        "stage": "Carcinoma in situ",
+        "B_A": 0.31,
+        "B_G": 0.52,
+        "V": 7.5,
+        "K": 5.0,
+        "c": 0.1667,
+        "b_net": 0.2233,
+        "pe": 2.308
+      },
+      {
+        "stage": "Invasive carcinoma",
+        "B_A": 0.38,
+        "B_G": 0.46,
+        "V": 8.5,
+        "K": 4.0,
+        "c": 0.0556,
+        "b_net": 0.3544,
+        "pe": 3.079
+      },
+      {
+        "stage": "Metastatic (fully void)",
+        "B_A": 0.42,
+        "B_G": 0.43,
+        "V": 9.0,
+        "K": 3.0,
+        "c": 0.0,
+        "b_net": 0.42,
+        "pe": 2.827
+      }
+    ]
+  },
+  "propagation_asymmetry": {
+    "pe_normal": -6.822,
+    "pe_malignant": 2.827
+  },
+  "survival_correlation": {
+    "rho_V_mortality": 1.0,
+    "pval": 0.0
+  },
+  "kill_conditions": {
+    "K_CANCER_1": {
+      "description": "Pe_epi in pre-neoplastic tissue > Pe_epi(normal_adjacent) BEFORE macroscopic tumor",
+      "status": "PREDICTED \u2014 testable: GSE104707 Barrett's esophagus longitudinal",
+      "threshold": "rho > 0.80, Pe_dysplasia > Pe_normal in temporal order"
+    },
+    "K_CANCER_2": {
+      "description": "tau_tumor correlates inversely with K_cell (number of intact tumor suppressors)",
+      "status": "DERIVED \u2014 follows from Kramers formula, consistent with multi-hit epidemiology"
+    }
+  },
+  "connections": [
+    "\u00a79B: Landau hysteresis locks Pe_cell > 1 once crossed",
+    "\u00a79E: 1-body constraint break vs N-body maintenance = clonal expansion",
+    "\u00a727B: Same Pe=1 crossing as abiogenesis but in wrong direction",
+    "\u00a748E: Kramers \u2192 Knudson two-hit (new result)",
+    "\u00a710F: K_cell = effective population size of constraint network"
+  ]
+}

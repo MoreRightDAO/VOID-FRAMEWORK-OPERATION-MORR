@@ -1,0 +1,296 @@
+{
+  "experiment": "HP-CS-01b",
+  "title": "K-CS-3 Phase 2 \u2014 Improved Mappings",
+  "date": "2026-03-24T18:38:24.519637",
+  "runtime_seconds": 9.643137454986572,
+  "parameters": {
+    "N_elements": 1344,
+    "p_link": 0.288,
+    "N_runs": 50,
+    "N_runs_domain": 20,
+    "K_hardware": 16,
+    "B_A": 0.867,
+    "B_G": 2.244
+  },
+  "empirical": {
+    "N": 1344,
+    "mean_pe": -7.25860119047619,
+    "std_pe": 17.190388297797295,
+    "pos_frac": 0.37797619047619047,
+    "correlations": {
+      "O_R": 0.39849121651619607,
+      "O_a": 0.7188172868875851,
+      "R_a": 0.10264679060869629
+    }
+  },
+  "correlation_fingerprint": {
+    "in_out": {
+      "causet_mean": -0.005462380886162594,
+      "causet_std": 0.028034309681790943,
+      "empirical": 0.39849121651619607,
+      "sign_match": false,
+      "delta": 0.40395359740235864
+    },
+    "in_reach": {
+      "causet_mean": 0.06966770404133943,
+      "causet_std": 0.03313891991536772,
+      "empirical": 0.7188172868875851,
+      "sign_match": true,
+      "delta": 0.6491495828462457
+    },
+    "out_reach": {
+      "causet_mean": -0.005653552542830536,
+      "causet_std": 0.024912047830607183,
+      "empirical": 0.10264679060869629,
+      "sign_match": false,
+      "delta": 0.10830034315152683
+    }
+  },
+  "mappings": {
+    "E_transport": {
+      "metrics": {
+        "label": "E_transport",
+        "sim_mean": -6.19858638874492,
+        "sim_std": 12.091522747207991,
+        "sim_median": -5.384457764671764,
+        "ks_D": 0.1082589285714286,
+        "ks_p": 6.601324498092925e-14,
+        "histogram_overlap": 0.8041815476190497,
+        "pos_frac_sim": 0.2869940476190476,
+        "pos_frac_emp": 0.37797619047619047,
+        "sign_delta": 0.09098214285714284
+      },
+      "kill_condition": {
+        "C1_ks_weak": {
+          "val": 0.1082589285714286,
+          "pass": true
+        },
+        "C2_overlap_weak": {
+          "val": 0.8041815476190497,
+          "pass": true
+        },
+        "C3_sign": {
+          "val": 0.09098214285714284,
+          "pass": true
+        },
+        "C4_overlap_strong": {
+          "val": 0.8041815476190497,
+          "pass": true
+        },
+        "C5_ks_strong": {
+          "val": 0.1082589285714286,
+          "pass": true
+        },
+        "weak_pass": 3,
+        "strong_pass": 3,
+        "verdict": "SURVIVES"
+      },
+      "post_transport_corr": {
+        "OR": -0.0005944165793312947,
+        "Oa": 0.06924366889637787,
+        "Ra": -0.005816076342986325
+      }
+    },
+    "F_domain": {
+      "metrics": {
+        "label": "F_domain",
+        "sim_mean": -7.26032485117492,
+        "sim_std": 24.47577368943865,
+        "sim_median": -2.5010219898420205,
+        "ks_D": 0.10788690476190477,
+        "ks_p": 1.9835455213631413e-13,
+        "histogram_overlap": 0.848065476190476,
+        "pos_frac_sim": 0.4044270833333333,
+        "pos_frac_emp": 0.37797619047619047,
+        "sign_delta": 0.02645089285714286
+      },
+      "kill_condition": {
+        "C1_ks_weak": {
+          "val": 0.10788690476190477,
+          "pass": true
+        },
+        "C2_overlap_weak": {
+          "val": 0.848065476190476,
+          "pass": true
+        },
+        "C3_sign": {
+          "val": 0.02645089285714286,
+          "pass": true
+        },
+        "C4_overlap_strong": {
+          "val": 0.848065476190476,
+          "pass": true
+        },
+        "C5_ks_strong": {
+          "val": 0.10788690476190477,
+          "pass": true
+        },
+        "weak_pass": 3,
+        "strong_pass": 3,
+        "verdict": "SURVIVES"
+      },
+      "domain_p_values": {
+        "agriculture": {
+          "p": 0.25456695556640624,
+          "N": 51,
+          "target_pe": -23.012352941176474
+        },
+        "ai_systems": {
+          "p": 0.45061065673828127,
+          "N": 57,
+          "target_pe": -2.968947368421053
+        },
+        "algorithmic_legal": {
+          "p": 0.45795440673828125,
+          "N": 51,
+          "target_pe": -4.80764705882353
+        },
+        "benefits_welfare_ai": {
+          "p": 0.5426370239257814,
+          "N": 51,
+          "target_pe": 0.6043137254901961
+        },
+        "dating_apps": {
+          "p": 0.7012448120117187,
+          "N": 55,
+          "target_pe": 11.37854545454545
+        },
+        "digital_advertising": {
+          "p": 0.5350637817382811,
+          "N": 54,
+          "target_pe": 1.803703703703704
+        },
+        "ecommerce": {
+          "p": 0.4360665893554687,
+          "N": 59,
+          "target_pe": -6.194576271186441
+        },
+        "education": {
+          "p": 0.29779754638671874,
+          "N": 58,
+          "target_pe": -17.474655172413794
+        },
+        "government_civic": {
+          "p": 0.14928741455078123,
+          "N": 52,
+          "target_pe": -44.27211538461537
+        },
+        "healthcare": {
+          "p": 0.3625143432617187,
+          "N": 57,
+          "target_pe": -13.396491228070175
+        },
+        "insurance": {
+          "p": 0.3637478637695313,
+          "N": 50,
+          "target_pe": -13.174
+        },
+        "law_enforcement_tech": {
+          "p": 0.5527346801757813,
+          "N": 46,
+          "target_pe": 0.9695652173913045
+        },
+        "modern_gaming": {
+          "p": 0.6870449829101561,
+          "N": 57,
+          "target_pe": 10.341403508771933
+        },
+        "national_ai_systems": {
+          "p": 0.43262420654296874,
+          "N": 103,
+          "target_pe": -3.5153398058252425
+        },
+        "news_media": {
+          "p": 0.24458404541015624,
+          "N": 58,
+          "target_pe": -23.997758620689652
+        },
+        "pharma": {
+          "p": 0.39874542236328114,
+          "N": 50,
+          "target_pe": -7.5736
+        },
+        "predatory_finance": {
+          "p": 0.7005563354492186,
+          "N": 59,
+          "target_pe": 11.21101694915254
+        },
+        "real_estate": {
+          "p": 0.33503265380859376,
+          "N": 52,
+          "target_pe": -15.846153846153847
+        },
+        "smart_cities": {
+          "p": 0.4137484741210938,
+          "N": 50,
+          "target_pe": -8.4406
+        },
+        "social_media": {
+          "p": 0.5823391723632811,
+          "N": 56,
+          "target_pe": 4.611428571428571
+        },
+        "streaming_media": {
+          "p": 0.3692843627929687,
+          "N": 57,
+          "target_pe": -10.729298245614036
+        },
+        "surveillance": {
+          "p": 0.5534231567382812,
+          "N": 53,
+          "target_pe": 2.44377358490566
+        },
+        "traditional_finance": {
+          "p": 0.35540008544921875,
+          "N": 52,
+          "target_pe": -13.033269230769228
+        },
+        "workplace_tech": {
+          "p": 0.32958221435546875,
+          "N": 56,
+          "target_pe": -14.882142857142854
+        }
+      }
+    },
+    "G_fisher": {
+      "metrics": {
+        "label": "G_fisher",
+        "sim_mean": -1.0289775486962622,
+        "sim_std": 4.93184214000057,
+        "sim_median": -0.5711952900297871,
+        "ks_D": 0.41813988095238097,
+        "ks_p": 2.799907719341194e-209,
+        "histogram_overlap": 0.38037202380952384,
+        "pos_frac_sim": 0.3576785714285714,
+        "pos_frac_emp": 0.37797619047619047,
+        "sign_delta": 0.020297619047619064
+      },
+      "kill_condition": {
+        "C1_ks_weak": {
+          "val": 0.41813988095238097,
+          "pass": true
+        },
+        "C2_overlap_weak": {
+          "val": 0.38037202380952384,
+          "pass": true
+        },
+        "C3_sign": {
+          "val": 0.020297619047619064,
+          "pass": true
+        },
+        "C4_overlap_strong": {
+          "val": 0.38037202380952384,
+          "pass": false
+        },
+        "C5_ks_strong": {
+          "val": 0.41813988095238097,
+          "pass": false
+        },
+        "weak_pass": 3,
+        "strong_pass": 1,
+        "verdict": "SURVIVES"
+      }
+    }
+  },
+  "overall_verdict": "SURVIVES"
+}

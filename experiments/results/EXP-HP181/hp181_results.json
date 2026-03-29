@@ -1,0 +1,96 @@
+{
+  "experiment": "HP181",
+  "title": "Activation Energy Scaling \u2014 BEP as Barrier Growth",
+  "date": "2026-03-28T14:12:23.116437",
+  "results": {
+    "hydrogen_abstraction": {
+      "system": "Hydrogen Abstraction (BEP)",
+      "n_reactions": 16,
+      "alpha": 0.46506075076178305,
+      "alpha_ci": [
+        0.29344323641969833,
+        0.6358932914969544
+      ],
+      "E_0": 48.993949291179526,
+      "R2": 0.8159479012592656,
+      "p_value": 1.636576840508886e-06,
+      "delta_H_range": [
+        -133.9,
+        139.3
+      ],
+      "E_a_range": [
+        4.6,
+        140.6
+      ],
+      "K-181-1": "PASS",
+      "K-181-2": "PASS",
+      "note": "BEP: E_a = E_0 + \u03b1\u00b7\u0394H, \u03b1>0 means barrier grows with endothermicity"
+    },
+    "marcus": {
+      "system": "Marcus Theory (Electron Transfer)",
+      "lambda_reorg_fit": 1.2161825157869341,
+      "lambda_reorg_true": 1.2,
+      "R2_parabola": 0.9687986412950798,
+      "beta_inverted_region": 5.07542002115176,
+      "n_points": 12,
+      "delta_G_range": [
+        -2.25,
+        -0.08
+      ],
+      "E_a_range": [
+        0.008338094194349726,
+        0.271267616393558
+      ],
+      "K-181-4": "PASS",
+      "K-181-5": "PASS",
+      "note": "E_a = (\u03bb/4)(1+\u0394G\u00b0/\u03bb)\u00b2, barrier grows quadratically in inverted region"
+    },
+    "hammond": {
+      "system": "Hammond-Polanyi (BDE vs E_a)",
+      "alpha": 0.9288916315347578,
+      "R2": 0.9971685333207411,
+      "p_value": 2.2801885362988575e-15,
+      "n_reactions": 13,
+      "bde_range": [
+        330.0,
+        435.0
+      ],
+      "Ea_range": [
+        340.0,
+        440.0
+      ],
+      "K-181-3": "PASS",
+      "note": "Stronger bonds \u2192 higher barriers. This IS barrier growth."
+    },
+    "combustion": {
+      "system": "Combustion Chain Reactions",
+      "alpha": 0.2443039455273011,
+      "E_0": 51.85828875184127,
+      "R2": 0.6427050410101186,
+      "p_value": 0.0005642820629808192,
+      "n_reactions": 14,
+      "delta_H_range": [
+        -289.1,
+        115.0
+      ],
+      "E_a_range": [
+        3.0,
+        130.0
+      ],
+      "note": "BEP for combustion: E_a = E_0 + \u03b1\u00b7\u0394H"
+    }
+  },
+  "kill_conditions": {
+    "K-181-1": "PASS",
+    "K-181-2": "PASS",
+    "K-181-4": "PASS",
+    "K-181-5": "PASS",
+    "K-181-3": "PASS"
+  },
+  "key_finding": "BEP principle (E_a = E_0 + \u03b1\u00b7\u0394H, \u03b1>0) is the chemistry manifestation of barrier growth. Universal across reaction families.",
+  "summary": {
+    "kc_pass": 5,
+    "kc_total": 5,
+    "status": "PASS"
+  }
+}

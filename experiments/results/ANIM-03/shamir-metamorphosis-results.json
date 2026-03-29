@@ -1,0 +1,98 @@
+{
+  "experiment_id": "ANIM-03",
+  "title": "Shamir Biological Metamorphosis Pe Simulation",
+  "hypothesis": "Shamir is a lithophagous organism with incubation-triggered metamorphosis",
+  "math_basis": "\u00a732 entomopathogenic Pe dynamics (Papers 90, 92)",
+  "shamir_phases": {
+    "dormant": {
+      "O": 1.0,
+      "R": 0.5,
+      "\u03b1": 2.0,
+      "desc": "Dormant larva in mountain niche",
+      "duration_hrs": null,
+      "Pe": 0.25
+    },
+    "incubation": {
+      "O": 1.0,
+      "R": 1.5,
+      "\u03b1": 1.0,
+      "desc": "Lead vessel + wool + barley chaff incubation",
+      "duration_hrs": 72,
+      "Pe": 1.5
+    },
+    "active": {
+      "O": 2.0,
+      "R": 3.0,
+      "\u03b1": 0.5,
+      "desc": "Active lithovore on marked stone",
+      "duration_hrs": 12,
+      "Pe": 12.0
+    },
+    "exhausted": {
+      "O": 0.5,
+      "R": 0.2,
+      "\u03b1": 2.5,
+      "desc": "Post-activity exhaustion / death",
+      "duration_hrs": null,
+      "Pe": 0.04
+    }
+  },
+  "pe_amplification": {
+    "shamir": {
+      "dormant_pe": 0.25,
+      "active_pe": 12.0,
+      "amplification": 48.0,
+      "crooks_ratio": 48.00000000000001,
+      "pathway": "mixed (R-dominant + \u03b1-suppression)"
+    },
+    "ophiocordyceps": {
+      "healthy_pe": 1.25,
+      "override_pe": 5.0,
+      "amplification": 4.0,
+      "crooks_ratio": 4.0,
+      "pathway": "R-amplification"
+    },
+    "massospora": {
+      "healthy_pe": 1.25,
+      "suppressed_pe": 180.0,
+      "amplification": 144.0,
+      "crooks_ratio": 144.0,
+      "pathway": "\u03b1-suppression"
+    }
+  },
+  "pe1_crossing": {
+    "shamir_time": 2.4199999999999924,
+    "shamir_peak_pe": 17.298025786855458,
+    "ophio_time": 0.01,
+    "ophio_peak_pe": 4.072055077012719
+  },
+  "incubation_sweep": {
+    "conditions_tested": 80,
+    "conditions_activated": 80,
+    "fastest_activation": {
+      "temp_C": 35,
+      "humidity_pct": 95,
+      "nutrition": 1.0,
+      "pe_max": 36.36964077999243,
+      "pe1_crossing_time": 1.410000000000001,
+      "R_rate": 1.2232268228065701,
+      "\u03b1_rate": 0.28500000000000003
+    },
+    "highest_pe_max": {
+      "temp_C": 35,
+      "humidity_pct": 95,
+      "nutrition": 1.0,
+      "pe_max": 36.36964077999243,
+      "pe1_crossing_time": 1.410000000000001,
+      "R_rate": 1.2232268228065701,
+      "\u03b1_rate": 0.28500000000000003
+    },
+    "optimal_conditions": {
+      "temperature_C": "25-35 (Levantine climate consistent)",
+      "humidity_pct": "80-95 (sealed lead vessel)",
+      "nutrition": "barley chaff + wool bedding"
+    }
+  },
+  "talmudic_properties_explained": "10/10",
+  "conclusion": "The biological metamorphosis model explains 10/10 Talmudic properties simultaneously. Pe trajectory follows R-pathway (\u00a732 Ophiocordyceps analog) with significant \u03b1-suppression component. Incubation protocol (lead vessel + organic bedding) provides conditions for Pe=1 crossing at T\u224825-35\u00b0C, H\u224880-95%. The \"summoning\" is metamorphosis induction, not magical creation."
+}

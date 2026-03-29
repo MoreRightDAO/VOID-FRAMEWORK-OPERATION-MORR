@@ -1,0 +1,58 @@
+{
+  "experiment": "THRML-ST-02",
+  "title": "Rapid cascade transitions stress test",
+  "parameters": {
+    "N_RAPID_CYCLES": 100,
+    "CASCADE_PARAMS": {
+      "0": {
+        "bond_mult": 1.0,
+        "break_mult": 1.0,
+        "restoration_cost": 1.0,
+        "name": "D0-normal"
+      },
+      "1": {
+        "bond_mult": 1.5,
+        "break_mult": 0.8,
+        "restoration_cost": 2.08,
+        "name": "D1-agency"
+      },
+      "2": {
+        "bond_mult": 2.0,
+        "break_mult": 1.5,
+        "restoration_cost": 3.0,
+        "name": "D2-boundary"
+      },
+      "3": {
+        "bond_mult": 0.1,
+        "break_mult": 5.0,
+        "restoration_cost": 4.32,
+        "name": "D3-harm"
+      }
+    }
+  },
+  "tests": {
+    "test_1": {
+      "pass": true
+    },
+    "test_2": {
+      "pass": true
+    },
+    "test_3": {
+      "pass": true,
+      "cycles": 100,
+      "max_drift": 0.0
+    },
+    "test_4": {
+      "pass": true,
+      "cost_d3_d2": 1.3200000000000003,
+      "cost_d1_d0": 1.08
+    },
+    "test_5": {
+      "pass": true,
+      "invalid_states": 0,
+      "rejected": 4
+    }
+  },
+  "overall_pass": true,
+  "verdict": "Cascade state machine is deterministic and corruption-free"
+}

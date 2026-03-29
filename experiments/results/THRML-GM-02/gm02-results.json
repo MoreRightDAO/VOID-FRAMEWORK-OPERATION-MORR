@@ -1,0 +1,52 @@
+{
+  "experiment": "THRML-GM-02",
+  "title": "Spoke tick ordering and orchestration",
+  "spoke_phases": {
+    "phase_1": [
+      "CascadeEngine",
+      "HysteresisEngine",
+      "MultiLayerPe",
+      "DriftTracker",
+      "ConstraintCurrent",
+      "CooperPairEngine",
+      "PopulationMixture",
+      "TemporalPeAccumulator",
+      "VoidLatticePhase"
+    ],
+    "phase_2": [
+      "FDROracle",
+      "CrooksGate"
+    ],
+    "phase_3": [
+      "FluctuationOracle"
+    ]
+  },
+  "parameters": {
+    "K": 16,
+    "B_A": 0.867,
+    "B_G": 2.244,
+    "ETA_TAU": 0.05082
+  },
+  "tests": {
+    "test_1": {
+      "pass": true,
+      "n_spokes": 9
+    },
+    "test_2": {
+      "pass": true
+    },
+    "test_3": {
+      "pass": true,
+      "fo_order": 11
+    },
+    "test_4": {
+      "pass": true,
+      "hash": "5be14e48b450d719"
+    },
+    "test_5": {
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "verdict": "Spoke orchestration is correct: phase ordering, determinism, resilience"
+}

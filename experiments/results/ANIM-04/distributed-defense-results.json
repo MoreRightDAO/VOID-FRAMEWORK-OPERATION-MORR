@@ -1,0 +1,110 @@
+{
+  "experiment_id": "ANIM-04",
+  "title": "Babylonian Distributed Defense vs Single Golem",
+  "math_basis": "\u00a728E (Pe_nested attenuation), \u00a732, T11",
+  "total_pe_budget": 49.0,
+  "architecture_comparison": [
+    {
+      "label": "Babylon (7\u00d77, Pe=1 each)",
+      "n": 49,
+      "pe_each": 1.0,
+      "min_coverage": 6.637641066562162,
+      "control_risk": 0.0036608849639504504,
+      "scope": "bounded"
+    },
+    {
+      "label": "Babylon (7\u00d74, Pe=1.75)",
+      "n": 28,
+      "pe_each": 1.75,
+      "min_coverage": 6.6376410665621615,
+      "control_risk": 0.00304463518136433,
+      "scope": "bounded"
+    },
+    {
+      "label": "Mixed (7 strong, Pe=7)",
+      "n": 7,
+      "pe_each": 7.0,
+      "min_coverage": 6.63764106602994,
+      "control_risk": 0.010461069512573862,
+      "scope": "bounded"
+    },
+    {
+      "label": "Golem (1 entity, Pe=49)",
+      "n": 1,
+      "pe_each": 49.0,
+      "min_coverage": 6.638339136217917,
+      "control_risk": 0.9999999999999942,
+      "scope": "unbounded"
+    }
+  ],
+  "scaling_analysis": [
+    {
+      "n": 1,
+      "pe_each": 49.0,
+      "min_coverage": 6.638339136217917,
+      "mean_coverage": 14.53429047552519,
+      "uniformity": 0.45673637439656606,
+      "control_risk": 0.9999999999999942
+    },
+    {
+      "n": 4,
+      "pe_each": 12.25,
+      "min_coverage": 5.931786029594992,
+      "mean_coverage": 7.839583270775012,
+      "uniformity": 0.7566455798368709,
+      "control_risk": 0.07888243686556218
+    },
+    {
+      "n": 7,
+      "pe_each": 7.0,
+      "min_coverage": 6.63764106602994,
+      "mean_coverage": 7.8832622177151475,
+      "uniformity": 0.8419916631865846,
+      "control_risk": 0.010461069512573862
+    },
+    {
+      "n": 12,
+      "pe_each": 4.083333333333333,
+      "min_coverage": 6.637641066562162,
+      "mean_coverage": 7.880393142703749,
+      "uniformity": 0.8422982135996326,
+      "control_risk": 0.004187301279974243
+    },
+    {
+      "n": 21,
+      "pe_each": 2.3333333333333335,
+      "min_coverage": 6.6376410665621615,
+      "mean_coverage": 7.882441220828804,
+      "uniformity": 0.8420793610262078,
+      "control_risk": 0.0030567161430581358
+    },
+    {
+      "n": 28,
+      "pe_each": 1.75,
+      "min_coverage": 6.6376410665621615,
+      "mean_coverage": 7.883262217715147,
+      "uniformity": 0.8419916632540975,
+      "control_risk": 0.00304463518136433
+    },
+    {
+      "n": 49,
+      "pe_each": 1.0,
+      "min_coverage": 6.637641066562162,
+      "mean_coverage": 7.882594764345428,
+      "uniformity": 0.8420629583275747,
+      "control_risk": 0.0036608849639504504
+    }
+  ],
+  "optimal_n": 21,
+  "golem_paradox": {
+    "golem_risk": 0.9999999999999942,
+    "babylon_risk": 0.0036608849639504504,
+    "risk_ratio": 273.15799590733303
+  },
+  "key_findings": {
+    "distributed_wins": "At equal Pe budget, N=49 bounded agents provide more uniform coverage than N=1 unbounded agent, with negligible control risk.",
+    "scope_is_key": "Bounded activation text (incantation) prevents any single figurine from reaching D2. The golem's Divine Name has no such ceiling.",
+    "babylon_solved_alignment": "The Babylonian apotropaic system is an ancient solution to the alignment problem: distribute capability across many bounded agents rather than concentrating it in one unbounded agent.",
+    "coverage_uniformity": "Distributed defense eliminates gaps. The golem model leaves the building unprotected wherever the golem is not standing. The figurines cover every doorway, threshold, corner, and wall simultaneously."
+  }
+}

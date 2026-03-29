@@ -1,0 +1,191 @@
+{
+  "results": [
+    {
+      "system": "Carbon",
+      "A_name": "Graphite",
+      "B_name": "Diamond",
+      "Pe_A": 1.1282045308093867,
+      "Pe_B": 0.8877092528993654,
+      "delta_Pe": -0.24049527791002123,
+      "abs_delta_Pe": 0.24049527791002123,
+      "transition_T": 0,
+      "transition_P": 4.0,
+      "notes": "Graphite is thermodynamically stable at STP. Diamond is metastable (kinetically locked \u2014 Crooks)."
+    },
+    {
+      "system": "Boron Nitride",
+      "A_name": "h-BN (hexagonal)",
+      "B_name": "c-BN (cubic)",
+      "Pe_A": 0.24870055870481506,
+      "Pe_B": 0.19568596042166272,
+      "delta_Pe": -0.05301459828315233,
+      "abs_delta_Pe": 0.05301459828315233,
+      "transition_T": 1700,
+      "transition_P": 5.0,
+      "notes": "Isoelectronic with carbon. Should show isomorphic Pe splitting."
+    },
+    {
+      "system": "SiO\u2082 (quartz\u2192coesite)",
+      "A_name": "\u03b1-Quartz",
+      "B_name": "Coesite",
+      "Pe_A": 2.43831160078058,
+      "Pe_B": 2.3179036369878934,
+      "delta_Pe": -0.1204079637926867,
+      "abs_delta_Pe": 0.1204079637926867,
+      "transition_T": 700,
+      "transition_P": 2.5,
+      "notes": "Both CN=4 for Si, but different ring topology \u2192 different effective \u03c3."
+    },
+    {
+      "system": "SiO\u2082 (coesite\u2192stishovite)",
+      "A_name": "Coesite",
+      "B_name": "Stishovite",
+      "Pe_A": 2.3179036369878934,
+      "Pe_B": 1.8141192578533323,
+      "delta_Pe": -0.5037843791345611,
+      "abs_delta_Pe": 0.5037843791345611,
+      "transition_T": 1200,
+      "transition_P": 8.0,
+      "notes": "CN jump 4\u21926 is a major Pe shift. Found in meteorite impact sites."
+    },
+    {
+      "system": "CaCO\u2083",
+      "A_name": "Calcite",
+      "B_name": "Aragonite",
+      "Pe_A": 2.6571100971806816,
+      "Pe_B": 2.3660428050843203,
+      "delta_Pe": -0.2910672920963613,
+      "abs_delta_Pe": 0.2910672920963613,
+      "transition_T": 400,
+      "transition_P": 0.3,
+      "notes": "Shell organisms produce aragonite (biogenic constraint). Transforms to calcite over geological time."
+    },
+    {
+      "system": "TiO\u2082 (anatase\u2192rutile)",
+      "A_name": "Anatase",
+      "B_name": "Rutile",
+      "Pe_A": 1.1566331974838766,
+      "Pe_B": 1.0731445262855401,
+      "delta_Pe": -0.08348867119833647,
+      "abs_delta_Pe": 0.08348867119833647,
+      "transition_T": 600,
+      "transition_P": 0.0,
+      "notes": "Same CN but geometry distortion \u2192 different \u03c3_eff. Anatase is photocatalytically active (frustrated constraint)."
+    },
+    {
+      "system": "TiO\u2082 (rutile\u2192high-P)",
+      "A_name": "Rutile",
+      "B_name": "TiO\u2082-II (\u03b1-PbO\u2082 type)",
+      "Pe_A": 1.0731445262855401,
+      "Pe_B": 0.9438628512282595,
+      "delta_Pe": -0.1292816750572806,
+      "abs_delta_Pe": 0.1292816750572806,
+      "transition_T": 25,
+      "transition_P": 5.0,
+      "notes": "High-pressure polymorph with more regular octahedral packing."
+    },
+    {
+      "system": "Al\u2082SiO\u2085 (andalusite\u2192kyanite)",
+      "A_name": "Andalusite",
+      "B_name": "Kyanite",
+      "Pe_A": 5.038506698876125,
+      "Pe_B": 4.515670184221076,
+      "delta_Pe": -0.5228365146550491,
+      "abs_delta_Pe": 0.5228365146550491,
+      "transition_T": 400,
+      "transition_P": 0.4,
+      "notes": "Classic metamorphic indicator mineral. Kyanite = high-P metamorphism."
+    },
+    {
+      "system": "Al\u2082SiO\u2085 (andalusite\u2192sillimanite)",
+      "A_name": "Andalusite",
+      "B_name": "Sillimanite",
+      "Pe_A": 5.038506698876125,
+      "Pe_B": 5.340559820224396,
+      "delta_Pe": 0.3020531213482709,
+      "abs_delta_Pe": 0.3020531213482709,
+      "transition_T": 500,
+      "transition_P": 0.0,
+      "notes": "High-T polymorph. Al partly in tetrahedral sites \u2192 LOWER effective \u03c3."
+    },
+    {
+      "system": "H\u2082O (Ice Ih\u2192II)",
+      "A_name": "Ice Ih",
+      "B_name": "Ice II",
+      "Pe_A": 3.850861535755594,
+      "Pe_B": 3.3009280224274664,
+      "delta_Pe": -0.5499335133281278,
+      "abs_delta_Pe": 0.5499335133281278,
+      "transition_T": -35,
+      "transition_P": 0.2,
+      "notes": "H-bond network rearrangement. Both tetrahedral but different ring topology."
+    },
+    {
+      "system": "H\u2082O (Ice Ih\u2192III)",
+      "A_name": "Ice Ih",
+      "B_name": "Ice III",
+      "Pe_A": 3.850861535755594,
+      "Pe_B": 3.4659147087377185,
+      "delta_Pe": -0.38494682701787575,
+      "abs_delta_Pe": 0.38494682701787575,
+      "transition_T": -22,
+      "transition_P": 0.3,
+      "notes": "Tetragonal ice. Different H-bond topology."
+    },
+    {
+      "system": "H\u2082O (Ice VI\u2192VII)",
+      "A_name": "Ice VI",
+      "B_name": "Ice VII",
+      "Pe_A": 3.013981113300425,
+      "Pe_B": 2.261497405587644,
+      "delta_Pe": -0.7524837077127811,
+      "abs_delta_Pe": 0.7524837077127811,
+      "transition_T": 5,
+      "transition_P": 2.1,
+      "notes": "Major structural change \u2014 two interpenetrating ice Ic lattices. CN effectively doubles."
+    },
+    {
+      "system": "FeS\u2082",
+      "A_name": "Pyrite",
+      "B_name": "Marcasite",
+      "Pe_A": 1.1655598234614222,
+      "Pe_B": 1.2406609622557008,
+      "delta_Pe": 0.0751011387942786,
+      "abs_delta_Pe": 0.0751011387942786,
+      "transition_T": 200,
+      "transition_P": 0.0,
+      "notes": "Same CN but orthorhombic distortion \u2192 lower effective \u03c3 \u2192 higher Pe \u2192 less stable."
+    },
+    {
+      "system": "Sulfur",
+      "A_name": "\u03b1-Sulfur (orthorhombic)",
+      "B_name": "\u03b2-Sulfur (monoclinic)",
+      "Pe_A": 0.8464302783384152,
+      "Pe_B": 0.8726085343695003,
+      "delta_Pe": 0.026178256031085034,
+      "abs_delta_Pe": 0.026178256031085034,
+      "transition_T": 95.3,
+      "transition_P": 0.0,
+      "notes": "Same S\u2088 molecule, different crystal packing. Subtle \u03c3 change."
+    }
+  ],
+  "correlation": {
+    "pressure_rho": -0.4878139466552834,
+    "pressure_n": 10,
+    "temperature_rho": 0.7999999999999999,
+    "temperature_n": 4
+  },
+  "cn_test": {
+    "correct": 7,
+    "total": 7,
+    "accuracy": 1.0
+  },
+  "isomorphism": {
+    "isomorphic": "True",
+    "C_ratio": 1.2709167186491914,
+    "BN_ratio": 1.270916718649191,
+    "ratio_diff": 3.4942431973203404e-16,
+    "C_splitting": -0.24049527791002123,
+    "BN_splitting": -0.05301459828315233
+  }
+}

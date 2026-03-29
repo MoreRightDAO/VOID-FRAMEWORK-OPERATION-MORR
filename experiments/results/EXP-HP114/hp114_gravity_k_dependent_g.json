@@ -1,0 +1,130 @@
+{
+  "experiment": "HP114",
+  "title": "Gravity Deep Dive: K-Dependent G and Galaxy Rotation Curves",
+  "date": "2026-03-18T00:13:58.321311",
+  "kill_conditions": {
+    "K-GRAV-114-1 (rotation curves flat)": true,
+    "K-GRAV-114-2 (TF slope)": true,
+    "K-GRAV-114-3 (RAR scatter)": false,
+    "K-GRAV-114-4 (vs MOND)": false,
+    "K-GRAV-114-5 (G\u2083\u2192G\u2084 dims)": true
+  },
+  "pass_count": "3",
+  "c1_rotation_curves": {
+    "DDO154_dwarf": {
+      "M_total": 400000000.0,
+      "v_peak_bar": 20.011077975475896,
+      "v_peak_mod": 231.61823967942937,
+      "v_peak_mond": 53.297487076404565,
+      "flatness_mod": 0.660531396404198,
+      "flatness_mond": 0.9863039623631052,
+      "is_flat": "True"
+    },
+    "MW_like": {
+      "M_total": 69999999999.99998,
+      "v_peak_bar": 203.14783398658142,
+      "v_peak_mod": 474.012916017951,
+      "v_peak_mond": 235.5640145410275,
+      "flatness_mod": 0.8725579732327537,
+      "flatness_mond": 0.9134717659138911,
+      "is_flat": "True"
+    },
+    "NGC2403_spiral": {
+      "M_total": 27000000000.000004,
+      "v_peak_bar": 141.35016672059393,
+      "v_peak_mod": 338.0604250896141,
+      "v_peak_mond": 176.416246592212,
+      "flatness_mod": 0.8714145513649527,
+      "flatness_mond": 0.9401773504331065,
+      "is_flat": "True"
+    },
+    "UGC128_LSB": {
+      "M_total": 13000000000.0,
+      "v_peak_bar": 56.68195547417856,
+      "v_peak_mod": 152.00529741958977,
+      "v_peak_mond": 129.2574750730081,
+      "flatness_mod": 0.8668936381508627,
+      "flatness_mond": 0.9979821598367564,
+      "is_flat": "True"
+    },
+    "NGC7814_giant": {
+      "M_total": 135000000000.0,
+      "v_peak_bar": 233.86571861092892,
+      "v_peak_mod": 515.8805663184094,
+      "v_peak_mond": 270.53188417318285,
+      "flatness_mod": 0.8718943758957934,
+      "flatness_mond": 0.9097198113758486,
+      "is_flat": "True"
+    },
+    "kc1_pass": true,
+    "flat_count": 5
+  },
+  "c2_tully_fisher": {
+    "slope_tf": 0.26145597339982657,
+    "kc2_pass": true
+  },
+  "c3_rar": {
+    "scatter": 0.365636554228986,
+    "a0_eff": 5.211349333314114e-16,
+    "rar_slope": 0.5504156339883932,
+    "kc3_pass": false
+  },
+  "c4_mond_comparison": {
+    "DDO154_dwarf": {
+      "v_peak_mod": 231.61823967942937,
+      "v_peak_mond": 53.297487076404565,
+      "flat_mod": 0.660531396404198,
+      "flat_mond": 0.9863039623631052,
+      "score_mod": 1,
+      "score_mond": 2,
+      "winner": "MOND"
+    },
+    "MW_like": {
+      "v_peak_mod": 474.012916017951,
+      "v_peak_mond": 235.5640145410275,
+      "flat_mod": 0.8725579732327537,
+      "flat_mond": 0.9134717659138911,
+      "score_mod": 1,
+      "score_mond": 2,
+      "winner": "MOND"
+    },
+    "NGC2403_spiral": {
+      "v_peak_mod": 338.0604250896141,
+      "v_peak_mond": 176.416246592212,
+      "flat_mod": 0.8714145513649527,
+      "flat_mond": 0.9401773504331065,
+      "score_mod": 1,
+      "score_mond": 2,
+      "winner": "MOND"
+    },
+    "UGC128_LSB": {
+      "v_peak_mod": 152.00529741958977,
+      "v_peak_mond": 129.2574750730081,
+      "flat_mod": 0.8668936381508627,
+      "flat_mond": 0.9979821598367564,
+      "score_mod": 1,
+      "score_mond": 2,
+      "winner": "MOND"
+    },
+    "NGC7814_giant": {
+      "v_peak_mod": 515.8805663184094,
+      "v_peak_mond": 270.53188417318285,
+      "flat_mod": 0.8718943758957934,
+      "flat_mond": 0.9097198113758486,
+      "score_mod": 1,
+      "score_mond": 2,
+      "winner": "MOND"
+    },
+    "wins": 0,
+    "kc4_pass": false
+  },
+  "c5_g3_to_g4": {
+    "G3_SI": 6.674000000000001e-11,
+    "G4_SI": 6.674e-11,
+    "ratio": 1.0000000000000002,
+    "kc5_pass": true,
+    "L_conversion": 1.3280785873838545e-34,
+    "T_conversion": 6.644822818798471e-43,
+    "M_conversion": 7.949106420084861e-08
+  }
+}

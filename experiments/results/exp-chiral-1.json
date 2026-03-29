@@ -1,0 +1,53 @@
+{
+  "experiment": "EXP-CHIRAL-1",
+  "test": "K-Factorization material independence",
+  "helix": {
+    "R_nm": 300.0,
+    "pitch_nm": 1200.0,
+    "psi_deg": 32.48163659052975
+  },
+  "materials": {
+    "Ni": {
+      "f_plus_GHz": 3.894831327576346,
+      "f_minus_GHz": 3.3870597663824347,
+      "eta_frequency": 0.06973072717541326,
+      "eta_intensity": 0.13878662184585672,
+      "delta_f_GHz": 0.5077715611939113
+    },
+    "Co": {
+      "f_plus_GHz": 11.101482092023279,
+      "f_minus_GHz": 9.701856755586693,
+      "eta_frequency": 0.06727887992832382,
+      "eta_intensity": 0.13395143569074186,
+      "delta_f_GHz": 1.3996253364365856
+    },
+    "Py (Ni80Fe20)": {
+      "f_plus_GHz": 6.821156898201435,
+      "f_minus_GHz": 5.958170413464993,
+      "eta_frequency": 0.0675298835133998,
+      "eta_intensity": 0.13444665195409564,
+      "delta_f_GHz": 0.8629864847364423
+    },
+    "CoFeB": {
+      "f_plus_GHz": 9.512667371579111,
+      "f_minus_GHz": 8.3185342534476,
+      "eta_frequency": 0.06696874070760904,
+      "eta_intensity": 0.13333947888929173,
+      "delta_f_GHz": 1.1941331181315107
+    }
+  },
+  "k_factorization": {
+    "eta_mean": 0.1351310470949965,
+    "eta_std": 0.002146673191752487,
+    "eta_cv": 0.015885862190081205,
+    "max_deviation_frac": 0.027052071522026898,
+    "kc_chiral_1": "PASS",
+    "freq_cv": 0.3498628409206116
+  },
+  "framework_mapping": {
+    "c_geom": 0.17887505394346917,
+    "sigma_c": 1.0717487796794554,
+    "Pe_K16": 17.147980474871286,
+    "Q_shape_berry": 0.9829188392905002
+  }
+}

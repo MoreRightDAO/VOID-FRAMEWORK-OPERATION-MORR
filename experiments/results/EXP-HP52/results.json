@@ -1,0 +1,485 @@
+{
+  "experiment": "EXP-HP52",
+  "title": "Multiplicative Ratio Lattice Forcing",
+  "date": "2026-03-15",
+  "framework_sections": [
+    "\u00a780L",
+    "\u00a780D\u00bd",
+    "H1 ratio lattice",
+    "H2 functional equation"
+  ],
+  "tests": [
+    {
+      "id": "P1",
+      "name": "Predictive power",
+      "results": [
+        {
+          "N_train": 15,
+          "dist_train": 0.01145123,
+          "mean_is_error_pct": 0.313335,
+          "mean_oos_error_pct": 15.304,
+          "n_oos_within_5pct": 2,
+          "n_oos_total": 20,
+          "symmetry": 1.0,
+          "oos_errors": [
+            2.9497,
+            4.8315,
+            6.4575,
+            6.2895,
+            9.1565,
+            10.8595,
+            10.6099,
+            12.6691,
+            13.5342,
+            16.0495,
+            15.5409,
+            16.9441,
+            19.4611,
+            19.7789,
+            20.6446,
+            21.5683,
+            23.252,
+            24.8848,
+            24.0333,
+            26.5646
+          ]
+        },
+        {
+          "N_train": 20,
+          "dist_train": 0.01570591,
+          "mean_is_error_pct": 0.376608,
+          "mean_oos_error_pct": 10.8726,
+          "n_oos_within_5pct": 4,
+          "n_oos_total": 20,
+          "symmetry": 1.0,
+          "oos_errors": [
+            2.5568,
+            2.3793,
+            4.2091,
+            4.9077,
+            7.059,
+            6.435,
+            7.5553,
+            9.6952,
+            9.8133,
+            10.4602,
+            11.1636,
+            12.5635,
+            13.9444,
+            13.0564,
+            15.2612,
+            15.7974,
+            16.8625,
+            17.2397,
+            17.5938,
+            18.8981
+          ]
+        },
+        {
+          "N_train": 30,
+          "dist_train": 0.02376712,
+          "mean_is_error_pct": 0.464641,
+          "mean_oos_error_pct": 6.4548,
+          "n_oos_within_5pct": 7,
+          "n_oos_total": 20,
+          "symmetry": 1.0,
+          "oos_errors": [
+            0.7735,
+            1.7471,
+            2.8127,
+            1.8915,
+            3.7743,
+            4.1196,
+            4.9307,
+            5.1192,
+            5.2706,
+            6.2877,
+            7.5038,
+            7.0389,
+            7.5905,
+            8.5837,
+            8.822,
+            9.9889,
+            9.4443,
+            10.2858,
+            11.295,
+            11.8158
+          ]
+        },
+        {
+          "N_train": 40,
+          "dist_train": 0.04107917,
+          "mean_is_error_pct": 0.6732,
+          "mean_oos_error_pct": 4.6547,
+          "n_oos_within_5pct": 11,
+          "n_oos_total": 20,
+          "symmetry": 1.0,
+          "oos_errors": [
+            1.5808,
+            0.9904,
+            1.3673,
+            2.1988,
+            2.3562,
+            3.3946,
+            2.8253,
+            3.5507,
+            4.4189,
+            4.8289,
+            4.5649,
+            5.3531,
+            5.2685,
+            6.4147,
+            6.6894,
+            6.2815,
+            6.9715,
+            7.8085,
+            7.903,
+            8.3274
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Off-critical rejection",
+      "results": {
+        "real": {
+          "dist": 0.01570591,
+          "symmetry": 1.0
+        },
+        "noise_0.01": {
+          "mean_dist": 0.02154142,
+          "ratio_to_real": 1.37,
+          "mean_symmetry": 1.0,
+          "dists": [
+            0.01586342,
+            0.03227429,
+            0.01471952,
+            0.02469328,
+            0.02015661
+          ],
+          "syms": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "noise_0.02": {
+          "mean_dist": 0.02211145,
+          "ratio_to_real": 1.41,
+          "mean_symmetry": 1.0,
+          "dists": [
+            0.0164184,
+            0.02705349,
+            0.01926394,
+            0.01333421,
+            0.03448723
+          ],
+          "syms": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "noise_0.05": {
+          "mean_dist": 0.01873927,
+          "ratio_to_real": 1.19,
+          "mean_symmetry": 1.0,
+          "dists": [
+            0.01663508,
+            0.0241103,
+            0.0169882,
+            0.02054746,
+            0.0154153
+          ],
+          "syms": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "noise_0.1": {
+          "mean_dist": 0.02388566,
+          "ratio_to_real": 1.52,
+          "mean_symmetry": 1.0,
+          "dists": [
+            0.02586033,
+            0.03533249,
+            0.01949824,
+            0.02808611,
+            0.01065113
+          ],
+          "syms": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "noise_0.2": {
+          "mean_dist": 0.01905599,
+          "ratio_to_real": 1.21,
+          "mean_symmetry": 0.9991,
+          "dists": [
+            0.02543952,
+            0.01952975,
+            0.01371834,
+            0.01355876,
+            0.02303358
+          ],
+          "syms": [
+            0.9998,
+            1.0,
+            0.9962,
+            0.9997,
+            1.0
+          ]
+        },
+        "shift_0.5": {
+          "dist": 0.01619294,
+          "ratio_to_real": 1.03,
+          "symmetry": 1.0
+        },
+        "shift_1.0": {
+          "dist": 0.02468651,
+          "ratio_to_real": 1.57,
+          "symmetry": 1.0
+        },
+        "shift_2.0": {
+          "dist": 0.01359427,
+          "ratio_to_real": 0.87,
+          "symmetry": 1.0
+        },
+        "shift_5.0": {
+          "dist": 0.02452378,
+          "ratio_to_real": 1.56,
+          "symmetry": 1.0
+        }
+      }
+    },
+    {
+      "id": "P3",
+      "name": "Multiplicative rigidity",
+      "results": [
+        {
+          "target_n": 2,
+          "pert_pct": 0.5,
+          "dist": 0.01783311,
+          "ratio_to_real": 1.14
+        },
+        {
+          "target_n": 2,
+          "pert_pct": 1.0,
+          "dist": 0.02836289,
+          "ratio_to_real": 1.81
+        },
+        {
+          "target_n": 2,
+          "pert_pct": 2.0,
+          "dist": 0.01055501,
+          "ratio_to_real": 0.67
+        },
+        {
+          "target_n": 2,
+          "pert_pct": 5.0,
+          "dist": 0.01440218,
+          "ratio_to_real": 0.92
+        },
+        {
+          "target_n": 5,
+          "pert_pct": 0.5,
+          "dist": 0.0110159,
+          "ratio_to_real": 0.7
+        },
+        {
+          "target_n": 5,
+          "pert_pct": 1.0,
+          "dist": 0.01042972,
+          "ratio_to_real": 0.66
+        },
+        {
+          "target_n": 5,
+          "pert_pct": 2.0,
+          "dist": 0.02121581,
+          "ratio_to_real": 1.35
+        },
+        {
+          "target_n": 5,
+          "pert_pct": 5.0,
+          "dist": 0.01547542,
+          "ratio_to_real": 0.99
+        },
+        {
+          "target_n": 10,
+          "pert_pct": 0.5,
+          "dist": 0.01764281,
+          "ratio_to_real": 1.12
+        },
+        {
+          "target_n": 10,
+          "pert_pct": 1.0,
+          "dist": 0.0118776,
+          "ratio_to_real": 0.76
+        },
+        {
+          "target_n": 10,
+          "pert_pct": 2.0,
+          "dist": 0.01508107,
+          "ratio_to_real": 0.96
+        },
+        {
+          "target_n": 10,
+          "pert_pct": 5.0,
+          "dist": 0.01983868,
+          "ratio_to_real": 1.26
+        },
+        {
+          "target_n": 15,
+          "pert_pct": 0.5,
+          "dist": 0.01845132,
+          "ratio_to_real": 1.17
+        },
+        {
+          "target_n": 15,
+          "pert_pct": 1.0,
+          "dist": 0.01495887,
+          "ratio_to_real": 0.95
+        },
+        {
+          "target_n": 15,
+          "pert_pct": 2.0,
+          "dist": 0.02276555,
+          "ratio_to_real": 1.45
+        },
+        {
+          "target_n": 15,
+          "pert_pct": 5.0,
+          "dist": 0.02918764,
+          "ratio_to_real": 1.86
+        },
+        {
+          "target_n": 20,
+          "pert_pct": 0.5,
+          "dist": 0.02325896,
+          "ratio_to_real": 1.48
+        },
+        {
+          "target_n": 20,
+          "pert_pct": 1.0,
+          "dist": 0.02355073,
+          "ratio_to_real": 1.5
+        },
+        {
+          "target_n": 20,
+          "pert_pct": 2.0,
+          "dist": 0.01607942,
+          "ratio_to_real": 1.02
+        },
+        {
+          "target_n": 20,
+          "pert_pct": 5.0,
+          "dist": 0.02597232,
+          "ratio_to_real": 1.65
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "Isospectral shrinkage",
+      "results": [
+        {
+          "N_fit": 10,
+          "mean_pairwise_dist": 0.086728,
+          "relative_width_pct": 6.79,
+          "sol_rms": 1.277924
+        },
+        {
+          "N_fit": 15,
+          "mean_pairwise_dist": 0.228409,
+          "relative_width_pct": 8.68,
+          "sol_rms": 2.631543
+        },
+        {
+          "N_fit": 20,
+          "mean_pairwise_dist": 0.344756,
+          "relative_width_pct": 7.4,
+          "sol_rms": 4.659594
+        },
+        {
+          "N_fit": 30,
+          "mean_pairwise_dist": 0.983938,
+          "relative_width_pct": 9.64,
+          "sol_rms": 10.209948
+        },
+        {
+          "N_fit": 40,
+          "mean_pairwise_dist": 1.774465,
+          "relative_width_pct": 10.38,
+          "sol_rms": 17.09709
+        },
+        {
+          "N_fit": 50,
+          "mean_pairwise_dist": 3.765332,
+          "relative_width_pct": 14.83,
+          "sol_rms": 25.395154
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "Symmetry forcing",
+      "results": {
+        "real_zeros": 1.0,
+        "random_0": {
+          "symmetry": 1.0,
+          "dist": 0.0167792
+        },
+        "random_1": {
+          "symmetry": 1.0,
+          "dist": 0.02068482
+        },
+        "random_2": {
+          "symmetry": 1.0,
+          "dist": 0.02293631
+        },
+        "primes": {
+          "symmetry": 0.9896,
+          "dist": 0.07920754
+        },
+        "n_squared": {
+          "symmetry": 1.0,
+          "dist": 48.62738957
+        }
+      }
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-189",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-190",
+      "result": "FAIL (ratio=1.2\u00d7)"
+    },
+    {
+      "id": "K-HP-191",
+      "result": "FAIL (min breaking pert = inf%)"
+    },
+    {
+      "id": "K-HP-192",
+      "result": "FAIL (widths: [np.float64(6.79), np.float64(8.68), np.float64(7.4), np.float64(9.64), np.float64(10.38), np.float64(14.83)])"
+    },
+    {
+      "id": "K-HP-193",
+      "result": "FAIL (mean random sym = 1.0000)"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "experiment": "HP148",
+  "title": "JHTDB Vortex Sheet Roughening \u2014 KPZ\u2194NS Connection",
+  "date": "2026-03-20T15:57:41.604860",
+  "data": {
+    "source": "JHTDB isotropic1024coarse (Re_\u03bb=433)",
+    "grid": "64\u00d764\u00d764",
+    "n_snapshots": 10,
+    "dt": 0.1,
+    "threshold": 0.009626649965413743
+  },
+  "roughness": {
+    "alpha_mean": 0.21544540929327302,
+    "alpha_std": 0.10146585284592803,
+    "alpha_median": 0.1946462452366453,
+    "n_measurements": 419
+  },
+  "growth": {
+    "beta": 0.006982644175723228,
+    "beta_se": 0.09507671477865247,
+    "r_squared": 0.0007699436442087207,
+    "W_values": [
+      9.241836878504,
+      10.511101016831311,
+      10.801658358050243,
+      13.864954936505422,
+      12.758582498266021,
+      12.4810166235784,
+      10.195791933117208,
+      8.397632278969958,
+      10.063046527190004,
+      14.9070872326626
+    ]
+  },
+  "structure_function": {
+    "zeta_1_mean": 0.6261181795254045,
+    "zeta_1_std": 0.1002663091807491,
+    "n_fits": 10682
+  },
+  "kill_conditions": {
+    "K-HP-800": {
+      "description": "Roughness \u03b1 in [0.25, 0.60] (non-trivial interface)",
+      "value": 0.21544540929327302,
+      "pass": false,
+      "detail": "\u03b1 = 0.2154 \u00b1 0.1015"
+    },
+    "K-HP-801": {
+      "description": "Interface width grows (\u03b2 > 0)",
+      "value": 0.006982644175723228,
+      "pass": true,
+      "detail": "\u03b2 = 0.0070 \u00b1 0.0951"
+    },
+    "K-HP-802": {
+      "description": "\u03b1 closer to 0.5 (KPZ) than 0.25 (EW)",
+      "value": 0.21544540929327302,
+      "pass": false,
+      "detail": "|\u03b1-0.5|=0.2846, |\u03b1-0.25|=0.0346"
+    }
+  },
+  "summary": {
+    "pass": 1,
+    "total": 3,
+    "verdict": "1/3 PASS"
+  }
+}

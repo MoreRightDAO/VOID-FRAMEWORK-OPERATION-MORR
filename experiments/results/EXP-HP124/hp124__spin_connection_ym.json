@@ -1,0 +1,85 @@
+{
+  "experiment": "HP124",
+  "title": "Spin Connection Yang-Mills on Eckert-KK Manifold",
+  "timestamp": "2026-03-18T13:13:59.268654",
+  "c1_spin_connection": {
+    "max_omega_norm": 1.464511250205319,
+    "max_antisymmetry_violation": 2.108198948747031e-08,
+    "relative_violation": 1.4395239015415342e-08,
+    "antisymmetric": true,
+    "n_samples": 20
+  },
+  "c2_so4_structure": {
+    "mean_sd_norm": 0.8808625623887623,
+    "mean_asd_norm": 0.9997552904001268,
+    "mean_ratio": 0.8810781706753652,
+    "fraction_both_nontrivial": 1.0,
+    "both_sectors_active": true
+  },
+  "c3_ym_action": {
+    "S_YM": 7.130981310630117e-12,
+    "S_err": 6.950699597210106e-13,
+    "S_positive": true,
+    "fraction_positive_integrand": 1.0,
+    "max_curvature": 1.2821878916537618e-05,
+    "has_curvature": true,
+    "mean_integrand": 1.3927697872324444e-11,
+    "median_integrand": 5.766604784054452e-12
+  },
+  "c4_instanton_structure": {
+    "mean_sd_curvature": 2.678792866370238e-06,
+    "mean_asd_curvature": 2.7080183056024238e-06,
+    "ratio_sd_asd": 0.9892078132663567,
+    "both_nontrivial": true
+  },
+  "c5_spin_gap": {
+    "mass_gap_spin": 6.000486934026976,
+    "has_gap": true,
+    "m_gap_natural": 0.15309932098491774,
+    "ratio_Lambda_QCD": 0.612397283939671,
+    "scale_match": true,
+    "lowest_10": [
+      6.000486934026976,
+      6.8110564031658285,
+      6.811056403165851,
+      7.621625872304063,
+      14.286710133892868,
+      14.48308578792992,
+      14.74170435126693,
+      15.097279603031415,
+      15.097279603032064,
+      15.293655257068615
+    ]
+  },
+  "kill_conditions": {
+    "K-YM-124-1": {
+      "description": "Spin connection antisymmetric: \u03c9^ab = -\u03c9^ba (lies in so(4))",
+      "result": "PASS",
+      "max_violation": 2.108198948747031e-08,
+      "relative_violation": 1.4395239015415342e-08
+    },
+    "K-YM-124-2": {
+      "description": "Yang-Mills action S_YM > 0 (positive definite)",
+      "result": "PASS",
+      "S_YM": 7.130981310630117e-12,
+      "fraction_positive": 1.0
+    },
+    "K-YM-124-3": {
+      "description": "Curvature 2-form non-trivial: max|R^ab_\u03bc\u03bd| > 1e-10",
+      "result": "PASS",
+      "max_curvature": 1.2821878916537618e-05
+    },
+    "K-YM-124-4": {
+      "description": "su(2)_L \u2295 su(2)_R \u2014 both sectors non-trivial",
+      "result": "PASS",
+      "fraction_both": 1.0
+    },
+    "K-YM-124-5": {
+      "description": "Mass gap \u0394_spin > 0, ratio to \u039b_QCD is O(1)",
+      "result": "PASS",
+      "mass_gap": 6.000486934026976,
+      "ratio_QCD": 0.612397283939671
+    }
+  },
+  "score": "5/5"
+}

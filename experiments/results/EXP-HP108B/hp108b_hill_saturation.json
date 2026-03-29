@@ -1,0 +1,187 @@
+{
+  "experiment": "HP108B",
+  "paper": "Discovery Engine",
+  "date": "2026-03-17T23:04:17.647963",
+  "model": "Hill function",
+  "parameters": {
+    "R_max": 1.9999999999999867,
+    "K_half": 1.9593065391537297,
+    "n": 0.7339054830933873,
+    "formula": "R = 1.00 + 2.0000 * x^0.734 / (1.9593^0.734 + x^0.734)",
+    "saturation_limit": 2.9999999999999867
+  },
+  "kill_conditions": {
+    "K-MIF-108B-1 (retrodiction)": "MARGINAL",
+    "K-MIF-108B-2 (Hill n physical)": "PASS",
+    "K-MIF-108B-3 (stability)": "MARGINAL"
+  },
+  "retrodiction": {
+    "max_error": 0.13191670719136028,
+    "mean_error": 0.07410890873614942,
+    "errors": [
+      0.0,
+      0.06403923206307294,
+      0.06673739721765615,
+      0.1078512072086577,
+      0.13191670719136028
+    ]
+  },
+  "comparison": {
+    "hill_rms": 0.09693916128581787,
+    "powerlaw_rms": 0.1309627794822865,
+    "improvement_factor": 1.350979085698426
+  },
+  "predictions": [
+    {
+      "name": "OH_Fenton",
+      "desc": "\u2022OH Fenton",
+      "x": 0.10868575438527628,
+      "R_hill": 1.2138829546894907,
+      "R_powerlaw": 1.248973481864322,
+      "delta": -0.03509052717483141,
+      "gap_to_known": 0.0361170453105093,
+      "visible": false,
+      "env": "Acidic lakes, high-DOC, mine drainage",
+      "testability": "HIGH",
+      "literature": [
+        "Yin 2016 (acid mine)",
+        "Laffont 2011 (Fr. Guiana)",
+        "Tsui 2012 (Appalachian)"
+      ]
+    },
+    {
+      "name": "SR_thiyl",
+      "desc": "\u2022SR thiyl (cysteine/GSH)",
+      "x": 0.10395933929811947,
+      "R_hill": 1.2077297471262396,
+      "R_powerlaw": 1.2426999359968502,
+      "delta": -0.03497018887061065,
+      "gap_to_known": 0.042270252873760406,
+      "visible": false,
+      "env": "Wetlands, biological tissues, sulfidic waters",
+      "testability": "MEDIUM",
+      "literature": [
+        "Kwon 2020 (fish)",
+        "Li 2020 (rice paddy)",
+        "Perrot 2016 (tropical wetlands)"
+      ]
+    },
+    {
+      "name": "I_oxidation",
+      "desc": "\u2022I iodine atom",
+      "x": 2.7804028295791445,
+      "R_hill": 2.1277337942324843,
+      "R_powerlaw": 2.600692237927106,
+      "delta": -0.4729584436946217,
+      "gap_to_known": 0.23773379423248442,
+      "visible": true,
+      "env": "Open ocean, kelp forests, marine boundary layer",
+      "testability": "HIGH",
+      "literature": [
+        "Motta 2019 (Pacific)",
+        "Strok 2015 (Baltic)",
+        "Enrico 2016 (Pic du Midi)"
+      ]
+    },
+    {
+      "name": "NO2_radical",
+      "desc": "\u2022NO\u2082 nitrogen dioxide",
+      "x": 0.36828031626005675,
+      "R_hill": 1.4535105911264599,
+      "R_powerlaw": 1.5016218781454784,
+      "delta": -0.04811128701901857,
+      "gap_to_known": 0.09351059112645976,
+      "visible": true,
+      "env": "Combustion plumes, urban atmosphere, coal plants",
+      "testability": "MEDIUM",
+      "literature": [
+        "Sun 2014 (Chinese coal)",
+        "Gratz 2010 (US power)",
+        "Sherman 2012 (Detroit)"
+      ]
+    },
+    {
+      "name": "surface_confined",
+      "desc": "Surface-confined 2D cage",
+      "x": 5.58485486208872,
+      "R_hill": 2.3664975701578714,
+      "R_powerlaw": 3.3887727282377895,
+      "delta": -1.022275158079918,
+      "gap_to_known": 0.47649757015787153,
+      "visible": true,
+      "env": "Polar snow, sea ice, biofilm, mineral surfaces",
+      "testability": "HIGH",
+      "literature": [
+        "Sherman 2010 (Arctic snow)",
+        "Douglas 2008 (Barrow)",
+        "Obrist 2011 (Antarctic)"
+      ]
+    },
+    {
+      "name": "CO3_carbonate",
+      "desc": "\u2022CO\u2083\u207b carbonate radical",
+      "x": 0.06117901976716792,
+      "R_hill": 1.1456458357097627,
+      "R_powerlaw": 1.1790192980296486,
+      "delta": -0.033373462319885805,
+      "gap_to_known": 0.10435416429023725,
+      "visible": true,
+      "env": "Alkaline waters, carbonate-buffered, coral reefs",
+      "testability": "MEDIUM",
+      "literature": [
+        "Blum 2014 (carbonate sed.)",
+        "Yin 2013 (Three Gorges)"
+      ]
+    },
+    {
+      "name": "e_aq_solvated",
+      "desc": "Solvated electron",
+      "x": 1.10380386035412e-05,
+      "R_hill": 1.0002808954102553,
+      "R_powerlaw": 1.0012706032509473,
+      "delta": -0.0009897078406919668,
+      "gap_to_known": 0.00028089541025533293,
+      "visible": false,
+      "env": "Deep UV photolysis, high-DOC, radiolysis",
+      "testability": "LOW",
+      "literature": [
+        "Motta 2019 (deep ocean UV)",
+        "Zheng & Hintelmann 2010"
+      ]
+    }
+  ],
+  "sensitivity": {
+    "worst_delta": 0.37926511547338215,
+    "per_channel": [
+      {
+        "name": "OH_Fenton",
+        "max_delta": 0.32639402353325875
+      },
+      {
+        "name": "SR_thiyl",
+        "max_delta": 0.3224337741855057
+      },
+      {
+        "name": "I_oxidation",
+        "max_delta": 0.12536317041027756
+      },
+      {
+        "name": "NO2_radical",
+        "max_delta": 0.37926511547338215
+      },
+      {
+        "name": "surface_confined",
+        "max_delta": 0.3130911386730384
+      },
+      {
+        "name": "CO3_carbonate",
+        "max_delta": 0.272961526304454
+      },
+      {
+        "name": "e_aq_solvated",
+        "max_delta": 0.004735152964418621
+      }
+    ]
+  },
+  "summary": "3/3 PASS"
+}

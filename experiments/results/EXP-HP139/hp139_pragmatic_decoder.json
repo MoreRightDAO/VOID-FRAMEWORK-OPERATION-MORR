@@ -1,0 +1,201 @@
+{
+  "experiment": "HP139",
+  "title": "Pragmatic Decoder \u2014 Z\u2082 Symbolic Dynamics",
+  "date": "2026-03-19T20:44:00.835120",
+  "c1_lobes": {
+    "pe_level_results": {
+      "0.0": {
+        "n_peaks": 1,
+        "series_length": 200,
+        "log_range": 3.3972433748374007
+      },
+      "0.1": {
+        "n_peaks": 1,
+        "series_length": 200,
+        "log_range": 3.4728477104696545
+      },
+      "1.0": {
+        "n_peaks": 1,
+        "series_length": 200,
+        "log_range": 3.4995508022971413
+      },
+      "5.0": {
+        "n_peaks": 1,
+        "series_length": 200,
+        "log_range": 3.5655763706730426
+      },
+      "20.0": {
+        "n_peaks": 1,
+        "series_length": 200,
+        "log_range": 5.0227649480439585
+      }
+    },
+    "two_lobe_count": 0,
+    "total_pe_levels": 5,
+    "KC_710_PASS": false,
+    "KC_710_detail": "0/5 Pe values show 2 lobes"
+  },
+  "c2_entropy": {
+    "pe_level_results": {
+      "0.0": {
+        "h_top": 0.0,
+        "h_shannon": 0.6931471805599453,
+        "transition_matrix": [
+          [
+            0.99,
+            0.01
+          ],
+          [
+            0.010101010101010102,
+            0.98989898989899
+          ]
+        ],
+        "symbol_fraction_1": 0.5,
+        "in_bounds": 0
+      },
+      "0.1": {
+        "h_top": 0.0,
+        "h_shannon": 0.6931471805599453,
+        "transition_matrix": [
+          [
+            0.99,
+            0.01
+          ],
+          [
+            0.010101010101010102,
+            0.98989898989899
+          ]
+        ],
+        "symbol_fraction_1": 0.5,
+        "in_bounds": 0
+      },
+      "1.0": {
+        "h_top": 0.0,
+        "h_shannon": 0.6931471805599453,
+        "transition_matrix": [
+          [
+            0.96,
+            0.04
+          ],
+          [
+            0.04040404040404041,
+            0.9595959595959596
+          ]
+        ],
+        "symbol_fraction_1": 0.5,
+        "in_bounds": 0
+      },
+      "5.0": {
+        "h_top": 0.0,
+        "h_shannon": 0.6931471805599453,
+        "transition_matrix": [
+          [
+            0.97,
+            0.03
+          ],
+          [
+            0.030303030303030304,
+            0.9696969696969697
+          ]
+        ],
+        "symbol_fraction_1": 0.5,
+        "in_bounds": 0
+      },
+      "20.0": {
+        "h_top": 0.0,
+        "h_shannon": 0.6931471805599453,
+        "transition_matrix": [
+          [
+            0.99,
+            0.01
+          ],
+          [
+            0.010101010101010102,
+            0.98989898989899
+          ]
+        ],
+        "symbol_fraction_1": 0.5,
+        "in_bounds": 0
+      }
+    },
+    "mean_h_top": 0.0,
+    "log2": 0.6931471805599453,
+    "in_bounds_count": 0,
+    "total": 5,
+    "KC_711_PASS": false,
+    "KC_711_detail": "0/5 Pe values have 0 < h_top < log(2)"
+  },
+  "c3_independence": {
+    "transition_matrices": {
+      "0.0": [
+        [
+          0.99,
+          0.01
+        ],
+        [
+          0.010101010101010102,
+          0.98989898989899
+        ]
+      ],
+      "0.1": [
+        [
+          0.99,
+          0.01
+        ],
+        [
+          0.010101010101010102,
+          0.98989898989899
+        ]
+      ],
+      "1.0": [
+        [
+          0.96,
+          0.04
+        ],
+        [
+          0.04040404040404041,
+          0.9595959595959596
+        ]
+      ],
+      "5.0": [
+        [
+          0.97,
+          0.03
+        ],
+        [
+          0.030303030303030304,
+          0.9696969696969697
+        ]
+      ],
+      "20.0": [
+        [
+          0.99,
+          0.01
+        ],
+        [
+          0.010101010101010102,
+          0.98989898989899
+        ]
+      ]
+    },
+    "element_cvs": [
+      0.012907255755789314,
+      0.632455532033676,
+      0.6324555320336759,
+      0.013040320248117057
+    ],
+    "mean_cv": 0.32271466001781457,
+    "KC_712_threshold": 0.15,
+    "KC_712_fail_threshold": 0.3,
+    "KC_712_PASS": 0,
+    "KC_712_FAIL": 1,
+    "KC_712_detail": "Mean CV = 0.3227"
+  },
+  "kill_conditions": {
+    "K-HP-710": false,
+    "K-HP-711": false,
+    "K-HP-712": 0
+  },
+  "pass_count": 0,
+  "overall_pass": 0
+}

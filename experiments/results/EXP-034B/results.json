@@ -1,0 +1,456 @@
+{
+  "experiment": "EXP-034B",
+  "date": "2026-03-14",
+  "description": "Fantasia Light Cone \u2014 Full Corpus (\u00a783, U23)",
+  "n_platforms": 1344,
+  "results": {
+    "K-FLC-5": {
+      "passes": true,
+      "timelike": {
+        "n": 73,
+        "mean": 1.5753,
+        "std": 0.8345
+      },
+      "spacelike": {
+        "n": 659,
+        "mean": 2.0728,
+        "std": 0.8222
+      },
+      "null": {
+        "n": 421,
+        "mean": 1.2375
+      },
+      "mann_whitney_p": 2.2974898212457925e-08,
+      "effect_size": 0.4975
+    },
+    "FISHER-CORRECTED": {
+      "passes": true,
+      "stats": {
+        "timelike": {
+          "n": 73,
+          "mean": 0.4036,
+          "std": 0.2895,
+          "min": 0.0,
+          "max": 0.8092
+        },
+        "null": {
+          "n": 421,
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "spacelike": {
+          "n": 659,
+          "mean": 1.7002,
+          "std": 0.4517,
+          "min": 1.1521,
+          "max": 2.4715
+        }
+      }
+    },
+    "PHI-PE-CORRELATION": {
+      "rho": -0.257,
+      "p": 7.622364209734436e-19,
+      "n": 1153
+    },
+    "DOMAIN-BREAKDOWN": [
+      {
+        "domain": "workplace_tech",
+        "n": 56,
+        "timelike": 14,
+        "spacelike": 10,
+        "null": 32,
+        "timelike_frac": 0.25
+      },
+      {
+        "domain": "national_ai_systems",
+        "n": 103,
+        "timelike": 25,
+        "spacelike": 12,
+        "null": 66,
+        "timelike_frac": 0.243
+      },
+      {
+        "domain": "government_civic",
+        "n": 52,
+        "timelike": 11,
+        "spacelike": 6,
+        "null": 35,
+        "timelike_frac": 0.212
+      },
+      {
+        "domain": "agriculture",
+        "n": 51,
+        "timelike": 6,
+        "spacelike": 6,
+        "null": 39,
+        "timelike_frac": 0.118
+      },
+      {
+        "domain": "healthcare",
+        "n": 57,
+        "timelike": 5,
+        "spacelike": 26,
+        "null": 26,
+        "timelike_frac": 0.088
+      },
+      {
+        "domain": "real_estate",
+        "n": 52,
+        "timelike": 4,
+        "spacelike": 29,
+        "null": 19,
+        "timelike_frac": 0.077
+      },
+      {
+        "domain": "education",
+        "n": 58,
+        "timelike": 3,
+        "spacelike": 40,
+        "null": 15,
+        "timelike_frac": 0.052
+      },
+      {
+        "domain": "traditional_finance",
+        "n": 52,
+        "timelike": 2,
+        "spacelike": 25,
+        "null": 25,
+        "timelike_frac": 0.038
+      },
+      {
+        "domain": "law_enforcement_tech",
+        "n": 46,
+        "timelike": 1,
+        "spacelike": 7,
+        "null": 38,
+        "timelike_frac": 0.022
+      },
+      {
+        "domain": "smart_cities",
+        "n": 50,
+        "timelike": 1,
+        "spacelike": 35,
+        "null": 14,
+        "timelike_frac": 0.02
+      },
+      {
+        "domain": "surveillance",
+        "n": 53,
+        "timelike": 1,
+        "spacelike": 27,
+        "null": 25,
+        "timelike_frac": 0.019
+      },
+      {
+        "domain": "ai_systems",
+        "n": 57,
+        "timelike": 0,
+        "spacelike": 55,
+        "null": 2,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "algorithmic_legal",
+        "n": 51,
+        "timelike": 0,
+        "spacelike": 26,
+        "null": 25,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "benefits_welfare_ai",
+        "n": 51,
+        "timelike": 0,
+        "spacelike": 6,
+        "null": 45,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "dating_apps",
+        "n": 55,
+        "timelike": 0,
+        "spacelike": 55,
+        "null": 0,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "digital_advertising",
+        "n": 54,
+        "timelike": 0,
+        "spacelike": 53,
+        "null": 1,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "ecommerce",
+        "n": 59,
+        "timelike": 0,
+        "spacelike": 59,
+        "null": 0,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "insurance",
+        "n": 50,
+        "timelike": 0,
+        "spacelike": 18,
+        "null": 32,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "modern_gaming",
+        "n": 57,
+        "timelike": 0,
+        "spacelike": 56,
+        "null": 1,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "news_media",
+        "n": 58,
+        "timelike": 0,
+        "spacelike": 48,
+        "null": 10,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "pharma",
+        "n": 50,
+        "timelike": 0,
+        "spacelike": 31,
+        "null": 19,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "predatory_finance",
+        "n": 59,
+        "timelike": 0,
+        "spacelike": 59,
+        "null": 0,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "social_media",
+        "n": 56,
+        "timelike": 0,
+        "spacelike": 55,
+        "null": 1,
+        "timelike_frac": 0.0
+      },
+      {
+        "domain": "streaming_media",
+        "n": 57,
+        "timelike": 0,
+        "spacelike": 51,
+        "null": 6,
+        "timelike_frac": 0.0
+      }
+    ],
+    "KNOWN-HARM": {
+      "n": 21,
+      "n_spacelike": 21,
+      "platforms": [
+        {
+          "label": "TikTok",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 24.7
+        },
+        {
+          "label": "TikTok For Business",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 19.7
+        },
+        {
+          "label": "Character.AI",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 15.0
+        },
+        {
+          "label": "Replika",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 18.06
+        },
+        {
+          "label": "Instagram",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 21.43
+        },
+        {
+          "label": "Facebook",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 20.56
+        },
+        {
+          "label": "Grindr",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 16.49
+        },
+        {
+          "label": "Tinder (Match Group)",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 18.46
+        },
+        {
+          "label": "Tinder Japan",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 15.74
+        },
+        {
+          "label": "Robinhood",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 12.21
+        },
+        {
+          "label": "Robinhood Gold",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 10.26
+        },
+        {
+          "label": "YouTube",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 19.28
+        },
+        {
+          "label": "YouTube Premium",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 5.23
+        },
+        {
+          "label": "Snapchat",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 14.64
+        },
+        {
+          "label": "Snapchat Ads",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 12.54
+        },
+        {
+          "label": "X (Twitter)",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 2,
+          "phi_fisher": 1.4142,
+          "pe": 21.88
+        },
+        {
+          "label": "X Ads (formerly Twitter Ads)",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 12.88
+        },
+        {
+          "label": "Pinterest",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 4.12
+        },
+        {
+          "label": "Pinterest Ads",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 5.23
+        },
+        {
+          "label": "Reddit",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 7.22
+        },
+        {
+          "label": "Reddit Ads",
+          "causal": "spacelike",
+          "O": 2,
+          "R": 2,
+          "C": 1,
+          "phi_fisher": 2.4715,
+          "pe": 6.93
+        }
+      ]
+    },
+    "FANTASIA-VIOLATIONS": {
+      "n_above": 757,
+      "n_total": 1153,
+      "above_types": {
+        "timelike": 30,
+        "spacelike": 520,
+        "null": 207
+      }
+    }
+  }
+}

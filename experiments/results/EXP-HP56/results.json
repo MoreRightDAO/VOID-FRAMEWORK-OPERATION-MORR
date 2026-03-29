@@ -1,0 +1,335 @@
+{
+  "experiment": "EXP-HP56",
+  "title": "Boundary Condition Sweep",
+  "date": "2026-03-15",
+  "framework_sections": [
+    "\u00a751",
+    "\u00a780D",
+    "boundary conditions"
+  ],
+  "tests": [
+    {
+      "id": "B1",
+      "name": "Neumann (reflecting)",
+      "n_sq_error": 0.000243,
+      "first_10": [
+        1.0,
+        4.0,
+        8.9999,
+        15.9997,
+        24.9992,
+        35.9984,
+        48.997,
+        63.9948,
+        80.9917,
+        99.9873
+      ],
+      "lambda_1": 0.038553
+    },
+    {
+      "id": "B2",
+      "name": "Dirichlet (absorbing)",
+      "n_sq_error": 0.000243,
+      "first_10": [
+        1.0,
+        4.0,
+        8.9999,
+        15.9997,
+        24.9992,
+        35.9984,
+        48.997,
+        63.9948,
+        80.9917,
+        99.9873
+      ],
+      "lambda_1": 0.038553,
+      "lambda_ratio_D_N": 1.0
+    },
+    {
+      "id": "B3",
+      "name": "Periodic (S1)",
+      "n_degeneracies": 20,
+      "first_15_evals": [
+        0.1546,
+        0.1546,
+        0.6184,
+        0.6184,
+        1.3913,
+        1.3913,
+        2.4734,
+        2.4734,
+        3.8645,
+        3.8645,
+        5.5645,
+        5.5645,
+        7.5734,
+        7.5734,
+        9.891
+      ],
+      "first_15_ratios": [
+        1.0,
+        1.0,
+        3.9999,
+        3.9999,
+        8.9996,
+        8.9996,
+        15.9988,
+        15.9988,
+        24.9969,
+        24.9969,
+        35.9935,
+        35.9935,
+        48.9879,
+        48.9879,
+        63.9793
+      ],
+      "lambda_1": 0.154598
+    },
+    {
+      "id": "B4",
+      "name": "Anti-periodic (M\u00f6bius)",
+      "first_10_ratios": [
+        1.0,
+        1.0,
+        8.9999,
+        8.9999,
+        24.9992,
+        24.9992,
+        48.997,
+        48.997,
+        80.9917,
+        80.9917
+      ],
+      "err_vs_odd_sq": 0.721759,
+      "err_vs_n_sq": 0.306329,
+      "lambda_1": 0.03865
+    },
+    {
+      "id": "B5",
+      "name": "Robin BCs (sweep)",
+      "results": [
+        {
+          "gamma": 0,
+          "label": "Neumann",
+          "lambda_1": 0.0386,
+          "n_sq_error": 0.000139,
+          "first_5_ratios": [
+            1.0,
+            4.0,
+            8.9999,
+            15.9997,
+            24.9992
+          ]
+        },
+        {
+          "gamma": 0.3927,
+          "label": "\u03b3=0.393",
+          "lambda_1": 0.0386,
+          "n_sq_error": 0.000139,
+          "first_5_ratios": [
+            1.0,
+            4.0,
+            8.9999,
+            15.9997,
+            24.9992
+          ]
+        },
+        {
+          "gamma": 0.7854,
+          "label": "\u03b3=0.785",
+          "lambda_1": 0.0386,
+          "n_sq_error": 0.000139,
+          "first_5_ratios": [
+            1.0,
+            4.0,
+            8.9999,
+            15.9997,
+            24.9992
+          ]
+        },
+        {
+          "gamma": 1.1781,
+          "label": "\u03b3=1.178",
+          "lambda_1": 0.0386,
+          "n_sq_error": 0.000139,
+          "first_5_ratios": [
+            1.0,
+            4.0,
+            8.9999,
+            15.9997,
+            24.9992
+          ]
+        },
+        {
+          "gamma": 1.5608,
+          "label": "~Dirichlet",
+          "lambda_1": 0.0385,
+          "n_sq_error": 0.000138,
+          "first_5_ratios": [
+            1.0,
+            4.0,
+            8.9999,
+            15.9997,
+            24.9992
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "name": "Spectral zeta comparison",
+      "data": {
+        "Neumann": {
+          "1.5": {
+            "zH_norm": 1.201758,
+            "ratio_zeta": 0.9998,
+            "ratio_hurwitz": 0.1428
+          },
+          "2.0": {
+            "zH_norm": 1.08232,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.0667
+          },
+          "2.5": {
+            "zH_norm": 1.036928,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.0323
+          },
+          "3.0": {
+            "zH_norm": 1.017343,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.0159
+          },
+          "4.0": {
+            "zH_norm": 1.004077,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.0039
+          },
+          "5.0": {
+            "zH_norm": 1.000995,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.001
+          }
+        },
+        "Dirichlet": {
+          "1.5": {
+            "zH_norm": 1.201758,
+            "ratio_zeta": 0.9998,
+            "ratio_hurwitz": 0.1428
+          },
+          "2.0": {
+            "zH_norm": 1.08232,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.0667
+          },
+          "2.5": {
+            "zH_norm": 1.036928,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.0323
+          },
+          "3.0": {
+            "zH_norm": 1.017343,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.0159
+          },
+          "4.0": {
+            "zH_norm": 1.004077,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.0039
+          },
+          "5.0": {
+            "zH_norm": 1.000995,
+            "ratio_zeta": 1.0,
+            "ratio_hurwitz": 0.001
+          }
+        },
+        "Periodic": {
+          "1.5": {
+            "zH_norm": 2.401773,
+            "ratio_zeta": 1.9981,
+            "ratio_hurwitz": 0.2854
+          },
+          "2.0": {
+            "zH_norm": 2.16458,
+            "ratio_zeta": 1.9999,
+            "ratio_hurwitz": 0.1333
+          },
+          "2.5": {
+            "zH_norm": 2.073857,
+            "ratio_zeta": 2.0,
+            "ratio_hurwitz": 0.0645
+          },
+          "3.0": {
+            "zH_norm": 2.034688,
+            "ratio_zeta": 2.0,
+            "ratio_hurwitz": 0.0317
+          },
+          "4.0": {
+            "zH_norm": 2.008155,
+            "ratio_zeta": 2.0,
+            "ratio_hurwitz": 0.0078
+          },
+          "5.0": {
+            "zH_norm": 2.001989,
+            "ratio_zeta": 2.0,
+            "ratio_hurwitz": 0.002
+          }
+        },
+        "Anti-periodic": {
+          "1.5": {
+            "zH_norm": 2.103293,
+            "ratio_zeta": 1.7497,
+            "ratio_hurwitz": 0.25
+          },
+          "2.0": {
+            "zH_norm": 2.029352,
+            "ratio_zeta": 1.875,
+            "ratio_hurwitz": 0.125
+          },
+          "2.5": {
+            "zH_norm": 2.009048,
+            "ratio_zeta": 1.9375,
+            "ratio_hurwitz": 0.0625
+          },
+          "3.0": {
+            "zH_norm": 2.002894,
+            "ratio_zeta": 1.9688,
+            "ratio_hurwitz": 0.0313
+          },
+          "4.0": {
+            "zH_norm": 2.00031,
+            "ratio_zeta": 1.9922,
+            "ratio_hurwitz": 0.0078
+          },
+          "5.0": {
+            "zH_norm": 2.000034,
+            "ratio_zeta": 1.998,
+            "ratio_hurwitz": 0.002
+          }
+        }
+      }
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-220",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-221",
+      "result": "FAIL (ratio=1.0000)"
+    },
+    {
+      "id": "K-HP-222",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-223",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-224",
+      "result": "FAIL (error 0.721759)"
+    }
+  ]
+}

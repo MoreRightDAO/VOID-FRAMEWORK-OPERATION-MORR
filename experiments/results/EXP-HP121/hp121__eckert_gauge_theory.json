@@ -1,0 +1,122 @@
+{
+  "experiment": "HP121",
+  "title": "Eckert Connection as Yang-Mills Gauge Theory",
+  "timestamp": "2026-03-18T11:33:25.078205",
+  "c1_connection": {
+    "n_samples": 20,
+    "max_A_global": 32.9261736666456,
+    "has_nontrivial_connection": "True"
+  },
+  "c2_field_strength": {
+    "max_F_global": 8.222451414700476,
+    "max_commutator_global": 8.222784822691228,
+    "has_curvature": "True",
+    "has_nonabelian": "True",
+    "fraction_nonabelian": 1.0
+  },
+  "c3_ym_action": {
+    "S_mc": -50576.56190922547,
+    "S_err": 39424.30342896593,
+    "S_positive": false,
+    "S_finite": true,
+    "n_mc": 500
+  },
+  "c4_fluctuation_spectrum": {
+    "N_grid": 10,
+    "n_total": 1000,
+    "lowest_eigenvalues": [
+      -2.3715728968511343,
+      5.814622898056906,
+      5.814622898057337,
+      5.814622898057422,
+      12.2378238235632,
+      12.237823823563298,
+      12.23782382356366,
+      14.000818692966275,
+      14.000818692966355,
+      14.000818692966428,
+      20.40597504075652,
+      20.405975040756573,
+      20.405975040756843,
+      20.424019618471586,
+      20.424019618471963,
+      20.424019618472126,
+      20.424019618472183,
+      20.424019618472276,
+      20.42401961847232,
+      22.18701448787488
+    ],
+    "mass_gap": 5.814622898056906,
+    "has_gap": true
+  },
+  "c5_kbody_gap": {
+    "K_results": {
+      "4": {
+        "lambda_0": 13741.070853821868,
+        "lambda_1": 14721.58319927833,
+        "gap": 980.5123454564618,
+        "ratio_to_K4": 1.0
+      },
+      "8": {
+        "lambda_0": 49363.73991993295,
+        "lambda_1": 49960.11850782213,
+        "gap": 596.3785878891795,
+        "ratio_to_K4": 0.6082315950968928
+      },
+      "16": {
+        "lambda_0": 186954.01838058358,
+        "lambda_1": 187127.83225041433,
+        "gap": 173.8138698307448,
+        "ratio_to_K4": 0.1772684154729623
+      },
+      "32": {
+        "lambda_0": 734493.0451374713,
+        "lambda_1": 734536.9982681175,
+        "gap": 43.953130646259524,
+        "ratio_to_K4": 0.04482669784825386
+      },
+      "64": {
+        "lambda_0": 2923839.0503698587,
+        "lambda_1": 2923850.046611721,
+        "gap": 10.996241862419993,
+        "ratio_to_K4": 0.011214791851805668
+      }
+    },
+    "min_gap": 10.996241862419993,
+    "gap_persists": "True",
+    "scaling_exponent": -1.6719097319272496,
+    "scaling_r_squared": 0.9768284470686066
+  },
+  "kill_conditions": {
+    "K-YM-121-1": {
+      "description": "Connection A has non-trivial curvature F_\u03bc\u03bd \u2260 0",
+      "result": "PASS",
+      "max_F": 8.222451414700476
+    },
+    "K-YM-121-2": {
+      "description": "Yang-Mills action S is finite and positive",
+      "result": "FAIL",
+      "S": -50576.56190922547,
+      "S_positive": false,
+      "S_finite": true
+    },
+    "K-YM-121-3": {
+      "description": "Fluctuation spectrum has gap \u0394 > 0",
+      "result": "PASS",
+      "mass_gap": 5.814622898056906
+    },
+    "K-YM-121-4": {
+      "description": "Gap persists under K \u2192 \u221e (thermodynamic limit)",
+      "result": "PASS",
+      "min_gap": 10.996241862419993,
+      "scaling_exponent": -1.6719097319272496
+    },
+    "K-YM-121-5": {
+      "description": "Structure group has non-Abelian component ([A,A] \u2260 0)",
+      "result": "PASS",
+      "max_commutator": 8.222784822691228,
+      "fraction_nonabelian": 1.0
+    }
+  },
+  "score": "4/5"
+}

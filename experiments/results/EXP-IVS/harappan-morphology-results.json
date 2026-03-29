@@ -1,0 +1,326 @@
+{
+  "metadata": {
+    "experiment": "EXP-IVS-MORPH",
+    "date": "2026-03-15T06:14:46.325285+00:00",
+    "corpus_size": 1500,
+    "seed": 42
+  },
+  "MORPH-1": {
+    "test": "MORPH-1",
+    "description": "Terminal sign analysis \u2014 constraint type markers",
+    "unique_terminal_signs": 35,
+    "top_terminals": [
+      [
+        342,
+        256,
+        0.8448844884488449
+      ],
+      [
+        176,
+        188,
+        0.8392857142857143
+      ],
+      [
+        99,
+        158,
+        0.9028571428571428
+      ],
+      [
+        336,
+        147,
+        0.20675105485232068
+      ],
+      [
+        391,
+        116,
+        0.19627749576988154
+      ],
+      [
+        328,
+        89,
+        0.8811881188118812
+      ],
+      [
+        59,
+        82,
+        0.20865139949109415
+      ],
+      [
+        162,
+        80,
+        0.23809523809523808
+      ],
+      [
+        211,
+        68,
+        0.21725239616613418
+      ],
+      [
+        233,
+        48,
+        0.22018348623853212
+      ]
+    ],
+    "high_exclusivity_count": 6,
+    "chi2": 202.1819113044723,
+    "chi2_p": 2.0810028813018187e-25,
+    "chi2_dof": 35,
+    "prediction": "Terminal signs partition by motif (p < 0.01)",
+    "status": "CONFIRMED"
+  },
+  "MORPH-2": {
+    "test": "MORPH-2",
+    "description": "Motif-exclusive signs",
+    "n_signs_analyzed": 30,
+    "high_exclusivity": 4,
+    "moderate_exclusivity": 21,
+    "low_exclusivity": 5,
+    "mean_exclusivity": 0.5817794724575815,
+    "top_exclusive": [
+      [
+        342,
+        "unicorn",
+        0.7821782178217822,
+        303
+      ],
+      [
+        400,
+        "unicorn",
+        0.7446808510638298,
+        47
+      ],
+      [
+        391,
+        "unicorn",
+        0.7411167512690355,
+        591
+      ],
+      [
+        176,
+        "unicorn",
+        0.7232142857142857,
+        224
+      ],
+      [
+        72,
+        "unicorn",
+        0.6847826086956522,
+        92
+      ],
+      [
+        336,
+        "unicorn",
+        0.679324894514768,
+        711
+      ],
+      [
+        267,
+        "unicorn",
+        0.6666666666666666,
+        189
+      ],
+      [
+        51,
+        "unicorn",
+        0.6511627906976745,
+        86
+      ],
+      [
+        44,
+        "unicorn",
+        0.6371681415929203,
+        113
+      ],
+      [
+        295,
+        "unicorn",
+        0.6177777777777778,
+        225
+      ]
+    ],
+    "motif_exclusive_counts": {
+      "unicorn": 4
+    },
+    "unicorn_exclusive": 4,
+    "nonunicorn_exclusive": 0,
+    "prediction": "Non-unicorn motifs have more exclusive signs than unicorn",
+    "status": "FAILED"
+  },
+  "MORPH-3": {
+    "test": "MORPH-3",
+    "description": "Bigram positional grammar",
+    "total_unique_bigrams": 745,
+    "bigrams_ge10": 165,
+    "mean_positional_rigidity": 0.6620370956946618,
+    "n_initial_locked": 21,
+    "top_rigid": [
+      [
+        [
+          267,
+          89
+        ],
+        "initial",
+        1.0,
+        10
+      ],
+      [
+        [
+          130,
+          89
+        ],
+        "medial",
+        1.0,
+        15
+      ],
+      [
+        [
+          89,
+          99
+        ],
+        "terminal",
+        1.0,
+        17
+      ],
+      [
+        [
+          51,
+          391
+        ],
+        "initial",
+        1.0,
+        11
+      ],
+      [
+        [
+          110,
+          176
+        ],
+        "terminal",
+        1.0,
+        11
+      ],
+      [
+        [
+          130,
+          342
+        ],
+        "terminal",
+        1.0,
+        14
+      ],
+      [
+        [
+          130,
+          99
+        ],
+        "terminal",
+        1.0,
+        11
+      ],
+      [
+        [
+          65,
+          391
+        ],
+        "initial",
+        1.0,
+        12
+      ],
+      [
+        [
+          87,
+          48
+        ],
+        "medial",
+        1.0,
+        10
+      ],
+      [
+        [
+          367,
+          89
+        ],
+        "initial",
+        1.0,
+        12
+      ]
+    ],
+    "prediction": "Mean bigram rigidity > 0.5 (positional grammar)",
+    "status": "CONFIRMED"
+  },
+  "MORPH-4": {
+    "test": "MORPH-4",
+    "description": "Universal signs \u2014 structural grammar elements",
+    "n_motifs": 10,
+    "universal_count": 23,
+    "near_universal_count": 6,
+    "exclusive_count": 26,
+    "mean_universal_freq": 237.3913043478261,
+    "mean_exclusive_freq": 1.1153846153846154,
+    "freq_ratio": 212.8335832083958,
+    "top_universal": [
+      [
+        336,
+        711
+      ],
+      [
+        391,
+        591
+      ],
+      [
+        59,
+        393
+      ],
+      [
+        162,
+        336
+      ],
+      [
+        89,
+        304
+      ],
+      [
+        342,
+        303
+      ],
+      [
+        295,
+        225
+      ],
+      [
+        176,
+        224
+      ],
+      [
+        233,
+        218
+      ],
+      [
+        130,
+        211
+      ],
+      [
+        87,
+        208
+      ],
+      [
+        267,
+        189
+      ],
+      [
+        123,
+        183
+      ],
+      [
+        99,
+        175
+      ],
+      [
+        293,
+        172
+      ]
+    ],
+    "prediction": "Universal signs have higher mean frequency than exclusive signs",
+    "status": "CONFIRMED"
+  }
+}

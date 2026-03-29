@@ -1,0 +1,124 @@
+{
+  "experiment": "HP29",
+  "title": "Propagation Asymmetry Test \u2014 Directional Perturbation",
+  "date": "2026-03-14T01:19:05.845299",
+  "note": "FP simulation ground truth.",
+  "delta": 0.2,
+  "n_conversations": 50,
+  "delays_alpha": {
+    "O": {
+      "mean_delay": 0.8,
+      "median_delay": 0.0,
+      "std_delay": 1.2649110640673518,
+      "frac_delayed_ge2": 0.2,
+      "frac_oscillating": 1.0,
+      "n_trials_detected": 50
+    },
+    "R": {
+      "mean_delay": 0.8,
+      "median_delay": 0.0,
+      "std_delay": 1.1832159566199234,
+      "frac_delayed_ge2": 0.18,
+      "frac_oscillating": 1.0,
+      "n_trials_detected": 50
+    }
+  },
+  "delays_O": {
+    "R": {
+      "mean_delay": 0.94,
+      "median_delay": 0.5,
+      "std_delay": 1.2713772060250255,
+      "frac_delayed_ge2": 0.22,
+      "frac_oscillating": 1.0,
+      "n_trials_detected": 50
+    },
+    "alpha": {
+      "mean_delay": 0.72,
+      "median_delay": 0.0,
+      "std_delay": 1.0777754868245986,
+      "frac_delayed_ge2": 0.16,
+      "frac_oscillating": 1.0,
+      "n_trials_detected": 50
+    }
+  },
+  "delays_R": {
+    "O": {
+      "mean_delay": 0.9,
+      "median_delay": 0.0,
+      "std_delay": 1.5524174696260025,
+      "frac_delayed_ge2": 0.18,
+      "frac_oscillating": 1.0,
+      "n_trials_detected": 50
+    },
+    "alpha": {
+      "mean_delay": 0.64,
+      "median_delay": 0.0,
+      "std_delay": 1.1447270417003346,
+      "frac_delayed_ge2": 0.14,
+      "frac_oscillating": 1.0,
+      "n_trials_detected": 50
+    }
+  },
+  "fits_alpha": {
+    "O": {
+      "delta_AIC": 5.399317488879504,
+      "preferred": "wave",
+      "wave_delay": 4.999999999995181
+    },
+    "R": {
+      "delta_AIC": 1.143568051999381,
+      "preferred": "wave",
+      "wave_delay": 3.594120559317901
+    }
+  },
+  "fits_O": {
+    "R": {
+      "delta_AIC": -2.2286338376948436,
+      "preferred": "diffusion",
+      "wave_delay": 3.0000003137372935
+    },
+    "alpha": {
+      "delta_AIC": 0.5729303929160352,
+      "preferred": "wave",
+      "wave_delay": 0.7470147901902443
+    }
+  },
+  "fits_R": {
+    "O": {
+      "delta_AIC": -4.116333725868856,
+      "preferred": "diffusion",
+      "wave_delay": 8.048720343752075e-07
+    },
+    "alpha": {
+      "delta_AIC": -2.3961103365829928,
+      "preferred": "diffusion",
+      "wave_delay": 5.390072698919613e-37
+    }
+  },
+  "comparisons": {
+    "alpha_to_spatial_mean_delay": 0.8,
+    "O_to_others_mean_delay": 0.83,
+    "R_to_others_mean_delay": 0.77,
+    "delay_ratio_alpha_vs_O": 0.9638554216867471,
+    "delay_ratio_alpha_vs_R": 1.038961038961039,
+    "delay_ratio_O_vs_R": 1.077922077922078,
+    "alpha_mean_osc_frac": 1.0,
+    "O_mean_osc_frac": 1.0,
+    "R_mean_osc_frac": 1.0
+  },
+  "statistical_test": {
+    "test": "Mann-Whitney U",
+    "U": 1179.5,
+    "p": 0.5977353441931577,
+    "n_alpha": 50,
+    "n_O": 50,
+    "mean_delay_alpha": 0.8,
+    "mean_delay_O": 0.94
+  },
+  "kill_conditions": {
+    "K_HP_120": true,
+    "K_HP_121": false,
+    "K_HP_122": true
+  },
+  "verdict": "ISOTROPIC \u2014 all directions equivalent. (3,0) supported, (2,1) disfavored."
+}

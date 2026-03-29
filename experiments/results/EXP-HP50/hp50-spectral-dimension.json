@@ -1,0 +1,174 @@
+{
+  "experiment": "HP50",
+  "title": "Spectral Dimension of FP Operator \u2014 Asymptotic Safety Correspondence",
+  "timestamp": "2026-03-15T16:11:49.871807",
+  "duration_seconds": 2.158977,
+  "parameters": {
+    "B_ALPHA": 0.867,
+    "B_GAMMA": 2.244,
+    "K": 64,
+    "alpha": 1.0,
+    "N_grid_1d": 500,
+    "N_grid_3d": 30,
+    "N_eigenvalues": 200
+  },
+  "S1_1d_pe0": {
+    "test": "S1",
+    "d_s_plateau": 1.0246042437055496,
+    "d_s_std": 0.003524160309438862,
+    "eigenvalue_ratios_first5": [
+      0.9999967232394352,
+      0.9999868930733838,
+      0.9999705096143993,
+      0.9999475731292968,
+      0.9999180839828248
+    ],
+    "KC": {
+      "K-HP-184": {
+        "pass": true,
+        "detail": "d_s=1.0246\u00b10.0035, expected finite in (0.5,3.0)"
+      }
+    }
+  },
+  "S2_pe_flow": {
+    "test": "S2",
+    "d_s_at_pe": {
+      "0": 1.0244745604176673,
+      "0.1": 1.0244745367118213,
+      "0.5": 1.0244739678698451,
+      "1.0": 1.0244721914830497,
+      "2.0": 1.024465104796902,
+      "5.0": 1.0243925159907477,
+      "10.0": 1.024211786776637,
+      "20.0": 1.0236636827104424,
+      "50.0": 1.0263809889157696,
+      "100.0": 1.0351793013268271
+    },
+    "delta_ds_1d": 0.010704740909159849,
+    "direction": "UV < IR"
+  },
+  "S3_3d_manifold": {
+    "test": "S3",
+    "d_s_3d_pe0": 1.524718728454176,
+    "d_s_3d_pe0_std": 0.5826149381836015,
+    "d_s_3d_pe0_peak": 3.1850104657016907,
+    "d_s_3d_flow": {
+      "0.0": 1.0623362809246109,
+      "1.0": 1.0861861029224373,
+      "5.0": 1.0863267159834085,
+      "20.0": 1.0860059745076693,
+      "50.0": 1.0922709516808573
+    },
+    "d_s_3d_peaks": {
+      "0.0": 3.1449901429294247,
+      "1.0": 1.2206420331067822,
+      "5.0": 1.2206452016486797,
+      "20.0": 1.2205983206999842,
+      "50.0": 1.2207040407150367
+    },
+    "delta_ds_3d": 1.924342743886804,
+    "KC": {
+      "K-HP-185": {
+        "pass": true,
+        "detail": "3D \u0394d_s_peak=1.9243, threshold=0.5"
+      },
+      "K-HP-186": {
+        "pass": true,
+        "detail": "d_s_peak(Pe=0)=3.1450, d_s_peak(Pe>0)=1.2206"
+      },
+      "K-HP-187": {
+        "pass": true,
+        "detail": "d_s_peak(Pe>0)=1.2206, threshold=2.0"
+      }
+    }
+  },
+  "S4_bkt_vs_powerlaw": {
+    "test": "S4",
+    "d_s_0_approx": 1.0244745601806478,
+    "power_law": {
+      "success": true,
+      "params": [
+        5.1511685936001325e-08,
+        2.6592225700742302
+      ],
+      "sse": 1.0537151703190184e-06,
+      "aic": -208.2657906033104
+    },
+    "bkt": {
+      "success": true,
+      "params": [
+        0.7652451962881857,
+        42.686797041225375
+      ],
+      "sse": 8.319395837733604e-07,
+      "aic": -211.33791983444524
+    },
+    "delta_aic": 3.072129231134852,
+    "winner": "BKT",
+    "KC": {
+      "K-HP-188": {
+        "pass": true,
+        "detail": "\u0394AIC=3.07, winner=BKT"
+      }
+    }
+  },
+  "S5_comparison": {
+    "test": "S5",
+    "comparison": {
+      "asymptotic_safety": {
+        "d_s_UV": 2.0,
+        "d_s_IR": 4.0,
+        "source": "Reuter & Saueressig 2012"
+      },
+      "CDT": {
+        "d_s_UV": 1.8,
+        "d_s_IR": 4.0,
+        "source": "Ambj\u00f8rn et al. 2005"
+      },
+      "horava_lifshitz": {
+        "d_s_UV": 2.0,
+        "d_s_IR": 4.0,
+        "source": "Horava 2009"
+      },
+      "pe_framework_1d": {
+        "d_s_UV": 1.0246042437055496,
+        "d_s_IR": 1.0351793013268271,
+        "source": "This work (1D)"
+      },
+      "pe_framework_3d": {
+        "d_s_UV": 3.1850104657016907,
+        "d_s_IR": "N/A (separable approx)",
+        "source": "This work (3D Eckert)"
+      }
+    },
+    "match_AS_prediction": false,
+    "d_s_3d_pe0": 3.1850104657016907
+  },
+  "kill_conditions": {
+    "K-HP-184": {
+      "pass": true,
+      "detail": "d_s=1.0246\u00b10.0035, expected finite in (0.5,3.0)"
+    },
+    "K-HP-185": {
+      "pass": true,
+      "detail": "3D \u0394d_s_peak=1.9243, threshold=0.5"
+    },
+    "K-HP-186": {
+      "pass": true,
+      "detail": "d_s_peak(Pe=0)=3.1450, d_s_peak(Pe>0)=1.2206"
+    },
+    "K-HP-187": {
+      "pass": true,
+      "detail": "d_s_peak(Pe>0)=1.2206, threshold=2.0"
+    },
+    "K-HP-188": {
+      "pass": true,
+      "detail": "\u0394AIC=3.07, winner=BKT"
+    }
+  },
+  "summary": {
+    "total_kc": 5,
+    "passed_kc": 5,
+    "result": "ALL PASS"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "experiment": "EXP-CHIRAL-3",
+  "test": "Channel factorization (geometric \u00d7 DMI)",
+  "part_a": {
+    "eta_geo_only": 0.2683568929726681,
+    "eta_dmi_only": 2.2925444722834973e-06,
+    "eta_combined": 2.2925439864521294e-06,
+    "eta_control": 0.0,
+    "eta_additive_pred": 0.2683591855171404,
+    "eta_mult_pred": 6.152201115836644e-07,
+    "eta_odds_pred": 0.26835902041727383,
+    "residual_additive": 0.26835689297315396,
+    "residual_multiplicative": 1.677323874868465e-06,
+    "best_model": "multiplicative"
+  },
+  "part_b_sweep": [
+    {
+      "D_DMI_mJm2": 0.0,
+      "eta_combined": 0.2683568929726681,
+      "eta_geo_times_dmi": 0.2683568929726681,
+      "ratio": 1.0
+    },
+    {
+      "D_DMI_mJm2": 0.3,
+      "eta_combined": 1.1462710209571992e-05,
+      "eta_geo_times_dmi": 3.0761005582876653e-06,
+      "ratio": 3.7263769478175957
+    },
+    {
+      "D_DMI_mJm2": 0.5,
+      "eta_combined": 6.877629042334571e-06,
+      "eta_geo_times_dmi": 1.8456603349095366e-06,
+      "ratio": 3.7263785281876753
+    },
+    {
+      "D_DMI_mJm2": 0.7,
+      "eta_combined": 4.912593066014626e-06,
+      "eta_geo_times_dmi": 1.3183288106887905e-06,
+      "ratio": 3.726379205388018
+    },
+    {
+      "D_DMI_mJm2": 1.0,
+      "eta_combined": 3.438815615200292e-06,
+      "eta_geo_times_dmi": 9.228301675255743e-07,
+      "ratio": 3.726379713421096
+    },
+    {
+      "D_DMI_mJm2": 1.5,
+      "eta_combined": 2.2925439864521294e-06,
+      "eta_geo_times_dmi": 6.152201115836644e-07,
+      "ratio": 3.7263801089837485
+    },
+    {
+      "D_DMI_mJm2": 2.0,
+      "eta_combined": 1.7194080809571918e-06,
+      "eta_geo_times_dmi": 4.6141508376894807e-07,
+      "ratio": 3.7263803058033083
+    },
+    {
+      "D_DMI_mJm2": 3.0,
+      "eta_combined": 1.1462721147902587e-06,
+      "eta_geo_times_dmi": 3.076100558800342e-07,
+      "ratio": 3.7263805031045436
+    }
+  ],
+  "part_c_handedness": {
+    "eta_right": 0.13878662184585672,
+    "eta_left": -0.13878662184585677,
+    "sign_flipped": true,
+    "kc_chiral_4": "PASS"
+  },
+  "part_d_kramers": {
+    "dE_b_epfl_meV": 19.315559139696663,
+    "dE_b_model_meV": 7.225068940629884,
+    "temperature_dependence": [
+      {
+        "T_K": 100,
+        "eta": 0.807683810938932,
+        "dE_meV": 19.31555913969666
+      },
+      {
+        "T_K": 150,
+        "eta": 0.6332880689059992,
+        "dE_meV": 19.31555913969666
+      },
+      {
+        "T_K": 200,
+        "eta": 0.508099995486134,
+        "dE_meV": 19.315559139696663
+      },
+      {
+        "T_K": 250,
+        "eta": 0.4203624304960133,
+        "dE_meV": 19.315559139696663
+      },
+      {
+        "T_K": 300,
+        "eta": 0.357,
+        "dE_meV": 19.315559139696663
+      },
+      {
+        "T_K": 350,
+        "eta": 0.3095922765917618,
+        "dE_meV": 19.315559139696663
+      },
+      {
+        "T_K": 400,
+        "eta": 0.2729815278100946,
+        "dE_meV": 19.315559139696663
+      },
+      {
+        "T_K": 500,
+        "eta": 0.22039009382324137,
+        "dE_meV": 19.31555913969666
+      }
+    ],
+    "kc_chiral_6": "PASS"
+  },
+  "hp82_svd": {
+    "sigma_1": 0.2683568929824606,
+    "sigma_2": 2.292544472199841e-06,
+    "ratio": 117056.35211732895,
+    "rank_1": true
+  },
+  "kill_conditions": {
+    "kc_chiral_3": "PASS",
+    "kc_chiral_4": "PASS",
+    "kc_chiral_6": "PASS"
+  }
+}

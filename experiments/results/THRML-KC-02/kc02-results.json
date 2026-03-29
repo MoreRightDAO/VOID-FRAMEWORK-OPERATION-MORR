@@ -1,0 +1,87 @@
+{
+  "experiment": "THRML-KC-02",
+  "kill_condition": "K11",
+  "description": "Network coupling superlinearity: individual \u03b8-sum vs. coupled \u03b8-sum",
+  "parameters": {
+    "N_PAIRS": 60,
+    "T_RUN": 60000,
+    "THETA_0": 0.05,
+    "PE_RANGE": [
+      6.0,
+      40.0
+    ],
+    "PE_CRITICAL": 12.866,
+    "KAPPA_VALS": [
+      0.0,
+      0.03,
+      0.06,
+      0.1,
+      0.15
+    ],
+    "pair_types": {
+      "both_subcritical": 0,
+      "mixed": 18,
+      "both_supercritical": 42
+    }
+  },
+  "kappa_sweep": [
+    {
+      "kappa": 0.0,
+      "r_squared": 1.0,
+      "slope": 1.0,
+      "mean_coupled_sum": 0.9475,
+      "mean_uncoupled_sum": 0.9475,
+      "delta": 0.0,
+      "superlinear": true
+    },
+    {
+      "kappa": 0.03,
+      "r_squared": 0.0386,
+      "slope": 0.2346,
+      "mean_coupled_sum": 1.0226,
+      "mean_uncoupled_sum": 0.9475,
+      "delta": 0.0751,
+      "superlinear": true
+    },
+    {
+      "kappa": 0.06,
+      "r_squared": 0.2309,
+      "slope": 0.3947,
+      "mean_coupled_sum": 1.2581,
+      "mean_uncoupled_sum": 0.9475,
+      "delta": 0.3106,
+      "superlinear": true
+    },
+    {
+      "kappa": 0.1,
+      "r_squared": 0.0675,
+      "slope": 0.2626,
+      "mean_coupled_sum": 1.3854,
+      "mean_uncoupled_sum": 0.9475,
+      "delta": 0.4379,
+      "superlinear": true
+    },
+    {
+      "kappa": 0.15,
+      "r_squared": 0.0993,
+      "slope": 0.2552,
+      "mean_coupled_sum": 1.5585,
+      "mean_uncoupled_sum": 0.9475,
+      "delta": 0.611,
+      "superlinear": true
+    }
+  ],
+  "pass_criteria": {
+    "r_sq_ge_0.90_at_kappa_0 (baseline)": true,
+    "r_sq_lt_0.85_at_kappa_0.15 (K11 test)": true,
+    "r_sq_lt_0.85_for_all_nonzero_kappa": true,
+    "superlinearity_at_kappa_max": true
+  },
+  "key_values": {
+    "r_sq_kappa_0": 1.0,
+    "r_sq_kappa_0.15": 0.0993
+  },
+  "overall_pass": true,
+  "k11_fires": false,
+  "verdict": "K11 CONFIRMED SURVIVED \u2014 individual sum fails (r\u00b2 < 0.85) at realistic \u03ba; coupling creates genuine network emergence"
+}

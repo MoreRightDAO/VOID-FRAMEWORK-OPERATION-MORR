@@ -1,0 +1,506 @@
+{
+  "experiment": "HP137",
+  "title": "Trapped Surface Cross-Domain Universality",
+  "date": "2026-03-19T13:27:32.376332",
+  "kill_conditions": {
+    "K-TRAP-137-1": true,
+    "K-TRAP-137-2": true,
+    "K-TRAP-137-3": true,
+    "K-TRAP-137-4": true,
+    "K-TRAP-137-5": false
+  },
+  "pass_count": 4,
+  "c1_platforms": {
+    "platforms": [
+      {
+        "name": "TikTok",
+        "Pe": 18.2,
+        "trapped": true,
+        "harmful": true,
+        "expansion": -0.17173235921223953
+      },
+      {
+        "name": "Instagram",
+        "Pe": 15.7,
+        "trapped": true,
+        "harmful": true,
+        "expansion": -0.09591781834920247
+      },
+      {
+        "name": "Facebook_Feed",
+        "Pe": 14.1,
+        "trapped": true,
+        "harmful": true,
+        "expansion": -0.06289967056274415
+      },
+      {
+        "name": "YouTube_Shorts",
+        "Pe": 16.5,
+        "trapped": true,
+        "harmful": true,
+        "expansion": -0.11664316177368173
+      },
+      {
+        "name": "Twitter/X",
+        "Pe": 12.8,
+        "trapped": true,
+        "harmful": true,
+        "expansion": -0.04309333333333333
+      },
+      {
+        "name": "Snapchat",
+        "Pe": 13.9,
+        "trapped": true,
+        "harmful": true,
+        "expansion": -0.05947697362264001
+      },
+      {
+        "name": "Reddit_Main",
+        "Pe": 10.2,
+        "trapped": true,
+        "harmful": true,
+        "expansion": -0.017871291503906254
+      },
+      {
+        "name": "BeReal",
+        "Pe": 2.8,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.00019587239583333192
+      },
+      {
+        "name": "LinkedIn",
+        "Pe": 4.8,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.001110000000000005
+      },
+      {
+        "name": "Pinterest",
+        "Pe": 3.5,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.00038848241170247257
+      },
+      {
+        "name": "Wikipedia",
+        "Pe": -5.2,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.001467747395833327
+      },
+      {
+        "name": "Khan_Academy",
+        "Pe": -7.1,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.0045338950093587165
+      },
+      {
+        "name": "Duolingo",
+        "Pe": 0.8,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -8.958333333333527e-06
+      },
+      {
+        "name": "Signal",
+        "Pe": -9.5,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.013603509267171202
+      },
+      {
+        "name": "Proton_Mail",
+        "Pe": -11.2,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.025643333333333365
+      },
+      {
+        "name": "Sci-Hub",
+        "Pe": -8.0,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.007083333333333311
+      },
+      {
+        "name": "arXiv",
+        "Pe": -9.0,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.011065979003906228
+      },
+      {
+        "name": "Stack_Overflow",
+        "Pe": -3.5,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -0.00038848241170247257
+      },
+      {
+        "name": "Hacker_News",
+        "Pe": -1.5,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -3.702163696289097e-05
+      },
+      {
+        "name": "Mastodon",
+        "Pe": -2.2,
+        "trapped": true,
+        "harmful": false,
+        "expansion": -9.876546223958409e-05
+      }
+    ],
+    "n_trapped": 20,
+    "n_free": 0,
+    "mean_pe_trapped": 2.8049999999999997,
+    "mean_pe_free": 0.0,
+    "kc1_pass": true,
+    "kc1_label": "K-TRAP-137-1 (trapped platforms have higher Pe)"
+  },
+  "c2_nuclei": {
+    "nuclei": [
+      {
+        "Z": 1,
+        "symbol": "H",
+        "Pe": 2663.465777814538,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 2,
+        "symbol": "He",
+        "Pe": 0.0,
+        "trapped": false,
+        "stable": true
+      },
+      {
+        "Z": 6,
+        "symbol": "C",
+        "Pe": 0.5492424275158696,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 7,
+        "symbol": "N",
+        "Pe": 0.0,
+        "trapped": false,
+        "stable": true
+      },
+      {
+        "Z": 8,
+        "symbol": "O",
+        "Pe": 0.48729348724280636,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 9,
+        "symbol": "F",
+        "Pe": 1.1425802480533849,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 10,
+        "symbol": "Ne",
+        "Pe": 0.0,
+        "trapped": false,
+        "stable": true
+      },
+      {
+        "Z": 14,
+        "symbol": "Si",
+        "Pe": 0.2762057847913407,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 17,
+        "symbol": "Cl",
+        "Pe": 0.7520309538704707,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 20,
+        "symbol": "Ca",
+        "Pe": 0.0038703351454510925,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 26,
+        "symbol": "Fe",
+        "Pe": 0.02005540895743817,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 28,
+        "symbol": "Ni",
+        "Pe": 0.13858590712679247,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 29,
+        "symbol": "Cu",
+        "Pe": 0.1432545169022409,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 35,
+        "symbol": "Br",
+        "Pe": 0.4009489461215684,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 43,
+        "symbol": "Tc",
+        "Pe": 0.0511299231473112,
+        "trapped": true,
+        "stable": false
+      },
+      {
+        "Z": 50,
+        "symbol": "Sn",
+        "Pe": 0.08817609487490036,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 53,
+        "symbol": "I",
+        "Pe": 0.27572257296218716,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 61,
+        "symbol": "Pm",
+        "Pe": 0.006723839317894856,
+        "trapped": true,
+        "stable": false
+      },
+      {
+        "Z": 79,
+        "symbol": "Au",
+        "Pe": 0.1540431758504762,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 80,
+        "symbol": "Hg",
+        "Pe": 0.0,
+        "trapped": false,
+        "stable": true
+      },
+      {
+        "Z": 82,
+        "symbol": "Pb",
+        "Pe": 0.020787995125396197,
+        "trapped": true,
+        "stable": true
+      },
+      {
+        "Z": 83,
+        "symbol": "Bi",
+        "Pe": 0.05283876844354372,
+        "trapped": true,
+        "stable": false
+      },
+      {
+        "Z": 84,
+        "symbol": "Po",
+        "Pe": 0.11307669154233838,
+        "trapped": true,
+        "stable": false
+      },
+      {
+        "Z": 85,
+        "symbol": "At",
+        "Pe": 0.14988948938224644,
+        "trapped": true,
+        "stable": false
+      },
+      {
+        "Z": 86,
+        "symbol": "Rn",
+        "Pe": 0.0,
+        "trapped": false,
+        "stable": false
+      }
+    ],
+    "trapped_unstable": 5,
+    "trapped_stable": 15,
+    "free_unstable": 1,
+    "free_stable": 4,
+    "p_unstable_trapped": 0.25,
+    "p_unstable_free": 0.2,
+    "kc2_pass": true,
+    "kc2_label": "K-TRAP-137-2 (trapped nuclei more likely unstable)"
+  },
+  "c3_intervals": {
+    "intervals": [
+      {
+        "name": "Unison",
+        "ratio": 1.0,
+        "Pe": -125.13324047438543,
+        "dissonance": 1,
+        "trapped": true
+      },
+      {
+        "name": "Minor_2nd",
+        "ratio": 1.0666666666666667,
+        "Pe": -13.350982956052146,
+        "dissonance": 6,
+        "trapped": true
+      },
+      {
+        "name": "Major_2nd",
+        "ratio": 1.125,
+        "Pe": -19.117281797959162,
+        "dissonance": 5,
+        "trapped": true
+      },
+      {
+        "name": "Minor_3rd",
+        "ratio": 1.2,
+        "Pe": -24.86804355237436,
+        "dissonance": 3,
+        "trapped": true
+      },
+      {
+        "name": "Major_3rd",
+        "ratio": 1.25,
+        "Pe": -28.1573446720898,
+        "dissonance": 2,
+        "trapped": true
+      },
+      {
+        "name": "Perfect_4th",
+        "ratio": 1.3333333333333333,
+        "Pe": -33.017325617844484,
+        "dissonance": 2,
+        "trapped": true
+      },
+      {
+        "name": "Tritone",
+        "ratio": 1.40625,
+        "Pe": -6.655180226512398,
+        "dissonance": 7,
+        "trapped": true
+      },
+      {
+        "name": "Perfect_5th",
+        "ratio": 1.5,
+        "Pe": -41.157297509831004,
+        "dissonance": 1,
+        "trapped": true
+      },
+      {
+        "name": "Minor_6th",
+        "ratio": 1.6,
+        "Pe": -20.605045258434796,
+        "dissonance": 3,
+        "trapped": true
+      },
+      {
+        "name": "Major_6th",
+        "ratio": 1.6666666666666667,
+        "Pe": -28.1573446720898,
+        "dissonance": 3,
+        "trapped": true
+      },
+      {
+        "name": "Minor_7th",
+        "ratio": 1.8,
+        "Pe": -19.117281797959162,
+        "dissonance": 5,
+        "trapped": true
+      },
+      {
+        "name": "Major_7th",
+        "ratio": 1.875,
+        "Pe": -13.89872632235105,
+        "dissonance": 6,
+        "trapped": true
+      },
+      {
+        "name": "Octave",
+        "ratio": 2.0,
+        "Pe": -58.39198401785606,
+        "dissonance": 1,
+        "trapped": true
+      },
+      {
+        "name": "Minor_9th",
+        "ratio": 2.1333333333333333,
+        "Pe": -8.518364929068968,
+        "dissonance": 6,
+        "trapped": true
+      },
+      {
+        "name": "Tritone+Oct",
+        "ratio": 2.8125,
+        "Pe": -6.655180226512398,
+        "dissonance": 7,
+        "trapped": true
+      },
+      {
+        "name": "2_Octaves",
+        "ratio": 4.0,
+        "Pe": -33.017325617844484,
+        "dissonance": 1,
+        "trapped": true
+      }
+    ],
+    "n_trapped": 16,
+    "n_free": 0,
+    "mean_diss_trapped": 3.6875,
+    "mean_diss_free": 0.0,
+    "kc3_pass": true,
+    "kc3_label": "K-TRAP-137-3 (trapped intervals more dissonant)"
+  },
+  "c4_overlap": {
+    "trapped_ranges": {
+      "platforms": [
+        -11.2,
+        18.2
+      ],
+      "nuclear": [
+        0.0038703351454510925,
+        2663.465777814538
+      ],
+      "intervals": [
+        -125.13324047438543,
+        -6.655180226512398
+      ]
+    },
+    "n_overlaps": 2,
+    "overlap_pairs": [
+      "nuclear\u2194platforms",
+      "intervals\u2194platforms"
+    ],
+    "kc4_pass": true,
+    "kc4_label": "K-TRAP-137-4 (trapped Pe regions overlap across \u22652 domains)"
+  },
+  "c5_backroom_test": {
+    "n_test": 200,
+    "trapped_count": 200,
+    "both_trapped": 15,
+    "a_only": 88,
+    "b_only": 2,
+    "neither": 95,
+    "conditional_prob": 0.14285714285714285,
+    "kc5_pass": false,
+    "kc5_label": "K-TRAP-137-5 (cross-domain conditional P > 0.3)"
+  }
+}

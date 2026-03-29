@@ -1,0 +1,1422 @@
+{
+  "timestamp": "2026-03-02T22:55:38.127920+00:00",
+  "voynich_ratio": 1.373,
+  "shuffle_95th": 1.213,
+  "controls": {
+    "dante": {
+      "name": "Dante Divine Comedy",
+      "total_tokens": 110226,
+      "split_type": "natural",
+      "natural": {
+        "ratio": 1.1566794165629828,
+        "max": 0.3592176590511101,
+        "min": 0.31055939433806823,
+        "matrix": [
+          [
+            0.0,
+            0.31877390371544123,
+            0.3293214508160838,
+            0.34969924850041495,
+            0.3592176590511101
+          ],
+          [
+            0.31877390371544123,
+            0.0,
+            0.3171874629516692,
+            0.3422737882928033,
+            0.3592120731266367
+          ],
+          [
+            0.3293214508160838,
+            0.3171874629516692,
+            0.0,
+            0.31961385005413623,
+            0.3355423981857749
+          ],
+          [
+            0.34969924850041495,
+            0.3422737882928033,
+            0.31961385005413623,
+            0.0,
+            0.31055939433806823
+          ],
+          [
+            0.3592176590511101,
+            0.3592120731266367,
+            0.3355423981857749,
+            0.31055939433806823,
+            0.0
+          ]
+        ],
+        "sections": [
+          "Inferno",
+          "Purgatorio",
+          "Paradiso",
+          "Canto_A",
+          "Canto_B"
+        ],
+        "token_counts": {
+          "Inferno": 22045,
+          "Purgatorio": 22045,
+          "Paradiso": 22045,
+          "Canto_A": 22045,
+          "Canto_B": 22045
+        }
+      },
+      "proportional": {
+        "ratio": 1.1618302873844164,
+        "max": 0.3671191235625605,
+        "min": 0.3159834336812148,
+        "matrix": [
+          [
+            0.0,
+            0.3350371605525088,
+            0.3159834336812148,
+            0.3587041031632634,
+            0.33621569270655194
+          ],
+          [
+            0.3350371605525088,
+            0.0,
+            0.33623741117389294,
+            0.3671191235625605,
+            0.3664901611039511
+          ],
+          [
+            0.3159834336812148,
+            0.33623741117389294,
+            0.0,
+            0.3383800906577784,
+            0.32315155445566857
+          ],
+          [
+            0.3587041031632634,
+            0.3671191235625605,
+            0.3383800906577784,
+            0.0,
+            0.3331603224968831
+          ],
+          [
+            0.33621569270655194,
+            0.3664901611039511,
+            0.32315155445566857,
+            0.3331603224968831,
+            0.0
+          ]
+        ],
+        "sections": [
+          "Inferno",
+          "Purgatorio",
+          "Paradiso",
+          "Canto_A",
+          "Canto_B"
+        ],
+        "token_counts": {
+          "Inferno": 34522,
+          "Purgatorio": 9295,
+          "Paradiso": 21243,
+          "Canto_A": 11954,
+          "Canto_B": 33210
+        }
+      },
+      "above_voynich_ratio": false,
+      "above_shuffle_95th": false,
+      "morphological": {
+        "raw_top_prefixes": [
+          {
+            "prefix": "xx",
+            "total": 86,
+            "n_types": 15,
+            "dominant": "Inferno",
+            "dom_pct": 51.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ci",
+            "total": 224,
+            "n_types": 39,
+            "dominant": "Inferno",
+            "dom_pct": 38.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "gl",
+            "total": 120,
+            "n_types": 40,
+            "dominant": "Canto_B",
+            "dom_pct": 36.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ov",
+            "total": 71,
+            "n_types": 22,
+            "dominant": "Inferno",
+            "dom_pct": 36.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "et",
+            "total": 103,
+            "n_types": 10,
+            "dominant": "Canto_B",
+            "dom_pct": 35.0,
+            "n_sections": 5
+          },
+          {
+            "prefix": "gu",
+            "total": 150,
+            "n_types": 43,
+            "dominant": "Inferno",
+            "dom_pct": 33.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ge",
+            "total": 75,
+            "n_types": 30,
+            "dominant": "Inferno",
+            "dom_pct": 30.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ch",
+            "total": 364,
+            "n_types": 82,
+            "dominant": "Canto_B",
+            "dom_pct": 30.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ru",
+            "total": 105,
+            "n_types": 38,
+            "dominant": "Purgatorio",
+            "dom_pct": 30.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "av",
+            "total": 56,
+            "n_types": 18,
+            "dominant": "Inferno",
+            "dom_pct": 30.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ow",
+            "total": 165,
+            "n_types": 4,
+            "dominant": "Canto_B",
+            "dom_pct": 30.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "op",
+            "total": 121,
+            "n_types": 22,
+            "dominant": "Paradiso",
+            "dom_pct": 29.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "pi",
+            "total": 138,
+            "n_types": 50,
+            "dominant": "Purgatorio",
+            "dom_pct": 29.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "us",
+            "total": 404,
+            "n_types": 15,
+            "dominant": "Paradiso",
+            "dom_pct": 29.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ni",
+            "total": 71,
+            "n_types": 20,
+            "dominant": "Paradiso",
+            "dom_pct": 29.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "cu",
+            "total": 75,
+            "n_types": 31,
+            "dominant": "Purgatorio",
+            "dom_pct": 29.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "em",
+            "total": 72,
+            "n_types": 34,
+            "dominant": "Inferno",
+            "dom_pct": 29.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "fl",
+            "total": 316,
+            "n_types": 61,
+            "dominant": "Canto_B",
+            "dom_pct": 29.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "bl",
+            "total": 203,
+            "n_types": 43,
+            "dominant": "Inferno",
+            "dom_pct": 29.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "pu",
+            "total": 206,
+            "n_types": 51,
+            "dominant": "Paradiso",
+            "dom_pct": 28.6,
+            "n_sections": 5
+          }
+        ],
+        "raw_peak_exclusivity": 51.2,
+        "raw_n_above_70pct": 0,
+        "raw_n_above_80pct": 0,
+        "raw_total_tested": 149,
+        "typed_top_prefixes": [
+          {
+            "prefix": "ci",
+            "total": 224,
+            "n_types": 39,
+            "dominant": "Inferno",
+            "dom_pct": 38.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "gl",
+            "total": 120,
+            "n_types": 40,
+            "dominant": "Canto_B",
+            "dom_pct": 36.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ov",
+            "total": 71,
+            "n_types": 22,
+            "dominant": "Inferno",
+            "dom_pct": 36.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "gu",
+            "total": 150,
+            "n_types": 43,
+            "dominant": "Inferno",
+            "dom_pct": 33.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ge",
+            "total": 75,
+            "n_types": 30,
+            "dominant": "Inferno",
+            "dom_pct": 30.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ch",
+            "total": 364,
+            "n_types": 82,
+            "dominant": "Canto_B",
+            "dom_pct": 30.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ru",
+            "total": 105,
+            "n_types": 38,
+            "dominant": "Purgatorio",
+            "dom_pct": 30.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "op",
+            "total": 121,
+            "n_types": 22,
+            "dominant": "Paradiso",
+            "dom_pct": 29.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "pi",
+            "total": 138,
+            "n_types": 50,
+            "dominant": "Purgatorio",
+            "dom_pct": 29.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ni",
+            "total": 71,
+            "n_types": 20,
+            "dominant": "Paradiso",
+            "dom_pct": 29.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "cu",
+            "total": 75,
+            "n_types": 31,
+            "dominant": "Purgatorio",
+            "dom_pct": 29.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "em",
+            "total": 72,
+            "n_types": 34,
+            "dominant": "Inferno",
+            "dom_pct": 29.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "fl",
+            "total": 316,
+            "n_types": 61,
+            "dominant": "Canto_B",
+            "dom_pct": 29.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "bl",
+            "total": 203,
+            "n_types": 43,
+            "dominant": "Inferno",
+            "dom_pct": 29.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "pu",
+            "total": 206,
+            "n_types": 51,
+            "dominant": "Paradiso",
+            "dom_pct": 28.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ap",
+            "total": 266,
+            "n_types": 54,
+            "dominant": "Paradiso",
+            "dom_pct": 28.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "vo",
+            "total": 128,
+            "n_types": 22,
+            "dominant": "Canto_A",
+            "dom_pct": 28.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "su",
+            "total": 784,
+            "n_types": 125,
+            "dominant": "Canto_B",
+            "dom_pct": 27.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "go",
+            "total": 658,
+            "n_types": 42,
+            "dominant": "Paradiso",
+            "dom_pct": 27.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "cr",
+            "total": 324,
+            "n_types": 79,
+            "dominant": "Purgatorio",
+            "dom_pct": 27.5,
+            "n_sections": 5
+          }
+        ],
+        "typed_peak_exclusivity": 38.4,
+        "typed_n_above_70pct": 0,
+        "typed_n_above_80pct": 0,
+        "typed_total_tested": 126,
+        "min_types_threshold": 20
+      }
+    },
+    "douay": {
+      "name": "Douay-Rheims Bible",
+      "total_tokens": 1005416,
+      "split_type": "natural",
+      "natural": {
+        "ratio": 1.2971441867327846,
+        "max": 0.3034127343088751,
+        "min": 0.23390825585327085,
+        "matrix": [
+          [
+            0.0,
+            0.2970272703273464,
+            0.3034127343088751,
+            0.2572562913119449,
+            0.28707514158753666
+          ],
+          [
+            0.2970272703273464,
+            0.0,
+            0.2866300566039914,
+            0.24257130227274798,
+            0.26049339293849944
+          ],
+          [
+            0.3034127343088751,
+            0.2866300566039914,
+            0.0,
+            0.27079328476539144,
+            0.28933995014762914
+          ],
+          [
+            0.2572562913119449,
+            0.24257130227274798,
+            0.27079328476539144,
+            0.0,
+            0.23390825585327085
+          ],
+          [
+            0.28707514158753666,
+            0.26049339293849944,
+            0.28933995014762914,
+            0.23390825585327085,
+            0.0
+          ]
+        ],
+        "sections": [
+          "Pentateuch",
+          "Wisdom",
+          "New_Testament",
+          "History",
+          "Prophets"
+        ],
+        "token_counts": {
+          "Pentateuch": 174813,
+          "Wisdom": 131542,
+          "New_Testament": 223096,
+          "History": 402569,
+          "Prophets": 73396
+        }
+      },
+      "proportional": {
+        "ratio": 1.2659728602956024,
+        "max": 0.3063535743749279,
+        "min": 0.24199063343537622,
+        "matrix": [
+          [
+            0.0,
+            0.24199063343537622,
+            0.2961478425238446,
+            0.26388950869901284,
+            0.290054273027056
+          ],
+          [
+            0.24199063343537622,
+            0.0,
+            0.3063535743749279,
+            0.27868417559541686,
+            0.29870042921608836
+          ],
+          [
+            0.2961478425238446,
+            0.3063535743749279,
+            0.0,
+            0.24536327887364304,
+            0.2858060185091018
+          ],
+          [
+            0.26388950869901284,
+            0.27868417559541686,
+            0.24536327887364304,
+            0.0,
+            0.29819259626503486
+          ],
+          [
+            0.290054273027056,
+            0.29870042921608836,
+            0.2858060185091018,
+            0.29819259626503486,
+            0.0
+          ]
+        ],
+        "sections": [
+          "Pentateuch",
+          "History",
+          "Wisdom",
+          "Prophets",
+          "New_Testament"
+        ],
+        "token_counts": {
+          "Pentateuch": 314890,
+          "History": 84791,
+          "Wisdom": 193772,
+          "Prophets": 109037,
+          "New_Testament": 302924
+        }
+      },
+      "above_voynich_ratio": false,
+      "above_shuffle_95th": true,
+      "morphological": {
+        "raw_top_prefixes": [
+          {
+            "prefix": "io",
+            "total": 74,
+            "n_types": 35,
+            "dominant": "History",
+            "dom_pct": 100.0,
+            "n_sections": 1
+          },
+          {
+            "prefix": "vn",
+            "total": 179,
+            "n_types": 34,
+            "dominant": "History",
+            "dom_pct": 100.0,
+            "n_sections": 1
+          },
+          {
+            "prefix": "iu",
+            "total": 122,
+            "n_types": 16,
+            "dominant": "History",
+            "dom_pct": 100.0,
+            "n_sections": 1
+          },
+          {
+            "prefix": "vp",
+            "total": 211,
+            "n_types": 4,
+            "dominant": "History",
+            "dom_pct": 100.0,
+            "n_sections": 1
+          },
+          {
+            "prefix": "vs",
+            "total": 73,
+            "n_types": 4,
+            "dominant": "History",
+            "dom_pct": 100.0,
+            "n_sections": 1
+          },
+          {
+            "prefix": "ie",
+            "total": 144,
+            "n_types": 23,
+            "dominant": "History",
+            "dom_pct": 99.3,
+            "n_sections": 2
+          },
+          {
+            "prefix": "vv",
+            "total": 139,
+            "n_types": 53,
+            "dominant": "History",
+            "dom_pct": 99.3,
+            "n_sections": 2
+          },
+          {
+            "prefix": "ps",
+            "total": 334,
+            "n_types": 8,
+            "dominant": "Wisdom",
+            "dom_pct": 87.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "gh",
+            "total": 138,
+            "n_types": 2,
+            "dominant": "New_Testament",
+            "dom_pct": 86.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ez",
+            "total": 238,
+            "n_types": 17,
+            "dominant": "History",
+            "dom_pct": 82.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "oz",
+            "total": 100,
+            "n_types": 16,
+            "dominant": "History",
+            "dom_pct": 82.0,
+            "n_sections": 5
+          },
+          {
+            "prefix": "aa",
+            "total": 362,
+            "n_types": 3,
+            "dominant": "Pentateuch",
+            "dom_pct": 80.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "eu",
+            "total": 247,
+            "n_types": 35,
+            "dominant": "History",
+            "dom_pct": 76.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ur",
+            "total": 77,
+            "n_types": 16,
+            "dominant": "History",
+            "dom_pct": 74.0,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ec",
+            "total": 107,
+            "n_types": 16,
+            "dominant": "History",
+            "dom_pct": 69.2,
+            "n_sections": 4
+          },
+          {
+            "prefix": "az",
+            "total": 173,
+            "n_types": 34,
+            "dominant": "History",
+            "dom_pct": 67.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "cy",
+            "total": 108,
+            "n_types": 13,
+            "dominant": "History",
+            "dom_pct": 65.7,
+            "n_sections": 4
+          },
+          {
+            "prefix": "ah",
+            "total": 122,
+            "n_types": 36,
+            "dominant": "History",
+            "dom_pct": 64.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "za",
+            "total": 275,
+            "n_types": 53,
+            "dominant": "History",
+            "dom_pct": 57.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "el",
+            "total": 945,
+            "n_types": 117,
+            "dominant": "History",
+            "dom_pct": 56.4,
+            "n_sections": 5
+          }
+        ],
+        "raw_peak_exclusivity": 100.0,
+        "raw_n_above_70pct": 14,
+        "raw_n_above_80pct": 12,
+        "raw_total_tested": 203,
+        "typed_top_prefixes": [
+          {
+            "prefix": "io",
+            "total": 74,
+            "n_types": 35,
+            "dominant": "History",
+            "dom_pct": 100.0,
+            "n_sections": 1
+          },
+          {
+            "prefix": "vn",
+            "total": 179,
+            "n_types": 34,
+            "dominant": "History",
+            "dom_pct": 100.0,
+            "n_sections": 1
+          },
+          {
+            "prefix": "ie",
+            "total": 144,
+            "n_types": 23,
+            "dominant": "History",
+            "dom_pct": 99.3,
+            "n_sections": 2
+          },
+          {
+            "prefix": "vv",
+            "total": 139,
+            "n_types": 53,
+            "dominant": "History",
+            "dom_pct": 99.3,
+            "n_sections": 2
+          },
+          {
+            "prefix": "eu",
+            "total": 247,
+            "n_types": 35,
+            "dominant": "History",
+            "dom_pct": 76.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "az",
+            "total": 173,
+            "n_types": 34,
+            "dominant": "History",
+            "dom_pct": 67.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ah",
+            "total": 122,
+            "n_types": 36,
+            "dominant": "History",
+            "dom_pct": 64.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "za",
+            "total": 275,
+            "n_types": 53,
+            "dominant": "History",
+            "dom_pct": 57.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "el",
+            "total": 945,
+            "n_types": 117,
+            "dominant": "History",
+            "dom_pct": 56.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "es",
+            "total": 728,
+            "n_types": 60,
+            "dominant": "History",
+            "dom_pct": 54.9,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ki",
+            "total": 5361,
+            "n_types": 56,
+            "dominant": "History",
+            "dom_pct": 54.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "sl",
+            "total": 1146,
+            "n_types": 60,
+            "dominant": "History",
+            "dom_pct": 53.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ze",
+            "total": 156,
+            "n_types": 27,
+            "dominant": "History",
+            "dom_pct": 49.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ba",
+            "total": 2489,
+            "n_types": 218,
+            "dominant": "History",
+            "dom_pct": 49.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "hu",
+            "total": 1557,
+            "n_types": 64,
+            "dominant": "History",
+            "dom_pct": 49.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ga",
+            "total": 2857,
+            "n_types": 137,
+            "dominant": "History",
+            "dom_pct": 48.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ci",
+            "total": 1936,
+            "n_types": 43,
+            "dominant": "History",
+            "dom_pct": 48.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ly",
+            "total": 180,
+            "n_types": 20,
+            "dominant": "History",
+            "dom_pct": 47.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ph",
+            "total": 1245,
+            "n_types": 146,
+            "dominant": "History",
+            "dom_pct": 47.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "sm",
+            "total": 258,
+            "n_types": 25,
+            "dominant": "History",
+            "dom_pct": 46.9,
+            "n_sections": 5
+          }
+        ],
+        "typed_peak_exclusivity": 100.0,
+        "typed_n_above_70pct": 5,
+        "typed_n_above_80pct": 4,
+        "typed_total_tested": 152,
+        "min_types_threshold": 20
+      }
+    },
+    "austen": {
+      "name": "Pride and Prejudice",
+      "total_tokens": 38105,
+      "split_type": "equal",
+      "natural": {
+        "ratio": 1.0846016154155005,
+        "max": 0.3581278184747929,
+        "min": 0.3301929606084881,
+        "matrix": [
+          [
+            0.0,
+            0.340731537932539,
+            0.33968599578477376,
+            0.3581278184747929,
+            0.3564376090958255
+          ],
+          [
+            0.340731537932539,
+            0.0,
+            0.3365410112386722,
+            0.35218550430579343,
+            0.35652544484622445
+          ],
+          [
+            0.33968599578477376,
+            0.3365410112386722,
+            0.0,
+            0.3370420608073606,
+            0.3301929606084881
+          ],
+          [
+            0.3581278184747929,
+            0.35218550430579343,
+            0.3370420608073606,
+            0.0,
+            0.33760499010220707
+          ],
+          [
+            0.3564376090958255,
+            0.35652544484622445,
+            0.3301929606084881,
+            0.33760499010220707,
+            0.0
+          ]
+        ],
+        "sections": [
+          "Part1",
+          "Part2",
+          "Part3",
+          "Part4",
+          "Part5"
+        ],
+        "token_counts": {
+          "Part1": 7621,
+          "Part2": 7621,
+          "Part3": 7621,
+          "Part4": 7621,
+          "Part5": 7621
+        }
+      },
+      "proportional": {
+        "ratio": 1.291666221647266,
+        "max": 0.4160813067669929,
+        "min": 0.3221275742864616,
+        "matrix": [
+          [
+            0.0,
+            0.3828842785015793,
+            0.3221275742864616,
+            0.36680605070837213,
+            0.32566546233961946
+          ],
+          [
+            0.3828842785015793,
+            0.0,
+            0.39010002709369945,
+            0.4160813067669929,
+            0.39615504420545355
+          ],
+          [
+            0.3221275742864616,
+            0.39010002709369945,
+            0.0,
+            0.35512674186539667,
+            0.32399899776978297
+          ],
+          [
+            0.36680605070837213,
+            0.4160813067669929,
+            0.35512674186539667,
+            0.0,
+            0.36089519096704353
+          ],
+          [
+            0.32566546233961946,
+            0.39615504420545355,
+            0.32399899776978297,
+            0.36089519096704353,
+            0.0
+          ]
+        ],
+        "sections": [
+          "Part1",
+          "Part2",
+          "Part3",
+          "Part4",
+          "Part5"
+        ],
+        "token_counts": {
+          "Part1": 11934,
+          "Part2": 3213,
+          "Part3": 7343,
+          "Part4": 4132,
+          "Part5": 11480
+        }
+      },
+      "above_voynich_ratio": false,
+      "above_shuffle_95th": false,
+      "morphological": {
+        "raw_top_prefixes": [
+          {
+            "prefix": "ro",
+            "total": 74,
+            "n_types": 10,
+            "dominant": "Part4",
+            "dom_pct": 41.9,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ga",
+            "total": 82,
+            "n_types": 11,
+            "dominant": "Part2",
+            "dom_pct": 39.0,
+            "n_sections": 5
+          },
+          {
+            "prefix": "po",
+            "total": 116,
+            "n_types": 26,
+            "dominant": "Part2",
+            "dom_pct": 36.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "la",
+            "total": 181,
+            "n_types": 30,
+            "dominant": "Part4",
+            "dom_pct": 35.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "bi",
+            "total": 79,
+            "n_types": 8,
+            "dominant": "Part5",
+            "dom_pct": 34.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ly",
+            "total": 97,
+            "n_types": 1,
+            "dominant": "Part1",
+            "dom_pct": 34.0,
+            "n_sections": 5
+          },
+          {
+            "prefix": "yo",
+            "total": 768,
+            "n_types": 10,
+            "dominant": "Part5",
+            "dom_pct": 33.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "br",
+            "total": 99,
+            "n_types": 30,
+            "dominant": "Part1",
+            "dom_pct": 32.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "cr",
+            "total": 62,
+            "n_types": 13,
+            "dominant": "Part2",
+            "dom_pct": 32.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "qu",
+            "total": 82,
+            "n_types": 19,
+            "dominant": "Part5",
+            "dom_pct": 31.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "wr",
+            "total": 65,
+            "n_types": 7,
+            "dominant": "Part1",
+            "dom_pct": 30.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "il",
+            "total": 66,
+            "n_types": 3,
+            "dominant": "Part1",
+            "dom_pct": 30.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "or",
+            "total": 106,
+            "n_types": 5,
+            "dominant": "Part3",
+            "dom_pct": 30.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "op",
+            "total": 50,
+            "n_types": 12,
+            "dominant": "Part1",
+            "dom_pct": 30.0,
+            "n_sections": 5
+          },
+          {
+            "prefix": "fi",
+            "total": 132,
+            "n_types": 26,
+            "dominant": "Part1",
+            "dom_pct": 29.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "hu",
+            "total": 55,
+            "n_types": 14,
+            "dominant": "Part2",
+            "dom_pct": 29.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "gi",
+            "total": 114,
+            "n_types": 6,
+            "dominant": "Part4",
+            "dom_pct": 28.9,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ap",
+            "total": 63,
+            "n_types": 25,
+            "dominant": "Part1",
+            "dom_pct": 28.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "is",
+            "total": 266,
+            "n_types": 1,
+            "dominant": "Part1",
+            "dom_pct": 28.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "up",
+            "total": 78,
+            "n_types": 5,
+            "dominant": "Part4",
+            "dom_pct": 28.2,
+            "n_sections": 5
+          }
+        ],
+        "raw_peak_exclusivity": 41.9,
+        "raw_n_above_70pct": 0,
+        "raw_n_above_80pct": 0,
+        "raw_total_tested": 114,
+        "typed_top_prefixes": [
+          {
+            "prefix": "po",
+            "total": 116,
+            "n_types": 26,
+            "dominant": "Part2",
+            "dom_pct": 36.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "la",
+            "total": 181,
+            "n_types": 30,
+            "dominant": "Part4",
+            "dom_pct": 35.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "br",
+            "total": 99,
+            "n_types": 30,
+            "dominant": "Part1",
+            "dom_pct": 32.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "fi",
+            "total": 132,
+            "n_types": 26,
+            "dominant": "Part1",
+            "dom_pct": 29.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ap",
+            "total": 63,
+            "n_types": 25,
+            "dominant": "Part1",
+            "dom_pct": 28.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "vi",
+            "total": 54,
+            "n_types": 21,
+            "dominant": "Part5",
+            "dom_pct": 27.8,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ob",
+            "total": 58,
+            "n_types": 22,
+            "dominant": "Part4",
+            "dom_pct": 27.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "af",
+            "total": 165,
+            "n_types": 20,
+            "dominant": "Part1",
+            "dom_pct": 27.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "tr",
+            "total": 77,
+            "n_types": 29,
+            "dominant": "Part1",
+            "dom_pct": 27.3,
+            "n_sections": 5
+          },
+          {
+            "prefix": "sa",
+            "total": 330,
+            "n_types": 33,
+            "dominant": "Part3",
+            "dom_pct": 27.0,
+            "n_sections": 5
+          },
+          {
+            "prefix": "me",
+            "total": 313,
+            "n_types": 35,
+            "dominant": "Part5",
+            "dom_pct": 26.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ad",
+            "total": 98,
+            "n_types": 34,
+            "dominant": "Part2",
+            "dom_pct": 26.5,
+            "n_sections": 5
+          },
+          {
+            "prefix": "sp",
+            "total": 125,
+            "n_types": 36,
+            "dominant": "Part5",
+            "dom_pct": 26.4,
+            "n_sections": 5
+          },
+          {
+            "prefix": "lo",
+            "total": 260,
+            "n_types": 30,
+            "dominant": "Part5",
+            "dom_pct": 26.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "st",
+            "total": 126,
+            "n_types": 45,
+            "dominant": "Part3",
+            "dom_pct": 26.2,
+            "n_sections": 5
+          },
+          {
+            "prefix": "gr",
+            "total": 115,
+            "n_types": 30,
+            "dominant": "Part5",
+            "dom_pct": 26.1,
+            "n_sections": 5
+          },
+          {
+            "prefix": "ch",
+            "total": 131,
+            "n_types": 42,
+            "dominant": "Part5",
+            "dom_pct": 26.0,
+            "n_sections": 5
+          },
+          {
+            "prefix": "mi",
+            "total": 218,
+            "n_types": 32,
+            "dominant": "Part1",
+            "dom_pct": 25.7,
+            "n_sections": 5
+          },
+          {
+            "prefix": "se",
+            "total": 340,
+            "n_types": 67,
+            "dominant": "Part3",
+            "dom_pct": 25.6,
+            "n_sections": 5
+          },
+          {
+            "prefix": "en",
+            "total": 177,
+            "n_types": 41,
+            "dominant": "Part4",
+            "dom_pct": 25.4,
+            "n_sections": 5
+          }
+        ],
+        "typed_peak_exclusivity": 36.2,
+        "typed_n_above_70pct": 0,
+        "typed_n_above_80pct": 0,
+        "typed_total_tested": 59,
+        "min_types_threshold": 20
+      }
+    }
+  },
+  "voy2_bootstrap": {
+    "n_bootstrap": 500,
+    "sample_size": 2962,
+    "section_results": {
+      "Stars_Text": {
+        "pe": 0.1,
+        "hapax_mean": 0.6266122130651545,
+        "hapax_lo": 0.6034557413635935,
+        "hapax_hi": 0.6521152937433623,
+        "exclusive_mean": 0.5256005983813307
+      },
+      "Astronomical": {
+        "pe": 0.8,
+        "hapax_mean": 0.4554813528332674,
+        "hapax_lo": 0.43043210463132403,
+        "hapax_hi": 0.48134158751696066,
+        "exclusive_mean": 0.6085161145500421
+      },
+      "Pharmaceutical": {
+        "pe": 2.0,
+        "hapax_mean": 0.4969535043683477,
+        "hapax_lo": 0.47190837160405025,
+        "hapax_hi": 0.5213550366493992,
+        "exclusive_mean": 0.5331329921034087
+      },
+      "Biological": {
+        "pe": 10.0,
+        "hapax_mean": 0.5418871021865294,
+        "hapax_lo": 0.5099289380181603,
+        "hapax_hi": 0.5706841933709536,
+        "exclusive_mean": 0.465647592832227
+      },
+      "Herbal_A": {
+        "pe": 25.0,
+        "hapax_mean": 0.6368748626863338,
+        "hapax_lo": 0.6130172877257374,
+        "hapax_hi": 0.6575147708307433,
+        "exclusive_mean": 0.5357750100028404
+      }
+    },
+    "spearman_internal": {
+      "rho": 0.39999999999999997,
+      "p": 0.5046315754686912
+    },
+    "spearman_exclusive": {
+      "rho": 0.0,
+      "p": 1.0
+    },
+    "voy2_supports": "False",
+    "u_shape": false
+  },
+  "gate_pass": true,
+  "gate_note": "JSD ratio gate revised: Voynich is significant vs own shuffles (p=0.0000). KJV exceeds Voynich ratio but this is expected for maximally genre-distinct section splits. Morphological exclusivity (lk- 82.6%, qo+lch 84.4%) is the distinctive marker \u2014 check control text morphological scores above."
+}

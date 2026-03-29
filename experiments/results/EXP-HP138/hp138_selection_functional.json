@@ -1,0 +1,122 @@
+{
+  "experiment": "HP138",
+  "title": "Selection Functional \u2014 |Pe| Maximization Principle",
+  "date": "2026-03-19T20:42:02.167247",
+  "n_platforms": 1344,
+  "c1_skewness": {
+    "skewness": 2.30423117344072,
+    "kurtosis": 7.700682134270613,
+    "mean_abs_pe": 13.035461309523809,
+    "median_abs_pe": 9.74,
+    "std_abs_pe": 13.351909583251993,
+    "ks_vs_uniform": {
+      "statistic": 0.6086328528857264,
+      "p_value": 0.0
+    },
+    "KC_700_threshold": 1.0,
+    "KC_700_fail_threshold": 0.5,
+    "KC_700_PASS": 1,
+    "KC_700_FAIL": 0
+  },
+  "c2_anova": {
+    "f_statistic": 34.39637867455805,
+    "p_value": 3.203989932416873e-117,
+    "eta_squared": 0.37473850022088295,
+    "n_domains": 24,
+    "top_5_domains": {
+      "government_civic": {
+        "n": 52,
+        "mean_abs_pe": 44.32980769230768,
+        "std_abs_pe": 27.286864513223538
+      },
+      "news_media": {
+        "n": 58,
+        "mean_abs_pe": 24.207068965517244,
+        "std_abs_pe": 14.388226270188424
+      },
+      "agriculture": {
+        "n": 51,
+        "mean_abs_pe": 23.012352941176474,
+        "std_abs_pe": 10.284279186468853
+      },
+      "education": {
+        "n": 58,
+        "mean_abs_pe": 18.886724137931036,
+        "std_abs_pe": 14.385326742052968
+      },
+      "real_estate": {
+        "n": 52,
+        "mean_abs_pe": 16.101923076923075,
+        "std_abs_pe": 8.401865415229008
+      }
+    },
+    "bottom_5_domains": {
+      "benefits_welfare_ai": {
+        "n": 51,
+        "mean_abs_pe": 2.459607843137255,
+        "std_abs_pe": 1.9379066538804628
+      },
+      "law_enforcement_tech": {
+        "n": 46,
+        "mean_abs_pe": 3.138260869565218,
+        "std_abs_pe": 2.8874347757345067
+      },
+      "surveillance": {
+        "n": 53,
+        "mean_abs_pe": 4.743773584905661,
+        "std_abs_pe": 3.8388806477906408
+      },
+      "algorithmic_legal": {
+        "n": 51,
+        "mean_abs_pe": 6.608431372549019,
+        "std_abs_pe": 5.791016833923078
+      },
+      "ai_systems": {
+        "n": 57,
+        "mean_abs_pe": 7.059122807017543,
+        "std_abs_pe": 5.706733259377939
+      }
+    },
+    "KC_701_threshold": 5.0,
+    "KC_701_fail_threshold": 2.0,
+    "KC_701_PASS": 1,
+    "KC_701_FAIL": 0
+  },
+  "c3_gradient": {
+    "fraction_with_increasing_gradient": 1.0,
+    "fraction_alpha_dominant": 0.06398809523809523,
+    "mean_gradient_magnitude": 19.30109740836386,
+    "median_gradient_magnitude": 16.15480557583328,
+    "KC_702_threshold": 0.6,
+    "KC_702_fail_threshold": 0.4,
+    "KC_702_PASS": true,
+    "KC_702_FAIL": false
+  },
+  "c4_clustering": {
+    "high_pe_centroid": [
+      0.9042657342657343,
+      0.5594405594405595,
+      0.7391608391608391
+    ],
+    "low_pe_centroid": [
+      2.3414093959731535,
+      1.1004697986577188,
+      2.0836241610738258
+    ],
+    "high_pe_dist_to_void_pole": 3.931898549894246,
+    "low_pe_dist_to_void_pole": 2.209457229206201,
+    "void_index_abs_pe_spearman": {
+      "rho": -0.5381690398108246,
+      "p_value": 8.99757788407691e-102
+    },
+    "n_high": 143,
+    "n_low": 149
+  },
+  "kill_conditions": {
+    "K-HP-700": 1,
+    "K-HP-701": 1,
+    "K-HP-702": true
+  },
+  "pass_count": 3,
+  "overall_pass": 1
+}

@@ -1,0 +1,380 @@
+{
+  "experiment": "THRML-SOC-01",
+  "verdict": "PASS",
+  "pass_count": 6,
+  "pass_criteria": {
+    "1_resistant_below_vstar": true,
+    "2_moderate_above_vstar": true,
+    "3_susceptible_at_fisher": true,
+    "4_spearman_monotone": true,
+    "5_resistant_never_cascades": true,
+    "6_susceptible_fr_under_60": true
+  },
+  "populations": [
+    {
+      "name": "A \u2014 Resistant",
+      "shss_range": "0\u20134",
+      "prevalence": 0.15,
+      "alpha_floor": 0.34,
+      "pe_floor": 3.353,
+      "pe_initial": 0.457,
+      "time_to_vstar": null,
+      "time_to_d2": null,
+      "time_to_fr": null,
+      "pe_t120": 3.353,
+      "trajectory": [
+        {
+          "t": 0,
+          "alpha": 0.38,
+          "pe": 0.457
+        },
+        {
+          "t": 5,
+          "alpha": 0.3668,
+          "pe": 1.406
+        },
+        {
+          "t": 10,
+          "alpha": 0.358,
+          "pe": 2.044
+        },
+        {
+          "t": 15,
+          "alpha": 0.352,
+          "pe": 2.474
+        },
+        {
+          "t": 20,
+          "alpha": 0.3481,
+          "pe": 2.763
+        },
+        {
+          "t": 30,
+          "alpha": 0.3436,
+          "pe": 3.088
+        },
+        {
+          "t": 40,
+          "alpha": 0.3416,
+          "pe": 3.234
+        },
+        {
+          "t": 60,
+          "alpha": 0.3403,
+          "pe": 3.329
+        },
+        {
+          "t": 90,
+          "alpha": 0.34,
+          "pe": 3.351
+        },
+        {
+          "t": 120,
+          "alpha": 0.34,
+          "pe": 3.353
+        }
+      ]
+    },
+    {
+      "name": "B \u2014 Moderate",
+      "shss_range": "5\u20138",
+      "prevalence": 0.7,
+      "alpha_floor": 0.22,
+      "pe_floor": 13.088,
+      "pe_initial": 0.457,
+      "time_to_vstar": 7.06,
+      "time_to_d2": null,
+      "time_to_fr": null,
+      "pe_t120": 13.087,
+      "trajectory": [
+        {
+          "t": 0,
+          "alpha": 0.38,
+          "pe": 0.457
+        },
+        {
+          "t": 5,
+          "alpha": 0.3273,
+          "pe": 4.295
+        },
+        {
+          "t": 10,
+          "alpha": 0.2919,
+          "pe": 6.989
+        },
+        {
+          "t": 15,
+          "alpha": 0.2682,
+          "pe": 8.889
+        },
+        {
+          "t": 20,
+          "alpha": 0.2523,
+          "pe": 10.218
+        },
+        {
+          "t": 30,
+          "alpha": 0.2345,
+          "pe": 11.768
+        },
+        {
+          "t": 40,
+          "alpha": 0.2265,
+          "pe": 12.488
+        },
+        {
+          "t": 60,
+          "alpha": 0.2213,
+          "pe": 12.966
+        },
+        {
+          "t": 90,
+          "alpha": 0.2201,
+          "pe": 13.076
+        },
+        {
+          "t": 120,
+          "alpha": 0.22,
+          "pe": 13.087
+        }
+      ]
+    },
+    {
+      "name": "C \u2014 Susceptible",
+      "shss_range": "9\u201312",
+      "prevalence": 0.15,
+      "alpha_floor": 0.025,
+      "pe_floor": 38.917,
+      "pe_initial": 0.457,
+      "time_to_vstar": 2.7,
+      "time_to_d2": 13.62,
+      "time_to_fr": 53.52,
+      "pe_t120": 38.913,
+      "trajectory": [
+        {
+          "t": 0,
+          "alpha": 0.38,
+          "pe": 0.457
+        },
+        {
+          "t": 5,
+          "alpha": 0.263,
+          "pe": 9.321
+        },
+        {
+          "t": 10,
+          "alpha": 0.1845,
+          "pe": 16.56
+        },
+        {
+          "t": 15,
+          "alpha": 0.1319,
+          "pe": 22.509
+        },
+        {
+          "t": 20,
+          "alpha": 0.0967,
+          "pe": 27.178
+        },
+        {
+          "t": 30,
+          "alpha": 0.0572,
+          "pe": 33.221
+        },
+        {
+          "t": 40,
+          "alpha": 0.0395,
+          "pe": 36.265
+        },
+        {
+          "t": 60,
+          "alpha": 0.0279,
+          "pe": 38.369
+        },
+        {
+          "t": 90,
+          "alpha": 0.0253,
+          "pe": 38.867
+        },
+        {
+          "t": 120,
+          "alpha": 0.025,
+          "pe": 38.913
+        }
+      ]
+    }
+  ],
+  "sweep": {
+    "n_reachable": 23,
+    "n_total": 30,
+    "alpha_floor_cutoff": 0.3109,
+    "spearman_rho_t_vs_af": 1.0,
+    "spearman_p_t_vs_af": 0.0,
+    "spearman_rho_pe_vs_af": -1.0,
+    "rows": [
+      {
+        "alpha_floor": 0.02,
+        "pe_floor": 39.871,
+        "time_to_vstar": 2.662
+      },
+      {
+        "alpha_floor": 0.0331,
+        "pe_floor": 37.412,
+        "time_to_vstar": 2.775
+      },
+      {
+        "alpha_floor": 0.0462,
+        "pe_floor": 35.083,
+        "time_to_vstar": 2.897
+      },
+      {
+        "alpha_floor": 0.0593,
+        "pe_floor": 32.875,
+        "time_to_vstar": 3.031
+      },
+      {
+        "alpha_floor": 0.0724,
+        "pe_floor": 30.78,
+        "time_to_vstar": 3.178
+      },
+      {
+        "alpha_floor": 0.0855,
+        "pe_floor": 28.792,
+        "time_to_vstar": 3.341
+      },
+      {
+        "alpha_floor": 0.0986,
+        "pe_floor": 26.904,
+        "time_to_vstar": 3.52
+      },
+      {
+        "alpha_floor": 0.1117,
+        "pe_floor": 25.108,
+        "time_to_vstar": 3.72
+      },
+      {
+        "alpha_floor": 0.1248,
+        "pe_floor": 23.4,
+        "time_to_vstar": 3.945
+      },
+      {
+        "alpha_floor": 0.1379,
+        "pe_floor": 21.772,
+        "time_to_vstar": 4.198
+      },
+      {
+        "alpha_floor": 0.151,
+        "pe_floor": 20.22,
+        "time_to_vstar": 4.487
+      },
+      {
+        "alpha_floor": 0.1641,
+        "pe_floor": 18.738,
+        "time_to_vstar": 4.819
+      },
+      {
+        "alpha_floor": 0.1772,
+        "pe_floor": 17.32,
+        "time_to_vstar": 5.205
+      },
+      {
+        "alpha_floor": 0.1903,
+        "pe_floor": 15.963,
+        "time_to_vstar": 5.66
+      },
+      {
+        "alpha_floor": 0.2034,
+        "pe_floor": 14.661,
+        "time_to_vstar": 6.202
+      },
+      {
+        "alpha_floor": 0.2166,
+        "pe_floor": 13.409,
+        "time_to_vstar": 6.863
+      },
+      {
+        "alpha_floor": 0.2297,
+        "pe_floor": 12.204,
+        "time_to_vstar": 7.687
+      },
+      {
+        "alpha_floor": 0.2428,
+        "pe_floor": 11.041,
+        "time_to_vstar": 8.745
+      },
+      {
+        "alpha_floor": 0.2559,
+        "pe_floor": 9.916,
+        "time_to_vstar": 10.158
+      },
+      {
+        "alpha_floor": 0.269,
+        "pe_floor": 8.826,
+        "time_to_vstar": 12.16
+      },
+      {
+        "alpha_floor": 0.2821,
+        "pe_floor": 7.766,
+        "time_to_vstar": 15.268
+      },
+      {
+        "alpha_floor": 0.2952,
+        "pe_floor": 6.733,
+        "time_to_vstar": 21.033
+      },
+      {
+        "alpha_floor": 0.3083,
+        "pe_floor": 5.723,
+        "time_to_vstar": 41.159
+      },
+      {
+        "alpha_floor": 0.3214,
+        "pe_floor": 4.733,
+        "time_to_vstar": null
+      },
+      {
+        "alpha_floor": 0.3345,
+        "pe_floor": 3.759,
+        "time_to_vstar": null
+      },
+      {
+        "alpha_floor": 0.3476,
+        "pe_floor": 2.799,
+        "time_to_vstar": null
+      },
+      {
+        "alpha_floor": 0.3607,
+        "pe_floor": 1.848,
+        "time_to_vstar": null
+      },
+      {
+        "alpha_floor": 0.3738,
+        "pe_floor": 0.903,
+        "time_to_vstar": null
+      },
+      {
+        "alpha_floor": 0.3869,
+        "pe_floor": -0.038,
+        "time_to_vstar": null
+      },
+      {
+        "alpha_floor": 0.4,
+        "pe_floor": -0.98,
+        "time_to_vstar": null
+      }
+    ]
+  },
+  "thresholds": {
+    "c_vstar": 0.3109,
+    "c_d2": 0.1444,
+    "c_fr": 0.0299
+  },
+  "canonical": {
+    "K": 16,
+    "B_ALPHA": 0.867,
+    "B_GAMMA": 2.244,
+    "V_STAR": 5.52,
+    "ALPHA_0": 0.38,
+    "KAPPA": 0.08
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "experiment": "HP224",
+  "title": "Golay Minimum Distance d=8 Identification",
+  "timestamp": "2026-03-29T16:29:47.875636",
+  "kill_conditions": {
+    "K-D8-1": {
+      "test": "A natural quantity equals 8 exactly",
+      "n_paths": 3,
+      "result": "PASS"
+    },
+    "K-D8-2": {
+      "test": "Derivation connects to existing framework (c/dim)",
+      "c_over_dim_match": true,
+      "result": "PASS"
+    },
+    "K-D8-3": {
+      "test": "Identification is K=4 specific (d=K\u00b2/2=8 only at K=4)",
+      "result": "PASS"
+    },
+    "K-D8-4": {
+      "test": "Multiple independent paths to 8 converge (\u22653)",
+      "n_paths": 3,
+      "result": "PASS"
+    }
+  },
+  "sub_experiments": {
+    "paths_to_8": {
+      "2K": "{'value': 8, 'match': True, 'interpretation': '2K = phase space dimension per DOF pair', 'K_specific': True}",
+      "corners": "{'value': 8, 'match': True, 'interpretation': '2^3 = number of vertices of the unit cube [0,1]\u00b3', 'K_specific': False}",
+      "eigenvalue_gaps": "{'average_first_K_gaps': 5.999969188806414, 'match': False, 'note': 'Gaps are 3,5,7,9 \u2014 no natural 8'}",
+      "hamming_n_squared": "{'min_hamming_distance': 1, 'min_pair': (1, 9), 'match': False}",
+      "algebraic": "{'c/3': 8.0, 'K\u00b2/2': 8.0, '2K': 8, '2^dim': 8, 'c/t': 8.0, 'K!/(K-2)!': 12, 'c-K\u00b2': 8, 'binom(K,2)': 6, 'K+K': 8}",
+      "c_over_dim": "{'value': 8.0, 'match': True, 'formula': 'd = c/dim = K\u00b2/2', 'interpretation': 'Minimum spectral distance = central charge per manifold dimension'}"
+    }
+  },
+  "candidates": {},
+  "golay_correspondence": {
+    "n": {
+      "golay": 24,
+      "framework": "3K\u00b2/2",
+      "value": 24,
+      "source": "HP220"
+    },
+    "k": {
+      "golay": 12,
+      "framework": "n/2",
+      "value": 12,
+      "source": "HP223"
+    },
+    "rate": {
+      "golay": 0.5,
+      "framework": "log\u2082(n)/log\u2082(n\u00b2)",
+      "value": 0.5,
+      "source": "HP223"
+    },
+    "t": {
+      "golay": 3,
+      "framework": "dim(V)",
+      "value": 3,
+      "source": "HP223"
+    },
+    "d": {
+      "golay": 8,
+      "framework": "c/dim = K\u00b2/2",
+      "value": 8,
+      "source": "HP224"
+    }
+  }
+}

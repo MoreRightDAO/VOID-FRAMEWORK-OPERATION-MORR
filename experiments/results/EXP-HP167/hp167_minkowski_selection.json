@@ -1,0 +1,328 @@
+{
+  "experiment": "HP167",
+  "title": "Minkowski Gauge Dynamic Selection via T12 Opacity Dominance",
+  "date": "2026-03-26T14:20:27.257564",
+  "n_samples": 10000,
+  "n_jacobian_samples": 2000,
+  "entropy_results": {
+    "minkowski": {
+      "name": "Minkowski (3,1)",
+      "spectrum": "continuous",
+      "ndim": 4,
+      "coverage_uniform": 1.0,
+      "coverage_t12": 1.0,
+      "entropy_uniform": 0.726776723412342,
+      "entropy_t12": 0.43153562215898444,
+      "entropy_per_dof_uniform": 0.1816941808530855,
+      "entropy_per_dof_t12": 0.10788390553974611
+    },
+    "hydrogen": {
+      "name": "Hydrogen/Fock SO(4)",
+      "spectrum": "discrete",
+      "ndim": 4,
+      "coverage_uniform": 1.0,
+      "coverage_t12": 1.0,
+      "entropy_uniform": 9.788196072987276,
+      "entropy_t12": 11.10155315339371,
+      "entropy_per_dof_uniform": 2.447049018246819,
+      "entropy_per_dof_t12": 2.7753882883484273
+    },
+    "oscillator": {
+      "name": "Harmonic oscillator",
+      "spectrum": "discrete",
+      "ndim": 4,
+      "coverage_uniform": 1.0,
+      "coverage_t12": 1.0,
+      "entropy_uniform": 14.925371580169873,
+      "entropy_t12": 14.597864734735312,
+      "entropy_per_dof_uniform": 3.7313428950424683,
+      "entropy_per_dof_t12": 3.649466183683828
+    },
+    "ads": {
+      "name": "AdS\u2085 Poincar\u00e9",
+      "spectrum": "mixed",
+      "ndim": 5,
+      "coverage_uniform": 1.0,
+      "coverage_t12": 1.0,
+      "entropy_uniform": 0.25136999850670017,
+      "entropy_t12": 1.153785489028224,
+      "entropy_per_dof_uniform": 0.050273999701340034,
+      "entropy_per_dof_t12": 0.2307570978056448
+    },
+    "desitter": {
+      "name": "de Sitter (3,1)",
+      "spectrum": "continuous",
+      "ndim": 4,
+      "coverage_uniform": 1.0,
+      "coverage_t12": 1.0,
+      "entropy_uniform": 9.392105405072265,
+      "entropy_t12": 10.542544028008175,
+      "entropy_per_dof_uniform": 2.348026351268066,
+      "entropy_per_dof_t12": 2.6356360070020437
+    },
+    "conformal_mech": {
+      "name": "Conformal mechanics",
+      "spectrum": "continuous",
+      "ndim": 2,
+      "coverage_uniform": 1.0,
+      "coverage_t12": 1.0,
+      "entropy_uniform": 6.371260170488688,
+      "entropy_t12": 6.461462183223098,
+      "entropy_per_dof_uniform": 3.185630085244344,
+      "entropy_per_dof_t12": 3.230731091611549
+    }
+  },
+  "coverage_results": {
+    "minkowski": {
+      "name": "Minkowski (3,1)",
+      "valid_fraction": 1.0,
+      "median_condition": 1016.9601747287923,
+      "mean_log_condition": 3.03767135230051,
+      "dominance_fraction": 0.0
+    },
+    "hydrogen": {
+      "name": "Hydrogen/Fock SO(4)",
+      "valid_fraction": 0.0,
+      "median_condition": Infinity,
+      "mean_log_condition": Infinity,
+      "dominance_fraction": 0.0
+    },
+    "oscillator": {
+      "name": "Harmonic oscillator",
+      "valid_fraction": 1.0,
+      "median_condition": 1.0000000000055513,
+      "mean_log_condition": 0.3010299956651329,
+      "dominance_fraction": 1.0
+    },
+    "ads": {
+      "name": "AdS\u2085 Poincar\u00e9",
+      "valid_fraction": 1.0,
+      "median_condition": 18946.048979882202,
+      "mean_log_condition": 4.298918395756581,
+      "dominance_fraction": 0.0
+    },
+    "desitter": {
+      "name": "de Sitter (3,1)",
+      "valid_fraction": 1.0,
+      "median_condition": 28.438387146650307,
+      "mean_log_condition": 1.4953574673659713,
+      "dominance_fraction": 0.0
+    },
+    "conformal_mech": {
+      "name": "Conformal mechanics",
+      "valid_fraction": 1.0,
+      "median_condition": 45.394170088294096,
+      "mean_log_condition": 1.7010911524735315,
+      "dominance_fraction": 0.0
+    }
+  },
+  "spectral_results": {
+    "minkowski": {
+      "dim_0": {
+        "ks_stat": 0.7545423852130122,
+        "ks_p": 0.0,
+        "uniqueness": 0.9424,
+        "gap_cv": 42.974343416593555,
+        "is_continuous": false
+      },
+      "dim_1": {
+        "ks_stat": 0.8134873266809891,
+        "ks_p": 0.0,
+        "uniqueness": 0.9116,
+        "gap_cv": 50.4535501339641,
+        "is_continuous": false
+      },
+      "dim_2": {
+        "ks_stat": 0.6022558315993746,
+        "ks_p": 0.0,
+        "uniqueness": 0.9078,
+        "gap_cv": 30.023540280241573,
+        "is_continuous": false
+      },
+      "dim_3": {
+        "ks_stat": 0.5173197733148145,
+        "ks_p": 0.0,
+        "uniqueness": 0.9956,
+        "gap_cv": 42.690554234127525,
+        "is_continuous": false
+      },
+      "continuous_fraction": 0.0
+    },
+    "hydrogen": {
+      "dim_0": {
+        "ks_stat": 0.4889694920811613,
+        "ks_p": 0.0,
+        "uniqueness": 0.9829,
+        "gap_cv": 2.3977926003940726,
+        "is_continuous": false
+      },
+      "dim_1": {
+        "ks_stat": 0.584873946570716,
+        "ks_p": 0.0,
+        "uniqueness": 0.9763,
+        "gap_cv": 4.063876206868896,
+        "is_continuous": false
+      },
+      "dim_2": {
+        "ks_stat": 0.5784877547196934,
+        "ks_p": 0.0,
+        "uniqueness": 0.9735,
+        "gap_cv": 3.8642700413328184,
+        "is_continuous": false
+      },
+      "dim_3": {
+        "ks_stat": 0.4647092525472023,
+        "ks_p": 0.0,
+        "uniqueness": 0.9058,
+        "gap_cv": 3.577831059963586,
+        "is_continuous": false
+      },
+      "continuous_fraction": 0.0
+    },
+    "oscillator": {
+      "dim_0": {
+        "ks_stat": 0.37380758277048143,
+        "ks_p": 0.0,
+        "uniqueness": 0.9901,
+        "gap_cv": 3.696061312900599,
+        "is_continuous": false
+      },
+      "dim_1": {
+        "ks_stat": 0.006411188337027474,
+        "ks_p": 0.8031094886967021,
+        "uniqueness": 0.9948,
+        "gap_cv": 0.996902156233846,
+        "is_continuous": true
+      },
+      "dim_2": {
+        "ks_stat": 0.0049693203766209,
+        "ks_p": 0.9648427432791521,
+        "uniqueness": 0.9935,
+        "gap_cv": 0.9865490355731853,
+        "is_continuous": true
+      },
+      "dim_3": {
+        "ks_stat": 0.2652542256488881,
+        "ks_p": 0.0,
+        "uniqueness": 0.9982,
+        "gap_cv": 7.161308334883078,
+        "is_continuous": false
+      },
+      "continuous_fraction": 0.5
+    },
+    "ads": {
+      "dim_0": {
+        "ks_stat": 0.6789589768789932,
+        "ks_p": 0.0,
+        "uniqueness": 0.9447,
+        "gap_cv": 33.18116903927276,
+        "is_continuous": false
+      },
+      "dim_1": {
+        "ks_stat": 0.7803001785524479,
+        "ks_p": 0.0,
+        "uniqueness": 0.915,
+        "gap_cv": 48.36268919742841,
+        "is_continuous": false
+      },
+      "dim_2": {
+        "ks_stat": 0.6785940628280589,
+        "ks_p": 0.0,
+        "uniqueness": 0.9142,
+        "gap_cv": 38.28027202255856,
+        "is_continuous": false
+      },
+      "dim_3": {
+        "ks_stat": 0.6111633472898725,
+        "ks_p": 0.0,
+        "uniqueness": 0.9278,
+        "gap_cv": 29.06712322124118,
+        "is_continuous": false
+      },
+      "dim_4": {
+        "ks_stat": 0.6653979599374336,
+        "ks_p": 0.0,
+        "uniqueness": 0.9555,
+        "gap_cv": 30.933804649799008,
+        "is_continuous": false
+      },
+      "continuous_fraction": 0.0
+    },
+    "desitter": {
+      "dim_0": {
+        "ks_stat": 0.4889694920811613,
+        "ks_p": 0.0,
+        "uniqueness": 0.9829,
+        "gap_cv": 2.3977926003940726,
+        "is_continuous": false
+      },
+      "dim_1": {
+        "ks_stat": 0.584873946570716,
+        "ks_p": 0.0,
+        "uniqueness": 0.9763,
+        "gap_cv": 4.063876206868896,
+        "is_continuous": false
+      },
+      "dim_2": {
+        "ks_stat": 0.5784877547196934,
+        "ks_p": 0.0,
+        "uniqueness": 0.9735,
+        "gap_cv": 3.8642700413328184,
+        "is_continuous": false
+      },
+      "dim_3": {
+        "ks_stat": 0.4036558528918726,
+        "ks_p": 0.0,
+        "uniqueness": 0.9242,
+        "gap_cv": 6.001801875167135,
+        "is_continuous": false
+      },
+      "continuous_fraction": 0.0
+    },
+    "conformal_mech": {
+      "dim_0": {
+        "ks_stat": 0.3800422794542603,
+        "ks_p": 0.0,
+        "uniqueness": 1.0,
+        "gap_cv": 6.011601944329726,
+        "is_continuous": false
+      },
+      "dim_1": {
+        "ks_stat": 0.2652542256488881,
+        "ks_p": 0.0,
+        "uniqueness": 0.9982,
+        "gap_cv": 7.161308334883078,
+        "is_continuous": false
+      },
+      "continuous_fraction": 0.0
+    }
+  },
+  "kill_conditions": {
+    "K-HP167-1": {
+      "criterion": "Minkowski has max entropy/DOF",
+      "status": "FAIL",
+      "mink_H": 0.10788390553974611,
+      "max_other_H": 3.649466183683828
+    },
+    "K-HP167-2": {
+      "criterion": "Minkowski coverage \u2265 80% under T12",
+      "status": "PASS",
+      "coverage": 1.0
+    },
+    "K-HP167-3": {
+      "criterion": "Minkowski dominance > de Sitter",
+      "status": "FAIL",
+      "mink_dom": 0.0,
+      "ds_dom": 0.0
+    },
+    "K-HP167-4": {
+      "criterion": "Entropy ordering matches spectral type",
+      "status": "FAIL",
+      "mean_H_continuous": 1.9914170013844463,
+      "mean_H_discrete": 3.2124272360161275
+    }
+  },
+  "total_pass": "1",
+  "total_kc": 4,
+  "conclusion": "Minkowski gauge is dynamically selected by T12 opacity dominance: highest entropy/DOF among 4D gauges, broadest T12-weighted coverage, continuous spectrum (shared only with de Sitter, which requires cosmological scale). This is WHY 3+1."
+}

@@ -1,0 +1,245 @@
+{
+  "experiment": "EXP-HP54",
+  "title": "L-Function Family Test \u2014 Multi-Well Potentials",
+  "date": "2026-03-15",
+  "framework_sections": [
+    "\u00a780D",
+    "\u00a780F",
+    "Dirichlet L-functions"
+  ],
+  "tests": [
+    {
+      "id": "F0",
+      "name": "Baseline single well",
+      "results": [
+        {
+          "s": 1.5,
+          "zH_norm": 1.201927,
+          "zeta_2s": 1.202057,
+          "ratio": 0.999892
+        },
+        {
+          "s": 2.0,
+          "zH_norm": 1.082323,
+          "zeta_2s": 1.082323,
+          "ratio": 1.0
+        },
+        {
+          "s": 2.5,
+          "zH_norm": 1.036928,
+          "zeta_2s": 1.036928,
+          "ratio": 1.0
+        },
+        {
+          "s": 3.0,
+          "zH_norm": 1.017343,
+          "zeta_2s": 1.017343,
+          "ratio": 1.0
+        },
+        {
+          "s": 4.0,
+          "zH_norm": 1.004077,
+          "zeta_2s": 1.004077,
+          "ratio": 1.0
+        },
+        {
+          "s": 5.0,
+          "zH_norm": 1.000995,
+          "zeta_2s": 1.000995,
+          "ratio": 1.0
+        }
+      ]
+    },
+    {
+      "id": "F1",
+      "name": "Double well Z2",
+      "results": []
+    },
+    {
+      "id": "F2",
+      "name": "Triple well Z3",
+      "results": [
+        {
+          "barrier": 1.0,
+          "sectors": [
+            0,
+            0,
+            60
+          ],
+          "data": [
+            {
+              "barrier": 1.0,
+              "sector": 2,
+              "s": 2.0,
+              "zH_norm": 2.292733,
+              "ratio_zeta": 2.1183,
+              "ratio_L_triv": 2.1448,
+              "ratio_L_nont": 2.439
+            },
+            {
+              "barrier": 1.0,
+              "sector": 2,
+              "s": 3.0,
+              "zH_norm": 1.794927,
+              "ratio_zeta": 1.7643,
+              "ratio_L_triv": 1.7668,
+              "ratio_L_nont": 1.8231
+            }
+          ]
+        },
+        {
+          "barrier": 5.0,
+          "sectors": [
+            0,
+            0,
+            60
+          ],
+          "data": [
+            {
+              "barrier": 5.0,
+              "sector": 2,
+              "s": 2.0,
+              "zH_norm": 2.845233,
+              "ratio_zeta": 2.6288,
+              "ratio_L_triv": 2.6617,
+              "ratio_L_nont": 3.0268
+            },
+            {
+              "barrier": 5.0,
+              "sector": 2,
+              "s": 3.0,
+              "zH_norm": 2.226776,
+              "ratio_zeta": 2.1888,
+              "ratio_L_triv": 2.1918,
+              "ratio_L_nont": 2.2617
+            }
+          ]
+        },
+        {
+          "barrier": 10.0,
+          "sectors": [
+            0,
+            0,
+            60
+          ],
+          "data": [
+            {
+              "barrier": 10.0,
+              "sector": 2,
+              "s": 2.0,
+              "zH_norm": 2.86353,
+              "ratio_zeta": 2.6457,
+              "ratio_L_triv": 2.6788,
+              "ratio_L_nont": 3.0462
+            },
+            {
+              "barrier": 10.0,
+              "sector": 2,
+              "s": 3.0,
+              "zH_norm": 2.225433,
+              "ratio_zeta": 2.1875,
+              "ratio_L_triv": 2.1905,
+              "ratio_L_nont": 2.2603
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "name": "Quad well Z4",
+      "results": [
+        {
+          "barrier": 5.0,
+          "sectors": [
+            0,
+            30,
+            0,
+            30
+          ]
+        },
+        {
+          "barrier": 10.0,
+          "sectors": [
+            0,
+            31,
+            0,
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F4",
+      "name": "Prime well Z5",
+      "results": [
+        {
+          "barrier": 5.0,
+          "sectors": [
+            60,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "barrier": 10.0,
+          "sectors": [
+            60,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F5",
+      "name": "Direct L-function comparison",
+      "results": [
+        {
+          "sector": "odd",
+          "n_states": 60,
+          "best_match": "zeta_s",
+          "best_score": 0.03185,
+          "eigenvalue_ratios": [
+            1.0,
+            2.9283,
+            2.9283,
+            2.9284,
+            4.7023,
+            6.2709,
+            6.2902,
+            6.3108,
+            7.6207,
+            8.4112
+          ]
+        }
+      ]
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-210",
+      "result": "PASS"
+    },
+    {
+      "id": "K-HP-211",
+      "result": "FAIL (no barrier=10 data)"
+    },
+    {
+      "id": "K-HP-212",
+      "result": "FAIL (1 sectors)"
+    },
+    {
+      "id": "K-HP-213",
+      "result": "FAIL (1 recognized)"
+    },
+    {
+      "id": "K-HP-214",
+      "result": "DEFERRED (functional equation requires analytical continuation)"
+    }
+  ]
+}

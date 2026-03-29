@@ -1,0 +1,227 @@
+{
+  "experiment": "EXP-HP18",
+  "title": "Finite-Size Scaling \u2014 N=300/500 Emergence Test",
+  "date": "2026-03-13",
+  "tests": [
+    {
+      "id": "S1",
+      "name": "Finite-size scaling \u03b2(N)",
+      "configs": [
+        [
+          80,
+          20,
+          40
+        ],
+        [
+          150,
+          35,
+          60
+        ],
+        [
+          300,
+          60,
+          80
+        ],
+        [
+          500,
+          80,
+          100
+        ]
+      ],
+      "results": [
+        {
+          "N": 80,
+          "n_zeros": 20,
+          "n_modes": 40,
+          "dist": 0.108954601,
+          "beta": 1.3195,
+          "var_s": 0.2094,
+          "mean_r": 0.7567,
+          "n_spacings": 74,
+          "elapsed_s": 0.9
+        },
+        {
+          "N": 150,
+          "n_zeros": 35,
+          "n_modes": 60,
+          "dist": 0.0823623111,
+          "beta": 1.1081,
+          "var_s": 0.2486,
+          "mean_r": 0.7794,
+          "n_spacings": 140,
+          "elapsed_s": 7.8
+        },
+        {
+          "N": 300,
+          "n_zeros": 60,
+          "n_modes": 80,
+          "dist": 0.0629053353,
+          "beta": 0.7517,
+          "var_s": 0.3472,
+          "mean_r": 0.8195,
+          "n_spacings": 285,
+          "elapsed_s": 24.2
+        },
+        {
+          "N": 500,
+          "n_zeros": 80,
+          "n_modes": 100,
+          "dist": 0.063082881,
+          "beta": 0.2569,
+          "var_s": 0.6413,
+          "mean_r": 0.8572,
+          "n_spacings": 479,
+          "elapsed_s": 69.3
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "Uniqueness at N=300",
+      "N_grid": 300,
+      "n_zeros": 60,
+      "n_modes": 80,
+      "n_runs": 15,
+      "n_converged_strict": 0,
+      "n_converged_moderate": 0,
+      "n_converged_loose": 0,
+      "dists": [
+        0.0629052581,
+        0.0869665252,
+        0.5494360516,
+        0.0232090879,
+        0.096353531,
+        0.0920838612,
+        0.5355492021,
+        0.4675558225,
+        0.6109655806,
+        0.5261827738,
+        0.6235941702,
+        0.4796810188,
+        0.0947335759,
+        0.4990032728,
+        0.5548028938
+      ],
+      "norms": [
+        37.3147,
+        37.2748,
+        2.4263,
+        37.5867,
+        36.1229,
+        35.9065,
+        2.5483,
+        2.987,
+        3.3003,
+        4.168,
+        2.7757,
+        2.9659,
+        36.0428,
+        3.6776,
+        3.0765
+      ]
+    },
+    {
+      "id": "S3",
+      "name": "Pairwise + Jacobian at N=300",
+      "n_compared": 0
+    },
+    {
+      "id": "S4",
+      "name": "Bootstrap \u03b2(N) estimates",
+      "details": [
+        {
+          "N": 80,
+          "beta_mean": 0.67,
+          "beta_std": 0.2193,
+          "beta_median": 0.6543,
+          "n_boot": 50
+        },
+        {
+          "N": 150,
+          "beta_mean": 0.5465,
+          "beta_std": 0.1876,
+          "beta_median": 0.541,
+          "n_boot": 50
+        },
+        {
+          "N": 300,
+          "beta_mean": 0.3673,
+          "beta_std": 0.1535,
+          "beta_median": 0.3457,
+          "n_boot": 50
+        },
+        {
+          "N": 500,
+          "beta_mean": 0.2201,
+          "beta_std": 0.1863,
+          "beta_median": 0.2308,
+          "n_boot": 50
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "name": "Finite-size scaling",
+      "Ns": [
+        80,
+        150,
+        300,
+        500
+      ],
+      "betas": [
+        0.67,
+        0.5465,
+        0.3673,
+        0.2201
+      ],
+      "betas_err": [
+        0.2193,
+        0.1876,
+        0.1535,
+        0.1863
+      ],
+      "fss_fit": {
+        "beta_inf": 0.0,
+        "a": 6.9499,
+        "nu": 0.5233,
+        "cost": 0.074677,
+        "in_gue_basin": false,
+        "beta_inf_linear": 0.2056
+      }
+    },
+    {
+      "id": "S6",
+      "name": "Zeta zero reference (100 zeros)",
+      "beta": 2.105,
+      "var_s": 0.1242,
+      "mean_r": 0.6107
+    }
+  ],
+  "kill_conditions": [
+    {
+      "id": "K-HP-64",
+      "result": "FAIL (non-monotonic: [(80, 1.319), (150, 1.108), (300, 0.752), (500, 0.257)])"
+    },
+    {
+      "id": "K-HP-65",
+      "result": "FAIL (\u03b2(500)=0.257)"
+    },
+    {
+      "id": "K-HP-66",
+      "result": "FAIL (\u03b2_\u221e=0.000)"
+    },
+    {
+      "id": "K-HP-67",
+      "result": "FAIL (0/15 strict, 0/15 moderate)"
+    },
+    {
+      "id": "K-HP-68",
+      "result": "N/A (insufficient converged pairs)"
+    },
+    {
+      "id": "K-HP-69",
+      "result": "N/A"
+    }
+  ],
+  "verdict": "GOE LOCK \u2014 structural. The symmetric operator converges to GOE. Route 2 (higher-dim lift) needed."
+}

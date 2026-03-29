@@ -1,0 +1,233 @@
+{
+  "experiment": "nb_fsr04",
+  "paper": 133,
+  "timestamp": "2026-03-17T22:48:08.790158+00:00",
+  "hypothesis": "rank-2 = Kramers instanton (\u00a748E) \u2192 double hardness",
+  "framework": [
+    "\u00a748E",
+    "\u00a751",
+    "\u00a78D",
+    "\u00a7113"
+  ],
+  "experiments": {
+    "E1_kramers_alignment": {
+      "exp": "E1_kramers_alignment",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "mean_alignment": 0.1097,
+          "interpretation": "misaligned"
+        },
+        "12": {
+          "mean_alignment": 0.0143,
+          "interpretation": "misaligned"
+        },
+        "16": {
+          "mean_alignment": 0.0101,
+          "interpretation": "misaligned"
+        },
+        "20": {
+          "mean_alignment": 0.0045,
+          "interpretation": "misaligned"
+        },
+        "24": {
+          "mean_alignment": 0.0037,
+          "interpretation": "misaligned"
+        }
+      },
+      "passed": false
+    },
+    "E2_fiber_dimension": {
+      "exp": "E2_fiber_dimension",
+      "T": 0.01,
+      "tol": 0.0001,
+      "results": {
+        "4": {
+          "N": 4,
+          "numerical_rank": 4,
+          "fiber_dim": 0,
+          "null_check_err": null
+        },
+        "8": {
+          "N": 8,
+          "numerical_rank": 7,
+          "fiber_dim": 1,
+          "null_check_err": 0.0
+        },
+        "12": {
+          "N": 12,
+          "numerical_rank": 9,
+          "fiber_dim": 3,
+          "null_check_err": 0.0
+        },
+        "16": {
+          "N": 16,
+          "numerical_rank": 9,
+          "fiber_dim": 7,
+          "null_check_err": 1e-06
+        },
+        "20": {
+          "N": 20,
+          "numerical_rank": 10,
+          "fiber_dim": 10,
+          "null_check_err": 1e-06
+        },
+        "24": {
+          "N": 24,
+          "numerical_rank": 13,
+          "fiber_dim": 11,
+          "null_check_err": 0.0
+        }
+      },
+      "passed": false
+    },
+    "E3_lean_fsr": {
+      "exp": "E3_lean_fsr",
+      "T": 0.01,
+      "results": {
+        "4": {
+          "cr_full": 167626.14,
+          "cr_lean": 171196.75,
+          "ratio": 1.0213
+        },
+        "8": {
+          "cr_full": 20652535567.22,
+          "cr_lean": 112516799555.38,
+          "ratio": 5.4481
+        },
+        "12": {
+          "cr_full": 401174618262355.25,
+          "cr_lean": 1944895729636340.8,
+          "ratio": 4.848
+        },
+        "16": {
+          "cr_full": 3.3169283236633772e+16,
+          "cr_lean": 1.1084991412590802e+16,
+          "ratio": 0.3342
+        },
+        "20": {
+          "cr_full": 3417690232398237.0,
+          "cr_lean": 5115023606920821.0,
+          "ratio": 1.4966
+        },
+        "24": {
+          "cr_full": 3.5243899796450404e+16,
+          "cr_lean": 1.4865877356743366e+16,
+          "ratio": 0.4218
+        }
+      },
+      "passed": true
+    },
+    "E4_fiber_ambiguity": {
+      "exp": "E4_fiber_ambiguity",
+      "T": 0.01,
+      "r": 0.05,
+      "results": {
+        "8": {
+          "fiber_dim": 1,
+          "same_fraction": 1.0,
+          "mean_dp_error": 0.01592,
+          "mean_om_error": 0.0244
+        },
+        "16": {
+          "fiber_dim": 6,
+          "same_fraction": 0.98,
+          "mean_dp_error": 0.00516,
+          "mean_om_error": 0.0211
+        },
+        "24": {
+          "fiber_dim": 12,
+          "same_fraction": 0.98,
+          "mean_dp_error": 0.00401,
+          "mean_om_error": 0.01765
+        }
+      },
+      "passed": true
+    },
+    "E5_preimage_attack": {
+      "exp": "E5_preimage_attack",
+      "T": 0.01,
+      "results": {
+        "8": {
+          "key_error": 0.7561,
+          "partner_spectrum_error": 0.0345
+        },
+        "16": {
+          "key_error": 1.5582,
+          "partner_spectrum_error": 0.1118
+        }
+      },
+      "passed": true
+    },
+    "E6_double_hardness": {
+      "exp": "E6_double_hardness",
+      "T": 0.01,
+      "r": 0.01,
+      "results": {
+        "4": {
+          "cr_bound": 269555.11,
+          "fiber_dim": 0,
+          "log2_H1": 18.0,
+          "log2_H2": 0.0,
+          "log2_H_total": 18.0,
+          "exceeds_AES128": "False"
+        },
+        "8": {
+          "cr_bound": 1631532199439.5,
+          "fiber_dim": 1,
+          "log2_H1": 40.6,
+          "log2_H2": 6.6,
+          "log2_H_total": 47.2,
+          "exceeds_AES128": "False"
+        },
+        "12": {
+          "cr_bound": 383082676588.03,
+          "fiber_dim": 4,
+          "log2_H1": 38.5,
+          "log2_H2": 26.6,
+          "log2_H_total": 65.1,
+          "exceeds_AES128": "False"
+        },
+        "16": {
+          "cr_bound": 1729571184320431.0,
+          "fiber_dim": 6,
+          "log2_H1": 50.6,
+          "log2_H2": 39.9,
+          "log2_H_total": 90.5,
+          "exceeds_AES128": "False"
+        },
+        "20": {
+          "cr_bound": 6.556392868657493e+16,
+          "fiber_dim": 9,
+          "log2_H1": 55.9,
+          "log2_H2": 59.8,
+          "log2_H_total": 115.7,
+          "exceeds_AES128": "False"
+        },
+        "24": {
+          "cr_bound": 5159753163253724.0,
+          "fiber_dim": 13,
+          "log2_H1": 52.2,
+          "log2_H2": 86.4,
+          "log2_H_total": 138.6,
+          "exceeds_AES128": "True"
+        },
+        "32": {
+          "cr_bound": 2.938985565553783e+16,
+          "fiber_dim": 19,
+          "log2_H1": 54.7,
+          "log2_H2": 126.2,
+          "log2_H_total": 180.9,
+          "exceeds_AES128": "True"
+        }
+      },
+      "min_secure_N": 24,
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 4,
+    "total": 6,
+    "runtime_s": 5.89
+  }
+}
