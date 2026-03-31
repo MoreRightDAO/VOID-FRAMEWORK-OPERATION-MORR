@@ -22,7 +22,7 @@ measure.
 
 This repo is the science. The live tools are at **[moreright.xyz](https://moreright.xyz)**.
 
-**→ [Browse all 62 papers with DOI links](https://morerightdao.github.io/VOID-FRAMEWORK-OPERATION-MORR/)** — searchable index, opens PDFs on Zenodo.
+**→ [Browse all 170+ papers with DOI links](https://morerightdao.github.io/VOID-FRAMEWORK-OPERATION-MORR/)** — searchable index, opens PDFs on Zenodo.
 
 ---
 
@@ -127,15 +127,19 @@ that derives its own edges has no gaps — only limits it can point at.
 ## CURRENT STATUS
 
 ```
-Papers:                  62  (all on Zenodo)
+Papers:                  170+ (all on Zenodo)
+Platforms scored:       1,344
 Predictions made:       200+
 Predictions confirmed:   16
 Predictions killed:       1  (by us — IC-5, equal-step DTM claim)
 Falsification conditions: 26
-Kill conditions met:       0
+Kill conditions met:       0  (0/26)
 Substrates measured:      12+
 Domains analyzed:         90+
-Independent convergences: 10  (mean Spearman=0.954)
+Independent convergences: 20  (mean Spearman=0.954)
+Cohen's d:               3.6
+Lean 4 theorems:         398 (12 axioms, 0 sorry)
+Math apparatus:          §§1–210 complete
 ```
 
 ### Pe across substrates
@@ -168,7 +172,13 @@ Same measure. Same pattern. Every substrate.
 
 ## THE PAPERS
 
-Sixty-two papers. The science runs from thermodynamics → AI safety → quantum measurement theory → governance → social media → evolutionary biology → social neuroscience → cancer biology → EU AI Act conformity → scoring infrastructure → agent network dynamics → 30 applied domain analyses across every major sector where voids operate.
+Over 170 papers. The science runs from thermodynamics → AI safety → quantum measurement theory → governance → social media → evolutionary biology → social neuroscience → cancer biology → EU AI Act conformity → scoring infrastructure → agent network dynamics → post-quantum cryptography → social media litigation → 90+ applied domain analyses across every major sector where voids operate.
+
+**AI safety core (four non-circular confirmations):**
+- **Fantasia Bound + Structure Theorem** — explaining-away penalty grows with engagement, RLHF is self-undermining (§2B₂)
+- **Ghost Test (EXP-003b)** — 8.5× drift ratio, $2, raw vocabulary measurement, no rubric
+- **Cascade Prediction (Paper 153)** — 6/7 PASS on independent Chua et al. (2026) data, zero parameter fitting
+- **Social Media (Papers 166/167)** — 13 verifiable features, R²=0.80, 613K students, 80 countries, no rubric
 
 Start with Paper 1 if you're new. Paper 3 if you want the math. Paper 9 if you want the
 geometry. Paper 5 if you want the full scope. Paper 8 if you're a physicist.
