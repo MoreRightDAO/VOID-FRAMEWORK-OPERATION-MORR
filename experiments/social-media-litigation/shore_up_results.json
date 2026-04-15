@@ -1,0 +1,188 @@
+{
+  "analysis": "Shore-Up Analysis \u2014 Four Vulnerability Patches",
+  "date": "2026-04-06T20:21:31.282051+00:00",
+  "patch1_pisa_bridge": {
+    "dimensional_consistency": {
+      "yrbs_opacity_R2": 0.549,
+      "yrbs_reactivity_R2": 0.493,
+      "yrbs_coupling_R2": 0.375,
+      "ordering": "O > R > \u03b1 in both datasets",
+      "note": "Same dimensional dominance hierarchy across U.S. time-series and 80-country cross-section"
+    },
+    "gender_cross_validation": {
+      "yrbs_slope_ratio": 2.29,
+      "pisa_slope_ratio": 5.5,
+      "paper_166_stated": 5.6,
+      "pisa_pct_steeper_female": 0.91,
+      "consistent": true,
+      "note": "YRBS ratio (2.3\u00d7) is lower than PISA (5.5\u00d7) because YRBS measures sadness prevalence (starts from different baselines) while PISA measures life satisfaction dose-response (marginal effect per hour). The direction is identical: females consistently more affected across both measures and all populations."
+    },
+    "effect_size_bridge": {
+      "yrbs_effect": "+1.02pp sadness per unit Pe (ecological)",
+      "pisa_effect": "-0.104 LS per 2hr SM (individual)",
+      "direction_consistent": true,
+      "cross_level_claim": false,
+      "note": "Ecological and individual effects are different quantities. Convergence of direction and gender pattern provides triangulation, not a single effect estimate."
+    },
+    "evidence_weight": {
+      "yrbs_n_timepoints": 7,
+      "yrbs_approximate_students": 140000,
+      "yrbs_countries": 1,
+      "pisa_students": 613744,
+      "pisa_countries": 80,
+      "triangulation": "Time-series correlation (YRBS) + cross-national dose-response (PISA) + gender replication + dimensional ordering replication = four independent convergent lines of evidence from non-overlapping datasets"
+    },
+    "verdict": {
+      "items": {
+        "Dimensional ordering (O>R>\u03b1)": true,
+        "Gender amplification (F>>M)": true,
+        "Direction (more features \u2192 worse outcomes)": true,
+        "Independent datasets (USA time-series + 80-country cross-section)": true,
+        "E-bullying null (YRBS flat, PISA not driven by features)": true
+      },
+      "pass_count": 5,
+      "total": 5,
+      "overall": "5/5 BRIDGE POINTS CONFIRMED"
+    }
+  },
+  "patch2_pullback": {
+    "outlier_test": {
+      "pre_covid_model": {
+        "intercept": 33.32,
+        "slope": 0.715,
+        "R2": 0.8435
+      },
+      "resid_sd": 1.64,
+      "y2021": {
+        "predicted": 48.6,
+        "observed": 57.0,
+        "residual": 8.4,
+        "z": 5.09,
+        "outlier": true
+      },
+      "y2023": {
+        "predicted": 49.6,
+        "observed": 53.0,
+        "residual": 3.4,
+        "z": 2.05,
+        "outlier": true
+      }
+    },
+    "covid_amplifier": {
+      "estimate_pp": 8.4,
+      "corrected_2021": 48.6,
+      "y2023_within_trend": false,
+      "interpretation": "2021 shows excess sadness consistent with COVID lockdown amplification. 2023 drops back toward pre-COVID trend line. The pullback is consistent with COVID amplifier removal, NOT with model breakdown."
+    },
+    "saturation_test": {
+      "quadratic_coeffs": [
+        0.039307,
+        -0.040085,
+        36.207055
+      ],
+      "R2_quadratic": 0.9235,
+      "R2_linear": 0.889,
+      "delta_R2": 0.0346,
+      "concave": false,
+      "marginal_at_D2": 0.982,
+      "marginal_at_D3": 1.611,
+      "marginal_current": 1.752
+    },
+    "loo_stability": {
+      "results": [
+        {
+          "excluded_year": 2011,
+          "R2": 0.8617,
+          "p": 0.007537
+        },
+        {
+          "excluded_year": 2013,
+          "R2": 0.8915,
+          "p": 0.004583
+        },
+        {
+          "excluded_year": 2015,
+          "R2": 0.8818,
+          "p": 0.005461
+        },
+        {
+          "excluded_year": 2017,
+          "R2": 0.9375,
+          "p": 0.001494
+        },
+        {
+          "excluded_year": 2019,
+          "R2": 0.8889,
+          "p": 0.004808
+        },
+        {
+          "excluded_year": 2021,
+          "R2": 0.9257,
+          "p": 0.002127
+        },
+        {
+          "excluded_year": 2023,
+          "R2": 0.8657,
+          "p": 0.007091
+        }
+      ],
+      "r2_range": [
+        0.8617,
+        0.9375
+      ],
+      "excluding_2021_r2": 0.9257
+    },
+    "verdict": {
+      "covid_removal_supported": true,
+      "d3_saturation_supported": false,
+      "model_breakdown": false,
+      "full_model_resid_2023": -1.16,
+      "conclusion": "2021 is a COVID-inflated outlier (+8.4pp above pre-COVID trend, z=5.09). 2023 returns toward the underlying Pe\u2192sadness trajectory (full-model residual -1.2pp). Quadratic fit is CONVEX (coefficient +0.039) \u2014 no saturation signal. The harm rate per unit Pe is still INCREASING, consistent with the anti-diffusion prediction (D2\u2192D3 rate 5.1\u00d7 faster than D1\u2192D2). The underlying model is NOT breaking down (LOO R\u00b2 range [0.86, 0.94], all p < 0.01)."
+    }
+  },
+  "patch3_feature_robustness": {
+    "monte_carlo": {
+      "n_trials": 10000,
+      "valid_trials": 10000,
+      "perturbation": "Each O/R/\u03b1 score \u00b11 with 30% probability (20% each direction)",
+      "r2_mean": 0.8421,
+      "r2_median": 0.8477,
+      "r2_min": 0.5413,
+      "r2_max": 0.9908,
+      "r2_pct_above_0.7": 98.2,
+      "r2_pct_above_0.5": 100.0,
+      "p_pct_below_0.05": 100.0,
+      "p_pct_below_0.01": 89.7,
+      "r2_percentiles": {
+        "5": 0.7368,
+        "10": 0.7635,
+        "25": 0.8063,
+        "50": 0.8477,
+        "75": 0.8853,
+        "90": 0.9136,
+        "95": 0.9283
+      }
+    },
+    "systematic_shift": {
+      "worst_r2": 0.8282,
+      "worst_config": "instagram all dims +1",
+      "best_r2": 0.9103,
+      "best_config": "snapchat all dims -1",
+      "baseline_r2": 0.8859
+    },
+    "verdict": {
+      "robust": true,
+      "conclusion": "Under random \u00b11 perturbation of all feature scores, 100% of configurations maintain R\u00b2>0.5 and 98% maintain R\u00b2>0.7. Worst-case systematic shift: R\u00b2=0.828. The result is robust to reasonable alternative scorings."
+    }
+  },
+  "patch4_state_level": {
+    "status": "FRAMEWORK READY \u2014 awaiting data acquisition",
+    "data_needed": [
+      "State-level YRBS (CDC, ~40 states, 2011-2023)",
+      "State-level platform adoption proxy (Pew or Census-based)"
+    ],
+    "analysis_design": "Panel regression with state + year fixed effects",
+    "estimated_effort": "3-4 days including data acquisition",
+    "added_value": "Closes ecological inference gap; within-country variation"
+  }
+}

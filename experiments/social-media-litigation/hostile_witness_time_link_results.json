@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "script": "hostile_witness_time_link_correlation.py",
+    "role_weight": {
+      "admission": 3.0,
+      "allegation": 2.0,
+      "procedural": 1.0
+    },
+    "strength_weight": {
+      "low": 1.0,
+      "medium": 1.5,
+      "high": 2.0
+    },
+    "exhibit_rows": 29,
+    "analysis_year_window": [
+      2018,
+      2025
+    ],
+    "analysis_years_n": 8,
+    "note": "Descriptive time-link analysis only; no causal identification."
+  },
+  "level_correlation_exact": {
+    "pearson": {
+      "r_observed": 0.3896621654691857,
+      "p_two_sided_exact": 0.39880952380952384,
+      "n_permutations": 40320
+    },
+    "spearman": {
+      "r_observed": 0.09523809523809526,
+      "p_two_sided_exact": 0.8401289682539682,
+      "n_permutations": 40320
+    }
+  },
+  "first_difference_correlation_exact": {
+    "pearson": {
+      "r_observed": -0.09833642317731868,
+      "p_two_sided_exact": 0.7861111111111111,
+      "n_permutations": 5040
+    },
+    "spearman": {
+      "r_observed": 0.0,
+      "p_two_sided_exact": 1.0,
+      "n_permutations": 5040
+    }
+  },
+  "lag_checks_descriptive": {
+    "-1": {
+      "n": 7,
+      "pearson_r": 0.49957382027814584,
+      "spearman_rho": 0.39285714285714296
+    },
+    "0": {
+      "n": 8,
+      "pearson_r": 0.3896621654691857,
+      "spearman_rho": 0.09523809523809526
+    },
+    "1": {
+      "n": 7,
+      "pearson_r": -0.5940233363151953,
+      "spearman_rho": -0.3571428571428572
+    }
+  },
+  "yearly_join": [
+    {
+      "year": 2018,
+      "platforms_used": 5,
+      "weighted_O": 1.7944250871080138,
+      "weighted_R": 2.034843205574913,
+      "weighted_alpha": 1.7665505226480835,
+      "weighted_ORA_sum": 5.59581881533101,
+      "hostile_event_count": 2.0,
+      "hostile_signal_score": 9.75,
+      "hostile_admission_count": 1.0,
+      "hostile_allegation_count": 1.0,
+      "hostile_procedural_count": 0.0
+    },
+    {
+      "year": 2019,
+      "platforms_used": 5,
+      "weighted_O": 1.8620689655172413,
+      "weighted_R": 2.086206896551724,
+      "weighted_alpha": 1.7655172413793103,
+      "weighted_ORA_sum": 5.713793103448276,
+      "hostile_event_count": 1.0,
+      "hostile_signal_score": 5.3999999999999995,
+      "hostile_admission_count": 1.0,
+      "hostile_allegation_count": 0.0,
+      "hostile_procedural_count": 0.0
+    },
+    {
+      "year": 2020,
+      "platforms_used": 5,
+      "weighted_O": 2.3493150684931505,
+      "weighted_R": 2.3493150684931505,
+      "weighted_alpha": 1.8972602739726028,
+      "weighted_ORA_sum": 6.595890410958904,
+      "hostile_event_count": 0.0,
+      "hostile_signal_score": 0.0,
+      "hostile_admission_count": 0.0,
+      "hostile_allegation_count": 0.0,
+      "hostile_procedural_count": 0.0
+    },
+    {
+      "year": 2021,
+      "platforms_used": 5,
+      "weighted_O": 2.3836065573770493,
+      "weighted_R": 2.6918032786885244,
+      "weighted_alpha": 1.9508196721311475,
+      "weighted_ORA_sum": 7.026229508196721,
+      "hostile_event_count": 1.0,
+      "hostile_signal_score": 2.8,
+      "hostile_admission_count": 0.0,
+      "hostile_allegation_count": 1.0,
+      "hostile_procedural_count": 0.0
+    },
+    {
+      "year": 2022,
+      "platforms_used": 5,
+      "weighted_O": 2.4095238095238094,
+      "weighted_R": 2.7111111111111112,
+      "weighted_alpha": 1.9968253968253968,
+      "weighted_ORA_sum": 7.117460317460317,
+      "hostile_event_count": 1.0,
+      "hostile_signal_score": 1.7999999999999998,
+      "hostile_admission_count": 0.0,
+      "hostile_allegation_count": 0.0,
+      "hostile_procedural_count": 1.0
+    },
+    {
+      "year": 2023,
+      "platforms_used": 5,
+      "weighted_O": 2.4,
+      "weighted_R": 2.8918032786885246,
+      "weighted_alpha": 2.1934426229508195,
+      "weighted_ORA_sum": 7.485245901639344,
+      "hostile_event_count": 2.0,
+      "hostile_signal_score": 4.95,
+      "hostile_admission_count": 0.0,
+      "hostile_allegation_count": 1.0,
+      "hostile_procedural_count": 1.0
+    },
+    {
+      "year": 2024,
+      "platforms_used": 5,
+      "weighted_O": 2.4093959731543624,
+      "weighted_R": 3.0,
+      "weighted_alpha": 2.1879194630872485,
+      "weighted_ORA_sum": 7.597315436241611,
+      "hostile_event_count": 2.0,
+      "hostile_signal_score": 4.75,
+      "hostile_admission_count": 0.0,
+      "hostile_allegation_count": 0.0,
+      "hostile_procedural_count": 2.0
+    },
+    {
+      "year": 2025,
+      "platforms_used": 5,
+      "weighted_O": 2.7104377104377106,
+      "weighted_R": 3.0,
+      "weighted_alpha": 2.185185185185185,
+      "weighted_ORA_sum": 7.895622895622896,
+      "hostile_event_count": 18.0,
+      "hostile_signal_score": 44.7,
+      "hostile_admission_count": 3.0,
+      "hostile_allegation_count": 1.0,
+      "hostile_procedural_count": 14.0
+    }
+  ]
+}

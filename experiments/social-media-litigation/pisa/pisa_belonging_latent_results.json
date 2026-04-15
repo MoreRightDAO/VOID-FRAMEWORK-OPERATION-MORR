@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "script": "belonging_latent_index_analysis.py",
+    "bootstrap_reps": 6000,
+    "rng_seed": 20260401,
+    "data_file": "pisa_country_means.csv",
+    "design_note": "Country-level latent construct and ecological mediation."
+  },
+  "sample": {
+    "n_countries_total": 80,
+    "n_countries_with_all_st034_items": 79,
+    "n_countries_complete_main_model": 46
+  },
+  "latent_index": {
+    "item_loadings_pc1": {
+      "outsider_distress": 0.48167417875601276,
+      "friends_difficulty": 0.35063629622774395,
+      "no_belonging": 0.2171602512931914,
+      "awkward_distress": 0.49937290724938005,
+      "not_liked": 0.32538185239147366,
+      "lonely_distress": 0.4925839503935183
+    },
+    "explained_variance_ratio_pc1": 0.5750166193576367,
+    "cronbach_alpha_standardized": 0.8348799650365444,
+    "index_name": "belonging_disconnection_index",
+    "orientation": "higher = more social disconnection/loneliness"
+  },
+  "pairwise_correlations": {
+    "sm_hours_vs_disconnection_index": {
+      "r": 0.1978826223186898,
+      "p": 0.18242922369314013
+    },
+    "disconnection_index_vs_life_satisfaction": {
+      "r": -0.3674260918042182,
+      "p": 0.011063871145101035
+    },
+    "sm_hours_vs_life_satisfaction": {
+      "r": 0.24029008769823662,
+      "p": 0.10375354461953719
+    }
+  },
+  "mediation_disconnection_index": {
+    "n_countries": 46,
+    "point_estimates": {
+      "a_sm_to_mediator": 0.8526713768495628,
+      "b_mediator_to_life_sat": -0.12613637931591173,
+      "c_total_sm_to_life_sat": 0.35734542697927296,
+      "c_prime_direct_sm_to_life_sat": 0.46489830720139175,
+      "indirect_effect_a_times_b": -0.10755288022211718,
+      "percent_mediated": -0.3009773516098628
+    },
+    "bootstrap": {
+      "indirect_effect": {
+        "mean": -0.09422527667630937,
+        "median": -0.0887230023381724,
+        "ci95_low": -0.3860365197854566,
+        "ci95_high": 0.18828588899948123,
+        "p_two_sided": 0.43366666666666664,
+        "n_boot": 6000
+      },
+      "direct_effect": {
+        "mean": 0.44940072866574116,
+        "median": 0.45793804091582346,
+        "ci95_low": -0.1567700861823333,
+        "ci95_high": 0.9922044599351254,
+        "p_two_sided": 0.12133333333333333,
+        "n_boot": 6000
+      },
+      "total_effect": {
+        "mean": 0.35517545198943207,
+        "median": 0.35644154414246854,
+        "ci95_low": -0.23115077086652547,
+        "ci95_high": 0.9592675895172864,
+        "p_two_sided": 0.21733333333333332,
+        "n_boot": 6000
+      },
+      "percent_mediated": {
+        "mean": -0.4574191334342828,
+        "median": -0.17717750525487058,
+        "ci95_low": -4.8007549336809685,
+        "ci95_high": 3.139344687277765,
+        "p_two_sided": 0.5996666666666667,
+        "n_boot": 6000
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "script": "psych_mechanism_microdata_fe.py",
+    "bootstrap_reps": 800,
+    "rng_seed": 20260401,
+    "sav_file": "CY08MSP_STU_QQQ.SAV",
+    "note": "Country fixed effects on weighted country x gender x dose aggregates."
+  },
+  "sample": {
+    "raw_rows_after_filters": 285958,
+    "n_countries_raw": 47,
+    "n_groups_country_gender_dose": 564
+  },
+  "mechanisms": {
+    "upset_index": {
+      "mediator": "upset_index_mean",
+      "sample": {
+        "n_groups": 552,
+        "n_countries": 46
+      },
+      "model_fit": {
+        "a_model_r2_weighted": 0.8845277830751805,
+        "b_model_r2_weighted": 0.9484734132601128,
+        "c_model_r2_weighted": 0.9447759344766322
+      },
+      "point_estimates": {
+        "a_sm_to_mediator_male": 0.03294212682131742,
+        "a_sm_to_mediator_female": 0.02723221450434833,
+        "b_mediator_to_life_sat": -1.097095297855883,
+        "indirect_effect_male": -0.036140652437039504,
+        "indirect_effect_female": -0.02987633448292333,
+        "direct_effect_male": 0.026273455354270503,
+        "direct_effect_female": -0.08361213422238675,
+        "total_effect_male": -0.009867197082770507,
+        "total_effect_female": -0.11348846870531466,
+        "percent_mediated_male": 3.6627070619827884,
+        "percent_mediated_female": 0.2632543625247119
+      },
+      "bootstrap": {
+        "indirect_effect_male": {
+          "mean": -0.035080865240034356,
+          "median": -0.03388612672514303,
+          "ci95_low": -0.06359567488430194,
+          "ci95_high": -0.013621716685725158,
+          "p_two_sided": 0.0025,
+          "n_boot": 800
+        },
+        "indirect_effect_female": {
+          "mean": -0.028837341424669875,
+          "median": -0.028156215239576843,
+          "ci95_low": -0.0540321404929566,
+          "ci95_high": -0.011040472431573441,
+          "p_two_sided": 0.0025,
+          "n_boot": 800
+        },
+        "percent_mediated_male": {
+          "mean": 5.070473442639392,
+          "median": 2.8055101763943977,
+          "ci95_low": -21.212057704642774,
+          "ci95_high": 46.38834257532873,
+          "p_two_sided": 0.1775,
+          "n_boot": 800
+        },
+        "percent_mediated_female": {
+          "mean": 0.25569628051346993,
+          "median": 0.24516082461786368,
+          "ci95_low": 0.09001100308721244,
+          "ci95_high": 0.49388283652993387,
+          "p_two_sided": 0.0025,
+          "n_boot": 800
+        }
+      }
+    },
+    "disconnection_index": {
+      "mediator": "disconnection_index_mean",
+      "sample": {
+        "n_groups": 552,
+        "n_countries": 46
+      },
+      "model_fit": {
+        "a_model_r2_weighted": 0.8513047694004696,
+        "b_model_r2_weighted": 0.959640808924464,
+        "c_model_r2_weighted": 0.9447759344766322
+      },
+      "point_estimates": {
+        "a_sm_to_mediator_male": -0.015433218868838167,
+        "a_sm_to_mediator_female": 0.0051635918570629435,
+        "b_mediator_to_life_sat": -1.7687856158158801,
+        "indirect_effect_male": 0.027298055540939177,
+        "indirect_effect_female": -0.009133287002716943,
+        "direct_effect_male": -0.03716525262370496,
+        "direct_effect_female": -0.10435518170258788,
+        "total_effect_male": -0.009867197082770507,
+        "total_effect_female": -0.11348846870531466,
+        "percent_mediated_male": -2.7665460932776305,
+        "percent_mediated_female": 0.08047766532503431
+      },
+      "bootstrap": {
+        "indirect_effect_male": {
+          "mean": 0.02596855542172782,
+          "median": 0.02603195733713022,
+          "ci95_low": 0.016870187556834063,
+          "ci95_high": 0.03387147765608848,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "indirect_effect_female": {
+          "mean": -0.009108987016634344,
+          "median": -0.008772601025045573,
+          "ci95_low": -0.022490735242667707,
+          "ci95_high": 0.003715036889300255,
+          "p_two_sided": 0.15,
+          "n_boot": 800
+        },
+        "percent_mediated_male": {
+          "mean": -4.934974638707924,
+          "median": -2.1892062815397786,
+          "ci95_low": -31.154010440202068,
+          "ci95_high": 20.033723012066275,
+          "p_two_sided": 0.175,
+          "n_boot": 800
+        },
+        "percent_mediated_female": {
+          "mean": 0.0776948254634346,
+          "median": 0.07744752850088314,
+          "ci95_low": -0.03519310171610149,
+          "ci95_high": 0.17707975754129196,
+          "p_two_sided": 0.15,
+          "n_boot": 800
+        }
+      }
+    }
+  }
+}

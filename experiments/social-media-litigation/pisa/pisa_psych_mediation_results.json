@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "script": "psychological_mediation_analysis.py",
+    "bootstrap_reps": 1500,
+    "rng_seed": 20260401,
+    "data_file": "pisa_country_means.csv",
+    "design_note": "Country-level ecological mediation; not individual-level causal mediation."
+  },
+  "sample": {
+    "n_countries_total": 80,
+    "n_countries_complete_main_model": 46
+  },
+  "pairwise_correlations": {
+    "sm_hours_vs_life_satisfaction": {
+      "r": 0.2446196615759153,
+      "p": 0.10133183997192508
+    },
+    "sm_hours_vs_upset_index": {
+      "r": 0.2931374684399156,
+      "p": 0.04802909590761415
+    },
+    "upset_index_vs_life_satisfaction": {
+      "r": -0.20850123657618674,
+      "p": 0.16436384447285146
+    }
+  },
+  "mediation_upset_index": {
+    "n_countries": 46,
+    "point_estimates": {
+      "a_sm_to_mediator": 0.040924806714687775,
+      "b_mediator_to_life_sat": -2.730437692871371,
+      "c_total_sm_to_life_sat": 0.35734542697927296,
+      "c_prime_direct_sm_to_life_sat": 0.46908806180653295,
+      "indirect_effect_a_times_b": -0.1117426348272589,
+      "percent_mediated": -0.3127020143278349
+    },
+    "bootstrap": {
+      "indirect_effect": {
+        "mean": -0.11988908572829166,
+        "median": -0.07352760755601173,
+        "ci95_low": -0.5198295479861877,
+        "ci95_high": 0.08247667805093462,
+        "p_two_sided": 0.39866666666666667,
+        "n_boot": 1500
+      },
+      "direct_effect": {
+        "mean": 0.4772157391932651,
+        "median": 0.47621911613404483,
+        "ci95_low": -0.11007194017996691,
+        "ci95_high": 1.06362442450098,
+        "p_two_sided": 0.108,
+        "n_boot": 1500
+      },
+      "total_effect": {
+        "mean": 0.3573266534649741,
+        "median": 0.3568632253732925,
+        "ci95_low": -0.21424253928058373,
+        "ci95_high": 0.9421153132821604,
+        "p_two_sided": 0.21733333333333332,
+        "n_boot": 1500
+      },
+      "percent_mediated": {
+        "mean": -0.2904329075930897,
+        "median": -0.12186279228586584,
+        "ci95_low": -5.086386871606013,
+        "ci95_high": 3.555589782970385,
+        "p_two_sided": 0.5546666666666666,
+        "n_boot": 1500
+      }
+    }
+  },
+  "mediation_each_upset_item": {
+    "IC181Q01JA_upset_pct": {
+      "n_countries": 46,
+      "point_estimates": {
+        "a_sm_to_mediator": 0.007596461289492224,
+        "b_mediator_to_life_sat": -0.8655594011727434,
+        "c_total_sm_to_life_sat": 0.35734542697927296,
+        "c_prime_direct_sm_to_life_sat": 0.36392061546403937,
+        "indirect_effect_a_times_b": -0.006575188484764816,
+        "percent_mediated": -0.01840009130758009
+      },
+      "bootstrap": {
+        "indirect_effect": {
+          "mean": -0.02230218811530359,
+          "median": -0.005612772362964206,
+          "ci95_low": -0.23167444832165401,
+          "ci95_high": 0.12984729210322685,
+          "p_two_sided": 0.8186666666666667,
+          "n_boot": 1500
+        },
+        "direct_effect": {
+          "mean": 0.37962884158027704,
+          "median": 0.3797864474710385,
+          "ci95_low": -0.23884224225509085,
+          "ci95_high": 0.9873201764531241,
+          "p_two_sided": 0.20533333333333334,
+          "n_boot": 1500
+        },
+        "total_effect": {
+          "mean": 0.3573266534649741,
+          "median": 0.3568632253732925,
+          "ci95_low": -0.21424253928058373,
+          "ci95_high": 0.9421153132821604,
+          "p_two_sided": 0.21733333333333332,
+          "n_boot": 1500
+        },
+        "percent_mediated": {
+          "mean": -0.12732518042531976,
+          "median": -0.01722644257427928,
+          "ci95_low": -1.7361718519851386,
+          "ci95_high": 1.2098262647680584,
+          "p_two_sided": 0.8013333333333333,
+          "n_boot": 1500
+        }
+      }
+    },
+    "IC181Q02JA_upset_pct": {
+      "n_countries": 46,
+      "point_estimates": {
+        "a_sm_to_mediator": 0.02203249863720393,
+        "b_mediator_to_life_sat": -3.2968003959406147,
+        "c_total_sm_to_life_sat": 0.35734542697927296,
+        "c_prime_direct_sm_to_life_sat": 0.42998217720996923,
+        "indirect_effect_a_times_b": -0.07263675023069496,
+        "percent_mediated": -0.2032676081647691
+      },
+      "bootstrap": {
+        "indirect_effect": {
+          "mean": -0.08811162400122434,
+          "median": -0.0517245851135229,
+          "ci95_low": -0.5226884287892593,
+          "ci95_high": 0.21438101976004514,
+          "p_two_sided": 0.668,
+          "n_boot": 1500
+        },
+        "direct_effect": {
+          "mean": 0.445438277466197,
+          "median": 0.4516841118165106,
+          "ci95_low": -0.12000058623424201,
+          "ci95_high": 0.9983430545492371,
+          "p_two_sided": 0.116,
+          "n_boot": 1500
+        },
+        "total_effect": {
+          "mean": 0.3573266534649741,
+          "median": 0.3568632253732925,
+          "ci95_low": -0.21424253928058373,
+          "ci95_high": 0.9421153132821604,
+          "p_two_sided": 0.21733333333333332,
+          "n_boot": 1500
+        },
+        "percent_mediated": {
+          "mean": -0.14329812959507351,
+          "median": -0.07101159400506671,
+          "ci95_low": -4.459035606032187,
+          "ci95_high": 4.26494592170952,
+          "p_two_sided": 0.8106666666666666,
+          "n_boot": 1500
+        }
+      }
+    },
+    "IC181Q03JA_upset_pct": {
+      "n_countries": 46,
+      "point_estimates": {
+        "a_sm_to_mediator": 0.038490661790600386,
+        "b_mediator_to_life_sat": -2.7047210759601823,
+        "c_total_sm_to_life_sat": 0.35734542697927296,
+        "c_prime_direct_sm_to_life_sat": 0.46145193115196814,
+        "indirect_effect_a_times_b": -0.10410650417269215,
+        "percent_mediated": -0.29133296892233806
+      },
+      "bootstrap": {
+        "indirect_effect": {
+          "mean": -0.11864506674184884,
+          "median": -0.07523579221596341,
+          "ci95_low": -0.5244300014370996,
+          "ci95_high": 0.0938376972229696,
+          "p_two_sided": 0.424,
+          "n_boot": 1500
+        },
+        "direct_effect": {
+          "mean": 0.4759717202068222,
+          "median": 0.4775529801481916,
+          "ci95_low": -0.08292278268229786,
+          "ci95_high": 1.082671484855419,
+          "p_two_sided": 0.10266666666666667,
+          "n_boot": 1500
+        },
+        "total_effect": {
+          "mean": 0.3573266534649741,
+          "median": 0.3568632253732925,
+          "ci95_low": -0.21424253928058373,
+          "ci95_high": 0.9421153132821604,
+          "p_two_sided": 0.21733333333333332,
+          "n_boot": 1500
+        },
+        "percent_mediated": {
+          "mean": -0.24952483155438365,
+          "median": -0.12526468361150278,
+          "ci95_low": -5.312193840045142,
+          "ci95_high": 4.294079891781963,
+          "p_two_sided": 0.588,
+          "n_boot": 1500
+        }
+      }
+    },
+    "IC181Q04JA_upset_pct": {
+      "n_countries": 46,
+      "point_estimates": {
+        "a_sm_to_mediator": 0.09557960514145449,
+        "b_mediator_to_life_sat": -1.5485651976826924,
+        "c_total_sm_to_life_sat": 0.35734542697927296,
+        "c_prime_direct_sm_to_life_sat": 0.5053566771095857,
+        "indirect_effect_a_times_b": -0.14801125013031013,
+        "percent_mediated": -0.4141965699169146
+      },
+      "bootstrap": {
+        "indirect_effect": {
+          "mean": -0.15526672425104648,
+          "median": -0.1213598465961339,
+          "ci95_low": -0.5359898910018376,
+          "ci95_high": 0.0638473205366984,
+          "p_two_sided": 0.236,
+          "n_boot": 1500
+        },
+        "direct_effect": {
+          "mean": 0.5125933777160203,
+          "median": 0.5128998292199329,
+          "ci95_low": -0.06769868054911875,
+          "ci95_high": 1.0640534997252395,
+          "p_two_sided": 0.08266666666666667,
+          "n_boot": 1500
+        },
+        "total_effect": {
+          "mean": 0.3573266534649741,
+          "median": 0.3568632253732925,
+          "ci95_low": -0.21424253928058373,
+          "ci95_high": 0.9421153132821604,
+          "p_two_sided": 0.21733333333333332,
+          "n_boot": 1500
+        },
+        "percent_mediated": {
+          "mean": -0.3650768763787155,
+          "median": -0.25136377126436765,
+          "ci95_low": -5.41859063000141,
+          "ci95_high": 4.283049230127144,
+          "p_two_sided": 0.424,
+          "n_boot": 1500
+        }
+      }
+    }
+  }
+}

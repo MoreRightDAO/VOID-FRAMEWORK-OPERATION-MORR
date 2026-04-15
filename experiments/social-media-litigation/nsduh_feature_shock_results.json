@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "script": "nsduh_annual_feature_shock_analysis.py",
+    "nsduh_input": "nsduh_adolescent_mde_2004_2024.csv",
+    "feature_assumption": "2011-2023 linear interpolation; 2024 carry-forward from 2023",
+    "methodology_notes": [
+      "SAMHSA cautions 2020 comparability vs prior years.",
+      "2021-2024 values use updated 2021 weights in 2024 report.",
+      "All tests are observational timing analyses, not causal identification.",
+      "Correlation p-values use Monte Carlo permutation tests."
+    ]
+  },
+  "long_horizon_nsduh_trends": {
+    "full_2004_2024_mde": {
+      "start_year": 2004,
+      "end_year": 2024,
+      "n": 21,
+      "pearson_r": 0.905379874289575,
+      "spearman_rho": 0.8937967343760964,
+      "delta_pct_points": 6.4
+    },
+    "pre_multimode_2004_2020_mde": {
+      "start_year": 2004,
+      "end_year": 2020,
+      "n": 17,
+      "pearson_r": 0.9016526100005482,
+      "spearman_rho": 0.8461068420495832,
+      "delta_pct_points": 8.0
+    },
+    "multimode_2021_2024_mde": {
+      "start_year": 2021,
+      "end_year": 2024,
+      "n": 4,
+      "pearson_r": -0.9823362070472679,
+      "spearman_rho": -1.0,
+      "delta_pct_points": -5.4
+    },
+    "full_2006_2024_mde_severe": {
+      "start_year": 2006,
+      "end_year": 2024,
+      "n": 19,
+      "pearson_r": 0.9273242550242293,
+      "spearman_rho": 0.9587361026054028,
+      "delta_pct_points": 5.800000000000001
+    },
+    "pre_multimode_2006_2020_mde_severe": {
+      "start_year": 2006,
+      "end_year": 2020,
+      "n": 15,
+      "pearson_r": 0.957060693669712,
+      "spearman_rho": 0.9660122791674566,
+      "delta_pct_points": 6.5
+    },
+    "multimode_2021_2024_mde_severe": {
+      "start_year": 2021,
+      "end_year": 2024,
+      "n": 4,
+      "pearson_r": -0.9621069158436208,
+      "spearman_rho": -1.0,
+      "delta_pct_points": -3.8999999999999986
+    }
+  },
+  "feature_mde_correlation_diagnostics": {
+    "levels_2011_2020": {
+      "years": [
+        2011,
+        2020
+      ],
+      "n": 10,
+      "algo_plus_engagement_vs_outcome": {
+        "r_observed": 0.9607040534603599,
+        "p_two_sided_mc": 9.999000099990002e-05,
+        "n_permutations": 10000
+      },
+      "raw_adoption_vs_outcome": {
+        "r_observed": 0.9536845303629364,
+        "p_two_sided_mc": 9.999000099990002e-05,
+        "n_permutations": 10000
+      }
+    },
+    "levels_2011_2024": {
+      "years": [
+        2011,
+        2024
+      ],
+      "n": 14,
+      "algo_plus_engagement_vs_outcome": {
+        "r_observed": 0.9343723534521654,
+        "p_two_sided_mc": 9.999000099990002e-05,
+        "n_permutations": 10000
+      },
+      "raw_adoption_vs_outcome": {
+        "r_observed": 0.9086520715085904,
+        "p_two_sided_mc": 9.999000099990002e-05,
+        "n_permutations": 10000
+      }
+    },
+    "diffs_2011_2024": {
+      "years": [
+        2011,
+        2024
+      ],
+      "exclude_2020_2021_bridge_interval": false,
+      "n_intervals": 13,
+      "algo_plus_engagement_delta_vs_outcome_delta": {
+        "r_observed": 0.5095552950261686,
+        "p_two_sided_mc": 0.0751924807519248,
+        "n_permutations": 10000
+      },
+      "raw_adoption_delta_vs_outcome_delta": {
+        "r_observed": 0.3484099755046088,
+        "p_two_sided_mc": 0.2502749725027497,
+        "n_permutations": 10000
+      }
+    },
+    "diffs_2011_2024_excluding_bridge": {
+      "years": [
+        2011,
+        2024
+      ],
+      "exclude_2020_2021_bridge_interval": true,
+      "n_intervals": 12,
+      "algo_plus_engagement_delta_vs_outcome_delta": {
+        "r_observed": 0.49199825428245025,
+        "p_two_sided_mc": 0.0984901509849015,
+        "n_permutations": 10000
+      },
+      "raw_adoption_delta_vs_outcome_delta": {
+        "r_observed": 0.4673160796098749,
+        "p_two_sided_mc": 0.12408759124087591,
+        "n_permutations": 10000
+      }
+    }
+  },
+  "feature_mde_severe_correlation_diagnostics": {
+    "levels_2011_2020": {
+      "years": [
+        2011,
+        2020
+      ],
+      "n": 10,
+      "algo_plus_engagement_vs_outcome": {
+        "r_observed": 0.9512635778114791,
+        "p_two_sided_mc": 9.999000099990002e-05,
+        "n_permutations": 10000
+      },
+      "raw_adoption_vs_outcome": {
+        "r_observed": 0.9459593323338307,
+        "p_two_sided_mc": 9.999000099990002e-05,
+        "n_permutations": 10000
+      }
+    },
+    "levels_2011_2024": {
+      "years": [
+        2011,
+        2024
+      ],
+      "n": 14,
+      "algo_plus_engagement_vs_outcome": {
+        "r_observed": 0.9270386218997299,
+        "p_two_sided_mc": 9.999000099990002e-05,
+        "n_permutations": 10000
+      },
+      "raw_adoption_vs_outcome": {
+        "r_observed": 0.8962666828532951,
+        "p_two_sided_mc": 9.999000099990002e-05,
+        "n_permutations": 10000
+      }
+    },
+    "diffs_2011_2024": {
+      "years": [
+        2011,
+        2024
+      ],
+      "exclude_2020_2021_bridge_interval": false,
+      "n_intervals": 13,
+      "algo_plus_engagement_delta_vs_outcome_delta": {
+        "r_observed": 0.47664083918661365,
+        "p_two_sided_mc": 0.097990200979902,
+        "n_permutations": 10000
+      },
+      "raw_adoption_delta_vs_outcome_delta": {
+        "r_observed": 0.30253619856198694,
+        "p_two_sided_mc": 0.32596740325967405,
+        "n_permutations": 10000
+      }
+    },
+    "diffs_2011_2024_excluding_bridge": {
+      "years": [
+        2011,
+        2024
+      ],
+      "exclude_2020_2021_bridge_interval": true,
+      "n_intervals": 12,
+      "algo_plus_engagement_delta_vs_outcome_delta": {
+        "r_observed": 0.4586756032384634,
+        "p_two_sided_mc": 0.12668733126687332,
+        "n_permutations": 10000
+      },
+      "raw_adoption_delta_vs_outcome_delta": {
+        "r_observed": 0.43185913967606965,
+        "p_two_sided_mc": 0.1588841115888411,
+        "n_permutations": 10000
+      }
+    }
+  },
+  "nsduh_structural_break_mc": {
+    "candidates": [
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "linear_rss": 62.82874458874447,
+    "best_break_year": 2010,
+    "best_piecewise_rss": 36.350155388471244,
+    "rss_improvement_vs_linear": 26.478589200273227,
+    "p_best_break_mc": 0.5676954869675355,
+    "mc_permutations": 15000
+  },
+  "nsduh_structural_break_mc_mde_severe": {
+    "candidates": [
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "linear_rss": 25.924842105263366,
+    "best_break_year": 2011,
+    "best_piecewise_rss": 20.576036090225717,
+    "rss_improvement_vs_linear": 5.348806015037649,
+    "p_best_break_mc": 0.8860742617158857,
+    "mc_permutations": 15000
+  },
+  "annual_linked_shock_tests": {
+    "full_2011_2024_intervals": {
+      "immediate_ramps": {
+        "definition": {
+          "intervals": [
+            "2015-2016",
+            "2016-2017",
+            "2019-2020",
+            "2020-2021"
+          ],
+          "rationale": "Annual windows spanning two known social-feature ramp phases (IG algorithmic shift period; short-video ramp period)."
+        },
+        "missing_intervals": [],
+        "tests_one_sided": {
+          "delta_algo_plus_engagement_exposure": {
+            "effect_mean_diff": 4.036944444444444,
+            "p_one_sided_exact": 0.0013986013986013986,
+            "effect_percentile": 1.0,
+            "n_assignments": 715,
+            "k_shock": 4,
+            "n_total": 13
+          },
+          "delta_mde_pct": {
+            "effect_mean_diff": 1.3305555555555562,
+            "p_one_sided_exact": 0.11048951048951049,
+            "effect_percentile": 0.8965034965034965,
+            "n_assignments": 715,
+            "k_shock": 4,
+            "n_total": 13
+          },
+          "delta_mde_severe_pct": {
+            "effect_mean_diff": 1.0749999999999997,
+            "p_one_sided_exact": 0.1062937062937063,
+            "effect_percentile": 0.8993006993006993,
+            "n_assignments": 715,
+            "k_shock": 4,
+            "n_total": 13
+          }
+        }
+      },
+      "lagged_windows": {
+        "definition": {
+          "intervals": [
+            "2017-2018",
+            "2018-2019",
+            "2021-2022",
+            "2022-2023"
+          ],
+          "rationale": "One-to-two-year lag windows following the ramp phases."
+        },
+        "missing_intervals": [],
+        "tests_one_sided": {
+          "delta_algo_plus_engagement_exposure": {
+            "effect_mean_diff": -3.2502777777777783,
+            "p_one_sided_exact": 0.9916083916083916,
+            "effect_percentile": 0.009790209790209791,
+            "n_assignments": 715,
+            "k_shock": 4,
+            "n_total": 13
+          },
+          "delta_mde_pct": {
+            "effect_mean_diff": -0.9083333333333337,
+            "p_one_sided_exact": 0.8265734265734266,
+            "effect_percentile": 0.18041958041958042,
+            "n_assignments": 715,
+            "k_shock": 4,
+            "n_total": 13
+          },
+          "delta_mde_severe_pct": {
+            "effect_mean_diff": -0.6222222222222222,
+            "p_one_sided_exact": 0.786013986013986,
+            "effect_percentile": 0.22937062937062938,
+            "n_assignments": 715,
+            "k_shock": 4,
+            "n_total": 13
+          }
+        }
+      }
+    },
+    "exclude_2020_2021_bridge_interval": {
+      "immediate_ramps": {
+        "definition": {
+          "intervals": [
+            "2015-2016",
+            "2016-2017",
+            "2019-2020"
+          ],
+          "rationale": "Annual windows spanning two known social-feature ramp phases (IG algorithmic shift period; short-video ramp period)."
+        },
+        "missing_intervals": [
+          "2020-2021"
+        ],
+        "tests_one_sided": {
+          "delta_algo_plus_engagement_exposure": {
+            "effect_mean_diff": 4.406111111111111,
+            "p_one_sided_exact": 0.004545454545454545,
+            "effect_percentile": 1.0,
+            "n_assignments": 220,
+            "k_shock": 3,
+            "n_total": 12
+          },
+          "delta_mde_pct": {
+            "effect_mean_diff": 0.5555555555555562,
+            "p_one_sided_exact": 0.35909090909090907,
+            "effect_percentile": 0.6636363636363637,
+            "n_assignments": 220,
+            "k_shock": 3,
+            "n_total": 12
+          },
+          "delta_mde_severe_pct": {
+            "effect_mean_diff": 0.39999999999999986,
+            "p_one_sided_exact": 0.34545454545454546,
+            "effect_percentile": 0.6727272727272727,
+            "n_assignments": 220,
+            "k_shock": 3,
+            "n_total": 12
+          }
+        }
+      },
+      "lagged_windows": {
+        "definition": {
+          "intervals": [
+            "2017-2018",
+            "2018-2019",
+            "2021-2022",
+            "2022-2023"
+          ],
+          "rationale": "One-to-two-year lag windows following the ramp phases."
+        },
+        "missing_intervals": [],
+        "tests_one_sided": {
+          "delta_algo_plus_engagement_exposure": {
+            "effect_mean_diff": -3.1643750000000006,
+            "p_one_sided_exact": 0.9878787878787879,
+            "effect_percentile": 0.014141414141414142,
+            "n_assignments": 495,
+            "k_shock": 4,
+            "n_total": 12
+          },
+          "delta_mde_pct": {
+            "effect_mean_diff": -0.5375000000000003,
+            "p_one_sided_exact": 0.7515151515151515,
+            "effect_percentile": 0.2585858585858586,
+            "n_assignments": 495,
+            "k_shock": 4,
+            "n_total": 12
+          },
+          "delta_mde_severe_pct": {
+            "effect_mean_diff": -0.30000000000000016,
+            "p_one_sided_exact": 0.692929292929293,
+            "effect_percentile": 0.3292929292929293,
+            "n_assignments": 495,
+            "k_shock": 4,
+            "n_total": 12
+          }
+        }
+      }
+    }
+  }
+}

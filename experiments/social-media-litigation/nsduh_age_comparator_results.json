@@ -1,0 +1,392 @@
+{
+  "meta": {
+    "script": "nsduh_age_comparator_feature_analysis.py",
+    "input": "nsduh_age_comparator_2005_2020.csv",
+    "window_focus": "2011-2020",
+    "methodology_notes": [
+      "Observational level/timing analysis; not causal identification.",
+      "2020 values are from SAMHSA mixed-mode year and carry comparability cautions.",
+      "Permutation tests are exact for label-swap contrasts and Monte Carlo for correlations."
+    ],
+    "sources": {
+      "mde_age_bands": "NSDUH Detailed Tables 2020 v25, Table 10.26B (lines 1492-1497).",
+      "mde_severe_age_bands": "NSDUH Detailed Tables 2020 v25, Table 10.27B (lines 1546-1551).",
+      "source_url": "https://www.samhsa.gov/data/sites/default/files/reports/rpt35323/NSDUHDetailedTabs2020v25/NSDUHDetailedTabs2020v25/NSDUHDetTabsSect10pe2020.htm",
+      "teen_12_17_series": "In-repo NSDUH adolescent pipeline (`nsduh_adolescent_mde_2004_2024.csv`)."
+    }
+  },
+  "deltas_2011_2020_pct_points": {
+    "mde_12_17_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 8.8
+    },
+    "mde_18_25_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 8.7
+    },
+    "mde_26_plus_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 0.7999999999999998
+    },
+    "mde_26_49_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 1.3999999999999995
+    },
+    "mde_50_plus_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 0.6000000000000005
+    },
+    "mde_total_18_plus_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 1.8000000000000007
+    },
+    "mde_severe_12_17_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 6.3
+    },
+    "mde_severe_18_25_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 6.8999999999999995
+    },
+    "mde_severe_26_plus_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 1.0
+    },
+    "mde_severe_26_49_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 1.2999999999999998
+    },
+    "mde_severe_50_plus_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 0.8999999999999999
+    },
+    "mde_severe_total_18_plus_pct": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 1.7999999999999998
+    },
+    "mde_gap_12_17_minus_26_plus": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 8.0
+    },
+    "mde_severe_gap_12_17_minus_26_plus": {
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10,
+      "delta_pct_points": 5.3
+    }
+  },
+  "delta_ratios_2011_2020": {
+    "mde_12_17_vs_26_plus_ratio": 11.000000000000004,
+    "mde_18_25_vs_26_plus_ratio": 10.875000000000002,
+    "mde_12_17_vs_50_plus_ratio": 14.666666666666655,
+    "mde_12_17_vs_26_49_ratio": 6.285714285714288,
+    "mde_severe_12_17_vs_26_plus_ratio": 6.3,
+    "mde_severe_18_25_vs_26_plus_ratio": 6.8999999999999995,
+    "mde_severe_12_17_vs_50_plus_ratio": 7.000000000000001,
+    "mde_severe_12_17_vs_26_49_ratio": 4.846153846153847
+  },
+  "level_correlations_2011_2020": {
+    "mde_12_17_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.9607040534603599,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.9536845303629364,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_18_25_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.962513972385488,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.9137722825914548,
+        "p_two_sided_mc": 0.00039998000099995,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_26_plus_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.37816747235844816,
+        "p_two_sided_mc": 0.2983850807459627,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.25350912565077255,
+        "p_two_sided_mc": 0.5009249537523124,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_26_49_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.6969392247092684,
+        "p_two_sided_mc": 0.016499175041247937,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.595199385840238,
+        "p_two_sided_mc": 0.06789660516974151,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_50_plus_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": -0.323405578241745,
+        "p_two_sided_mc": 0.35588220588970554,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": -0.38092463425562706,
+        "p_two_sided_mc": 0.27473626318684063,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_total_18_plus_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.7892681776484276,
+        "p_two_sided_mc": 0.0013499325033748313,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.6983158805318765,
+        "p_two_sided_mc": 0.01629918504074796,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_gap_12_17_minus_26_plus": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.9635622104761536,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.9722859892165303,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_gap_18_25_minus_26_plus": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.9826876736193412,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.9455428591227026,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_severe_12_17_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.9512635778114791,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.9459593323338307,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_severe_18_25_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.9360535430879013,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.8778650044876876,
+        "p_two_sided_mc": 0.000999950002499875,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_severe_26_plus_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.4186671255619224,
+        "p_two_sided_mc": 0.23178841057947103,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.30373650958433834,
+        "p_two_sided_mc": 0.4151292435378231,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_severe_26_49_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.6233293890437666,
+        "p_two_sided_mc": 0.04649767511624419,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.5126596450033801,
+        "p_two_sided_mc": 0.13214339283035847,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_severe_50_plus_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.08192102177203929,
+        "p_two_sided_mc": 0.8236088195590221,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.020125867621747406,
+        "p_two_sided_mc": 0.9551022448877556,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_severe_total_18_plus_pct": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.7371485405963747,
+        "p_two_sided_mc": 0.0018499075046247689,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.6460750394948839,
+        "p_two_sided_mc": 0.029348532573371333,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_severe_gap_12_17_minus_26_plus": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.9530869497786368,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.970431396856779,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    },
+    "mde_severe_gap_18_25_minus_26_plus": {
+      "algo_plus_engagement_exposure": {
+        "r_observed": 0.971767639990639,
+        "p_two_sided_mc": 4.999750012499375e-05,
+        "n_permutations": 20000,
+        "n": 10
+      },
+      "raw_adoption": {
+        "r_observed": 0.9271746333514674,
+        "p_two_sided_mc": 0.000199990000499975,
+        "n_permutations": 20000,
+        "n": 10
+      }
+    }
+  },
+  "gap_trend_tests_2011_2020": {
+    "mde_gap_12_17_minus_26_plus": {
+      "r_observed": 0.9886898247518953,
+      "p_two_sided_mc": 4.9999750001249995e-06,
+      "n_permutations": 200000,
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10
+    },
+    "mde_severe_gap_12_17_minus_26_plus": {
+      "r_observed": 0.9779616749009621,
+      "p_two_sided_mc": 4.9999750001249995e-06,
+      "n_permutations": 200000,
+      "start_year": 2011,
+      "end_year": 2020,
+      "n": 10
+    }
+  },
+  "paired_label_swap_contrast_tests": {
+    "mde_12_17_vs_26_plus_algo_plus_engagement": {
+      "n": 10,
+      "r_a": 0.9607040534603599,
+      "r_b": 0.37816747235844816,
+      "abs_corr_diff": 0.5825365811019118,
+      "p_one_sided_exact": 0.099609375,
+      "n_assignments": 1024
+    },
+    "mde_12_17_vs_26_plus_raw_adoption": {
+      "n": 10,
+      "r_a": 0.9536845303629364,
+      "r_b": 0.25350912565077255,
+      "abs_corr_diff": 0.7001754047121639,
+      "p_one_sided_exact": 0.0029296875,
+      "n_assignments": 1024
+    },
+    "mde_severe_12_17_vs_26_plus_algo_plus_engagement": {
+      "n": 10,
+      "r_a": 0.9512635778114791,
+      "r_b": 0.4186671255619224,
+      "abs_corr_diff": 0.5325964522495567,
+      "p_one_sided_exact": 0.134765625,
+      "n_assignments": 1024
+    },
+    "mde_severe_12_17_vs_26_plus_raw_adoption": {
+      "n": 10,
+      "r_a": 0.9459593323338307,
+      "r_b": 0.30373650958433834,
+      "abs_corr_diff": 0.6422228227494924,
+      "p_one_sided_exact": 0.021484375,
+      "n_assignments": 1024
+    }
+  }
+}

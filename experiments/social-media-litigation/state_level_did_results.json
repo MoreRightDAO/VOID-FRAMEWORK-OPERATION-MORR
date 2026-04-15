@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "protocol": "State-Level DiD (Protocol A)",
+    "paper": "173, \u00a75.1",
+    "date": "2026-04-06T21:24:55.750680",
+    "yrbs_years": [
+      2011,
+      2013,
+      2015,
+      2017,
+      2019,
+      2021,
+      2023
+    ],
+    "n_features": 13,
+    "features": [
+      "algorithmic_feed",
+      "autoplay_video",
+      "opaque_recommendation",
+      "hidden_ranking_signals",
+      "infinite_scroll",
+      "push_notifications_engagement",
+      "real_time_metrics",
+      "streaks_or_daily_hooks",
+      "beauty_ar_filters",
+      "social_comparison_visible",
+      "identity_persistence",
+      "disappearing_content",
+      "default_public_minor_profiles"
+    ],
+    "permutation_n": 1000,
+    "random_seed": 42,
+    "kill_condition_alpha": 0.1
+  },
+  "national_pe_by_year": {
+    "2011": 14.2,
+    "2013": 20.24,
+    "2015": 29.55,
+    "2017": 46.62,
+    "2019": 49.15,
+    "2021": 59.23,
+    "2023": 59.5
+  },
+  "primary_twfe": {
+    "label": "All (Total)",
+    "outcome": "pct_sadness",
+    "n_obs": 275,
+    "n_states": 46,
+    "n_years": 7,
+    "method": "PanelOLS (linearmodels)",
+    "beta_pe": -0.111354,
+    "se_pe": 0.080622,
+    "pvalue_pe": 0.168624,
+    "ci_95_low": -0.269373,
+    "ci_95_high": 0.046665,
+    "r2_within": -0.3259,
+    "significant_10pct": false,
+    "significant_5pct": false,
+    "significant_1pct": false,
+    "covariates": [
+      "broadband_pct",
+      "urban_pct"
+    ]
+  },
+  "suicide_twfe": {
+    "label": "Suicide (Total)",
+    "outcome": "pct_suicide",
+    "n_obs": 267,
+    "n_states": 45,
+    "n_years": 7,
+    "method": "PanelOLS (linearmodels)",
+    "beta_pe": -0.202975,
+    "se_pe": 0.070082,
+    "pvalue_pe": 0.00417,
+    "ci_95_low": -0.340335,
+    "ci_95_high": -0.065614,
+    "r2_within": -2.395,
+    "significant_10pct": true,
+    "significant_5pct": true,
+    "significant_1pct": true,
+    "covariates": [
+      "broadband_pct",
+      "urban_pct"
+    ]
+  },
+  "event_study": {
+    "label": "All (Total)",
+    "outcome": "pct_sadness",
+    "reference_year": 2011,
+    "coefficients": {
+      "2011": {
+        "beta": 0.0,
+        "se": 0.0,
+        "pvalue": 1.0,
+        "reference": true
+      },
+      "2013": {
+        "beta": -0.176585,
+        "se": 0.140313,
+        "pvalue": 0.209572,
+        "reference": false
+      },
+      "2015": {
+        "beta": -0.259941,
+        "se": 0.09012,
+        "pvalue": 0.004321,
+        "reference": false
+      },
+      "2017": {
+        "beta": -0.137327,
+        "se": 0.071144,
+        "pvalue": 0.054888,
+        "reference": false
+      },
+      "2019": {
+        "beta": -0.0818,
+        "se": 0.058923,
+        "pvalue": 0.1665,
+        "reference": false
+      },
+      "2021": {
+        "beta": -0.065251,
+        "se": 0.076186,
+        "pvalue": 0.392692,
+        "reference": false
+      },
+      "2023": {
+        "beta": -0.190092,
+        "se": 0.069541,
+        "pvalue": 0.006788,
+        "reference": false
+      }
+    },
+    "pre_trend_years_tested": [
+      2013,
+      2015
+    ],
+    "pre_trends_detected": true
+  },
+  "gender_stratified": {
+    "Female": {
+      "label": "Female",
+      "outcome": "pct_sadness",
+      "n_obs": 275,
+      "n_states": 46,
+      "n_years": 7,
+      "method": "PanelOLS (linearmodels)",
+      "beta_pe": -0.104075,
+      "se_pe": 0.09479,
+      "pvalue_pe": 0.273428,
+      "ci_95_low": -0.289864,
+      "ci_95_high": 0.081714,
+      "r2_within": -0.3732,
+      "significant_10pct": false,
+      "significant_5pct": false,
+      "significant_1pct": false,
+      "covariates": [
+        "broadband_pct",
+        "urban_pct"
+      ]
+    },
+    "Male": {
+      "label": "Male",
+      "outcome": "pct_sadness",
+      "n_obs": 275,
+      "n_states": 46,
+      "n_years": 7,
+      "method": "PanelOLS (linearmodels)",
+      "beta_pe": -0.132055,
+      "se_pe": 0.077501,
+      "pvalue_pe": 0.089809,
+      "ci_95_low": -0.283956,
+      "ci_95_high": 0.019847,
+      "r2_within": -0.2678,
+      "significant_10pct": true,
+      "significant_5pct": false,
+      "significant_1pct": false,
+      "covariates": [
+        "broadband_pct",
+        "urban_pct"
+      ]
+    },
+    "kc_d3": {
+      "female_beta": -0.104075,
+      "male_beta": -0.132055,
+      "ratio": 0.7881,
+      "pass": true
+    }
+  },
+  "event_study_female": {
+    "label": "Female",
+    "outcome": "pct_sadness",
+    "reference_year": 2011,
+    "coefficients": {
+      "2011": {
+        "beta": 0.0,
+        "se": 0.0,
+        "pvalue": 1.0,
+        "reference": true
+      },
+      "2013": {
+        "beta": -0.139509,
+        "se": 0.182155,
+        "pvalue": 0.444586,
+        "reference": false
+      },
+      "2015": {
+        "beta": -0.336669,
+        "se": 0.118583,
+        "pvalue": 0.004958,
+        "reference": false
+      },
+      "2017": {
+        "beta": -0.133167,
+        "se": 0.077313,
+        "pvalue": 0.086428,
+        "reference": false
+      },
+      "2019": {
+        "beta": -0.089154,
+        "se": 0.069576,
+        "pvalue": 0.201437,
+        "reference": false
+      },
+      "2021": {
+        "beta": -0.067176,
+        "se": 0.088162,
+        "pvalue": 0.446919,
+        "reference": false
+      },
+      "2023": {
+        "beta": -0.177741,
+        "se": 0.089231,
+        "pvalue": 0.047646,
+        "reference": false
+      }
+    },
+    "pre_trend_years_tested": [
+      2013,
+      2015
+    ],
+    "pre_trends_detected": true
+  },
+  "event_study_male": {
+    "label": "Male",
+    "outcome": "pct_sadness",
+    "reference_year": 2011,
+    "coefficients": {
+      "2011": {
+        "beta": 0.0,
+        "se": 0.0,
+        "pvalue": 1.0,
+        "reference": true
+      },
+      "2013": {
+        "beta": -0.20724,
+        "se": 0.14541,
+        "pvalue": 0.155545,
+        "reference": false
+      },
+      "2015": {
+        "beta": -0.192847,
+        "se": 0.101189,
+        "pvalue": 0.058008,
+        "reference": false
+      },
+      "2017": {
+        "beta": -0.133612,
+        "se": 0.093331,
+        "pvalue": 0.153709,
+        "reference": false
+      },
+      "2019": {
+        "beta": -0.068751,
+        "se": 0.069959,
+        "pvalue": 0.326845,
+        "reference": false
+      },
+      "2021": {
+        "beta": -0.057299,
+        "se": 0.071969,
+        "pvalue": 0.426821,
+        "reference": false
+      },
+      "2023": {
+        "beta": -0.242015,
+        "se": 0.076686,
+        "pvalue": 0.001829,
+        "reference": false
+      }
+    },
+    "pre_trend_years_tested": [
+      2013,
+      2015
+    ],
+    "pre_trends_detected": true
+  },
+  "jackknife": {
+    "n_iterations": 48,
+    "mean_beta": -0.111246,
+    "jackknife_se": 0.093888,
+    "min_beta": -0.171067,
+    "max_beta": -0.06199,
+    "min_beta_state_dropped": "Vermont",
+    "max_beta_state_dropped": "Hawaii",
+    "sign_stable": true,
+    "range": 0.109078
+  },
+  "permutation_test": {
+    "actual_beta": -0.111354,
+    "n_permutations": 1000,
+    "null_mean": 0.001058,
+    "null_sd": 0.026271,
+    "null_percentile_95": 0.044202,
+    "null_percentile_99": 0.061544,
+    "permutation_pvalue": 1.0,
+    "significant_5pct": false
+  },
+  "callaway_santanna": {
+    "status": "not_available",
+    "note": "csdid package not installed. Future robustness check."
+  },
+  "dimension_analysis": {
+    "O": {
+      "beta": -0.230501,
+      "se": 0.17315,
+      "pvalue": 0.184493,
+      "r2_within": -0.3512,
+      "significant_5pct": false
+    },
+    "R": {
+      "beta": -0.394622,
+      "se": 0.294292,
+      "pvalue": 0.18133,
+      "r2_within": -0.304,
+      "significant_5pct": false
+    },
+    "alpha": {
+      "beta": -0.454447,
+      "se": 0.297415,
+      "pvalue": 0.127952,
+      "r2_within": -0.2775,
+      "significant_5pct": false
+    },
+    "o_dominates": false
+  },
+  "kill_conditions": {
+    "KC_D1": {
+      "description": "beta significantly positive (p < 0.1)",
+      "beta": -0.111354,
+      "pvalue": 0.168624,
+      "pass": false
+    },
+    "KC_D2": {
+      "description": "No significant pre-trends (pre-2016 coefficients)",
+      "pre_trends_detected": true,
+      "pass": false
+    },
+    "KC_D3": {
+      "description": "Female \u03b2 > Male \u03b2 (gender specificity)",
+      "female_beta": -0.104075,
+      "male_beta": -0.132055,
+      "ratio": 0.7881,
+      "pass": true
+    },
+    "summary": {
+      "pass": 1,
+      "fail": 2,
+      "not_evaluated": 0,
+      "total": 3,
+      "all_pass": false
+    }
+  }
+}

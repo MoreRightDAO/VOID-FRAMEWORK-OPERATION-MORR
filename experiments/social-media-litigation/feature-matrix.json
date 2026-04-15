@@ -1,0 +1,1574 @@
+{
+  "metadata": {
+    "title": "Platform Design Feature Matrix — Binary/Ordinal Proxy for Pe",
+    "version": "1.0",
+    "date": "2026-03-30",
+    "purpose": "Non-circular Pe proxy. Replaces subjective O/R/alpha scoring (0-3) with objective, binary (0/1) or ordinal (0/1/2) platform design features that are independently verifiable from public records. Each feature state is documented with source.",
+    "methodology": "For each platform and each YRBS survey year (2011-2023), record the state of 13 design features at the time of the YRBS survey fieldwork (typically spring of that year). Features are grouped into three categories (O-type: opacity, R-type: reactivity, alpha-type: coupling) to test whether the framework's dimensional structure emerges from data-driven weighting.",
+    "scoring_scales": {
+      "binary": "0 = absent, 1 = present",
+      "ordinal_3": "0 = off/absent, 1 = optional/partial, 2 = default-on/full"
+    },
+    "feature_definitions": {
+      "O_type": {
+        "algorithmic_feed": {
+          "scale": "ordinal_3",
+          "definition": "How content is ordered in the primary feed. 0 = chronological/user-selected. 1 = algorithmic but user can opt into chronological. 2 = algorithmic by default with no practical chronological option.",
+          "rationale": "Algorithmic feeds are the primary opacity mechanism — users cannot see why content is shown."
+        },
+        "autoplay_video": {
+          "scale": "ordinal_3",
+          "definition": "Whether video content plays automatically. 0 = no autoplay (user must press play). 1 = autoplay available but optional or wifi-only. 2 = autoplay on by default, including on mobile data.",
+          "rationale": "Autoplay removes the consent moment between content items, converting active selection into passive consumption."
+        },
+        "opaque_recommendation": {
+          "scale": "ordinal_3",
+          "definition": "Whether the platform surfaces content from accounts the user does not follow. 0 = feed is only followed accounts. 1 = some recommended/explore content mixed in. 2 = FYP-style feed where non-followed content dominates.",
+          "rationale": "When most content comes from unknown sources via opaque algorithms, users cannot reason about what they will see next."
+        },
+        "hidden_ranking_signals": {
+          "scale": "ordinal_3",
+          "definition": "Transparency of content ranking criteria. 0 = transparent (chronological, or disclosed ranking). 1 = partially disclosed (e.g., 'we prioritize posts from friends'). 2 = undisclosed ML-based ranking.",
+          "rationale": "Users cannot make informed choices about platform use when ranking signals are hidden."
+        }
+      },
+      "R_type": {
+        "infinite_scroll": {
+          "scale": "binary",
+          "definition": "Whether the primary content feed loads continuously without pagination. 0 = paginated or finite. 1 = infinite scroll.",
+          "rationale": "Infinite scroll removes natural stopping points, exploiting the completion bias."
+        },
+        "push_notifications_engagement": {
+          "scale": "ordinal_3",
+          "definition": "Aggressiveness of push notifications for engagement. 0 = no engagement notifications. 1 = optional, user-controlled. 2 = aggressive by default (e.g., 'X is live now', 'You have memories', re-engagement nudges).",
+          "rationale": "Push notifications are the primary mechanism for pulling users back to the app outside active sessions."
+        },
+        "real_time_metrics": {
+          "scale": "ordinal_3",
+          "definition": "Visibility of engagement metrics. 0 = no visible metrics. 1 = delayed or partially hidden (e.g., like counts hidden). 2 = live, visible like/view counts on all content.",
+          "rationale": "Real-time metrics create variable-ratio reinforcement schedules — checking for likes/views is the slot machine pull."
+        },
+        "streaks_or_daily_hooks": {
+          "scale": "binary",
+          "definition": "Whether the platform has streak mechanics, daily login rewards, or other loss-aversion daily return hooks. 0 = none. 1 = present (e.g., Snapchat streaks, daily rewards).",
+          "rationale": "Streaks exploit loss aversion to enforce daily usage independent of content value."
+        }
+      },
+      "alpha_type": {
+        "beauty_ar_filters": {
+          "scale": "binary",
+          "definition": "Whether the platform offers AR beauty/face-altering filters (not artistic filters). 0 = no beauty filters. 1 = beauty/face-altering filters available.",
+          "rationale": "Beauty filters alter self-perception and create discrepancy between filtered and unfiltered self-image."
+        },
+        "social_comparison_visible": {
+          "scale": "ordinal_3",
+          "definition": "Visibility of social comparison signals. 0 = hidden (no follower counts, no like counts visible to others). 1 = optional or partially visible. 2 = default visible (follower counts, like counts, view counts all public).",
+          "rationale": "Visible metrics enable direct social comparison and create status hierarchies."
+        },
+        "identity_persistence": {
+          "scale": "ordinal_3",
+          "definition": "How strongly the platform ties to real identity. 0 = anonymous/no profile. 1 = pseudonymous (username, avatar). 2 = real-name/real-photo default with social graph visible.",
+          "rationale": "Real-identity platforms make online interactions consequential for offline social standing."
+        },
+        "disappearing_content": {
+          "scale": "binary",
+          "definition": "Whether the platform has ephemeral/disappearing content (Stories, disappearing messages). 0 = no. 1 = yes.",
+          "rationale": "Ephemeral content creates urgency and FOMO — must check now or miss forever."
+        },
+        "default_public_minor_profiles": {
+          "scale": "binary",
+          "definition": "Whether minor (under-18) accounts are public by default. 0 = private by default for minors. 1 = public by default for minors.",
+          "rationale": "Public-default profiles expose minors to unsolicited contact and social comparison from strangers."
+        }
+      }
+    },
+    "adoption_sources": {
+      "pew_2012": "Pew Research Center, 'Teens, Social Media, and Privacy' (2013 report, fieldwork 2012). Facebook 77% of online teens. Other platforms not measured for teens.",
+      "pew_2015": "Pew Research Center, 'Teens, Social Media & Technology Overview 2015' (fieldwork Sep 2014-Mar 2015). Facebook 71%, Instagram 52%, Snapchat 41%, Twitter 33%.",
+      "pew_2018": "Pew Research Center, 'Teens, Social Media & Technology 2018' (fieldwork Mar-Apr 2018). YouTube 85%, Instagram 72%, Snapchat 69%, Facebook 51%, Twitter 32%.",
+      "pew_2022": "Pew Research Center, 'Teens, Social Media and Technology 2022' (fieldwork Apr-May 2022). YouTube 95%, TikTok 67%, Instagram 62%, Snapchat 59%, Facebook 32%.",
+      "pew_2023": "Pew Research Center, 'Teens, Social Media and Technology 2023' (fieldwork Sep-Oct 2023). YouTube 90%, TikTok 63%, Snapchat 60%, Instagram 59%, Facebook 33%, WhatsApp 22%, Twitter/X 17%, Discord 18%, BeReal 13%.",
+      "pew_2024": "Pew Research Center, 'Teens, Social Media and Technology 2024' (fieldwork Sep-Oct 2024). YouTube 90%, TikTok 61%, Instagram 61%, Snapchat 55%, Facebook 31%, Discord 22%, WhatsApp 23%, Twitter/X 16%.",
+      "estimation_notes": "For platforms/years not directly measured by Pew: (1) Pre-launch = 0%. (2) Early adoption estimated from app download data and industry reports. (3) Inter-survey years linearly interpolated. (4) WhatsApp/iMessage teen usage estimated from general population Pew data (teens typically lower for messaging-only apps). (5) Discord/BeReal teen usage before 2023 Pew survey estimated from Sensor Tower and company reports. All estimated values marked with _estimated: true."
+    }
+  },
+  "platforms": {
+    "instagram": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 1,
+        "adoption_estimated": true,
+        "sources": [
+          "Instagram launched Oct 2010. Chronological feed. No video. No algorithmic sorting. Artistic filters only (not beauty/face-altering). Likes and follower counts visible from launch. Real-name/real-photo culture from inception. Public profiles by default. Push notifications for likes/comments/follows (opt-in style, not aggressive re-engagement). Source: Instagram launch coverage, TechCrunch Oct 2010."
+        ]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 11,
+        "adoption_estimated": true,
+        "sources": [
+          "15-second video sharing added Jun 2013 but no autoplay. Instagram Direct messaging added Dec 2013. Feed still chronological. Explore tab introduced but shows popular/trending, not personalized. No beauty filters. Source: Instagram blog announcements 2013."
+        ]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 52,
+        "adoption_estimated": false,
+        "sources": [
+          "Explore tab growing with some algorithmic recommendations (partial opaque_recommendation=1). Feed still chronological — algorithmic feed not announced until March 2016. No beauty/AR filters yet. Pew 2014-15 survey: 52% teen adoption. Source: Pew 2015; Instagram blog."
+        ]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 1,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 66,
+        "adoption_estimated": true,
+        "sources": [
+          "MAJOR CHANGES IN 2016: Algorithmic feed announced Mar 2016, full rollout Jun 2016 (algorithmic_feed: 0->2). Stories launched Aug 2016 (disappearing_content: 0->1). Live video Nov 2016. Face filters added to Stories May 2017 (beauty_ar_filters: 0->1). ML-based ranking signals undisclosed (hidden_ranking_signals: 0->2). Video autoplay in feed introduced but limited (autoplay_video: 0->1). Aggressive re-engagement notifications ('You haven't posted in a while', 'X just posted for the first time in a while'). Source: Instagram blog Mar/Jun/Aug/Nov 2016; The Verge 2016-2017 coverage."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 72,
+        "adoption_estimated": false,
+        "sources": [
+          "Video autoplay now default in feed (autoplay_video: 1->2). Explore tab expanded with IGTV. AR beauty filters widespread in Stories (Spark AR platform opened to all creators Aug 2019). Instagram tested hiding like counts in select markets (Canada, Jul 2019) but US still showed them. Algorithmic feed fully entrenched, no chronological option. Source: Pew 2018 (72% teen adoption); Instagram Spark AR blog Aug 2019; The Verge Jul 2019."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 62,
+        "adoption_estimated": true,
+        "sources": [
+          "Reels launched Aug 2020 — full FYP-style short video feed from non-followed accounts (opaque_recommendation: 1->2). Reels tab replaced Explore in nav bar. Instagram made accounts private by default for users under 16 (Jul 2021) (default_public_minor_profiles: 1->0). Like count hiding became optional globally (May 2021). Source: Instagram blog Aug 2020, Jul 2021; The Verge May 2021."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 59,
+        "adoption_estimated": false,
+        "sources": [
+          "Threads launched Jul 2023 (cross-platform identity). Reels still dominant discovery surface. AI-powered recommendations expanding. Minor accounts still private by default. Quiet Mode added for teens (limits notifications, sends auto-replies, Jun 2023). Pew 2023: 59% teen adoption. Source: Pew 2023; Meta Newsroom Jun/Jul 2023."
+        ]
+      }
+    },
+    "youtube": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 0,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 60,
+        "adoption_estimated": true,
+        "sources": [
+          "YouTube in 2011: view-count-based recommendation ('most viewed'). Homepage showed subscriptions and popular videos. No autoplay between videos. No infinite scroll — paginated results. View counts and subscriber counts visible. Pseudonymous (username, not real name until Google+ integration 2012). Source: YouTube blog; Ars Technica 2012 algorithm coverage."
+        ]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 1,
+          "autoplay_video": 0,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 70,
+        "adoption_estimated": true,
+        "sources": [
+          "YouTube switched to watch-time optimization algorithm Mar 2012. Recommended videos sidebar now ML-driven but user can still choose. Google+ real-name integration attempted 2012-2013 but backlash led to reversal. Homepage increasingly algorithmic (algorithmic_feed: 0->1). 'Up Next' sidebar shows ML recommendations from non-subscribed channels (opaque_recommendation: 0->1). Ranking partially disclosed — YouTube blog said 'watch time' matters (hidden_ranking_signals: 0->1). Basic notification bell added. Source: YouTube Creator Blog Mar 2012; Wired 2012."
+        ]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 1,
+          "autoplay_video": 2,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 75,
+        "adoption_estimated": true,
+        "sources": [
+          "Autoplay ('Up Next' auto-advances to next video) enabled by default Mar 2015 (autoplay_video: 0->2). This was a major change — passive consumption now the default. Google+ real-name requirement dropped Jul 2015 (back to pseudonymous). Homepage still shows mix of subscriptions and recommendations. Source: YouTube blog; The Verge Mar 2015."
+        ]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 85,
+        "adoption_estimated": false,
+        "sources": [
+          "YouTube deep learning recommendations overhauled 2016 (Covington et al., RecSys 2016 paper). Homepage now fully algorithmic — 'Recommended for you' dominates (algorithmic_feed: 1->2). Deep neural network ranking signals completely undisclosed (hidden_ranking_signals: 1->2). Mobile app gets infinite scroll on homepage (infinite_scroll: 0->1). Source: Pew 2018 (85% teen adoption, closest survey); Covington et al. 'Deep Neural Networks for YouTube Recommendations' RecSys 2016."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 85,
+        "adoption_estimated": true,
+        "sources": [
+          "YouTube tightened recommendation controls after concerns about radicalization pipeline (2019). Added 'Don't Recommend Channel' option. But core algorithm still opaque ML-based. Notifications became more aggressive — 'X uploaded', personalized digests, premiere countdowns (push_notifications_engagement: 1->2). Source: YouTube blog Jan 2019; Bloomberg 2019 coverage."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 95,
+        "adoption_estimated": false,
+        "sources": [
+          "YouTube Shorts launched globally Jul 2021 — vertical short-form video with FYP-style feed from non-subscribed channels (opaque_recommendation: 1->2). Shorts shelf appears on homepage and in app navigation. Shorts feed is infinite autoplay of content from unknown creators. Pew 2022 (closest): 95% teen adoption. Source: YouTube blog Jul 2021; Pew 2022."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 90,
+        "adoption_estimated": false,
+        "sources": [
+          "YouTube Shorts fully integrated. AI-driven recommendations across all surfaces. Supervised experiences for teens (parental controls) launched but opt-in. Default settings for teens tightened (autoplay off for under-13 in supervised accounts, bedtime reminders on by default). But for 13-17 without supervised account, default experience unchanged. Pew 2023: 90% teen adoption. Source: Pew 2023; YouTube blog 2023."
+        ]
+      }
+    },
+    "tiktok": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 0,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 0,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": false,
+        "sources": ["Platform did not exist."]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 0,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 0,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": false,
+        "sources": ["Platform did not exist. Musical.ly launched 2014."]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 0,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 0,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": true,
+        "sources": ["Musical.ly existed but negligible US teen penetration. TikTok not yet launched."]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 5,
+        "adoption_estimated": true,
+        "sources": [
+          "TikTok launched internationally Sep 2017 with For You Page as default — algorithmic from day 1. FYP shows entirely non-followed content (opaque_recommendation=2). Autoplay default. Fully opaque ML ranking (hidden_ranking_signals=2). Infinite vertical scroll. Aggressive notifications. Like/view counts visible. Beauty/face filters included from launch. Public accounts by default. Source: TikTok launch coverage; WSJ 2020 FYP analysis."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 25,
+        "adoption_estimated": true,
+        "sources": [
+          "Post Musical.ly merger (Aug 2018). Massive growth in US teens. FYP algorithm refined — NYT reported average 90min/day usage. Creator Fund not yet launched. All design features at maximum from launch. Adoption estimated from Sensor Tower download data and Pew 2022 backcast. Source: NYT Feb 2020; Sensor Tower reports."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 67,
+        "adoption_estimated": false,
+        "sources": [
+          "TikTok #1 most-visited website globally (Dec 2021, Cloudflare). Creator Fund launched Jul 2020 (economic coupling). Made accounts private by default for users under 16 (Jan 2021) (default_public_minor_profiles: 1->0). Disabled direct messages for under-16. Time limit reminders added but easily dismissed. Pew 2022 (closest): 67% teen adoption. Source: Pew 2022; Cloudflare Dec 2021; TikTok Newsroom Jan 2021."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 63,
+        "adoption_estimated": false,
+        "sources": [
+          "Bold Glamour AI filter launched Feb 2023 (beauty_ar_filters remains 1 — already present). TikTok LIVE gifts, Shop integrated. 60-min daily limit for under-18 added (Mar 2023) but easily bypassed by entering passcode. Under-16 accounts still private by default. Supreme Court upheld TikTok ban (Jan 2025). Pew 2023: 63% teen adoption. Source: Pew 2023; NPR Mar 2023; TikTok Newsroom Mar 2023."
+        ]
+      }
+    },
+    "facebook": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 1,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 77,
+        "adoption_estimated": true,
+        "sources": [
+          "Facebook News Feed algorithmic since Sep 2006 (EdgeRank). By 2011, EdgeRank was ML-augmented but partially disclosed ('affinity, weight, time decay'). Real-name policy enforced. Infinite scroll in News Feed. No video autoplay. No beauty filters. Like counts visible. Friend counts visible. Push notifications aggressive (pokes, wall posts, friend requests, event invitations). Minor profiles restricted (13+ required, some content private by default). Pew 2012 survey: 77% of online teens (est. ~73% of all teens). Source: Pew 2013 report; Facebook EdgeRank documentation."
+        ]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 71,
+        "adoption_estimated": false,
+        "sources": [
+          "Facebook replaced EdgeRank with full ML ranking in 2013 (algorithmic_feed: 1->2). Ranking signals now deep ML, no longer disclosed in simple terms (hidden_ranking_signals: 1->2). Graph Search launched (identity coupling). Video autoplay not yet default (Sep 2013 announcement but rollout in 2014). Teen accounts had some content shared only with friends by default. Pew 2015 (closest survey): 71% teen adoption. Source: Pew 2015; Facebook Engineering blog 2013."
+        ]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 51,
+        "adoption_estimated": false,
+        "sources": [
+          "Video autoplay became default in News Feed 2014-2015 (autoplay_video: 0->2). Facebook Live launched Dec 2015. Feed still primarily from friends/pages user follows (opaque_recommendation stays 0). Teen adoption declining — Pew 2018 shows 51%. Source: Pew 2018; Facebook blog."
+        ]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 51,
+        "adoption_estimated": false,
+        "sources": [
+          "Facebook Stories launched Mar 2017 (disappearing_content: 0->1). Reactions (Love, Haha, Wow, Sad, Angry) launched Feb 2016. 'On This Day'/Memories feature as daily return hook (streaks_or_daily_hooks: 0->1). 'Meaningful interactions' ranking change announced Jan 2018 but implemented during 2017. Feed still primarily friends/pages. Source: Facebook blog Mar 2017, Jan 2018; Pew 2018 (51%)."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 32,
+        "adoption_estimated": false,
+        "sources": [
+          "Facebook design largely stable. Teen adoption continuing to decline. 'Meaningful social interactions' ranking in effect. Watch tab launched (2018) but not dominant. No beauty filters in main app. Pew 2022 (closest): 32% teen adoption. Source: Pew 2022."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 27,
+        "adoption_estimated": true,
+        "sources": [
+          "Facebook Reels launched Sep 2021 — started showing recommended content from non-followed accounts (opaque_recommendation: 0->1). Internal Facebook Papers leaked (WSJ, Sep 2021) revealed internal research on Instagram harm to teens. Teen adoption continued declining. Source: Facebook/Meta blog Sep 2021; WSJ Facebook Papers Sep 2021."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 33,
+        "adoption_estimated": false,
+        "sources": [
+          "Facebook increasingly showing AI-recommended content from pages/groups user doesn't follow (Reels, Suggested for You). Teen usage slightly up from 2022 trough. Parental supervision tools added Nov 2022. Pew 2023: 33% teen adoption. Source: Pew 2023; Meta blog Nov 2022."
+        ]
+      }
+    },
+    "snapchat": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 1,
+        "adoption_estimated": true,
+        "sources": [
+          "Snapchat launched Sep 2011. Core mechanic: disappearing photos (disappearing_content=1). No public profiles — friend-only communication. No like counts, no follower counts visible to others (social_comparison_visible=0). No algorithmic anything — pure messaging. Basic notification for received snaps. Pseudonymous usernames. Source: Snapchat launch coverage; Evan Spiegel Stanford presentation."
+        ]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 11,
+        "adoption_estimated": true,
+        "sources": [
+          "Stories launched Oct 2013 (still disappearing, but broadcast to all friends — first FOMO mechanic). Still no algorithmic sorting. Stories are reverse-chronological. No public metrics. No beauty filters. Source: Snapchat blog Oct 2013."
+        ]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 1,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 41,
+        "adoption_estimated": false,
+        "sources": [
+          "Discover tab launched Jan 2015 — curated media content from publishers, editorially selected (opaque_recommendation: 0->1, hidden_ranking_signals: 0->1). Lenses (AR face filters) launched Sep 2015 — first major beauty/face-altering filters on a teen platform (beauty_ar_filters: 0->1). Discover content autoplays within the tab (autoplay_video: 0->1). Pew 2015: 41% teen adoption. Source: Pew 2015; Snapchat blog Jan/Sep 2015."
+        ]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 1,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 69,
+        "adoption_estimated": false,
+        "sources": [
+          "Snapstreaks launched 2016 — the most potent daily-return mechanic in social media (streaks_or_daily_hooks: 0->1). Snap Map launched Jun 2017 (location sharing with friends). Notifications became more aggressive — streak reminders, 'X is typing' indicators, friend activity notifications (push_notifications_engagement: 1->2). Pew 2018 (closest): 69% teen adoption. Source: Pew 2018; Snap Inc. S-1 filing 2017; multiple press reports on streak anxiety."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 1,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 69,
+        "adoption_estimated": true,
+        "sources": [
+          "Snapchat design largely stable. Discover increasingly personalized but Friends page stays non-algorithmic. Snap Games and Shows added. AR filters expanding. Adoption stable at ~69%. Source: Snap Inc. earnings reports 2019."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 1,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 1,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 1,
+          "identity_persistence": 1,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 59,
+        "adoption_estimated": false,
+        "sources": [
+          "Spotlight launched Nov 2020 — Snapchat's TikTok clone: infinite scroll, autoplay, content from non-followed creators (opaque_recommendation: 1->2, autoplay_video: 1->2, infinite_scroll: 0->1). Spotlight has view counts (real_time_metrics: 0->1). Friends tab became algorithmically sorted (algorithmic_feed: 0->1). Spotlight has undisclosed ML ranking (hidden_ranking_signals: 1->2). Spotlight/public profiles introduced subscriber counts (social_comparison_visible: 0->1). Pew 2022 (closest): 59%. Source: Pew 2022; Snap Newsroom Nov 2020."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 1,
+          "autoplay_video": 2,
+          "opaque_recommendation": 2,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 1,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 1,
+          "social_comparison_visible": 1,
+          "identity_persistence": 1,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 60,
+        "adoption_estimated": false,
+        "sources": [
+          "My AI chatbot launched Feb 2023 — ChatGPT-powered companion pinned at top of chat list. Available to all users (not just Snapchat+ subscribers) in Apr 2023. This adds coupling but is captured more by the existing features than requiring a new one. Parental controls (Family Center) expanded. Pew 2023: 60% teen adoption. Source: Pew 2023; Snap Newsroom Feb/Apr 2023."
+        ]
+      }
+    },
+    "twitter_x": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 12,
+        "adoption_estimated": true,
+        "sources": [
+          "Twitter in 2011: purely chronological timeline. Retweet counts and follower counts visible. Pseudonymous. Public accounts by default for all users including minors. No video (Vine not launched until 2013). Source: Twitter documentation; Pew 2012 general population data extrapolated for teens."
+        ]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 16,
+        "adoption_estimated": true,
+        "sources": [
+          "Twitter still chronological. No algorithmic features. Vine (owned by Twitter) launched Jan 2013 but separate app. Source: Twitter blog; estimated teen adoption from Pew 2013 (~26% of online teens, lower than Instagram)."
+        ]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 1,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 33,
+        "adoption_estimated": false,
+        "sources": [
+          "Native video added Jan 2015 with autoplay in timeline (autoplay_video: 0->1). Timeline still chronological. 'While You Were Away' feature added (Feb 2015) — shows top tweets you missed, but minimal algorithmic intervention. Pew 2015: 33% teen adoption. Source: Pew 2015; Twitter blog Jan/Feb 2015."
+        ]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 1,
+          "autoplay_video": 2,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 32,
+        "adoption_estimated": false,
+        "sources": [
+          "Twitter introduced algorithmic timeline Feb 2016 ('Show the best tweets first') but user could toggle back to chronological (algorithmic_feed: 0->1). Video autoplay became default. Ranking partially disclosed ('engagement, recency, media'). Pew 2018 (closest): 32% teen adoption. Source: Pew 2018; Twitter blog Feb 2016."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 1,
+          "autoplay_video": 2,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 25,
+        "adoption_estimated": true,
+        "sources": [
+          "Twitter design largely stable. 'Latest tweets' toggle still available for chronological. Teen adoption declining. Estimated from interpolation between Pew 2018 (32%) and Pew 2022 (not measured separately, Pew 2023: 17%). Source: Pew data interpolation."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 1,
+          "autoplay_video": 2,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 1,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 20,
+        "adoption_estimated": true,
+        "sources": [
+          "Twitter Spaces (audio rooms) launched. Fleets (ephemeral tweets, launched Nov 2020) already shut down Aug 2021. Design largely stable. Pre-Musk era. Estimated teen adoption declining. Source: Twitter blog; interpolation."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 2,
+          "autoplay_video": 2,
+          "opaque_recommendation": 1,
+          "hidden_ranking_signals": 2,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 2,
+          "real_time_metrics": 2,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 2,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 1
+        },
+        "adoption_pct": 17,
+        "adoption_estimated": false,
+        "sources": [
+          "X (rebranded Jul 2023). 'For You' tab became default (algorithmic_feed: 1->2) — shows algorithmically recommended tweets including from non-followed accounts (opaque_recommendation: 0->1). Algorithm open-sourced Mar 2023 but average user cannot interpret (hidden_ranking_signals: 1->2). Notifications became more aggressive under Musk (push_notifications_engagement: 1->2). Pew 2023: 17% teen adoption. Source: Pew 2023; The Verge 2023 X coverage."
+        ]
+      }
+    },
+    "bereal": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0, "autoplay_video": 0, "opaque_recommendation": 0, "hidden_ranking_signals": 0,
+          "infinite_scroll": 0, "push_notifications_engagement": 0, "real_time_metrics": 0, "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0, "social_comparison_visible": 0, "identity_persistence": 0, "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": false,
+        "sources": ["Platform did not exist (launched Dec 2019, went viral 2022)."]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 0, "autoplay_video": 0, "opaque_recommendation": 0, "hidden_ranking_signals": 0,
+          "infinite_scroll": 0, "push_notifications_engagement": 0, "real_time_metrics": 0, "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0, "social_comparison_visible": 0, "identity_persistence": 0, "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": false,
+        "sources": ["Platform did not exist."]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 0, "autoplay_video": 0, "opaque_recommendation": 0, "hidden_ranking_signals": 0,
+          "infinite_scroll": 0, "push_notifications_engagement": 0, "real_time_metrics": 0, "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0, "social_comparison_visible": 0, "identity_persistence": 0, "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": false,
+        "sources": ["Platform did not exist."]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 0, "autoplay_video": 0, "opaque_recommendation": 0, "hidden_ranking_signals": 0,
+          "infinite_scroll": 0, "push_notifications_engagement": 0, "real_time_metrics": 0, "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0, "social_comparison_visible": 0, "identity_persistence": 0, "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": false,
+        "sources": ["Platform did not exist."]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 0, "autoplay_video": 0, "opaque_recommendation": 0, "hidden_ranking_signals": 0,
+          "infinite_scroll": 0, "push_notifications_engagement": 0, "real_time_metrics": 0, "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0, "social_comparison_visible": 0, "identity_persistence": 0, "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": true,
+        "sources": ["BeReal launched Dec 2019 in France. Negligible US teen adoption by spring 2019 YRBS. Source: BeReal press coverage."]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 3,
+        "adoption_estimated": true,
+        "sources": [
+          "BeReal growing in 2021 but not yet viral (went viral mid-2022). Design: one random-time daily notification to take a photo (push_notifications_engagement=1 — single daily, not aggressive). Daily photo mechanic is a form of streak (streaks_or_daily_hooks=1). No filters, no editing, no algorithmic feed. Chronological friends-only feed. Front+back camera = real identity (identity_persistence=2). Content disappears when next BeReal is posted (disappearing_content=1). No public metrics. Private by default. Source: BeReal app store description; tech press 2022."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 1,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 13,
+        "adoption_estimated": false,
+        "sources": [
+          "BeReal design unchanged — deliberately anti-engagement. No algorithmic feed, no filters, no infinite scroll, no public metrics. One photo per day at random time. Adoption peaked mid-2022 then declined. Pew 2023: 13% teen adoption. Source: Pew 2023; BeReal remained consistent in design philosophy."
+        ]
+      }
+    },
+    "discord": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0, "autoplay_video": 0, "opaque_recommendation": 0, "hidden_ranking_signals": 0,
+          "infinite_scroll": 0, "push_notifications_engagement": 0, "real_time_metrics": 0, "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0, "social_comparison_visible": 0, "identity_persistence": 0, "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": false,
+        "sources": ["Platform did not exist (launched May 2015)."]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 0, "autoplay_video": 0, "opaque_recommendation": 0, "hidden_ranking_signals": 0,
+          "infinite_scroll": 0, "push_notifications_engagement": 0, "real_time_metrics": 0, "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0, "social_comparison_visible": 0, "identity_persistence": 0, "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 0,
+        "adoption_estimated": false,
+        "sources": ["Platform did not exist."]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 2,
+        "adoption_estimated": true,
+        "sources": [
+          "Discord launched May 2015, initially for gamers. Chronological chat. No algorithmic feed (chat rooms are real-time). Pseudonymous. Server-based model — no public profiles, no follower counts, no social comparison metrics. Notifications per-server customizable. Source: Discord blog; estimated minimal teen adoption in 2015."
+        ]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 8,
+        "adoption_estimated": true,
+        "sources": [
+          "Discord growing beyond gaming. Still no algorithmic content. Server discovery exists but no FYP-style recommendation. Chronological chat. Pseudonymous. No social comparison metrics. Source: Discord blog; estimated from general growth data."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 12,
+        "adoption_estimated": true,
+        "sources": [
+          "Discord rebranding from gaming to general communication platform ('Your Place to Talk' rebrand 2020, but trajectory started 2019). No algorithmic feed. No beauty filters. No social comparison metrics. Source: Discord blog; estimated from company reports."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 15,
+        "adoption_estimated": true,
+        "sources": [
+          "Discord reached 150M monthly active users. Still no algorithmic content feed. Server discovery added but opt-in. Chronological chat. No beauty filters. Pseudonymous. Source: Discord blog 2021; estimated teen adoption from growth data."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 1,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 1,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 18,
+        "adoption_estimated": false,
+        "sources": [
+          "Discord fundamentally unchanged in design — real-time chat, no algorithmic feed, no social comparison metrics, pseudonymous. Server discovery expanded. Clyde AI chatbot added Mar 2023 but removed Dec 2023. Teen safety features added (Family Center Oct 2023). Pew 2023: 18% teen adoption. Source: Pew 2023; Discord blog 2023."
+        ]
+      }
+    },
+    "whatsapp": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 5,
+        "adoption_estimated": true,
+        "sources": [
+          "WhatsApp in 2011: pure encrypted messaging app. Chronological chat list sorted by recency. No algorithmic content. No social comparison metrics. Phone-number-based identity (real identity, identity_persistence=2). No public profiles. Notifications for messages only. Source: WhatsApp documentation; low US teen adoption — WhatsApp more popular internationally."
+        ]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 7,
+        "adoption_estimated": true,
+        "sources": [
+          "WhatsApp design unchanged — messaging only. Voice messages added. Acquired by Facebook Feb 2014 (announced). Source: WhatsApp blog; low US teen adoption estimated."
+        ]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 10,
+        "adoption_estimated": true,
+        "sources": [
+          "WhatsApp Web launched Jan 2015. End-to-end encryption rolled out Apr 2016. Still pure messaging. Voice calls added. Source: WhatsApp blog; estimated US teen adoption."
+        ]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 12,
+        "adoption_estimated": true,
+        "sources": [
+          "WhatsApp Status launched Feb 2017 — ephemeral stories feature (disappearing_content: 0->1). Otherwise pure messaging. No algorithmic content. Source: WhatsApp blog Feb 2017; estimated US teen adoption."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 14,
+        "adoption_estimated": true,
+        "sources": [
+          "WhatsApp design stable. Forwarding limits added to reduce misinformation (Jan 2019). Still pure messaging + Status. Source: WhatsApp blog; estimated US teen adoption."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 18,
+        "adoption_estimated": true,
+        "sources": [
+          "Disappearing messages (chat-level, 7-day) launched Nov 2020. Otherwise unchanged. Growing US teen adoption as Hispanic/immigrant communities increase teen usage. Source: WhatsApp blog Nov 2020; estimated from Pew general population data."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 1,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 22,
+        "adoption_estimated": false,
+        "sources": [
+          "WhatsApp Channels launched Jun 2023 (one-way broadcast, no algorithmic recommendation — user subscribes explicitly). Community features added. Otherwise fundamentally a messaging app. Pew 2023: 22% teen adoption. Source: Pew 2023; WhatsApp blog Jun 2023."
+        ]
+      }
+    },
+    "imessage": {
+      "2011": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 30,
+        "adoption_estimated": true,
+        "sources": [
+          "iMessage launched Oct 2011 with iOS 5. Pure messaging tied to phone number/Apple ID (identity_persistence=2). No social features, no public metrics, no algorithmic content. Notifications for messages only. Estimated 30% adoption based on iPhone market share among US teens (lower in 2011). Source: Apple press releases; iPhone market share data."
+        ]
+      },
+      "2013": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 40,
+        "adoption_estimated": true,
+        "sources": [
+          "iMessage unchanged — pure messaging. Growing with iPhone adoption among teens. Source: estimated from iPhone market share data."
+        ]
+      },
+      "2015": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 50,
+        "adoption_estimated": true,
+        "sources": [
+          "iMessage unchanged. iPhone adoption growing among US teens (~50% by 2015). Source: Piper Sandler teen survey 2015 (iPhone share ~65% of teens, not all use iMessage actively)."
+        ]
+      },
+      "2017": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 55,
+        "adoption_estimated": true,
+        "sources": [
+          "iOS 10 (Sep 2016) added iMessage apps, stickers, Memoji. These are expressive features, not beauty/face-altering filters. No algorithmic content. Source: Apple WWDC 2016; estimated from iPhone teen market share."
+        ]
+      },
+      "2019": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 60,
+        "adoption_estimated": true,
+        "sources": [
+          "iMessage unchanged in design. 'Green bubble' social pressure is a cultural phenomenon but not a designed platform feature (it's a protocol indicator, not an engagement mechanic). Source: Apple; estimated from Piper Sandler teen survey (~82% iPhone share in 2019, not all active iMessage users)."
+        ]
+      },
+      "2021": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 63,
+        "adoption_estimated": true,
+        "sources": [
+          "iMessage design stable. Communication Safety feature added in iOS 15.2 (Dec 2021) — blurs nudity in messages for minors. Source: Apple WWDC 2021; estimated from Piper Sandler data."
+        ]
+      },
+      "2023": {
+        "features": {
+          "algorithmic_feed": 0,
+          "autoplay_video": 0,
+          "opaque_recommendation": 0,
+          "hidden_ranking_signals": 0,
+          "infinite_scroll": 0,
+          "push_notifications_engagement": 1,
+          "real_time_metrics": 0,
+          "streaks_or_daily_hooks": 0,
+          "beauty_ar_filters": 0,
+          "social_comparison_visible": 0,
+          "identity_persistence": 2,
+          "disappearing_content": 0,
+          "default_public_minor_profiles": 0
+        },
+        "adoption_pct": 65,
+        "adoption_estimated": true,
+        "sources": [
+          "iMessage design unchanged. Check In feature added (iOS 17, Sep 2023) for safety. No algorithmic content, no social comparison, no beauty filters. Pew does not measure iMessage separately. Estimated from Piper Sandler 2023: 87% of US teens have iPhone, ~75% of those use iMessage actively. Source: Piper Sandler Taking Stock With Teens survey Fall 2023."
+        ]
+      }
+    }
+  }
+}

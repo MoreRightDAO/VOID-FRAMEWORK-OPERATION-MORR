@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "script": "build_country_data_ifps_teen_panel.py",
+    "ifps_pdf_url": "https://foodpolicystudy.com/wp-content/uploads/2024/02/2023-IFPS-Youth-2021-Report-Sept-8.pdf",
+    "ifps_pdf_cached_path": "/data/apps/morr/ops/lab/social-media-litigation/pisa/_cache/ifps-youth-2021-report.pdf",
+    "ifps_pages_parsed": [
+      71,
+      72
+    ],
+    "countries": [
+      "Australia",
+      "Canada",
+      "Chile",
+      "Mexico",
+      "United Kingdom",
+      "United States"
+    ],
+    "platforms": [
+      "Instagram",
+      "TikTok",
+      "Snapchat",
+      "Facebook",
+      "Twitter"
+    ],
+    "pisa_year": 2022,
+    "ifps_year_focus": 2021,
+    "n_countries": 6,
+    "caveats": [
+      "Teen-specific, but N=6 countries only.",
+      "Five-platform subset only (no YouTube in IFPS chart block).",
+      "Self-reported platform prevalence, not app-time share.",
+      "Ecological correlation; not causal identification."
+    ]
+  },
+  "chart_extraction_diagnostics": {
+    "Instagram": {
+      "page_index_0_based": 0,
+      "y_range": [
+        240.0,
+        430.0
+      ],
+      "n_ticks": 18,
+      "n_percent_labels": 18,
+      "max_x_assignment_distance": 3.480000000000018
+    },
+    "TikTok": {
+      "page_index_0_based": 0,
+      "y_range": [
+        430.0,
+        575.0
+      ],
+      "n_ticks": 18,
+      "n_percent_labels": 18,
+      "max_x_assignment_distance": 5.589999999999975
+    },
+    "Snapchat": {
+      "page_index_0_based": 0,
+      "y_range": [
+        575.0,
+        735.0
+      ],
+      "n_ticks": 18,
+      "n_percent_labels": 18,
+      "max_x_assignment_distance": 5.350000000000023
+    },
+    "Facebook": {
+      "page_index_0_based": 1,
+      "y_range": [
+        120.0,
+        330.0
+      ],
+      "n_ticks": 18,
+      "n_percent_labels": 18,
+      "max_x_assignment_distance": 4.744000000000028
+    },
+    "Twitter": {
+      "page_index_0_based": 1,
+      "y_range": [
+        280.0,
+        460.0
+      ],
+      "n_ticks": 18,
+      "n_percent_labels": 18,
+      "max_x_assignment_distance": 4.043999999999983
+    }
+  },
+  "correlations": {
+    "normalized_feature_exposure_vs_life_satisfaction": {
+      "pearson_r": -0.3052940858757151,
+      "pearson_p": 0.5562862592746018,
+      "spearman_rho": 0.14285714285714288,
+      "spearman_p": 0.7871720116618076,
+      "R2": 0.09320447887068851,
+      "n": 6
+    },
+    "normalized_algo_share_vs_life_satisfaction": {
+      "pearson_r": 0.42276790168624245,
+      "pearson_p": 0.4036293714658898,
+      "spearman_rho": 0.8285714285714287,
+      "spearman_p": 0.04156268221574335,
+      "R2": 0.17873269869618835,
+      "n": 6
+    },
+    "prevalence_weighted_feature_exposure_vs_life_satisfaction": {
+      "pearson_r": 0.5822445147490087,
+      "pearson_p": 0.22532619859901595,
+      "spearman_rho": 0.3714285714285715,
+      "spearman_p": 0.4684781341107872,
+      "R2": 0.3390086749553087,
+      "n": 6
+    },
+    "prevalence_weighted_algo_pct_vs_life_satisfaction": {
+      "pearson_r": 0.7359066299651233,
+      "pearson_p": 0.09540832541492077,
+      "spearman_rho": 0.6571428571428573,
+      "spearman_p": 0.1561749271137024,
+      "R2": 0.5415585680266249,
+      "n": 6
+    },
+    "platform_prevalence_intensity_vs_life_satisfaction": {
+      "pearson_r": 0.5810410223849138,
+      "pearson_p": 0.22652070972516625,
+      "spearman_rho": 0.3714285714285715,
+      "spearman_p": 0.4684781341107872,
+      "R2": 0.33760866969410597,
+      "n": 6
+    }
+  },
+  "country_rows": [
+    {
+      "country": "Australia",
+      "life_satisfaction": 6.58,
+      "prevalence_sum_pct": 188.0,
+      "feature_exposure_normalized_share": 15.468085106382977,
+      "o_exposure_normalized_share": 6.867021276595744,
+      "mean_features_per_share_normalized": 15.468085106382977,
+      "algo_feed_share_normalized_pct": 47.87234042553192,
+      "feature_exposure_prevalence_weighted": 29.08,
+      "o_exposure_prevalence_weighted": 12.91,
+      "algo_feed_prevalence_pct": 90.0,
+      "selected_pct_instagram": 46.0,
+      "selected_pct_tiktok": 44.0,
+      "selected_pct_snapchat": 37.0,
+      "selected_pct_facebook": 44.0,
+      "selected_pct_twitter": 17.0,
+      "share_instagram": 24.46808510638298,
+      "share_tiktok": 23.404255319148938,
+      "share_snapchat": 19.680851063829788,
+      "share_facebook": 23.404255319148938,
+      "share_twitter": 9.042553191489361
+    },
+    {
+      "country": "Canada",
+      "life_satisfaction": 6.67,
+      "prevalence_sum_pct": 205.0,
+      "feature_exposure_normalized_share": 15.590243902439024,
+      "o_exposure_normalized_share": 6.9073170731707325,
+      "mean_features_per_share_normalized": 15.590243902439026,
+      "algo_feed_share_normalized_pct": 50.243902439024396,
+      "feature_exposure_prevalence_weighted": 31.959999999999997,
+      "o_exposure_prevalence_weighted": 14.16,
+      "algo_feed_prevalence_pct": 103.0,
+      "selected_pct_instagram": 50.0,
+      "selected_pct_tiktok": 53.0,
+      "selected_pct_snapchat": 42.0,
+      "selected_pct_facebook": 40.0,
+      "selected_pct_twitter": 20.0,
+      "share_instagram": 24.390243902439025,
+      "share_tiktok": 25.853658536585368,
+      "share_snapchat": 20.48780487804878,
+      "share_facebook": 19.51219512195122,
+      "share_twitter": 9.75609756097561
+    },
+    {
+      "country": "Chile",
+      "life_satisfaction": 7.09,
+      "prevalence_sum_pct": 213.0,
+      "feature_exposure_normalized_share": 15.666666666666666,
+      "o_exposure_normalized_share": 7.140845070422536,
+      "mean_features_per_share_normalized": 15.666666666666666,
+      "algo_feed_share_normalized_pct": 62.44131455399061,
+      "feature_exposure_prevalence_weighted": 33.37,
+      "o_exposure_prevalence_weighted": 15.21,
+      "algo_feed_prevalence_pct": 133.0,
+      "selected_pct_instagram": 67.0,
+      "selected_pct_tiktok": 66.0,
+      "selected_pct_snapchat": 13.0,
+      "selected_pct_facebook": 44.0,
+      "selected_pct_twitter": 23.0,
+      "share_instagram": 31.455399061032864,
+      "share_tiktok": 30.985915492957748,
+      "share_snapchat": 6.103286384976526,
+      "share_facebook": 20.657276995305164,
+      "share_twitter": 10.7981220657277
+    },
+    {
+      "country": "Mexico",
+      "life_satisfaction": 7.67,
+      "prevalence_sum_pct": 258.0,
+      "feature_exposure_normalized_share": 15.244186046511627,
+      "o_exposure_normalized_share": 6.879844961240311,
+      "mean_features_per_share_normalized": 15.244186046511627,
+      "algo_feed_share_normalized_pct": 49.6124031007752,
+      "feature_exposure_prevalence_weighted": 39.33,
+      "o_exposure_prevalence_weighted": 17.749999999999996,
+      "algo_feed_prevalence_pct": 128.0,
+      "selected_pct_instagram": 55.0,
+      "selected_pct_tiktok": 73.0,
+      "selected_pct_snapchat": 27.0,
+      "selected_pct_facebook": 74.0,
+      "selected_pct_twitter": 29.0,
+      "share_instagram": 21.31782945736434,
+      "share_tiktok": 28.294573643410853,
+      "share_snapchat": 10.465116279069768,
+      "share_facebook": 28.68217054263566,
+      "share_twitter": 11.24031007751938
+    },
+    {
+      "country": "United Kingdom",
+      "life_satisfaction": 6.01,
+      "prevalence_sum_pct": 211.0,
+      "feature_exposure_normalized_share": 15.445497630331753,
+      "o_exposure_normalized_share": 6.843601895734596,
+      "mean_features_per_share_normalized": 15.445497630331753,
+      "algo_feed_share_normalized_pct": 47.39336492890995,
+      "feature_exposure_prevalence_weighted": 32.59,
+      "o_exposure_prevalence_weighted": 14.44,
+      "algo_feed_prevalence_pct": 100.0,
+      "selected_pct_instagram": 50.0,
+      "selected_pct_tiktok": 50.0,
+      "selected_pct_snapchat": 44.0,
+      "selected_pct_facebook": 45.0,
+      "selected_pct_twitter": 22.0,
+      "share_instagram": 23.696682464454977,
+      "share_tiktok": 23.696682464454977,
+      "share_snapchat": 20.85308056872038,
+      "share_facebook": 21.327014218009477,
+      "share_twitter": 10.42654028436019
+    },
+    {
+      "country": "United States",
+      "life_satisfaction": 6.41,
+      "prevalence_sum_pct": 234.0,
+      "feature_exposure_normalized_share": 15.457264957264957,
+      "o_exposure_normalized_share": 6.846153846153846,
+      "mean_features_per_share_normalized": 15.457264957264957,
+      "algo_feed_share_normalized_pct": 47.43589743589743,
+      "feature_exposure_prevalence_weighted": 36.17,
+      "o_exposure_prevalence_weighted": 16.02,
+      "algo_feed_prevalence_pct": 111.0,
+      "selected_pct_instagram": 52.0,
+      "selected_pct_tiktok": 59.0,
+      "selected_pct_snapchat": 48.0,
+      "selected_pct_facebook": 51.0,
+      "selected_pct_twitter": 24.0,
+      "share_instagram": 22.22222222222222,
+      "share_tiktok": 25.213675213675213,
+      "share_snapchat": 20.512820512820515,
+      "share_facebook": 21.794871794871796,
+      "share_twitter": 10.256410256410257
+    }
+  ]
+}

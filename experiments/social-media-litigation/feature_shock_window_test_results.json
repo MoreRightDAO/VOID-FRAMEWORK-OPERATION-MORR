@@ -1,0 +1,610 @@
+{
+  "meta": {
+    "script": "feature_shock_window_test.py",
+    "input": "feature_inflection_deltas.csv",
+    "rows": 6,
+    "intervals": [
+      "2011-2013",
+      "2013-2015",
+      "2015-2017",
+      "2017-2019",
+      "2019-2021",
+      "2021-2023"
+    ],
+    "pre_registered_design": {
+      "windows_fixed_before_test": {
+        "immediate_ramps": {
+          "intervals": [
+            "2015-2017",
+            "2019-2021"
+          ],
+          "rationale": "First YRBS intervals spanning major algorithm/engagement ramp phases (IG 2016 shift; Reels/Shorts 2020-2021 ramp)."
+        },
+        "lagged_windows": {
+          "intervals": [
+            "2017-2019",
+            "2021-2023"
+          ],
+          "rationale": "One-interval-later windows for delayed population response."
+        }
+      },
+      "alternative_hypothesis": "mean(delta in shock windows) > mean(delta in non-shock windows)",
+      "inference": "exact combinatorial test over all k-of-n window allocations"
+    },
+    "note": "Observational stress test of timing alignment; not causal identification."
+  },
+  "hypotheses": {
+    "immediate_ramps": {
+      "definition": {
+        "intervals": [
+          "2015-2017",
+          "2019-2021"
+        ],
+        "rationale": "First YRBS intervals spanning major algorithm/engagement ramp phases (IG 2016 shift; Reels/Shorts 2020-2021 ramp)."
+      },
+      "tests_one_sided": {
+        "delta_algo_plus_engagement_exposure": {
+          "effect_mean_diff": 7.639999999999999,
+          "p_one_sided_exact": 0.06666666666666667,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_sadness": {
+          "effect_mean_diff": 1.5999999999999996,
+          "p_one_sided_exact": 0.4,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_sadness_female": {
+          "effect_mean_diff": 4.699999999999999,
+          "p_one_sided_exact": 0.2,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_sadness_male": {
+          "effect_mean_diff": -0.15000000000000036,
+          "p_one_sided_exact": 0.4666666666666667,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_suicide_considered": {
+          "effect_mean_diff": 0.5,
+          "p_one_sided_exact": 0.4666666666666667,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_suicide_plan": {
+          "effect_mean_diff": 0.0,
+          "p_one_sided_exact": 0.5333333333333333,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_suicide_attempt": {
+          "effect_mean_diff": -1.0,
+          "p_one_sided_exact": 0.8666666666666667,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        }
+      },
+      "rank_summaries": {
+        "delta_algo_plus_engagement_exposure": {
+          "top_sorted": [
+            {
+              "interval_label": "2015-2017",
+              "delta_algo_plus_engagement_exposure": 13.759999999999998
+            },
+            {
+              "interval_label": "2019-2021",
+              "delta_algo_plus_engagement_exposure": 9.329999999999998
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_algo_plus_engagement_exposure": 8.29
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_algo_plus_engagement_exposure": 4.420000000000001
+            },
+            {
+              "interval_label": "2017-2019",
+              "delta_algo_plus_engagement_exposure": 2.8000000000000043
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_algo_plus_engagement_exposure": 0.1099999999999923
+            }
+          ],
+          "shock_interval_ranks": {
+            "2015-2017": 1,
+            "2019-2021": 2
+          }
+        },
+        "delta_sadness": {
+          "top_sorted": [
+            {
+              "interval_label": "2017-2019",
+              "delta_sadness": 6.0
+            },
+            {
+              "interval_label": "2019-2021",
+              "delta_sadness": 5.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_sadness": 1.6000000000000014
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_sadness": 1.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_sadness": 0.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_sadness": -2.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2015-2017": 4,
+            "2019-2021": 2
+          }
+        },
+        "delta_sadness_female": {
+          "top_sorted": [
+            {
+              "interval_label": "2019-2021",
+              "delta_sadness_female": 10.0
+            },
+            {
+              "interval_label": "2017-2019",
+              "delta_sadness_female": 6.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_sadness_female": 3.200000000000003
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_sadness_female": 2.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_sadness_female": 0.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_sadness_female": -4.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2015-2017": 4,
+            "2019-2021": 1
+          }
+        },
+        "delta_sadness_male": {
+          "top_sorted": [
+            {
+              "interval_label": "2017-2019",
+              "delta_sadness_male": 6.0
+            },
+            {
+              "interval_label": "2019-2021",
+              "delta_sadness_male": 2.0
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_sadness_male": 0.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_sadness_male": 0.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_sadness_male": -0.3999999999999986
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_sadness_male": -1.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2015-2017": 3,
+            "2019-2021": 2
+          }
+        },
+        "delta_suicide_considered": {
+          "top_sorted": [
+            {
+              "interval_label": "2019-2021",
+              "delta_suicide_considered": 3.0
+            },
+            {
+              "interval_label": "2017-2019",
+              "delta_suicide_considered": 2.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_suicide_considered": 1.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_suicide_considered": 1.0
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_suicide_considered": -1.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_suicide_considered": -2.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2015-2017": 5,
+            "2019-2021": 1
+          }
+        },
+        "delta_suicide_plan": {
+          "top_sorted": [
+            {
+              "interval_label": "2019-2021",
+              "delta_suicide_plan": 2.0
+            },
+            {
+              "interval_label": "2017-2019",
+              "delta_suicide_plan": 2.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_suicide_plan": 1.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_suicide_plan": 1.0
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_suicide_plan": -1.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_suicide_plan": -2.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2015-2017": 5,
+            "2019-2021": 1
+          }
+        },
+        "delta_suicide_attempt": {
+          "top_sorted": [
+            {
+              "interval_label": "2017-2019",
+              "delta_suicide_attempt": 2.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_suicide_attempt": 1.0
+            },
+            {
+              "interval_label": "2019-2021",
+              "delta_suicide_attempt": 1.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_suicide_attempt": 0.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_suicide_attempt": -1.0
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_suicide_attempt": -2.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2015-2017": 6,
+            "2019-2021": 3
+          }
+        }
+      }
+    },
+    "lagged_windows": {
+      "definition": {
+        "intervals": [
+          "2017-2019",
+          "2021-2023"
+        ],
+        "rationale": "One-interval-later windows for delayed population response."
+      },
+      "tests_one_sided": {
+        "delta_algo_plus_engagement_exposure": {
+          "effect_mean_diff": -7.495000000000001,
+          "p_one_sided_exact": 1.0,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_sadness": {
+          "effect_mean_diff": 0.09999999999999964,
+          "p_one_sided_exact": 0.5333333333333333,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_sadness_female": {
+          "effect_mean_diff": -2.8000000000000007,
+          "p_one_sided_exact": 0.8,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_sadness_male": {
+          "effect_mean_diff": 2.0999999999999996,
+          "p_one_sided_exact": 0.3333333333333333,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_suicide_considered": {
+          "effect_mean_diff": -1.0,
+          "p_one_sided_exact": 0.8,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_suicide_plan": {
+          "effect_mean_diff": -0.75,
+          "p_one_sided_exact": 0.8,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        },
+        "delta_suicide_attempt": {
+          "effect_mean_diff": 0.5,
+          "p_one_sided_exact": 0.4666666666666667,
+          "n_assignments": 15,
+          "k_shock": 2,
+          "n_total": 6
+        }
+      },
+      "rank_summaries": {
+        "delta_algo_plus_engagement_exposure": {
+          "top_sorted": [
+            {
+              "interval_label": "2015-2017",
+              "delta_algo_plus_engagement_exposure": 13.759999999999998
+            },
+            {
+              "interval_label": "2019-2021",
+              "delta_algo_plus_engagement_exposure": 9.329999999999998
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_algo_plus_engagement_exposure": 8.29
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_algo_plus_engagement_exposure": 4.420000000000001
+            },
+            {
+              "interval_label": "2017-2019",
+              "delta_algo_plus_engagement_exposure": 2.8000000000000043
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_algo_plus_engagement_exposure": 0.1099999999999923
+            }
+          ],
+          "shock_interval_ranks": {
+            "2017-2019": 5,
+            "2021-2023": 6
+          }
+        },
+        "delta_sadness": {
+          "top_sorted": [
+            {
+              "interval_label": "2017-2019",
+              "delta_sadness": 6.0
+            },
+            {
+              "interval_label": "2019-2021",
+              "delta_sadness": 5.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_sadness": 1.6000000000000014
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_sadness": 1.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_sadness": 0.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_sadness": -2.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2017-2019": 1,
+            "2021-2023": 6
+          }
+        },
+        "delta_sadness_female": {
+          "top_sorted": [
+            {
+              "interval_label": "2019-2021",
+              "delta_sadness_female": 10.0
+            },
+            {
+              "interval_label": "2017-2019",
+              "delta_sadness_female": 6.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_sadness_female": 3.200000000000003
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_sadness_female": 2.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_sadness_female": 0.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_sadness_female": -4.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2017-2019": 2,
+            "2021-2023": 6
+          }
+        },
+        "delta_sadness_male": {
+          "top_sorted": [
+            {
+              "interval_label": "2017-2019",
+              "delta_sadness_male": 6.0
+            },
+            {
+              "interval_label": "2019-2021",
+              "delta_sadness_male": 2.0
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_sadness_male": 0.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_sadness_male": 0.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_sadness_male": -0.3999999999999986
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_sadness_male": -1.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2017-2019": 1,
+            "2021-2023": 6
+          }
+        },
+        "delta_suicide_considered": {
+          "top_sorted": [
+            {
+              "interval_label": "2019-2021",
+              "delta_suicide_considered": 3.0
+            },
+            {
+              "interval_label": "2017-2019",
+              "delta_suicide_considered": 2.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_suicide_considered": 1.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_suicide_considered": 1.0
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_suicide_considered": -1.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_suicide_considered": -2.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2017-2019": 2,
+            "2021-2023": 6
+          }
+        },
+        "delta_suicide_plan": {
+          "top_sorted": [
+            {
+              "interval_label": "2019-2021",
+              "delta_suicide_plan": 2.0
+            },
+            {
+              "interval_label": "2017-2019",
+              "delta_suicide_plan": 2.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_suicide_plan": 1.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_suicide_plan": 1.0
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_suicide_plan": -1.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_suicide_plan": -2.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2017-2019": 2,
+            "2021-2023": 6
+          }
+        },
+        "delta_suicide_attempt": {
+          "top_sorted": [
+            {
+              "interval_label": "2017-2019",
+              "delta_suicide_attempt": 2.0
+            },
+            {
+              "interval_label": "2013-2015",
+              "delta_suicide_attempt": 1.0
+            },
+            {
+              "interval_label": "2019-2021",
+              "delta_suicide_attempt": 1.0
+            },
+            {
+              "interval_label": "2011-2013",
+              "delta_suicide_attempt": 0.0
+            },
+            {
+              "interval_label": "2021-2023",
+              "delta_suicide_attempt": -1.0
+            },
+            {
+              "interval_label": "2015-2017",
+              "delta_suicide_attempt": -2.0
+            }
+          ],
+          "shock_interval_ranks": {
+            "2017-2019": 1,
+            "2021-2023": 5
+          }
+        }
+      }
+    }
+  }
+}

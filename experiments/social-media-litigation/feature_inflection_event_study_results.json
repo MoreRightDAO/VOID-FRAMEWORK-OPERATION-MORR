@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "script": "feature_inflection_event_study.py",
+    "years": [
+      2011,
+      2013,
+      2015,
+      2017,
+      2019,
+      2021,
+      2023
+    ],
+    "n_years": 7,
+    "n_intervals": 6,
+    "note": "Observational event-alignment and structural-break tests using exact small-sample permutation inference."
+  },
+  "inflection_intervals": {
+    "top_algo_hard_intervals": [
+      {
+        "interval": "2015-2017",
+        "end_year": 2017,
+        "delta": 7.829999999999998
+      },
+      {
+        "interval": "2019-2021",
+        "end_year": 2021,
+        "delta": 6.760000000000002
+      },
+      {
+        "interval": "2013-2015",
+        "end_year": 2015,
+        "delta": 3.95
+      },
+      {
+        "interval": "2011-2013",
+        "end_year": 2013,
+        "delta": 3.4000000000000004
+      }
+    ],
+    "top_engagement_hard_intervals": [
+      {
+        "interval": "2015-2017",
+        "end_year": 2017,
+        "delta": 5.93
+      },
+      {
+        "interval": "2013-2015",
+        "end_year": 2015,
+        "delta": 4.34
+      },
+      {
+        "interval": "2019-2021",
+        "end_year": 2021,
+        "delta": 2.5699999999999985
+      },
+      {
+        "interval": "2017-2019",
+        "end_year": 2019,
+        "delta": 1.540000000000001
+      }
+    ],
+    "top_combo_intervals": [
+      {
+        "interval": "2015-2017",
+        "end_year": 2017,
+        "delta": 13.759999999999998
+      },
+      {
+        "interval": "2019-2021",
+        "end_year": 2021,
+        "delta": 9.329999999999998
+      },
+      {
+        "interval": "2013-2015",
+        "end_year": 2015,
+        "delta": 8.29
+      },
+      {
+        "interval": "2011-2013",
+        "end_year": 2013,
+        "delta": 4.420000000000001
+      }
+    ]
+  },
+  "delta_correlations_exact": {
+    "sadness": {
+      "label": "Persistent sadness/hopelessness (total)",
+      "algo_hard_delta_corr": {
+        "r_observed": 0.21747229287733222,
+        "p_two_sided_exact": 0.6513888888888889,
+        "n_permutations": 720
+      },
+      "engagement_hard_delta_corr": {
+        "r_observed": -0.02635675466034834,
+        "p_two_sided_exact": 0.9666666666666667,
+        "n_permutations": 720
+      },
+      "algo_plus_engagement_delta_corr": {
+        "r_observed": 0.1225545252263452,
+        "p_two_sided_exact": 0.8013888888888889,
+        "n_permutations": 720
+      }
+    },
+    "sadness_female": {
+      "label": "Persistent sadness/hopelessness (female)",
+      "algo_hard_delta_corr": {
+        "r_observed": 0.48381639951694494,
+        "p_two_sided_exact": 0.34305555555555556,
+        "n_permutations": 720
+      },
+      "engagement_hard_delta_corr": {
+        "r_observed": 0.08790814211534335,
+        "p_two_sided_exact": 0.8763888888888889,
+        "n_permutations": 720
+      },
+      "algo_plus_engagement_delta_corr": {
+        "r_observed": 0.3368309818099434,
+        "p_two_sided_exact": 0.5277777777777778,
+        "n_permutations": 720
+      }
+    },
+    "sadness_male": {
+      "label": "Persistent sadness/hopelessness (male)",
+      "algo_hard_delta_corr": {
+        "r_observed": -0.14158772258499766,
+        "p_two_sided_exact": 0.8555555555555555,
+        "n_permutations": 720
+      },
+      "engagement_hard_delta_corr": {
+        "r_observed": -0.11917618044627716,
+        "p_two_sided_exact": 0.8611111111111112,
+        "n_permutations": 720
+      },
+      "algo_plus_engagement_delta_corr": {
+        "r_observed": -0.13950014530727156,
+        "p_two_sided_exact": 0.7666666666666667,
+        "n_permutations": 720
+      }
+    },
+    "suicide_considered": {
+      "label": "Considered suicide (total)",
+      "algo_hard_delta_corr": {
+        "r_observed": 0.24844848966080696,
+        "p_two_sided_exact": 0.6138888888888889,
+        "n_permutations": 720
+      },
+      "engagement_hard_delta_corr": {
+        "r_observed": -0.027389996950809004,
+        "p_two_sided_exact": 0.9555555555555556,
+        "n_permutations": 720
+      },
+      "algo_plus_engagement_delta_corr": {
+        "r_observed": 0.14120254274715596,
+        "p_two_sided_exact": 0.7694444444444445,
+        "n_permutations": 720
+      }
+    },
+    "suicide_plan": {
+      "label": "Suicide plan (total)",
+      "algo_hard_delta_corr": {
+        "r_observed": 0.16572546475210523,
+        "p_two_sided_exact": 0.75,
+        "n_permutations": 720
+      },
+      "engagement_hard_delta_corr": {
+        "r_observed": -0.02944683441282993,
+        "p_two_sided_exact": 0.9722222222222222,
+        "n_permutations": 720
+      },
+      "algo_plus_engagement_delta_corr": {
+        "r_observed": 0.0892930768761957,
+        "p_two_sided_exact": 0.8611111111111112,
+        "n_permutations": 720
+      }
+    },
+    "suicide_attempt": {
+      "label": "Attempted suicide (total)",
+      "algo_hard_delta_corr": {
+        "r_observed": -0.2758715179291444,
+        "p_two_sided_exact": 0.5861111111111111,
+        "n_permutations": 720
+      },
+      "engagement_hard_delta_corr": {
+        "r_observed": -0.2916726475151748,
+        "p_two_sided_exact": 0.5611111111111111,
+        "n_permutations": 720
+      },
+      "algo_plus_engagement_delta_corr": {
+        "r_observed": -0.29784867657771197,
+        "p_two_sided_exact": 0.5583333333333333,
+        "n_permutations": 720
+      }
+    }
+  },
+  "lag1_delta_correlations_exact": {
+    "sadness": {
+      "label": "Persistent sadness/hopelessness (total)",
+      "algo_hard_lead1_corr": {
+        "r_observed": -0.07480898399717706,
+        "p_two_sided_exact": 0.8583333333333333,
+        "n_permutations": 120
+      },
+      "engagement_hard_lead1_corr": {
+        "r_observed": 0.42286423200292417,
+        "p_two_sided_exact": 0.43333333333333335,
+        "n_permutations": 120
+      },
+      "algo_plus_engagement_lead1_corr": {
+        "r_observed": 0.15357382940228706,
+        "p_two_sided_exact": 0.7666666666666667,
+        "n_permutations": 120
+      }
+    },
+    "sadness_female": {
+      "label": "Persistent sadness/hopelessness (female)",
+      "algo_hard_lead1_corr": {
+        "r_observed": -0.42793660488525187,
+        "p_two_sided_exact": 0.4666666666666667,
+        "n_permutations": 120
+      },
+      "engagement_hard_lead1_corr": {
+        "r_observed": 0.14222958300661803,
+        "p_two_sided_exact": 0.8083333333333333,
+        "n_permutations": 120
+      },
+      "algo_plus_engagement_lead1_corr": {
+        "r_observed": -0.1957563188261145,
+        "p_two_sided_exact": 0.7583333333333333,
+        "n_permutations": 120
+      }
+    },
+    "sadness_male": {
+      "label": "Persistent sadness/hopelessness (male)",
+      "algo_hard_lead1_corr": {
+        "r_observed": 0.346457889994767,
+        "p_two_sided_exact": 0.6333333333333333,
+        "n_permutations": 120
+      },
+      "engagement_hard_lead1_corr": {
+        "r_observed": 0.6387418064837767,
+        "p_two_sided_exact": 0.2833333333333333,
+        "n_permutations": 120
+      },
+      "algo_plus_engagement_lead1_corr": {
+        "r_observed": 0.5142042567040932,
+        "p_two_sided_exact": 0.4166666666666667,
+        "n_permutations": 120
+      }
+    },
+    "suicide_considered": {
+      "label": "Considered suicide (total)",
+      "algo_hard_lead1_corr": {
+        "r_observed": -0.38885016145487566,
+        "p_two_sided_exact": 0.48333333333333334,
+        "n_permutations": 120
+      },
+      "engagement_hard_lead1_corr": {
+        "r_observed": -0.07223249765627027,
+        "p_two_sided_exact": 0.9083333333333333,
+        "n_permutations": 120
+      },
+      "algo_plus_engagement_lead1_corr": {
+        "r_observed": -0.27293974283537215,
+        "p_two_sided_exact": 0.625,
+        "n_permutations": 120
+      }
+    },
+    "suicide_plan": {
+      "label": "Suicide plan (total)",
+      "algo_hard_lead1_corr": {
+        "r_observed": -0.26840090127254246,
+        "p_two_sided_exact": 0.6,
+        "n_permutations": 120
+      },
+      "engagement_hard_lead1_corr": {
+        "r_observed": 0.021627187112497493,
+        "p_two_sided_exact": 0.95,
+        "n_permutations": 120
+      },
+      "algo_plus_engagement_lead1_corr": {
+        "r_observed": -0.1546647025760415,
+        "p_two_sided_exact": 0.8166666666666667,
+        "n_permutations": 120
+      }
+    },
+    "suicide_attempt": {
+      "label": "Attempted suicide (total)",
+      "algo_hard_lead1_corr": {
+        "r_observed": 0.058542152454708424,
+        "p_two_sided_exact": 0.9166666666666666,
+        "n_permutations": 120
+      },
+      "engagement_hard_lead1_corr": {
+        "r_observed": 0.006724618586527908,
+        "p_two_sided_exact": 0.9666666666666667,
+        "n_permutations": 120
+      },
+      "algo_plus_engagement_lead1_corr": {
+        "r_observed": 0.0391333961030844,
+        "p_two_sided_exact": 0.9333333333333333,
+        "n_permutations": 120
+      }
+    }
+  },
+  "top_interval_overlap_stats": {
+    "sadness_total_vs_algo_plus_engagement": {
+      "feature_top_intervals": [
+        "2015-2017",
+        "2019-2021"
+      ],
+      "outcome_top_intervals": [
+        "2017-2019",
+        "2019-2021"
+      ],
+      "direct_overlap_count": 1,
+      "same_or_next_interval_overlap_count": 2,
+      "top_n": 2
+    },
+    "sadness_female_vs_algo_plus_engagement": {
+      "feature_top_intervals": [
+        "2015-2017",
+        "2019-2021"
+      ],
+      "outcome_top_intervals": [
+        "2019-2021",
+        "2017-2019"
+      ],
+      "direct_overlap_count": 1,
+      "same_or_next_interval_overlap_count": 2,
+      "top_n": 2
+    }
+  },
+  "structural_break_tests_exact": {
+    "sadness": {
+      "label": "Persistent sadness/hopelessness (total)",
+      "result": {
+        "linear_rss": 26.707142857142852,
+        "best_break_year": 2015,
+        "best_break_fit": {
+          "break_year": 2015,
+          "rss": 18.478571428571357,
+          "slope_pre": 0.31785714285712807,
+          "slope_post": 1.517857142857142,
+          "slope_change": 1.200000000000014
+        },
+        "rss_improvement_vs_linear": 8.228571428571495,
+        "p_improvement_exact": 0.9726190476190476,
+        "n_permutations": 5040
+      }
+    },
+    "sadness_female": {
+      "label": "Persistent sadness/hopelessness (female)",
+      "result": {
+        "linear_rss": 56.77142857142993,
+        "best_break_year": 2017,
+        "best_break_fit": {
+          "break_year": 2017,
+          "rss": 43.615824175826425,
+          "slope_pre": 1.0417582417581999,
+          "slope_post": 2.3725274725274796,
+          "slope_change": 1.3307692307692798
+        },
+        "rss_improvement_vs_linear": 13.155604395603504,
+        "p_improvement_exact": 0.9924603174603175,
+        "n_permutations": 5040
+      }
+    },
+    "sadness_male": {
+      "label": "Persistent sadness/hopelessness (male)",
+      "result": {
+        "linear_rss": 21.335714285715436,
+        "best_break_year": 2015,
+        "best_break_fit": {
+          "break_year": 2015,
+          "rss": 12.407142857142818,
+          "slope_pre": -0.14642857142855886,
+          "slope_post": 1.1035714285714278,
+          "slope_change": 1.2499999999999867
+        },
+        "rss_improvement_vs_linear": 8.928571428572619,
+        "p_improvement_exact": 0.7904761904761904,
+        "n_permutations": 5040
+      }
+    },
+    "suicide_considered": {
+      "label": "Considered suicide (total)",
+      "result": {
+        "linear_rss": 6.821428571428571,
+        "best_break_year": 2021,
+        "best_break_fit": {
+          "break_year": 2021,
+          "rss": 5.333333333333636,
+          "slope_pre": 0.4999999999999862,
+          "slope_post": -0.3333333333333131,
+          "slope_change": -0.8333333333332993
+        },
+        "rss_improvement_vs_linear": 1.4880952380949353,
+        "p_improvement_exact": 0.9706349206349206,
+        "n_permutations": 5040
+      }
+    },
+    "suicide_plan": {
+      "label": "Suicide plan (total)",
+      "result": {
+        "linear_rss": 5.285714285714481,
+        "best_break_year": 2021,
+        "best_break_fit": {
+          "break_year": 2021,
+          "rss": 3.1428571428571104,
+          "slope_pre": 0.4285714285714177,
+          "slope_post": -0.5714285714285567,
+          "slope_change": -0.9999999999999745
+        },
+        "rss_improvement_vs_linear": 2.1428571428573706,
+        "p_improvement_exact": 0.8261904761904761,
+        "n_permutations": 5040
+      }
+    },
+    "suicide_attempt": {
+      "label": "Attempted suicide (total)",
+      "result": {
+        "linear_rss": 3.9642857142856864,
+        "best_break_year": 2017,
+        "best_break_fit": {
+          "break_year": 2017,
+          "rss": 3.3461538461538405,
+          "slope_pre": -0.01923076923076596,
+          "slope_post": 0.26923076923076733,
+          "slope_change": 0.2884615384615333
+        },
+        "rss_improvement_vs_linear": 0.618131868131846,
+        "p_improvement_exact": 0.8666666666666667,
+        "n_permutations": 5040
+      }
+    }
+  }
+}

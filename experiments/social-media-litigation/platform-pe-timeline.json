@@ -1,0 +1,614 @@
+{
+  "metadata": {
+    "title": "Platform Pe Reconstruction Timeline (2010-2025)",
+    "version": "1.0",
+    "date": "2026-03-30",
+    "methodology": "O/R/alpha scored 0-3 based on documented platform design features. Higher values = more drift-inducing. Adoption rates from Pew Research Center teen surveys (ages 13-17). Years between surveys interpolated linearly. Pre-survey years estimated from launch data and industry reports.",
+    "scoring_rubric": {
+      "O_opacity": {
+        "0": "Chronological feed, user-selected content, transparent mechanics",
+        "1": "Minor algorithmic sorting, some opaque curation",
+        "2": "Full algorithmic feed, opaque recommendation engine, Explore/FYP discovery",
+        "3": "Deep personalization, multi-signal ML ranking, content from non-followed accounts dominates, AI-generated recommendations"
+      },
+      "R_reactivity": {
+        "0": "Static content, no autoplay, user initiates all consumption",
+        "1": "Basic engagement features (likes, comments), some content delivery optimization",
+        "2": "Autoplay, infinite scroll, Stories/ephemeral content, engagement-optimized feed, short-form video",
+        "3": "Full infinite short-form video (Reels/Shorts/FYP), autoplay default, engagement maximization across multiple surfaces, live features, shopping integration"
+      },
+      "alpha_coupling": {
+        "0": "No social pressure features, no identity coupling",
+        "1": "Basic social graph, likes visible, follower counts",
+        "2": "Stories (FOMO/daily return), beauty/AR filters, streaks, social comparison features, notifications optimized for return",
+        "3": "Identity-defining filters (Bold Glamour), streaks with loss aversion, AI chatbot companions, social graph lock-in, creator economy coupling, cross-platform identity"
+      }
+    },
+    "adoption_sources": [
+      "Pew Research Center, 'Teens, Social Media & Technology Overview 2015' (fieldwork 2014-09 to 2015-03): Facebook 71%, Instagram 52%, Snapchat 41%",
+      "Pew Research Center, 'Teens, Social Media & Technology 2018' (fieldwork 2018-03 to 2018-04): YouTube 85%, Instagram 72%, Snapchat 69%, Facebook 51%",
+      "Pew Research Center, 'Teens, Social Media and Technology 2022' (fieldwork 2022-04 to 2022-05): YouTube 95%, TikTok 67%, Instagram 62%, Snapchat 59%, Facebook 32%",
+      "Pew Research Center, 'Teens, Social Media and Technology 2023' (fieldwork 2023-09 to 2023-10): YouTube 90%, TikTok 63%, Snapchat 60%, Instagram 59%, Facebook 33%",
+      "Pew Research Center, 'Teens, Social Media and Technology 2024' (fieldwork 2024-09 to 2024-10): YouTube 90%, TikTok 61%, Instagram 61%, Snapchat 55%, Facebook 31%",
+      "Pew Research Center, 'Teens, Social Media and AI Chatbots 2025' (fieldwork 2025-09 to 2025-10): YouTube 90%, TikTok 60%, Instagram 61%, Snapchat 55%, Facebook 31%",
+      "Pew Research Center, 'Teens, Social Media, and Privacy' (fieldwork 2012-07 to 2012-09): Facebook 77% of online teens (~73% of all teens), Instagram not separately measured, Snapchat nascent"
+    ],
+    "interpolation_notes": "For years between Pew surveys, adoption rates are linearly interpolated. Pre-2012 rates estimated from platform launch dates, App Annie data, and industry reports. YouTube teen usage before 2018 estimated from general population Pew data (teens typically higher than adults for video). TikTok pre-2022 estimated from Sensor Tower and app download data.",
+    "pe_formula_note": "Pe = sinh(2*(B_A - C*B_G))*K where C = 1-(O+R+alpha)/9. Higher O+R+alpha = lower C = higher Pe. Exact computation requires K (domain-specific); relative O/R/alpha scores are sufficient for comparative timeline analysis. The 0-3 scale maps conceptually: sum of 0 = minimal Pe, sum of 9 = maximum Pe."
+  },
+  "platforms": {
+    "instagram": {
+      "2010": {
+        "O": 0, "R": 1, "alpha": 1, "adoption_pct": 1,
+        "design_state": "Launch Oct 2010. Chronological photo feed. Filters (artistic, not beauty). Basic social graph (likes, followers, following). No algorithmic sorting. No video. No Stories. User-selected content only.",
+        "key_changes": ["Platform launch (October 6, 2010)", "Photo-only with artistic filters", "Chronological feed"]
+      },
+      "2011": {
+        "O": 0, "R": 1, "alpha": 1, "adoption_pct": 3,
+        "design_state": "Chronological feed. Growing user base. Hashtags introduced. Android launch pending. Simple photo sharing with artistic filters.",
+        "key_changes": ["Hashtags introduced", "User base growing rapidly"]
+      },
+      "2012": {
+        "O": 0, "R": 1, "alpha": 1, "adoption_pct": 10,
+        "design_state": "Facebook acquisition ($1B, April 2012). Android launch (April 2012). Chronological feed. Photo-only. Explore tab added (early form, not yet algorithmic). Still transparent mechanics.",
+        "key_changes": ["Facebook acquisition (April)", "Android launch (April)", "Explore tab (basic)"]
+      },
+      "2013": {
+        "O": 0, "R": 1, "alpha": 1, "adoption_pct": 20,
+        "design_state": "15-second video sharing introduced (June 2013). Instagram Direct messaging added (December 2013). Still chronological. Video adds engagement surface but content still user-selected.",
+        "key_changes": ["15-second video sharing (June)", "Instagram Direct messaging (December)"]
+      },
+      "2014": {
+        "O": 0, "R": 1, "alpha": 1, "adoption_pct": 40,
+        "design_state": "Growing rapidly among teens. Explore tab gaining traction but feed still chronological. Hyperlapse video app. Still primarily photo/short video platform with transparent mechanics.",
+        "key_changes": ["Hyperlapse app", "Explore tab gaining traction"]
+      },
+      "2015": {
+        "O": 0, "R": 1, "alpha": 1, "adoption_pct": 52,
+        "design_state": "Boomerang launch. 30-second ads in feed. Still chronological feed. Growing commercial presence but core user experience transparent. Pew 2014-15: 52% of teens use Instagram.",
+        "key_changes": ["Boomerang launch", "30-second ads in feed", "Pew survey: 52% teen adoption"]
+      },
+      "2016": {
+        "O": 2, "R": 2, "alpha": 2, "adoption_pct": 60,
+        "design_state": "MAJOR INFLECTION YEAR. Algorithmic feed announced (March) and rolled out to all users (June). Stories launched (August), copied from Snapchat. Explore tab becomes algorithmic. Live video (November). This is the single largest Pe jump for any platform in the dataset. Feed goes from transparent/chronological to opaque/algorithmic. Stories add daily return habit loop + FOMO. Live adds real-time engagement.",
+        "key_changes": ["Algorithmic feed announced (March)", "Algorithmic feed full rollout (June)", "Stories launched (August)", "Live video (November)", "Explore tab algorithmic"]
+      },
+      "2017": {
+        "O": 2, "R": 2, "alpha": 2, "adoption_pct": 66,
+        "design_state": "Stories growing rapidly. Algorithmic feed fully entrenched. Face filters in Stories (AR). Stories ads. Carousel posts. Archive feature. The platform has fully transitioned from photo-sharing to engagement-optimized social media.",
+        "key_changes": ["Face filters in Stories", "Stories ads", "Carousel posts", "Archive feature"]
+      },
+      "2018": {
+        "O": 2, "R": 2, "alpha": 2, "adoption_pct": 72,
+        "design_state": "Explore tab with deep algorithmic recommendations. IGTV launch (long-form video). Shopping tags. Activity status. Mute feature. Video chat in Direct. Pew 2018: 72% of teens use Instagram. Explore is now a major engagement driver showing content from accounts users don't follow.",
+        "key_changes": ["Explore tab deep algorithmic recs", "IGTV launch", "Shopping tags", "Pew survey: 72% teen adoption"]
+      },
+      "2019": {
+        "O": 2, "R": 2, "alpha": 2, "adoption_pct": 67,
+        "design_state": "Beauty/AR filters expanded significantly. Like counts hidden in some markets (test). Close Friends for Stories. Shopping checkout. Creator accounts. Threads messaging app (v1, later discontinued). AR filter expansion is key: identity coupling through beauty standards.",
+        "key_changes": ["Beauty/AR filters expanded", "Like counts hidden (test)", "Close Friends for Stories", "Shopping checkout"]
+      },
+      "2020": {
+        "O": 3, "R": 3, "alpha": 2, "adoption_pct": 62,
+        "design_state": "REELS LAUNCHED (August 2020). TikTok clone — full-screen, infinite-scroll, autoplay short-form video with opaque FYP-style algorithmic recommendation. This is the second major Pe jump. Reels feed shows content overwhelmingly from accounts users don't follow. Guides feature. Shops tab replaces Activity tab. COVID lockdowns drive massive engagement increase.",
+        "key_changes": ["Reels launched (August)", "Shops tab replaces Activity", "Guides feature", "COVID lockdown engagement surge"]
+      },
+      "2021": {
+        "O": 3, "R": 3, "alpha": 2, "adoption_pct": 62,
+        "design_state": "Full pivot to video announced by Adam Mosseri. Reels prioritized in algorithm. Collabs feature. Drops (product launches). Subscriptions for creators. Instagram increasingly shows recommended content from non-followed accounts in main feed. Internal research (Facebook Papers, Oct 2021) reveals Instagram's own data showed harm to teen girls' body image and mental health.",
+        "key_changes": ["Full pivot to video announced", "Reels prioritized in algorithm", "Facebook Papers leaked (October)", "Recommended content in main feed"]
+      },
+      "2022": {
+        "O": 3, "R": 3, "alpha": 2, "adoption_pct": 62,
+        "design_state": "TikTok-style full-screen feed tested then partially rolled back after backlash ('Make Instagram Instagram Again'). Reels still dominant. Recommended content makes up increasing share of feed. Notes feature. Enhanced shopping. Pew 2022: 62% of teens use Instagram.",
+        "key_changes": ["TikTok-style feed tested (rolled back)", "Recommended content dominates", "Pew survey: 62% teen adoption"]
+      },
+      "2023": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 59,
+        "design_state": "Broadcast Channels launched (February). Threads launched (July) — cross-platform identity coupling. AI-powered recommendations refined. Reels now 50% of time spent in app (per Zuckerberg). Notes feature. Collaborative collections. Alpha raised to 3: Threads creates cross-platform identity lock-in, broadcast channels create parasocial relationships, creator economy coupling deepens.",
+        "key_changes": ["Broadcast Channels (February)", "Threads launched (July)", "Reels = 50% of time in app", "Pew survey: 59% teen adoption"]
+      },
+      "2024": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 61,
+        "design_state": "Hashtag following removed (December) — discovery now fully algorithm-controlled. 'Your Algorithm' transparency feature launched (December) but does not reduce opacity (users see topics but not ranking logic). Broadcast Channels become two-way. Teen accounts with restricted settings by default. Reels algorithm decoupled for connected vs unconnected reach. Pew 2024: 61% of teens use Instagram.",
+        "key_changes": ["Hashtag following removed", "'Your Algorithm' feature (December)", "Teen accounts restricted by default", "Pew survey: 61% teen adoption"]
+      },
+      "2025": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 61,
+        "design_state": "AI-generated content recommendations. Meta AI integration. All video is Reels. Recommended content from non-followed accounts is now the dominant feed experience. Creator economy fully integrated. Cross-platform identity via Threads. Pew 2025: 61% of teens use Instagram.",
+        "key_changes": ["Meta AI integration", "All video = Reels", "Pew survey: 61% teen adoption"]
+      }
+    },
+    "youtube": {
+      "2010": {
+        "O": 0, "R": 1, "alpha": 0, "adoption_pct": 60,
+        "design_state": "User-selected videos. View count drives recommendations. Subscriptions as primary discovery. No autoplay. Transparent mechanics: popular videos surface by views/recency. Minimal social features.",
+        "key_changes": ["View-count-based recommendations"]
+      },
+      "2011": {
+        "O": 0, "R": 1, "alpha": 0, "adoption_pct": 65,
+        "design_state": "Still view-count driven. YouTube Live begins. Channels redesigned. Content still primarily user-selected. Low coupling — YouTube is a utility, not an identity platform.",
+        "key_changes": ["YouTube Live begins", "Channel redesign"]
+      },
+      "2012": {
+        "O": 1, "R": 1, "alpha": 0, "adoption_pct": 70,
+        "design_state": "MAJOR: Algorithm shifts from views to watch time (March 2012). This is the first opacity increase — the recommendation engine now optimizes for retention, not popularity. Users cannot see why videos are recommended. The watch-time optimization creates a feedback loop favoring longer, more engaging content.",
+        "key_changes": ["Algorithm shift: views to watch time (March)", "Recommendation opacity increases"]
+      },
+      "2013": {
+        "O": 1, "R": 1, "alpha": 0, "adoption_pct": 72,
+        "design_state": "Watch time algorithm entrenched. Music service integration. Paid channels (short-lived). Recommendations becoming more personalized but still primarily from subscriptions and trending.",
+        "key_changes": ["Watch time algorithm entrenched", "Paid channels (short-lived)"]
+      },
+      "2014": {
+        "O": 1, "R": 2, "alpha": 0, "adoption_pct": 75,
+        "design_state": "Autoplay TESTED (August 2014). YouTube Kids launched. YouTube Red (premium). 60fps video support. Autoplay is the key change: it removes the friction of choosing what to watch next, creating passive consumption loops.",
+        "key_changes": ["Autoplay tested (August)", "YouTube Kids", "YouTube Red"]
+      },
+      "2015": {
+        "O": 1, "R": 2, "alpha": 0, "adoption_pct": 78,
+        "design_state": "Autoplay ON BY DEFAULT (March 2015). This is a significant reactivity increase. Users now passively consume a stream of algorithmically-selected videos unless they actively disable autoplay. Combined with watch-time optimization, this creates extended viewing sessions.",
+        "key_changes": ["Autoplay ON by default (March)", "Passive consumption loops established"]
+      },
+      "2016": {
+        "O": 1, "R": 2, "alpha": 0, "adoption_pct": 80,
+        "design_state": "Deep learning recommendation engine deployed. YouTube Community tab. Super Chat for live streams. The deep learning system makes recommendations more opaque and more effective at retaining attention. But coupling remains low — YouTube is still primarily a content consumption platform, not a social identity platform.",
+        "key_changes": ["Deep learning recommendation engine", "Community tab", "Super Chat"]
+      },
+      "2017": {
+        "O": 2, "R": 2, "alpha": 0, "adoption_pct": 82,
+        "design_state": "YouTube TV launched. Deep learning recs refined. 'Up Next' sidebar increasingly drives views. Restricted Mode. Opacity increases as the recommendation engine becomes the primary discovery mechanism. 70% of watch time now comes from recommendations.",
+        "key_changes": ["YouTube TV", "70% of watch time from recommendations", "Restricted Mode"]
+      },
+      "2018": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 85,
+        "design_state": "'Smart Autoplay' — personalized next-video recommendations. YouTube Stories (for creators). YouTube Premium. Pew 2018: 85% of teens use YouTube. Alpha increases to 1: creator subscriptions and notifications create return habit, but still lower identity coupling than Instagram/TikTok.",
+        "key_changes": ["Smart Autoplay (personalized)", "YouTube Stories", "Pew survey: 85% teen adoption"]
+      },
+      "2019": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 88,
+        "design_state": "Recommendation algorithm changes to reduce 'borderline content' (but core opacity unchanged). YouTube Originals. Autoplay on mobile. The recommendation engine is now the dominant content discovery mechanism on the platform.",
+        "key_changes": ["Borderline content reduction", "Autoplay on mobile"]
+      },
+      "2020": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 92,
+        "design_state": "SHORTS BETA launched (September 2020, India first). COVID lockdowns drive massive usage increase. Shorts introduces infinite-scroll short-form video to YouTube. Chapters feature. Clips feature.",
+        "key_changes": ["Shorts beta (September, India)", "COVID lockdown engagement surge", "Chapters feature"]
+      },
+      "2021": {
+        "O": 2, "R": 3, "alpha": 1, "adoption_pct": 94,
+        "design_state": "SHORTS GLOBAL LAUNCH (July 2021). Shorts Fund ($100M). Shorts introduces FYP-style infinite autoplay short-form video. This is a major reactivity increase — YouTube now has both long-form autoplay AND short-form infinite scroll. Handle feature.",
+        "key_changes": ["Shorts global launch (July)", "Shorts Fund ($100M)", "Infinite short-form video"]
+      },
+      "2022": {
+        "O": 2, "R": 3, "alpha": 1, "adoption_pct": 95,
+        "design_state": "Shorts monetization through YouTube Partner Program. 30 billion daily Shorts views. Shorts in main feed. Ambient Mode. Pew 2022: 95% of teens use YouTube. YouTube is the most-used platform among US teens.",
+        "key_changes": ["Shorts monetization", "30B daily Shorts views", "Pew survey: 95% teen adoption"]
+      },
+      "2023": {
+        "O": 2, "R": 3, "alpha": 1, "adoption_pct": 90,
+        "design_state": "Shorts ad revenue sharing. Shorts creator tools expanded. 70 billion daily Shorts views. Generative AI features in creation. Recommendation engine uses viewer satisfaction surveys alongside watch time.",
+        "key_changes": ["Shorts ad revenue sharing", "70B daily Shorts views", "Pew survey: 90% teen adoption"]
+      },
+      "2024": {
+        "O": 2, "R": 3, "alpha": 1, "adoption_pct": 90,
+        "design_state": "200 billion daily Shorts views. Shorts algorithm decoupled from long-form. AI-powered thumbnails and recommendations. Satisfaction signals outweigh raw watch time. Shorts extended to 3 minutes. Pew 2024: 90% of teens use YouTube.",
+        "key_changes": ["200B daily Shorts views", "Shorts decoupled from long-form", "Shorts extended to 3 min", "Pew survey: 90% teen adoption"]
+      },
+      "2025": {
+        "O": 3, "R": 3, "alpha": 1, "adoption_pct": 90,
+        "design_state": "Generative AI understands thumbnails, transcripts, tone, on-screen elements. AI-powered search suggestions. Shorts fully mature. Opacity increases to 3 as AI comprehension of content drives recommendations beyond human understanding of ranking logic. Pew 2025: ~90% of teens use YouTube.",
+        "key_changes": ["Generative AI content understanding", "AI search suggestions", "Pew survey: ~90% teen adoption"]
+      }
+    },
+    "facebook": {
+      "2010": {
+        "O": 1, "R": 1, "alpha": 1, "adoption_pct": 73,
+        "design_state": "News Feed with early algorithmic sorting (EdgeRank). Like button (2009). Photos, status updates. Basic algorithmic curation but relatively transparent — content primarily from friends. High teen adoption as dominant social platform.",
+        "key_changes": ["EdgeRank algorithm", "Like button established"]
+      },
+      "2011": {
+        "O": 1, "R": 2, "alpha": 1, "adoption_pct": 75,
+        "design_state": "Timeline replaces profile. Sponsored Stories in feed. Algorithmic News Feed with engagement optimization. Subscribe button. Chat/Messenger. Sponsored Stories blur ad/content boundary, increasing opacity.",
+        "key_changes": ["Timeline replaces profile", "Sponsored Stories in feed", "Subscribe button"]
+      },
+      "2012": {
+        "O": 1, "R": 2, "alpha": 1, "adoption_pct": 77,
+        "design_state": "IPO (May 2012). Mobile-first pivot. App Center. Pew 2012: 77% of online teens use Facebook (~73% of all teens). Facebook still dominant teen platform. Promoted posts. Graph search.",
+        "key_changes": ["IPO (May)", "Mobile-first pivot", "Pew survey: ~73% teen adoption"]
+      },
+      "2013": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 73,
+        "design_state": "News Feed redesign — larger images, richer content. Trending topics. Graph Search expanded. Algorithm increasingly opaque — machine learning replaces simple EdgeRank. Video autoplay in News Feed begins. Teens beginning to migrate away.",
+        "key_changes": ["News Feed redesign", "Trending topics", "ML replaces EdgeRank", "Video autoplay begins"]
+      },
+      "2014": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 71,
+        "design_state": "'Meaningful interactions' emphasis. Algorithm optimizes for engagement signals beyond likes (comments, shares, reactions). Messenger forced to separate app. Pew 2014-15: 71% of teens use Facebook. Beginning of teen migration to Instagram/Snapchat.",
+        "key_changes": ["Meaningful interactions emphasis", "Messenger forced to separate app", "Pew survey: 71% teen adoption"]
+      },
+      "2015": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 71,
+        "design_state": "Instant Articles. Live video (December). Reactions development. Algorithm continues engagement optimization. Teen usage still high but plateauing. Facebook increasingly a 'utility' for teens rather than identity platform.",
+        "key_changes": ["Instant Articles", "Live video (December)", "Teen usage plateauing"]
+      },
+      "2016": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 65,
+        "design_state": "Reactions launched (February — Love, Haha, Wow, Sad, Angry). Live video prioritized in algorithm. Marketplace. Stories (brief test). Reactions give algorithm richer engagement signals. But teen migration to Instagram/Snapchat accelerating.",
+        "key_changes": ["Reactions launched (February)", "Live video prioritized", "Marketplace", "Teen migration accelerating"]
+      },
+      "2017": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 58,
+        "design_state": "Stories launched in Facebook (March). Watch tab (August). 'Meaningful social interactions' overhaul planned. Teen usage declining as Instagram/Snapchat/YouTube capture attention. Facebook increasingly seen as 'for parents' by teens.",
+        "key_changes": ["Stories launched (March)", "Watch tab (August)", "Teens view as 'for parents'"]
+      },
+      "2018": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 51,
+        "design_state": "'Friends and family' pivot (actually deeper engagement optimization). News Feed algorithm prioritizes 'meaningful interactions' — comments and shares weighted heavily. Cambridge Analytica scandal. Pew 2018: 51% of teens use Facebook. Sharp decline from 71% in 2014-15.",
+        "key_changes": ["Friends and family pivot", "Cambridge Analytica scandal", "Pew survey: 51% teen adoption"]
+      },
+      "2019": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 45,
+        "design_state": "Groups emphasis. 'FB5' redesign — cleaner, Groups-focused. Longer video prioritized. News tab. Facebook Pay. Teen usage continuing to decline. Platform aging out of teen demographic.",
+        "key_changes": ["Groups emphasis", "FB5 redesign", "Teen usage declining"]
+      },
+      "2020": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 38,
+        "design_state": "COVID drives some return to platform for community. Shops launched. Rooms (video chat). But teen migration continues. Facebook is increasingly a mature-user platform. Short-form video not yet integrated.",
+        "key_changes": ["Shops launched", "Rooms video chat", "Some COVID return"]
+      },
+      "2021": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 35,
+        "design_state": "Meta rebrand (October). Reels introduced to Facebook. Facebook Papers leak reveals internal knowledge of platform harms. Recommended content from non-followed accounts increases. But teen usage continues to decline. Reels on Facebook is a defensive move, not a teen acquisition strategy.",
+        "key_changes": ["Meta rebrand (October)", "Reels on Facebook", "Facebook Papers leak"]
+      },
+      "2022": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 32,
+        "design_state": "Reels expanded. TikTok-style recommended content feed. But Facebook's teen base has eroded — down from 71% to 32% in 8 years. Pew 2022: 32% of teens use Facebook. Platform is no longer a primary teen social media platform.",
+        "key_changes": ["Reels expanded", "Recommended content feed", "Pew survey: 32% teen adoption"]
+      },
+      "2023": {
+        "O": 2, "R": 2, "alpha": 1, "adoption_pct": 33,
+        "design_state": "Meta AI integration. All video published as Reels. Generative AI features. Recommended content continues growing share of feed. But teen relevance continues to decline. Pew 2023: 33% of teens use Facebook.",
+        "key_changes": ["Meta AI integration", "All video = Reels", "Pew survey: 33% teen adoption"]
+      },
+      "2024": {
+        "O": 2, "R": 3, "alpha": 1, "adoption_pct": 31,
+        "design_state": "50% more same-day Reels surfaced. Algorithm gives users more control over video recommendations. AI-powered content understanding. But fundamental teen adoption picture unchanged — Facebook is not a teen platform. Pew 2024: 31% of teens use Facebook.",
+        "key_changes": ["50% more same-day Reels", "User control over recs", "Pew survey: 31% teen adoption"]
+      },
+      "2025": {
+        "O": 2, "R": 3, "alpha": 1, "adoption_pct": 31,
+        "design_state": "All video = Reels. Meta AI integrated. Community notes fact-checking. But Facebook's teen story is essentially over — stable at ~31%, a third of its 2014 peak. The platform's Pe is moderate but its teen exposure is low. Pew 2025: 31% of teens use Facebook.",
+        "key_changes": ["All video = Reels", "Meta AI", "Pew survey: 31% teen adoption"]
+      }
+    },
+    "tiktok": {
+      "2010": {
+        "O": 0, "R": 0, "alpha": 0, "adoption_pct": 0,
+        "design_state": "Platform does not exist.",
+        "key_changes": []
+      },
+      "2011": {
+        "O": 0, "R": 0, "alpha": 0, "adoption_pct": 0,
+        "design_state": "Platform does not exist.",
+        "key_changes": []
+      },
+      "2012": {
+        "O": 0, "R": 0, "alpha": 0, "adoption_pct": 0,
+        "design_state": "Platform does not exist.",
+        "key_changes": []
+      },
+      "2013": {
+        "O": 0, "R": 0, "alpha": 0, "adoption_pct": 0,
+        "design_state": "Platform does not exist.",
+        "key_changes": []
+      },
+      "2014": {
+        "O": 0, "R": 0, "alpha": 0, "adoption_pct": 0,
+        "design_state": "Platform does not exist.",
+        "key_changes": []
+      },
+      "2015": {
+        "O": 0, "R": 0, "alpha": 0, "adoption_pct": 0,
+        "design_state": "Platform does not exist.",
+        "key_changes": []
+      },
+      "2016": {
+        "O": 0, "R": 0, "alpha": 0, "adoption_pct": 0,
+        "design_state": "Douyin launches in China (September 2016). FYP algorithm from inception. Not available to US teens.",
+        "key_changes": ["Douyin launches in China (September)"]
+      },
+      "2017": {
+        "O": 3, "R": 3, "alpha": 2, "adoption_pct": 2,
+        "design_state": "TikTok international launch (September 2017). HIGH PE FROM INCEPTION: fully algorithmic For You Page (O=3), infinite-scroll autoplay short-form video (R=3), duets/effects for identity expression (alpha=2). Unlike other platforms that evolved toward high Pe, TikTok launched with maximum-Pe design. Negligible US teen adoption in 2017.",
+        "key_changes": ["TikTok international launch (September)", "FYP algorithm from day 1", "Infinite autoplay short-form video"]
+      },
+      "2018": {
+        "O": 3, "R": 3, "alpha": 2, "adoption_pct": 10,
+        "design_state": "Musical.ly merger (August 2018) — massive user base acquired. Duets feature. Green screen effect. AR filters expanding. React feature. FYP algorithm continues to define the experience. Musical.ly's existing teen user base (estimated 100M+) migrated to TikTok overnight.",
+        "key_changes": ["Musical.ly merger (August)", "Duets feature", "Green screen effect", "AR filters expanding"]
+      },
+      "2019": {
+        "O": 3, "R": 3, "alpha": 2, "adoption_pct": 25,
+        "design_state": "Rapid US growth. Effects and filters proliferating. Creator Marketplace. Viral challenges drive adoption. FYP algorithm refined — learns user preferences extremely quickly (reported: 40 minutes to profile a new user). Beauty filters expanding.",
+        "key_changes": ["Rapid US growth", "Creator Marketplace", "FYP learning speed refined", "Viral challenges"]
+      },
+      "2020": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 40,
+        "design_state": "COVID LOCKDOWN EXPLOSION. TikTok becomes the cultural dominant platform. Creator Fund launched ($200M, July). Stitch feature (September). Live streaming expanded. Trump ban attempt. Alpha rises to 3: Creator Fund creates economic coupling, viral challenges create social pressure, beauty filters create identity coupling, the platform becomes identity-defining for teens.",
+        "key_changes": ["COVID lockdown explosion", "Creator Fund ($200M, July)", "Stitch feature (September)", "Live streaming expanded", "Trump ban attempt"]
+      },
+      "2021": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 55,
+        "design_state": "TikTok becomes most visited website globally. 3-minute video limit. Stories feature (August). TikTok Shop testing. Live gifts. Effect House launched for creators. Algorithm continues to show users content from accounts they don't follow as the primary experience.",
+        "key_changes": ["Most visited website globally", "3-minute videos", "Stories (August)", "TikTok Shop testing", "Effect House"]
+      },
+      "2022": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 67,
+        "design_state": "10-minute video limit. TikTok Shop expanded. LIVE subscription. Photo mode. Effect House expanded. Pew 2022: 67% of teens use TikTok. Platform has matured with maximum Pe design across all three dimensions. Every surface optimized for engagement.",
+        "key_changes": ["10-minute videos", "TikTok Shop expanded", "LIVE subscription", "Pew survey: 67% teen adoption"]
+      },
+      "2023": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 63,
+        "design_state": "Bold Glamour filter (February/March 2023) — AI-powered beauty filter so realistic it sparked widespread concern about unrealistic beauty standards. Viewed 400M+ times. Effect Creator Rewards ($6M). TikTok Shop fully integrated. Search becoming a major feature. Pew 2023: 63% of teens use TikTok.",
+        "key_changes": ["Bold Glamour AI filter (Feb/Mar)", "Effect Creator Rewards ($6M)", "TikTok Shop integrated", "Pew survey: 63% teen adoption"]
+      },
+      "2024": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 61,
+        "design_state": "TikTok ban law upheld by DC Circuit (December 2024). Algorithm emphasizes diverse content, shares, saves. Longer content (10+ min) continuing. Live shopping integration deepened. AI-generated content features. Pew 2024: 61% of teens use TikTok.",
+        "key_changes": ["Ban law upheld by DC Circuit", "Algorithm emphasizes shares/saves", "Live shopping deepened", "Pew survey: 61% teen adoption"]
+      },
+      "2025": {
+        "O": 3, "R": 3, "alpha": 3, "adoption_pct": 60,
+        "design_state": "Supreme Court upholds ban (January 17, 2025). Brief shutdown (January 18-19). Executive order delays enforcement. Sale to Oracle/Silver Lake/MGX consortium agreed (December). Local Feed feature. Algorithm weighs search intent and keywords. LIVE auto-post. Platform maintained at maximum Pe throughout legal uncertainty. Pew 2025: 60% of teens use TikTok.",
+        "key_changes": ["Supreme Court upholds ban (Jan 17)", "Brief shutdown (Jan 18-19)", "Sale agreed (December)", "Local Feed", "Pew survey: 60% teen adoption"]
+      }
+    },
+    "snapchat": {
+      "2010": {
+        "O": 0, "R": 0, "alpha": 0, "adoption_pct": 0,
+        "design_state": "Platform does not exist.",
+        "key_changes": []
+      },
+      "2011": {
+        "O": 0, "R": 1, "alpha": 1, "adoption_pct": 1,
+        "design_state": "Launch (July 2011 as Picaboo, renamed September). Ephemeral photo messaging. Core mechanic: disappearing messages create urgency (R) and social reciprocity pressure (alpha). No algorithmic feed. No Stories. No Discover. Transparency: you know exactly what you're getting — a disappearing photo.",
+        "key_changes": ["Platform launch (July as Picaboo, September as Snapchat)", "Ephemeral messaging"]
+      },
+      "2012": {
+        "O": 0, "R": 1, "alpha": 1, "adoption_pct": 5,
+        "design_state": "Video snaps added. 50M snaps/day by end of year. Still ephemeral messaging only. No algorithmic component. Growing rapidly among teens attracted to privacy/ephemerality vs Facebook's permanence.",
+        "key_changes": ["Video snaps", "50M snaps/day"]
+      },
+      "2013": {
+        "O": 0, "R": 2, "alpha": 2, "adoption_pct": 15,
+        "design_state": "STORIES LAUNCHED (October 2013) — Snapchat invents the Stories format. Stories add a broadcast layer to messaging: 24-hour content creates daily return habit (FOMO) and increases engagement surface. Chat 1.0 (text messaging). Reactivity increases with Stories (continuous content creation/consumption cycle). Coupling increases with daily return pressure.",
+        "key_changes": ["Stories launched (October)", "Chat 1.0", "Daily return habit established"]
+      },
+      "2014": {
+        "O": 0, "R": 2, "alpha": 2, "adoption_pct": 30,
+        "design_state": "Geofilters launched (August). Our Story (crowdsourced event Stories). Snapcash (payments). Live Stories for events. Geofilters add location-based identity coupling. Rapid teen adoption. Still no algorithmic feed — content delivery is chronological and friend-based.",
+        "key_changes": ["Geofilters (August)", "Our Story", "Snapcash", "Live Stories"]
+      },
+      "2015": {
+        "O": 1, "R": 2, "alpha": 2, "adoption_pct": 41,
+        "design_state": "DISCOVER launched (January 2015) — publisher content channels with algorithmic curation. This is the first opacity increase: Discover shows editorially and algorithmically selected content from brands/publishers users didn't choose. Lenses (face filters) launched. Pew 2014-15: 41% of teens use Snapchat. Lenses add identity coupling through face transformation.",
+        "key_changes": ["Discover launched (January)", "Lenses (face filters)", "Pew survey: 41% teen adoption"]
+      },
+      "2016": {
+        "O": 1, "R": 2, "alpha": 3, "adoption_pct": 52,
+        "design_state": "SNAPSTREAKS launched (March 2016, Chat 2.0). Streaks are the single most identity-coupling feature in social media — loss aversion mechanics (break a streak = lose numbered badge), daily obligation, social pressure. Memories feature. World Lenses (AR). Bitmoji integration. Alpha rises to 3: Streaks create powerful loss-aversion coupling, Bitmoji creates avatar identity, Memories ties identity to platform history.",
+        "key_changes": ["Snapstreaks launched (March)", "Memories", "World Lenses", "Bitmoji integration"]
+      },
+      "2017": {
+        "O": 1, "R": 2, "alpha": 3, "adoption_pct": 60,
+        "design_state": "Snap Map launched (June) — location sharing with friends. IPO (March). Controversial redesign announced (November) — separating friends from publishers. Snap Map adds real-time location coupling (social surveillance). Redesign attempts to separate social from media content. Context Cards.",
+        "key_changes": ["Snap Map (June)", "IPO (March)", "Controversial redesign announced (November)"]
+      },
+      "2018": {
+        "O": 1, "R": 2, "alpha": 3, "adoption_pct": 69,
+        "design_state": "Redesign backlash (1.2M petition to reverse). Redesign separating friends/publishers partially rolled back. Group video chat. AR Shopping Lens. Pew 2018: 69% of teens use Snapchat. Despite redesign controversy, teen usage at peak. Streaks + Stories + Snap Map create strong daily return loop.",
+        "key_changes": ["Redesign backlash", "Group video chat", "AR Shopping Lens", "Pew survey: 69% teen adoption"]
+      },
+      "2019": {
+        "O": 1, "R": 2, "alpha": 3, "adoption_pct": 65,
+        "design_state": "Snap Games. Snap Originals (original shows). 3D World Lenses. Gender swap filter goes viral — demonstrates power of identity-coupling AR. Cameos (face-swapped videos). Gaming and original content deepen engagement surface.",
+        "key_changes": ["Snap Games", "Snap Originals", "Gender swap filter viral", "Cameos"]
+      },
+      "2020": {
+        "O": 2, "R": 2, "alpha": 3, "adoption_pct": 60,
+        "design_state": "SPOTLIGHT launched (November 2020) — TikTok-style algorithmic short-form video feed. $1M/day creator payments. Minis (third-party mini-apps). Spotlight is a major opacity increase: fully algorithmic content from non-followed creators. Snapchat now has three layers: messaging (transparent), Stories (semi-transparent), Spotlight (opaque algorithm).",
+        "key_changes": ["Spotlight launched (November)", "$1M/day creator payments", "Minis"]
+      },
+      "2021": {
+        "O": 2, "R": 2, "alpha": 3, "adoption_pct": 59,
+        "design_state": "Spotlight growing. Snapchat+ (paid subscription) announced. Scan feature (AR visual search). Custom Bitmoji fashion. Spotlight continues to add algorithmic short-form video alongside messaging/Stories core.",
+        "key_changes": ["Spotlight growing", "Scan feature", "Custom Bitmoji fashion"]
+      },
+      "2022": {
+        "O": 2, "R": 2, "alpha": 3, "adoption_pct": 59,
+        "design_state": "Snapchat+ launched (June 2022) — paid subscription with premium features. Dual camera. Director Mode. Pew 2022: 59% of teens use Snapchat. Snapchat+ begins layering premium identity features for paying users.",
+        "key_changes": ["Snapchat+ launched (June)", "Dual camera", "Director Mode", "Pew survey: 59% teen adoption"]
+      },
+      "2023": {
+        "O": 2, "R": 3, "alpha": 3, "adoption_pct": 60,
+        "design_state": "MY AI LAUNCHED (February 2023) — ChatGPT-powered AI chatbot pinned to top of chat list. Available to all users. Customizable with name and Bitmoji. Major reactivity and coupling increase: an AI companion with a face and name, positioned as a 'friend' in the chat interface, available 24/7 for conversation. My Selfie AI-powered edits. Dreams (AI-generated selfies). Pew 2023: 60% of teens use Snapchat. Reactivity rises to 3: My AI creates an always-available responsive entity in the primary messaging interface.",
+        "key_changes": ["My AI chatbot launched (February)", "My Selfie AI edits", "Dreams (AI selfies)", "Pew survey: 60% teen adoption"]
+      },
+      "2024": {
+        "O": 2, "R": 3, "alpha": 3, "adoption_pct": 55,
+        "design_state": "My AI expanded with Google Lens-like visual features. Spotlight algorithm refined. Snapchat+ growing. Simple Snapchat (teen-friendly version). Pew 2024: 55% of teens use Snapchat.",
+        "key_changes": ["My AI visual features", "Simple Snapchat", "Pew survey: 55% teen adoption"]
+      },
+      "2025": {
+        "O": 2, "R": 3, "alpha": 3, "adoption_pct": 55,
+        "design_state": "My AI with Gemini models. AI features deepening. Spotlight established. Streaks remain core engagement mechanic. Pew 2025: 55% of teens use Snapchat.",
+        "key_changes": ["My AI + Gemini", "Pew survey: 55% teen adoption"]
+      }
+    }
+  },
+  "computed_metrics": {
+    "description": "Population-weighted Pe exposure per year. Computed as: for each platform, (O + R + alpha) * adoption_pct / 100, then summed across platforms. This gives a composite Pe-exposure score weighted by teen reach. Higher values = more teens exposed to higher-Pe design.",
+    "formula": "annual_pe_exposure = SUM_over_platforms( (O + R + alpha) * adoption_pct / 100 )",
+    "yearly_totals": {
+      "2010": {
+        "instagram": 0.02,
+        "youtube": 0.60,
+        "facebook": 2.19,
+        "tiktok": 0.00,
+        "snapchat": 0.00,
+        "total": 2.81,
+        "notes": "Facebook dominates teen social media. Low Pe design across all platforms."
+      },
+      "2011": {
+        "instagram": 0.06,
+        "youtube": 0.65,
+        "facebook": 3.00,
+        "tiktok": 0.00,
+        "snapchat": 0.02,
+        "total": 3.73,
+        "notes": "Facebook still dominant. Snapchat just launched."
+      },
+      "2012": {
+        "instagram": 0.20,
+        "youtube": 1.40,
+        "facebook": 3.08,
+        "tiktok": 0.00,
+        "snapchat": 0.10,
+        "total": 4.78,
+        "notes": "YouTube watch-time algorithm shift. Facebook at peak teen reach."
+      },
+      "2013": {
+        "instagram": 0.40,
+        "youtube": 1.44,
+        "facebook": 3.65,
+        "tiktok": 0.00,
+        "snapchat": 0.60,
+        "total": 6.09,
+        "notes": "Facebook algorithm becomes ML-driven. Snapchat Stories launched."
+      },
+      "2014": {
+        "instagram": 0.80,
+        "youtube": 2.25,
+        "facebook": 3.55,
+        "tiktok": 0.00,
+        "snapchat": 1.20,
+        "total": 7.80,
+        "notes": "YouTube autoplay tested. Instagram growing. Snapchat Geofilters."
+      },
+      "2015": {
+        "instagram": 1.04,
+        "youtube": 2.34,
+        "facebook": 3.55,
+        "tiktok": 0.00,
+        "snapchat": 2.05,
+        "total": 8.98,
+        "notes": "YouTube autoplay default ON. Snapchat Discover + Lenses. Instagram still chronological."
+      },
+      "2016": {
+        "instagram": 3.60,
+        "youtube": 2.40,
+        "facebook": 3.25,
+        "tiktok": 0.00,
+        "snapchat": 3.12,
+        "total": 12.37,
+        "notes": "MAJOR INFLECTION: Instagram algorithmic feed + Stories. Snapchat Streaks. Facebook teen decline begins."
+      },
+      "2017": {
+        "instagram": 3.96,
+        "youtube": 3.28,
+        "facebook": 2.90,
+        "tiktok": 0.16,
+        "snapchat": 3.60,
+        "total": 13.90,
+        "notes": "TikTok launches (negligible US). Instagram Stories growing. Snapchat Snap Map."
+      },
+      "2018": {
+        "instagram": 4.32,
+        "youtube": 4.25,
+        "facebook": 2.55,
+        "tiktok": 0.80,
+        "snapchat": 4.14,
+        "total": 16.06,
+        "notes": "Musical.ly/TikTok merger. YouTube Smart Autoplay. Instagram Explore. Snapchat 69% peak."
+      },
+      "2019": {
+        "instagram": 4.02,
+        "youtube": 4.40,
+        "facebook": 2.25,
+        "tiktok": 2.00,
+        "snapchat": 3.90,
+        "total": 16.57,
+        "notes": "TikTok rapidly growing. Instagram AR filters. YouTube autoplay mobile."
+      },
+      "2020": {
+        "instagram": 4.96,
+        "youtube": 4.60,
+        "facebook": 1.90,
+        "tiktok": 3.60,
+        "snapchat": 4.20,
+        "total": 19.26,
+        "notes": "COVID LOCKDOWN SURGE. Reels + Shorts + Spotlight all launch. TikTok explodes. Maximum-Pe design converges across platforms."
+      },
+      "2021": {
+        "instagram": 4.96,
+        "youtube": 5.64,
+        "facebook": 1.75,
+        "tiktok": 4.95,
+        "snapchat": 4.13,
+        "total": 21.43,
+        "notes": "Shorts global launch. TikTok most visited site. All platforms at high Pe. Facebook Papers."
+      },
+      "2022": {
+        "instagram": 4.96,
+        "youtube": 5.70,
+        "facebook": 1.60,
+        "tiktok": 6.03,
+        "snapchat": 4.13,
+        "total": 22.42,
+        "notes": "TikTok 67% teen adoption. YouTube 95% — highest reach. All platforms converged on short-form video."
+      },
+      "2023": {
+        "instagram": 5.31,
+        "youtube": 5.40,
+        "facebook": 1.65,
+        "tiktok": 5.67,
+        "snapchat": 4.80,
+        "total": 22.83,
+        "notes": "Snapchat My AI chatbot. TikTok Bold Glamour. Instagram Threads. AI integration begins across platforms."
+      },
+      "2024": {
+        "instagram": 5.49,
+        "youtube": 5.40,
+        "facebook": 1.86,
+        "tiktok": 5.49,
+        "snapchat": 4.40,
+        "total": 22.64,
+        "notes": "AI-powered everything. YouTube 200B daily Shorts views. TikTok ban upheld. Instagram hashtags removed."
+      },
+      "2025": {
+        "instagram": 5.49,
+        "youtube": 6.30,
+        "facebook": 1.86,
+        "tiktok": 5.40,
+        "snapchat": 4.40,
+        "total": 23.45,
+        "notes": "Peak Pe exposure. YouTube opacity hits 3 with AI content understanding. TikTok sale. All platforms at ceiling Pe."
+      }
+    }
+  },
+  "yrbs_alignment": {
+    "description": "CDC YRBS survey years with corresponding Pe exposure totals for Protocol A regression analysis.",
+    "data": {
+      "2011": {"pe_exposure_total": 3.73, "yrbs_year": true},
+      "2013": {"pe_exposure_total": 6.09, "yrbs_year": true},
+      "2015": {"pe_exposure_total": 8.98, "yrbs_year": true},
+      "2017": {"pe_exposure_total": 13.90, "yrbs_year": true},
+      "2019": {"pe_exposure_total": 16.57, "yrbs_year": true},
+      "2021": {"pe_exposure_total": 21.43, "yrbs_year": true},
+      "2023": {"pe_exposure_total": 22.83, "yrbs_year": true}
+    },
+    "notes": "Pe exposure total roughly doubles from 2011 to 2016 (3.73 to 12.37) coinciding with the YRBS mental health inflection point. The 2016 Instagram algorithmic feed + Stories is the single largest contributor to the 2015-2017 jump. The 2020-2022 plateau at ~22 corresponds to all platforms converging on maximum-Pe short-form video."
+  }
+}

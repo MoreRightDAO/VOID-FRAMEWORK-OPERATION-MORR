@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "script": "feature_ablation_analysis.py",
+    "years": [
+      2011,
+      2013,
+      2015,
+      2017,
+      2019,
+      2021,
+      2023
+    ],
+    "outcomes": [
+      "sadness",
+      "suicide_considered",
+      "suicide_plan",
+      "suicide_attempt",
+      "cyberbullying",
+      "sadness_female"
+    ]
+  },
+  "baseline_R2": {
+    "sadness": 0.7984980939868727,
+    "suicide_considered": 0.6906282755571684,
+    "suicide_plan": 0.6648039254041993,
+    "suicide_attempt": 0.22199677139711765,
+    "cyberbullying": 0.05534976722395966,
+    "sadness_female": 0.8106004662641588
+  },
+  "ablations": [
+    {
+      "ablation": "opaque_recommendation_only",
+      "features_to_zero": [
+        "opaque_recommendation"
+      ],
+      "exposure": {
+        "mean_baseline": 39.784285714285716,
+        "mean_ablated": 37.02571428571428,
+        "pct_reduction": 6.9338216812093965,
+        "baseline_by_year": {
+          "2011": 14.2,
+          "2013": 20.240000000000002,
+          "2015": 29.55,
+          "2017": 46.62,
+          "2019": 49.150000000000006,
+          "2021": 59.23,
+          "2023": 59.5
+        },
+        "ablated_by_year": {
+          "2011": 14.2,
+          "2013": 19.54,
+          "2015": 27.87,
+          "2017": 44.32,
+          "2019": 46.39,
+          "2021": 53.29999999999999,
+          "2023": 53.559999999999995
+        }
+      },
+      "R2": {
+        "sadness": {
+          "baseline": 0.7984980939868727,
+          "ablated": 0.7662795623235752,
+          "delta_baseline_minus_ablated": 0.03221853166329747
+        },
+        "suicide_considered": {
+          "baseline": 0.6906282755571684,
+          "ablated": 0.6529263065947993,
+          "delta_baseline_minus_ablated": 0.0377019689623691
+        },
+        "suicide_plan": {
+          "baseline": 0.6648039254041993,
+          "ablated": 0.6361267379529852,
+          "delta_baseline_minus_ablated": 0.02867718745121406
+        },
+        "suicide_attempt": {
+          "baseline": 0.22199677139711765,
+          "ablated": 0.1941584798951996,
+          "delta_baseline_minus_ablated": 0.02783829150191805
+        },
+        "cyberbullying": {
+          "baseline": 0.05534976722395966,
+          "ablated": 0.045734822022517545,
+          "delta_baseline_minus_ablated": 0.009614945201442113
+        },
+        "sadness_female": {
+          "baseline": 0.8106004662641588,
+          "ablated": 0.7747204470898029,
+          "delta_baseline_minus_ablated": 0.035880019174355904
+        }
+      },
+      "mean_delta_R2": 0.028655157325766113
+    },
+    {
+      "ablation": "top3_cross_category",
+      "features_to_zero": [
+        "opaque_recommendation",
+        "real_time_metrics",
+        "social_comparison_visible"
+      ],
+      "exposure": {
+        "mean_baseline": 39.784285714285716,
+        "mean_ablated": 27.885714285714283,
+        "pct_reduction": 29.907716614600176,
+        "baseline_by_year": {
+          "2011": 14.2,
+          "2013": 20.240000000000002,
+          "2015": 29.55,
+          "2017": 46.62,
+          "2019": 49.150000000000006,
+          "2021": 59.23,
+          "2023": 59.5
+        },
+        "ablated_by_year": {
+          "2011": 8.200000000000001,
+          "2013": 12.820000000000002,
+          "2015": 19.43,
+          "2017": 34.760000000000005,
+          "2019": 36.83,
+          "2021": 41.28,
+          "2023": 41.88
+        }
+      },
+      "R2": {
+        "sadness": {
+          "baseline": 0.7984980939868727,
+          "ablated": 0.7485486913821315,
+          "delta_baseline_minus_ablated": 0.04994940260474112
+        },
+        "suicide_considered": {
+          "baseline": 0.6906282755571684,
+          "ablated": 0.6237938414163037,
+          "delta_baseline_minus_ablated": 0.06683443414086476
+        },
+        "suicide_plan": {
+          "baseline": 0.6648039254041993,
+          "ablated": 0.6114865239764083,
+          "delta_baseline_minus_ablated": 0.053317401427790956
+        },
+        "suicide_attempt": {
+          "baseline": 0.22199677139711765,
+          "ablated": 0.17421346276490737,
+          "delta_baseline_minus_ablated": 0.04778330863221028
+        },
+        "cyberbullying": {
+          "baseline": 0.05534976722395966,
+          "ablated": 0.039519938623501574,
+          "delta_baseline_minus_ablated": 0.015829828600458083
+        },
+        "sadness_female": {
+          "baseline": 0.8106004662641588,
+          "ablated": 0.7522766423315255,
+          "delta_baseline_minus_ablated": 0.058323823932633356
+        }
+      },
+      "mean_delta_R2": 0.048673033223116426
+    },
+    {
+      "ablation": "all_opacity_features",
+      "features_to_zero": [
+        "algorithmic_feed",
+        "autoplay_video",
+        "opaque_recommendation",
+        "hidden_ranking_signals"
+      ],
+      "exposure": {
+        "mean_baseline": 39.784285714285716,
+        "mean_ablated": 25.574285714285715,
+        "pct_reduction": 35.71762002226291,
+        "baseline_by_year": {
+          "2011": 14.2,
+          "2013": 20.240000000000002,
+          "2015": 29.55,
+          "2017": 46.62,
+          "2019": 49.150000000000006,
+          "2021": 59.23,
+          "2023": 59.5
+        },
+        "ablated_by_year": {
+          "2011": 12.66,
+          "2013": 15.3,
+          "2015": 20.66,
+          "2017": 29.900000000000002,
+          "2019": 31.169999999999998,
+          "2021": 34.49,
+          "2023": 34.839999999999996
+        }
+      },
+      "R2": {
+        "sadness": {
+          "baseline": 0.7984980939868727,
+          "ablated": 0.7497701260822384,
+          "delta_baseline_minus_ablated": 0.048727967904634295
+        },
+        "suicide_considered": {
+          "baseline": 0.6906282755571684,
+          "ablated": 0.6370244022189993,
+          "delta_baseline_minus_ablated": 0.05360387333816918
+        },
+        "suicide_plan": {
+          "baseline": 0.6648039254041993,
+          "ablated": 0.6241518925765629,
+          "delta_baseline_minus_ablated": 0.04065203282763641
+        },
+        "suicide_attempt": {
+          "baseline": 0.22199677139711765,
+          "ablated": 0.18805321933836341,
+          "delta_baseline_minus_ablated": 0.03394355205875424
+        },
+        "cyberbullying": {
+          "baseline": 0.05534976722395966,
+          "ablated": 0.04839211563538282,
+          "delta_baseline_minus_ablated": 0.006957651588576835
+        },
+        "sadness_female": {
+          "baseline": 0.8106004662641588,
+          "ablated": 0.7555280461468501,
+          "delta_baseline_minus_ablated": 0.05507242011730873
+        }
+      },
+      "mean_delta_R2": 0.039826249639179946
+    }
+  ]
+}

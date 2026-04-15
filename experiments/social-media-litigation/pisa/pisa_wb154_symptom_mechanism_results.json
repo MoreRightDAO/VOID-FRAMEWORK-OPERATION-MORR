@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "script": "wb154_symptom_mechanism_fe.py",
+    "bootstrap_reps": 800,
+    "rng_seed": 20260401,
+    "raw_rows": 613744,
+    "rows_after_filters": 73520,
+    "group_rows": 218,
+    "countries_grouped": 10
+  },
+  "outcomes": {
+    "symptom_index_mean": {
+      "label": "WB154 composite symptom frequency (1-5; higher=worse)",
+      "model": {
+        "beta": {
+          "intercept": 1.5595608148857818,
+          "sm_code": 0.13516454865216201,
+          "female": 0.4865675368769319,
+          "sm_code_x_female": 0.009168734552846433,
+          "ESCS_mean": -0.10542407502515617,
+          "country_ESP": -0.007410979853313201,
+          "country_HKG": -0.20238846499592528,
+          "country_HUN": 0.15015413648436096,
+          "country_IRL": 0.06701390560317935,
+          "country_MAC": -0.1531624396006383,
+          "country_PAN": -0.006659910693457241,
+          "country_SAU": 0.020048582589220435,
+          "country_SVN": -0.07742160241308302
+        },
+        "male_slope_per_sm_code": 0.13516454865216201,
+        "female_slope_per_sm_code": 0.14433328320500843,
+        "female_minus_male_slope": 0.009168734552846433,
+        "r2_weighted": 0.9318373635815977,
+        "n_rows": 196,
+        "n_countries": 9
+      },
+      "bootstrap": {
+        "male_slope": {
+          "mean": 0.1346704851774957,
+          "median": 0.13487245563976902,
+          "ci95_low": 0.10009520909511212,
+          "ci95_high": 0.16671850331096896,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "female_slope": {
+          "mean": 0.14460661546224032,
+          "median": 0.14437941964087467,
+          "ci95_low": 0.13216930548139988,
+          "ci95_high": 0.1553372341280247,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "female_minus_male_slope": {
+          "mean": 0.009936130284744627,
+          "median": 0.009429333479498939,
+          "ci95_low": -0.02317601084440272,
+          "ci95_high": 0.047816114567316964,
+          "p_two_sided": 0.255,
+          "n_boot": 800
+        }
+      }
+    },
+    "WB154Q04HA_mean": {
+      "label": "Feeling depressed frequency (1-5)",
+      "model": {
+        "beta": {
+          "intercept": 1.0315992892797283,
+          "sm_code": 0.11188088148427344,
+          "female": 0.3513013556207344,
+          "sm_code_x_female": -0.004406031427716062,
+          "ESCS_mean": -0.24198584670299045,
+          "country_ESP": 0.6367798437378578,
+          "country_HKG": 0.3905098492566682,
+          "country_HUN": 0.23539172183781829,
+          "country_IRL": 0.5248367852981373,
+          "country_MAC": 0.4631707719594475,
+          "country_PAN": 0.24590787220032365,
+          "country_SAU": 0.5385485900090375,
+          "country_SVN": 0.566518719316842
+        },
+        "male_slope_per_sm_code": 0.11188088148427344,
+        "female_slope_per_sm_code": 0.10747485005655738,
+        "female_minus_male_slope": -0.004406031427716062,
+        "r2_weighted": 0.792495872669192,
+        "n_rows": 196,
+        "n_countries": 9
+      },
+      "bootstrap": {
+        "male_slope": {
+          "mean": 0.11705585334091122,
+          "median": 0.11038809849873245,
+          "ci95_low": 0.09333804628636488,
+          "ci95_high": 0.17806680237259045,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "female_slope": {
+          "mean": 0.11717028265703788,
+          "median": 0.10831813057376204,
+          "ci95_low": 0.09350328129758673,
+          "ci95_high": 0.14977112880825225,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "female_minus_male_slope": {
+          "mean": 0.00011442931612663482,
+          "median": -0.0036909126289537027,
+          "ci95_low": -0.037474405541773566,
+          "ci95_high": 0.05169067221930347,
+          "p_two_sided": 0.6125,
+          "n_boot": 800
+        }
+      }
+    },
+    "WB154Q07HA_mean": {
+      "label": "Sleep difficulty frequency (1-5)",
+      "model": {
+        "beta": {
+          "intercept": 1.575351194503802,
+          "sm_code": 0.1403640948793818,
+          "female": 0.39519520938008756,
+          "sm_code_x_female": 0.002726608043674583,
+          "ESCS_mean": -0.1656569183147248,
+          "country_ESP": 0.10304240238816176,
+          "country_HKG": -0.1275940945802896,
+          "country_HUN": 0.35187165980625346,
+          "country_IRL": 0.24433893743079635,
+          "country_MAC": -0.10676545434517765,
+          "country_PAN": -0.10170650410105321,
+          "country_SAU": 0.08468704465241968,
+          "country_SVN": 0.1538947556487161
+        },
+        "male_slope_per_sm_code": 0.1403640948793818,
+        "female_slope_per_sm_code": 0.1430907029230564,
+        "female_minus_male_slope": 0.002726608043674583,
+        "r2_weighted": 0.8731379732364193,
+        "n_rows": 196,
+        "n_countries": 9
+      },
+      "bootstrap": {
+        "male_slope": {
+          "mean": 0.1391288962995493,
+          "median": 0.13952260875634576,
+          "ci95_low": 0.10675991638160816,
+          "ci95_high": 0.16734866016695893,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "female_slope": {
+          "mean": 0.14649498213318318,
+          "median": 0.1434695819160191,
+          "ci95_low": 0.13544613059435032,
+          "ci95_high": 0.17134490806066038,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "female_minus_male_slope": {
+          "mean": 0.007366085833633892,
+          "median": 0.002010988389286962,
+          "ci95_low": -0.010369102168105123,
+          "ci95_high": 0.05228527082303402,
+          "p_two_sided": 0.71,
+          "n_boot": 800
+        }
+      }
+    },
+    "WB154Q09HA_mean": {
+      "label": "Feeling anxious frequency (1-5)",
+      "model": {
+        "beta": {
+          "intercept": 1.8746247406336989,
+          "sm_code": 0.1606300655041689,
+          "female": 0.6232761019921639,
+          "sm_code_x_female": 0.015446246592992888,
+          "ESCS_mean": -0.04949212199100896,
+          "country_ESP": -0.5913900234102732,
+          "country_HKG": -0.49428447873444525,
+          "country_HUN": 0.24233911791348417,
+          "country_IRL": -0.20289048485589792,
+          "country_MAC": -0.3947489201327216,
+          "country_PAN": -0.3194640080383043,
+          "country_SAU": -0.8953830620122829,
+          "country_SVN": -0.7157262407573943
+        },
+        "male_slope_per_sm_code": 0.1606300655041689,
+        "female_slope_per_sm_code": 0.1760763120971618,
+        "female_minus_male_slope": 0.015446246592992888,
+        "r2_weighted": 0.8981450627688855,
+        "n_rows": 196,
+        "n_countries": 9
+      },
+      "bootstrap": {
+        "male_slope": {
+          "mean": 0.1537704877078492,
+          "median": 0.16009716922761383,
+          "ci95_low": 0.10026143180450453,
+          "ci95_high": 0.17964211405727668,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "female_slope": {
+          "mean": 0.16689903544879198,
+          "median": 0.1764398135248707,
+          "ci95_low": 0.10668298371427573,
+          "ci95_high": 0.19420830030555777,
+          "p_two_sided": 0.0,
+          "n_boot": 800
+        },
+        "female_minus_male_slope": {
+          "mean": 0.013128547740942777,
+          "median": 0.01514099332876643,
+          "ci95_low": -0.04151488897305767,
+          "ci95_high": 0.05964821999282412,
+          "p_two_sided": 0.2875,
+          "n_boot": 800
+        }
+      }
+    }
+  },
+  "mediation_upset_to_symptom": {
+    "point_estimates": {
+      "indirect_effect_male": 0.02253320410975234,
+      "indirect_effect_female": 0.017759014577786114,
+      "direct_effect_male": 0.11263134454240914,
+      "direct_effect_female": 0.12657426862722237,
+      "total_effect_male": 0.13516454865216201,
+      "total_effect_female": 0.14433328320500843,
+      "percent_mediated_male": 0.16670942443451064,
+      "percent_mediated_female": 0.12304171417317186
+    },
+    "bootstrap": {
+      "indirect_effect_male": {
+        "mean": 0.023694165659130472,
+        "median": 0.020649985063356118,
+        "ci95_low": -0.007198290014442988,
+        "ci95_high": 0.06804762061773664,
+        "p_two_sided": 0.465,
+        "n_boot": 800
+      },
+      "indirect_effect_female": {
+        "mean": 0.015438900192294576,
+        "median": 0.015198399840099247,
+        "ci95_low": -0.005956318771628723,
+        "ci95_high": 0.0439272303431116,
+        "p_two_sided": 0.465,
+        "n_boot": 800
+      },
+      "percent_mediated_male": {
+        "mean": 0.17257686832813565,
+        "median": 0.14976746290525983,
+        "ci95_low": -0.05384097501193742,
+        "ci95_high": 0.5080766931712374,
+        "p_two_sided": 0.465,
+        "n_boot": 800
+      },
+      "percent_mediated_female": {
+        "mean": 0.10674156799364015,
+        "median": 0.10422747076075972,
+        "ci95_low": -0.04186247982171864,
+        "ci95_high": 0.3099370828723556,
+        "p_two_sided": 0.465,
+        "n_boot": 800
+      }
+    }
+  }
+}

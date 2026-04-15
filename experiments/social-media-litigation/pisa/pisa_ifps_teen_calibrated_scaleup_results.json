@@ -1,0 +1,825 @@
+{
+  "meta": {
+    "script": "build_country_data_ifps_teen_calibrated_scaleup.py",
+    "inputs": [
+      "/data/apps/morr/ops/lab/social-media-litigation/pisa/pisa_app_usage_proxy_results.json",
+      "/data/apps/morr/ops/lab/social-media-litigation/pisa/pisa_ifps_teen_proxy_country_table.csv"
+    ],
+    "n_countries": 50,
+    "n_overlap": 6,
+    "overlap_countries": [
+      "Australia",
+      "Canada",
+      "Chile",
+      "Mexico",
+      "United Kingdom",
+      "United States"
+    ],
+    "platforms": [
+      "Instagram",
+      "TikTok",
+      "Snapchat",
+      "Facebook",
+      "Twitter"
+    ],
+    "bootstrap_n": 4000,
+    "bootstrap_seed": 20260401
+  },
+  "calibration_multipliers": {
+    "composition_geomean": {
+      "Instagram": 1.0717337011634915,
+      "TikTok": 1.3261311507132252,
+      "Snapchat": 1.3812195007000532,
+      "Facebook": 0.7266882217714411,
+      "Twitter": 0.8328811605587868
+    },
+    "absolute_geomean": {
+      "Instagram": 1.8832911573882973,
+      "TikTok": 2.3303280161518365,
+      "Snapchat": 2.4271313566576684,
+      "Facebook": 1.2769641383439225,
+      "Twitter": 1.4635704029208134
+    }
+  },
+  "results": {
+    "baseline": {
+      "global": {
+        "mean_features_vs_life_satisfaction": {
+          "pearson_r": 0.24835199818379503,
+          "pearson_p": 0.08202457231399087,
+          "spearman_rho": 0.3339820422191691,
+          "spearman_p": 0.017769558316923968,
+          "R2": 0.061678715001883724,
+          "n": 50
+        },
+        "algo_feed_share_vs_life_satisfaction": {
+          "pearson_r": 0.16715779012516233,
+          "pearson_p": 0.24593732423562947,
+          "spearman_rho": 0.24658262705636252,
+          "spearman_p": 0.08429902822480241,
+          "R2": 0.027941726799527816,
+          "n": 50
+        },
+        "o_exposure_vs_life_satisfaction": {
+          "pearson_r": 0.1504540241175083,
+          "pearson_p": 0.2969884358063343,
+          "spearman_rho": 0.23687691960013002,
+          "spearman_p": 0.09766638141015525,
+          "R2": 0.02263641337315177,
+          "n": 50
+        }
+      },
+      "western_europe": {
+        "n": 13,
+        "mean_features_vs_life_satisfaction": {
+          "pearson_r": -0.09018430712385125,
+          "pearson_p": 0.7695242708751889,
+          "spearman_rho": -0.30471966346299456,
+          "spearman_p": 0.3113846083323374,
+          "R2": 0.008133209251409129,
+          "n": 13
+        },
+        "algo_feed_share_vs_life_satisfaction": {
+          "pearson_r": -0.3896940222519789,
+          "pearson_p": 0.18808634257928833,
+          "spearman_rho": -0.3545828811205755,
+          "spearman_p": 0.23453057867917834,
+          "R2": 0.15186143097892582,
+          "n": 13
+        },
+        "mean_features_partial_gdp": {
+          "r": 0.014459010765289259,
+          "p": 0.962607720951087
+        }
+      }
+    },
+    "composition_calibrated": {
+      "global": {
+        "mean_features_vs_life_satisfaction": {
+          "pearson_r": 0.25403551145016084,
+          "pearson_p": 0.07504329798704491,
+          "spearman_rho": 0.33100306270289975,
+          "spearman_p": 0.01887665196635029,
+          "R2": 0.0645340410777448,
+          "n": 50
+        },
+        "algo_feed_share_vs_life_satisfaction": {
+          "pearson_r": 0.19587455760785025,
+          "pearson_p": 0.17280116456382713,
+          "spearman_rho": 0.20997000784027753,
+          "spearman_p": 0.14332230703168672,
+          "R2": 0.03836684231807105,
+          "n": 50
+        },
+        "o_exposure_vs_life_satisfaction": {
+          "pearson_r": 0.160730637127509,
+          "pearson_p": 0.2648248842180195,
+          "spearman_rho": 0.24557361786536808,
+          "spearman_p": 0.08561802236301419,
+          "R2": 0.025834337711414978,
+          "n": 50
+        }
+      },
+      "western_europe": {
+        "n": 13,
+        "mean_features_vs_life_satisfaction": {
+          "pearson_r": -0.07700835791735056,
+          "pearson_p": 0.802548214488491,
+          "spearman_rho": -0.2991793059454856,
+          "spearman_p": 0.3207059865251641,
+          "R2": 0.005930287189126768,
+          "n": 13
+        },
+        "algo_feed_share_vs_life_satisfaction": {
+          "pearson_r": -0.4444045030709914,
+          "pearson_p": 0.12814799885091205,
+          "spearman_rho": -0.5429550367158813,
+          "spearman_p": 0.05518247261241642,
+          "R2": 0.1974953623497748,
+          "n": 13
+        },
+        "mean_features_partial_gdp": {
+          "r": 0.041887504554610405,
+          "p": 0.891925898485709
+        }
+      }
+    },
+    "absolute_calibrated": {
+      "global": {
+        "mean_features_vs_life_satisfaction": {
+          "pearson_r": 0.29576506282489906,
+          "pearson_p": 0.03703431764443446,
+          "spearman_rho": 0.3682883547129811,
+          "spearman_p": 0.008500149718407292,
+          "R2": 0.08747697238781649,
+          "n": 50
+        },
+        "algo_feed_share_vs_life_satisfaction": {
+          "pearson_r": 0.1779747974460825,
+          "pearson_p": 0.21625722787354096,
+          "spearman_rho": 0.22928532663931453,
+          "spearman_p": 0.10922095860090836,
+          "R2": 0.03167502852597409,
+          "n": 50
+        },
+        "o_exposure_vs_life_satisfaction": {
+          "pearson_r": 0.20142535964204436,
+          "pearson_p": 0.16070875416236508,
+          "spearman_rho": 0.2699339826193774,
+          "spearman_p": 0.05798610578776592,
+          "R2": 0.04057217550692691,
+          "n": 50
+        }
+      },
+      "western_europe": {
+        "n": 13,
+        "mean_features_vs_life_satisfaction": {
+          "pearson_r": -0.005046428776844185,
+          "pearson_p": 0.9869458951311482,
+          "spearman_rho": -0.38505484746687496,
+          "spearman_p": 0.19386026392096975,
+          "R2": 2.5466443399761094e-05,
+          "n": 13
+        },
+        "algo_feed_share_vs_life_satisfaction": {
+          "pearson_r": -0.4095366334211382,
+          "pearson_p": 0.164623758350323,
+          "spearman_rho": -0.4293777076069469,
+          "spearman_p": 0.1431361687735099,
+          "R2": 0.16772025411391975,
+          "n": 13
+        },
+        "mean_features_partial_gdp": {
+          "r": 0.1009838731489713,
+          "p": 0.7427183638127524
+        }
+      }
+    }
+  },
+  "bootstrap_composition_calibrated": {
+    "global_mean_features_r": {
+      "mean": 0.2539965197386148,
+      "median": 0.25381141698112286,
+      "p2_5": 0.22608532627623898,
+      "p97_5": 0.2839222399814172,
+      "prob_negative": 0.0
+    },
+    "western_europe_mean_features_r": {
+      "mean": -0.07748140722920582,
+      "median": -0.0757960650455742,
+      "p2_5": -0.1080966091749139,
+      "p97_5": -0.0545295655389855,
+      "prob_negative": 1.0
+    },
+    "global_algo_feed_r": {
+      "mean": 0.19589158764985673,
+      "median": 0.19561060167846306,
+      "p2_5": 0.17385118627791815,
+      "p97_5": 0.21928254503890754,
+      "prob_negative": 0.0
+    },
+    "western_europe_algo_feed_r": {
+      "mean": -0.4418161333051489,
+      "median": -0.44345321967230666,
+      "p2_5": -0.48700565281313724,
+      "p97_5": -0.38683806340493243,
+      "prob_negative": 1.0
+    }
+  },
+  "leave_one_country_out_composition_calibrated": [
+    {
+      "excluded_country": "Australia",
+      "global_mean_features_r": 0.2542141821651821,
+      "global_mean_features_p": 0.07483170010886489,
+      "western_europe_mean_features_r": -0.07760578003186722,
+      "western_europe_mean_features_p": 0.8010438747055258
+    },
+    {
+      "excluded_country": "Canada",
+      "global_mean_features_r": 0.25791314468546334,
+      "global_mean_features_p": 0.07055612032885808,
+      "western_europe_mean_features_r": -0.08018385675478981,
+      "western_europe_mean_features_p": 0.7945594443184293
+    },
+    {
+      "excluded_country": "Chile",
+      "global_mean_features_r": 0.24557117854037905,
+      "global_mean_features_p": 0.08562123054572272,
+      "western_europe_mean_features_r": -0.07277556366904539,
+      "western_europe_mean_features_p": 0.813224288914071
+    },
+    {
+      "excluded_country": "Mexico",
+      "global_mean_features_r": 0.24335674489352807,
+      "global_mean_features_p": 0.08857265772250744,
+      "western_europe_mean_features_r": -0.06525817650403386,
+      "western_europe_mean_features_p": 0.8322572423475622
+    },
+    {
+      "excluded_country": "United Kingdom",
+      "global_mean_features_r": 0.26374741580997857,
+      "global_mean_features_p": 0.06420908242375867,
+      "western_europe_mean_features_r": -0.08463990589835904,
+      "western_europe_mean_features_p": 0.7833803169148046
+    },
+    {
+      "excluded_country": "United States",
+      "global_mean_features_r": 0.2592098812565366,
+      "global_mean_features_p": 0.06910402859505765,
+      "western_europe_mean_features_r": -0.08218199670912021,
+      "western_europe_mean_features_p": 0.7895420078887341
+    }
+  ],
+  "country_rows": [
+    {
+      "country": "Australia",
+      "code": "AU",
+      "life_satisfaction": 6.58,
+      "baseline_mean_features_per_share": 13.179087232813403,
+      "comp_cal_mean_features_per_share": 13.461942230190179,
+      "abs_cal_mean_features_per_share": 14.096498855427855,
+      "baseline_algo_feed_share": 23.050259965337958,
+      "comp_cal_algo_feed_share": 26.30243060916506,
+      "abs_cal_algo_feed_share": 32.91204286494843
+    },
+    {
+      "country": "Austria",
+      "code": "AT",
+      "life_satisfaction": 7.04,
+      "baseline_mean_features_per_share": 13.539920599911774,
+      "comp_cal_mean_features_per_share": 13.78522484863208,
+      "abs_cal_mean_features_per_share": 14.368847170646951,
+      "baseline_algo_feed_share": 22.23202470224967,
+      "comp_cal_algo_feed_share": 24.713126427766362,
+      "abs_cal_algo_feed_share": 31.957287566433678
+    },
+    {
+      "country": "Belgium",
+      "code": "BE",
+      "life_satisfaction": 6.85,
+      "baseline_mean_features_per_share": 13.245652173913042,
+      "comp_cal_mean_features_per_share": 13.518868581702623,
+      "abs_cal_mean_features_per_share": 14.155683696538317,
+      "baseline_algo_feed_share": 22.06521739130435,
+      "comp_cal_algo_feed_share": 25.040634181397643,
+      "abs_cal_algo_feed_share": 31.595560693218196
+    },
+    {
+      "country": "Brazil",
+      "code": "BR",
+      "life_satisfaction": 6.65,
+      "baseline_mean_features_per_share": 13.81803078772026,
+      "comp_cal_mean_features_per_share": 14.128761560552517,
+      "abs_cal_mean_features_per_share": 14.702832399259382,
+      "baseline_algo_feed_share": 34.589349781728856,
+      "comp_cal_algo_feed_share": 40.289504884168466,
+      "abs_cal_algo_feed_share": 48.96299281983353
+    },
+    {
+      "country": "Bulgaria",
+      "code": "BG",
+      "life_satisfaction": 6.68,
+      "baseline_mean_features_per_share": 13.439373680802577,
+      "comp_cal_mean_features_per_share": 13.656374058907263,
+      "abs_cal_mean_features_per_share": 13.87595691676154,
+      "baseline_algo_feed_share": 13.875223895658316,
+      "comp_cal_algo_feed_share": 16.40462882479958,
+      "abs_cal_algo_feed_share": 19.831024538497154
+    },
+    {
+      "country": "Canada",
+      "code": "CA",
+      "life_satisfaction": 6.67,
+      "baseline_mean_features_per_share": 12.878466930813778,
+      "comp_cal_mean_features_per_share": 13.157202096897379,
+      "abs_cal_mean_features_per_share": 13.77688672376127,
+      "baseline_algo_feed_share": 20.306309052118255,
+      "comp_cal_algo_feed_share": 23.351186899502288,
+      "abs_cal_algo_feed_share": 29.595361154624463
+    },
+    {
+      "country": "Chile",
+      "code": "CL",
+      "life_satisfaction": 7.09,
+      "baseline_mean_features_per_share": 13.745532963647568,
+      "comp_cal_mean_features_per_share": 14.08161534751284,
+      "abs_cal_mean_features_per_share": 14.67861812245205,
+      "baseline_algo_feed_share": 34.19593345656192,
+      "comp_cal_algo_feed_share": 40.1083321098556,
+      "abs_cal_algo_feed_share": 48.73202171011988
+    },
+    {
+      "country": "Colombia",
+      "code": "CO",
+      "life_satisfaction": 7.7,
+      "baseline_mean_features_per_share": 13.774396721809078,
+      "comp_cal_mean_features_per_share": 14.134864073385598,
+      "abs_cal_mean_features_per_share": 14.627151461224168,
+      "baseline_algo_feed_share": 28.729701016846256,
+      "comp_cal_algo_feed_share": 34.63756529003971,
+      "abs_cal_algo_feed_share": 41.204094576728025
+    },
+    {
+      "country": "Costa Rica",
+      "code": "CR",
+      "life_satisfaction": 7.73,
+      "baseline_mean_features_per_share": 13.240047699997461,
+      "comp_cal_mean_features_per_share": 13.459984293103528,
+      "abs_cal_mean_features_per_share": 13.74971816115273,
+      "baseline_algo_feed_share": 17.33776503522526,
+      "comp_cal_algo_feed_share": 20.448378654770924,
+      "abs_cal_algo_feed_share": 24.591546943082438
+    },
+    {
+      "country": "Croatia",
+      "code": "HR",
+      "life_satisfaction": 6.71,
+      "baseline_mean_features_per_share": 13.552886478109258,
+      "comp_cal_mean_features_per_share": 13.761814536673336,
+      "abs_cal_mean_features_per_share": 14.071952198410159,
+      "baseline_algo_feed_share": 17.43510267338241,
+      "comp_cal_algo_feed_share": 19.71663142534512,
+      "abs_cal_algo_feed_share": 24.462689459868287
+    },
+    {
+      "country": "Czechia",
+      "code": "CZ",
+      "life_satisfaction": 6.62,
+      "baseline_mean_features_per_share": 13.377786785569517,
+      "comp_cal_mean_features_per_share": 13.650099820191398,
+      "abs_cal_mean_features_per_share": 14.104339802011383,
+      "baseline_algo_feed_share": 21.483583299554113,
+      "comp_cal_algo_feed_share": 25.420468915755592,
+      "abs_cal_algo_feed_share": 31.9346874695352
+    },
+    {
+      "country": "Denmark",
+      "code": "DK",
+      "life_satisfaction": 7.23,
+      "baseline_mean_features_per_share": 13.162267184778242,
+      "comp_cal_mean_features_per_share": 13.417812492683817,
+      "abs_cal_mean_features_per_share": 14.069462332884337,
+      "baseline_algo_feed_share": 19.602880382727626,
+      "comp_cal_algo_feed_share": 21.68553323207663,
+      "abs_cal_algo_feed_share": 27.327858176250444
+    },
+    {
+      "country": "Estonia",
+      "code": "EE",
+      "life_satisfaction": 6.67,
+      "baseline_mean_features_per_share": 13.13691563675443,
+      "comp_cal_mean_features_per_share": 13.31222009565241,
+      "abs_cal_mean_features_per_share": 13.490642060088,
+      "baseline_algo_feed_share": 17.069675801540388,
+      "comp_cal_algo_feed_share": 21.23344205773981,
+      "abs_cal_algo_feed_share": 25.51577679767034
+    },
+    {
+      "country": "Finland",
+      "code": "FI",
+      "life_satisfaction": 7.04,
+      "baseline_mean_features_per_share": 13.421621944660254,
+      "comp_cal_mean_features_per_share": 13.711064643464375,
+      "abs_cal_mean_features_per_share": 14.23554984245854,
+      "baseline_algo_feed_share": 22.231518556146533,
+      "comp_cal_algo_feed_share": 24.864723782454092,
+      "abs_cal_algo_feed_share": 30.991591867828863
+    },
+    {
+      "country": "France",
+      "code": "FR",
+      "life_satisfaction": 6.68,
+      "baseline_mean_features_per_share": 13.382852919438289,
+      "comp_cal_mean_features_per_share": 13.665643199727617,
+      "abs_cal_mean_features_per_share": 14.290077873146654,
+      "baseline_algo_feed_share": 22.02512934220251,
+      "comp_cal_algo_feed_share": 24.590179127095542,
+      "abs_cal_algo_feed_share": 30.892630212059753
+    },
+    {
+      "country": "Germany",
+      "code": "DE",
+      "life_satisfaction": 6.56,
+      "baseline_mean_features_per_share": 13.60505997183509,
+      "comp_cal_mean_features_per_share": 13.857231871087457,
+      "abs_cal_mean_features_per_share": 14.39939434950929,
+      "baseline_algo_feed_share": 23.35745156121012,
+      "comp_cal_algo_feed_share": 26.00979474506016,
+      "abs_cal_algo_feed_share": 33.73663983044953
+    },
+    {
+      "country": "Greece",
+      "code": "GR",
+      "life_satisfaction": 6.74,
+      "baseline_mean_features_per_share": 13.665692042409967,
+      "comp_cal_mean_features_per_share": 13.954406008993896,
+      "abs_cal_mean_features_per_share": 14.492758607841875,
+      "baseline_algo_feed_share": 27.85768118343849,
+      "comp_cal_algo_feed_share": 32.648328686039065,
+      "abs_cal_algo_feed_share": 40.61447971487054
+    },
+    {
+      "country": "Hungary",
+      "code": "HU",
+      "life_satisfaction": 6.67,
+      "baseline_mean_features_per_share": 13.638928554480385,
+      "comp_cal_mean_features_per_share": 13.945305002097781,
+      "abs_cal_mean_features_per_share": 14.396729442644608,
+      "baseline_algo_feed_share": 22.17438384117274,
+      "comp_cal_algo_feed_share": 26.881900434777272,
+      "abs_cal_algo_feed_share": 33.359730021069595
+    },
+    {
+      "country": "Iceland",
+      "code": "IS",
+      "life_satisfaction": 6.62,
+      "baseline_mean_features_per_share": 12.52171722261413,
+      "comp_cal_mean_features_per_share": 12.694743424668472,
+      "abs_cal_mean_features_per_share": 13.185186490054866,
+      "baseline_algo_feed_share": 20.06449662400484,
+      "comp_cal_algo_feed_share": 24.39015167536339,
+      "abs_cal_algo_feed_share": 30.341795028867494
+    },
+    {
+      "country": "Indonesia",
+      "code": "ID",
+      "life_satisfaction": 7.28,
+      "baseline_mean_features_per_share": 14.66322517207473,
+      "comp_cal_mean_features_per_share": 15.057215561089187,
+      "abs_cal_mean_features_per_share": 15.393271294368644,
+      "baseline_algo_feed_share": 39.14454277286136,
+      "comp_cal_algo_feed_share": 46.53620318077212,
+      "abs_cal_algo_feed_share": 54.16098725737399
+    },
+    {
+      "country": "Ireland",
+      "code": "IE",
+      "life_satisfaction": 6.79,
+      "baseline_mean_features_per_share": 13.304516486561372,
+      "comp_cal_mean_features_per_share": 13.617888589822448,
+      "abs_cal_mean_features_per_share": 14.252071521951825,
+      "baseline_algo_feed_share": 24.549736769188144,
+      "comp_cal_algo_feed_share": 27.57408632112292,
+      "abs_cal_algo_feed_share": 34.02795892926896
+    },
+    {
+      "country": "Israel",
+      "code": "IL",
+      "life_satisfaction": 7.01,
+      "baseline_mean_features_per_share": 14.213162251655632,
+      "comp_cal_mean_features_per_share": 14.528065715142843,
+      "abs_cal_mean_features_per_share": 15.0098564169091,
+      "baseline_algo_feed_share": 32.07781456953642,
+      "comp_cal_algo_feed_share": 36.77045700925375,
+      "abs_cal_algo_feed_share": 44.6505606264646
+    },
+    {
+      "country": "Italy",
+      "code": "IT",
+      "life_satisfaction": 6.6,
+      "baseline_mean_features_per_share": 13.580873987820386,
+      "comp_cal_mean_features_per_share": 13.858649087056786,
+      "abs_cal_mean_features_per_share": 14.43032606014231,
+      "baseline_algo_feed_share": 29.010238907849825,
+      "comp_cal_algo_feed_share": 33.87066474184804,
+      "abs_cal_algo_feed_share": 42.33873336864295
+    },
+    {
+      "country": "Japan",
+      "code": "JP",
+      "life_satisfaction": 6.04,
+      "baseline_mean_features_per_share": 13.466468644103252,
+      "comp_cal_mean_features_per_share": 13.834351895315892,
+      "abs_cal_mean_features_per_share": 13.937499302575715,
+      "baseline_algo_feed_share": 27.778939882023177,
+      "comp_cal_algo_feed_share": 33.034687725534525,
+      "abs_cal_algo_feed_share": 39.00016072607804
+    },
+    {
+      "country": "Korea",
+      "code": "KR",
+      "life_satisfaction": 6.36,
+      "baseline_mean_features_per_share": 14.075578296556868,
+      "comp_cal_mean_features_per_share": 14.309577314106777,
+      "abs_cal_mean_features_per_share": 14.536763326651405,
+      "baseline_algo_feed_share": 26.55367231638418,
+      "comp_cal_algo_feed_share": 30.710556067500058,
+      "abs_cal_algo_feed_share": 39.38274535624207
+    },
+    {
+      "country": "Latvia",
+      "code": "LV",
+      "life_satisfaction": 6.68,
+      "baseline_mean_features_per_share": 13.116388123994655,
+      "comp_cal_mean_features_per_share": 13.28474426738638,
+      "abs_cal_mean_features_per_share": 13.478742459061818,
+      "baseline_algo_feed_share": 16.7071076092587,
+      "comp_cal_algo_feed_share": 20.696208768391024,
+      "abs_cal_algo_feed_share": 25.213002208312403
+    },
+    {
+      "country": "Lithuania",
+      "code": "LT",
+      "life_satisfaction": 6.66,
+      "baseline_mean_features_per_share": 13.300715203849576,
+      "comp_cal_mean_features_per_share": 13.526582160695288,
+      "abs_cal_mean_features_per_share": 13.760525142611758,
+      "baseline_algo_feed_share": 13.41748788767674,
+      "comp_cal_algo_feed_share": 15.706786109468947,
+      "abs_cal_algo_feed_share": 18.957920557956527
+    },
+    {
+      "country": "Malaysia",
+      "code": "MY",
+      "life_satisfaction": 6.95,
+      "baseline_mean_features_per_share": 14.33461117196057,
+      "comp_cal_mean_features_per_share": 14.72704454762224,
+      "abs_cal_mean_features_per_share": 15.135757918354482,
+      "baseline_algo_feed_share": 36.36363636363636,
+      "comp_cal_algo_feed_share": 43.35185620203409,
+      "abs_cal_algo_feed_share": 51.01289237872672
+    },
+    {
+      "country": "Mexico",
+      "code": "MX",
+      "life_satisfaction": 7.67,
+      "baseline_mean_features_per_share": 13.912733078290206,
+      "comp_cal_mean_features_per_share": 14.294579900534117,
+      "abs_cal_mean_features_per_share": 14.739387249755396,
+      "baseline_algo_feed_share": 28.38208271831792,
+      "comp_cal_algo_feed_share": 34.510285418386985,
+      "abs_cal_algo_feed_share": 40.98428971753573
+    },
+    {
+      "country": "Netherlands",
+      "code": "NL",
+      "life_satisfaction": 6.9,
+      "baseline_mean_features_per_share": 12.854841161270715,
+      "comp_cal_mean_features_per_share": 13.15529228519799,
+      "abs_cal_mean_features_per_share": 13.777047560279705,
+      "baseline_algo_feed_share": 20.231038151694783,
+      "comp_cal_algo_feed_share": 22.86216372586594,
+      "abs_cal_algo_feed_share": 28.829311584204234
+    },
+    {
+      "country": "New Zealand",
+      "code": "NZ",
+      "life_satisfaction": 6.52,
+      "baseline_mean_features_per_share": 13.285530574059742,
+      "comp_cal_mean_features_per_share": 13.563773630612152,
+      "abs_cal_mean_features_per_share": 14.193986697393871,
+      "baseline_algo_feed_share": 23.15985787160906,
+      "comp_cal_algo_feed_share": 26.476867532363954,
+      "abs_cal_algo_feed_share": 33.231097611266215
+    },
+    {
+      "country": "Norway",
+      "code": "NO",
+      "life_satisfaction": 6.9,
+      "baseline_mean_features_per_share": 13.635721619794149,
+      "comp_cal_mean_features_per_share": 13.90455583625111,
+      "abs_cal_mean_features_per_share": 14.511144161150208,
+      "baseline_algo_feed_share": 22.0380155768701,
+      "comp_cal_algo_feed_share": 23.789081126470347,
+      "abs_cal_algo_feed_share": 29.204107725568925
+    },
+    {
+      "country": "Peru",
+      "code": "PE",
+      "life_satisfaction": 7.33,
+      "baseline_mean_features_per_share": 14.142839132627335,
+      "comp_cal_mean_features_per_share": 14.561492983055201,
+      "abs_cal_mean_features_per_share": 14.997321112745258,
+      "baseline_algo_feed_share": 31.984367120524453,
+      "comp_cal_algo_feed_share": 39.275238222933226,
+      "abs_cal_algo_feed_share": 45.63397259766891
+    },
+    {
+      "country": "Philippines",
+      "code": "PH",
+      "life_satisfaction": 7.19,
+      "baseline_mean_features_per_share": 14.109104201608394,
+      "comp_cal_mean_features_per_share": 14.556206257928363,
+      "abs_cal_mean_features_per_share": 14.82031583271854,
+      "baseline_algo_feed_share": 26.224573173353978,
+      "comp_cal_algo_feed_share": 33.93944815557524,
+      "abs_cal_algo_feed_share": 38.802228585056206
+    },
+    {
+      "country": "Poland",
+      "code": "PL",
+      "life_satisfaction": 6.59,
+      "baseline_mean_features_per_share": 13.74644138409906,
+      "comp_cal_mean_features_per_share": 14.050590845152456,
+      "abs_cal_mean_features_per_share": 14.51042845269682,
+      "baseline_algo_feed_share": 23.77039694479806,
+      "comp_cal_algo_feed_share": 28.08583835843345,
+      "abs_cal_algo_feed_share": 34.88636253375951
+    },
+    {
+      "country": "Portugal",
+      "code": "PT",
+      "life_satisfaction": 6.83,
+      "baseline_mean_features_per_share": 13.20268972142171,
+      "comp_cal_mean_features_per_share": 13.49733929087366,
+      "abs_cal_mean_features_per_share": 14.098582682681643,
+      "baseline_algo_feed_share": 27.34550112071726,
+      "comp_cal_algo_feed_share": 32.082267300521124,
+      "abs_cal_algo_feed_share": 39.569220183823866
+    },
+    {
+      "country": "Romania",
+      "code": "RO",
+      "life_satisfaction": 6.95,
+      "baseline_mean_features_per_share": 13.962394303515802,
+      "comp_cal_mean_features_per_share": 14.283750315577155,
+      "abs_cal_mean_features_per_share": 14.814692912628022,
+      "baseline_algo_feed_share": 27.770360480640853,
+      "comp_cal_algo_feed_share": 32.81266310409198,
+      "abs_cal_algo_feed_share": 40.61276376956787
+    },
+    {
+      "country": "Serbia",
+      "code": "RS",
+      "life_satisfaction": 6.94,
+      "baseline_mean_features_per_share": 13.846589862404173,
+      "comp_cal_mean_features_per_share": 14.068052423903662,
+      "abs_cal_mean_features_per_share": 14.395815335122782,
+      "baseline_algo_feed_share": 19.484476186427468,
+      "comp_cal_algo_feed_share": 21.06131985661496,
+      "abs_cal_algo_feed_share": 25.920244117059745
+    },
+    {
+      "country": "Singapore",
+      "code": "SG",
+      "life_satisfaction": 6.18,
+      "baseline_mean_features_per_share": 12.724038063715348,
+      "comp_cal_mean_features_per_share": 13.117353067224975,
+      "abs_cal_mean_features_per_share": 13.488985268029841,
+      "baseline_algo_feed_share": 21.059164253206454,
+      "comp_cal_algo_feed_share": 25.59008324086198,
+      "abs_cal_algo_feed_share": 30.190469631731823
+    },
+    {
+      "country": "Slovak Republic",
+      "code": "SK",
+      "life_satisfaction": 6.57,
+      "baseline_mean_features_per_share": 13.182662713009535,
+      "comp_cal_mean_features_per_share": 13.369958577091733,
+      "abs_cal_mean_features_per_share": 13.662475492735851,
+      "baseline_algo_feed_share": 13.60633586067112,
+      "comp_cal_algo_feed_share": 15.945577546286502,
+      "abs_cal_algo_feed_share": 20.01523490518496
+    },
+    {
+      "country": "Slovenia",
+      "code": "SI",
+      "life_satisfaction": 6.62,
+      "baseline_mean_features_per_share": 13.509231199589722,
+      "comp_cal_mean_features_per_share": 13.726996225425994,
+      "abs_cal_mean_features_per_share": 14.026798989811276,
+      "baseline_algo_feed_share": 14.476199356613364,
+      "comp_cal_algo_feed_share": 16.081286928838917,
+      "abs_cal_algo_feed_share": 20.07313340151988
+    },
+    {
+      "country": "Spain",
+      "code": "ES",
+      "life_satisfaction": 6.9,
+      "baseline_mean_features_per_share": 13.389908256880732,
+      "comp_cal_mean_features_per_share": 13.678976094357191,
+      "abs_cal_mean_features_per_share": 14.248451969267544,
+      "baseline_algo_feed_share": 28.054463375564293,
+      "comp_cal_algo_feed_share": 32.529486760691874,
+      "abs_cal_algo_feed_share": 41.07440532290582
+    },
+    {
+      "country": "Sweden",
+      "code": "SE",
+      "life_satisfaction": 6.62,
+      "baseline_mean_features_per_share": 13.504662643993413,
+      "comp_cal_mean_features_per_share": 13.776787770874908,
+      "abs_cal_mean_features_per_share": 14.401500077626984,
+      "baseline_algo_feed_share": 24.931431705979154,
+      "comp_cal_algo_feed_share": 27.492091604978704,
+      "abs_cal_algo_feed_share": 34.00935787570203
+    },
+    {
+      "country": "Switzerland",
+      "code": "CH",
+      "life_satisfaction": 7.13,
+      "baseline_mean_features_per_share": 13.113463843387937,
+      "comp_cal_mean_features_per_share": 13.342903093383175,
+      "abs_cal_mean_features_per_share": 14.028898209134896,
+      "baseline_algo_feed_share": 22.21334398721534,
+      "comp_cal_algo_feed_share": 24.476870979578724,
+      "abs_cal_algo_feed_share": 32.029874291213616
+    },
+    {
+      "country": "Thailand",
+      "code": "TH",
+      "life_satisfaction": 7.08,
+      "baseline_mean_features_per_share": 14.467975481922357,
+      "comp_cal_mean_features_per_share": 14.948606084907917,
+      "abs_cal_mean_features_per_share": 15.161778330696599,
+      "baseline_algo_feed_share": 34.12987474460336,
+      "comp_cal_algo_feed_share": 43.00432893576095,
+      "abs_cal_algo_feed_share": 48.93203311504822
+    },
+    {
+      "country": "T\u00fcrkiye",
+      "code": "TR",
+      "life_satisfaction": 5.87,
+      "baseline_mean_features_per_share": 14.44994433104472,
+      "comp_cal_mean_features_per_share": 14.774389756863204,
+      "abs_cal_mean_features_per_share": 15.13796187545726,
+      "baseline_algo_feed_share": 36.42141399146409,
+      "comp_cal_algo_feed_share": 40.64587106127517,
+      "abs_cal_algo_feed_share": 47.826878011284705
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GB",
+      "life_satisfaction": 6.01,
+      "baseline_mean_features_per_share": 13.084935475375296,
+      "comp_cal_mean_features_per_share": 13.389063789447352,
+      "abs_cal_mean_features_per_share": 13.948975191666346,
+      "baseline_algo_feed_share": 21.249231849705907,
+      "comp_cal_algo_feed_share": 24.277671425308206,
+      "abs_cal_algo_feed_share": 30.177260042011547
+    },
+    {
+      "country": "United States",
+      "code": "US",
+      "life_satisfaction": 6.41,
+      "baseline_mean_features_per_share": 12.827568449060164,
+      "comp_cal_mean_features_per_share": 13.11793234822743,
+      "abs_cal_mean_features_per_share": 13.821184195666017,
+      "baseline_algo_feed_share": 22.032443567075788,
+      "comp_cal_algo_feed_share": 25.120478223570124,
+      "abs_cal_algo_feed_share": 31.631839062798505
+    },
+    {
+      "country": "Uruguay",
+      "code": "UY",
+      "life_satisfaction": 7.05,
+      "baseline_mean_features_per_share": 13.869748366046084,
+      "comp_cal_mean_features_per_share": 14.219227101889665,
+      "abs_cal_mean_features_per_share": 14.699325930826308,
+      "baseline_algo_feed_share": 33.73975937692564,
+      "comp_cal_algo_feed_share": 39.777919807170534,
+      "abs_cal_algo_feed_share": 47.35443163467343
+    },
+    {
+      "country": "Vietnam",
+      "code": "VN",
+      "life_satisfaction": 6.71,
+      "baseline_mean_features_per_share": 14.56106889436868,
+      "comp_cal_mean_features_per_share": 15.020829219091288,
+      "abs_cal_mean_features_per_share": 15.284905745499644,
+      "baseline_algo_feed_share": 30.30043782396457,
+      "comp_cal_algo_feed_share": 39.3930917971054,
+      "abs_cal_algo_feed_share": 46.084910669636685
+    }
+  ]
+}

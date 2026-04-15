@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "input_file": "hostile_witness_timeline_seed.json",
+    "output_file": "hostile_witness_timeline_summary.json",
+    "tier_weights": {
+      "low": 1.0,
+      "medium": 2.0,
+      "high": 3.0
+    },
+    "note": "Scores summarize evidence density/intensity over time; they do not establish liability or causation."
+  },
+  "yearly_summary": {
+    "2018": {
+      "event_count": 1,
+      "weighted_signal_score": 2.0,
+      "category_counts": {
+        "boundary_erosion_design": 1
+      }
+    },
+    "2019": {
+      "event_count": 1,
+      "weighted_signal_score": 2.0,
+      "category_counts": {
+        "harm_knowledge": 1
+      }
+    },
+    "2021": {
+      "event_count": 1,
+      "weighted_signal_score": 1.0,
+      "category_counts": {
+        "denial_mismatch": 1
+      }
+    },
+    "2023": {
+      "event_count": 1,
+      "weighted_signal_score": 1.0,
+      "category_counts": {
+        "boundary_erosion_design": 1
+      }
+    },
+    "2025": {
+      "event_count": 1,
+      "weighted_signal_score": 3.0,
+      "category_counts": {
+        "compulsion_language": 1
+      }
+    },
+    "2026": {
+      "event_count": 2,
+      "weighted_signal_score": 5.0,
+      "category_counts": {
+        "procedural_viability_signal": 1,
+        "regulatory_design_finding": 1
+      }
+    }
+  },
+  "events_total": 7
+}

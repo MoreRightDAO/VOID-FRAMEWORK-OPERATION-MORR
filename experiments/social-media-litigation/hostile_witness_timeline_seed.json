@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "description": "Seed timeline of defendant- and regulator-origin language relevant to compulsive-use design and boundary erosion analysis. This is a structured evidence index, not an adjudication of liability.",
+    "compiled_utc": "2026-04-01T00:00:00Z",
+    "version": "0.1"
+  },
+  "events": [
+    {
+      "id": "evt_2018_notifications_abuse",
+      "date": "2018-06-01",
+      "date_precision": "month",
+      "actor": "Meta (internal, as reported in WA AG statement)",
+      "category": "boundary_erosion_design",
+      "evidence_type": "agency_statement_with_internal_doc_quote",
+      "strength_tier": "medium",
+      "status": "not_adjudicated",
+      "signal_text": "Internal communications described notification practices as overused and discussed reduction proposals tied to problematic use.",
+      "source_url": "https://www.atg.wa.gov/news/news-releases/ag-ferguson-statement-unsealed-federal-complaint-against-meta-harming-youth"
+    },
+    {
+      "id": "evt_2019_net_negative_wellbeing",
+      "date": "2019-04-01",
+      "date_precision": "month",
+      "actor": "Meta (internal, as reported in WA AG statement)",
+      "category": "harm_knowledge",
+      "evidence_type": "agency_statement_with_internal_doc_quote",
+      "strength_tier": "medium",
+      "status": "not_adjudicated",
+      "signal_text": "Internal proposal to leadership referenced scientific evidence that average net wellbeing effects were slightly negative.",
+      "source_url": "https://www.atg.wa.gov/news/news-releases/ag-ferguson-statement-unsealed-federal-complaint-against-meta-harming-youth"
+    },
+    {
+      "id": "evt_2021_congress_denial_addictiveness",
+      "date": "2021-09-30",
+      "date_precision": "day",
+      "actor": "Meta congressional testimony (as quoted in filed complaint)",
+      "category": "denial_mismatch",
+      "evidence_type": "federal_complaint_allegation",
+      "strength_tier": "low",
+      "status": "not_adjudicated",
+      "signal_text": "Public denial that platforms were built to be addictive, contrasted with allegations of design features that impede disengagement.",
+      "source_url": "https://ag.ny.gov/sites/default/files/court-filings/meta-multistate-complaint.pdf"
+    },
+    {
+      "id": "evt_2023_multistate_meta_complaint",
+      "date": "2023-10-24",
+      "date_precision": "day",
+      "actor": "33-state federal coalition complaint",
+      "category": "boundary_erosion_design",
+      "evidence_type": "federal_complaint_allegation",
+      "strength_tier": "low",
+      "status": "pending_litigation",
+      "signal_text": "Complaint frames recommendation systems, likes/social comparison, notifications, autoplay, and infinite scroll as compulsive-use architecture.",
+      "source_url": "https://ag.ny.gov/sites/default/files/court-filings/meta-multistate-complaint.pdf"
+    },
+    {
+      "id": "evt_2025_mdl_pushers_language",
+      "date": "2025-11-21",
+      "date_precision": "day",
+      "actor": "Plaintiffs filing in MDL 3047 citing internal communications",
+      "category": "compulsion_language",
+      "evidence_type": "filed_mdl_brief_with_exhibit_citations",
+      "strength_tier": "high",
+      "status": "pending_litigation",
+      "signal_text": "Filed brief cites internal chat language comparing platform dynamics to drug-pusher dynamics and reward-deficit framing.",
+      "source_url": "https://s3.documentcloud.org/documents/26297953/unredacted-meta-filing.pdf?t=1764000800917"
+    },
+    {
+      "id": "evt_2026_ec_tiktok_prelim_finding",
+      "date": "2026-02-06",
+      "date_precision": "day",
+      "actor": "European Commission (DSA)",
+      "category": "regulatory_design_finding",
+      "evidence_type": "regulatory_preliminary_finding",
+      "strength_tier": "high",
+      "status": "preliminary_not_final",
+      "signal_text": "Commission preliminarily found addictive design concerns tied to infinite scroll, autoplay, push notifications, and recommender dynamics.",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-addictive-design-breach-digital-services-act"
+    },
+    {
+      "id": "evt_2026_ky_order_deny_mtd",
+      "date": "2026-02-20",
+      "date_precision": "day",
+      "actor": "Kentucky Scott Circuit Court",
+      "category": "procedural_viability_signal",
+      "evidence_type": "court_order",
+      "strength_tier": "medium",
+      "status": "procedural_order_not_merits",
+      "signal_text": "Order denying motion to dismiss summarizes allegations around recommendation systems, infinite scroll, autoplay, likes/comments, and push notifications.",
+      "source_url": "https://www.ag.ky.gov/Press%20Release%20Attachments/2026.02.20%20Order%20Denying%20MTD.pdf"
+    }
+  ]
+}
