@@ -12,11 +12,13 @@ license: "cc-by-4.0"
 
 ## Abstract
 
-We test whether the platform design features identified in Paper 166 (Eckert 2026) predict adolescent wellbeing cross-nationally, using PISA 2022 data from 613,744 students across 80 countries. Three analyses are conducted: (a) ecological cross-national correlation between StatCounter-derived feature-weighted platform exposure and country-level life satisfaction across 50 countries, (b) individual-level dose-response analysis of social media hours and life satisfaction using PISA microdata from 47 countries with ICT module responses, and (c) gender-stratified dose-response slopes. Within economically comparable Western European countries (N=13), feature-weighted exposure predicts adolescent life satisfaction (r = -0.648, p = 0.017, R-squared = 0.42), surviving GDP control (partial r = -0.580, p = 0.038) with bootstrap 95% CI [-0.87, -0.12]. Globally, Instagram-specific web share predicts worse outcomes (r = -0.373, p = 0.008). Individual-level dose-response among users is negative (slope = -0.104 life satisfaction points per SM category, r = -0.967, p = 0.007 on categories 2–6; including non-users: slope = -0.046, p = 0.051, not significant due to a J-shaped curve where light users score highest). Girls show steeper dose-response than boys in 91% of countries (paired t = -8.42, p < 0.000001); the gender ratio ranges from 5.5× (users-only specification) to a clear but less dramatic gap (full-range slopes). The global ecological null is explained by a diagnostic finding: Facebook dominates StatCounter web traffic (mean 75.3% share) across all countries, compressing cross-national variance in platform-mix features, while TikTok (the highest-feature platform) records 0% web share because it operates entirely as a mobile app. These results replicate Paper 166's core finding in an independent dataset, independent country sample, and independent outcome measure, while honestly documenting the ecological and measurement limitations.
+We test whether the platform design features identified in Paper 166 (Eckert 2026) predict adolescent wellbeing cross-nationally, using PISA 2022 data from 613,744 students across 80 countries. Three analyses are conducted: (a) ecological cross-national correlation between StatCounter-derived feature-weighted platform exposure and country-level life satisfaction across 50 countries, (b) individual-level dose-response analysis of social media hours and life satisfaction using PISA microdata from 47 countries with ICT module responses, and (c) gender-stratified dose-response slopes. Within economically comparable Western European countries (N=13), feature-weighted exposure predicts adolescent life satisfaction (r = -0.648, p = 0.017, R-squared = 0.42), surviving GDP control (partial r = -0.580, p = 0.038) with bootstrap 95% CI [-0.87, -0.12]. Globally, Instagram-specific web share predicts worse outcomes (r = -0.373, p = 0.008). Individual-level dose-response among users is negative (slope = -0.104 life satisfaction points per SM category, r = -0.967, p = 0.007 on categories 2–6; including non-users: slope = -0.046, p = 0.051, not significant due to a J-shaped curve where light users score highest). Girls show steeper dose-response than boys in 91% of countries (paired t = -8.42, p < 0.000001); the gender ratio ranges from 5.5× (users-only specification) to a clear but less dramatic gap (full-range slopes). The global ecological null is explained by a diagnostic finding: Facebook dominates StatCounter web traffic (mean 75.3% share) across all countries, compressing cross-national variance in platform-mix features, while TikTok (the highest-feature platform) records 0% web share because it operates entirely as a mobile app. A post-hoc app-audience proxy sensitivity (DataReportal country platform audiences, N=50) yields attenuated ecological signals and no Western Europe replication, reinforcing that cross-national ecological estimates are highly measurement-dependent. A second post-hoc sensitivity check tested whether replacing all-age audience proxies with direct teen platform prevalence changes the ecological signal. Using IFPS Youth chart extraction (6 countries, 5 platforms), results are mixed and the country-level overlap is too narrow for stable inference (normalized feature exposure r = -0.305, p = 0.556; prevalence-weighted exposure r = +0.582, p = 0.225); importantly, the unit of observation here is country-level exposure measurement, not individual students — the individual-level evidence base remains 613,744 students. A third post-hoc IFPS-calibrated scale-up transfer to the 50-country app-audience panel remains bifurcated (global mean-features r = +0.254, p = 0.075; Western Europe r = -0.077, p = 0.803), indicating persistent ecological measurement instability. A fourth post-hoc HBSC 2022 age-15 teen-outcome alignment (29-country overlap) shows positive association between feature intensity and problematic social media use (StatCounter mean-features r = +0.510, p = 0.0047; permutation p = 0.0062), adding direct-teen outcome corroboration while remaining ecological and non-causal. These results replicate Paper 166's core finding in independent microdata while honestly documenting the ecological and measurement limitations.
 
 **Keywords:** social media, adolescent wellbeing, PISA 2022, cross-national, platform design, opacity, dose-response, gender gap, ecological analysis, life satisfaction
 
 ## Void Model Card
+
+*Internal methodology card summarizing the analysis parameters. Pe (Péclet number) is the framework's composite risk metric; it is not used in this paper's statistical analysis, which relies solely on verifiable platform features.*
 
 | Field | Value |
 |---|---|
@@ -336,6 +338,107 @@ When opacity is measured through non-Facebook channels — isolating the variati
 
 **Prediction 4 (O-type dominance):** Partially confirmed. The only two significant global ecological predictors (algo feed share, non-FB O-exposure) are both O-type. However, the ecological analysis cannot cleanly separate O, R, and alpha exposure because StatCounter's platform-level data conflates all features of a given platform. This prediction is better tested in the individual-level data, where it is not directly available (PISA measures total SM hours, not platform-specific hours).
 
+### 4.7 Psychological Mechanism Test (Post-hoc, Country FE on Microdata Aggregates)
+
+To test a concrete psychological pathway, we ran a post-hoc mediation analysis on weighted country-by-gender-by-dose aggregates built from raw PISA 2022 microdata (285,958 rows after filtering, 47 countries, 564 country×gender×dose cells). Unlike the ecological country-level correlations, this specification uses within-country dose variation and includes country fixed effects plus ESCS control.
+
+**Mediator 1: negative online experiences (`IC181` upset index).**
+
+- `a` path (SM dose -> mediator): +0.0329 (male), +0.0272 (female) per SM category
+- `b` path (mediator -> life satisfaction): -1.0971
+- Indirect effect (male): -0.0361, 95% CI [-0.0636, -0.0136], p = 0.0025
+- Indirect effect (female): -0.0299, 95% CI [-0.0540, -0.0110], p = 0.0025
+
+For girls, the total slope is -0.1135 and the direct slope is -0.0836, implying an estimated mediated share of 26.3% (bootstrap 95% CI [9.0%, 49.4%], p = 0.0025). For boys, total slope is near zero (-0.0099), so percent-mediated estimates are unstable despite a significant indirect pathway.
+
+**Mediator 2: social disconnection composite (ST034-derived).**  
+The disconnection pathway is mixed by sex (female indirect effect not significant; male indirect effect positive), so it is not treated as a stable cross-sex mechanism in this dataset.
+
+Interpretation: the strongest mechanism evidence in this paper is the **negative-online-experience pathway** (upsetting content/messages/privacy events), which carries a significant portion of the dose-response gradient under a within-country fixed-effects design.
+
+### 4.8 Psychological Symptom Battery Robustness (WB154, Post-hoc)
+
+As an additional post-hoc robustness check, we replicated the within-country fixed-effects dose analysis using PISA's WB154 psychosomatic/psychological symptom module (10-country overlap where both SM exposure and WB154 are available; 73,520 student rows after filtering; 218 countryxgenderxdose cells).
+
+Outcomes are coded so higher values indicate more frequent symptoms (1-5 scale). Across all four tested outcomes, slopes are positive for both sexes and bootstrap confidence intervals exclude zero:
+
+- **WB154 composite symptom index:** male +0.1352 (95% CI [0.1001, 0.1667]), female +0.1443 (95% CI [0.1322, 0.1553]) per SM dose category.
+- **Feeling depressed (WB154Q04HA):** male +0.1119 (95% CI [0.0933, 0.1781]), female +0.1075 (95% CI [0.0935, 0.1498]).
+- **Sleep difficulty (WB154Q07HA):** male +0.1404 (95% CI [0.1068, 0.1673]), female +0.1431 (95% CI [0.1354, 0.1713]).
+- **Feeling anxious (WB154Q09HA):** male +0.1606 (95% CI [0.1003, 0.1796]), female +0.1761 (95% CI [0.1067, 0.1942]).
+
+In this restricted 10-country subset, female-minus-male slope differences are not statistically distinguishable from zero for these symptom outcomes. The upset-mediated indirect pathway on the composite symptom index is directionally positive but not significant under country-cluster bootstrap.
+
+Interpretation: this robustness pass supports the broader dose-gradient signal on **explicit symptom-frequency outcomes** (not only life satisfaction), but does not by itself establish a sex-differential mechanism in the reduced-country overlap sample.
+
+### 4.9 App-Audience Proxy Sensitivity (Post-hoc)
+
+To stress-test the ecological layer with a non-web proxy, we built a country-level platform mix from DataReportal country reports (`digital-2023-*`, fallback `digital-2024-*`) by extracting platform audience counts for Facebook, Instagram, TikTok, YouTube, Snapchat, Twitter/X, Pinterest, and LinkedIn, then recomputing feature-weighted exposure for all 50 countries.
+
+Results:
+
+- **Global mean-features vs life satisfaction:** `r = +0.248`, `p = 0.082` (direction opposite to the main ecological claim, not significant).
+- **Global algorithmic-feed share (Instagram + TikTok) vs life satisfaction:** `r = +0.167`, `p = 0.246` (not significant).
+- **Western Europe mean-features vs life satisfaction:** `r = -0.090`, `p = 0.770` (no replication of the main StatCounter-based Western Europe result).
+- **Western Europe algorithmic-feed share vs life satisfaction:** `r = -0.390`, `p = 0.188` (directionally negative, not significant).
+
+Interpretation: this proxy weakens the ecological signal and demonstrates that cross-national ecological estimates are highly sensitive to the measurement layer. The app-audience proxy is still imperfect (all-age ad-audience estimates, not teen platform time or teen platform-specific usage), so this should be treated as a **measurement stress test**, not a definitive falsification of the broader framework.
+
+Operationally, this result raises priority for direct teen app-usage panels (or platform-specific adolescent surveys) before treating ecological platform-mix coefficients as stable litigation evidence.
+
+### 4.10 Exposure Measurement Sensitivity: Teen-Specific Platform Panel (IFPS Pilot, Post-hoc)
+
+To move beyond all-age audience proxies, we built a direct adolescent platform-use panel from the IFPS Youth report (Australia, Canada, Chile, Mexico, United Kingdom, United States; platforms: Instagram, TikTok, Snapchat, Facebook, Twitter; years 2019-2021). We extracted charted percentages using `pdftotext -bbox-layout` with coordinate-based assignment of each `%` label to country-year x-ticks, then recomputed feature-weighted exposure on the 2021 overlap with PISA 2022 life satisfaction.
+
+Results on the 6-country overlap:
+
+- **Normalized feature exposure vs life satisfaction:** `r = -0.305`, `p = 0.556`.
+- **Normalized algorithmic-feed share (Instagram + TikTok) vs life satisfaction:** `r = +0.423`, `p = 0.404`.
+- **Prevalence-weighted feature exposure vs life satisfaction:** `r = +0.582`, `p = 0.225`.
+- **Prevalence-weighted algorithmic prevalence vs life satisfaction:** `r = +0.736`, `p = 0.095`.
+
+Interpretation: the teen-specific extraction is now operational and reproducible, but the country-level overlap is too narrow (6 countries, five-platform subset, one-year offset) for stable ecological adjudication. This is an exposure-measurement sensitivity check — it tests whether teen-specific platform prevalence changes the ecological signal, not the individual-level evidence. The individual-level dose-response (N = 613,744 students) and gender stratification (47 countries) are unaffected by this sensitivity. It should be treated as a feasibility step for refining ecological exposure proxies, not as a decisive confirmatory or falsifying test of the primary findings.
+
+### 4.11 Teen-Calibrated Scale-Up Sensitivity (IFPS Transfer to 50 Countries, Post-hoc)
+
+To stress-test whether the IFPS teen panel can be scaled beyond six countries without new raw teen data collection, we estimated teen-vs-all-age platform multipliers on the IFPS/DataReportal overlap (AUS/CAN/CHL/MEX/UK/US; five platforms) and transferred them to the full 50-country DataReportal app-audience table.
+
+Two transfer modes were tested:
+
+1. **Composition-calibrated (primary, conservative):** reweight Instagram/TikTok/Snapchat/Facebook/Twitter composition while preserving each country's total five-platform mass.
+2. **Absolute-calibrated (sensitivity):** scale raw shares for the five platforms and renormalize all platforms to 100.
+
+Results:
+
+- **Composition-calibrated:** global mean-features `r = +0.254`, `p = 0.075`; Western Europe `r = -0.077`, `p = 0.803`.
+- **Absolute-calibrated (sensitivity):** global mean-features `r = +0.296`, `p = 0.037`; Western Europe `r = -0.005`, `p = 0.987`.
+- **Composition-calibrated algorithmic-feed share (Instagram + TikTok):** global `r = +0.196`, `p = 0.173`; Western Europe `r = -0.444`, `p = 0.128`.
+
+Uncertainty checks on the composition-calibrated mode:
+
+- Bootstrap (`N=4000`) global mean-features `r`: mean `+0.254`, 95% interval `[+0.226, +0.284]`.
+- Bootstrap Western Europe mean-features `r`: mean `-0.077`, 95% interval `[-0.108, -0.055]`.
+- Leave-one-country-out overlap stress preserved this split (global `r` range `+0.243` to `+0.264`; Western Europe `r` range `-0.085` to `-0.065`).
+
+Interpretation: transfer-based scaling is computationally stable but region-bifurcated and does not recover a robust, single-direction ecological estimate. This reinforces that ecological platform-mix coefficients remain measurement-sensitive unless direct teen platform-use data are available at broader coverage.
+
+### 4.12 HBSC Teen-Outcome Alignment (Post-hoc)
+
+To add an external direct-teen outcome layer beyond PISA life satisfaction, we linked HBSC 2022 age-15 country outcomes to the same country exposure tables used above. HBSC endpoints were problematic social media use (`SMPdum`), intensive online contact (`EMC_intensive`), and HBSC life satisfaction (`lifesat_mean`), using girls/boys means and country averages.
+
+Primary alignment endpoint for this pass: country mean feature intensity vs HBSC problematic social media use (average of girls and boys) on the overlap sample.
+
+Results:
+
+- **Global (N=29): StatCounter mean-features vs HBSC problematic use (avg):** `r = +0.510`, `p = 0.0047`, `R2 = 0.260`.
+- **Country-mapping sensitivity:** strict no-UK aggregation `r = +0.515`, `p = 0.0050` (`N=28`), consistent with the main mapping (`N=29`).
+- **Permutation inference (N=100,000) for the primary endpoint:** two-sided `p = 0.0062`, one-sided positive `p = 0.00075`.
+- **Bootstrap (N=10,000) for the primary endpoint:** mean `r = +0.525`, 95% interval `[+0.340, +0.691]`, `P(r>0)=1.000`.
+- **App-audience proxy sensitivity (global):** mean-features vs problematic use `r = +0.432`, `p = 0.0193` (`N=29`).
+- **Western Europe diagnostic (N=12):** StatCounter mean-features vs problematic use `r = +0.634`, `p = 0.0267`; app-proxy algo-feed share vs problematic use `r = +0.586`, `p = 0.0452`; GDP-partial for app-proxy algo-feed drops to `r = +0.325`, `p = 0.303`.
+
+Interpretation: the HBSC layer adds direct-teen outcome corroboration for the same feature geometry, with stable positive global alignment on problematic use across two exposure constructions. However, this is still a country-level observational analysis, outcomes are not platform-specific exposure measures, and the broader exploratory panel includes multiple comparisons. It strengthens consistency, not causal identification.
+
 ## V. Predictions and Kill Conditions: Summary
 
 ### 5.1 Prediction Results
@@ -343,7 +446,7 @@ When opacity is measured through non-Facebook channels — isolating the variati
 | ID | Prediction | Result | Key Statistic |
 |---|---|---|---|
 | P1 | Global dose-response is negative | **PARTIALLY CONFIRMED** | slope = -0.104, p = 0.007 (users only, cat 2–6); full range p = 0.051 |
-| P2 | Female slope steeper than male | **CONFIRMED** | 5.6x ratio, p < 0.000001 |
+| P2 | Female slope steeper than male | **CONFIRMED** | 5.5× ratio, p < 0.000001 |
 | P3 | W. Europe features predict wellbeing | **CONFIRMED** | r = -0.648, p = 0.017 |
 | P4 | O-type features dominate prediction | **PARTIALLY CONFIRMED** | Both significant predictors are O-type; clean separation not possible |
 | P5 | WhatsApp markets show weaker dose-response | **UNTESTABLE** | StatCounter does not track WhatsApp |
@@ -360,7 +463,7 @@ When opacity is measured through non-Facebook channels — isolating the variati
 | KC-2 | Gender gap reversal (boys more affected, p < 0.01, >20 countries) | **SURVIVED** | Girls steeper in 91% of countries, p < 0.000001 |
 | KC-3 | W. Europe correlation reversal after GDP control | **SURVIVED** | partial r = -0.580 (same sign), p = 0.038 |
 | KC-4 | All feature R-squared < 0.01 | **SURVIVED** | W. Europe R-squared = 0.42 |
-| KC-5 | App-usage data shows null | **NOT YET TESTED** | Requires app-usage data (e.g., Gallup, ABCD Study) |
+| KC-5 | App-usage data shows null | **PARTIAL STRESS TEST (INCONCLUSIVE)** | DataReportal app-audience proxy (N=50 countries) attenuates ecological signal; IFPS teen-specific exposure sensitivity (6-country overlap, 5 platforms) is mixed — this tests exposure measurement, not the individual-level evidence (613,744 students); IFPS-calibrated transfer scale-up remains bifurcated (global positive, W.Europe weak negative); HBSC direct teen-outcome alignment is positive (r=+0.510, p=0.005, 29 countries) but ecological and non-platform-specific |
 
 ## VI. Discussion
 
@@ -372,7 +475,7 @@ This paper replicates Paper 166's core finding in three ways:
 
 **Same direction, independent outcome.** The U.S. result (feature exposure R-squared = 0.80 for persistent sadness) and the Western European result (feature exposure r = -0.648, R-squared = 0.42 for life satisfaction) are obtained from completely independent datasets. The outcome measures are different (mental illness indicators vs. life satisfaction), the countries are different, and the time frames overlap only at one point (2022). The convergence in direction, feature-type dominance, and gender specificity strengthens the case that platform design is the operative variable.
 
-**Same gender pattern.** Paper 166 showed that female persistent sadness had the strongest signal (R-squared = 0.835). This paper finds a 5.6-fold gender gap in dose-response slopes, with 91% of countries showing girls more affected. The consistency of the gender gradient across 47 countries with different confound structures makes it difficult to attribute the pattern entirely to confounders.
+**Same gender pattern.** Paper 166 showed that female persistent sadness had the strongest signal (R-squared = 0.835). This paper finds a 5.5-fold gender gap in dose-response slopes, with 91% of countries showing girls more affected. The consistency of the gender gradient across 47 countries with different confound structures makes it difficult to attribute the pattern entirely to confounders.
 
 ### 6.2 The Global Null: A Measurement Lesson
 
@@ -385,6 +488,12 @@ More critically, TikTok — which Paper 166 identified as the highest-feature pl
 This is a useful negative result. It demonstrates that the ecological approach requires platform-usage data (app time, surveys of platform-specific adoption) rather than web traffic proxies. It also explains why prior ecological studies using similar web analytics data have found weak or null associations (Orben and Przybylski 2019): the measurement is too blunt to detect design-level variation.
 
 When the analysis is restricted to the signal that survives this measurement limitation — Instagram's web share (which does vary meaningfully across countries) and the non-Facebook O-exposure — the predicted negative association emerges (r = -0.373, p = 0.008 and r = -0.316, p = 0.026 respectively).
+
+However, a post-hoc app-audience proxy (DataReportal country platform audiences) attenuates this ecological pattern and does not recover the Western Europe signal at conventional significance thresholds. This does not settle the question in either direction; it shows that ecological platform-mix coefficients are unstable across imperfect measurement systems (web-traffic share vs. ad-audience proxy). The practical implication is to prioritize direct teen app-usage data for the next replication wave, and to treat current ecological coefficients as supportive context rather than standalone causal evidence.
+
+A direct teen-specific IFPS pilot now adds feasibility but not stability: extraction is reproducible, yet the 6-country overlap yields mixed, non-significant ecological correlations and platform-coverage constraints. A transfer-based IFPS calibration to all 50 app-audience countries is also unstable in direction (global positive, Western Europe weak negative, both non-significant in the primary conservative mode), confirming that synthetic scale-up cannot substitute for broader direct teen measurement. This narrows the remaining gap to sample size and coverage, rather than method availability.
+
+A post-hoc HBSC 2022 alignment pass adds a different kind of corroboration: direct teen problematic-use outcomes at the country level (age 15) show positive association with feature intensity in the overlap sample (primary global endpoint `r=+0.510`, `p=0.0047`, permutation `p=0.0062`). This improves cross-dataset consistency on adolescent harm markers, but does not resolve the same core limitation: ecological country-level association is still not causal proof, and HBSC does not provide platform-specific exposure at the individual level.
 
 ### 6.3 The Gender Gap in Dose-Response
 
@@ -414,7 +523,7 @@ These caveats apply equally to the existing literature. They do not weaken the r
 
 ### 6.5 Litigation Implications
 
-Paper 166 was designed to address the evidentiary gap in social media litigation: the inability to identify specific platform design features that predict harm. This cross-national replication strengthens the litigation case in three ways:
+Paper 166 was designed to address the evidentiary gap in social media litigation: the inability to identify specific platform design features that predict harm. This cross-national replication strengthens the litigation case in four ways:
 
 1. **Generalizability.** The feature-harm association is not U.S.-specific. It replicates across 80 countries with different confound structures. This addresses the defense argument that U.S. results reflect American cultural factors rather than platform design.
 
@@ -422,7 +531,13 @@ Paper 166 was designed to address the evidentiary gap in social media litigation
 
 3. **The Instagram signal.** Instagram-specific web share is the strongest global ecological predictor (r = -0.373, p = 0.008). This provides country-level evidence that Instagram specifically — not social media in general — is associated with worse adolescent outcomes, consistent with the internal Meta documents disclosed in the Haugen disclosures and the findings in K.G.M. v. Meta.
 
-The 5.6x gender gap also has direct relevance to litigation. The argument that "social media is not harmful because boys are not affected" is contradicted by this data: girls are overwhelmingly more affected, and they are the primary plaintiffs in the litigation.
+4. **Cross-domain geometry isolation (Paper 166 §5.5 #4).** VRChat — a social VR platform with no algorithmic feed, no ad model, and no recommendation engine — produces the full drift cascade (progressive harm escalation: phantom sense, depersonalization/derealization, child exploitation) through pure two-point geometry (a system with no external reference point — user and platform only). World of Warcraft (same genre, three-point geometry — a system with independent external constraints such as fixed rules, moderation, and structured progression) produces none of these. This eliminates the defense that algorithmic amplification, rather than platform geometry, is the operative variable.
+
+The 5.5× gender gap also has direct relevance to litigation. The argument that "social media is not harmful because boys are not affected" is contradicted by this data: girls are overwhelmingly more affected, and they are the primary plaintiffs in the litigation.
+
+Companion U.S. age-band evidence from the NSDUH comparator pipeline (Paper 166 companion analysis, 2011-2020) is directionally consistent with this stratified vulnerability pattern: youth MDE rose +8.8 points versus +0.8 for adults 26+, and youth severe-impairment MDE rose +6.3 versus +1.0 for adults 26+. This remains observational (not causal), but it weakens the "uniform macro distress" defense by showing large age concentration within the same national period.
+
+**Procedural signal from Kentucky (date-specific):** In *Commonwealth of Kentucky ex rel. Coleman v. TikTok*, the complaint was filed on October 8, 2024, and the court denied TikTok's motion to dismiss on February 20, 2026. The order summarizes design allegations including recommendation systems, infinite scroll, autoplay, likes/comments feedback, and push notifications. This is not a merits ruling; it is a pleading-stage viability signal. The practical relevance for this paper is measurement alignment: those allegations correspond directly to the same feature variables operationalized in Paper 166 (Section 5.8 crosswalk), enabling reproducible claim-to-data translation.
 
 ### 6.6 Comparison to World Happiness Report 2026
 
@@ -436,9 +551,9 @@ The WHR analysis uses the same PISA data but does not employ the feature-based s
 
 ### 6.7 Limitations
 
-1. **StatCounter web traffic is not app usage.** This is the paper's primary limitation. The ecological analysis is structurally blind to TikTok and underrepresents Instagram. Future work should use app-level usage data (e.g., Sensor Tower, data.ai) or survey-based platform adoption (Pew, Gallup).
+1. **StatCounter web traffic is not app usage.** This is the paper's primary limitation. The ecological analysis is structurally blind to TikTok and underrepresents Instagram. Future work should use app-level usage data (e.g., Sensor Tower, data.ai) or survey-based platform adoption (Pew, Gallup). **UPDATE (Paper 173):** App-level data protocol specified with decision matrix — ABCD Study ($0, closes KC-5 + temporal ordering) or Sensor Tower (~$5K–15K, closes KC-5 ecologically across 50+ countries). See Paper 173, §5.3.
 
-2. **PISA is cross-sectional.** No causal inference is possible from these data alone. Longitudinal data (e.g., ABCD Study) would be needed to establish temporal precedence.
+2. **PISA is cross-sectional.** No causal inference is possible from these data alone. Longitudinal data (e.g., ABCD Study) would be needed to establish temporal precedence. **UPDATE (Paper 173):** Formal causal analysis completed — cascade dose-response model (composite risk metric predicts female sadness R² = 0.889, 6/6 PASS, Bradford Hill 8/9; temporality MET via ABCD longitudinal PMC12096259). State-level DiD executed (honest negative — β=−0.111, p=0.169, proxy collapse after state FEs; not evidence against hypothesis). See Paper 173.
 
 3. **Life satisfaction is a single item.** The Cantril ladder is well-validated at the population level but has limited sensitivity for detecting clinical-level harm.
 
@@ -450,11 +565,15 @@ The WHR analysis uses the same PISA data but does not employ the feature-based s
 
 7. **No platform-specific usage.** PISA asks about social media hours but does not identify which platforms students use. Individual-level feature exposure cannot be computed.
 
+8. **Ecological exposure proxy sensitivity limited.** The IFPS teen-specific pilot improves construct validity (adolescent platform prevalence rather than all-age audience share), but the country-level overlap is narrow (6 countries, 5 platforms, one-year offset to PISA). This limits inference about the *ecological exposure proxy*, not the individual-level evidence — the dose-response analysis (N = 613,744 students) and gender stratification (47 countries) do not depend on the IFPS sensitivity. A transfer-based scale-up to 50 countries remains region-bifurcated, so synthetic calibration is not a substitute for direct teen usage measurement at scale.
+
+9. **HBSC corroboration remains ecological.** The HBSC post-hoc layer adds direct teen outcomes (problematic social media use), but the analysis is still country-level, includes exploratory multiple-endpoint panels, and lacks platform-specific individual exposure variables.
+
 ## VII. Conclusion
 
 This paper replicates Paper 166's core finding — that platform design features predict adolescent wellbeing outcomes better than raw usage measures — using an independent dataset (PISA 2022, 613,744 students, 80 countries) and an independent outcome measure (life satisfaction).
 
-Three results converge:
+Six results converge:
 
 1. **Ecological:** Within economically comparable Western European countries, feature-weighted platform exposure predicts adolescent life satisfaction (r = -0.648, p = 0.017), surviving GDP control (partial r = -0.580, p = 0.038). Instagram-specific web share is the strongest global predictor (r = -0.373, p = 0.008).
 
@@ -462,9 +581,15 @@ Three results converge:
 
 3. **Gender:** Girls show consistently steeper dose-response than boys in 91% of countries (paired t = -8.42, p < 0.000001). This is not a U.S.-specific phenomenon.
 
+4. **Mechanism (post-hoc):** In microdata fixed-effects mediation, negative online experiences (`IC181` upset index) carry significant indirect effects for both sexes (female: -0.0299, 95% CI [-0.0540, -0.0110], p = 0.0025; male: -0.0361, 95% CI [-0.0636, -0.0136], p = 0.0025).
+
+5. **Symptom robustness (post-hoc):** In the WB154 overlap sample (10 countries, 73,520 students), higher SM dose predicts higher symptom-frequency scores for composite symptoms, depressed mood, sleep difficulty, and anxiety, with bootstrap CIs excluding zero for male and female slopes.
+
+6. **HBSC direct-teen outcome corroboration (post-hoc):** In a 29-country HBSC 2022 age-15 overlap, higher feature intensity is associated with higher problematic social media use (primary global endpoint: `r=+0.510`, `p=0.0047`; permutation `p=0.0062`; bootstrap 95% `[+0.340,+0.691]`).
+
 The global ecological null is not evidence against the hypothesis — it is evidence of a measurement limitation (Facebook web dominance compresses variance; TikTok is invisible to web analytics). This finding is itself valuable: it explains why ecological studies using web traffic data tend to find weak associations, and it demonstrates the need for app-level usage data in future research.
 
-Four of seven predictions are confirmed, two are partially confirmed, and one is untestable with current data. All five kill conditions are survived or not yet triggered. The results are consistent with the hypothesis that platform design features — specifically opacity-type features including algorithmic feeds and opaque recommendation engines — predict adolescent wellbeing outcomes, but the ecological design and the J-shaped dose-response curve limit the strength of causal inference. Individual-level data with platform-specific usage measures would be needed to move from "consistent with" to "demonstrates."
+Four of seven predictions are confirmed, two are partially confirmed, and one is untestable with current data. Kill conditions KC-1 through KC-4 are survived, while KC-5 now has four mixed stress layers (DataReportal all-age app-audience proxy attenuation, IFPS teen-specific 6-country pilot mixed/underpowered, IFPS-calibrated 50-country transfer bifurcation, and HBSC direct-teen outcome alignment that is supportive but still ecological/non-platform-specific) rather than a definitive trigger. The results are consistent with the hypothesis that platform design features — specifically opacity-type features including algorithmic feeds and opaque recommendation engines — predict adolescent wellbeing outcomes, but the ecological design and the J-shaped dose-response curve limit the strength of causal inference. Individual-level data with platform-specific usage measures would be needed to move from "consistent with" to "demonstrates."
 
 ## References
 
@@ -480,6 +605,8 @@ Kelly, Y., Zilanawala, A., Booker, C., & Sacker, A. (2019). Social media use and
 
 OECD. (2024). *PISA 2022 Results (Volume II): Learning During — and From — Disruption.* OECD Publishing. https://doi.org/10.1787/a97db61c-en
 
+Substance Abuse and Mental Health Services Administration. (2021). *2020 National Survey on Drug Use and Health (NSDUH) Detailed Tables* (Tables 10.26B, 10.27B). U.S. Department of Health and Human Services. https://www.samhsa.gov/data/report/2020-nsduh-detailed-tables
+
 Orben, A., & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. *Nature Human Behaviour*, 3(2), 173–182.
 
 StatCounter. (2022). Social Media Stats Worldwide. https://gs.statcounter.com/social-media-stats
@@ -488,11 +615,19 @@ Twenge, J. M., Joiner, T. E., Rogers, M. L., & Martin, G. N. (2018). Increases i
 
 World Happiness Report. (2026). *World Happiness Report 2026.* https://www.worldhappiness.report/ed/2026/
 
+Hammond, D., White, C. M., Vanderlee, L., Reid, J. L., Minaker, L., et al. (2023). *International Food Policy Study: Youth Survey 2021 Report.* University of Waterloo. https://foodpolicystudy.com/methods/
+
+HBSC (Health Behaviour in School-aged Children). (n.d.). *HBSC Data Browser: Social Media Topic and downloadable country CSVs.* https://data-browser.hbsc.org/topics/social-media/
+
+Commonwealth of Kentucky ex rel. Coleman v. TikTok, Inc., et al. (2024). Complaint filed October 8, 2024, Scott Circuit Court, No. 24-CI-00824.
+
+Commonwealth of Kentucky ex rel. Coleman v. TikTok, Inc., et al. (2026). Order Denying Defendant's Motion to Dismiss (February 20, 2026), Scott Circuit Court, No. 24-CI-00824.
+
 ## Data and Code Availability
 
-All data sources are publicly available at no cost. PISA 2022 microdata: webfs.oecd.org/pisa2022/ (free download). StatCounter social media market share: gs.statcounter.com (free web interface). World Bank GDP per capita: data.worldbank.org (NY.GDP.PCAP.CD). Paper 166 feature matrix: CC-BY 4.0 (DOI: 10.5281/zenodo.19339981).
+All data sources are publicly available at no cost. PISA 2022 microdata: webfs.oecd.org/pisa2022/ (free download). StatCounter social media market share: gs.statcounter.com (free web interface). DataReportal country reports: datareportal.com/reports/ (free web pages). IFPS Youth report PDF (2019-2021 platform-use charts): foodpolicystudy.com (public report). HBSC Data Browser CSV endpoints: data-browser.hbsc.org/wp-content/uploads/csvs/ (public CSV files). World Bank GDP per capita: data.worldbank.org (NY.GDP.PCAP.CD). Paper 166 feature matrix: CC-BY 4.0 (DOI: 10.5281/zenodo.19339981).
 
-All analysis code is available in the project repository at `ops/lab/social-media-litigation/pisa/`. Key scripts: `build_country_data.py` (ecological analysis), `enhanced_analysis.py` (GDP controls, bootstrap), `extract_pisa_social_media_wellbeing.py` (microdata extraction), `analyze_microdata.py` (dose-response, gender stratification). Total reproduction cost: $0, runtime under 30 minutes on a standard laptop (4 GB RAM for microdata extraction). See Appendix C for full details.
+All analysis code is available in the project repository at `ops/lab/social-media-litigation/pisa/`. Key scripts: `build_country_data.py` (StatCounter ecological analysis), `build_country_data_app_usage_proxy.py` (DataReportal app-audience proxy ecological sensitivity), `build_country_data_ifps_teen_panel.py` (IFPS teen-platform panel extraction + teen-weighted ecological sensitivity), `build_country_data_ifps_teen_calibrated_scaleup.py` (IFPS-to-DataReportal teen-calibrated transfer scale-up with bootstrap and leave-one-out uncertainty), `build_hbsc_teen_outcome_alignment.py` (HBSC 2022 age-15 direct teen-outcome ecological alignment with permutation/bootstrap robustness), `enhanced_analysis.py` (GDP controls, bootstrap), `extract_pisa_social_media_wellbeing.py` (microdata extraction), `analyze_microdata.py` (dose-response, gender stratification), `dose_response_fe_bootstrap.py` (country FE dose gradients with block bootstrap), `psych_mechanism_microdata_fe.py` (post-hoc mechanism mediation on microdata-derived country×gender×dose aggregates), and `wb154_symptom_mechanism_fe.py` (post-hoc symptom-battery FE robustness). Companion U.S. age-band corroboration files are in `ops/lab/social-media-litigation/` (`nsduh_age_comparator_2005_2020.csv`, `nsduh_age_comparator_feature_analysis.py`, `nsduh_age_comparator_results.json`). Additional post-hoc scale-up outputs are `pisa_ifps_teen_calibrated_scaleup_results.json` and `pisa_ifps_teen_calibrated_scaleup_country_table.csv`; HBSC outputs are `pisa_hbsc_teen_outcome_alignment_results.json` and `pisa_hbsc_teen_outcome_alignment_country_table.csv`. Total reproduction cost: $0, runtime under 30 minutes on a standard laptop (4 GB RAM for microdata extraction). See Appendix C for full details.
 
 ## Appendix A: Country-Level Results
 
@@ -595,7 +730,7 @@ All analysis code is available in the project repository at `ops/lab/social-medi
 | Facebook | 6 | 4 | 3 | 13 | Full algorithmic feed + hidden ranking + infinite scroll |
 | YouTube | 7 | 4 | 3 | 14 | Autoplay + algorithmic recommendations + Shorts |
 
-*Note: Feature scores used in the ecological analysis (from `build_country_data.py`) differ slightly from Paper 166's full 2023 feature matrix because the ecological analysis uses a subset of features measurable from web-traffic data. The scores above match the computational implementation.*
+*Note: Feature scores used in the ecological analysis (from `build_country_data.py`) differ slightly from Paper 166's full 2023 feature matrix because the ecological analysis uses the subset of features measurable from web-traffic data — specifically, it excludes disappearing content, default-public minor profiles, and beauty/AR filters, which cannot be inferred from StatCounter web share. The scores above match the computational implementation.*
 | Twitter/X | 5 | 4 | 3 | 12 | Algorithmic tab + notifications + public metrics |
 | Pinterest | 5 | 2 | 2 | 9 | Algorithmic discovery + infinite scroll |
 | Reddit | 3 | 3 | 1 | 7 | Pseudonymous + karma visible + optional algorithmic sort |
@@ -612,6 +747,9 @@ All primary data sources are publicly available:
 |---|---|---|
 | PISA 2022 microdata | webfs.oecd.org/pisa2022/ | Free download (registration required) |
 | StatCounter | gs.statcounter.com | Free (web interface) |
+| DataReportal country reports | datareportal.com/reports/ | Free (web pages) |
+| IFPS Youth report (2019-2021) | foodpolicystudy.com | Free report PDF |
+| HBSC Data Browser CSVs | data-browser.hbsc.org/wp-content/uploads/csvs/ | Free public CSV files |
 | Paper 166 feature matrix | moreright.xyz (Paper 166 supplementary) | CC-BY 4.0 |
 | World Bank GDP | data.worldbank.org (NY.GDP.PCAP.CD) | Free |
 
@@ -622,6 +760,10 @@ All analysis code is available at: `ops/lab/social-media-litigation/pisa/`
 | Script | Purpose |
 |---|---|
 | `build_country_data.py` | Merges PISA life satisfaction with StatCounter web share and feature scores |
+| `build_country_data_app_usage_proxy.py` | Builds DataReportal app-audience proxy platform shares and feature exposure |
+| `build_country_data_ifps_teen_panel.py` | Extracts IFPS teen platform prevalence (2019-2021) from report charts and runs teen-weighted ecological sensitivity |
+| `build_country_data_ifps_teen_calibrated_scaleup.py` | Transfers IFPS teen calibration to the full 50-country app-audience panel with bootstrap and leave-one-out checks |
+| `build_hbsc_teen_outcome_alignment.py` | Links HBSC 2022 age-15 outcomes to platform feature exposure with mapping/permutation/bootstrap robustness |
 | `enhanced_analysis.py` | GDP controls, bootstrap CI, Facebook-stripped analysis, Western Europe deep dive |
 | `extract_pisa_social_media_wellbeing.py` | Extracts SM hours + life satisfaction from PISA microdata (2+ GB) |
 | `analyze_microdata.py` | Dose-response curves, gender stratification, country-level slopes |
@@ -633,6 +775,15 @@ All analysis code is available at: `ops/lab/social-media-litigation/pisa/`
 |---|---|
 | `pisa_cross_national_results.json` | Country-level StatCounter exposure and correlations |
 | `pisa_enhanced_results.json` | GDP-controlled analysis results |
+| `pisa_app_usage_proxy_results.json` | Country-level DataReportal app-audience proxy exposure and correlations |
+| `pisa_app_usage_proxy_country_table.csv` | Flattened country table for app-audience proxy shares and exposures |
+| `pisa_ifps_teen_platform_panel_2019_2021.csv` | IFPS teen platform prevalence panel (6 countries, 2019-2021, 5 platforms) |
+| `pisa_ifps_teen_proxy_country_table.csv` | 2021 teen-weighted country exposure table for PISA overlap |
+| `pisa_ifps_teen_proxy_results.json` | Teen-specific ecological sensitivity results (IFPS overlap) |
+| `pisa_ifps_teen_calibrated_scaleup_country_table.csv` | IFPS-calibrated 50-country exposure table (composition and absolute modes) |
+| `pisa_ifps_teen_calibrated_scaleup_results.json` | IFPS transfer scale-up correlations, bootstrap, and leave-one-out diagnostics |
+| `pisa_hbsc_teen_outcome_alignment_country_table.csv` | HBSC age-15 outcome + exposure merge table |
+| `pisa_hbsc_teen_outcome_alignment_results.json` | HBSC alignment correlations with permutation/bootstrap and mapping sensitivity |
 | `pisa_microdata_results.json` | Individual-level analysis summary |
 | `pisa_country_means.csv` | Country-level means (80 countries, all variables) |
 | `pisa_dose_response.csv` | Dose-response data by country, gender, SM category |

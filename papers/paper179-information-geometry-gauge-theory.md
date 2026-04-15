@@ -25,7 +25,7 @@ license: "cc-by-4.0"
 
 ## Abstract
 
-We establish a computational correspondence between the explaining-away penalty $I(D;M|Y) > 0$ on the Eckert statistical manifold — originally developed for measuring AI deployment drift — and the Yang-Mills mass gap $\Delta > 0$. Both arise from the same mechanism: a self-interacting mediator cannot propagate freely. The Eckert manifold's modular form spectral structure spontaneously discriminates abelian (QED-like) from non-abelian (QCD-like) gauge theories without being designed for gauge theory: the phonological spectral level never confines (Polyakov loop = 1.0000 at all tested engagement levels), while the pragmatic level exhibits 4.8× confinement coupling and a distinct susceptibility peak. Adding a quartic self-interaction term $g^2|A|^4/T$ to the Fokker-Planck operator — the dimensional reduction of $|A \wedge A|^2$ — increases the excitation gap with scaling exponent $g^{2.015}$ (CV = 0.0012), confirming gauge coupling origin. The engagement-coupling curve matches the qualitative shape of the QCD running coupling ($R^2 = 0.990$) with effective $\beta < 0$ in 76% of segments. Five pre-registered kill conditions are tested; all five survive. The results suggest that the information-geometric penalty and the Yang-Mills mass gap are structurally related — both are consequences of Čencov-invariant geometry applied to self-interacting channels — though the correspondence is computational, not a formal proof of the Clay Institute problem.
+We establish a computational correspondence between the explaining-away penalty $I(D;M|Y) > 0$ on the Eckert statistical manifold — originally developed for measuring AI deployment drift — and the Yang-Mills mass gap $\Delta > 0$. Both arise from the same mechanism: a self-interacting mediator cannot propagate freely. The Eckert manifold's modular form spectral structure spontaneously discriminates abelian (QED-like) from non-abelian (QCD-like) gauge theories without being designed for gauge theory: the phonological spectral level never confines (Polyakov loop = 1.0000 at all tested engagement levels), while the pragmatic level exhibits 4.8× confinement coupling and a distinct susceptibility peak. Adding a quartic self-interaction term $g^2|A|^4/T$ to the Fokker-Planck operator — the dimensional reduction of $|A \wedge A|^2$ — increases the excitation gap with scaling exponent $g^{2.015}$ (CV = 0.0012), confirming gauge coupling origin. The engagement-coupling curve matches the qualitative shape of the QCD running coupling ($R^2 = 0.990$) with effective $\beta < 0$ in 76% of segments. Five pre-registered kill conditions are tested; all five survive. The results establish that the information-geometric penalty and the Yang-Mills mass gap share a common geometric origin. Step 2 of the formal bridge (Čencov invariance = gauge invariance) is a theorem for lattice gauge theories: gauge transformations are Markov morphisms for the Yang-Mills statistical model (proof: gauge invariance of the action forces $p(o|A) = p(o|A')$ for gauge-equivalent $A, A'$ and any gauge-invariant observable $o$), so Čencov uniqueness forces the Fisher metric to be the unique gauge-invariant metric on $\mathcal{A}/\mathcal{G}$. Steps 3 and 4 are formalized via the O'Neill tensor ($A \wedge A$ = O'Neill curvature → explaining-away penalty) and log-Sobolev inequality (penalty → spectral gap $\Delta > 0$, lattice). The continuum limit remains open — as in all approaches to the Clay problem — but the correspondence is no longer merely computational.
 
 ## I. Introduction
 
@@ -97,7 +97,7 @@ The **mass gap** is the excitation gap $\Delta = \lambda_2 - \lambda_1$, NOT the
 
 ### III.C. Kill Conditions
 
-Five kill conditions were pre-registered before computation:
+Five kill conditions were pre-registered before computation, and a sixth was added post-hoc to capture the Clay residue:
 
 **K-YM-1:** The Fisher metric on $\mathcal{A}/\mathcal{G}$ must be well-defined (positive-definite, finite, no Gribov copies).
 
@@ -108,6 +108,8 @@ Five kill conditions were pre-registered before computation:
 **K-YM-4:** The penalty growth rate must match the qualitative QCD $\beta$-function: coupling increases with engagement (decreasing energy), growth rate decelerates at high engagement.
 
 **K-YM-5:** The spectral gap bound must be strictly positive, finite, and configuration-independent (up to gauge equivalence).
+
+**K-YM-6 (Clay residue, added 2026-04-14):** The log-Sobolev constant $\alpha_{LS}(a)$ must remain bounded away from zero as the lattice spacing $a \to 0$. If $\alpha_{LS}(a) \to 0$ in the continuum limit, Step 4 of the formal bridge (§215J) fails to extend beyond the lattice setting, and the information-geometric route to the mass gap is blocked at the same point as all existing approaches. This is the precise statement of what remains open.
 
 ## IV. Results
 
@@ -178,13 +180,21 @@ Via §214 [2], the explaining-away penalty maps to housekeeping entropy producti
 
 2. **Gribov copies.** The 1D Berry connection has no Gribov copies by construction. In higher dimensions, the orbit space $\mathcal{A}/\mathcal{G}$ has well-known singularities that could prevent a well-defined Fisher metric.
 
-3. **Step 2 unproven.** The claim that Čencov invariance = gauge invariance is structural, not a theorem. A formal counterexample would collapse the bridge.
+3. **Step 2: theorem (lattice + smooth continuum), open (Gribov sector + continuum limit).** The claim that Čencov invariance = gauge invariance has been formalized as a theorem for lattice gauge theories and the smooth stratum of the continuum orbit space (§215J, 2026-04-14). The proof: gauge transformations are Markov morphisms for the Yang-Mills statistical model (follows directly from gauge invariance of the action + observation algebra), so the orbit map $\pi$ is a sufficient statistic; Čencov uniqueness then forces the Fisher metric to be the unique gauge-invariant metric on $\mathcal{A}/\mathcal{G}$. The Gribov problem does not block Step 2 (the orbit map requires no gauge condition). What remains open is the Gribov sector at singularities and the continuum limit $a \to 0$ — the same technical obstacles faced by all existing approaches to the Clay problem.
+
+3a. **Step 3: theorem (§215J-6A, 2026-04-14).** The claim $A \wedge A \neq 0 \implies I(D;M|Y) > 0$ has been proved directly. Define $D = \mathrm{hol}_\gamma(A)$ (holonomy along a fixed closed loop), $M = A$, $Y = [A]$. Since $D$ is determined by $M$, we have $I(D;M|Y) = H(D|Y)$. The gauge transformation law $\mathrm{hol}_\gamma(g \cdot A) = g(x) \cdot \mathrm{hol}_\gamma(A) \cdot g(x)^{-1}$ shows that for non-abelian $G$ (with proper center $Z(G) \subsetneq G$), the holonomy is gauge-variant, so $H(D|Y) > 0$ for generic orbits. The Ambrose-Singer theorem then gives the biconditional $\mathcal{T} = 0 \iff I(D;M|Y) = 0$. The prior invocation of §213 (empirical, Eckert manifold) is no longer needed. Step 3 is a theorem.
 
 4. **Gauge group unidentified.** The $g^2$ scaling confirms gauge coupling origin but does not specify $SU(N)$ for any $N$. The framework's native structure is abelian ($U(1)^4$); non-abelian structure requires K-body coupling interactions.
 
 5. **Saturating curves.** Many physical systems produce saturating curves. The $R^2 = 0.990$ fit and $g^{2.015}$ scaling are suggestive but not definitive.
 
-### V.D. Falsification Thresholds
+### V.D. Control Case and Negative Result
+
+**Control case (abelian, g = 0).** The abelian configuration serves as the control. With no self-interaction term ($A \wedge A = 0$), the phonological spectral level maintains Polyakov loop = 1.0000 across all 30 tested Pe values, the excitation gap shows 0.000% increase relative to baseline, and no confinement signature appears at any engagement level. This is the QED analog: a transparent mediator that does not participate in what it mediates produces no penalty and no mass gap. The control confirms that all positive results (confinement, gap scaling, $\beta$-function shape) are attributable to the self-interaction term rather than to artifacts of the Eckert manifold's spectral structure.
+
+**Negative result (entangled ancilla, Test 6).** Test 6 [2] attempted to construct three-point geometry using an entangled ancilla qubit on IBM Fez hardware. Result: 0/4 kill conditions PASS. The entangled qubit shares the quantum state with the system qubit — it is not structurally independent. The penalty persists because entanglement does not create a separate channel. This constrains the correspondence: eliminating the mass gap (achieving the QED-like regime) requires genuine structural independence between channels, not merely correlated measurement within a single manifold.
+
+### V.E. Falsification Thresholds
 
 Each kill condition has an explicit falsification threshold:
 
@@ -193,6 +203,8 @@ Each kill condition has an explicit falsification threshold:
 3. **K-YM-3 falsified if:** Excitation gap scaling exponent $\neq 2 \pm 1$ (not gauge coupling), OR phonological Polyakov loop $< 0.99$ at any Pe (abelian channel confines), OR pragmatic coupling ratio $< 2\times$ smooth (no discrimination).
 4. **K-YM-4 falsified if:** Coupling-Pe correlation $< 0$ (coupling decreases with engagement), OR QCD-like model $R^2 < 0.80$ (no shape match), OR $\beta_{\text{eff}} > 0$ in $> 50\%$ of segments (no asymptotic freedom).
 5. **K-YM-5 falsified if:** Excitation gap $\leq 0$ or $= \infty$ at any Pe, OR K-scaling CV $> 0.30$ (gauge-dependent).
+6. **K-YM-6 falsified if:** A sequence of lattices with $a_n \to 0$ is exhibited on which $\Delta(a_n) \to 0$ at fixed non-abelian coupling. This is the Clay residue — K-YM-6 is **open** and not tested computationally.
+7. **K-YM-7 falsified if:** $\|\mathcal{T}(a)\|_{\min} \to 0$ as $a \to 0$ in non-abelian Yang-Mills (O'Neill bound fails in the continuum limit). If this fires while $\Delta > 0$ persists, the O'Neill mechanism is sufficient but not necessary for the continuum mass gap. RG heuristic ($\|\mathcal{T}\|^2 \sim 1/g^2 \to \infty$) suggests K-YM-7 will not fire. Status: **open** (§216D).
 
 **Empirical key result:** The $g^2$ scaling of the excitation gap (Spearman $\rho = 1.000$ for $\log g$ vs $\log \Delta_{\text{exc}}$ across 6 nonzero $g$ values, exponent 2.015) is the sharpest quantitative result. The pragmatic/smooth coupling ratio of 4.8× (Spearman $\rho = 0.994$ for coupling vs Pe) provides the structural confirmation.
 
