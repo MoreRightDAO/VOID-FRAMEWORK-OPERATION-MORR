@@ -1,0 +1,198 @@
+{
+  "test": "TREFOIL-4",
+  "experiments": {
+    "queens_flat_s": {
+      "description": "Queen's domain, flat, r=0.03",
+      "center": [
+        0.22,
+        0.22,
+        0.22
+      ],
+      "radius": 0.03,
+      "tilt": 0.0,
+      "pe_range": [
+        -91.64697990653922,
+        -87.7913231216123
+      ],
+      "holonomy_e_deg": 0.0016748882609408558,
+      "holonomy_m_deg": 0.03269661436946815,
+      "holonomy_lc_deg": 0.015071840572753695,
+      "holonomy_diff_deg": 0.031021726108527294,
+      "norm_ratio_e": 1.0005163532113575,
+      "norm_ratio_m": 0.9999766766419311,
+      "linking_number": 0.06855898018087313,
+      "linking_int": 0,
+      "em_angle_max_deg": 0.03424260956139629,
+      "em_oscillations": 1
+    },
+    "queens_flat_m": {
+      "description": "Queen's domain, flat, r=0.06",
+      "center": [
+        0.22,
+        0.22,
+        0.22
+      ],
+      "radius": 0.06,
+      "tilt": 0.0,
+      "pe_range": [
+        -93.63590685614098,
+        -85.92286741759816
+      ],
+      "holonomy_e_deg": 0.006422740366008894,
+      "holonomy_m_deg": 0.13368690544657727,
+      "holonomy_lc_deg": 0.05933951542912758,
+      "holonomy_diff_deg": 0.12726416508056837,
+      "norm_ratio_e": 1.002093974082658,
+      "norm_ratio_m": 0.9999011723662731,
+      "linking_number": 0.04626819734479415,
+      "linking_int": 0,
+      "em_angle_max_deg": 0.14004702538836936,
+      "em_oscillations": 1
+    },
+    "queens_tilt_s": {
+      "description": "Queen's domain, tilted, r=0.03",
+      "center": [
+        0.22,
+        0.22,
+        0.22
+      ],
+      "radius": 0.03,
+      "tilt": 0.5,
+      "pe_range": [
+        -91.07224323847316,
+        -87.12627701669953
+      ],
+      "holonomy_e_deg": 0.0016081422127735001,
+      "holonomy_m_deg": 0.03283624595672868,
+      "holonomy_lc_deg": 0.01514993048698354,
+      "holonomy_diff_deg": 0.03122810374395518,
+      "norm_ratio_e": 1.0005166823089269,
+      "norm_ratio_m": 0.9999773181736061,
+      "linking_number": 9.919262268926763,
+      "linking_int": 10,
+      "em_angle_max_deg": 0.03434601753148756,
+      "em_oscillations": 1
+    },
+    "queens_tilt_m": {
+      "description": "Queen's domain, tilted, r=0.06",
+      "center": [
+        0.22,
+        0.22,
+        0.22
+      ],
+      "radius": 0.06,
+      "tilt": 0.5,
+      "pe_range": [
+        -92.46579300228167,
+        -84.62493144861594
+      ],
+      "holonomy_e_deg": 0.0059638878431484245,
+      "holonomy_m_deg": 0.13523648959504334,
+      "holonomy_lc_deg": 0.0600481556711399,
+      "holonomy_diff_deg": 0.12927260175189492,
+      "norm_ratio_e": 1.0020965229214298,
+      "norm_ratio_m": 0.9999065629286915,
+      "linking_number": 5.513938704274102,
+      "linking_int": 6,
+      "em_angle_max_deg": 0.14169574797493822,
+      "em_oscillations": 1
+    },
+    "moderate_flat": {
+      "description": "Moderate Pe, flat, r=0.05",
+      "center": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "radius": 0.05,
+      "tilt": 0.0,
+      "pe_range": [
+        -88.82678326237703,
+        -82.67741732014093
+      ],
+      "holonomy_e_deg": 0.00405473266559589,
+      "holonomy_m_deg": 0.06624109288987007,
+      "holonomy_lc_deg": 0.02992495153565098,
+      "holonomy_diff_deg": 0.06218636022427418,
+      "norm_ratio_e": 1.0013116921495253,
+      "norm_ratio_m": 0.9999420901570737,
+      "linking_number": 0.048837650762558416,
+      "linking_int": 0,
+      "em_angle_max_deg": 0.0699236264653078,
+      "em_oscillations": 1
+    },
+    "moderate_tilt": {
+      "description": "Moderate Pe, tilted, r=0.05",
+      "center": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "radius": 0.05,
+      "tilt": 0.5,
+      "pe_range": [
+        -87.89936185020576,
+        -81.63397986338153
+      ],
+      "holonomy_e_deg": 0.0038129320758976777,
+      "holonomy_m_deg": 0.0668123320149588,
+      "holonomy_lc_deg": 0.030245884149102197,
+      "holonomy_diff_deg": 0.06299939993906112,
+      "norm_ratio_e": 1.0013130177956517,
+      "norm_ratio_m": 0.9999444525164501,
+      "linking_number": 8.95111570845011,
+      "linking_int": 9,
+      "em_angle_max_deg": 0.0704128896336294,
+      "em_oscillations": 1
+    },
+    "drift_flat": {
+      "description": "Drift regime, flat, r=0.05",
+      "center": [
+        0.35,
+        0.35,
+        0.3
+      ],
+      "radius": 0.05,
+      "tilt": 0.0,
+      "pe_range": [
+        -78.23682173619027,
+        -72.79516073635061
+      ],
+      "holonomy_e_deg": 0.002766947352887198,
+      "holonomy_m_deg": 0.018888836736271182,
+      "holonomy_lc_deg": 0.008334313569687554,
+      "holonomy_diff_deg": 0.016121889383383985,
+      "norm_ratio_e": 1.0010641740313846,
+      "norm_ratio_m": 0.9999625443413213,
+      "linking_number": -0.39356703801182114,
+      "linking_int": 0,
+      "em_angle_max_deg": 0.021132813093848457,
+      "em_oscillations": 3
+    },
+    "drift_tilt": {
+      "description": "Drift regime, tilted, r=0.05",
+      "center": [
+        0.35,
+        0.35,
+        0.3
+      ],
+      "radius": 0.05,
+      "tilt": 0.5,
+      "pe_range": [
+        -77.41624749909967,
+        -71.87161823704325
+      ],
+      "holonomy_e_deg": 0.002602799640893406,
+      "holonomy_m_deg": 0.019271227308658875,
+      "holonomy_lc_deg": 0.008644278312976462,
+      "holonomy_diff_deg": 0.01666842766776547,
+      "norm_ratio_e": 1.0010652978793002,
+      "norm_ratio_m": 0.9999639462860377,
+      "linking_number": 31.877183752757894,
+      "linking_int": 32,
+      "em_angle_max_deg": 0.021355994107116652,
+      "em_oscillations": 1
+    }
+  },
+  "verdict": "Pe coupling creates holonomy SPLIT between dual connections (\u0394=0.129\u00b0) | LINKED (max |lk|=31.88)"
+}

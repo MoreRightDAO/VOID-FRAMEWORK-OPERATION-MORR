@@ -1,0 +1,162 @@
+{
+  "experiment": "K-2T-3",
+  "description": "Path integral saddle vs FP stationary distribution",
+  "section": "\u00a7158D",
+  "date": "2026-04-05T00:22:11.834080+00:00",
+  "verdict": "SURVIVES",
+  "analytical_check": "True",
+  "t1_pass": true,
+  "t1_results": [
+    {
+      "label": "moderate drift, low T",
+      "b_net": 0.5,
+      "temperature": 0.05,
+      "theta_start": 0.3,
+      "theta_end": 0.7,
+      "max_deviation": 8.316370722794009e-06,
+      "rmse": 5.930529495047902e-06,
+      "pi_action": 0.01285795938848,
+      "optimizer_converged": false,
+      "passed": "True"
+    },
+    {
+      "label": "strong drift, low T",
+      "b_net": 1.0,
+      "temperature": 0.05,
+      "theta_start": 0.2,
+      "theta_end": 0.8,
+      "max_deviation": 1.2198407096264408e-05,
+      "rmse": 8.530788580540434e-06,
+      "pi_action": 0.15961302564476795,
+      "optimizer_converged": false,
+      "passed": "True"
+    },
+    {
+      "label": "weak drift, moderate T",
+      "b_net": 0.2,
+      "temperature": 0.1,
+      "theta_start": 0.4,
+      "theta_end": 0.6,
+      "max_deviation": 6.4635807606738815e-06,
+      "rmse": 4.7354444844180756e-06,
+      "pi_action": 9.078070667437702e-06,
+      "optimizer_converged": true,
+      "passed": "True"
+    },
+    {
+      "label": "B_A drift, low T (EXP-001 regime)",
+      "b_net": 0.867,
+      "temperature": 0.03,
+      "theta_start": 0.15,
+      "theta_end": 0.85,
+      "max_deviation": 1.0483845356290544e-05,
+      "rmse": 7.3560887685103235e-06,
+      "pi_action": 1.706218544073355e-07,
+      "optimizer_converged": true,
+      "passed": "True"
+    },
+    {
+      "label": "negative drift (constrained regime)",
+      "b_net": -0.3,
+      "temperature": 0.05,
+      "theta_start": 0.6,
+      "theta_end": 0.3,
+      "max_deviation": 4.071972406055613e-05,
+      "rmse": 2.6685848764700676e-05,
+      "pi_action": 0.0003964053992053339,
+      "optimizer_converged": false,
+      "passed": "True"
+    }
+  ],
+  "t2_pass": true,
+  "t2_results": [
+    {
+      "label": "moderate drift",
+      "b_net": 0.5,
+      "temperature": 0.05,
+      "kl_divergence": 0.002518847439316822,
+      "l1_distance": 0.02592381397012404,
+      "pi_peak": 0.95,
+      "fp_peak": 0.95,
+      "equilibrium": 0.7310585786300049,
+      "passed": "True"
+    },
+    {
+      "label": "B_A regime",
+      "b_net": 0.867,
+      "temperature": 0.03,
+      "kl_divergence": 1.578457284255472e-05,
+      "l1_distance": 0.0006142405256325625,
+      "pi_peak": 0.95,
+      "fp_peak": 0.95,
+      "equilibrium": 0.8499233493153665,
+      "passed": "True"
+    },
+    {
+      "label": "strong drift",
+      "b_net": 1.5,
+      "temperature": 0.05,
+      "kl_divergence": 0.00014245863941089252,
+      "l1_distance": 0.0006707635337816037,
+      "pi_peak": 0.95,
+      "fp_peak": 0.95,
+      "equilibrium": 0.9525741268224334,
+      "passed": "True"
+    },
+    {
+      "label": "weak drift, higher T",
+      "b_net": 0.2,
+      "temperature": 0.1,
+      "kl_divergence": 0.002698183012732105,
+      "l1_distance": 0.06230657296324984,
+      "pi_peak": 0.95,
+      "fp_peak": 0.95,
+      "equilibrium": 0.598687660112452,
+      "passed": "True"
+    }
+  ],
+  "t3_pass": true,
+  "t3_results": [
+    {
+      "label": "high opacity, high responsiveness",
+      "O": 0.7,
+      "R": 0.7,
+      "alpha": 0.5,
+      "b_net": 0.044199999999999795,
+      "T_eff": 0.015625,
+      "passed": true
+    },
+    {
+      "label": "moderate constraint",
+      "O": 0.3,
+      "R": 0.3,
+      "alpha": 0.3,
+      "b_net": -0.7038,
+      "T_eff": 0.009375,
+      "passed": true
+    },
+    {
+      "label": "high coupling",
+      "O": 0.5,
+      "R": 0.5,
+      "alpha": 0.8,
+      "b_net": -0.030600000000000183,
+      "T_eff": 0.025,
+      "passed": true
+    },
+    {
+      "label": "asymmetric O>>R",
+      "O": 0.8,
+      "R": 0.2,
+      "alpha": 0.5,
+      "b_net": -0.2550000000000001,
+      "T_eff": 0.015625,
+      "passed": true
+    }
+  ],
+  "constants": {
+    "B_ALPHA": 0.867,
+    "B_GAMMA": 2.244,
+    "K_DEFAULT": 16
+  }
+}

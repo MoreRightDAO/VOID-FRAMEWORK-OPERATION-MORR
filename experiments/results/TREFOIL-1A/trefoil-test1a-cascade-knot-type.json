@@ -1,0 +1,51 @@
+{
+  "test": "TREFOIL-1A",
+  "description": "Knot type of D3 cascade trajectory on Eckert manifold",
+  "kill_condition": "K-TKG-1: Alexander polynomial = 1 (unknot)",
+  "curves": {
+    "d3_cascade": {
+      "n_points": 600,
+      "pe_range": [
+        -95.271443562143,
+        -66.1047868663752
+      ],
+      "pe_mean": -79.73533122533057,
+      "crossing_number": 4,
+      "writhe_crossings": 2,
+      "writhe_gauss": -6.860747579939144,
+      "writhe_nearest_int": -7,
+      "best_projection": "O-R plane (alpha height)",
+      "candidates": [],
+      "verdict": "NON-TRIVIAL (crossing_number=4, writhe=-6.86) \u2014 K-TKG-1 SURVIVES",
+      "crossings_by_plane": {
+        "O-R plane (alpha height)": 4,
+        "O-alpha plane (R height)": 15,
+        "R-alpha plane (O height)": 7
+      }
+    },
+    "known_trefoil": {
+      "n_points": 600,
+      "pe_range": [
+        -120.30913956867829,
+        -52.54575989655081
+      ],
+      "pe_mean": -81.23394576396925,
+      "crossing_number": 3,
+      "writhe_crossings": 1,
+      "writhe_gauss": -3.292170774396346,
+      "writhe_nearest_int": -3,
+      "best_projection": "O-R plane (alpha height)",
+      "candidates": [
+        "trefoil (3_1)"
+      ],
+      "verdict": "TREFOIL (3_1) \u2014 K-TKG-1 SURVIVES",
+      "crossings_by_plane": {
+        "O-R plane (alpha height)": 3,
+        "O-alpha plane (R height)": 10,
+        "R-alpha plane (O height)": 7
+      }
+    }
+  },
+  "kill_condition_status": "K-TKG-1 SURVIVES \u2014 cascade is non-trivial",
+  "overall": "POSITIVE \u2014 cascade trajectory has non-trivial knot structure"
+}

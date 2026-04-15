@@ -1,0 +1,203 @@
+{
+  "test": "TREFOIL-2",
+  "description": "Information-geometric knot detector (fifth substrate)",
+  "substrate": "pure information geometry \u2014 abstract softmax channel",
+  "regimes": {
+    "gaussian_like": {
+      "s": 0.1,
+      "beta": 1.0,
+      "description": "Low s (Gaussian-like): monotone penalty",
+      "E_range": [
+        4.1408033801815236e-07,
+        0.10772926325583354
+      ],
+      "T_range": [
+        0.0033761403845642413,
+        0.00347993396205748
+      ],
+      "penalty_range": [
+        2.422058109630143e-10,
+        7.53716719947839e-05
+      ],
+      "penalty_monotone": true,
+      "penalty_peaks_then_declines": "False",
+      "n_crossings": 1,
+      "braid_word": [
+        "sigma_1"
+      ],
+      "crossing_alphas": [
+        0.8876381909547739
+      ],
+      "burau": {
+        "braid_word": [
+          "sigma_1"
+        ],
+        "n_positive": 1,
+        "n_negative": 0,
+        "net_crossings": 1,
+        "total_crossings": 1,
+        "burau_product_at_t": 1.0,
+        "t_value": -1
+      },
+      "verdict": "NON-TRIVIAL (1 crossings)",
+      "decomp_max_error": 0.0
+    },
+    "transition": {
+      "s": 0.5,
+      "beta": 1.0,
+      "description": "Moderate s (Transition): mixed behavior",
+      "E_range": [
+        1.0202150980465063e-05,
+        1.317188304386157
+      ],
+      "T_range": [
+        0.031201593068200584,
+        0.07893383148295952
+      ],
+      "penalty_range": [
+        1.2064129517597166e-07,
+        0.012666998182619515
+      ],
+      "penalty_monotone": false,
+      "penalty_peaks_then_declines": true,
+      "n_crossings": 1,
+      "braid_word": [
+        "sigma_1"
+      ],
+      "crossing_alphas": [
+        0.8374874371859297
+      ],
+      "burau": {
+        "braid_word": [
+          "sigma_1"
+        ],
+        "n_positive": 1,
+        "n_negative": 0,
+        "net_crossings": 1,
+        "total_crossings": 1,
+        "burau_product_at_t": 1.0,
+        "t_value": -1
+      },
+      "verdict": "NON-TRIVIAL (1 crossings)",
+      "decomp_max_error": 0.0
+    },
+    "saturated_llm": {
+      "s": 2.0,
+      "beta": 1.0,
+      "description": "High s (Saturated/LLM): peak-then-decline",
+      "E_range": [
+        0.0001318759582868978,
+        1.9856172398839858
+      ],
+      "T_range": [
+        0.100786386309478,
+        0.6367647578700604
+      ],
+      "penalty_range": [
+        1.2287448506675958e-05,
+        0.0934626940937382
+      ],
+      "penalty_monotone": false,
+      "penalty_peaks_then_declines": true,
+      "n_crossings": 1,
+      "braid_word": [
+        "sigma_1"
+      ],
+      "crossing_alphas": [
+        0.7371859296482413
+      ],
+      "burau": {
+        "braid_word": [
+          "sigma_1"
+        ],
+        "n_positive": 1,
+        "n_negative": 0,
+        "net_crossings": 1,
+        "total_crossings": 1,
+        "burau_product_at_t": 1.0,
+        "t_value": -1
+      },
+      "verdict": "NON-TRIVIAL (1 crossings)",
+      "decomp_max_error": 0.0
+    },
+    "very_saturated": {
+      "s": 5.0,
+      "beta": 1.0,
+      "description": "Very high s: deep saturation",
+      "E_range": [
+        0.0004070701331135851,
+        1.9999857405229204
+      ],
+      "T_range": [
+        0.13939976999695158,
+        1.1237670465487457
+      ],
+      "penalty_range": [
+        2.2217913153710356e-07,
+        0.15836497800204552
+      ],
+      "penalty_monotone": false,
+      "penalty_peaks_then_declines": true,
+      "n_crossings": 1,
+      "braid_word": [
+        "sigma_1"
+      ],
+      "crossing_alphas": [
+        0.687035175879397
+      ],
+      "burau": {
+        "braid_word": [
+          "sigma_1"
+        ],
+        "n_positive": 1,
+        "n_negative": 0,
+        "net_crossings": 1,
+        "total_crossings": 1,
+        "burau_product_at_t": 1.0,
+        "t_value": -1
+      },
+      "verdict": "NON-TRIVIAL (1 crossings)",
+      "decomp_max_error": 0.0
+    },
+    "high_beta": {
+      "s": 2.0,
+      "beta": 2.0,
+      "description": "High s, high beta: strong mechanism",
+      "E_range": [
+        8.088395920102798e-05,
+        1.879205713788088
+      ],
+      "T_range": [
+        0.32753938192565446,
+        1.033654991941252
+      ],
+      "penalty_range": [
+        1.847209372285441e-05,
+        0.1451190525585937
+      ],
+      "penalty_monotone": false,
+      "penalty_peaks_then_declines": true,
+      "n_crossings": 1,
+      "braid_word": [
+        "sigma_1"
+      ],
+      "crossing_alphas": [
+        1.389145728643216
+      ],
+      "burau": {
+        "braid_word": [
+          "sigma_1"
+        ],
+        "n_positive": 1,
+        "n_negative": 0,
+        "net_crossings": 1,
+        "total_crossings": 1,
+        "burau_product_at_t": 1.0,
+        "t_value": -1
+      },
+      "verdict": "NON-TRIVIAL (1 crossings)",
+      "decomp_max_error": 0.0
+    }
+  },
+  "overall": "NON-TRIVIAL \u2014 crossings found ([1, 1, 1, 1, 1]) but not specifically 3"
+}

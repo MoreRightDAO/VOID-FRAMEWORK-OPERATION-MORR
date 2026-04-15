@@ -1,0 +1,60 @@
+{
+  "test": "Test 8 \u2014 CHSH Bell Inequality",
+  "purpose": "Earn the 'quantum' label for substrate independence claims",
+  "backend": "ibm_fez",
+  "n_qubits": 2,
+  "shots_per_circuit": 4096,
+  "timestamp": "2026-04-10 00:46:04 UTC",
+  "chsh_entangled": {
+    "correlators": {
+      "A1B1": 0.6357421875,
+      "A1B2": 0.6162109375,
+      "A2B1": 0.6220703125,
+      "A2B2": -0.67626953125
+    },
+    "S": 2.55029296875,
+    "classical_limit": 2.0,
+    "tsirelson_bound": 2.8284271247461903,
+    "violation": 0.55029296875
+  },
+  "chsh_separable": {
+    "correlators": {
+      "A1B1": 0.65625,
+      "A1B2": 0.64599609375,
+      "A2B1": 0.0107421875,
+      "A2B2": -0.009765625
+    },
+    "S": 1.32275390625
+  },
+  "penalty_entangled": {
+    "I_D_Y": 0.11625057593467612,
+    "I_M_Y": 0.040757213596645685,
+    "I_DM_Y": 0.19115128888299582,
+    "penalty_I_D_M_given_Y": 0.03414349935167401,
+    "H_Y": 1.9910111611207864,
+    "H_Y_given_DM": 1.7993645622033054,
+    "fantasia_check": 1.9905158510863012,
+    "fantasia_H_Y": 1.9910111611207864,
+    "total_shots": 65536
+  },
+  "penalty_separable": {
+    "I_D_Y": 0.12391920889531832,
+    "I_M_Y": 0.03694162936881476,
+    "I_DM_Y": 0.2049434197640885,
+    "penalty_I_D_M_given_Y": 0.04408258149995542,
+    "H_Y": 1.0738383582096414,
+    "H_Y_given_DM": 0.8683996284110679,
+    "fantasia_check": 1.0733430481751565,
+    "fantasia_H_Y": 1.0738383582096414,
+    "total_shots": 65536
+  },
+  "verdicts": {
+    "KC-BELL-1": true,
+    "KC-BELL-2": true,
+    "KC-BELL-3": true,
+    "KC-BELL-4": false,
+    "KC-BELL-5": true
+  },
+  "n_pass": 4,
+  "n_total": 5
+}

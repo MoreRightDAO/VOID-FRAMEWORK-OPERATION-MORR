@@ -1,0 +1,139 @@
+{
+  "test": "TREFOIL-9",
+  "description": "Dual holonomy asymmetry prediction test on quantum hardware",
+  "prediction": "Holonomy ratio \u2248 20 at Queen's domain coordinates, K-independent",
+  "mode": "IBM_QUANTUM",
+  "backend": "ibm_fez",
+  "n_qubits": 5,
+  "depths": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "measurements": [
+    {
+      "depth": 1,
+      "info_triple": {
+        "I_DY": 0.9971213830238081,
+        "I_MY": 0.4164725988929714,
+        "I_DM_Y": 0.2805394002200243,
+        "H_Y": 3.9664395494651465,
+        "H_Y_DM": 2.2723061673283427,
+        "decomp_check": 0.0
+      },
+      "eckert_coords": {
+        "O": 0.8950008959674853,
+        "R": 0.2513895322464362,
+        "alpha": 0.19845825872842057
+      },
+      "predicted_ratio": 30.700822221303948,
+      "gammas": {
+        "gamma_O": -4.203286737083006,
+        "gamma_R": 1.321041087065826,
+        "gamma_alpha": 1.8956236489613418,
+        "gamma_sq_mean": 7.668719322118491
+      }
+    },
+    {
+      "depth": 2,
+      "info_triple": {
+        "I_DY": 0.8642806579580111,
+        "I_MY": 0.3322375700469462,
+        "I_DM_Y": 0.3757842726673166,
+        "H_Y": 3.997826175189573,
+        "H_Y_DM": 2.425523674517299,
+        "decomp_check": 0.0
+      },
+      "eckert_coords": {
+        "O": 0.9168954438017326,
+        "R": 0.2161876530104583,
+        "alpha": 0.3140648122532014
+      },
+      "predicted_ratio": 44.22796078976234,
+      "gammas": {
+        "gamma_O": -5.471198851516905,
+        "gamma_R": 1.6748977453801877,
+        "gamma_alpha": 0.8630962376999501,
+        "gamma_sq_mean": 11.16141148195045
+      }
+    },
+    {
+      "depth": 4,
+      "info_triple": {
+        "I_DY": 0.623878534743791,
+        "I_MY": 0.3438604901904432,
+        "I_DM_Y": 0.2938424527240122,
+        "H_Y": 4.184129034403275,
+        "H_Y_DM": 2.922547556745029,
+        "decomp_check": 0.0
+      },
+      "eckert_coords": {
+        "O": 0.9178179049061084,
+        "R": 0.14910595003501514,
+        "alpha": 0.30363811432903354
+      },
+      "predicted_ratio": 51.600761217421336,
+      "gammas": {
+        "gamma_O": -5.5392799258371825,
+        "gamma_R": 2.7657030144292802,
+        "gamma_alpha": 0.9286796214476757,
+        "gamma_sq_mean": 13.065060366699397
+      }
+    },
+    {
+      "depth": 8,
+      "info_triple": {
+        "I_DY": 0.5667526237122167,
+        "I_MY": 0.31099389690638013,
+        "I_DM_Y": 0.2942797762024725,
+        "H_Y": 4.239984257599114,
+        "H_Y_DM": 3.067957960778045,
+        "decomp_check": 0.0
+      },
+      "eckert_coords": {
+        "O": 0.9266521104768252,
+        "R": 0.13366856791896195,
+        "alpha": 0.3352673798826914
+      },
+      "predicted_ratio": 65.49506787272367,
+      "gammas": {
+        "gamma_O": -6.277251900944216,
+        "gamma_R": 3.1634488510585563,
+        "gamma_alpha": 0.739164863574886,
+        "gamma_sq_mean": 16.65255491890505
+      }
+    },
+    {
+      "depth": 16,
+      "info_triple": {
+        "I_DY": 0.5742976327254246,
+        "I_MY": 0.32840327349195064,
+        "I_DM_Y": 0.32732717464995176,
+        "H_Y": 4.3163191899724564,
+        "H_Y_DM": 3.0862911091051295,
+        "decomp_check": 0.0
+      },
+      "eckert_coords": {
+        "O": 0.9239158970784905,
+        "R": 0.13305263291454802,
+        "alpha": 0.3626086695595592
+      },
+      "predicted_ratio": 61.47041008884359,
+      "gammas": {
+        "gamma_O": -6.030500239438905,
+        "gamma_R": 3.1811750740466733,
+        "gamma_alpha": 0.5944495377038201,
+        "gamma_sq_mean": 15.613392747494947
+      }
+    }
+  ],
+  "summary": {
+    "mean_ratio": 50.69900443801098,
+    "std_ratio": 12.47045737748379,
+    "prediction_pass": "False",
+    "fantasia_decomp_error": 0.0,
+    "penalty_positive_all": true
+  }
+}

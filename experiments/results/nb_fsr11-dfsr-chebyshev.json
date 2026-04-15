@@ -1,0 +1,143 @@
+{
+  "experiment": "HP-FSR-CHEB",
+  "description": "Chebyshev-matched dFSR-C: distinguish two FSR instances drawn from the same keygen distribution",
+  "date": "2026-03-31",
+  "hypothesis": "If FSR instances from the same coefficient distribution are statistically indistinguishable, then dFSR-C (distinguish FSR from same-distribution FSR) reduces to FSR one-wayness. This gives a viable decisional assumption.",
+  "kill_conditions": {
+    "K-FSR-18": "dFSR-C accuracy > 0.55 at N=64 \u2192 per-instance fingerprint",
+    "K-FSR-19": "dFSR-C accuracy \u2264 0.55 at N=64 \u2192 indistinguishable (GOOD)"
+  },
+  "E1_fsr_vs_fsr": {
+    "accuracy_mean": 0.5287499999999999,
+    "accuracy_std": 0.02,
+    "accuracies": [
+      0.525,
+      0.5,
+      0.53125,
+      0.525,
+      0.5625
+    ],
+    "n_samples": 400,
+    "status": "INDISTINGUISHABLE"
+  },
+  "E2_sigma_perturbation": {
+    "1%": {
+      "delta_pct": 0.01,
+      "sigma_base": 8.0,
+      "sigma_alt": 8.08,
+      "accuracy": 0.45
+    },
+    "5%": {
+      "delta_pct": 0.05,
+      "sigma_base": 8.0,
+      "sigma_alt": 8.4,
+      "accuracy": 0.525
+    },
+    "10%": {
+      "delta_pct": 0.1,
+      "sigma_base": 8.0,
+      "sigma_alt": 8.8,
+      "accuracy": 0.51875
+    },
+    "20%": {
+      "delta_pct": 0.2,
+      "sigma_base": 8.0,
+      "sigma_alt": 9.6,
+      "accuracy": 0.63125
+    },
+    "50%": {
+      "delta_pct": 0.5,
+      "sigma_base": 8.0,
+      "sigma_alt": 12.0,
+      "accuracy": 0.875
+    },
+    "100%": {
+      "delta_pct": 1.0,
+      "sigma_base": 8.0,
+      "sigma_alt": 16.0,
+      "accuracy": 0.94375
+    }
+  },
+  "E3_temp_perturbation": {
+    "1%": {
+      "delta_pct": 0.01,
+      "T_base": 0.015625,
+      "T_alt": 0.01578125,
+      "accuracy": 0.50625
+    },
+    "5%": {
+      "delta_pct": 0.05,
+      "T_base": 0.015625,
+      "T_alt": 0.01640625,
+      "accuracy": 0.44375
+    },
+    "10%": {
+      "delta_pct": 0.1,
+      "T_base": 0.015625,
+      "T_alt": 0.0171875,
+      "accuracy": 0.48125
+    },
+    "20%": {
+      "delta_pct": 0.2,
+      "T_base": 0.015625,
+      "T_alt": 0.01875,
+      "accuracy": 0.59375
+    },
+    "50%": {
+      "delta_pct": 0.5,
+      "T_base": 0.015625,
+      "T_alt": 0.0234375,
+      "accuracy": 0.6625
+    },
+    "100%": {
+      "delta_pct": 1.0,
+      "T_base": 0.015625,
+      "T_alt": 0.03125,
+      "accuracy": 0.68125
+    }
+  },
+  "E4_fingerprint": {
+    "pairwise_accuracy": 1.0,
+    "multiclass_mean_accuracy": 0.925,
+    "multiclass_accuracies": [
+      0.875,
+      1.0,
+      0.875,
+      1.0,
+      0.875
+    ],
+    "n_keys": 20,
+    "samples_per_key": 20,
+    "status": "FINGERPRINT"
+  },
+  "E5_scaling": {
+    "16": {
+      "accuracy_same_dist": 0.49166666666666664,
+      "accuracy_10pct_sigma": 0.5166666666666667,
+      "time_s": 2.1
+    },
+    "24": {
+      "accuracy_same_dist": 0.5333333333333333,
+      "accuracy_10pct_sigma": 0.575,
+      "time_s": 3.5
+    },
+    "32": {
+      "accuracy_same_dist": 0.5166666666666667,
+      "accuracy_10pct_sigma": 0.5416666666666666,
+      "time_s": 5.8
+    },
+    "48": {
+      "accuracy_same_dist": 0.5083333333333333,
+      "accuracy_10pct_sigma": 0.5666666666666667,
+      "time_s": 12.1
+    },
+    "64": {
+      "accuracy_same_dist": 0.5916666666666667,
+      "accuracy_10pct_sigma": 0.5583333333333333,
+      "time_s": 21.1
+    }
+  },
+  "K-FSR-18_status": "SURVIVE",
+  "K-FSR-19_status": "FIRE",
+  "verdict": "INDISTINGUISHABLE \u2014 dFSR-C reduces to key recovery. Viable decisional assumption!"
+}

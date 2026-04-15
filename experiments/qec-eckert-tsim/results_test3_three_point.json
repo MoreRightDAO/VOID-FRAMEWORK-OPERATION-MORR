@@ -1,0 +1,73 @@
+{
+  "test": "Three-Point Geometry (Direct vs Distilled T-gates)",
+  "prediction": "Distilled (three-point) error drops faster with distance",
+  "framework_section": "Fantasia Bound \u00a72B\u2082, three-point geometry",
+  "connection": "Magic state factory = independent constraint reference",
+  "params": {
+    "n_t_gates": 8,
+    "error_rate": 0.01,
+    "shots": 100000
+  },
+  "results": [
+    {
+      "label": "d~3",
+      "n_data": 5,
+      "n_ancilla": 3,
+      "direct_error": 0.07183,
+      "distilled_error": 0.0645,
+      "ratio": 1.1136434108527131,
+      "penalty_gap": 0.007330000000000003,
+      "dry_run": false,
+      "verdict": "CHALLENGED",
+      "ratio_slope": -0.3254531403748771
+    },
+    {
+      "label": "d~4",
+      "n_data": 7,
+      "n_ancilla": 4,
+      "direct_error": 0.01659,
+      "distilled_error": 0.01615,
+      "ratio": 1.0272445820433436,
+      "penalty_gap": 0.0004399999999999994,
+      "dry_run": false,
+      "verdict": "CHALLENGED",
+      "ratio_slope": -0.3254531403748771
+    },
+    {
+      "label": "d~5",
+      "n_data": 9,
+      "n_ancilla": 5,
+      "direct_error": 0.00522,
+      "distilled_error": 0.00552,
+      "ratio": 0.9456521739130435,
+      "penalty_gap": -0.0002999999999999999,
+      "dry_run": false,
+      "verdict": "CHALLENGED",
+      "ratio_slope": -0.3254531403748771
+    },
+    {
+      "label": "d~6",
+      "n_data": 11,
+      "n_ancilla": 6,
+      "direct_error": 0.0,
+      "distilled_error": 0.0,
+      "ratio": 0.0,
+      "penalty_gap": 0.0,
+      "dry_run": false,
+      "verdict": "CHALLENGED",
+      "ratio_slope": -0.3254531403748771
+    },
+    {
+      "label": "d~7",
+      "n_data": 13,
+      "n_ancilla": 7,
+      "direct_error": 0.0,
+      "distilled_error": 0.0,
+      "ratio": 0.0,
+      "penalty_gap": 0.0,
+      "dry_run": false,
+      "verdict": "CHALLENGED",
+      "ratio_slope": -0.3254531403748771
+    }
+  ]
+}

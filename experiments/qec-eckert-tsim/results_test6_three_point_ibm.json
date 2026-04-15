@@ -1,0 +1,104 @@
+{
+  "test": "Three-Point Geometry Penalty Reduction \u2014 IBM Quantum Hardware",
+  "prediction": "Three-point architecture reduces I(D;M|Y) vs two-point",
+  "backend": "ibm_fez",
+  "params": {
+    "n_data_qubits": 4,
+    "n_preps": 4,
+    "n_mechs": 4,
+    "shots": 1000,
+    "depths": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "results": [
+    {
+      "depth": 1,
+      "two_point": {
+        "I_D_Y": 0.8414535836266005,
+        "I_M_Y": 0.31881215942069857,
+        "I_DM_Y": 1.4758897765177172,
+        "penalty": 0.3156240334704182,
+        "H_Y": 3.3781537017957186,
+        "total_shots": 16000
+      },
+      "three_point": {
+        "I_D_Y": 0.899571638282318,
+        "I_M_Y": 0.3392892711904169,
+        "I_DM_Y": 1.5721593998234367,
+        "penalty": 0.33329849035070175,
+        "H_Y": 4.272567773315228,
+        "total_shots": 16000
+      },
+      "penalty_reduction_pct": -5.599845070714524,
+      "three_point_reduces": false
+    },
+    {
+      "depth": 2,
+      "two_point": {
+        "I_D_Y": 0.6133620146151774,
+        "I_M_Y": 0.20970733992902518,
+        "I_DM_Y": 1.2563039366589566,
+        "penalty": 0.433234582114754,
+        "H_Y": 3.339848548573901,
+        "total_shots": 16000
+      },
+      "three_point": {
+        "I_D_Y": 0.683786678573264,
+        "I_M_Y": 0.25007665337681717,
+        "I_DM_Y": 1.382666992799117,
+        "penalty": 0.4488036608490359,
+        "H_Y": 4.223752390057702,
+        "total_shots": 16000
+      },
+      "penalty_reduction_pct": -3.593683278533378,
+      "three_point_reduces": false
+    },
+    {
+      "depth": 4,
+      "two_point": {
+        "I_D_Y": 0.5417439583266228,
+        "I_M_Y": 0.26250913834734396,
+        "I_DM_Y": 1.1217763418480435,
+        "penalty": 0.31752324517407676,
+        "H_Y": 3.4662080624658707,
+        "total_shots": 16000
+      },
+      "three_point": {
+        "I_D_Y": 0.6045807765700669,
+        "I_M_Y": 0.307790562279173,
+        "I_DM_Y": 1.2547011914338135,
+        "penalty": 0.3423298525845736,
+        "H_Y": 4.3497697314303245,
+        "total_shots": 16000
+      },
+      "penalty_reduction_pct": -7.812532716115646,
+      "three_point_reduces": false
+    },
+    {
+      "depth": 8,
+      "two_point": {
+        "I_D_Y": 0.5042453979051258,
+        "I_M_Y": 0.26696356277775535,
+        "I_DM_Y": 1.00674728342209,
+        "penalty": 0.23553832273920894,
+        "H_Y": 3.5023136433291144,
+        "total_shots": 16000
+      },
+      "three_point": {
+        "I_D_Y": 0.5299164786490607,
+        "I_M_Y": 0.2789898089877439,
+        "I_DM_Y": 1.0834632097852328,
+        "penalty": 0.27455692214842825,
+        "H_Y": 4.460330083207991,
+        "total_shots": 16000
+      },
+      "penalty_reduction_pct": -16.565711666555938,
+      "three_point_reduces": false
+    }
+  ],
+  "timestamp": "2026-04-05T00:32:57Z"
+}

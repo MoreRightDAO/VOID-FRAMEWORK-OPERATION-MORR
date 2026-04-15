@@ -92,7 +92,7 @@ accurately and helpfully.
 ```
 
 **Arm 1: Nephesh (Current GROUNDING.md)**
-The existing GROUNDING.md verbatim. See [`grounding/GROUNDING.md`](../../grounding/GROUNDING.md).
+The existing GROUNDING.md verbatim. See `/private/grounding-templates/GROUNDING.md`.
 
 **Arm 2: Platonic Dualist**
 ```

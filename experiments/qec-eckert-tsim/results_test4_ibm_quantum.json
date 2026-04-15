@@ -1,0 +1,98 @@
+{
+  "test": "Explaining-Away Penalty \u2014 IBM Quantum Hardware Replication",
+  "prediction": "I(D;M|Y) > 0 (penalty exists on real quantum hardware)",
+  "framework_section": "\u00a72B\u2082 (Structure Theorem), Theorem 1.5 (Exact Decomposition)",
+  "substrate": "Superconducting transmon qubits (IBM Heron processor)",
+  "backend": "ibm_fez",
+  "params": {
+    "n_qubits": 5,
+    "n_prep_states": 4,
+    "n_mechanisms": 4,
+    "shots_per_combo": 1000,
+    "engagement_levels": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ]
+  },
+  "results": [
+    {
+      "depth": 1,
+      "backend": "ibm_fez",
+      "I_D_Y": 0.9858586100765795,
+      "I_M_Y": 0.4338515415332753,
+      "I_DM_Y": 1.6898739913209588,
+      "penalty_I_D_M_given_Y": 0.270163839711104,
+      "H_Y": 3.9555499607629865,
+      "H_Y_given_DM": 2.265675969442028,
+      "fantasia_check": 3.9555499607629865,
+      "fantasia_H_Y": 3.9555499607629865,
+      "total_shots": 16000,
+      "decomposition_error": 0.0,
+      "elapsed_s": 28.620964527130127
+    },
+    {
+      "depth": 2,
+      "backend": "ibm_fez",
+      "I_D_Y": 0.8562766925946773,
+      "I_M_Y": 0.32226624874362253,
+      "I_DM_Y": 1.5438827433656628,
+      "penalty_I_D_M_given_Y": 0.36533980202736294,
+      "H_Y": 3.9837689481836303,
+      "H_Y_given_DM": 2.4398862048179675,
+      "fantasia_check": 3.9837689481836303,
+      "fantasia_H_Y": 3.9837689481836303,
+      "total_shots": 16000,
+      "decomposition_error": 0.0,
+      "elapsed_s": 35.821227073669434
+    },
+    {
+      "depth": 4,
+      "backend": "ibm_fez",
+      "I_D_Y": 0.615457094688732,
+      "I_M_Y": 0.34572203069262,
+      "I_DM_Y": 1.2445705810892542,
+      "penalty_I_D_M_given_Y": 0.28339145570790225,
+      "H_Y": 4.17680499842558,
+      "H_Y_given_DM": 2.9322344173363257,
+      "fantasia_check": 4.17680499842558,
+      "fantasia_H_Y": 4.17680499842558,
+      "total_shots": 16000,
+      "decomposition_error": 0.0,
+      "elapsed_s": 35.94727611541748
+    },
+    {
+      "depth": 8,
+      "backend": "ibm_fez",
+      "I_D_Y": 0.6000861248170714,
+      "I_M_Y": 0.31548735867797056,
+      "I_DM_Y": 1.1644356886339249,
+      "penalty_I_D_M_given_Y": 0.24886220513888296,
+      "H_Y": 4.249589429906528,
+      "H_Y_given_DM": 3.0851537412726033,
+      "fantasia_check": 4.249589429906528,
+      "fantasia_H_Y": 4.249589429906528,
+      "total_shots": 16000,
+      "decomposition_error": 0.0,
+      "elapsed_s": 30.744482278823853
+    },
+    {
+      "depth": 16,
+      "backend": "ibm_fez",
+      "I_D_Y": 0.5673916124473671,
+      "I_M_Y": 0.3116615654221962,
+      "I_DM_Y": 1.1561836389811895,
+      "penalty_I_D_M_given_Y": 0.27713046111162615,
+      "H_Y": 4.309145924859681,
+      "H_Y_given_DM": 3.152962285878492,
+      "fantasia_check": 4.309145924859681,
+      "fantasia_H_Y": 4.309145924859681,
+      "total_shots": 16000,
+      "decomposition_error": 0.0,
+      "elapsed_s": 11.66884970664978
+    }
+  ],
+  "timestamp": "2026-04-05T00:20:39Z"
+}

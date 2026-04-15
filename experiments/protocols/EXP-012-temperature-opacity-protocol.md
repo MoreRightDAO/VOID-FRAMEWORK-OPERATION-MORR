@@ -35,7 +35,7 @@ T=0.3 L3/10k ≈ 215).
 **The experiment is reframed below** as a test of output stochasticity, not opacity.
 The data is still valid; the interpretation changes.
 
-See the framework decision log (2026-02-11) for full reasoning.
+See `private/notes/decisions.md` entry 2026-02-11 for full reasoning.
 
 ---
 

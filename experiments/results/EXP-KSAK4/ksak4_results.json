@@ -1,0 +1,179 @@
+{
+  "test": "K-SAK-4",
+  "date": "2026-04-05T21:15:42.790798",
+  "verdict": "SURVIVES (WEAK)",
+  "reason": "Raw 3-point correlators non-zero but dominated by mean displacement. Connected cumulants consistent with zero (z~1.4). Skewness confirms non-Gaussian distribution. Non-Abelian generation possible through mean-field asymmetry, but no direct Sp(2,R) structure constant match.",
+  "n_platforms": 1344,
+  "langevin_steps": 26,
+  "langevin_gamma": 50.0,
+  "langevin_temperature": 0.01,
+  "final_wasserstein": 0.0013209294443443742,
+  "wasserstein_history": [
+    0.30987349594658475,
+    0.20965141807753981,
+    0.29201745278985225,
+    0.1837760155740733,
+    0.16711228591023755,
+    0.832308675470566,
+    1.528677982206531,
+    0.7222423305112274,
+    3.148007007872177,
+    5.539235377464564,
+    6.801336043116568,
+    1.9866336260253583,
+    2.1488888886125577,
+    1.2853373212988408,
+    0.44893756912482913,
+    0.6694971223427849,
+    0.6209103680151835,
+    0.32793419394066364,
+    0.13640528071764635,
+    0.037393316527655755,
+    0.10749113165224822,
+    0.10561692315016073,
+    0.0884138832063927,
+    0.08638226644384989,
+    0.018400347541899134,
+    0.0013209294443443742
+  ],
+  "momentum_mean": [
+    -49.919332580441946,
+    -49.91898774271566,
+    49.91201449513996
+  ],
+  "momentum_std": [
+    2.097179378974829,
+    2.105349851098058,
+    2.287624935378592
+  ],
+  "momentum_cov_eigenvalues": [
+    14.074278788538232,
+    8.039298215538388e-05,
+    1.0484476242918206e-13
+  ],
+  "skewness": {
+    "O": 26.144963767935614,
+    "R": 26.116099117761156,
+    "\u03b1": -26.151346254054555
+  },
+  "n_raw_significant": 10,
+  "n_connected_significant": 0,
+  "correlators": {
+    "pO_pO_pO": {
+      "raw_value": -124813.47557793469,
+      "raw_z": 929.2173387581597,
+      "raw_significant": true,
+      "connected_value": 241.15417250440805,
+      "connected_z": 1.377849945074395,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "pO_pO_pR": {
+      "raw_value": -124813.4753640043,
+      "raw_z": 929.2162974202593,
+      "raw_significant": true,
+      "connected_value": 241.99973673722707,
+      "connected_z": 1.3788476537526875,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "pO_pO_p\u03b1": {
+      "raw_value": 124813.16189602792,
+      "raw_z": 927.7384895452741,
+      "raw_significant": true,
+      "connected_value": -263.0746262251341,
+      "connected_z": 1.3776336246175684,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "pO_pR_pR": {
+      "raw_value": -124813.4752155622,
+      "raw_z": 929.215600748821,
+      "raw_significant": true,
+      "connected_value": 242.85311038195505,
+      "connected_z": 1.3798266043161107,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "pO_pR_p\u03b1": {
+      "raw_value": 124813.16221898074,
+      "raw_z": 927.740313209219,
+      "raw_significant": true,
+      "connected_value": -263.99592301476514,
+      "connected_z": 1.3786353136508651,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "pO_p\u03b1_p\u03b1": {
+      "raw_value": -124812.66302855266,
+      "raw_z": 925.3946751866771,
+      "raw_significant": true,
+      "connected_value": 286.9878697870299,
+      "connected_z": 1.3774164596923162,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "pR_pR_pR": {
+      "raw_value": -124813.47505981082,
+      "raw_z": 929.2148656377535,
+      "raw_significant": true,
+      "connected_value": 243.7143660725851,
+      "connected_z": 1.3807864788790858,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "pR_pR_p\u03b1": {
+      "raw_value": 124813.16190588215,
+      "raw_z": 927.7388050416811,
+      "raw_significant": true,
+      "connected_value": -264.9257285440108,
+      "connected_z": 1.37961831309358,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "pR_p\u03b1_p\u03b1": {
+      "raw_value": -124812.65707048171,
+      "raw_z": 925.3638972110522,
+      "raw_significant": true,
+      "connected_value": 287.9916821111692,
+      "connected_z": 1.3784221143120599,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    },
+    "p\u03b1_p\u03b1_p\u03b1": {
+      "raw_value": 124811.79699038414,
+      "raw_z": 921.3103597290856,
+      "raw_significant": true,
+      "connected_value": -313.07509155300795,
+      "connected_z": 1.3771984534797803,
+      "connected_significant": false,
+      "sp2r_prediction": 0.0
+    }
+  },
+  "sp2r_comparison": {
+    "n_predicted_nonzero": 0,
+    "n_predicted_zero": 10,
+    "n_observed_significant": 0,
+    "n_match_nonzero": 0,
+    "n_match_zero": 10,
+    "sign_matches": 0,
+    "sign_total": 0
+  },
+  "antisymmetric_mixed": {
+    "A^O_{OR}": -8.71292435480342e-05,
+    "A^O_{O\u03b1}": 0.2305178291634915,
+    "A^O_{R\u03b1}": 0.23043069991994347,
+    "A^R_{OR}": -8.701807092847957e-05,
+    "A^R_{O\u03b1}": 0.23052584602994486,
+    "A^R_{R\u03b1}": 0.23043882795901682,
+    "A^\u03b1_{OR}": 9.514611000138729e-05,
+    "A^\u03b1_{O\u03b1}": -0.2516577248273473,
+    "A^\u03b1_{R\u03b1}": -0.2515625787173459
+  },
+  "n_antisymmetric_significant": 0,
+  "structure_constant_ratios": [
+    -0.11521534995997174,
+    -0.11526292301497243,
+    -4.757305500069364e-05
+  ]
+}

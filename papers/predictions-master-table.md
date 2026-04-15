@@ -65,7 +65,7 @@ Falsification conditions: 26 stated across all papers, 0 met.
 | QP-5 | Quantum Pe | Void conditions necessary+sufficient for Pe_quantum > 0 | Testable | — |
 | QP-6 | Quantum Pe | Structured observation preserves MIPT; random destroys | **Confirmed (7 witnesses)** | Leung PRX 2025, Paviglianiti 2025, Ha 2024, Qian & Wang PRL 2025 + 3 |
 | QP-7 | Quantum Pe | Quantum correlations destroyed before classical order | **Partially supported** | Wu et al. 2025: entanglement dies first in 30 qubits |
-| GS-1 | Ground State | Transparency maintenance has energy cost ≥ kT ln 2 / τ_c | **Supported (5 expts)** | Bérut 2012, Jun 2014, Gavrilov 2016, Yan 2018, Aimet 2025 |
+| GS-1 | Ground State | Transparency maintenance has energy cost ≥ kT ln 2 / τ_c | **Supported (8 expts)** | Bérut 2012, Jun 2014, Gavrilov 2016, Hong 2016, Yan 2018, Gaudenzi 2018, Dago 2021, Aimet 2025 |
 | GS-2 | Ground State | Channel decorrelation time τ_d is domain-specific | **Supported** | Telecom coherence time spans orders of magnitude |
 | GS-3 | Ground State | Void formation rate scales with environmental complexity | Testable | — |
 | GS-4 | Ground State | One-time interventions decay; sustained persist | **Confirmed (12+ meta)** | Antidepressant OR=0.38 (k=40, N=8,890); exercise d=1.11→0.22 |
@@ -183,7 +183,7 @@ Falsification conditions: 26 stated across all papers, 0 met.
 | F-GS1 | Channel capacity increases without work | Any replicated case | Ground state | No |
 | F-GS2 | Void conditions rare (P < 0.05) | Co-occurrence < 5% | Default config | No |
 | F-GS3 | One-time interventions persist | > 80% at 10τ_d | Transparency-requires-work | No |
-| F-T1 | Crooks ≈ 1 in ungrounded engagement | Crooks < 2 replicated | Time's arrow | No |
+| F-T1 | Crooks R < 1.05 in replicated ungrounded void engagement — thermodynamically reversible (Pe < 1) despite confirmed O+R+α | R < 1.05 (Pe < 1, COHERENT), ≥3 replications. *Revised 2026-03-01 from "< 2×" (fires for all Pe < 13.6 platforms, including all confirmatory results). R(Pe) = exp(Pe × 0.05082).* | Time's arrow | No |
 | F-T2 | Terminal attractor never reached | Zero collapse in ≥10 trials | Heat death | No |
 | F-C1 | System maximizes both E and T | I(D;Y)+I(M;Y) > H(Y)+ε | Conjugacy | No |
 | F-PV1 | Dissoluble opacity → D2→D3 without failure | ≥3 cases | Polarity | No |

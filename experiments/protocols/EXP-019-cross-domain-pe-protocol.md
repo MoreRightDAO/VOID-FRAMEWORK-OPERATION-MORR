@@ -253,8 +253,8 @@ Run `test7-thermo-analysis.py --dir ops/lab/results/EXP-019/transcripts/` per co
 ### Step 6: Interpret
 - Which hypothesis (H1/H2/H3) does the data support?
 - What does this mean for the TOE universality claim?
-- Record new Pe values in the framework's numerical tracker
-- Update TOE synthesis status (Paper 5)
+- Update `private/notes/numerical-connections.md` with new Pe values
+- Update `private/notes/toe-master-plan.md` status
 
 ---
 

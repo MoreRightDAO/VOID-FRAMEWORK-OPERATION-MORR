@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+  <style>
+    text { font-family: 'Courier New', monospace; }
+    .title { font-size: 14px; font-weight: bold; fill: #1a1a2e; }
+    .label { font-size: 10px; fill: #333; }
+    .axis { font-size: 9px; fill: #666; }
+    .zone { font-size: 11px; font-weight: bold; }
+  </style>
+
+  <rect width="700" height="450" fill="#fafafa" rx="8"/>
+
+  <text x="350" y="25" text-anchor="middle" class="title">Alternation Template: Runs vs H% Across Conditions</text>
+  <text x="350" y="42" text-anchor="middle" class="axis">Expected for true random n=50: runs ~26, streak ~5-6</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="60" x2="80" y2="380" stroke="#999" stroke-width="1"/>
+  <line x1="80" y1="380" x2="660" y2="380" stroke="#999" stroke-width="1"/>
+
+  <!-- Y axis label -->
+  <text x="25" y="220" text-anchor="middle" class="label" transform="rotate(-90,25,220)">Mean Runs per Trial</text>
+  <!-- X axis label -->
+  <text x="370" y="410" text-anchor="middle" class="label">Observed H%</text>
+
+  <!-- Y axis ticks: 0-50 runs. Scale: y = 380 - (runs/55)*320 -->
+  <text x="75" y="384" text-anchor="end" class="axis">0</text>
+  <text x="75" y="326" text-anchor="end" class="axis">10</text>
+  <text x="75" y="268" text-anchor="end" class="axis">20</text>
+  <text x="75" y="209" text-anchor="end" class="axis">30</text>
+  <text x="75" y="151" text-anchor="end" class="axis">40</text>
+  <text x="75" y="93" text-anchor="end" class="axis">50</text>
+
+  <!-- X axis ticks: 25%-105%. Scale: x = 80 + (hpct-25)/80 * 580 -->
+  <text x="80" y="396" text-anchor="middle" class="axis">25%</text>
+  <text x="225" y="396" text-anchor="middle" class="axis">45%</text>
+  <text x="262" y="396" text-anchor="middle" class="axis">50%</text>
+  <text x="370" y="396" text-anchor="middle" class="axis">65%</text>
+  <text x="515" y="396" text-anchor="middle" class="axis">85%</text>
+  <text x="660" y="396" text-anchor="middle" class="axis">105%</text>
+
+  <!-- True random reference -->
+  <line x1="80" y1="229" x2="660" y2="229" stroke="#27ae60" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <text x="665" y="232" class="axis" fill="#27ae60">~26 (true random)</text>
+
+  <!-- 50% reference -->
+  <line x1="262" y1="60" x2="262" y2="380" stroke="#e74c3c" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
+
+  <!-- Zone backgrounds -->
+  <!-- Amplified zone: runs > 40 -->
+  <rect x="80" y="60" width="580" height="33" fill="#f39c12" opacity="0.08"/>
+  <text x="85" y="78" class="zone" fill="#f39c12" opacity="0.5">AMPLIFIED ALTERNATION</text>
+
+  <!-- Preserved zone: runs 35-42 -->
+  <rect x="80" y="93" width="580" height="64" fill="#3498db" opacity="0.06"/>
+  <text x="85" y="120" class="zone" fill="#3498db" opacity="0.5">PRESERVED TEMPLATE</text>
+
+  <!-- Broken zone: runs < 35 -->
+  <rect x="80" y="157" width="580" height="80" fill="#8e44ad" opacity="0.06"/>
+  <text x="85" y="185" class="zone" fill="#8e44ad" opacity="0.5">BROKEN TEMPLATE</text>
+
+  <!-- Data points -->
+  <!-- fewshot_tails: 50.4%, 48.5 runs → x=264, y=380-48.5/55*320=380-282=98 -->
+  <circle cx="264" cy="98" r="6" fill="#f39c12" stroke="#fff" stroke-width="1.5"/>
+  <text x="274" y="95" class="label">fewshot_tails</text>
+  <text x="274" y="107" class="axis">(50.4%, 48.5 runs)</text>
+
+  <!-- prime_heads v1: 50.2%, 44.5 runs → x=262, y=380-44.5/55*320=380-259=121 -->
+  <circle cx="262" cy="121" r="6" fill="#f39c12" stroke="#fff" stroke-width="1.5"/>
+  <text x="272" y="118" class="label">prime_heads_v1</text>
+  <text x="272" y="130" class="axis">(50.2%, 44.5 runs)</text>
+
+  <!-- fewshot_heads: 48.3%, 41.1 → x=249, y=380-41.1/55*320=380-239=141 -->
+  <circle cx="249" cy="141" r="5" fill="#f39c12" stroke="#fff" stroke-width="1.5"/>
+  <text x="200" y="148" class="label" text-anchor="end">fewshot_heads</text>
+
+  <!-- control: 50.2%, 38.6 → x=262, y=380-38.6/55*320=380-225=155 -->
+  <circle cx="262" cy="155" r="7" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+  <text x="272" y="152" class="label" font-weight="bold">CONTROL</text>
+  <text x="272" y="164" class="axis">(50.2%, 38.6 runs)</text>
+
+  <!-- prime_heads_v2: 58.8%, 39.8 → x=325, y=380-39.8/55*320=380-231=149 -->
+  <circle cx="325" cy="149" r="6" fill="#2980b9" stroke="#fff" stroke-width="1.5"/>
+  <text x="335" y="146" class="label">prime_heads_v2</text>
+
+  <!-- reframe_ht: 55.6%, 40.0 → x=302, y=380-40.0/55*320=380-233=147 -->
+  <circle cx="302" cy="147" r="5" fill="#2980b9" stroke="#fff" stroke-width="1.5"/>
+
+  <!-- prime_tails: 35.4%, 36.4 → x=155, y=380-36.4/55*320=380-212=168 -->
+  <circle cx="155" cy="168" r="6" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+  <text x="112" y="175" class="label" text-anchor="end">prime_tails</text>
+
+  <!-- explicit_65t: 35.0%, 35.6 → x=152, y=380-35.6/55*320=380-207=173 -->
+  <circle cx="152" cy="173" r="5" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+
+  <!-- explicit_65h: 67.0%, 33.9 → x=385, y=380-33.9/55*320=380-197=183 -->
+  <circle cx="385" cy="183" r="6" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+  <text x="395" y="180" class="label">explicit_65h</text>
+  <text x="395" y="192" class="axis">(67.0%, 33.9 runs)</text>
+
+  <!-- combo_streak_heads: 56.5%, 35.3 → x=308, y=380-35.3/55*320=380-205=175 -->
+  <circle cx="308" cy="175" r="5" fill="#8e44ad" stroke="#fff" stroke-width="1.5"/>
+  <text x="318" y="180" class="label">combo_heads</text>
+
+  <!-- combo_streak_tails: 30.8%, 30.0 → x=122, y=380-30.0/55*320=380-175=205 -->
+  <circle cx="122" cy="205" r="6" fill="#8e44ad" stroke="#fff" stroke-width="1.5"/>
+  <text x="132" y="202" class="label">combo_tails</text>
+  <text x="132" y="214" class="axis">(30.8%, 30.0 runs)</text>
+
+  <!-- anti_balance: 47.9%, 29.3 → x=246, y=380-29.3/55*320=380-170=210 -->
+  <circle cx="246" cy="210" r="5" fill="#8e44ad" stroke="#fff" stroke-width="1.5"/>
+  <text x="200" y="218" class="label" text-anchor="end">anti_balance</text>
+
+  <!-- low_temp_heads: 100%, 1.0 → x=623, y=380-1/55*320=380-6=374 -->
+  <circle cx="623" cy="374" r="8" fill="#c0392b" stroke="#fff" stroke-width="2"/>
+  <text x="570" y="370" class="label" text-anchor="end">low_temp_heads</text>
+  <text x="570" y="382" class="axis" text-anchor="end">(100%, 1 run)</text>
+
+  <!-- Legend -->
+  <rect x="470" y="60" width="190" height="95" fill="#fff" stroke="#ddd" rx="4"/>
+  <text x="480" y="78" class="label" font-weight="bold">Structural Effect:</text>
+  <circle cx="490" cy="92" r="4" fill="#f39c12"/>
+  <text x="500" y="96" class="axis">Amplified alternation</text>
+  <circle cx="490" cy="108" r="4" fill="#27ae60"/>
+  <text x="500" y="112" class="axis">Baseline (control)</text>
+  <circle cx="490" cy="124" r="4" fill="#2980b9"/>
+  <text x="500" y="128" class="axis">Preserved template</text>
+  <circle cx="490" cy="140" r="4" fill="#8e44ad"/>
+  <text x="500" y="144" class="axis">Broken template</text>
+</svg>

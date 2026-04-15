@@ -1,0 +1,269 @@
+{
+  "test": "Barrier Height Coefficient vs \u03c0/\u221a2",
+  "prediction": "\u03b1_geodesic \u2248 \u03c0/\u221a2 = 2.221441",
+  "framework_section": "\u00a78D (\u010cencov metric), \u00a7165 (barrier universality)",
+  "B_G_predicted": 2.221441469079183,
+  "params": {
+    "distances": [
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "rounds": "distance (matched)",
+    "error_rates": [
+      0.01,
+      0.02,
+      0.03,
+      0.05,
+      0.07
+    ],
+    "shots": 100000,
+    "threshold_estimate": 0.11,
+    "decoder": "pymatching MWPM",
+    "circuit_generator": "stim.Circuit.generated('repetition_code:memory')"
+  },
+  "results": [
+    {
+      "error_rate": 0.01,
+      "threshold": 0.11,
+      "alpha_raw": NaN,
+      "alpha_geodesic": NaN,
+      "ratio_to_pi_sqrt2": NaN,
+      "r_squared": NaN,
+      "geodesic_distance": 0.47579566723754174,
+      "distance_data": [
+        {
+          "distance": 3,
+          "logical_error_rate": 0.00094,
+          "log_logical_error": -6.969630682700225,
+          "elapsed_s": 0.017286062240600586,
+          "dry_run": false
+        },
+        {
+          "distance": 5,
+          "logical_error_rate": 0.00011,
+          "log_logical_error": -9.115030192171858,
+          "elapsed_s": 0.03164339065551758,
+          "dry_run": false
+        },
+        {
+          "distance": 7,
+          "logical_error_rate": 0.0,
+          "log_logical_error": -23.025850929940457,
+          "elapsed_s": 0.05455470085144043,
+          "dry_run": false
+        },
+        {
+          "distance": 9,
+          "logical_error_rate": 0.0,
+          "log_logical_error": -23.025850929940457,
+          "elapsed_s": 0.08017611503601074,
+          "dry_run": false
+        },
+        {
+          "distance": 11,
+          "logical_error_rate": 0.0,
+          "log_logical_error": -23.025850929940457,
+          "elapsed_s": 0.11786127090454102,
+          "dry_run": false
+        }
+      ],
+      "verdict": "CLOSE",
+      "mean_ratio": 0.6716138373117897
+    },
+    {
+      "error_rate": 0.02,
+      "threshold": 0.11,
+      "alpha_raw": 0.7507492482208977,
+      "alpha_geodesic": 1.913534526866983,
+      "ratio_to_pi_sqrt2": 0.8613931780341566,
+      "r_squared": 0.9999201603528405,
+      "geodesic_distance": 0.3923364003523335,
+      "distance_data": [
+        {
+          "distance": 3,
+          "logical_error_rate": 0.00451,
+          "log_logical_error": -5.40145812546755,
+          "elapsed_s": 0.01269388198852539,
+          "dry_run": false
+        },
+        {
+          "distance": 5,
+          "logical_error_rate": 0.00104,
+          "log_logical_error": -6.868534565828856,
+          "elapsed_s": 0.03489422798156738,
+          "dry_run": false
+        },
+        {
+          "distance": 7,
+          "logical_error_rate": 0.00023,
+          "log_logical_error": -8.377431249041079,
+          "elapsed_s": 0.0793001651763916,
+          "dry_run": false
+        },
+        {
+          "distance": 9,
+          "logical_error_rate": 5e-05,
+          "log_logical_error": -9.903487552536127,
+          "elapsed_s": 0.11769580841064453,
+          "dry_run": false
+        },
+        {
+          "distance": 11,
+          "logical_error_rate": 0.0,
+          "log_logical_error": -23.025850929940457,
+          "elapsed_s": 0.20061707496643066,
+          "dry_run": false
+        }
+      ],
+      "verdict": "CLOSE",
+      "mean_ratio": 0.6716138373117897
+    },
+    {
+      "error_rate": 0.03,
+      "threshold": 0.11,
+      "alpha_raw": 0.5570872917414305,
+      "alpha_geodesic": 1.6986207703461371,
+      "ratio_to_pi_sqrt2": 0.7646479972529899,
+      "r_squared": 0.9960889266876751,
+      "geodesic_distance": 0.3279644882877005,
+      "distance_data": [
+        {
+          "distance": 3,
+          "logical_error_rate": 0.0084,
+          "log_logical_error": -4.779523573132869,
+          "elapsed_s": 0.017461776733398438,
+          "dry_run": false
+        },
+        {
+          "distance": 5,
+          "logical_error_rate": 0.00352,
+          "log_logical_error": -5.649294289372131,
+          "elapsed_s": 0.05096626281738281,
+          "dry_run": false
+        },
+        {
+          "distance": 7,
+          "logical_error_rate": 0.00094,
+          "log_logical_error": -6.969630682700225,
+          "elapsed_s": 0.10853171348571777,
+          "dry_run": false
+        },
+        {
+          "distance": 9,
+          "logical_error_rate": 0.00036,
+          "log_logical_error": -7.929406526514119,
+          "elapsed_s": 0.17109203338623047,
+          "dry_run": false
+        },
+        {
+          "distance": 11,
+          "logical_error_rate": 0.0001,
+          "log_logical_error": -9.210340371976182,
+          "elapsed_s": 0.28102636337280273,
+          "dry_run": false
+        }
+      ],
+      "verdict": "CLOSE",
+      "mean_ratio": 0.6716138373117897
+    },
+    {
+      "error_rate": 0.05,
+      "threshold": 0.11,
+      "alpha_raw": 0.29167714738304257,
+      "alpha_geodesic": 1.2957456953386952,
+      "ratio_to_pi_sqrt2": 0.583290495551881,
+      "r_squared": 0.996664299660546,
+      "geodesic_distance": 0.22510369776439892,
+      "distance_data": [
+        {
+          "distance": 3,
+          "logical_error_rate": 0.02144,
+          "log_logical_error": -3.842496942779536,
+          "elapsed_s": 0.021889925003051758,
+          "dry_run": false
+        },
+        {
+          "distance": 5,
+          "logical_error_rate": 0.01296,
+          "log_logical_error": -4.345887588058009,
+          "elapsed_s": 0.08191585540771484,
+          "dry_run": false
+        },
+        {
+          "distance": 7,
+          "logical_error_rate": 0.00747,
+          "log_logical_error": -4.896860279837411,
+          "elapsed_s": 0.18079519271850586,
+          "dry_run": false
+        },
+        {
+          "distance": 9,
+          "logical_error_rate": 0.00367,
+          "log_logical_error": -5.607563616915658,
+          "elapsed_s": 0.33533430099487305,
+          "dry_run": false
+        },
+        {
+          "distance": 11,
+          "logical_error_rate": 0.00218,
+          "log_logical_error": -6.12843040218114,
+          "elapsed_s": 0.4806644916534424,
+          "dry_run": false
+        }
+      ],
+      "verdict": "CLOSE",
+      "mean_ratio": 0.6716138373117897
+    },
+    {
+      "error_rate": 0.07,
+      "threshold": 0.11,
+      "alpha_raw": 0.14902635309290557,
+      "alpha_geodesic": 1.059902325095423,
+      "ratio_to_pi_sqrt2": 0.4771236784081313,
+      "r_squared": 0.9953735108679373,
+      "geodesic_distance": 0.1406038552462735,
+      "distance_data": [
+        {
+          "distance": 3,
+          "logical_error_rate": 0.04005,
+          "log_logical_error": -3.217626605467769,
+          "elapsed_s": 0.025893449783325195,
+          "dry_run": false
+        },
+        {
+          "distance": 5,
+          "logical_error_rate": 0.03237,
+          "log_logical_error": -3.430523211043984,
+          "elapsed_s": 0.1172332763671875,
+          "dry_run": false
+        },
+        {
+          "distance": 7,
+          "logical_error_rate": 0.02327,
+          "log_logical_error": -3.7605903016679365,
+          "elapsed_s": 0.2622809410095215,
+          "dry_run": false
+        },
+        {
+          "distance": 9,
+          "logical_error_rate": 0.01706,
+          "log_logical_error": -4.071018736918604,
+          "elapsed_s": 0.4791851043701172,
+          "dry_run": false
+        },
+        {
+          "distance": 11,
+          "logical_error_rate": 0.01243,
+          "log_logical_error": -4.387642373459517,
+          "elapsed_s": 0.7524495124816895,
+          "dry_run": false
+        }
+      ],
+      "verdict": "CLOSE",
+      "mean_ratio": 0.6716138373117897
+    }
+  ]
+}

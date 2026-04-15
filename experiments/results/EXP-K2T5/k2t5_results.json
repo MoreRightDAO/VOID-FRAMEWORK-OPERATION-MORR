@@ -1,0 +1,517 @@
+{
+  "experiment": "K-2T-5",
+  "description": "Cross-term prohibition \u2014 Sp(2,R) strong CP analogue",
+  "section": "\u00a7158",
+  "date": "2026-04-05T00:46:40.946631+00:00",
+  "verdict": "SURVIVES",
+  "structural_pass": true,
+  "t1_pass": true,
+  "t1_results": {
+    "checks": [
+      {
+        "check": "diffusion_diag_T0.01",
+        "max_offdiag": 0.0,
+        "D_diag": [
+          0.0025,
+          0.0025,
+          -0.0025
+        ],
+        "passed": "True"
+      },
+      {
+        "check": "diffusion_diag_T0.03",
+        "max_offdiag": 0.0,
+        "D_diag": [
+          0.0075,
+          0.0075,
+          -0.0075
+        ],
+        "passed": "True"
+      },
+      {
+        "check": "diffusion_diag_T0.05",
+        "max_offdiag": 0.0,
+        "D_diag": [
+          0.0125,
+          0.0125,
+          -0.0125
+        ],
+        "passed": "True"
+      },
+      {
+        "check": "diffusion_diag_T0.1",
+        "max_offdiag": 0.0,
+        "D_diag": [
+          0.025,
+          0.025,
+          -0.025
+        ],
+        "passed": "True"
+      },
+      {
+        "check": "diffusion_diag_T0.5",
+        "max_offdiag": 0.0,
+        "D_diag": [
+          0.125,
+          0.125,
+          -0.125
+        ],
+        "passed": "True"
+      },
+      {
+        "check": "alpha_negative_T0.01",
+        "D_alpha_alpha": -0.0025,
+        "is_negative": "True",
+        "passed": "True"
+      },
+      {
+        "check": "alpha_negative_T0.03",
+        "D_alpha_alpha": -0.0075,
+        "is_negative": "True",
+        "passed": "True"
+      },
+      {
+        "check": "alpha_negative_T0.1",
+        "D_alpha_alpha": -0.025,
+        "is_negative": "True",
+        "passed": "True"
+      },
+      {
+        "check": "action_cross_g_O\u03b1",
+        "value": 0.0,
+        "passed": "True"
+      },
+      {
+        "check": "action_cross_g_R\u03b1",
+        "value": 0.0,
+        "passed": "True"
+      },
+      {
+        "check": "action_cross_g_OR",
+        "value": 0.0,
+        "passed": "True"
+      }
+    ],
+    "overall": true
+  },
+  "t2_pass": true,
+  "t2_results": {
+    "points": [
+      {
+        "label": "midpoint",
+        "phi": [
+          0.7853981633974484,
+          0.7853981633974484,
+          0.7853981633974484
+        ],
+        "b_net": -0.2549999999999999,
+        "ratios": {
+          "O-R": 0.37399999985865406,
+          "O-\u03b1": 0.37399999985865406,
+          "R-\u03b1": 0.37399999985865406,
+          "R-O": 0.37399999985865406,
+          "\u03b1-O": 0.37399999985865406,
+          "\u03b1-R": 0.37399999985865406
+        },
+        "spread": 0.0,
+        "mean_constant": 0.37399999985865406,
+        "expected_constant": 0.37400000000000005,
+        "coupling_rank": 1,
+        "coupling_svd": [
+          1.1219999995759622,
+          5.551115123125783e-17,
+          3.204937810639273e-17
+        ],
+        "passed": true
+      },
+      {
+        "label": "asymmetric",
+        "phi": [
+          0.5796397403637042,
+          0.9911565864311923,
+          0.684719203002283
+        ],
+        "b_net": -0.3298000000000003,
+        "ratios": {
+          "O-R": 0.37399999995117267,
+          "O-\u03b1": 0.37399999935858885,
+          "R-\u03b1": 0.37399999935858885,
+          "R-O": 0.3740000006120197,
+          "\u03b1-O": 0.37400000059492045,
+          "\u03b1-R": 0.37399999997675465
+        },
+        "spread": 1.2534308591050092e-09,
+        "mean_constant": 0.3739999999753409,
+        "expected_constant": 0.37400000000000005,
+        "coupling_rank": 1,
+        "coupling_svd": [
+          0.9873599998724527,
+          1.322709706195926e-10,
+          8.968312733071782e-11
+        ],
+        "passed": true
+      },
+      {
+        "label": "low alpha",
+        "phi": [
+          0.8860771237926137,
+          0.8860771237926137,
+          0.3217505543966422
+        ],
+        "b_net": -0.40460000000000007,
+        "ratios": {
+          "O-R": 0.37399999879469037,
+          "O-\u03b1": 0.373999999464084,
+          "R-\u03b1": 0.373999999464084,
+          "R-O": 0.37399999879469037,
+          "\u03b1-O": 0.37399999875588613,
+          "\u03b1-R": 0.37399999875588613
+        },
+        "spread": 7.081978892209406e-10,
+        "mean_constant": 0.37399999900488684,
+        "expected_constant": 0.37400000000000005,
+        "coupling_rank": 1,
+        "coupling_svd": [
+          0.852719997477248,
+          3.5958289725848964e-11,
+          6.2569449487489905e-12
+        ],
+        "passed": true
+      },
+      {
+        "label": "high alpha",
+        "phi": [
+          0.4636476090008061,
+          1.1071487177940904,
+          1.2490457723982544
+        ],
+        "b_net": 0.044199999999999795,
+        "ratios": {
+          "O-R": 0.37400000040292347,
+          "O-\u03b1": 0.3739999999511727,
+          "R-\u03b1": 0.37399999995117256,
+          "R-O": 0.37400000075528916,
+          "\u03b1-O": 0.3740000007643243,
+          "\u03b1-R": 0.37400000040292347
+        },
+        "spread": 8.131517681420064e-10,
+        "mean_constant": 0.37400000037130093,
+        "expected_constant": 0.37400000000000005,
+        "coupling_rank": 1,
+        "coupling_svd": [
+          0.6133600007178834,
+          2.7710460782940852e-11,
+          1.1856631925462378e-12
+        ],
+        "passed": true
+      },
+      {
+        "label": "extreme O-R asymmetry",
+        "phi": [
+          0.3976994150920718,
+          1.173096911702825,
+          0.7853981633974484
+        ],
+        "b_net": -0.2550000000000001,
+        "ratios": {
+          "O-R": 0.3740000002232862,
+          "O-\u03b1": 0.3739999993052447,
+          "R-\u03b1": 0.37399999930524475,
+          "R-O": 0.3740000002232862,
+          "\u03b1-O": 0.37400000017972024,
+          "\u03b1-R": 0.3740000001797203
+        },
+        "spread": 9.180415316834001e-10,
+        "mean_constant": 0.3739999999027504,
+        "expected_constant": 0.37400000000000005,
+        "coupling_rank": 1,
+        "coupling_svd": [
+          0.7554799995451934,
+          1.0432197202303692e-10,
+          2.0556925686458824e-11
+        ],
+        "passed": true
+      },
+      {
+        "label": "high O,R low alpha",
+        "phi": [
+          1.2490457723982544,
+          1.2490457723982544,
+          0.3217505543966422
+        ],
+        "b_net": 0.044199999999999795,
+        "ratios": {
+          "O-R": 0.37399999995117267,
+          "O-\u03b1": 0.37399999995117267,
+          "R-\u03b1": 0.37399999995117267,
+          "R-O": 0.37399999995117267,
+          "\u03b1-O": 0.37399999995117267,
+          "\u03b1-R": 0.37399999995117267
+        },
+        "spread": 0.0,
+        "mean_constant": 0.37399999995117267,
+        "expected_constant": 0.37400000000000005,
+        "coupling_rank": 1,
+        "coupling_svd": [
+          0.4039199999278658,
+          3.2180960787637816e-11,
+          6.6202728811332725e-12
+        ],
+        "passed": true
+      },
+      {
+        "label": "low O,R high alpha",
+        "phi": [
+          0.3217505543966422,
+          0.3217505543966422,
+          1.2490457723982544
+        ],
+        "b_net": -0.5542,
+        "ratios": {
+          "O-R": 0.37400000033666675,
+          "O-\u03b1": 0.3740000014931491,
+          "R-\u03b1": 0.3740000014931491,
+          "R-O": 0.37400000033666675,
+          "\u03b1-O": 0.37400000033666675,
+          "\u03b1-R": 0.37400000033666675
+        },
+        "spread": 1.1564823543253056e-09,
+        "mean_constant": 0.3740000007221609,
+        "expected_constant": 0.37400000000000005,
+        "coupling_rank": 1,
+        "coupling_svd": [
+          0.40392000093099684,
+          2.652705262834088e-10,
+          3.685569265022769e-11
+        ],
+        "passed": true
+      }
+    ],
+    "overall": true
+  },
+  "t3_pass": false,
+  "t3_results": {
+    "cases": [
+      {
+        "check": "pde_character",
+        "passed": "True"
+      },
+      {
+        "label": "deep void regime",
+        "b_net": 0.45560000000000017,
+        "initial_vars": {
+          "O": 1.925929944387236e-34,
+          "R": 1.925929944387236e-34,
+          "alpha": 0.0
+        },
+        "final_vars": {
+          "O": 0.0025571696000358233,
+          "R": 0.002549741321144467,
+          "alpha": 4.930380657631324e-32
+        },
+        "half_var_times": {
+          "O": 5.0,
+          "R": 5.0,
+          "alpha": 0.0
+        },
+        "alpha_coherent": true,
+        "passed": true
+      },
+      {
+        "label": "moderate void",
+        "b_net": 0.23119999999999996,
+        "initial_vars": {
+          "O": 0.0,
+          "R": 0.0,
+          "alpha": 0.0
+        },
+        "final_vars": {
+          "O": 0.15605759905443756,
+          "R": 0.1546011193190421,
+          "alpha": 0.16603168736746812
+        },
+        "half_var_times": {
+          "O": 0.0,
+          "R": 0.0,
+          "alpha": 0.0
+        },
+        "alpha_coherent": false,
+        "passed": false
+      },
+      {
+        "label": "asymmetric void",
+        "b_net": 0.4181999999999998,
+        "initial_vars": {
+          "O": 1.925929944387236e-34,
+          "R": 4.81482486096809e-35,
+          "alpha": 4.81482486096809e-35
+        },
+        "final_vars": {
+          "O": 0.00256379317395142,
+          "R": 0.002633589955327345,
+          "alpha": 7.518887916132608e-07
+        },
+        "half_var_times": {
+          "O": 5.0,
+          "R": 5.0,
+          "alpha": 5.0
+        },
+        "alpha_coherent": true,
+        "passed": true
+      },
+      {
+        "check": "adiabatic_elimination",
+        "passed": true,
+        "note": "Analytical argument \u2014 (2,1) signature forces qualitative split"
+      }
+    ],
+    "overall": false
+  },
+  "t4_pass": true,
+  "t4_results": {
+    "transforms": [
+      {
+        "generator": "J3",
+        "parameter": 0.1,
+        "deviation": 6.478927599748095e-18,
+        "passed": "True"
+      },
+      {
+        "generator": "J3",
+        "parameter": 0.5,
+        "deviation": 2.5802204073195862e-17,
+        "passed": "True"
+      },
+      {
+        "generator": "J3",
+        "parameter": 1.0,
+        "deviation": 2.3419586346110148e-17,
+        "passed": "True"
+      },
+      {
+        "generator": "J3",
+        "parameter": -0.3,
+        "deviation": 1.1102230246251565e-16,
+        "passed": "True"
+      },
+      {
+        "generator": "J3",
+        "parameter": 2.0,
+        "deviation": 7.114833041702068e-18,
+        "passed": "True"
+      },
+      {
+        "generator": "J3",
+        "parameter": -1.5,
+        "deviation": 1.6441877693909393e-18,
+        "passed": "True"
+      },
+      {
+        "generator": "K1",
+        "parameter": 0.1,
+        "deviation": 2.220446049250313e-16,
+        "passed": "True"
+      },
+      {
+        "generator": "K1",
+        "parameter": 0.5,
+        "deviation": 3.3306690738754696e-16,
+        "passed": "True"
+      },
+      {
+        "generator": "K1",
+        "parameter": 1.0,
+        "deviation": 2.220446049250313e-16,
+        "passed": "True"
+      },
+      {
+        "generator": "K1",
+        "parameter": -0.3,
+        "deviation": 1.418118625206706e-17,
+        "passed": "True"
+      },
+      {
+        "generator": "K1",
+        "parameter": 2.0,
+        "deviation": 2.220446049250313e-15,
+        "passed": "True"
+      },
+      {
+        "generator": "K1",
+        "parameter": -1.5,
+        "deviation": 6.661338147750939e-16,
+        "passed": "True"
+      },
+      {
+        "generator": "K2",
+        "parameter": 0.1,
+        "deviation": 2.220446049250313e-16,
+        "passed": "True"
+      },
+      {
+        "generator": "K2",
+        "parameter": 0.5,
+        "deviation": 3.3306690738754696e-16,
+        "passed": "True"
+      },
+      {
+        "generator": "K2",
+        "parameter": 1.0,
+        "deviation": 2.220446049250313e-16,
+        "passed": "True"
+      },
+      {
+        "generator": "K2",
+        "parameter": -0.3,
+        "deviation": 1.418118625206706e-17,
+        "passed": "True"
+      },
+      {
+        "generator": "K2",
+        "parameter": 2.0,
+        "deviation": 2.220446049250313e-15,
+        "passed": "True"
+      },
+      {
+        "generator": "K2",
+        "parameter": -1.5,
+        "deviation": 6.661338147750939e-16,
+        "passed": "True"
+      },
+      {
+        "name": "J3+K1",
+        "eta_deviation": 2.220446049250313e-16,
+        "signature": "(2,1)",
+        "sig_preserved": "True",
+        "passed": "True"
+      },
+      {
+        "name": "K1+K2",
+        "eta_deviation": 4.440892098500626e-16,
+        "signature": "(2,1)",
+        "sig_preserved": "True",
+        "passed": "True"
+      },
+      {
+        "name": "J3+K1+K2",
+        "eta_deviation": 5.551115123125783e-16,
+        "signature": "(2,1)",
+        "sig_preserved": "True",
+        "passed": "True"
+      },
+      {
+        "name": "large boost",
+        "eta_deviation": 1.2636558466283532e-12,
+        "signature": "(2,1)",
+        "sig_preserved": "True",
+        "passed": "True"
+      }
+    ],
+    "overall": true
+  },
+  "constants": {
+    "B_ALPHA": 0.867,
+    "B_GAMMA": 2.244,
+    "K_DEFAULT": 16
+  }
+}

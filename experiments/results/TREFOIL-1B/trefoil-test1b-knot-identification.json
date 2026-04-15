@@ -1,0 +1,159 @@
+{
+  "test": "TREFOIL-1B",
+  "curves": {
+    "v1_three_loops": {
+      "description": "Three separate loops (D1, D2, D3) \u2014 original",
+      "gauss_writhe": -6.843972284916927,
+      "writhe_int": -7,
+      "min_crossings": 4,
+      "best_plane": "O-R",
+      "crossing_writhe": 0,
+      "candidates": [
+        "torus knot T(2,7)",
+        "T(2,7) torus knot"
+      ],
+      "pe_range": [
+        -95.271443562143,
+        -66.1047868663752
+      ],
+      "is_trivial": "False"
+    },
+    "v2_torus_23": {
+      "description": "(2,3) torus knot on Eckert manifold \u2014 known trefoil",
+      "gauss_writhe": -3.7052819444506766,
+      "writhe_int": -4,
+      "min_crossings": 3,
+      "best_plane": "O-R",
+      "crossing_writhe": -3,
+      "candidates": [
+        "possible 4-crossing knot",
+        "trefoil T(2,3)"
+      ],
+      "pe_range": [
+        -108.15126325729749,
+        -58.55203530405906
+      ],
+      "is_trivial": "False"
+    },
+    "v3_progressive_123": {
+      "description": "Progressive winding sin(t), sin(2t), sin(3t)",
+      "gauss_writhe": -0.00643913808890196,
+      "writhe_int": 0,
+      "min_crossings": 1,
+      "best_plane": "O-R",
+      "crossing_writhe": -1,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22651)"
+      ],
+      "pe_range": [
+        -96.0376489487557,
+        -65.56950932077925
+      ],
+      "is_trivial": false
+    },
+    "v4_lissajous_235": {
+      "description": "Lissajous 2:3:5",
+      "gauss_writhe": -1.221825132845215,
+      "writhe_int": -1,
+      "min_crossings": 6,
+      "best_plane": "O-R",
+      "crossing_writhe": 0,
+      "candidates": [
+        "unidentified (writhe\u2248-1.2, crossings\u22656)"
+      ],
+      "pe_range": [
+        -97.41978939973687,
+        -66.04021102606687
+      ],
+      "is_trivial": "False"
+    },
+    "v5_winding_111": {
+      "description": "Minimal (1,1,1) winding curve",
+      "gauss_writhe": 1.9635552309160033e-18,
+      "writhe_int": 0,
+      "min_crossings": 0,
+      "best_plane": "none",
+      "crossing_writhe": 0,
+      "candidates": [
+        "unknot"
+      ],
+      "pe_range": [
+        -95.27304360388095,
+        -66.1036604025112
+      ],
+      "is_trivial": true
+    }
+  },
+  "sensitivity": {
+    "r=0.05": {
+      "writhe": -0.006439138088895955,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ]
+    },
+    "r=0.1": {
+      "writhe": -0.006439138088913746,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ]
+    },
+    "r=0.15": {
+      "writhe": -0.00643913808890196,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ]
+    },
+    "r=0.2": {
+      "writhe": -0.006439138088906778,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ]
+    },
+    "r=0.25": {
+      "writhe": -0.006439138088902154,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ]
+    },
+    "center=(0.2, 0.2, 0.2)": {
+      "writhe": -0.006439138088904539,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ],
+      "pe_range": [
+        -111.73396938299894,
+        -76.43932542119414
+      ]
+    },
+    "center=(0.3, 0.3, 0.3)": {
+      "writhe": -0.00643913808890196,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ],
+      "pe_range": [
+        -96.0376489487557,
+        -65.56950932077925
+      ]
+    },
+    "center=(0.4, 0.4, 0.4)": {
+      "writhe": -0.00643913808890373,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ],
+      "pe_range": [
+        -82.49467799953374,
+        -56.16988819779796
+      ]
+    },
+    "center=(0.5, 0.5, 0.5)": {
+      "writhe": -0.006439138088905224,
+      "candidates": [
+        "unidentified (writhe\u2248-0.0, crossings\u22653)"
+      ],
+      "pe_range": [
+        -70.80139698266389,
+        -48.02970440120274
+      ]
+    }
+  }
+}

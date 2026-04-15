@@ -2,7 +2,7 @@
 
 ## Status: Protocol Ready — Not Yet Pre-Registered
 ## Date: February 2026
-## Depends on: EXP-001 results (grounding efficacy)
+## Depends on: EXP-001 results (grounding efficacy), private/l0-notes/L0-validation-gap-analysis.md
 ## Tests: Falsification condition #8 (L0-maintained is not predictive)
 
 ---

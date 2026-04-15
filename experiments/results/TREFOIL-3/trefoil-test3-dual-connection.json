@@ -1,0 +1,120 @@
+{
+  "test": "TREFOIL-3",
+  "experiments": {
+    "OR_plane_small": {
+      "description": "O-R plane, r=0.05",
+      "pe_range": [
+        -82.31792627399206,
+        -76.6039306994536
+      ],
+      "holonomy_e_deg": 2.699869328381916e-06,
+      "holonomy_m_deg": 2.561320938754782e-06,
+      "holonomy_lc_deg": 2.561320938754782e-06,
+      "norm_ratio_e": 1.0,
+      "norm_ratio_m": 0.9989384235105522,
+      "linking_number": 0.0,
+      "linking_nearest_int": 0,
+      "em_angle_start_deg": 2.699869328381916e-06,
+      "em_angle_end_deg": 2.561320938754782e-06,
+      "em_angle_max_deg": 2.699869328381916e-06,
+      "em_angle_oscillations": 3,
+      "em_separation_mean": 0.002824447825032808
+    },
+    "OR_plane_medium": {
+      "description": "O-R plane, r=0.10",
+      "pe_range": [
+        -85.32665700494111,
+        -73.89156066777291
+      ],
+      "holonomy_e_deg": 2.699869328381916e-06,
+      "holonomy_m_deg": 2.561320938754782e-06,
+      "holonomy_lc_deg": 2.561320938754782e-06,
+      "norm_ratio_e": 1.0,
+      "norm_ratio_m": 0.9954028893021151,
+      "linking_number": 0.0,
+      "linking_nearest_int": 0,
+      "em_angle_start_deg": 2.699869328381916e-06,
+      "em_angle_end_deg": 2.561320938754782e-06,
+      "em_angle_max_deg": 2.699869328381916e-06,
+      "em_angle_oscillations": 2,
+      "em_separation_mean": 0.005761267135090389
+    },
+    "OR_plane_large": {
+      "description": "O-R plane, r=0.15",
+      "pe_range": [
+        -88.44148896388688,
+        -71.27107265281047
+      ],
+      "holonomy_e_deg": 2.699869328381916e-06,
+      "holonomy_m_deg": 2.561320938754782e-06,
+      "holonomy_lc_deg": 2.561320938754782e-06,
+      "norm_ratio_e": 1.0,
+      "norm_ratio_m": 0.9880282059880966,
+      "linking_number": 0.0,
+      "linking_nearest_int": 0,
+      "em_angle_start_deg": 2.699869328381916e-06,
+      "em_angle_end_deg": 2.561320938754782e-06,
+      "em_angle_max_deg": 2.699869328381916e-06,
+      "em_angle_oscillations": 2,
+      "em_separation_mean": 0.009224833179519137
+    },
+    "tilted_small": {
+      "description": "Tilted loop (all 3 coords), r=0.05",
+      "pe_range": [
+        -81.45623393138662,
+        -75.63425404779524
+      ],
+      "holonomy_e_deg": 2.699869328381916e-06,
+      "holonomy_m_deg": 2.561320938754782e-06,
+      "holonomy_lc_deg": 2.561320938754782e-06,
+      "norm_ratio_e": 1.0,
+      "norm_ratio_m": 0.9989384235105522,
+      "linking_number": 0.9464109469205466,
+      "linking_nearest_int": 1,
+      "em_angle_start_deg": 2.699869328381916e-06,
+      "em_angle_end_deg": 2.561320938754782e-06,
+      "em_angle_max_deg": 2.699869328381916e-06,
+      "em_angle_oscillations": 3,
+      "em_separation_mean": 0.002824447825032808
+    },
+    "tilted_medium": {
+      "description": "Tilted loop (all 3 coords), r=0.10",
+      "pe_range": [
+        -83.5515539722116,
+        -72.0292752707584
+      ],
+      "holonomy_e_deg": 2.699869328381916e-06,
+      "holonomy_m_deg": 2.561320938754782e-06,
+      "holonomy_lc_deg": 2.561320938754782e-06,
+      "norm_ratio_e": 1.0,
+      "norm_ratio_m": 0.9954028893021151,
+      "linking_number": 0.8712145508699498,
+      "linking_nearest_int": 1,
+      "em_angle_start_deg": 2.699869328381916e-06,
+      "em_angle_end_deg": 2.561320938754782e-06,
+      "em_angle_max_deg": 2.699869328381916e-06,
+      "em_angle_oscillations": 2,
+      "em_separation_mean": 0.005761267135090389
+    },
+    "tilted_large": {
+      "description": "Tilted loop (all 3 coords), r=0.15",
+      "pe_range": [
+        -85.69881829136732,
+        -68.5884057014776
+      ],
+      "holonomy_e_deg": 2.699869328381916e-06,
+      "holonomy_m_deg": 2.561320938754782e-06,
+      "holonomy_lc_deg": 2.561320938754782e-06,
+      "norm_ratio_e": 1.0,
+      "norm_ratio_m": 0.9880282059880966,
+      "linking_number": 0.7287012670133366,
+      "linking_nearest_int": 1,
+      "em_angle_start_deg": 2.699869328381916e-06,
+      "em_angle_end_deg": 2.561320938754782e-06,
+      "em_angle_max_deg": 2.699869328381916e-06,
+      "em_angle_oscillations": 2,
+      "em_separation_mean": 0.009224833179519137
+    }
+  },
+  "verdict": "LINKED \u2014 e/m connection curves link (max |lk| = 0.95)"
+}

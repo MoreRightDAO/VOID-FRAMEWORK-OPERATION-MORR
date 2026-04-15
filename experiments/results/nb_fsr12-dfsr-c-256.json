@@ -1,0 +1,80 @@
+{
+  "experiment": "HP-FSR-CHEB-256",
+  "description": "dFSR-C at N=128 and N=256 (production parameter)",
+  "date": "2026-03-31",
+  "kill_conditions": {
+    "K-FSR-20": "dFSR-C accuracy > 0.55 at N=256 (FAIL)",
+    "K-FSR-21": "dFSR-C accuracy \u2264 0.55 at N=256 (PASS \u2014 viable)"
+  },
+  "confirm_N32": {
+    "N": 32,
+    "n_samples": 300,
+    "n_trials": 3,
+    "grid_size": 128,
+    "accuracy_mean": 0.49722222222222223,
+    "accuracy_std": 0.02187224409447726,
+    "accuracies": [
+      0.4666666666666667,
+      0.5166666666666667,
+      0.5083333333333333
+    ],
+    "gen_time_s": 7.6,
+    "total_time_s": 8.3,
+    "status": "INDISTINGUISHABLE"
+  },
+  "confirm_N64": {
+    "N": 64,
+    "n_samples": 300,
+    "n_trials": 3,
+    "grid_size": 256,
+    "accuracy_mean": 0.49444444444444446,
+    "accuracy_std": 0.017123372230469412,
+    "accuracies": [
+      0.475,
+      0.49166666666666664,
+      0.5166666666666667
+    ],
+    "gen_time_s": 22.3,
+    "total_time_s": 23.3,
+    "status": "INDISTINGUISHABLE"
+  },
+  "N128": {
+    "N": 128,
+    "n_samples": 200,
+    "n_trials": 5,
+    "grid_size": 512,
+    "accuracy_mean": 0.55,
+    "accuracy_std": 0.04401704215414754,
+    "accuracies": [
+      0.5625,
+      0.55,
+      0.55,
+      0.6125,
+      0.475
+    ],
+    "gen_time_s": 73.6,
+    "total_time_s": 75.2,
+    "status": "DISTINGUISHABLE"
+  },
+  "N256": {
+    "N": 256,
+    "n_samples": 100,
+    "n_trials": 5,
+    "grid_size": 768,
+    "accuracy_mean": 0.44000000000000006,
+    "accuracy_std": 0.040620192023179805,
+    "accuracies": [
+      0.375,
+      0.45,
+      0.5,
+      0.425,
+      0.45
+    ],
+    "gen_time_s": 116.2,
+    "total_time_s": 116.7,
+    "status": "INDISTINGUISHABLE"
+  },
+  "K-FSR-20_status": "SURVIVE",
+  "K-FSR-21_status": "FIRE",
+  "verdict": "dFSR-C HOLDS at production parameters \u2014 caveat CLOSED"
+}

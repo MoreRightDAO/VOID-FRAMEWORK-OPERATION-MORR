@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <style>
+    text { font-family: 'Courier New', monospace; }
+    .title { font-size: 14px; font-weight: bold; fill: #1a1a2e; }
+    .label { font-size: 10px; fill: #333; }
+    .eq { font-size: 12px; fill: #1a1a2e; font-style: italic; }
+    .axis { font-size: 9px; fill: #666; }
+    .bar-sem { fill: #e74c3c; }
+    .bar-trans { fill: #3498db; }
+  </style>
+
+  <rect width="700" height="400" fill="#fafafa" rx="8"/>
+
+  <text x="350" y="25" text-anchor="middle" class="title">Fantasia Bound: I(D;Y) + I(M;Y) &lt;= H(Y)</text>
+  <text x="350" y="42" text-anchor="middle" class="eq">Semantic channel (bias) vs Transparency channel (self-awareness)</text>
+
+  <!-- The bound visualization: stacked bars showing channel allocation -->
+  <!-- H(Y) = 1 bit for binary output. I_semantic + I(M;Y) <= H(Y) -->
+  <!-- For each condition, show how much of the 1-bit budget is used -->
+
+  <!-- Scale: 1 bit = 300px wide -->
+  <!-- I_semantic = 1 - H(pH) where H(pH) = -pH*log2(pH) - (1-pH)*log2(1-pH) -->
+
+  <!-- Conditions (sorted by I_semantic): -->
+  <!-- control: pH=0.502, H=0.99997, I_sem=0.00003 -->
+  <!-- prime_tails: pH=0.354, H=0.934, I_sem=0.066 -->
+  <!-- explicit_65h: pH=0.67, H=0.915, I_sem=0.085 -->
+  <!-- combo_tails: pH=0.308, H=0.891, I_sem=0.109 -->
+  <!-- low_temp: pH=1.0, H=0, I_sem=1.0 -->
+
+  <!-- Y positions for bars -->
+  <!-- Each bar: full width = 300px = 1 bit. Red portion = I_semantic. Blue = remaining H(Y) -->
+
+  <text x="100" y="80" text-anchor="end" class="label" font-weight="bold">Condition</text>
+  <text x="250" y="80" text-anchor="middle" class="axis">I_semantic (bias)</text>
+  <text x="450" y="80" text-anchor="middle" class="axis">I(M;Y) available (self-awareness)</text>
+  <text x="600" y="80" text-anchor="middle" class="axis">H(Y)</text>
+
+  <!-- 1 bit = 400px. Start at x=110 -->
+
+  <!-- control: I_sem ≈ 0, H(Y) ≈ 1.0 -->
+  <text x="100" y="112" text-anchor="end" class="label">control (50.2%)</text>
+  <rect x="110" y="96" width="1" height="24" class="bar-sem" rx="1"/>
+  <rect x="111" y="96" width="399" height="24" class="bar-trans" rx="1" opacity="0.6"/>
+  <text x="520" y="112" class="axis">I_sem=0.000 | H(Y)=1.000</text>
+
+  <!-- prime_tails: I_sem = 0.066, H = 0.934 -->
+  <text x="100" y="152" text-anchor="end" class="label">prime_tails (35.4%)</text>
+  <rect x="110" y="136" width="26" height="24" class="bar-sem" rx="1"/>
+  <rect x="136" y="136" width="374" height="24" class="bar-trans" rx="1" opacity="0.6"/>
+  <text x="520" y="152" class="axis">I_sem=0.066 | H(Y)=0.934</text>
+
+  <!-- explicit_65h: I_sem = 0.085, H = 0.915 -->
+  <text x="100" y="192" text-anchor="end" class="label">explicit_65h (67.0%)</text>
+  <rect x="110" y="176" width="34" height="24" class="bar-sem" rx="1"/>
+  <rect x="144" y="176" width="366" height="24" class="bar-trans" rx="1" opacity="0.6"/>
+  <text x="520" y="192" class="axis">I_sem=0.085 | H(Y)=0.915</text>
+
+  <!-- combo_tails: I_sem = 0.109, H = 0.891 -->
+  <text x="100" y="232" text-anchor="end" class="label">combo_tails (30.8%)</text>
+  <rect x="110" y="216" width="44" height="24" class="bar-sem" rx="1"/>
+  <rect x="154" y="216" width="356" height="24" class="bar-trans" rx="1" opacity="0.6"/>
+  <text x="520" y="232" class="axis">I_sem=0.109 | H(Y)=0.891</text>
+
+  <!-- prime_heads_v2: I_sem = 0.050, H = 0.950 (approx for 58.8%) -->
+  <text x="100" y="272" text-anchor="end" class="label">prime_heads_v2 (58.8%)</text>
+  <rect x="110" y="256" width="20" height="24" class="bar-sem" rx="1"/>
+  <rect x="130" y="256" width="380" height="24" class="bar-trans" rx="1" opacity="0.6"/>
+  <text x="520" y="272" class="axis">I_sem=0.050 | H(Y)=0.950</text>
+
+  <!-- low_temp_heads: I_sem = 1.0, H = 0 -->
+  <text x="100" y="312" text-anchor="end" class="label">low_temp (100.0%)</text>
+  <rect x="110" y="296" width="400" height="24" class="bar-sem" rx="1"/>
+  <text x="520" y="312" class="axis">I_sem=1.000 | H(Y)=0.000</text>
+
+  <!-- Annotation for low_temp -->
+  <text x="310" y="340" text-anchor="middle" class="label" fill="#c0392b">Complete channel saturation: zero self-awareness capacity</text>
+
+  <!-- Legend -->
+  <rect x="110" y="360" width="15" height="12" class="bar-sem"/>
+  <text x="130" y="371" class="label">I_semantic (system prompt bias consumes channel)</text>
+  <rect x="400" y="360" width="15" height="12" class="bar-trans" opacity="0.6"/>
+  <text x="420" y="371" class="label">Available for self-monitoring</text>
+</svg>

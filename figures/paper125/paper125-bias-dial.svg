@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <style>
+    text { font-family: 'Courier New', monospace; }
+    .title { font-size: 16px; font-weight: bold; fill: #1a1a2e; }
+    .label { font-size: 11px; fill: #333; }
+    .value { font-size: 11px; fill: #fff; font-weight: bold; }
+    .axis { font-size: 10px; fill: #666; }
+    .sig { font-size: 9px; fill: #c0392b; font-weight: bold; }
+    .nosig { font-size: 9px; fill: #95a5a6; }
+  </style>
+
+  <rect width="800" height="500" fill="#fafafa" rx="8"/>
+
+  <text x="400" y="30" text-anchor="middle" class="title">EXP-027: System Prompt Bias Dial (H% by Condition)</text>
+  <text x="400" y="48" text-anchor="middle" class="axis">Claude Sonnet 4.5 | 20 trials x 50 flips per condition | User prompt: "fair coin, p(H)=0.5"</text>
+
+  <!-- Axis -->
+  <line x1="200" y1="70" x2="200" y2="440" stroke="#ccc" stroke-width="1"/>
+  <line x1="200" y1="440" x2="750" y2="440" stroke="#ccc" stroke-width="1"/>
+
+  <!-- 50% reference line -->
+  <line x1="200" y1="255" x2="750" y2="255" stroke="#e74c3c" stroke-width="1" stroke-dasharray="6,4" opacity="0.5"/>
+  <text x="755" y="258" class="axis" fill="#e74c3c">50% (fair)</text>
+
+  <!-- Scale: y maps 25%=440 to 105%=70. Per %: (105-y%)/(105-25) * 370 + 70 -->
+  <!-- combo_streak_tails: 30.8% -> y = 70 + (105-30.8)/80 * 370 = 70 + 343 = 413 -->
+  <!-- prime_tails: 35.4% -> y = 70 + (105-35.4)/80 * 370 = 70 + 322 = 392 -->
+  <!-- explicit_65t: 35.0% -> y = 70 + (105-35.0)/80 * 370 = 70 + 324 = 394 -->
+  <!-- fewshot_heads: 48.3% -> y = 70 + (105-48.3)/80 * 370 = 70 + 262 = 332 -->
+  <!-- control: 50.2% -> y = 70 + (105-50.2)/80 * 370 = 70 + 253 = 323 nah lets simplify -->
+
+  <!-- Bars (sorted by H%) -->
+  <!-- combo_streak_tails 30.8% -->
+  <rect x="210" y="80" width="50" height="36" fill="#2c3e50" rx="3"/>
+  <text x="165" y="102" text-anchor="end" class="label">combo_tails</text>
+  <text x="265" y="102" class="label">30.8%</text>
+  <text x="320" y="102" class="sig">z=-12.14 ***</text>
+
+  <!-- prime_tails 35.4% -->
+  <rect x="210" y="120" width="75" height="36" fill="#34495e" rx="3"/>
+  <text x="165" y="142" text-anchor="end" class="label">prime_tails</text>
+  <text x="290" y="142" class="label">35.4%</text>
+  <text x="345" y="142" class="sig">z=-9.23 ***</text>
+
+  <!-- explicit_65t 35.0% -->
+  <rect x="210" y="160" width="72" height="36" fill="#34495e" rx="3"/>
+  <text x="165" y="182" text-anchor="end" class="label">explicit_65t</text>
+  <text x="287" y="182" class="label">35.0%</text>
+  <text x="342" y="182" class="sig">z=-9.49 ***</text>
+
+  <!-- fewshot_heads 48.3% -->
+  <rect x="210" y="200" width="143" height="36" fill="#7f8c8d" rx="3"/>
+  <text x="165" y="222" text-anchor="end" class="label">fewshot_heads</text>
+  <text x="358" y="222" class="label">48.3%</text>
+  <text x="413" y="222" class="nosig">z=-1.08 (backfire)</text>
+
+  <!-- CONTROL 50.2% -->
+  <rect x="210" y="240" width="153" height="36" fill="#27ae60" rx="3" stroke="#1e8449" stroke-width="2"/>
+  <text x="165" y="262" text-anchor="end" class="label" font-weight="bold">CONTROL</text>
+  <text x="368" y="262" class="label" font-weight="bold">50.2%</text>
+  <text x="423" y="262" class="nosig">z=0.13 (baseline)</text>
+
+  <!-- reframe_ht 55.6% -->
+  <rect x="210" y="280" width="182" height="36" fill="#2980b9" rx="3"/>
+  <text x="165" y="302" text-anchor="end" class="label">reframe_ht</text>
+  <text x="397" y="302" class="label">55.6%</text>
+  <text x="452" y="302" class="sig">z=3.54 **</text>
+
+  <!-- combo_streak_heads 56.5% -->
+  <rect x="210" y="320" width="187" height="36" fill="#2471a3" rx="3"/>
+  <text x="165" y="342" text-anchor="end" class="label">combo_heads</text>
+  <text x="402" y="342" class="label">56.5%</text>
+  <text x="457" y="342" class="sig">z=4.11 ***</text>
+
+  <!-- prime_heads_v2 58.8% -->
+  <rect x="210" y="360" width="200" height="36" fill="#1a5276" rx="3"/>
+  <text x="165" y="382" text-anchor="end" class="label">prime_heads_v2</text>
+  <text x="415" y="382" class="label">58.8%</text>
+  <text x="470" y="382" class="sig">z=5.57 ***</text>
+
+  <!-- explicit_65h 67.0% -->
+  <rect x="210" y="400" width="243" height="36" fill="#e67e22" rx="3"/>
+  <text x="165" y="422" text-anchor="end" class="label">explicit_65h</text>
+  <text x="458" y="422" class="label">67.0%</text>
+  <text x="513" y="422" class="sig">z=10.75 ***</text>
+
+  <!-- low_temp_heads 100% -->
+  <rect x="210" y="440" width="530" height="36" fill="#c0392b" rx="3"/>
+  <text x="165" y="462" text-anchor="end" class="label">low_temp_heads</text>
+  <text x="550" y="462" class="value">100.0%</text>
+  <text x="620" y="462" class="sig" fill="#fff">z=31.62 ***</text>
+
+  <!-- Legend -->
+  <rect x="580" y="70" width="180" height="80" fill="#fff" stroke="#ddd" rx="4"/>
+  <text x="590" y="88" class="label" font-weight="bold">Mechanisms:</text>
+  <rect x="590" y="96" width="10" height="10" fill="#34495e"/>
+  <text x="605" y="106" class="axis">Semantic priming</text>
+  <rect x="590" y="112" width="10" height="10" fill="#e67e22"/>
+  <text x="605" y="122" class="axis">Direct instruction</text>
+  <rect x="590" y="128" width="10" height="10" fill="#2980b9"/>
+  <text x="605" y="138" class="axis">Combination / other</text>
+</svg>

@@ -1,0 +1,127 @@
+{
+  "experiment": "HP-FSR-POISSON",
+  "description": "Poisson dFSR-P redesign \u2014 FSR vs random Schr\u00f6dinger",
+  "date": "2026-03-31",
+  "hypothesis": "FSR eigenvalues are indistinguishable from random Schr\u00f6dinger eigenvalues because both have Poisson spacing statistics.",
+  "kill_conditions": {
+    "K-FSR-16": "dFSR-P accuracy > 0.9 at N=64 \u2192 redesign FAILS",
+    "K-FSR-17": "dFSR-P accuracy < 0.6 at N=64 \u2192 redesign SUCCEEDS"
+  },
+  "E1_baseline": {
+    "accuracy": 1.0,
+    "top_features": {
+      "growth_exponent": 1.441887076483901,
+      "spacing_mean": 1.435045402574489,
+      "spacing_std": 0.6500703546294533,
+      "spacing_skew": 0.5319891295605645,
+      "autocorr_2": 0.49513618226403644
+    }
+  },
+  "E2_poisson_dfsr": {
+    "smooth": {
+      "accuracy": 1.0,
+      "time_s": 6.7,
+      "top_features": {
+        "r_statistic": 1.1736375375307972,
+        "min_spacing_ratio": 1.1081533058931843,
+        "growth_exponent": 0.910932178868308,
+        "spacing_mean": 0.6898463775581262,
+        "close_pair_fraction": 0.6799252554282997
+      }
+    },
+    "polynomial": {
+      "accuracy": 1.0,
+      "time_s": 6.7,
+      "top_features": {
+        "r_statistic": 1.2652559195310464,
+        "growth_exponent": 0.9642458479068946,
+        "min_spacing_ratio": 0.9272428489492442,
+        "spacing_mean": 0.7127864882228221,
+        "spacing_skew": 0.6595114942850897
+      }
+    },
+    "chebyshev": {
+      "accuracy": 0.9666666666666667,
+      "time_s": 7.4,
+      "top_features": {
+        "spacing_mean": 1.7750384900980474,
+        "r_statistic": 1.1232719298451335,
+        "spacing_min": 0.8409035229577625,
+        "min_spacing_ratio": 0.8205637263347074,
+        "close_pair_fraction": 0.8184976965533237
+      }
+    }
+  },
+  "E3_susy_dfsr": {
+    "accuracy": 0.975,
+    "time_s": 7.1,
+    "top_features": {
+      "growth_exponent": 1.5479534196383815,
+      "spacing_mean": 1.3086740876966636,
+      "spacing_min": 0.9862903893017952,
+      "min_spacing_ratio": 0.6241210357504419,
+      "spacing_skew": 0.6190820670856334
+    }
+  },
+  "E4_scaling": {
+    "16": {
+      "accuracy_vs_susy": 0.9125,
+      "accuracy_vs_smooth": 0.9875,
+      "time_s": 1.1
+    },
+    "24": {
+      "accuracy_vs_susy": 0.9375,
+      "accuracy_vs_smooth": 1.0,
+      "time_s": 1.7
+    },
+    "32": {
+      "accuracy_vs_susy": 1.0,
+      "accuracy_vs_smooth": 1.0,
+      "time_s": 2.7
+    },
+    "48": {
+      "accuracy_vs_susy": 0.95,
+      "accuracy_vs_smooth": 1.0,
+      "time_s": 5.3
+    },
+    "64": {
+      "accuracy_vs_susy": 0.975,
+      "accuracy_vs_smooth": 1.0,
+      "time_s": 9.1
+    }
+  },
+  "E5_spacing": {
+    "FSR": {
+      "mean_r_statistic": 0.3884175238401411,
+      "spacing_variance": 6.427606150461642,
+      "spacing_skewness": 10.430054278100068,
+      "spacing_kurtosis": 142.9248253690726,
+      "spacing_class": "Poisson"
+    },
+    "smooth_schrodinger": {
+      "mean_r_statistic": 0.9709181936463344,
+      "spacing_variance": 0.0635746908536579,
+      "spacing_skewness": -0.07970004025538367,
+      "spacing_kurtosis": 1.933449826931271,
+      "spacing_class": "GOE-like"
+    },
+    "susy_random": {
+      "mean_r_statistic": 0.4016184600626621,
+      "spacing_variance": 0.7741697706232631,
+      "spacing_skewness": 1.6880639466269993,
+      "spacing_kurtosis": 8.187175251938962,
+      "spacing_class": "Poisson"
+    },
+    "uniform": {
+      "mean_r_statistic": 0.38689005176315683,
+      "spacing_variance": 0.946245068225833,
+      "spacing_skewness": 1.8066703380931028,
+      "spacing_kurtosis": 7.332855823712074,
+      "spacing_class": "Poisson"
+    }
+  },
+  "K-FSR-16_status": "FIRE",
+  "K-FSR-17_status": "SURVIVE",
+  "verdict": "FAILS \u2014 FSR has detectable structure even within Poisson class",
+  "improvement_over_original": 0.025000000000000022
+}

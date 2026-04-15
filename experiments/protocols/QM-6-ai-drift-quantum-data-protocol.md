@@ -210,7 +210,7 @@ python ops/lab/experiments/runner.py \
   --output ops/lab/results/QM-6/
 
 # Score
-python scorer.py \
+python private/tools/test7-scorer.py \
   --input ops/lab/results/QM-6/ \
   --codebook ops/lab/experiments/QM-6-codebook.json \
   --output ops/lab/results/QM-6/analysis.md
