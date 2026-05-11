@@ -1,0 +1,73 @@
+{
+  "experiment": "EXP-HP-WORM-3-MINI-3",
+  "generator": "gpt2",
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "layer": 6,
+  "pca_dim": 5,
+  "n_prompts": 50,
+  "n_gen_tokens": 8,
+  "constants": {
+    "k_ksg": 5,
+    "NATS_TO_BITS": 1.4426950408889634
+  },
+  "completions_sample": [
+    " the capital of the German state, and",
+    " Madrid, and the capital of Spain is",
+    " Rome, and the capital of the world",
+    " the capital of the Russian Federation, and",
+    " the capital of the United States, and",
+    " the capital of the world's largest economy",
+    " the capital of the world. It is",
+    " the capital of the Muslim Brotherhood, which",
+    " the capital of the United States, and",
+    " the capital of the world's largest oil"
+  ],
+  "y_modes": {
+    "logits": {
+      "I_DM_Y_bits": 0.15146143127885756,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 1.0384723493036465,
+      "I_MY_bits": 1.5473439434129732,
+      "H_Y_bits": 8.221203982571067,
+      "excess_bits": -5.635387689854447,
+      "Y_raw_shape": [
+        50,
+        50257
+      ]
+    },
+    "enc_prompt": {
+      "I_DM_Y_bits": 0.21471853086969173,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 1.1547760736299815,
+      "I_MY_bits": 1.4103659761718499,
+      "H_Y_bits": 8.560580237011207,
+      "excess_bits": -5.995438187209375,
+      "Y_raw_shape": [
+        50,
+        384
+      ]
+    },
+    "enc_response": {
+      "I_DM_Y_bits": 0.3103445553695097,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 0.6347089731702006,
+      "I_MY_bits": 1.0135866834745415,
+      "H_Y_bits": 9.92915043427464,
+      "excess_bits": -8.280854777629898,
+      "Y_raw_shape": [
+        50,
+        384
+      ]
+    }
+  },
+  "ratios": {
+    "enc_response_over_logits": 2.049000545875804,
+    "enc_response_over_enc_prompt": 1.4453552476933231,
+    "enc_prompt_over_logits": 1.417644934797762
+  },
+  "verdicts": {
+    "B1_sanity": "PASS  (I(D;M|Y_logits) = 0.1515 bits)",
+    "B2_three_point_fix_via_M_downstream_disjoint_Y": "FAIL  (enc_response/logits = 2.049, threshold < 0.667)",
+    "B3_response_beats_prompt_aligned_Y": "FAIL  (enc_response=0.3103 vs enc_prompt=0.2147 bits)"
+  }
+}

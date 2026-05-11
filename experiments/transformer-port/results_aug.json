@@ -1,0 +1,54 @@
+{
+  "experiment": "EXP-HP-WORM-3-MINI",
+  "model": "gpt2",
+  "layer": 6,
+  "pca_dim": 5,
+  "n_prompts": 50,
+  "seed": 42,
+  "constants": {
+    "k_ksg": 5,
+    "NATS_TO_BITS": 1.4426950408889634
+  },
+  "conditions": {
+    "base": {
+      "I_DM_Y_bits": 0.15146143127885756,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 1.0384723493036465,
+      "I_MY_bits": 1.5473439434129732,
+      "H_Y_bits": 8.221203982571067,
+      "excess_bits": -5.635387689854447,
+      "n": 50,
+      "elapsed_sec": 2.131727695465088
+    },
+    "aug": {
+      "I_DM_Y_bits": 0.2050881769395816,
+      "I_DM_bits": 1.3926497838361394,
+      "I_DY_bits": 0.9512812284696661,
+      "I_MY_bits": 1.4659998565624253,
+      "H_Y_bits": 9.132680327806602,
+      "excess_bits": -6.71539924277451,
+      "n": 50,
+      "elapsed_sec": 3.373182535171509
+    },
+    "null": {
+      "I_DM_Y_bits": 0.31630574462098465,
+      "I_DM_bits": 1.2094268464599063,
+      "I_DY_bits": 0.6907986083661489,
+      "I_MY_bits": 1.2973086603144681,
+      "H_Y_bits": 9.496286608275879,
+      "excess_bits": -7.508179339595262,
+      "n": 50,
+      "elapsed_sec": 3.038757801055908
+    }
+  },
+  "ratios": {
+    "aug_over_base": 1.3540620553227913,
+    "null_over_aug": 1.542291463803725,
+    "null_over_base": 2.0883583493848685
+  },
+  "verdicts": {
+    "MINI-1_sanity_base_positive": "PASS  (I(D;M|Y)_base = 0.1515 bits)",
+    "MINI-2_three_point_fix": "FAIL  (aug/base = 1.354, threshold < 0.667)",
+    "MINI-3_structural_separation_specificity": "PASS  (null/aug = 1.542, threshold > 1.2)"
+  }
+}

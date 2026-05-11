@@ -1,0 +1,103 @@
+{
+  "model": "gpt2",
+  "layer": 6,
+  "pca_dim": 5,
+  "y_modes": [
+    "logits",
+    "external_hash",
+    "external_encoder"
+  ],
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_ungrounded": 50,
+  "n_grounded": 50,
+  "constants": {
+    "k_ksg": 5,
+    "NATS_TO_BITS": 1.4426950408889634
+  },
+  "conditions": {
+    "ungrounded": {
+      "logits": {
+        "I_DM_Y_bits": 0.15146143127885756,
+        "I_DM_bits": 1.439287054195753,
+        "I_DY": 1.0384723493036465,
+        "I_MY": 1.5473439434129732,
+        "H_Y": 8.221187892847746,
+        "excess_bits": -5.635371600131126,
+        "Y_raw_shape": [
+          50,
+          50257
+        ]
+      },
+      "external_hash": {
+        "I_DM_Y_bits": 0.41899100907412395,
+        "I_DM_bits": 1.439287054195753,
+        "I_DY": 0.05968767802314626,
+        "I_MY": 0.120061851760328,
+        "H_Y": 10.730560129743742,
+        "excess_bits": -10.550810599960267,
+        "Y_raw_shape": [
+          50,
+          32
+        ]
+      },
+      "external_encoder": {
+        "I_DM_Y_bits": 0.36803547354249655,
+        "I_DM_bits": 1.439287054195753,
+        "I_DY": 0.9552790137499798,
+        "I_MY": 1.0984409862644802,
+        "H_Y": 9.069289713186642,
+        "excess_bits": -7.015569713172182,
+        "Y_raw_shape": [
+          50,
+          384
+        ]
+      }
+    },
+    "grounded": {
+      "logits": {
+        "I_DM_Y_bits": 0.29368468830181055,
+        "I_DM_bits": 1.5820398331392775,
+        "I_DY": 1.106570446269977,
+        "I_MY": 1.532281510548822,
+        "H_Y": 8.652043024068455,
+        "excess_bits": -6.013191067249656,
+        "Y_raw_shape": [
+          50,
+          50257
+        ]
+      },
+      "external_hash": {
+        "I_DM_Y_bits": 0.40711910246886385,
+        "I_DM_bits": 1.5820398331392775,
+        "I_DY": 0.08536301638307345,
+        "I_MY": 0.09302057711824184,
+        "H_Y": 10.730560129743742,
+        "excess_bits": -10.552176536242426,
+        "Y_raw_shape": [
+          50,
+          32
+        ]
+      },
+      "external_encoder": {
+        "I_DM_Y_bits": 0.3232712581026871,
+        "I_DM_bits": 1.5820398331392775,
+        "I_DY": 1.297879708350069,
+        "I_MY": 0.6345958655768534,
+        "H_Y": 9.069289713186642,
+        "excess_bits": -7.1368141392597195,
+        "Y_raw_shape": [
+          50,
+          384
+        ]
+      }
+    }
+  },
+  "verdicts": {
+    "KC_i_Shannon_bound_ungrounded_logits": "PASS  (excess = -5.6354 bits, threshold < 0.05)",
+    "KC_ii_internal_penalty_positive_logits": "PASS  (I(D;M|Y) = 0.1515 bits)",
+    "KC_iii_three_point_fix_text_prefix": "FAIL  (ratio u/g = 0.52\u00d7, threshold > 1.5\u00d7) \u2014 text-prefix is NOT structural three-point geometry",
+    "KC_iii_amended_three_point_fix_via_external_hash": "FAIL  (I_int/I_ext = 0.36\u00d7, I_int=0.1515 I_ext=0.4190 bits)",
+    "KC_iii_amended_three_point_fix_via_external_encoder": "FAIL  (I_int/I_ext = 0.41\u00d7, I_int=0.1515 I_ext=0.3680 bits)",
+    "KC_iv_structure_theorem": "N/A (requires base+SFT pair, out of smoke scope)"
+  }
+}

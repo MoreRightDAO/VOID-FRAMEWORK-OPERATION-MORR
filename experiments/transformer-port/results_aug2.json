@@ -1,0 +1,60 @@
+{
+  "experiment": "EXP-HP-WORM-3-MINI-2",
+  "generator": "gpt2",
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "layer": 6,
+  "pca_dim": 5,
+  "n_prompts": 50,
+  "constants": {
+    "k_ksg": 5,
+    "NATS_TO_BITS": 1.4426950408889634
+  },
+  "y_modes": {
+    "logits": {
+      "I_DM_Y_bits": 0.15146143127885756,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 1.0384723493036465,
+      "I_MY_bits": 1.5473439434129732,
+      "H_Y_bits": 8.221203982571067,
+      "excess_bits": -5.635387689854447,
+      "Y_raw_shape": [
+        50,
+        50257
+      ]
+    },
+    "enc_prompt": {
+      "I_DM_Y_bits": 0.21471853086969173,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 1.1547760736299815,
+      "I_MY_bits": 1.4103659761718499,
+      "H_Y_bits": 8.560580237011207,
+      "excess_bits": -5.995438187209375,
+      "Y_raw_shape": [
+        50,
+        384
+      ]
+    },
+    "enc_answer": {
+      "I_DM_Y_bits": 0.36803547354249655,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 0.9552790137499798,
+      "I_MY_bits": 1.0984409862644802,
+      "H_Y_bits": 9.069289713186642,
+      "excess_bits": -7.015569713172182,
+      "Y_raw_shape": [
+        50,
+        384
+      ]
+    }
+  },
+  "ratios": {
+    "enc_prompt_over_logits": 1.417644934797762,
+    "enc_answer_over_logits": 2.4298956535337486,
+    "enc_answer_over_enc_prompt": 1.7140368465256022
+  },
+  "verdicts": {
+    "A1_sanity": "PASS  (I(D;M|Y_logits) = 0.1515 bits)",
+    "A2_three_point_fix_structural_Y_on_prompt": "FAIL  (enc_prompt/logits = 1.418, threshold < 0.667)",
+    "A3_replicate_external_y_on_answer_high": "PASS  (enc_answer/logits = 2.430, threshold > 1.2)"
+  }
+}

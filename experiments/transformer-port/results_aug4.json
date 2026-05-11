@@ -1,0 +1,71 @@
+{
+  "experiment": "EXP-HP-WORM-3-MINI-4",
+  "generator": "gpt2",
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "layer": 6,
+  "pca_dim": 5,
+  "n_prompts": 50,
+  "n_gen_tokens": 8,
+  "thermo": {
+    "n_spins": 32,
+    "beta": 1.0,
+    "j_coupling": 0.5,
+    "n_warmup": 50,
+    "n_steps": 100,
+    "proj_seed": 0,
+    "sample_seed": 42,
+    "proj_scale": 0.05,
+    "fraction_plus_one": 0.599375
+  },
+  "constants": {
+    "k_ksg": 5,
+    "NATS_TO_BITS": 1.4426950408889634
+  },
+  "y_modes": {
+    "logits": {
+      "I_DM_Y_bits": 0.15146143127885756,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 1.0384723493036465,
+      "I_MY_bits": 1.5473439434129732,
+      "H_Y_bits": 8.221203982571067,
+      "excess_bits": -5.635387689854447,
+      "Y_raw_shape": [
+        50,
+        50257
+      ]
+    },
+    "enc_response": {
+      "I_DM_Y_bits": 0.3103445553695097,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 0.6347089731702006,
+      "I_MY_bits": 1.0135866834745415,
+      "H_Y_bits": 9.92915043427464,
+      "excess_bits": -8.280854777629898,
+      "Y_raw_shape": [
+        50,
+        384
+      ]
+    },
+    "thermo": {
+      "I_DM_Y_bits": 0.30057831979228067,
+      "I_DM_bits": 1.439287054195753,
+      "I_DY_bits": 0.755952737459504,
+      "I_MY_bits": 1.2870364228196032,
+      "H_Y_bits": 9.741823811765565,
+      "excess_bits": -7.698834651486457,
+      "Y_raw_shape": [
+        50,
+        32
+      ]
+    }
+  },
+  "ratios": {
+    "thermo_over_logits": 1.9845205294467483,
+    "thermo_over_enc_response": 0.9685309910927841
+  },
+  "verdicts": {
+    "C1_sanity": "PASS  (I(D;M|Y_logits) = 0.1515 bits)",
+    "C2_three_point_fix_via_thermo_Y": "FAIL  (thermo/logits = 1.985, threshold < 0.667)",
+    "C3_thermo_beats_neural_encoder": "PASS  (thermo=0.3006 vs enc_response=0.3103 bits)"
+  }
+}
